@@ -1,0 +1,456 @@
+question_id,title,body,tags
+267671,About frullani integral [duplicate],"This question already has answers here : Closed 11 years ago . Possible Duplicate: Frullani proof integrals Let $f:\left[ {0,\infty } \right] \to \mathbb R$ be a a continuous function such that $$
+\mathop {\lim }\limits_{x \to0+ } f\left( x \right) = L
+$$Prove that $$
+\int\limits_0^{\infty}  {\frac{{f\left( {ax} \right) - f\left( {bx} \right)}}
+{x}}dx $$ converges and calculate the value. It is known that $\int_a^\infty (f(x)/x)\,\mathrm{d}x$ converges for all a>0, but nothing of $\lim\limits_{x\to\infty}f(x)$ is told. Also, what if $a>b$ or $a<b$?","['integration', 'real-analysis']"
+267697,Convergence of $\sum\limits_{n=2}^\infty \frac{1}{n^\alpha \ln^\beta (n)} $ for nonnegative $\alpha$ and $\beta$,"Study the convergence of the following series: $$\sum_{n=2}^\infty \frac{1}{n^\alpha \cdot\ln^\beta(n)} \text{ where }\alpha,\beta \geq 0
+$$ Applying d'Alembert criterion I have that $$ \lim_{n\to\infty} \frac{n^\alpha  \ln^\beta(n)}{(n+1)^\alpha  \ln^\beta (n+1)} = \lim_{n\to\infty} \left(\frac{n}{n+1}\right)^\alpha\left(\frac{\ln(n)}{\ln (n+1)}\right)^\beta = 1$$
+so the nature of the series is inconclusive. If $\alpha = \beta = 0$, then the series diverges, since $\sum_{n=2}^\infty 1 = \infty$. Should I study the rest of the cases (i.e. if $\alpha = 0, \beta > 0$ the root test and the ratio test are also inconclusive). What is the best form to study the series?. Thanks in advance","['convergence-divergence', 'sequences-and-series', 'real-analysis']"
+267703,Relation between circle mean value property and disk mean value property,"Let $u$ be a continuous function on an open set $U$ of the complex plane. We say that $u$ satisfies the circle mean value property at a point $z_0\in U$ if
+$$ u(z_0)=\frac{1}{2\pi}\int_0^{2\pi}u(z_0+re^{i\theta})d\theta$$ for all $r$ sufficiently small such that the disc centered at $z_0$ with radius $r$> is contained in $U$. We say that $u$ satisfies the disc mean value property at a point $z_0$ if
+$$u(z_0)=\frac{1}{\pi r^2}\iint_{D(z_0,r)}u dxdy$$ I think the two properties are related. In particular i'd like to show that the first implies the second. Is this an application of Green's Thm maybe?","['harmonic-analysis', 'complex-analysis', 'analysis']"
+267708,Does the Symmetric difference operator define a group on the powerset of a set?,"$G$ is the set of all subsets of a set $A$, under the operation of $\triangle\;$: Symmetric Difference of sets. $A$ has at least two different elements. I need to check if this is a group, and if it does to show if the group is abelian and/or finite. Associativity - easy from Symmetric Difference. Identity element - empty group. Inverse element - each element is inverse to itself. Am I right? abelian? finite?","['group-theory', 'abstract-algebra']"
+267752,What exactly is a coset?,"If $G$ is a group and $H$ a subgroup of $G$, then the set $gH = \{gh \mid h \in H\} = \{g, gh_1, gh_2,\ldots\}$ is a ""left coset"" of $G$ wrt $H.$ So does this basically mean, that when I multiply some element of group $H$ on the left by some element from the group $G$, this is a left coset? Doing this multiple times with multiple elements from $G$ and $H$ will give me the set of left cosets? The same for right cosets. Why is this important then? If the cosets have a one to one relation (like in the Orbit Stabiliser theorem), does that imply a bijection? As one element from the group $G$ is mapped to only another element in $H$ and each of these ""outcomes"" are unique?","['group-theory', 'abstract-algebra']"
+267755,Suppose that a set has an odd number of elements. Explain why half of the subsets will have an odd number of elements,"Suppose that a set has an odd number of elements. Explain why half of the subsets will have an odd number of elements . Now assuming set A is the set with an odd number of integer elements{1,2,3,4,5} Subset b ={1,2} subset c={3} Subset d={4,5} Now there are two subsets with even number of elements and one subset with an odd number of elements.It seems to contradict the earlier theorem that i have to prove.I think that i am missing something.",['discrete-mathematics']
+267765,Complex integral prove,"$f(z)$ is analytic in the unit circle, and
+$u=\mathrm{Re}(f), v=\mathrm{Im}(f)$. Please prove that if $u(0)=v(0)$, then $\int_0^{2\pi}(u(re^{i\theta}))^2d\theta=\int_0^{2\pi}(v(re^{i\theta}))^2d\theta$
+for every $0<r<1$.","['complex-numbers', 'complex-analysis']"
+267769,numerical evaluation of an integral,"I have this integral: $$\int_{-1}^{1} \frac{e^x}{\sqrt{1-x^2}}\,dx$$ How can I get rid of the infinities at the ends of the interval so that I can evaluate this integral numerically? I tried to make some substitutions but didn't succeed.","['integration', 'numerical-methods']"
+267776,"Give an example of two closed sets $A, B \subseteq \mathbb{R}$ such that the set $A + B $ is not closed [duplicate]","This question already has answers here : Closed 11 years ago . Possible Duplicate: Sum of two closed sets in $\mathbb R$ is closed? Give an example of two closed sets $A, B \subseteq \mathbb{R}$ such that the set $A + B = \{a + b : a \in A, b \in B\}$ is not closed. This question appears on an old analysis qual I am studying. I know that both $A, B$ must be unbounded sets, because in an earlier part of the problem I have proved that $A + B$ is closed if either of the two sets are compact. The simplest unbounded and closed subset of $\mathbb{R}$ that I know is $\mathbb{Z}$. So I was starting with $A = \mathbb{Z}$, but I'm not yet able to come up with an appropriate $B$. Hints or solutions are greatly appreciated.",['analysis']
+267785,Intuition on base change of schemes,"Let $S=Spec(A)$ and $S'=Spec(B)$ be two affine schemes for some rings $A$ and $B$ such that there is a morphism of schemes $f:S'\rightarrow S$. For any $S$-scheme $X$, one can consider the fiber product $X\times_S S'$ of $X$ and $S'$ over $S$. If we assume that $X$ is given by a set of equations $(E)$ in $A$, what are the equations which define the $S'$-scheme $X\times_S S'$? is it the equations in $B$ which are obtained by applying to $(E)$ the morphism of rings induced by $f$ ? I can this be written properly? Another construction which is even more simple : assuming that $Y$ is an $S'$-scheme, $Y$ can be considered as an $S$-scheme via $Y\longrightarrow S'\longrightarrow S$ (composing by $f$). I have two questions about this construction : first in the same way i did for fiber products, is it possible to find the equations which define $Y$ as an $S$ variety from whose which define it as an $S'$ variety ? Finally something that seems reasonnable to me : $Z$ is an $S$-scheme, and you consider the fiber product $T=Z\times_S S'$ as an $S'$-scheme. Is the scheme $T$ consider as an $S$-scheme with the previous construction isomorphic to $Z$ as an $S$-scheme? I think its the case just because of the definition of the fiber product, but i would like to be sure.","['algebraic-geometry', 'schemes']"
+267786,The control of norm in quotient algebra,"Let $B_1,B_2$ be two Banach spaces and $L(B_i,B_j),K(B_i,B_j)(i,j=1,2)$ spaces of bounded and compact linear operator between them respectively. If $T \in L(B_1,B_1)$, we have a $S \in K(B_1,B_2)$ and a constant $c>0$ such that for any $v \in B_1$,$${\left\| {Tv} \right\|_{{B_1}}} \le c{\left\| v \right\|_{{B_1}}} + {\left\| {Sv} \right\|_{{B_2}}}.$$ My question is, can we find a $A \in K(B_1,B_1)$, such that ${\left\| {T - A} \right\|_{L({B_1},{B_1})}} \le c$?","['operator-theory', 'compact-operators', 'functional-analysis', 'banach-spaces']"
+267795,"Holomorphic function on the unit disk $f$, show the set $z,w\in \mathbb{C}$ such that $f(z)=f(w)$ is not countable","Here is the problem statement: Suppose $f$ is a holomorphic function on the unit disk. Show that the set $A=\lbrace (z,w) \in \mathbb{C}^2\;|\; |z|,|w| \leq \frac{1}{2}, z\neq w, f(z)=f(w)\rbrace$ is either finite or uncountably infinite. I'm pretty stuck, but here are some thoughts: The bound on the $z,w$ is a ltitle odd. The only thing I take away from it is that $|z+w| \leq |z| + |w| = 1$ so the sum stays in the closure of the disk. But this doesn't seem relevant. I tried to find a clever way to use the identity principle but I couldn't. For example, suppose to the contrary the set $A$ is countably infinite, then it is pointless to consider the function $g(z) = f(z) - f(w_0)$ for some $w_0 \in A$ since there doesn't need to be countably many $z_0$ matching up with $w_0$ in the sense $f(z_n) = f(w_0)$, only countably many pairs $z,w$ with the same images. I tried representing $f(z)$ as a power series centered at $z_0=0$:
+$$
+f(z) = \sum_{n=0}^\infty a_nz^n
+$$
+and then considering expressions like
+$$
+f(z_0) - f(w_0) = \sum_{n=0}^\infty a_n(z_0^n - w_0^n)
+$$
+to learn something about the coefficients but this didn't lead anywhere. I think there must be some slick solution but I can't see it, so I'd prefer hints rather than full solutions right now.","['analyticity', 'complex-analysis']"
+267805,$f$ is entire without any zeros then there is an entire function $g$ such that $f=e^g$,"$f$ is entire without any zeros then there is an entire function $g$ such that $f=e^g$ What I think is since $f$ do not have any zero for some bounded domain, I can define a branch of logarithm $(\log f)$ on that domain which will gives my desired result $f =e^{\log f}$. I don't know if I am doing it right? If this is right I don't know how do I argue $(\log f)$ is entire. Hint please.",['complex-analysis']
+267823,Image of function definition notation,"In my Linear Algebra and Geometry textbook, it defines the image of a linear transformation $T$ as: $$\operatorname{Im}\, (T) := \{\; w \in W : \; w=Tv \;\;\text{ for some } v \in V \} $$ As far as I can see, this is just the same as: $$\operatorname{Im} \, (T) := \{ \;Tv \in W : \;v \in V\}$$ Is there any difference in these definitions? If not, why is the first one used?","['notation', 'linear-algebra', 'transformation', 'functions']"
+267826,Properties of Cardinality and intersection,"I have three sets A, B and C satisfying the following conditions: $ \#(A\cap B) = 11$ $ \#(A\cap C) = 12$ $ \#(A\cap B\cap C) = 5$
+What is the minimun cardinality of A? What I did was this: (11 - 5) + (12 - 5) = 13. But I'm not sure if I have to substract the 5 twice or only once. And the fact that I don't know if B and C are disjoint gets me confused =/",['elementary-set-theory']
+267832,How to solve this differential equation for $y$ in terms of $x$ and $k$,$$yy'+\frac yx+k=0$$ How to solve this differential equation for $y$ in terms of $x$ and $k$ where $k$ is a parameter of $x$? $y(x)=y$ is a function and $x(k)=x$ is a gamma function,"['multivariable-calculus', 'ordinary-differential-equations']"
+267846,please solve a 2013 th derivative question?,"$ f(x) = 6x^7\sin^2(x^{1000}) e^{x^2} $ Find $ f^{(2013)}(0) $ A math forum friend suggest me to use big O symbol, however have no idea what that is, so how does that helping?","['asymptotics', 'sequences-and-series', 'ordinary-differential-equations', 'calculus']"
+267851,What do we lose if we only consider quasi-projective varieties?,"What do we lose if we only consider quasi-projective varieties? 
+What are merits of considering varieties which are not quasi-projective?",['algebraic-geometry']
+267859,Optimal distribution of points in a cone,"See https://gamedev.stackexchange.com/questions/46463/is-there-an-optimum-set-of-colors-for-10-players I think a good solution would be to distribute points in the HSV cone in such a way that they are as evenly spread as possible. I can calculate the sum of distances for all the points, and the find the maximum, but how to distribute the points? How to approach such a problem?",['geometry']
+267863,"For measurable $f_n : X \to [0, \infty)$ show that $\sum_{n=1}^\infty f_n < \infty$ almost everywhere","Let $f_n : X \to [0 \infty)$ be a sequence of measurable functions on the measure space $(X, \mathcal{F}, \mu)$. Suppose there is an $M > 0$ such that the functions $g_n = f_n\chi_{\{f_n \le M\}}$ satisfy $||g_n||_1 \le An^{-\frac{4}{3}}$ and for which $\mu\{f_n > M\} \le Bn^{-\frac{5}{3}}$. Here, $A$ and $B$ are positive constants independent of $n$. Prove that $h(x) = \displaystyle \sum_{n=1}^\infty f_n(x) < \infty$ for almost all $x \in X$.",['measure-theory']
+267865,Equations For Quadratic Regression,"Does anyone know the specific equations for the three parameters in a least-squares quadratic regression? I'm looking for something like $\beta_1=,\beta_2=,\beta_3=$ for each of $y=\beta_1+\beta_2x+\beta_3x^2$. To be clear, the right side of each of these equations should be evaluateable, using the data, to find the parameter. I was able to find the equations for linear regression on line, but google hasn't turned anything up for this. Thanks in advance","['statistics', 'regression']"
+267879,$\lim_{n\rightarrow \infty } \int_{a}^{b}g_{n}(x)\sin (2n\pi x)dx=0$ where $g_{n}$ is uniformly Lipschitz,"Let {$g_{n}$}be a bounded sequence of functions on $[0,1]$ which is uniformly Lipschitz. That is, there is a constant $M$ (independent of $n$) such that for all $n$, $|g_{n}(x)-g_n(y)|\leq M|x-y|$
+for all $x,y\in [0,1]$ and $|g_{n}(x)|\leq M$ for all $x\in [0,1]$.
+Then I have the following two questions: (a) prove for all any $0\leq a\leq b\leq 1$,
+$$\lim_{n\rightarrow \infty } \int_{a}^{b}g_{n}(x)\sin (2n\pi x)\,dx=0. $$
+(b) prove that for any $f\in L^{1}[0,1]$,
+$$\lim_{n\rightarrow \infty } \int_{0}^{1}f(x)g_{n}(x)\sin (2n\pi x)\,dx=0.$$","['measure-theory', 'real-analysis']"
+267880,Order of automorphism group of cyclic group [closed],"Closed. This question does not meet Mathematics Stack Exchange guidelines . It is not currently accepting answers. Please provide additional context , which ideally explains why the question is relevant to you and our  community. Some forms of context include: background and motivation, relevant definitions, source, possible strategies, your current progress, why the question is interesting or important, etc. Closed 4 years ago . Improve this question Let $G$ be a cyclic group of order $m$. What is the order of $\text{Aut}(G)$? I want to know the proof as well (elementary if possible). I would still accept the proof if one answers with $m = p$, a prime. Or on top of that, I would accept the answer with extra assumption: $q \equiv 1$ mod $p$ with another prime $p$.","['cyclic-groups', 'automorphism-group', 'group-theory', 'abstract-algebra']"
+267904,Examples of unusual group operations from outside of group theory.,"Although it is certainly important to study frequently seen group operations like permutations, function composition, word operations, and so on, I find it fascinating to see group structure applied in strange and complicated ways to other disciplines. Lately MSE has got me looking at the group of functions $f:\mathbb{N}\rightarrow \mathbb{C}$ with $f(1)\not= 0$ under the Dirichlet product $\star$ given by $$(f\star g)(n)=\sum_{ab=n}f(a)g(b).$$
+I think this is a great example of an unusual group operation.  I don't usually get into this type of arcane number theoretic stuff and never would have thought to look at this type of structure myself. What are some other examples of obscure group operations I may not have heard of?","['big-list', 'group-theory', 'abstract-algebra']"
+267910,Sum $\cos x + \cos 2x + \cdots + \cos (n-1)x.$ [duplicate],"This question already has answers here : Evaluation of $ \sum_{k=0}^n \cos k\theta $ (2 answers) Closed 10 years ago . Find the sum of the series $$\cos x + \cos 2x + \cdots + \cos (n-1)x.$$
+You must calculate the sum of this series only by multiplying through by $2\sin\left(\frac{x}{2}\right)$. Now I've heard of finding the sum of a trig series by finding real and imaginary parts etc., but I have no idea how to do it this way.","['trigonometry', 'summation', 'sequences-and-series']"
+267926,"Laplacians, Diagonal Perturbations","Setup: Consider a Laplacian (or Kirchoff) matrix $L = L^T \in \mathbb{R}^{n \times n}$ corresponding to a weighted, undirected and connected graph. That is, a matrix with $L_{ij} \leq 0$ for $i\neq j$ and $L_{ii} = -\sum_{j=1}^n L_{ij} > 0$. So $L$ has zero row sum, and is positive semidefinite with a simple eigenvalue at $0$. It's well known that if you add a small positive (resp. negative) amount to any diagonal element of $L$, the zero eigenvalue is pushed into the right (resp. left) half plane. Question: Consider a diagonal but indefinite matrix $B = \mathrm{diag}(b_{11},\ldots,b_{nn})$. What are sufficient conditions on $B$ such that $L + B$ is positive definite? What I know: Obviously if $B$ was positive semi-definite the result would follow. I've found cases where a small negative $b_{ii}$ cannot be compensated for by a sufficiently large $b_{jj}$, so a condition of the form $Trace(B) >\!\!> 0$ won't work. A Guess: Any negative element added at node $i$ must be corrected for with a positive addition at a (or several) nodes which are ""sufficiently connected"" in the graph to node i. Thoughts appreciated!
+-John","['spectral-graph-theory', 'linear-algebra', 'algebraic-graph-theory']"
+267927,Power set difference on the same set.,"I've been arguing about the following expression:
+Given the following set $ S := \{1,2,3,4,5\}$ evaluate the expression:
+$$ \wp S - S = $$ I think that the result is 
+$$\wp S - S = \wp S $$ Because $\wp S$ and $S$ don't have elements in common. Am I right?",['elementary-set-theory']
+267941,"Find all entire functions $f$ such that for all $z\in \mathbb{C}$, $|f(z)|\ge \frac{1}{|z|+1}$","Find all entire functions $f$ such that for all $z\in \mathbb{C}$, $|f(z)|\ge \frac{1}{|z|+1}$ This is one of the past qualifying exams that I was working on and I think that I have to find the function that involved with $f$ that is bounded and use Louiville's theorem to say that the function that is found is constant and conclude something about $f$. I can only think of using $1/f$ so that $\frac{1}{|f(z)|} \le |z|+1$ but $|z|+1$ is not really bounded so I would like to ask you for some hint or idea. Any hint/ idea would be appreciated. Thank you in advance.",['complex-analysis']
+267943,Proof that an infinite product of discrete spaces may not be discrete,"I am trying to prove that an infinite product of discrete spaces may not be discrete.  I tried taking the simplest nontrivial discrete space, $X:=\{0,1\}$ with the discrete topology, and tried to find a sequence of $0$s and $1$s in $\displaystyle\prod_{i=1}^\infty X_i$ that can't be produced by taking intersections of preimages of open sets in the factor spaces under the projection maps, but couldn't come up with anything. Is this a good approach, or is this actually too simple of an example? How would you go about solving this problem?  I'd be interested in hearing the thought process behind the proof as well.  Thanks.",['general-topology']
+267946,"How can I tell if dice are biased or unbiased, given a number of trials?","If I'm given the outcome of a number of dice rolls (say, 5 twos, 8 threes, etc), is there a way to assign a probability that the dice are biased or unbiased?  If so, how? Or alternatively, how can I say with a given level of confidence that the dice are biased or unbiased?  I'm not even sure if these are the same question.",['statistics']
+267947,How to derive function for least square?,"i want to use least square to find x and y that minimize the result of the following function for a series of points (xi,yi) -> (x1,y1), (x2,y2),...: note: y = f(x) E(x,y) = SUM  (y - ((mi*x) - (mi*xi)))^2
+          i    --------------------
+                    1 + |mi|^2 where ""mi"" is the slope of f(xi, yi) now my math is very rusty, and i think to use least square to find x and y that minimize the function above i need to find the derivative of the function above in respect to x and y independently where the derivative of each is equal to 0. can someone please show me how to perform derivation on the above function in respect to x and y please? thanks! edit: I did check a few examples on the web, such as the one given below by potato, but here is where i have difficulty: these examples always look for m and b , thing is in my case, i already have m and b, what i need is the x that will give the best curve. in short, the curve im looking for has to be a point on the function f(x) with the optimized slope. This is due to my own shortcomings in calculus, but all examples give are only numerators, but the example i have above contains a denominator. Can someone help me understand how to derive with a denominator please? thanks!","['optimization', 'derivatives']"
+267957,Explicit solution of a linear SDE,"I'd like an explicit formula as a function of $W_t$ (standard Brownian motion) and $\lambda >0$ for the solution of the following SDE: $$\mathrm dX_t = \mathrm dW_t - \lambda X_t \,\mathrm dt$$ Someone could help me please?","['stochastic-processes', 'stochastic-integrals', 'stochastic-calculus', 'probability', 'stochastic-differential-equations']"
+267964,A question on a compact space [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 5 years ago . Improve this question Show: If the closure of every discrete subset of a space is compact then the whole space is compact. Thanks advance:)","['general-topology', 'compactness']"
+267966,Localization of a UFD that is a PID,"Let $R$ be a UFD and $r\in R$ irreducible. If $S=R-(r)$, why is $S^{-1}R$ a PID? I've finished proving the integral domain part, which was pretty easy. How to prove it's principal? consider $R \subset S^{-1}R \subset F$, where $F$ is the field of fractions of $R$? thank you! :p","['commutative-algebra', 'abstract-algebra']"
+267982,Funny problem about stochastic integrals and Ito' s lemma,"Consider a probability filtred space  $ (\Omega, \mathcal F, \mathcal F_ t, \mathbb P)$ and a continuous $\mathcal F _t$-martingal starting from $0$, $ M = (M_t)_{t \geq 0}$, such that $\left \langle M \right \rangle_\infty \leq 1$ $\mathbb P$-ps.
+Now, we define by recurence $ \forall n \in \mathbb{N}$
+$$  I^{(o)}_t \equiv  1, \ I^{(n+1)}_t = \int _0 ^t I^{(n)}_s d M_s \ , \ t \geq 0 $$ The question: How to show the following relation ? $$ \forall n \geq 2 :  \ \ n I ^{(n)}_t = I ^{(n-1)}_t M_t - I ^{(n-2)}_t \left \langle M \right \rangle_t$$ Elements of answer: Let's suppose by induction hypothesis that $(n -1) I ^{(n-1)}_t = I ^{(n-2)}_t M_t - I ^{(n-3)}_t \left \langle M \right \rangle_t$ By Ito's lemma, we have that \begin{align} I ^{(n-1)}_t M_t &=  \int _0 ^t  I ^{(n-1)}_s dM_s+  \int _0 ^t   M_s \ d I ^{(n-1)}_s + \left \langle I ^{(n-1)},M \right \rangle_t 
+\\& =I ^{(n)}_t +\int _0 ^t   M_s \ I ^{(n-2)}_s  d M_s+ \int _0 ^t    \ I ^{(n-2)}_s  \ I ^{(0)}_s d \left \langle M \right \rangle_s
+\\&=  I ^{(n)}_t +\int _0 ^t  \left[ (n -1) I ^{(n-1)}_t+ I ^{(n-3)}_t \left \langle M \right \rangle_t\right]  d M_s+ \int _0 ^t    \ I ^{(n-2)}_s  \ I ^{(0)}_s d \left \langle M \right \rangle_s
+\\& = nI ^{(n)}_t + \int _0 ^t   I ^{(n-3)}_t \left \langle M \right \rangle_t  d M_s+ \int _0 ^t    \ I ^{(n-2)}_s  \ I ^{(0)}_s d \left \langle M \right \rangle_s
+\\ & \overset{\text{Ito's lemma}}{=} nI ^{(n)}_t +I ^{(n-2)}_t \left \langle M \right \rangle_t -\left \langle I ^{(n-2)},\left \langle  M \right \rangle\right\rangle_t\end{align} which is almost the proof except the fact that I still don't know how to show that 
+ $$\left \langle I ^{(n-2)},\left \langle  M \right \rangle\right\rangle_t=0$$ Someone can help me on it, please?","['stochastic-calculus', 'stochastic-processes', 'stochastic-integrals', 'probability']"
+267984,supremum of a multivariable function,"Here is a question that I have been working on but having trouble with. Let $f(x)=e^{-|x|^2}$, where $x \in \mathbb{R}^n$ and $|x|$ the usual euclidean norm of $x$. Prove that for every $\epsilon >0$ there is a positive number $M$ such that $g(x,y):=f(x)g(y)|x-y|^2 < \epsilon$ whenever $|x|^2+|y|^2 >M$.
+I showed this Using the fact that $e^{-|x|^2}$ goes to zero as norm of $x$ goes to infinity. But I'm having trouble with the 2nd and 3rd part of the question. Show that $S:=\sup_{x,y\in \mathbb{R}^n}f(x)f(y)|x-y|^2$ is attained at some point in $\mathbb{R}^n \times \mathbb{R}^n$. Determine the value of S.",['multivariable-calculus']
+267990,$1/|x|^n$ is not integrable,"Let $\mu $ be a positive Borel measure on $%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}$ such that $\mu \left( B\left( a,r\right) \right) \leq Cr^{n}$ for some 
+$n\in (0,d]$ and for any ball $B\left( a,r\right) $ in $%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}$. Could you help me to prove that $\int_{%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}}\frac{1}{\left\vert x\right\vert ^{n}}d\mu \left( x\right) =\infty $? My effort: $\int_{%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}}\frac{1}{\left\vert x\right\vert ^{n}}d\mu \left( x\right) \geq \int_{%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}\backslash B\left( 0,1\right) }\frac{1}{\left\vert x\right\vert ^{n}}%
+d\mu \left( x\right) =\sum_{k=0}^{\infty }\int_{B\left( 0,2^{k+1}\right)
+\backslash B\left( 0,2^{k}\right) }\frac{1}{\left\vert x\right\vert ^{n}}%
+d\mu \left( x\right) \geq \sum_{k=0}^{\infty }\frac{1}{\left(
+2^{k+1}\right) ^{n}}\mu \left( B\left( 0,2^{k+1}\right) \backslash B\left(
+0,2^{k}\right) \right) $.","['measure-theory', 'harmonic-analysis', 'real-analysis']"
+267991,Differences between the Borel measure and Lebesgue measure,I'm having difficult time in understanding the difference between the Borel measure and Lebesgue measure. Which are the exact differences? Can anyone explain this using an example?,['measure-theory']
+267993,Cardinality of a power set,"I was enumerating the elements of the power set of this set $S:= \{1,2,3,4,5\}$ and I thought that the number of these elements could be obtained with this:
+$$\#\wp S = 1 + \sum_{k=1}^n {n\choose k}$$
+where $n=\#S$ I saw that it holds for this set. But I'm not sure what if it could be applied to a different kind of set.",['elementary-set-theory']
+267996,Measure space with full support,"When a measure space is said to be with full support, what does this mean? Wikipedia provides information for other types of support, but not this one.",['measure-theory']
+268002,Gelfand-Naimark Theorem,"The Gelfand–Naimark Theorem states that an arbitrary C*-algebra $ A $ is isometrically *-isomorphic to a C*-algebra of bounded operators on a Hilbert space. There is another version, which states that if $ X $ and $ Y $ are compact Hausdorff spaces, then they are homeomorphic iff $ C(X) $ and $ C(Y) $ are isomorphic as rings. Are these two related anyway?","['general-topology', 'functional-analysis', 'c-star-algebras', 'operator-theory']"
+268006,Is there an intermediate value theorem for linear functionals?,"Suppose that $ (A,\Sigma,m) $ is a measure space and $ H $ is a linear functional on $ {L^{\infty}}(A,\Sigma,m) $. If
+$$
+\mathcal{U} := \left\{ u: A \to \mathbb{R} ~ \Bigg| ~ \text{$ u $ is measurable, bounded and $ \int_{A} u ~ d{m} = 1 $} \right\}
+$$
+and there are functions $ u_{1},u_{2} \in \mathcal{U} $ such that
+$$
+H(u_{1}) \leq 0 \quad \text{and} \quad H(u_{2}) \geq 0,
+$$
+then my question is: Is there a function $ u_{3} \in \mathcal{U} $ such that $ H(u_{3}) = 0 $?","['general-topology', 'measure-theory', 'functional-analysis', 'real-analysis']"
+268015,Evaluation map is not continuous always.,"Let $E$ be a not normable locally convex space, define 
+$$F: E'\times E\to \mathbb R$$
+$$(f,e)\to f(e)$$
+I have to show that $F$ is not continuous when $E'\times E$ is given product topology. I was reading an article and i came across with this fact.. Please give me atleast a hint to start.. My try:  I know that $E$ is normable if and only if origin has a convex bounded neighborhood.  So i was trying to produce any such neighborhood to contradict to assumption.  Assume $F$ is continuous, then we have
+$\{(f,e): a<f(e)<b\}$ is open in product topology of $E'\times E$, for any $a,b\in \mathbb R$. This means there is some open set $U'$ in $E'$ and $U$ in $E$ such that
+$$U'\times U\subset \{(f,e): a<f(e)<b\}$$ Now let
+$V:=\{e\in E: a<f(e)<b;\forall f\in U'\}$, this is open convex neighborhood of origin, but how to prove this is bounded.   Or we have any other way to produce such a neighborhood. Thanks for your time.","['topological-vector-spaces', 'locally-convex-spaces', 'functional-analysis']"
+268022,"What does this notation mean: $\displaystyle\lim_{\leftarrow} \,\mathbb{Z}/n\mathbb{Z}$?",Just a small notation question from this Wikipedia page : The absolute Galois group of a finite field $K$ is isomorphic to the group  $$\hat{\mathbb{Z}}=\lim_{\leftarrow} \mathbb{Z}/n\mathbb{Z}.$$ What does the $\displaystyle\lim_{\leftarrow}$ part mean?  Why is it written like that?,"['notation', 'finite-fields', 'galois-theory', 'group-theory', 'field-theory']"
+268029,trace of the matrix $I + M + M^2$ is,"Let $ \alpha = e^{\frac{2\pi \iota}{5}}$  and the matrix 
+  $$ M= \begin{pmatrix}1 & \alpha & \alpha^2 & \alpha^3 & \alpha^4\\ 
+0 & \alpha & \alpha^2 & \alpha^3 & \alpha^4\\
+0 & 0 & \alpha^2 & \alpha^3 & \alpha^4 \\
+0 & 0 & 0 & \alpha^3 & \alpha^4\\
+ 0 & 0 & 0 & 0 & \alpha^4 \end{pmatrix}$$ Then the trace of the  matrix $I + M + M^2$ is $-5$; $0$; $3$; $5$. I am stuck on this problem. Can anyone help me please? I got trace of the matrix $$\operatorname{tr}(I+M+M^2) = 7 + \alpha + 2  \alpha^2   + \alpha^3 + 2 \alpha^4 + \alpha^6 +\alpha^8.$$ Now what to do?","['matrices', 'linear-algebra']"
+268047,explicit formula for coefficients of Laurent series,"Give an explicit formula for the coefficients of the Laurent series on $A:=\{z: |z|>1\}$ for the function $g(z)=\frac{e^z}{z-1}$. I know how to  go about finding the Laurent series, using the geometric series for $\frac{1}{1-z}$. But how do I obtain an explicit formula for ALL the coefficients?. I have seen some earlier posts,but I am not entirely clear on their work. Can we use the coefficient formula in the Laurent series expansion and then use Cauchy's formula?. Any help is appreciated.","['residue-calculus', 'complex-analysis']"
+268050,Integral of involving Airy function without using its antiderivative,"Inspired by my answer to this question , I am interested in evaluating the following definite integral
+$$ \frac{1}{2\pi i} \int_{c-i \infty}^{c+i\infty} \frac{dz}{\mathop{\rm Ai}^2(z)} =1 $$
+without using its antiderivate.
+ At first, it seems we need to have $c\geq 0$ but as I will point out below, any $c\in\mathbb{R}$ such that $\mathop{\rm Ai}(c) \neq 0$ will give the same result. The integral can be solved using the antiderivative $ \frac{\pi\mathop{\rm Bi}(z)}{\mathop{\rm Ai}(z)}$ together with the well-known asymptotic expansion for Ai and Bi as I pointed out in the answer to the question. All the zeros of the Airy function lie on the negative real axis. 
+The curious fact why the above mentioned result holds for almost all $c$ is that all the residues at the corresponding poles of $\mathop{\rm Ai}^{-2}(z)$ vanish. The reason is that due to Airy's differential equation $\mathop{\rm Ai}''(z) - z \mathop{\rm Ai}(z) =0$ every zero of Ai comes together with a vanishing second derivative. Thus for any pole $z^*$ of $\mathop{\rm Ai}^{-2}(z)$ we have
+$$ \frac{1}{\mathop{\rm Ai}^{2}(z)} =\frac{1}{[\alpha (z- z^*) + \mathcal{O}(z-z^*)^3 ]^2} = \frac{1}{\alpha^2 (z- z^*)^2} + \mathcal{O}(1) $$
+and the residue vanishes. My question is if/how the definite integral can be solved without resorting to the antiderivative?","['definite-integrals', 'complex-analysis', 'contour-integration']"
+268064,move a point up and down along a sphere,"I have a problem where i have a sphere and 1 point that can be anywhere on that sphere's surface. The Sphere is at the center point (0,0,0). I now need to get 2 new points, 1 just a little below the and another little above this in reference to the Y axis. If needed or simpler to solve, the points can be about 15º above and below the original point, this viewing the movement on a 2D circle. Thank you in advance for any given help. EDIT: This is to be used on a world globe where the selected point will never be on the top or bottom. EDIT: I'm using the latitude and longitude suggested by rlgordonma and user1551 what I'm doing is adding and subtracting a fixed value to ϕ These 2 apear correctly, at least they apear to look in place: 
+The original point is in the middle of the 2 bars.
+The sphere has R=1 all the coords i'm putting here are rounded because they are to big (computer processed) coord: (0.77, 0.62, 0,11) coord: (0.93, -0.65, 0.019) these don't: coord: (-0.15, 0.59, 0.79) coord: (-0.33, 0.73, -0.815) there are other occasions for both but i didn't want to put all here. calcs: R = 1
+    φ = arctan(y/x)
+    θ = arccos(z/1)
+//to move up only one is used
+    φ = φ + π/50
+//to move down only one is used
+    φ = φ - π/50
+
+    (x,y,z)=(sinθ cosφ, sinθ sinφ, cosθ)","['geometry', '3d', 'coordinate-systems']"
+268079,"Maximum Value of the function $f(x)=x^n(1-x)^n$ for a natural number $n \geq1$ and $x\in[0,1]$.","I need some help with the following problem. How, I can find the, Maximum Value of the function $f(x)=x^n(1-x)^n$ for a natural number $n \geq1$ and $x\in[0,1]$.",['calculus']
+268091,Is there a counterexample to this weakened converse of Hall's theorem?,"Suppose that a finite group $G$ contains a Hall $\{p,q\}$-subgroup for every pair of prime divisors $p,q$ of $|G|$.  Does it follow that $G$ is solvable?","['examples-counterexamples', 'simple-groups', 'finite-groups', 'reference-request', 'group-theory']"
+268104,Fourier transform as a Gelfand transform,One question came to my mind while looking at the proof of Gelfand-Naimark theorem. Is Fourier transform a kind of Gelfand transform? Are there any other well-known transforms which are so?,"['operator-theory', 'banach-algebras', 'fourier-analysis', 'functional-analysis']"
+268108,two problems on complex analysis,"1.Pick out the true statements: a. Let $f$ and $g$ be analytic in the disc $|z| < 2$ and let $f = g$ on the interval
+[$−1, 1$]. Then$ f ≡g$. b. If $f$ is a non-constant polynomial with complex coefficients, then it can be factorized into (not necessarily distinct) linear factors. c. There exists a non-constant analytic function in the disc $|z| < 1$  which assumes only real values. 2.Let  $\omega⊂\mathbb{C}$ be an open and connected set and let $f : \omega →\mathbb{C} $ be an analytic function. Pick out the true statements: a. f is bounded if $\omega$ is bounded. b. f is bounded only if $\omega$ is bounded. c. f is bounded if, and only if, $\omega$ is bounded for the 1 st question By fundamental theorem of algebra we can say that (b) is true.
+For (a) I am little confused that am I able to apply identity theorem or not.
+For (c) by applying Cauchy Riemann equation we get  it is false. Are my approaches correct? for the 2nd question here I am little confused. I guess none of them is correct but not sure.can anyone provide me some counter examples",['complex-analysis']
+268145,"Evaluate $\sum_{n=1}^\infty 1/n^2$ using $\int_0^1 \int_0^1 \frac{\mathrm{d}x \, \mathrm{d}y}{1-xy}$","This paper http://math.ucsb.edu/~cmart07/Evaluating%20Integrals.pdf hints at a way to compute the sum $$ \sum_{n=1}^\infty \frac{1}{n^2} $$ by expanding it into the double integral $$\int_0^1 \int_0^1 \frac{\mathrm{d}x \, \mathrm{d}y}{1-xy}.$$ Now for solving this integral, the paper suggests rotating the area $[0,1]^2$ by $45^\circ$ for then to rewrite it in polar coordinates. I have made a sketch of the area below, but I am having problems rewriting the integral in polar coordinates. Dissregarding the function I was thinking the limits would have to be $$\int_{-\pi/4}^{\pi/4} \int_0^{\sqrt{\cos^4\theta + (\sqrt{2}-\cos^2\theta)^2}}r \,\mathrm{d}r\,\mathrm{d}\theta$$
+but the upper limit is wrong for the radius. Hmm... I was basically finding the distance from the function $f(x) = \sqrt{2}-x$ to origo, then converting this to polar.. Any help computing the sum using the double integral transform would be very appreceated.
+I already know several methods for computing the bessel identity, however this one stumped me.","['summation', 'integration']"
+268149,computing with unitary matrices,"I am currently working on a problem and I am stuck with the following issue. For $A \in GL(n)$ and $B \in U(n)$ I am hoping that it is true that $$ A(B-A)^{-1}B = B(B-A)^{-1}A $$ My question is whether this is indeed the case and if so what I need to look into to understand why. ( I just assume for the moment that $B - A$ has an inverse ) PS:
+Just to give some context I am stuck with this issue because I am playing around with the kernel that I have computed for the operator $$ D := i \;I\frac{d}{dx} + B(x) : C^\infty_T ([0,1],\mathbb{C^m}) \to C^\infty_T ([0,1],\mathbb{C^m})$$ with boundary condition $f(1) = T f(0)$ for $T \in U(n)$ and $B$ Hermitian. I am currently trying to show that $L_T \;f(1) = T L_T \; f(0)$ where $L_T$ is the integral operator given by the kernel that I have computed for $D$. In order for things to work out I have to show that $$ p(1)(T-p(1))^{-1}T = T(T-p(1))^{-1}p(1)$$ where $p$ is assumed to conjugate $D$ to $-ip^{-1}Dp=D^p = \frac{d}{dx}I$","['matrices', 'linear-algebra']"
+268150,Lebesgue integration: $f = g$ a.e. $ \Rightarrow \int_\Omega f = \int_\Omega g$,"Let $f,g : \Omega \subseteq \mathbb R^n \rightarrow [0,+\infty]$ be measurable functions with $f(x) = g(x)$ a.e. . Then I have to show that $\int_\Omega  f = \int_\Omega g$. I may not assume that $\int_\Omega (f+g) = \int_\Omega f + \int_\Omega g$. This task is from Tao Proposition 19.2.6.","['measure-theory', 'real-analysis']"
+268153,"$A$ and $B$ are $3\times 3$ real matrices such that $\operatorname{rank}(AB)=1$, then $\operatorname{rank}(BA$) can not be which of the following?","I was thinking about the problem that says: If $A$ and $B$ are $3\times 3$ real matrices such that $\operatorname{rank}(AB)=1$, then $\operatorname{rank}(BA)$ can not be which of the following? (a) $0$ (b) $1$ (c) $2$ (d) $3$. My attempt: I have chosen suitable $3 \times 3 $ matrices for $A$ and $B$ keeping in mind that $\operatorname{rank}(AB)=1$. Say for example if I take $A$ and $B$ to be 
+$$A = \begin{pmatrix}
+1 &2  &0 \\ 
+0 & 0 &0 \\ 
+0 & 0 &0 
+\end{pmatrix}$$ 
+and 
+$$B = \begin{pmatrix}
+-2 &1  &0 \\ 
+1 & 0 &0 \\ 
+0 & 0 &0 
+\end{pmatrix}$$ respectively, then I see $\operatorname{rank}(AB) = \operatorname{rank}(BA) = 1$. So, option (b) can not be correct. Do I have to keep choosing the matrices and then observe which of the option holds good. Is this kind of approach right to tackle the problem? I am looking for a direct way (e.g. application to some theorem) which can give me the result. I have also noticed that $AB$ and $BA$ are similar matrices as we see that $A^{-1}(AB)A=BA$. Is this observation going to help me in any way? Thanks in advance for your time.","['matrices', 'linear-algebra']"
+268159,Möbius function from random number sequence,"Consider some arbitrary number sequence like the decimal expansion of $\pi$ = {3, 1, 4, 1, 5, 9, 2}. Prepend the sequence with the number $1$ so that you get {1, 3, 1, 4, 1, 5, 9, 2}. Then plug it into the first column in a matrix that has the following recurrence definition: $$\begin{align}
+T(n,1) &= (n-1)\text{th digit of }\pi, \\
+T(n,2) &= T(n,1) - T(n-1,2), \\
+\text{for } k>2, T(n,k) &= \sum\limits_{i=1}^{k-1} T(n-i,k-1)-\sum\limits_{i=1}^{k-1} T(n-i,k)
+\end{align}
+$$ That table looks like this: $$\displaystyle \left(
+\begin{array}{cccccccc}
+ 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ 3 & 3 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ 1 & -2 & 3 & 0 & 0 & 0 & 0 & 0 \\
+ 4 & 6 & -2 & 3 & 0 & 0 & 0 & 0 \\
+ 1 & -5 & 3 & -2 & 3 & 0 & 0 & 0 \\
+ 5 & 10 & 0 & 3 & -2 & 3 & 0 & 0 \\
+ 9 & -1 & 2 & -3 & 3 & -2 & 3 & 0 \\
+ 2 & 3 & 7 & 7 & -3 & 3 & -2 & 3
+\end{array}
+\right)$$ Then calculate the matrix inverse of the matrix above: $$\displaystyle \left(
+\begin{array}{cccccccc}
+ 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ -1 & \frac{1}{3} & 0 & 0 & 0 & 0 & 0 & 0 \\
+ -1 & \frac{2}{9} & \frac{1}{3} & 0 & 0 & 0 & 0 & 0 \\
+ 0 & -\frac{14}{27} & \frac{2}{9} & \frac{1}{3} & 0 & 0 & 0 & 0 \\
+ -1 & -\frac{1}{81} & -\frac{5}{27} & \frac{2}{9} & \frac{1}{3} & 0 & 0 & 0 \\
+ 1 & -\frac{146}{243} & -\frac{28}{81} & -\frac{5}{27} & \frac{2}{9} & \frac{1}{3} & 0 & 0 \\
+ -1 & -\frac{688}{729} & -\frac{11}{243} & -\frac{1}{81} & -\frac{5}{27} & \frac{2}{9} & \frac{1}{3} & 0 \\
+ 0 & \frac{694}{2187} & -\frac{850}{729} & -\frac{92}{243} & -\frac{1}{81} & -\frac{5}{27} & \frac{2}{9} & \frac{1}{3}
+\end{array}
+\right)$$ Why then is there the Möbius function sequence in the first column? I have checked this for random sequences in programs like this: (*Mathematica*)
+Clear[t, n, k, a, b];
+nn = 8;
+a = Flatten[{1, RealDigits[N[Pi, nn - 1]][[1]]}]
+Length[a]
+t[n_, 1] := t[n, 1] = a[[n]];
+t[n_, k_] := 
+  t[n, k] = 
+   If[And[n > 1, k > 1], 
+    If[k == 2, t[n, k - 1] - t[n - 1, k], 
+     Sum[t[n - i, k - 1], {i, 1, k - 1}] - 
+      Sum[t[n - i, k], {i, 1, k - 1}]], 0];
+A = Table[Table[t[n, k], {k, 1, nn}], {n, 1, nn}];
+MatrixForm[A]
+MatrixForm[Inverse[A]] for up to 100 times 100 matrices and I always get the Möbius function in the first column. I believe it has something do with the fact that the divisibility matrix equal to 1 if k divides n and 0 otherwise: $$\displaystyle \left(
+\begin{array}{cccccccccccc}
+ 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ 1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ 1 & 1 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+ 1 & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+ 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+ 1 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+ 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+ 1 & 1 & 1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1
+\end{array}
+\right)$$ satisfies the recurrence, that (edit 21.7.2014) Jeffrey Shallit formulated for me: $$\begin{align}
+T(n,1) &= 1, \\
+\text{for } k>1, T(n,k) &= \sum\limits_{i=1}^{k-1} T(n-i,k-1)-\sum\limits_{i=1}^{k-1} T(n-i,k)
+\end{align}$$ and also the recurrence: $$\begin{align}
+T(n,1) &=1, \\ 
+T(n,2) &= T(n,1)-T(n-1,2),\\
+\text{for } k>2, T(n,k) &= \sum\limits_{i=1}^{k-1} T(n-i,k-1) -\sum\limits_{i=1}^{k-1} T(n-i,k)
+\end{align}$$
+which is the same as the first recurrence in the beginning of the question except that the first column here is equal to 1,1,1... Edit 28.3.2014: (*Mathematica Mats Granvik 28.3.2014*)
+Clear[A, t, n, k, a, nn];
+nn = 8;
+a = Table[StringJoin[{""x"", ToString[n]}], {n, 1, nn}]
+Length[a]
+t[n_, 1] := t[n, 1] = a[[n]];
+t[n_, k_] := 
+  t[n, k] = 
+   If[And[n > 1, k > 1], 
+    If[k == 2, t[n, k - 1] - t[n - 1, k], 
+     Sum[t[n - i, k - 1], {i, 1, k - 1}] - 
+      Sum[t[n - i, k], {i, 1, k - 1}]], 0];
+A = Table[Table[t[n, k], {k, 1, nn}], {n, 1, nn}];
+MatrixForm[A]
+MatrixForm[a[[1]]*Inverse[A]] Outputs: 1,-1,-1,0,-1,1,-1,0,... Edit 7.4.2013: Input:
+{""x0"", ""x1"", ""x2"", ""x3"", ""x4"", ""x5"", ""x6"", ""x7"", ""x8"", ""x9"", ""x10""} Mathematica program: (*Mathematica Mats Granvik 7.4.2014*)
+Clear[A, t, n, k, a, nn];
+nn = 11;
+a = Table[StringJoin[{""x"", ToString[n - 1]}], {n, 1, nn}]
+Length[a]
+t[n_, 1] := t[n, 1] = If[n <= 3, 1, a[[n]]];
+t[n_, k_] := 
+  t[n, k] = 
+   If[n >= k, 
+    If[n <= 3, 1, 
+     If[And[k > 1], 
+      If[Or[k == 2, k == 3], 
+       t[n, k - 1] - Sum[t[n - i, k], {i, 1, k - 1}], 
+       If[k >= 4, 
+        Sum[t[n - i, k - 1], {i, 1, k - 2}] - 
+         Sum[t[n - i, k], {i, 1, k - 1}], 0], 0], 0, 0], 0], 0];
+A = Table[Table[t[n, k], {k, 1, nn}], {n, 1, nn}];
+MatrixForm[A]
+Inverse[A][[2 ;; nn, 1]] Output;
+{-1, 0, -1, -1, -2, -1, -2, -2, -2, -1} Which is the Mertens function with the first term negated. Edit 21.7.2014: The matrix inverse of this triangle: $$\left(
+\begin{array}{cccccc}
+ x_1 & 0 & 0 & 0 & 0 & 0 \\
+ x_2 & x_2 & 0 & 0 & 0 & 0 \\
+ x_3 & x_3-x_2 & x_2 & 0 & 0 & 0 \\
+ x_4 & x_2-x_3+x_4 & x_3-x_2 & x_2 & 0 & 0 \\
+ x_5 & -x_2+x_3-x_4+x_5 & x_4-x_3 & x_3-x_2 & x_2 & 0 \\
+ x_6 & x_2-x_3+x_4-x_5+x_6 & x_2-x_4+x_5 & x_4-x_3 & x_3-x_2 & x_2
+\end{array}
+\right)$$ gives the möbius function function divided by $x_1$. Edit 24.7.2014: (*Program start*)
+(*Mathematica Mats Granvik 24.7.2014*)
+Clear[A, t, n, k, a, nn];
+nn = 32;
+Print[""Random numbers as input:""]
+a = RandomReal[7, nn]
+Length[a];
+t[n_, 1] := t[n, 1] = a[[n]];
+t[n_, k_] := 
+  t[n, k] = 
+   If[And[n > 1, k > 1], 
+    If[k == 2, t[n, k - 1] - t[n - 1, k], 
+     Sum[t[n - i, k - 1], {i, 1, k - 1}] - 
+      Sum[t[n - i, k], {i, 1, k - 1}]], 0];
+A = Table[Table[t[n, k], {k, 1, nn}], {n, 1, nn}];
+MatrixForm[A];
+B = a[[1]]*Inverse[A];
+Print[""Möbius function as output:""]
+MatrixForm[B];
+Chop[B[[All, 1]]]
+(*program end*)","['matrices', 'recurrence-relations', 'elementary-number-theory', 'mobius-function']"
+268166,Hilbert symbol over a ring,"Normally the Hilbert symbol over a field $\mathbb{F}$ is defined for $a,b\in\mathbb{F}^*$ as follows: $$ (a,b)=\begin{cases}1,&\text{ if }z^2=ax^2+by^2\text{ has a non-zero solution }(x,y,z)\in \mathbb{F}^3;\\-1,&\text{ else.}\end{cases}$$ I am wondering if anything keeps me from generalizing this definition to a ring $R$ (i.e. replacing the field $\mathbb{F}$ by a ring $R$). I'm mainly thinking about commutative rings that have a multiplicative neutral element $1$. Another obvious generalization is to take $a,b\in\mathbb{F}$ or $R$ and not $\mathbb{F}^*$ or $R^*$, also allowing to look at equations with non-unit coefficients. Does this make any sense and is there any literature that defines the Hilbert-Symbol also for rings? Some of the nice properties like symmetry ($(a,b)=(b,a)$), $(a,c^2)=1$ or $(a,-a)=1$ still hold for rings, but I am wondering if this thoughts are even in the spirit of the Hilbert symbol. The fact that I didn't find a lot of writings where the Hilbert symbol is defined over rings lets me think that I am somewhat not getting the main idea. Is there a reason one does not make this obvious generalization?","['commutative-algebra', 'ring-theory', 'abstract-algebra', 'number-theory']"
+268172,"$X,Y\sim Poiss(\lambda)$ are IID R.V, How to calculate $P(Y\geq 2X)$?","I am given the following question: Suppose that the times it takes for two students to solve a certain
+  homework problem are independently and identically distributed
+  according to the distribution $Poiss(\lambda)$. Find the probability that one of the students will take at least twice
+  as long as the other one to solve the problem. What I did: Since $X,Y$ are independent $$P_{Y|X}(y|x)=P(Y=y|X=x)=P(Y=y)$$ Given some value, $k$, of $X$: The probability that it takes the
+second student at least twice as long to do the homework is $P(Y\geq2k)$. Hence the probability that it takes the second student at least twice
+as long to do the homework is, according to Law of total probability, $$\sum_{k=1}^{\infty}P(X=k)P_{Y|X}(Y\geq2k|X=k)$$ $$=\sum_{k=1}^{\infty}P(X=k)\cdot P(Y\geq2k)$$ $$=\sum_{k=1}^{\infty}P(X=k)\cdot(1-P(Y<2k))$$ $$=\sum_{k=1}^{\infty}P(X=k)\cdot(1-\sum_{j=1}^{2k-1}P(Y=j))$$ $$=\sum_{k=1}^{\infty}e^{-\lambda}\frac{\lambda^{k}}{k!}\cdot(1-\sum_{j=1}^{2k-1}e^{-\lambda}\frac{\lambda^{j}}{j!}))$$ and this is where I am stuck. Can someone please help me continue on calculating this sum, or maybe suggest a different approach ?","['summation', 'probability']"
+268176,Do eigenvectors always form a basis?,Suppose we have a $n \times n $ matrix  over $\Bbb R$ . Is it necessary that we should have $n$ linearly independent eigenvectors associated with eigenvalues so that they form a basis? Can you give a proof or counterexample? How about if you have the same question over complex numbers?,"['eigenvalues-eigenvectors', 'linear-algebra', 'proof-writing']"
+268181,How to show the normaliser is a subgroup and that number of subgroups conjugate to H is equal to $|G : N_G(H)|$,"I have to define the normalizer, show that its a subgroup, that $H$ is normal to the normalizer and that the number of subgroups conjugate to $H$ in $G$ are equal to the index $|G :N_G(H)|$ of the normalizer. If we have a group $G$ and a subgroup $H$, then the normalizer, $N_G(H)$ is defined as the largest subgroup of $G$, which $H$ is normal in. To show that is a subgroup, can I just say that by definition of a normalizer, it is a subgroup of $G$? Or can I just say the axioms and saying ""this axiom holds as normalizer is a subgroup"", which is basically the same thing? Then to show the next bit, can I say that the Orbit Stabiliser theorem says $|G| = |Orb(x)| |G_x| \implies |Orb(h) = |G : G_h|$. The normalizer is the stabiliser of the group and the orbit is the subgroup $H$, so we get $$H = |G : N_G(H)|$$ By Lagrange theorem, we know the RHS holds as we have already proves the normalizer is subgroup and so the proof is complete. We don't need to prove the  equality as that comes from OS theorem which we assume to be proved.","['finite-groups', 'group-theory']"
+268195,"The set of limit points of the sequence $1,\frac12,\frac14,\frac34,\frac18,\frac38,\frac58,\frac78,\frac1{16},\frac3{16},\ldots$","I came across the following problem that says: The set of limit points of the sequence $1,\dfrac12,\dfrac14,\dfrac34,\dfrac18,\dfrac38,\dfrac58,\dfrac78,\dfrac1{16},\dfrac3{16},\dfrac5{16},\dfrac7{16},\dfrac9{16},\ldots$ is which of the following? (a) $[0,1]$ (b) $(0,1]$ (c) the set of all rational numbers in $[0,1]$ (d) the set of all rational numbers in $[0,1]$ and of the form $m/2^n$ where $m$ and $n$ are integers. Please help. Thanks in advance for your time.","['sequences-and-series', 'real-analysis']"
+268219,Mutual set of representatives for left and right cosets: what about infinite groups?,"Let $G$ be a group and $H$ a subgroup of $G$. If $G$ is finite, then according to Philip Hall's ""marriage theorem"" there is a left transversal $T$ of $H$ in $G$ (that is, $T$ contains precisely one element from each left coset of $H$) such that $T$ is also a right transversal of $H$. Does this theorem generalize to infinite groups? The original theorem treats only the case where $|H| < \infty$ and $[G:H] < \infty$. What can we say when $|H| = \infty$ and $[G:H] = \infty$?
+What about $|H| < \infty$ and $[G:H] = \infty$?
+Also $|H| = \infty$ and $[G:H] < \infty$?","['group-theory', 'abstract-algebra', 'combinatorics']"
+268234,$P(z)$ defines a polynomial,"Suppose that $f$ is analytic in a simply connected domain $D$ containing distinct points $z_1, z_2 ,\ldots,z_n $ and that $\gamma$ is simple closed curve  enclosing $z_1, z_2 ,\ldots,z_n $. Set $w(z)= \prod_{k=1}^n (z-z_k)$ . Prove that $$P(z) =\int_{\gamma}  \frac {f(\zeta)}{w(\zeta)} \frac{w(\zeta)-w(z)}{\zeta-z}d\zeta$$ defines a polynomial of degree $n-1$ satisfying $P(z_k) =f(z_k), k =1,2,3,\ldots,n.$ I don't know what thought I am suppose to present here. What I just know is to do the partial fraction of the $w(z)$. Then I just stuck not knowing the fact I am using here. This is actually a recent comprehensive exam question which I could not solve. My professor gave me some hint but that also did not help. The idea of partial fraction came out of his mouth. But I don't remember what he told me to do to complete the problem. I really wish to see the detail solution of the problem. Thanks in advance. Addendum Partial Fraction of $\frac{1}{w(\zeta)}= \frac {1}{\prod _{k=1}^n (\zeta-z_k)}$ is given by
+ $$\frac {A_1}{\zeta-z_1}+\frac {A_2}{\zeta-z_2}+\cdots+\frac {A_n}{\zeta-z_n}$$ Where each $A_i = \frac{1} {\prod_{j=1}^n z_i-z_j} , j \neq i$ Sorry I missed that not equal to part, I don't know how to accomodate that in the product, any edit appreciated.",['complex-analysis']
+268235,uniform convergence of few sequence of functions,"Pick out the sequences $\{f_n\}$ which are uniformly convergent. (a) $f_n(x) = nxe^{−nx}$ on $(0,∞)$. (b)$f_n(x) = x^n$ on $[0, 1]$. (c)$f_n(x) = \frac{\sin(nx)}{\sqrt{n}}$ on $\mathbb{R}$. (d) $f_n(x)=\frac{nx}{1 + nx}$ on $(0,1)$ (e) $f_n(x) = ∑_{n=1}^∞\frac{n\sin(nx)}{e^n}$ on $[0,\pi]$ (f) $f_n(x) = \frac{x^n}{1 + x^n}$ ; on  $[0, 2]$ (g) $f_n(x) = \sin^nx$ on  $[0,\pi/2)$ (h) $f_n(x) = (x^n/n)+1$ on $[0,1)$ (i) $f_n(x) = \frac{1}{1+(x-n)^2}$ on $(-∞,0)$ (j) $f_n(x) = \frac{1}{1+(x-n)^2}$ on $(0, ∞)$ (a) Here the function becomes $nx/e^{nx}$ which is tends to $0$ as $n$ tends to $∞$ so the function is uniformly continuous. I am not sure though. (b) Here limit function is not continuous so not uniformly continuous (c) true by same reason of (a)
+(d)  false as $n$ tends to $∞$ the function tends to $1$ not zero. (e) no idea
+(f) false as limit function is not continuous
+(g) true by M test
+(h) true by M test
+(i) no idea
+(j) no idea Can somebody guide me properly please",['real-analysis']
+268250,Is the area of intersection of convex polygons always convex?,I am interested specifically in the intersection of triangles but I think this is true of all convex polygons am I correct? Also is the largest possible inscribed triangle of a convex polygon always composed of at least two of the polygons vertices? (At first I thought it was 3 vertices but then I thought of a square and realized that the max inscribed triangle was any two connected vertices and any point on the adjacent side.) I am interested in finding the maximum inscribed triangle of the intersection of several triangles is in the below image. If you are interested in the context of the question please see this question: How to find the intersection of the area of multiple triangles,"['analytic-geometry', 'geometry', 'algebraic-geometry', 'euclidean-geometry']"
+268269,"Number of naturals which cannot be expressed in the form $xa+yb=1$ for coprime $a,b$","I was playing around with a few numbers.I noticed the following: Given two coprime naturals $a$ and $b$,we can express a lot of integers in the form $xa+yb=d$ for $x,y\ge0$ and $x$ and $y$ are integers. However, there are some others which I could not express in the form I just described.For example, if $a=7$ and $b=5$, I could not express 1,2,3,4,6,8,9,11,13,16,18 and 23 as above.There might be more of them.That brought to my mind a question. Given two coprime positive integers $(a,b),a>1,b>1$,is the number of natural numbers which cannot be expressed in the form above finite? Can we exactly calculate how many of them exist?.",['number-theory']
+268278,What does it mean that the probability density function is proportional to a function?,I'm studying for SOA/CAS Exam P and I have a problem that says that $X$ is a continuous and positive random variable whose probability density function is proportional to: $$\frac{1}{(1+x)^5}$$ Where $0\lt x \lt \infty$ and I need to find $E(X)$. But how do I use the information that $X$ is proportional to that function? What does it mean exactly?,"['probability-theory', 'probability-distributions', 'probability', 'actuarial-science']"
+268285,Is there a prime number $> 10$ such that when it is divided by 3 or 5 or 7 always gives a remainder of 1?,"Is there a prime number $p > 10$ such that when it is divided by 3 or 5 or 7 gives a remainder of 1, i.e.: $p \equiv 1 \pmod{3}, p \equiv 1 \pmod{5}, p \equiv 1 \pmod{7}$.","['prime-numbers', 'number-theory']"
+268286,"How many well-behaved norms are there on $C[0,1]$?","Let $\Vert \cdot \Vert$ a norm on $X=C([0,1])$ s.t. 1 . $X$ is complete w.r.t. $\Vert \cdot \Vert$; 2 . convergence in $\Vert \cdot \Vert$ implies pointwise convegence, i.e. 
+  $$
+\Vert x_n - x \Vert \to 0 \Rightarrow \forall t \in [0,1], \quad x_n(t) \to x(t).
+$$ Is $\Vert \cdot \Vert$ equivalent to the usual $\sup$-norm, $\Vert \cdot \Vert_{\infty}$? By open mapping and 1 (completeness), we just need to prove only one inequality of the two we need to prove equivalence (indeed, the other would follow by open mapping). Anyway, I think the answer is affirmative; am I right? I do not know how to prove it. Any ideas, please? Thanks.","['convergence-divergence', 'functional-analysis']"
+268316,Lower bound on norm of product of two matrices,"Let $\vert \vert . \vert \vert$ be the 2-norm. Since this norm is submultiplicative, we know that for any two square matrices $A, B \in \mathbb{R}^{n \times n}$, $$ \vert \vert A B \vert \vert \leq \vert\vert A \vert \vert \vert \vert B \vert \vert \leq \sigma_{\textrm{max}}(A) \vert \vert B \vert \vert.$$ What I am looking for is an inequality of the form $$ \sigma_{\textrm{min}}(A) \vert \vert B \vert \vert \leq \vert \vert A B \vert \vert. $$ The first inequality is true because this norm simply satisfies the submultiplicative property. But what about the second inequality? Is it true? And if not, is it only true for special type of matrices?","['matrices', 'linear-algebra']"
+268323,Creating a summatory list without iteration,"Let list $S_k$ be an arbitrary list of numbers (may not necessarily be ordered). List $S_{k+1}$ is created via the cumulative sum of elements from list $S_k$. For example if $S_k$ = [2,5,7,9] then $S_{k+1}$ = [2,7,14,23] Is there a way to tell what numbers will be in list $S_n$ with $n>k$ without needing to create all the intermediate lists?",['number-theory']
+268332,Calculate limit with summation index in formula [duplicate],This question already has answers here : Closed 11 years ago . Possible Duplicate: Compute the limit: $\lim_{n\rightarrow\infty} e^{-n} \sum\limits_{k=0}^{n} \frac{n^k}{k!}$ I want to calculate the following: $$ \lim_{n \rightarrow \infty} \left( e^{-n} \sum_{i = 0}^{n} \frac{n^i}{i!} \right) $$ Numerical calculations show it has a value close to 0.5. But I am not able to derive this analytically. My problem is that I am lacking a methodology of handling the $n$ both as a summation limit and a variable in the equation.,['limits']
+268343,Commuting limit and integral in an improper Riemann intergral,"How does one prove the following limit?
+$$
+\lim_{b\rightarrow 0}\int_0^\infty{\frac{\sin x}{x}e^{-bx}dx} = \lim_{N\rightarrow\infty}\int_0^N{\frac{\sin x}{x}dx}
+$$ I don't think I could apply the Dominated Convergence Theorem outright because any estimate I can come up with is not $L^1$, so I guess this becomes a question of commuting limits.","['calculus', 'real-analysis', 'analysis']"
+268344,A counterexample on the existence of some sequence in Hilbert space,"I want to find a uniformly bounded sequence $\{x_n\}$ in $l^2(\mathbb{C})$ such that $x_n$ does not converge to zero in weak topology, i.e., $\exists ~y\in l^2(\mathbb{C}),$ such that $\langle y, x_n\rangle\not\to 0$, but $\{x_n\}$ satisfies the following condition: $$\lim_m\lim_n\langle x_{n+m},x_n\rangle=0$$
+or the stronger condition: $$\lim_n\langle x_{n+m},x_n\rangle=0, \forall m\geq 1.$$ Thanks in advance! Remarks: 1, Jacob Schlather has solved it for the case $\{x_n\}$ is not uniformly bounded, I have added the assumption that $\{x_n\}$ is uniformly bounded, which I forgot to add before. 2, This is one ''remark'' in page 85 of the book-- H.Furstenberg, Recurrence in ergodic theory and combinatorial number theory, Princeton Univ. Press, unless I misunderstand the meaning in the book. It says: ""It should be noted that the analogous result for ordinary convergence does not hold"". Lemma 4.9. Let $\{x_n\}$ be a bounded sequence of vectors in Hilbert space and suppose that $$D-\lim_m(D-\lim_n\langle x_{n+m}, x_n\rangle)=0$$
+Then with respect to the weak topology, $$D-\lim_nx_n=0$$","['hilbert-spaces', 'analysis']"
+268357,invariant subspace of a Hardy space,"Let $T$ be the unit circle and $H^1=\{f\in L^1(T): \int_0^{2\pi} f(e^{it})\chi_n(e^{it})dt=0 \text{ for } n>0\}$ where $\chi_n(e^{it})=e^{int}$.  Let $M$ be a closed subspace of $H^1$.  Then $\chi_1 M\subset M$ if and only if $M=\phi H^1$ for some inner function $\phi$. We say $\psi$ is an inner function if $\psi\in H^\infty$ and $|\psi|=1$ a.e. This is a problem from Banach algebra Techniques in Operator theory by Ronald Douglas. I was able to show that if $M=\phi H^1$ for some inner function $\phi$ then $\chi_1M\subset M$.  For the other direction, I tried going through Beurling's theorem but I get stuck. I also tried writing $M$ as $M_1M_2$ where $M_1$ and $M_2$ are both subsets of $H^2$ but that got me nowhere.","['banach-algebras', 'hardy-spaces', 'operator-theory', 'functional-analysis', 'complex-analysis']"
+268360,Proof of $\log_xy=\frac{\log_zy}{\log_zx}$,Why is $\log_xy=\frac{\log_zy}{\log_zx}$? Can we prove this using the laws of exponents?,"['logarithms', 'algebra-precalculus']"
+268366,Have fields been exhaustively classified?,"I know that finite simple groups have been exhaustively classified. Have fields (in the sense of corpora, not of vector fields) been exhaustively classified?","['abstract-algebra', 'field-theory']"
+268368,Let $\sum _{n=1}^{\infty} a_{n} $and $\sum _{n=1}^{\infty} b_{n} $ converge absolutely. Prove that ...,"Let $\sum _{n=1}^{\infty} a_{n} $and $\sum _{n=1}^{\infty} b_{n} $ converge absolutely. Prove that $\sum_{n=1}^{\infty} \sqrt{|a_{n}b_{n}|} $ converges. I know that the series $\sum_{n=1}^{\infty} a_{n}b_{n}$ converges absolutely, but am having trouble showing what they want. I have tried showing the partial sums are bounded but no luck so far.","['sequences-and-series', 'analysis']"
+268375,Where to learn algebraic analysis,"I have been studying categories, sheaf cohomology and complex analysis (the basics since I know just a little). Then recently I tried to find out more about algebraic analysis and these microlocal stuffs, but I couldn't find any introductory material. I know about the books and papers by Kashiwara and they are a little advanced for me. (However, I have never seen Foundations of algebraic analysis since this book is not so easily found.) Any material, lecture notes, etc are welcome.","['sheaf-theory', 'algebraic-geometry', 'several-complex-variables', 'partial-differential-equations']"
+268376,Convergence to a topology as what to a sigma algebra?,"Given the notion of some kind of convergence of sequences or nets on a set, one question is whether there exists a topology for that convergence and find it. The last section of Chapter 2 in Kelley's General Topology provides one characterization. Since sigma algebra and topology are similar in many aspects, I was wondering if there is a concept for a sigma algebra, and/or from which people ask whether there exists a sigma algebra for a given collection of ""convergent"" objects and find it? Note that the concept needs not be a mimic of convergence for topology. Although the concept may not be a mimic of convergence, I think to define something like convergence for a sigma algebra $\mathcal{F}$ on $\Omega$, one possibility is to first define a ""net"" or ""sequence"" by considering a measurable mapping from a directed set $D$ or $\mathbb{N}$ with its discrete sigma algebra to the underlying set $\Omega$ of the sigma algebra $\mathcal{F}$, and then define ""convergence"" of a ""net"" or ""sequence"" as $x \to \infty$ in $D$ or $\mathbb{N}$, and then one can study what properties of the collection of all ""convergent"" ""nets"" or ""sequences"" has, and if they can in turn characterize the sigma algebra $\mathcal{F}$ from a given collection of  ""nets"" or ""sequences"" such that the ""nets"" or ""sequences"" ""converge"". What do you think? Thanks and regards! By the way, is this kind of questions okay at MO?","['general-topology', 'measure-theory']"
+268393,"(Problem 2.18: Algebraic curves, William Fulton) - Correspondence between prime ideals of coordinate ring and subvarieties","I am a math graduate student, and I'm working through Fulton.  This is my first exposure to algebraic geometry.  I'm having trouble with problem 2.18: Let $\mathcal{O}_P(V)$ be the local ring of a variety $V$ at a point $P$.  Show that there is a natural one-to-one correspondence between the prime ideals in $\mathcal{O}_P(V)$ and the subvarieties of $V$ that pass through $P$.  (Hint: If $I$ is prime in $\mathcal{O}_P(V)$, $I\cap\Gamma(V)$ is prime in $\Gamma(V)$, and $I$ is generated by $I\cap\Gamma(V)$; use Problem 2.2.) And problem 2.2 reads: Let $V\in\mathbb{A}^n$ be a variety.  A subvariety of $V$ is a variety $W\in\mathbb{A}^n$ that is contained in $V$.  Show that there is a natural one-to-one correspondence between algebraic subsets (resp. subvarieties, resp. points) of $V$ and radical ideals (resp. prime ideals, resp. maximal ideals) of $\Gamma(V)$. The solution to 2.2 is simple: Since $\Gamma(V)=k[x_1,\dots,x_n]/I(V)$, there is a one-to-one correspondence between prime ideals of $\Gamma(V)$ and prime ideals of $k[x_1,\dots,x_n]$ containing $I(V)$.  And there is also a one-to-one correspondence between prime ideals of $k[x_1,\dots,x_n]$ containing $I(V)$ and subvarieties of $V$. Here's what I have so far: If $I$ is a prime ideal in $\mathcal{O}_P(V)$, $J=I\cap\Gamma(V)$ is a prime ideal in $\Gamma(V)$, and by problem 2.2 there is a corresponding subvariety $W$.  But I need to show that $P\in{W}$, and the information about $P$ is contained in the denominators of functions in I, which I threw away when I intersected $I$ with $\Gamma(V)$. The other direction is easy: If $W$ is a subvariety of $V$, then there is a corresponding prime ideal $J=I_V(W)$ of $\Gamma(V)$.  And the ideal generated by $J$ in $\mathcal{O}_P(V)$ is a prime ideal. What am I missing in the ""hard"" direction?",['algebraic-geometry']
+268401,Smallest/Minimal bases of a topological space,"The smallest possible cardinality of a base is called the weight of
+the topological space. I was wondering if all minimal bases have the
+same cardinality, and if every base contains a subset whose
+cardinality is the weight of the topological space? What aspects are common between a (smallest) base of a topology and a base of a
+vector space, besides the following similarity (open subset <->
+vector, union <-> linear combination): every open subset is the union of some members in the base; every vector is the linear combination of some members in the base. Note that a base in a vector space is also a base in the linear
+matroid. Not sure if we can have some nice structure like matroid for a
+topological space to understand its (smallest) bases. Thanks and regards!","['general-topology', 'vector-spaces', 'matroids']"
+268416,Closed form for coefficients in Multiple Regression model,"I want to find $\hat{\beta}$ in ordinary least squares s.t. $\hat{Y} = \hat{\beta}_0 + \hat{\beta}_1 X_1 + \cdots + \hat{\beta}_n X_n $. I know the way to do this is through the normal equation using matrix algebra, but I have never seen a nice closed form solution for each $\hat{\beta}_i$. I'm thinking as a generalization of the simple linear regression case, $$ \hat{\beta}_i = \frac{ Cov(X_i, Y) }{Var(X_i) },$$ where $ Y = \beta_0 + \beta_1 X_1 + \cdots + \beta_n X_n + \epsilon_i $. Is my conjecture for the form of the regression coefficients true? And what would $\hat{\beta_0}$ be?","['statistics', 'regression']"
+268428,The number of prime years in a lifetime,"$2013$ is not a prime: $3 \times 11 \times 61$.
+I was born in a prime year, and if I live as expected according to the statistics for U.S. males,
+I will just reach another prime year, $2027$.  That will encompass $11$ prime years in my lifetime, which
+I assume is high (because birth and probable-expiration hit primes directly). What is the expected number of prime years in a lifetime of length $x$ years,
+starting at year $n$?
+I am aware that the Second Hardy-Littlewood Conjecture is likely to be false for large $n$,
+but does that conjectured relationship, $\pi(x+y) \le \pi(x) + \pi(y)$, 
+still yield the best interval estimate for small $n$?","['prime-numbers', 'recreational-mathematics', 'number-theory']"
+268432,Expected number of card draws to get all 4 suits,"You have a standard 52 card deck, with 13 cards of each of the 4 suits (Hearts, Diamonds, Spades, Clubs). What is the expected number of cards you have to draw from the deck until you have all 4 suits represented in your hand? I couldn't think of how to get the negative binomial to work, since this is sampling without replacement and has 4 suits instead of just 2. I imagine a distribution that could solve this might be called the Negative Hypergeometric Multivariate. Anyone have any ideas? Thanks very much.","['statistics', 'probability']"
+268434,Smart demonstration to the formula $ \sum_{n=1} ^{N} \frac{n}{2^n} = \frac{-N + 2^{N+1}-2}{2^n}$,Someone could give me a smart and simple solution to show the folowing identity? $$ \sum_{n=1} ^{N} \frac{n}{2^n} = \frac{-N + 2^{N+1}-2}{2^n}$$,"['summation', 'sequences-and-series']"
+268447,Hardy-Littlewood-Sobolev inequality for $p=1$,"Let $\mu $ be a positive Borel measure on $%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}$ such that $\mu \left( B\left( a,r\right) \right) \leq Cr^{n}$ for some 
+$n\in (0,d]$ and for any ball $B\left( a,r\right) $ in $%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}$. Riesz potential $I_\alpha$ defined by $I_\alpha f(x)=\int_{\mathbb{R}^d} \frac{f(y)}{|x-y|^{n-\alpha}} d\mu(y)$. Could you help me to prove (disprove) that $\left\Vert I_{\alpha
+}f\right\Vert _{L^{n/(n-\alpha )}\left( \mu \right) }\leq C\left\Vert
+f\right\Vert _{L^{1}\left( \mu \right) }$ (Hardy-Littlewood-Sobolev inequality for $p=1$)? In Stein's book, for lebesgue measure ($n=d$) the above inequality is not
+true. By assumming that the inequality is true, one can construct a sequence
+of function $\{f_{m}\}$ that implies $\int_{%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}}\frac{1}{\left\vert x\right\vert ^{d}}dx<\infty ,$ contradicting the
+fact $\int_{%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}}\frac{1}{\left\vert x\right\vert ^{d}}dx=\infty $. For (general) measure given above, I try to do the same technique and get  $
+\int_{%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}}\frac{1}{\left\vert x\right\vert ^{n}}d\mu \left( x\right) <\infty ~$
+(which is not always a contradiction, since there is a measure $\mu _{1}$
+such that $\int_{%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+^{d}}\frac{1}{\left\vert x\right\vert ^{n}}d\mu _{1}\left( x\right) <\infty $
+). Could you give a hint or reference? Thanks a lot.","['measure-theory', 'harmonic-analysis', 'real-analysis']"
+268499,"Can open sets be an open cover, for itself?","I have Baby Rudin's book with me and it clearly defines a cover to be open . In a followup, it defines a set $K$ to be compact if every open cover of $K$ contains a finite subcover. And the rest I quote More explicitly, the requirement is that if $\{ G_{\alpha}\}$ is an open cover of $K$, then there are finitely many indices $\alpha_1, \dots, \alpha_n$ such that $$K \subset G_{\alpha_1} \cup \dots\cup G_{\alpha_n}$$ From the notation, it would seem to suggest that we can't have $K$ to be an improper subset of the covers. Now in another book (which I referenced another user whom referenced the book) by Richardson (I don't know the full name sorry), it's definition of a cover allows a set to cover itself. So what subtlety could I have possibly overlooked? Sorry if this mysterious reference is vague, but I couldn't get enough information on the book.","['general-topology', 'real-analysis', 'definition']"
+268515,"fubini's theorem, multivariable integration","Evaluate the integral $$ \int_{[0,1]^n} \max{(x_1,x_2,x_3, \cdots,x_n)} \,dx_1dx_2\cdots dx_n $$ Any hints comments are appreciated. Thanks","['multivariable-calculus', 'integration']"
+268518,How to calculate the mean of the square of the distance between two randomly chosen points from the unit square,"I have the following homework question: Two points are chosen randomly from a unit square. Let $D$ denote the
+  distance between the points. Calculate $ED^{2}$. What I tried: Denote $X$ as the first point that was chosen and $Y$ as the second
+point. Then $D=|Y-X|$. $F_{D}(r)=P(|Y-X|\leq r)$ equals to the probability that $Y$ is
+in a closed ball with radius $r$ around $X$. This is where I have a hard time - even calculating the area of this closed ball (the part of it that is contained in the unit square) is difficult for me. Also, even if I do calculate it - what do I do next ? I want to ""sum"" for all options of $X$ but since we are dealing with a continues case here it seems that I should integrate the function I am getting for the area - over all points $x$ in the unit square. I need help with this exercie: Am I on the right track ? If so can someone please help suggest a way to calculate that area ? (did I undersatand correctly what to do after I find this area ?) Any help is appreciated!",['probability-theory']
+268524,Algorithm creating subsets with certain properties,"I'm trying so solve following problem: Let's say, we have a set $A=\{1,2,3,...,49\}$. Now, I am defining sets $A_1, A_2, A_3,...,A_n$ as follow: $A_1=\{a_1,a_2,a_3,...,a_{30}\}$,  $A_2= \{b_1,b_2,b_3,...b_{30}\}$, and so on, where all elements of sets $A_i$ are also elements of set $A$, which means they are subsets of set $A$. (All sets $A_i$ have $30$ elements). Now, I am looking for a set $C=\{ A_1,A_2,A_3,...,A_n \}$ so, that if I pick randomly $6$ elements of set $A$, they will be (at least) in one of sets $A_i$. What is $n$? Let's see: first of all, how much possibilities are to pick $6$ elements of set $A$? There are $\binom{49}{6}=\large\frac{49 \cdot 48 \cdot 47 \cdot 46 \cdot 45 \cdot 44}{6!}=13,983,816$ Secondly, how much of these possibilities covers one of sets $A_i$? Because set $A_i$ has $30$ elements, it covers  $\binom{30}{6}=\large\frac{30 \cdot 29 \cdot 28 \cdot 27 \cdot 26 \cdot 25}{6!}=593,775$ Now dividing both results, it gives $23.55$ and this means, that we need at least $n=24$ (probably more, I am not sure). So the question is, how do you find the set $C$? Let's say, we can start so: $A_1=\{1,2,3,...,30\}$, this will be first set. But what next? With some algorithm I can implement it in C or Java, but I don't know how to start. Thanks.","['permutations', 'algorithms', 'combinatorics']"
+268533,Baire sets of $X$ possess the required Cartesian product property,"Let $X=X_{1}\times X_{2}$ is locally compact space, and define $$E=\{E_{1}\times E_{2}\;|\; E_{i}\; \text{is a Borel set in}\; X_{i}\; ,\; \text{for}\; i=1,2\}$$ Now why the Baire sets of $X$ are in the $\sigma$-algebra generated by $E$? Of course that every Baire set is Borel too so all Baires of $X_{i}$ is a Borel of it too.","['general-topology', 'measure-theory', 'descriptive-set-theory']"
+268546,How I find maximum of $\iint\limits_{D}~dx dy$?,"Find the maximum of $$\iint\limits_{D}~dx\,dy$$ as a function of $m$, $0<m<1$, where $D=\left\{(x,y): \frac{x^2}{m}+\frac{y^2}{1-m} \leq 1\right\}$. Here $f(x,y)=\iint\limits_{D}~dx\,dy$. Now for maximum $\frac{\partial f}{\partial x}=0 \text{ and } \frac{\partial f}{\partial y}=0$. But here I am stuck. Please help.","['calculus', 'integration']"
+268549,Sum of primitive roots is congruent to $\mu(p-1)$ using Moebius inversion?,"Wikipedia has the result that Gauss proved that for a prime number $p$ the sum of its primitive roots is congruent to $\mu(p − 1) \pmod{p}$ in Article 81. I read it, but is there a faster proof using Moebius inversion instead of case by case checking? I tried the following: Let $f(d)$ be the sum of all the $d$th roots of unity. Then I think we have
+$$
+\sum_{d\mid p-1}f(d)\equiv \sum_{x\in\mathbb{Z}_p^\times}x\equiv 0\pmod{p}
+$$
+since every element of $\mathbb{Z}_p^\times$ is a $d$th root of unity for some $d\mid p-1$. So I define $F(n)=\sum_{d\mid n}f(d)$. By Moebius inversion,
+$$
+f(n)=\sum_{d\mid n}\mu(d)F(n/d).
+$$
+The sum in question is the case where $n=p-1$, so
+$$
+f(p-1)=\sum_{d\mid p-1}\mu(p-1)F((p-1)/d)
+$$
+and I want to show this is congruent to $\mu(p-1)\pmod{p}$. Since $f(1)=1$, $F(1)=1$, so I'm just trying to show $F((p-1)/d)\equiv 0$ when $(p-1)/d\neq 1$ and I believe the result would follow. Does anyone know how to show that if it is true, or fix the argument otherwise?","['mobius-inversion', 'number-theory']"
+268551,"Expressing, in terms of $I$ and $M$, the $R$-modules $\mathrm{Hom}_R(R/I,M)$, $\mathrm{Hom}_R(M,R/I)$, $\mathrm{Hom}_R(I,M)$, $\mathrm{Hom}_R(M,I)$","Let $R$ be a commutative unital ring, $I$ an ideal of $R$, and $M$ a $R$-module. It is known that $R/I \otimes_R M \cong M/IM$. Also, $\mathrm{Hom}_R(R,M)\cong M$. Is there some similar formula for the $R$-module $$I\otimes_RM,$$ perhaps $I\otimes_RM\cong IM$? Are there any formulas that express in terms of $I$ and $M$ the $R$-modules $$\mathrm{Hom}_R(R/I,M),\;\;\; \mathrm{Hom}_R(M,R/I),\;\;\; \mathrm{Hom}_R(I,M),\;\;\; \mathrm{Hom}_R(M,I)?$$ How about the special case $\mathrm{Hom}_R(R/I,R/J)$? If not, how does one 'compute' such modules? For example, can the modules $\mathrm{Hom}_\mathbb{Z}(\mathbb{Z}_m,\mathbb{Z}_n)$, $\mathrm{Hom}_\mathbb{Z}(\mathbb{Z}_m,\mathbb{Z})$, $\mathrm{Hom}_\mathbb{K[x]}(K[x]/(x^m),K[x]/(x^n))$ be expressed more nicely (Eisenbud, Commutative Algebra , p. 79, exc. 2.4)? Let me guess, the first one is $0$ if $m\!\neq\!n$, and $\mathbb{Z}_m$ if $m\!=\!n$; the second one is $0$. But I'd like to have a more general formula. Update: $Hom(M,A/B) \cong Hom(M,A)/Hom(M,B)$? Update: $Hom(M/A,N/B) \ncong \{f\in Hom(M,N); f(A)\subseteq B\}$ in general. For example, taking $A=M$ and $B=N$, the l.h.s. is $0$ and the r.h.s. is $Hom(M,N)$. The reason is that if $f(A)\subseteq B$ and $g(A)\subseteq B$ and $f|_A\neq g|_A$, then $f=g$ in the l.h.s. and $f\neq g$ in the r.h.s..","['modules', 'commutative-algebra', 'homological-algebra', 'abstract-algebra']"
+268554,$\frac{\mathrm{d} g(x)}{\mathrm{d}x}=h(x)$ and $\frac{\mathrm{d} h(x)}{\mathrm{d}x}=g(x)$ where $h(x)\neq g(x)$,"Is there any other solution to :
+$$\frac{\mathrm{d} g(x)}{\mathrm{d}x}=h(x)$$
+$$\frac{\mathrm{d} h(x)}{\mathrm{d}x}=g(x)$$
+other than $h(x)=g(x)=e^x$? By varying $\alpha,\beta$ in $$\frac{\mathrm{d} g(x)}{\mathrm{d}x}=\alpha h(x)$$
+$$\frac{\mathrm{d} h(x)}{\mathrm{d}x}=\beta g(x)$$ is it possible to obtain $(e^x,e^x) , (\sin (x),\cos(x))$ as solutions when $\alpha = 1, \beta=1$ and 
+$\alpha = 1, \beta=-1$ (without invoking complex analysis) is there any explanation for relationships between $\alpha,\beta$ yielding relationships between $e^x,\sin(x),\cos(x)$?","['ordinary-differential-equations', 'special-functions']"
+268561,How to prove that $\frac1{\sqrt{n}}\sum\limits_{k=2}^{n+1} \prod\limits_{\ell=1}^{k-2}\frac{n-\ell}{n}$ converges to $\sqrt{\pi/2}$?,"Consider $$
+X_k =\prod_{\ell=1}^{k-2}\frac{n-\ell}{n}
+\ \textrm{ for every } 2\leqslant k\leqslant n+1.
+$$ How can you prove the following? 
+$$
+\lim_{n\rightarrow \infty} \frac1{\sqrt{n}}\sum_{k=2}^{n+1} X_k= \sqrt{\frac{\pi}{2}}
+$$ A heuristic argument replaces $\frac{n-\ell}{n}$ by $e^{-\ell}$ and the sum by an integral. How can this (or another method) be made rigorous?","['summation', 'limits']"
+268567,Bound on nilpotency index of endomorphisms,"Let $A$ be a Noetherian ring (commutative with $1$) and $M$ a finitely generated $A$-module. I want to show that there exists a bound $n$ such that for every nilpotent endomorphism $T : M \to M$ we have $T^n = 0$. There are two examples in mind: $M$ a module over a field $K$, that is $M = K^n$ a finite-dimensional vector space. In that case, $n$ is the required upper bound. $A=K[x]/(x^d)$ as a module over itself. In that case the dimension is $1$ (a basis is $\{ 1 \}$) but the upper bound is $d$ (consider the endomorphism $y \mapsto x y$).","['modules', 'commutative-algebra', 'linear-algebra']"
+268582,Simple equivalent of $\sum\limits_{i=1}^N\frac{\log i}i$,"Find the limit $$\lim_{N \to \infty}\frac{\sum\limits_{i=1}^{N}\frac{\log i}{i}}{(\log N)^2}.$$ I am unable to find the sum $\sum\limits_{i=1}^{N}\frac{\log i}{i}$. Please help me. EDIT: So,the limit is $$\lim_{N \to \infty}\frac{\frac{1}{2}\ln N^2}{(\ln N)^2}=\lim_{N \to \infty}\frac{\frac{1}{2}.2\ln N}{(\ln N)^2}=\lim_{N \to \infty}\frac{1}{\ln N}=0$$ I get the limit as $0$ not $\frac{1}{2}$. Please help. Thanks in advance.","['real-analysis', 'limits']"

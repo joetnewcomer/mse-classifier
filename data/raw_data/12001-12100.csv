@@ -1,0 +1,608 @@
+question_id,title,body,tags
+93509,Functional inverse of $\sin\theta\sqrt{\tan\theta}$,"What is the functional inverse of $f(\theta) = \sin\theta\sqrt{\tan\theta}$? Or, equivalently, what is the inverse of 
+$$f(\theta)=\sin^2\,\theta\tan\,\theta=\frac{\sin^3\,\theta}{\cos\,\theta}$$ It comes from a physics setup involving two equivalently massed and charged pith balls separated by a certain distance, and the equation simplifies to $q = 4L\sin\theta\sqrt{\pi\epsilon_0mg\tan{\theta}}$, where $\pi$, $g$, and $\epsilon_0$ are the obvious physical constants and $L$ and $m$ will be fixed. The question asked for $\theta$ in terms of $q$, however, so I'm wondering if there is a way to rearrange this. I can't seem to find anything on the internet, and Wolfram refuses to reveal the steps for its complex rearranged formula.",['trigonometry']
+93515,If an Abelian group $G$ has order $n$ and at most one subgroup of order $d$ for all $d$ dividing $n$ then $G$ is cyclic,"If an Abelian group $G$ has order $n$ and at most one subgroup of order $d$ for all $d$ dividing $n$ then $G$ is cyclic. I am trying to use the structure theorem for finitely generated abelian groups. So I write $n=p_1^{\alpha_1}\ldots p_n^{\alpha_n}$. I am hoping to show each of the alpha's must =1 then I will have that $G$ is isomorphic to $\prod_i^n \mathbb{Z}/p_i \mathbb{Z}$, which is cyclic.",['abstract-algebra']
+93546,Derivative under a double integral,"How does one find ${\partial y\over \partial t}$ and ${\partial^2 y\over \partial t^2}$ of a double integral $$y(x,t)=\int\limits_0^t \int\limits_{x-t+\xi}^{x+t-\xi} F(\eta)\,\,\,d\eta \,\,\,d\xi$$?","['multivariable-calculus', 'integration', 'derivatives']"
+93549,Normal and Lower triangular matrix implies diagonal matrix,A lower triangular complex matrix $A$ satisfies $AA^*=A^*A$. I would like to show that $A$ is diagonal. I know there exists a unitary matrix $P$ such that $PAP^*$ is diagonal. But I don't know how to show $A$ itself is diagonal.,['linear-algebra']
+93553,Squarefree polynomials over finite fields,"I'm trying to figure out how many squarefree polynomials there are of a fixed degree over $\mathbb{F}_2$ specifically (and in general, over any finite field). Looking at some low-degree examples seems to suggest that half of the polynomials of any given degree are squarefree, but I'm not sure how to prove this, or whether the pattern continues at all. I'm considering the possibility of using the formal derivative, and the fact that a polynomial is relatively prime to its formal derivative iff it is squarefree, but I don't see how to proceed with this. So is there a known formula?","['finite-fields', 'combinatorics']"
+93562,Finding inverse of a difficult function,"Hi I'd like to find the inverse of:
+$$
+y=(1/3)(x^{4} + 4x^{3})
+$$ I have learned to do inverses using the following example:
+$$y=2x-1$$
+$$x=2y-1$$
+$$x+1=2y$$
+$$(x+1)/2=y$$
+$$f^{-1}(x)=(x+1)/2$$ Process: Change the x's into y's and the y's into x's Rearrange the equation to get a single y (formerly x) by itself on one side Replace y with $f^{-1}(x)$ But the equation I am working with seems too complicated.  I can't get x by itself on one side because the terms are to the power of 2 and 4. Can anyone suggest a way forward?
+Thanks. UPDATE: As has been pointed out by some people the inverse of the said function is actually quite complicated and it turns out I was over complicating things myself.  The main thing I am working on is to show that the roots of the equation $$x^{3}+4x^{2}-3=0$$ can be found (approximately) using iteration formulae which are rearrangements of the equation.  After some trial and error I cam up with the following rearrangements which between them cover the three roots.
+$$x_{n+1}=(3-4x^{2})^{1/2}$$
+$$x_{n+1}=(1/4)(3/x - x^{2})$$
+$$x_{n+1}=((1/4)(3-x^{3}))^{1/2}$$
+That's all I needed to do. Thanks everyone.","['inverse-function', 'algebra-precalculus', 'polynomials']"
+93573,All general solutions of differential equation satisfy boundary conditions - How to interpret?,"I'm solving the below differential equation: $$ 3z^2 U'(z) -2 U(z)^2 - z U(z) + 2 = 0$$ I have two boundary conditions - $U(0)=1$, $U'(0) = -\frac{1}{4}$, however it is apparent that the set of solutions to this equation, before imposing the initial conditions, satisfy the first initial condition $U(0)=1$. Looking at the differential equation this is because it can be rearranged to: $$ [U(0)]^2 = 1 $$ So it is evident that all of the general solutions should fit this condition. What's more, through ""numerical experiment"", I believe that the first derivative condition should be satisfied as well (though I can't prove it from the differential equation). I am not sure that I can set the constant of integration to be anything I want, as this changes the behaviour of the solution. However, I can simplify the solution greatly by choosing ""convenient"" values of this constant. Also the resulting function is a function of $\frac{1}{z}$, so it cannot actually be evaluated at 0, so I have been using limits, which feels quite mathematically dodgy. This is a peculiarity that I have not come up against before - how exactly am I to interpret this?",['ordinary-differential-equations']
+93579,Statistics with Bayes' theorem,"I am working on a maths exercise and came across this question: Given: A motorist which causes an accident, must submit to a blood test. Research shows that 1% of the drivers which cause crashes, driving under influence (alcohol, drugs). There is a chance of 75% that someone under influence is tested positive. However, there is a chance of 5% that someone who is sober is tested positive. Wanted:
+(a) What is the probability that someone is under influence if the test was positive?
+(b) What is the probability that someone is sober, while the test was negative? So i tried calculating these questions.
+a:
+((0.75*0.01) /( 0.75 * 0.01 + 0.25 * 0.99)) = 0.029
+or
+((0.75*0.99) /( 0.75 * 0.99 + 0.25 * 0.01)) = 0.996 For b: 
+((0.05*0.01) /( 0.05 * 0.01 + 0.95 * 0.99)) Are these answers correct? My maths skills are terrible any help is appreciated, Thanks, Jef Ps. My first language isn't english.","['statistics', 'probability']"
+93589,Alternate definition of a 'geodesic ball',"Background: Let $M$ be a Riemannian manifold.  Let $p \in M$ and $\epsilon \gt 0$. For sufficiently small $\epsilon$, the standard definition (correct me if I'm wrong) for the 'geodesic ball of radius $\epsilon$ centered at $p$' is: $$B = \{ \gamma(1) \mid \gamma \text{ is a geodesic}, \gamma(0)=p, \text{ and } \langle \gamma'(0), \gamma'(0) \rangle \, \lt \epsilon \} .$$ I am wondering: suppose we instead consider the set $$B_{\text{alt}} = \{ \gamma(\epsilon) \mid \gamma \text{ is a geodesic}, \gamma(0)=p, \text{ and } \langle \gamma'(0), \gamma'(0) \rangle  \lt 1 \} .$$ (Roughly speaking, $B$ takes an $\epsilon$-ball in $T_pM$ and runs the geodesics forward by 1, while $B_{\text{alt}}$ takes the unit ball in $T_pM$ and runs the geodesics forward by $\epsilon$.  $\langle \cdot , \cdot \rangle$ is the metric inner product.) Question: Do we have $B = B_{\text{alt}}$?  If not, is there a nice counter-example?  Or an intuitive reason why we should not expect the equality to hold? Note: I have tried to compute the volume of $B_{\text{alt}}$ (to next-to-leading order in $\epsilon$) in the special case of a two-dimensional manifold with a diagonal metric.  Despite many careful checks, my answer does not match the standard answer for the volume of a geodesic ball -- so I suspect that $B \ne B_{\text{alt}}$. Thanks for any help! Appendix - calculation of $Vol(B_{alt})$ (added 12/23) I'm going to redo my calculation of the volume of $B_{alt}$, taking account of joriki's comment below.  The problem I was having (which I don't think is resolved by joriki's suggestion to replace $\epsilon$ by $\epsilon^{1/2}$, but will have to check to be sure) is described in the next two paragraphs. I'm doing the calculation in a particular coordinate chart, assuming the metric is diagonal: $ds^2 = g_{11}(x^1,x^2) (dx^1)^2 + g_{22}(x^1,x^2) (dx^2)^2$.  I find that $Vol(B_{alt})$ includes (at next-to-leading order in $\epsilon$) the terms $(\partial_1)^2 g_{11}|_p$ and $(\partial_2)^2 g_{22}|_p$.  In a diagonal metric (and using the Levi-Civita connection), the only Christoffel symbol in which $\partial_1 g_{11}$ appears is $\Gamma^1_{11} = \frac{1}{2} g^{11} \partial_1 g_{11}$.  However, the formula $R^a_{bcd} = \partial_c \Gamma^a_{db} - \partial_d \Gamma^a_{cb} + \Gamma^a_{ce} \Gamma^e_{db} - \Gamma^a_{de} \Gamma^e_{cb}$ shows that $\partial_1 \Gamma^1_{11}$ doesn't appear in the scalar curvature - the first two terms in the preceeding formula just cancel when all indices are equal to 1. Now I will explain how these bad terms appear in my calculation.  My approach is to calculate $Vol(B_{alt}) = \int_{B_{alt}} dx^1 dx^2 \sqrt{g_{11}(x^1,x^2) g_{22}(x^1,x^2)}$ by Taylor-expanding the integrand about the point $p \leftrightarrow (x^1_0,x^2_0)$.  Given $a\ \partial_1 |_p + b\ \partial_2 |_p$ in the unit ball in $T_pM$, the corresponding point in $B_{alt}$ is $(x^1_0 + a\ \epsilon + C(a,b)\ \epsilon^2 + O(\epsilon^3), x^2_0 + b\ \epsilon + D(a,b)\ \epsilon^2 + O(\epsilon^3))$, where $C,D$ are constants we can get from the geodesic equation.(**)  There's a Jacobian factor to change variables from $(x^1, x^2)$ to $(a,b)$.  But the only way (it seems to me) to get the second derivatives of the metric that appear in $R$ is to Taylor-expand $\sqrt{det\quad g}$ to second order.  That's exactly the order at which the bad terms $(\partial_1)^2 g_{11}|_p$ and $(\partial_2)^2 g_{22}|_p$ appear (even if we replace $\epsilon$ by $\epsilon^{1/2}$). (**) $C(a,b) = -\frac{1}{2}(a^2 \Gamma^1_{11} + b^2 \Gamma^1_{22} + a\ b\ \Gamma^1_{12})|_p$. Thank you Srivatsan for your TeX edits... I am still fairly new to TeX.","['riemannian-geometry', 'differential-geometry']"
+93594,fundamental group intuition,"So I understand the mechanics of the fundamental group, but I want to gain a more natural intuition behind it. I imagine the fundamental group $\pi_{1}(X)$ to detect ""holes"" in a space. For example, it detects the hole in the punctured plane. However, it does not detect all type of holes, specifically the hole at $\mathbb{R}^3-0$. Presumably, $\pi_{2}(\mathbb{R}^3-0)$ could do the job in this case. I was wondering if you guys could give me some more geometrical intuition behind the fundamental group. For example, what types of ""holes"" can $\pi_{1}(X)$ detect? Let's restrict the discussion to subspaces of $\mathbb{R}^{n}$. Sorry if this is a repost.","['general-topology', 'algebraic-topology']"
+93607,Regularizing divergent series and Bernoulli numbers,"Here is the actual problem I need a proof for: (I made an error writing down the  equation initially) $$B_{k+1} = \frac{(-1)^k}{2^{k+2}-2} \sum_{q=0}^{k} \binom{k+1}{q} 2^q B_q$$ Below is my motivation why I am looking at the problem. Kindly pardon the long post. I was looking at some diverging series on how to regularize them to get a finite answer. For instance, $$1+1+\cdots = - \frac12$$ can be obtained through the analytic continuation based on geometric series (or) the zeta function evaluated at the origin. Similarly, we have that
+$$
+\begin{array}{lr}
+1^1 + 2^1 + \cdots = & -\frac1{12}\\
+1^2 + 2^2 + \cdots = & 0\\
+1^3 + 2^3 + \cdots = & \frac1{120}\\
+1^4 + 2^4 + \cdots = & 0
+\end{array}
+$$
+And in general, the zeta-regularization (or) analytic continuation based on geometric series gives us
+$$
+\begin{align}
+1^k + 2^k + \cdots & = \zeta(-k)
+\end{align}
+$$
+However, they don't satisfy some nice relations/ recurrence satisfied by their finite counter parts. The first and foremost one which struck me was the one below.
+$$
+\begin{align}
+1^3 + 2^3 + 3^3 + \cdots + n^3 = \left( 1 + 2 + 3 + \cdots + n\right)^2
+\end{align}
+$$
+whereas
+$$
+\zeta(-3) \neq \zeta(-1)^2
+$$
+Though there is no reason for $\zeta(-3)$ to equal $\zeta(-1)^2$, I was wondering if only we could assign a different value to the diverging series $1^3 + 2^3 + 3^3 + \cdots$ and $1 + 2 + 3 + \cdots$ so that we can still have $$
+\begin{align}
+1^3 + 2^3 + 3^3 + \cdots = (1+2+3+\cdots)^2
+\end{align}
+$$
+To do so, we turn out attention to their finite counterparts, $S(n;k) = 1^k + 2^k + \cdots n^k$. As mentioned earlier, we have some nice relations among $S(n;k)$ for different $k$'s.
+For instance, we have
+$$
+\begin{array}{rrc}
+S(n;1) & = & \frac{S(n;0)(S(n;0)+1)}{2}\\
+S(n;2) & = & \frac{S(n;1)(2S(n;0) + 1)}{3}\\
+S(n;3) & = & S(n;1)^2\\
+1^3 + 2^3 + \cdots + n^3 & = & (1+2+ \cdots + n)^2\\
+S(n;4) & = & \frac{S(n;2) (6S(n;1)-1)}{5}
+\end{array}
+$$
+In general, we have $S(n;k) = P_k(S(n;0))$ where $P_k(a)$ is a polynomial in $a$ of degree $k+1$ and are called the Faulhaber polynomials and given by $$P_k(n) = \frac{n^{k+1}}{k+1} \sum_{j=0}^{k} \left[ \binom{k+1}{j} \left( - \frac1n \right)^{j} B_j \right]$$
+where $B_k$ are the Bernoulli numbers.
+For instance, $$
+\begin{array}{rll}
+P_0(a) & = a\\
+P_1(a) & = \frac{a^2+a}{2} & = \frac{P_0(a) \left( P_0(a)+1 \right)}{2}\\
+P_2(a) & = \frac{a(a+1)(2a+1)}{6} & = \frac{\left( 2P_0(a)+1 \right)P_1(a)}{3}\\
+P_3(a) & = \frac{a^2(a+1)^2}{4} & = \left( P_1(a) \right)^2
+\end{array}
+$$ We would like to define $$1^k + 2^k + 3^k + \cdots = \lim_{n \rightarrow \infty} S(n;k) = s_k$$ in a way consistent with the recurrence satisfied by the finite sums i.e. we would want $$s_k = \lim_{n \rightarrow \infty} S(n;k) = \lim_{n \rightarrow \infty} P_k(S(n;0)) = P_k \left( \lim_{n \rightarrow \infty} S(n;0) \right) = P_k(s_0)$$
+As mentioned before, unfortunately, the analytic continuation based on geometric series (or) zeta-regularization doesn't satisfy this. For instance, $$\zeta(-1) = -\frac1{12} \neq -\frac18 = \frac{-\frac12 (-\frac12 + 1)}{2} = \frac{\zeta(0) (\zeta(0) + 1)}{2} = P_1 \left( \zeta(0) \right)$$
+Similarly, $$\zeta(-3) = \frac1{120} \neq \left( -\frac1{12} \right)^2 = \zeta(-1)^2$$
+So I was wondering if we could find another regularization still respecting the recurrence relation satisfied by their finite counterparts subject to $\displaystyle s_0 = \lim_{n \rightarrow \infty} S(n;0) = -\frac12$.
+Let us look at what we would want our $s_k$'s to be if we want the recurrences to be satisfied.
+$$
+\begin{align}
+s_1 = & P_1(s_0) = & \frac{s_0(s_0 + 1)}{2} = & -\frac18\\
+s_2 = & P_2(s_0) = & \frac{(2s_0 + 1)s_1}{3} = & 0\\
+s_3 = & P_3(s_0) = & \frac{s_0^2(s_0 + 1)^2}{2^2} = & \frac1{64}
+\end{align}
+$$
+One nice thing to notice is that $P_k(-1/2) = 0$ whenever $k$ is even which coincides with $\zeta(-k)$ whenever $k$ is even. Hence, $s_{k} = P_k(s_0) = P_k(-1/2) = 0$, whenever $k$ is even.
+Proceeding on the same lines for the odd numbers, we obtain the table shown below.
+$$
+\begin{array}{lcrlrrl}
+1^1 + 2^1 + \cdots& \text{   }& P_1(-1/2) = & -\frac18& \text{   }& \zeta(-1) = & -\frac1{12}\\
+1^3 + 2^3 + \cdots& \text{   }& P_3(-1/2) = & \frac1{64}& \text{   }& \zeta(-3) = & \frac1{120}\\
+1^5 + 2^5 + \cdots& \text{   }& P_5(-1/2) = & -\frac1{128}& \text{   }& \zeta(-5) = & -\frac1{252}\\
+1^7 + 2^7 + \cdots& \text{   }& P_7(-1/2) = & \frac{17}{2048}& \text{   }& \zeta(-7) = & \frac1{240}\\
+1^9 + 2^9 + \cdots& \text{   }& P_9(-1/2) = & -\frac{31}{2048}& \text{   }& \zeta(-9) = & -\frac1{132}\\
+1^{11} + 2^{11} + \cdots& \text{   }& P_{11}(-1/2) = & \frac{691}{16384}& \text{   }& \zeta(-11) = & \frac{691}{32760}\\
+1^{13} + 2^{13} + \cdots& \text{   }& P_{13}(-1/2) = & -\frac{5461}{32768}& \text{   }& \zeta(-13) = & -\frac{1}{12}\\
+1^{15} + 2^{15} + \cdots& \text{   }& P_{15}(-1/2) = & \frac{929569}{1048576}& \text{   }& \zeta(-15) = & \frac{3617}{8160}
+\end{array}
+$$
+and so on. However, there is a nice relationship which I observed empirically but am not able to prove $$\zeta(-k) = \frac{P_{k}(-1/2)}{2 - \frac1{2^{k}}}$$
+From some results on $\zeta$ functions and Bernoulli numbers, we have$$\displaystyle \zeta(-k) = - \frac{B_{k+1}}{k+1}$$ and $$\displaystyle P_{k}(-1/2) = \frac1{k+1} \frac{(-1)^{k+1}}{2^{k+2}-2} \sum_{q=0}^{k} \binom{k+1}{q} 2^q B_q$$ Hence, it boils down to proving the following relationship $$B_{k+1} = \frac{(-1)^k}{2^{k+2}-2} \sum_{q=0}^{k} \binom{k+1}{q} 2^q B_q$$ Hence, now we not only have $S(n;k) = P_k(S(n;0))$ but also $s_k = P_k(s_0)$ where $$s_k = \lim_{n \rightarrow \infty} S(n;k) = \left( 2 - 2^{-k} \right) \zeta(-k)$$ Hence, if the above is true, instead of assigning the value of the diverging series $1^k + 2^k + 3^k + \cdots$ to $\zeta(-k)$, to carry over the nice recurrence relations satisfied by their finite counterparts, would it be nice to assign a value of $(2-2^{-k}) \zeta(-k)$ to the diverging series $1^k + 2^k + 3^k + \cdots$ so that for instance, $$1^3 + 2^3 + 3^3 + \cdots = (1+2 +3 + \cdots)^2$$ would still be true. Apart from what I have argued above, is there any other reason why one would like to associate the value $(2-2^{-k}) \zeta(-k)$ to the diverging series $1^k + 2^k + 3^k + \cdots ?$","['divergent-series', 'sequences-and-series', 'zeta-functions', 'combinatorics']"
+93613,Find number of roots in some area (Rouché's theorem),"The task is to find number of $ {z^4} + {z^3} - 4z + 1 = 0$ in the area  $1 < \left| z \right| < 2$.  (this task is in the Rouché's theorem paragraph) I used this theorem many times, but I don't know to solve this task. This is simple to find number of roots in the area $0 < \left| z \right| < 1$, but I don't know how to do the same in another area: $0 < \left| z \right| < 2$. Of course, I now number of roots with the help of Wolfram Alpha, for example. Could you help, please, how to solve this task with the Rouché's theorem?","['inequality', 'complex-analysis', 'polynomials']"
+93614,Analytic Functions in the Upper Half Plane,"How can we proof the following argument: Given an analytic function $f(z)$ ($z=x+iy, x,y\in \mathbb R$) in the closed upper half plane such that $|f(z)|<1$ for all $z$ in the open upper half plane, and $|f(x)|=1$ for all $x\in \mathbb R$,  then: there is an open simply connected set $S$ with $\mathbb R \subseteq S \subseteq \mathbb C$ such that $f(z)$ does not vanish on $S$, and there exists an analytic function $\psi:S \rightarrow \mathbb C$ such that $f(z)=\exp(i\psi(z))$",['complex-analysis']
+93621,Determinant of a special kind of block matrix,I have a $2\times2$ block matrix $M$ defined as follows: $$\begin{pmatrix}X+|X| & X-|X| \\  Y-|Y| & Y+|Y|\end{pmatrix}$$ where $X$ and $Y$ are $n\times n$ matrices and $|X|$ denotes the modulus of the entire matrix $X$ that essentially comprises modulus of individual elements of $X$. How may I find the determinant of the matrix $M$ in terms of $X$ and $Y$? Looking for a simplified solution?,"['matrices', 'linear-algebra', 'block-matrices', 'determinant']"
+93623,Does the golden angle produce maximally distant divisions of a circle?,"I just ran across a video that claimed that the sequence of multiples of the golden angle produces some sort of optimal spacing around a circle for all possible iterations (this is a little hand-wavy, I'm aware). Of course, any irrational angle has the property that it won't ever repeat and will form a dense set as the limit goes to infinity, but intuitively the golden angle seems to work much better than an irrational very close to $\frac{\pi}{2}$. I'm looking for a way to more formally state this idea of optimal spacing for any iteration as a means to either prove or disprove that the golden angle provides this property (and is it unique?).",['geometry']
+93633,Is $\mathbb Q_r$ algebraically isomorphic to $\mathbb Q_s$ while r and s denote different primes?,"It is obvious that $\mathbb{Q}_r$ is topologically isomorphic to $\mathbb Q_s$ while $r$ and $s$ denote different primes. But I really don't know whether it is true in the aspect of algebra. As I failed to prove it, I think that it is false, but I can't give a counterexample. Last I'm quite sorry that I'm new to MathJax and I don't know how to use it properly.Thanks for reading and I would appreciate it if you could solve my problem.","['field-theory', 'p-adic-number-theory', 'number-theory']"
+93639,find constants using limits,"Suppose that we have function $f(x)$ ,which is defined  as follows:
+$$f(x):= \begin{cases} a+bx &\text{, if } x>2\\ 3 &\text{, if } x=2\\ b-ax^2 &\text{, if } x<2\end{cases}$$
+(here $a,b$ are some constants). We  should find $a,b$ so that limit for $x\to 2$ of $f(x)$ exists and equals $3$.
+I think that, because limit at point $2$ exist, it means that left and right limits are equal,  so  after we evaluate limits on left and right side,  we  will get 
+$$a+2b=b-4a\mbox{ or }b=-5a.$$
+Also because the limit  is equal to  $3$ at point $2$, it means that left or right limit is also equal to $3$, so $a+2b=3$
+put one in another, I have got that $a=-1/3$ and $b=5/3$. Am i correct?","['calculus', 'limits']"
+93644,How is every polynomial continuous at 0?,"I know definition of limits, continuity and so on, and I know from calculus that every polynomial is continuous in its domain but I am thinking about it too much and having trouble understanding this clearly. For example  polynomial P(x) is given by
+$$P(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots + a_1 x+ a_0$$
+then is it really is continuous at $x = 0$? I know that continuity at $x=a$ is defined by having right and left limits which exist and are equal to each other and to the value at $x=a$, but what if all the points to the left are less than $a$ and all the points to the right are greater than $a$? For clarification, suppose you have the function
+$$P(x)=x^3+5$$
+In this case  if we take limit from right side as $x$ approaches $0$ our result must be more than $5$ because it is always above $5$ when $x>0$, right? And the left limit will always be less than $5$, so why we can say that the limit exist at $x=0$? It's left and right limits are different by one. Thanks a lot guys.","['calculus', 'limits']"
+93652,Finding force for trajectory,"Using the trajectory equations provided on hyperphysics, I have developed some code to plot the trajectory of an object. I now need to work out the x and y forces to apply to make the object follow said path. I know that F=MA but I can't seem to reverse this to find the x and y force values to cause an object of given mass to follow the trajectory curve plotted by general ballistic code. Sorry for the lengthy question but I can provide code and more of my equations if necessary. Sorry if this if the wrong forum. EDIT:
+The equations I am working with are: velocity = Impulse / mass velocity = Distance / time Velocity = speed / time Force = mass * acceleration Momentum = mass * velocity Impulse = avg force * time [2ND EDIT:]
+The code follows - lua language, using the Corona SDK... Matt main.lua local trajlibapi = require(""trajectorylib"")
+local mathlibapi = require(""mathlib"")
+local physics = require(""physics"")
+
+physics.start()
+physics.setGravity(0,10)
+
+
+--[[ environment setup ]]--
+
+local start, sling = nil, nil
+
+local offsetX, offsetY = 50, 300
+
+local iteration = 0.1 -- gap between increments of trajectory points
+--local velocity = 40 -- launch velocity v/ms
+--local angle = 60 -- launch angle (theta) degrees
+
+
+--[[ trajectory plotting ]]--
+
+function trajectory( velocity, angle, iteration )
+    local points, r, h, f = trajlibapi.calcTrajectoryPoints( 0, 0, velocity, angle, iteration )
+
+    print( 'angle: ', angle )
+    print( 'velocity: ', velocity )
+    print( 'range: ', r )
+    print( 'height: ', h )
+    print( 'flight time: ', f )
+
+    for i=1, #points do
+        --print( math.round( points[i].x ), math.round( points[i].y ) )
+        display.newCircle( start.x + points[i].x, start.y - points[i].y, (points[i].velocityx + points[i].velocityy) * 0.1 )
+    end
+
+    return points
+end
+
+
+--[[ throwing the ball ]]--
+
+function throw( points, sling, start, distance, angle )
+    local radius = 50
+    local ball = display.newCircle( start.x, start.y, radius )
+    ball.alpha = .7
+    ball:setFillColor( 90,90,200 )
+    physics.addBody( ball, ""dynamic"", {friction=.1, bounce=.1, density=1, radius=radius } )
+
+    local point = points[2]
+    local area = trajlibapi.calcAreaOfCircle( radius )
+    local gm = 1 * area
+    local g = 2.1
+    print('area: '..area)
+    print('gm: '..gm)
+    print('dist: '.. distance)
+
+    --ball:applyLinearImpulse( start.x-sling.x, start.y-sling.y, ball.x, ball.y )
+    --ball:applyForce( (start.x-sling.x)*gm, (start.y-sling.y)*gm, ball.x, ball.y )
+
+    local vx, vy = trajlibapi.calcInitialVelocity( start.x, start.y, angle, distance )
+    print('velocity: '..vx,vy)
+    ball:setLinearVelocity( vx, vy )
+
+    --print('applied: ', point.x, -point.y )
+
+    function ball:timer(event)
+        timer.cancel( ball.t )
+        Runtime:removeEventListener(""enterFrame"", ball)
+        ball:removeSelf()
+    end
+    ball.t = timer.performWithDelay(2000, ball, 1)
+
+    function ball:enterFrame(event)
+        local c = display.newCircle(ball.x,ball.y,2)
+        c:setFillColor(255,0,0)
+    end
+    Runtime:addEventListener(""enterFrame"", ball)
+end
+
+
+--[[ initial point capture ]]--
+
+function touch(event)
+    if (not start) then
+        start = event
+        display.newCircle( event.x, event.y, 2 )
+    elseif (not sling) then
+        sling = event
+        display.newCircle( event.x, event.y, 2 )
+        local c = display.newCircle( start.x, start.y, mathlibapi.lengthOf( start, sling ) )
+        c:setStrokeColor( 0,0,255 )
+        c:setFillColor( 0,0,0,0 )
+        c.strokeWidth = 2
+
+        local angle = math.abs( mathlibapi.angleOf( sling, start ) )
+        local distance = mathlibapi.lengthOf( sling, start )
+        local points = trajectory( distance, angle, iteration )
+        throw( points, sling, start, distance, angle )
+    end
+end
+
+Runtime:addEventListener(""tap"", touch) trajlib.lua: module(..., package.seeall)
+
+
+--[[ references ]]--
+
+-- The code in this listing was derived from this first URL:
+-- http://hyperphysics.phy-astr.gsu.edu/hbase/traj.html
+-- http://en.wikipedia.org/wiki/Trajectory_of_a_projectile
+
+
+--[[ support functions ]]--
+
+local function vxf( velocity, acceleration )
+    return velocity * math.cos( acceleration * math.pi / 180 )
+end
+
+local function vyt( velocity, acceleration, time )
+    return velocity * math.sin( acceleration * math.pi / 180 ) - 9.8 * time
+end
+
+local function yt( velocity, acceleration, time )
+    return velocity * math.sin( acceleration * math.pi / 180 ) * time - 0.5 * 9.8 * time * time
+end
+
+
+--[[ worker functions ]]--
+
+function totalRangeHeightFlightTime( v, ag )
+    local h = vyt(v, ag, 0) * vyt(v, ag, 0) / (2 * 9.8)
+    local t = 2 * vyt(v, ag, 0) / 9.8
+    local r = v * v * math.sin( 2 * ag * math.pi / 180 ) / 9.8
+    return r, h, t
+end
+
+function positionAtTime(v, ag, t)
+    local vx = vxf(v,ag) -- horizontal velocity
+    local x = vxf(v,ag) * t -- horizontal distance
+    local vy = vyt(v, ag, t) -- vertical velocity
+    local y = yt(v, ag, t) -- height at time 't'
+
+    return x, y, vx, vy
+end
+
+
+--[[ calculate trajectories ]]--
+
+-- returns a collection of points determined as the trajectory of the object
+function calcTrajectoryPoints( startX, startY, velocity, angle, iteration )
+    if (not iteration) then
+        iteration = 0.1
+    end
+
+    local r, h, f = totalRangeHeightFlightTime(velocity, angle) -- total range, height and flight time
+    local points = {}
+
+    for t=0, f, iteration do
+        local x, y, vx, vy = positionAtTime(velocity, angle, t)
+        points[ #points+1 ] = { x=x, y=y, time=t, velocityx=vx, velocityy=vy }
+    end
+
+    return points, r, h, f
+end
+
+-- http://answers.yahoo.com/question/index?qid=20080617223556AA8DD8M
+function calcInitialVelocity( startX, startY, angle, force )
+    return force * math.cos(angle), force * math.sin(angle)
+end
+
+
+--[[ area functions ]]--
+
+function calcAreaOfCircle( radius )
+    return math.pi * radius * radius
+end mathlib.lua: module(..., package.seeall)
+
+
+-- returns the distance between points a and b
+function lengthOf( a, b )
+    local width, height = b.x-a.x, b.y-a.y
+    return math.sqrt(width*width + height*height)
+end
+
+-- converts degree value to radian value, useful for angle calculations
+function convertDegreesToRadians( degrees )
+--  return (math.pi * degrees) / 180
+    return math.rad(degrees)
+end
+
+function convertRadiansToDegrees( radians )
+    return math.deg(radians)
+end
+
+-- rotates a point around the (0,0) point by degrees
+-- returns new point object
+function rotatePoint( point, degrees )
+    local x, y = point.x, point.y
+
+    local theta = convertDegreesToRadians( degrees )
+
+    local pt = {
+        x = x * math.cos(theta) - y * math.sin(theta),
+        y = x * math.sin(theta) + y * math.cos(theta)
+    }
+
+    return pt
+end
+
+-- rotates point around the centre by degrees
+-- rounds the returned coordinates using math.round() if round == true
+-- returns new coordinates object
+function rotateAboutPoint( point, centre, degrees, round )
+    local pt = { x=point.x - centre.x, y=point.y - centre.y }
+    pt = rotatePoint( pt, degrees )
+    pt.x, pt.y = pt.x + centre.x, pt.y + centre.y
+    if (round) then
+        pt.x = math.round(pt.x)
+        pt.y = math.round(pt.y)
+    end
+    return pt
+end
+
+-- returns the degrees between (0,0) and pt
+-- note: 0 degrees is 'east'
+function angleOfPoint( pt )
+    local x, y = pt.x, pt.y
+    local radian = math.atan2(y,x)
+    --print('radian: '..radian)
+    local angle = radian*180/math.pi
+    --print('angle: '..angle)
+    if angle < 0 then angle = 360 + angle end
+    --print('final angle: '..angle)
+    return angle
+end
+
+-- returns the degrees between two points
+-- note: 0 degrees is 'east'
+function angleBetweenPoints( a, b )
+    local x, y = b.x - a.x, b.y - a.y
+    return angleOfPoint( { x=x, y=y } )
+end
+
+function angleOf( a, b )
+    return math.atan2( b.y - a.y, b.x - a.x ) * 180 / math.pi
+end
+
+-- Takes a centre point, internal point and radius of a circle and returns the location of the extruded point on the circumference
+-- In other words: Gives you the intersection between a line and a circle, if the line starts from the centre of the circle
+function calcCirclePoint( centre, point, radius )
+    local distance = lengthOf( centre, point )
+    local fraction = distance / radius
+
+    local remainder = 1 - fraction
+
+    local width, height = point.x - centre.x, point.y - centre.y
+
+    local x, y = centre.x + width / fraction, centre.y + height / fraction
+
+    local px, py = x - point.x, y - point.y
+
+    return px, py
+end
+
+-- returns the smallest angle between the two angles
+-- ie: the difference between the two angles via the shortest distance
+function smallestAngleDiff( target, source )
+    local a = target - source
+
+    if (a > 180) then
+        a = a - 360
+    elseif (a < -180) then
+        a = a + 360
+    end
+
+    return a
+end
+
+-- is clockwise is false this returns the shortest angle between the points
+--[[
+function AngleDiff( pointA, pointB, clockwise )
+    local angleA, angleB = AngleOfPoint( pointA ), AngleOfPoint( pointB )
+
+    if angleA == angleB then
+        return 0
+    end
+
+    if clockwise then
+        if angleA > angleB then
+            return angleA - angleB
+            else
+            return 360 - (angleB - angleA)
+        end
+    else
+        if angleA > angleB then
+            return angleB + (360 - angleA)
+            else
+            return angleB - angleA
+        end
+    end
+
+end
+]]--
+
+-- test code...
+--[[
+local pointA = { x=10, y=-10 } -- anticlockwise 45 deg from east
+local pointB = { x=-10, y=-10 } -- clockwise 45 deg from east
+
+print('Angle of point A: '..tostring(AngleOfPoint( pointA )))
+print('Angle of point B: '..tostring(AngleOfPoint( pointB )))
+
+print('Clockwise: '..tostring(AngleDiff(pointA,pointB,true)))
+print('Anti-Clockwise: '..tostring(AngleDiff(pointA,pointB,false)))
+]]--","['trigonometry', 'physics']"
+93662,Normalizer/Centralizer theorem,"This is exercise 3.2.24 from Scott, Group Theory . If $H$ is a finite maximal abelian normal subgroup of $G$ and $K$ is a normal abelian subgroup of $G$, then $K$ is finite. The hint is to use Normalizer/Centralizer theorem.",['group-theory']
+93666,Why are $A=\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ and $B=\begin{bmatrix} 0 & 1 \\ -\det(A) & \operatorname{tr}(A) \end{bmatrix}$ similar?,"We have two $2\times 2$ matrices. The first matrix is $A=\begin{bmatrix} a & b \\ c & d \end{bmatrix}$, and the second matrix is obtained from the first: $B=\begin{bmatrix} 0 & 1 \\ -\det(A) & \operatorname{tr}(A) \end{bmatrix}$, or in other words $B=\begin{bmatrix}  0 & 1 \\ bc-ad & a+d  \end{bmatrix}$. The characteristic polynomial of $A$ is $\lambda^2 - \operatorname{tr}(A) \lambda + \det(A)$. The characteristic polynomial of $B$ is the same, i.e.  $\det(A-\lambda E) = \det(B-\lambda E)$. Since $\det(A-\lambda E) = \det(B-\lambda E)$, then $A$ is similar to $B$, if $A$ isn't equal to $\lambda E$. Prove why, if $\det(A-\lambda E) = \det(B-\lambda E)$, then $A$ is similar to $B$..? Thank you.","['matrices', 'linear-algebra']"
+93669,An example of a family of atomic measures whose sum is not atomic,"I look for a example of family of atomic measures such that  their sum is not atomic.
+A measure $\mu$ on a $\sigma$-algebra $S$ of subsets of $X$ is called atomic if every measurable set of positive measure contain an atom. Here by an atom we mean a  set set $E\in S$ with $\mu(E)>0$ such that for every $F\subset E$ with $F\in S$ we have $\mu(F)=0$ or $\mu(E\setminus F)=0$). I found the following example ( page 651, Example 1.3 ) but I did not understand everything. Assume that $X$ is a compact Hausdorff space in which all singletons are not in $G_\delta$ (Examples of such topologies are here ). Let $S$ be a $\sigma$ -algebra generated by all compact $G_\delta$ subsets of $X$. For each $x \in X$ we define a measure $\mu_x$ on $S$ by putting $\mu_x(E)=1$ if $x \in E$ and $\mu_x(E)=0$ otherwise. Let $\mu$ be a measure on $S$ defined by $\mu(\emptyset)=0$ and $\mu(E)=\infty$ otherwise. How to show that $\mu(E)=\sum \{\mu_x(E): x \in X\}$ for all $E\in S$? It is clear that it suffices to know that every nonempty $E\in S$ is infinite. Thanks for reading and I would appreciate it if you could solve my problem.","['measure-theory', 'examples-counterexamples']"
+93671,Wrong initial intuition about the limit of $\frac{\sin(x)}{x}$ as $x$ goes to 0,"I'm following the MIT OpenCourseware course on calculus, and when proving the derivative of $\sin(x)$ the following assumption is needed $\lim\limits_{x\to0}  \frac{\sin(x)}{x} = 1$ The proof for this is given and I can follow it. My question however relates to my initial intuition. Which is that the limit of $\sin(x)$ at 0 is defined: $\sin(0) = 0$. So Why is it wrong to just plug that in $ \frac{\sin(0)}{0} = 0$ I would have never looked further because this seems like a simple problem. What is wrong with my intuition here?","['trigonometry', 'calculus', 'limits']"
+93674,Union and intersections,"Let's define $X_i$, $i \in \{1,2,...,n\}$ $n$ sets and $E_k$ the subset of the power set of $\{1,2,...,n\}$ whose elements have a cardinality $k$. If $\displaystyle P=\bigcap_{I \in E_k}\,\bigcup_{i \in I}\:X_i$ and $\displaystyle Q=\bigcup_{I \in E_k}\,\bigcap_{i \in I\:}X_i$, how do I prove : if $k \leq\frac{n+1}{2} $ then $P \subset Q$. if $k \geq\frac{n+1}{2} $ then $Q \subset P$. It's a homework so I don't want any complete answer, just a little bit of help to be able to start. I've tried to translate what I have and what I want to prove in terms of $\forall$ and $\exists$ but I don't know how to get further... Thank you in advance !",['elementary-set-theory']
+93689,Software for Galois Theory,Background: While studying Group Theory ( Open University M208 ) I had a lot of benefit from the Mathematica Add-on package AbstractAlgebra and later from the GAP software. I am currently self-studying Galois Theory ( using Ian Stewart's Galois Theory  ). Question: Is there a program that calculates the Field Extensions / Galois Group for a ( simple ) polynomial ?,"['abstract-algebra', 'math-software']"
+93691,"Elementary proof of $\mathbb{Q}(\zeta_n)\cap \mathbb{Q}(\zeta_m)=\mathbb{Q}$ when $\gcd(n,m)=1$.","In an answer to another question I used the fact that $\mathbb{Q}(\zeta_m)\subseteq \mathbb{Q}(\zeta_n)$ if and only if $m$ divides $n$ (here $\zeta_n$ stands for a primitive $n$th root of unity, Edit: and neither $m$ nor $n$ is  twice an odd number; see KCd comments below). More generally, one can show that $\mathbb{Q}(\zeta_n)\cap \mathbb{Q}(\zeta_m)=\mathbb{Q}$ when $\gcd(n,m)=1$. The only proof of this fact that comes to mind uses facts about discriminants of cyclotomic extensions, and the fact that every non-trivial number field extension over $\mathbb{Q}$ ramifies at least at one prime (see, for instance, Washington, ""Introduction to Cyclotomic Fields"", Chapter 2, Proposition 2.4). Since the original question that I was trying to answer was somewhat elementary, I was left wondering if there are more elementary proofs of the fact 
+$$\mathbb{Q}(\zeta_n)\cap \mathbb{Q}(\zeta_m)=\mathbb{Q}, \text{ when } \gcd(n,m)=1. $$ 
+By ""elementary proof"" here I mean some proof that does not involve algebraic number theory results about discriminants, or ramification of primes in rings of integers of number fields. Can anyone think of an elementary proof? Thanks!","['cyclotomic-fields', 'algebraic-number-theory', 'abstract-algebra', 'field-theory']"
+93698,Smallest Non-negative number in a matrix,"There is a question I encountered which said to fill an $N \times N$ matrix such that each entry in the matrix is the smallest non-negative number which does not appear 
+either above the entry or to its left. That is for $N = 6$ the matrix looks like this: $$\begin{array}{}
+0&1&2&3&4&5\\
+1&0&3&2&5&4\\
+2&3&0&1&6&7\\
+3&2&1&0&7&6\\
+4&5&6&7&0&1\\
+5&4&7&6&1&0
+\end{array}$$ I was asked to find a function such that given row and column I can calculate the value at that point i.e $$f(\text{row}, \text{column}) = \text{Matrix}[\text{row}][\text{column}]$$ I was looking at Nimbers and found the matrix in it exactly similar to it. There was also given a formula to calculate to calculate Matrix[row][column] which was row XOR column (XOR is bitwise exor). However I was able to get the answer I am still unable as to how to arrive at the solution i.e. the proof that each entry in the matrix is the smallest non-negative number which does not appear either above the entry or to its left is equal to row XOR column.",['matrices']
+93700,Inner Product Spaces and Minimum Polynomials,"Problem Let $V$ be the vector space of real polynomials $\mathbb{R}[x]$ endowed with the inner product $$ (f,g)=\int_{-\infty}^{\infty}e^{-|x|}f(x)g(x)dx $$ By considering the series of subspaces $\{V_n\}$ where $V_n=\{f(x) \in \mathbb{R}[X]: \deg(f) \leq n\}$ or otherwise, show that there exist unique monic polynomials $\varphi_n(x)$ for $n \geq 0$ such that $$\int_{-\infty}^{\infty}e^{-|x|}\varphi_n(x)g(x)dx=0$$ whenever deg
+  $g<n$, and find $\varphi_n(x)$ for $n=0,1,2$. Progress We look to identify $(V_n)^{\perp}$ for  each $n$, i.e. $$(V_n)^{\perp}=\{f(x) \in \mathbb{R}[X]: \langle f,g \rangle=0 \text{ for all } g \in V_n\}$$ If we can show this has dimension $1$, then we can show the existence of a unique monic polynomial. Any thoughts on how this is done (or an alternative method for the problem) would be greatly appreciated. Regards.","['linear-algebra', 'inner-products', 'polynomials']"
+93710,"Why are the eigenvalues of these ""bitwise XOR matrices"" integers?","In the course of playing around with this question , I have hit upon a question of my own. Consider the $n\times n$ symmetric matrix $\mathbf X$ whose entries are given by $x_{j,k}=(j-1)\mathbin{\mathrm{XOR}}(k-1)$, where $\mathrm{XOR}$ is bitwise XOR . (As noted in the other question, the matrix is essentially the Cayley table for nimber addition .) Looking at the eigenvalues of $\mathbf X$ when $n$ is a power of $2$, I have observed a few things with the first few members: All the eigenvalues are integers If $n=2^m$, then there are $m+1$ nonzero eigenvalues. Of the $m+1$ nonzero eigenvalues, one is positive, and the other eigenvalues are negative. The positive eigenvalue of the $2^m \times 2^m$ matrix $\mathbf X$ is $2^{m-1}(2^m-1)$ . The $m$ negative eigenvalues of $\mathbf X$ are the negatives of the powers of $2$ between $2^{m-1}$ and $2^{2m-2}$, inclusive. (For those who want to try it out in Mathematica : Table[Eigenvalues[Array[BitXor, {2^n, 2^n}, {0, 0}], n + 1], {n, 8}] ) Is there a simple explanation for these observations?","['matrices', 'linear-algebra', 'eigenvalues-eigenvectors']"
+93720,L'Hospital's Rule for $\infty/\infty$,"Arthur Mattuck in his Introduction to Analysis book, pg. 220 says, in order
+to prove L'Hospital's Rule for $\infty/\infty$ case, Let $L=\lim_{x \to \infty} \frac{f'(x)}{g'(x)}$ and choose $a$ so that $\frac{f'(x)}{g'(x)} \stackrel{\approx}{\epsilon} L$  for $x>a$. And prove two approximations below (valid for $x\gg 1$) $$ \frac{f(x)}{g(x)} \stackrel{\approx}{\epsilon}
+\frac{f(x)-f(a)}{g(x)-g(a)} \stackrel{\approx}{\epsilon}
+L
+$$ His hint is, for the first approximation, that we write $$ f(x) - f(a) = f(x) [ 1 - f(a)/f(x)] $$ and use limit theorem, for the second, use the Cauchy Mean-value Theorem. Anyone know how to pursue this proof? Thanks,","['calculus', 'analysis']"
+93725,Interchanging the order of limits,Would you advise me on the references of Pringsheim Convergence about interchanging the order of limits? Where can I find the most general statement?,"['convergence-divergence', 'reference-request', 'real-analysis', 'limits']"
+93729,How many fours are needed to represent numbers up to $N$?,"The goal of the four fours puzzle is to represent each natural number using four copies of the digit $4$ and common mathematical symbols. For example, $165=\left(\sqrt{4} + \sqrt{\sqrt{{\sqrt{4^{4!}}}}}\right) \div .4$. If we remove the restriction on the number of fours, let $f(N)$ be the number of fours required to be able to represent all positive integers no greater than $N$. What is the asymptotic behaviour of $f(N)$? Can it be shown that $f(N) \sim r \log N$ for some $r$? To be specific, let’s restrict the operations to the following: addition: $x+y$ subtraction: $x-y$ multiplication: $x\times y$ division: $x\div y$ exponentiation: $y^x$ roots: $\sqrt[x]{y}$ square root: $\sqrt{x}$ factorial $n!$ decimal point: $.4$ recurring decimal: $. \overline 4$ It is easy to see that $f(N)$ is $O(\log N)$. For example, with four fours, numbers up to $102$ can be represented (see here for a tool for generating solutions), so, since $96 = 4\times4!$, we can use $6k-2$ fours in the form
+$(\dots((a_1\times 96+a_2)\times 96+a_3)\dots)\times96+a_k$
+to represent every number up to $96^k$. On the other hand, we can try to count the number of distinct expressions that can be made with $k$ fours. For example, if we (arbitrarily) permit factorial only to be applied to the digit $4$, and allow no more than two successive applications of the square root operation, we get $\frac{216^k}{18}C_{k-1}$ distinct expressions where $C_k$ is the $k$th Catalan number. (Of course, many of these expressions won’t represent a positive integer, many different expressions will represent the same number, and the positive integers generated won’t consist of a contiguous range from $1$ to some $N$.) Using Stirling’s formula, for large $k$, this is approximately $\frac{864^k}{72k\sqrt{\pi k}}$. So for $f(N)$ to grow slower than $r\log N$, we’d need to remove the restrictions on the use of unary operations. (It is well-known that the use of logs enables any number to be represented with only four fours.) Can this approach be extended to show that $f(N)$ is $\Omega(\log N)$? Or does unrestricted use of factorial and square roots 
+  mean that $f(N)$ is actually $o(\log N)$?
+  Is the answer different if the use of $x\%$ (percentages) is also permitted?","['discrete-mathematics', 'puzzle', 'asymptotics', 'recreational-mathematics', 'combinatorics']"
+93741,How can I evaluate $\int_{-\infty}^{\infty}\frac{e^{-x^2}(2x^2-1)}{1+x^2}dx$?,How can I solve this integral: $$\int_{-\infty}^{\infty}\frac{e^{-x^2}(2x^2-1)}{1+x^2}dx.$$ Can I solve this problem using the Laplace transform? How can I do this?,"['laplace-transform', 'special-functions', 'integration']"
+93744,Non-algebraically closed field in which every polynomial of degree $<n$ has a root,"My problem is to build, for every prime $p$, a field of characteristic $p$ in which every polynomial of degree $\leq n$ ($n$ a fixed natural number) has a root, but such that the field is not algebraically closed. If I'm not wrong (please correct me if I am) such a field cannot be finite, by counting arguments. But on the other hand, the union of all finite fields (or of any ascending chain of finite fields) of characteristic $p$, which is what I get if I start with $F_p$ and add a root to each polynomial of degree $\leq n$ in each step, is the algebraic closure of $F_p$, hence algebraically closed. I don't see how I can control this process so that in the end I get a field that is not algebraically closed. Any hint will be welcome. Thanks in advance.","['abstract-algebra', 'field-theory']"
+93746,"How many ordered triple $ (p,a,b) $ is possible such that $p^a=b^4+4$?","If we have a prime number $p$ and two natural numbers $a$ and $b$ such that $p^a=b^4+4$,
+then how many such ordered triplets $(p,a,b)$ exist? What should be the strategy to solve this one? The only I can see is $(5,1,1)$, is this the only one? if yes, how could we prove that?","['prime-numbers', 'combinatorics', 'diophantine-equations', 'number-theory']"
+93747,"On computing: $ \gcd \left({2n \choose 1}, {2n \choose 3},\cdots, {2n \choose 2n-1}\right)$","I would like to calculate $$ d=\gcd \left({2n \choose 1}, {2n \choose 3},\cdots, {2n \choose 2n-1}\right) $$ We have: $$ \sum_{k=0}^{n-1}{2n \choose 2k+1}=2^{2n-1} $$ $$ d=2^k, 0\leq k\leq2n-1 $$ ... Any idea?","['binomial-coefficients', 'number-theory']"
+93748,Any easier and direct method to prove $\|P\|_2=1$ and $\|Px\|\le\|x\|$ for orthogonal projector $P$,I know complicated ways to prove them. But wonder if there is any easier and direct method to prove $\|P\|_2=1$ and $\|Px\|\le\|x\|$ for orthogonal projector $P$ just given the fact $P^T=P$ and $P^2=P$. Please help. Thank you.,['linear-algebra']
+93750,Relationship between algebraically closed fields and complete metric spaces?,"I've been reading recently about algebraically closed fields and complete metric spaces, and it seems to me that they are very similar ideas. Is there some more general mathematical concept which these two ideas are both instantiations of? Also, I am sure that $\mathbb R$ is a complete metric space, but is not algebraically closed, while $\mathbb C$ is both. Is it possible to construct an algebraically closed metric space which is not complete? Thanks in advance!","['general-topology', 'abstract-algebra']"
+93762,"Elementary isomorphism between $\operatorname{PSL}(2,5)$ and $A_5$","At this Wikipedia page it is claimed that to construct an isomorphism between $\operatorname{PSL}(2,5)$ and $A_5$, ""one needs to consider"" $\operatorname{PSL}(2,5)$ as a Galois group of a Galois cover of modular curves and consider the action on the twelve ramified points.  While this is a beautiful construction, I wonder if this really is necessary.  Is there a construction of a map that takes a representative matrix of a class in $\operatorname{PSL}(2,5)$ and uses some relatively simple computation to produce a permutation in $S_5$ that can be shown to be even?  I don't mind if describing the construction and providing the verification that it is well-defined and does what it should takes several pages.  I'd just like to think that it's possible.","['exceptional-isomorphisms', 'finite-groups', 'group-theory']"
+93763,limit of a sequence and principle of induction,I try to evaluate this limit: $$\lim_{n\to+\infty} \frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}$$ I considered this inequality $$\frac{1}{4n}\le\left [ \frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)} \right]^2\le \frac{1}{2n+1}$$ and so $$\lim_{n\to+\infty} \frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}=0$$ my questions are: 1)-  how do I prove the inequality with the principle of induction? 2)-  there is another way to solve this limit?,"['sequences-and-series', 'calculus', 'real-analysis']"
+93765,What are the interesting applications of hyperbolic geometry?,"I am aware that, historically, hyperbolic geometry was useful in showing that there can be consistent geometries that satisfy the first 4 axioms of Euclid's elements but not the fifth, the infamous parallel lines postulate, putting an end to centuries of unsuccesfull attempts to deduce the last axiom from the first ones. It seems to be, apart from this fact, of genuine interest since it was part of the usual curriculum of all mathematicians at the begining of the century and also because there are so many books on the subject. However, I have not found mention of applications of hyperbolic geometry to other branches of mathematics in the few books I have sampled. Do you know any or where I could find them?","['hyperbolic-geometry', 'geometry']"
+93768,Using the Arnoldi Iteration to find the k largest eigenvalues of a matrix,"I'm trying to obtain a general understanding of this algorithm which determines the k-largest eigenvalues of a matrix  $A\in \mathbb{R}^{n\times n}$. How I see it: power iteration : take random starting vector $b \in \mathbb{R}^{1\times n}$ find $K_{n} = \begin{bmatrix}b & Ab & A^{2}b & \cdots & A^{n-1}b \end{bmatrix}.$ find orthogonal basis $Q_n$ of $K_{n}$ using Gramm-Schmidt (Numerically unstable) n-th column vector of $Q_n$ is an approximation of n-th eigenvector of $A$ and corresponds to n-th largest eigenvalue $\lambda_n$ of $A$ Arnoldi Iteration : Is a numerically stable implementation of power iteration. take random starting vector $b \in \mathbb{R}^{1\times n}$ find first $q_1..q_n$ arnoldi vectors to form $Q_n$ $Q_n$ is an orthonormal basis of $K_n$ numerically stable Gramm-schmidt process is used determine Hessenberg Matrix $H_n=Q_n^*AQ_n$ solve eig($H_n$) which is now simple because $H_n$ is a Hessenberg matrix, upper triangular, we can use the QR algorithm Is this the general gist of it? A good, reliable link would already be great. Any help would be greatly appreciated. Thank you.","['eigenvalues-eigenvectors', 'matrices', 'linear-algebra', 'numerical-methods', 'numerical-linear-algebra']"
+93769,"How to show $\int_{\mathbb{R}^d}  u(x) e^{-|x|^2}  (e^{-|x|^2 / n} - 1)^2 dx \rightarrow 0$, if $u\in L^2(\Bbb R^n)$?","How can I prove that 
+$$
+\int_{\mathbb{R}^d} u(x) e^{-|x|^2} (e^{-|x|^2 / n} - 1)^2 dx \rightarrow 0
+$$
+as $n \rightarrow \infty$?  Here $u \in L^2(\mathbb{R}^n)$. I'm thinking the dominated convergence theorem, but I don't know how to bound the integrand. Thanks.","['real-analysis', 'analysis']"
+93782,Which groups have precisely two automorphisms,"Which groups $G$ have precisely two automorphisms, i.e., precisely one non-trivial automorphism? Examples: $G= C_3, \mathbf{Z},\ldots$. I think $G$ has to be abelian. In fact, we have $ \vert G\vert \geq 3$. Therefore, if $G$ is not abelian, we have at least two non-trivial inner automorphisms. If we can show that $G$ is cyclic the above examples are all of them.","['automorphism-group', 'group-theory', 'abstract-algebra']"
+93808,What is the smallest convex set includes all smooth unit curves?,I try to understand: is there a smallest in area convex set that every smooth curve with length 1 can be placed inside it by translation and rotation? I only have a upper bound $S \leq \frac14+\frac{\pi}{16}$ because of convex hull of two circles radius $\frac14$ and simple lower bound $S\geq\frac1{4\pi}$. Does this set exist and what is its length?,['geometry']
+93816,Proving that an additive function $f$ is continuous if it is continuous at a single point,Suppose that $f$ is continuous at $x_0$ and $f$ satisfies $f(x)+f(y)=f(x+y)$. Then how can we prove that $f$ is continuous at $x$ for all $x$? I seems to have problem doing anything with it. Thanks in advance.,"['calculus', 'functional-equations']"
+93839,"Is there a complete set of mutually disjoint trios in a (5,8,24) Steiner system?","Question: In a (5,8,24) Steiner system, is it possible to find a set of 759/3=253 trios such that every octad lies in exactly one of these trios? Background information: If $X$ is a set of size 24, then a (5,8,24) Steiner system is a set of subsets of $X$ of size 8, called octads , such that every subset of $X$ of size 5 is contained in a unique octad.  It is known that a (5,8,24) Steiner system is unique up to a permutation of $X$.  Fix such a Steiner system $S$. It is easy to calculate that there are $\binom{24}{5}/\binom{8}{5} = 759$ octads in $S$.  A trio is a set of 3 mutually disjoint octads covering $X$.  It is known that every octad lies in exactly 15 trios and hence there are $759 \cdot 15 / 3 = 3795$ trios in $S$.",['combinatorics']
+93854,measure of information,"We know that $l_i=\log \frac{1}{p_i}$ is the solution to the Shannon's source compression problem: $\arg \min_{\{l_i\}} \sum p_i l_i$ where the minimization is over all possible code length assignments $\{l_i\}$ satisfying the Kraft inequality $\sum 2^{-l_i}\le 1$. Also $H(p)=\log \frac{1}{p}$ is additive in the following sense. If $E$ and $F$ are two independent events with probabilities $p$ and $q$ respectively, then $H(pq)=H(p)+H(q)$. As far as I know, mainly for these two reasons $H(p)=\log \frac{1}{p}$ is considered as a measure of information contained in a random event $E$ with probability $p>0$. On the other hand, if we average the exponentiated lengths, $\sum p_i2^{tl_i}, t>0$, subject to the same Kraft inequality constraints, the optimal solution is $l_i=\log \frac{1}{p_i'}$ where $p_i'=\frac{p_i^{\alpha}}{\sum_k p_k^{\alpha}}, \alpha=\frac{1}{1+t}$, called Campbell's problem. Now $H_{\alpha}(p_i)=\log \frac{1}{p_i'}$ is also additive in the sense that $H_{\alpha}(p_i p_j)=H_{\alpha}(p_i)+H_{\alpha}(p_j)$. Moreover $H_{\alpha}(1)=0$ as in the case of Shannon's measure. Also note that, when $\alpha=1$, $H_1(p_i)=\log \frac{1}{p_i}$ we get back Shannon's measure. My question is, are these reasons suffice to call $H_{\alpha}(p_i)=\log \frac{1}{p_i'}$ a (generalized) measure of information? I don't know whether the dependence of measure of information of an event also on the probabilities of the other events make sense.","['probability-theory', 'information-theory']"
+93863,Count solutions to $xy=(x+y)R!$,"Question: Is there anyway to find how many integer solutions there are to the formula
+ $$1=\frac{x\cdot y}{(x+y)\cdot (R!)}$$ for any given $R$. Is there anyway to compute it and if so, compute it quickly.",['number-theory']
+93865,False beliefs about Lebesgue measure on $\mathbb{R}$,"I'm trying to develop intuition about Lebesgue measure on $\mathbb{R}$ and I'd like to build a list of false beliefs about it, for example: every set is measurable, every set of measure zero is countable, the border of a set has measure zero, etc. Can you help me sharing your experience or with some reference list?","['big-list', 'measure-theory', 'examples-counterexamples']"
+93876,Banach-Saks property and reflexivity,"On the German Wikipedia page on the Banach-Saks property , they claim that every Banach space with the Banach-Saks property is reflexive but that the converse is not true. There should be a proof due to T. Nishiura and D. Waterman, but unfortunately, I can't find a proof of this interesting statement. It would be appreciated if someone could give me an online available reference (if possible).
+Unfortunately, my library at the university doesn't have a copy. Thx for your help math","['functional-analysis', 'reference-request', 'banach-spaces']"
+93886,"Computing A Multivariable Limit: $\lim_{(x,y) \to (0,0)}\frac{2x^2y}{x^4 + y^2}.$","Please help me in computing the following limit.
+$$\lim_{(x,y) \to (0,0)}\frac{2x^2y}{x^4 + y^2}.$$
+This will be my first attempt in computing a limit involving 2 variables.
+Is this a part of multivariable calculus as it contains more than one variable?
+How can I interpret this geometrically? Thank You","['multivariable-calculus', 'limits']"
+93895,Inequality for logarithms,"I conjecture the following inequality is true
+$$\ln x \le (x - 1)\ln\frac{x}{x-1}$$
+for all $x > 1$, but I cannot give a proof.
+I will appreciate if someone can provide one.","['logarithms', 'inequality', 'analysis']"
+93898,Trying to figure out how an approximation of a logarithmic equation works,"The physics books I'm reading gives $$\triangle\tau=\frac{2}{c}\left(1-\frac{2m}{r_{1}}\right)^{1/2}\left(r_{1}-r_{2}+2m\ln\frac{r_{1}-2m}{r_{2}-2m}\right).$$
+  We are then told $2m/r$
+  is small for $r_{2}<r<r_{1}$
+  which gives the approximation$$\triangle\tau\approx\frac{2}{c}\left(r_{1}-r_{2}-\frac{m\left(r_{1}-r_{2}\right)}{r_{1}}+2m\ln\left(\frac{r_{1}}{r_{2}}\right)\right).$$
+  I can see how $$\frac{2}{c}\left(1-\frac{2m}{r_{1}}\right)^{1/2}\approx\frac{2}{c}$$
+  but can't see how the rest of it appears. It seems to be saying that$$2\ln\frac{r_{1}-2m}{r_{2}-2m}\approx\left(-\frac{\left(r_{1}-r_{2}\right)}{r_{1}}+2\ln\left(\frac{r_{1}}{r_{2}}\right)\right)$$ I've tried getting all the lns on one side, and also expanding $\ln\frac{r_{1}-2m}{r_{2}-2m}$
+  to $\ln\left(r_{1}-2m\right)-\ln\left(r_{2}-2m\right)$
+  and generally juggling it all about but with no luck. Any suggestions or hints from anyone? It's to do with the gravitational time delay effect. It seems a bit more maths than physics which is why I'm asking it here. Many thanks","['logarithms', 'algebra-precalculus']"
+93908,Can there be a point on a Riemann surface such that every rational function is ramified at this point?,"Let $X$ be a compact connected Riemann surface, and let $S\subset X$ be a finite subset. Does there exist a morphism $f:X\to \mathbf{P}^1(\mathbf{C})$ which is unramified at the points of $S$? I'm interested in the case where $X$ is of genus at least $2$. (The genus zero case is trivial: take $f$ to be the identity.) The answer is trivial when $S$ is empty. (Any morphism $f:X\to \mathbf{P}^1(\mathbf{C})$ will do.) Let $h:X\to \mathbf{P}^1(\mathbf{C})$ be a morphism with ramification locus $R(h)$. Then, if $S\subset X\backslash R(h)$, the answer is yes. How effective can our answer be? That is, suppose that there exists such an $f$. Then, can we bound its degree? The title is a special case of the above question: take $S=\{\textrm{pt}\}$.","['riemann-surfaces', 'algebraic-geometry', 'algebraic-curves', 'complex-analysis']"
+93909,The status of high school geometry,"Okay, so we've all seen Euclidean geometry in primary and high school. Back then, I really thought of points as indivisible entities in space and lines as 'breadthless lengths'. As far as I could tell, so did the other students and the teachers. This is the kind of geometry I mean when I say 'high school geometry'. In contrast, in higher mathematics, we commonly define the Euclidean plane and space as $\mathbb{R}^2$ and $\mathbb{R}^3$. This begs the question: what is the status of high school geometry from the mathematician's perspective? Is it simply an informal picture, just like a drawing of a graph? Or is it something more, a mathematics all of its own, separate from ZFC set theory?","['geometry', 'philosophy', 'soft-question']"
+93912,Please help me spot the mistake,"This is related to this question . If anyone could help be spot the mistake it would really make my day! I have redone the question. And found that the characteristics are indeed $x\pm 2\sqrt{-y}$ for the region $y<0$. And I know  that $F(x,y)=f_1(x+2\sqrt{-y})+f_2(x-2\sqrt{-y})$ for arbitrary $f_1,f_2$ is indeed the solution to the equation $F_{xx}+yF_{yy}+{1\over 2}F_y=0$. (Verifiable by direct substitution into the equation.) Now my problem is that I can't get the correct canonical form $F_{\alpha\beta}=0$ where $\alpha,\beta=x\pm 2\sqrt{-y}$ respectively. Here is what I have done: $M_\pm={1\over c}(-b\pm\sqrt{b^2-ac})=\mp (-y)^{-1/2}$
+So the characteristics are given by $\alpha=x+2\sqrt{-y}$ and $\beta=x-2\sqrt{-y}$. We have $a(x,y)F_{xx}+2b(x,y)F_{xy}+c(x,y)F_{yy}+\cdots=H(x,y)$ and ${a\over c}\partial_{xx}+{2b\over c}\partial_{xy}+\partial_{yy}=(\partial_y-M_+\partial_x)(\partial_y-M_-\partial_x)+({\partial M_-\over \partial y}-M_+{\partial M_-\over \partial x})\partial_x$ where $(\partial_y-M_+\partial_x)(\partial_y-M_-\partial_x)=-\alpha_x\beta_x(M_+-M_-)^2\partial_{\alpha\beta}-\beta_x(M_--M_+)(\partial_\beta [\alpha_x(M_+-M_-)])\partial_\alpha$ For this particular question I calculated $(\partial_y-M_+\partial_x)(\partial_y-M_-\partial_x)=-4(-y)^{-1}\partial_{\alpha\beta}-2(-y)^{-3/2}\partial_\alpha$ $\implies(\partial_y-M_+\partial_x)(\partial_y-M_-\partial_x)+({\partial M_-\over \partial y}-M_+{\partial M_-\over \partial x})\partial_x=-4(-y)^{-1}\partial_{\alpha\beta}-{3\over 2}(-y)^{-3/2}\partial_\alpha+{1\over 2}(-y)^{-3/2}\partial_\beta$ $\implies 4F_{\alpha\beta}+{3\over 2}(-y)^{-1/2}F_\alpha-{1\over 2}(-y)^{-1/2}F_\beta-{1\over 2}(-y)^{-1/2}F_\alpha+{1\over 2}(-y)^{-1/2}F_\beta=0$ See my problem? I need the $F_\alpha, F_\beta$ terms to cancel. OK, the $F_\beta$ ones cancel, but not the $F_\alpha$ ones. Thanks in advance!",['ordinary-differential-equations']
+93919,How should I teach a high school student about inverse functions?,"Today I tried to teach a high school student about inverse functions.  I gave him this problem and defined the parts that he didn't understand: Let $f: \mathbb{R} \to \mathbb{R}$ , $x \mapsto x^2 + 1$ $g: [0, \infty) \to [1, \infty)$ , $x \mapsto x^2 + 1$ $h: [0, \infty) \to (-\infty, \infty)$ , $x \mapsto x^2 + 1$ $p: \{..., -5/2, -3/2, -1/2, 0, 1, 2, ... \} \to \mathbb{R}$ , $x \mapsto x^2 + 1$ $q: \mathbb{R} \to \mathbb{R}$ , $x \mapsto 3x + 2$ (a) Which of these functions are one-to-one? (b) Which of these functions are onto? (c) Which of these functions have inverses? (d) What are the inverses?  Over what domains are the inverses defined? (e) For the functions that have inverses, evaluate those inverses at $x = -1$ . However, I think he found the problem too difficult.  What would be better problems to give him?  More generally, what could I have done to help him better understand inverse functions? Thanks!","['education', 'algebra-precalculus', 'soft-question', 'inverse-function']"
+93928,"Is $[0,1]$ an *oriented* manifold with boundary? (and Stokes theorem)","The definitions I am using are a manifold with boundary is something locally homeomorphic to $(0,1] \times \mathbb{R}^n$ or $\mathbb{R}^n$. an oriented manifold is one where the transition functions between any two charts have positive Jacobian. Its clear that $[0,1]$ is a manifold with boundary. Is it oriented? I seem to be getting the conclusion that it is not, because around $0$, the local chart is $x \to 1-x$, and around $1$ the local chart is $x \to x$, and these have opposite orientations. But Stokes theorem surely should apply to this setting and reduce to the fundamental theorem of calculus. Recall that Stokes theorem says that if $M$ is a compact oriented $n$-manifold with boundary $\partial M$ with the induced orientation, and $\omega$ is an $n-1$ form, then $$\int_{\partial M} \omega = \int_M d\omega.$$
+Taking $\omega=f$ a zero form, i.e., function and $M=[0,1]$, I expect to recover $$f(1)-f(0) = \int_0^1 f'(x) dx ,$$ so $[0,1]$ I suspect is an oriented manifold with boundary, but I'm not seeing exactly why. In a related vein, I think I can see intuitively that the closed unit disk is an oriented manifold with boundary, and then Stokes gives Green's theorem. @Bill, in a comment below you wrote ""the chart containing 1 orients the interval 0→1.""  Well, let me be more precise: the chart $U_1=(0,1] \to (0,1]$ given by $x \to x$ (for $x \in (0,1]$) orients $(0,1]$. I cannot extend this particular chart to include $0$ because then $[0,1]$ would not be a homeomorphic to $(0,1]$ which is in my definition of manifold with closed boundary. To get a chart including the zero, I need to include another chart, e.g $U_2=[0,1)$ and then the map $x \to 1-x$ would be a homeomorphism $U_2 \to (0,1]$ as required in the definition I am using for manifold with boundary. But now, these charts have opposite orientations. I don't know how to come up with two (or more) charts that do not give opposite orientations.  The definition of manifold with boundary I am using is the one on p.25 of Voisin's Hodge Theory and Complex Analytic Geometry 1, and its easily seen to be equivalent to the more standard one homeomorphic to an open subset of the closed upper half plane. I agree with your second commment.","['manifolds', 'calculus']"
+93938,Heuristics suggesting a unit interval is uncountable,"This is maybe a soft question, I am not sure yet. Anyway, I am delivering a 8 (+ 4 supervisions) hour course on 'basic set theory' for undergraduates : set notation, bijections, functions, count-ability, Schroeder-Bernstein theorem [basically extremely naive set theory]. Now, there are loads of ways to show $ \mathbb R$ is uncountable (or equivalenetly some interval of  $ \mathbb R$ is uncountable) - perfect sets, diagnol argument, real numbers of (0,1) in binary, Schoreder-Bernstein with the power set of $ \mathbb N$ , ... HOWEVER! I - course mates included - found it mind blowing getting a theorem proving the rationals and irrationals were not equinumerous [barely 8 days into our first term at University]. I want to provide some heuristics supporting the claim - I read somewhere about throwing a 10 sided die and letting the faces produce some real in (0,1); for instance throw 1: 9 throw 2: 0 throw 3: 5 ... Yields the number 0.905 ... This at least supports the claim that we should expect to get more irrational numbers after throwing the die in an intuitive way - but infinity isn't intuitive! A similar argument might go: Between 0 and 1 there is 1/2 , between 0 and 1/2 there is a 1/4, ... - surely we can find more rational numbers than natural numbers? EEEErrr uh oh! No we cannot. Do you have some plausible heuristic to back up uncountability arguments for irrationals?","['elementary-set-theory', 'soft-question']"
+93939,Don't understand what this question about solutions of linear equations is asking.,"If there exists a solution for the linear equation $A x = \left( \begin{array}{lll} 1 \\ 1 \\ 1 \end{array} \right)$, then there also exists a solution for $Ax = \left( \begin{array}{lll} 1 \\ 2 \\ 1 \end{array} \right)$. I have a list of statements, and I need to prove or disprove them. Here is an example of such a statement. I don't understand the format of the question. I know a contradictory example to the statement I'm attaching is a square matrix $3 \times 3$ of all $1$'s. Why?",['linear-algebra']
+93945,Symmetric $k$-tensor,"I've searched on Google but I could not find an example of a symmetric tensor. I've found this blog post but I cannot construct any example of a symmetric tensor. I know that a tensor $T$ is symmetric iff $T= \operatorname{Sym} T$. Could you give the simplest example, say on $\mathbb{R}^n$?",['differential-geometry']
+93948,What is the problem in this solution to the Two Child Problem?,"The Two Child Problem states In a family with two children, what are the chances, if at least one of the
+  children is a girl, that both children are girls? It is well attested that the answer is 1 in 3 . You can view the other question for an explanation why. I thought up this solution to the same problem, but since the answer is not the same, there must be some part of my reasoning that is unsound, but I can't quite figure out where the problem is. This is my reasoning: If it is given that the older child is a girl, the probability that the younger child is also a girl, and thus that both children are girls, is 1 in 2. Similarly, if it is given that the younger child is a girl, the probability that the older child is also a girl, and thus that both children are girls, is also 1 in 2. If we know that one of the children is a girl, then it can easily be concluded that either the younger child or the older child is a girl. Either way, the probability is still 1 in 2 . Where have I gone wrong?","['probability', 'fake-proofs']"
+93952,Basis for the set of all covariant $k$-tensors on V,"Here's a proposition from Lee's Smooth Manifolds: Let $V$ be a real vector space of dimension $n$, let $(E^i)$ be any basis for $V$, and let $(\epsilon^i)$ be the dual basis. The set of all $k$-tensors of the form $\epsilon^{i_1}\otimes...\otimes\epsilon^{i_k}$ for $1 \leq i_1,...,i_k \leq n$ is a basis for the set of all covariant $k$-tensors on $V$, denoted by $T^k(V)$, which therefore has dimension $n^k$. I want to construct an example based on this proposition. Let $V=\mathbb{R}^3$, and let $e_1, e_2, e_3$ denote the usual basis for $\mathbb{R}^3$. Then the dual basis $(\epsilon^i)$ is $dx, dy$ and $dz$. Then $dx\otimes dy, dx\otimes dz, dy\otimes dz, dy\otimes dx, dz\otimes dy, dz\otimes dx, dx\otimes dx, dy\otimes dy$ and $dz\otimes dz$ form a basis for $T^2(\mathbb{R}^3)$. Is the example correct until this point? If so, which of them are the symmetric 2-tensors?",['differential-geometry']
+93958,How to find the derivative of $f(x)$?,This is not a homework problem. How to find $f'(x)$ if $f(x)=2x^{1/2}\log(2)$? Thanks in advance for your help! I just can't figure it out... What rule should I use?,"['calculus', 'derivatives']"
+93971,Extensions and Kazhdan's Property (T),"Is Kazhdan's property (T) stable under extensions? i.e. if $G$ is an extension of
+a group with property (T) by a group with property (T), does it follow that $G$ has property (T)?","['geometric-group-theory', 'representation-theory', 'group-theory', 'functional-analysis', 'locally-compact-groups']"
+93980,Ways of defining topology on $P^{n}(\mathbb{R})$,"I was wondering if the following two ways of defining topology on $P^n(\mathbb{R})$ are the same and why? Since $P^n(\mathbb{R})$ is the quotient space of $\mathbb{R}^{n+1}$,
+define the topology on $P^n(\mathbb{R})$ to be the quotient
+topology ( i.e. the maximal topology that can make the quotient map $q: \mathbb{R}^{n+1} - \{0\} \to P^n(\mathbb{R})$ continuous, if I understand correctly or do I?). From Wikipedia : Consider the following subsets of $P^n(\mathbb{R})$: $$
+         U_i = \{[x_0:\cdots: x_n], x_i \neq 0\}, i=0, \dots,n. $$ Their union is the whole projective space. Furthermore, $U_i$ is in
+  bijection with $\mathbb{R}^n$ via the following maps: $$
+         [x_0:\cdots: x_n] \mapsto \left (\frac{x_0}{x_i}, \dots, \widehat{\frac{x_i}{x_i}}, \dots, \frac{x_n}{x_i} \right )
+         $$ $$
+         [y_0:\cdots: y_{i-1}: 1: y_{i+1}: \cdots y_n] \leftarrow  \left (y_0, \dots, \widehat{y_i}, \dots y_n \right ) $$ (the hat means
+  that
+  the $i$-th entry is missing). Then define a topology on projective space by declaring that these
+  maps shall be homeomorphisms, that is, a subset of $U_i$ is open iff
+  its image under the above isomorphism is an open subset (in the usual
+  sense) of $\mathbb{R}^n$. An arbitrary subset $A$ of $P^n(\mathbb{R})$
+  is open if all intersections $A ∩ U_i$ are open. This defines a
+  topological space. Thanks and regards!","['general-topology', 'projective-space']"
+93983,convergence in distribution and convergence of quantile,"Suppose real-valued random variables $\{X_{n}\} $ converges to $X$ in distribution. Then, will the quantile of the distribution of $\{X_n\}$ converge to the quantile of $X$? 
+.","['probability-theory', 'convergence-divergence']"
+94007,Proof of Yoneda Lemma [closed],"Closed . This question needs details or clarity . It is not currently accepting answers. Want to improve this question? Add details and clarify the problem by editing this post . Closed 7 years ago . Improve this question Can anyone explain to me Yoneda Lemma proof in great details? i.e. they usually say "" ... it is easy to see that these morphisms are inverse to each other.."" without explanation.","['yoneda-lemma', 'category-theory', 'abstract-algebra']"
+94018,Finding the $n$-th derivatives of $x^n \ln x$ and $\frac{\ln x}{x}$.,"How can I prove the following identities: $$ \left( x^n \ln x \right)^{(n)}=  n! \left(\ln x + 1 + \frac{1}{2} +\cdots +\frac{1}{n} \right), \quad x>0, \quad n\ge 1, \tag{a}$$ $$ \left( \frac{\ln x}{x} \right)^{(n)}= (-1)^n \ n! \ x^{-n-1}  \left( \ln x - 1 - \frac{1}{2} - \cdots -\frac{1}{n} \right), \quad x>0,\quad n\ge 1, \tag{b}$$ Here $(\cdot )^{(n)}$ indicates the $n$-th derivative with respect to $x$. I don't know where to start!","['sequences-and-series', 'calculus', 'derivatives']"
+94020,Riemannian metric,"This is a very simple question that I got confused. Is Riemannian metric a symmetric 2- tensor or symmetric 2- tensor field ? Wikipedia says that it is a (0,2) tensor but my book says it is a tensor field. Are these things the same? What am I missing? (By the way, if it is a tensor field, I do not know what a symmetric tensor field is.)",['differential-geometry']
+94023,$p$-subgroup of $\operatorname{Aut}(G)$,"This is exercise 5.6 from Algebra, Isaacs. Let $G$ be a finite group with $|G|>1$, and suppose $P\subseteq \operatorname{Aut}(G)\ $ is a $p$-subgroup. Show that there exists some nontrivial Sylow $q$-subgroup $Q$ of $G$ (for some prime $q$) such that $\sigma(Q)=Q$ for all $\sigma \in P \ $. I can solve the case $ p \mid |G| \ $, but not the other.",['group-theory']
+94027,The Dimension of the Symmetric $k$-tensors,"I want to compute the dimension of the symmetric $k$-tensors. I know that a covariant $k$-tensor $T$ is called symmetric if it is unchanged under permutation of arguments. Also, I know that the dimension of covariant $k$-tensors is $n^k$ but how can I eliminate non-symmetric the cases? I found this but I could not get the intution. Also, this blog post answers my question but I don't see why we put | between different indices. Any concrete example would also help such as the symmetric covariant 2-tensors in $\mathbb{R^3}$, as I asked in this thread .","['tensors', 'linear-algebra', 'differential-geometry']"
+94032,Irrational rotation and recurrence time,"Let $\mathbb{T}=\mathbb{R}/\mathbb{Z}$ be the torus, and $\alpha\in(0,1)$ be an irrational number, then the transformation $T$ defined by $Tx=x+\alpha$ is the irrational rotation on $\mathbb{T}$. Now for a neighborhood $(-\epsilon,\epsilon)\pmod 1$ of the point $0$ we consider the set of the recurrence time $$A = \{n:T^n(0)\in (-\epsilon,\epsilon)\pmod 1 \} = \{n:n\alpha\in(-\epsilon,\epsilon)\pmod 1 \} \;.$$ For a quadratic polynomial, for example $n^2$, I want to ask whether we can find two numbers $\beta,\delta\in (0,1)$,such that the set of polynomial recurrence time $\{n:n^2\beta\in(-\delta,\delta)\pmod 1\}$ is contained in the set $A$.","['ergodic-theory', 'number-theory']"
+94033,Heat kernel on a noncompact manifold,"I'd like to understand some issues about the heat problem related to the Laplacian of a Riemannian manifold especially when the manifold is noncompact.
+So first recall the heat equation on a Riemannian $C^{\infty}$-Manifold $(M,g)$. When $M$ is compact, there is a unique function, the heat kernel, $K \in C^\infty (M \times M \times \mathbb{R^+})$ satisfying $(\partial_t + \Delta_x)K(x,y,t) = 0$ and $ \lim_{t \rightarrow 0} \ \int\limits_{M} K(x,y,t)f(y)dvol_y = f(x) \ \ \forall f \in L^2(M) $ And as far as I know this fact stays true If $\partial M \neq \varnothing$ when one inserts an appropriate boundary condition (i.e. Dirichlet-condition) for the Problem. When $(M,g)$ is considered to be noncompact (the examples I want to examine are mainly conformally compact metrics) there is, as far as I know, no such $C^{\infty}$-Kernel but
+a distributional solution of the heat problem defining (as a distributional Schwartz kernel)  a kind of (pseudodifferential ?) operator, that ""has a conormal singularity"" on the diagonal $D:= \{(x,x,0) | x \in M \} \subset M\times M \times \mathbb{R}$. My first question is: Is that correct so far? (1) edit: After further investigation I got confused about the question, if a $C^{\infty}$-heat-kernel for a noncompact manifold exists. In Isaac Chavel's book ""Eigenvalues in Riemannian Geometry"" there is a theorem on page 188 in chapter XIII, that says: There IS a a $C^{\infty}$-kernel. Is that right or did I miss something? 
+(Here is the Google-books link: http://books.google.de/books?id=0v1VfTWuKGgC&printsec=frontcover&hl=de#v=onepage&q&f=false ) Until now I'm not very familiar with pseudodifferential operator calculus (but I want to improve my knowledge) and so I ask myself the following question: (2) Why can't there be an $C^{\infty}$-Solution like in the compact case? How can one prove that there can't be? Or can anybody refer to a
+book/paper/lecture note where this question is concerned? (3) What does ""conormal singularity"" with respect to some submanifold $Y$ exactly mean? I just vague know that it means to have a singularity much stronger in normal direction than in tangential direction and it is related to the Fourier transform. Nevertheless it stays mysterious to me. How can the occurence of the conormal singularity of the heat kernel for noncompact manifolds be seen? I would be happy for any comments or small hints, too!
+Thank you for your help.","['partial-differential-equations', 'differential-geometry']"
+94035,Applying Prokhorov's theorem to collection of random variables,"Suppose we have a collection of random variables $X_{i,n}$ for $i \in [0,1]$ and $n=1,2,3....$ Suppose this collection of random variables is tight. Then, can we construct a subsequence $n'$ such that along this subsequence for every $i$, $X_{i,n}$ converges to some $X_{i}$ in distribution?","['probability-theory', 'convergence-divergence']"
+94039,Basic Question Concerning Elementary Functions,"I have a homework problem which says If $f(x) = \dfrac{x^2 - x}{x - 1}$ and $g(x) = x$. Is it true that $f = g$? What do they mean by saying is it true that $f = g$? Aren't these two functions completely different from each other? Let's say it's true,then what reasoning should I give?
+I'm not sure how to even get started. Please help.","['algebra-precalculus', 'functions']"
+94058,Each point of $M$ has a smooth coordinate neighborhood in which the coordinate frame is orthonormal iff $g$ is flat,"Let $(M,g)$ be a Riemannian manifold. Then I want to show that these are equivalent: (i) Each point of $M$ has a smooth coordinate neighborhood in which the coordinate frame is orthonormal. (ii) $g$ is flat. Here's what I've tried: (i) $\Rightarrow$ (ii): Let $p$ be a point in $M$ . Assume it has a smooth coordinate neighborhood in which the coordinate frame is orthonormal, i.e., a local frame $(E_1,...,E_n)$ on an open set $U$ around $p$ such that $\langle E_i,E_j\rangle_g=\delta_{ij}$ . Since $M$ is a smooth manifold, $U$ is diffeomorphic to an open subset of $\mathbb{R}^n$ by the diffeomorphism $F$ . So, it suffices to  show that $F^\ast g= \tilde{g}$ , where $\tilde{g}$ is Euclidean metric. By the definition of Riemannian metric, this is true. (Is this true really?) (ii) $\Rightarrow$ (i): Assume $g$ is flat, i.e., every point $p$ in $M$ has a neighborhood $U$ such that $(U,g|_U)$ is isometric to an open subset of $\mathbb{R}^n$ with the Euclidean metric. So $U$ is diffeomorphic to an open subset of $\mathbb{R}^n$ and $F^\ast g= \tilde{g}$ , where $\tilde{g}$ is Euclidean metric. Since ( $\partial/\partial x^i$ ) is an orthonormal frame in $\mathbb{R}^n$ , it gives an orthonormal frame in $U$ . (I don't know how.) Thanks in advance.","['riemannian-geometry', 'manifolds', 'differential-geometry']"
+94095,Trigonometric integral,"I would like to know if there is some way to calculate exactly $$\int_{0}^{\pi/2} \frac{\cos^3 x}{\sqrt {\sin x}(1+\sin^3 x)}\,dx$$ The numerical value is 1,52069","['calculus', 'integration']"
+94104,Help with integrals in Gunning's book,"In Gunning's book Introduction to Holomorphic Functions of Severals Variables, Vol I, on pages 44 and 45 have some statements about integrals that I can not understand. First, on page 44, equation $(3)$ we have the integral $$\iint_{D_{r}} \frac{\partial f(\zeta)}{\partial \overline{\zeta}} \frac{d \overline{\zeta} \wedge d \zeta}{\zeta - z},$$
+where f is a $\mathcal{C}^{\infty}$ function in an open neighborhood of $\overline{D}$, $D$ an open subset of the complex plane bounded by a rectifiable simple curve $\gamma$, $z \in D$ and $D_{r} = D - \overline{\Delta}(z; r)$ for $r$ such that the disc is in $D$. Gunning says that since $(\zeta - z)^{-1} d \overline{\zeta} \wedge d \zeta$ is a bounded measure in the plane, the integral above converges to the integral over $D$ as $r$ tends to zero. I can not understand $(\zeta - z)^{-1} d \overline{\zeta} \wedge d \zeta$ as a measure, much less bounded in the plane. On page 45, we have the integral $$g(z) = \frac{1}{2\pi i} \iint_{\mathbb{C}^{1}} \frac{f(\zeta)}{\zeta - z} d \zeta \wedge d \overline{\zeta},$$
+where $f$ is a $\mathcal{C}^{\infty}$ function that vanishes outside a compact subset of $\mathbb{C}$. Gunning says that this function is $\mathcal{C}^{\infty}$ in $\mathbb{C}^{1}$ (if $f$ is holomorphic, then $g$ is holomorphic). Why, if we have $(\zeta - z)$ in the denominator? I think this is related to the first question. Perhaps I just need references to study more about integrals. Thanks.","['measure-theory', 'complex-analysis']"
+94109,Does iterating $n \to 2n+1$ always eventually produce a prime number?,"Is it the case that for every non-negative integer $n$, iterating $n \to 2n+1$ eventually produces a prime number? (This is the same as asking whether for every positive integer $n$, there is a non-negative integer $k$ such that $2^k n  - 1$ is prime.) If this is not settled by proof, is there some heuristic argument either way?","['prime-numbers', 'number-theory']"
+94110,Does this modified random walk (2D) return with probability 1?,"Pólya showed that a random walk (with the directions at each step uniformly distributed) on the integer lattice returns with probability 1. What if instead we consider the random walk where we are not allowed to go backwards? That is we start at (0,0) and facing ""north"", at each step we either turn left, stay straight, or turn right each with Pr = 1/3. For example the possible positions after 1 step are: (-1,0) (facing west) (0,1) (facing north) (1,0) (facing east) The distribution on the next step depends on the last step you took, so you cannot immediately return to the spot you just came from (this is what my friend does when he ""randomly"" walks in Manhattan, it is boring to turn completely around). Thus one possible return sequence would be 4 consecutive left turns. Does this return with probability 1?","['stochastic-processes', 'random-walk', 'probability']"
+94114,Cartesian product of uncountable number of compact metric spaces,"Suppose $ i \in [0,1]$ and for each $i$, $X_i$ is a compact metric space. Then, is it that a Cartesian product of $X_i$ over $ i \in [0,1]$ is also a compact metric space?","['general-topology', 'metric-spaces']"
+94122,Showing that $|f(z)| \leq \prod \limits_{k=1}^n \left|\frac{z-z_k}{1-\overline{z_k}z} \right|$,"I need some help with this problem: Let $f\colon D \to D$ analytic and $f(z_1)=0, f(z_2)=0, \ldots, f(z_n)=0$ where $z_1, z_2, \ldots, z_n \in D= \{z:|z|<1\}$. I want to show that $$|f(z)|
+ \leq \prod_{k=1}^n \left| \frac{z-z_k}{1-\overline{z_k}\, z} \right|$$ for all $z \in
+ D$. It seems that I need to use Schwarz-Pick Lemma but it seems that the problem doesn't satisfy the conditions. Another lemma that I can use is that of Lindelöf saying: Let $f:D \to D$ analytic, then $$|f(z)|\leq \frac{|f(0)|+|z|}{1+|f(0)| \cdot |z|}$$ for all $  z \in D$. It seems to be an easy problem but I couldn't succeed in solving it.",['complex-analysis']
+94125,Convergence of marginal distribution in the case of convergence in distribution,"Suppose a random variable $Z_n=(X_n,Y_n)$ takes a value on $A= [0,1] \times B=[0,1]$. We can consider a conditional distribution of $Y_n$ given the realized value of $X_n$. Now suppose $Z_n$ converges to $Z$ in distribution. What can I say about the convergence of the conditional distribution $F_n(Y_n|X_n=x)$? Can I say, for example, for $x$ almost surely, $F_n(|X_n=x)$ converges to $F(|X=x)$ in distribution?","['probability-theory', 'convergence-divergence']"
+94131,Continuous map $\mathbb{S}^n\to \mathbb{S}^m$,Is it true that any continuous map $\mathbb{S}^n\to \mathbb{S}^m$ is not surjective if $n<m$? Thanks.,['general-topology']
+94162,Proving that $G/N$ is an abelian group,"Let $G$ be the group  of all $2 \times 2$ matrices of the form $\begin{pmatrix} a & b \\ 0 & d\end{pmatrix}$ where $ad \neq 0$ under matrix multiplication. Let  $N=\left\{A \in G \; \colon \; A = \begin{pmatrix}1 & b \\ 0 & 1\end{pmatrix} \right\}$ be  a subset  of the group $G$. Prove that  $N$ is  a normal subgroup of $G$ and prove that  $G/N$ is abelian group. Here is my attempt! To prove $N$ is normal I consider  the group homomorphism $f \colon G \to \mathbb R^*$ given by $f(B) = \det(B)$ for all $B$ in $G$. And I see that $f(N)$ is all the singleton $\{1\}$ since $\{1\}$ as a subgroup of $\mathbb R^*$  is normal, it follows that $N$ is also normal. Is this proof helpful  here? Then how to prove that $G/N$ is Abelian? I know $G/N$ is a collection of left cosets. Thank you.","['group-theory', 'abstract-algebra', 'normal-subgroups']"
+94163,"Given a finite list of prime factors, what is the fastest way to find all numbers that can be formed from them","$$ \text{Let} \ S = \{p_1,p_2,p_3,...,p_n\} $$
+$$ \text{where} \ p_i \in \Bbb P$$ What is the fastest known method method/algorithm to generate all unique numbers through product operation on $S$? $\text{Ex}: S= \{3,5,2\} $ Soln: $3\times5 = 15$ $3\times2 = 6$ $3\times5\times2 = 30$ $5\times2 = 10$ Currently, my ideas hover around generating all subsets of $S$, multiplying all the members in each of them and eliminating the duplicates from the list of numbers so generated. This is $O(2^n)$.","['prime-numbers', 'elementary-number-theory', 'combinatorics']"
+94166,Best way to learn Algebraic Geometry?,"I've been reading the book Commutative Algebra with a view towards Algebraic Geometry. I was wondering is the best way to learn algebraic geometry through commutative algebra? As the book I'm currently trying to read is Reid and he assumes Commutative Algebra. Was wondering what you guys think is the best way to learn Algebraic Geometry. I'm patient so could probably read David Eisenbud and do all the exercise in it before learning Algebraic Geometry. To make it more concrete. What would you suggest to a fourth year undergrad student who wanted to learn Algebraic Geometry. Like add I know noncommutative algebra up to Artin Weddingburn Theorem. Also, know Group theory up to sylow theorem. Topology up to classification of 2-surfaces.","['algebraic-geometry', 'learning', 'reference-request', 'soft-question']"
+94179,limit of this function,"let be the function $ ( \epsilon x +1)^{1/\epsilon}=f(x) $, i know that in the limit $ \epsilon \to 0 $ then $f(x)=e^{x}$ , however i would like to know what happens if i have the function $ ( \epsilon x +a)^{1/\epsilon}=f(x) $, in the cases $ a >1$ , $a<1$ in the first case  if $a>1 $ and 'x' is positive the function is $f(x)=\infty$ , for the other case with $ a<1$ i believe that $ f(x)=0$ , but i am not sure.","['calculus', 'limits']"
+94184,Using Wolfram Alpha For Solving A System Of Equations,"How do i input  the below system of equations in wolfram alpha in order to solve for the unknowns and plot them? If i just say ""solve"" and input these equations one after the other with a simicolen {solve $2x - y +0z = 0$;$-x + 2y -z = -1$;$0x - 3y + 4z = 4$} it simply throws the value of $x$,$y$ and $z$ without showing any steps nor the plot.
+I'am Wondering if there's some kind of code that can be written in order to make wolfram alpha understand what i'am talking about.
+$$\left.\begin{matrix}
+ 2x - y +0z = 0\\ 
+-x + 2y -z = -1\\
+ 0x - 3y + 4z = 4
+ \end{matrix}\right\}$$","['wolfram-alpha', 'linear-algebra', 'computer-algebra-systems']"
+94185,Goldbach conjecture,"I have seen the following in my observation. I am so sorry, if I am wrong. I do not know how far I am right. But, I feel that, it might be correct. If correct, Please let me know that way to proceed further to prepare a proof. every number can be expressible either, prime + prime or prime + non prime or non prime + non prime or non prime + prime as shown below.  To support GC, I would like to take an example to show these combination.  For example: number 10 (>2) and consider that non prime as NP and prime is P. 10 = 1 + 9 or 2 + 8 or 3 + 7 or 4 + 6 or 5 + 5 I am sure there is prime + prime in every even integer. We can notice that every integer > 2 can be expressible any one of the above form. If P + P is not taken place in the above example, then there is no question of discussion of GC. Now, find the number of primes in fraction. If the fraction is > ¼, then we need not to discuss further proof of GC.  No matter what fraction we have taken, we find the same. If the fraction of primes is 1/8, then the probability of finding N + P are 6/16, but we require 8/16 to avoid any P + P sums. If the fraction of primes is 1/10, then the probability of finding N + P are 8/25, but we require 10/25 to avoid any P + P sums. The probability is always strongly in favor of a P + P. So, we can conclude the GC. Here: n is non prime and p is prime","['conjectures', 'number-theory']"
+94233,An integrable and periodic function $f(x)$ satisfies $\int_{0}^{T}f(x)dx=\int_{a}^{a+T}f(x)dx$.,"I want to prove: For an integrable function $f(x)$ and periodic with period $T$, for every $a \in \mathbb{R}$, $$\int_{0}^{T}f(x)\;dx=\int_{a}^{a+T}f(x)\;dx.$$ I tried to change the values and define $y=a+x$ so that $dy=dx$ and the limits of the integrals are as we want, but I'm not sure how to use the fact that $f(x)$ is periodic. Thanks a lot!","['definite-integrals', 'calculus', 'periodic-functions']"
+94241,Problem based on Mapping of Functions.,"A function $f:\mathbb{R}\to \mathbb{R}$ is define by, $$f(x) = \frac{\alpha x^2 + 6x - 8}{\alpha + 6x - 8x^2}$$Find the interval of values of $\alpha$ for which $f$ is onto. So, here is what I did Let $f(x)$ be $y$
+$$y(\alpha + 6x -8x^2) = \alpha x^2 + 6x - 8$$
+$$ (\alpha + 8y)x^2 + 6(1-y)x -(8+\alpha y) = 0 $$
+Since, $x$ is valid for all Real Numbers,  $ \:36(1-y)^2 + 4(8+ \alpha y)(8y + \alpha) \ge0 $
+$$y^2(9+8\alpha) + y(46 + \alpha^2) + (9+8\alpha) \ge0 \tag{1}$$
+For $(1)$ to hold for each $y\in\mathbb{R}$, $\:9 + 8\alpha >0 \implies \alpha > -\frac{9}{8}$ But that's all I have been able to do and in my book an another condition is given,$\:(46 + \alpha^2)^2 - 4(9 + 8\alpha)^2\le0$. I am not able to understand why is the author using this condition, If anyone of you could explain me what the condition has to do with the $\textbf{equation } (1)$, and also if someone could explain me the graphical implication of the condition. Thank You.","['self-learning', 'functions']"
+94242,Introductory book on Topology [duplicate],"This question already has answers here : Closed 12 years ago . Possible Duplicate: choosing a topology text Best book for topology? What book would you recommend for an undergraduate wanting to learn the basics of topology? I've come across several books that claim to give an introduction to the subject, but I wasn't sure which one(s) to pick. Here are some of the books I came across: Introduction to Topology - Bert Mendelson Basic Topology - M.A. Armstrong First Concepts of Topology - William G. Chinn Topology Without Tears - Sidney A. Morris Topology - James Munkres They don't go over the exact same topics, some are more in-depth than others, some seem to target slightly different audiences etc. What would be right for me (not necessarily from that list)? To give some more background, I want to learn topology because I feel it will be somewhat helpful in the field of Computer Vision.","['general-topology', 'reference-request']"
+94251,Pigeonhole principle to prove division,"Here's a little question that we were shown in class: Let $S = \{1,2,\ldots,200\}$ and let $A \subseteq S$  such that $|A| = 101$.
+  Prove that there are two elements of $A$ such that one is a divisor of
+  the other. The proof was fairly easy: the pigeonholes were the pattern $(2k+1)2^i$. You have a $100$ of those and therefor two elements must be in the same pigeonhole. My question: Why a $100$ pigeonholes? Other than that face that this is comfortable and it works, is there any other reason? Can I do the same for $50$ and still be able to give such representation to every number? Thanks","['pigeonhole-principle', 'discrete-mathematics']"
+94258,Purpose Of Adding A Constant After Integrating A Function,"I would like to know the whole purpose of adding a constant termed constant of integration everytime we integrate an indefinite integral $\int f(x)dx$. I am aware that this constant ""goes away"" when evaluating definite integral $\int_{a}^{b}f(x)dx $. What has that constant have to do with anything? Why is it termed as the constant of integration ? Where does it come from? The motivation for asking this question actually comes from solving a differential equation $$x \frac{dy}{dx} = 5x^3 + 4$$ By separation of $dy$ and $dx$ and integrating both sides, $$\int dy = \int\left(5x^2 + \frac{4}{x}\right)dx$$  yields $$y = \frac{5x^3}{3} + 4 \ln(x) + C .$$ I've understood that $\int dy$ represents adding infinitesimal quantity of $dy$'s yielding $y$ but I'am doubtful about the arbitrary constant $C$.","['calculus', 'integration']"
+94271,circles tangent to exponential curve,"Circle $C_1$ is tangent to the curves $y=e^x$ and $y=-e^x$ and the line $x=0$, and for $n>1$ circle $C_n$ is tangent to both curves and to $C_{n-1}$, how can I find the radius of any circle $C_k$? This is related to my previous question: summing series using circles inside curves","['geometry', 'calculus', 'circles']"
+94280,"If every open set is a countable union of balls, is the space separable?",Suppose we have a metric space in which every open set is expressible as a countable union of balls. Is this space necessarily separable ? Thank you.,"['general-topology', 'metric-spaces']"
+94284,"On ""epic $\Leftrightarrow$ surjective"" in $\mathbf{Grp}$ and $\mathbf{FinGrp}$","Exercise 6H on pp 45-46 of Herrlich & Strecker's Category theory (1979, 2d ed.) states (my emphasis ): (a) Show that if $K$ is a subgroup of the (finite) group $H$ , then there exists a (finite) group $G$ and group homomorphisms $f_1, f_2:H\to G$ such that $$K = \{h\in H | f_1(h\,) = f_2(h\,)\}$$ [ $\cdots$ lengthy hint on how to construct $(G, f_1, f_2)$ omitted $\cdots$ ] (b) Use part (a) to show that the epimorphims in Grp are precisely the surjective homomorphisms; likewise in the category of finite groups . My question is: why do H&S take the trouble of making a special case out of the category of finite groups? The emphasized text in the quoted exercise, especially the last phrase of part (b), suggest that the proof of the ""epic $\Leftrightarrow$ surjective"" equivalence for the category Grp somehow does not hold for the category of finite groups.  How could this be?  After all, finite groups are groups too , so any theorem that is proved for groups in general would necessarily hold for finite groups as well.  It would have made sense if the proof for the case of finite groups did not apply for groups in general, but not the other way around. (FWIW, after doing parts (a) and (b) for Grp , I don't see any step in the argument that depends on the cardinality of the groups involved.  In particular, this is the case for the proposed construction given in the omitted hint.)","['category-theory', 'group-theory']"

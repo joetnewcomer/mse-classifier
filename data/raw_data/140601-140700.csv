@@ -1,0 +1,1098 @@
+question_id,title,body,tags
+2267746,Voting games and winning coalitions,"Let $ N = {1,2,.....,n } $ be a set of elements called voters. Let $$C=\lbrace S : S \subseteq N \rbrace$$ be the set of all subsets of $N$ . members of $C$ are called coalitions. let $f$ be a function from $C$ to $(0,1)$ . A coalition $S \subseteq N$ is said to be winning if $f(S) = 1 $ , it is said to be losing coalition if $f(S) = 0.$ .Such a function f is called a voting game if the following conditions hold (a) N is a winning coalition. (b) the empty set is a losing coalition. (c)if S is a winning coalition and if $S \subseteq  S'$ , then S' is also winning. (d)if both S and S' are winning coalitions , then S and S' have a common voter. Source Show that
+a. The maximum number of winning coalitions of a voting game is $2^{n-1}$ b. Find a voting game for which number of winning coalition is $2^{n-1}$ I tried by checking if any element of $N$ is a winning coalition then its union with any other element of $N$ will also be a winning coalition. Thus there are two options for the remaining elements either become a part of winning coalition or not.Thus there are $2^{n-1}$ .I am not sure I am right in my reasoning and unable to prove that this indeed is maximum.Any ideas?Thanks.","['game-theory', 'combinatorics']"
+2267757,"Does this ""almost all integers in order"" sequence have a closed form?","Can you help me define a formula for the following sequence (first $130$ terms) : 0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 10, 11, 12, 13, 12, 15, 15, 17, 18, 18, 20, 21, 22, 23, 22, 25, 26, 27, 28, 28, 30, 31, 32, 33, 32, 35, 36, 37, 38, 38, 40, 41, 42, 43, 42, 45, 46, 47, 48, 48, 49, 50, 52, 53, 52, 55, 55, 57, 58, 57, 60, 61, 61, 63, 61, 65, 66, 67, 67, 68, 70, 71, 72, 73, 72, 75, 76, 77, 78, 78, 79, 81, 82, 83, 82, 85, 85, 87, 88, 88, 90, 91, 91, 93, 91, 95, 96, 97, 97, 98, 99, 101, 102, 102, 102, 105, 106, 107, 108, 107, 109, 111, 112, 113, 111, 115, 114, 117, 117, 117, 120, 121, 120, 123, 119, 125, 126, 127, 127, 128 How it was obtained: Generate a set of all pairs of form $(x,y)$ by iterating $x,y$ both
+  from $0$ to $N-1$ , You now have a set of $N^2$ such pairs. Replace each pair with the number of 3-digit palindromes of
+  form $(x+Nk)_y$ , You now have a set of $N^2$ nonnegative
+  integers. ($k$ is any nonnegative integer) Note, if $y<2$, we set the value to $0$, since $2$ is the smallest integer number base Count the number of distinct nonnegative integers in your set, to get the
+  $f(N)$, where $f(1)=0$ My attempt on finding patterns The sequence almost looks like a sequence of all nonnegative integers in order. It starts counting nicely, but at some places we see irregularities. I tried to subtract $0,1,2,3,4\dots N-1$ from the first $130$ terms so far. We get: 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, -2, 0, -1, 0, 0, -1, 0, 0, 0, 0, -2, 0, 0, 0, 0, -1, 0, 0, 0, 0, -2, 0, 0, 0, 0, -1, 0, 0, 0, 0, -2, 0, 0, 0, 0, -1, -1, -1, 0, 0, -2, 0, -1, 0, 0, -2, 0, 0, -1, 0, -3, 0, 0, 0, -1, -1, 0, 0, 0, 0, -2, 0, 0, 0, 0, -1, -1, 0, 0, 0, -2, 0, -1, 0, 0, -1, 0, 0, -1, 0, -3, 0, 0, 0, -1, -1, -1, 0, 0, -1, -2, 0, 0, 0, 0, -2, -1, 0, 0, 0, -3, 0, -2, 0, -1, -2 Now we are left with negative numbers at the places of irregularities. My goal was to find the patterns of all irregularities so I can work a formula for the sequence. We have $65$ irregularities. I found three patterns so far: one is subtracted at every $5$ terms, starting at $10$th term one is subtracted at every $10$ terms, starting at $15$th term one is subtracted at every $30$ terms, starting at $51$th term (confirmed up to $231$th term) By excluding these, we are left with $25$ irregularities among our first $130$ terms, located at the following places in the sequence: 17 52 57 60 63 65 69 87 93 95 99 101 104 110 115 117 117 119 120 123 123 125 125 125 129 Pattern starting at $17$th place occurs at least every $70$ terms or more, if it exists. I'm not sure about any other patterns that could start at any of these places. Without a more general approach, it would be hard to find all the irregularities, since the patterns don't seem obvious. Also, it gets harder to compute big terms very quickly. it is sufficient to check $k$ values in range: $$ 0\le k \le N^2-3N+2$$ Since beyond that bound, bigger $k$ will not produce any more 3-digit
+  palindromes of form $(x+Nk)_y$ for values $0\le x,y \lt N$ . This came up from my previous question related to patterns generated when plotting palindromes in a certain way. This sequence is, in other words, number of distinct colors on a graph of size $N\times N$ where each pixel $(x,y)$ is colored based on how much numbers of form $(x+Nk)$ that make a 3-digit palindrome in number base $y$ exist, where $k$ is some nonnegative integer. For example, we can plot $N=130$, which consists of $128$ distinct colors: $\hspace{7cm}$","['combinations', 'pattern-recognition', 'number-systems', 'sequences-and-series']"
+2267769,Choosing half of prefix and suffix for three lists,"Consider three lists: $(1,2,\dots,n)$ , $(a_1,a_2,\dots,a_n)$ , and $(b_1,b_2,\dots,b_n)$ , where the second and third lists are permutations of the first. Does there exist a constant $c$ such that for any $n$ and for any second and third lists, we can choose a subset $A\subseteq\{1,2,\dots,n\}$ of size at most $n/2+c$ so that for any prefix and suffix of any list of any length $k\in[1,n]$ , at least $k/2$ of those elements are in $A$ ? When there are only two lists, this is true as shown here , even with $c=2$ . However, it seems unlikely that the coloring technique used in the solution can be applied here.","['permutations', 'combinatorics']"
+2267773,An analytic function is the identity,"$W$ is a bounded connected open subset of $\mathbb C$. If $\varphi : W \to W $ is an analytic function, such that $\varphi(w) = w$ and $\varphi'(w) = 1$, for some $w \in W$, then $\,\varphi={\rm Id}$. I'm thinking I need to somehow implement the Schwarz Lemma? But I don't know exactly how to do that here...","['analyticity', 'complex-analysis']"
+2267786,Gradient is NOT the direction that points to the minimum or maximum,"I understand that the gradient is the direction of steepest descent (ref: Why is gradient the direction of steepest ascent? and Gradient of a function as the direction of steepest ascent/descent ). However, I am not able to visualize it. The Blue arrow is the one pointing towards minima/maxima. The gradient  ( black arrow ) is not and that's why we have this zig-zag motion. Then how come gradient is the direction of steepest descent/ascent? I have a related question: Why does gradient ascent/descent have zig-zag motion?","['optimization', 'gradient-descent', 'multivariable-calculus', 'visualization', 'convex-optimization']"
+2267812,"Suppose events $A$ and $B$ are such that $P(A)=0.6$ and $P(B)=0.7$, how do we answer the following questions about $P(A\cap B)$?","Suppose events $A$ and $B$ are such that $P(A)=0.6$ and $P(B)=0.7$, how do we answer the following questions about $P(A\cap B)$? $1.$ Is it possible that $P(A\cap B)=0.1$? I think this is impossible. We know that $P(A\cap B)=P(A)+P(B)-P(A\cup B)=1.3-P(A\cup B)$, then $P(A\cup B)=1.2$ which is impossible, but is my understanding wrong? $2. $ Is it possible that $P(A\cap B)=0.63$? Same procedure,$P(A\cap B)=P(A)+P(B)-P(A\cup B)=1.3-P(A\cup B)$, then $P(A\cup B)=0.67$, which may be possible? I feel this $0.63$ is odd to my calculation. $3.$ What is the largest possible value of $P(A\cap B)$? I think this is when $A$ is fully included in $B$. Thus the largest is $0.6$. Could someone clear my confusion?","['statistics', 'probability']"
+2267833,Tight upper bound for the following expression,How does one go about upper bounding the following expression/what is the tightest upper bound one can achieve? $$\prod_{i = 1}^k A_i!$$ such that $$\sum_{i}^k A_i \leq C$$. What is the tighest upper bound for the first expression in terms of C and k? Note that the trivial upper bound for this expression is $((\frac{C-k}{e})^C)^k$ but can we do better than this?,"['algebra-precalculus', 'combinatorics', 'upper-lower-bounds']"
+2267834,Can a non-equilateral triangle with integer sides and integer angles (in degrees) exist?,"I'm wondering if a triangle with integer sides and integer angles in degrees exists, which is not equilateral. Could someone come up with a proof for why or why not? Edit: Please do not answer with a triangle which has integer sides only. The triangle must have integer angles in degrees; this means they must actually be integers, not rounded off.","['trigonometry', 'triangles', 'geometry']"
+2267856,Dividing Variance by $n$,"This sample follows a Normal Distribution with Mean $= 280 / 20 = 14$, and Variance $= (3977.57 / 20) - 14^2 = 2.88$. To find the unbiased variance, we can divide it by $19$ to get $3.03$. However, in the following question: I used $\displaystyle\int\frac{3x^3 + 2x^2}{10} \, dx$ and $\displaystyle\int \frac{3x^4 + 2x^4}{10}\,dx - \text{mean}^2$ to get the mean and variance that the sample follows. The answer gives the variance as $\displaystyle\int \frac{3x^4 + 2x^4}{10}\, dx - \text{mean}^2$ divided by $n$. I understand that this is the definition given by the Central Limit Theorem. What I don't understand is why we don't divide by $n$ in the first example if we do in this case. Is it because we only divide by $n$ when using the central limit theorem, and the first example had only 20 samples taken, meaning that the central limit theorem could not be used? In this way, does it depend on the size of $n$? Any help will be greatly appreciated, thanks in advance.",['statistics']
+2267860,Prove that $\sum_{k=0}^n \frac{(-1)^{(n+k)}\sum_{r=0}^n a_rk^r}{k!(n-k)!}=a_n\quad \forall n \in \mathbb{N_0} $,"Can Someone prove that the following equation is true? I tried to prove it using induction but I didn't get very far.
+$$\sum_{k=0}^n \frac{(-1)^{(n+k)}\sum_{r=0}^n a_rk^r}{k!(n-k)!}=a_n\quad \forall n \in \mathbb{N_0} $$
+Where $\sum_{r=0}^n a_rk^r$ is a polynomial of degree $n$ and $a_n$ is the coefficient of the highest power of that polynomial. I know that for $k=0$ and $r=0$ you get $0^0$ which ofcourse is undefined. But can we just say for the sake of simplicity that $0^0=1$?
+$$\sum_{k=0}^n \frac{(-1)^{(n+k)}p(k)}{k!(n-k)!}=\frac{\partial^n p}{\partial k^nn!} \quad \forall n \in \mathbb{N_0} $$
+Where $p(k)$ is a polynomial of degree $n$ should be an equivalent statement. This is my first question here by the way. If I made some mistakes, please let me know.","['derivatives', 'interpolation', 'lagrange-interpolation', 'induction', 'summation']"
+2267868,A point measure is radon,"This is taken from the Chapter 3 of Resnick's Extreme Values, Regular Variation and Point Processes. Consider a point process with state space $E$ which is locally compact with a countable basis. Let $\mathcal E$ be the Borel $\sigma$-algebra of subsets of $E$. For $x\in E$, define the measure $\varepsilon_x(A)=1$ if $x\in A$, $\varepsilon_x(A)=0$ if $x\notin A$. Now take a countable collection $\left\{x_i,i\geq 1\right\}$ of points of $E$ and define $m:=\sum_{i=1}^\infty\varepsilon_{x_i}$ Then for any $K\in\mathcal E$ compact, $m(K)<\infty$. There is something I do not understand, because if I take $E=\mathbb R$, then I can find compact sets with an infinite number of points, so $m(K)=\infty$. Where is my confusion?","['stochastic-processes', 'general-topology', 'measure-theory', 'probability-theory']"
+2267900,"If a morphism of curves induces Galois extension of function fields, does the galois group act transitively on the fibers?","Let $f:X\to Y$ be a non-constant morphism of smooth projective curves defined over an algebraically closed field. Suppose that the corresponding field extension $K(X) \setminus K(Y)$ is Galois. Does $\operatorname{Gal}(K(X) \setminus K(Y))$ act transitively on the fibers of $f$ ? More precisely, if $f(P)=f(Q)$, then is there a $g \in \operatorname{Gal}(K(X) \setminus K(Y))$ such that the induced automorphism $\sigma_g$ of $X$ takes $P$ to $Q$ ? I have tried thinking about it in various way but I have not been able to use the fact that the field extension is Galois. A hint would be greatly appreciated.","['algebraic-curves', 'galois-theory', 'function-fields', 'algebraic-geometry']"
+2267909,Integral of Dirac delta function/distribution $\delta(x)$ with upper boundary equal to zero,"I would like to find the value of $$\int_{a<0}^0 \delta(x) dx$$ In particular, I would like to know if I can break down the integral $$\int_a^b \delta(x)f(x) dx=\int_a^0 \delta(x)f(x) dx + \int_0^b \delta(x)f(x) dx $$ with $a<0$ and $b>0$ and $f(x)$ a well-behaved function. Is it wrong to break down the integral like this, doing some calculations and then bringing it back together again as one integral? Thank you in advance. EDIT: I used the following trick in an exercise: $$\delta(t)\int_0^{\infty} \delta(x-t)f(x) dx+\delta(t)\int_{-\infty}^0 \delta(x+t)f(x) dx=$$  $$\int_0^{\infty} \delta(t)\delta(x-t)f(x) dx+\int_{-\infty}^0 \delta(t)\delta(x+t)f(x) dx=$$ 
+$$\int_0^{\infty} \delta(t)\delta(x)f(x) dx+\int_{-\infty}^0 \delta(t)\delta(x)f(x) dx=$$ $$\int_{-\infty}^{\infty} \delta(t)\delta(x)f(x) dx$$ All this for $t>0$. I would just like to verify that something like this is correct in this context.Note that it got me the correct answer, surprisingly. Also, sorry If I used some sloppy language, I am a physics undergrad. EDIT 2: For any clarification, please ask.","['distribution-theory', 'dirac-delta', 'integration', 'definite-integrals']"
+2267913,$a+b+c+d+e=79$ with constraints,"How many non-negative integer solutions are there to $a+b+c+d+e=79$ with the constraints $a\ge7$, $b\le34$ and $3\le c\le41$? I get that for $a\ge7$ you do $79-7=72$, $\binom{72+5-1}{5-1}=\binom{76}4$. For $b\ge35$ I think it's $\binom{47}4$ and I'm not too sure what it is for $3\le c\le41$ and I also have no clue as to how to do them all at the same time.","['combinatorics', 'integer-partitions', 'discrete-mathematics']"
+2267947,Greatest integer value of $[2.999...]$,What happens to the greatest integer value in case of such non-terminating decimals ?What is  $[2.999...]$ ? Is it $2$ or $3$ ? Does it have connection with limit ?,['functions']
+2267951,"Consider the strings in A, B, ..., Z. How many 4 letter strings exist that contain exactly 2 Y's?","So, the way I thought about this is that there are basically five ways in which a string can be shaped. If we let the asterisk (*) represent any of the other letters (not Y, of course), all strings will take one of the following five forms: Y Y * * Y * Y * Y * * Y * * Y Y * Y * Y Since each asterisk can only be one of the twenty five letters that are not Y, is the correct answer $5 \cdot 25^2 = 3125$, or am I doing something wrong?","['combinatorics', 'discrete-mathematics']"
+2267953,Why is ellipse convex?,"Well it is, by drawing one and looking at it. But how about starting from the definition: the sum of distances to two points is constant. A more general question is to start with an $n$-ellipse (some examples here: What are curves (generalized ellipses) with more than two focal points called and how do they look like? ). Suppose $n$ points $\mathbf{p}_i$ in a two dimensional plane, define the general ellipse $E$ by
+$$
+\sum_i^n d_i = D_0 \quad \mathrm{with} \quad d_i = |\mathbf{r}-\mathbf{p}_i|, \quad \mathbf{r} = (x,y)
+$$
+Questions is $E$ convex? does $E$ enclose all points? if ""no"" to question 2, what's the value $D_0$ such that $E$ cross a point? And which point? To higher dimenions? I know that's lots of questions, and I doubt there is existing knowledge on those questions. Could someone explain or point out some references? Update: clarification on question 2. For the standard ellipse, when $D_0$ is very small, it does not exist. It come to existence firstly as a line segment connecting the two points---I still count this as ""enclose"". A point is not enclosed only if it totally falls outside of the shape.","['analytic-geometry', 'geometry']"
+2267972,Condition for $u\in C^k(\Omega)$ to be extendable to $u\in C^k(\overline{\Omega})$ for an open domain $\Omega\subset\Bbb R^n$,"Fix some open $\Omega\subset\mathbb{R}^n$. Recall that for any subset $S\subset\mathbb{R}^n$, we define $$C^k(S)=\{u:S\to\mathbb{R}\ :\ \exists\hbox{ open }U\supseteq E,\ v\in C^k(U),\hbox{ s.t. }v\vert_S=u\}$$ Let $u\in C^k(\Omega)$ for some open $\Omega\subset\mathbb{R}^n$, such that for all $\lvert\alpha\rvert\le k$ we can extend $\partial^\alpha u$ continuously to $\overline{\Omega}$. My PDE professor claimed that this implies that $u\in C^k(\overline{\Omega})$, but I don't immediately see why this is true. I succeeded in proving using Tietze's Extension Theorem that if $\partial_j u$ exists on $\Omega$ can be extended continuously to $\overline{\Omega}$, then $u$ can be extended to $\mathbb{R}^n$ such that $\partial_j u\in C(\mathbb{R}^n)$, but I have no way of controlling the different extensions given by different derivatives, it seems.","['derivatives', 'real-analysis', 'partial-differential-equations']"
+2268014,Understanding the Memoryless Property,"I'm a little confused about the memoryless property of an exponential distribution. I know for the exponential distribution we can write the memoryless property like this, $$Pr(X > x + y | X > x) = Pr(X > y)$$ For the following, assume $X$ is the lifetime of a light bulb which is exponentially distributed with some $\lambda$. My interpretation in English is the following, ""What is the Probability of a lightbulb lasting more than $1000$ hours given it has already lasted $300$ hours"". This is taken to be equivalent to saying, ""What is the probability that the light bulb will last more than $700$ hours"" However, for me, memorylessness would imply the following, ""What is the probability that the light bulb will last more than $1000$ hours give it has already last $300$ hours"". This can then be taken to mean, ""What is the probability the light bulb will last more than $1000$ hours"" To me memorylessness should just mean we drop the ""$|X > x$"" part, however, this clearly isn't the case. Why is that? Secondly, how can the area under the curve between $x + y$ and $\infty$ be equal to the area under the curve from $y$ to $\infty$? I know it's something to do with the conditioning on $X > x + y$ with $X > x$, but I just don't understand how that makes the two areas equivalent. I would really appreciate any input.","['stochastic-processes', 'probability']"
+2268037,Can Sturm-Liouville theory actually solve ODEs?,"My teacher talked about Sturm-Liouville theory, and we learned that any second order differential equation can be put into the self-adjoint form. What is this? Well, the book says is something in the form: $$\frac{d}{dx}\left[p(x)\frac{du(x)}{dx}\right] + q(x)u(x) \tag {1}$$ The book also says that we can put any second order linear ODE into the self-adjoint form: Consider the second order linear ODE: $$Lu(x) = p_0\frac{d^2}{dx^2}u(x) + p_1(x)\frac{d}{dx}u(x) + p_2(x)u(x)$$ Multiply it by: $$\frac{1}{p_0(x)}\exp\left[\int^x\frac{p_1(t)}{p_0(t)}\ dt\right]$$ to obtain: $$\frac{1}{p_0(x)}\exp\left[\int^x\frac{p_1(t)}{p_0(t)}\ dt\right]Lu(x) = \frac{d}{dx}\left\{\exp\left[\int^x\frac{p_1(t)}{p_0(t)}\  dt\right]\frac{du(x)}{dx}\right\} + \frac{p_2(x)}{p_0(x)}\cdot \exp\left[\int^x\frac{p_1(t)}{p_0(t)} \ dt\right]u$$ Which is in the self-adjoint form, whatever that means. We can see by comparing with eq $(1)$ and taking $p(x) = \exp\left[\int^x\frac{p_1(t)}{p_0(t)}\  dt\right]$ and $q(x) = \frac{p_2(x)}{p_0(x)}\cdot \exp\left[\int^x\frac{p_1(t)}{p_0(t)} \ dt\right]$. Then the book, and also my teacher, says that we're interested in finding eigenfunctions and eigenvalues for: $$\frac{d}{dx}\left[p(x)\frac{du(x)}{dx}\right] + q(x)u(x)  + \lambda w(x) u(x) = \\ Lu(x) + \lambda w(x) u(x) $$ for some density function $w(x)$ (what), where $\lambda$ is a eigenvalue related to the eigenfunction $u(x)$, called in the book $u_{\lambda}$ because it depends on $\lambda$. The book and my teacher then talk about completeness of eigenvalues and eigenfunctions, and that's it. Nothing more is said about Sturm-Liouville theory, then we jumped to other things and I'm asking for what all this is used. It also mentions boundary conditions. What are boundary conditions ? Are them simply the initial conditions for some ODE? Because the boundary conditions given in the book are of the form $$a_1 u(a) + a_2 u'(a) = 0\\ b_1 u(a) + b_2 u'(a) = 0$$ but aren't initial conditions things in the form $u'(a) = b, u''(a) = c$? When I see examples on the wikipedia , they all mention that we already know that such eigenfunction $u(x)$ is a solution with eigenvalue $\lambda$, and also in these slides I see no examples of how to actually finding the eigenvalue and eigenfunction... So what is the usefulness of the self-adjoint formula and of the sturm-liouville theory in general?","['sturm-liouville', 'physics', 'calculus', 'ordinary-differential-equations', 'linear-algebra']"
+2268073,Is it exist a sequence of move notation of Rubik's Cube so that it show up all possible permutations?,"Recently, I've success to prove that given a Rubik's Cube which has been solved, any sequences of moves will lead it to the original position if repeat long enough. But now I'm wonder that: Is there any sequences of moves that lead the Rubik's Cube to show up all of its possible permutations before go back to the original position? According to this Wikipedia article , there are exactly $43,252,003,274,489,856,000$ possible permutations that can be reached solely by turning the sides of the cube. Such a sequences of moves must pass exactly $43,252,003,274,489,856,000$ permutations and go back to the original position right after.","['rubiks-cube', 'group-theory']"
+2268096,Can we find an equation to calculate the average distance between two random points in a circle?,"If we know the average distances between two points in a circle diameter 1 and the fact that all the circles are proportional to each other (pi is used as a constant), then is possible to find an equation to calculate it? Is it's so, then how would it be? I have no idea how to approach, could we use it as pi or something like that? Hope you can help me.",['geometry']
+2268098,"Does ($C([0,1]), \left\|\cdot\right\|_2)$) has a subspace that is isomorphic to ($L^2([0,1]), \left\|\cdot\right\|_2)$)?","Does ($C([0,1]), \left\|\cdot\right\|_2)$) has a subspace that is isomorphic to ($L^2([0,1]), \left\|\cdot\right\|_2)$)? I think the answer is no but I have no idea to prove it.",['functional-analysis']
+2268100,Can real numbers be dense in complex numbers for some topology?,"I am looking for a topology such that R is dense in C .
+I was thinking I can construct a surjective continuous function f : R → C such that the image of Q is R .",['general-topology']
+2268114,$\frac{1 - e^{iz}}{z^2} = \frac{-iz}{z^2} + E(z)$ where $E(z)$ is bounded as $z \rightarrow 0?$,Was reading some notes and it states that $f(z) = \frac{1 - e^{iz}}{z^2}$ can be written as $f(x) = \frac{-iz}{z^2} + E(z)$ where $E(z)$ is bounded as $z \rightarrow 0.$ I don't exactly see why. Help is appreciated.,['complex-analysis']
+2268160,About the order of a meromorphic function,"In Gunning's book, lectures on Riemann surfaces, the order of a meromorphic function is defined as the order of the first non-zero coefficient in Laurent series of the function. 
+About this assertion, ""the order of a meromorphic function f is non-zero only at a discrete set of points "", I don't understand the meaning, as we all know, locally a meromorphic function f is a quotient  of two holomorphic functions, say f=g/h, so ord(f)=Z(h) where Z(h) is the zero set of h, Z(h) is non-zero only at a discrete set of points? There must be some wrong of my understanding. So where is the wrong ? Any help will be greatly appreciated. Thanks","['riemann-surfaces', 'complex-analysis']"
+2268167,How does analytic continuation show that the zeros of a non-trivial holomorphic function are isolated?,"I am reading notes on complex analysis and it states that if $f$ is holomorphic in $\Omega$ and $f(z_0) = 0$ for some $z_0 \in \Omega,$ then there exists an open neighborhood $U$ of $z_0$ such that $f(z) \neq 0$ for all $z \in U - \{z_0\}.$ Why is this true? So I understand that if $f$ is holomorphic then it can be written as a power series. Does it have something to do with the continuity of its derivative?",['complex-analysis']
+2268187,Limit points of continuous complex valued function on a connected set,"Let $f$ be a complex-valued continuous function defined on the closure of the open unit ball of $\mathbb{C}$ being analytic in the open unit ball. Then, if $f(e^{it})=0\,\,\forall t\in(0,\frac{\pi}{2})$, can we say that $f(z)=0\,\,\forall z\in\mathbb{C}$? The problem is that though the function is continuous and zero on a connected set, it is not given analytic at the points where it is zero. Can we apply isolated-ness of zeroes of analytic functions to this example? Any ideas. Thanks beforehand.","['complex-analysis', 'analytic-functions']"
+2268188,"Does there exist $a,b \in \mathbb{Z},$ $ a \neq b$, such $\mathbb{Z}[\sqrt{a}]$ $\cong$ $\mathbb{Z}[\sqrt{b}]$? Why?","Does there exist $a,b \in \mathbb{Z},$  $ a \neq b$, and $\sqrt{a},\sqrt{b}\notin \mathbb{Z}$, such $\mathbb{Z}[\sqrt{a}]$ $\cong$ $\mathbb{Z}[\sqrt{b}]$? Why? I know for sure, it is false that $\mathbb{Z}[\sqrt{-5}]$ $\cong$ $\mathbb{Z}[\sqrt{5}]$. Also, how about the more general case that, for $p$ prime, does there exist $a,b \in \mathbb{Z},$  $ a \neq b$, such that $\mathbb{Z}[\sqrt[p]{a}]$ $\cong$ $\mathbb{Z}[\sqrt[p]{b}]$? $\phi\restriction_\mathbb{Z}$ $=$ $id$ and $\phi:\sqrt{5} $ $\mapsto$ $m+n*\sqrt{7}$,  for $m,n \in \mathbb{Z}$,and obviously $n \neq 0$, otherwise $\phi(\mathbb{Z}[\sqrt[p]{5}])=\mathbb{Z}$ , then $\phi $  is obviously not subjective. $5=(\sqrt{5})^2,\phi(5)=\phi((\sqrt{5})^2)$=$\phi(\sqrt{5}))^2$ $= (m+n*\sqrt{7})^2 = m^2+7*n^2+2mn*\sqrt{7}$. Therefore, $mn=0, m^2+7*n^2=7$, $25=5*5= ((m+n*\sqrt{7})^2)^2 = (m^2+7*n^2)^2$ $= m^4+49*n^4+14*(mn)^2 = m^4+49*n^4$. Therefore $n=0$, contradiction.","['abstract-algebra', 'ring-theory']"
+2268204,Proving that $f(x)$ is less than or equal to $1+\pi/4$,"Suppose $f$ is a real valued differentiable function defined on $[1,\infty)$ with $f(1)=1$. Suppose also that $f$ satisfies $$f'(x)=\frac{1}{x^2+f^2(x)}.$$ The question is to prove that $f(x) \leq 1+\pi/4$ for every $x \geq 1$ I tried to solve the differential equation but could not bring it in some known form. I examined the derivative of $\tan^{-1}x$ which looks similar to that  in the question. However I could not get any idea with that. Any help shall be highly appreciated. Thanks.",['calculus']
+2268211,Why is the variation of a Christoffel symbol a tensor,"According to my lecture notes on relativity the variation of a Christoffel symbol $\delta\Gamma^\gamma_{\alpha\beta}$ is a tensor, in contrast to $\Gamma^\gamma_{\alpha\beta}$ itself. I don't see how to arrive at such a result. Also, if the variation of $\Gamma^\gamma_{\alpha\beta}$ can make $\Gamma^\gamma_{\alpha\beta}$ behave like a tensor, then is it also possible that the variation of a tensor is not a tensor?","['tensors', 'calculus-of-variations', 'differential-geometry', 'curvature']"
+2268215,How to prove that $\lim_{x\to\infty}f'(x) = 0$ is equivalent to $\lim_{x\to\infty}f(x)/x = 0$?,"Suppose we have a differentiable real-valued function $f(x)$. The task is to prove, that if $\lim_{x\to\infty}f'(x) = 0$ then $\lim_{x\to\infty}f(x)/x = 0$, and, conversely, if $\lim_{x\to\infty}f(x)/x = 0$ than if the $\lim_{x\to\infty}f'(x)$ exists, than it's equal to zero. I've tried using Lagrange theorem several times, but it didn't help. Could you please suggest a proof, or maybe help me to show that this fact is not true (though it seems to be true)?","['derivatives', 'real-analysis', 'limits']"
+2268255,Tail algebra and tail events in a sequence of i.i.d. random variables,"Suppose $\{X_1,X_2,\dots\}$ is a sequence of i.i.d. random variables and $P[X_i=1]=P[X_i=-1]=\frac{1}{2}$ Define $S_n=\sum_{i=1}^n X_i$ . Let $\bigcap_{n=1}^\infty \sigma\{X_k:k\geq n\} $ be the tail $\sigma-$ algebra of $\{X_k\: k \geq 1\}$ . Show that $B_{-}=\{\liminf_{n\to \infty} S_n=-\infty\}$ and $B_{+}=\{\limsup_{n\to \infty} S_n = \infty\}$ are tail events. Moreover $P(B_{-})=P(B_{+})$ . Does $B_{-}$ equal $\{X_i=-1 \text{ for infinitely many }i\}$ ? And $B_{+}=\{X_i=1 \text{ for infinitely many } i \}$ ? How to show $P(B_{-})=P(B_{+})$ ?","['probability-theory', 'measure-theory']"
+2268278,Does every holomorphic function $f$ defined on an open set $U$ have a primitive?,"I have read that a holomorphic function in an open disc has a primitive in that disc. Does this mean that for any holomorphic function $f$ in any open set $U,$ that $f$ has a primitive? I say this because I can take a large enough open disc to cover the open set $U$ and find its primitive there. Is this a correct way of thinking?",['complex-analysis']
+2268286,Not understanding a group theory exercise,"Here's the exercise: Let $G$ be a group and $x,y \in G\setminus \{1\}$. Let $R$ be any rectangle in the body of the multiplication table of $G$ having $1$ as one of its vertices, $x$ a vertex in the same row as $1$, and $y$ as a vertex in the same column as $1$. Prove that the fourth vertex of $R$ depends only on $x$ and $y$ and not on the position of $1$. I don't understand what I'm asked to do. What do they mean by ""depends on $x$ and $y$""? What kind of dependence are they (probably) talking about? Same thing for $1$; what do they mean by saying that the fourth vertex doesn't depend on the position of $1$?","['abstract-algebra', 'group-theory']"
+2268299,is it possible to find a function knowing all of its derivatives at $x=0$?,"Let's say I have a series of real values $y_0,y_1,y_2\cdots$.
+My question is if it's always possible to find (at least one) $C^\infty$ real function such that 
+\begin{equation}
+f^{(n)}(0)=y_n
+\end{equation}
+and in the affirmative case, how.
+It is a kind of ""reverse taylor"" problem... any hints?","['approximation-theory', 'taylor-expansion', 'functions']"
+2268312,"Continuous, injective curve that is not an embedding (Descartes folium)","Consider the curve $x:\left(-1,+\infty\right) \to \mathbb{R}^2$ given by: $x\left(t\right)= (x_1(t),x_2(t)) = \Big(\frac{3t}{1+t^3},\frac{3t^2}{1+t^3}\Big)$ i.e. ""half"" the parametrisation of Descartes folium Then it is continuous and injective, but is not a homeomorphism onto its image. Why? Injectivity is ok. For the second point, the inverse function is: $x^{-1}(t) = \begin{cases}
+\frac{x_2}{x_1} & \text{ if }x_1 \in \left(-\infty,a\right]\setminus\{0\},a>0,x_2 \in \left[0,+\infty\right) \\
+0 & \text{ if }x_1=0
+\end{cases}$ Now, where the problem for continuity of the inverse occurs?","['curves', 'general-topology', 'differential-geometry', 'calculus']"
+2268345,Find the value of $\sum_{n=1}^{\infty} \frac{2}{n}-\frac{4}{2n+1}$,Find the value of $$S=\sum_{n=1}^{\infty}\left(\frac{2}{n}-\frac{4}{2n+1}\right)$$ My Try:we have $$S=2\sum_{n=1}^{\infty}\left(\frac{1}{n}-\frac{2}{2n+1}\right)$$ $$S=2\left(1-\frac{2}{3}+\frac{1}{2}-\frac{2}{5}+\frac{1}{3}-\frac{2}{7}+\cdots\right)$$ so $$S=2\left(1+\frac{1}{2}-\frac{1}{3}+\frac{1}{4}-\frac{1}{5}+\cdots\right)$$  But we know $$\ln2=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots$$  So $$S=2(2-\ln 2)$$ Is this correct?,"['algebra-precalculus', 'summation-method', 'sequences-and-series']"
+2268361,Uniform Lipschitz constants of family of bilipschitz homeomorphisms,"Let's asume that we are given a family of linear maps $\lbrace{A_i,B_i \rbrace}_{i \in I, A_i,B_i \in Gl_n(\mathbb{Z})}$ and a bilipschitz homeomorphism $F: \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$such that for each $i$ there exists a positive constant $C_i$ and a $(K,\lambda)$ quasi isometry ($K,\lambda$ are fixed) $G_i$ such that $sup_{x \in \mathbb{R}^{n}}( ||A_i \circ F \circ B_i(x) - G_i(x)|| < C_i$ (which means that for all $(x,y) \in \mathbb{R}^2 $ we have that $||A_i \circ F \circ B_i(x) - A_i \circ F \circ B_i(y)|| \le C_i +K ||x-y|| $). Does it mean that family of bilipschitz homeomorphisms $\lbrace{ A_i \circ F \circ B_i \rbrace}_{i \in I}$ has uniform lipschitz constant - lispchitz constants in the sense of real analysis ? It's certainly true for $F$ affine or if either $\lbrace{A_i \rbrace}_{i \in I}$ or $\lbrace{B_i \rbrace}_{i \in I}$ have uniform quasi-isometry constants.  The weaker question is - can we choose two constants $(K',C')$ in such a way that all functions $\lbrace{ A_i \circ F \circ B_i \rbrace}_{i \in I}$ are $(K',C')$ coarse (large scale) Lipschitz?","['real-analysis', 'geometric-group-theory', 'functional-analysis', 'lipschitz-functions', 'metric-spaces']"
+2268372,"Finding $\lim_{n \to \infty} \int_{(0,\infty)} \frac{n \sin (x/n)}{x(1+x^2)}dx$ via DCT","I am trying to find $\lim_{n \to \infty} \int_{(0,\infty)} \frac{n \sin (x/n)}{x(1+x^2)}dx$ by applying the Dominated Convergence Theorem for Lebesgue Integrals. First, considering $(f_n): f_n=\frac{n \sin (x/n)}{x(1+x^2)}=\frac{\sin(x/n)}{(x/n)} \frac{1}{1+x^2},$ it then follows that $\lim_{n \to \infty}\frac{\sin(x/n)}{(x/n)}\frac{1}{1+x^2}=\frac{1}{1+x^2}\lim_{n \to \infty}\frac{\sin(x/n)}{(x/n)}$. And thus substituting with $u=\frac{x}{n}$, we get that as $n \to \infty$, $u \to 0$. Obviously, $\lim_{u \to 0} \frac{\sin u }{u}=1 \Rightarrow \lim_{n \to \infty} f_n = \frac{1}{1+x^2}=f(x).$ Hence $f_n$ converges pointwise to $f$. Then the requirement is that $(f_n)$ is in $L_1$. I go on to argue that since on $(0,\infty)$ both $\frac{\sin(x/n)}{(x/n)}$ and $\frac{1}{1+x^2}$ are continuous, then both functions are measurable. And because the measurable functions form an algebra, then $f_n$, their product, is also measurable. How do we argue however that they are Lebesgue integrable? I know, for example, that the Lebesgue integral $\int_{(0,\infty)}\frac{\sin x}{x}$ does not exist. Also, I reckon we are going to use $g(x)=\frac{1}{1+x^2} \in L_1$ to dominate $f_n$ such that $|f_n|\leq g$ for all $n$. I argue as follows: on $(0,\infty)$ we have $|\sin (x/n)|\leq|x/n|$ for any $n$. Hence $|f_n|=\left|\frac{\sin(x/n)}{(x/n)}\frac{1}{1+x^2} \right|\leq \frac{1}{1+x^2}$. So, once again we get to the question of the function being in $L_1$. Finally, it is straightforward to apply DCT and get $\lim_{n \to \infty}\int f_n= \int f=\left.\tan^{-1}(x)\right|^{\infty}_{0}=\frac{\pi}{2}$. However, application of the Riemann integral bothers me somewhat, as we know that for the bounded Riemann integrable function, the proper Riemann integral is equivalent to the Lebesgue version. Does this application hold?","['real-analysis', 'measure-theory']"
+2268376,what is the relation between measurable space (measure space) and topological space (with a metric)?,"A probability space consists of a sample space, X, which is a set of all possible random elements. A collection of random events which is a sigma field, F, which consists of all the events that belong to X. A probability measure that assigns a number between [0,1] for each event in the sigma field F and statisfies the axioms of probability. A topological space is a set, X, such that a topology, T, has been specified (under the 3 main topological properties). I read that:
+Topological spaces are used to define a notion of ""closeness"". With it, you can intuitively speak about points which are close to each other. (However, we may not know how close: this is a metric space). 
+….
+A measure space serves an entirely different goal. A measure space is made to define integrals…
+Reference https://www.physicsforums.com/threads/measurable-spaces-vs-topological-spaces.558644/ A metric space is a metrizable space X with a specific metric d that gives the topology of X. Therefore, there is a connection between a metric space and a topological space namely a topological space may be induced by a metric space. 
+Is that true? 
+In this case the connection between topological spaces and measureable spaces can be changed to be:
+What is the relationship between measurable spaces and metric spaces a question that has some relevant answer in What's the relationship between a measure space and a metric space? But I still do not see a well-written answer to that question and how is it connected to topological spaces with a defined metrics? 
+Any resources or help is appreciated 
+Thank you very much in advance","['general-topology', 'measure-theory', 'uniform-convergence']"
+2268386,extreme points of unit balls on $L_1(\mu)$,"I wanna show that for a measure space $(X, \mu)$, the set of extreme points of the unit ball of $L_1(\mu)$ equals the set of characteristic functions of atoms of $\mu$ multiplied by a suitable constant(to guarantee that the norm is 1). I tried to show followings:
+1) $f\in L_1(\mu)$, and if there are two disjoints subsets $A, B$ of $X$ with $A\cup B=X$ and $\int_A |f|d\mu>0, \int_B |f|d\mu>0$, then $f$ is not an extreme point of $L_1(\mu)$. 2)If there are no such pairs of $A, B$, then $f$ is a constant multiple of a characteristic function of an atom. But it is hard to show 2). Is there any hints for this approach or other nice way to prove the original question?",['functional-analysis']
+2268404,hypercube subdivision,"Let $n$ be a positive natural number. For all $\emptyset \subset S \subseteq \{1, \ldots, n\}$ and $k \in \mathbb{Z}$, define the hyperplane $H(S,k)$ in $\mathbb{R}^n$ given by the equations
+$$H(S,k):= \left\{ \sum_{i\in S} x_i = k \right\}
+$$ Question: How many regions (= connected components) are there in the complement of the collection of all hyperplanes $H(S,k)$ in the hypercube $[0,1]^n$? (In fact, the only relevant hyperplanes are those with $0<k<|S|$, as the others do not intersect the interior of the hypercube. For example, the cases $|S|=1$ with $k=0,1$ define the faces of the hypercube). When $n=2$ this is simply the unit square $\{ 0 \leq x_1, x_2 \leq 1\}$ divided in two regions by the equation $x_1 + x_2 =1$. When $n=3$ the relevant hyperplanes are $x_1+x_2+x_3=1,2$ and $x_i+x_j=1$ for all $0 < i < j \leq 3$. The first two equations split the cube in $3$ regions, two simplices and a central region. It seems to me that the remaining three equations split the central region in $2^3=8$ regions, and that the answer to my question when $n=3$ is that there are $10$ regions (but I have a hard time visualizing this and I am not $100\%$ confident). Does anybody know a reference for this problem, or can advise me on how to proceed? Thanks in advance!","['discrete-geometry', 'combinatorial-geometry', 'reference-request', 'combinatorics', 'discrete-mathematics']"
+2268438,Geometric Brownian Motion Probability of hitting uper boundary,"Let $(S_t)$ be a geometric Brownian Motion, i.e. $S_t = S_0 e^{\left(\mu-\frac{\sigma^2}{2}\right)t+ \sigma W_t  }$. Let $\alpha>0$ and $\tau = \inf\{t>0 | S_t \geq \alpha\}$. Compute $P(\tau \leq t)$. What I have done: I know that for $X_t = W_t - \beta t$,  $X_t^* = sup_{0\leq s \leq t} X_s$ and $\alpha \geq 0$ $$P(X_t^* \geq  \alpha ) = 1- \Phi\left( \frac{\alpha + \beta t}{\sqrt{t}}   \right) + e^{-2 \alpha \beta} \Phi\left( \frac{\beta t - \alpha}{\sqrt{t}}   \right) $$
+Furthermore, I know that $P(\tau \leq t) = P(S_t^* \geq  \alpha ) $.
+Hence I would have started with 
+$$ \log(S_t)=  \log(S_0) + \left(\mu - \frac{\sigma^2}{ 2 }\right)t + \sigma W_t \geq \alpha $$ 
+$$ W_t \geq \frac{ \log\left(\frac{\alpha}{S_0}\right) -  \left(\mu - \frac{\sigma^2}{ 2 }\right)t}{\sigma}   $$
+Now I would set $$\alpha^{'} = \frac{\log\left(\frac{\alpha}{S_0}\right)}{\sigma}$$ and $$\beta = -\frac{\left(\mu - \frac{\sigma^2}{ 2 }\right)}{\sigma}$$
+and would use the formula for $P(X_t^* \geq  \alpha^{'} )$ as stated above.
+Is this correct? I am not sure and I feel like I have done something wrong. Any hints or comment welcome -thanks!","['stochastic-processes', 'probability-theory', 'brownian-motion']"
+2268444,Application of Borel-Cantelli lemma,"Let $\{X_1,X_2,\dots\}$ be a sequence of i.i.d. random variables. Define $M_n=\sup\limits_{k\leq n} |X_k|$ . Suppose $X_1$ is $p-$ th integrable i.e. $E[|X_1|^p]<\infty$ for some $p\in(0,\infty)$ . Show that $\frac{1}{n^{1/p}}M_n\to 0$ with probability 1. I have already proven that for an integrable random variable $X$ , $\sum\limits_{n=1}^\infty P(|X|\geq \epsilon n)<\infty$ Hence to prove the statement, let $\epsilon >0$ . Define $A_n=\{|X_n|\geq \epsilon n^{1/p}\}$ . Then $\sum\limits_{n=1}^\infty P(A_n)=\sum\limits_{n=1}^\infty P(|X_n|\geq \epsilon n^{1/p})\leq \sum\limits_{n=1}^\infty P(M_n\geq \epsilon n^{1/p})$ I want to show that $\sum\limits_{n=1}^\infty P(A_n)<\infty$ and then use the Borel-Cantelli lemma to show $P(\limsup A_n)=0$ . I don't know how to show $\sum\limits_{n=1}^\infty P(M_n\geq \epsilon n^{1/p})<\infty$ . I don't know how to use the condition that $X_1$ is p-th integrable.","['probability-theory', 'measure-theory']"
+2268474,What is the name of this polyhedron?,"I have found a photo of a interesting geometric lampshade, but I don't recognise what it's underlying geometry is. It looks as if it could be constructed from regular pentagons, hexagons and triangles.",['geometry']
+2268487,convergence of argmax,"Let $f$ and $g$ be two continuous functions on an interval $[a,b] \subset \mathbb{R}$. Define for every $k \in \mathbb{N}$ $f^k(x)=(1-\varepsilon_k)f(x)+\varepsilon_kg(x)$ in which $\varepsilon_k \rightarrow 0$ as $k \rightarrow \infty$. Suppose that function $f$ has a unique maximizer $x=y$. How can I show that there is a sequence of  $\{y^k\}_{k=1}^{\infty}$ in which $y^k$ is a maximizer of $f^k$ for every $k$, such that $y^k \rightarrow y$ when $k \rightarrow \infty$?",['functional-analysis']
+2268519,Is the Schwartz Function space separable?,Let the Schwartz function space on $\mathbb R^n$ be endowed with its usual metric structure. Is this space separable? Can anyone give a reference?,"['functional-analysis', 'distribution-theory', 'schwartz-space', 'fourier-analysis']"
+2268569,"How do we formally ""identify"" objects using isomorphisms?","i don't have much background in set theory and mathematical logic besides isomorphisms thus i can't quite understand(justify) the way of ""identifying"" integers with naturals in Tao's analysis. That's how i interpret what i have read so far about integers: he constructs integers from naturals(integers are elements of the set $N×N$ so they are not the same objects as naturals he defined earlier, he uses a notation $(a,b):=a-b$ for them). He defines equality $""=""$ relation between integers(based on equality between naturals), and operations of additions and multiplication for integers(again in terms of natural numbers)
+After that I have a problem with understanding his next paragraph: The integers $n−0$ behave in the same way as the natural
+  numbers n; indeed one can check that $(n−0) + (m−0) = (n + m)−0$ and $(n−0) × (m−0) = nm−0$. I know it should mean something like this$:$ if we map $(n,0)$ with $n$, then we have a function $f:A⊆N×N↦N$, where $A$ consists of integers of the form $(n,0)$
+that has properties that if $a+b=c$ ($""+""$ and $""=""$ are those defined for integers), then $f(a)+f(b)=f(c)$($""+""$ and $""=""$ are those defined for naturals) and if $a×b=c$ then $f(a)×f(b)=f(c)$(same thing with $""×""$ and $""=""$) Furthermore, $(n−0)$ is equal to $(m−0)$ if and only if $n = m$. I guess that means that $f$ is injection. Though it's a surjection too. (The mathematical term for this is that there is an isomorphism between the natural numbers $n$ and those integers of the form $n−0$). Thus we may
+  ""identify"" the natural numbers with integers by setting $n ≡ n−0$; From here it begins: What exactly does $""≡""$ sign mean? Does it stand for my function $f$? Or is it some new relation for integers like our already defined relation $""=""$ but he just doesn't want to overload the sign $""=""$ or something? this does not affect our definitions of addition or multiplication
+  or equality since they are consistent with each other. Thus for
+  instance the natural number $3$ is now considered to be the same
+  as the integer $3−0: 3 = 3−0$. Hey now i wonder what $""=""$ sign means, because we have $""=""$ for naturals, $""=""$ for integers but we don't have $""=""$ for integer-naturals(did he define it implicitly?)(is it the same sign as $""≡""$?) In particular $0$ is equal to $0−0$
+  and 1 is equal to $1−0$. Of course, if we set $n$ equal to $n−0$, then
+  it will also be equal to any other integer which is equal to $n−0$,
+  for instance $3$ is equal not only to $3−0$, but also to $4−1$, $5−2$,
+  etc. We can now define incrementation on the integers by defining
+  $x++ := x + 1$ for any integer $x$; this is of course consistent with
+  our definition of the increment operation for natural numbers. How does this operation work? It looks like it has only one argument from $N×N$ but then computing an output it uses $1$ from $N$ so operation $""+""$ has one argument from $N×N$ and the other from N and how it supposed to react to this?! So basically all my questions are about what we can do with isomorpisms and why we can do it.","['number-systems', 'set-theory', 'logic', 'functions']"
+2268581,Powers of a sheaf of ideals,Let $\mathscr I$ be a sheaf of ideals on a scheme $X$.  What is the meaning of $\mathscr I^2$? I would think we would define $\mathscr I^2(U)$ to be the ideal $\mathscr I(U)\mathscr I(U)$.  But there is no reason to believe this defines a sheaf.  Is $\mathscr I^2$ the sheaf associated to the presheaf $U \mapsto \mathscr I(U)^2$?,['algebraic-geometry']
+2268624,How should I factorize a differential equation from the first order but with higher degrees?,My question is the following: How should I factorize a differential equation from the first order but with higher degrees? Imagine I have: $$x^2(y')^2+xyy'-6y^2 = 0$$ Is it okay if I replace $y'$ with $p$ and just solve the equation for $p$ with $x$ and $y$ being constants? Thanks in advance!,['ordinary-differential-equations']
+2268662,Solving vector valued differential equation?,"I want to solve the following differential equation $$y'(t) = f(y(t),t)$$ where the right hand side is a function that has no closed form expression. I have a vector of numerical values representing $f(y)$. It is time independent (each value corresponds to a grid point in y). How can I solve the differential equation? I tried solving this as a loop as follows: $$y(t+\Delta t) = y(t) + \Delta t f(y(t),t)$$ I use interpolation on the the second term. The problem is that this is very slow and I wonder if this can be solved more efficiently. I would like to calculate how long it takes for $y(t_0)$ to reach a given value $y(T)$. For instance, in the graphs shown below, I want to know how long it takes to reach $\underline{y}$ for every point in the grid of $y$. How could I do this?","['numerical-methods', 'ordinary-differential-equations', 'runge-kutta-methods']"
+2268692,Trying to understand the math behind backpropagation in neural nets,"I am currently trying to understand the math used training neural network, in which gradient descent is used to minimize the error between the target and extracted. I currently following/reading this tutorial So an example: Given a network like this: We wish to minimize the error function being for one training set (x,y) \begin{align}
+J(W,b; x,y) = \frac{1}{2} \left\| h_{W,b}(x) - y \right\|^2.
+\end{align} ( question :  Why multiplying a half?) Which for M training sets would become \begin{align}
+J(W,b)
+&= \left[ \frac{1}{m} \sum_{i=1}^m \left( \frac{1}{2} \left\| h_{W,b}(x^{(i)}) - y^{(i)} \right\|^2 \right) \right]
+                       + \frac{\lambda}{2} \sum_{l=1}^{n_l-1} \; \sum_{i=1}^{s_l} \; \sum_{j=1}^{s_{l+1}} \left( W^{(l)}_{ji} \right)^2
+\end{align} ( question : Why the second term?  and why computing the average of the error than the exact error, and try to minimize it) Using partial the partial derivative on the cost function, one can compute the gradient in which the weight and bias has to descent to minimize it. \begin{align}
+W_{ij}^{(l)} &= W_{ij}^{(l)} - \alpha \frac{\partial}{\partial W_{ij}^{(l)}} J(W,b) \\
+b_{i}^{(l)} &= b_{i}^{(l)} - \alpha \frac{\partial}{\partial b_{i}^{(l)}} J(W,b)
+\end{align} Where $\alpha$ the determine the amount of the gradient to be used. As far is backpropagation being most usefull here as it provides an efficient way for computing the partial probabilities as such. \begin{align}
+\frac{\partial}{\partial W_{ij}^{(l)}} J(W,b) &=
+\left[ \frac{1}{m} \sum_{i=1}^m \frac{\partial}{\partial W_{ij}^{(l)}} J(W,b; x^{(i)}, y^{(i)}) \right] + \lambda W_{ij}^{(l)} \\
+\frac{\partial}{\partial b_{i}^{(l)}} J(W,b) &=
+\frac{1}{m}\sum_{i=1}^m \frac{\partial}{\partial b_{i}^{(l)}} J(W,b; x^{(i)}, y^{(i)})
+\end{align} ( question : Again why average and the second term?) They they futher explain how one can get derivative for  a training set (x,y) First they define an error term $\delta^{(l)}_i$ which contains the information ""how much of the error in the output was caused by node $i$ in layer $l$"". The error seen in the output node $\delta^{(l)}_i$, can easily be computed as: \begin{align}
+\delta^{(n_l)}_i
+= \frac{\partial}{\partial z^{(n_l)}_i} \;\;
+\frac{1}{2} \left\|y - h_{W,b}(x)\right\|^2 = - (y_i - a^{(n_l)}_i) \cdot f'(z^{(n_l)}_i)
+\end{align} in which $z^{(l)}_i$ is denote the total weighted sum of inputs to unit $i$ in layer $l$, including the bias term. Example: $\textstyle z_i^{(2)} = \sum_{j=1}^n W^{(1)}_{ij} x_j + b^{(1)}_i$  and $a_{i}^(l)$ is the activation of node $i$ in layer $l$ $a^{(l)}_i = f(z^{(l)}_i)$. ( question : Not sure i understand how they derived partial derivative.. I understand why they do that - don't understand the result though) This is where things begin become weird and my intuition is not following whats going on... The error term of each node $i$ and layer $l$ can be defined as $$\delta^{(l)}_i = \left( \sum_{j=1}^{s_{l+1}} W^{(l)}_{ji} \delta^{(l+1)}_j \right) f'(z^{(l)}_i)$$ Which then by some magic give the wanted partial derivatives.. \begin{align}
+\frac{\partial}{\partial W_{ij}^{(l)}} J(W,b; x, y) &= a^{(l)}_j \delta_i^{(l+1)} \\
+\frac{\partial}{\partial b_{i}^{(l)}} J(W,b; x, y) &= \delta_i^{(l+1)}.
+\end{align}","['partial-derivative', 'neural-networks', 'gradient-descent', 'functions']"
+2268700,Differentiation - Power rule,"Find derivative of this function
+$$g(t)=-3t(6t^4-1)^{4/3}$$
+I have tried it till the answer:
+$ -3t.\frac{4}{3} (6t^4 - 1)^{\frac{4}{3}-1} .\frac{d}{dt}(6t^4 -1)  $ $-3t x \frac{4}{3} (6t^4-1)^\frac{1}{3} ( 6X4 t^3 -0 ) $ $ -4t (6t^4 -1)^\frac{4}{3} (24t^3) $ $-96t(6t^4-1)^\frac{1}{3} $ However , I checked and saw that the answer is
+$$-3(6t^4-1)^{1/3}(38t^4-1)$$
+I just started learning differentiation, and I don't understand my mistake on why I can't achieve the answer. Thanks!","['derivatives', 'calculus']"
+2268705,Area between $y^2=2ax$ and $x^2=2ay$ inside $x^2+y^2\le3a^2$,I need to find the area between $y^2=2ax$ and $x^2=2ay$ inside the circle $x^2+y^2\le3a^2$. I know it's an integral but I can't seem to find the right one.,"['analytic-geometry', 'integration', 'area', 'geometry']"
+2268728,Possible manifold quotients of spheres by finite isometric actions,"Suppose I have an isometric action by a finite group on the standard round sphere $S^n$ so that the quotient $S^n/\Gamma$ is a smooth manifold. First, does this imply that the action is free? I know the converse is true, but it is not clear to me that the quotient being a smooth manifold implies that the action was free. Second, what are the possible (smooth) quotients? Certainly one sees both $S^n$ (trivial action) and $\mathbb{RP}^n$ ($\mathbb{Z}_2$ action), but are these the only ones?","['riemannian-geometry', 'differential-topology', 'group-actions', 'differential-geometry', 'quotient-spaces']"
+2268758,Stochastic process entropy rate limit,"How do we show that where $(X_i)_{i\geq1}$ is a stochastic process with finite state space $X$, that if one of the following limits exist, then also other exist and all three coincide? $$\lim_{n \to \infty}\frac{H(X_1,...,X_n)}{n}$$
+$$\lim_{n \to \infty}\frac{H(X_{k+1},...,X_{k+n})}{n}$$
+$$\lim_{n \to \infty}\frac{H(X_{k+1},...,X_{k+n} | X_1,...,X_k)}{n}$$ I understand how we are able to prove that for a stationary process $H(X) = H'(X)$, where $H'(X) = \sum^{n}_{i = 1}\frac{H(X_i|X_{i-1},...,X_1)}{n}$ , but am not sure how to approach this problem.","['stochastic-processes', 'limits', 'stationary-processes', 'probability-theory', 'entropy']"
+2268776,Künneth formula from de Rham cohomology (Nakahara),"Nakahara, in his book ""Geometry, Topology and Physics"", states the following proof leading up to the Künneth formula. Let $M_1, M_2$ be two smooth manifolds, then the wedge of any pair of non-trivial representatives $\omega_1$ of $H^p(M_1)$ and $\omega_2$ of $H^q(M_2)$, is a non-trivial representative of $H^{p+q}(M_1\times M_2)$. Proving the inclusion $\bigoplus_{p+q=r} H^p(M_1)\otimes H^q(M_2)\subset H^r(M_1\times M_2)$. It is clear that $[\omega_1\wedge\omega_2]\in H^{p+q}(M_1\times M_2)$, it remains to show non-triviality. Suppose on the contrary that $\omega_1\wedge\omega_2$ were exact, then
+$$
+\omega_1\wedge\omega_2=d(\alpha\wedge\beta+\gamma\wedge\delta)=d\alpha\wedge\beta+(-1)^{p-1}\alpha\wedge d\beta+d\gamma\wedge\delta+(-1)^p\gamma\wedge d\delta\quad(*)
+$$
+for some $\alpha\in\Omega^{p-1}(M_1),\beta\in\Omega^{q}(M_1),\gamma\in\Omega^{p}(M_1),\delta\in\Omega^{q-1}(M_1)$. Nakahara claims that by comparing the two sides of $(*)$ we should find $\alpha=0$, $\delta=0$ which provides the necessary contradiction. This is what I have so far. Since $\Omega^s(M_1)\wedge\Omega^{t}(M_2)$ and $\Omega^{s'}(M_1)\wedge\Omega^{t'}(M_2)$ are linearly dependent only when $s=s'$ and $t=t'$, we can separate $(*)$ into three parts
+$$
+\omega_1\wedge\omega_2=d\alpha\wedge\beta+(-1)^p\gamma\wedge d\delta\quad\text{with}\quad
+\alpha\wedge d\beta=0,\quad d\gamma\wedge\delta=0
+$$
+To satisfy the last two equations we distinguish four cases: $\alpha=0,\delta=0$; $d\beta=0,\delta=0$; $\alpha=0,d\gamma=0$; $d\beta=0,d\gamma=0$. For the first three cases the contradiction with the non-exactness of $\omega_1$ and $\omega_2$ is immediate after substitution. In the fourth case however, we retain $\omega_1\wedge\omega_2=d\alpha\wedge\beta+(-1)^p\gamma\wedge d\delta$ with both $\beta\in\ker d$ and $\gamma\in\ker d$ and I am unsure how to proceed from there.","['homology-cohomology', 'differential-forms', 'differential-geometry']"
+2268833,Why is $\frac{987654321}{123456789}$ almost exactly $8$? [duplicate],"This question already has answers here : Why is $\frac{987654321}{123456789} = 8.0000000729?!$ (8 answers) Closed 4 years ago . I just started typing some numbers in my calculator and accidentally realized that $\frac{123456789}{987654321}=1/8$ and vice versa $\frac{987654321}{123456789}=8.000000072900001$, so very close to $8$. Is this just a coincidence or is there a pattern behind this or another explanation? I tried it with smaller subsets of the numbers but I never got any similar pattern.",['number-theory']
+2268891,A derivation of the Normal Distribution,"I was reading the following article of a derivation of the Normal Distribution. In the beginning there is the following definition: Data are said to be normally distributed if the rate at which the frequencies fall off is proportional to the distance of the score from the mean, and to the frequencies themselves From this definition, the author gets the following differential equation:
+$$\frac{df}{dx}=-k(x-\mu)f(x)$$ What I don't get is that he later says that we can separate the variables in the following form:
+$$\frac{df}{f}=-k(x-\mu)~dx$$
+I don't understand that part.","['ordinary-differential-equations', 'probability', 'calculus']"
+2268902,Integration involving natural logarithm,"I tried possible way of getting the integral of the following integrand: $$\int_0^{\infty} \frac{\ln\left(x+\frac{1}{x}\right)}{1+x^2}~dx$$ Firstly, I tried to write $\ln\left(x+\frac{1}{x}\right)$ as $\ln(x^2+1)-\ln(x)$ and tried to apply biparts but couldn't take it to its destination solution. Secondly, I tried to substitute $t=x+\frac{1}{x}$ and proceeded, but couldn't solve further. Nothing seems to work. This was a question from my exam. I don't understand how I'm supposed to solve this question in a short time when I can't solve it at home. I'm guessing there has to be a short but smart solution that is pretty much not striking me.","['substitution', 'definite-integrals', 'limits']"
+2268924,Wronskian of a self-adjoint form (sturm-liouville),"I'm studying Sturm-Liouville theory and an exercise asks me: Show the following when the linear second-order differential equation
+  is expressed in self-adjoint form: a) The Wronskian is equal to a constant divided by the initial
+  coefficient $p$: $$W(x) = \frac{C}{p(x)}$$ b) A second solution is given by $$y_2(x) = Cy_1(x)\int^x \frac{dt}{p(t)[y_1(t)]^2}$$ As far as I know, a self-adjoitn form is something in the form: $$\frac{d}{dx}\left[p(x)\frac{du(x)}{dx}\right] + q(x)u(x)$$ And the Wronskian of the two solutions $y_1, y_2$ of a general second order linear ODE, is $W(x) = y_1(x)y_2'(x)-y_1'(x)y_2(x)$. We also have that the wronskian can be expressed as $$W(x) = W(a) \exp\left[-\int_a^xP(x_1)dx_1\right]$$ for some $a$ that I don't remember. Is there some connection between these formulas and what I need to prove? Also, for b), I know that there is a method of finding a second solution based on the first solution, the wronskian, and the coefficients of the ODE, but how exactly should I do? I presume we have to use the wronskian above, but how?","['derivatives', 'sturm-liouville', 'calculus', 'ordinary-differential-equations', 'linear-algebra']"
+2268936,Is the function $\mbox{tr}(XAX')$ convex?,"Let matrix $A$ be symmetric and positive semidefinite (PSD). Is the function $X \mapsto \mbox{tr}(XAX')$ convex? I know that, for a general $A$ , the above trace function is not convex. But for a PSD $A$ , is the function convex?","['matrices', 'convex-analysis', 'positive-semidefinite', 'trace', 'quadratic-forms']"
+2269054,Is the expectation value Lipschitz for the Wasserstein metric?,"Consider the space $M$ of Borel measures on the real unit interval $[0,1]$, equipped with the 1- Wasserstein metric $d_W$ (or ""Earth mover's distance""). 
+The expected value is then a map $M\to [0,1]$ given by:
+$$
+p \mapsto E_p := \int_{[0,1]} x \, dp(x)\;.
+$$ Is it true that this map is Lipschitz? That is, can we find a constant $C$ such that for every $p,q\in M$, $|E_p-E_q|\le C\,d_W(p,q)$ ?","['expectation', 'optimal-transport', 'measure-theory', 'lipschitz-functions', 'metric-spaces']"
+2269063,Second order PDE with mixed derivative,"In my study of QFT I've faced the following PDE in Peskin&Schroeder textbook: $$\frac{\partial^2 g(x,\xi)}{\partial w \partial \xi}=A g(x,\xi),$$ where $w=\ln(1/x)$ and $A$ is a constant. The book provides a solution only in the limit $w\xi\gg1$ for some reason. $$g=K(Q^2)exp(\left(4w(\xi-\xi_0)\right)^{1/2}),$$ where $\xi=\ln \ln \left(Q^2\right)$, and $K(Q^2)$ is a function determined from initial condition. So, my questions are: Why dont they use separation of variables for this PDE? Is there any method to obtain general solution? Or can you explain how they get this approximate form?","['multivariable-calculus', 'ordinary-differential-equations', 'partial-differential-equations']"
+2269073,Analog of Cramer's conjecture for primes in a residue class,"Let $q$ and $r$ be fixed coprime positive integers, $$
+1 \le r < q, \qquad \gcd(q,r)=1.
+$$ Suppose that two prime numbers $p$ and $p'$ , with $p<p'$ , satisfy $$
+p \equiv p' \equiv r \ ({\rm mod}\ q),  \tag{1}
+$$ and no other primes between $p$ and $p'$ satisfy $(1)$ .
+Then we have the following Naive generalization of Cramer's conjecture to primes in residue class $r$ mod $q$ : $$
+p'-p ~<~ \varphi(q)\,(\ln p')^2.   \tag{2}
+$$ ( PrimePuzzles Conjecture 77 , A. Kourbatov, 2016). 
+See arXiv:1610.03340, ""On the distribution of maximal gaps between primes in residue classes"" for further details, including the motivation for the $\varphi(q)$ constant.
+Here, as usual, $\varphi(q)$ denotes Euler's totient function . Note: In the inequality $(2)$ we take the logarithm of the prime $p'$ at the larger end of the ""gap"".
+Very few counterexamples to $(2)$ are known; see Appendix 7.4 in arXiv:1610.03340 . Definitely no counterexamples for $q=2, \ p<2^{64}$ ; also none for $1\le r < q \le 1000$ , $ \ p<10^{10}$ . This conjecture (mostly in a less-naive "" almost always "" form) is mentioned in the following OEIS sequences listing maximal (record) gaps between primes of the form $p=qk+r$ , $ \ \gcd(q,r)=1$ : A084162 , A268799 , A268925 , A268928 , A268984 , A269234 , A269238 , A269261 , A269420 , A269424 , A269513 , A269519 . Question 1: Find a counterexample to conjecture $(2)$ . Question 2: Find a counterexample to $(2)$ , with prime $q$ and prime $r$ . Question 3: Find a counterexample to $(2)$ , with $$
+{p'-p \over \varphi(q)(\ln p')^2} > 1.1 \tag{3}
+$$ ( A.Granville predicts that such counterexamples exist even for $q=2$ , with the above ratio greater than $1.12$ -- more precisely, Granville expects that the ratio should exceed or come close to $2e^{-\gamma}$ ). Question 4: Find a counterexample to $(2)$ , with the additional condition $p'-p>q^2$ . Hint: Counterexamples are very rare . To find one, you will likely need to write a program and run it long enough. Good luck!","['number-theory', 'prime-gaps', 'conjectures', 'prime-numbers']"
+2269089,Connected variety with a $k$-rational point is geometrically connected,"Let $X$ be a connected scheme of finite type over a field $k$.  I'm trying to understand the following three statements: (i): If $X$ has a $k$-rational point, then $X_{k'} = X \times_k k'$ is connected for any finite extension of $k$. (ii): The same as (i), but the conclusion holds for any field extension of $k$. (iii): If $X$ and $Y$ are geometrically connected schemes of finite type over $k$, then so is $X \times_k Y$. For (i), a $k$-rational point is a morphism of $k$-schemes $\textrm{Spec } k \rightarrow X$.  Equivalently, it is a point of $X$ at which the residue field is $k$. The projection map $\pi: X_{k'} \rightarrow X$ is surjective and (I think) open and closed.  So if $U$ is an open and closed set in $X_{k'}$, then $\pi(U)$ will be an open and closed set in $X$, hence $\pi(U) = X$.  Thus every $k$-rational point of $X$ comes from $U$.  The same can be said for the complement of $U$ in $X_{k'}$. In the affine case, here is an equivalent statement for (i): $R$ is a finitely generated $k$-algebra, and there exists a $k'$-algebra homomorphism $R \otimes_k k'\rightarrow k'$ which maps $R$ into $k$.  Show that if $R \otimes_k k'$ is isomorphic to a direct product of two nonzero rings, then the same is true for $R$. I am not sure where to go from here, and would appreciate any hints.",['algebraic-geometry']
+2269131,Stone-Čech Compactification of The integers is $T_5$?,"Since $\beta\mathbb{N}$ is $T_2$ and compact we can conclude that it is $T_4$. However, what about $T_5$? My only guess will be that $\beta\mathbb{N}-\mathbb{N}$ is not normal. Is this true?","['general-topology', 'compactification']"
+2269135,Raising both sides of an equation to the same negative power,"If I raise both sides of an equation to the same negative exponent will the equality remain?
+$$a = b$$",['algebra-precalculus']
+2269143,Intuition behind the definition of continuity in terms of open sets [duplicate],"This question already has answers here : Why formulate continuity in terms of pre-images instead of image? (7 answers) Closed 4 months ago . I have familiarised myself with the definition of continuity in terms of limits, each point in the codomain being 'within' an $\varepsilon$ of the domain, etc... But my lecturer has suddenly begun using the definition ""a function is continuous if for all open sets, its preimage is open"" I was wondering if someone could shed some light on the intuition behind this definition so it makes better sense in my head.","['elementary-set-theory', 'continuity', 'calculus']"
+2269145,Is inversion of bounded homeomorphisms continuous with the uniform metric?,"Consider the metric space $H$ of uniformly continuous homeomorphisms (with uniformly continuous inverses) of some open bounded subset $G$ of $\mathbb C$, with the uniform metric
+$$d(f, g) = \sup_{z \in G} \left|f(z) - g(z)\right|.$$
+It is clear that $(f, g) \mapsto f \circ g$ is a continuous map $H \times H \to H$ (and in fact this is due to the uniform metric, not the uniform continuity of any particular homeomorphism), but is inversion $f \mapsto f^{-1}$ a continuous map $H \to H$? In other words, is it the case that whenever $(f_n) \to f$ uniformly on $G$, where $f$ and each $f_n$ is a uniformly continuous homeomorphism of $G$ with a uniformly continuous inverse, then $(f_n^{-1}) \to f^{-1}$ uniformly on $G$?","['general-topology', 'real-analysis', 'metric-spaces']"
+2269164,"$N \lhd G, G/N$ are Nilpotent $ \not \Rightarrow G$ is Nilpotent","Apparently that if we have $N \lhd G, G/N$ are Nilpotent $ \not \Rightarrow G$ is Nilpotent. I am trying to find a simple example of this. It currently seems unintuitive since if we have $N, G/N$ nilpotent, then we can 'mash together' elements in $G/N$ by elements in $G$ to get them into $N$ in a finite number of steps, and we can also 'mash' the elements in $N$ down to the identity in a finite number of steps, so initially I'd think the opposite statement is true. Could someone please enlighten me on how to think about this? Any obvious counterexamples?",['group-theory']
+2269187,Evaluating the recurrence $a_{n+1}=a_n\cdot a_{n-1}-1$,"Let the sequence $a_n$ be defined recursively by $a_0=3$, $a_1=1$ and $a_{n+1}=a_n\cdot a_{n-1}-1$ for $n=1,2,\cdots$. Find $a_6$, $a_7$, $a_8$, and $a_{200}$ Here is my attempt as an answer $a_0 = 3,a_1=1,a_2=2,a_3=1,a_4=1,a_5=0,a_6=-1,a_7=-1,a_8=0$ I do not know how to find $a_{200}$","['sequences-and-series', 'discrete-mathematics']"
+2269201,"Markov chains $(Z_n)$, how to find the probability $\mathbb{P} (Z_{n+1} = i+1 \mid Z_n = i)$?","Sorry for my bad english. We have a Markov chains $(Z_n)$ which follows this process : At first, $Z_1 = 0$. Then, $Z_2 = 1$ with probability $1/2$ or $Z_2 = -1$ with probability $1/2$. If $Z_2 = 1$, $Z_3 = 2$ with probability $1/2$ or $Z_3 = 0$ with probability $1/2$. If $Z_2 = -1$, $Z_3 = 0$ with probability $1/2$ or $Z_3 = -2$ with probability $1/2$. Etc. I have done a drawing until the step 8 : We would like to show that : $\mathbb{P} (Z_{n+1} = i+1 \mid Z_n = i) = \dfrac{n+2-i}{2(n+2)}$, and $\mathbb{P} (Z_{n+1} = i-1 \mid Z_n = i) = \dfrac{n+2+i}{2(n+2)}$ I don't see how to do it at all. Someone could help me ? Thank you in advance...","['markov-chains', 'statistics', 'probability']"
+2269212,Show analytically that 0 is the only zero of $\sin (2x)+2x$,"(I know the question sounds a bit confusing but that's how it's written in my book.) I tried: $$0 = \sin(2x)+2x \Leftrightarrow \\
+0 = 2\sin x \cos x + 2 x \Leftrightarrow \\
+0 = 2(\sin x \cos x +x) \Leftrightarrow \\
+0 = \sin x \sqrt{1-\sin^2x}+x \Leftrightarrow \\
+0 = \sqrt{\sin^2x(1-\sin^2x)}+x \Leftrightarrow \\
+0 = \sqrt{\sin^2x-\sin^4x}+x \Leftrightarrow \\
+???
+$$ What do I do next?","['trigonometry', 'calculus']"
+2269220,Will $2$ linear equations with $2$ unknowns always have a solution?,"As I am working on a problem with 3 linear equations with 2 unknowns I discover when I use any two of the equations it seems I always find a solution ok. But when I plug it into the third equation with the same two variables  , the third may or may not cause a contradiction depending if it is a solution and I am OK with that BUT I am confused on when I pick the two equations with two unknowns it seems like it has no choice but to work.  Is there something about linear algebra that makes this so and are there any conditions where it won't be the case that I will find a consistent solution using only the two equations?  My linear algebra is rusty and I am getting up to speed. These are just equations of lines and maybe the geometry would explain it but I am not sure how. Thank you.","['linear-algebra', 'systems-of-equations']"
+2269223,"If $p_0$ is a strict local maximum of $g$, then it is a center of the Hamiltonian System $p'=H_g(p)$","This is supposed to be an ordinary differential equations class exercise: Let $g\in \scr{C}^2(\Bbb{R}^2;\Bbb{R})$ and consider
+  $$H_g(x,y)=\begin{pmatrix}\partial_yg(x,y)\\ -\partial_xg(x,y)\end{pmatrix}.$$ Show that, if $g$ admits a strict local maximum point (non-degenerated) at $p_0=(x_0,y_0)$ then near to $p_0$ there are infinitely many periodic orbits of the o.d.e. $p'(s)=H_g(p(s))$ I know facts like: the level curves of $g$ are integral curves of the o.d.e. $p'(s)=H_g(p(s))$; $\langle \nabla g,H_g\rangle=0$; basic facts about $\nabla g$, etc; basic facts about o.d.e.'s like existence and uniqueness theorem, o.d.e.'s systems, etc. Furthermore, I can geometrically visualize that, if $p_0$ is a point of maximum isolated, then ""around it"", there is infinitely many closed level curves (imagine the surface given by the graph of $g$). But I don't have any idea of how to prove it formally... I'm really stuck!","['derivatives', 'gradient-flows', 'ordinary-differential-equations', 'hamilton-equations']"
+2269249,Krein-Smulian counterexample for the weak (not *) topology.,"The Krein-Smulian Theorem states that for a convex set S, having weak*-closed intersections with closed balls implies being weak*-closed. I would be really happy to have an example of a NOT weak-closed convex subset $S$ of a Banach space, such that the intersection with the closed balls are always weak-closed. In this post , there are some counterexamples for the ""convex"" hypothesis. I would like to have counterexamples for the ""weak*"" hypothesis.","['functional-analysis', 'examples-counterexamples', 'banach-spaces', 'weak-convergence']"
+2269267,Determinant of large matrices: there's GOTTA be a faster way,"WARNING this is a very long report and is likely going to cause boredom. Be warned!! I've heard of the determinant of small matrices, such as: $$\det
+\begin{pmatrix} 
+a&b\\
+c&d\\
+\end{pmatrix}
+=
+ad-bc
+$$ case in point: $$\det
+\begin{pmatrix} 
+57&48\\
+79&102\\
+\end{pmatrix}
+=
+57\times 102-48\times 79
+=5814-3792
+=2022
+$$ This is a pretty hefty example i found in one of my books on vectors and matrices. And there are much more complex examples. for instance, to find the determinant of a matrix of order 3, you do this: $$\begin{align}
+&\det
+\begin{pmatrix}
+a&b&c\\
+d&e&f\\
+g&h&i\\
+\end{pmatrix}\\
+&=a\times
+\det
+\begin{bmatrix}
+e&f\\
+h&i\\
+\end{bmatrix}\\
+&-b\times
+\det
+\begin{bmatrix}
+d&f\\
+g&i\\
+\end{bmatrix}\\
+&+c\times
+\det
+\begin{bmatrix}
+d&e\\
+g&h\\
+\end{bmatrix}
+\end{align}$$ This sequence looks a bit simple, but in reality it blows up(becoimes increasingly large) after a while. for instance, with a $5\times 5$ matrix someone asked me to model, this is how my 'fun time' went: $$
+\begin{align}
+&\det
+\begin{Bmatrix}
+a&b&c&d&e\\
+f&g&h&i&j\\
+k&l&m&n&o\\
+p&q&r&s&t\\
+u&v&w&x&y\\
+\end{Bmatrix}\\
+&=a\times
+\det
+\begin{Bmatrix}
+g&h&i&j\\
+l&m&n&o\\
+q&r&s&t\\
+v&w&x&y\\
+\end{Bmatrix}
+-b\times
+\det
+\begin{Bmatrix}
+f&h&i&j\\
+k&m&n&o\\
+p&r&s&t\\
+u&w&x&y\\
+\end{Bmatrix}
++c\times
+\det
+\begin{Bmatrix}
+f&g&i&j\\
+k&l&n&o\\
+p&q&s&t\\
+u&v&x&y\\
+\end{Bmatrix}\\
+&-d\times
+\det
+\begin{Bmatrix}
+f&g&h&j\\
+k&l&m&o\\
+p&q&r&t\\
+u&v&w&y\\
+\end{Bmatrix}
++e\times
+\det
+\begin{Bmatrix}
+f&g&h&i\\
+k&l&m&n\\
+p&q&r&s\\
+u&v&w&x\\
+\end{Bmatrix}
+\end{align}
+$$ This is a complex wad of calculations for me to completely do. so I'll break it down into the 5 conponents: A, B, C, D, and E, respectively. $$
+A=a\times
+\det
+\begin{Bmatrix}
+g&h&i&j\\
+l&m&n&o\\
+q&r&s&t\\
+v&w&x&y\\
+\end{Bmatrix}
+\\
+=a\left(
+g\times
+\det
+\begin{Bmatrix}
+m&n&o\\
+r&s&t\\
+w&x&y\\
+\end{Bmatrix}
+-h\times
+\det
+\begin{Bmatrix}
+l&n&o\\
+q&s&t\\
+v&x&y\\
+\end{Bmatrix}
++i\times
+\det
+\begin{Bmatrix}
+l&m&o\\
+q&r&t\\
+v&w&y\\
+\end{Bmatrix}
+-j\times
+\det
+\begin{Bmatrix}
+l&m&n\\
+q&r&s\\
+v&w&x\\
+\end{Bmatrix}
+\right)\\
+=a\left(
+g\left(
+m\times
+\det
+\begin{Bmatrix}
+s&t\\
+x&y\\
+\end{Bmatrix}
+-n\times
+\det
+\begin{Bmatrix}
+r&t\\
+w&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+r&s\\
+w&x\\
+\end{Bmatrix}
+\right)\\
+-h\left(
+l\times
+\det
+\begin{Bmatrix}
+s&t\\
+x&y\\
+\end{Bmatrix}
+-n\times
+\det
+\begin{Bmatrix}
+q&t\\
+v&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+q&s\\
+v&x\\
+\end{Bmatrix}
+\right)\\
++i\left(
+l\times
+\det
+\begin{Bmatrix}
+r&t\\
+w&y\\
+\end{Bmatrix}
+-m\times
+\det
+\begin{Bmatrix}
+q&t\\
+v&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+q&r\\
+v&w\\
+\end{Bmatrix}
+\right)
+-j\left(
+l\times
+\det
+\begin{Bmatrix}
+r&s\\
+w&x\\
+\end{Bmatrix}
+-m\times
+\det
+\begin{Bmatrix}
+q&s\\
+v&x\\
+\end{Bmatrix}
++n\times
+\det
+\begin{Bmatrix}
+q&r\\
+v&w\\
+\end{Bmatrix}
+\right)
+\right)\\
+=a\left(
+g\left(m(sy-xt)-n(ry-wt)+o(rx-ws)\right)\\
+-h\left(l(sy-xt)-n(qy-vt)+o(qx-vs)\right)\\
++i\left(l(ry-wt)-m(qy-vt)+o(qw-vr)\right)\\
+-j\left(l(rx-ws)-m(qx-vs)+n(qw-vr)\right)
+\right)
+$$ (If you want to see this behemoth in code form, go to this page , but i'm not $100$ % sure that it will work.) $$
+B=
+-b\times
+\det
+\begin{Bmatrix}
+f&h&i&j\\
+k&m&n&o\\
+p&r&s&t\\
+u&w&x&y\\
+\end{Bmatrix}\\
+-b\left(
+f\times
+\det
+\begin{Bmatrix}
+m&n&o\\
+r&s&t\\
+w&x&y\\
+\end{Bmatrix}
+-h\times
+\det
+\begin{Bmatrix}
+k&n&o\\
+p&s&t\\
+u&x&y\\
+\end{Bmatrix}
++i\times
+\det
+\begin{Bmatrix}
+k&m&o\\
+p&r&t\\
+u&w&y\\
+\end{Bmatrix}
+-j\times
+\det
+\begin{Bmatrix}
+k&m&n\\
+p&r&s\\
+u&w&x\\
+\end{Bmatrix}
+\right)\\
+=-b\left(
+f\left(
+m\times
+\det
+\begin{Bmatrix}
+s&t\\
+x&y\\
+\end{Bmatrix}
+-n\times
+\det
+\begin{Bmatrix}
+r&t\\
+w&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+r&s\\
+w&x\\
+\end{Bmatrix}
+\right)\\
+-h\left(
+k\times
+\det
+\begin{Bmatrix}
+s&t\\
+x&y\\
+\end{Bmatrix}
+-n\times
+\det
+\begin{Bmatrix}
+p&t\\
+u&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+p&s\\
+u&x\\
+\end{Bmatrix}
+\right)\\
++i\left(
+k\times
+\det
+\begin{Bmatrix}
+r&t\\
+w&y\\
+\end{Bmatrix}
+-m\times
+\det
+\begin{Bmatrix}
+p&t\\
+u&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+p&r\\
+u&w\\
+\end{Bmatrix}
+\right)
+-j\left(
+k\times
+\det
+\begin{Bmatrix}
+r&s\\
+w&x\\
+\end{Bmatrix}
+-m\times
+\det
+\begin{Bmatrix}
+p&s\\
+u&x\\
+\end{Bmatrix}
++n\times
+\det
+\begin{Bmatrix}
+p&r\\
+u&w\\
+\end{Bmatrix}
+\right)
+\right)\\
+=-b\left(
+f\left(m(sy-xt)-n(ry-wt)+o(rx-ws)\right)\\
+-h\left(k(sy-xt)-n(py-ut)+o(px-us)\right)\\
++i\left(k(ry-wt)-m(py-ut)+o(pw-ur)\right)\\
+-j\left(k(rx-ws)-m(px-us)+n(pw-ur)\right)
+\right)
+$$ and that is part b! this is a grueling amount of code for me to place. $\frac{3}{5}$ way to go... $$
+C=c\times
+\det
+\begin{Bmatrix}
+f&g&i&j\\
+k&l&n&o\\
+p&q&s&t\\
+u&v&x&y\\
+\end{Bmatrix}\\
+=c\left(
+f\times
+\det
+\begin{Bmatrix}
+l&n&o\\
+q&s&t\\
+v&x&y\\
+\end{Bmatrix}
+-g\times
+\det
+\begin{Bmatrix}
+k&n&o\\
+p&s&t\\
+u&x&y\\
+\end{Bmatrix}
++i\times
+\det
+\begin{Bmatrix}
+k&l&o\\
+p&q&t\\
+u&v&y\\
+\end{Bmatrix}
+-j\times
+\det
+\begin{Bmatrix}
+k&l&n\\
+p&q&s\\
+u&v&x\\
+\end{Bmatrix}
+\right)\\
+=c\left(
+f\left(
+l\times
+\det
+\begin{Bmatrix}
+s&t\\
+x&y\\
+\end{Bmatrix}
+-n\times
+\det
+\begin{Bmatrix}
+q&t\\
+v&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+q&s\\
+v&x\\
+\end{Bmatrix}
+\right)\\
+-g\left(
+k\times
+\det
+\begin{Bmatrix}
+s&t\\
+x&y\\
+\end{Bmatrix}
+-n\times
+\det
+\begin{Bmatrix}
+p&t\\
+u&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+p&s\\
+u&x\\
+\end{Bmatrix}
+\right)\\
++i\left(
+k\times
+\det
+\begin{Bmatrix}
+q&t\\
+v&y\\
+\end{Bmatrix}
+-l\times
+\det
+\begin{Bmatrix}
+p&t\\
+u&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+p&q\\
+u&v\\
+\end{Bmatrix}
+\right)\\
+-j\left(
+k\times
+\det
+\begin{Bmatrix}
+q&s\\
+v&x\\
+\end{Bmatrix}
+-l\times
+\det
+\begin{Bmatrix}
+p&s\\
+u&x\\
+\end{Bmatrix}
++n\times
+\det
+\begin{Bmatrix}
+p&q\\
+u&v\\
+\end{Bmatrix}
+\right)
+\right)\\
+=c\left(
+f\left(l(sy-xt)-n(qy-vt)+o(qx-vs)\right)\\
+-g\left(k(sy-xt)-n(py-ut)+o(px-us)\right)\\
++i\left(k(qy-vt)-l(py-ut)+o(pv-uq)\right)\\
+-j\left(k(qx-vs)-l(px-us)+n(pv-uq)\right)
+\right)
+$$ That's the C-section. now to get to the D-section... $$
+D=-d\times
+\det
+\begin{Bmatrix}
+f&g&h&j\\
+k&l&m&o\\
+p&q&r&t\\
+u&v&w&y\\
+\end{Bmatrix}\\
+=-d\left(
+f\times
+\det
+\begin{Bmatrix}
+l&m&o\\
+q&r&t\\
+v&w&y\\
+\end{Bmatrix}
+-g\times
+\det
+\begin{Bmatrix}
+k&m&o\\
+p&r&t\\
+u&w&y\\
+\end{Bmatrix}
++h\times
+\det
+\begin{Bmatrix}
+k&l&o\\
+p&q&t\\
+u&v&y\\
+\end{Bmatrix}
+-j\times
+\det
+\begin{Bmatrix}
+k&l&m\\
+p&q&r\\
+u&v&w\\
+\end{Bmatrix}
+\right)\\
+=-d\left(
+f\left(
+l\times
+\det
+\begin{Bmatrix}
+r&t\\
+w&y\\
+\end{Bmatrix}
+-m\times
+\det
+\begin{Bmatrix}
+q&t\\
+v&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+q&r\\
+v&w\\
+\end{Bmatrix}
+\right)\\
+-g\left(
+k\times
+\det
+\begin{Bmatrix}
+r&t\\
+w&y\\
+\end{Bmatrix}
+-m\times
+\det
+\begin{Bmatrix}
+p&t\\
+u&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+p&r\\
+u&w\\
+\end{Bmatrix}
+\right)\\
++h\left(
+k\times
+\det
+\begin{Bmatrix}
+q&t\\
+v&y\\
+\end{Bmatrix}
+-l\times
+\det
+\begin{Bmatrix}
+p&t\\
+u&y\\
+\end{Bmatrix}
++o\times
+\det
+\begin{Bmatrix}
+p&q\\
+u&v\\
+\end{Bmatrix}
+\right)\\
+-j\left(
+k\times
+\det
+\begin{Bmatrix}
+q&r\\
+v&w\\
+\end{Bmatrix}
+-l\times
+\det
+\begin{Bmatrix}
+p&r\\
+u&w\\
+\end{Bmatrix}
++m\times
+\det
+\begin{Bmatrix}
+p&q\\
+u&v\\
+\end{Bmatrix}
+\right)
+\right)\\
+=-d\left(
+f\left(l(ry-wt)-m(qy-vt)+o(qw-vr)\right)\\
+-g\left(k(ry-wt)-m(py-ut)+o(pw-ur)\right)\\
++h\left(k(qy-vt)-l(py-ut)+o(pv-uq)\right)\\
+-j\left(k(qw-vr)-l(pw-ur)+m(pv-uq)\right)
+\right)
+$$ Are you bored yet? I am. Luckily, I got one more section to go... $$
+E=e\times
+\det
+\begin{Bmatrix}
+f&g&h&i\\
+k&l&m&n\\
+p&q&r&s\\
+u&v&w&x\\
+\end{Bmatrix}
+=e\left(
+f\times
+\det
+\begin{Bmatrix}
+l&m&n\\
+q&r&s\\
+v&w&x\\
+\end{Bmatrix}
+-g\times
+\det
+\begin{Bmatrix}
+k&m&n\\
+p&r&s\\
+u&w&x\\
+\end{Bmatrix}
++h\times
+\det
+\begin{Bmatrix}
+k&l&n\\
+p&q&s\\
+u&v&x\\
+\end{Bmatrix}
+-i\times
+\det
+\begin{Bmatrix}
+k&l&m\\
+p&q&r\\
+u&v&w\\
+\end{Bmatrix}
+\right)\\
+=e\left(
+f\left(
+l\times
+\det
+\begin{Bmatrix}
+r&s\\
+w&x\\
+\end{Bmatrix}
+-m\times
+\det
+\begin{Bmatrix}
+q&s\\
+v&x\\
+\end{Bmatrix}
++n\times
+\det
+\begin{Bmatrix}
+q&r\\
+v&w\\
+\end{Bmatrix}
+\right)\\
+-g\left(
+k\times
+\det
+\begin{Bmatrix}
+r&s\\
+w&x\\
+\end{Bmatrix}
+-m\times
+\det
+\begin{Bmatrix}
+p&s\\
+u&x\\
+\end{Bmatrix}
++n\times
+\det
+\begin{Bmatrix}
+p&r\\
+u&w\\
+\end{Bmatrix}
+\right)\\
++h\left(
+k\times
+\det
+\begin{Bmatrix}
+q&s\\
+v&x\\
+\end{Bmatrix}
+-l\times
+\det
+\begin{Bmatrix}
+p&s\\
+u&x\\
+\end{Bmatrix}
++n\times
+\det
+\begin{Bmatrix}
+p&q\\
+u&v\\
+\end{Bmatrix}
+\right)\\
+-i\left(
+k\times
+\det
+\begin{Bmatrix}
+q&r\\
+v&w\\
+\end{Bmatrix}
+-l\times
+\det
+\begin{Bmatrix}
+p&r\\
+u&w\\
+\end{Bmatrix}
++m\times
+\det
+\begin{Bmatrix}
+p&q\\
+u&v\\
+\end{Bmatrix}
+\right)
+\right)\\
+=e\left(
+f\left(l(rx-ws)-m(qx-vs)+n(qw-vr)\right)\\
+-g\left(k(rx-ws)-m(px-us)+n(pw-ur)\right)\\
++h\left(k(qx-vs)-l(px-us)+n(pv-uq)\right)\\
+-i\left(k(qw-vr)-l(pw-ur)+m(pv-uq)\right)
+\right)
+$$ ZZZZZZZZZZZZ... GAH! okay... to recap: $$
+\det
+\begin{Bmatrix}
+a&b&c&d&e\\
+f&g&h&i&j\\
+k&l&m&n&o\\
+p&q&r&s&t\\
+u&v&w&x&y\\
+\end{Bmatrix}\\
+=a\left(
+g\left(m(sy-xt)-n(ry-wt)+o(rx-ws)\right)\\
+-h\left(l(sy-xt)-n(qy-vt)+o(qx-vs)\right)\\
++i\left(l(ry-wt)-m(qy-vt)+o(qw-vr)\right)\\
+-j\left(l(rx-ws)-m(qx-vs)+n(qw-vr)\right)
+\right)\\
+-b\left(
+f\left(m(sy-xt)-n(ry-wt)+o(rx-ws)\right)\\
+-h\left(k(sy-xt)-n(py-ut)+o(px-us)\right)\\
++i\left(k(ry-wt)-m(py-ut)+o(pw-ur)\right)\\
+-j\left(k(rx-ws)-m(px-us)+n(pw-ur)\right)
+\right)\\
++c\left(
+f\left(l(sy-xt)-n(qy-vt)+o(qx-vs)\right)\\
+-g\left(k(sy-xt)-n(py-ut)+o(px-us)\right)\\
++i\left(k(qy-vt)-l(py-ut)+o(pv-uq)\right)\\
+-j\left(k(qx-vs)-l(px-us)+n(pv-uq)\right)
+\right)\\
+-d\left(
+f\left(l(ry-wt)-m(qy-vt)+o(qw-vr)\right)\\
+-g\left(k(ry-wt)-m(py-ut)+o(pw-ur)\right)\\
++h\left(k(qy-vt)-l(py-ut)+o(pv-uq)\right)\\
+-j\left(k(qw-vr)-l(pw-ur)+m(pv-uq)\right)
+\right)\\
++e\left(
+f\left(l(rx-ws)-m(qx-vs)+n(qw-vr)\right)\\
+-g\left(k(rx-ws)-m(px-us)+n(pw-ur)\right)\\
++h\left(k(qx-vs)-l(px-us)+n(pv-uq)\right)\\
+-i\left(k(qw-vr)-l(pw-ur)+m(pv-uq)\right)
+\right)
+$$ Now that THAT'S over ( STOP SCROLLING!! ), I must mention that I pretty much blew my friend's mind showing him this. NOW he wants me to figure out a matrix of order 10. AURRRRRRRRUUUUUUUUUUUUGGGGGGGGGGHHHHHHHHHH!!!!!!! I DONT HAVE THE TIME!!!! Therefore, I am wondering if there is a faster way to calculate the determinant of a HUGE matrix. hope there is. Thanks in advance. EDIT i was conversating with my friend, explaining how timewasting calculating a matrix of order 10 is, and i convinced him to drop the 'do by hand' idea, and instead do it on the computer.","['matrices', 'numerical-linear-algebra', 'linear-algebra', 'determinant']"
+2269298,If $\sin x + \sin^2 x =1$ then find the value of $\cos^8 x + 2\cos^6 x + \cos^4 x$,"If $\sin x + \sin^2 x =1$ then find the value of $\cos^8 x + 2\cos^6 x + \cos^4 x$ My Attempt:
+$$\sin x + \sin^2 x=1$$
+$$\sin x = 1-\sin^2 x$$
+$$\sin x = \cos^2 x$$
+Now, 
+$$\cos^8 x + 2\cos^6 x + \cos^4 x$$
+$$=\sin^4 x + 2\sin^3 x +\sin^2 x$$
+$$=\sin^4 x + \sin^3 x + \sin^3 x + \sin^2 x$$
+$$=\sin^3 x(\sin x +1) +\sin^2 x(\sin x +1)$$
+$$=(\sin x +1) (\sin^3 x +\sin^2 x)$$ How do I proceed further?","['algebra-precalculus', 'trigonometry']"
+2269358,Inverting a Linear Fractional Transformation,"I have a particular Linear Fractional Transformation from $\mathbb{C}$ to $\mathbb{C}$, I am using to solve Laplace's equation, and I was hoping to find the inverse of this transformation.  Is there a algorithm that can be used to find the inverse of a Linear Fractional Transformation?  Are there any useful algorithms for special cases?","['complex-analysis', 'mobius-transformation', 'inverse']"
+2269371,Laplacian of a potential. Correct use of Index gymnastics and notation?,"Currently working my way through Gravity Newtonian, Post-Newtonian, Relativistic - Poisson and Will (2014) and I've stumbled upon a potential issue with my memory of vector calc in index notation. Context I've got an equation which takes the following form $$ \rho ( \partial_t \mathbf{v} + \mathbf{v} \cdot \nabla \mathbf{v}) = \rho \nabla U - \nabla p, \tag{1} \label{eq:maineq} $$ where mass density, pressure, velocity vector field and Newtonian gravitational potential for a fluid element are given by $\rho, p, \mathbf{v}$ and $U$ respectively. Usual notation is used i.e. $\partial_t\equiv\partial/\partial t$ etc. etc. Now, in terms of a fluid element comprised of a continuous matter distribution, the Newtonian gravitational potential satisfies Poisson's equation, namely $$ \nabla^2U = -4\pi G \rho. \tag{2} $$ We can express the first term on the RHS of Eq. (\ref{eq:maineq}) as the following $$ \rho \partial_j U =  -\frac{1}{4 \pi G} \nabla^2 U \partial_j U. $$ where $\partial_j U \equiv \nabla U$. The steps that follow is where the issue lies. Question We have $ -\frac{1}{4 \pi G} \nabla^2 U \partial_j U$ which can be expressed as the following $$ -\frac{1}{4 \pi G} (\partial_k\partial_k U) \partial_j U. \tag{3} \label{eq:laplacegrad}$$ In light of the comments below can someone explain the steps that Poisson and Will have taken to arrive at the following: $$\rho \partial_j U = -\frac{1}{4 \pi G} \partial_k  \left( \partial_j U \partial_k U - \frac{1}{2} \delta^{jk} \partial_i U \partial_i U \right). \tag{4} \label{eq:derive}$$ With regards the rules of the site. To see my (incorrect) attempt, it can be seen in a previously edited version of the question. See below for answer.","['multivariable-calculus', 'laplacian', 'vector-analysis']"
+2269417,A special subset of nilradical,"For a commutative and unitary ring $R$ and an ideal $I$ of $R$,
+suppose that $\mathrm{Id}(I)$ is the ideal of $R$ generated by idempotent
+elements of $I$. It is well-known that $\mathrm{Nil}(R)=\bigcap_{P\in
+\mathrm{Spec}(R)} P$ is the set of all nilpotent elements of $R$, and if
+$e^2=e\in \mathrm{Nil}(R)$, then $e$ must be zero element. Now I want to
+know if the following is true: $$\bigcap_{P\in \mathrm{Spec}(R)} \mathrm{Id}(P)=\{0\}.$$","['abstract-algebra', 'ring-theory', 'idempotents', 'commutative-algebra']"
+2269452,"Mathematics Textbooks that exemplify ""Understanding"" Mathematics.","I hope this question isn't considered too strange. Gowers argues in ""The Two Cultures of Mathematics"" That mathematicians can be broadly categorized as those interested in understanding mathematics and those interested in solving problems. I have quite a few books that I would consider to be in the ""problem solving"" tradition, Polya's ""How to Solve it"" and Knuth's ""Concrete Mathematics"" illustrate this style of thinking beautifully. I'm curious if there are canonical books that can be considered representative of the ""understanding"" tradition. What sorts of books did the Heroes of understanding math read when they were young (Like Grothendieck)? Or is this question too broad, In that any book which proves a theorem could be a valid candidate?","['big-picture', 'book-recommendation', 'algebraic-geometry']"
+2269519,"Why, is a first degree polynomial for sin(x) a good approximation for small x, while cos(x), a second degree polynomial is necessary?","We know that the small-angle approximation says that: $$\sin(x) \approx x$$
+$$\cos(x) \approx 1-\frac{x^2}{2}$$ I'm trying to understand, using the Taylor series and Lagrange error, why the first term of the $\sin(x)$ Maclaurin is so much better an approximation than $\cos(x)$ Maclaurin. It must have something to do with the fact that the first nonzero term for $\cos(x)$ is zero-degree, while the first nonzero term for $\sin(x)$ is first-degree. But the issue is that the next term in both cases has a derivative of $0$ at $x=0$, so I thought they'd be similarly good approximations. Why is this the case? And could the difference be shown clearly using Lagrange error bound? This is not homework, I'm just curious.","['taylor-expansion', 'trigonometry', 'calculus']"
+2269523,Using generating functions in combinatorics,"I know these questions get asked a lot but I cannot figure it out. It requires the use of generating functions to find the number of solutions (coefficient) to the equation: $u_i+u_2+u_3+u_4 = 20$, where $1 \leq u_i \leq 5, i = 1,...,4$ How do I solve this question step-by-step? Thanks.","['generating-functions', 'combinatorics']"
+2269524,Why is $\lim_{s \to 0} \int_{0}^{\infty} \frac{\sin(t)}{t}\cdot e^{-st} dt =\int_{0}^{\infty} \frac{\sin(t)}{t} dt $ legitimate?,"As part of a proof of the value Dirichlet's Integral using only real analysis methods  I need to justify the following:  $$\lim_{s \to 0} \int_{0}^{\infty} \frac{\sin(t)}{t}\cdot e^{-st} dt = \int_{0}^{\infty} \frac{\sin(t)}{t}\cdot [\lim_{s \to 0} e^{-st}] dt  = \int_{0}^{\infty} \frac{\sin(t)}{t} dt $$
+Specifically I want to justify rigorously why I can bring the $\lim$ process into the integral (or out of). The way I see it, I need to show uniform integrability of $\lim_{s \to 0} \int_{0}^{\infty} \frac{\sin(t)}{t}\cdot e^{-st} dt$ independtent of $s$ using integration by parts. I can't figure out the technical details though.","['real-analysis', 'improper-integrals', 'trigonometry']"
+2269541,A special bijection between $\mathbb{R}\times \mathbb{R}$ and $\mathbb{R}$ [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 6 years ago . Improve this question Is there any bijection $\eta:\mathbb{R}\times \mathbb{R}\rightarrow \mathbb{R}$  with the property $\min\{x,y\}\leq \eta(x,y)\leq \max\{x,y\}$?","['elementary-set-theory', 'functions']"
+2269553,Let $A^2 = I$. Prove that $A = I$ if all eigenvalues of $A$ are $1$,"Need help with this:
+Let $A^2 = I$, and all eigenvalues of $A$ are $1$. Prove that $A = I$. ($A$ is over the complexes) I thought that because $A^2=I$, then $A$ is reversible and $A^{-1} = A$, and there are only two matrices that do this: the identity matrix and the zero matrix. But it's only intuition and I couldn't prove that.","['matrices', 'linear-algebra']"
+2269558,How can we show that $\int_{0}^{\pi/2}{\ln^2\sin(x) \ln\cos (x)\over \sin(x)\cos (x)}\mathrm dx=-{\left(\pi^2\over 4!\right)^2}?$,Given that $$\int_{0}^{\pi/2}{\ln^2\sin(x) \ln\cos (x)\over \sin(x)\cos (x)}\mathrm dx=-\color{brown}{\left(\pi^2\over 4!\right)^2}\tag1$$ My try: $u=\sin^2(x)\implies du=2\sin(x)\cos(x) dx$ $(1)$ becomes $${1\over 16}\int_{0}^{1}{\ln^2(u)\ln(1-u)\over u(1-u)}\mathrm du\tag2$$ $v=1-u$ $$-{1\over 16}\int_{0}^{1}{\ln^2(1+v)\ln(v)\over v(1+v)}\mathrm dv\tag3$$ Recall $$\ln(1+x)=\sum_{n=1}^{\infty}{(-1)^{n+1}\over n}x^n$$ $${1\over 16}\sum_{n=1}^{\infty}{(-1)^n\over n}\int_{0}^{1}v^{n-1}\ln(v)\cdot{\mathrm dv\over 1+v}\tag4$$ How can one prove $(1)?$,"['integration', 'definite-integrals', 'calculus']"
+2269575,"Prob. 11, Chap. 5 in Baby Rudin: If $f$ is defined in a neighborhood of $x$ and if $f^{\prime\prime}(x)$ exists, then . . .","Here is Prob. 11, Chap. 5 in the book Principles of Mathematical Analysis by Walter Rudin, 3rd edition: Suppose $f$ is defined in a neighborhood of $x$, and suppose $f^{\prime\prime}(x)$ exists. Show that $$ \lim_{h \to 0} \frac{ f(x+h)+f(x-h)-2f(x)}{h^2} = f^{\prime\prime}(x).$$ Show by an example that the limit may exist even if $f^{\prime\prime}(x)$ does not. Hint: Use Theorem 5.13. My Attempt: As $f{\prime\prime}(x)$ exists, so there is an interval containing $x$ in which $f^\prime$ exists, and $f^\prime$ is continuous at $x$. [What if $x$ is an endpoint of the interval? How can we gaurantee that there is a segment containing $x$ on which $f^\prime$ exists? ] So there is an interval containing $x$ on which $f$ is defined and $f$ is continuous at $x$. Therefore by Theorem 5.13 (i.e. L'Hospital's rule) in Baby Rudin, we obtain
+  $$
+\begin{align}
+\lim_{h \to 0} \frac{f(x+h) + f(x-h) -2f(x) }{h^2} 
+&= \lim_{h \to 0} \frac{f^\prime(x+h) - f^\prime(x-h)}{2h} \\
+& \ \ \  \mbox{ [ using L'Hospital's rule, } \\
+& \ \ \ \ \ \ \mbox{ because $f(x+h)+f(x-h)-2f(x) \to 0$ and $h \to 0$ } \\
+& \ \ \ \ \ \ \ \ \ \mbox{ as $h \to 0$ ]} \\
+&= \lim_{h \to 0} \frac{ f^\prime(x+h) - f^\prime(x) + f^\prime(x) - f^\prime(x-h) }{2h} \\
+&= \lim_{h\to 0} \frac{1}{2} \left( \frac{ f^\prime(x+h) - f^\prime(x) }{h} + \frac{ f^\prime(x-h)-f^\prime(x)}{-h} \right) \\
+&= \lim_{h \to 0} \frac{1}{2} \left( \mathrm{R}f^{\prime\prime}(x) + \mathrm{L}f^{\prime\prime}(x)  \right) \\
+& \ \ \ \mbox{ [ Here $\mathrm{R}f^{\prime\prime}(x)$ denotes the right-hand derivative of $f$ } \\
+& \ \ \ \ \ \ \mbox{ at $x$, and $\mathrm{L}f^{\prime\prime}(x)$ denotes the left-hand derivative; } \\
+& \ \ \ \ \ \ \ \ \ \mbox{ we assume of course that here $h \to 0+$ ]} \\
+&= f^{\prime\prime}(x).
+\end{align}
+$$ Is this reasoning correct? Now let $f$ be the real function defined on $\mathbb{R}^1$ by 
+  $$ f(x) = \begin{cases} x^2 \sin \frac{1}{x} \ \mbox{ for $x \neq 0$} \\ 0 \ \mbox{ for $x = 0$}. \end{cases} $$ 
+  Then 
+  $$ 
+\lim_{h \to 0} \frac{ f(h) + f(-h) - 2f(0) }{h^2} 
+= \lim_{h \to 0} \frac{ f(h) - f(h) }{h^2} 
+= 0,
+$$
+  but 
+  $$
+\begin{align}
+f^{\prime\prime}(0) 
+&= \lim_{h \to 0} \frac{ f^\prime(h) - f^\prime(0) }{h} \\
+&= \lim_{h \to 0} \frac{ \left( 2h \sin \frac{1}{h} - \cos \frac{1}{h} \right) - 0 }{h} \\
+&= \lim_{h \to 0} \left( 2 \sin \frac{1}{h} - \frac{\cos \frac{1}{h} }{h}  \right), 
+\end{align}
+$$
+  and the last limit (and hence $f^{\prime\prime}(0)$) of course does not exist. Am I right? However, as Rudin has not yet discussed the trigonometric functions (in a rigorous and systematic manner), I would like to have an example which is within the corpus of the examples dealt with by Rudin up to this point in the book.","['derivatives', 'real-analysis', 'limits', 'calculus', 'analysis']"
+2269582,"For the Central Limit Theorem, why does the $\sqrt{n}$ term represent the convergence rate?","Suppose that $X_1, X_2, \ldots, $ is a sequence of iid random variables with $\mathbb{E}(X_i) = \mu$ and $Var(X_i) = \sigma^2 < \infty$. Define $S_n = \sum_{i=1}^{n}X_i$. Then as $n$ approaches infinity, we have that $\sqrt{n}(S_n - \mu)$ converges in distribution to a normal $N(0,\sigma^2)$ distribution: $$
+\sqrt{n}\left(\left(\frac{1}{n}\sum_{i=1}^n X_i\right) - \mu\right)\ \xrightarrow{d}\ N\left(0,\sigma^2\right).
+$$ Assuming that $\sigma>0$, convergence in distribution is taken to be that the cumulative distribution functions of $\sqrt{n}(S_n - \mu)$ converge pointwise to the cdf of the $N(0, \sigma^2)$ distribution in that for every real number $z$: $$
+\lim_{n\to\infty} \Pr\left[\sqrt{n}(S_n-\mu) \le z\right] = \Phi\left(\frac{z}{\sigma}\right) ,
+$$ My Question: I am having a hard time understanding what is means when they say the above convergence happens with rate $\sqrt{n}$ . The notion of rate implies that it characterizes how fast something converges, but I am failing to see in the equation above where the slowness or the ""fastness"" is coming in. Can someone help me see this?","['probability-theory', 'probability', 'statistics', 'statistical-inference']"
+2269595,"Prob. 12, Chap. 5 in Baby Rudin: The first, second, and third derivatives of $f(x) = |x|^3$","Here is Prob. 12, Chap. 5 in Principles of Mathematical Analysis by Walter Rudin, 3rd edition: If $f(x) = |x|^3$, compute $f^\prime(x)$, $f^{\prime\prime}(x)$ for all real $x$, and show that $f^{(3)}(0)$ does not exist. My Attempt: We can also write the formula for $f$ as 
+  $$ 
+f(x) =
+\begin{cases} 
+x^3 \ \mbox{ if $x > 0$}, \\ 
+0 \ \mbox{ if $x = 0$}, \\ 
+- x^3 \ \mbox{ if $x < 0$}.
+\end{cases} 
+$$
+  Then 
+  $$f^\prime(0) = \lim_{h\to 0} \frac{ f(h) -f(0)}{h} = \lim_{h \to 0} \frac{|h|^3}{h} = \lim_{h \to 0} |h|^2  \mathrm{sgn} (h) = 0.$$ 
+  Thus
+  $$ 
+f^\prime(x) =
+\begin{cases} 
+3x^2 \ \mbox{ if $x > 0$}, \\ 
+0 \ \mbox{ if $x = 0$}, \\ 
+- 3x^2 \ \mbox{ if $x < 0$}.
+\end{cases} 
+$$
+  That is, 
+  $$f^\prime(x) = 3x^2 \mathrm{sgn}(x).$$
+  Now 
+  $$ f^{\prime\prime}(0) = \lim_{h \to 0} \frac{ f^\prime(h) - f^\prime(0)}{h} = \lim_{h \to 0} \frac{ 3h^2 \mathrm{sgn} (h) }{h} = \lim_{h \to 0} 3h \ \mathrm{sgn} (h) = 0.$$
+  Thus 
+  $$ 
+f^{\prime\prime}(x) =
+\begin{cases} 
+6x \ \mbox{ if $x > 0$}, \\ 
+0 \ \mbox{ if $x = 0$}, \\ 
+- 6x^ \ \mbox{ if $x < 0$}.
+\end{cases} 
+$$
+  That is, 
+  $$f^{\prime\prime}(x) = 6x\  \mathrm{sgn} (x).$$
+  Now 
+  $$f^{(3)}(0) = \lim_{h \to 0} \frac{f^{\prime\prime}(h) - f^{\prime\prime}(0) }{h} = \lim_{h \to 0} 6 \mathrm{sgn}(h), $$
+  and this limit does not exist, as it is $+1$ as $h \to 0+$ and is $-1$ as $h \to 0-$. Is my calculation correct?","['derivatives', 'real-analysis', 'limits', 'calculus', 'analysis']"
+2269620,existence of solution of ODE with one sided Lipschitz right hand side,"I know that in any ODE, the right hand side should be continuous or Lipschitz to guarantee the existence of a solution, in my research, I came across an ODE where the right hand side is one sided Lipschitz but I cannot find any resource about the way to prove that existence, can any one please guide me to a book or articles which could give me these information? The ODE is: 
+\begin{align*}
+\begin{cases}
+&\dfrac{d y(t)}{d t} = f(y(t))\\
+&y(0) = x_{0}
+\end{cases}
+\end{align*}
+for almost every where $t\geq 0$ and $y(t)$ is absolutely continuous.
+Thanks very much for any one could help.",['ordinary-differential-equations']
+2269628,Is it possible to interchange the order of limits in this case?,"I'm stuck on this problem. Let $g \in C^{\infty}(\mathbb{R})$ with $|x|^p  |D^{q} g| \rightarrow 0$ as $|x| \rightarrow \infty$ for any nonnegative integers $p$ and $q$. Suppose that $|g(\gamma)| \leq (1+\gamma^2)^{-1}$ for $\gamma \in \mathbb{R}$. Show that $$\lim_{N\rightarrow\infty} \lim_{T\rightarrow\infty}\sum_{|n|\leq NT} \frac{1}{T}g\left(\frac{n}{T}\right) = \lim_{T\rightarrow\infty}\lim_{N\rightarrow\infty}\sum_{|n|\leq NT} \frac{1}{T}g\left(\frac{n}{T}\right).$$ It is just interchange of the order of limits. But how can we guarantee this equality? Any help will be appreciated! **(edit) I've checked that 
+$$ \lim_{T\rightarrow\infty}\sum_{|n|\leq NT} \frac{1}{T}g\left(\frac{n}{T}\right) = \int_{-N}^N g(\gamma) \, d\gamma,$$
+so that $$\lim_{N\rightarrow\infty}\lim_{T\rightarrow\infty}\sum_{|n|\leq NT} \frac{1}{T}g\left(\frac{n}{T}\right) = \int_{-\infty}^{\infty} g(\gamma) \, d\gamma. $$","['real-analysis', 'fourier-series', 'fourier-analysis', 'limits', 'summation']"
+2269679,Integrable function which limit does not go to 0 for x to infinity,"I want to find a function, such that the function shall be $p$ -integrable in the sense of $\int_{\mathbb{R}}|f(x)|^pdx<\infty$ for any $p\in[1,\infty)$ and that this does NOT imply $\lim_{x\to\infty}f(x)=0$ . Now it's similar to the question here Continuous unbounded but integrable functions , but I'm not looking for a function which is unbounded in any point, just one which limit in infinity does not converge to $0$ or better say does not exist. Does anyone know of any examples?","['functional-analysis', 'real-analysis']"
+2269714,Is there Geometric Interpretation of Spinors?,"Usually in Physics we define a spinor to be an element of the $\left(\frac{1}{2},0\right)$ representation space of the Lorentz group. Essentially this boils down to the 'n-tuple of numbers that transforms like a spinor' definition that physicists tend to use for vectors, covectors, and tensors. However, vectors, covectors, and tensors also have geometric definitions that are much nicer than, and also equivalent to, the 'n-tuple of numbers' definition. For example, a vector can be thought of as an equivalence class of curves tangent at a point, or the directional derivative at a point. A covector can be thought of as a differential 1-form or as an equivalence class of functions with equal gradient at a point. Tensors are then tensor products of these spaces. I was wondering if there is a similar definition of spinors based in differential geometry rather than just the representation theory of the Lorentz group. If so, are these specific to certain manifolds (complex, Lorentzian, etc), or are they general to all manifolds?","['spin-geometry', 'differential-geometry']"
+2269737,Prove that the sum of squares of the area of the faces this polyhedron does not exceed 6.,"The convex polyhedron is completely contained in the cube with the edge 1
+Prove that the sum of squares of the area of the faces this polyhedron does not exceed 6. How to prove that?",['geometry']
+2269741,Finding Laurent Series-is it possible without contour integral,"I have to find the Laurent Series expansion for $$ f(z)= \frac {z^2 +1}  {2z-1} $$ around $ 1 \over 2$. I know that I can write $f(z)= \sum_{-\infty}^{+\infty} a_n(z- \frac{1}{2})^n $ , where $a_n = \frac{1}{2πi} \oint_γ \frac{f(z)dz}{(z-\frac{1}{2})^{n+1}} $  (γ is a closed path around 1/2). Can I find the series expansion in a more ""crude"" way, using the geometric series? Can I split the fraction in such a way to form something like $1\over z-1$ , or do I have to use the contour integral? Moreover, in rational functions like f, is there always a way for building the expansion using the geometric series?","['laurent-series', 'complex-analysis']"
+2269783,"If $2f(x+1)=f(x)+f(2x)$, Then find value of $(\lfloor\frac{f(2)+f(7)}{f(9)}\rfloor)$","If $f:R\rightarrow R$ be twice continuously differentiable function such that $2f(x+1)=f(x)+f(2x)$. then  value of $\bigg(\lfloor\frac{f(2)+f(7)}{f(9)}\rfloor\bigg)$, where $\lfloor x \rfloor$ is a floor of $x$ Attempt: Using hit and trial , $f(x)=c$ So $f(2)=f(7) = f(9) = c.$ So  $\bigg(\lfloor\frac{f(2)+f(7)}{f(9)}\rfloor\bigg) = \lfloor 2 \rfloor  = 2$ could some help me how to solve it , thanks","['functions', 'functional-equations']"

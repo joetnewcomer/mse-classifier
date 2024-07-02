@@ -1,0 +1,514 @@
+question_id,title,body,tags
+2191593,Is a product of ideals the same as intersection of ideals?,"Let $R$ be a non-trivial commutative unital ring and let $I,J$ be ideals of $R$. The ideal product is defined as $IJ:=\{ i_1j_1+\dots+i_lj_l:l\ge 1, i_n\in I, j_n \in J, n\in\mathbb{N} \}$. Prove that $IJ$ is an ideal of $R$. My approach was to prove that $IJ=I\cap J$, which implies that $IJ$ is an ideal. Let $i\in I\cap J$, then $i\in I, J$, $=i_kj_k$ for some $i_k, j_k\in J$. But $i_kj_k\in IJ$, thus $i\in IJ$. Thus $I\cap J \subset IJ$. For the other direction, I know that it is true, so I will skip the proof thereof. However, I'm not so sure that my proof above is correct since then $P^2=PP=P\cap P = P$, which is not true in general. Can someone please point out what my error could possibly be? Maybe I didn't understand the definition of the product of ideal the way it was to be meant?","['abstract-algebra', 'ring-theory', 'proof-verification', 'ideals']"
+2191621,"Is the sequence of functions $f_n(x) = x^n$ uniformly convergent on $[0,1)$?","Is the sequence of functions $f_n(x) = x^n$ uniformly convergent on $[0,1)$? I learned that $f_n(x)$ is not uniformly convergent on $[0,1]$ but what about on $[0,1)$? I think it does converge uniformly to $f(x)=0$ because I can always make $n$ big enough to fit $x^n$ to be within $\epsilon$ from $0$ for any $x$? Or is this not possible? I am not really sure on how to verify a sequence of functions is uniformly convergent on some domain. Also, does uniformly convergent series imply that the series is also absolutely convergent?","['real-analysis', 'sequences-and-series']"
+2191646,volume of geodesic balls for large Riemannian metrics,"Let $M$ be a smooth compact manifold, let $p\in M$ and let $g_0$ be a fixed Riemannian metric on $M$ . Does there exists a constant $C>0$ such that for any Riemannian metric $g\ge g_0$ , the volume of the geodesic ball with respect to $g$ satisfies $Vol_g(B_g(1,p))\ge C$ ? In other words, can we expect that the volume of these balls does not shrink even after making the Riemannian metric really large? Attempt: All of the results I've researched on this topic involve a fixed Riemannian metric on $M$ and bounding volumes in terms of the injectivity/filling radius. Nothing I've seen so far allows for the Riemannian metric to change as well. I suppose the result has to be true for $\mathbb{S}^1$ because volume is the same as length, so for any large Riemannian metric, any geodesic ball will have a volume of $1$ as long as the volume of $\mathbb{S}^1$ itself is above $1$ .",['differential-geometry']
+2191650,"Kernel of $GL(n, \mathbb{Z}) \to GL(n, \mathbb{Z}_{m})$","I need to describe the kernel of the canonical group homomorphism $GL(n, \mathbb{Z}) \to GL(n, \mathbb{Z}_{m})$. Generally speaking, the kernel would be the set of all matrices in $GL(n,\mathbb{Z})$ whose entries along the main diagonal modulo $m$ would equal 1, with all other entries modulo $m$ equaling zero. For example, in the case where $n = 2$, the kernel of this homomorphism would be the set of all $A = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}$ such that $\begin{pmatrix} a_{11} \mod m = 1 && a_{12} \mod m = 0 \\  a_{21} \mod m = 0 & &a_{22}\mod m = 1 \end{pmatrix}$. Is this all there is to this problem? Or is there something additional that I need to prove? It is an exercise in a section on Ideals and Isomorphism Theorems for Rings, so I thought it was kind of weird that I was able to come up with a solution to this problem that has nothing to do with ideals or ring isomorphisms. Therefore, I feel like I'm missing something...","['abstract-algebra', 'group-theory', 'group-homomorphism']"
+2191651,Triangles formed by the points of contact of the sides with the excircles and by that of the sides of the triangle with the inscribed circle.,"Prove that the triangle formed by the points of contact of the sides of a given triangle with the excircles corresponding to these sides is equivalent to the triangle formed by the points of contact of the sides of the triangle with the inscribed circle. Can it be approached using Ceva's, Menalaus' or Stewart's theorems?",['geometry']
+2191661,"How to write the set of possible pairs of $p$, $q$ with additional conditions","I have the integer variables $p$ and $q$ such that $p, q \in [0,2]$. Question. How to write the set of possible pairs of $p$, $q$ if $p$ and $q$ can take integer values from the range $[0,2]$ and they aren't equal to $0$ together? Update: I hope, my set is $\{(1,0), (1,1), (1,2), (0,1), (0,2), (2,0),(2,1), (2,2)\}$ My attemp is: $\{(p, q) \in \mathbb N: 0 \le p, q \le 2, p \neq 0 ~\text{and}~ q \neq 0\}$","['notation', 'elementary-set-theory']"
+2191674,Finding $\lim_{n\to\infty}\frac{\sin\left(\frac{\pi}{n}+\frac{2 \pi \log(n)}{\sqrt n}\right)}{n \log(n)\sin\left(\frac{\pi}{n}\right)}$,"Is there a possible way to compute this limit ? I tried the L'Hôpital's rule, but it seems like the function become more complicated. $$\lim_{n\to\infty} \frac{1}{n \log(n)} \frac{\sin\left(\frac{\pi}{n}+\frac{2 \pi \log(n)}{\sqrt n}\right)}{\sin\left(\frac{\pi}{n}\right)}$$ All suggestions are welcomed.","['limits', 'signal-processing', 'trigonometry', 'limits-without-lhopital', 'sequences-and-series']"
+2191677,Which group is this?,"Define $G=\left\langle a,b\ |\ a^2=1, (ab^2)^2=1 \right\rangle $. This is an infinite group whose Cayley graph is best described as a two-dimensional grid. Is it a well-known group? What is known about its main properties? Thanks in advance!","['group-theory', 'group-presentation']"
+2191705,Is there an infinite binary sequence that satisfies every almost sure property of iid Bernoullis?,"Consider the measure space $(\Omega,\mathcal F,P)$ where $\Omega=\{0,1\}^{\mathbb N}$ and $\mathcal F$ is the product Borel $\sigma$-algebra and $P$ is the law of an independent sequence of Bernoulli$(1/2)$ random variables. Let $$\mathcal A=\{A\in \mathcal F\colon P(A)=1\}$$
+denote the collection of all almost sure events. Is the intersection of all sets in $\mathcal A$ non-empty? I can't decide if it is empty or non-empty. On the one hand, it is easy to rule out many sequences from lying in the intersection: such a sequence cannot be eventually periodic, yet the set of ones in any such sequence must have density $1/2$ in $\mathbb N$. On the other hand, the (topological) support of the measure $P$ with respect to the product topology consists of all binary sequences (since every cylinder set containing a given sequence has positive measure), and one might expect that the support of $P$ is the closure of the intersection of $\mathcal A$.","['general-topology', 'measure-theory', 'cantor-set', 'probability-theory']"
+2191708,Volume preserving mean curvature flow preserving uniformly convex,"Let $(M_t,g_t)$ be a Riemannian manifold evolve by volume preserving mean curvature flow. So , for second fundamental form, we have 
+$$
+\partial_t h_{ij}=\Delta h_{ij}-2H h_{im}h^m_j+hh_{im}h^m_j + |A|^2 h_{ij}
+$$
+$H=g^{ij}h_{ij}$ is mean curvature, $|A|^2=g^{ij}g^{kl}h_{ik}h_{jl}$ is inner product of second fundamental form. If the initial manifold is uniformly convex : the eigenvalues of its second fundamental form are strictly positive everywhere. Then, how to show $M_t$ still be uniformly convex for all $t\ge 0$ where the solution exists ?","['mean-curvature-flows', 'riemannian-geometry', 'differential-geometry', 'partial-differential-equations']"
+2191713,Associativity of natural join,"A 'relation' is an object with a body that's a set of tuples, and a header that's a set of attribute identifiers. This sort of object is used in the theory of 'relational databases'. A relation is like a table in a spreadsheet, but the collection of columns (""attributes"") is a set, and the collection of rows (""tuples"") is a set. Let relation $A$ have attributes $X_1, X_2, \dots, X_m, Y_1, Y_2, \dots, Y_n$ and $B$ have attributes $Y_1, Y_2, \dots, Y_n, Z_1, Z_2, \dots, Z_p$. Thus, $A$ and $B$ can be joined on a shared set of attributes, $Y_i$. Now consider $X, Y, Z$ as three composite attributes (thinking of each group of attributes as a single attribute). Then the natural join of $A$ and $B$, A JOIN B is a relation with heading $X,Y,Z$ and a body consisting of all tuples ($x$, $y$, $z$) such that a tuple appears in $A$ with $X$ value $x$ (i.e. the attributes not shared with B) and $Y$ value $y$ (i.e. the shared key attributes), and a tuple appears in $B$ with $Y$ value $y$ and $Z$ value $z$. [Quoting some from C.J. Date's IDBS.] Can we prove that natural join is associative? That is, a tuple $t$ is in A JOIN (B JOIN C) iff $t$ is in (A JOIN B) JOIN C ?","['relation-algebra', 'abstract-algebra', 'elementary-set-theory']"
+2191737,How could an injective function have multiple left-inverses?,"Maybe I'm a bit tired, but I can't seem to imagine two different left-inverses for an injective function. This was brought up in Aluffi's book. To quote it nearly verbatim, if $f$ is a function going $A \to B$ and $A$ has at least two elements, then it will necessarily have more than one left-inverse. Both concrete examples and more abstract/general explanations are very welcome.",['functions']
+2191742,Calculus Proof Problem,"Let $f$ be a continuous function whose domain includes $[0,1]$, such that $0 \le f(x) \le 1$ for all $x \in [0,1]$, and such that $f(f(x)) = 1$ for all $x \in [0,1]$. Prove that $\int_0^1 f(x)\,dx > \frac34$. I've been stuck on this question for a while now without any idea on how to get started. Is it possible for someone to help me? Thanks!",['calculus']
+2191846,The category of rings with $1$ vs the category of rings with or without $1$,"The question of whether the definition of a ring should include the existence of an identity for the multiplication (and whether homomorphisms should preserve this identity) seems to divide many mathematicians. Many textbooks considered ""standard"" use different conventions. I am not interested in debating which convention is best. However, I am very interested in the differences between the two categories associated to these two conventions: the category of rings which may or may not have a $1$ (where, of course, morphisms do not preserve the $1$) and the category of rings with $1$ (where morphisms preserve $1$). These two categories appear to be very different. For example, if we require the existence of a $1$, then ideals are no longer objects in our category. If we do not require a $1$, then the zero ring is both an initial and a terminal object (whereas it is only a terminal object in the category of rings with $1$). Are there other important or ""interesting"" distinctions between these two categories? Does anyone know of a reference which systematically addresses this question?","['category-theory', 'abstract-algebra', 'ring-theory', 'reference-request']"
+2191872,Evaluating a finite sum using a double sum,"I want to evaluate the sum $S_n = \sum_{k=0}^n k 3^k $ . Try: Since $ \sum_{j=0}^{k-1} 1 = k $ , then $$ S_n = \sum_{k=0}^n \sum_{j=0}^{k-1} 3^k $$ Since we are summing over $(0 \leq k \leq n )$ and $(0 \leq j \leq k -1 )$ , then we are summing over $(0 \leq j < k \leq n )$ . Thus, we can write $$ S_n = \sum_{j=0}^n \sum_{k=j}^n 3^k = \sum_{j=1}^n \frac{ 3^{n+1} - 3^j }{2} = \frac{n 3^{n+1}}{2} - \frac{1}{2} \sum_{j=0}^n 3^j = \boxed {\frac{n 3^{n+1} }{2} - \frac{1}{2} \cdot \left( \frac{ 3^{n+1} - 1 }{2} \right) } $$ Is this a correct argument?","['summation', 'discrete-mathematics']"
+2191903,Is $f(x)=x^2$ from $\mathbb{R} \to \mathbb{R}$ surjective?,"A surjective function $f$ is one such that for all $y$ in the codomain of $f$, there exists an $x$ in domain of $f$ such that $f(x) = y$. Mathematically, we can show that for $f(x) = x^2$ where $f: \mathbb{R} \to \mathbb{R}$, this statement is true. However, looking at the graph, the negative values in the codomain of $f$ do not have any corresponding $x$ values in the domain of $f$. Therefore $f(x)=x^2$ is not surjective? So if I am solving a question like this for a function more complicated than $f(x) = x^2$, and I see that $f(x) = y$, then how to know if it is actually surjective? As it is possible for a function to show that $f(x) = y$ but it may not necessarily be surjective because there may be values in the codomain that do not get mapped by values in the domain, such as $f(x)=x^2$ from $\mathbb{R}$ to $\mathbb{R}$. Thanks",['functions']
+2191968,Why is Completeness and Compactness not equivalent in Normed Spaces?,"Given a complete normed space $X=(X,\|\cdot\|)$.  Every Cauchy sequence converges in it. I am not able to understand why we can't show that every bounded sequence in $X$ will have a convergent subsequence. Please give an example to clarify why completeness does not imply compactness and do explain where does the problem lie.",['general-topology']
+2192012,A problem of arithmetical means and function,"Assume $f(x)=\frac{2^{x+1}}{2^x+1}$,and $\{a_n\}$ is a arithmetic sequences which common difference is $1$，and $$f(a_1)+f(a_2)+\cdots+f(a_{2017})=2017$$,finde the value of : $f^2(a_{1009})-a_{1008}a_{1010}$ My approach: I tried to use $\sum f(a_k)=2017$ to find $a_1$, but  I am failed to sum this series. If I set $2^{a_k}=c_k$ , then $\{c_k\}$ is a geometric series which common ratio is $2$. after some calculus, I need to sum $$\frac{1}{c_1+1}+\cdots+\frac{1}{c_{2017}+1}$$  in order to find $c_1$, but I am failed.","['algebra-precalculus', 'analysis']"
+2192059,Solving hyperbolic partial differential equation,"I'm having hard time solving this pde.
+$$U_{xx} - 2\cos(x) U_{xy} - (15+\sin^2(x)) U_{yy} + \sin(x) U_{y} = 0$$ With following initial conditions $$U(x,y)|_{y = -\sin(x)} = 4\sin(x)$$ $$\frac{\partial U(x,y)}{\partial y}|_{y = -\sin(x)} = 2 + 2\sin(x)$$ Solving the characteristic equation we get.
+$$\frac{dy}{dx} = - \cos(x) \pm 4x$$ So we need to use this kind of substitution $\xi = y + \sin(x) - 4x $ $\eta = y + \sin(x) + 4x $ and then computing partial derivitives we get $U_{x} = (\cos(x) - 4)U_{\xi} + (\cos(x) + 4)U_{\eta}$ $U_{y} = (U_{\xi} + U_{\eta})$ $U_{xx} = (\cos(x) - 4)^2 U_{\xi\xi} +2(\cos^2(x) - 16)U_{\xi\eta} + (\cos(x) + 4)^2U_{\eta\eta} - \sin(x)U_{\xi} - \sin(x)U_{\eta}$ $U_{xy} = (\cos(x) - 4)U_{\xi\xi} + 2\cos(x)U_{\xi\eta} + (\cos(x) + 4)U_{\eta\eta}$ $U_{yy} = U_{\xi\xi} + 2U_{\xi\eta} + U_{\eta\eta}$ After substituting them into original equation we get.
+$$U_{\xi\eta} = 0$$ After integrating wrt $\xi$ and wrt $\eta$
+$$U(\xi,\eta) = f(\xi) + g(\eta)$$ After substituting $x$ and $y$ $$U(x,y) = f(y + \sin(x) - 4x) + g(y + \sin(x) + 4x )$$
+$$U_{y}(x,y) = f'_{y}(y + \sin(x) - 4x) + g'_{y}(y + \sin(x) + 4x )$$ Now it's time to solve the Cauchy problem. I've got this system, and this is where I'm stuck
+$\left\{\begin{matrix}
+f(-4x) + g(+ 4x ) = 4\sin(x)
+\\ 
+f'_{y}(- 4x) + g'_{y}(+ 4x ) = 2 + 2 \sin(x)
+\end{matrix}\right.$ Any hints how to proceed? Thank you :)","['ordinary-differential-equations', 'partial-differential-equations']"
+2192107,Help reading this equation,"I am having trouble understanding this equation. Its been really long since I read any complex equations. Please see the screenshot below. Here A is all possible attributes, D is dictionary of v:a . v is some value, a is attribute, Zu is n-gram value of size 4 from a string, $$\mathcal R_u = \{ \langle a, \{v|v \in \mathcal Z_u, a \in \mathcal D(v) \} \rangle|a \in \mathcal A \}$$ Note for Moderators: Not sure if I am tagging this correctly. Please update accordingly as I have no clue on where to tag this equation.",['elementary-set-theory']
+2192151,Expectation of normalized order statistics,"Is there a way to calculate quantities of the form
+$$\mu_k = \mathbf{E}\bigg[ \frac{X_{(k)}}{\sum_{i=1}^n X_i} \bigg]$$
+where the $X_i$'s are independent exponentially distributed random variables with mean $\lambda=1$ and $X_{(k)}$ denotes the $k$-th order statistic ?","['expectation', 'probability-theory', 'statistics', 'probability', 'order-statistics']"
+2192159,How can the $SU(2)$ group have a $3$-dimensional representation?,"The group $SU(2)$ consists of $2\times2$ unitary matrices with determinant $1$ can be put in the form:
+$$U=\begin{pmatrix}a &b \\ c & d\end{pmatrix}$$
+By invoking the conditions: $det(U)=1$ and $UU^\dagger=1$, we reduce the matrix $U$ to $$U=\begin{pmatrix}a &b \\ -b^* & a^*\end{pmatrix}$$
+This is a 2 dimensional representation of $SU(2)$ group.
+Now, consider a three dimensional representation:
+$$U=\begin{pmatrix}a &b&c \\ d & e &f \\ g&h&i\end{pmatrix}$$
+and then invoke the same conditions $det(U)=1$ and $UU^\dagger=1$.
+Isn't this just the same as the 3 dimensional representation for $SU(3)$ group? I know this in't correct, but I don't know what's wrong.","['representation-theory', 'group-theory']"
+2192190,Equality of mappings under ZFC,"A mapping from $X$ to $Y$ is defined as a subset $f \subseteq X\times Y$ such that $\forall x\in X,\exists!y\in Y : (x,y)\in f$ (i.e. $\exists y\in Y : (x,y)\in f \land (\forall y,y'\in Y, (x,y)\in f \land (x,y')\in f \Rightarrow y=y')$). Moreover, this mapping is denoted as $f : X\to Y$ and $f(x)=y \Leftrightarrow (x,y)\in f$ So, let $f : X\to Y$ and $g : X\to Y$ be mappings, how to prove that
+$$ f= g \Leftrightarrow \forall x\in X , f(x)=g(x)$$
+I've already proved the implication $(\Rightarrow)$ , but for inverse implication $(\Leftarrow)$ I don't see how ? Thanks for help :)","['elementary-set-theory', 'functions']"
+2192201,Particular integral of a fifth order linear ODE?,"I am presented with the differential equation $y^{(5)}-y^{(1)}=x$ Finding the complementary function was OK. I obtained solutions to the characteristic equation of $\lambda = 0, \pm 1, \pm i$ so the complementary function is $y_{CF}=a_0+a_1e^x+a_2e^{-x}+a_3e^{i}+a_4e^{-i}$ Now for the particular integral, my first thought would be to use a trial form $y_{PI}=b_1x+b_0$ However this clearly cannot be the solution as, plugging it in, I get $-b_1=x$. Trying $b_2x^2+b_1x+b_0$ I get $-2b_2x-b_1=x$ which works for $b_1=0, b_2=-1/2$ and I suppose the constant $b_0$ doesn't really matter because it is amalgamated into the constant in the complementary function anyway. However I am finding it quite strange that the form of the particular integral was $b_2x^2+b_1x+b_0$, and not the general form for a linear forcing term of $b_1x+b_0$ that I have been taught to use. I was wondering if there is a rule particular integrals when you have different orders of ODE? I can see here that my first trial would fail because there is no $y$ term on the RHS. So I suppose this trial form would also in fact fail for a second order ODE of form $ay''+by'=x$. Do you just have to make observations like this in guessing the particular integral? I have never come across this before in class.","['homogeneous-equation', 'ordinary-differential-equations']"
+2192225,Three Distinct Points and Their Normal Lines,"Suppose That three points on the graph of $y=x^2$ have the property that their normal lines intersect at a common point. Show that the sum of their $x$-coordinates is $0$. I have a lot going but can not finish it. Proof: Let $(a,a^2)$, $(b,b^2)$, and $(c,c^2)$ be three distinct points on $y=x^2$ such that $a\not=b\not=c$. Find the tangent slope and the slope of their normal lines.
+$$(a,a^2) \hspace{4mm}m_{tan}=2a, \hspace{4mm} m_{norm}=\frac{-1}{2a}$$
+$$(b,b^2) \hspace{4mm}m_{tan}=2b, \hspace{4mm} m_{norm}=\frac{-1}{2b}$$
+$$(c,c^2) \hspace{4mm}m_{tan}=2c, \hspace{4mm} m_{norm}=\frac{-1}{2c}$$ Normal Line $(a,a^2)$ $y-a^2=-\frac{1}{2a}(x-a) \implies y=-\frac{1}{2a}x+\frac{1}{2}+a^2$ Normal Line $(b,b^2)$ $y-b^2=-\frac{1}{2b}(x-b) \implies y=-\frac{1}{2b}x+\frac{1}{2}+b^2$ Normal Line $(c,c^2)$ $y-c^2=-\frac{1}{2c}(x-c) \implies y=-\frac{1}{2c}x+\frac{1}{2}+c^2$ Find the $x$-interception points between the normal lines of $(a,a^2)$ and $(b,b^2)$. $-\frac{1}{2a}x+\frac{1}{2}+a^2=-\frac{1}{2b}x+\frac{1}{2}+b^2 \implies x=-(b+a)2ab$ Find the $x$-interception points between the normal lines of $(a,a^2)$ and $(c,c^2)$. $-\frac{1}{2a}x+\frac{1}{2}+a^2=-\frac{1}{2c}x+\frac{1}{2}+c^2 \implies x=-(c+a)2ac$ Find the $x$-interception points between the normal lines of $(b,b^2)$ and $(c,c^2)$. $-\frac{1}{2b}x+\frac{1}{2}+b^2=-\frac{1}{2c}x+\frac{1}{2}+c^2 \implies x=-(c+b)2bc$ Show that $a+b+c=0$
+$$\begin{align}
+....\\
+....\\
+....\\
+\end{align}$$ I do not know how to show that $a+b+c=0$. Any advice on how to continue? Thanks in advance!","['derivatives', 'calculus', 'proof-writing', 'geometry', 'conic-sections']"
+2192244,Commutator subgroup and subgroup generated by square.,"While reading Cours d'algèbre by D. Perrin, I found the following claim: Proposition. If $G$ is a group, then $D(G)\subseteq G^2$, where $G^2$ is the subgroup generated by the squares of $G$. I understand that it suffices to prove that for all $x,y\in G$, $[x,y]:=xyx^{-1}y^{-1}$ is a product of squares. Equivalently, since $G^2$ is characteristic, hence normal, it suffices to establish that $G/G^2$ is abelian. For now, none of my attempts have been fruitful. Any enlightenment will be greatly appreciated!","['normal-subgroups', 'group-theory']"
+2192314,An interesting pattern in the differences between prime numbers.,"Once upon a time, I was looking at interesting properties of prime numbers. One thing I noticed was that if we take the absolute values of the differences between each prime, and repeat this process on the differences recursively, the first column turns out to always be $1$ (With the exception of the first row) as demonstrated below for the first $10$ primes: $$\begin{matrix} p_n & 2 & & 3 & & 5 & & 7 & & 11 & & 13 & & 17 & & 19 & & 23 & & 29 & \cdots \\ 1^{\text{st}}\text{ difference}&& \color{#007777}1 && 2 && 2 && 4 && 2 && 4 && 2 && 4 && 6 \\2^{\text{nd}}\text{ difference}& && \color{#007777}1 && 0 && 2 && 2 && 2 && 2 && 2 && 2 && \\3^{\text{rd}}\text{ difference} &&&&\color{#007777}1 && 2 && 0 && 0 && 0 && 0 && 0 \\ 4^{\text{th}}\text{ difference}&&&&&\color{#007777}1 && 2 && 0 && 0 && 0 && 0 \\ \vdots &&&&&& \color{#007777}1 && 2 && 0 && 0 && 0 \\ \vdots&&&&&&&\color{#007777}1 && 2 && 0 && 0 \\ \vdots &&&&&&&&\color{#007777}1 && 2 && 0 \\ \vdots &&&&&&&&&\color{#007777}1 && 2 \\ \vdots &&&&&&&&&&\color{#007777}1\end{matrix}$$ For simplicity, we denote the terms in the form $a_{m,n}$ where $m$ is the row number and $n$ is the column number, like this:
+$$\begin{matrix} a_{1,1} & & a_{1,2} & & a_{1,3} & & a_{1,4} && a_{1,5} & \cdots \\ & a_{2,1} &&a_{2,2} && a_{2,3} && a_{2,4} \\ && a_{3,1} && a_{3,2} && a_{3,3} \\ &&& a_{4,1} && a_{4,2} \\ &&&&a_{5,1} \end{matrix}$$ The general form for the differences is given by:
+$$a_{m+1,n}=|a_{m,n+1}-a_{m,n}| \tag{1}$$ Therefore, I conjectured the following: Let $m$ and $n$ denote the row and column number respectively. Therefore, $a_{m,1}=1$ is true $\forall m\geq 2$ where $m \in \mathbb{Z}^+$, I'd like to know whether this conjecture is true. If so, it would be nice if a proof was provided. Therefore, here I show my thoughts on the problem: The process on $(1)$ of course should be applied recursively to obtain an expression for the elements on the first row. For example, if i put $a_{4,1}$ in terms of the elements of the first row, we obtain:
+$$\begin{align} a_{4,1} & =|a_{3,2}-a_{3,1}| \\ &=||a_{2,3}-a_{2,2}|-|a_{2,2}-a_{2,1}|| \\ &=|||a_{1,4}-a_{1,3}|-|a_{1,3}-a_{1,2}||-||a_{1,3}-a_{1,2}|-|a_{1,2}-a_{1,1}||| \end{align}\tag{2}$$
+This does not appear obvious as to why the the conjecture is true due to the absolute value signs. Therefore, I decided to abandon using this idea. Somebody had suggested that I use Bertrand's Postulate . I will use the weaker form of the theorem, which states that if $p_n$ is the $n$-th prime, for all $n\geq 1$, then:
+$$p_{n+1}<2p_n$$
+In that case, I figured that if I apply this on the series with increasing powers of $2$, then:
+$$\begin{matrix} \color{#007777}{1} & & \color{#777700}2 & & \color{green}{4} & & \color{orange}8 && 16 & \cdots \\ & \color{#007777}1 && \color{#777700}2 && \color{green}4 && \color{orange}8 \\ && \color{#007777}1 && \color{#777700}2 && \color{green}4 \\ &&& \color{#007777}1 && \color{#777700}2 \\ &&&& \color{#007777}1 \end{matrix}$$
+Then each of the columns will have identical values as shown by the different colors above. I figured this was quite similar, and since $p_n\leq 2^n$ where $n\in \mathbb{Z}^+$, thus this would be true for the primes as well. However, it seems doubtful because the differences are not strictly increasing as we can see in the $2^{\text{nd}} \text{ difference}$ in the prime number series and also, we are taking the absolute value of the differences recursively as shown on the example on $(2)$. Therefore, I do not think Bertrand's Postulate can be applied directly as I have done. In summary, I'd like to know whether the conjecture is true. If so, a proof would be nice. Otherwise, if the conjecture is false a form of disproof such as a counterexample would be nice.","['number-theory', 'prime-numbers']"
+2192336,"What is the best known lower bound on $R(24,24)$?","I have shown that the diagonal Ramsey number $R(24,24)$ is at least 27812.  How does this compare to the best known bound?","['combinatorics', 'graph-theory', 'ramsey-theory']"
+2192350,Why do these limit cycles appear?,"Consider the system of ODEs
+\begin{align*}x'&=y+x(\varepsilon+\ell_1(x^2+y^2)+\ell_2(x^4+y^4)) \\y'&=-x+y(\varepsilon+\ell_1(x^2+y^2)+\ell_2(x^4+y^4)).\end{align*} Going through the linearization process at the equilibrium point $(0,0)$, we find the eigenvalues $\lambda_{1,2}(\varepsilon)=\varepsilon\pm i$. Using the Hopf Bifurcation theorem (p. 5-6), it is easy enough to show that a Andronov-Hopf Bifurcation appears when $\varepsilon=0$. The issue is, if $\ell_1=0$, we fail to satisfy the conditions of the Hopf Bifurcation theorem, but a bifurcation still appears. For example, suppose $\ell_1=0$ and $\ell_2=-1$. The following two images show our system for $\varepsilon=-0.1$ and $\varepsilon=0.1$, respectively. So my first question is: How would we show, analytically, that the system \begin{align*}x'&=y+x(\varepsilon+\ell_2(x^4+y^4)) \\y'&=-x+y(\varepsilon+\ell_2(x^4+y^4))\end{align*} has a Hopf Bifurcation at $\varepsilon=0$? Secondly, if $\ell_1$ and $\ell_2$ have different signs, then we can have two limit cycles, depending on $\varepsilon$. For example, suppose $\ell_1=1$ and $\ell_2=-1$. The next two images show when $\varepsilon=0.1$ and $\varepsilon=-0.1$, respectively. Now, these two limit cycles will eventually collapse on each other as $\varepsilon$ decreases, but otherwise, there is always at least one limit cycle. So my second question is: How would we show, analytically, that the system \begin{align*}x'&=y+x(\varepsilon+(x^2+y^2)-(x^4+y^4)) \\y'&=-x+y(\varepsilon+(x^2+y^2)-(x^4+y^4)) \end{align*} has a single limit cycle for all $\varepsilon>0$?","['bifurcation', 'ordinary-differential-equations', 'dynamical-systems']"
+2192352,Expected value $E(X^2 + Y^2)$,"I know that the expected value of a joint distribution is:
+$$E(XY) = \sum_{all\, x} \sum_{all\, y} xyP(x,y)$$ However, for $E(X^2 + Y^2)$, does the same hold true? ie. $$E(X^2+Y^2) = \sum_x \sum_y (x^2 + y^2)P(x,y)$$ I feel like the P(x,y) should be something else, am I seeing it right?","['statistics', 'expectation']"
+2192392,Find value or $W=\sqrt[4x+4]{3^{x}\left ( \sqrt{5}-1 \right )}$ according to condition $9^{x}=6^x +4^x$,"If $$9^{x}=6^x +4^x$$ Find the value of: $$W=\sqrt[4x+4]{3^{x}\left ( \sqrt{5}-1 \right )}$$ Solving the equation arrives at: $x = \frac{\log\left ( \sqrt{5}-1 \right ) - \log(2)}{\log(2) - \log(3)}$ But W yields a giant result,
+Is there any algebraic manipulation that I do not see","['roots', 'exponential-function', 'proof-verification', 'algebra-precalculus', 'quadratics']"
+2192400,$\mathbb{E}[X | \mathcal{F}]^{2}<\infty$ if $\mathbb{E}[X^{2}]<\infty$,"In Durrett's Probability Theory and Examples theorem 5.1.8 says: Suppose that $\mathbb{E} X^2 <\infty$. Then $\mathbb{E}(X| \mathcal{F})$ is the variable $Y \in \mathcal{F}$ that minimizes the ""mean square error"" $\mathbb{E}(X-Y)^2$. To explain notation, it is assumed we are working with the probability space $(\Omega, \mathcal{F}_{0}, P)$, and $\mathcal{F}\subset \mathcal{F}_{0}$ is a sub $\sigma-$field of the $\sigma-$field $\mathcal{F}_{0}$. Durrett then goes on to explain that $\mathbb{E}(X| \mathcal{F})$ is the projection of $X$ onto the Hilbert space $L^{2}(\mathcal{F}) = \{ Y \in \mathcal{F} : \mathbb{E} Y^2 <\infty \}$. As far as I can see, for this to be true it must be that $\mathbb{E}[X^{2}]<\infty$ implies $\mathbb{E}[X | \mathcal{F}]^{2}<\infty$. However, I have not been able to show this using the measure-theoretic definition of conditional expectation. Can anyone provide a proof of this using the measure-theoretic definition of conditional expectation? Any help is appreciated.","['real-analysis', 'measure-theory', 'probability-theory']"
+2192418,An integral limit $\lim_{x\to0^+}\int_0^x\frac1{\sqrt{\cosh(x)-\cosh(y)}}\ dy$,"While solving this question , I stumbled upon a strange limit: $$\lim_{x\to0^+}\int_0^x\frac1{\sqrt{\cosh(x)-\cosh(y)}}\ dy\approx2.22$$ I'm not really sure how to go about handling such limits within the integral.  Any suggestions?","['definite-integrals', 'limits']"
+2192423,Volume of the intersection of two $n$-dimensional cubes,"Let $U \in \mathbb{R}^n$ be a unitary matrix and $K \subset \mathbb{R}^n$ and $n$-dimensional cube centered at zero.   Let
+\begin{align}
+K_1=U \cdot K= \{ y: y=U x, x\in K\}.
+\end{align} That is $K_1$ is a rotation of $K$.  Next, let ${\rm Vol}(\cdot)$ be a volume operator (Lebesgue measure). Can we give lower bounds on 
+\begin{align}
+{\rm Vol}( K_1 \cap K),
+\end{align} The upper bounds are simple
+\begin{align}
+{\rm Vol}( K_1 \cap K) \le \min ({\rm Vol}( K_1 ),{\rm Vol}( K)),
+\end{align}
+and tight if $U$ is an identiy matrix. Lower Bound Based on inclusion Let $B$ be a ball of radius $r$ such that
+\begin{align}
+B \subset K_1\cap K,
+\end{align}
+then 
+\begin{align}
+\frac{\pi^{n/2}}{\Gamma(n/2+1)} r^n =Vol(B) \le  {\rm Vol}( K_1 \cap K)= 2^nr^n .
+\end{align} But,   since  $\frac{\pi^{n/2}}{\Gamma(n/2+1)} \to 0$ as  $n \to \infty$  and $2^n \to \infty$ as $n \to \infty$, the lower and the upper bounds do not match. Question: Can we come up with a lower bound and upper bounds of the same order as $n \to \infty$.","['packing-problem', 'linear-algebra', 'linear-transformations', 'geometry']"
+2192443,"Evaluate the integral $\int_{0}^{\pi}\frac{\log(1+a\cos x)}{\cos x}\,dx$","Please help me to evaluate the integral $\int_{0}^{\pi}\frac{\log(1 + a\cos x)}{\cos x}\,dx$. In the question they said to use the formula $\frac{d}{dy}\int_{a}^{b}f(x,y)dx=\int_{a}^{b}\frac{\partial }{\partial y}f(x,y)dx$.","['trigonometry', 'calculus', 'integration', 'definite-integrals', 'trigonometric-integrals']"
+2192445,Show the sequence $\{a_{n}\}_{n=1}^{\infty}$ is unbounded,"Let $a_{n}>0 ,(n=1,2,\cdots)$ and   $$\lim_{n\rightarrow\infty}\frac{a_{_{n}}}{a_{_{n+1}}+a_{_{n+2}}}=0.$$Show the sequence $\{a_{n}\}_{n=1}^{\infty}$ is unbounded. The following is my thoughts.But I am not sure my answer is right,I need someone to check it.Even though it's correct, this answer is complicated and cumbersome.Do you have some concise ways by using reduction to absurdity ? Suppose the sequence $\{a_{n}\}$ is bounded,then exists $M(>0)$ such that $0<a_{n}\leq M,(n=1,2,\cdots).$ (1). $$0<\frac{a_{n}}{2M}\leq\frac{a_{_{n}}}{a_{_{n+1}}+a_{_{n+2}}},(n=1,2,\cdots)\Rightarrow\lim_{n\rightarrow\infty}a_{n}=0 $$ (2). $$\frac{a_{n}+a_{n+1}}{a_{n+1}+a_{n+2}}=A(n)+B(n),A(n)=\frac{a_{n}}{a_{n+1}+a_{n+2}}, B(n)=\frac{a_{n+1}}{a_{n+1}+a_{n+2}}(B(n)\in (0,1],n=1,2,\cdots)\Rightarrow$$ $$0\leq\varlimsup_{n\rightarrow\infty} \frac{a_{n}}{a_{n+2}+a_{n+3}}=\varlimsup_{n\rightarrow\infty} \frac{a_{n}}{a_{n+1}+a_{n+2}}\cdot \frac{a_{n+1}+a_{n+2}}{a_{n+2}+a_{n+3}}\leq\varlimsup_{n\rightarrow\infty} \frac{a_{n}}{a_{n+1}+a_{n+2}} \cdot\varlimsup_{n\rightarrow\infty} \frac{a_{n}+a_{n+1}}{a_{n+1}+a_{n+2}}=0\Rightarrow \lim_{n\rightarrow\infty}\frac{a_{n}}{a_{n+2}+a_{n+3}}=0$$ (3). Futher,we have  $\forall p\in\mathbb{N},$ $$\lim_{n\rightarrow\infty}\frac{a_{_{n}}}{a_{_{n+p}}+a_{_{n+p+1}}}=0$$ (4). From (3) ,Let $$p_{1}=1, \exists N_{1}\in\mathbb {N},\text{such that}\frac{a_{_{n}}}{a_{_{n+1}}+a_{_{n+2}}}<\frac{1}{2}\text{ whenever} \quad n>N_{1};$$
+$$p_{2}=2, \exists N_{2}\in\mathbb {N}(N_{2}>N_{1}),\text{such that}\frac{a_{_{n}}}{a_{_{n+2}}+a_{_{n+3}}}<\frac{1}{2}\text{ whenever} \quad n>N_{2};$$ $$\cdots\cdots\cdots\cdots$$$$p_{k}=k, \exists N_{k}\in\mathbb {N}(N_{k}>N_{k-1}>\cdots>N_{1}),\text{such that}\frac{a_{_{n}}}{a_{_{n+k}}+a_{_{n+k+1}}}<\frac{1}{2}\text{ whenever} \quad n>N_{k};$$$$\cdots\cdots\cdots\cdots$$ (5). From (4) ,there must exists an index $k_{0}\in \mathbb{N}$ and $n_{0}>N_{k_{0}}$ such that $a_{n_{0}}>a_{n_{0}+k_{0}}$ and $a_{n_{0}}>a_{n_{0}+k_{0}+1}.$ In fact, If for all $k\in\mathbb{N}$ and every $n>N_{k},$ we have either $a_{n}\leq a_{n+k}$ or $a_{n}\leq a_{n+k+1},$ then for every $n>N_{k},a_{n}=0$.This is contradicting  $a_{n}>0 (n=1,2,\cdots)!$ (6). From (5), $$\frac{1}{2}<\frac{a_{n_{0}}}{a_{n_{0}+k_{0}}+a_{n_{0}+k_{0}+1}}<\frac{1}{2}.
+\quad \text{It's impossible!}$$ From above all,we can say the sequence $\{a_{n}\}_{n=1}^{\infty}$ is unbounded.","['real-analysis', 'sequences-and-series', 'limits']"
+2192449,Euclidean domain $\mathbb{Z}[\sqrt{d}]$ [duplicate],"This question already has answers here : Norm-Euclidean rings? (2 answers) Closed 7 years ago . I am trying to generalized, for which integral values of $d$, $\mathbb{Z}[\sqrt{d}] = \{ a + b\sqrt{d} \vert a,b\in\mathbb{Z}\}$ is an Euclidean domain? I am interested specially in positive integral values of $d$.","['abstract-algebra', 'ring-theory', 'euclidean-domain', 'algebraic-number-theory']"
+2192461,Find answer of $\frac{x}{y+z}+\frac{y}{x+z}+\frac{z}{y+x}=4$,"If I had a very shallow question, then I am sorry.
+$x,y,z\in\mathbb{N}^{+}$ and$$\frac{x}{y+z}+\frac{y}{x+z}+\frac{z}{y+x}=4$$find $x,y,z$. I try with AM-GM, just get$$ \frac{x}{y+z}+\frac{y}{x+z}+\frac{z}{y+x}\geq\frac{3}{2}$$ This means that the equation must have a real solution, but can not be sure there is an integer solution. Let: $x=ay=abz$, then the equation becomes:$$\frac{ab}{a+b}+\frac{b}{ab+1}+\frac{1}{a^2+ab}=4$$ Which makes the problem become non-homogeneous, and seems to become more difficult. I have no more ideas. Could anyone help me? Thanks a lot.","['number-theory', 'homogeneous-equation', 'diophantine-equations']"
+2192462,Are these sets representing the subspace topology equal?,"I have a question regarding the representation of the subspace topology. Let $(\Omega, \mathcal T)$ be a topological space, $\Omega' \subseteq \Omega$ and $\mathcal T' \subseteq \mathcal T$ the subspace topology with respect to $\mathcal T$. Then, by definiton $$\mathcal T' = \{U\cap\Omega' \,|\, U\in \mathcal T\}.$$
+My question: Is the following representation equal to the first one? $$\mathcal T'= \{U\in \mathcal T \,|\,U\subseteq \Omega'\}$$","['general-topology', 'topological-vector-spaces', 'analysis']"
+2192492,"The sum of a set $A$ with the empty set, $\varnothing$","Given that the sum of two sets is defined as
+$$
+A + B = \big\{ a + b : a \in A, b \in B \big\},
+$$
+how might one compute the sum
+$$
+A + \varnothing
+$$
+where $A$ may or may not be empty? In his book Functional Analysis , Rudin writes that the sum is simply the empty set itself. From this, I would assume that the sum of any sum with the empty set is the empty set since addition does not seem to be well-defined in this sense (something plus nothing), but I would like some clarity on the subject.","['sumset', 'elementary-set-theory']"
+2192541,Finding a positive continuous function,"Currently I'm studying inverse problems and I have this question. I just don't realize how this is related to inverse problems and I also have no clue for the second part. I appreciate any help. Is there a positive continuous function $f$ such that $$\int_0^1f(x)dx=1$$ $$\int_0^1xf(x)dx=\alpha,\text{and} \int_0^1x^2f(x)=\alpha^2,$$ Where is $\alpha$ a positive number? Using the integration by parts, I get $\alpha=0$ , so there is no such function. In the next part I'm asked to find the answer if the function is being replaced by a measure, which I have no clue about it.","['inverse-problems', 'measure-theory', 'analysis']"
+2192594,"If $A$ is an $m \times n$ matrix, prove that $Ax=0$ has infinite solutions $\iff$ $\text{rank}(A)<n$","Prove that $Ax=0$ has infinite solutions if and only if $ \text{rank}(A)<n$ Here is one way of my if proof, but I don't know how to proof the other part. Let $r$ be the rank of $A$. Then $ r\leq  n$. If $ r<n$, then there are $n-r$ linearly independent solutions. Furthermore any linear combination of these solutions will also be a solution of $Ax=0$. Hence, in this case, the equation $Ax=0$ has infinite number of solutions","['matrices', 'matrix-rank', 'linear-algebra', 'solution-verification']"
+2192605,"show that for $n=1,2,...,$ the number $1+1/2+1/3+...+1/n-\ln(n)$ is positive","show that for $n=1,2,...,$ the number  $1+\frac{1}{2}+\frac{1}{3}+...+\frac{1}{n}-\ln(n)$ is positive, that it decreases as $n$ increases, and hence that the sequence of
+these numbers converges to a limit between $0$ and $1$ (Euler's constant). I'm trying to prove this by induction on $n$ and I made the base step, I could not with the inductive step because to do so suppose that for $n=1,2,\dots,$ it is true that $1+\frac{1}{2}+\frac{1}{3}+\dots+\frac{1}{n}-\ln(n)$ is positive and let's see that $1+\frac{1}{2}+\frac{1}{3}+...+\frac{1}{n}+\frac{1}{n+1}-\ln(n+1)$ is positive, 
+We see that
+\begin{align}
+&1+\frac{1}{2}+\frac{1}{3}+\dots+\frac{1}{n}+\frac{1}{n+1})-\ln(n+1)\\
+=&1+\frac{1}{2}+\frac{1}{3}+\dots+\frac{1}{n}-\ln(n)+\frac{1}{n+1}-\ln(n+1)+\ln(n)\\
+>&\frac{1}{n+1}-\ln(n+1)+\ln(n)
+\end{align}
+But I do not know how to prove that $\frac{1}{n+1}-\ln(n+1)+\ln(n)>0$  what do you say? Can you do what I did?","['real-analysis', 'logarithms', 'induction', 'sequences-and-series', 'analysis']"
+2192630,A limit like a Riemann sum,"Let $f:[0,1] \to \Bbb R_+$ be a non-negative continuous function. For all integer $n \geq 1$, we define : $$U_n=\left(\frac 1n\sum\limits_{k=1}^n \sqrt[n]{f\left(\frac kn\right)}\right)^n$$ What can be said about : $$\lim_{n \to +\infty} U_n ?$$ What I have done till now: Using concavity of $x \mapsto \sqrt[n]{x}$
+ I proved that $$\lim_{n \to +\infty} U_n \leq  \int_0^1 f(t) dt $$","['real-analysis', 'sequences-and-series', 'limits']"
+2192648,How to solve this logarithm inequality with absolute value as its base?,"How to deal with this ? $$\log_{|1 - x|} (x+5)>2 $$ the $|1-x|$ is the base of the logarithm. I tried this below approach but it seems not the complete solution.
+\begin{align}
+\frac{\log(x+5)}{\log|1-x|} & > 2\\
+{\log(x+5)} & > 2{\log|1-x|}\\
+{\log(x+5)} & > {\log|1-x|^2}\\
+(x+5) & >|1-x|^2\\
+(x+5) & >(1-x)^2\\
+(x+5) & >1-2x+x^2\\
+x^2-3x-4& < 0
+\end{align}
+$$ -1<x<4 $$
+I also checked with wolframalpha. https://www.wolframalpha.com/input/?i=log+%5Babsolut(1-x),+(x%2B5)%5D%3C2 I appreciate your help.","['algebra-precalculus', 'inequality', 'absolute-value', 'logarithms']"
+2192649,"Integrating Derivatives of Inverse Trigonometric Functions When They Are in Similar, Yet Different Forms","I am familiar with the derivatives of the three trigonometric functions: $\dfrac{d}{dx} \arcsin(x) = \dfrac{1}{\sqrt{1-x^2}}$ $\dfrac{d}{dx} \arccos(x) = \dfrac{-1}{\sqrt{1-x^2}}$ $\dfrac{d}{dx} \arctan(x) = \dfrac{1}{1+x^2}$ And I understand how to find the antiderivatives/integrate them IF they are in the same form as above. However, I often encounter them in similar, yet different forms: $\dfrac{1}{\sqrt{9-x^2}}$ $\dfrac{-1}{\sqrt{5-x^2}}$ $\dfrac{1}{3+x^2}$ In this form, I am unable to use any method to integrate them -- not even substitution (since there will always be an $x$ left over). If I encounter these forms, how do I take the antiderivative/integrate them? If there is a method, what is the reasoning behind it (why does it work)? I would greatly appreciate it if people could please take the time to help me with this.","['derivatives', 'integration', 'trigonometric-integrals', 'calculus']"
+2192657,Proving the Cauchy-Schwarz integral inequality in a different way,"Suppose $\alpha$ is monotonically increasing on $[a,b]$. Also suppose $f,g: [a,b] \rightarrow \mathbf{R}$, and both functions are Riemann-Stieltjes integrable with respect to $\alpha$. That is, $\forall \epsilon > 0$ there is a partition $P_\epsilon$ such that for all upper and lower sums:
+\begin{equation*}
+U(P_\epsilon,f,\alpha) - L(P_\epsilon,f,\alpha) < \epsilon
+\end{equation*} Use the Cauchy-Schwarz inequality To prove the following:
+\begin{equation*}
+\left|\int_a^b f(x)g(x)d\alpha (x)\right|^2 \leq \left(\int_a^b [f(x)]^2 d\alpha(x)\right) \left(\int_a^b [g(x)]^2 d\alpha(x)\right) 
+\end{equation*} I've seen this proof using done by looking at $0 \leq \int_a^b (\lambda f(x) + g(x))^2 dx$, and then looking at the resulting quadratic equation. This problem, however, seems to be a more general case. How could I approach this?","['real-analysis', 'analysis']"
+2192665,"Is this Set of Bessel Functions a Basis for All $C^{1}[0,a]$ Functions?","Consider the following set of Bessel functions $$\{J_1(\alpha_ir)\}, \qquad J_0(\alpha_ia)=0 \tag{1}$$ I want to show that this set of functions form a basis for the space of $C^{1}[0,a]$ functions. So I should prove that They are linearly independent and that they span the space so they form a basis for that space. My Work My first thought was to find the corresponding Sturm-Liouville problem for this set of functions. However, I failed to find proper boundary conditions. For example, the following Sturm-Liouville system \begin{align}
+\,&\frac{d}{dr}\left[r\frac{dR}{dr}\right]+\left[\lambda r + \frac{1}{r}\right]R=0\\
+&R(0)<\infty\\
+&R(a)=0
+\tag{2}
+\end{align}
+leads to the following basis
+$$\{J_1(\alpha_ir)\}, \qquad J_1(\alpha_ia)=0 \tag{3}$$
+for the aforementioned space (note the order of the Bessel functions). Anyway, I could show that the set of functions mentioned in Eq.$(1)$ are orthogonal and consequently linearly independent by just computing the following integral $$\int_{0}^{a} r J_1(\alpha r) J_1(\beta r)dr = \frac{a}{\alpha^2-\beta^2}\Big(\beta J_0(\beta a)J_1(\alpha a)- \alpha J_0(\alpha a)J_1(\beta a)\Big)$$","['bessel-functions', 'sturm-liouville', 'calculus', 'functional-analysis', 'ordinary-differential-equations']"
+2192670,What are these shapes in my daughter's playset?,"Figuring it's never too early to start our baby daughter's mathematical education, my wife and I have been trying to use proper geometric terms for her toys. ""Put the ______ in the bucket!"" works just fine for ""cube"", ""cylinder"", and ""triangular prism"", but then we've got these shapes: These baffle the both of us, and google is proving unhelpful. The orange shape feels like a ""star prism"", given it has two bases and an obvious star projection in two dimensions when viewed base-on, but we aren't sure. We've no idea on the purple shape. In purple's case, it's not even clear it's actually a polygon. Unlike the other shapes, where edge curvature looks to be a byproduct of molding, purple has an obvious arc to some of its faces. So, what are these things? What can we tell our daughter to put back in the toy chest?","['education', 'geometry']"
+2192684,Proving that a strongly convex function is coercive,"I am having trouble with this proof. I am given the following 2 definitions: 1) A function $f$ is coercive if $\lim_{||x|| \rightarrow \infty} f(x) = \infty$ 2) A $C^2$ function $f$ is strongly convex if there exists a constant $c_0 > 0$ such that:  $(x - y)^T (\nabla f(x) - \nabla f(y)) \geq c_0 ||x - y||^2 \hspace{5mm}$ $\forall x,y \in \mathbb{R}^n$ The question is to show that if $f$ is strongly convex then it is coercive. I am only allowed to use basic theorems such as Taylor expansion, triangle inequality etc. However, I can use the fact that a function is coercive $\iff$ all its level sets are compact. My instinct is that the answer can be obtained by a doing a Taylor expansion and manipulating the result, but I've been stuck for days using this approach. Any help would be greatly appreciated.","['multivariable-calculus', 'nonlinear-optimization', 'convex-optimization', 'coercive']"
+2192698,How to derive a formula for finding the number of diagonals in a n-sided regular polygon.,The formula for finding the number of diagonals in a n-sided convex polygon is: $$\frac{(n-3)n}{2}$$ But how is this formula derived? How would I want to start deriving this formula?,['geometry']
+2192708,Primes $p$ and $q$ such that $p^3+27pq^2-q^3=2017$,"Find all primes $p$ and $q$ such that
+  $$p^3 + 27pq^2 - q^3 = 2017.$$ I tried using mod $3$ to solve this, however I kept going in circles. I also tried using inequalities, but couldn't  come up with a solution. Any ideas?","['algebra-precalculus', 'diophantine-equations', 'elementary-number-theory']"
+2192745,meaning multiplying an outcome by its probability,I was reading about the expected value in probability theory. What is the meaning of multiplying an outcome by its probability. For example if I multiply and amount of money by an interest rate I get the iterest amount. What would mean to multiply an outcome by its probability?,['probability']
+2192748,Contracting the metric tensor with itself using Einstein summation,"Say we have a diagonal metric with components $g_{\mu \nu}$. When contracting with the inverse metric, we have the identity
+$$ g_{\mu \nu}g^{\nu \lambda} = \delta_{\mu}^{\lambda}.$$
+When both pairs of components are equal, in the Einstein summation convention contraction should leave us with the trace of the Kronecker delta,
+$$ g_{\mu \nu}g^{\nu \mu} = \delta_{\mu}^{\mu} = n$$
+on an $n$-dimensional manifold. Now let us say we have contracted a rank-2 tensor to form a scalar by
+$$ g^{\nu \lambda}T_{\lambda\nu} = t.$$
+If we multiply by the metric following the first equation above, we find
+\begin{align}
+g_{\mu\nu}g^{\nu \lambda}T_{\lambda\nu} &= g_{\mu\nu}t, \\
+\Rightarrow \delta_{\mu}^{\lambda}T_{\lambda\nu}&= T_{\mu\nu} = g_{\mu\nu}t.
+\end{align}
+If however we multiply by the metric using the same indices, as in the second case above, we find
+\begin{align}
+g_{\mu\nu}g^{\mu\nu}T_{\mu\nu} &= g_{\mu\nu}t, \\
+\Rightarrow \delta_{\mu}^{\mu}T_{\mu\nu}&= g_{\mu\nu}t.
+\end{align}
+It seems clear that one can contract the Kronecker delta upper $\mu$ index with the lower $\mu$ index in $T_{\mu\nu}$ to obtain the same result as the first time. What is unclear to me is exactly why the interpretation $\delta_{\mu}^{\mu}=n $ in this case is incorrect. I can't seem to justify with proper rigour why that contraction makes no sense here, even though I can see that it's wrong and am otherwise happy with the correct interpretation. My intuition is that the LHS has to be treated like a rank 4 tensor, and the trace of this tensor over the delta indices does not mean we introduce a scalar factor to the resulting contracted tensor. But this isn't a very thorough description. Does anyone have any pointers? I'm positive I'm overlooking something very simple but quite important here.",['geometry']
+2192755,Interpreting divergence of velocity field,"The wikipedia article on divergence describes one interpretation of divergence: ""The velocity of the air at each point defines a vector field. While air is heated in a region, it expands in all directions, and thus the velocity field points outward from that region."" If we have a vector field which represents a force, I interpret the divergence as representing the strength of the field at whatever point it's taken at. However I'm confused on how to interpret the divergence of a velocity field. Clearly if the divergence is positive gas is expanding outward and if it's negative it's contracting, however what quantity is actually represented? If I have a velocity field with $m/s$ units, then the div presumably has $m/s^2$ units. Is the quantity we get the actual acceleration of gas away from that point?","['multivariable-calculus', 'divergence-operator']"
+2192760,Equality on a limit involving solution of heat equation,"I've been trying to solve one exercise on PDEs for a while now and I have everything except from this equality . It would be really useful if this were true, but I can't prove it and I think it should be because I am following some hints and I got here. Here $g$ can be smooth, $g(0)=0$ and that's what we know. The step is $$\lim_\limits{x\rightarrow 0^+}\dfrac{x}{\sqrt{4\pi}}\int\limits_0^{t-\delta}\dfrac{1}{(t-s)^{3/2}}e^{-\frac{x^2}{4(t-s)}}g(s) ds+\lim_\limits{x\rightarrow 0^+}\dfrac{x}{\sqrt{4\pi}}\int\limits_{t-\delta}^t\dfrac{1}{(t-s)^{3/2}}e^{-\frac{x^2}{4(t-s)}}g(s) ds$$ $$= g(t) \lim_\limits{x\rightarrow 0^+}\dfrac{x}{\sqrt{4\pi}}\int\limits_{t-\delta}^t\dfrac{1}{(t-s)^{3/2}}e^{-\frac{x^2}{4(t-s)}}ds$$ So this is what I think: since we have excluded $t$ from the first integral, we can simply substitute $x$ by $0$ and so the first limit is $0$. Now this is not true for the second limit, as the integral explodes close to $0$. But how can $g$ leave the integral? Is it some argument of continuity? I tried integration by parts but I don't seem to go anywhere. Thank you very much for your attention!","['analysis', 'partial-differential-equations']"
+2192764,The additivity axiom of probabiity,"One of the axioms of probability is: If the sample space is finite and $A$ and $B$ are disjoint events then $Pr[A\cup B]=Pr[A]+Pr[B]$, and if the sample space is infinite , then for for any (possibly infinite number of) disjoint events, like $A_1,A_2,\ldots$, then $Pr[\cup_iA_i]=\sum_iPr[A_i]$ I cannot understand why the first one cannot imply the second one. I have seen several probability books and they have mentioned it and skipped its detail. Can anyone give an example that the union of just two disjoint sets does not imply the union of any (possibly infinite) number of disjoint events?","['probability-theory', 'axioms', 'probability']"
+2192781,$\sigma$-algebra vs. $\sigma$-field: is there any difference?,"The subject says it all: is there any difference between the two concepts of $\sigma$-algebra and $\sigma$-field? In probability theory, they seem to be used more or less interchangeably. If there is no difference, is there any historical reason why some people/schools use the term $\sigma$-algebra, while others use the term $\sigma-$field?","['terminology', 'probability-theory', 'measure-theory']"
+2192815,In how many ways can two octopi shake hands?,"Given the question ""In how many ways can two octopi shake hands?"" I want to compute the different combination of handshakes. 
+There are obviously many ways to interpret the question (ie. what even constitutes a handshake between 2 octopi). In the easiest interpretation, a handshake could be just the contact of one hand/tentacle to one other tentacle. In this case, the solution is simply:
+$\binom 81 \cdot \binom 81 = 64$. I'm looking for a way to count the number of ways to have at least one handshake (to have 1 or more handshakes simultaneously). How would I do that?",['combinatorics']
+2192853,Computing norm of linear operator,"This is the question that was given to me: I was able to prove that the operator is bounded: it is bounded by the infinity norm of $f$. Since it is bounded, it has a finite norm, $$\|T\|= \sup\limits_{f\in C[0,1]} \frac{\|Tf\|}{\|f\|}. $$ I noticed that for $f=1$ this is equal to $1/2$. I think that I need to find an upper bound, and show that it is attained, probably with $f=1$, but I am stuck as to what this bound might be. Any help is appreciated.","['functional-analysis', 'normed-spaces', 'operator-theory']"
+2192865,Some curious binomial coefficient identities,"I was playing around with some polynomials involving binomial coefficients, and inadvertently proved the following two identities: (1) For all $p, q \in \mathbb{N}$ and $i \in \left[ 0, \min\{p, q\} \right]$:
+$$
+\begin{pmatrix}p \\ i\end{pmatrix} = \sum_{j=0}^i (-1)^j \begin{pmatrix}q \\ j\end{pmatrix} \begin{pmatrix}p + q - j \\ i - j\end{pmatrix} \text{.}
+$$ (2) For all $q \in \mathbb{N}_{\ge 1}$ and $i \in [0, q]$:
+$$
+\frac{q - i}{q} = \sum_{j=0}^i (-1)^j \begin{pmatrix}i \\ j\end{pmatrix} \begin{pmatrix}2q - 1 - j \\ i - j\end{pmatrix} \begin{pmatrix}q - j \\ i - j\end{pmatrix}^{-1}  \text{.}
+$$ Can either of these identities be proven in any trivial way (e.g., by reduction to known identities)?","['combinatorics', 'binomial-coefficients']"
+2192881,Given $x^9 = e$ and $x^{11} = e$ prove $x = e$.,"Full Problem: Prove that for any element $x$ in a group $G$ that satisfies 
+$$x^9 = e \\
+x^{11} = e,$$
+where $e$ is the identity element, that $x$ itself must be $e$. Is this as simple as showing that $x^{11} = x^{9} \cdot x^{2} = e \cdot x^2 \Rightarrow x^2 = e$ $x^{9} = x^{2} \cdot x^{7} = e \cdot x^7 \Rightarrow x^7 = e$ $x^{7} = x^{2} \cdot x^{5} = e \cdot x^5 \Rightarrow x^5 = e$ $x^{5} = x^{2} \cdot x^{3} = e \cdot x^3 \Rightarrow x^3 = e$ $x^{3} = x^{2} \cdot x = e \cdot x \Rightarrow x = e$ Therefore, $x = e$.","['abstract-algebra', 'group-theory']"
+2192893,Calculate Confidence Interval With 20 Samples,"I have 20 samples of network latencies. Each sample consists of 5000 numbers (in milliseconds). I would like to find a 95% confidence interval for average (Mean), 90th percentile, 95th percentile and 99th percentile for network latencies. I have measured the above as follows: For a 95% confidence interval for average, I need to find average for each sample. So, I will get 20 values, each represents an average for one sample. Then, I calculate Mean (M) and Standard Deviation (SD) for those 20 values and apply the following formula to obtain a 95% confidence interval for average network latencies: a 95% confidence interval = M ± 1.96 (SD/√20) For a 95% confidence interval for 90th percentile. First I need to find ascending order for each sample. Then, the 90th value for each sample is picked. So, we will have 20 values, each represents 90th percentile for one sample. Then, I calculate Mean (M) and Standard Deviation (SD) for those 20 values and apply the following formula to obtain a 95% confidence interval for 90th percentile network latencies: a 95% confidence interval = M ± 1.96 (SD/√20) Is it true?",['statistics']
+2192896,Verify that f(z) = z(e^x) is analytical,"iI have to show that the derivative of $f (z) = z (e ^ z)$ is $f '(z) = (e ^ z) + z (e ^ z)$ Then the solution would be something like: $f(z) = (x+yi)[(e^x) \cos(y) + i(e^x) \sin(y)]$
+$f(z) = x(e^x)\cos(y) + ix(e^x)\sin(y) + iy(e^x)\cos(y) - y(e^x)\sin(y)$ We organize $f(z) = [x(e^x)\cos(y) - y(e^x)\sin(y)] + i [x(e^x)\sin(y) + y(e^x)cos(y)]$ We derive $du/dx = (e^x)\cos(y) + x(e^x)\cos(y) - y(e^x)\sin(y)$
+$dv/dy = (e^x)\cos(y) + x(e^x)\cos(y) - y(e^x)\sin(y)$ The first rule is met $dv/dx = (e^x)\sin(y) + x(e^x)\sin(y) + y(e^x)\cos(y)$
+$dv/dy = -(e^x)\sin(y) - x(e^x)\sin(y) - y(e^x)\cos(y)$ The second rule is met. Now we have to check the answers $f'(z) = du/dx + dv/dx$
+$f'(z) = [(e^x)\cos(y) + x(e^x)\cos(y) - y(e^x)\sin(y)] + [(e^x)\sin(y) + x(e^x)\sin(y) + y(e^x)\cos(y)]$ $f'(z) = (e^x)[\cos(y) + x\cos(y) - y\sin(y)] + (e^x)[(\sin(y) + x \sin(y) + y \cos(y)]$ From this point I really do not know what I should do to demonstrate the derivative... The answer I have to get is ""$f'(z) = (e^z) + z(e^z)$"" Thanks for your help","['derivatives', 'riemann-surfaces']"
+2192911,A positive sequence must monotonically converges for large enough index.,"This question is rather simple, Let $a_n$ be a sequence that converges to zero, exists a $N$ such that for all $n>N$ the following $a_{n+1}\le a_{n}$ Is the theorem above correct? I am confused since I used it in an exam and the professor said that this does not necessarily happen, looking for a counter-example or something?",['sequences-and-series']
+2192955,When is the induced map $f^{*}:\operatorname{Spec}(S) \to \operatorname{Spec}(R)$ a covering map?,"Let $f: R \to S$ be a ring homomorphism. When is the induced map $f^{*}: \operatorname{Spec}(S) \to \operatorname{Spec}(R)$ on topological spaces a covering map? More precisely, are there any interesting necessary or sufficient (algebraic) conditions on $f$ for $f^*$ to be a covering map? Note that obviously a covering map is surjective, so every prime ideal of $R$ must be a contracted ideal. I would also appreciate it if someone could only explain example of covering spaces in this setting.
+On this wikipedia page one can find the assertion The map of affine schemes ${\text{Spec}}(\mathbb {C}[x,t,t^{-1}]/(x^{n}-t))\to {\text{Spec}}(\mathbb {C} [t,t^{-1}])$ forms a covering space with $\mathbb {Z} /n$ as its group of deck transformations. But I cannot see why this true. Perhaps someone could start by examining this example.","['algebraic-geometry', 'covering-spaces', 'affine-schemes', 'commutative-algebra', 'algebraic-topology']"
+2192992,Truly intuitive geometric interpretation for the transpose of a square matrix,"I'm looking for an easily understandable interpretation for a transpose of a square matrix A. An intuitive visual demonstration, how $A^{T}$ relates to A. I want to be able to instantly visualize in my mind what I'm doing to the space when transposing the vectors of a matrix. From experience, understanding linear algebra concepts in two dimensions is often enough to understand concepts in any higher dimension, so an explanation for two dimensional spaces should be enough I think. All explanations I found so far were not intuitive enough, as I want to be able to instantly imagine (and draw) how $A^{T}$ looks like given A. I'm not a mathematician btw. Here is what I found so far (but not intuitive enough for me) (Ax)$\cdot$y=$(Ax)^{T}$y=$x^{T}A^{T}$y=x$\cdot$$A^{T}$y As far I understand dot product is a projection (x onto y, y onto x, both interpretations have the same result) followed by a scaling by the length of the other vector. This would mean that mapping x into space A and projecting y onto the result is the same as mapping y into the space of $A^{T}$, then projecting the unmapped x into $A^{T}$y So $A^{T}$ is the specific space B for any pair of vectors (x,y) such that Ax$\cdot$y=x$\cdot$By This doesn't tell me instantly how $A^{T}$ drawn as vectors would look like based on A drawn as vectors. ""reassigning dimensions"" This one is hard to explain so let me do this with a drawing: parallel projections This explanation is much more visual, but far too messy to do it in my head instantly. There are also multiple ways I could have rotated and arranged the vectors around the result $A^{T}$ which is represented in the middle. Also, it doesn't feel like it makes me truly understand the transposing of matrices, especially in higher dimensions. some kind of weird rotation Symmetrical matrices can be decomposed into a rotation, scaling along eigenvectors $\Lambda$ and a rotation back A=R$\Lambda$$R^{T}$ So in this specific case, the transpose is a rotation in the opposite direction of the original. I don't know how to generalize that into arbitrary matrices. I'm wildly guessing that if A is not symmetric any more, $R^{T}$ must also include some additional operations besides rotation. Can anyone help me to find a way to easily and instantly imagine/draw how $A^{T}$ looks like given A in two dimensional space? (In a way of understanding that is generalizable into higher dimensions) Edit 1: While working on the problem I was curious to see what B in $BA=A^{T}$ looks like. B would describe what needs to be done to A in order to geometrically transpose it. My temporary result looks interesting but I'm still trying to bring it to an interpretable form. If we assume the following indexing order $$A=
+        \begin{bmatrix}
+        a_{11} & a_{12} \\
+        a_{21} & a_{22} \\
+        \end{bmatrix}
+$$ and $det(A)\neq0$ then $$B=\frac{1}{det(A)}
+        \begin{bmatrix}
+        a_{11} a_{22} - a_{21}^2 & a_{11} (a_{21} - a_{12})  \\
+        a_{22} (a_{12} - a_{21}) & a_{11} a_{22} - a_{12}^2 \\
+        \end{bmatrix}
+$$ What's visible on the first sight is that $\frac{1}{det(A)}$ causes scaling such that the area becomes exactly 1 (before applying the actual matrix). B must also preserve the area as $det(A^{T})=det(A)$. It means that the matrix $B'=\begin{bmatrix}
+a_{11} a_{22} - a_{21}^2 & a_{11} (a_{21} - a_{12})  \\
+a_{22} (a_{12} - a_{21}) & a_{11} a_{22} - a_{12}^2 \\
+\end{bmatrix}$ squares the area while transposing. Edit 2: The same matrix can be written as $B'=\begin{bmatrix}
+\begin{bmatrix}
+a_{11} & a_{21} \\
+\end{bmatrix}  
+\begin{bmatrix}
+a_{22} \\ -a_{21} \\
+\end{bmatrix} 
+& 
+\begin{bmatrix}
+a_{11} & a_{21} \\
+\end{bmatrix}  
+\begin{bmatrix}
+-a_{12} \\ a_{11} \\
+\end{bmatrix} 
+\\
+\begin{bmatrix}
+a_{21} & a_{22} \\
+\end{bmatrix}  
+\begin{bmatrix}
+a_{22} \\ -a_{21} \\
+\end{bmatrix} 
+& 
+\begin{bmatrix}
+a_{12} & a_{22} \\
+\end{bmatrix}  
+\begin{bmatrix}
+-a_{12} \\ a_{11} \\
+\end{bmatrix}
+\\
+\end{bmatrix}$ Which is $B'=\begin{bmatrix}
+a_{1}^{T}
+\begin{bmatrix}
+a_{22} \\ -a_{21} \\
+\end{bmatrix} 
+& 
+a_{1}^{T} 
+\begin{bmatrix}
+-a_{12} \\ a_{11} \\
+\end{bmatrix} 
+\\
+a_{2}^{T}  
+\begin{bmatrix}
+a_{22} \\ -a_{21} \\
+\end{bmatrix} 
+& 
+a_{2}^{T}   
+\begin{bmatrix}
+-a_{12} \\ a_{11} \\
+\end{bmatrix}
+\\
+\end{bmatrix}=
+\begin{bmatrix}
+a_{1}\cdot
+\begin{bmatrix}
+a_{22} \\ -a_{21} \\
+\end{bmatrix} 
+& 
+a_{1}\cdot 
+\begin{bmatrix}
+-a_{12} \\ a_{11} \\
+\end{bmatrix} 
+\\
+a_{2}\cdot 
+\begin{bmatrix}
+a_{22} \\ -a_{21} \\
+\end{bmatrix} 
+& 
+a_{2}\cdot  
+\begin{bmatrix}
+-a_{12} \\ a_{11} \\
+\end{bmatrix}
+\\
+\end{bmatrix}$ I find the vectors $c_{1}=\begin{bmatrix} a_{22} \\ -a_{21} \\ \end{bmatrix}$ and $c_{2}=\begin{bmatrix} -a_{12} \\ a_{11} \\ \end{bmatrix}$ interesting. When I draw them it looks like I only need to rotate each by 90 degress in different directions to end up with the transpose column vectors. Edit 3: Maybe I fool myself, but I think I'm getting closer. The column space $C=
+\begin{bmatrix}
+c_{1}  & c_{2}  \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a_{22}  & -a_{12}  \\
+-a_{21} & a_{11} \\
+\end{bmatrix}$ is related to $A^{-1}$ because: $AC=\begin{bmatrix}
+a_{11}  & a_{12}  \\
+a_{21} & a_{22} \\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+a_{22}  & -a_{12}  \\
+-a_{21} & a_{11} \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+det(A)  & 0  \\
+0 & det(A) \\
+\end{bmatrix} 
+=det(A) I$ So $C=A^{-1}det(A)$ B' can be written as well like this: $B'=\begin{bmatrix}
+\begin{bmatrix}
+\begin{bmatrix}
+a_{11}  & a_{12}  \\
+a_{21} & a_{22} \\
+\end{bmatrix}
+& 
+\begin{bmatrix}
+a_{22} \\
+-a_{21} \\
+\end{bmatrix}
+\end{bmatrix}
+\\
+\begin{bmatrix}
+\begin{bmatrix}
+a_{11}  & a_{12}  \\
+a_{21} & a_{22} \\
+\end{bmatrix}
+& 
+\begin{bmatrix}
+-a_{12} \\
+a_{11} \\
+\end{bmatrix}
+\end{bmatrix}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\begin{bmatrix}
+\begin{bmatrix}
+a_{11}  & a_{12}  \\
+a_{21} & a_{22} \\
+\end{bmatrix}
+& 
+c_{1}
+\end{bmatrix}
+\\
+\begin{bmatrix}
+\begin{bmatrix}
+a_{11}  & a_{12}  \\
+a_{21} & a_{22} \\
+\end{bmatrix}
+& 
+c_{2}
+\end{bmatrix}
+\end{bmatrix}$ or like this $B'=\begin{bmatrix}
+\begin{bmatrix}
+a_{11}  & a_{21}  \\
+\end{bmatrix}  
+&
+\begin{bmatrix}
+a_{22}  & -a_{12}  \\
+-a_{21} & a_{11} \\
+\end{bmatrix} 
+\\
+\begin{bmatrix}
+a_{21}  & a_{22}  \\
+\end{bmatrix}
+&
+\begin{bmatrix}
+a_{22}  & -a_{12}  \\
+-a_{21} & a_{11} \\
+\end{bmatrix}
+\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a_1^{T}
+&
+\begin{bmatrix}
+c_{1}  & c_{2} \\
+\end{bmatrix} 
+\\
+a_2^{T}
+&
+\begin{bmatrix}
+c_{1}  & c_{2} \\
+\end{bmatrix}
+\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+a_1^{T}C 
+\\
+a_2^{T}C
+\\
+\end{bmatrix}
+=
+det(A) \begin{bmatrix}
+a_1^{T}A^{-1}
+\\
+a_2^{T}A^{-1}
+\\
+\end{bmatrix}$ Therefore for $BA=A^{T}$ we have $B=\begin{bmatrix}
+a_1^{T}A^{-1}
+\\
+a_2^{T}A^{-1}
+\\
+\end{bmatrix}$ Edit 4: I think I will post my own answer soon. Going down the path of $A^{-1}$ had the idea that one can exploit the symmetry of of $AA^{T}$. Symmetry means that $AA^{T}$ decomposes nicer: $AA^{T} = R_{AA^{T}} \Lambda_{AA^{T}} (R^{-1})_{AA^{T}}$ Now if you multiply both sides with $A^{-1}$ you'll get $A^{T} = A^{-1} R_{AA^{T}} \Lambda_{AA^{T}} (R^{-1})_{AA^{T}}$ When I do an example with numbers I can also see that in my example $R_{AA^{T}} = (R^{-1})_{AA^{T}}$ $R_{AA^{T}}$ mirrors the space along y axis and then rotates by some angle $\alpha$ So my suspicion right now is: $A^{T}=A^{-1} R_{AA^{T}} \Lambda_{AA^{T}} R_{AA^{T}}$ Now if I define $R_{AA^{T}}^{'} = \begin{bmatrix}
+cos \alpha & -sin \alpha \\
+sin \alpha & cos \alpha \\
+\end{bmatrix}$ to get the mirroring out of the matrix $R_{AA^{T}}$ then I get $A^{T}=A^{-1} 
+R_{AA^{T}}^{'} 
+\begin{bmatrix}
+-1 & 0 \\
+0 & 1 \\
+\end{bmatrix}
+\Lambda_{AA^{T}} 
+R_{AA^{T}}^{'}
+\begin{bmatrix}
+-1 & 0 \\
+0 & 1 \\
+\end{bmatrix}
+$ So generally $A^{T}=A^{-1} R_{\alpha} M_y \Lambda R_{\alpha} M_y$ With $M_y$ being the mirroring along the y axis, $R_{\alpha}$ some counter-clockwise rotation by $\alpha$ and $\Lambda$ some scaling","['matrices', 'transpose', 'geometric-interpretation', 'linear-algebra', 'vector-spaces']"
+2193001,Is this group representation faithful?,"I am interested in the following group. (It's the fundamental group of the figure eight knot with the added requirement that $a$ and $b$ have order 3.) $G=\left\langle a,b\ |\ a^3=1,b^3=1,aba^{-1}ba=bab^{-1}ab\right\rangle$ Using GAP I noticed many quotients of this group had order $12n^3$ for various integers $n$, which made me wonder if the group was isomorphic to something like $\mathbb{Z}^3\rtimes A_4$. This led me to find the following $4\times4$ matricies which actually do satisfy the above relations. $a\rightarrow \begin{bmatrix}1 & 0 & 0 & 0\\2 & 0 & 1 & 0\\-1 & 0 & 0 & 1\\ -1 & 1 & 0 & 0\end{bmatrix}$ $b\rightarrow \begin{bmatrix}1 & 0 & 0 & 0\\1 & 0 & -1 & 0\\2 & 0 & 0 & -1\\ 1 & 1 & 0 & 0\end{bmatrix}$ Is this a faithful representation? How do I prove this either way?","['group-theory', 'gap']"
+2193011,Show that both sets are infinite,"Suppose $\lbrace f_i : i \in \Bbb N\rbrace \subseteq \lbrace 0, 1\rbrace^{\Bbb N}$. Prove that there exists $g \in \lbrace 0,1\rbrace^{\Bbb N}$ such that for every $i \in \Bbb N$, the set $\lbrace n\in\Bbb N : g(n) = f_i(n) \rbrace$ and the set $\lbrace n\in\Bbb N : g(n) \ne f_i(n) \rbrace$ are both infinite. I tried to attack the problem from different angles but I just couldn't find a suitable function $g$. I am looking only for guidance or hints. Please don't post full answers . Thanks.",['elementary-set-theory']
+2193027,What are Parameters in Set Theory,"I'm totally lost about what parameters are in Set Theory. I've been looking through a bunch of books but none explicitly state what they are, only how they are used in formulas to make sets. Can someone please explain this idea?","['intuition', 'elementary-set-theory']"
+2193028,Proving every positive natural has a factorization in prime numbers with strong induction,"The question is in the title. I think my base case should start at 1, which would be valid because the product of the empty set of primes would be 1. In my textbook it says that to conclude $\forall n:P(n)$ I need to prove $Q(n)\rightarrow P(n+1)$, where $Q(n)$ is $\forall i:(i\leq n)\rightarrow P(i)$. How do I go about doing this last part?","['prime-factorization', 'discrete-mathematics', 'prime-numbers', 'elementary-number-theory']"
+2193035,Solve differential equation: $ \frac{dy}{dx}= e^{y+x} $ with the initial condition that y(0) = -ln(4),"How to solve: $ \frac{dy}{dx}= e^{y+x} $ with the initial condition that y(0) = -ln(4)? First, I separated to $ \frac{dy}{(e^y)}= dx(e^x)$. Then I integrated both sides, which gave me: $ - e^{-y} = e^x + K$. Here I am stuck?",['ordinary-differential-equations']
+2193051,How to compose two functions?,"I have three functions: $$f(x) = x+1 ,\; g(x) = x - 1 ,\; h(x) = 2x$$ I want to find $g\circ f$ such that $g(f(x))$, which equals $(x+1)-1=x$ but how? I don't understand the steps. Also, I want to find $h\circ f$ which equals $h(f(x)) = 2x-1$ but I dont know how to get that answer either. Thanks","['algebra-precalculus', 'functions']"
+2193072,Finding difficulty proving surjections,"I'm finding it hard to prove surjections for the following problem. This is my thought process. $\mathbb{N}$: The only functions that take a $\mathbb{N}$ input is $x$. Every natural number $x$ maps to itself so it is injective. Every natural number maps back to itself so it's surjective (?). Therefore it's bijective. $\mathbb{Z}$: The only functions that take $\mathbb{Z}$ input are $x$, $2x+3$, and $-x$. Both inputs $x=1$ and $x=-1$ map to $f(x) = 1$ so it's not injective. I don't know how to prove that it's not surjective. I started out by thinking ""Find an output $f(x) \in \mathbb{Z}$ such that $x \notin \mathbb{Z}$"" but that didn't get me anywhere. $\mathbb{R}$: $\forall x \in \mathbb{R}$, $x$ is an input to $f(x)$. I know that it's not injective because $x=-1$ and $x=1$ map to $f(x)=1$. Not sure how to prove it is surjective.","['number-theory', 'functions', 'elementary-number-theory']"
+2193094,Trignometric integral : $\int \frac{dx}{\sin x + \sec x}$,"The integral I am trying to compute is : $$\int \dfrac{dx}{\sin x + \sec x}$$ I have tried manipulating trignometric functions and it took me nowhere. Then finally I tried putting $\tan\dfrac{x}{2} = t$ , and subsequently: $$\cos x=\frac{1-t^2}{1+t^2} ,\sin x=\frac{2t}{1+t^2},\ dx=\frac{2dt}{1+t^2}$$ AND therefore: $$=\int\dfrac{2(1-t^2)}{(1+t^2)^2-2t(t^2-1)}dt$$ I cannot see how to approach after this, I know we have to factor out two quadratics, but cant see how to. Also, if there was another method instead of this substitution, please hint on that too! Thanks!","['trigonometry', 'calculus', 'indefinite-integrals', 'integration', 'trigonometric-integrals']"
+2193105,Solving ordinary differential equation,"I am trying to find analytical solution to the following ODE: $\dot{x}=c_1x+\frac{c_2}{x}+c_3$, where $c_1,c_2,c_3$ are known constants. If $c_2=0$, then it's a standard linear ODE which I know how to solve. But, I have no idea how to proceed when all the above constants are non-zero. I really appreciate any hints as to how proceed. Update: I am looking to get a solution like x=f(t) for the above problem. Thanks in advance. $\textbf{P.S.}$: If this information helps, I basically started from the following ODE (below) and applied change of variables to obtain the above form : $\dot{y}=c_1y+c_3 \sqrt{y}+c_2$ and used $x=\sqrt{y}$ variable transformation to get the above ODE. I want to obtain the analytical solution to this ODE, in fact.",['ordinary-differential-equations']
+2193197,How to factor in cubic extensions?,"Working within the field $K=\mathbb{Q}(\sqrt[3]{n})$, for any cube root of $n$, how does one factor the unramified rational prime ideals $(p)$? For starters, I'm relatively new to this and not too sure I completely understand factoring in these extensions, and so I'll instead talk about factoring $x^3-n$ over $\mathbb{F}_{p}$. Assuming for simplicity that $\mathcal{O}^{K}=\mathbb{Z}(\sqrt[3]{n})$, it's obvious that if $p \equiv 2 \pmod{3}$, then $x^3-n=0$ has exactly one solution in $\mathbb{F}_{p}$. For $p \equiv 1 \pmod{3}$, I have no clue what is supposed to be done. I know that there must be three solutions or no solutions, but getting there is the problem. All I've been able to think of that might be key to figuring this out is assigning the Frobenius a conjugacy clas s of $S_{3}$ due to the fact that $\mid\rho(p)\mid=\chi_{3}(p)$, where $\rho(p)$ is some representation of an element within the conjugacy class and $\chi_{3}(p)$ is the non-trivial Dirichlet Character of modulus 3. This seems nice since it  alludes to working within $\mathbb{Z}(\frac{-1+\sqrt{-3}}{2})$ for the answer, and for one case, $\mathbb{Q}(\sqrt[3]{2})$, the solution does indeed involve $\mathbb{Z}(\frac{-1+\sqrt{-3}}{2})$ (understanding how this connection is made is difficult).","['abstract-algebra', 'algebraic-number-theory', 'number-theory', 'maximal-and-prime-ideals', 'cubic-reciprocity']"
+2193203,Maximum $2$-D bootstrap percolation time for $n$ points on an $n\times n$ grid,"Is the maximum bootstrap percolation time for $n$ points on an $n\times n$ grid $\big{|}\left \lceil{(n^2-3)/2}\right \rceil + n - 1 \big{|}$ for $1\leq n\leq 8$, and $n(n+3)/2-7$ for $n\geq 9$? Below are some possible starting positions for $1\leq n\leq 12$: and a possible construction method for $n\geq 10$ (based on the starting positions of $n-2$): $\hspace{2em}$ In Mathematica , this might be constructed as follows: aa = Uncompress@""1:eJzVlsEOgjAQRLuAgvyF/+PJT/BAwskD/n/UNhGG7mwpqNFLw8K8zuxaCcfL9dy1zrmheiynfrh1wqv+WXUFCIpI0LtI5W8FugS61GlFGu6/FvrQkxWYVMSE6GdOwY4pJKkYXXaQCqp5KgJp0YI7k8kyWfZuPtseGoJKbYiQNEcIw7SKg72vZGjXZfC91TAVqPhURquaWGUD9Ei9zYGOdqMDSz7poYEhN0lcM0UqDayk4rwrvT7Wl5lQlCvTy/znB+owpbBa2qWy0VJqCyox+rOBybzVX4k1YbuarWeNafYCwU+SNmMjLQjyOehmXmL+X/IL4b+Q3zoNqsw+iAqffkmNyx0cTkRo"";
+a[9] = aa[[9]]; a[10] = aa[[10]];
+a[n_] := If[n < 9, aa[[n]], With[{t = Length@#[[1]] + 2}, Flatten[{ReplacePart[Array[0 &, t], # -> 1] & /@ {1, t + 1, t, 1, t + 1, t - 1, 1}, Drop[Flatten[{Take[#, 2], #}, 1] &@(PadLeft[PadRight[#, t - 1], t] & /@ #), 7]}, 1]
+] &@a[n - 2]]; or, a non-recurrence solution: a[n_] := If[n < 9, aa[[n]], Partition[ReplacePart[ConstantArray[0, n^2], Thread[# -> 1]] &@
+With[{v = Join[{1, 3 #1, 1 + 3 #1, -1 + 6 #1, 1 + 6 #1}, LinearRecurrence[{0, 2, 0, -1}, {-2 + 8 #1, 2 + 8 #1, -3 + 10 #1, 3 + 10 #1}, # - 9], {(-3 - 8*#1 + 4*#1^2 + (-1)^#1*(-5 + 2*#1))/4, ((-1)^#1*(1 + (-1)^#1*(-1 - 6*#1 + 4*#1^2)))/4, ((-1)^#1*(1 + (-1)^#1*(-13 - 2*#1 + 4*#1^2)))/4, ((-1)^#1*(-1 + (-1)^#1*(9 - 2*#1 + 4*#1^2)))/4}] &@n}, 
+If[EvenQ@n, v, ReplacePart[v, (Length@v - 4) -> v[[Length@v - 4]] + 1]]], n]]; eg Manipulate[With[{b = Most@FixedPointList[
+CellularAutomaton[{1018, {2, {{0, 2, 0}, {2, 1, 2}, {0, 2, 0}}}, {1, 1}}, {#, 0}][[1, 2 ;; -2, 2 ;; -2]] &, a[n]]}, 
+ArrayPlot[b[[length]], Mesh -> True]], 
+{length, 1, If[n < 9, {1, 2, 5, 10, 15, 22, 29, 38}[[n]], n (n + 3)/2 - 7], 1, Appearance -> ""Open""}, 
+{{n, 10}, 1, 20, 1, Appearance -> ""Open""}] The above is smaller than the lower bound shown in this paper of $13 n^2/18-14 n/9-5/3$, but a quick search for all permutations at $n=5$ shows that the maximum percolation time requires $>n$ initial points. Does the above construction result in the maximum percolation time for $n$ initial startpoints? Sets containing $>n$ initial points In addition, I am looking through the paper by Fabricio Benevides and Michał Przykucki on maximum bootstrap percolation time and I am having trouble finding an example (or seeing how there could be a set of points) that takes a greater time to complete than the one given in their example of a set for a $12\times 12$ grid on page $20$: the following pattern is valid for every multiple of $12$ and requiring $4n/3-1$ initial points, takes $ n(17 n- 10)/24$ moves to complete: manipu[n_, m_] := 
+Manipulate[With[{b = Most@FixedPointList[
+CellularAutomaton[{1018, {2, {{0, 2, 0}, {2, 1, 2}, {0, 2, 0}}}, {1, 1}}, 
+{#, 0}][[1, 2 ;; -2, 2 ;; -2]] &, n]}, 
+ArrayPlot[b[[length]], Mesh -> True]], {length, 1, m, 1, Appearance -> ""Open""}];
+
+m12[n_] := 
+With[{y = Length@#}, manipu[#, y (17 y - 10)/24]] &@ With[{t = 12 n}, 
+Flatten[{Take[Flatten[{PadRight[{1}, t], PadLeft[{1}, t], 
+Array[0 &, t]} & /@ Range@Ceiling[t/6], 1], t/2], 
+Reverse@(CenterArray[Join[{0, 0, 1}, Array[0 &, #], {1}], t] & /@
+Range[8, t, 4]), {CenterArray[{0, 1, 0, 0, 0, 1}, t]}, 
+{CenterArray[{1, 0, 1}, t]}, CenterArray[Join[{1}, 
+Array[0 &, #], {1}], t] & /@ Range[6, t, 4]}, 1]];
+
+m12[3] This differes from their minimum percolation time: the set following the pattern  given in their example takes $ 17 n^2/24 +O(n)$, yet they state the lower bound is $13n^2/18+O(n)$. It is close, $(\lim{n\rightarrow\infty (17 n^2/24)/(13n^2/18)=51/52})$, but I can't see how to construct a set of initial points that meets their lower bound. What am I missing?","['combinatorics', 'recreational-mathematics', 'combinatorial-game-theory']"
+2193220,integrate $\int\frac{x\cdot dx}{(x^3+1)^2}$,"What methods are there to integrate: $$\int\frac{x\cdot dx}{(x^3+1)^2}$$ I know about partial fractions: 
+$$\int\frac{x\cdot dx}{(x^3+1)^2} $$ $$= \int\frac{x\cdot dx}{((x+1)(x^2-x+1))^2} $$ $$= \int \left(\frac{A}{x+1}+\frac{Bx+C}{(x+1)^2} + \frac{Dx+E}{x^2-x+1} + \frac{Fx^3+Gx^2+H+I}{(x^2-x+1)^2}\right)dx$$ and after this solving is easy, i was trying to do the same many times, but i can't find coefficients because mistakes or something other. I want to know about another methods to solve it.","['indefinite-integrals', 'integration', 'calculus']"
+2193273,Can we apply a function to a set? What does $f(A)$ mean when $A$ is a set of numbers?,"For eg., let  $ A = \{-2, -1, 0, 1, 2 ,3\} $ Let $f(x) = \lfloor \frac {x^2}{3}\rfloor $ What is $ f(A) $ ? In case anyone is wondering, this is homework, but I am not sure how to proceed as I can't find anything online regarding this.","['elementary-set-theory', 'functions']"
+2193287,Prove $2^{\sqrt{\log n}}=o(n)$,"To my understanding, I need to show the following equals 0. I tried using L'hopital's rule, but got the same $\lim$ times a constant. $$
+\lim_{n \to \infty} \frac{2^{\sqrt{\log_e n}}}{n}
+$$",['limits']
+2193306,Trouble integrating $\sec x$,"I have to evaluate the integral of the $\sec x$ function and I do it as follows $$\int\sec xdx=\int\frac{dx}{\cos x}=\int\frac{\cos^2 x+\sin^2 x}{\cos x}dx=\sin x+\int\frac{\sin^2x}{\cos x}dx$$ Now we make a change of variables $\cos x=t$ so our integral becomes $$\sin x-\int\frac{\sqrt{1-t^2}}{t}dt$$ Now we make another change of variable $\sqrt{1-t^2}=z$ so our integral becomes $$\sin x-\int\frac{z^2-1+1}{z^2-1}dz=\sin x-\int\left(1+\frac{1}{z^2-1}\right)dz=$$ $$=\sin x-\sqrt{1-\cos^2x}+\frac12\ln\left|\frac{1+\sqrt{1-\cos^2x}{}}{1-\sqrt{1-\cos^2x}}\right|+C=\frac12\ln|\tan^2x+\sec^2x|+C$$ The calculator however evaluates this integral as $$\ln|\tan x+\sec x|+C$$
+ but I can't figure out where I made a mistake in my calculations.","['indefinite-integrals', 'integration', 'calculus']"
+2193326,Lemma 2.5-2 and Theorem 2.5-3 in Kreyszig's Functional Analysis Book: Does compactness of every closed and bounded subset also imply ...?,"Here is Lemma 2.5-2 in the book Introductory Functional Analysis With Applications by Erwine Kreyszig: A compact subset $M$ of a metric space is closed and bounded. But the converse is not true, as is shown by the set $$M = \left\{ \ (1, 0, 0, \ldots), \ (0, 1, 0, 0, \ldots), \ (0, 0, 1, 0, 0, \ldots), \ \ldots \ \right\}$$ in $\ell^2$. But here is Theorem 2.5-3: In a finite dimensional normed space $X$, any subset $M \subset X$ is compact if and only if $M$ is closed and bounded. Now my question is as follows: Let $X$ be a metric space such that every closed and bounded subset of $X$ is (sequentially) compact. Does this imply that $X$ is a finite dimensional normed space? I have no idea of how to proceed, although I'm clear about the proofs in Kreyszig.","['real-analysis', 'normed-spaces', 'functional-analysis', 'compactness', 'analysis']"
+2193339,"Proving $ \forall r, s \in \mathbb{R^+} \sqrt {r. s} = \sqrt r . \sqrt s$","I am new to writing proofs, I have written down a proof for $ \forall r, s \in \mathbb{R^+}  \sqrt {r\cdot s}  = \sqrt r \cdot  \sqrt s$ I know I am a bit messy with my proof, I would love to get some feedback. Also please verify if my proof is good enough. Here is my approach, Proof -  Let, $\sqrt r = p$ and $\sqrt s = q$ where $p, q \in \mathbb{R^+}$ . Then, $\sqrt r \sqrt s  = p\cdot q$ ... (1) Squaring both the sides we get, $(\sqrt r \sqrt s)^2  = (p\cdot q)^2$ ...(2) $(\sqrt r \sqrt s)^2 = (r^{1/2}\cdot s^{1/2})^2$ [as $\sqrt a = a^{1/2}$ ] Lemma 1 - $\forall a, b \in  \mathbb{R} [(a\cdot  b )^2 = a^2\cdot  b^2] $ Proof - By definition of squaring, $ a^2 = a\cdot a$ It follows from the definition that, $(a \cdot b)^2 = (a \cdot b ) (a\cdot b) = a^2\cdot b^2$ $\blacksquare$ From lemma 1, $(r^{1/2}\cdot s^{1/2})^2 = r^{2 / 2}\cdot  s^{2/2} = r\cdot s$ Therefore, $(\sqrt r \sqrt s)^2 =  r\cdot s$ From equation 2, we have, $r\cdot s = (p\cdot q)^2 $ ...(3) If the equality holds the LHS of the equation must yield the same result as equation 1, Now from equation 3, $ \sqrt {r\cdot  s} = \sqrt{(p\cdot q)^2}$ $\sqrt{(p\cdot q)^2} = ((p\cdot q)^2)^{1/2}$ [as $\sqrt a = a^{1/2}$ ] Now from the power rule $(a^b)^c = a^{b\cdot c}$ , it follows that $((p\cdot q)^2)^{1/2} = (p\cdot q)^{2/2}= p\cdot q$ .. (4) From equation (1) and equation (4). As both sides yield the same result, it is true that, $ \forall r, s \in \mathbb{R^+}  \sqrt {r. s}  = \sqrt r \cdot \sqrt s$ $\blacksquare$ I have one concern with this proof, by this same reasoning that I have followed, I can even prove the statement for $\forall r, s \in \mathbb{R^-}$ , which is not true , so I must be wrong somewhere.","['algebra-precalculus', 'proof-writing', 'proof-verification']"
+2193379,$f(\frac{2\pi}{7})+f(\frac{4\pi}{7})+f(\frac{6\pi}{7})=1$,let $$f(x)=\frac{1}{1+2\cos x}$$ prove that : $$f(\frac{2\pi}{7})+f(\frac{4\pi}{7})+f(\frac{6\pi}{7})=1$$ My Try : $$f(\frac{2\pi}{7})=\frac{1}{1+2\cos (\frac{2\pi}{7})}$$ $$f(\frac{2\pi}{7})=\frac{1}{1+2\cos (\frac{4\pi}{7})}$$ $$f(\frac{2\pi}{7})=\frac{1}{1+2\cos (\frac{6\pi}{7})}$$ $$L=\frac{1}{1+2\cos (\frac{6\pi}{7})}+\frac{1}{1+2\cos (\frac{4\pi}{7})}+\frac{1}{1+2\cos (\frac{2\pi}{7})}$$ what now ?,"['polynomials', 'substitution', 'roots', 'trigonometry', 'fractions']"
+2193384,I think I found an error in a OEIS-sequence. What is the proper site to post it?,"I checked the link given to this OEIS-sequence : https://oeis.org/A081121 and apparantly the numbers $3136$ and $6789$ appear in the sequence. However, we have $$4192^2=260^3-3136$$ and $$94^2=25^3-6789$$ so the two numbers should not appear in the sequence. $1)$ Did I miss something, or is this actually an error ? $2)$ What is the proper site to post such errors ? $3)$ How can such errors happen, if the sequence is generated by a computer program and pasted ? (I am pretty sure that the sequences are produced this way)","['number-theory', 'mordell-curves', 'soft-question']"
+2193476,Singular points,"Find all the (isolated) singular points of $f$, classify them, and find the residue of $f$ at each singular point. $$f(z) = \frac{z^{1/2}}{z^2 + 1}$$ I think I have $3$ singularities at $z=0,-i$ and $i$ but am unsure about what to do next and what type of singularities they are. I don't fully understand singularities or residues, can someone explain them to me in this example please.","['complex-analysis', 'singularity', 'residue-calculus']"
+2193479,Expected number of consecutive numbers from a uniform draw,"Say we pick $k$ numbers uniformly from $n$ without replacement and no order. What is the expected number of consecutive numbers we will get? For example, for $n=4, k=2$, only a draw of $(1,2),(2,3),(3,4)$ will result in $1$ consecutive numbers, so the expected number is $0.5$ I can also use a good upper bound instead of the expected value.","['combinatorics', 'statistics', 'expectation']"
+2193482,Partial sum of order statistics of exponential r.v.'s and $\chi^2$,"Suppose $X_i \sim Exp(\frac{1}{\lambda}), i = 1,\cdots,n$, where
+$f(x) = I_{(0,\infty)}\frac{1}{\lambda}e^{-\frac{x}{\lambda}}$
+is the p.d.f. of $X_i$'s. 
+And we have a positive integer $r$, and the order statistics
+$$X_{(1)}\leq X_{(2)} \leq \cdots \leq X_{(r)}$$ where $1<r \leq n$. Then, denote $$T = \sum_{i=1}^{r} X_{(i)} + (n-r)X_{(r)}$$
+The problem is to prove that $\frac{2T}{\lambda} \sim \chi^2_{2r}$. I'm quite at loss here. It seems to have a lot to do with Gamma distribution, but it doesn't seem the sum of first r- order statistics follows it. Even if the sum of the first r items does follow Gamma, I don't know how to handle the following $(n-r)X_{(r)}$. It doesn't seem right to directly compute the p.d.f. of $T$, which I've tried and failed. I'd appreciate it enormously if anyone can give me any hint or solution !","['probability-distributions', 'statistics', 'probability', 'exponential-distribution', 'order-statistics']"
+2193487,Techniques for solving Diophantine equations.,"I would like to learn new techniques for solving diophantine equations. I know how to solve diophantine equations with factorization over $\mathbb Z$ and $\mathbb Z[i]$ , modular arithmetic, the Liftng The Exponent lemma and other elementary techniques, but I would like to see some more advanced techniques. To be particular, I am interested in solving Diophantine equations by using results from Algebraic Number Theory and Algebraic Geometry. I had a few lessons in Algebraic Number Theory and Alebraic Geometry. What topics from each of the pre-mentioned subjects would you recommend to emphasize on, if one wants to strengthen his/her Diophantine equation-solving skills? I would also appreciate any book recommendations. Thanks in advance!","['diophantine-equations', 'algebraic-geometry', 'algebraic-number-theory', 'book-recommendation', 'soft-question']"
+2193495,Prove or disprove that there is an infinite number of even numbers in the decimal expansion of $\sqrt2$.,"Prove or disprove that there is an infinite number of even numbers in
+  the decimal expansion of $\sqrt2$. Although I have heard of some conjectures about normal numbers that are still open problems, the condition in this question is weaker. So is the conclusion correct, or is it an open problem?","['number-theory', 'decimal-expansion', 'irrational-numbers']"
+2193516,Successive approximations for $y''= \frac{y'^2}{y}-\frac{y}{x^2}$,"Successive approximation:
+$$\begin{align}
+y_{n+1}&=y_0+\int_{x_0}^xz_n(t)\,dt\\
+z_{n+1}&=z_0+\int_{x_0}^xf(t,y_n(t),z_n(t))\,dt
+\end{align}$$ I try to use it on the 2nd-order differential equation as below: $$y''(x)= \frac{y'(x)^2}{y(x)}-\frac{y(x)}{x^2}$$
+With BV: $y(1)=2,y(2)=1$ By defining $z=y'(x)$, we have: 
+$$\begin{align}
+z'(x)=f(x,y,z)= \frac{z^2(x)}{y(x)}-\frac{y(x)}{x^2} \\
+z(1)=y'(1) \\
+z(2)=y'(2)
+\end{align}$$ But here z(1) and z(2) are really unknowns (not given by boundary conditions), how can we use the Successive approximation method to get the approximation say $z_2(x)$ and $y_2(x)$? PS: I have already calculated the analytical solution to this equation already, hence this is a pure practice question on (Successive) approximation.","['numerical-methods', 'ordinary-differential-equations', 'calculus']"
+2193569,Solution conflict: Expected number of distinct birthdays for $100$ people,"I was given a homework question that is stated in the title. Although I have a conflict with the solution provided, and was wondering if you could help me understand why the solution is correct or if it is indeed incorrect. Define $X$ to be number of distinct birthdays. The answer given is to set up a RV $X_i$ which is $1$ if the ith day is a birthday or $0$ otherwise, where: $P(X_i = 1) = P(\text{at least one person has birthday on day i}) = 1- P(\text{no one has birthday on this day}) = 1 - \frac{364}{365}^{100}$. And so $\mathrm{E}X_i = 1 - \frac{364}{365}^{100}$ Thus $\mathrm{E}X =\mathrm{E}[X_1 + X_2 \dots X_{365}] = 365\left (1 - \frac{364}{365}^{100} \right)$ I think this is incorrect, however. The reason being is that it seems like they are calculating the expected number of birthdays not the expected number of distinct birthdays. The answer that I think is correct is to define $X_i$ as $1$ if the ith day is a distinct birthday and $0$ otherwise. Then: $P(X_i = 1) = 100 \times \left(\frac{1}{365}\right)\left(\frac{364}{365}\right)^{99}$. Thus $\mathrm{E}X =\mathrm{E}[X_1 + X_2 \dots X_{365}] = 365 \times 100 \times \left(\frac{1}{365}\right)\left(\frac{364}{365}\right)^{99} = 100 \times \left(\frac{364}{365}\right)^{99}$. This has been bothering me for quite some time. Any help would be great.","['birthday', 'probability', 'expected-value', 'random-variables']"
+2193573,Norm equivalence and the sequence limit of normalized vectors,"Consider finite-dimensional vector spaces, on which two norms $\|\|_1$ and $\|\|_2$ are always equivalent. Then a sequence of vectors ${\bf v}_k \to {\bf v}$ w.r.t. norm 1 iff ${\bf v}_k \to {\bf v}$ w.r.t. norm 2. The question is about sequence $\frac{{{{\mathbf{v}}_k}}}{{{{\left\| {{{\mathbf{v}}_k}} \right\|}_1}}} \to \frac{{\mathbf{v}}}{{{{\left\| {\mathbf{v}} \right\|}_1}}}$ w.r.t. norm 1, will this limit imply $\frac{{{{\mathbf{v}}_k}}}{{{{\left\| {{{\mathbf{v}}_k}} \right\|}_2}}} \to \frac{{\mathbf{v}}}{{{{\left\| {\mathbf{v}} \right\|}_2}}}$ w.r.t. norm 2 (or maybe a weaker claim that one convergence implies the other but the limit might be different)? I have trouble showing this is true. If this is false, anyone can help provide a counterexample? Thanks! For example, $(k,\sqrt k),k=1,2,...$ satisfies $\frac{{(k,\sqrt k )}}{{{{\left\| {(k,\sqrt k )} \right\|}_p}}} = \frac{{(k,\sqrt k )}}{{{{({k^p} + {k^{\frac{p}{2}}})}^{\frac{1}{p}}}}} \to (1,0)$ for any $p$-norm.","['functional-analysis', 'linear-algebra']"
+2193594,How many subgroups of order 17 does $S_{17}$ have?,"How many subgroups of order 17 does $S_{17}$ have ? My attempt : An order 17 group is of prime order, hence cyclic and each element in it is a generator and of order 17. In $S_{17}$ group we can get an order 17 element only through a 17-cycle. Number of elements of order 17 in $S_{17}$ is $\frac{17!}{17} = 16!$. Now given that two sylow 17 subgroups have only a trivial intersection. We can conclude that 16 of these elements fall into each sylow 17 subgroup. Hence the number of sylow 17 subgroups would be $\frac{16!}{16} = 15!$","['finite-groups', 'abstract-algebra', 'proof-verification', 'sylow-theory', 'group-theory']"
+2193635,Prove $\binom{2p+1}{p}\equiv2$ mod $p$ when $p$ is any prime.,"Prove $\binom{2p+1}{p}\equiv2$ mod $p$ when $p$ is any prime. I started by attempting to construct the congruence as follows: Since $(2p+1)!=(2p+1)(2p)(2p-1)!$ and $p|2p$, then $(2p+1)!\equiv0$ mod $p$. Since $p|p!$, then $2p!(p+1)!\equiv0$ mod $p$. Therefore, $(2p+1)!\equiv2p!(p+1)!$ mod $p$. However, I run into a problem here, because since $p!$ and $(p+1)!$ are not relatively prime to $p$, I cannot divide them to the left side to get the congruence I want. I also attempted to write out $\binom{2p+1}{p}$ and see if I can get cancellation, but I run into a problem with figuring out how to get p! to divide into the remaining parts of $(2p+1)!$ after I divide out $(p+1)!$. Any suggestions on what I should try next?","['binomial-coefficients', 'number-theory', 'congruences', 'factorial', 'elementary-number-theory']"
+2193688,What kind of CLT is this? Can I prove it using Lindeberg-Levy CLT?,"On deriving the asymptotic distribution of an estimator, I got stuck when proving something like follows: Let $\{X_i(\beta):i=1,2,\ldots,n\}$ be i.i.d. with $\text{E}[X_i(\beta)]=\mu(\beta)$ and $\text{Var}[X_i(\beta)]=\sigma^2(\beta)$, then by Lindeberg-Levy we have
+$$
+\sqrt{n}[X_i(\beta)-\mu(\beta)]\overset{A}{\sim}\mathcal{N}[0,\sigma^2(\beta)].
+$$
+However, we don't know what $\beta$ is, and thus we must find some estimator for that. Now, assume that we have some estimator for $\beta$ that follows $\hat\beta\overset{p}{\to}\beta$. Then it sure follows that $\text{E}[X_i(\hat\beta)]=\mu(\hat\beta)\overset{p}{\to}\mu(\beta)$ and $\text{Var}[X_i(\hat\beta)]=\sigma^2(\hat\beta)\overset{p}{\to}\sigma(\beta)$. My question is whether it still follows
+$$
+\sqrt{n}[X_i(\hat\beta)-\mu(\beta)]\overset{A}{\sim}\mathcal{N}[0,\sigma^2(\beta)]
+$$
+or not? In other words, is this $X_i(\hat\beta)$ still an efficient estimator for $\mu(\beta)$? Can I use Lindeberg-Levy or Khinchine's WLLN to prove it? I've tried for some hours but with no idea. It's just an intuition. Any suggestion is appreciated, thanks! Also, if you'd like to look into the original problem directly, please go to this question .","['regression', 'asymptotics', 'statistics', 'estimation', 'central-limit-theorem']"
+2193710,Self-study Dummit and Foote,"I am going to be taking a year off from my studies and would like to self study abstract algebra as it is right now the biggest gap in my math background. I have a copy of Dummit and Foote from which I would like to study, however I realize that it contains quite a large amount of material! I would thus like to put together a list of essential topics to cover so that at the end I would have covered a similar content to a third year undergraduate course for mathematicians. One thing I would like to do if possible is get an introduction to Galois theory, it is quite mysterious to me and I would love to get acquainted to the subject. I am (quite unfortunately) in electrical engineering, although I am directing myself to do a masters in math or perhaps control theory on the mathematical side of things. As such I have taken as many math course as I could and have done some self studying so that I think I now have a reasonable degree of mathematical maturity (real analysis, topology, differential geometry, linear algebra of course, probability and stats, discrete math, etc). Unfortunately I can't take as many pure math courses an as a math undergrad which is why I want to self-study abstract algebra. I know this is an ambitious project but I am quite motivated so any tips are very appreciated!","['abstract-algebra', 'self-learning']"
+2193720,Find a point on a line segment which is the closest to other point not on the line segment,"My question is in the context of a line segment and not in the context of a line which has infinite length. Lets say I have two points in 2d which represent for me a line segment and I got another point which is not on the line segment. How do I find the point on the line segment which is the closest to the point that is not on the line segment. P.S.
+I have seen couple of similar questions about that but all in the context of line and not line segment. Thank you in advance.",['geometry']
+2193723,"How to ""fix"" $\int_{-1}^1 \frac {dx}{x^2}$ with complex numbers?","Given the following definite integral, $$\int_{-1}^1 \frac {dx}{x^2}$$ I can see that it is an improper integral because of the asymptote at $x=0$ and I know from the graph of $\frac 1{x^2}$ that both parts on either side of the $y$-axis are identical. Hence, computing only the part on the right of the $y$-axis I find that the integral $\int_{-1}^1 \frac {dx}{x^2}$ is divergent since $-$as expected from the graph of $\frac 1{x^2}-$ this part goes to $\infty$: $$\lim_{\epsilon\to 0^+}\int_{0+\epsilon}^1 \frac {dx}{x^2} \;=\; \lim_{\epsilon\to 0^+}-\frac 1x \;\bigg|_{\,0+\epsilon}^1 \;=\; -1-\left(\lim_{\epsilon\to 0^+}-\frac 1{0+\epsilon}\right) \;=\; \infty\;.$$ If I intentionally overlook that and blindly compute the integral, I get the silly result $$\int_{-1}^1 \frac {dx}{x^2} = -2\;.$$ That is, a negative value for the area under a function that is above the $x$-axis everywhere. I was told that $\int_{-1}^1 \frac {dx}{x^2}$ can be ""fixed"" using imaginary numbers by a T.A. but neither of us had the time to expand on that point. I understand complex numbers and how they work so I am left to wonder; how can I ""fix"" an improper integral using complex numbers?","['complex-numbers', 'calculus', 'improper-integrals', 'integration', 'definite-integrals']"

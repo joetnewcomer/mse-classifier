@@ -1,0 +1,339 @@
+question_id,title,body,tags
+755666,Surface Area Line integral problem,"I'm trying to figure out how to solve a surface area with surface and line integrals (showing both methods). The area I'm trying to compute is the area of the shape $$x^2+y^2=9$$ bounded by $z=0$ and $z=y$. (Note: $y \ge 0$). I've started the problem by making a parametrization: 
+$$ r(u,v) = \langle 3\cos v, 3\sin v, u\rangle $$ from $0 \leq u \leq 3\sin v$ and $-\frac{ \pi}{3} \leq v \leq \pi$. The magnitude of $|r_u \times r_v| = 3$. Not sure where to go from here.","['multivariable-calculus', 'calculus', 'surfaces']"
+755679,Cardinality of of set surjection,"Let $A$ and $B$ be finite sets. Prove there exists a surjection $f:A \to B$ iff $\#B ≤ \#A$ For this question, does the pigeonhole principle just prove it, or is there more needed? Edit: Also Can i use this to prove every subset of a finite set is finite",['elementary-set-theory']
+755704,Complex Analysis: The Identity Principle,"I'm studying some complex analysis at the moment and have come across the Identity Principle. The statement is as follows: If the function $f$ is holomorphic in a connected subset $\Omega\in\mathbb{C}$ and $A$ $\in$ $\mathbb{C}$ has an accumulation point in $\Omega$, then if $f=0$ in $A$ $\Rightarrow f\equiv 0$. Could someone please give a brief explanation of this? It seems strange to me. Then the book poses some questions, two of which are: Does this hold for meromorphic functions? (I think this may hold in the region less poles???) Give an example of two different holomorphic functions on $\mathbb{C}$ which both vanish on an infinite set of points. Why this does not contradict the Identity Principle?","['complex-analysis', 'analysis']"
+755707,"Topological groups, why need them?","I'm reading through Munkres and Armstrong's books on topology. However, I find topological groups to be really complicated objects!
+I feel they are twice as hard to deal with then just groups and topological spaces, but why do we need it? 
+  Can anybody help me?","['motivation', 'topological-groups', 'general-topology', 'algebraic-topology', 'soft-question']"
+755715,How to evaluate $\int_0^ \infty e^{-x\sinh(t)-\frac{1}{2}t}~dt$?,"$$
+\int_0^ \infty e^{-x\sinh(t)-\frac{1}{2}t}~dt
+$$
+I tried doing it by parts and looking for differentials but I just keep getting back to the original expression. I can't think of a clever substitution either. Mathematica is giving me a complex answer with special functions:
+$$
+\frac{e^{-ix}\sqrt{\frac{\pi}{2}}(-i+ie^{2ix}\text{Erfc}[(-1)^{\frac{1}{4}}\sqrt{x}]+\text{Erfi}[(-1)^\frac{1}{4}\sqrt{x}])}{\sqrt{x}} 
+$$
+For real $x>0$, it does evaluate to real answers though.","['definite-integrals', 'improper-integrals', 'calculus', 'integration']"
+755720,Prove that $SO(n)$ is parallelizable,"Prove that $SO(n)$ is parallelizable. How would I go about showing this? My supervisor could not help me with this problem, and I am stumped.","['linear-algebra', 'tangent-bundle', 'lie-groups', 'differential-geometry']"
+755743,Prove where $|x|^2(\sin(\pi|x|))^2$ (piecewise) is differentiable in $\mathbb{R}^2$,"List all points in $\mathbb{R}^2$ at which $f$ is differentiable as well as ALL points in $\mathbb{R}^2$ where $f$ is not differentiable (implied by the first list) when \begin{equation}
+   f(x) = \left\{
+     \begin{array}{lr}
+       |x|^2(\sin(\pi|x|))^2 & \text{ if } x \in \mathbb{Q}^2\\
+       0 & \text{otherwise}
+     \end{array}
+   \right.
+\end{equation} Solution So I know this function is only continuous at those places where the function takes on the value $0$ for rational values of $x$, because for all the irrationals it's $0$. Then I think, where is the function $0$ for rational $x$? That's at $x=0$ and where $\sin(\pi |x|)^2=0$, i.e. for all integer multiples of $\pi$. Therefore where the euclidean length $|x|$ is an integer. This gives a bunch of concentric circles where the function is continuous. Now I just need to write this set of points and prove it is differentiable at these points (I know it can't be differentiable anywhere else because it needs to be continuous in order to be differentiable). Can anyone help me prove that the function is differentiable at these circles where it is continuous? Thanks! Edit: To prove $f$ is differentiable where it is continuous, that means showing either showing there exists a linear map $A$ such that $\displaystyle\lim_{h\to 0} \frac{|f(x+h)-f(x)-Ah|}{|h|}=0$, or else showing all of the partial derivatives exist and are continuous... My prof gave a hint that $0\leq \sin(t)\leq t$ for all $t\in[0,\pi/2]$. Still haven't figured this one out... Thank you for your help!","['functions', 'continuity', 'partial-derivative', 'real-analysis', 'derivatives']"
+755750,Take 2: When/Why are these equal?,"This didn't go right the first time, so I'm going to drastically rephrase the query. As per this previous question , I am wondering if the two series $$\frac{f(a)+f(b)}{2}\frac{(b-a)}{1!}+\frac{f'(a)-f'(b)}{2}\frac{(b-a)^2}{2!}+\frac{f''(a)+f''(b)}{2}\frac{(b-a)^3}{3!}+\cdots$$ and $$\frac{f(a)+f(b)}{2}\frac{(b-a)}{1!}+\frac{f'(a)-f'(b)}{2^2}\frac{(b-a)^2}{2!}+\frac{f''(a)+f''(b)}{2^3}\frac{(b-a)^3}{3!}+\cdots$$ could possibly be equal. The only difference is the powers of $2$ in the denominator. NOTE: the numerator is $f^{(k)}(a)+(-1)^kf^{(k)}(b)$ in general.","['power-series', 'real-analysis', 'taylor-expansion']"
+755780,Is a matrix $A$ with an eigenvalue of $0$ invertible?,"Just wanted some input to see if my proof is satisfactory or if it needs some cleaning up. Here is what I have. Proof Suppose $A$ is square matrix and invertible and, for the sake of contradiction, let $0$ be an eigenvalue.  Consider, $(A-\lambda I)\cdot v = 0$ with $\lambda=0 $ 
+  $$\Rightarrow (A- 0\cdot I)v=0$$ $$\Rightarrow(A-0)v=0$$ $$\Rightarrow Av=0$$ We know $A$ is an invertible and in order for $Av = 0$, $v = 0$, but $v$ must be non-trivial such that $\det(A-\lambda I) = 0$. Here lies our contradiction. Hence, $0$ cannot be an eigenvalue. Revised Proof Suppose $A$ is square matrix and has an eigenvalue of $0$.  For the sake of contradiction, lets assume $A$ is invertible. Consider, $Av = \lambda v$, with $\lambda = 0$ means there exists a non-zero $v$ such that $Av = 0$. This implies $Av = 0v \Rightarrow Av = 0$ For an invertible matrix $A$, $Av = 0$ implies $v = 0$.  So, $Av = 0 = A\cdot 0$. Since $v$  cannot be $0$,this means $A$ must not have been one-to-one.  Hence, our contradiction, $A$ must not be invertible.","['eigenvalues-eigenvectors', 'solution-verification', 'matrices', 'linear-algebra', 'determinant']"
+755795,"Proving negative natural log of Beta($\alpha$, 1) distribution is an exponential distribution","I'm looking to prove that taking the negative natural logarithm of a Beta distribution with parameters $\alpha$ and $\beta=1$ is an exponential functions.  I've found two different proofs, both of which use a transformation formula.  However, that is not something I've learned yet.  Is there another way to show this?","['statistics', 'probability']"
+755805,iid random variables (vectors),"If $(X_{1},Y_{1}), (X_{2}, Y_{2}),...,(X_{n}, Y_{n})$ denote a sequence of iid random variables from $(X,Y)$, can I say that each $X_{i}$ is independent from each $Y_{i}$?
+Or is it just for the vector, i.e. that each $(X_{i},Y_{i})$ is independent from each $(X_{j},Y_{j})$ for $i \neq j$?","['statistics', 'random-variables']"
+755852,Derivative of a Matrix to a Power,"Fix a positive interger $k$ and let $F: \mathbb{R}^{n \times n} \rightarrow \mathbb{R}^{n \times n}$ be the map on $n \times n$ matrices defined by $F(A)= A^k$. Show that $F$ is differentiable at every point of $\mathbb{R}^{n \times n}$, and find $(DF)(A)$. So my first guess was the obvious one $(DF)(A)= k A^{k-1}$. So I looked at $$\frac{F(X) - F(A) - DF(X-A)}{|X-A|} = \frac{X^k - A^k - k (X-A)^{k-1}}{|X-A|}$$
+And now  I don't know how to proceed. I not even sure if this is the right linear transformation for $DF$...","['matrices', 'derivatives', 'analysis']"
+755865,William Lowell Putnam Integral Problem [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 9 years ago . Improve this question Prove That
+$$
+\frac{22}{7}-\pi
+=
+\int_{0}^{1}\frac{x^{4}\left(1 - x\right)^{4}}{1 + x^{2}}\,{\rm d}x
+$$","['definite-integrals', 'integration', 'irrational-numbers']"
+755876,Gradient Vector Question?,"The temperature in some three-dimensional body is modeled by the equation $$f(x,y,z)=49-x^2-y^2-z^2$$
+Find the largest rate at which the temperature is increasing when T=0. I believe this is a gradient vector question, but when I do the problem I feel like the answer I got is very incorrect. $$f(x,y,z)=<-2x,-2y,-2z>$$ since you derive for $f_x, f_y, f_z$ Since T=0 $$f(0,0,0)=<0,0,0>$$ $$||f(0,0,0)||=0$$ Am I missing something in the equation, did something wrong, or is this not even a gradient vector question and a completely different type of question? Thanks for the help in advance.","['multivariable-calculus', 'calculus']"
+755903,Solving integral $\int\frac{\sin x}{1+x\cos x}dx$,"How I can find the anti-derivative?
+$$\int\frac{\sin x}{1+x\cos x}dx$$","['integration', 'indefinite-integrals']"
+755905,Showing $\lim_{n\to\infty} \left( \frac{n}{n^2+1^2} + \frac{n}{n^2+2^2} + \cdots + \frac{n}{n^2+n^2} \right) = \frac{\pi}{4}$ [duplicate],"This question already has an answer here : The limit of a sum $\sum_{k=1}^n \frac{n}{n^2+k^2}$ as $n\rightarrow\infty$ [closed] (1 answer) Closed 4 years ago . How could I go about proving the following limit: $$
+\lim_{n\to\infty} \left( \frac{n}{n^2+1^2} + \frac{n}{n^2+2^2} + \cdots + \frac{n}{n^2+n^2} \right) = \frac{\pi}{4}
+$$","['real-analysis', 'limits']"
+755911,Contraction between basis vectors and basis one-forms,"Discretion: The title may be misleading, because I am not certain whether the one-forms are actually basis one-forms. I always thought by definition, $dx^i (e_j) =\delta^i_j $.
+But, I am confused because of what it says on one of the book I am reading, ""Mathematical Methods of Classical Mechanics"", by Arnold. In page 178 - 179, he says if we define the metric $g = diag(E_1,E_2,E_3)$, then $dx^i (e_i) = 1/\sqrt E_i$. I cannot wrap my head around this. Is $dx^i$ the dual basis one-form, or is it something else? Thank you so much for your help.",['differential-geometry']
+755922,implicit differentiating equation with $\cos$,"I need help getting $\frac{d^2y}{dx^2}$ for $y−\cos y=2x$ Someone answered and got $(1+\sin y(x))3+4\cos y(x)$ but i was unable to follow their steps and didnt get how to do it. 
+any HELP?","['implicit-differentiation', 'calculus', 'derivatives']"
+755956,Global stable and unstable manifolds of quadratic 2D differential system,"Show that $x^* = (1, 2)$ is a fixed point of the system $x_1' = 2 + 3x_1 − 2x_2 − x_1^2 + 2x_1x_2 − x_2^2$ $x_2' = 3 + 4x_1 − 3x_2 − x_1^2 + 2x_1x_2 − x_2^2$ Determine $W^s(x)$ and $W^u(x)$, the global stable and unstable manifolds of the fixed point $x=(1, 2)$ and give a parametric representation of those manifolds.","['dynamical-systems', 'ordinary-differential-equations', 'systems-of-equations']"
+755973,the geometric explain of $t = x-\frac{a}{3}$ in the simplify of cubic equation $x^3+ax^2+bx+c=0$,"Assume $$f(x) = x^3+ax^2+bx+c$$ we have $$f''(x)=2a+6x$$. we get $x = -\frac{a}{3}$ Magically, If we take the transformation: $$t = x -\left(-\frac{a}{3}\right)$$. we can transform the above equation into $$f(x)=g(t) = t^3+\left(b-\frac{a^2}{3}\right)t+\frac{2a}{27}-\frac{ab}{3}+c$$ Why ? why this transform cancellation the quadratic term? Can anyone give an Geometric explain?  Thanks very much.","['geometry', 'complex-numbers', 'calculus', 'algebra-precalculus']"
+755980,The difference between semicontinuity and hemicontinuity.,"For a point-to-set function F, is ""upper hemicontinuous"" the same as ""upper semicontinuous""? If not, then what's the difference?","['general-topology', 'continuity', 'functional-analysis', 'functions']"
+755992,How do you shift a sigmoidal curve to the right?,How do you shift the function $1$ $/ ( 1 + e ^ {-x} )$ to the right without altering the shape of the curve?,"['graphing-functions', 'special-functions', 'functions']"
+756011,Maximum volume of a box given perimeter and surface area,"What would be maximum volume of a rectangular box with a given perimeter $P$ and surface area $S$? I tried to solve following equations, where $l$ is length, $b$ is base, $h$ is height, $P$ is the perimeter, $V$ is volume, and $S$ is the surface area. $$2(l + b + h) = P  $$
+$$2(lb + bh + hl) = S$$ Need to maximize $$V=lbh$$. Thanks.","['geometry', 'volume']"
+756030,Any general methods to calculate integral of $P(x)/Q(x)$ from $0$ to $\infty$?,"In complex analysis, we have general formula for $P(x)/Q(x)$ [$P$ and $Q$ are polynomials] from minus infinity to infinity, if $ \deg Q - \deg P > 2$. Is it possible to have a general formula for improper integral of P(x)/Q(x) from 0 to infinity? Like, $$\int_0^{\infty} \frac{1}{1+x^3} \mathrm{d} x =\frac{2\pi}{3\sqrt{3}} $$ $$\int_0^{\infty} \frac{1}{1+x+x^2+x^3} \mathrm{d} x =\frac{\pi}{4}$$ $$\int_0^{\infty} \frac{1}{(x+1)(x+2)(x+3)} \mathrm{d} x=\frac{\ln(4/3)}{2}$$","['complex-integration', 'improper-integrals', 'complex-analysis']"
+756051,Gaussian curvature and mean curvature sufficient to characterize a surface?,"Is the knowledge of Gaussian and mean curvature (and thus of the principal curvatures) sufficient to characterize a surface uniquely? If not, is there another geometric quantity one can add to obtain a unique characterization?",['differential-geometry']
+756067,Cardinality of $\lim_{k\to\infty}\mathbb N^k$ vs. $\mathbb N^\infty$,"My friend and I are having a disagreement over whether the number of terms in the following series is countable or uncountable:
+$$\sum_{i=1}^\infty a_i + \sum_{i=1}^\infty\sum_{j=1}^\infty a_{ij}+ \sum_{i=1}^\infty\sum_{j=1}^\infty\sum_{k=1}^\infty a_{ijk} + \ldots$$ i.e. the sum goes to have an infinite number of ""sigmas"". My argument is that each of the sums has a countable number of terms, and there are a countable number of sums (indexed by the number of ""sigmas"") in the total sum, and hence the total number of terms is the cardinality of a countable union of countable sets, which is countable. My friend's argument is that given any irrational number in $[0,1]$, he can find a corresponding term in the sum with the subscripts $i, j, k, \ldots$ coming from the decimal expansion of the irrational number, and vice versa (though not all irrational number won't be mapped and vice versa, the subset being mapped to is still uncountable). So the number of terms is uncountable. We think that the answer to the question boils down to whether the cardinality of $\lim_{k\to\infty}\mathbb N^k$ is equal to $\mathbb N^\infty$ (i.e. an infinite Cartesian product) or not. Is this statement true, and is it applicable to the bigger question of the cardinality of the number of terms in the series?","['cardinals', 'elementary-set-theory']"
+756115,Axiomatizing topology through continuous maps,"Suppose we have some topological space $X$ and we somehow forgot about the topology. A friend of ours knows the topology and offers to tell us for any map $X\to Y$ into any topological space $Y$ whether it is continuous or not. As it turns out, we can use this to recover the topology on $X$ the following way: Let $Z = \{0,1\}$ with topology $\{\varnothing, \{1\}, Z\}$. For a subset $A\subseteq X$ we have a map
+\begin{align}
+f_A : X &\longrightarrow Z\\
+x &\longmapsto \begin{cases} 1 & \text{if $x\in A$,}\\ 0 &\text{if $x\notin A$.}\end{cases}
+\end{align}
+Now $f_A$ is continuous if and only if the preimages of open sets are open, since $f^{-1}(\varnothing)=\varnothing$ and $f^{-1}(Z)=X$ are open in any topology, we know that $f_A$ is continuous if and only if $f^{-1}(\{1\}) = A$ is open in $X$. Thus, given any subset $A$ in $X$ we ask our friend if $f_A$ is continous and we know if $A$ is open or not, so we recovered the topology as
+$$
+\{\, A\subseteq X \mid \text{$f_A\colon X\to Z$ is continuous}\,\}.
+$$ We conclude that knowing the topology (i.e. the collection of open sets) of $X$ and being able to tell for any map $X\to Y$ if it is continuous are equivalent. Is it somehow possible to define a topological space as a set $X$ together with some class of maps from $X$ satisfying certain properties so they turn out to be the continuous maps? One problem here is that thinking of the class
+$$\{\, f:X\to Y \mid \text{$Y$ a topological space, $f$ continuous}\,\}$$
+already implies we know what the topological spaces $Y$ are, so it seems we cannot use this class to define what a topological space is. Can we do something similar though?","['general-topology', 'axioms', 'continuity']"
+756124,Finding $a$ and $b$ from $a^3+b^3$ and $a^2+b^2$,"Question 1 
+Two numbers are such that the sum of their cubes is 14 and the sum of their squares is 6. Find the sum of the two numbers. I did 
+$a^2+b^2=6$ and $a^3+b^3=14$ Find $a$ and $b$, two numbers. but got lost when trying to algebraicly solve it. Thank you, Any help is appreciated",['algebra-precalculus']
+756131,"If $\mathrm{tr}(A)=0$, then we have $A=BC-CB?$","For any matrix $A_{n\times n}$ with $\mathrm{tr}(A)=0$ show that there exist two matrices $B$ and $C$ such that $$A=BC-CB.$$ I know to prove this: if $A=BC-CB$, then we have $\mathrm{tr}(A)=0$ because $$\mathrm{tr}(BC)=\mathrm{tr}(CB)$$ so $$\mathrm{tr}(A)=\mathrm{tr}(BC-CB)=\mathrm{tr}(BC)-\mathrm{tr}(CB)=0.$$
+But my problem is that I can't prove it.",['matrices']
+756151,Twin Prime conjecture current status,Can someone help me with a link to read about the status of the Twin Prime conjecture. I have browse on the internet and have read some articles but still I have no clue of the updated status of Twin Prime conjecture. Can someone explain to me the current status of the Twin Prime conjecture whether it is solved or it is still widely open.,"['conjectures', 'reference-request', 'open-problem', 'number-theory']"
+756159,A topological space which is Frechet but not Strictly-Frechet.,"Let $X$ be a topological space and $q \in X$ . $X$ is strictly Frechet at $q$ , if, for all $A_n \subset X, q \in \bigcap_{n \in \omega} \overline {A_n}$ implies the existence of a sequence $q_n \in A_n$ with $\lim_{n \rightarrow \infty} q_n = q$ . We say that $X$ is Strictly-Frechet, if it is strictly Frechet at any point $q \in X$ . $X$ is Frechet at $q \in X$ , if, $A \subset X$ , $q \in \overline A$ , implies the existence of a sequence $\{ q_n \} \subset A$ such that $\lim q_n = q$ . We say that $X$ is Frechet, if it is Frechet at any point $q \in X$ . I have been trying for a while to think of a space which is Frechet but not Strictly-Frechet.
+Any ideas, directions or examples? Thank you!","['general-topology', 'examples-counterexamples']"
+756211,Find $m$ and $n$,Two finite sets have m and n elements. Thew total number of subsets of the first set is 56 more than the two total number of subsets of the second set. Find the value of $m$ and $n$. The equation to this question will be $2 ^ m$ - $2 ^ n = 56$. But I don't know how to solve this equation.,"['exponentiation', 'discrete-mathematics']"
+756213,Find value range of $2^x+2^y$,"Assume $x,y \in \Bbb{R}$ satisfy $$4^x+4^y = 2^{x+1} + 2^{y+1}$$, Find the value range of $$2^x+2^y$$ I know $x=y=1$ is a solution of $4^x+4^y = 2^{x+1} + 2^{y+1}$ , but I can't go further more. I can only find one solution pair of $4^x+4^y = 2^{x+1} + 2^{y+1}$. It seems very far from solve this question...","['inequality', 'calculus', 'algebra-precalculus']"
+756247,"If $n > 2$, prove that the order of the multiplicative group of units modulo n, $U_n$, is even.","I'm struggling with this. I know it is going to use Lagrange's Theorem.  This is what I have so far. Suppose $|U_n| = k.$ This implies $a^k = 1$ for all $a$ in $U_n$ and $|a|$ divides $k$ . Now, what can be said about the order of an element $a$ ?
+I haven't been able to conclude that it's even with what I have, therefore I continued so: $|\langle a\rangle|$ divides $k$ where $\langle a\rangle$ is the cyclic subgroup generated by $a.$ However, I haven't been able to conclude that $|\langle a\rangle|$ is even. So I tried using this:  an element $a$ is in $U_n$ iff gcd $(a, n) = 1$ . Any hints?","['modular-arithmetic', 'group-theory', 'abstract-algebra']"
+756266,Calculating the center of mass in spherical coordinates,"So normally, to calculate the center of mass you would use a triple integral. In my particular problem, I need to calculate the center of mass of an eight of a sphere where it's density is proportional to the distance from origin. Say we want to get the x coordinate of the center of mass. The formula is something like $\frac{1}{M}\int\int\int (r^2\sin\phi)(\lambda r)(r\sin\phi\cos\theta)$ where the groups in that product are the jacobian of the spherical transformation, the density function of r and the x coordinate expressed with spherical variables. Now, I'm thinking if this is really necessary. Could I just multiply with $r$ instead of $(r\sin\phi\cos\theta)$ to get the radius of the center of mass, then do the same for $\phi$ and $\theta$, and then transform them back to $x, y, z$? This makes sense to me since what I'm basically doing it summing up all the coordinates for each point in the body with each point having different influence on the result. The way I see it, the jacobian is there to account for the fact that the transformation is much more dense around the origin, the $\lambda r$ is there to give denser areas more influence on the final center of mass. I don't really see any reason why I couldn't sum up their coordinates in spherical form. The potential problem I could see here is that if I tried to calculate the center of mass of a whole sphere, the $x,y,z$ would all be 0, but in spherical coordinates I might get unexpected results due to angles not being defined.","['multivariable-calculus', 'integration']"
+756281,Largest determinant of a real $3\times 3$-matrix,"What is the largest determinant of a real  $3\times 3$-matrix with entries from the interval $[-1,1]$ ? A result of John Williamson says that the largest value is equal to $4$, if the entries are just either $1$ or $-1$. Is this still true for all values in $[-1,1]$ ? For complex matrices with entries $|a_{ij}|\le 1$ 
+it is not true. We have $|\det(A)|\le 3\sqrt{3}$, and equality can be attained with a Vandermonde type of matrix containing the third roots of unity.","['matrices', 'determinant']"
+756289,Two definitions of the Weil restriction.,"Let $L/K$ be a galois extension with $G:=\mathrm{Gal}(L/K)$, $X$ a $L$-scheme. We have two definitions of the Weil restriction of $X$ : 1) If the contravariant functor $\mathrm{Res}^L_K(X) : (Sch/K) \rightarrow Set, T \mapsto X(T\times_K L) $ is representable, the corresponding $K$-scheme, again denoted by $\mathrm{Res}^L_K(X)$, is called the Weil restriction of $X$.
+[Néron Models, §7.6 (Bosch, Lütkebohmert, Raynaud)]. 2) Let $W$ be a $K$-scheme with a map $p: W\times_K L \rightarrow X$ such that $W\times_K L$ is isomorphic to $ \prod\limits_{\sigma \in G} X^\sigma$ by the map $(p^\sigma)_{\sigma \in G}$, where $X^\sigma$ denoted the base change by $ \sigma^* : L \rightarrow L$ (the map induced by $\sigma$), then $W$ is called the Weil restriction of $X$. [Adeles and algebraic groups, Weil, §1.3] I would like to show that these two definitions define the same object.
+$\;\;\;\;\;$",['algebraic-geometry']
+756290,Uniqueness of Singular Values,"Given a matrix A, one inductively constructs (and thus proving its very existence) the singular value decomposition as follows: take $ \sigma_{1}=||A||_{2} $, and consider a couple of vectors such that 
+\begin{equation}
+ A\textbf{v}_{1} = \sigma_{1} \textbf{u}_{1}
+ \end{equation}
+Now extend to two orhogonal bases and write down the first step:
+\begin{equation}
+  U_{1}^{T} A V_{1} = S = 
+ \begin{bmatrix}
+ \sigma_{1} & \textbf{0}^{T} \\ 
+ \textbf{0} & A_{1}
+ \end{bmatrix} 
+ \end{equation} 
+Now take $A_{1}$, and repeat inductively, costructing
+\begin{equation}
+U_{2}^{T} A_{1} V_{2} = S_{2} =
+ \begin{bmatrix}
+ \sigma_{2} & \textbf{0}^{T} \\ 
+ \textbf{0} & A_{2}
+ \end{bmatrix} 
+\end{equation}
+which gives rise to second singular value, by selecting $\sigma_{2}=||A_{1}||$. My question is: suppose we choose another couple of extensions to
+  orthogonal bases, call them $\hat{U_{1}},\hat{V_{1}}$. Doing so, we'll
+  obtain another matrix $\hat{A_{1}}$: who guarantees this
+  $\hat{A_{1}}$ has the same norm of ${A_{1}}$, thus giving the same
+  second singular value $\sigma_{2}$? Thanks.","['matrices', 'linear-algebra', 'svd']"
+756332,Topological invariance of chern classes,"Are Chern classes topological invariants?
+To be more precise: Given two complex manifolds $M$ and $N$. Does a homeomophism $f:M\to N$ map Chern classes to Chern classes?","['characteristic-classes', 'algebraic-geometry', 'algebraic-topology']"
+756334,What does $\in$ mean?,"I'm reading a textbook on complex analysis and I've come across notation using this ($\in$) symbol. In the context of ""an argument of $z = x + iy$ is a number $\phi \in \mathbb R$ such that $x = r\cos\phi$ and $y = r\sin\phi$"" what does this symbol mean?","['notation', 'elementary-set-theory']"
+756355,How find this $x^3-5x+10=2^y$,"let $x,y$ is positive integer,and such
+$$x^3-5x+10=2^y$$
+find all $x,y$. since $$x=1\Longrightarrow 1^3-5+10=6$$ can't
+$$x=2,2^3-5\cdot 2+10=8=2^3$$
+so $x=2,y=3$ 
+$$x=3,LHS=27-15+10=22$$
+$$x=4,LHS=64-20+10=54$$
+$$x=5,LHS=125-25+10=110$$
+$$x=6,LHS=216-30+10=236$$
+$$\cdots$$ I find $$(x,y)=(2,3)$$ I only find $x\le 7$ this solution. maybe this have other solution.and This problem is from Mathematical olympiad problems
+Thank you","['diophantine-equations', 'number-theory']"
+756357,Double integral region,"I have made an attempt on a problem from an old exam. I'm not sure if my method is correct or not, as it differs from the teacher's solution and I'm unsure of the theory. Does my solution lack any important",['multivariable-calculus']
+756359,Proving a vector identity,"Let $\vec{a} , \vec{b} , \vec{c} $ three nonzero, non parallel vectors in $\mathbb{R}^3 $ for which $ (\vec{a} \times \vec{b} ) \times \vec{c} =\vec{0} $ . Prove that $\vec{a}\cdot \vec{c} = \vec{b}\cdot \vec{c} $ . My attempt:
+When writing $\vec{a}=(a_1 ,a_2 , a_3 ) $, etc... , and calculating the vector product, I get that the following system must hold:
+$ b_1 (c_3 a_3 +c_2 a_2 ) = a_1 (c_2 b_2 +c_3 b_3 ) $ $ b_2 (c_3 a_3 +c_1 a_1 ) = a_2 (c_3 b_3 +c_1 b_1 ) $ $ b_3 (c_1 a_1 +c_2 a_2 ) = a_3 (c_1 b_1 +c_2 b_2 ) $ I know that after multiplying the first equality by $c_1$ , the second one by $c_2 $ , the third by $c_3 $ , and summing them all up , I get the same left and right hand sides, but I have no idea about what it gives me... Will you please help me ? Thanks in advance","['multivariable-calculus', 'vectors']"
+756364,When does $f_{\omega+1}$ catch up the $G_n$-sequence?,"Which is the minimal number k, so that $f_{\omega+1}(n) > G_n$  is true for all $n\ge k$ ? For the definition of $f_{\omega+1}$ see Wikipedia: fast growing hierarchy $G_n$ is defined by $$G_0 = 4$$ $$G_{n+1} = 3 \uparrow^{G(n)} 3$$ for all $n\ge 0$.
+$\uparrow$ stands for knuth's up-arrow notation I found the following upper bounds : $$f_{\omega+1}(n) > [n,n,1,2] > n \rightarrow n \rightarrow (n-1) \rightarrow 2 >> G(n-2)$$ for $n\ge 3$ [n,n,1,2] means Bowers Arrow notation and $\rightarrow$ stands for conways 
+arrow chain notation. At n = 64, G(n) is catched up. So $k \le 64$","['big-numbers', 'ordinals', 'functions', 'number-theory']"
+756365,Lie algebra of $\mathbb{R}^{n}$,"Until now the only example of lie groups I have seen are subgroups of $GL_n$. Today I had the idea, that also $G=(\mathbb R^n,+)$ must be a lie group ($(\mathbb R^n,+)$ is a group with the differentiable group operation $+$). Is it right that the lie algebra of this lie group is $\mathfrak g = \mathbb R^n$ with the exponential map $\exp : \mathfrak g \rightarrow G: x \mapsto x$? What is the lie bracket of $\mathfrak g$? Is $[x,y]$ always zero, because $+$ is commutative?","['lie-algebras', 'lie-groups', 'differential-geometry']"
+756373,Determinant inequality $ \det(A^2+B^2+(A-B)^2)\ge 3\det(AB-BA) $,"$A$ and $B$ are two $2\times2$ reals matrices. then $$ \det \Big(A^2+B^2+(A-B)^2\Big)\ge 3\det\left(AB-BA\right).$$ Well, it is seems interesting, but it is really hard to get started. Thank you very much!","['linear-algebra', 'inequality', 'determinant']"
+756401,Matrix Help: Combinations,"Given a 10 by 10 matrix filled with 0s and 1s, how many possible outcomes are there? It sounds easy enough as a combination of $2^{100}$. The kicker to the question is there MUST be exactly five 1's in every row and every column. Given this is an extra credit school assignment I understand if no one wishes to help but I would like to gain an understanding of the mathematical process","['matrices', 'combinations']"
+756420,diophantine equation $ |x^2-py^2|=\frac{p-1}{2} $,"Prime $p\equiv3\pmod4$, then  diophantine equation $$ |x^2-py^2|=\frac{p-1}{2} $$ has a  solution  in integers en, $x^2-py^2=-1$ has no solution  in integers. I'd be grateful for any help you are able to provide
+Thanks a lot!","['prime-numbers', 'elementary-number-theory', 'diophantine-equations', 'number-theory']"
+756438,What is $\mathbb R^\omega$?,I have seen  $\mathbb R^\omega$ mentioned in my topology texts but cannot find where $\omega$ is defined. Could someone please tell me what it means in comparison to $\mathbb R^n$?,"['general-topology', 'notation']"
+756489,Showing $\sin{\frac{\pi}{13}} \cdot \sin{\frac{2\pi}{13}} \cdot \sin{\frac{3\pi}{13}} \cdots \sin{\frac{6\pi}{13}} = \frac{\sqrt{13}}{64}$,"I would like to show that $$ \sin{\frac{\pi}{13}} \cdot \sin{\frac{2\pi}{13}} \cdot \sin{\frac{3\pi}{13}} \cdots \sin{\frac{6\pi}{13}} = \frac{\sqrt{13}}{64} $$ I've been working on this for a few days. I've used product-to-sum formulas, writing the sines in their exponential form, etc. When I used the product-to-sum formulas, I'd get a factor of $1/64$, I obtained the same with writing the sines in their exponential form. I'd always get $1/64$ somehow, but never the $\sqrt{13}$. I've come across this: http://mathworld.wolfram.com/TrigonometryAnglesPi13.html , (look at the 10th equation). It says that this comes from one of Newton's formulas and links to something named ""Newton-Girard formulas"", which I cannot understand. :( Thanks in advance.","['trigonometry', 'products', 'polynomials']"
+756510,Convergence of $\sum \frac{\sqrt{a_n}}{n^p}$,"For $a_n \geq 0$, and $\sum a_n$ convergent, show that  $\sum \frac{\sqrt{a_n}}{n^p}$ is also convergent for $p > 1/2$? What bugs me more is why isn't $\sum \sqrt{\frac{a_n}{n}}$ convergent?? Clearly it converges for $p > 1$, and $a_n$ somehow helps out in $p \in (1/2,1)$. Only hints are welcomed Thanks in advance..","['convergence-divergence', 'sequences-and-series', 'real-analysis', 'analysis']"
+756536,Finding the Green's function for $y'' + y' = f(x)$,"I have this ODE:
+$$y'' + y' = f(x)$$ with $y(0)=0$ and $y'(1) = 0$. I'm trying to find the Green's function. I multiply through by $G$, integrate over the domain and then use integration by parts to find the adjoint and I'm left with: $$ \int\limits_0^1 y(G'' - G')dx + G(1)y(1) = \int\limits_0^1 Gfdx$$. (This is after choosing the boundary conditions for G: $G(0) = 0$ and $G'(1) = 0$ so that most of the boundary terms from the integration by parts are zero. And then I would choose $G'' - G' = \delta (x-\xi)$.) My question is, how do I deal with the $G(1)y(1)$ term? I haven't encountered a problem before where all the boundary terms aren't nicely zero. I've also tried this problem using the variation of parameters method and I see that we get an integral condition, I'm guessing this has something to do with it? Thanks in advance",['ordinary-differential-equations']
+756540,Is a probability density function necessarily a $L^2$ function?,"If a nonnegative continuous real valued function $f$ is integrable over $\mathbb{R}$ with
+$$\int_\mathbb{R} f\,\mathrm{d}x = 1,$$ 
+does it hold true
+$$\int_\mathbb{R} f^2 \,\mathrm{d}x<\infty?$$ Motivation: I am wondering if the mean squared error (MSE) is well defined, since we need the target density function to be in $L^2$ space in order to have a finite MSE.","['integration', 'parameter-estimation']"
+756547,Prove that every prime larger than $3$ gives a remainder of $1$ or $5$ if divided by $6$,"Can we prove that every prime larger than $3$ gives a remainder of $1$ or $5$ if
+divided by $6$ and if so, which formulas can be used while proving?","['modular-arithmetic', 'elementary-number-theory', 'discrete-mathematics']"
+756568,How to quickly determine which number is bigger than the other?,"$$\{1,2,66,99\}\cup\{5,7,9\}=\{1,2,5,7,9,66,99\}$$ But if I have for example $$\{0,2,2\sqrt{2},2\sqrt{3}\}\cup\{\sqrt{5},\sqrt{7},2\sqrt{9}\}$$ Should I first find whose element is bigger than the other and only then I can find the answer?","['algebra-precalculus', 'elementary-set-theory']"
+756598,Calculate $\int_0^1 \frac{\ln(1-x+x^2)}{x-x^2}dx$,"I am trying to calculate: $$\int_0^1 \frac{\ln(1-x+x^2)}{x-x^2}dx$$ I am not looking for an answer but simply a nudge in the right direction. A strategy, just something that would get me started. So, after doing the Taylor Expansion on the $\ln(1-x+x^2)$ ig to the following: Let $x=x-x^2$ then $\ln(1-x)$ then,
+\begin{align*}
+=&-x-\frac{x^2}{2}-\frac{x^3}{3}-\frac{x^4}{4}-...\\
+=&-(x-x^2)-\frac{(x-x^2)^2}{2}-...\\
+=&-x(1-x)+\frac{x^2}{2}(1-x)^2-\frac{x^3}{3}(1-x)^3\\
+\text{thus the pattern is:}\\
+=&\frac{x^n(1-x)^n}{n}
+\end{align*} 
+Am I right? Then our Integral would be: $$\sum_{n=0}^{\infty} \frac{1}{n+1} \int_0^1 x^n(1-x)^n$$ Am I on the right track? Suggestions, tips, comments? $\underline{NEW EDIT:}$ SO after integrating the function I got the following after a couple of iterations:
+\begin{align*}
+\frac{n(n-1)...1}{(n+1)(n+2)...(2n)}\int_0^1 x^{2n} dx
+\end{align*}
+This shows a pattern:
+\begin{align*}
+=&\frac{(n!)^2}{(2n)!} (\frac{1}{2n+1})\\
+=& \frac{(n!)^2}{(2n+1)!}
+\end{align*}
+So my question is, what to do from here. I have done all this but still have no clue how to actually solve the integral. Can somebody shed some light on this!
+Thanks","['definite-integrals', 'calculus', 'integration', 'real-analysis']"
+756602,Does bounded variation imply boundedness,"Using the standard definition 
+$$||f||_{TV} := \sup_{x_0<\cdots<x_n}\sum_{i=1}^{n} |f(x_i) - f(x_{i-1})|.$$ 1.When the domain is a bounded interval $[a,b]$, the statement holds. 2.When the domain is $\mathbb{R}$ and the function is monotone, the statement holds both ways (if and only if). But what about in general? My guess is true, and here is my arguement: If $||f||_{TV} < \infty$, then $f$ only has jump discontinuities, so we can bound $|f|\leq g$ where $g$ is monotone. By this construction, $||g||_{TV}\leq ||f||_{TV}<\infty$. By (2), we know $g$ is bounded, thus $f$ is bounded. Edit: I forgot, I probably need to impose a limit behavior at $\pm \infty$ for the function $g$. would $\limsup_{x\rightarrow \infty} g(x) - |f(x)| = 0$ be enough? is this correct and thank you for your help!","['bounded-variation', 'real-analysis']"
+756613,Tangent planes perpendicular at each point of intersection,"Find the set of all points $(a,b,c)$ in 3-space for which the two spheres $(x-a)^2+(y-b)^2+(z-c)^2=1$ and $x^2+y^2+z^2=1$ intersect orthogonally.( Their tangent planes should be perpendicular at each point of intersection.) If we consider the equations of the two spheres as level surfaces and take the gradients the we get - $$\nabla f_1 = 2(x-a)i+2(y-b)j+2(z-c)k;$$ $$\nabla f_2 = 2xi+2yj+2zk.$$ Since the two spheres intersect orthogonally at $(x,y,z)$, we must have $\nabla f_1 \cdot \nabla f_2=0$. This gives $$x(x-a)+y(y-a)+z(z-a)=0.$$ Can anyone suggest how to proceed from here  to obtain the set of points (a,b,c)?","['multivariable-calculus', 'derivatives']"
+756634,The difference between norm and modulus,"I'd like to know the difference between norm of a vector, ||v|| and the modulus of a vector, |v|","['vector-spaces', 'linear-algebra']"
+756675,How to show that this limit is tend to zero?,"How to show that this limit is tend to zero?
+$$\lim_{n\to\infty}\frac{\sqrt{n!}}{(1+\sqrt{1})(1+\sqrt{2})\cdots(1+\sqrt{n})}=0$$
+Thank you.","['calculus', 'limits']"
+756679,Least squares / residual sum of squares in closed form,"In finding the Residual Sum of Squares (RSS) We have: \begin{equation}
+\hat{Y} = X^T\hat{\beta}
+\end{equation} where the parameter $\hat{\beta}$ will be used in estimating the output value of input vector $X^T$ as $\hat{Y}$ \begin{equation}
+RSS(\beta) = \sum_{i=1}^n (y_i - x_i^T\beta)^2
+\end{equation} which in matrix form would be \begin{equation}
+RSS(\beta) = (y - X \beta)^T (y - X \beta)
+\end{equation} differentiating w.r.t $\beta$ we get \begin{equation}
+X^T(y - X\beta) = 0
+\end{equation} My question is how is the last step done? How did the derivative get the last equation?","['matrices', 'least-squares']"
+756681,"Are ""most"" continuous functions also differentiable?","Let $A$ be a nonempty open subset of $\mathbb{R}$. Consider a function $f : A \rightarrow \mathbb{R}$. Given that $f$ is continuous, what is the probability that it is differentiable? I suspect it is $0$.","['measure-theory', 'continuity', 'probability', 'derivatives']"
+756683,cardinality with finite sets,"$A,B,C$ are finite sets. Suppose $A\subseteq B \subseteq C$ and $\#A=\#C$. Prove that $\#A=\#B$ and $\#B=\#C$. Should I prove this by showing that there exist an element in $A$ that exist in $B$ and $C$? Or could I use the relation of transitivity to prove that $\#A=\#B$ and $\#B=\#C$ since we can assume $\#A=\#C$ and go with backwards proof?","['cardinals', 'elementary-set-theory']"
+756722,Inequality: $\tan(x) > 1$,"So far, I've not come very... far. It ends up with me trying to solve it more intuitively than mathematically. I figured, first I'll find the place of equality, which is at $x = \arctan 1 = \frac{\pi}{4} + \pi n$. Then, it will be larger than 1 until either sin(x) or cos(x) changes sign, but I can't find a way to express this consistently over a larger interval.","['trigonometry', 'inequality']"
+756797,How do you find the automorphism?,"How exactly would you find all the automorphism of something like $Z_8$ or $U(8)$? I read that there are $4$ automorphisms of $Z_8$, but how did they come about it? Please explain this as if talking to a beginner. Thanks","['automorphism-group', 'abstract-algebra']"
+756802,Find the probability that the difference between the sample mean and the true population mean wll not exceed 0.5 inch,"an anthropologist wishes to estimate the average height of men for a certain race of people. if the population standard deviation is assumed to be 2.5 inches and if she randomly samples 100 mean, find the probability that the difference between the sample mean and the true population mean will not exceed 0.5 inch.",['statistics']
+756816,Proof by Direct Method,"If $(3n+2)$ is odd then, prove $n$ is odd. $$3n+2 = (2n+1)+(n+1)$$ We already have a fact that $2n+1$ is always odd. So, for $3n+2$ to be odd, $n+1$ should be even (For $x+y$ to be odd then either $x$ or $y$ should be odd not both) As, $n+1$ is even, $n$ is always odd. I should the solution to our teacher and he said the logic is wrong but denied to point our the specifics. Can you please help me with what I did wrong?",['discrete-mathematics']
+756834,"What is the integral $\int x^t/\Gamma(1+t) \, dt$? (In general: relation between series and integrals)","(The question arises from playing with translating series into integrals) I wanted to see, what it means to have a ""continuous"" relative for powerseries and other series; the most simple one perhaps
+$$ \begin{array} {} f_1(x) = \sum _{k=0}^\infty x^k = {1 \over 1-x} &\to & g_1(x)= \int_0^\infty x^t \,dt = - { 1\over \log(x) } \end{array}$$
+I couldn't get this 
+$$ \begin{array} {} f_2(x)=\sum _{k=0}^\infty {x^k \over k!} = \exp(x) &\to& g_2(x)=\int_0^\infty { x^t\over \Gamma(1+t) } \,dt =\text{ ???} \end{array}$$ by, for instance, Wolfram alpha... and I'd like to proceed to some more general
+$$ \begin{array} {} f_\varphi(x)=\sum _{k=0}^\infty \varphi(k) x^k   &\to& g_\varphi(x)=\int_0^\infty \varphi(t) x^t \,dt =\text{ ???} \end{array}$$ where $\varphi(k)$ is some meaningful function producing common sets of coefficients for the power series. Playing a bit with numerical evaluations for $f_2(x),g_2(x)$ so far did not uncover anything obvious, but I am interested, whether there are some relations known; for instance whether there are relations between $g_2(x) \cdot g_2(y)$ perhaps  analoguously to $ f_2(x) \cdot f_2(y) = f_2(x+y)$ or the like. Is there something known about it? Is there a possibly a list of sums/integrals-relations done elsewhere? In general, I'd like to get more intuition about this; it reminds me that I should possibly re-read in the explanations for the Euler/MacLaurin-summation formula where the ""dance between discrete and continuous"" (as it is a title of a nice article about the work of Delabaere on Euler's divergent series) has a similar relevance. (But this is possibly too much for this Q&A-site ...)","['elementary-number-theory', 'calculus', 'recreational-mathematics']"
+756848,Integral $I=\int_0^1\frac{\ln x}{x^n-1}dx$,"Hi I am trying to obtain a closed form for$$
+I_n=\int_0^1\frac{\ln x}{x^n-1}dx, \quad n\geq 1.
+$$
+This integral is quite nice and generates many other known closed form results such as 
+$$
+\int_0^1\frac{\ln x}{x^2-1} dx=\frac{\pi^2}{8}, \quad \int_0^1\frac{\ln x}{x-1} dx=\frac{\pi^2}{6}.
+$$
+In these cases I use residue methods, but am unsure how to generalize as in this case of $I_n$. Thank you","['calculus', 'integration', 'definite-integrals', 'complex-analysis', 'contour-integration']"
+756880,Integral $\int_0^{\pi/2} \log^n (\sin t)\log^p (\cos t) dt$,"I am looking for a closed form expression for the logarithmic trigonometric  integral
+$$
+I_{n,p}=\int_0^{\pi/2} \log^n (\sin t)\log^p (\cos t) dt \quad (n\geq 0, p\geq 0).
+$$
+Closed form expression does exist except I cannot seem to find it when looking through my collection.  This integral comes from this paper which was quite a big hit in the early 80's.   There are many other excellent integrals you can find in here!  I am not sure how to approach this integral due to the powers of $n,p$. Thanks","['calculus', 'integration', 'definite-integrals', 'real-analysis', 'complex-analysis']"
+756886,What is wrong with my contradiction?,"Spivak says the following function does not have an integral: $$ 
+   F(x) = \left\{
+     \begin{array}{lr}
+       1 & : x \in \mathbb{Q}\\
+       0 & : x \notin \mathbb{Q}
+     \end{array}
+   \right.
+$$ It makes sense, for any partition $P$ there will be a $t_i$ and $t_{i+1}$ where there will exist a rational and an irrational between the two, hence $M_{i}$ and $m_i$ (the ""supremum partition"" and ""infimum partition"") are always going to to be 1 and 0 respectively. Hence if you take the sum of these different partitions and subtract them from each other (as Spivak writes: $U(F, P) - L(F, P)$) you will always get a $b-a$ where $b$ and $a$ are the upper and lower bounds of the integral respectively. Therefore, I can define a $\epsilon < a - b$ and I will never be able to make a partition that results in $U(F, P) - L(F, P) < \epsilon$ hence it fails. It makes sense, but my alternative reasoning comes to the complete opposite conclusion. First of all, Spivak proves the following two properties: Let $f$ be a function where for every point $x$, $f(x) = 0$ except for exactly one point $a$ where $f(a) = 1$ then $f$ is integrable. Let this kind of function be referred to as a ""point function"". Let $f$ and $g$ be 2 integrable functions, then $f + g$ is integrable. After that I decide to generalize the second theorem: Lemma: Let $f, g, h \ldots n$ all be integrable function with signatures of $\mathbb{R} \rightarrow \mathbb{R}$, then $f + g + h + \ldots + n$ is integrable. Proof: Base case: $f + g$ is integrable by the theorem above, now assume it holds true for $f + g + \ldots + m$ then to show it is true, it must work for $f + g + \ldots + m + n$. $$ f + g + \ldots + m + n $$ Let the integrable function $j$ denote $f + g + \ldots + m$ then we have: $$ j + n $$ Since $j$ and $n$ are both integrable functions, by Theorem 2 we have shown this works for an arbitrary amount of functions. Now, let $A$ be the set of all point functions with a rational number. Then: $\sum{A}$ is integrable since we know that all the functions in $A$ are integrable and by the above lemma the some of them all must result in an integrable function. And since: $$ \sum{A} = F $$ I have shown $F$ is integrable, which it is clearly not. (Also, using my logic you can argue the same for any arbitrary function.) Can someone help me understand where I went wrong?",['calculus']
+756895,Example of a sequence with more than one limit.,"I have heard of the idea of a sequence converging to more than one limit, but I cannot imagine how it would work. Could someone give me an example of such a case, and explain how it works?","['sequences-and-series', 'limits']"
+756926,What are $a$ and $b$ when the zeropoints of $f(z)=(a+bi)z+2-i=0$ is at $1-i$?,$f(z)=(a+bi)z+2-i$. What are the values of a and b when $1-i$ is the zeropoint of f? $f(z)=(a+bi)z+2-i=0$ $(a+bi)(1-i)+2-i=0$ $a+bi-ai-bi^2+2-i = 0$ $(a+b+2)+(-a+b-1)i=0$ I don't know what the next steps are.,"['multivariable-calculus', 'complex-numbers', 'algebra-precalculus']"
+756931,Explanation of recursive function,"Given is a function $f(n)$ with: $f(0) = 0$ $f(1) = 1$ $f(n) = 3f(n-1) + 2f(n-2)$ $\forall n≥2$ I was wondering if there's also a non-recursive way to describe the same function. WolframAlpha tells me there is one: $$g(n) = \frac{(\frac{1}{2}(3 + \sqrt{17}))^n - (\frac{1}{2}(3 - \sqrt{17}))^n}{\sqrt{17}}$$ However, I have absolutely no clue how to determine this function, especially the $\sqrt{17}$ makes no sense to me. Could anyone maybe explain why $f(n)$ and $g(n)$ are the same?","['recurrence-relations', 'discrete-mathematics', 'functions']"
+756946,"Given the factors of $N$, is there a method for computing the factors of $N-1$ or $N+1$?","Given the prime factorization of $N$, is there a known method for computing the prime factorization of $N-1$ or $N+1$, which is more efficient than the best known method for doing that without it? I assume that the factors of $N$ can be ""skipped"" while searching for the factors of $N-1$ or $N+1$, but I don't see how it can improve the general case performance (i.e., for any given value of $N$). UPDATE: This question can also be stated as follows: is there a known method for computing the prime factorization of $N$, given the prime factorization of either one of its neighbors (which is more efficient than the best known method for doing that without it)?","['prime-factorization', 'number-theory']"
+756954,Continuity in $\mathbb R^n$.,"we just got started with this topic today, and I am confused.
+Let $f:\Bbb R^2 \to \Bbb R $ with $$f(x,y) =\begin{cases}   
+y\sin(x)/x &\text{if } x \ne 0\\  
+0 &\text{else}
+\end{cases}$$ Now, for $x \not= 0$ it is continuous, because its components are.
+But what do I have to do to show (dis)continuity?
+I know I have to approach a point (I guess $(0,y)$) with every curve possible.
+What I have tried so far, but believe to be false:
+I approximate $y\cdot\sin(x)/x$ as follows:
+Let $x$ be $\not= 0$. $|f(x,y)| = |y|\cdot|\sin(x)|/|x| \le   |y|\cdot|x|/|x| = |y|  \to |y| \text{ for } (x,y) \to (0,y)$ I don't quite know what I can tell from this, because of the less than or equal sign. If somebody could help me I'd appreciate it a lot! Thanks.","['multivariable-calculus', 'continuity', 'limits']"
+756980,Is a subset an element of a set?,Given these two sets: A = {c} B = {c} Is B $\in$ A? Or is above wrong and c $\in$ A and B $\subseteq $ A?,['elementary-set-theory']
+756987,How to get an eigenvector of a $3\times 3$ matrix that has first column and a row of zeros,"I have the following matrix
+$$
+\begin{bmatrix}
+1& 0& 0\\
+0& 1& 1\\
+0& 1& 1
+\end{bmatrix}
+$$ First I got the eigenvalues which are $0$, $1$, $2$. I tried to get the eigenvectors associated with the above eigenvalues 
+but I cannot in case of the eigenvalue $1$ as I got the following matrix
+$$
+\begin{bmatrix}
+    0& 0& 0\\
+    0& 0& 1\\
+    0& 1& 0
+\end{bmatrix}
+$$
+So, how can I get an eigenvector for this matrix?","['matrices', 'eigenvalues-eigenvectors']"
+757007,Best Book For Differential Equations?,"I know this is a subjective question, but  I need some opinions on a very good book for learning differential equations. Ideally it should have a variety of problems with worked solutions and be easy to read. Thanks","['big-list', 'ordinary-differential-equations', 'book-recommendation', 'reference-request']"
+757035,Need help solving exponential equation $2\mathrm{e}^x=5-\mathrm{e}^{-x}$,"I need help solving $2\mathrm{e}^x=5-\mathrm{e}^{-x}$. I've tried many ways of solving it but I keep getting the wrong answer. By the way, my book says the solutions are $x=-1.518$ and $x=0.825$ Thanks!",['algebra-precalculus']
+757043,How to find I(t)?,"I'm working with a SIS model for diseases. Where S stands for susceptibles, and I stands for infected. I have a situation that is modeled by the system:
+$$S'(t)=\frac{dS}{dt}=-\beta SI-\lambda S$$
+$$I'(t)=\frac{dI}{dt}=\beta SI-\alpha I$$
+Show that both S(t) and I(t) approach zero as $t \rightarrow \infty$ K is the unit that population size is measured in so we can say that $S=K-I$ and that $I=K-S$. These equations look like separable equations to me. Once I find S(t) and I(t) I can easily find the limit.",['ordinary-differential-equations']
+757049,"Proving that (0,1) and [0,1] are numerically equivalent.","as the title suggests, I need help proving that the cardinality of $(0,1)$ and $[0,1]$ are the same. Here is my work: $f:[0,1] \rightarrow (0,1)$ Let $n\in N$ Let $A=\{\frac{1}{2}, \frac{1}{3}, \frac{1}{4}....\}\cup \{0\}$ On $[0,1]\in A: f(x)=x$ On $A: f(0)=\frac{1}{3}$ $f(1)=\frac{1}{2}$ $f(\frac{1}{n})=\frac{1}{n+2}, n>2$ Now I will prove that $f$ is a bijective function.
+Let $f(n)=f(m)$ for $n,m \in N$ and $n,m>2$. Then $\frac{1}{n+2}=\frac{1}{m+2}$. We multiply both sides of the equation by $(n+2)(m+2)$ and obtain $m+2=n+2 \rightarrow m=n$. Thus $f$ is injective. From here on out, I am kind of shakey. I know the gist of this proof, but I don't know how to set up the sequencing correctly. For instance, I know that I need to map $x_1$ to $0$ and $x_2$ to $1$ and $x_{n}$ to $x_{n+2}$, but I am confused on how to do so.","['cardinals', 'elementary-set-theory']"
+757053,Separability of functions with compact support,"Let $X$ be a locally compact metric space which is also $\sigma$-compact. Let $C_{c}(X)$ be the continuous functions on $f$ from $X$ to $\mathbb{R}$ with compact support. Is $C_{c}(X)$ separable? My work so far: If $X$ is a compact metric space, then by Urysohn's Lemma and Stone-Weierstrass, the continuous functions $C(X)$ on $X$ are separable and hence the result follows as $C_{c}(X) = C(X)$. Suppose $X = \mathbb{R}$. Write $\mathbb{R} = \bigcup_{N  = 1}^{\infty}[-N, N]$. Let $f \in C_{c}(\mathbb{R})$. Then $f$ is supported on a compact set $K \subset [-N, N]$ for some $N$. Thus $C_{c}(\mathbb{R}) =\bigcup_{N = 1}^{\infty}C([-N, N])$. Each $C([-N, N])$ has a countable dense subset $\{\psi_{N, n}\}_{n = 1}^{\infty}$ and so $\bigcup_{N, n = 1}^{\infty}\{\psi_{N, n}\}$ is a countable dense subset of $C_{c}(\mathbb{R})$. In the general case, $X = \bigcup_{i = 1}^{\infty}X_{i}$ where each $X_{i}$ is compact and $X_{1} \subset X_{2} \subset \cdots$. Let $f \in C_{c}(X)$. Then $f$ is supported on a compact set $K = \bigcup_{i = 1}^{\infty}K \cap X_{i}$. Is it still true that $C_{c}(X) = \bigcup_{i = 1}^{\infty}C(X_{i})$?","['measure-theory', 'functional-analysis', 'real-analysis', 'analysis']"
+757059,Evaluate $\int \frac{\sqrt{x^2-1}}{x} \mathrm{d}x$,"My try, using $x = \sec(u)$ substitution: $$
+\begin{eqnarray}
+\int \frac{\sqrt{x^2-1}}{x} \mathrm{d}x &=& \int \frac{\sqrt{\sec^2(u) - 1}}{\sec(u)}\tan(u)\sec(u) \mathrm{d}u \\
+&=& \int \tan^2(u) \mathrm{d}u \\
+&=& \tan(u) - u + C \\
+&=& \tan(arcsec(x)) - arcsec(x) + C
+\end{eqnarray}
+$$ However, according to Wolfram Alpha , the answer should be:
+$$
+\int \frac{\sqrt{x^2-1}}{x} \mathrm{d}x = \sqrt{x^2-1}+\arctan \left( \frac{1}{\sqrt{x^2-1}} \right)+C
+$$
+When I derive this last answer I don't get back the integrand, but rather:
+$$
+\frac{\mathrm d}{\mathrm d x}\left(\sqrt{x^2-1}+\arctan \left( \frac{1}{\sqrt{x^2-1}} \right)+C\right) = \frac{x}{\sqrt{x^2-1}}- \frac{x}{(x^2-1)^{3/2}\left(1+\frac{1}{x^2-1}\right)}
+$$ I don't know how to simplify this expression more. Also, I am unable to check whether my answer is correct because I don't know how to find the derivative of $arcsec(x)$. Can someone check my calculations and tell me where I've done something wrong and how one can simplify the last expression to get back the integrand?","['integration', 'indefinite-integrals']"
+757091,Alternative definition of hyperbolic cosine without relying on exponential function,"Ordinary trigonometric functions are defined independently of exponential function, and then shown to be related to it by Euler's formula. Can one define hyperbolic cosine so that the formula
+$$\cosh{x}=\dfrac{e^x+e^{-x}}{2}$$
+becomes something to be proven ?","['trigonometry', 'exponential-function', 'hyperbolic-functions', 'definition']"
+757135,integral roots for $f(x) = 41$ if $f(x) = 37$ has 5 distinct integral roots.,"Given a polynomial $f(x)$ with integral coefficients and $f(x) = 37$ has 5 distinct integral roots, find the number of integral roots of $f(x) = 41$? My Approach: Say $f(x) = (x-r_1)(x-r_2)(x-r_3)(x-r_4)(x-r_5)g(x) + 37$, where $r_i$ are the distinct integers. Now for $f(x) = 41$ we have $(x-r_1)(x-r_2)(x-r_3)(x-r_4)(x-r_5)g(x) = 4$, so the factors can be $\pm 1, \pm2$ or $\pm 4$. Given $r_i$ are distinct at most two of them will give $\pm1$, then there can be both of $\pm 2$ or one of $\pm 4$. This is where I get lost, since even if I use all of $\pm1, \pm2$, I will be still be left with one $x-r_i$ factor. What about that? Does it matter that 37 and 41 are primes, or is it just a coincidence? Thanks in advance.",['number-theory']
+757144,Help solving an ODE,"This is an example in my book.  It is for the following system: \begin{align*}
+x'&=y+x(1-x^2-y^2)\\
+y'&=-x+y(1-x^2-y^2)
+\end{align*} So using polar coordinates we get the following system
+\begin{align*}
+r'&=r(1-r^2)\\
+\theta'&=-1,
+\end{align*}
+and the solutions are 
+$$r(t)=(1+ce^{-2t})^{\frac{-1}{2}}, \,\,\,\,\,\,\theta(t)=-(t-\alpha).$$ So my question is how did they solve $r'$.  It's been a while since I've take differential equations and I need help how to solve it.","['polar-coordinates', 'ordinary-differential-equations']"
+757149,Expected number of rolls when repeatedly rolling an $n$-sided die,"Suppose I roll an $n$-sided die once. Now you repeatedly roll the die until you roll a number at least as large as I rolled. What is the expected number of rolls
+you have to make? I know the answer to this problem, but I'm curious about possible solutions people might post.","['dice', 'discrete-mathematics', 'probability', 'expectation']"
+757160,"Independently analytic and continuous, but not jointly continuous?","In Bak/Newman's ""Complex Analysis"", they write: 17.9 Theorem Suppose $\phi(z,t)$ is a continuous function of $t$, with $b \ge t \ge a$, for fixed $z$ and an analytic function of $z \in D$ for fixed $t$. Then $$
+f(z) = \int _a ^b \phi(z,t) \ dt
+$$
+  is analytic in $D$, and ...etc... The proof starts off: Since $f$ is a continuous function of $z$, according to Morera's Theorem we need only prove that ...etc... I cannot seem to force $f$ to be continuous without requiring $\phi$ to be continuous in both variables together. I feel like it might be that analytic in the first variable and independently continuous in the second does not imply jointly continuous. Question: What, if there is one, is an example which is analytic in the first, continuous in the second, but not jointly continuous? Any reasonable $\text{(domain) }D \times [a,b]$ is OK. EDIT: Theorem 5.4 on p. 56 of Stein/Shakarchi's book here seems to be pretty much the same, except with the joint continuity assumption. (Their proof is neat, too, because it avoids blatantly using Fubini's theorem). Thank you!",['complex-analysis']
+757162,Show that $f(\bar A) \subset \overline{f(A)}$.,"Let $X$ be a metric space, and $Y\subset X$ a subset. A point $x\in X$ is adherent to $Y$ if $B(x;r) \cap Y \neq \emptyset$ $\forall r > 0.$ The closure of $Y$ is then defined as $\bar Y := \{x\in X \mid x \text{ is adherent to } Y\}$. I am trying to prove the next statement. Is there any mistake or error? $f$ is a homeomorphism. Show that $f(\bar A) \subset \overline{f(A)}$. Since $f$ is continuous $x\in \bar A \implies f(x)\in f(\bar A)$. (Is this right? or trivial?) I want to show $f(x)\in f(\bar A) \implies f(x)\in \overline{f(A)}$. Consider any open ball $V = B(f(x);r)$. Since $f$ is continuous, $f^{-1}(V)$ is an open subset of $X$ and $x\in f^{-1}(V)$. Because $x\in \bar A$, there exists an element in the intersection of $A$ and any open set. i.e. $f^{-1}(V)\cap A \neq \emptyset$. Take $y\in f^{-1}(V)\cap A$, then
+ $$ f(y)\in f(f^{-1}(V)\cap A) \subset V\cap f(A).$$
+ From this, we see that $V\cap f(A)\neq \emptyset$ for any open ball $V=B(f(x);r)$. By the definition of closure, $f(x)\in \overline{f(A)}$.","['general-topology', 'metric-spaces']"
+757181,Laplace's equation-separation of variables,"I am looking at the $2$-D Laplace's equation 
+$$\nabla^2u=u_{xx}+u_{yy}=0$$
+$$u(x,0)=f(x), x \in (0,a)$$
+$$u(x,b)=0, x \in (0, a)$$
+$$u(0,y)=u(a,y)=0, y \in (0,b)$$
+The solution is in the form $u(x,y)=X(x)Y(y)$. By using the separation of variables, we get: $$(1):\left\{\begin{matrix}
+X''+\lambda X=0, 0<x<a\\ 
+X(0)=X(a)=0
+\end{matrix}\right.$$ $$(2):\left\{\begin{matrix}
+Y''-\lambda Y=0, 0<y<b\\ 
+Y(b)=0
+\end{matrix}\right.$$ 
+$$u(x,0)=X(x)Y(0)=f(x):(3)$$
+$$$$
+From $(1)$ we get $$\lambda_n=(\frac{n \pi}{a})^2$$
+$$$$
+From $(2)$ we get:
+$$Y(y)=C_ne^{-\frac{n \pi}{a}y}+D_ne^{\frac{n \pi}{a}y}$$ $\sinh{(x)}=\frac{e^x-e^{-x}}{2}, \cosh{(x)}=\frac{e^x+e^{-x}}{2}$ Since $Y(b)=0$: $$Y(y)=C_n \cosh{(\frac{n \pi}{a}(b-y))}+D_n \sinh{(\frac{n \pi}{a}(y-b))}$$ Could you explain to me how we got to the last relation? I got stuck right now. :/","['harmonic-functions', 'ordinary-differential-equations', 'hyperbolic-functions']"
+757218,Equivalence Class.,"Let $R$ be the relation of congruence mod 4 on $\mathbb{Z}$ : $aRb \iff a - b = 4k$ , for some $k \in \mathbb{Z}$ What integers are in the equivalence class of 31?
+How many distinct equivalence classes are there? What are they? I don't understand how to find equivalence classes so I don't know where to begin.","['equivalence-relations', 'elementary-set-theory']"
+757248,Ordinary Differentiation $t^2y''=t(t+2)y'-(t+2)y$,"$$
+t^2y''=t(t+2)y'-(t+2)y
+$$ The question is how to find the Wronskian without knowing the solutions of this equation? I uploaded the origin question below, which is from a sample test. Anyone could help me? Thanks!",['ordinary-differential-equations']
+757269,How find this limit $\lim_{n\to \infty} \left(\frac{(2n)!}{2^n\cdot n!}\right)^{\frac{1}{n}}\cdot \cdots$,"Find this limit
+$$\lim_{n\to\infty}\left(\dfrac{(2n)!}{2^n\cdot n!}\right)^{\frac{1}{n}}\left(\tan{\left(\dfrac{\pi\sqrt[n+1]{(n+1)!}}{4\sqrt[n]{n!}}\right)}-1\right)$$ I know we must use this 
+$$n!\approx\left(\dfrac{n}{e}\right)^{n}\sqrt{2n\pi}$$
+so
+$$\dfrac{\sqrt[n+1]{(n+1)!}}{\sqrt[n]{n!}}\approx\dfrac{n+1}{n}\dfrac{\sqrt[n+1]{2(n+1)\pi}}{\sqrt[n]{n!}}\to 1,n\to \infty$$
+But I can't .Thank you",['limits']
+757313,Proving that $f$ is a bijection from $N$x$N$ to $N$.,"I am having trouble with the following problem: $f: N\times N\rightarrow N$ and $f(i,j)=2^{i-1}(2j-1)$. Prove that $f$ is a bijection thus $N\times N$ and $N$ are numerically equivalent. Work: I am told that Euclid's Lemma will be useful to proving injection and also that for any positive integer $n$, $n$ is a product of prime numbers. For injection, I set $f(a,b)=f(x,y)\rightarrow 2^{a-1}(2b-1)=2^{x-1}(2y-1)$. 
+Then I distributed across to get $2^ab-2^{a-1}=2^xy-2^{x-1} \rightarrow 2^ab-2^xy=2^{a-1}-2^{x-1} \rightarrow 2(2^{a-1}b-2^{x-1}y)=2^{a-1}-2^{x-1}$. From here, I am unsure how to apply Euclid's Lemma to arrive at the injection result. 
+I am even more unsure how to prove surjection.","['discrete-mathematics', 'functions']"
+757320,Prove determinant of $n \times n$ matrix is $(a+(n-1)b)(a-b)^{n-1}$? [duplicate],"This question already has answers here : Determinant of a matrix with diagonal entries $a$ and off-diagonal entries $b$ [duplicate] (9 answers) Closed 10 years ago . Prove $\det(A)$ is $(a+(n-1)b)(a-b)^{n-1}$ where $A$ is $n \times n$ matrix with $a$'s on diagonal and all other elements $b$, off diagonal.","['matrices', 'linear-algebra', 'proof-writing', 'determinant']"
+757328,Solving a trigonometric equation,"Can someone help me to solve this problem? Find all number pairs $x,y$ that satisfy the equation: $$\tan^4(x) + \tan^4(y) + 2\cot^2(x)\cot^2(y) = 3 + \sin^2(x+y)$$",['trigonometry']
+757330,How prove this integral limit $=f(\frac{1}{2})$,"Let $f$ be a continuous function on the unit interval $[0,1]$. Show that
+$$\lim_{n\to\infty}\int_{0}^{1}\cdots\int_0^1\int_{0}^{1}f\left(\dfrac{x_{1}+x_{2}+\cdots+x_{n}}{n}\right)dx_{1}dx_{2}\cdots dx_{n}=f\left(\dfrac{1}{2}\right)$$ This problem is from Selected Problems in Real Analysis . But the author doesn't include a solution. Maybe there is a method for this sort of problem? Maybe we can use this:
+$$\int_0^1\cdots\int_{0}^{1}\int_{0}^{1}\dfrac{x_{1}+x_{2}+\cdots+x_{n}}{n}dx_{1}dx_{2}\cdots dx_{n}=\dfrac{1}{2}?$$ I also found a similar problem in this question .","['multivariable-calculus', 'real-analysis', 'limits']"
+757338,Joint distribution probabilities,"I have a question that is similar to the following(made up here):
+The construction of a tower of cards is done is two stages, procrastination and the actual building. The time in minutes needed to complete each stage are independent discrete random variables, X and Y, with probability functions; $f_X(x) = \frac{7}{10}$ if $ x = 2, \frac{3}{10}$ if $x = 3$, and $0$ otherwise.
+$f_Y(x) = \frac{2}{5}$ if $x = 3, \frac{2}{5}$ if $x = 4, \frac{1}{5}$ if $x = 5$ $0$ otherwise What is the probability the task took more than six minutes to complete? Now I haven't dealt with joint distribution problems before. But I can see 3 scenarios that yield more than 6 minutes of time elapsed. $f_X(2) $ then $f_Y(5)$  or $f_X(3)$ then $f_Y(4)$ or $f_X(3)$ then $f_Y(5)$ Can I simply then take $(\frac{7}{10}*\frac{1}{5} + \frac{3}{10}*\frac{2}{5} + \frac{3}{10}*\frac{1}{5})$? This seems right at $.32$. Furthermore if I do the other three scenarios I get a total probability of one, which increases my confidence with it once again. Any hints or confirmation? Thank you for your time","['statistics', 'probability-distributions', 'probability']"
+757351,"Exact meaning of ""Not every matrix is a tensor"".","I've recently begun reading about tensors and am trying to understand the second order variety in the context of euclidean $\mathbb{R}^n$ with orthonormal basis {$e_1, e_2,\ldots, e_n$}.  This seems like a simple starting point that leaves topics like covariance and contravariance for another day.  My question is w.r.t. this limited context. Concerning the relationship between n$\times n$ matrices and second order tensors, I've read that ""not every matrix is a tensor"" and I'm trying to find a concise statement of which n$\times n$ matrices are second order tensors. Is it true that every n$\times n$ matrix $M$ is a tensor if and only if: $$M_{ij}=S_{ij}e_i\otimes e_j$$ and $S_{ij} \in \mathbb{R}$ If ""yes"", is it true that there aren't any other constraints on $S$ in order for $M$ to be considered a tensor?","['matrices', 'tensors']"

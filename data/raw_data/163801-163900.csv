@@ -1,0 +1,627 @@
+question_id,title,body,tags
+2850025,"Building neighborhoods around arbitrary real numbers that will contain ""minimal"" number of elements from the sequence $a_n=n\sin \frac{\pi n}{4}$","Suppose we are given the sequence $\{a_n\}_{n=1}^\infty$ defined by the rule $\forall n\in\mathbb{N}, a_n=n\sin \frac{\pi n}{4}$. We can show that this is equivalent to: $\forall n\in\mathbb{N},a_n= \begin{cases} 
+      \frac{n}{\sqrt{2}} & n \equiv 1\pmod{8} \lor n \equiv 3\pmod{8} \\
+      n & n \equiv 2\pmod{8} \\
+      0 & n \equiv 0\pmod{8}\lor n \equiv 4\pmod{8} \\
+      -\frac{n}{\sqrt{2}} & n \equiv 5\pmod{8} \lor n \equiv 7\pmod{8} \\
+      -n & n\equiv 6 \pmod{8}
+   \end{cases}
+$ Now the problem is to prove\show that around each number we take $L\in\mathbb{R}$ we can create\build a neighborhood such that: If $L$ does not equal to any element in the sequence $\{a_n\}_{n=1}^\infty$, Then we can build a neighborhood of $L$ such that no other element from the sequence will reside in it. If $L$ equals some element in the sequence $\{a_n\}_{n=1}^\infty$, Then , If $L$ equals zero (as zero is an element in the sequence), Then we can build a neighborhood of $L$ that will contain an infinite number of elements from the sequence, And If $L$ does not equals zero, Then we can build a neighborhood of $L$ that will contain exactly one element from the sequence. Translating the problem into logic/set-theory notation we get that we have to show: If $\forall n\in\mathbb{N}, L\neq a_n$, Then $\exists \epsilon\in (0,\infty), |\{n\in\mathbb{N}|a_n\in N_\epsilon(L)\}|=0$ If $\exists m\in\mathbb{N}, L= a_m$, Then , If $L=0$, Then $\exists \epsilon\in (0,\infty), |\{n\in\mathbb{N}|a_n\in N_\epsilon(L)\}|=\aleph_0$, And If $L\neq 0$, Then $\exists \epsilon\in (0,\infty), |\{n\in\mathbb{N}|a_n\in N_\epsilon(L)\}|=1$ Note: The notation $N_\epsilon (L)$ denotes the neighborhood of $L$ with radius $\epsilon$, I.e. $N_\epsilon(L)=(L-\epsilon,L+\epsilon)$ My try for proving 1: Since in this case it is given that $\forall n\in\mathbb{N}, L\neq a_n$ we can conclude that $\forall n\in\mathbb{N}, a_n-L\neq 0$ and thus $\forall n\in\mathbb{N}, | a_n-L|>0$, Now If we define the set $A=\{|a_n-L| | n\in\mathbb{N}\}$ we get that this set is a non-empty set of real numbers that is bounded below by $0$ and thus its infimum $\inf(A)=\inf\limits_{n\in\mathbb{N}} |a_n-L|$ exists and satisfies $\inf\limits_{n\in\mathbb{N}}|a_n-L|\geq 0$ (as $0$ is a lower bound of $A$ and thus must be less than or equal to its infimum), Now if we just show that $\inf\limits_{n\in\mathbb{N}}|a_n-L|>0$ we could choose $\epsilon=\inf\limits_{n\in\mathbb{N}}|a_n-L|\in (0,\infty)$ and we would get that $\forall n\in\mathbb{N}, a_n\notin N_\epsilon(L)$ because if we suppose by contradiction that $\exists n\in\mathbb{N}, a_n\in N_\epsilon(L)$, Then we would get by the fact that $|a_n-L|\in A$ and by definition of infimum that $|a_n-L|\geq \inf(A)=\inf\limits_{n\in\mathbb{N}}|a_n-L|=\epsilon$ which contradicts the fact that $a_n\in N_\epsilon(L)$ (which is equivalent to $|a_n-L|<\epsilon$), Thus it must be the case that $\forall n\in\mathbb{N},a_n\notin N_\epsilon(L)$ and we can conclude that $\{n\in\mathbb{N}|a_n\in N_\epsilon(L)\}=\emptyset$ and thus $|\{n\in\mathbb{N}|a_n\in N_\epsilon(L)\}|=0$ as was to be shown. My try for proving 2: Since in this case it is given that $\exists m\in\mathbb{N}, L = a_m$,
+And since $0$ is in the image of $\{a_n\}_{n=1}^\infty$ (i.e. $0$ is an element in the set $\{a_n|n\in\mathbb{N}\}$) we get that there are two possibilities: $L=0$ or $L\neq 0$ If $L=0$, Any $\epsilon$ we choose from the set $(0,\infty)$ will work, As we can define the set $T=\{n\in\mathbb{N}|n\equiv 0 \pmod{8}\}$ and it is clear that for this set we have $\forall n\in T, a_n\in N_\epsilon(L)$ [because $\forall n\in T, a_n=0$ and because $0\in N_\epsilon(0)=N_\epsilon(L)$], And therefore we get that $T\subseteq \{n\in\mathbb{N}|a_n\in N_\epsilon(L)\}\subseteq \mathbb{N}$, But since $|T| = |\mathbb{N}| =\aleph_0$ we get that it must be the case that $|\{n\in\mathbb{N}|a_n\in N_\epsilon(L)\}|=\aleph_0$ as was to be shown. Now if $L\neq 0$, We can define the set $A=\{|a_n-L| | m\neq n\in\mathbb{N}\}$, And we get that this set is a non-empty set of real numbers that is bounded below by $0$ and thus its infimum $\inf(A)=\inf\limits_{m\neq n\in\mathbb{N}} |a_n-L|$ exists and satisfies $\inf\limits_{m\neq n\in\mathbb{N}}|a_n-L|\geq 0$ (as $0$ is a lower bound of $A$ and thus must be less than or equal to its infimum), Now if we just show that $\inf\limits_{m\neq n\in\mathbb{N}}|a_n-L|>0$ we could choose $\epsilon=\inf\limits_{m\neq n\in\mathbb{N}}|a_n-L|\in (0,\infty)$ and we would get that $\forall m\neq n\in\mathbb{N}, a_n\notin N_\epsilon(L)$ because if we suppose by contradiction that $\exists m\neq n\in\mathbb{N}, a_n\in N_\epsilon(L)$, Then we would get by the fact that $|a_n-L|\in A$ and by definition of infimum that $|a_n-L|\geq \inf(A)=\inf\limits_{m\neq n\in\mathbb{N}}|a_n-L|=\epsilon$ which contradicts the fact that $a_n\in N_\epsilon(L)$ (which is equivalent to $|a_n-L|<\epsilon$), Thus it must be the case that $\forall m\neq n\in\mathbb{N},a_n\notin N_\epsilon(L)$ and we can conclude that $\{n\in\mathbb{N}|a_n\in N_\epsilon(L)\}=\{m\}$ (because $L=a_m$) and thus $|\{n\in\mathbb{N}|a_n\in N_\epsilon(L)\}|=1$ as was to be shown. Thanks for any hint\help on how to prove that those infimums are indeed positive....","['real-analysis', 'sequences-and-series', 'elementary-set-theory']"
+2850040,Proving $\left| z'\right| + \left| z\right| = \left| \frac{z+z'}{2}- \alpha \right| + \left| \frac{z+z'}{2}+ \alpha \right|$ given $zz'= \alpha^2$ [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 5 years ago . Improve this question How do you prove
+$$
+\left| z'\right| + \left| z\right| = \left| \frac{z+z'}{2}- \alpha \right| + \left| \frac{z+z'}{2}+ \alpha \right|
+$$
+given
+$$
+zz'= \alpha^2
+$$
+for each complex number $z$ , $\alpha $, and $z’$?","['complex-analysis', 'complex-numbers']"
+2850095,Entropy of a Measure Preserving Transformation,"I am reading the concept of entropy from Peter Walters' An Introduction to Ergodic Theory and I am having trouble understanding the notion of the entropy of a measure preserving transformation. Definitions: Let $(X, \mathcal{F}, \mu)$ be a probability space.
+For a partition $\xi=\{A_1 , \ldots, A_m\}$ of $X$ (where each $A_i$ is measurable) the entropy of $\xi$ is defined as: $$
+H(\xi) = -\sum_{i=1}^m \mu(A_i)\log(\mu(A_i))
+$$ If $T:X\to X$ is a measure preserving transformation, we write $T^{-1}\xi$ to denote the set $\set{T^{-1}(A_i):\ 1\leq i\leq m}$ .
+Thus $H(T^{-1}\xi)=H(\xi)$ . Now the entropy of a measure preserving transformation $T:X\to X$ with respect to $\xi$ is defined as (see Def. 4.9 in the aforementioned text) $$
+h(T, \xi) = \lim_{n\to \infty} \frac{1}{n} H\left(\bigvee_{i=0}^{n-1} T^{-i}\xi\right),
+$$ where $\bigvee_{i=0}^{n-1} T^{-1}\xi$ is the coarsest common refinement of the partitions $T^{-i}\xi$ . The Problem: Just after giving the definition, the author writes This means that if we think of an application of $T$ as a passage of one day of time, then $\bigvee_{i=1}^{n-1}T^{-i}\xi$ represents the combined experiment of performing the original experiment, represented by $\xi$ , on $n$ consecutive days.
+Then $h(T, \xi)$ is the average information per day that one gets from performing the original experiment. I do not entirely follows this. If the application of $T$ is the passage of one day, that is, it takes us one day into the future, why is the expression $\bigvee_{i=1}^{n-1} T^{-i}\xi$ is the combined experiment (wait, what is intuitive meaning of 'combined experiment'?) for the next $n$ -days. We are taking backward images of $T$ in this expression, not the forward images. At any rate, I do not have any intuition for the last definition presented above.
+Can someone please try to give some insight. Thanks.","['intuition', 'information-theory', 'entropy', 'ergodic-theory', 'measure-theory']"
+2850108,Classifying space $B$SU(n) [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 5 years ago . Improve this question We know that the classifying space 
+$$
+BO(1)=B\mathbb{Z}_2=\mathbb{RP}^{\infty}
+$$
+$$
+BU(1)=\mathbb{CP}^{\infty}
+$$
+$$
+BSU(2)=\mathbb{HP}^{\infty}
+$$ How do one construct/derive
+$$
+BSU(n)=?
+$$ Can one explain $B\mathbb{Z}_2$, $BU(1)$, $BSU(n)$ in a unified consistent but also intuitive way?","['differential-topology', 'classifying-spaces', 'algebraic-topology', 'geometric-topology', 'differential-geometry']"
+2850112,Weak convergence implies stochastic boundedness,I'm trying to prove the following implication: Every sequence of random variables which converges weakly is also stochastically bounded. I know that this is an implication of Prohorov's Theorem but I would prefer a direct approach. The overall aim is to deduce tightness from weak convergence but I know already that tightness and stochastic boundedness are equivalent. Could you provide any hint? I've tried a lot but I don't have any idea how to use the weak convergence.,"['weak-convergence', 'probability-theory', 'probability-distributions']"
+2850117,The Dihedral Constant Center of a Tetrahedron,"For opposing edges in a tetrahedron, define $p\otimes q = p^2 + q^2 + 2 p q \cot(\angle p)\cot(\angle q)$, where $\angle p$ is the inner dihedral angle of edge $p$. In tetrahedron ABCD, $AB\otimes CD = AC\otimes BD =AD\otimes BC$, a property of dihedral angles in a tetrahedron . I'll call this the dihedral constant of a tetrahedron. Given tetrahedron ABCD, does there exist a point E such that the dihedral constants of ABCE, ABDE, ACDE, and BCDE are identical?  It turns out the point does exist. For $((0,0,0),(\sqrt2,0,0),(0,\sqrt3,0),(0,0,\sqrt6))$, $(0.2925509218717602,0.28324348233978136,0.32488931587547265)$ works For $((0,0,0),(5,0,0),(6/5,(12/5) \sqrt6,0),(-5,0,4 \sqrt6)$, $(2.406010889675711,5.878903865331654,0.877729911045533)) $ works For $((0,0,0),(5,0,0),(19/5,(12 \sqrt6)/5,0),(-(31/5),(12 \sqrt6)/5,4 \sqrt6)$, $(-0.2458533044423744,6.927220621203815,-3.3113164490462124))$ works. The dihedral constant center is off of the plane of the usual tetrahedron centers . In the image below the black spot is the dihedral constant center, corresponding to the third solution above. For any of these three tetrahedra, can anyone find an exact solution, or a general exact solution?","['polyhedra', 'solid-geometry', 'triangles', 'geometry', '3d']"
+2850128,"Prove that the set of all monotone functions on $[0,1]$ has same cardinality as $\mathbb R$","I am having difficulty answering the following question on ""Notes on Set Theory"" by Moschovakis, 1st edition: Prove that the set $K$ of all monotone real functions on the closed interval $[0,1]$ have the same cardinality with $\mathbb R$. We can inject $\mathbb R$ into $K$ by sending any real number to its constant function, e.g. $5/2$ gets mapped to the constant function $5/2$ on $[0,1]$. By Schroder-Berstein theorem, it suffices to provide an injection from $K$ to $\mathbb R$. As the set of constant functions in $K$ have cardinality of $\mathbb R$, strictly decreasing function in $K$ (by which I mean that such a function $f$ has some $a > b$ st. $f(a) <f(b)$, i.e. $f$ need not be strictly decreasing in the whole interval) is in bijective correspondence with strictly increasing function in $K$, and $|\mathbb R^3| = |\mathbb R|$, it suffices to show that the set of strictly increasing function in $K$ injects to $\mathbb R$. However, I am not sure how I can provide such an injection.","['cardinals', 'elementary-set-theory']"
+2850184,Edge set tetrahedra,"For a set of 6 edge values, up to 60 distinct tetrahedra can be made in 30 mirrored pairs. Can a tetrahedron with a given edge set exist entirely inside a second tetrahedron with the same edge set? Here's a picture of a sample sixty tetrahedra with the same edge set, all with the same centroid. For this picture $x^3-8 x^2+8=0, x\approx 1.0748$ and the edgeset is $(x^0,x^1,x^2,x^3,x^4,x^5)$.  The local minimum for the volume difference between the largest and smallest power-edged tetrahedra seems to be at $12-14 x^2-8 x^4-9 x^6-11 x^{10}-12 x^{12}+13 x^{14}+14 x^{16} =0$, with $x\approx 1.0743129936059068432$ The edgeset (7,8,9,10,11,12) also gives 60 distinct tetrahedra. The edgeset (2,3,4,5,6,7) only yields 8. Here's a ridiculously hard question. Can 60 distinct tetrahedra with the same edgeset be solidly packed together to make a convex polyhedron?","['solid-geometry', 'tiling', 'triangles', 'geometry', 'recreational-mathematics']"
+2850191,"Intermediate inequalities; is there a way to know if you're getting a ""bad deal""?","Let's say I want to prove a contest-style inequality $f(a, b, c) + g(a, b, c) \ge h(a, b, c)$ in some $S \subseteq \mathbb{R}^3$ . Suppose I want to make the RHS simpler by applying the AM-GM inequality, so that now it remains to prove $2\sqrt {f(a, b, c) g(a, b, c)} \ge h(a, b, c)$ . However, this new inequality may or may not be true. So my questions are: 1) Is it known which inequalities are ""better than others""? For example, when you solve an inequality do you think ""Let me try to avoid using QM-AM, Am-HM is better"" 2) If there are no general rules for question 1), is there a way for me to tell if I'm getting a ""bad deal"" by using some inequality? 3) Does the answer to $1)$ depend on the internal structure of the expressions you're applying the inequalities to? For example, is it possible that applying AM-GM to $a^2+2b+c$ and $b^2+2a+c$ gives a very bad inequality, but applying something like $\dfrac {ab}{c}$ and $\dfrac {bc}{a}$ gives a very good inequality? If you have a book recomendation that deals with the topic I would appreciate it as well.","['real-analysis', 'inequality', 'a.m.-g.m.-inequality', 'reference-request', 'contest-math']"
+2850199,Difficult integral involving $\arctan x$,"Question: Show that$$\int\limits_0^{\infty}\mathrm dx\,\frac {\arctan x\log(1+x^2)}{x(1+x^2)}=\frac {\pi}2\log^22.$$ I can't tell if I'm being an idiot, or if this is a lot more difficult than it looks. First, I tried integration by parts using the fact that $$\frac 1{x(1+x^2)}=\frac 1x-\frac x{1+x^2}.$$ But quickly I gave up as I wasn't sure what to do with the result. I then decided to make the substitution $t=\arctan x$ to get rid of the $1+x^2$ term in the denominator. Therefore$$\begin{align*}\mathfrak{I} & =\int\limits_0^{\pi/2}\mathrm dt\,t\cot t\log\sec^2t=-2\int\limits_0^{\pi/2}\mathrm dt\, t\cot t \log\cos t.\end{align*}$$ However, I'm not exactly sure what to do after this. Should I use integration by parts? Differentiation under the integral sign? I'm having trouble getting started with this integral. Any ideas?","['improper-integrals', 'integration', 'definite-integrals']"
+2850201,Which Sign do I choose using the Half Angle Formula for sin for this?,"I'm evaluating $\sin\left(\frac{1}{2}\sin^{-1}\left(-\frac{7}{25}\right)\right).$ The first thing I did was rewrite it as $\sin\left(\frac{\beta }{2}\right)$ Then I said that 
+$\sin\left(\beta \right)=-\frac{7}{25}$ Using the Pythagorean Identity I found $cos\left(\beta \right)$ $\cos\left(\beta \right)=\pm\sqrt{1-\left(-\frac{7}{25}\right)^2}$ So $\cos\left(\beta \right)=\pm\frac{24}{25}$ Then to choose the sign of $\cos\left(\beta \right)$, I did this: 1) $\sin^{-1}\left(...\right)$: QI or QIV 2) $\sin\left(\beta \right)>0$   QI or QII 3) $\rightarrow \cos\left(\beta \right)$ is in QI $\cos\left(\beta \right)=+\frac{24}{25}$ Then I applied this to the Half Angle Formula for Sine: $\pm\sqrt{\frac{1}{25}\left(\frac{1}{2}\right)}$
+$=\pm\frac{1}{5}\left(\frac{\sqrt{2}}{2}\right)$
+$=\pm\frac{\sqrt{2}}{10}$ But which sign do I choose?","['angle', 'trigonometry', 'inverse-function', 'functions', 'analytic-geometry']"
+2850210,"Given the function $y=\frac{m}{n}\sqrt{n^2-x^2}$, prove that $y′=\frac{-m^2x}{n^2y}$","I am trying to solve an exercise with derivatives. As the tittle says, I have the following function: $$y=\frac{m}{n}\sqrt{n^2-x^2}$$ $m$ and $n$ are constants. After finding the first derivative, I need to prove that: $$y′=\frac{-m^2x}{n^2y}$$ You must have noticed that there is a $y$ in the answer, but you do not need to find the implicit derivative to get the answer. It is supposed that finding the first function somewhere in the first derivative and replacing it with $y$ you get that answer. I already solved another exercise of this kind, so you can better understand how I am supposed to solve this one. Example: Given the function $y=\sqrt{2mx}$, prove that $y′=\frac{m}{y}$ $$y=\sqrt{2mx}$$
+$$y′=\frac{1}{2\sqrt{2mx}}\left(2m\right)$$
+$$y′=\frac{m}{\sqrt{2mx}}$$
+Since $y=\sqrt{2mx}$:
+$$y′=\frac{m}{y}$$",['derivatives']
+2850221,Contour Integration of $\int_0^\infty \frac{\sin(ax)}{x}$,"I am trying to use contour Integration to show $$\int_0^\infty \frac{\sin(ax)}{x}=sign(a)\frac{\pi}{2}$$ I was reading a similar example here of $$\int_0^\infty \frac{\sin(x)}{x}=\frac{\pi}{2}$$ I am trying to think how a negative or positive $a$ would change the problem. 1) Is there a way to not do the integral in two cases? One negative and the other positive a? 2) If the a is negative, do I need to make the contour a semicircle in the third and fourth quadrants instead of the first and second quadrants like in the example? Thank you for your help and time.","['complex-analysis', 'contour-integration']"
+2850247,Finding a rational function from given extremas,"A function is given by 
+$$f\left(x\right)=\frac{\left(ax^2+2bx+c\right)}{Ax^2+2Bx+C}$$
+It has points of extrema at x=1 and x=-1 such that f(1)=2, f(-1)=3 and f(0)=2.5 . Then find the value of a/A, prove that A=C and find the function f(x). My attempt:
+I didn't want to  solve 4-6 linear equations, so I analyzed it graphically. As x tends to infinity, a/A must be in between 2 and 3. The graph was looking pretty symmetric and thus I assumed a/A=2.5 which is the solution given in my book. And then I got stuck. Any clever idea to tackle this question? Or I have to solve hell amount of equations to get to my answer?","['algebra-precalculus', 'derivatives', 'calculus', 'functions']"
+2850278,Testing whether a set of permutations is a subgroup of $S_5$,"I'm trying to go through the process of determining whether a set of permutations is a subgroup. I was hoping someone could look over the logic of this answer for completeness and soundness of logic. I think I understand, ultimately, how to check this, but I worry that I'm 'reinventing the wheel' when there's a much easier, more intuitive approach. (In other words, I would never want to replicate something like this on a timed exam.) We have the set: $\{\text{id}, (12345), (13524), (14253), (15432)\}$. We need to check four properties: (a) Associativity: This is trivially the case, as it holds for all permutations and for the group, $S_5$, so it will surely hold for a subset of that group, regardless of whether those permutations form a subgroup. (b) Identity: The identity permutation is indeed included in this set. (c) Closure: I think the only way to check this is to take all possible compositions of the permutations in the group and ensure that they produce elements in the group. The identity, clearly, will produce any of the permutations we compose it with, and it commutes, so we can for the moment omit that from our verification process. Let's denote these permutations as: 
+\begin{align*}
+& (12345) = \sigma \\
+& (13524) = \beta \\
+& (14253) = \tau \\
+& (15432) = \gamma
+\end{align*}
+I then can check each of these. Upon working these out on scrap paper (the easiest way would perhaps be with a group table), I get: 
+\begin{align*}
+& \tau \sigma = (15432) = \gamma \\
+& \sigma \tau = (15432) = \gamma \\
+& \gamma \sigma = \text{id} \\
+& \sigma \gamma = \text{id} \\
+& \beta \sigma = (14253) = \tau \\
+& \sigma \beta = (14253) = \tau \\
+& \tau \sigma = (15432) = \gamma \\
+& \sigma \sigma = (13524) = \beta \\
+& \beta \tau = \text{id} \\
+& \tau \beta = \text{id} \\
+& \gamma \tau = (15432) = \beta \\
+& \tau \gamma = (13524) = \beta \\
+& \tau \tau = (12345) = \sigma \\
+& \beta \gamma = (12345) = \sigma \\
+& \gamma \beta = (12345) = \sigma \\
+& \beta \beta = (15432) = \gamma \\
+& \gamma \gamma = (14253) = \tau
+\end{align*}
+So, we can see from this that the group is closed under composition of permutations. Inverses: The inverse of the identity is clearly the identity. The inverse of $\beta$ is $\tau$, and thus the identity of $\tau$ is $\beta$. The inverse of $\gamma$ is $\sigma$, and thus the inverse of $\sigma$ is $\gamma$. Thus, every element of this group has an inverse. So, it seems--unless I made a mistake--that these four conditions check out. My questions, then, are: (a) How does this look? (b) Is there an easier, more intuitive way to approach such a problem other than writing out the group table?","['abstract-algebra', 'group-theory', 'symmetric-groups']"
+2850331,Is there a general form of the correspondence theorem?,"See Correspondence theorem for groups for the statement of the theorem in case of groups. Similar results holds when ""groups"" is replaced by ""rings"" and the bijective correspondence is between the ideals of $R/I$($I$ is an ideal of $R$) and ideals of $R$ which contain $I$. We can also find the correspondence in sets, modules and algebras. The correspondence theorem is very universal in the sense that we can picture it very easily and it holds with varies of algebraic structures, but I have never seen any general form which unifies all the above results. Is there some insight for this theorem to help us generalize it to a more general structure, e.g. arbitrary objects in a category?","['abstract-algebra', 'ring-theory', 'group-theory']"
+2850332,"if number of extreme points of $B_X$ is finite, then $X$ is of finite dimensional?","Let $X$ be a Banach space. 
+Recall that closed unit ball $B_X$ of $X$ is defined by 
+$$B_X = \{y\in X: \|y\|\leq 1\}.$$
+We say that $x\in X$ is an extreme point of $B_X$ if $x = \frac{1}{2}(u+v)$ where $u,v \in B_X$ implies that $x = u =v.$ Question: Is it true that if the number of extreme points of $B_X$ is finite, then $X$ is of finite dimensional?","['functional-analysis', 'banach-spaces', 'convex-analysis']"
+2850345,Limit of sum of independent simple functions,"Here is a question from a past homework which I was never able to solve. Suppose $X_1,X_2,\dots$ are independent with the following properties. 1) For each $n$, there is a finite set $F_n$ with $P(X_n \in F_n) = 1$. 2) $S \doteq \lim_{n\to\infty}\sum_{i=1}^n X_i$ exists and is finite almost surely. Prove that either there is a countable set $A$ for which $P(S \in A) = 1$, or there is no $\alpha \in \mathbb{R}$ for which $P(S = \alpha) > 0$. My attempt was to suppose that there existed an $\alpha \in \mathbb{R}$ with $P(S = \alpha) > 0$, and then construct a countable set $A$ containing the support of $S$ using this $\alpha$. We have
+\begin{align*}
+P(S \text{ exists and is finite}) = 1,
+\end{align*}
+so that
+\begin{align*}
+0 < P(S = \alpha) &\leq P\left(\sum_{i=2}^{\infty}X_i \in \bigcup_{x_1 \in F_1}\{\alpha- x_1\} \right) \\
+&\leq P\left(\sum_{i=3}^{\infty}X_i \in \bigcup_{x_1 \in F_1, x_2 \in F_2}\{\alpha- x_1-x_2\} \right),
+\end{align*}
+and so on. Letting $B_n$ denote the set
+\begin{align*}
+B_n \doteq \left\{\sum_{i=n}^{\infty}X_i \in \bigcup_{i < n} \bigcup_{x_i \in F_i} \{\alpha - \sum_i x_i\}\right\},
+\end{align*}
+taking limits and pushing the limsup inside $P$, the above would imply that 
+\begin{align*}
+0 < P(B_n \text{ i.o.})
+\end{align*}
+I think that this might also be a tail event, in which case the above would imply that $B_n$ happens infinitely often with probability $1$. But all this says is that $S - S_n$ falls into a countable set infinitely often. Is this somehow enough to conclude that $S$ lives in a countable set?","['real-analysis', 'probability-theory']"
+2850406,Fibres of a Holomorphic Function,"Let $f$ : $U\rightarrow V$ be a proper holomorphic map where $U$ and $V$ are open subsets of $\mathbb{C}$ with $V$ connected. Show that the cardinality of the fibres of $f$, i.e. $f^{-1}(\{z\})$ counted with the multiplicities are the same for each $z \in$ $V$. This looks like the property of covering maps and so I was trying to prove if $f$ is a local homeomorphism or a covering map, but to no avail. Thanks for any help.",['complex-analysis']
+2850414,Intersection of random line segments in the plane,"Let a point on the plane be randomly chosen via $(\sqrt{\frac{t}{1-t}}\cos(2\pi\theta),\sqrt{\frac{t}{1-t}}\sin(2\pi\theta))$, where $t$ and $\theta$ are uniformly randomly chosen on $[0,1]$ (equivalently, choose a point uniformly randomly on the surface of the sphere and then project stereographically). Then, what is the probability that two random line segments (determined by their endpoints) will intersect? This is a repost of a subproblem in a previous post that never got answered. Monte Carlo simulation suggests that the answer is precisely $1/5$, but I have no fruitful ideas left how to prove it.","['stereographic-projections', 'probability', 'geometric-probability', 'geometry']"
+2850452,Range of $a$ in Trigonometric equation,"If the inequality $\sin^2 x+a\cos x+a^2>1+\cos x$ hold for any $x\in \mathbb{R}.$ Then range of $a$ is Try: $1-\cos^2 x+a\cos x+a^2-1-\cos x>0$ $$\cos^2 x+(1-a)\cos x-a^2<0$$ $$4\cos^2 x+4(1-a)\cos x-4a^2<0$$ $$\bigg(2\cos x+(1-a)\bigg)^2-4a^2-(1-a)^2<0$$ Could some help me how to solve further, Thanks",['algebra-precalculus']
+2850467,Binomial Hypothesis Test,"The proportion of deaths due to lung cancer in working males aged 15-64
+  in Australia between 1970 and 1972 was 10%. There is reason to believe
+  that working in a chemical plant for an extended period can increase your
+  risk of lung cancer. Several Australian chemical plants were investigated,
+  and it was found that of 90 deaths in working males aged 15-64, 19 were
+  due to lung cancer. Is there evidence of increased risk of developing lung cancer if you work in
+  a chemical plant? For this hypothesis test, we are required to provide a statement of the null and alternative hypothesis, a test statistic, the observed value and the estimated $p$-value. My Attempt: let $p$ be the probability of developing lung cancer in a chemical plant. Therefore, $$H_0:p=0.1 \ \ \ \ \ \ \text{vs} \ \ \ \ \ \ \ H_1:p>0.1$$
+Our test statistic is
+$$Z=\frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} \ \ \ \ \ \ \text{where} \ Z\sim N(0,1)$$
+Our observed value is therefore
+$$\frac{\frac{\hat{p}}{n}-p}{\sqrt{\frac{p(1-p)}{n}}} =\frac{\frac{19}{90}-0.1}{\sqrt{\frac{0.1(1-0.1)}{90}}}=3.51$$
+Hence our p-value is 
+$$\mathbb{P}(Z>\text{observed value})=\mathbb{P}(Z>3.51)<0.0001$$ Hence we reject $H_0$. Is my hypothesis test correct?","['statistics', 'probability', 'proof-verification', 'hypothesis-testing']"
+2850472,$\mathbb{Z}_{(p)}[\zeta]$ principal ideal domain,"Let $\mathbb{Z}_{(p)} \subseteq \mathbb{Q}$ denote the ring of rational p-adic integers (p prime), and let $\zeta \in \mathbb{C}$ be a root of unity of order $p \cdot m$, where $m$ is not divisible by $p$. Then apparently, the ring $\mathbb{Z}_{(p)}[\zeta]$ is a principal ideal domain. In this paper , the above statement is used implicitly, as if it was true for trivial reasons. Does somebody know the reason why this is true? Does the statement become wrong if $\zeta$ is an arbitrary root of unity? Thank you in advance!","['p-adic-number-theory', 'abstract-algebra', 'algebraic-number-theory', 'number-theory', 'commutative-algebra']"
+2850477,Why is the interval topology defined not in terms of open rays but in terms of complements of closed rays?,"In the literature, 
+see e.g. Frink (1942) or Erné (1980) ,
+the interval topology on a partially ordered set $(X,\leq)$ is commonly defined as the topology generated by complements of closed rays.
+A closed ray is a set $\{w\in X:w\leq x\}$ or $\{y\in X:y\geq x\}$, where $x\in X$. If $X$ is the set of real numbers then an equivalent but simpler definition of the interval topology is the topology generated by open rays, i.e., sets $\{w\in X:w < x\}$ or $\{y\in X:y > x\}$, where $x\in X$. But, while defining an open interval in terms of open rays is a simpler than defining it in terms of complements of closed rays, this apparently is not the preferred way to go. Apparently the topology generated by complements of closed rays is nicer to work with than the topology generated by open rays. Why is that?","['general-topology', 'order-theory']"
+2850510,"Let $\mu_n\to\mu$ weakly as prob. measures on compact $X$. If $B$ is Banach and $f:X\to B$ is continuous, does $\int fd\mu_n\to\int fd\mu$ in norm?","Fix a compact metric space $X$, and let $B$ be a separable Banach space (a separable Hilbert space will also do, if that makes things simpler). Suppose $\mu_n$ and $\mu$ are measures on $X$ such that $\mu_n\to\mu$ weakly, i.e. for all continuous $f:X\to\mathbb R$, we have that $$\int_X\!f\,\mathrm d\mu_n\to\int_X\!f\,\mathrm d\mu.$$
+Then suppose $f:X\to B$ is a continuous function. Clearly we have weak convergence $$\int_X\!f\,\mathrm d\mu_n\to\int_X\!f\,\mathrm d\mu$$ but can we improve this to get convergence in norm?","['functional-analysis', 'probability-theory', 'measure-theory']"
+2850516,Bigger almost-linear zone for tanh(x),"The hyperbolic tangent is almost linear around the origin. I'm looking for a way to modify the tanh function in order to have a bigger almost-linear zone while keeping the asymptote to y = 1. 
+In other words, the function should 'leave' later the y = x straight line and approach sooner the y = 1 straight line, coming closer to the (1, 1) point. (think about ""sooner"" and ""later"" as if x was a time variable). I'd like this 'linearity control' to be a parameter.
+If useful, feel free to ignore what happens for x < 0. Thanks for any suggestion!",['functions']
+2850530,Only one group having $\mathbf{M}_3$ as its lattice of subgroups,"The problem. Consider the lattice $\mathbf{M}_3$ below Clearly, this is the lattice of subgroups of $\mathbb{Z}_2^2$ (isomorphic to the Klein four-group $\mathbf{V}_4$), taking $A = \langle (0,1) \rangle$, $B = \langle (1,0) \rangle$ and $C = \langle (1,1) \rangle$. I want to show that, up to isomorphism, this is the only group $G$ having $\mathbf{M}_3$ as its lattice of subgroups. My solution. To start with, clearly $G$ is finite. In this case, since 
+$$A \cap B = B \cap C = C \cap A = \{1\},$$
+we have that
+$$|AB| = |A|\cdot |B|, \quad |BC| = |B|\cdot|C|, \quad |CA|=|C|\cdot|A|,$$
+and
+$$|G| = (|A|-1) + (|B|-1) + (|C|-1) + 1 = |A|+|B|+|C|-2.$$
+Since $A,B,C$ are minimal, they are cyclic of prime orders, $p_A, p_B, p_C$. First case. Suppose that $p_A, p_B, p_C$ are all different. As conjugate subgroups are isomorphic, it follows that $A,B,C \triangleleft G$, whence $AB, BC, CA \leq G$ and thus, in our specific case, $AB=BC=CA = G$, yielding
+$$|G| = p_Ap_B = p_Bp_C = p_Cp_A,$$
+whence $p_A=p_B=p_C$, a contradiction with the hypothesis. Second case. Suppose $p_A \neq p_B=p_C$. In this case $A \triangleleft G$, whence $AB, AC \leq G$ and $|G| = |A|\cdot|B| = p_Ap_B$. By the First Theorem of Sylow, $G$ has a Sylow $p_B$-subgroup $P$ of order $p_B$. Necessarily $P=B$ or $P=C$ and since $|B|=|C|$, they both are Sylow  $p_B$-subgroups of $G$ and $n_{p_B}=2$. By the Third Theorem of Sylow, $n_{p_B} | p_A$, whence $p_A=2$ and $|G|=2p_B$. 
+So 
+$$p_B^2 = |BC| \leq 2p_B,$$
+whence $p_B \leq 2$ and thus, $p_A=p_B=p_C=2$, again, a contradiction. Third case. Suppose that $p_A=p_B=p_C=p$. If $q \neq p$ is another prime number dividing $|G|$, then $G$ has a Sylow $q$-subgroup, which is a contradiction because all proper non-trivial subgroups of $G$ have order $p$.
+Hence
+$$|G|=p^r,$$
+for some $r>1$ (it can't be $r=1$ because $G$ has non-trivial proper subgroups).
+$$r \geq 2 \quad\text{because}\quad p^2 = |AB| \leq |G|,$$
+$$r \leq 3 \quad\text{because}\quad |G| \leq |A|\cdot |B|\cdot|C|.$$
+Recall that, in this case, $|G|=3p-2$. If $|G|=p^3$, then
+$$0 = p^3 -3p + 2 = (p+2)(p-1)^2,$$
+whence $p=-2$, which is, of course, impossible; or $p=1$ which is not a prime (and $G$ would be trivial). Therefore $|G|=p^2$ and 
+$$0 = p^2 - 3p + 2 = (p - 1)(p - 2),$$
+yielding $p=2$, since, again, $G$ is not trivial. So $|A|=|B|=|C|=2$ and thus $G$ is an exponent $2$ group, whence abelian and having order $4$.
+This is enough to fully determine $G$. My questions. I suspect that there is a much simpler proof, without going through all those cases and using elementary group theory (but I'm not claiming this one's advanced...). I would welcome a concise (and elementary) proof even if you don't want to take the time to read through all the above. Anyway, is this all right? Thanks in advance!","['abstract-algebra', 'group-theory', 'proof-verification']"
+2851569,"If $A$ and $B$ are sets,does $A\cup\{A\}=B\cup\{B\}$ imply $A=B$? [closed]","Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 5 years ago . Improve this question Please help. I have read the prove of the existence of the natural numbers in Analysis I written by Amann and Escher .It uses the claim that the function $\mathcal{V}:\mathbb{N}\longrightarrow\mathbb{N}$,  $z\longmapsto z\cup\{z\}$ is injective.Here $\mathbb{N}$ is a set we construct to be the set of natural numbers.I don't know how to prove the claim. My English is not good.If you don't understand what I said,please tell me.","['elementary-set-theory', 'analysis']"
+2851610,"Basic question from vector analysis - Louis Brand Ch1, problem 2","I am an open university second-year math undergrad student. I am taking a first course on multivariable calculus - I am solving problems from Vector analysis by Louis Brand to gain a physics-based intuition to what's going on. I would like someone to verify my simple proof - or possible suggest alternate line of thought. Show that $\vec{AB}+\vec{CD}=2\vec{MN}$, where $M$ and $N$ are the mid-points of $AC$ and $BD$. Solution. $\begin{aligned}
+\vec{MN} &= \vec{AN}-\vec{AM}\\
+&= (\vec{AB} + \vec{BN}) - \frac{1}{2}\vec{AC}\\
+&= \vec{AB} + \frac{1}{2}\vec{BD} - \frac{1}{2} \vec{AC}\\
+&= \vec{AB} + \frac{1}{2}(\vec{BC} + \vec{CD}) - \frac{1}{2}(\vec{AB} + \vec{BC}) \\
+&= \frac{1}{2}(\vec{AB} + \vec{CD})\\
+2\vec{MN} &= \vec{AB} + \vec{CD}
+\end{aligned}$","['multivariable-calculus', 'vectors', 'proof-verification']"
+2851657,What are real-world use cases for start-exclusive ranges/intervals?,"Having a continuous range that is start-inclusive and end-exclusive is helpful for bucketing, binning, and histograms. There are countless cases for continuous ranges that are start-inclusive and end-inclusive (defining the span of a graph axis, an acceptable range of values, etc). But what about ranges that are start-exclusive/end-inclusive or start-exclusive/end-exclusive? Are there real-world applications for those? Can you list any applications in practical mathematical modeling, statistics, machine learning, industry, etc?","['continuity', 'statistics', 'discrete-mathematics']"
+2851676,Can Random Variables be written $P(X)$ instead of $P(X=x)$ as a shorthand?,"Recently I asked a question and used the shorthand $P(A)$ for a random variable $A$ to quickly reason about conditional probabilities. However, I was informed that this must be written $P(A=a)$ for random variables and the notational shorthand does not make sense, and is only for events. Is this true? In particular, I am interested in Bayesian Networks and want to write a factorisation such as
+$$P(A,B,C) = P(A)P(B\mid A)P(C\mid A,B) = P(A)P(B)P(C\mid A,B)$$
+to say that the structure of the Bayesian Network is a graph with two root nodes corresponding to $A$ and $B$ which are not dependent on any other random variable and a third node corresponding to $C$ which is dependent on $A$ and $B$ (represented by directed edges). Must I instead write $$P(A=a,B=b,C=c) = P(A=a)P(B=b\mid A=a)P(C=c\mid A=a,B=b) = P(A=a)P(B=b)P(C=c\mid A=a,B=b)$$ to be mathematically coherent? Would I need to say this is for each $a,b,c$? Edit: An example I am particularly interested in is on page 3 of this document , or equivalently the wikipedia entry for the chain rule of probability . Is it valid to write the chain rule of probability like this? Edit: I am particularly confused as so much of the literature of Bayesian Networks seems to use this shorthand, such as this , this , this , this , this , and this .","['notation', 'statistics', 'bayesian-network', 'probability', 'random-variables']"
+2851733,"Find $E[X\mid Y]$ where $Y$ is uniform on $[0,1]$ and $X$ is uniform on $[1,e^Y]$","Let $Y$ a  uniform random variable in $[0,1]$, and let $X$ a uniform variable in $[1,e^Y]$ My work By definition $E(X\mid Y)=\int_{x\in A}xp(x\mid y)\,dx$ Now, I need the function $f(x\mid y)$. By definition, $f(x\mid y)=\frac{f(x,y)}{f_y(y)}$ I'm stuck trying to finding $f(x,y)$ and $f_y(y)$. Can someone help me?","['probability-theory', 'conditional-expectation']"
+2851806,Radon-Nikodym theorem and constructive mathematics,"I am interested in learning how nonconstructive the proof of the existence of R-N derivative is. I know that there is no general recipe for computing the R-N derivative. It can be explicitly computed if one knows a differentiation basis with the Vitali property. To this extent, it seems the original existence proof is highly nonconstructive. But does anyone know if there is a precise calibration of how nonconstructive the proof is (e.g. is it provable in constructive mathematics? And how it stands in the zoo of reverse mathematics?) Many thanks in advance.","['probability-theory', 'measure-theory']"
+2851818,"Do operators from $L(X', Y')$ preserve weak*-convergence?","I am wondering whether the following is true: Let $X, Y$ be normed spaces and $T \in L(X', Y')$. If $x_n' \overset{*}{\rightharpoonup} x'$ in $X'$, then $Tx_n' \overset{*}{\rightharpoonup} Tx'$ in $Y'$. Proof in reflexive spaces This holds at least if $X$ and $Y$ are reflexive. Since then weak and weak* convergence are the same on $X'$ and $Y'$, respectively: $Tx_n' \overset{*}{\rightharpoonup} Tx'$ in $Y$ $\Leftrightarrow Tx_n' \rightharpoonup Tx'$ in $Y'$ weakly. $x_n' \overset{*}{\rightharpoonup} x'$ in $X$ $\Leftrightarrow x_n' \rightharpoonup x'$ in $X'$ weakly Thus to prove the claim we prove that $Tx_n' \rightharpoonup Tx'$ in $Y'$ weakly:
+$$
+\left<y'', Tx_n'\right> - \left<y'', Tx'\right> = \left<y'', Tx_n' - Tx'\right> = \left<y'' \circ T, x_n' - x'\right>_{X'' \times X'} \overset{2.}{\to} 0
+$$ (We essentially applied reflexivity and preservation of weak convergence under continuous linear maps ). Attempt for general spaces We try to prove the claim directly: Let $y \in Y$. We want to show $\left<Tx' - Tx_n', y\right> \to 0$. If $T$ was a of a specific form, namely for a fixed $A \in L(Y, X)$: $T(x')(y) = \left<x', Ay\right>$, then we would be able to easily prove the claim: $$\left<Tx' - Tx_n', y\right> = \left<T(x' - x_n'), y\right> = \left<x' - x_n', \underbrace{Ay}_{\in X}\right> \to 0$$ Question: Are all $T$s of that form?","['functional-analysis', 'weak-convergence', 'weak-topology']"
+2851868,How much can two polynomials agree on?,"Let $f(x,y)$ be a polynomial in $\mathbf R[x, y]$ such that $f(x, x^3) = 0$ for all $1< x< 2$. Question. Then is it necessary that $f(x, x^3) = 0$ for all $x$? (As pointed out by @dvix in the comments, this question has answer YES. The reason is that $f(x, x^3)$ is a single variabel polynomial vanishing on infinitely many points, and hence must be identically zero). More generally what I want to know is the following: Question. Suppose $X\subseteq \mathbf R^n$ is an irreducible affine variety and $f\in \mathbf R[x_1, \ldots, x_n]$ be a polynomial which vanishes on an open subset of $X$.
+  Then is it forced that $f$ vanishes on all of $X$. Or at least on all smooth points of $X$? Here ""open"" is with respect to Euclidean topology.","['polynomials', 'algebraic-geometry']"
+2851869,"Why are $\max(x_i)$ and $\min(x_i)$ sufficient statistics for $\operatorname{Unif}(a,b)$?","Suppose I have $X_i \sim \operatorname{Unif}(a,b)$. I have that the joint distribution is given by $$\frac{1}{\left(b-a\right)^n}\prod_{i=1}^n I(x_i \in (a,b)) = \frac{1}{\left(b-a\right)^n}I(\min(x_i) \in (a,b))I(\max(x_i)\in (a,b)).$$ Now, my question is why does this satisfy the factorization theorem? Don't $I(\min(x_i) \in (a,b))$ and $I(\max(x_i)\in (a,b))$ still depend on $a$ and $b$? If they don't, then don't we also have that $\prod_{i=1}^n I(x_i \in (a,b))$ doesn't depend on $a$ or $b$, and so, we can factor the original joint distribution as required, without any sufficient statistic. I think I am misunderstanding something about sufficiency here.","['statistical-inference', 'probability-theory', 'probability-distributions', 'statistics', 'probability']"
+2851900,"$\int_{\theta}^{\theta+\pi}r(u)\cos u\, du=-\lambda\sin\theta$ and $\int_\theta^{\theta+\pi}r(u)\sin u\;du=\lambda\cos\theta$ for certain $r(u)$","We are given some definitions about a function $r(u)$: 1) $r(u)>0$ 2) $r(u)= r(u+2\pi)$ 3) $r(u)+r(u+\pi)= \lambda$ 4) $r(u)$ is continuous 5) $\int_0^{\pi}r(u)\cos\theta=0$ and $\int_0^{\pi}r(u)\sin\theta=\lambda$ The following identities are to be proven: The first proceeds as follows: I have tried over and over to prove the second identity, and it seems like it should be easy. However, I keep getting $\lambda +\lambda\cos\theta$ instead of $\lambda\cos\theta$ ... what am I missing here? And sorry for the awful formatting, as you can see I'm fairly new to MSE.","['algebra-precalculus', 'trigonometry', 'calculus']"
+2851932,Solve in $\mathbb R\quad 5^\sqrt{x} - 5^{x-7} = 100$,"Solve in $\mathbb R$
+$$5^\sqrt{x} - 5^{x-7} = 100$$
+$\mathbf {My Attempt}$ I converted the eq. to this form
+$$5^{(\sqrt{x}-3)(\sqrt{x}+3)}-5.5^{\sqrt{x}-3}+4=0$$
+It's apparent that $\;\mathbf {x=9}\; $ is a solution, but I can't find the reasoning for this mathematically. Any hint? $\mathbf {Edit}$ I'll post my solution tomorrow.",['algebra-precalculus']
+2851937,Find the interval of convergence of the following series $\sum_{n=1}^{\infty}\frac{n^n x^n}{n!}$,"Find the interval of convergence of the following series $$\sum_{n=1}^{\infty}\frac{n^n x^n}{n!}.$$ I've found the out that the series converges absolutely for $|x|<1/e$ but diverges for $|x|>1/e.$ So, when $x=1/e,$ we have $$\sum_{n=1}^{\infty}\left(\frac{n}{e }\right)^n\frac{1}{ n!}.$$
+Also, when $x=-1/e,$ we have $$\sum_{n=1}^{\infty}(-1)^n \left(\frac{n}{e }\right)^n\frac{1}{ n!}.$$ My question is: how do I proceed from here?","['power-series', 'real-analysis', 'sequences-and-series', 'analysis']"
+2851938,Image under covering map of Hausdorff space is Hausdorff?,"Let $\overline{X} \rightarrow X$ be a covering space, where $\overline{X}$ is a Hausdorff space. Does $X$ have to be Hausdorff? I assume there is a counterexample, but I couldn't find one yet.","['general-topology', 'covering-spaces', 'separation-axioms']"
+2851964,Why is the 2-norm better than the 1-norm?,"Why we use the 2-norm all over the place instead of the 1-norm although both are equivalent and the 1-norm is more effieciently computable?
+I am currently implementing an algorithm that normalizes a vector in each step (using 2-norm). So i could also just use the 1-norm instead?
+More details: power iteration for the calculation of the dominat eigenvalue of a matrix: x:=random vector of length numrows(A) x=x/||x|| 
+while l changes (e.g. abs(l-l_last)<tolerance)
+    x=Av
+    l=||x||
+    x=x/||x||","['linear-algebra', 'computer-science']"
+2852005,Interchange between Integral and Sup?,"What is the analysis theorem that gives interchange between Integral and Sup. In particular, let $f_r (t)$ be a function on the circle $U = \{z\in \mathbb C: | z | = 1\}$, which condition must check $f_r (t)$ so that we can interchange Integral and sup:
+$$\sup_{0\leq r<1}\int_{\mathbb U}f_r(t)  \, dt = \int_{\mathbb U}\,  \sup_{0\leq r<1} f_r(t)  \, dt\quad ?$$ Thank you in advance","['complex-analysis', 'real-analysis', 'integration', 'lebesgue-integral']"
+2852051,Expected number of steps for reaching a specific absorbing state in an absorbing Markov chain,"For a finite Markov chain with one or more absorbing states there are well-known methods for determining either the probability of ending up in a specific absorbing state or the expected number of steps to end up in any absorbing state. However, I've not found a way to determine the expected number of steps to reach a specific state. For instance, in the classic Drunkard's Walk, the drunkard is absorbed by both home and the bar. If I were looking at a Drunkard's Walk, what I would want to determine is how many steps it takes, on average, a drunkard who gets home to actually get home. Ideally so that the answer can be presented in a form like ""There's an X% chance the drunkard will end up at home, taking on average Y steps, and a Z% chance the drunkard will end up at the bar after an average of W steps."" or equivalent. I've not yet found a good way to find the solution, I'm at a bit of a loss where to start, and if the answer exists out there I've not found the correct Google search terms to land me on it. Thanks!","['markov-chains', 'linear-algebra']"
+2852059,Geodesic flow on Riemannian manifolds,A naive question. I see many research papers on geodesic flows on Riemannian manifolds. Some of them try for instance to show that they are ergodic. It is probably a very broad question but could you give me some general ideas about why is the study of this flow important? And what does the fact that it is ergodic tells us?,"['ergodic-theory', 'differential-geometry', 'geodesic']"
+2852114,"$f$ continuous on $[a,b]$, $f\geq 0$, $\int_{a}^{b}f=0$ then $f=0$","I'm curious as to if anyone can provide some feedback on this proof. If $f:[a,b]\rightarrow \mathbb{R}$ continuous, $f\geq 0$, $\int_{a}^{b}f=0$ then $f=0$. My proof: Let's assume there exists some $c\in [a,b]$ such that $f(c)>0$. Then $f>0$ on an open set $c\in I\subset [a,b]$, this must be true because otherwise we would have a non-continuous piecewise function, $f(x)=0$ for all $x\in [a,b]-\{c\}$ and $f(c)=0$. Now let's build a lower Darboux sum greater than $0$. $L(f,\sigma)=\sum_{i=0}^{n-1} m_i(f)\,\Delta x_i=m_k(f)\,\Delta x_i>0,$ where my partition is $\sigma=\{ a=x_0<x_1<\dots<x_n=b \}$ picked in a way such that $[x_k,x_{k+1}]\subset I$. Also $m_k(f)=\inf\{f(x):x\in [x_k,x_{k+1}]\}$. Now we can conclude that $\underline{\int_a^b}f=\sup \{\text{L}(f,\sigma):\sigma \in \ \text{the set of all partitions of} \ [a,b] \}>0$ but this contradicts the fact that $\underline{\int_a^b} f=\int_a^b f=0$. Therefore $f=0$. What do you think? The book ""A First Course in Real Analysis by Sterling Berberian"" gives a hint to help the student with the proof and says:  Assume $f(c)>0$ at some point c, argue that $f(x)\geq \frac{1}{2}f(c)$ on a subinterval of $[a,b]$ and construct a lower sum for $f$ that is $>0$. As you can see I based most of my proof on that help, but not entirely. If you have any idea as to how to properly use the help please share it!.","['real-analysis', 'integration', 'proof-verification']"
+2852128,Limiting distance of a chase of two points?,"Gil Kalai's blog post https://gilkalai.wordpress.com/2018/06/29/test-your-intuition-35-what-is-the-limiting-distance/ poses a riddle about a chase of two points. Point A chases point B at unit velocity. Point B heads right at unit velocity. At $t = 0$, $A(0) = (0,1)$ and $B(0) = (0,0)$. Question: what is the limiting distance $||B(t) - A(t)||$ as $t$ goes to infinity?","['ordinary-differential-equations', 'dynamical-systems', 'analytic-geometry']"
+2852184,"Proving if $X$ is a random variable and $f$ is a continuous function, then $f(X)$ is a random variable","I'm reading ""Fundamental of Mathematical Statistics"" by Gupta and Kapoor and the authors make the claim that ""if $X$ is a random variable and $f$ is a continuous function, then $f(X)$ is a random variable"". The proof has been skipped as it was beyond the scope of the textbook. However, here's my question: There's not much information about given about $f$, so I assume $f$ is a real valued function on $\mathbb{R}$. So clearly the composition $f(X)$ is also a random variable. The hypothesis that $f$ is continuous is never used. So, does it mean that $f$ does not have be continuous? Or am I wrong somewhere?",['statistics']
+2852214,Is the topology of weak convergence of probability measures first-countable?,"Let $S$ be a separable metric space, and $\mu,\mu_1,\mu_2,\ldots$ be Borel probability measures on $S$.
+We know that $\mu_n \to \mu$ weakly if and only if $\pi(\mu_n,\mu) \to 0$ where $\pi$ is the Prokhorov metric.
+However, this (a priori) doesn't imply that the metric topology induced by $\pi$ is the same as the topology of weak convergence of probability measures (which is the smallest topology such that $\mu \mapsto \int f \,d\mu$ is continuous for all continuous bounded $f:S \to \mathbb{R}$), since the topology of weak convergence of probability measures might not be first-countable.
+So my question is: is the topology of weak convergence of probability measures on $S$ first-countable?
+Thank you in advance.","['probability-theory', 'functional-analysis', 'weak-convergence', 'first-countable', 'general-topology']"
+2852218,A group in which every proper subgroup is contained in a maximal subgroup,Let $G$ be a group in which every proper subgroup is contained in a maximal subgroup of $G$. Can we conclude that $G$ is finitely generated? (@Max commented that converse of this statement is true.),"['abstract-algebra', 'group-theory']"
+2852234,What fraction of the standard deviation should the error bars be?,"I am certainly new to statistics. I did some simulations and got a lot of data. From the data I ran a AWK script to calculate the average $\bar x$; minimum, $x_0$ and standard deviation, $\sigma$ (the one where you divide by $N$, not $N-1$). Now I want to plot the data. I guess, I can draw the histogram $\bar x$ high but I am confused how long my error bar should be, like should it be, one standard deviation long (68% confidence) or $2\sigma$ (95% confidence) or $3\sigma$ (99.7% confidence) long. or should I draw it from min-value to max-value","['statistics', 'standard-deviation']"
+2852241,What is meant by pointwise fixed?,I did not find a direct definition so I will give the context : $X$ is compact manifold with boundary. There is no smooth map $f:X\rightarrow \partial X$ that leaves $\partial X$ pointwise fixed. Here what is meant by pointwise fixed? I found that fixed means $f(x)=x$ so pointwise means this must be true for all $x$? I am not sure.,['general-topology']
+2852248,Number of ways of forming 10 student committee from 5 classes of 30 students each,"There are 5 classes with 30 students each. How many ways can a committee of 10 students be formed if each class has to have at least one student on the committee? I figured that we first have to choose 5 people from each class, so there are $10^5$ options. There remain total of 29*5=145 students to choose from, and we can fill remaining 5 spots any way we want, i.e., $\binom{145}{5}$ options. Thus, I thought answer would be $$10^5 \dot\ \binom{145}{5} $$. Apparently this is the wrong answer. I can see how the inclusion/exclusion principle also leads to the right answer. That is,
+$$  {150 \choose 10}- 5{120 \choose 10} + {5 \choose 2}{90 \choose 10} - {5 \choose 3}{60 \choose 10} + {5 \choose 4}{30 \choose 10} $$ I don't see though what I overlooked and why my answer is different? Any advice on when to simply use inclusion/exclusion and when to use other methods?","['combinations', 'combinatorics', 'inclusion-exclusion', 'discrete-mathematics']"
+2852287,Is there a way to know if a row reduction of a matrix has been done correctly?,"I'm an undergrad taking the class of ""Linear algebra 1"". I came across a problem:
+sometimes we need to apply Gaussian elimination for matrices. Very quickly this skill is not much necessary as it's not a thinking skill but purely Technic. Yet, often in exams there's a question that requires you to apply row reduction 
+to a matrix. I am looking for a way to know if the Gaussian elimination has been done properly, meaning - with no Calculation mistakes, other than going over all the steps and check that the Calculation has been done correctly. as this processes will double the time I will spend on a given question, and due to the lack of time in a big course exam - which is also very stressful - such method could be much helpful for me. note: we're allowed to use a simple scientific calculator (not a graph calculator)","['gaussian-elimination', 'matrices', 'reference-request', 'soft-question', 'linear-algebra']"
+2852294,How do you evaluate limit of $\frac{\sqrt{1+x^2} - \sqrt {1+x}}{\sqrt {1+x^3} - \sqrt {{1+x}}}$ when $x$ tends to $0$?,I tried rationalization method and got as $\frac{x^2-x}{\sqrt {1+x^3} - \sqrt {1+x} ({\sqrt{1+x^2} + \sqrt {1+x}})}$. But i feel the denominator having power of 3 I may be doing it wrong.The answer should be 1. Please help.,"['calculus', 'limits']"
+2852303,Calculating multiple parameters for a logarithmic function,"I have the following function - $$y=\ln(Ax^D+B+Cx^E)$$ These are the coordinates: $$(1, 1)$$$$(2, 0.84)$$$$(4, 1.5)$$$$(31, 4.1)$$$$(44, 5)$$ How can you solve this equation and what is the correct method for finding the $A,B,C,D$ and $E$ parameters? EDIT It seems that the last coordinate is causing a problem. Anyway what's the correct way to find the equation without the last coordinate and as close as possible?","['systems-of-equations', 'logarithms', 'calculus', 'functions', 'algebra-precalculus']"
+2852324,Help to evaluate $\int_{0}^{\pi}\sec(x)\sqrt{\tan\left(\frac{x}{2}\right)}\ln^n\tan\left(\frac{x}{2}\right)dx$,"I am trying to evaluate this integral $$I=\large\int_{0}^{\pi}\sec(x)\sqrt{\tan\left(\frac{x}{2}\right)}\ln^n\tan\left(\frac{x}{2}\right)\mathrm dx$$ Making a substitution $\large u=\frac{x}{2}$ $\large \mathrm dx=\mathrm 2du$ $$I=2\large \int_{0}^{\pi/2}\sec(2u)\sqrt{\tan(u)}\ln^n\tan(u)\mathrm du$$ Using trigonometrical identities, making a transformation $$I=-2\large \int_{0}^{\pi/2}\sec(2u)\cdot \frac{\sqrt{\tan(u)}\ln^n\tan(u)}{\tan^2(u)-1}\mathrm du$$ Doing another substitution $\large v=\tan(u)$ $\large \mathrm du=\frac{1}{\sec^2(u)}\mathrm dv$ $$\large I=-2\int_{0}^{\infty}\frac{\sqrt{v}\ln^n(v)}{v^2-1}\mathrm dv$$ Doing another substitution $\large y=\sqrt{v}$ $\large \mathrm dv=2\sqrt{v}\mathrm dy$ $$\large I=-64\int_{0}^{\infty}\frac{y^2\ln^n(y)}{y^4-1}\mathrm dy$$ $$\large I=-64\int_{0}^{\infty}\frac{y^2\ln^n(y)}{(y^2+1)(y-1)(y+1)}\mathrm dy$$ Using partial fraction decomposition $$\large I=-32\int_{0}^{\infty}\frac{\ln^n(y)}{y^2+1}\mathrm dy+16\int_{0}^{\infty}\frac{\ln^n(y)}{y+1}\mathrm dy-16\int_{0}^{\infty}\frac{\ln^n(y)}{y-1}\mathrm dy$$ I can't continue from this point... I would like some help, please.","['integration', 'definite-integrals', 'trigonometric-integrals', 'calculus']"
+2852355,Irreducible characters of SU(3),"There is a simple formula for the irreducible characters of  SU(2), 
+$$ 
+\chi^{(j)} (\theta) = \frac{\sin (j+\frac{1}{2})\theta}{\sin \frac{1}{2}\theta},
+$$
+where the irreps have dimensionality $( 2 j +1)\times(2j+1)$. Is there a similar formula for the characters of the irreps of SU(3)?","['representation-theory', 'group-theory', 'characters']"
+2852369,Multiplying inequalities. [duplicate],"This question already has answers here : Multiplying two inequalities (2 answers) Closed 2 years ago . Suppose, I have two inequalities as follows: $$x^2>1\tag{1}$$
+$$y<-1\tag{2}$$ Is it possible to form a new inequality by combining $(1)$ and $(2)$ where the left-hand side would contain $x^2y$ and the right-hand side would contain only numbers?","['algebra-precalculus', 'inequality']"
+2852399,Minimum value of $\frac{b+1}{a+b-2}$,"If $a^2 + b^2= 1 $ and $u$ is the minimum value of the $\dfrac{b+1}{a+b-2}$, then find the value of $u^2$. Attempt: Then I tried this way: Let $a= bk$ for some real $k$. Then I got $f(b)$  in terms of b and k which is minmum when $b = \dfrac{2-k}{2(k+1)}$ ... then again I got an equation in $k$ which didn't simplify. Please suggest an efficient  way to solve it.","['derivatives', 'optimization', 'trigonometry', 'calculus', 'quadratics']"
+2852461,Künneth formula and Leray spectral sequence,"I want to prove the Künneth formula with $\mathbb R$ coefficients using the Leray spectral sequence. Let $f: X \times Y \to Y$ the projection map. Then we get a Leray spectral sequence $E^{p,q}_r \Rightarrow E^{p,q}_\infty$ where 
+$$E_2^{p,q}= H^p(Y,R^qf_* \mathbb R), ~~~~~~~E^{p,q}_\infty=gr^p_F H^{p+q}(X\times Y,\mathbb R).$$ Further, the presheaf $R^qf_* \mathbb R$ is given by $U\mapsto H^q(f^{-1}(U), \mathbb R)$. Thus for $U$ contractible $$R^qf_* \mathbb R(U)= H^q(X\times U, \mathbb R) = H^q(X, \mathbb R).$$ In particular this is a locally constant sheaf. Then $$E_2^{p,q}  =H^p(Y,R^qf_* \mathbb R)= H^p(Y,H^q(X,\mathbb R)) \\=H^p(Y,\mathbb R) \otimes H^q(X,\mathbb R) ,$$
+where in the last equlity I used the universal coefficient theorem. I also have that $$H^{p+q}(X\times Y, \mathbb R)= \bigoplus_{p+q=k} E^{p,q}_\infty$$ So if $E^{p,q}_2=E^{p,q}_\infty$, the Künneth formula follows. But how do I show the last part? Are there any mistakes in the above?","['homology-cohomology', 'algebraic-geometry', 'proof-verification', 'spectral-sequences', 'algebraic-topology']"
+2852504,Can we conclude that two of the variables must be $0$?,"Assuming $$a^2+b^2+c^2=1$$ and $$a^3+b^3+c^3=1$$ for real numbers $a,b,c$, can we conclude that two of the numbers $a,b,c$ must be $0$ ? I wonder whether mathworld's result that only the triples $(1,0,0)$ , $(0,1,0)$ , $(0,0,1)$ satisfy the given equation-system , is actually true. Looking at $(a+b+c)^3$ and $(a+b+c)^2$ , using 
+\begin{align}
+&(a+b+c)^3= (a+b+c)^2(a+b+c)=\\  
+&(1+2(ab+ac+bc))(a+b+c)= \\
+&2(a+b)(a+c)(b+c)+a+b+c+2abc
+\end{align}
+and eliminating $(a+b)(a+c)(b+c)$, with $S:=a+b+c$ , I finally got  $$(S-1)^2(S+2)=6abc$$ I guess this is not enough to show the above result (if it is true at all). This question is inspired by an exercise to determine the possible values of $a+b+c$ assuming the above equations, so this question could be a duplicate, but I am not sure whether it actually is.","['symmetric-polynomials', 'calculus', 'systems-of-equations']"
+2852520,"Recurrence of $\{0,1,2\}^n$ tuples that don't contain $2$ followed immediately by $0$","I'm doing part (a) and need some hints with it. My approach is to divide members of $\{t_n\}$ into 2 sets: $\bullet$ n-tuples start with $0$, i.e. $(0,\_ \ ,\_ \ ,\_ \ ,\_ \ ,\_ \ ,...)$: there are $t_{n-1}$ of those (i.e. we fill in the blanks with members of $\{t_{n-1}\}$). $\bullet$ n-tuples with $0$ in position $p$, for $p = 2,3,...,n-1$, $\ $ i.e. $(...,\_ \ ,\_ \ , 0,\_ \ ,\_ \ ,\_ \ ,...)$: we want to fill the blanks with $\{t_{n-1}\}$, except those that have $2$ at position $(p-1)$, 
+$\ $and there are $t_{n-2}$ of those. Since there are $(n-2)$ possible values for $p$, the count would be $(n-2)(t_{n-1} - t_{n-2})$. I get stuck when it's time to sum up the above. I think they overlap, especially those in the second bullet point, but can't decide where. ============================================== Edit: I've now realized that my division of cases is wrong, thanks to the answers by Henning Makholm and Hagen von Eitzen (and also to the comment by another user, which for some reason was gone). The first of the sets is good, but the second one doesn't complement it. I'm thinking more about this problem and will edit my question again if needed.","['combinatorics', 'recurrence-relations', 'discrete-mathematics']"
+2852582,Distance between two points on a surface with metric $g_{mn}$,"Say you have a two dimensional surface with a metric tensor $g_{mn}$ on which there are two points with coordinates $(\theta_1, \phi_1)$ and $(\theta_2,\phi_2)$, how would you calculate the distance between these points? My initial idea would be to solve the geodesic equation: $$\frac{d^2 x^a}{ds^2} + \Gamma^a_{\phantom a bc}\frac{dx^b}{ds}\frac{dx^c}{ds} = 0$$ Where $\Gamma^a_{\phantom abc}$ are the Christoffel Symbols. Then, after solving the equation $x^a(s)$, I would calculate the length using the arc length formula, $$s = \int^b_a \sqrt{\left(\frac{d\theta}{ds}\right)^2 + \left(\frac{d\phi}{ds} \right)^2} ds$$ Or maybe, since the above is calculation Euclidean distance: $$s = \int^b_a \sqrt{g_{ab}\frac{dx^a}{ds}\frac{dx^b}{ds}} ds$$ Is this the correct  method or is there an easier way to calculate it? Note: What I'm trying to do is derive the formula for the Great Circle distance using the metric for a sphere, $$\begin{bmatrix}r^2& 0\\0& r^2 \sin^2\theta\end{bmatrix}$$ with the Python gravipy library while still allowing any 2-dimensional metric to be used.","['arc-length', 'riemannian-geometry', 'differential-geometry', 'geodesic']"
+2852600,Show that there is a surjective mapping $f:\mathbb N\to A$ such that $f(m)\leq f(n)$ if $m\leq n$,"Suppose that $(A,\leq)$ is a non-empty totally ordered set for which each non-empty subset has a least element and a greatest element. Show that there is a surjective mapping $f:\mathbb N\to A$ such that $f(m)\leq f(n)$ if $m\leq n$ . My attempt: For $a\in A$ , let $U(a)=\{b\in A\mid a<b\}$ be the set of strictly upper bounds of $\{a\}$ in $A$ . Let $x=\min A$ and $s(a)=\min U(a)$ if $U(a)\neq\varnothing$ , and $s(a)=a$ otherwise. We define $f$ recursively as follows: $f(0)=x$ and $f(n+1)=s(f(n))$ . It's easy to prove that $f$ is increasing. Please check if the below part, in which I show $f$ is surjective, contains any error! Assume that $f$ is not surjective, then $P=\{b\in A\mid b\notin\text{ran}f\}\neq\varnothing$ . Let $p=\min P$ , then $p\neq x=f(0)$ . Let $p_0=\max\{b\in A\mid b<p\}$ , then $p_0\in\text{ran}f$ and $p_0=f(k)$ for some $k\in\mathbb N$ . So by definition of $f,f(k+1)=s(f(k))=s(p_0)=p$ . Thus $p\in\text{ran}f$ , which is a contradiction. So $f$ is surjective. EDIT: on the basis of Cameron Buie's answer, I added this part for clarity. $p_0$ is well-defined $p\neq x\implies x<p$ [Since $x=\min A$ ] $\implies x\in\{b\in A\mid b<p\}\implies\{b\in A\mid b<p\}\neq\varnothing$ . Also, each non-empty subset of $A$ has a least element and a greatest element, then $p_0=\max\{b\in A\mid b<p\}$ does exists. $s(p_0)=p$ We have $p_0=\max\{b\in A\mid b<p\}$ , then $p_0<p$ and $t<p\implies t\leq p_0$ . For all $k> p_0$ , then either $k<p$ (this case is impossible. If not, $k<p\implies k\leq p_0\implies k\not >p_0$ ) or $k\geq p$ . Thus $p_0<p$ and $p_0<k\implies p\leq k$ . This implies $p=\min\{b\in A\mid p_0<b\}=\min U(p_0)=s(p_0)$ . To sum up, $s(p_0)=p$ .","['elementary-set-theory', 'proof-verification']"
+2852608,noise-free Gaussian Process likelyhood,"I am learning Gaussian Process reading GPML .
+I am a bit confused with understanding the Bayesian analysis. Let consider the standard linear regression model with ""Gaussian noise"", i.e,
+$$
+f(\textbf{x}) = \textbf{x}^T\textbf{w}, \qquad y = f(\textbf{x}) + \epsilon, \qquad \epsilon \sim \mathcal{N}(0,\sigma_n^2)
+$$
+where $\textbf{w}, \textbf{x} \in \mathbb{R}^n$. Note that
+$$
+\epsilon = y - f(\textbf{x}) = y - \textbf{x}^T\textbf{w} \sim \mathcal{N}(0,\sigma_n^2)
+$$
+and the p.d.f. of $\epsilon$ is 
+$$
+p_\epsilon(z) = \frac{1}{\sqrt{2\pi}\sigma_n}\exp\left(-\frac{z^2}{2\sigma_n^2}\right). 
+$$
+Therefore, given $\textbf{x}$ and $\textbf{w}$, the p.d.f. of $y$ would be
+$$
+p_{y\mid \textbf{x}, \textbf{w}}(z) = \frac{1}{\sqrt{2\pi}\sigma_n}\exp\left(-\frac{(z-\textbf{x}^T\textbf{w})^2}{2\sigma_n^2}\right). 
+$$
+It then follows from the Bayes' rule that
+$$
+p_{\textbf{w}\mid y, \textbf{x}}(w) = \frac{p_{y\mid \textbf{x},\textbf{w}}(z)\cdot p_{\textbf{w}}(w)}{p_{y\mid \textbf{x}}(z)}.
+$$ Question: In the noise-free setup, how one can derive the posterior distribution $p_{\textbf{w}\mid y, \textbf{x}}(w)$?
+It seems that in the noise-free setup, $y$ is completely determined by $\textbf{x}$ and $\textbf{w}$. Thus 
+$$p_{y\mid \textbf{x},\textbf{w}}(z) = \delta_{\{z=\textbf{x}^T\textbf{w}\}}(z),
+$$ a point distribution.
+Then this gives
+$$
+p_{\textbf{w}\mid y, \textbf{x}}(w) = \frac{\delta_{\{z=\textbf{x}^T\textbf{w}\}}(z)}{P_{\textbf{w}}(\textbf{x}^T\textbf{w}=z \mid \textbf{x})}p_{\textbf{w}}(w) ?
+$$
+(actually, not 100% sure about this). At this point, I don't see how the Bayeian approach is somehow useful in the noise-free senario. Or Is Bayeian approach based on the assumption of the presence of the noise? Any comments/answers/suggestions would be very appreciated.
+Thank you in advance.","['bayesian', 'machine-learning', 'statistics', 'statistical-inference']"
+2852609,Let $G$ be a finite group with a normal subgroup $H$ such that $G/H$ has prime order . Then precisely when $G$ is isomorphic to $ H × G/H$ .,"Let $G$  be a finite group with a normal subgroup $H$  . Then precisely when  $G$  is isomorphic to $ H × G/H$ . I was trying to directly construct an isomorphism with trial and error between  $G$ and $ H × G/H$ and my hope was to find appropriate conditions on $G$ and $H$ along the way.But so far not able to make any notable progress. I was trying different onto homomorphisms from $G\to H$ and $G\to G/H$ , and then use these homomorphisms as the first and the second component of the desired isomorphism between $G$ and $ H × G/H$. I was trying to see how those homomorphisms should relate to each other in order to do the job and  what constrain they put on $G$ and $H$ ? Any progress in this situation will be help full to me .Thanks","['finite-groups', 'abstract-algebra', 'group-theory']"
+2852612,Terminology: Is $f(x)=5*g(x)$ 'increasing' in $g(x)$?,"Consider the following function $$f(x)=5*g(x)$$ Can I say that this function is increasing in $g(x)$, or is the term 'increasing' only used to refer to variables, and not functions? If not, how should this relationship be described?","['terminology', 'functions']"
+2852617,"Non-empty, disjoint subsets of $\Bbb R^2,$ both isometric to their union?","This question was posed to me by a friend who tells me the answer is yes, but I cannot see why. Does there exist two nonempty, disjoint sets $A, B \subset \mathbb{R}^2$ such that $A$ and $B$ are both isometric to their union? I cannot for the life of me come up with a way of constructing both sets - I've noticed that the measure of both has to be $0$, but that's about it.","['real-analysis', 'metric-spaces']"
+2852635,"Why is $d(x,0)$ not a norm?","If $\|x\|$ is a norm, then we can define $d(x,y):=\|x-y\|$ and it will be a metric. Now, if $d$ is a metric, why is $\|x\|:= d(x,0)$ not a norm? I think it fail for the sub-linearity, but I don't see how.",['functional-analysis']
+2852657,Evaluate $\int_{|z|=3}\frac{dz}{z^3(z^{10}-2)}$,"$$\int_{|z|=3}\frac{dz}{z^3(z^{10}-2)}$$ There are singularities at $z=0$ and $z^{10}=2\iff z=\sqrt[10]{2}e^{\frac{i\pi k}{5}} \text{  where   } k=0,1,...9$ so we need to find $10$ residues? or have I got it wrong?","['complex-analysis', 'contour-integration', 'residue-calculus']"
+2852662,Finding the minimum of a,"For constant number ""a"" consider the function $f(x)= ax + \cos 2x + \sin x + \cos x$ on $\mathbb R$ such that $f(u)<f(v)$ for $u< v$. If the range of a, for any real numbers $u, v$ is $[\dfrac{m}{n}, \infty)$. Find the minimum value of $(m+n)$ Attempt: The problem is just an overly complicated way of saying ""find the range for which f(x) is strictly increasing"". So, using $f'(x)>0$
+I get: $a> 2\sin 2x + \sin x - \cos x$ So basically we need to find the maximum of RHS for the range of a. $g(x)= 2 \sin 2x + \sin x - \cos x $ For extremum, $g'(x)=0 $ $4 \cos 2x  + \cos x+ \sin x= 0$ $\implies 16\cos^2 2x = 1+ \sin 2x$ $\implies 16\sin^2 2x + \sin 2x -15 =0$ $\implies \sin 2x = -1$ or $\sin 2x = \dfrac {15}{16}$ Then it seriously gets very complicated because we would have to extract $\sin x$ and $\cos x$ from $\sin 2x = \dfrac{15}{16}$. I tried but couldn't get it easily.  After this we would have to plug in the values to g(x)
+ to see which one of them gives maximum.  (Just a side note: g is periodic with period $2\pi$) Is it possible to do this problem using my method? If not, what are the other clever ways to solve it?","['trigonometry', 'calculus']"
+2852717,Understanding Gauss's product formula as cited in Golomb's Shift Register Sequences,"In his book Shift Register Sequences , Solomon Golomb refers to ""Gauss's product formula"" : The basic device here is “Gauss's product formula” [39] which expresses the “product” of any two cosets as a sum of cosets. (This ""product"" is in terms of evaluation with 1's and 0's. It has nothing to do with multiplication in the factor group.) I'm completely lost. What is he talking about? The cosets here in Golomb's example are cyclotomic cosets $\bmod 2^N - 1$ for $N=5$, with $$\begin{align}
+C_0 &= \{1,2,4,8,16\} \cr
+C_1 &= \{3,6,12,24,17\} \cr
+C_2 &= \{9,18,5,10,20\} \cr
+C_3 &= \{27,23,15,30,29\} \cr
+C_4 &= \{19,7,14,28,25\} \cr
+C_5 &= \{26,21,11,22,13\}
+\end{align}$$ I understand what these cosets are (elements in the same coset are produced by multiplying by powers of 2, $\bmod 2^N-1$), but how can you possibly ""multiply"" or ""add"" them, and write equations regarding $C_iC_j$?","['finite-fields', 'abstract-algebra']"
+2852753,The orbit of $2^n+1$,"Consider the Collatz function, $$T(n)=\frac {n}{2}, \text { if $n$ is even}$$ and $$ T(n)=\frac {3n+1}{2}, \text { if $n$ is odd}$$ Observing the orbit of $2^n+1$, I came up with the following formula. $$ T^n(2^n+1)= 3^{n/2}+1, \text { if $n$ is even}$$ $$T^n(2^n+1)= 3^{(n+1)/2}+2, \text { if $n$ is odd}$$ I came up with the formula by following the orbit. $$2^n+1\to 3(2^{n-1})+2 \to 3(2^{n-2})+1\to 3^2(2^{n-3})+2\to 3^2(2^{n-4})+1\to...$$ For example $$T^5(2^5+1)=3^3+2=29$$
+which is verified by $$33\to 50\to 25\to 38\to 19 \to 29$$
+For larger $n$ this is significant, for example: 
+$$T^{100}(2^{100}+1)= 3^{50}+1$$ $$T^{1000}(2^{1000}+1)= 3^{500}+1$$
+Question: How do we turn this  into a formal proof?","['number-theory', 'collatz-conjecture']"
+2852767,Why is $2$ double root of the derivative?,"A polynomial function $P(x)$ with degree $5$ increases in the interval
+  $(-\infty, 1)$ and $(3, \infty)$ and decreases in the interval
+  $(1,3)$. Given that $P'(2)= 0$ and $P(0) = 4$, find $P'(6)$. In this problem, I have recognised that $2$ is an inflection point and the derivative will be of the form: $P'(x)= 5(x-1)(x-3)(x-2)(x-\alpha)$ . But I am unable to understand why $x=2$ is double root of the derivative (i.e. why is $\alpha =2$?). It's not making sense to me. I need help with that part.","['derivatives', 'stationary-point', 'calculus']"
+2852821,Expectation of HTH (fair coin tosses),"There is a sequence of fair coin tosses with Head (H) and Tail (T). I have the stopping time $S=\text{{the first time we get HTH}}$. I want to calculate the $E[S]$, which is $10$. I have to use the optional stopping theorem , but I do not know, how to calculate this. Can somebody help me? I found a solution by combinatoric and by Marcov Chain, but I need one by Optional Stopping..","['probability-theory', 'probability', 'expectation', 'stopping-times']"
+2852832,Proof that $\sum\limits _{n=1}^{\infty } n\sum\limits _{j=2}^{\infty }{\frac {(-1)^{j-1}}{j^2} \left( 1-{j}^{-1} \right)^{n-1}} = -\frac12$,"How can we prove the following? $-1+\frac1{12}{\pi }^{2}-\frac12\sum\limits_{n=2}^{\infty }\Gamma  \left( n+1 \right) \sum\limits_{k=0}^{n+2}
+\,{\frac {\zeta  \left( k \right)   \left( -
+1 \right) ^{-2+k} \left( {2}^{2-k}-2 \right) }{\Gamma  \left( -1+k
+ \right)  \left( n+1-k \right) !}} =\sum\limits_{n=1}^{\infty }n
+ \sum\limits_{j=2}^{\infty }{\frac { \left( -1 \right) ^{j-1}}{{j}^{
+2}} \left( 1-{j}^{-1} \right) ^{n-1}} =-\frac12$ We also have
+$\chi(n)=-\sum\limits_{k=0}^{n+2}\zeta  \left( k
+ \right)  \left( k-n-2 \right) {n\choose k-2} \left(  \left( -1
+ \right) ^{1+k}{2}^{1-k}+ \left( -1 \right) ^{k} \right) $ by replacing the $\Gamma$ factors with the corresponding binomial occeficient Related question at References for $ \chi(n)=n\sum\limits_{j=2}^\infty\frac {(-1)^{j-1}}{j^2}\left(1-j^{-1}\right)^{n-1}$ in $\zeta$ expansion? Digits := 37; flist(proc (n) options operator, arrow; evalf(coolchi(n)) end proc, 0 .. 75);
+                          Digits := 37
+[                                              
+[0., -0.1775329665758867817637924166769874055, 
+
+  -0.158151287891164991627192075621149797, 
+
+  -0.100756475454096876860689273411921431, 
+
+  -0.052729122560581908477394880842614692, 
+
+  -0.022173447806981260740844120495648785, 
+
+  -0.005724758139923986695354623118140584, 
+
+  0.001711181525440404872086057781767772, 
+
+  0.004163504754435619487164038876686477, 
+
+  0.004224146796392587120306729731994248, 
+
+  0.003361436685455899377754627000698078, 
+
+  0.00231507684250186191279422185478205, 
+
+  0.00140312527387483007618661260684936, 
+
+  0.00072272177218128957979732200349640, 
+
+  0.00026840905319980399461855630763639, 
+
+  -0.00000386786514313326830151239928860, 
+
+  -0.00014529652172375174501064342971419, 
+
+  -0.00020079200685610596363763783920190, 
+
+  -0.00020486397550091241285507339640177, 
+
+  -0.00018177251376674866978557090651028, 
+
+  -0.00014732720568299891079533324844990, 
+
+  -0.00011103259250611536839455447354313, 
+
+  -0.00007801852557445637063802766476294, 
+
+  -0.00005057002459089850935720449502326, 
+
+  -0.00002924737982070438622370684257219, 
+
+  -0.0000136577182218588710540784871811, 
+
+  -0.0000029575122625340335255970335431, 
+
+  0.0000038395199899767419714034429197, 
+
+  0.0000076881193734840299247444522077, 
+
+  0.0000094245398419219327153653943207, 
+
+  0.0000097337529690318816412614692587, 
+
+  0.0000091480274459270312096627770217, 
+
+  0.0000080619145517535381759258176097, 
+
+  0.0000067542476407336638941225910227, 
+
+  0.000005411593443449269790648097261, 
+
+  0.000004150125437131325581547336324, 
+
+  0.000003034497471576312110001308212, 
+
+  0.000002093267538135562252003012925, 
+
+  0.000001330969825279401198332450463, 
+
+                                 -7  
+  7.37209507955248062779620826 10  , 
+
+                                 -7  
+  2.93263622398134958434524015 10  , 
+
+                                 -8  
+  -2.3317072362848976102839973 10  , 
+
+                                  -7  
+  -2.35650675570634484892471134 10  , 
+
+                                  -7  
+  -3.65620346716670870284369471 10  , 
+
+                                  -7  
+  -4.32803484845776951918534983 10  , 
+
+                                  -7  
+  -4.53980382773092409894967670 10  , 
+
+                                  -7  
+  -4.43028271969806636513667532 10  , 
+
+                                  -7  
+  -4.11056601063391173974634568 10  , 
+
+                                  -7  
+  -3.66679744724574133777868780 10  , 
+
+                                  -7  
+  -3.16354929829636515323370167 10  , 
+
+                                  -7  
+  -2.64737199886948816611138728 10  , 
+
+                                  -7  
+  -2.15021028592691266141174466 10  , 
+
+                                  -7  
+  -1.69250991341964200913477377 10  , 
+
+                                  -7  
+  -1.28592821342563655928047463 10  , 
+
+                                 -8  
+  -9.3562155186891501184884726 10  , 
+
+                                 -8  
+  -6.4212079021714840683989162 10  , 
+
+                                 -8  
+  -4.0282829593958497425360774 10  , 
+
+                                 -8  
+  -2.1318155241615525408999560 10  , 
+
+                                -9  
+  -6.753256088468931634905523 10  , 
+
+                               -9  
+  4.020837075521115896921341 10  , 
+
+                                -8  
+  1.1611930078301706186481030 10  , 
+
+                                -8  
+  1.6596359914684719233773543 10  , 
+
+                                -8  
+  1.9500255425207775038798882 10  , 
+
+                                -8  
+  2.0789463805547333601557044 10  , 
+
+                                -8  
+  2.0865770984321044922048033 10  , 
+
+                                -8  
+  2.0067518073257429000271847 10  , 
+
+                                -8  
+  1.8673131375018625836228485 10  , 
+
+                                -8  
+  1.6906432963871255429917949 10  , 
+
+                                -8  
+  1.4942881292166557781340237 10  , 
+
+                                -8  
+  1.2916159703946332890495351 10  , 
+
+                                -8  
+  1.0924629207316840757383290 10  , 
+
+                               -9  
+  9.037454965393441382004053 10  , 
+
+                               -9  
+  7.300036840122634764357642 10  , 
+
+                               -9  
+  5.739399681529520904444054 10  , 
+
+                               -9                               -9
+  4.367571268906899802263293 10  , 3.185931532251771457815357 10  
+
+  ]
+  ] listsum((20))=    -0.4999999932944069400650356605249833795 Note: when evaluating this sum, at appears at least 28 digits of precision are required for accurate evaluation. If you use less than this (Maple defaults to 10) then the result will diverge quite wildly to an inaccurate answer. This table is the partial sums of the terms, so I think the equality =-1/2 is correct [0., -.1775329665758867817637924166769874055, -.3356842544670517733909844922981372025, -.4364407299211486502516737657100586335, -.4891698524817305587290686465526733255, -.5113433002887118194699127670483221105, -.5170680584286358061652673901664626945, -.5153568769031954012931813323846949225, -.5111933721487597818060172935080084455, -.5069692253523671946857105637760141975, -.5036077886669112953079559367753161195, -.5012927118244094333951617149205340695, -.4998895865505346033189751023136847095, -.4991668647783533137391777803101883095, -.4988984557251535097445592240025519195, -.4989023235902966430128607364018405195, -.4990476201120203947578713798315547095, -.4992484121188765007215090176707566095, -.4994532760943774131343640910671583795, -.4996350486081441618041496619736686595, -.4997823758138271607149449952221185595, -.4998934084063332760833395496956616895, -.4999714269319077324539775773604246295, -.5000219969564986309633347818554478895, -.5000512443363193353495584886980200795, -.5000649020545411942206125671852011795, -.5000678595668037282541381642187442795, -.5000640200468137515121667607758245795, -.5000563319274402674822420163236168795, -.5000469073875983455495266509292961795, -.5000371736346293136678853894600374795, -.5000280256071833866366757266830157795, -.5000199636926316330984998008654060795, -.5000132094449908994346056782743833795, -.5000077978515474501648150301771223795, -.5000036477261103188392334828407983795, -.5000006132286387425271234815325863795, -.4999985199611006069648714785196613795, -.4999971889912753275636731460691983795, -.4999964517817673723156103664483723795, -.4999961585181449741806519319243573795, -.4999961818352173370296280347643303795, -.4999964174858929076641129272354643795, -.4999967831062396243349832116049353795, -.4999972159097244701119351301399183795, -.4999976698901072432043450251075883795, -.4999981129183792130109815387751203795, -.4999985239749802764021555134096883795, -.4999988906547250009762892912784683795, -.4999992070096548306128046146486353795, -.4999994717468547175616212257873633795, -.4999996867678833102528873669618293795, -.4999998560188746522170882804392063795, -.4999999846116959947807442084866693795, -.5000000781738511816722453933713953795, -.5000001423859302033870860773605573795, -.5000001826687597973455835027213313795, -.5000002039869150389611089117208913795, -.5000002107401711274300405466264143795, -.5000002067193340519089246497050733795, -.5000001951074039736072184632240433795, -.5000001785110440589224992294505003795, -.5000001590107886337147241906516183795, -.5000001382213248281673905890945743795, -.5000001173555538438463456670465413795, -.5000000972880357705889166667746943795, -.5000000786149043955702908305462093795, -.5000000617084714316990354006282603795, -.5000000467655901395324776192880233795, -.5000000338494304355861447287926723795, -.5000000229248012282693039714093823795, -.5000000138873462628758625894053293795, -.5000000065873094227532278250476873795, -.5000000008479097412237069206036333795, -.4999999964803384723168071183403403795, -.4999999932944069400650356605249833795]","['binomial-theorem', 'taylor-expansion', 'binomial-coefficients', 'riemann-zeta', 'sequences-and-series']"
+2852834,Show that $f(n)=\sum_{k=1}^n \frac n {n^2+k^2}$ is strictly increasing,I want to show that the function $f:\mathbb N \to \mathbb Q$ defined by$$f(n)=\sum_{k=1}^n \frac n {n^2+k^2}$$ is strictly increasing. Could I have a hint on how to go about this? I have tried playing around with $f(n+1)-f(n)$ but it's all so messy with the different denominators that I'm not sure what to do.,"['summation', 'functions']"
+2852846,Is probability determined by perspective?,"My question: is probability determined by perspective? The scenario that raised the question for me: Initial condition: The Monty Hall problem.  We know the contestant’s original choice of door #1 (of 3 total) is only correct 33% of the time.  After Monty Hall reveals door #3 is incorrect the contestant is asked if he would like to switch his answer to door #2.  We know he should choose to change his answer to the other unopened door (#2) which has a 66% chance of being correct.  He does so. However, let’s say once he decided to switch to door #2, and before either door is revealed, another contestant enters the room.  She does not have any knowledge of what has just transpired on stage.  She is offered a choice to pick which door the car behind of the 2 remains closed doors and also randomly chooses door #2. Are the probabilities of being correct different for each contestant?  Seemingly they are.  Contestant 1 had 3 doors to choose from, giving him a probability of 33% that door #1 is the answer.  Contestant 2 only had 2 doors to choose from, giving her a probability of 50% after choosing the same door contestant #1 choose. If we repeat the experiment 1000 times, what will the numbers turn out to be for door #1?  333 or 500?",['probability']
+2852904,Evaluating definite integral of $p(x)$,"Let $p(x)$ be fifth degree polynomial such that $p(x)+1$ is divisible by $(x-1)^3$ and $p(x)-1 $is divisible by $(x+1)^3 $. Then find the value of the definite integral $$\int _{-10}^{10}p(x)dx$$ Attempt: $p(x)-1 = (x+1)^3 Q(x)$ $p(x)+1 = (x-1)^3 H(x)$ Where $Q(x)$ and $H(x)$ are unknown quadratics. But there's not sufficient information to find $Q$ and $H$ thats why I am unable to proceed. Please provide only a guiding hint, I want to solve it myself.",['calculus']
+2852908,How to calculate $\int_{0}^{\pi/2}x^2\sqrt{\cos (x)}dx$,"I've tried everything. I made $x = \pi / 2 - y$. I looked up the questions here on MSE and did not see anything similar. I thought I'd use complex variables, but I do not even know where to start.","['integration', 'definite-integrals', 'calculus']"
+2852927,"For $A\in\mathbb{R}^{n\times n}$ and $B\in\mathbb{R}^{n\times k}$, does $(I_{n}-aA)^{-1}Bb$ determine $a\in\mathbb{R}$ and $b\in\mathbb{R}^k$?","Let $A$ be a real $n\times n$ matrix, and $B$ be a real $n\times k$
+matrix of rank $k<n$, with $\mathrm{col}(B)$ (the column space of $B$) not an
+invariant subspace of $A$. We assume $A\neq0,I_n$. Consider $$f(a,b)=(I_{n}-aA)^{-1}Bb,$$ for real
+scalar $a\in S$ and $b\in\mathbb{R}^k$. $S$ is the set of values of $a$ such that
+$(I_{n}-aA)$ is invertible. We say that $f(a,b)$ identifies $a$ and $b$ over $\Omega$ if $f(a,b)=f(a^{\ast
+},b^{\ast})$ implies $(a,b)=(a^{\ast},b^{\ast})$ for any two pairs
+$(a,b),(a^{\ast},b^{\ast})\in\Omega$. The problem is to describe the set over which $f(a,b)$ does not identify $a$ and $b$. What I have done so far: Rewrite $f(a,b)=f(a^{\ast},b^{\ast})$ as
+$$
+B(b-b^{\ast})+AB(ab^{\ast}-a^{\ast}b)=0.\tag{1}\label{1}
+$$
+Thus, $f(a,b)$ identifies $a$ and $b$ over $\Omega$ if $\eqref{1}$ implies
+$(a,b)=(a^{\ast},b^{\ast})$ for all $(a,b),(a^{\ast},b^{\ast})\in\Omega$. So far I understand only two particular cases: If $\mathrm{rank}(B,AB)=2k$, then $\eqref{1}$ is satisfied iff $b-b^{\ast}=0$ and
+$ab^{\ast}-a^{\ast}b=0$, from which $(a,b)=(a^{\ast},b^{\ast})$ provided that
+$b\neq0$. Hence, in this case $f(a,b)$ identifies $a$ and $b$ over
+$S\times\mathbb{R}^{k}/\{0\}$. Partition $B$ as $(B_{1},B_{2})$ where $B_{1}$ is $n\times k_{1}$ and
+$B_{2}$ is $n\times k_{2}$, with $0<k_{1}<k$, and suppose that $AB_{1}=B_{1}L$
+for some $k_{1}\times k_{1}$ matrix $L$ ($\mathrm{col}(B_{1})$ is an invariant
+subspace of $A$), and that $\mathrm{rank}(B,AB)=k+k_{2}.$ Then, letting
+$\left(  b_{1}^{\prime},b_{2}^{\prime}\right)  $ be the partition of
+$b^{\prime}$ conformable with that of $B,$ $\eqref{1}$ becomes
+$$
+B_{1}(b_{1}-b_{1}^{\ast}+L(ab_{1}^{\ast}-a^{\ast}b_{1}))+B_{2}(b_{2}%
+-b_{2}^{\ast})+AB_{2}(ab_{2}^{\ast}-a^{\ast}b_{2})=0.
+$$
+Since the columns of $(B_{1},B_{2},AB_{2})$ are linearly independent,
+$\eqref{1}$ is satisfied if and only if $b_{1}-b_{1}^{\ast}+L(ab_{1}^{\ast
+}-a^{\ast}b_{1})=0$, $b_{2}-b_{2}^{\ast}=0$, and $ab_{2}^{\ast}-a^{\ast}%
+b_{2}=0$. Combining the second and third equalities, gives $b_{2}=b_{2}^{\ast
+}$ and $a=a^{\ast}$, provided that $b_{2}\neq0.$ Hence the first equality
+becomes $\left(  I_{k_{1}}-aL\right)  \left(  b_{1}-b_{1}^{\ast}\right)  =0$,
+which is equivalent to $b_{1}-b_{1}^{\ast}$ because $I_{k_{1}}-aL$ is
+invertible for any $a\in S$. This means that $f(a,b)$ identifies $(a,b)$
+provided that not all entries of $b$ associated to columns of $B$ not in
+$\mathrm{col}(A)$ are zero (if they were we would essentially be in the
+case when $\mathrm{col}(B)$ is an invariant subspace of $A$--in that case it is clear that
+$\left(  a,b\right)  $ cannot be identified from $f(a,b)$) Update: Let's look at the case $k=2.$ Write $B=(B_{1},B_{2})$, so $B_1$ and $B_2$ are vectors. Assume
+$\mathrm{rank}(B,AB)=\mathrm{rank}(B,AB_{2})=k+1$ (the case $\mathrm{rank}(B,AB)=2k$ is trivial, see case 1 above, and so is the case $\mathrm{rank}(B,AB)=k$), and write $$AB_{1}%
+=l_{1}B_{1}+l_{2}B_{2}+l_{3}AB_{2},$$ for $l_{1},l_{2},l_{3}\in\mathbb{R}$.
+From $\eqref{1}$,
+\begin{equation}
+\left[  \beta_{1}-\beta_{1}^{\ast}+l_{1}(a\beta_{1}^{\ast}-a^{\ast}\beta
+_{1})\right]  B_{1}+\left[  \beta_{2}-\beta_{2}^{\ast}+l_{2}(a\beta_{1}^{\ast
+}-a^{\ast}\beta_{1})\right]  B_{2}+\left[  a\beta_{2}^{\ast}-a^{\ast}\beta
+_{2}+l_{3}(a\beta_{1}^{\ast}-a^{\ast}\beta_{1})\right]  AB_{2}=0.
+\end{equation}
+Since $\mathrm{rank}(B,AB_{2})=k+1,$ this equality is satisfied iff
+$$\left\{
+\begin{array}
+[c]{c}%
+b_{1}-b_{1}^{\ast}+l_{1}(ab_{1}^{\ast}-a^{\ast}b_{1})=0\\
+b_{2}-b_{2}^{\ast}+l_{2}(ab_{1}^{\ast}-a^{\ast}b_{1})=0\\
+ab_{2}^{\ast}-a^{\ast}b_{2}+l_{3}(ab_{1}^{\ast}-a^{\ast}b_{1})=0
+\end{array}
+\right.$$
+As a linear system in the unknowns $b_{1}^{\ast},b_{2}^{\ast},a^{\ast}$, this
+is
+$$C\left[
+\begin{array}
+[c]{c}%
+b_{1}^{\ast}\\
+b_{2}^{\ast}\\
+a^{\ast}%
+\end{array}
+\right]  =\left[
+\begin{array}
+[c]{c}%
+b_{1}\\
+b_{2}\\
+0
+\end{array}
+\right],\tag{1}\label{2}$$
+where
+$$C=\left[
+\begin{array}
+[c]{ccc}%
+1-l_{1}a & 0 & l_{1}b_{1}\\
+-l_{2}a & 1 & l_{2}b_{1}\\
+-l_{3}a & a & l_{3}b_{1}+b_{2}%
+\end{array}
+\right]  .$$ If $\mathrm{rank}(C)=3$, the only solution to the system is $\left(  b^{\ast
+},a^{\ast}\right)  =\left(  b,a\right)  $. If $\mathrm{rank}(C)<3$, there may
+be other solutions. Note that
+$$
+\det(C)=\left(  l_{1}a-1\right)  b_{2}-\left(  l_{2}a+l_{3}\right)  b_{1}.
+$$ Note that for fixed $a$, the set of $(b_1,b_2)$ such that $\det(C)=0$ is a line in $\mathbb{R}^2$. Incidentally note that case 2. above (with $k=2$) obtains when $l_{2}=l_{3}=0.$ In that case,
+$\det(C)=\left(  l_{1}a-1\right)  b_{2}$, so $\det(C)=0$ only if $b_{2}=0$
+($l_{1}a-1=0$ is impossible as $l_{1}$ must be an eigenvalue of $A$, so $l_{1}a-1=0$ would contradict invertibility of $(I_n-aA)$). That is,
+in that case, we find again the result that $b,a$ is identifiable provided
+that $b_{2}\neq0$.","['matrices', 'linear-algebra', 'invariant-subspace']"
+2852984,Does the expected value of the derivative of the log likelihood evaluated at a certain parameter always have negative mean?,"It is well known that the derivative of the log likelihood with respect to the parameter of interest (the score) has zero expected value. Assuming $f(z;\theta)$ is a probability density function the quick version of the proof (skipping the technicalities in swapping the derivative and the integral) is $$\int \frac{\partial f(z;\theta)}{\partial \theta}dz=0 \Leftrightarrow \int \frac{f(z;\theta)}{f(z;\theta)} \frac{\partial f(z;\theta)}{\partial \theta}dz=0\Leftrightarrow \int f(z;\theta) \frac{\partial \log f(z;\theta)}{\partial \theta}dz=0$$ I was wondering if taking $\theta_1 > \theta$ the expected value of the score evaluated at $\theta_1$ $$\int f(z;\theta) \frac{\partial \log f(z;\theta_1)}{\partial \theta_1}dz$$ was always negative. I have tried this for the mean and variance of the normal distribution and for the parameter of the exponential distribution and it holds. Here is the derivation for the exponential: Assume $X \sim exp( \lambda)$.
+Take $\lambda_1 > \lambda$
+the derivative of the log likelihood of the exponential density with one observation is $$S(\lambda, x):=\frac{\partial }{ \partial \lambda} (\log(\lambda) - \lambda x) = \frac{1}{\lambda} - x$$ So
+$$E[S(\lambda_1, X)] = E \left[  \frac{1}{\lambda_1} - X \right] = \frac{1}{\lambda_1} - \frac{1}{\lambda} < 0.$$ does this hold in general? EDIT: I was working on a proof only for the exponential family of distributions but couldn't quite make it, even a subcase like the exponential family would be interesting to me. EDIT2: after thinking about this for a while I think an equivalent way to state the problem is: ""when is the maximum likelihood estimator unbiased"". So, when is it unbiased?","['statistics', 'probability']"
+2852998,How to know if some series doesn't converge to a rational function,"I was looking into a previous exam from 2011 of a course I am taking of Complex Analysis, and they ask Which of the following series converge to a rational function in some domain?
+  $$\sum_{k=0}^\infty \frac{1}{k!+k^2+k}z^{k^2+2k}\\\sum_{k=0}^\infty \frac{2^k}{(1+z^2)^k}\\\sum_{k=0}^\infty\frac{1}{k! (z-k)^k}$$ I had no problem with the second and third ones. The second one converges to $\frac{1}{1-\frac{2}{1+z^2}}$ given that $\left|\frac{2}{1+z^2}\right|<1$, and the third one has an infinite number of singularities so it can't be a rational function. I don't know how to verify that in the first series. Is there any general method to see if some power series converge to a rational function, or in this particular case, a way to see if this series does? Edit: Now I am not that convinced about my argument for the third series (Since the series might only converge in a bounded domain from which the number of singularities would be finite). Is there anything wrong with it or any way to formalize it further? I also just found the same argument here .",['complex-analysis']
+2853000,Frobenius Norm of Hadamard Product and Trace,"I'm trying to relate the Frobenius Norm of a Hadamard Product to a trace that does not include another Hadamard Product, if possible.  In other words, if A and B are (sxr) matrices, with not all positive values, $\left||A\circ B \right||^2_F = $? I'm trying to relate the sum of the squares of all the entries of the Hadamard product.  I know that the sum of all the entries of the Hadamard product are $\sum_i \sum_j (A\circ B)_{ij} = tr(A B^T) $ and also $\left||A\circ B \right||^2_F = tr((A\circ B)^T(A\circ B)) $ But I am trying to get $\left||A\circ B \right||^2_F $ in the form of the trace of some combination of A and B, without a Hadamard product.  Even an inequality would help.    I've tried various identities and inequalities related to Hadamard Product and Frobenius Norm, but I am not having any luck. Any suggestions would be appreciated.","['matrices', 'hadamard-product']"
+2853017,Solving ODE $y''+y'-2y=0$ using power series.,"I have to solve $$y''+y'-2y=0$$ with $y(0)=0$ and $y'(0)=1$ . Using $$y(x)=\sum_{n=0}^{\infty}a_{n}x^{n}$$ I got $a_{0}=0,a_{1}=1$ and $$a_{n}=\frac{(n+1)(a_{n+1}+(n+2)a_{n+2})}{2}$$ And I really don't know what can I do now. I mean: is there some recursive thing? I calculated the value of $a_{2},a_{3},a_{4},a_{5}$ and $a_{6}$ and I couldn't see anything.","['ordinary-differential-equations', 'power-series']"
+2853054,Easiest way to solve this system of equations,"I have these two equations: $$x=\frac{ab(1+k)}{b+ka}\\ y=\frac{ab(1+k)}{a+kb}$$ where $a,b$ are constants and $k$ is a parameter to be eliminated. A relation between $x,y$ is to be found. What is the best way to do it? Cross multiplying and solving is a bit too hectic. Is there a way we can maybe exploit the symmetry of the situation? Thanks!!","['algebra-precalculus', 'systems-of-equations']"
+2853112,"Some questions about trigonometric polynomials, Vieta's relations and correct integer parameters for roots","I was trying to compute:
+$$P=\sin(2\pi/7) \sin(4\pi/7) \sin(8\pi/7)$$
+So I managed to analyse the equation $\sin(7x)=0$, thus $x = k\pi/7$, when $k$ is an integer. The problem arrives when the equation 
+$\sin(7x) = 7\sin(x) - 56\sin^{3}(x) + 112\sin^{5}(x) - 64\sin^{7}(x)=0$ is derived, because I can't exactly know what are its roots. Assuming $\sin(x) ≠ 0$, the equation becomes 
+$$7\ - 56\sin^{2}(x) + 112\sin^{4}(x) - 64\sin^{6}(x)= 7 - 56t^{2} + 112t^{4} - 64t^{6} = 0$$
+Where $t=\sin(x)$. But, to solve my problem, how can I set the values for the integer parameter $k$, since I've already looked in Wolfram, and the roots of that equation in $t$ are, apparently, $± \,\sin(2\pi/7),\,± \,\sin(4\pi/7),\,± \,\sin(8\pi/7)$, so some good values for $k$ are $±\,1,\,±\,2$ and $\,±\,3$, since we have three pairs of roots with opposite signs, and, by setting that, I successfully get the desired result, $P=-\,\frac{\sqrt7}{8}$.
+But, I don't know how to set those ""good"" values for $k$, can you help me? Another question, that has to do with this one, is it correct to affirm that the Vieta's relation does not hold for trigonometric polynomials like the one for $\frac{\sin(7x)}{\sin(x)}=7\ - 56\sin^{2}(x) + 112\sin^{4}(x) - 64\sin^{6}(x)$, because the sign of the roots would not satisfy it? Thanks in advance!","['polynomials', 'products', 'roots', 'trigonometry']"
+2853161,Number of possible bipartite graphs,"Apologies if this is a basic question, I'm a bit of a rookie when it comes to maths. If I have two sets of nodes $U$ and $V$, is there a way to calculate how many bipartite graphs could be formed if: All the nodes in $U$ must have a degree $\geq$ 1 All the nodes in $V$ must have a degree of 0 or 1 Thank you!","['bipartite-graphs', 'combinatorics', 'graph-theory']"
+2853178,"Question about this reduction to the ""universal elliptic curve""","My question arises from the reading of Katz & Mazur's book ""Arithmetic Moduli of Elliptic Curves"", which can be found here . Given an arbitrary scheme $S$, an elliptic curve over $S$ is a proper smooth curve $E/S$ with geometrically connected fibers all of genus $1$, together with a section $""0""$. By Abel's theorem, we know that such a curve comes with a commutative $S$-group-scheme structure. In theorem 2.3.1 (page 73 in the book, page 42 in the pdf), we would like to show the following statement about the behaviour of the ""multiplication by $N$"" homomorphism. Let $N\geq 1$ be an integer. Then the $S$-homomorphism ""multiplication by $N$"" $$[N]: E\rightarrow E$$ is finite locally free of rank $N^2$. If $N$ is invertible on $S$, its kernel $E[N]$ is finite étale over $S$, locally for the étale topology on $S$ isomorphic to $\mathbb{Z}/N\mathbb{Z}\times \mathbb{Z}/N\mathbb{Z}$. As for the proof of this theorem, we begin by a reduction argument ""to the universal case"", which is precisely what I don't understand. It is stated the following way. Zariski locally on $S$, $E$ is given by a smooth Weierstrass cubic in $\mathbb{P}^2_S$, with origin $(0,1,0)$, and any smooth Weierstrass cubic in $P^2_S$ is an elliptic curve over $S$ with origin $(0,1,0)$. So by reduction to the universal case, we may syppose that $S$ is the open set $U$ in $$\operatorname{Spec}(\mathbb{Z}[a_1,a_2,a_3,a_4,a_6])$$ over which the cubic $$y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$ is smooth. I do not understand what the so-called ""universal case"" means and what role it plays... Are we trying to build a morphism $S\rightarrow \operatorname{Spec}(\mathbb{Z}[a_1,a_2,a_3,a_4,a_6])$ identifying $S$ with $U$ and then considering the base change? Is it what is meant here? But as far as I can tell, if $E$ is described by a smooth cubic $$y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$ in $\mathbb{P}^2_S$ with coefficients $a_i\in \Gamma(S, \mathcal{O})$, the resulting map $S\rightarrow \operatorname{Spec}(\mathbb{Z}[a_1,a_2,a_3,a_4,a_6])$ indeed has image in $U$, but does not identify $S$ with $U$... Could someone please provide some insights/explanations about this reduction argument here? I thank you very much for the clarifications.","['elliptic-curves', 'algebraic-geometry']"
+2853190,How and when do principal homogeneous spaces form a group?,"Here's what I understand: Given a group $G$, a principal homogeneous space for $G$ consists of a set $X$ together with a free and transitive action of $G$ on $X$. Free in this context means that for all $x \in X$, the function $g \mapsto gx$ is injective. Transitive means that the aforementioned function is surjective. Principal homogeneous spaces for $G$ form a group, at least under certain assumptions. In algebraic geometry this is called Weil–Châtelet group . Perhaps it's obvious, but I can't see how such a group could be defined, and finding an elementary account of such things has proved difficult. Question. How is this group defined? What's the minimum assumptions on (and/or structure on $G$) necessary for this group to be defined?","['homogeneous-spaces', 'group-theory', 'algebraic-geometry']"
+2853195,A natural isomorphism between the dual of k-th exterior power and the k-th exterior power of the dual?,"On the wikipedia page of Exterior Algebra under the section on alternating multilinear forms, it says: “... By the universal property of the exterior power, the space of alternating forms of degree $k$ on $V$ is naturally isomorphic with the dual vector space $\left( \Lambda^k V \right)^* $. If $V$ is finite-dimensional, then the latter is naturally isomorphic to $ \Lambda ^k \left(V^*\right) $. ...” I understand the first part, but I don’t see how the dual space of the $k$-th exterior power of $V$ is naturally isomorphic to the $k$-th exterior power of the dual of $V$? I get that they have the same dimension, but what’s the specific natural isomorphism? I want to know this because I don’t see how alternating multilinear forms correspond to exterior products of covectors.","['differential-forms', 'differential-geometry']"
+2853207,What is the meaning of $ \mathbb{R} \bmod T$?,What is the meaning of $ \mathbb{R}\bmod\ T$ for a fixed $T>0$. The set of all  equivalence classes? And how can I derive a function of the form $f:\mathbb{R}^d \to  \mathbb{R}\bmod T$?,"['derivatives', 'algebraic-topology', 'modules', 'differential-geometry']"
+2853214,Can all arbuzoids assume the same color?,"This puzzle is from a Russian web-site http://www.arbuz.uz/ and
+there are many solutions to it, but mine uses linear algebra and is very naive.
+There’s a planet inhabited by arbuzoids (watermeloners, to translate from Russian).
+Those creatures are found in three colors: red, green and blue. There are 13 red
+arbuzoids, 15 blue ones, and 17 green. When two differently colored arbuzoids
+meet, they both change to the third color.
+The question is, can it ever happen that all of them assume the same color? Edited: Apr 10, 2021, I just wanted to add that this is quoted from Jim Hefferon, Linear Algebra . I still have no idea how this problem carved its way into my Linear Algebra book, but I gave it a go. Strangely, I didn't realize the relationship this had with Linear Algebra,  so I decided to formalize it. let $S$ be a set such that: $\langle 13, 17, 15\rangle \in S $ $\forall r,g,b,a \in \mathbb N ( \langle r,g,b\rangle\in S \to ($ $[(a \leq r \land a\leq g) \to \langle r-a,g-a,b+2a\rangle \in S] \land$ $\qquad\qquad\qquad\qquad\qquad\qquad\quad\space[(a \leq r \land a\leq b) \to \langle r-a,g+2a,b-a\rangle \in S] \land$ $\qquad\qquad\qquad\qquad\qquad\qquad\quad\space[(a \leq g \land a\leq b) \to \langle r+2a,g-a,b-a\rangle \in S] \space ))$ We have to show that: $\exists a \in \mathbb N(\langle a,0,0 \rangle\in S \lor \langle 0,a,0 \rangle\in S \lor \langle 0,0,a \rangle\in S) \tag{I}$ or.. $\not\exists a \in \mathbb N(\langle a,0,0 \rangle\in S \lor \langle 0,a,0 \rangle\in S \lor \langle 0,0,a \rangle\in S) \tag{II}$ I don't know how this is at all related to Linear Algebra, and I barely know anything about set theory, so bye. What I did I started from the first element in $S$ , as shown. First start with the element. remember, the order is red, green, blue: $\langle 13,17,15 \rangle \in S \tag{0}$ Eliminate the red arbuzoids: $\langle 0,43,2 \rangle \in S \tag{1}$ combine $1$ green with $1$ blue: $\langle 2,42,1 \rangle \in S \tag{2}$ Note that if the blue arbuzoids in $(1)$ were $3$ , the problem would have been solved.Also, If they had been any multiple of 3 less than or equal to green,  the problem would have been solved, since you'll combine 1 third of blue with green, and then red and blue would be equal, then you combine them, and get all green. Anyway,the  blue arbuzoids were not 3. I did many failed steps, noting a few things, and I couldn't get anything. I decided to write some code to test(i.e brute force the combinations and find) whether it's possible, starting from (2), but it failed to reach anything. Can you prove $(I)$ , or $(II)$ ?","['puzzle', 'linear-algebra', 'elementary-set-theory']"
+2853234,Octagon inside a circle,"An octagon which has side lengths 3, 3, 11, 11, 15, 15, 15 and 15  is inscribed
+in a circle. What is the area of the octagon? I tried using the cosine law on the triangles made when connected with the center but the numbers became really hard to use when I solved for the sine of the angles to easily get the triangle area. This is a problem from BIMC 2017 individual question 6, where the answer is 567. ;)","['contest-math', 'geometry']"
+2853242,Can we use symmetry rules in improper integrals?,"I wish to evaluate the integral $$I=\int^{\infty}_{-\infty}xe^{-x^2}dx$$ Can I simply note that that $f(x)=xe^{-x^2}$ is an odd function and say $I=0$? The only reason I have doubts is because of assuming the two infinities have the same length. However, when I hear people say, ""...the integral of an odd function vanishes on $\mathbb{R}$,"" it tempts me to accept the symmetry argument. The actual answer via limits is $0$.","['improper-integrals', 'real-analysis', 'integration', 'even-and-odd-functions']"
+2853259,Compute $\lim_{n\to \infty }\frac{1}{n}\sum_{k=1}^n\left(1+\frac{k}{n^2}\right)^n$,"I want to compute $$\lim_{n\to \infty }\frac{1}{n}\sum_{k=1}^n\left(1+\frac{k}{n^2}\right)^n.$$
+I really tried several thing, but this $\frac{1}{n^2}$ annoy me very much. It looks like a Riemann sum, but I can't conclude without more information.",['integration']
+2853278,"Is a local ring Artinian, if the maximal ideal is nilpotent?","This answer suggests the idea, that a local ring $(R, \mathfrak{m})$ whose maximal ideal is nilpotent is in fact an Artinian ring. Is this true? If so, how is it proven?","['abstract-algebra', 'artinian', 'commutative-algebra']"
+2853310,"How to calculate the sine manually, without any rules, calculator or anything else? [duplicate]","This question already has answers here : Is there a way to get trig functions without a calculator? (8 answers) Closed 5 years ago . I want to know how to calculate the value of sin, not using table values or calculator. I found this $\frac{(e^{ix})^2-1}{2ie^{ix}}$, but how to deal with $i$ number, if it's $\sqrt{-1}$?","['algorithms', 'trigonometry']"
+2853324,Smooth quartic surface in $\mathbb{P}^{3}$ that contains a smooth curve of genus 2 and degree 6.,"I am reading through an article by Matsumura and Monsky on Automorphisms of Hypersurfaces in which they state that there exist quartic surfaces is $\mathbb{P}^{3}$ which have infinite automorphism groups, this is Theorem 4 in the linked article. They construct an example of such a surface but it is not explicit, they say; ""Let $F$ be a non-singular (smooth) quartic surface in $\mathbb{P}^{3}$ containing a non-singular curve $C$ of genus 2 and of degree 6."" I was wondering if there was an explicit formula for such a surface? I have read around and found that a possible construction of a non-singular qaurtic surface in $\mathbb{P}^{3}$ is to take the intersection of 2 quadrics in $\mathbb{P}^{4}$ , and also a construction of a non-singular curve of genus 2 and degree 6 is to take a polynomial $f(x)$ in one variable with 6 distinct roots and then consider the hyper-elliptic curve $y^{2}=f(x)$ . However I do not know how to combine these two constructions together to give the surface I am looking for. Finally they say that the result is classical and cite 3 articles claiming they contain other examples/constructions, one due to G. Fano ( Sopra alcune superficie del 4 ordine rappresentabili sal piano doppio (1906) ), and two due to F. Severi ( Complementi alla teoria della base per la totalita delle curve di una superficie algebric (1910) , and Geometria dei sistemi algebrici (1958) ) all of which are very old and also in Italian. I cannot get a hold of any of the three articles (nor can I read Italian), so these do not provide much help. Any help about a possible construction or a pointer to an article that isn't in Italian would be greatly appreciated. Thanks.","['algebraic-curves', 'intersection-theory', 'projective-geometry', 'algebraic-geometry']"
+2853329,"$n$-element subsets of the set $\{1,2, ..., 2n\}$.","There are $\binom{2n} {n}$, $n$-element subsets of the set $\{1,2, ..., 2n\}$. I am studying the question whether one can choose from these subsets $\frac12\binom{2n} {n}$ subsets such that: i) each element from $1$ to $2n$ belongs to exactly $\frac14 \cdot\binom{2n} {n}$ of the selected subsets; ii) any two selected subsets had at least one common element. If $n$ is a power of two, then the answer is no, because then $\binom{2n} {n}$ is not divisible by $4$. If $n$ is not a power of two, then $\binom{2n} {n}$ is divisible by $4$. For $n = 3$ I found an example: $$\{1,2,3\},\{1,2,4\},\{1,3,5\},\{1,4,6\},\{1,5,6\}$$ 
+$$\{2,3,6\},\{2,4,5\},\{2,5,6\},\{3,4,5\},\{3,4,6\}$$ I do not know what the answer is for other $n$, for example, when $n = 9$. Computer check is too big.","['combinatorial-designs', 'combinatorics', 'binomial-coefficients']"

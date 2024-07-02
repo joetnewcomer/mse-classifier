@@ -1,0 +1,470 @@
+question_id,title,body,tags
+121432,the generalized Liouville theorem,"The Liouville theorem state: Let $f$ be an entire function for which there exists a positive number M such that $|f(z)|\leq M$ for all z in $\mathbb{C}$, the $f$ must be a constant. more general form of this theorem is : Let $f$ be an entire function for which there exists a positive number M and a polynomial $P$ such that $|f(z)|\leq M |P(z)|$ for all z in $\mathbb{C}$ then $f(z)=k P(z)$ for $k$ a constant. who know a good proof of this generalized form ?",['complex-analysis']
+121450,Absolute convergence of $\sum \frac {1} {\left( m_{1}^{2}+m_{2}^{2}+\cdots +m_{r }^{2}\right)^{\mu} } $,"I am trying to prove that the series $\sum \dfrac {1} {\left( m_{1}^{2}+m_{2}^{2}+\cdots +m_{r }^{2}\right)^{\mu} } $ in which the summation extends over all positive and negative integral values and zero values of $m_1, m_2,\dots, m_r$ , except the set of simultaneous zero values, is absolutely convergent if $\mu > \dfrac {r} {2}$ . Any help with a proof strategy would be much appreciated.","['convergence-divergence', 'sequences-and-series', 'real-analysis']"
+121462,Polynomial interpolation of the residues of a rational function,"Let $g(z) = a\prod_{i=1}^N (z-\lambda_i) \in \mathbb{Q}[z]$ be square-free.  At each root $\lambda_i \in \mathbb{C}$, let $r_i$ denote the residue $\mathrm{Res}_{\lambda_i} 1/g(z)$.  Let $I_g(z)$ denote the unique function of degree less than $N$ such that $I_g(\lambda_i) = r_i$ for all $i$.  Note that $I_{ag}(z) = aI_{g}(z)$, so we may take $g(z) \in \mathbb{Z}[t]$ if so desired.  For some basic examples, I've computed
+$$I_g(z) = \frac{1}{5}(2z-1) \qquad \text{for} \qquad g(z) = z^2-z-1$$
+$$I_g(z) = \frac{1}{22}(2z-1)(z-3) \qquad \text{for} \qquad  g(z) = z^3 -z^2+z+1$$ Has anyone seen reference to such a construction in the literature?  My main questions are the following: Q1: Do we have $I_g(z) \in \mathbb{Q}[z]$ for $g \in \mathbb{Q}[z]$? Q2: Where $\Delta(g)$ denotes the discriminant of $g$, do we have $I_g(z) \in \frac{1}{\Delta(g)} \mathbb{Z}[z]$ for $g \in \mathbb{Z}[z]$? (A strengthening of Q1 .) Final note: the generalizations for $g$ not necessarily square-free are not difficult: take $I_g(z)$ be the unique function of degree less than $\deg g$ such that $I_g(\lambda_i)=r_i$, attained with multiplicity at least that of $\mathrm{ord}_{\lambda_i}g(z)$.  We may also consider generalizations for polynomials with coefficients in a general number field.","['polynomials', 'interpolation', 'algebraic-number-theory', 'galois-theory', 'complex-analysis']"
+121473,Solve the integral $S_k = (-1)^k \int_0^1 (\log(\sin \pi x))^k dx$,"My nephew asked me this, so I suggested him to sign up here. But anyways this question I was
+trying to solve myself. I got part of the solution.  Let me know the rest. $(1)$
+Solve the integral defined as $\displaystyle{S_k =  (-1)^k \int_0^1  (\log(\sin \pi x))^k dx}$ and show $(2)$
+$\displaystyle{S_k = \frac{(-1)^k}{\sqrt\pi 2^k} \frac{d^k}{d\alpha^k} \frac{\Gamma(\alpha+\frac{1}{2})}{\Gamma(\alpha+1)}}$
+with $\alpha=0$. $(3)$
+Show that 
+$\displaystyle{S_4 = \frac{19 \pi^4}{240}+\frac{1}{2} \pi^2 \log^2 2 + \log^4 2 + 6 \log 2 \, \zeta(3)}$ $(4)$
+Show the following:
+$\displaystyle{\int_0^1 \log \log \left(\frac{1}{x}\right) \frac{dx}{1+x^2} = \frac{\pi}{2}\log \left(\sqrt{2\pi} \Gamma\left(\frac{3}{4}\right) / \Gamma\left(\frac{1}{4}\right)\right)}$ For $(3)$, if I substitute $y=\pi x$, I can transform this to a well known log-sine function as described here at Wolfram , and so showing 
+$\displaystyle{S_4 = \frac{19 \pi^4}{240}+\frac{1}{2} \pi^2 \log^2 2 + \log^4 2 + 6 \log 2 \, \zeta(3)}$
+is not hard. I would like suggestions to read or partial solutions (not complete solutions). (NOTE: I also noted that someone have asked a similar question for $k=2$ here )","['calculus', 'integration']"
+121493,How to show that Klein four-group is a normal subgroup of the alternating group $A_4$,"I want to show that the Klein four-group is a normal subgroup of the alternating group $A_4$. I am using the information in this link , that shows explicitly $A_4$, and Klein four-group as a subgroup. I know that there is the direct way, by definition, but is there a way that does not require actually multiplying so many permutations ?","['group-theory', 'normal-subgroups']"
+121510,"Probability of finding 2012 before any other occurence of 012 in a random infinite sequence of digits 0,1,2","The following problem is from the semifinals of the Federation Francaise des Jeux Mathematiques: One draws randomly an infinite sequence with digits 0, 1 or 2. Afterwards, one reads it in the order of the drawing. What is the probability that one reads ""2,0,1,2"" without having read ""0,1,2"" beforehand? Besides the obvious assumption that digits are drawn independently with equidistribution, I am primarily interested in the following interpretation: *) If the sequence starts with 0,1,2,0,1,2  one regards this as having read 0,1,2 before 2,0,1,2 because the first pattern is finished before the second. In addition, I would also like a solution to the following alternative interpretation, especially if it turns out to be easier to calculate: *) If the sequence starts with 0,1,2,0,1,2 one regards this as NOT read 0,1,2 before 2,0,1,2 at this point because the first pattern has not finished before the second starts.","['markov-chains', 'probability']"
+121518,Computing the derivative of a quadratic form and matrix chain rule,"I'm working on using the Generalized Method of Moments to analyze some yogurt purchase data, and in the course of trying to implement the standard Hansen method (i.e. not an empirical likelihood method), I need to compute first and second derivatives of the following function: $$Q(\theta) = \biggl[\frac{1}{N}\sum_{i=1}^{N}\psi(Z_{i},\theta)\biggr]^{T}C\biggl[\frac{1}{N}\sum_{i=1}^{N}\psi(Z_{i},\theta)\biggr].$$ Here, $\psi(Z_{i},\theta)$ is a vector function (in my case a 9-by-1 column vector of the moment conditions; you can just think of each component as a function of the scalar parameter $\theta$ if you wish). The $Z_{i}$ are the individual purchase data. $C$ is a weight matrix derived from the model assumptions, but you can treat it as just the identity matrix of suitable size if you want; it shouldn't matter as it isn't a function of $\theta$. If I let $$F(\theta) = \biggl[\frac{1}{N}\sum_{i=1}^{N}\psi(Z_{i},\theta)\biggr]$$ for simplicity, then the place I am getting stuck is computing the first and second derivatives of $Q_{C}$ w.r.t. $\theta$. This is a scalar-valued objective function of a single variable, so everything involved should work out to be a scalar. Based on the Wikipedia article on Matrix Calculus , here is what I have tried thus far. $$\frac{dQ}{d\theta} = \frac{dQ}{dF}\cdot{}\frac{dF}{d\theta} = \biggl[ F(\theta)^{T}(C+C^{T})\biggr]\cdot{}\biggl[\frac{d}{d\theta}F(\theta)\biggr]$$ Next I want to take the derivative again, so I use the matrix chain and product rules. In my case, it happens that the final term, $\frac{d}{d\theta}F(\theta)$ is no longer a function of $\theta$ (just constants in all components), so its derivative will be zero and we only need to worry about the first part of the product. $$\frac{d}{d\theta}\biggl[ F(\theta)^{T}(C+C^{T})\biggr]\cdot{}\biggl[\frac{d}{d\theta}F(\theta)\biggr].$$ As far as I can tell, this just results in the following:
+$$ \frac{d}{d\theta}\biggl[ F(\theta)^{T}(C+C^{T})\biggr]\cdot{}\biggl[\frac{d}{d\theta}F(\theta)\biggr] = \biggl(\frac{d}{d\theta}F(\theta) \biggr)^{T}(C+C^{T})\biggl(\frac{d}{d\theta}F(\theta) \biggr).$$ This gives a nice formula, but when I use these results for the first and second derivatives to program up Newton's method to find the value of $\theta$ that minimizes the quadratic form, the method is not converging, and I am concerned that it is because I have calculated the derivatives incorrectly (missing a transpose, or something like that). Additionally, links to good, clearly written references that explain the logic behind matrix calculus, especially when and why transpositions occur, would be appreciated. Almost all references I could find in 30+ minutes of Googling were absolutely inscrutable and tended to just state results with no expositions at all.","['matrices', 'reference-request', 'multivariable-calculus', 'derivatives']"
+121525,Computing the residues of $\dfrac{1}{\sin^2 z}$.,"I'm having a hard time correctly computing the residues of $\dfrac{1}{\sin^2 z}$. I 
+know the poles occur at $k\pi$, with order $2$. By a Taylor expansion I can rewrite $\sin z=\cos k\pi(z-k\pi)+f_2(z)(z-k\pi)^2$, and so 
+$$
+\sin^2 z=(z-k\pi)^2(\cos k\pi+f_2(z)(z-k\pi))^2.
+$$
+I want to calculate the residue with Cauchy's Integral Theorem, so 
+$$
+\text{Res}(f,k\pi)=\frac{1}{2\pi i}\int_{|z-k\pi|=1}\frac{dz}{(z-k\pi)^2[\cos k\pi
++f_2(z)(z-k\pi)]^2}.
+$$
+This should equal the derivative of $(\cos k\pi+f_2(z)(z-k\pi))^{-2}$ evaluated at $k
+
+\pi$. The derivative comes out to be
+$$
+-2(\cos k\pi+f_2(z)(z-k\pi))^{-3}(f'_2(z)(z-k\pi)+f_2(z))
+$$ 
+and evaluates to $\dfrac{-2f_2(k\pi)}{(\cos k\pi)^3}$. Apparently the residue should 
+just be $0$, but I don't see how to conclude this. What am I missing to know $f_2(k\pi)=0$?","['residue-calculus', 'complex-analysis']"
+121526,Union of the conjugates of a proper subgroup,Let G be a finite group and H be a proper subgroup. Prove that the union of the conjugates of H is not the whole of G. Thanks for any help,"['finite-groups', 'group-theory', 'abstract-algebra']"
+121544,Least Upper Bound Property $\implies$ Complete,"I want to show that if an ordered field $X$ has the least upper bound property (meaning, every nonempty set $E$ which is bounded above has $\sup E \in X$), then it is complete (meaning, every Cauchy sequence converges in $X$). I know the converse is not true, but how do I prove this direction?","['ordered-fields', 'real-analysis']"
+121545,Evaluating $\int_0^1 \log \log \left(\frac{1}{x}\right) \frac{dx}{1+x^2}$,Show that $\displaystyle{\int_0^1 \log \log \left(\frac{1}{x}\right) \frac{dx}{1+x^2} = \frac{\pi}{2}\log \left(\sqrt{2\pi} \Gamma\left(\frac{3}{4}\right) / \Gamma\left(\frac{1}{4}\right)\right)}$ This question was posted as part of this question: Solve the integral $S_k = (-1)^k \int_0^1 (\log(\sin \pi x))^k dx$ I cannot think of a change of variable nor other integrating methods. Maybe there is a known method that I am missing.,"['calculus', 'integration', 'definite-integrals', 'logarithms', 'gamma-function']"
+121556,Finding  the irreducible subrepresentations.,"Let $V_d$ be the vector space of homogeneous polynomials of degree $d$ in three variables $x, y,$ and
+$z$, and let the symmetric group $S_3$ act on $V_d$ by permuting the variables. Find the irreducible
+subrepresentations of $V_d$ in case $d = 1, 2,$ and $3.$ I am confused about what this question is actually asking. In the case where $d=1$ we have the space of polynomials of the form $ax+by+cz$. The group $S_3$ will act by permuting the variables. Considering the polynomials as vectors in the $x,y,z$ basis we can write them as $(a,b,c)$ and then the six permutations of $S_3$ map to linear transformations permuting the basis. So what does it mean to find the irreducible subrepresentations? I though an irreducible subrepresentation was something you have on the group, i.e. one of the three irreducible subrepresentations of $S_3$ is the trivial representation on a one dimensional vector space where all of $S_3$ is sent to the identity.  Why am I being asked to find the irreducible representations the vector space (rather than the group)? Thanks!!","['representation-theory', 'abstract-algebra']"
+121561,"In a row of 35 chairs, find the minimum number of chairs that must be occupied such that there are some consecutive set of 4 chairs or more occupied.","There is a row of 35 chairs. Find the minimum number of chairs that must be occupied such that there are some consecutive set of 4 chairs or more occupied. I would like to have some hints as to approach this problem. This isn't for homework or anything, I'm just curious as to what would be the best strategy for this problem.","['pigeonhole-principle', 'discrete-mathematics']"
+121562,Confusion about partial differentiation and Cauchy-Riemann equations,"In complex analysis class (using Stein's Complex Analysis), we learned about the derivation of the Cauchy-Riemann equations, and that made sense. We take a holomorphic $f : O \rightarrow \mathbb{C}$, where $O \subset \mathbb{C}$ is open, and split it as $f(x + iy) = u(x, y) + i v(x, y)$. Then after some computation we arrive at $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ and $\frac{\partial v}{\partial x} = -\frac{\partial u}{\partial y}$. However, I haven't learned about multivariable calculus so I'm new to partial differentiation. The above makes sense to me, but in an exercise they ask us to prove that, in polar form, these equations take the form $\frac{\partial u}{\partial r} = \frac{1}{r} \frac{\partial v}{\partial \theta}$ and $\frac{1}{r} \frac{\partial u}{\partial \theta} = - \frac{\partial v}{\partial r}$. Now I'm confused. Do they mean the same $u$ and $v$ we had been using before? Maybe they similarly define $f(re^{i\theta}) = u(r, \theta) e^{i v(r, \theta)}$ and want me to derive the equations for that? The first option doesn't make any sense to me and I didn't succeed at attempting the second. I think I need a pretty thorough clarification on this issue, can anyone help?",['complex-analysis']
+121565,The law of large numbers: How does the convergence take place? How does the “remainder” look like?,"I have the independent and identically distributed random variables $X_1,X_2,\ldots$ with a finite expectation $\mu$. I also have defined $S_n = X_1 + \cdots + X_n$. According to the law of large numbers, I already know that $S_n/n \to \mu$ almost surely as $n\to\infty$. However, my question is: How does the convergence take place? What is the “shape” of this convergence? For example, for a given $N>0$, how close is $S_N/N$ to $\mu$? How does the difference, or remainder/residual, look like? Are there any results, or theorems, available that tell me these kinds of things?","['residue-calculus', 'convergence-divergence', 'probability']"
+121586,"If $x_1=5$, $x_{n+1}=x_n^2-2$, find $\lim x_{n+1}/(x_1\cdots x_n)$","If
+$$\left\{x_{n}\right\}\mid x_{1}=5,x_{n+1}=x_{n}^{2}-2,\forall n\geq 1$$
+find
+$$\lim_{n\to\infty}\frac{x_{n+1}}{x_{1}x_{2}\cdots x_{n}}.$$ If someone could help me out with tags, it'd be lovely. I think this is calculus and real-analysis, but I'm not sure--I had the problem scribbled down on a post-it, and I forget where it's from.","['sequences-and-series', 'real-analysis', 'limits']"
+121600,Two questions on profinite groups,"I have two questions on Serre's ""Galois cohomology"", the section on profinite groups. 1) Proposition 1 on p.4 claims that if $K \subset H$ are two closed subgroups of a profinite group $G$, then there is a continuous section $G/H \to G/K$. I have no intuition why this should be true: this seems to be so false to me, when I think about $\mathbb{Z}/4\mathbb{Z} \to \mathbb{Z}/2\mathbb{Z}$. But this is Serre, so I suppose I must be stupid somewhere. 2) If $H$ is a closed subgroup of $G$, he defines the index of $H$ in $G$ to be the lcm of index of $H/H \cap U$ in $G/U$ as $U$ varies over all open normal subgroups of $G$. I don't see why the old notion of index doesn't work here - why do we need a special notion? Is it solely for the purpose of defining pro $p$-groups and make sense of the notion of Sylow subgroups? Thanks!",['group-theory']
+121617,"If z is one of the fifth roots of unity, not 1...","If z is one of the fifth roots of unity, not 1, show that: $1+z+z^2+z^3+z^4=0$ Which wasn't too bad, but the next part is killing me: show that: $z-z^2+z^3-z^4=2i(sin(2\pi/5)-sin(\pi/5))$ Can anyone help? Thanks!","['trigonometry', 'complex-numbers', 'roots-of-unity', 'polynomials']"
+121619,"Why does $PSL(2,\mathbb C)\cong PGL(2,\mathbb C)$ but $PSL(2,\mathbb R) \not\cong PGL(2,\mathbb R)$?","Why does $PSL(2,\mathbb C)\cong PGL(2,\mathbb C)$ but $PSL(2,\mathbb R) \not\cong PGL(2,\mathbb R)$?","['group-theory', 'abstract-algebra']"
+121622,On integrating $\int_{-\infty}^\infty R(x)dx$ with residues.,"I'm reading about residue calculus. I read that the standard procedure for integrating $\int_{-\infty}^\infty R(x)dx$ where $R(x)$ is a rational function whose denominator has degree at least 2 units greater than the numerator and no poles on the real line, is to integrate the complex function $R(z)$ over a closed curve consisting of the segment $(-r,r)$ and the semicircle from $r$ to $-r$ in the upper half plane, so that if $r$ is large enough, the curve encloses all poles in the upper half plane. I see this works because the integral over this closed curve can be found by summing the residues, which may be easier. Since I'm only interested in the integral along the real line, I would hope that the integral over the semicircle goes to $0$ as $r\to\infty$. My text says this is true by ""obvious estimates."" Can someone please explain more explicitly how one sees the integral over the semicircle goes to $0$? The obvious estimates is cryptic to me. The text is Ahlfors' Complex Analysis , page 156, if it's helpful. Many thanks.","['residue-calculus', 'integration', 'complex-analysis']"
+121634,What's wrong with this proof that $e^{i\theta} = e^{-i\theta}$?,"I recently learned that $\cos{\theta} = \frac{e^{i\theta} + e^{-i\theta}}{2}$ and $\sin{\theta} = \frac{e^{i\theta} - e^{-i\theta}}{2}$ Based on this, I managed to ""prove"" that:
+$$e^{i\theta} = e^{-i\theta}$$ Since $e^{i\theta} = \cos{\theta} + i\sin{\theta}$, we can substitute the above two identities to get:
+$$e^{i\theta} = \frac{e^{i\theta} + e^{-i\theta}}{2} + i\frac{e^{i\theta} - e^{-i\theta}}{2}$$
+Simplifying, I get
+$$(1-i)e^{i\theta} = (1-i)e^{-i\theta}$$
+which implies
+$$e^{i\theta} = e^{-i\theta}$$
+for all real $\theta$. Obviously, this isn't true in general, but I'm having a hard time seeing what's wrong. Can someone please point out the flaw in the above ""proof""?","['trigonometry', 'complex-numbers', 'fake-proofs']"
+121641,How do I Find all Angles of 4-sided polygon given side lengths?,"I have a program that lets users draw custom 4-sided shapes using java 2d. I want to calculate the angles inside the shapes so I can rotate text to the proper angle and label each side. I am trying to calculate all angles of a 4-sided polygon given the length of all 4 sides. I found a formula using law of cosines for a cyclic quadrilateral, but I don't know that all of my shapes will be cyclic since they are user defined and can be any 4 points in a 2d coordinate system. Is my only option to find the diagonals and start piecing it together with law of cosines for each triangle?","['geometry', 'trigonometry']"
+121646,"MATLAB - ode45 ""ODEFUN"" format","Is someone able to explain to me exactly what the ""odefun"" called by the ""ode45"" ODE solver in MATLAB is supposed to do? My understanding is that you represent an n-order ODE as a system of n first-order ODEs and that, somehow, from this system, you create the ""odefun"" which ""ode45"" uses. My understanding is also that ""odefun"" should output a column array of derivative values at an the input independent variable value and that the function takes in a column array of values (but I'm not sure what these are). How do you actually represent the system of first-order ODEs in ""odefun""? Thanks in advance for your help.","['ordinary-differential-equations', 'matlab']"
+121649,Snow Flake Problem: Limit of perimeter & area at $\infty$,"I am supposed to find the limits as $n\rightarrow\infty$ of the perimeter & area of a snow flake . $$N_n = \text{Number of sides} = 3\cdot 4^n$$ $$L_n = \text{length of side} = \frac{1}{3^n}$$ $$l_n = \text{perimeter} =N_n \cdot L_n = 3(\frac{4}{3})^{n} $$ $$l_n = 4 (\frac{4}{3})^{n-1}$$ $$\lim_{n\to\infty} l_n = \lim_{n\to\infty} 4 (\frac{4}{3})^{n-1} = \infty$$ Is this correct? For area, the link has the answer, but I don't understand why is the area given by $$A_n = A_{n-1} + \frac{1}{4} N_n L_{n}^2 A_0$$","['geometry', 'fractals']"
+121658,"What are the $X_1, X_2, ..., X_n$ in the Sampling Distribution of $\bar{X}=\frac { 1 }{ n } \sum _{ i=1 }^{ n }{ X_{ j } } $?","The sampling distribution of $\bar{X}$ defined in a book that I am reading is $\bar{X}=\frac { 1 }{ n } \sum _{ i=1 }^{ n }{ X_{ j } } $. I know $X_1, X_2, ..., X_n$ are random variables. But what is confusing to me is that should $n$ here be seen as the number of observations or the number of trials in each observation? If the $n$ here is the number of observations, then, does that mean that the $X_1, X_2, ..., X_n$ are mean values of their own individual trials? For example, $X_1$ is the average of say 10 trials. So $X_1$ itself is $X_1=\frac { 1 }{ 10 } \sum _{ i=1 }^{ 10 }{ Y_{ i } } $, where $Y_{1...10}$ are the trials made in the observation set of $X_1$. In this case, however, $X_1, X_2, ..., X_n$ are more of like constant instead of random variables any more. Then it shouldn't be just $X_1, X_2, ..., X_n$ but $\bar{X_1}, \bar{X_2}, ..., \bar{X_n}$ and $\bar{X}=\bar{X_1}, \bar{X_2}, ..., \bar{X_n}$. But this doesn't look like how it is defined. Then, if the $n$ here is the number of trials in each observation, then $\bar{X}$ is just the mean value of the trials in this single observation, which again doesn't make a lot of sense because this is just average of one set of observation. From my understanding, Sampling Distribution is the ""average of the averages of $n$ sets of observations"" and so this interpretation doesn't align with my understanding too. Which of my interpretations is right? What is the right way to look at the definition of the sampling distribution of $\bar{X}$ as $\bar{X}=\frac { 1 }{ n } \sum _{ i=1 }^{ n }{ X_{ j } } $ and what are the $X_1, X_2, ..., X_n$?","['statistics', 'probability']"
+121662,An addition property of Weierstrass $\wp$,"I want to show $$
+\left( \begin{array}{ccccc}
+&1 &\wp(v) &\wp'(v) \\
+&1 &\wp(w) &\wp'(w) \\
+&1 &\wp(v+w) &-\wp'(v+w) \end{array} \right)=0
+$$ where $\wp$ denotes the Weierstrass elliptic function.","['special-functions', 'elliptic-functions', 'complex-analysis']"
+121674,Is the probability density function unique?,"Is the probability density function (pdf) unique? For example, I've seen the pdf of the uniform distribution written in two different versions, one with strict inequality and the other is not strict. From the definition, pdf is a function $f$ such that $P(X\in B)=\int_B f$. So it seems that the value of $x$ at one particular point doesn't really matter. Am I correct?","['probability-theory', 'measure-theory']"
+121684,Homogeneous function in bounded mean oscillation BMO($\mathbb R^n$) space,"Let me recall some notations: The mean oscillation of a locally integrable function $u$ (i.e. a function belonging to $ L^1_{\textrm{loc}}(\mathbb{R}^n))$ over a cube Q in $\mathbb R^n$ (which has sides parallel to axis) is defined as the following integral: $\frac{1}{|Q|}\int_{Q}|u(y)-u_Q|\,\mathrm{d}y$, where $|Q|$ is the volume of $Q$, i.e. its Lebesgue measure, $u_Q$ is the average value of $u$ on the cube $Q$, i.e. $u_Q=\frac{1}{|Q|}\int_{Q} u(y)\,\mathrm{d}y$. A BMO function is any function u belonging to $L^1_{\textrm{loc}}(\mathbb{R}^n)$ whose mean oscillation has a finite supremume over the set of all cubes $Q$ contained in $\mathbb R^n$. I could find many examples for functions in BMO. But I could not find a function $u:\mathbb R^n\to\mathbb R$ which is not constant, so that $u$ in BMO and $u(tx)=u(x)$ for almost everywhere $t\in[0;1]$, and for every $x\in \mathbb R^n$. I also want to find such function $u$ in BMO so that $u(tx)=u(t)$  for almost every $t\neq0$, and every $x$ So my question is that: does exits such function $u$, and could you give me any example.","['normed-spaces', 'harmonic-analysis', 'measure-theory', 'fourier-analysis']"
+121685,Generating functions for Stirling numbers,"I've got problems with understanding generating functions, it's completely new topic for me. Some of them are easy, but some sequences like Stirling numbers of the first kind are difficult and so them generating functions too. For example I'm wondering how can I deduce exponential generating function for Stirling numbers of the first kind. Wikipedia says: $\sum_{k=0}^{+\infty}u^k\sum_{n=k}^{+\infty} \left[\begin{array}{c}n\\k\end{array}\right] \frac{z^n}{n!}=e^{u\log(1/(1-z))}$ but I never liked to take something as a fact. I understand that probably deducing such a formula isn't a simple thing but how can I do that? I don't know where does it come from. Is there a simple way do prove this equality? I don't like difficult proofs ;-) Similar questions: Is there any exponential generating function $A(z)=\sum_{k=0}^{+\infty}\left[\begin{array}{c}n\\k\end{array}\right] \frac{z^k}{k!}$? Why $\sum_{n=k}^{+\infty} \left[\begin{array}{c}n\\k\end{array}\right]\frac{z^n}{n!}=\frac{\log^k(1/(1-z))}{k!}$ ? I would be very grateful for patience.","['stirling-numbers', 'generating-functions', 'discrete-mathematics', 'combinatorics']"
+121686,Homework question on whether two quotient spaces are homeomorphic,"We have two spaces $X=\{(x,1/n):n\neq 0, n\in\mathbb{Z}, x\in\mathbb{R}\}$ and $Y=\{(x,n):n\neq 0, n\in\mathbb{Z}, x\in\mathbb{R}\}$. On both spaces we introduce the equivalent relation $(x,y)\sim (x',y')$ if $x=x'$ and $y=y'$ or $x=x'=0$. That is, all points on the $y$ axis are collapsed to the same point. We are asked whether $X/\sim$ and $Y/\sim$ are homeomorphic in quotient topologies. It is easy to show that the original spaces are homeomorphic. However, I don't know how to answer the question about the quotient spaces. My guess is that they might not be homeomorphic and some problem might occur at the $origin$ but I am not sure. Any hint would be helpful! Thanks!",['general-topology']
+121689,"What is the expected number of dice one needs to roll to get 1,2,3,4,5,6 in order?","If I have a fair die and throw it until I get a run of 1,2,3,4,5,6 in order, how many times on average must I throw the dice?","['statistics', 'dice', 'probability']"
+121704,A question about an $n$-dimensional subspace of $\mathbb{F}^{S}$.,"I am self-studying Hoffman and Kunze's book Linear Algebra . This is Exercise 3.6.3(Linear Transformation-The Double Dual) from page 111. Let $S$ be a set, $\mathbb{F}$ a field, and $V(S,\mathbb{F})$ the
+  space of all functions from $S$ into $\mathbb{F}:$ $$(f+g)(x)=f(x)+g(x)\hspace{0.5cm}(\alpha f)(x)=\alpha f(x).$$ Let $W$ be any $n$ -dimensional subspace of $V(S,\mathbb F)$ . Show
+  that there exist points $x_{1},\ldots,x_{n}\in S$ and functions $f_{1},\ldots, f_{n}\in W$ such that $f_{i}(x_{j})=\delta_{ij}$ . Since $W$ is an $n$ -dimensional subspace of $V(S,\mathbb{F})$ we can say find a basis $\mathcal{B}=\{f_{1},\ldots, f_{n}\}$ . But I got stuck here. I don't know what to do from now on. I mean, what should I do in order to find those points $x_{1},\ldots,x_{n}\in S$ such that $f_{i}(x_{j})=\delta_{ij}$ .",['linear-algebra']
+121716,"Showing that $ \frac{x\sin(y)-y\sin(x)}{x^2+y^2}\rightarrow_{(x,y)\to (0,0)}0$","I would like to show that: $$ \frac{x\sin(y)-y\sin(x)}{x^2+y^2}\rightarrow_{(x,y)\to (0,0)}0$$ $$ \left| \frac{x\sin(y)-y\sin(x)}{x^2+y^2} \right| \leq \frac{2\vert xy \vert}{x^2+y^2} \leq 1$$
+which is not sharp enough, obviously. How can I efficiently ""dominate"" the quantity $ \vert x\sin(y)-y\sin(x)\vert$ ?","['multivariable-calculus', 'real-analysis']"
+121720,Ease-in-out function,"I am trying to create a nice ease-in-out function that given values from 0 - 1 produces an output of 0 - 1 which accelerates slowly up to full speed then slows down again as it nears 1. I currently have a function using sine, in the form... $$y = (\sin(πx/2))^2$$ This works ok, and gives me results in the range I require however it is too quick to reach the terminal velocity, I am looking for something which has a more gradual start / end and a steeper center (if that makes sense). Any help would be appreciated!","['trigonometry', 'functions']"
+121721,Limit of $\arctan(x)/x$ as $x$ approaches $0$?,"Quick question: I came across the following limit: $$\lim_{x\rightarrow 0^{+}}\frac{\arctan(x)}{x}=1.$$ 
+It seems like the well-known limit: 
+$$\lim_{x\rightarrow 0}\frac{\sin x}{x}=1.$$ 
+Can anyone show me how to prove it?","['calculus', 'real-analysis']"
+121725,Showing that the cube and the octahedron have the same symmetry group,I am aware that the octahedron and the cube have the same symmetry group but I was wondering how we show this concretely. I have looked/been thinking about for an answer to this and I have got that as they are the dual of each other then they have the same symmetry group. However whilst I can intuitively understand why this is true  I can't find/write a proof of the following statement which the argument seems to rely on: Every polyhedra has the same symmetry group as its dual Thanks very much for any help,"['group-theory', 'abstract-algebra']"
+121735,How to prove that $\lim_{\lambda \rightarrow 0} f*h_\lambda (x)=f(x) $ a.e.,"Assume that $h_\lambda(x)=\frac{1}{\pi} \frac{\lambda}{\lambda^2+x^2}$, for $\lambda>0$, $x \in \mathbb{R}$. I know that if $f\in L^p$ then $\lim_{\lambda \rightarrow 0} \|f*h_\lambda -f\|_p =0$, for $1\leq p< \infty$   ( Rudin, Real and complex analysis, Thr.9.10). How to prove that if $f\in L^1$ then $$\lim_{\lambda \rightarrow 0} f*h_\lambda (x)=f(x) \textrm{ a.e. ?}$$","['limits', 'convergence-divergence', 'analysis']"
+121736,What is the expected number of dice one needs to roll to get any monotonically increasing series of 1 to 6?,"Similar to:
+""What is the expected number of dice one needs to roll to get 1,2,3,4,5,6 in order?""
+but we allow repeats so 1,1,2,2,3,4,4,4,4,5,5,6 would count. My answer (or simulation) is flawed as I cannot get reasonable agreement. My C++11 simulation code is below. I fear that the 'bug' is more likely to be in my algebra #include <iostream>
+#include <random>
+
+int main(int argc, char* argv[])
+{
+  int seed = 101;
+  if ( argc>1 )
+    seed = atoi(argv[1]);
+
+  std::uniform_int_distribution<int> distribution(1,6);
+  std::mt19937 engine(seed);
+  auto generator = std::bind(distribution,engine);
+
+  int rollForSequenceSum = 0;
+  int multiples = 1000;
+  for ( int i=0; i<multiples; ++i )
+  {
+    int rollCount = 0;
+    int nextInSequence = 1;
+
+    while ( nextInSequence <= 6 )
+    {
+      ++rollCount;
+      int random = generator();
+      if ( random == nextInSequence )
+      {
+        ++nextInSequence;
+      } 
+      else if ( random == (nextInSequence-1) )
+      {
+        //Do nothing
+      } 
+      else if ( random == 1 )
+      {
+        nextInSequence = 2;
+      }
+      else
+      {
+        nextInSequence = 1;
+      }
+    }
+    rollForSequenceSum += rollCount;
+  }
+  double mean = (double) rollForSequenceSum / (double) multiples;
+  std::cout << mean << std::endl;
+}","['statistics', 'dice', 'probability']"
+121765,How to prove there are exactly eight convex deltahedra?,"A deltahedron is a polyhedron whose faces are equilateral triangles. It is well-known that there are exactly eight convex deltahedra, and it is easy to find out that this was first proved by Freudenthal and van der Waerden in 1947. Unfortunately, the paper is in a rather obscure journal , and also is written in Dutch. (Freudenthal, H; van der Waerden, B. L. (1947), ""Over een bewering van Euclides (""On an Assertion of Euclid"")"", Simon Stevin 25 : 115–128).  I was not able to obtain this article.  I have spent a lot of time searching elsewhere for proofs. Most books and papers that I looked at that discussed the matter just referred back to the Freudenthal-van der Waerden paper.  The only proof I found was quite ad-hoc and also unpersuasive: it depended on a lot of rather handwavy assertions about the geometric form of a deltahedron that I found not at all obvious. If you have seen the Freudenthal-van der Waerden proof, how does it go?  If you have not, but you have an idea for how to prove this, I would be glad to see that too.","['geometry', 'polyhedra', 'solid-geometry']"
+121775,Deriving even odd function expressions,"What is the logic/thinking process behind deriving an expression for even and odd functions in terms of $f(x)$ and $f(-x)$? I've been pondering about it for a few hours now, and I'm still not sure how one proceeds from the properties of even and odd functions to derive: $$\begin{align*}
+E(x) &= \frac{f(x) + f(-x)}{2}\\
+O(x) &= \frac{f(x) - f(-x)}{2}
+\end{align*}$$
+What is the logic and thought process from using the respective even and odd properties,
+$$\begin{align*}
+f(-x) &= f(x)\\   
+f(-x) &= -f(x)
+\end{align*}$$ to derive $E(x)$ and $O(x)$? The best I get to is: For even: $f(x)-f(-x)=0$ and for odd: $f(x)+f(-x)=0$ Given the definition of $E(x)$ and $O(x)$, it makes a lot of sense (hindsight usually is) but starting from just the properties. Wow, I feel I'm missing something crucial.","['calculus', 'functions']"
+121808,How to solve integral recursive relation - $I_n=\int_0^1(x-x^2)^ndx$,"Let $I_n=\int_0^1(x-x^2)^ndx$. Prove that $I_n=\frac{1}{4}\cdot\frac{2n}{2n+1}I_{n-1}$. This sounds like a rather easy exercise, but no matter how hard I try, I can't quite put my finger on it (I tried integration by parts with $\int_0^1x'(x-x^2)^ndx$, but couldn't manage to get too far). Could you help me out?","['definite-integrals', 'calculus']"
+121812,Mathematics From Futurama,"We at D.O.O.P are trying to mathematically model a rocket ship fueled by your employee Leela's pet Nibbler's pooped Black matter. Obviously this rocket ship is fueled by black matter which along with the ship's combustion chamber has some special properties. Black matter Properties We have discovered that there are two kinds of black matter the one naturally made (by Nibbler's poop) and the other which is  synthetically made in our special rocket ship combustion engine. The Synthetically made Black matter exponentially decays at a rate of $r$, until all its mass eventually becomes nothing and is discarded. Rocket Ship Properties When any Black matter is used as fuel in the combustion chamber. It produces black matter (synthetic kind) according to following equation.
+$$\dfrac {dP_a} {dt}\leq \dfrac {dP_c} {dt}=\left( 1-\dfrac {\alpha } {100}\right)B$$ Here $B$ represents the amount of Black matter currently in the combustion chamber. $\alpha$ is a percentage, a controlling mechanism in the ship to control production. $P_c$ is an upper bound of the new Black matter production (capacity), but we discover there is an inefficiency in the system such that the actual rate of Black matter production is in fact $P_{a}$. Since we want to travel as fast as we can, as soon as any new Black matter $P_{a}$ is produced we add that to $B$ and we are able to do all of this in infinitesimally small amount of time(continuously). We invite you to scientifically examine and model the processes of this rocket ship along with say $B_0$ amount of initial natural black matter. How can we model or represent this system with the least amount of equations while capturing the essence of the whole problem ? From the desk of Zapp Brannigan ""And like all my plans, it's so simple an idiot could have devised it!"" Edit: Solution attempt
+Assuming $B_0$ to be the initial amount of black matter available. We start undertaking combustion with this initial amount $B_0$ we produce more black matter at the rate of $\dfrac {dP_a} {dt}\leq \dfrac {dP_c} {dt}=\left( 1-\dfrac {\alpha } {100}\right)B_{0}$. As $dt$ time period passes by we take the new $P_a$ amount produced and add it to $B_{0}$. We also observe that this newly created synthetic black matter $P_a$ is exponentially decaying. I am having trouble figuring out how to put these relations together so both of these processes can be carried out simultaneously.I'd be happy with if you wish, only consider the case when $P_a$ and $P_c$ are the same.","['puzzle', 'ordinary-differential-equations', 'recreational-mathematics', 'mathematical-modeling']"
+121824,"$f:(x,y)\mapsto \frac{x\sin(y)-y\sin(x)}{x^2+y^2}$ is a $C^1$-function","I would like to show that the function: $$f:(x,y)\mapsto \frac{x\sin(y)-y\sin(x)}{x^2+y^2}$$ is a $C^1$-function. $$ \frac{\partial f}{\partial x}(x,y)=\frac{\sin(y)-y\cos(x)}{x^2+y^2}+\frac{2x(y\sin(x)-x\sin(y))}{(x^2+y^2)^2}$$ $$ \frac{\partial f}{\partial y}(x,y)=-\frac{\partial f}{\partial y}(y,x)=... $$ So I just have to show that: $$ \frac{\partial f}{\partial x}(x,y)\rightarrow_{(0,0)}0$$ When $y\geq0$ : $$ -\frac{y^3}{6(x^2+y^2)}+\frac{x^2y}{x^2+y^2}-\frac{x^4y}{4!(x^2+y^2)} \leq \frac{\sin(y)-y\cos(x)}{x^2+y^2} \leq \frac{yx^2}{2(x^2+y^2)}$$ When $y<0$ : $$ -\frac{y^3}{6(x^2+y^2)}+\frac{y^5}{5!(x^2+y^2)}+\frac{x^2y}{2(x^2+y^2)} \leq \frac{\sin(y)-y\cos(x)}{x^2+y^2} \leq \frac{yx^2}{2(x^2+y^2)}-\frac{yx^4}{4!(x^2+y^2)}$$ So $$ \frac{\sin(y)-y\cos(x)}{x^2+y^2}\rightarrow_{(0,0)}0 $$ How can I directly find an upper bound of $$ \left| \frac{2x(y\sin(x)-x\sin(y))}{(x^2+y^2)^2} \right|$$ that tends to 0 ?","['multivariable-calculus', 'real-analysis']"
+121831,Why is the determinant continuous?,"Why is the determinant as a function from $M_n(\mathbb{R})$ to $\mathbb{R}$ continuous? Can anyone explain precisely and rigorously? So far, I know the explanation which comes from the facts that polynomials are continuous, sum and product of continuous functions are continuous. Also I have the confusion regarding the metric on $M_n(\mathbb{R})$ .","['linear-algebra', 'real-analysis']"
+121843,Find the angle in a triangle if the distance between one vertex and orthocenter equals the length of the opposite side,"Let $O$ be the orthocenter (intersection of heights) of the triangle $ABC$. If $\overline{OC}$ equals $\overline{AB}$, find the angle $\angle$ACB.",['geometry']
+121857,Express some equations as polynomial equations,"Given 
+$$\begin{align*}
+x&=(2+\cos(2s))\cos(3s)\\
+y&=(2+\cos(2s))\sin(3s)\\
+z&=\sin(2s),\end{align*}$$
+I was wondering how to express these equations as polynomial equations in $x$, $y$, $z$, $a=\cos(s)$, $b=\sin(s)$. Thanks! Edit: I expect that the polynomial equations can give the same surface in $\mathbb R^3.$","['trigonometry', 'algebra-precalculus']"
+121865,"$\{0,1\}^n$ and $[0,1]^n$ notations","Can someone please help me clarify the notations/definitions below: Does $\{0,1\}^n$ mean a $n$-length vector consisting of $0$s and/or $1$s? Does $[0,1]^n$ ($(0,1)^n$) mean a $n$-length vector consisting of any number between $0$ and $1$ inclusive (exclusive)? As a related question, is there a reference web page for all such definitions/notations? Or do we just need to take note of them individually as we learn. Thanks.","['notation', 'linear-algebra', 'definition']"
+121876,Statistical Methods: Analysis of Normal Measurements,"Show that, if $\sigma$ is unknown, the likelihood ratio statistic for testing a value of $\alpha$ is given by $$D = n \log\left(1 + \frac{1}{n-1}T^2\right)\;,$$ where $$T = \frac{\hat{α} -\alpha}{\sqrt{s^2/n}}$$ So far, I have the following:
+$\hat\alpha=\overline{y}$ and $\hat\sigma=\sqrt{\frac{\sum \left ( y_i-\bar{y} \right )^2}{n-1}}$. Now, when I plug this in to my ratio, I have:
+$$D=2\left [ l(\hat{\mu}, \hat{\sigma})-l(\mu_0,\hat{\sigma}) \right ]=\frac{n(\bar{y}-\mu_0)^2}{\hat{\sigma}}=\frac{(\bar{y}-\mu_0)^2}{c\hat{\sigma}}\text{ where }c=\frac{1}{n}$$ So, just to clarify the following things: I accidentally typed $n-1$. I meant $n$ in the denominator for $\sigma$. My log-likelihood function is: $l(\mu, \sigma)=-n\log(\sigma)-\frac{\sum{(y_i-\bar{y})^2}}{2\sigma^2}$ When I expand my ratio statistic and simplify, the logs cancel because they are identical, and I am left with the equivalent expression of $T^2$. I don't understand how I am supposed to get the expression that I am asked for. Any ideas of what I am doing wrong?",['statistics']
+121907,Complex Analysis/ Parameterization/Contour Integrals,"Let $C$ be the unit square with vertices $0, 1, 1+i, i$ with the counterclockwise orientation. a) Parameterize the contour $C$. For this, I parameterized the 4 line's which make up this unit square. With $C_1: f_1(t)=t , C_2: f_2(t)=1+it , C_3: f_3(t)=1-t+i , C_4: f_4(t)=i-it$ , where $t$ is from  $[0,1]$ b) Using your parameterization of $C$, compute the value of the contour integral: (sorry not sure how to insert math type) $\displaystyle\oint_C \bar{z} dz$, (contour integral over $C$ of $\bar{z} dz$)
+For this part I integrated $C_1, C_2, C_3, C_4$ separately, all going from $[0,1]$ and added them together. I got a final answer of $2i$, not sure if I made a mistake anywhere during the integration, but can anyone confirm this answer?","['complex-analysis', 'contour-integration']"
+121917,"$A\oplus B\cong A\oplus C$ implies $B\cong C$?  (No, it does not)","I am asked to prove that for $p\in (1, \infty)$, $$L_{p}[0,1]\cong L_{p}[0,1]\oplus \ell_{2}$$ on a homework assignment, and I think I can show using results from class that $\ell_2\oplus \ell_2\cong \ell_2$. From this I could say that 
+$L_{p}[0,1]\oplus \ell_{2}\cong L_{p}[0,1]\oplus \ell_{2}\oplus\ell_{2}$ From here I feel like I should be able to conclude that 
+$$L_{p}[0,1]\cong L_{p}[0,1]\oplus \ell_{2}$$ But I know of no such result that allows me to do this.  Can anyone tell me if it's true or false? EDIT:  Definitely false.  (See counter example below from Arturo Magidin). That is, if $B\oplus A\cong C\oplus A$ can I conclude that $B\cong C$? Proper Solution (based on hints below from t.b.): 1) Prove that $\ell_2\oplus \ell_2\cong \ell_2$ 2) Use the fact that $\ell_2$ is complemented in $L_p[0,1]$ to write $L_p[0,1] = \ell_2\oplus (\ell_2)^{c}$. 3) Then I combine these to obtain: $L_p[0,1]\cong \ell_2\oplus (\ell_2)^{c}\cong (\ell_2\oplus \ell_2) \oplus (\ell_2)^{c} \cong \ell_2 \oplus (\ell_2\oplus (\ell_2)^{c})\cong \ell_2\oplus L_p[0,1]$. I skipped some pieces of your more general argument.  I was just wondering if I did anything illegal, so to speak.","['functional-analysis', 'banach-spaces']"
+121924,Hom of the direct product of $\mathbb{Z}_{n}$ to the rationals is nonzero.,"Why is $\mathrm{Hom}_{\mathbb{Z}}\left(\prod_{n \geq 2}\mathbb{Z}_{n},\mathbb{Q}\right)$ nonzero? Context: This is problem $2.25 (iii)$ of page $69$ Rotman's Introduction to Homological Algebra: Prove that $$\mathrm{Hom}_{\mathbb{Z}}\left(\prod_{n \geq 2}\mathbb{Z}_{n},\mathbb{Q}\right) \ncong \prod_{n \geq 2}\mathrm{Hom}_{\mathbb{Z}}(\mathbb{Z}_{n},\mathbb{Q}).$$ The right hand side is $0$ because $\mathbb{Z}_{n}$ is torsion and $\mathbb{Q}$ is not.","['ring-isomorphism', 'ring-theory', 'ring-homomorphism', 'abstract-algebra', 'modules']"
+121936,Finding a basis for the columnspace of a matrix,"Find a linearly independent set of vectors that spans the same subspace of $R^4$ as that spanned by the vectors -
+  $$
+\begin{bmatrix}
+2 \\
+-4 \\
+-1 \\
+-2 \\
+\end{bmatrix}
+,
+\begin{bmatrix}
+7 \\
+-2 \\
+7 \\
+2 \\
+\end{bmatrix}
+,
+\begin{bmatrix}
+1 \\
+2 \\
+3 \\
+2 \\
+\end{bmatrix}
+,
+\begin{bmatrix}
+3 \\
+-2 \\
+2 \\
+0 \\
+\end{bmatrix}
+$$ So I start by reducing the matrix of these vectors to echelon form - $$
+\begin{bmatrix}
+1 & -7 & -3 & -2 \\
+0 & 21 & 7 &  7 \\
+0 & -30 & -10 & -10 \\
+0 & -12 & -4 & -4 \\
+\end{bmatrix}
+$$ $$
+\begin{bmatrix}
+1 & -7 & -3 & -2 \\
+0 & 3 & 1 &  1 \\
+0 & -3 & -1 & -1 \\
+0 & -3 & -1 & -1 \\
+\end{bmatrix}
+$$ $$
+\begin{bmatrix}
+1 & -7 & -3 & -2 \\
+0 & 3 & 1 &  1 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+\end{bmatrix}
+$$ Then I get $x_2 = -\frac{1}{3}x_3 - \frac{1}{3}x_4$ and $x_1 = \frac{2}{3}x_3 - \frac{1}{3}x_4$ So this gives me the linearly independent vectors below that span the same subspaces as the original vectors - $$
+\begin{bmatrix}
+1 \\
+0 \\
+\frac {2}{3} \\
+-\frac {1}{3}\\
+\end{bmatrix}
+,
+\begin{bmatrix}
+0 \\
+1 \\
+-\frac {1}{3} \\
+-\frac {1}{3} \\
+\end{bmatrix}$$ But when I enter this answer I am told it is incorrect...anyone able to see where Im going wrong?","['matrices', 'linear-algebra']"
+121938,Expectation of quadratic form,I have a random sample of size 3 denoted by X below and it comes from a normal distribution with mean 7 and variance 14. I have the matrix A shown below. I am looking for E[Q]. I know that E[Q] = 1/sigma^2 * E[Q]. The formula from the textbook for E[Q] is shown below where sigma is the variance-covariance matrix. I am having trouble with the following two items: What is sigma? I am unsure how to find the variance-covariance matrix. Is it simply just a 3x3 matrix with 14 on the diagonals? What is $\mu$? Is it [7 7 7]? Thanks for the help.,"['statistics', 'probability']"
+121955,"Exercise 26 from Apostol's Calculus (p. 209, parts (c) & (d)))","This is a problem from Apostol's Calculus (p. 209 Ex. 26 (c) & (d)).
+The problem is to find a function $f$ with a continuous second derivative $f''$ satisfying the following conditions: (c) $f''(x) > 0 \quad \text{for every } x, \qquad f'(0) = 1, \qquad f(x) \leq 100 \quad \text{for all } x > 0$. (d) $f''(x) > 0 \quad \text{for every } x, \qquad f'(0) = 1, \qquad f(x) \leq 100 \quad \text{for all } x < 0$. So, for part (c) I do not think such a function can exist.  My proof is that $f''(x) > 0$ for every $x \implies f'(x)$ is increasing.  Since $f'(0) = 1$ this means $f'(x) > 1$ for $x > 0$. By the mean value theorem we have $f(b) - f(0) = f'(c) (b)$ for some $c \in (0,b)$.  Since $f'(c) > 1$ for all $c \in (0,b)$ we have $f(b) > b + f(0)$ for any $b > 0$.  So, just choose $b > 100 + |f(0)|$ to obtain $f(b) > 100$ contradicting that $f(x) \leq 100$ for all $x > 0$. Is this a sensible approach?  I feel like there should be a more straightforward way to get to this. For (d) it seems to me that there should be some function to satisfy these restrictions (since for $x < 0$ we can certainly let $f$ take on arbitrarily large negative values).  It isn't clear to me how to systematically identify such a function though. This problem comes from the exercises immediately following the statement and proofs of the first and second fundamental theorems of calculus, and a brief section on deducing properties of a function from its derivative; such as, a nonnegative derivative on an interval $\implies$ the function is increasing on the interval.",['calculus']
+121968,"If $I+J=R$, where $R$ is a commutative rng, prove that $IJ=I\cap J$.","So I basically have to prove what is on the title. Given $R$ a commutative rng (a ring that might not contain a $1$ ), with the property that $I+J=R$ , (where $I$ and $J$ are ideals) we have to prove that $IJ=I\cap J$ . One inclusion is easy. If $x\in IJ$ , then $x=\sum a_ib_i$ where $a_i\in I$ and $b_i\in J$ . Thus for any fixed $i$ , we have that since $a_i\in I$ , we have that $a_ib_i\in I$ , and the same argument shows that $a_ib_i\in J$ , thus $\sum a_ib_i\in I$ and $\sum a_ib_i\in J$ , this means that $x=\sum a_ib_i\in I\cap J$ , and thus $IJ\subset I\cap J$ . I am having troubles proving the other inclusion. Any comments? Thanks","['ideals', 'rngs', 'abstract-algebra']"
+121976,How to integrate $\int_0^\infty\frac{x^{1/3}dx}{1+x^2}$?,"I'm trying to evaluate the integral $\displaystyle\int_0^\infty\frac{x^{1/3}dx}{1+x^2}$. My book explains that to evaluate integrals of the form $\displaystyle\int_0^\infty x^\alpha R(x)dx$, with real $\alpha\in(0,1)$ and $R(x)$ a rational function, one first starts with a substitution $x=t^2$, to transform the integral to
+$$
+2\int_0^\infty t^{2\alpha+1} R(t^2) dt.
+$$
+It then observes that
+$$
+\int_{-\infty}^\infty z^{2\alpha+1}R(z^2)dz=\int_0^\infty(z^{2\alpha+1}+(-z)^{2\alpha+1})R(z^2)dz.
+$$
+Since $(-z)^{2\alpha}=e^{2\pi i\alpha}z^{2\alpha}$, the integral then equals
+$$
+(1-e^{2\pi i\alpha})\int_0^\infty z^{2\alpha+1}R(z^2)dz.
+$$
+How are you suppose to apply the residue theorem to this integral if the integrand is not a rational function? In my case, I have
+$$
+\int_0^\infty x^{1/3}R(x)dx=2\int_0^\infty t^{5/3}R(t^2)dt.
+$$
+Also
+$$
+\int_0^\infty z^{5/3} R(z^2)dz=\frac{1}{1-e^{(2\pi i)/3}}\int_{-\infty}^{\infty}\frac{z^{5/3}}{1+z^4}dz.
+$$ I don't know what to do after that, since this last integrand still has a fractional power in the numerator. How does this work? Thanks. (This is part (g) of #3 on page 161 of Ahlfors' Complex Analysis , part of some self-study.)","['residue-calculus', 'integration', 'complex-analysis']"
+121986,"Group theory proof of Euler's theorem ($a^{\phi(m)} \equiv 1\mbox{ }(\mbox{mod }m)$ if $\gcd(a,m)=1$)","From A Classical Introduction to Modern Number Theory by Ireland and Rosen, page 33: Corollary 1 (Euler's Theorem). If $(a,m) = 1$, then $a^{\phi(m)} \equiv 1\,(m)$. Proof. The units in $\mathbb{Z}/m\mathbb{Z}$ form a group of order $\phi(m)$. If $(a,m) = 1$, $\bar{a}$ is a unit. Thus $\bar{a}^{\phi(m)} = \bar{1}$ or $a^{\phi(m)} \equiv 1\,(m)$. If I'm interpreting this correctly, this proof implicitly uses the fact(?) that if $G$ is a group and $x\in G$, then $x^{|G|}=1$, where $1$ is the identity element of $G$. If this is indeed true, can someone explain why? (I have had no prior exposure to group theory.)","['group-theory', 'number-theory']"
+121996,"$PGL(n, F)=PSL(n, F)$","$PGL(n, F)$ and $PSL(n, F)$ are isomorphic if and only if every element of $F$ has an $n$ th root in $F$ . ( $F$ is a finite field.) I can show that if $PGL(n, F)=PSL(n, F)$ then $|F|$ have to be even. I have not any idea how to deal with it. Any suggestions?","['matrices', 'group-theory', 'abstract-algebra', 'linear-groups']"
+121997,The asymptotic behaviour of $\sum_{k=1}^{n} k \log k$.,Trying to simplify the following expressions in $n$ to ﬁnd its order of growth. I want to show the simplification separately from the order of growth $$\sum_{k=1}^{n} k \log k = \Theta(n^2 \log n)$$ Any help with solving this one ? :( lost. Can someone break it down it stages please,"['asymptotics', 'discrete-mathematics']"
+122004,"Evaluating $\int_a^b \arccos\left(x\,/\sqrt{(a+b)x-ab\,}\,\right)\,\mathrm {d}x$ assuming $0<a<b$","I have been trying to solve the following integral for a little while now $$I = \int_a^b \arccos\left( \frac{x}{\sqrt{(a+b)x - ab \,}\,}\right)\mathrm{d}x \quad 0<a<b$$ After doing some testing in maple, I was able to discover that $\displaystyle I=\frac{\pi}{4}\frac{(a-b)^2}{b+a} $ But I want to show this algebraically. (using mathematics) I have done some effort and one can notice that the denominator equals $x^2-(x-a)(x-b)$. Another thing i tried using was the fact that $$\arccos(x) = \arcsin\left(\sqrt{1-x^2}\,\right)$$ also if on tries solving it by parts $$ \left[ \arccos\left( \frac{x}{\sqrt{(a+b)x - ab \,}\,}\right) \right]_a^b = 0 $$ but the remaining integral looks impossible. If one uses the substitution, $u=\text{denominator}$ I end up with $$ \frac{2}{a+b}\int u^2 \arccos\left( \frac{u^2 + ab}{u(b+a)} \right) \, \mathrm{d}u$$ Also $$I = \int_a^b \text{arccsc}\left( \sqrt{\frac{(a-x)(b-x)}{x^2}}\right)\mathrm{d}x$$ not sure what this buys me though. I also tried a variety of clever things such at differentiating under the integral sign, but alas nothing worked. Anyone mind helping me ? =)","['definite-integrals', 'calculus', 'integration']"
+122013,A bijective map that is not a homeomorphism,"Let the map $f:[0,2\pi)\to S^1;  t\mapsto e^{it}$. This map is clearly continuous and bijective. The inverse map associates to each point $z$ on the circle, the argument of
+$z$ modulo $2\pi$. it seems like $f$ is an homeomorphism, i know it is not but i don't see why? Is there any topological invariant that indicates that $[0,2\pi)$ and $S^1$ are not homeomorphic ?",['general-topology']
+122029,Dimension of subspace of all upper triangular matrices,"If $S$ is the subspace of $M_7(R)$  consisting of all upper triangular matrices, then $dim(S)$ = ? So if I have an upper triangular matrix
+$$
+\begin{bmatrix}
+a_{11} & a_{12} & . & . & a_{17}\\
+. & a_{22} & . & . & a_{27}\\
+.  & . & . & . & .\\
+0 & . & . & . & a_{77}\\
+\end{bmatrix}
+$$ It looks to me that this matrix can potentially have 7 pivots, therefore it is linearly independent and so it will take all 7 column vectors to span it. But that answer is marked as incorrect when I enter it so what am I missing here?","['matrices', 'linear-algebra']"
+122038,Definition of an algebraic singularity,"I'm reading text about generating functions and how to reveal their asymptotic behaviour by means of analysing their singularities. In this context the term ""algebraic singularity"" or in German ""algebraische Singularität"" is used. An example is given: $p(x)=\frac{1-\sqrt{1-4x}}{2}$. It's clear to me what a singularity is, but I can't find what they mean with algebaic in this context. Edit: Is this term used as synonym for essential singularities, i.e. singularities not being poles?","['generating-functions', 'complex-analysis']"
+122041,Prove $\ln\frac{p}{q}\leq \frac{p-q}{\sqrt{pq}}$ for $0<q\leq p$,"It is a question in one problem book: Prove $\ln\frac{p}{q}\leq \frac{p-q}{\sqrt{pq}}$ for $0<q\leq p$. Actually I already solved it:
+Define $F(x)=\frac{x-q}{\sqrt{xq}}-\ln x+\ln q$, then $F'(x)\geq0$ when $x\geq q$. However,the problem book gives a hint to use Schwarz inequality $$\left(\int_a^b f(x)g(x)dx\right)^2\leq 
+\int_a^b f^{2}(x)dx\cdot\int_a^bg^2(x)dx$$
+I don't know how to use it.","['inequality', 'calculus']"
+122053,Is it better to play $\$1$ on $10$ lottery draws or $\$10$ on one lottery draw?,"If I had 10 dollars to spend on a 1 dollar lottery draw, would I have more chance of winning if I spent all 10 dollars in one draw or bought 1 dollar tickets for 10 separate draws? Edit:
+in terms of lottery definition, you pick 6 numbers from a pool of 49 numbers (1-49), that is classed as one lottery ticket. So each 1 dollar represents a selection of 6 numbers. Across multiple tickets you can pick the same numbers as appear on your previous tickets. If you are familiar with EuroMillions or UK Lotto, it's that kind of lottery. http://www.national-lottery.co.uk/player/p/lotterydrawgames/lotto.ftl Edit 2: Let me re-phrase the question. The probability of winning the jackpot in the lottery is 1 in 13,983,816. Would buying 10 tickets for one draw change those odds to 10 in 13,983,816 ? and if so is that better than playing in 10 different draws at 1 in 13,983,816 odds each?","['lotteries', 'probability']"
+122057,"All naturals are T-finite, all finite sets are T-finite","In Jech's Set Theory, there is defined T-finite , where a set $S$ is T-finite if every non-empty $X\subseteq\mathcal{P}(S)$ has $\subseteq$-maximal element. [ie. there is $u\in X$ s.t. there is no $v\in X$ with $u\subsetneq v$] The following exercises are being related to this. Each $n\in \mathbb{N}$ is T-finite $\mathbb{N}$ is T-infinite (not T-finite) Every finite set is T-finite Every infinite set is T-infinite I completed 2 and 4 (considering first $\mathbb{N}\subset \mathcal{P}(\mathbb{N})$ since the naturals are linearly ordered by $\subseteq$, and for $S$ infinite, $\{u\subseteq S\vert u \text{ finite}\}$ ). I am so far unable to solve the others. Many thanks for you kind help.","['logic', 'elementary-set-theory']"
+122069,Gagliardo-Nirenberg inequality,"I'm reading through Terry Tao's 'Why are solitons stable?' and I don't understand one of the bounds he's constructed on the $H^{1}$ norm of the solution $u(x,t)$ to the gKdV, $u_{t} + u_{xxx} + (u^{k})_{x} = 0$. At the start of section 4 he bounds $||u(t)||^{2}_{H^{1}_{x}(\mathbb{R})}$ using this integral inequality: $$  \int_{\mathbb{R}}v^{k+1} \leq C(p)\left(\int_{\mathbb{R}}v^{2}\right)^{\frac{k+3}{4}}\left(\int_{\mathbb{R}}v_{x}^{2}\right)^{\frac{k-1}{4}}.$$
+He calls this the Gagliardo-Nirenberg inequality. Given this inequality the $H^{1}$ norm of the solution is bounded by its mass and energy - great. However, I thought that the Gagliardo-Nirenberg inequality was $$ ||u||_{L^{p*}(\mathbb{R}^{n})} \leq C(n,p) ||Du||_{L^{p}(\mathbb{R}^{n})} $$
+with $1\leq p < n$ and $p* = \frac{pn}{n-p} > p$, which I don't think can be used here since the gKdV has one spatial dimension, i.e. $n = 1$ precluding any use of this result. How do we use Galiardo-Nirenberg here?","['functional-analysis', 'partial-differential-equations', 'analysis']"
+122080,GrossOne? The arXiv blog's pick of the day.,"The arXiv blog having chosen GrossOne for its daily pick of today , I read the arXiv paper concerned, and posted a comment there. The arXiv blog used to be quite high profile as these things go. Is there an existing well-known (but not to me) mathematical construction that does what Sergeyev proposes?","['reference-request', 'number-theory']"
+122087,Why does $|dz|=-ir\frac{dz}{z}$ when $|z|=r$?,"Sometimes I want to compute a line integral over some circle $|z|=r$, where I have $|dz|$ instead of $dz$ given to me. Reparametrizing with $z=re^{it}$, it follows that $dz=rie^{it}dt=izdt$. But I always read that
+$$
+|dz|=|iz|dt=|z|dt=|z|\frac{dz}{zi}
+$$
+so $|dz|=-ir\frac{dz}{z}$. In the first equality, why does $|dz|=|iz|dt$ instead of $|iz||dt|$? Why doesn't the absolute value extend to the $dt$ as well?","['differential-forms', 'complex-analysis']"
+122092,"When are two elements conjugated in GL(2), but not in SL(2)","Let $F$ be an arbitrary field. How can we describe the set of elements in $SL(2,F)$ which are conjugated in $GL(2,F)$ but not in $SL(2,F)$? I would be happy already with a partial solution as given in the comments.","['linear-algebra', 'abstract-algebra']"
+122103,What knot groups are Abelian?,"The knot group (the fundamental group of the complement of a knot) of the unknot is $\mathbb{Z}$ and the Hopf link is $\mathbb{Z}^2$, so those are knots (links) with Abelian knot group but are there any more?","['general-topology', 'low-dimensional-topology', 'knot-theory']"
+122108,An open subset of a manifold is a manifold,"Let $M$ be an $n$-manifold. I would like to show that any open subset $A$ of $M$ is an $n$ manifold. Let $x\in A$. since $M$ is a manifold, there exists a neighborhood $U_x\subseteq M$ of $x$  such that $U_x$ is homeomorphic to an open subset $V$ of $\mathbb R^n$, let $h:U_x\to V$ be such homeomorphism. Consider the restriction of $h$ to $A\cap U_x$. The set  $A\cap U_x$ contains the open set $A$ that contains $x$ so  $A\cap U_x$ is a neighborhood of $x$. The proof is finished if i could say that $h(A\cap U_x)$ is an open subset of $\mathbb R^n$. this is obvious if $U_x$ were open because in this case i would say that $A\cap U_x$ is open in $M$ and since $h$ is homeomorphism then it is an open map hence $h(A\cap U_x)$ is an open subset of $\mathbb R^n$. But the Problem is that $U_x$ need not be open..","['general-topology', 'manifolds']"
+122119,Does there exist more than 3 connected open sets in the plane with the same boundary?,"I've wondered about the following question, whose answer is perhaps well known (in this case I apologize in advance). The Lakes of Wada are a famous example of three disjoint connected open sets of the plane with the counterintuitive property that they all have the same boundary (!) My question is the following : Can we find four disjoint connected open sets of the plane that have the same boundary? More generally : For each $n \geq 3$, does there exist $n$ disjoint connected open sets of the plane that have the same boundary? If not, then what is the smallest $n$ such that the answer is no? Thank you,
+Malik",['general-topology']
+122122,On the Factor group $\Bbb Q/\Bbb Z$ [duplicate],"This question already has answers here : Closed 12 years ago . Possible Duplicate: $\mathbb{Q}/\mathbb{Z}$ has a unique subgroup of order $n$ for any positive integer $n$? I have the factor group $\Bbb Q/\Bbb Z$, where $\Bbb Q$ is group of rational numbers and $\Bbb Z$ is group of integers (operation in both of them is addition). It's necessary to prove that for every natural number $n$ there exists one and only one subgroup of $\Bbb Q/\Bbb Z$ with order equal to $n$. I've proved that such group exists (cyclic group suits this condition), but have almost no idea about how to prove its uniqueness.","['cyclic-groups', 'group-theory', 'abstract-algebra', 'abelian-groups']"
+122124,Can piecewise defined functions always be differentiated piece by piece?,"Guess you have a function $f(x) : \mathbb{R} \rightarrow \mathbb{R}$ (or a subset of $\mathbb{R}$) with
+$f (x) := \begin{cases}
+x^3  & \text{if } x \geq 0 \\
+x^2 & \text{otherwise}
+\end{cases} $. The derivative $f': \mathbb{R} \rightarrow \mathbb{R}$ of $f(x)$ is $f' (x) := \begin{cases}
+3 \cdot x^2  & \text{if } x \geq 0 \\
+2 \cdot x & \text{otherwise}
+\end{cases}$. To get this derivative I could simply differentiate the first part and the second part. Can you calculate the derivative of every piecewise defined function this way? I recently saw Thomae's function: $f(x)=\begin{cases}
+  \frac{1}{q}  &\text{ if } x=\frac{p}{q}\mbox{ is a rational number}\\
+  0            &\text{ if } x \mbox{ is irrational}. 
+\end{cases}$ I thought there might be a differentiable function which is defined like that and which can't be derived simply by deriving it piece by piece.","['derivatives', 'functions']"
+122147,How to solve $\binom{n}{1}^2+2\binom{n}{2}^2 + 3\binom{n}{3}^2 + 4\binom{n}{4}^2+\cdots + n\binom{n}{n}^2$?,"I have tried something to solve the series
+$$\binom{n}{1}^2+2\binom{n}{2}^2 + 3\binom{n}{3}^2 + 4\binom{n}{4}^2+\cdots + n\binom{n}{n}^2.$$
+My approach is :
+$$(1+x)^n=\binom{n}{0} + \binom{n}{1}x + \binom{n}{2}x^2 + \cdots + \binom{n}{n}x^n.$$
+Differentiating the above equation
+$$n(1+x)^{n-1} = \binom{n}{1} + \binom{n}{2}x + \cdots + n\binom{n}{n}x^{n-1}$$ Also,
+$$
+\left(1+\frac{1}{x}\right)^n =\binom{n}{0} + \binom{n}{1}\frac{1}{x} + \binom{n}{2}\left(\frac{1}{x}\right)^2 + \cdots + \binom{n}{n}\left(\frac{1}{x}\right)^n$$
+Multiplying above two equation I get,
+$$\begin{align*}
+&{n(1+x)^{n-1}\left(1 + \frac{1}{x}\right)^n}\\
+&\quad= \left(
+\binom{n}{1}^2 + 2\binom{n}{2}^2 + 3\binom{n}{3}^2 + 4\binom{n}{4}^2 + \cdots + n\binom{n}{n}^2\right)\left(\frac{1}{x}\right) + \text{other terms}
+\end{align*}$$ So I can say that coefficient of $\frac{1}{x}$ in expansion of $n(1+x)^{n-1}(1+\frac{1}{x})^n$ will give me the required answer. Am I doing it correct,please correct me if I'm wrong ? If I'm right,please tell me how to calculate the coefficient of $\frac{1}{x}$ ? Based on the answers,I tried to implement the things in a C++ code. I tried implementing the code using extended euclidean algorithm so that the problem of truncated division can be eliminated but still not abled to figure out why am I getting wrong answer for n>=3. This is my updated code : http://pastebin.com/imS6rdWs I'll be thankful if anyone can help me to figure out what's wrong with this code. Thanks. Solution: Finally abled to solve the problem.Thanks to all those people who spent their precious time for my problem.Thanks a lot.This is my updated code : http://pastebin.com/WQ9LRy6F","['summation', 'binomial-coefficients', 'combinatorics']"
+122162,Convert from fixed axis $XYZ$ rotations to Euler $ZXZ$ rotations,"Because I'm a new user, I can't post images or hyperlinks, there is a complete version with images here: https://stackoverflow.com/questions/9774958/converting-from-a-euler-zxz-rotation-to-fixed-axis-xyz-rotations The problem I have, is that I need to convert from $XYZ$ fixed axis rotations, to Euler rotations about $Z$, then $X'$, then $Z''$. Here are the relevant matricies: $$X = \left(\begin{matrix} 1 & 0 & 0 \\ 0 & \cos(\theta) & -\sin(\theta) \\ 0 & \sin(\theta) & \cos(\theta)\end{matrix}\right)$$ $$Y = \left(\begin{matrix} \cos(\phi) & 0 & \sin(\phi) \\ 0 & 1 & 0 \\ -\sin(\phi) & 0 & \cos(\phi)\end{matrix}\right)$$ $$Z = \left(\begin{matrix} \cos(\psi) & -\sin(\psi) & 0 \\ \sin(\psi) & \cos(\psi) & 0 \\ 0 & 0 & 1\end{matrix}\right)$$ Combined, as $R_z(\psi) R_y(\phi) R_x(\theta) = R_{xyz}(\theta,\phi,\psi)$; they give: $R_{xyz}$: i.imgur.com/8UQM6.jpg And the Rotation matrix for the Specific convention of Euler angles I want; is this: Euler: So my initial plan, was to compare matrix elements, and extract the angles I wanted that way; I came up with this (actual current code at the end): But this doesn't work under several circumstances. The most obvious being when $\cos(\theta)\cos(\phi) = 1$; since then $\cos(\beta) = 1$, and so $\sin(\beta) = 0$. Where $\sin(\beta)$ is s2 in the code. This happens only when $\cos(\theta)$ and $\cos(\phi) = \pm 1$. So right away I can just rule out the possible situations; When $\theta$ or $\phi = 0, 180, 360, 540, \ldots$, then $\cos(\theta)$, and $\cos(\phi)$ are $\pm 1$; so I only need to do it differently for these cases; And I ended up with this code: public static double[] ZXZtoEuler(double θ, double φ, double ψ){
+
+    θ *= Math.PI/180.0;
+    φ *= Math.PI/180.0;
+    ψ *= Math.PI/180.0;
+
+    double α = -1;
+    double β = -1;
+    double γ = -1;
+
+    double c2 = Math.cos(θ) * Math.cos(φ);
+
+    β = Math.acos(r(c2));
+
+    if(eq(c2,1) || eq(c2,-1)){
+        if(eq(Math.cos(θ),1)){
+            if(eq(Math.cos(φ),1)){
+                α = 0.0;
+                γ = ψ;
+            }else if(eq(Math.cos(φ),-1)){
+                α = 0.0;
+                γ = Math.PI - ψ;
+            }
+        }else if(eq(Math.cos(θ),-1)){
+            if(eq(Math.cos(φ),1)){
+                α = 0.0;
+                γ = -ψ;
+            }else if(eq(Math.cos(φ),-1)){
+                α = 0.0;
+                γ = ψ + Math.PI;
+            }
+        }
+    }else{
+
+        //original way
+
+        double s2 = Math.sin(β);
+
+        double c3 = ( Math.sin(θ) * Math.cos(φ) )/ s2;
+        double s1 = ( Math.sin(θ) * Math.sin(ψ) + Math.cos(θ) * Math.sin(φ) * Math.cos(ψ) )/s2;
+
+        γ = Math.acos(r(c3));
+        α = Math.asin(r(s1));
+
+    }
+
+    α *= 180/Math.PI;
+    β *= 180/Math.PI;
+    γ *= 180/Math.PI;
+
+    return new double[] {r(α), r(β), r(γ)};
+} Where r and eq are just two simple functions; public static double r(double a){
+    double prec = 1000000000.0;
+    return Math.round(a*prec)/prec;
+}
+
+static double thresh = 1E-4;
+public static boolean eq(double a, double b){
+    return (Math.abs(a-b) < thresh);
+} eq is just to compare the numbers for tests, and r is to prevent floating point errors pushing numbers outside the range of Math.acos / Math.asin and giving me NaN results; (i.e. every now and then I'd end up with Math.acos(1.000000000000000004) or something.) Which takes into account the 4 cases of having rotations around $x$ and $y$ which leave c2==1 . But now is where the problem occurs; Everything I have done above, makes sense to me, but it does not give the correct angles; Here is some output, in each pair, the first are the $\theta, \phi, \psi$ angles, and the second of each pair is the corresponding $\alpha, \beta, \gamma$ lines. Ignoring the rounding errors, it seems to be getting some of the angles off by about [0.0, 0.0, 0.0] - correct!
+[0.0, 0.0, 0.0] [0.0, 0.0, 45.0] - correct!
+[0.0, 0.0, 45.0] [0.0, 0.0, 90.0] - correct!
+[0.0, 0.0, 90.0] [0.0, 0.0, 135.0] - correct!
+[0.0, 0.0, 135.0] [0.0, 0.0, 180.0] - correct
+[0.0, 0.0, 180.0] [0.0, 0.0, 225.0] - correct
+[0.0, 0.0, 225.0] [0.0, 0.0, 270.0] - correct
+[0.0, 0.0, 270.0] [0.0, 0.0, 315.0] - correct
+[0.0, 0.0, 315.0] [0.0, 45.0, 0.0] - incorrect: should be [90, 45, -90]
+[90.0, 44.999982, 90.0] [0.0, 45.0, 45.0]
+[45.000018, 44.999982, 90.0] [0.0, 45.0, 90.0]
+[0.0, 44.999982, 90.0] [0.0, 45.0, 135.0]
+[-45.000018, 44.999982, 90.0] [0.0, 45.0, 180.0]
+[-90.0, 44.999982, 90.0] [0.0, 45.0, 225.0]
+[-45.000018, 44.999982, 90.0] [0.0, 45.0, 270.0]
+[0.0, 44.999982, 90.0] [0.0, 45.0, 315.0]
+[45.000018, 44.999982, 90.0] [0.0, 90.0, 0.0]
+[90.0, 90.0, 90.0] [0.0, 90.0, 45.0]
+[45.000018, 90.0, 90.0] [0.0, 90.0, 90.0]
+[0.0, 90.0, 90.0] [0.0, 90.0, 135.0]
+[-45.000018, 90.0, 90.0] [0.0, 90.0, 180.0]
+[-90.0, 90.0, 90.0] [0.0, 90.0, 225.0]
+[-45.000018, 90.0, 90.0] Can anyone think of a solution? EDIT: I don't know if this helps, but there are a few other ways at looking at these rotations: A way to rotate about an arbitrary axis, is to reorient that axis as the Z Axis, and then do the inverse of the reorientation; you can apply this over and over, to obtain the Euler rotations in terms of the original fixed axis rotations; $$R_{Z^{\prime\prime} X^{\prime} Z}(\alpha,\beta,\gamma) = R_{Z^{\prime\prime}}(\gamma)R_{X^{\prime}}(\beta)R_Z(\alpha)$$ $$R_{X^{\prime}}(\beta) = R_Z(\alpha)R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2})R_Z(-\alpha)$$ so $$R_{X^{\prime}}(\beta)R_Z(\alpha) = R_Z(\alpha)R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2})$$ $$R_{Z^{\prime\prime}} = R_Z(\alpha)R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2})R_Z(\gamma)R_Y(\frac{\pi}{2})R_Z(-\beta)R_Y(-\frac{\pi}{2})R_Z(-\alpha)$$ And so the whole thing; $$R_{Z^{\prime\prime}}(\gamma)R_{X^{\prime}}(\beta)R_Z(\alpha) = R_Z(\alpha)R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2})R_Z(\gamma)R_Y(\frac{\pi}{2})R_Z(-\beta)R_Y(-\frac{\pi}{2})R_Z(-\alpha)R_Z(\alpha)R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2})$$ Which cancels down; $$R_{Z^{\prime\prime}}(\gamma)R_{X^{\prime}}(\beta)R_Z(\alpha) = R_Z(\alpha)R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2})R_Z(\gamma)R_Y(\frac{\pi}{2})R_Z(-\beta)\mathbf{R_Y(-\frac{\pi}{2})R_Y(\frac{\pi}{2})}R_Z(\beta)R_Y(-\frac{\pi}{2})$$ $$R_{Z^{\prime\prime}}(\gamma)R_{X^{\prime}}(\beta)R_Z(\alpha) = R_Z(\alpha)R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2})R_Z(\gamma)R_Y(\frac{\pi}{2})\mathbf{R_Z(-\beta)R_Z(\beta)}R_Y(-\frac{\pi}{2})$$ $$R_{Z^{\prime\prime}}(\gamma)R_{X^{\prime}}(\beta)R_Z(\alpha) = R_Z(\alpha)R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2})R_Z(\gamma)\mathbf{R_Y(\frac{\pi}{2})R_Y(-\frac{\pi}{2})}$$ $$R_{Z^{\prime\prime}}(\gamma)R_{X^{\prime}}(\beta)R_Z(\alpha) = R_Z(\alpha)R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2})R_Z(\gamma)$$ And note that 
+$$R_Y(\frac{\pi}{2})R_Z(\beta)R_Y(-\frac{\pi}{2}) = R_X(\beta)$$ so we have 
+$$R_{Z^{\prime\prime}}(\gamma)R_{X^{\prime}}(\beta)R_Z(\alpha) = R_Z(\alpha)R_X(\beta)R_Z(\gamma)$$ Now i'm not sure how much this might help... but it's something i guess...","['matrices', 'rotations']"
+122163,Reducing the proof of the smoothness of a multivariable function to that of a $\mathbb{R} \rightarrow \mathbb{R}$ function,"Let $$g_1 (x)=\frac{1}{e^{\frac{1}{x}}}, g_2 \equiv 0.$$
+Can someone please explain  to me how to show, that the function $$f:\mathbb{R} \rightarrow \mathbb{R},\ x \mapsto \begin{cases}
+g_1 (x) & x>0\\
+g_2 (x) & \text{else}\\
+\end{cases} $$ is in $C^ \infty(\mathbb{R})$ ? I wasn't even able to manage to prove that $f|_{(0,\infty)}$ is in $C^ \infty(0,\infty)$ (let alone to prove that all derivatives exist in $0$, which actually seems to me to be the key point), since I wasn't able to guess a general formula for calculating the derivatives (which I did for some values using a CAS), because it just gets horrible complicated after the fourth derivative; my idea was to succesively calculate the derivatives using the chain, sum and product rule and to prove that way, that the function ought to be in $C^ \infty(\mathbb{R})$. Is there maybe a sleeker way to achieve this ? Afterswards I should use $f$ to prove that $$F:\mathbb{R}^k\rightarrow \mathbb{R}, \ (x_1,\ldots,x_k) \mapsto  \begin{cases}
+G_1 (x_1,\ldots,x_k) & |(x_1,\ldots,x_k)|<1\\
+g_2 (x) & \text{else}\\
+\end{cases} $$ is also in $C^ \infty(\mathbb{R^k})$ , for $G_1 (x_1,\ldots,x_k)=e^{-\frac{1}{1-|(x_1,\ldots,x_k)|^2}}$. The only thing that came to my mind for this, was to maybe try prove that all partial derivatives of all orders of $F$ are continuously differentiable, since that would imply that $F$ would be smooth and that $$F(x_1,\ldots,x_k)=f(1-|(x_1,\ldots,x_k)|^2),$$ but I'm not sure about that.",['multivariable-calculus']
+122165,Showing $f'(x) = f(x)$ implies an exponential function [duplicate],"This question already has answers here : Closed 12 years ago . Possible Duplicate: Proof that $\exp(x)$ is the only function for which $f(x) = f'(x)$ How can I show the statement $f'(x) = f(x)$ implies the function is defined as $f: \mathbb{R} \rightarrow \mathbb{R} : x \rightarrow a\cdot \exp(x)$ without using integrals. My attempt at a solution:
+I tried to show that the Taylor series of $f$ has the same structure as $a\cdot \exp(x)$ , but I fail at showing that the error on the series converges to zero.",['derivatives']
+122169,A quick question about the Hessian matrix,A function $f$ that has continuous third order partial derivatives in $\mathbb{R}^n$. I'm just wondering that since the partial derivatives are continuous then the Hessian matrix is symmetric. Is that correct? Thanks.,"['hessian-matrix', 'multivariable-calculus']"
+122174,What's so special about unipotent groups,"Why are they so important? I see them appear in Lie theory, algebraic geometry, etc. Can somebody elaborate? For example, can someone explain why they are such natural groups to consider in algebraic geometry?","['algebraic-geometry', 'algebraic-groups', 'lie-groups']"
+122191,extending a continuous function from a closed subset,Is it true that a continuous function defined on a closed subset of $\mathbb{R^n}$ extends to a continuous function on the whole space?,"['calculus', 'analysis']"
+122207,Integrating matrix exponential,"I have a question about equation 6 in this paper . Simplifying somewhat, the authors state the following $$\int_0^{\infty} e^{-tL} dt = L^{-1}$$ $L$ here is a graph laplacian and therefore is a matrix. (Leave aside for the moment that $L$ is singular and thus make the above equation meaningless.) To derive the equation, I first tried expanding $e^{-tL}$ into a series and integrating the individual terms in the hope that something clean comes out:
+$$\int_0^{\infty} e^{-tL} dt = \sum_{i=0}^\infty \frac{(-L)^i}{i!}\int_0^{\infty} t^i dt$$
+which lead nowhere for me. So I tried the alternative tack of just treating $L$ as if it were scalar. In that case, the first equation is obviously true. My question is, can I treat the matrix $L$ in the exponent as if it were a scalar and just integrate it? (Bonus question, since $L$ is a graph laplacian and therefore singular, why are the authors inverting it when they should know better?)","['matrices', 'integration', 'algebraic-graph-theory']"
+122209,Origin of the mixed norm,"One can define the ($\alpha, \beta$)-mixed norm for a matrix $A$ as \[ \|A \|_{\alpha, \beta} = (\sum \|a_i\|_\alpha^\beta)^{1/\beta} \]
+where $a_i$ is the $i^{\text{th}}$ column of $A$ and $\|a_i\|_\alpha$ is the usual $\alpha$-norm \[ \|v\|_\alpha = (\sum_i v_i^\alpha)^{1/\alpha} \] Is this a well-known norm in that there's a reference for where it's first defined ?","['linear-algebra', 'reference-request', 'analysis']"
+122211,Logic proportions problem,"What the problem says: When a screen is placed $3 m$ from a projector, the picture
+  occupies $3 m^2$. How large will the picture be when the
+  projector is $5 m$ from the screen? My direct answer would be $5 m^2$, but it seems too easy to be true. I am curious about what the answer would be, or how to do it - it is not something critical since I am doing this in my free time.","['geometry', 'trigonometry']"
+122215,Infinity plus Infinity,Let $a \in \mathbb{C}$. Ahlfors says we let $a + \infty = \infty$ and $a \cdot \infty = \infty$. But we cannot define $\infty + \infty$ without violating the laws of arithimetic (i.e. field axioms). I don't see why this is. Don't we have $\infty + \infty = \infty$ by applying the distributive law to $2\cdot \infty$? What am I misunderstanding?,['complex-analysis']
+122222,Gradient of a Scalar Field is Perpendicular to Equipotential Surface,"let $\phi = f(x,y,z)$ be a scalar field, is gradient of phi independent of coordinate choice? Also how to prove that $\nabla \phi$ is perpendicular to scalar potential surface.","['calculus', 'vector-analysis']"
+122253,Genus of the desingularization of a plane curve,"Background I have been considering the following question. Let $k$ be an algebraically closed field and consider a curve $C \subset \mathbb{P}^2$. Compute its genus, that is, the genus of its normalization, using data ""as local"" as possible. I understand that desingularization of plane curves is an old topic, but I would like to follow through the following approach. My idea was to use that for non-singular curves, $g = dim_k H^1(C, \mathcal{O}_C)$, and that for arbitrary plane curves $dim_k H^1(C, \mathcal{O}_C) = (d-1)(d-2)/2$, where $d$ is the degree. That is, we consider the normalization morphism $\pi: C' \to C$ and try to relate the first cohomology groups. This yields the following formula, for a (singular) plane curve $C$ with normaization $\pi: C' \to C$: $g(C) = (d-1)(d-2)/2 - \sum_{P \in C} dim_k \frac{\mathcal{O}_{C',P}}{\mathcal{O}_{C,P}}$. Here $\mathcal{O}_{C',P}$ denotes $(\pi_* \mathcal{O}_{C'})_P$, i.e. a certain semilocal dedekind domain. Actual Question Let as above $k$ be algebraically closed and $A$ be the local ring of a plane singularity - that is, $A=(k[x,y]/(F))_{(x,y)}$ for some $F \in k[x, y]$ without constant term. Let $B$ be its normalization, that is its integral closure inside its field of fractions. Denote by $p$ the maximal ideal of $A$. In a number of examples I have worked out, there exists an integer $n$ such that $p^n B \subset A$. Is this always true? Remarks This would have the desirable consequence that if we set $M = B/A$, then $\hat{M} = M$, where hat denotes completion. Hence the quantity of interest can be obtained as $dim_k \hat{B}/\hat{A}$, which suggests that it is ""very local"". Here is an even bolder question: can $\hat{B}$ be obtained from $\hat{A}$? That is, if $A_1$, $A_2$ are two local rings of plane singularities and $\hat{A_2} \approx \hat{A_2}$, do they contribute the same term to the genus? If not, what if we require the isomorphism between $\hat{A_1}$ and $\hat{A_2}$ to come from an automorphism of $k[[x, y]]$? That's a lot of questions. I'm mostly interested in the first (italic) one, the rest is follow-up ramblings. Thanks,
+Tom","['commutative-algebra', 'algebraic-geometry']"
+122254,"What are the possible orders of elements in $GL(2,\mathbb{R})$?","This question arose during discussions about interesting examples of ""orders of group elements"" for a group theory course. Definition:  $GL(2,\mathbb{R})$ is the group of $2 \times 2$ matrices with real number entries, with non-zero determinant.  The binary operation for this group is matrix multiplication. Question: What is $\{\mathrm{ord}(M):M \in GL(2,\mathbb{R})\}$?",['group-theory']
+122267,Formula for Legendre polynomials by use of Cauchy's Integral Formula (From _Visual Complex Analysis_),"I decided to look through Tristan Needham's Complex Analysis book since it's usually mentioned with great praise. Just doing some exercises, I got stuck on #4 of Chapter 9). Here $P_n(z)$ denotes the $n$-th Legendre polynomial. I've been able to derive that
+$$
+P_n(z)=\frac{1}{2\pi i}\int_K\frac{(Z^2-1)^n}{2^n(Z-z)^{n+1}}dZ
+$$
+for $K$ any simple loop around $z$. Then the book says by taking $K$ to be a circle of radius $\sqrt{|z^2-1|}$ centered at $z$, 
+$$
+P_n(z)=\frac{1}{\pi}\int_0^\pi(z+\sqrt{z^2-1}\cos t)^n dt.
+$$ I tried to rewrite the RHS of the original equation by reparametrizing $Z=z+\sqrt{|z^2-1|}e^{it}$. However, upon rewriting in terms of the standard substitutions, the integral becomes unmanageable. I have $dZ=i\sqrt{|z^2-1|}e^{it}dt$, $Z^2-1=z^2+2z\sqrt{|z^2-1|}e^{it}+|z^2-1|e^{2it}-1$, $(Z-z)=\sqrt{|z^2-1|}e^{it}$. Substituting in,
+$$
+\frac{1}{2^{n+1}\pi i}\int_0^{2\pi}\left(\frac{Z^2-1}{Z-z}\right)^2\frac{i\sqrt{|z^2-1|}e^{it}dt}{\sqrt{|z^2-1|}e^{it}}
+$$
+which simplifies to
+$$
+\frac{1}{2^{n+1}\pi}\int_0^{2\pi}\left(\frac{z^2-1}{\sqrt{|z^2-1|}e^{it}}+2z+\sqrt{|z^2-1|}e^{it}\right)^n dt.
+$$
+Is there a way to put this into the final desired form? Thanks.","['complex-analysis', 'polynomials']"
+122274,Why $x^{p^n}-x+1$ is irreducible in ${\mathbb{F}_p}$ only when $n=1$ or $n=p=2$,"I have a question, I think it concerns with field theory. Why the polynomial $$x^{p^n}-x+1$$ is irreducible over ${\mathbb{F}_p}$ only when $n=1$ or $n=p=2$ ? Thanks in advance. It bothers me for several days.","['finite-fields', 'irreducible-polynomials', 'abstract-algebra', 'polynomials']"
+122296,How to evaluate this integral? (relating to binomial),"I saw some result that some article used, (without proving) that stated:$$\int_0^1 p^k (1-p)^{n-k} \mathrm{d}p = \frac{k!(n-k)!}{(n+1)!}$$ But I was wondering, how would you integrate it? How did this integral come about? Is it something to do with the binomial distribution?",['integration']
+122298,Getting the angles of a non-right triangle when all lengths are known,"I have a triangle that I know the lengths of all the sides. But I need to know the angles. Needs to work with non-right triangles as well. I know it is possible, and I could have easily done this years ago when I was in trig, but it has completely slipped my mind. Id prefer a solution that I can code into a function, or something that does not require constructing right triangles from it.","['trigonometry', 'triangles']"
+122307,"""GCD"" of any two real numbers","This isn't really a GCD question, because GCD is only defined for integers. I'm interested in the the existence of a common divisor of any two non-zero real numbers. In other words can you prove or disprove the following: Given $x,y \neq 0\in \mathbb{R}, \exists \space g \space s.t. \space x/g \in \mathbb{Z}$ and $y/g \in \mathbb{Z}$. (I hope my math is understandable, haven't done this in awhile). It's clearly possible for many numbers, including irrational ones (e.g. for multiples of $\pi$, $g = \pi$). Is it possible for all real numbers?","['irrational-numbers', 'number-theory']"
+122323,Contractive Operator and Realization Theorem,"Good morning, I have searched, by using google for a time, a proof of the following theorem : Let $\pmatrix{A&B \\ C&D}\colon H \oplus K \to H\oplus K$ be a contractive operator of a Hilbert space where H and K are Hilbert subspaces. Then we have the function $f\colon z\in\mathbb{D}\mapsto D + Cz(1-zA)^{-1}B \in \mathcal{B}(K)$, from the open unit disc to the space of bounded operators on $K$, is a holomorphic function such that $\|f\|_{\infty} = \sup_{z\in\mathbb{D}} \|f(z)\|\leq 1$, where $\|f(z)\|$ is the operator norm. But I have not found yet. This theorem is called the realization theorem for functions of the Schur class. Does anyone have a proof of it? Thanks in advance. Duc Anh EDIT : in the case $\pmatrix{A&B \\ C&D}$ is unitary, everything is simple, so the difficult case is when it is a contractive operator in general.","['hilbert-spaces', 'functional-analysis', 'complex-analysis']"
+122331,"General properties of eigenvalues of a Jacobian matrix when premultiplied by a symmetric, positive definite matrix?","For a particular engineering problem that I'm working on, I have computed a Jacobian matrix $J$ and there is another matrix $M$ associated with the problem. $M$ is known to be symmetric, real-valued, and positive definite. At a particular step in the process, I need to compute the eigenvalues of $MJ$. I am wondering if there are any known results about how the eigenvalues of $MJ$ relate (via shifting, scaling, or other transformations) to the eigenvalues of $J$, if at all. Statements that require $M$ to have certain extra properties would be valuable too (i.e. I realize there are dumb corner cases such as when $M=J^{-1}$, for example, so answers that meaningfully exclude cases like that but which leave open interesting results are welcome, if they exist). Note that I don't mean the classical problem of simultaneous diagonalization. This is really a computational problem at root. I'm trying to avoid needing to do a more complicated numerical solution for the eigenvalues of $MJ$ if possible. In my program, I will already have pre-computed the eigenvalues of $J$ and it would lose efficiency if, after getting the associated matrix $M$, I had to then solve the classical problem of computing the spectrum of $MJ$. The goal is make the overall numerical method faster by exploiting any knowledge that $J$ gives us about the spectrum of $MJ$. In trying to think about this, we can assume that $J$ yields an eigenbasis of $\{\lambda_{k},e_{k}\}$, so that $MJx = \sigma{x}$ can be rewritten $\sum_{k}\lambda_{k}Me_{k} = \sum_{k}\sigma\lambda_{k}e_{k}$ for any $x$ that happens to be an eigenvector of $MJ$. What kinds of situations then allow us to make statements about $\sigma$ in terms of the $\lambda_{k}$, especially for somewhat large classes of matrices $M$? The references that I have already looked through are ""Matrix Analysis"" by Horn and Johnson, Gil Strang's Linear Algebra book, and ""Matrix Computations"" by Golub and Van Loan, none of which gives any kind of usable answer. References to research papers or books that shed any light would be appreciated if (as I suspect) this turns out to be a question that's not really answerable in general and statements can only be made for narrow classes of matrices $M$.","['numerical-linear-algebra', 'matrices', 'linear-algebra', 'eigenvalues-eigenvectors']"
+122356,"Prove or disprove:  if A is a subset of B and B is not a subset of C, then A is not a subset of C","Prove or disprove:  if A is a subset of B and B is not a subset of C, then A is not a subset of C. I know it is false for the counter example: A = {1, 2} B = {1, 2, 3, 4} C = {1, 2, 6, 5} How can I prove that mathematically?",['discrete-mathematics']
+122362,Why is the sum of residues of $\frac{1}{1+z^n}$ in the upper half plane $1/[in\sin(\pi/n)]$?,"Suppose $F_n=1/(1+z^n)$ for $n$ even. I'm curious, why is the sum of residues of $F_n$ in the upper half plane a geometric series whose sum is $1/[in\sin(\pi/n)]$? I know that if $f(z)=\frac{P(z)}{Q(z)}$ has a simple root $a$ of $Q(z)$, then $\text{Res}[f(z),a]=\frac{P(a)}{Q'(a)}$. Hence if $p$ is a pole of $F_n$, then
+$$
+\text{Res}[F_n,p]=\frac{1}{np^{n-1}}=\frac{p}{np^n}=-\frac{p}{n}.
+$$ By Cauchy's Integral Formula, the sum of the residues in the upper half plane is
+$$
+\sum_{y>0}\text{Res}[F_n,z]=\frac{1}{2\pi i}\int_{-\infty}^\infty F_n(x)dx=\frac{1}{2\pi i}\int_{-\infty}^{\infty}\frac{dx}{1+x^n}.
+$$ I don't know how to proceed in showing this is a geometric series which sums to $1/[in\sin(\pi/n)]$. I'd appreciate suggestions on how to reach the conclusion. Thanks.","['residue-calculus', 'complex-analysis']"
+122384,Venn diagram 3 set,"I understand Venn diagram equations of 2 sets. It has been perhaps 3 years since I have done Venn diagram so I have gotten really rusty at this. I don't understand in the equation for 3 sets why in the end they add the intersection of 3 sets... I have such a hard time visualising these diagrams and knowing what to subtract from intersection etc... I know this is a super easy question but it is one of those questions you either get or you don't and right now I cant figure out why they add the intersection at the end.. shouldn't it be subtract the intersection? This is how I looked at the problem to solve it. You look at the commonality between A and B at first so you look at the part where A = B or A and B...You subtract that because of overlay. Same concept as 2 set Venn diagram. Then you look at commonality between B and C or simply when B = C, subtract overlay. C and A or C=A subtract overlay...Now you have a hole left in the center which you can fill by adding A and B and C or simply the commonality between A and B and C or A = B = C I'm lost once more... this time its 4 sets or 5 or 6 or 7 or 8....
+I don't understand the general formula given below.","['discrete-mathematics', 'elementary-set-theory']"
+122396,Is this set corresponding to a bounded linear operator necessarily open?,"Let $\Lambda : X \to X$ be a bounded linear operator on a Banach space $X$. My question is whether the set
+$$
+\{\lambda \in \mathbb C: \lambda I - \Lambda \quad\text{is surjective} \}
+$$
+is necessarily open. The above set is similar to the resolvent set of $\Lambda$, which is defined to be the set of all $\lambda \in \mathbb C$ such that $\lambda I - \Lambda$ is invertible; I know that the resolvent set is always open. However, what about the set above? For reference, it was a problem on a past qualifying exam (see problem 6 ) to prove that the set is in fact open. I'm not sure if they meant to indicate the resolvent set, or if the problem is correct as stated.","['functional-analysis', 'real-analysis', 'banach-spaces']"

@@ -1,0 +1,683 @@
+question_id,title,body,tags
+2300228,Square-root for nonnegative (and not necessarily self-adjoint) operators,"Let $H$ be a $\mathbb R$-Hilbert space and $A$ be a bounded linear operator on $H$. If $A$ is nonnegative and self-adjoint, then there is a unique nonnegative and self-adjoint bounded linear operator $B$ on $H$ with $B^2=A$. This can be proved by an elementary version of the spectral theorem. Now, suppose that $A$ is only nonnegative (and not necessarily self-adjoint). I've read that we can still find a unique nonnegative bounded linear operator $B$ on $H$ with $B^2=A$. How can we prove this statement? My knowledge in operator theory is rather limited. So, I hope we can provide an elementary proof.","['functional-analysis', 'operator-theory']"
+2300268,Connections between finite and Lie groups in Fulton and Harris,"In Representation Theory: A First Course by William Fulton and Joe Harris, the following appears on the first page about Lie Groups From a naive point of view, Lie groups seem to stand at the opposite end of the spectrum of groups from finite $\text{ones}^1$ with the superscript referencing the following note $^1$ In spite of this, there are deep, if only partially understood, relations between finite and Lie groups, extending even to their simple group classifications. Would someone shed a little more light on this? Specifically: Why is it naive to think of Lie Groups as being at the opposite end of the spectrum of groups from finite groups? What are the relations between finite and Lie groups that the authors are referencing? In what way are these relations only partially understood?","['finite-groups', 'abstract-algebra', 'representation-theory', 'group-theory', 'lie-groups']"
+2300299,"Suppose $A,B\in M_n(\mathbb{C})$ such that $AB-BA=A $ . Prove that $A$ is not invertible .","Suppose that $A,B\in M_n(\mathbb{C})$ such that $AB-BA=A $. Prove that $A$ is not invertible. My work: Suppose $A$ is invertible. Then $ABA^{-1}=I+B$ . So $B$ is similar to $I+B$  .Let $B$ have eigenvalues $c_1,c_2,\ldots,c_n \in \mathbb{C}$. So $B$ has basis such that $B$ is upper triangular with respect to it and  has $c_1,\ldots,c_n$ as diagonal entries . It is easy to see that $I+B$ is upper-triangular with respect to this basis and has entries $1+c_1,\ldots, 1+c_n$ . Hence $$c_1+c_2+\ldots +c_n=\operatorname{trace}(B)$$ $$=\operatorname{trace}(I+B)=(1+c_1)+\ldots+(1+c_n)=n+c_1+\ldots +c_n .$$ So $n=0$, contradiction. I'm not sure if my solution is correct one. It seems alright. I will be very thankful if you can confirm that the proof indeed is a correct one. Any other possible solutions are welcomed.","['eigenvalues-eigenvectors', 'matrices', 'abstract-algebra', 'proof-verification', 'linear-algebra']"
+2300306,Stability of point spectrum,"Suppose $T$, $S$ are bounded operators on $l_2$, $a_n\to 0$ a sequence of complex numbers with the property that for any $n\in\mathbb{N}$,  $T+a_nS$  has discrete spectrum and non-empty point spectrum. Does it follow that $T$, as the norm limit of $T+a_nS$ also has non-empty point spectrum? If the answer would be ""no"" for any $S$, would it change if we take $S$ compact or finite rank?","['banach-spaces', 'operator-theory', 'functional-analysis', 'operator-algebras', 'linear-algebra']"
+2300319,Constant Function Question,"Problem: Let $f:\mathbb R \to \mathbb R$ be a function such that for any irrational number $r$, and any real number $x$ we have $f(x)=f(x+r)$. Show that $f$ is a constant function. I have seen the other posts where the answers say that $f(a)=f(0+a)=f(0)$ given $a$ is irrational, but I don't understand how this is derived. Please help on this problem!",['functions']
+2300344,There are no positive dimensional compact submanifolds in $\mathbb C^n$,"I've actually a problem understanding this assertion: There no compact complex submanifolds of $\mathbb{C}^n$ of positive dimension. This assertion is given as a corollary of the following theorem: Let $X$ be a connected compact complex manifold and let $f \in \mathcal{O}(X)$. Then $f$ is constant. I don't see how this theorem should imply the first assertion I wrote. The book I am reading sketches the proof of the first assertion I wrote by saying: Otherwise at least one of the coordinate functions $z_1,...,z_n$ would be a nonconstant function when restricted to such a submanifold. So far, because of the theorem to me, it makes sense to have $z_1, ..., z_n$ nonconstant since such a submanifold may not be connected. But, how this should imply their nonexistence?","['complex-geometry', 'differential-geometry', 'differential-topology']"
+2300387,Can I show that this function is surjective?,"Let $f : \mathbb{R} \to \mathbb{R}$ be a function such that $$f(x+f(x))+f(x-f(x))=x$$ for all $x \in \mathbb{R}$. Can I conclude that $f$ is surjective ? If so, how can I prove it?","['functions', 'functional-equations']"
+2300418,Why use a rectangular contour to evaluate $\int_\mathbb{R}\frac{e^{-i\sigma x}}{e^{ax}+e^{-bx}}dx$,"I am trying to tackle the following integral: $$\int_\mathbb{R}\frac{e^{-i\sigma x}}{e^{ax}+e^{-bx}}dx$$ I am told that I should use a complex rectangular contour to evaluate this integral however I am unsure on how to proceed. Also I would like to know what characteristic of this integral hints on the type of contour that I must use and the type of complex integral I should consider. Any help is appreciated. EDIT: $a,b>0$ and $\sigma \in \mathbb{R}$","['complex-analysis', 'integration']"
+2300422,unique minimal models and birational automorphisms of algbraic surfaces,"In his book on cubic forms Manin writes that if an algebraic surface has unique minimal
+model $X$ then ""it follows easily from definitions"" that the group of
+automorphisms of the field $k(X)$ is isomorphic to the group of
+biregular automorphisms of $X$. it is ch. III, 18.7.1. (Here is a link to Google books) While an automorphism of the field surely induces a birational map (an isomorphism of dense open subsets) $f$ from $X$ to itself, I fail to see how one can produce a birational morphism (a totally defined morphism that induces a birational map after restriction to a dense open subset)  from $X$ to itself out of it. By closing the graph of $f$
+in $X \times X$ one can find a modification of $X$, $\varphi: X'\to X$,
+and factor $f$ as a composition of a birational map $X' \to X$ (projection of the closure of the graph of $f$ on the second factor $X$) and the inverse
+of a the modification $\varphi$. It is unclear though how this
+factorisation helps, and how one can use uniqueness of minimal models
+to relate $f$ to a biregular morphism of $X$. Related MO question and answers: https://mathoverflow.net/questions/120372/when-does-autx-birx-hold/ (note in particular the answer of Christopher Liedke, though it is about birational morphisms ; it is also unclear to me how this answer is related to uniqueness of minimal models mentioned by Francesco Polizzi in his  comment)","['algebraic-geometry', 'birational-geometry']"
+2300484,Why does $r=\cos(0.01\cdot\theta)$ show a spiral curve graph?,"On WolframAlpha the equation $r=\cos(0.01\cdot\theta)$ shows a spiral graph, but this doesn't make algebraic sense to me. Wouldn't $r$ only have one value for theta?","['conic-sections', 'trigonometry']"
+2300561,Why $f(x) = (-x)^x$ is not defined for positive values?,"All the graph plotting tools do not display values for positive $x$ - why?
+It seems valid for me, for example when $x = 2$, $y = (-2)^2 = 4$",['functions']
+2300583,Calculation of Limit of a Repeating Continued Fraction,"I'm sorry if this is a duplicate. I have no idea on what kind of ""name"" i should give to this, and therefore i have no idea on how to search on the internet for help on understanding it. If it happens that this is a duplicate, i would be grateful if you could link me to where there are any solutions for this. I need to prove for an exercise on my analysis book that the following sequence
+$$
+{\cfrac{1}{1+\cfrac{1}{5}}},\quad
+{\cfrac{1}{1+\cfrac{1}{5+\cfrac{1}{1+\cfrac{1}{5}}}}},\dotsc
+$$ is monotone and converges to ${\frac{-5+\sqrt{45}}{2}}$ I imagine that once i get on how to determine it's limit, it will be easy to prove that it is in fact monotone. I have no idea on how to approach it though. Any tips?","['real-analysis', 'continued-fractions', 'convergence-divergence']"
+2300591,Is the first conjugate point always a cut locus?,"On a complete Riemann manifold $(M,g)$, we know if $v \in T_pM$ is a cut locus of $p$, i.e. $\exp_p(sv)$ is length minimizing for $s \in [0,1]$ and is not length minimizing for $s \in [0,1+\epsilon]$,
+then either there are two distinct length minimizing geodesics connecting $p$ to $q=\exp_p(v)$, or $q$ is the first conjugate point of $p$ along the geodesic $(s \mapsto \exp_p(sv))$. Also if we have two disctinct length minimizing geodesics connecting $p$ to $q$, then $v$ is a cut locus of $p$. My question is, if $q$ is the first conjugate point of $p$ along $(s \mapsto \exp_p(sv))$, is $v$ necessarily a cut locus of $p$?","['riemannian-geometry', 'differential-geometry']"
+2300606,Combinatorics and new Bose-Einstein Statistics Problem,"Can you check my solution? Is this answer correct? As there are four indistinct particles, and their sum must add 4, I am considering that exist the following partitions: (4,0,0,0) implies C(17,1)= 17 (3,1,0,0) implies C(10,1)*C(2,1)= 20 (2,2,0,0) implies C(5,1)*C(5,1)= 25 (2,1,1,0) implies C(5,1)*C(2,1)*C(2,1)= 20 (1,1,1,1) implies C(2,1)*C(2,1)*C(2,1)*C(2,1)= 16 Finally, 17 + 20 + 25 + 20 + 16 = 98. Winther, who is a postdoc in theoretical astrophysics at the ICG in Portsmouth, gave me a ""translation"" of the problem: Translating the problem to a more real world scenario might help: there are four wallets in a bag and each wallet contains from zero to four $1$ notes. The total money in the wallets combined is $4$. Your questions in terms of this analogy: ""Is the energy of each particle the same?"" = ""Do we have the same money in all wallets?"" Not necessarily. ""some of the energy of the particles can cancel"" = ""some of notes cancel each other"" No they can't. ""Are we applying Pauli's principle?"" No, bosons do not satisfy this principle. Here is the problem: Bose Statistics Problem 5) A physical system consists of four identical particles. The total energy of the system is $4E_0>0$. Each of the particles can have an energy level equal to $kE_0$ for $k\in\{0,1,2,3,4\}$. A particle with energy $kE_0$ can occupy any one of the $k^2+1$ distinct energy states at that energy level. How many distinct energy configurations can the system have? [In statistical mechanics the particles are said to obey Bose-Einstein statistics.] After my ""research"" in many physics websites, I found this: Consider an energy level $\varepsilon_i$ with degeneracy $g_i$, containing $n_i$ bosons. The states may be represented by $g_i-1$ lines, and the bosons by $n_i$ circles; distinguishable microstates correspond to different orderings of the lines and circles. For example, with $9$ particles in the $8$ states corresponding to a particular energy, a particular microstate might be: The number of distinct orderings of lines and circles is:
+  $$t_i = \frac{(n_i+g_i-1)!}{n_i!(g_i-1)!}.$$ A particular distribution has a specified number of particle $n_i$ within each of the possible energy levels $\varepsilon_i$. The total number of microstates for a given distribution is therefore:
+  $$t(\{n_i\}) = \prod_i \frac{(n_i+g_i-1)!}{n_i!(g_i-1)!}.\tag 8$$ I also found a couple of Bose-Einstein Statistics problems: A combinatorics problem related to Bose-Einstein statistics Indistinguishable particles: obeing ""Bose-Einstein Statistics""","['combinatorics', 'physics', 'statistical-mechanics']"
+2300636,Orders of coordinates in a linear subspace,"Let $X$ be a linear subspace of $\mathbb{R}^n$. For how many permutations  $p$ on ${1,...,n}$ does there exists $x$ in $X$ with 
+$x_{p(1)} < x_{p(2)} < ... < x_{p(n)}$? We can test each permutation by solving a linear program, but this is time consuming when $n$ is large. Is there a quicker way to solve this problem, or at least approximate the solution?","['linear-algebra', 'linear-programming']"
+2300647,Why can't the quadratic formula be simplified to $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}=\frac{-b\pm(b-2)\sqrt{ac}}{2a}$?,"I am currently taking Algebra 1 (the school year's almost over 😀), and we just learned the quadratic formula, another method to solve quadratic equations: $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$ However, this strikes me as not being simplified. Isn't it more proper to write it like this? $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$ $$x=\frac{-b\pm(\sqrt{b^2}-\sqrt{4ac})}{2a}$$ $$x=\frac{-b\pm((b-2)\sqrt{ac})}{2a}$$ $$x=\frac{-b\pm(b-2)\sqrt{ac}}{2a}$$ Why isn't $x=\frac{-b\pm(b-2)\sqrt{ac}}{2a}$ more commonly used as the quadratic formula?? I'm sorry for my typo, I have edited it. I have now edited in my steps, per request of commenters.","['algebra-precalculus', 'radicals', 'roots', 'quadratics']"
+2300652,Prove that the equation $\frac{a}{b+c}+\frac{b}{c+a}+\frac{c}{a+b} = 6$ has no solutions in natural numbers,"The result below has been disproven. Prove that the equation $$\dfrac{a}{b+c}+\dfrac{b}{c+a}+\dfrac{c}{a+b} = 6$$ has no solutions in natural numbers. The equation is equivalent to $$(a+b+c)\left(\dfrac{1}{b+c}+\dfrac{1}{c+a}+\dfrac{1}{a+b}\right) = 9.$$ Then since $\dfrac{1}{b+c}+\dfrac{1}{c+a}+\dfrac{1}{a+b} \leq \dfrac{3}{2}$, it follows that $a+b+c \geq 6$. Suppose without loss of generality that $a \leq b \leq c$. Then $$\dfrac{c}{2a}+\dfrac{c}{2a}+\dfrac{c}{2a} = \dfrac{3c}{2a} \geq 6.$$ Thus $c \geq 4a$. How can I continue?","['number-theory', 'elliptic-curves', 'diophantine-equations']"
+2300672,Solving differential equation without finding integrating factor,"I have been trying to solve this equation $$\left( 8y+10x \right)  \mathrm{d}x+\left( 5y+7x \right) \mathrm{d}y=0\\ $$ by finding integrating factor, though is there more rational way to do it?","['ordinary-differential-equations', 'calculus']"
+2300710,Techniques for computing the Brouwer degree of a smooth map,"This question is relative to John Milnor's Topology from the Differentiable Viewpoint book, more precisely relative to the problems 13,14 & 15 he is giving at the end of his book. Let $\eta:S^3\to S^2$ be the Hopf fibration, with $S^3\subset\mathbb{C}^2$ and $S^2\subset\mathbb{C}\times\mathbb{R}$. I was able to show easily that for any point $P\in S^2$, $\eta^{-1}(P)$ is homeomorphic to $S^1\subset\mathbb{C}^2$. Furthermore, Milnor suggests that for any two points $P,Q\in S^2$, $P\neq Q$, the circles $\eta^{-1}(P)$ and $\eta^{-1}(Q)$ are linked. From this, we introduce the linking map $\lambda$ which is well defined for disjoints manifolds. Hence, for 
+  $$\lambda:\eta^{-1}(P)\times\eta^{-1}(Q)\to S^2,\qquad \lambda(x,y)=\dfrac{x-y}{||x-y||}$$
+  we are looking to compute the Brouwer degree of $\lambda$ using elementary methods of computations (we assume that the circles are oriented as submanifolds of $S^3$). I'm asking for elementary methods since Milnor does not introduce integration in his tiny book. If one is able to compute it directly with the definition, I would love to see how. If you have any other suggestions, please share it. Thank you very much.","['algebraic-topology', 'hopf-fibration', 'differential-geometry', 'differential-topology']"
+2300748,"Integral extension of rings $K[x,y]/(y^2-x^3-x^2)\subset K[z]$","Prove that there is an integral inclusion $\phi:K[x,y]/(y^2-x^3-x^2)\to K[z]$ I'm trying to use $\phi([x])=z^2-1$ and $\phi([y])=z(z^2-1)$. That way, $z$ is integral over $K[x,y]/(y^2-x^3-x^2)$, because $z^3-z-\phi([y])=z^3-z-z(z^2-1)=0$, therefore $K[z]$ is also integral. That way, $\phi$ is an integral morphism. Now I'm left to prove that $\phi$ is injective, but I'm having a lot of difficulty with that. Does this choice of $\phi$ work? If so, how do I prove that $\ker(\phi)=0$? Thanks!","['abstract-algebra', 'ring-theory', 'algebraic-geometry', 'commutative-algebra']"
+2300758,Analogues of Beauville-Bogomolov-Fujiki quadratic form on higher-degree cohomology?,"The Beauville-Bogomolov-Fujiki form is a quadratic form $H^{2}(X^{n},\mathbf{C})\rightarrow \mathbf{C}$, where $(X,\rho)$ is a hyperKaehler manifold, $\rho\in H^{2,0}(X)$ being closed and nondegenerate. When restricted to $H^{2}(X,\mathbf{R})$ and normalized so that $\int_{X}\rho^{n}\wedge \bar{\rho}^{n}=1$, the form satisfies the equation $$q(\alpha,\beta)=n\int_{X}\alpha\beta\rho^{n}\bar{\rho}^{n}+\frac{1-2n}{n}\left(\int_{X}\alpha\rho^{n}\bar{\rho}^{n-1}\int_{X}\beta\rho^{n-1}\bar{\rho}^{n}+\int_{X}\alpha\bar{\rho}^{n}\rho^{n-1}\int_{X}\beta\rho^{n}\bar{\rho}^{n-1}\right)$$ (cf. Fujiki Relations and Fibrations of Irreducible Symplectic Varieties , Martin Schwald, Jan 21, 2017.) What I am seeking to find now is an analogue of this form that acts on the degree-$(2n-2)$ real de Rham cohomology of a closed symplectic $(4n+2)$-manifold (again, hyperKaehler), but I'm coming up short. Any algebraic geometers out there have some insider knowledge about this to help point me in the right direction?","['symplectic-geometry', 'algebraic-geometry']"
+2300780,How do equal radii lie on concentric circles?,"This is a very interesting word problem that I came across in an old textbook of mine. So I know its got something to do with using greatest common divisor, but other than that, the textbook gave no hints really and I'm really not sure about how to approach it. Any guidance hints or help would be truly greatly appreciated. Thanks in advance :) So anyway, here the problem goes: The jets (or holes) on a shower head are arranged in circles that are
+  concentric with the rim. The jets are equally spaced on each circle and
+  there is at least one radius of the shower head that intersects every circle
+  at a jet. The angular separation of two jets on a circle is the size of the angle
+  formed by the two radii of the circle that pass through the jets. All angular
+  separations are integers. For example, on the shower head shown,
+  there are 10 jets on the inner circle. Hence the angular separation of
+  adjacent jets on the inner circle is $360°/10 = 36°$. a) A shower head has three circles of jets: an inner circle with $12$ jets, a middle circle with $18$ jets, and an outer circle with $36$ jets. How many radii of the shower head pass through just two jets? b) Another shower head has three circles with $20, 30,$ and $45$ jets respectively. Explain why no diameter of the outer circle passes through six jets. c) A shower head with three circles of jets has a different number of jets in each circle. Exactly two diameters of the shower head pass through six jets. If the total number of jets. If the total number of jets is $100$, how many jets are there in each circle? Find all combinations. d) Find the maximum number of jets in a shower head with three circles if only one radius of the shower head passes through three jets, no radius passes through just two jets, and each circle has at least two jets.","['circles', 'gcd-and-lcm', 'number-theory', 'word-problem', 'elementary-number-theory']"
+2300781,Prove that $\mathbb{R}^2\setminus\mathbb{Q}^2$ is connected without path connectedness,"Prove that $\mathbb{R^2}\setminus\mathbb{Q}^2$ is connected. First of all, I know this was asked many times over in this site. However I'm looking for a proof that does not use path-connectedness (which I know, but this exercise is from a previous lecture), nor the knowledge that $\mathbb{R}^2\backslash E$, where $E$ is countable, is connected (it's the second part of the exercise). I tried using disjoint open sets and separated sets, and also using the fact that they should also be the intersection of sets in $\mathbb{R}^2$ and $\mathbb{R}^2\setminus\mathbb{Q}^2$, but I hit a wall there. I have the feeling I'm forgetting something very basic and obvious, or I may be overcomplicating things.","['general-topology', 'connectedness']"
+2300808,"Show that $j:X \rightarrow X^{**}$ is an injective bounded linear map, where $j$ is the natural embedding.","Let $X$ be a Banach space with bidual $X^{**}$ and let $j:X \rightarrow X^{**}$ be the natural embedding. Question: Show that $j$ is an injective bounded linear map. My attempt: Recall that for all $x \in X, $ we have $j(x)(x^*) = x^*(x)$ for all $x^* \in X^*.$ Suppose that $x , y \in X.$ Note that for all $x^* \in X^*,$ we have 
+$$(j(x) + j(y))(x^*) = x^*(x+y) = x^*(x) + x^*(y) = j(x)(x^*) + j(y)(x^*).$$
+Hence, $ j(x+y) = j(x) + j(y)$ For any $\alpha \in \mathbb{K},$  we have 
+$$j(\alpha x )(x^*) = x^*(\alpha x) = \alpha x^*(x) = \alpha j(x).$$
+Therefore, $j(\alpha x ) = \alpha j(x).$ Hence, $j$ is linear. Suppose that $x, y \in X$ such that $j(x) = j(y).$
+For any $x^* \in X^*,$ we have $j(x)(x^*) = x^*(x) = x^*(y) = j(y)(x^*).$
+Since $x^*$ is linear, we have $x^*(x-y) = 0$, which implies that $x- y =0.$
+Hence, $x = y.$
+Therefore, $j$ is injective. For all $x \in X,$ note that 
+$$\| j(x) \| = \sup_{\| x^* \| \leq 1 } |j(x)(x^*)| = \sup_{\| x^* \| \leq 1} |x^*(x)| = \| x \|.$$
+Therefore, 
+$$\| j \| = \sup_{\| x \| \leq 1} \| j(x) \| \leq 1.$$
+Hence, $j$ is bounded. Is my proof correct?","['functional-analysis', 'proof-verification', 'dual-spaces']"
+2300819,Approximating sum of absolute vales by a quadratic function,"Here's a really neat thing I just found: Consider, for instance, $$\sum _{k=-20}^{20} \left| x-k\right|$$ It's plot (after adjusting scaling) looks like This looks suspiciously quadratic, and we can in fact overlay $y = x^2 + 420$ to find that they line up quite nicely: . Moreover, for integer values of $x$ within the domain $[-21,21]$, we find that the values reached by these two functions are equal. I suspect that if we changed the summation step size to be smaller, we would find that it began to approximate even for non-integer values of $x$ as well. Can someone explain why this property occurs?","['algebra-precalculus', 'absolute-value', 'graphing-functions']"
+2300820,Find $f_x$ in terms of $f$,"Consider $f(x, y) =  g(x^2, y^2)$ Find $f_x(x, y)$ in terms of $f(x, y)$ or $g(x^2, y^2)$ or $g_x$ of $g_y$ if any of them is possible. I am not sure how to apply the rules here, but say it was a one variable function like $f(x) = g(x^2)$ then I can easily use the chain rule on the RHS and get $f'(x) = g'(x^2) 2x$ , but how do I apply it with 2 dimensional variables?","['ordinary-differential-equations', 'calculus']"
+2300836,Prove $2^e$ is transcendental,"I remembered that a Russian mathematician proved this, but now I cannot find it again. Could you please recommend a book on these kinds of problems?","['real-analysis', 'transcendental-numbers', 'irrational-numbers', 'proof-writing', 'analysis']"
+2300903,Do monic irreducible polynomials assume at least one prime value?,"We are given a monic irreducible polynomial with integer coefficients,
+$$ f(x) = x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0. $$
+Must  there be an integer $n \geq 0$ such that $f(n)$ is prime? In case it helps, it is fine to demand all $a_j \geq 0.$
+It is not known, for example, whether $x^2 + 1$ assumes infinitely many prime values, but it does assume at least one, such as $2,5,17.$ In case it matters, the polynomial that caused this is $x^4 + m$ with $m > 0,$ from the question I answered just before asking this. Find all positive integers $m$, such that $n^4+m$ is not prime for any positive integer $n$",['number-theory']
+2300911,"Let $f$ be a polynomial with at least $k$ different roots, prove that $f'$ hast at least $k-1$ different roots","I don't know how to write the proof to this problem: Let $f$ be a polynomial with at least $k$ different roots, prove that $f'$ has at least $k-1$ different roots. It's featured among a few exercises made to apply Rolle's theorem, but this one is about a general result and asks for higher degree of formality I guess... I don't know how to write the proof although I have the following intuition: $f(x)=x^k + g(x)$ $f'(x)=kx^{k-1} + g'(x)$ Any suggestions?","['derivatives', 'polynomials', 'roots', 'rolles-theorem', 'proof-writing']"
+2300937,Esscher transform of unimodal distribution,"Let $X$ be a continuous random variable with distribution function $F_X$, and suppose $F_X$ is unimodal. (Here, unimodal is taken to mean that the density function of $X$ is monotone increasing (resp. decreasing) for all $x<x^*$ (resp. $x >x^*$), where $x^*$ is the argmax of the density function.) The Esscher transform of $X$ can be defined as
+\begin{align*}
+    dF_X^{(t)}(x) := \frac{e^{t x} dF_X(x)}{\mathbb{E}_X[e^{t X}]} = \exp \left(tx - K_X(t) \right)  dF_X(x) , \qquad t\in \mathcal{T},
+\end{align*}
+with $\mathcal{T} = \{t \in \mathbb{R}: \mathbb{E}_X[e^{t X}] < \infty  \}$, and where $K_X$ is the cumulant generating function. Does it follow that the transformed distribution function, $F_X^{(t)}$, is also unimodal in $x$? If so, how does one go about showing this? If this is not possible, can we impose further constraints to get the desired result, ex. $F_X$ is a unimodal member of the exponential family ?","['real-analysis', 'probability-theory', 'probability-distributions', 'statistics', 'probability']"
+2300972,Is the $n^{th}$ derivative of $\sin(x)$ just a translation of $\sin(x)$?,"I noticed that
+$$\frac d{dx}\sin x=\cos x=\sin\left(x+\frac\pi2\right)$$
+$$\frac{d^n}{dx^n}\sin x=\sin\left(x+\frac{\pi n}2\right)$$
+Does this hold for any positive real value of $n$? If so, does anybody have any reasoning behind why it's just a simple translation?",['calculus']
+2301001,Why are we solving the limits in this way?,"The question is- Find $ \lim_{x\to 5} f(x) $ if it exists $f(x)=\frac{x^2-9x+20}{x-[x]}$ where [.] is G.I.F. Now, my teacher solved it like this- $ \lim_{x\to 5^+} \frac{(x-5)(x-4)}{(x-5)}$ Now, (x-5)  gets canceled and gives us $x-4$ $=$ $5-4=1$ Similarly, for $5^-$, we get the answer as 0. Here is where my question comes- I thought we can put the value of limit only simultaneously and not individually as my teacher has done in [x]. Is it possible to insert values of limit separately?","['limits-without-lhopital', 'functions', 'limits']"
+2301030,A visual proof for product of two odd numbers being odd?,"Is there a visual proof showing that product of two odd numbers is odd? Or product of a number and an even number is always even? I've got some idea for addition and subtraction. X X X X X + X X X X X X X = [X X] [X X] {X} + [X X] [X X] [X X] {X} = [X X] [X X] [X X] [X X] [X X] + {X X} Visually, odd numbers cannot be separated into pairs, without something being left over. But if we add two odd numbers, the 'left out' Xs for both odd numbers will form a pair, and hence the sum will be even.","['number-theory', 'parity', 'visualization', 'elementary-number-theory']"
+2301041,maximum size of a $k$-intersecting family of $[n]$,"What is the maximum size of a family of subsets of $[n]:=\{1,2,3,\dots,n\}$ say $\mathcal{A}$ such that $\mid A\cap B\mid \ge k$ where
+  $A,B\in \mathcal{A}$ and $1\le k\le n-1$? This not Erdos-ko-rado theorem . In Erdos-ko-rado theorem, we place an extra restriction that subsets of $\mathcal{A}$ have to be of same size. My idea: There are $2^{n-k}$ subsets of $\{k+1,k+2,\dots ,n\}$. Append $\{1,2,\dots ,k\}$ to each of these sets. Hence, $2^{n-k}$ is a lower bound. Is it possibly the maximum we are seeking? With some change: 2 Let $C$ be the set of subsets of $[n]$ such that size of each subset does not exceed $r$. What is the maximum size of a family of subsets from $C$ (say $\mathcal{B}$) such that $\mid A\cap B\mid \ge k$ where
+  $A,B\in \mathcal{B}$ and $1\le k\le r$?","['combinatorics', 'extremal-combinatorics']"
+2301054,"Let $p>2$ be a prime, $f(x)=\sum_{k=1}^{p-1}x^k/k$, $f(2)-f(-1)=m/n$, where $\gcd(m,n)=1$. Show that $p\mid m$.","Let $p>2$ be a prime and $f(x)=\sum_{k=1}^{p-1}x^k/k$. Suppose that $f(2)-f(-1)=m/n$, where $\gcd(m,n)=1$. Show that $p\mid m$. Wolstenholme's theorem for $\sum_{k=1}^{p-1}1/k$ does not help here. It is easy to see that we only need to prove that $$\sum_{k=1}^{p-1}\frac{(p-1)!}{k}2^k\equiv\sum_{k=1}^{p-1}\frac{(p-1)!}{k}(-1)^k\pmod p.$$ According to Wilson's theorem we have $(p-1)!\equiv-1\pmod p$. If we denote by $k^{-1}$ the multiplicative inverse of $k$ in $\mathbb{Z}/p\mathbb{Z}$, then this is $$\sum_{k=1}^{p-1}k^{-1}2^k\equiv\sum_{k=1}^{p-1}k^{-1}(-1)^k\pmod p.$$ I calculated the cases $p=3,5,7,11$ but could get nowhere. How do I proceed? Any hints will be appreciated.","['number-theory', 'elementary-number-theory']"
+2301123,"The values of $g'\left(\pm\frac\pi2\right)$ for $g(x)=\int_{\sin x}^{\sin 2x} \sin^{-1}(t) \,dt$","Question : If $g(x)=\displaystyle\int_{\sin x}^{\sin 2x} \sin^{-1}(t)  \,dt$, then : $\text A) \, g'\left( -\dfrac{\pi}{2}\right)=2\pi$ $\text B) \, g'\left( -\dfrac{\pi}{2}\right)=-2\pi$ $\text C) \, g'\left( \dfrac{\pi}{2}\right)=2\pi$ $\text D) \, g'\left( \dfrac{\pi}{2}\right)=-2\pi$ Now, I used Newton-Leibniz rule and took derivative of $g(x)$ w.r.t $x$. $$g(x)= \int_{\sin x}^{\sin 2x} \sin^{-1}(t)  \,dt$$ \begin{align}
+\implies g'(x) &=\sin^{-1}(\sin 2x) \cdot (\sin 2x)'-\sin^{-1}(\sin x) \cdot (\sin x)'\\
+&=\sin^{-1}(\sin 2x) \cdot 2 \cos 2x-\sin^{-1}(\sin x) \cdot \cos x
+\end{align} Hence, \begin{align}
+g'\left( -\frac{\pi}{2}\right)&=\sin^{-1}(\sin (-\pi)) \cdot 2 \cos (-\pi)-\sin^{-1}\left(\sin \left(-\frac{\pi}{2}\right) \right) \cdot \cos \left(-\frac{\pi}{2}\right)\\
+&=\sin^{-1}(0) \cdot 2 \cdot (-1)-\sin^{-1}(-1) \cdot 0\\
+&=0
+\end{align} and \begin{align}
+g'\left( \frac{\pi}{2}\right)&=\sin^{-1}(\sin (\pi)) \cdot 2 \cos (\pi)-\sin^{-1}\left(\sin \left(\frac{\pi}{2}\right) \right) \cdot \cos \left(\frac{\pi}{2}\right)\\
+&=\sin^{-1}(0) \cdot 2 \cdot (-1)-\sin^{-1}(1) \cdot 0\\
+&=0
+\end{align} Where did I go wrong, because none of the options matches my answer. Most probably this question is wrong. I am asking this question here because this is a question from a  very highly reputated engineering entrance examination. All coaching institutes are saying that this question is bonus (i.e. since none of the options given is correct, its marks will be awarded to all the students, irrespective of what they marked). You can see it here (In case you are tired of searching, it's Q.49) But, I am doubtful for this because a similar scenerio once happened in year $2012$, all the coaching institutes uploaded their un-official answer key and answer given to a particular question was $0$ (in unofficial answer key) , and when the official answer key was out, the answer for the same question was given to be $2$, which was the correct one. All the coaching institutes solved that question wrong. Therefore, I request all mathematicians here to please verify my solution.","['derivatives', 'integration', 'proof-verification']"
+2301137,"Given $F(x,y,z)=0$, $\frac{\partial x}{\partial y} \frac{\partial y}{\partial z}\frac{\partial z}{\partial x}$ should be -1, but I got 1","What went wrong in my calculation? Given $F(x,y,z)=0$ , $F_x\neq 0 , F_y\neq 0, F_z\neq 0$, and $z=f(x,y), y=g(x,z), x=h(y,z)$ $F_x\quad\,+F_y\frac{\partial y}{\partial x} + F_z \frac{\partial z}{\partial x} = 0\\
+F_x\frac{\partial x}{\partial y}+F_y\quad\,+F_z\frac{\partial z}{\partial y}=0$ Then we have: $F_y(\frac{\partial x}{\partial y}\frac{\partial y}{\partial x}-1)+F_z(\frac{\partial z}{\partial x}\frac{\partial x}{\partial y}-\frac{\partial z}{\partial y}) =0$ Let $P(x,y)=F(x,y,f(x,y))\\
+P_x+P_y\frac{\partial y}{\partial x}=0\\
+\frac{\partial y}{\partial x} = -\frac{P_x}{P_y}, similarly, \frac{\partial x}{\partial y} = -\frac{P_y}{P_x}, \frac{\partial x}{\partial y}\frac{\partial y}{\partial x} = 1$ $F_y(1-1)+F_z(\frac{\partial z}{\partial x} \frac{\partial x}{\partial y} - \frac{\partial z}{\partial y}) = 0\\
+\frac{\partial z}{\partial x}\frac{\partial x}{\partial y} - \frac{\partial z}{\partial y}=0\\
+\frac{\partial z}{\partial x}\frac{\partial x}{\partial y}\frac{\partial y}{\partial z} -\frac{\partial z}{\partial y}\frac{\partial y}{\partial z} = 0\\
+\frac{\partial z}{\partial x}\frac{\partial x}{\partial y}\frac{\partial y}{\partial z} = 1$","['multivariable-calculus', 'partial-derivative']"
+2301181,Solve the Inequality $x+\frac{x}{\sqrt{x^2-1}} \gt \frac{35}{12}$,Solve the Inequality $$x+\frac{x}{\sqrt{x^2-1}} \gt \frac{35}{12}$$ First of all the Domain of LHS is $(-\infty \:\: -1) \cup (1  \:\: \infty)$ So i assumed $x=\sec y$ since Range of $\sec y$ is $(-\infty \:\: -1) \cup (1  \:\: \infty)$ So $$\sec y+ |\csc y| \gt \frac{35}{12}$$ Any help here to proceed?,"['algebra-precalculus', 'real-analysis', 'inequality', 'functions']"
+2301205,Euler's method approximating differential equations,"We have been told that $u'(t)= u(t)$ and $u(0)=1$
+from this information we can conclude that $u(t) =e^x$ Show that 
+$ u_k =(1+h)^k,k=0,1,...$  is an approximation for $u(kh) $
+using Euler's method My current thoughts are that h is the interval by which we increment, but I am not sure where to go from there.","['calculus', 'approximation-theory', 'numerical-methods', 'ordinary-differential-equations', 'approximation']"
+2301255,Surjective bounded operator in Banach spaces without bounded right-inverse,Could someone give a simple example of surjective (not bijective) bounded operator in Banach spaces without bounded right-inverse?,"['functional-analysis', 'banach-spaces', 'unbounded-operators']"
+2301265,Which mean is used for standard error?,"While calculating the standard error, we take the standard deviation of the sampling distribution. But for calculating the standard deviation we must consider a 'mean' to take difference about. In Wikipedia its given that the 'mean' is the population mean while I came across a lecture which said it to be sampling distribution mean. So for standard error do we take the population mean or the sampling distribution mean as the 'mean'?","['descriptive-statistics', 'statistics', 'standard-deviation', 'statistical-inference']"
+2301295,Simplifying the sum $\sum\limits_{t=1}^{n} t(t+1)v^t$,"For the sum: $$\sum_{t=1}^{n} t(t+1)v^t,$$ would there be a ""simple"" formula for this? Such as: $$S=\sum_{t=1}^{n} tv^t = \frac{\frac{1-v^n}{1-v} - n v^n}{\frac{1}{v} - 1}$$ ?
+(The second sum is the present value of an annuity increasing by \$1 every period, for anyone curious). I understand that it'll boil down to simplifying the sum to $$\sum_{t=1}^{n}t^2v^t + S $$ but I'm not sure if there's a nice formula for the first part.","['algebra-precalculus', 'summation']"
+2301312,partial derivative of an integral function,"Given the function $f(x,y) = \int^x_y g(t) dt $, $g(t)$ continuous for all $t$. How to evaluate the partial derivatives of $f$ ? It is correct to do like this (by FTC) ?: $f_x$ = $g(x)x'$. $f_y = g(y)y'$. Thanks!!!",['calculus']
+2301324,the 2-D divergence theorem and Green's Theorem,"I read somewhere that the 2-D Divergence Theorem is the same as the Green's Theorem. So for Green's theorem $$\oint_{\partial \Omega} {\textbf{F}} \cdot d {\textbf{S}} = \iint_{\Omega} \text{2d-curl}{\textbf{F}} \, d\Omega$$
+and also by Divergence (2-D) Theorem, $$\oint_{\partial \Omega} {\textbf{F}} \cdot d {\textbf{S}} = \iint_{\Omega} \text{div}{\textbf{F}} \, d\Omega$$.
+Since they can evaluate the same flux integral, then $$\iint_{\Omega} \text{2d-curl}{\textbf{F}} \, d\Omega = \int_{\Omega} \text{div}{\textbf{F}} \, d\Omega.$$
+Is there an intuition for why the summing of divergence in a region is equal to the summing of the curl in a region in 2-D?","['integration', 'greens-theorem']"
+2301330,Are field extensions faithfully flat? [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 7 years ago . Improve this question Is $\mathbb{C}$ a faithfully flat $\mathbb{R}$-module? In the general case, is it true that if $k$ is a field and $K$ is it's algebraic closure then $K$ is a faithfully flat $k$-module? Thank you for your time.","['abstract-algebra', 'modules', 'extension-field']"
+2301362,A partial differential equation- transport equation,"I am a begining learner of pde. I am trying to solve the following the transport equation
+$$u_t + [1- (t^2 - x^2)(2b + a x^2)]\frac t x u_x= -f u,$$
+where $a$ and $b$ are the differentiable functions of $t$. My solution: $$\frac{dt}{1} = \frac{dx}{ [1- (t^2 - x^2)(2b + a x^2)]\frac t x } = \frac{du}{-fu}.$$
+From $\frac{dt}{1} = \frac{dx}{ [1- (t^2 - x^2)(2b + a x^2)]\frac t x}$, we know that 
+$$\frac{d}{dt}(\frac{1}{x^2 - t^2}) + \frac{2t(a t^2 + 2b)}{x^2 - t^2} = -2at.$$
+This is a Bernoulli equation. One can easily get its solution $$\frac{1}{x^2 - t^2} = \frac{c - \int 2at e^{\int 2t(a t^2 + 2b) dt} dt}{e^{\int 2t(a t^2 + 2b)dt}}.$$
+Then
+ $$c= \frac{(x^2 - t^2)\int 2at e^{\int 2t(a t^2 + 2b) dt} dt + e^{\int 2t(a t^2 + 2b) dt}}{x^2 - t^2}.$$
+But i do not know how should continue it???
+Thanks for any help.","['multivariable-calculus', 'ordinary-differential-equations', 'partial-differential-equations']"
+2301370,Combinatorics Tile Problem,"Suppose you have $n^2$ tiles that look like this: How many ways can you place them in a square grid of $n$ by $n$ tiles so that each edge of each tile only touches an edge of the same color on an adjacent square? My reasoning was as follows: Suppose we start by placing a tile in the top-left corner. There are $4$ options for how this tile can be rotated. Then we place the $2n-1$ tiles in the same row and in the same column as that first tile.  There are $2$ ways  to place each of these, since they will each share one side with an already-placed square when they are laid down. The rest of the tiles are forced and have exactly one option for placement. Thus the number of placements is $$4*2^{2n-2}$$ $$=2^{2n}$$ However, the problem is that some arrangements produced this way are rotations and reflections of other arrangements. How can I count the number of unique arrangements that cannot be obtained by any other with a rotation or reflection?","['combinatorics', 'rotations', 'reflection']"
+2301388,Show that the pdf is ${1 \over {(n-1)}!} \sum\limits_{n \leq j \leq \lfloor x\rfloor}(-1)^j \binom{n}{j}(x-j)^{n-1}$,"Let $(X_n)_{n \in \mathbb N}$ be an independent, on $[0,1]$ uniformly distributed random variable. How can I show that the probability density function of $$\sum\limits_{i=1}^nX_i={1 \over {(n-1)}!} \sum_{n \leq j \leq \lfloor x\rfloor}(-1)^j \binom{n}{j}(x-j)^{n-1} \qquad 0 \leq x \leq n$$ So for a single random variable the pdf would be just $f(x)=1$ I guess? Not sure if this is gonna help me in some way.. Some hints would be much appreciated.","['probability-theory', 'probability', 'density-function']"
+2301450,"If $H$ is a Hilbert space and $M$ is a closed subspace of $H$, then $H/M$ is a Hilbert space",Can anyone give a brief proof or a reference of a proof for the following property of Hilbert spaces ? If $H$ is a Hilbert space and $M$ is a closed subspace of $H$ then $H/M$ is a Hilbert space. Definitions: A Hilbert space $H$ is a real or complex inner product space that is also a complete metric space with respect to the distance function induced by the inner product. A closed subspace of $H$ is a linear subspace of $H$ that is closed with respect to the topology induced by the norm (which is induced by the inner product). I know that $H/M$ denotes the quotient set . But I don't know how to prove the Hilbert space structure on this set.,"['functional-analysis', 'reference-request', 'quotient-spaces', 'hilbert-spaces']"
+2301453,"the set of rank two matrices in (2,3) matrices over R .","How to show the set of rank 2 matrices in (2,3) real matrices is open?
+(Sorry for the inconvenience in understanding the terms as I don't know how to write latex.)
+I have no idea about the meaning of open set for set of rank 2 matrices.
+Can anyone please help me discussing this topic. Thank you.","['matrices', 'general-topology']"
+2301464,About the proof of the Lindeberg-Feller theorem.,"I found this pdf online that proves the Lindeberg-Feller theorem (Theorem 3.4.5) in probability Theory with the proof on page 2. At an early stage in the proof the author defines the Independent random variables $$Y_{n,i}$$
+such that they are Independent of $$X_{n,i}$$ and with the property that $$Y_{n,i} \sim \mathcal{N}(0,\mathbb{E}(X_{n,i})).$$
+Why do such $Y_{n,i}$'s exist? I read in my own lecture notes that one can expand the probability space $(\Omega,\mathcal{A},\mathbb{P})$ to assure existence, but I cannot figure out why. Thanks a lot in advance!","['normal-distribution', 'probability-theory', 'probability-distributions', 'statistics', 'probability']"
+2301465,"Given a positive integer, find its sparsest binary representation using coefficients in $\{0,\pm 1\}$","We know that any positive integer can be represented as $$\displaystyle\sum_{i=0}^\infty a_i \cdot 2^i$$ where $a_i \in \{ 0, \pm 1 \}$. Given an arbitrarily large integer, how can we find its sparsest binary representation, i.e., the combination containing the least possible number of nonzero $a_i$’s?","['combinatorics', 'discrete-optimization', 'optimization']"
+2301505,What's the need of boundary and initial conditions in a PDE,"I am studying numeric methods for differential equations and I don't quite understand the purpose for the boundary and initial conditions in the heat equation. I see that we have three boundary condition, one initial condition for time and two for space. I understand that the time initial condition is for the starting time of the heating, and the two boundary conditions are for the boundaries to which we look the heating in space. In the ODE case I understood that we are given initial condition because there are many solutions and many functions differing with a constant from each other which satisfy the differential equation. Are the initial and boundary conditions in the PDE case (Heat equation) having a similar purpose or are they solely for restricting the space and time dimensions and the uniqueness being a consequence of that? Thanks in advance!","['heat-equation', 'ordinary-differential-equations', 'partial-differential-equations']"
+2301532,Combinatorial proof that$|ma-\sqrt{p_n}|$ get's arbitrarily small for infinitely many $n$,"Given a sequence of positive numbers, $\varepsilon_n$, which converge to zero, there is some a>0 such that for infinitely many n there is an m for which
+$$|ma-\sqrt{p_n}|<\varepsilon_n$$
+where $p_n$ is the nth prime number. I have a proof of this fact produced below, but it comes as an edge case of a lemma based on Baire's theorem. Is there a more direct approach which uses number theory or combinatorics? Lemma: Let $f\colon \mathbb R \to \mathbb R$ be a continuous function such that for all $a>0$ we have $\lim\limits_{n\to \infty} f(na)=0$. Then $\lim\limits_{x\to \infty} f(x)=0$. We prove this as follows: Choose any $\varepsilon>0$ and set $$E_n = \{x\colon |f(mx)|\leq \varepsilon \text{ for all }m\geq n\}=\bigcap\limits_{m\in \mathbb N} \{x\colon mx\in f^{-1}([-\varepsilon,\varepsilon])\}.$$ Each of these sets will be closed by the continuity of $f$, and by the definition of our function we have that $\mathbb R_+ = \bigcup\limits_{n\in \mathbb N} E_n$, so that by Baire's theorem at least $E_n$ has nonempty interior. Thus we have an interval $I=[a,b]$, and some positive integer $n_0$ such that for all $n>n_0$, $f(nI)\subset [-\varepsilon,\varepsilon]$. We also have that if $n$ is big enough that $na<(n-1)b$ so that integer multiples of this interval will eventually cover the tail of the $\mathbb R_+$. All $x$ large enough will then be in a large integer multiple of $I$, and so we have $f(x)\in[-\varepsilon,\varepsilon]$. QED Now to prove the statement in the question, take $f$ to be $1$ at the square root of prime numbers, $0$ on $\mathbb R_+ \setminus \bigcup (\sqrt{p_n}-\varepsilon_n,\sqrt{p_n}+\varepsilon_n)$ and linear elsewhere. This function does not go to $0$ as $x\to \infty$ so we must have the existence of at least one point $a$ such that $$\lim_{m\to \infty}f(ma)\not\to 0.$$ It follows that $ma$ must wind up in infinitely many of the peaks centered about $\sqrt{p_n}$.","['number-theory', 'combinatorics', 'real-analysis']"
+2301590,Hadamard's inequality proof,"I have the following inequality to prove. With $A \in M_n(R)$ show that:
+$$
+(\det(A))^2 \leq \prod_{i=1}^n\left( \sum_{k=1}^n A_{k,i}^2\right)
+$$ What I already have:
+I found out that: 
+$$G(v_1,\ldots,v_m) = \det(A^T A)=\det(A^T)\cdot\det(A)=(\det(A))^2 $$ Also that with  $G(v_1,\ldots,v_m) = (\det(A))^2$ results that: $$\operatorname{Vol}(v_1,\ldots,v_m)= \left|\det(A)\right| =\prod_{i=1}^n |s(v_k,u_i)|$$ I don't even now if this is right.. It would be really helpful if someone could help me with the proof..","['inequality', 'linear-algebra']"
+2301593,Why does the expression $3n+1$ appear in Collatz conjecture?,"Why is it important the role of $3n+1$ in Collatz conjecture? I mean, if we replace $3n+1$ by $5n+1$ it seems (numerically) that the modified statement of Collatz conjecture does not hold in this case. So I assume that putting $3n+1$ is special in some sense, but which is the idea behind it? Are there any informal ideas that can make us think that the long time behaviour with $3n+1$ should be distinct than with $5n+1$, $7n+1$,... Does anybody know what happens when we change $3$ by another odd number (proof or at least some kind of intuition)? Thank you for your time.","['collatz-conjecture', 'discrete-mathematics']"
+2301633,Do irreducible polynomials $x^4 + a$ assume a prime value at least once,"Last night I asked Do monic irreducible polynomials assume at least one prime value? which allowed for a case I had forgotten. The case of interest is $x^4 + a,$ for $a > 0.$ It is not difficult to show that this is irreducible when $a > 0,$ $a \neq 4 k^4.$ Find all positive integers $m$, such that $n^4+m$ is not prime for any positive integer $n$ That's the question, does irreducible $x^4 + a$ assume at least one prime value? computer run for $1 \leq a \leq 325$ ================================= a 1  x 1 prime  2
+ a 2  x 1 prime  3
+ a 3  x 2 prime  19
+ a 4  x 1 prime  5
+ a 5  x 6 prime  1301
+ a 6  x 1 prime  7
+ a 7  x 2 prime  23
+ a 8  x 3 prime  89
+ a 9  x 10 prime  10009
+ a 10  x 1 prime  11
+ a 11  x 6 prime  1307
+ a 12  x 1 prime  13
+ a 13  x 2 prime  29
+ a 14  x 165 prime  741200639
+ a 15  x 2 prime  31
+ a 16  x 1 prime  17
+ a 17  x 12 prime  20753
+ a 18  x 1 prime  19
+ a 19  x 20 prime  160019
+ a 20  x 3 prime  101
+ a 21  x 2 prime  37
+ a 22  x 1 prime  23
+ a 23  x 6 prime  1319
+ a 24  x 35 prime  1500649
+ a 25  x 2 prime  41
+ a 26  x 3 prime  107
+ a 27  x 2 prime  43
+ a 28  x 1 prime  29
+ a 29  x 90 prime  65610029
+ a 30  x 1 prime  31
+ a 31  x 2 prime  47
+ a 32  x 3 prime  113
+ a 33  x 8 prime  4129
+ a 34  x 5 prime  659
+ a 35  x 12 prime  20771
+ a 36  x 1 prime  37
+ a 37  x 2 prime  53
+ a 38  x 9 prime  6599
+ a 39  x 10 prime  10039
+ a 40  x 1 prime  41
+ a 41  x 60 prime  12960041
+ a 42  x 1 prime  43
+ a 43  x 2 prime  59
+ a 44  x 75 prime  31640669
+ a 45  x 2 prime  61
+ a 46  x 1 prime  47
+ a 47  x 18 prime  105023
+ a 48  x 5 prime  673
+ a 49  x 20 prime  160049
+ a 50  x 3 prime  131
+ a 51  x 2 prime  67
+ a 52  x 1 prime  53
+ a 53  x 12 prime  20789
+ a 54  x 85 prime  52200679
+ a 55  x 2 prime  71
+ a 56  x 3 prime  137
+ a 57  x 2 prime  73
+ a 58  x 1 prime  59
+ a 59  x 30 prime  810059
+ a 60  x 1 prime  61
+ a 61  x 4 prime  317
+ a 62  x 21 prime  194543
+ a 63  x 2 prime  79
+ a   64 =  2^6  all composite  
+ a 65  x 6 prime  1361
+ a 66  x 1 prime  67
+ a 67  x 2 prime  83
+ a 68  x 3 prime  149
+ a 69  x 10 prime  10069
+ a 70  x 1 prime  71
+ a 71  x 6 prime  1367
+ a 72  x 1 prime  73
+ a 73  x 2 prime  89
+ a 74  x 255 prime  4228250699
+ a 75  x 4 prime  331
+ a 76  x 3 prime  157
+ a 77  x 6 prime  1373
+ a 78  x 1 prime  79
+ a 79  x 10 prime  10079
+ a 80  x 27 prime  531521
+ a 81  x 2 prime  97
+ a 82  x 1 prime  83
+ a 83  x 72 prime  26873939
+ a 84  x 5 prime  709
+ a 85  x 2 prime  101
+ a 86  x 3 prime  167
+ a 87  x 2 prime  103
+ a 88  x 1 prime  89
+ a 89  x 570 prime  105560010089
+ a 90  x 11 prime  14731
+ a 91  x 2 prime  107
+ a 92  x 3 prime  173
+ a 93  x 2 prime  109
+ a 94  x 5 prime  719
+ a 95  x 18 prime  105071
+ a 96  x 1 prime  97
+ a 97  x 2 prime  113
+ a 98  x 3 prime  179
+ a 99  x 10 prime  10099
+ a 100  x 1 prime  101
+ a 101  x 96 prime  84934757
+ a 102  x 1 prime  103
+ a 103  x 4 prime  359
+ a 104  x 45 prime  4100729
+ a 105  x 8 prime  4201
+ a 106  x 1 prime  107
+ a 107  x 24 prime  331883
+ a 108  x 1 prime  109
+ a 109  x 30 prime  810109
+ a 110  x 3 prime  191
+ a 111  x 2 prime  127
+ a 112  x 1 prime  113
+ a 113  x 6 prime  1409
+ a 114  x 5 prime  739
+ a 115  x 2 prime  131
+ a 116  x 3 prime  197
+ a 117  x 4 prime  373
+ a 118  x 3 prime  199
+ a 119  x 60 prime  12960119
+ a 120  x 7 prime  2521
+ a 121  x 2 prime  137
+ a 122  x 57 prime  10556123
+ a 123  x 2 prime  139
+ a 124  x 45 prime  4100749
+ a 125  x 42 prime  3111821
+ a 126  x 1 prime  127
+ a 127  x 4 prime  383
+ a 128  x 9 prime  6689
+ a 129  x 50 prime  6250129
+ a 130  x 1 prime  131
+ a 131  x 6 prime  1427
+ a 132  x 5 prime  757
+ a 133  x 2 prime  149
+ a 134  x 75 prime  31640759
+ a 135  x 2 prime  151
+ a 136  x 1 prime  137
+ a 137  x 6 prime  1433
+ a 138  x 1 prime  139
+ a 139  x 10 prime  10139
+ a 140  x 9 prime  6701
+ a 141  x 2 prime  157
+ a 142  x 3 prime  223
+ a 143  x 6 prime  1439
+ a 144  x 5 prime  769
+ a 145  x 4 prime  401
+ a 146  x 3 prime  227
+ a 147  x 2 prime  163
+ a 148  x 1 prime  149
+ a 149  x 30 prime  810149
+ a 150  x 1 prime  151
+ a 151  x 2 prime  167
+ a 152  x 3 prime  233
+ a 153  x 4 prime  409
+ a 154  x 115 prime  174900779
+ a 155  x 6 prime  1451
+ a 156  x 1 prime  157
+ a 157  x 2 prime  173
+ a 158  x 3 prime  239
+ a 159  x 10 prime  10159
+ a 160  x 3 prime  241
+ a 161  x 12 prime  20897
+ a 162  x 1 prime  163
+ a 163  x 2 prime  179
+ a 164  x 15 prime  50789
+ a 165  x 2 prime  181
+ a 166  x 1 prime  167
+ a 167  x 12 prime  20903
+ a 168  x 13 prime  28729
+ a 169  x 10 prime  10169
+ a 170  x 3 prime  251
+ a 171  x 16 prime  65707
+ a 172  x 1 prime  173
+ a 173  x 132 prime  303595949
+ a 174  x 35 prime  1500799
+ a 175  x 2 prime  191
+ a 176  x 3 prime  257
+ a 177  x 2 prime  193
+ a 178  x 1 prime  179
+ a 179  x 720 prime  268738560179
+ a 180  x 1 prime  181
+ a 181  x 2 prime  197
+ a 182  x 3 prime  263
+ a 183  x 2 prime  199
+ a 184  x 5 prime  809
+ a 185  x 6 prime  1481
+ a 186  x 5 prime  811
+ a 187  x 4 prime  443
+ a 188  x 3 prime  269
+ a 189  x 290 prime  7072810189
+ a 190  x 1 prime  191
+ a 191  x 6 prime  1487
+ a 192  x 1 prime  193
+ a 193  x 4 prime  449
+ a 194  x 45 prime  4100819
+ a 195  x 2 prime  211
+ a 196  x 1 prime  197
+ a 197  x 6 prime  1493
+ a 198  x 1 prime  199
+ a 199  x 50 prime  6250199
+ a 200  x 3 prime  281
+ a 201  x 4 prime  457
+ a 202  x 3 prime  283
+ a 203  x 6 prime  1499
+ a 204  x 5 prime  829
+ a 205  x 4 prime  461
+ a 206  x 21 prime  194687
+ a 207  x 2 prime  223
+ a 208  x 7 prime  2609
+ a 209  x 30 prime  810209
+ a 210  x 1 prime  211
+ a 211  x 2 prime  227
+ a 212  x 3 prime  293
+ a 213  x 2 prime  229
+ a 214  x 5 prime  839
+ a 215  x 6 prime  1511
+ a 216  x 7 prime  2617
+ a 217  x 2 prime  233
+ a 218  x 9 prime  6779
+ a 219  x 40 prime  2560219
+ a 220  x 7 prime  2621
+ a 221  x 24 prime  331997
+ a 222  x 1 prime  223
+ a 223  x 2 prime  239
+ a 224  x 15 prime  50849
+ a 225  x 2 prime  241
+ a 226  x 1 prime  227
+ a 227  x 6 prime  1523
+ a 228  x 1 prime  229
+ a 229  x 130 prime  285610229
+ a 230  x 3 prime  311
+ a 231  x 4 prime  487
+ a 232  x 1 prime  233
+ a 233  x 24 prime  332009
+ a 234  x 5 prime  859
+ a 235  x 2 prime  251
+ a 236  x 3 prime  317
+ a 237  x 14 prime  38653
+ a 238  x 1 prime  239
+ a 239  x 30 prime  810239
+ a 240  x 1 prime  241
+ a 241  x 2 prime  257
+ a 242  x 9 prime  6803
+ a 243  x 4 prime  499
+ a 244  x 25 prime  390869
+ a 245  x 12 prime  20981
+ a 246  x 7 prime  2647
+ a 247  x 2 prime  263
+ a 248  x 15 prime  50873
+ a 249  x 50 prime  6250249
+ a 250  x 1 prime  251
+ a 251  x 18 prime  105227
+ a 252  x 5 prime  877
+ a 253  x 2 prime  269
+ a 254  x 45 prime  4100879
+ a 255  x 2 prime  271
+ a 256  x 1 prime  257
+ a 257  x 6 prime  1553
+ a 258  x 5 prime  883
+ a 259  x 10 prime  10259
+ a 260  x 27 prime  531701
+ a 261  x 2 prime  277
+ a 262  x 1 prime  263
+ a 263  x 6 prime  1559
+ a 264  x 25 prime  390889
+ a 265  x 2 prime  281
+ a 266  x 3 prime  347
+ a 267  x 2 prime  283
+ a 268  x 1 prime  269
+ a 269  x 30 prime  810269
+ a 270  x 1 prime  271
+ a 271  x 6 prime  1567
+ a 272  x 3 prime  353
+ a 273  x 10 prime  10273
+ a 274  x 35 prime  1500899
+ a 275  x 6 prime  1571
+ a 276  x 1 prime  277
+ a 277  x 2 prime  293
+ a 278  x 3 prime  359
+ a 279  x 40 prime  2560279
+ a 280  x 1 prime  281
+ a 281  x 12 prime  21017
+ a 282  x 1 prime  283
+ a 283  x 6 prime  1579
+ a 284  x 15 prime  50909
+ a 285  x 4 prime  541
+ a 286  x 3 prime  367
+ a 287  x 6 prime  1583
+ a 288  x 7 prime  2689
+ a 289  x 10 prime  10289
+ a 290  x 21 prime  194771
+ a 291  x 2 prime  307
+ a 292  x 1 prime  293
+ a 293  x 18 prime  105269
+ a 294  x 5 prime  919
+ a 295  x 2 prime  311
+ a 296  x 9 prime  6857
+ a 297  x 2 prime  313
+ a 298  x 3 prime  379
+ a 299  x 150 prime  506250299
+ a 300  x 19 prime  130621
+ a 301  x 2 prime  317
+ a 302  x 3 prime  383
+ a 303  x 10 prime  10303
+ a 304  x 5 prime  929
+ a 305  x 6 prime  1601
+ a 306  x 1 prime  307
+ a 307  x 4 prime  563
+ a 308  x 3 prime  389
+ a 309  x 20 prime  160309
+ a 310  x 1 prime  311
+ a 311  x 6 prime  1607
+ a 312  x 1 prime  313
+ a 313  x 4 prime  569
+ a 314  x 45 prime  4100939
+ a 315  x 2 prime  331
+ a 316  x 1 prime  317
+ a 317  x 6 prime  1613
+ a 318  x 7 prime  2719
+ a 319  x 20 prime  160319
+ a 320  x 3 prime  401
+ a 321  x 2 prime  337
+ a 322  x 5 prime  947
+ a 323  x 6 prime  1619
+ a   324 =  2^2 3^4  all composite  
+ a 325  x 6 prime  1621 ==================================",['number-theory']
+2301672,Is completeness a necessary assumption for the Birkhoff Transitivity Theorem?,"The Birkhoff Transitivity Theorem asserts that any dynamical system $T:X \to X$ on a complete separable metric space without isolated points is topologically transitive if and only if there is a point with dense orbit. A friend of mine and me were discussing whether completeness is a necessary assumption, but couldn't come up with a counterexample. We tried the restricted doubling map to the rationals mod $1$, but finding the obstruction seems rather hard, as the Baire Category Theorem is non-constructive. Does anyone know a counterexample? Thanks a lot!","['functional-analysis', 'real-analysis', 'topological-dynamics', 'dynamical-systems']"
+2301686,"$f:\mathbb{Q} \rightarrow \mathbb{R}$, with conditions on $f$","I would like to find all functions : $f:\mathbb{Q} \rightarrow \mathbb{R}$ such that : $f(x) \geq 0$, $\forall x \in \mathbb{Q}$ and the equality holds only if $x = 0$ $f(x\cdot y) = f(x)\cdot f(y)$, $\forall x, y \in \mathbb{Q}$ $f(x+y) \leq\max\{f(x), f(y)\}$ Any suggestions, ideas ? What I found : $f$ is even $f(x) = 1/f(1/x)$ $f(kx) \leq f(x)$ with $k \in \mathbb{N}$ and $f(kx) \leq 1$","['functional-analysis', 'functional-equations']"
+2301719,"What does Liu mean by ""topological open/closed immersion"" in his book ""Algebraic Geometry and Arithmetic Curves""?","In his book ""Algebraic Geometry and Arithmetic Curves"", Liu defines open/closed immersions of locally ringed spaces in terms of topological open/closed immersions: What does he mean by the terms ""topological open (resp. closed) immersion""? Does he mean that $f(X)$ is an open (resp. closed) subset of $Y\!,\,$ and the induced map $X\to f(X); \;x \mapsto f(x)$ is a homeomorphism? Many thanks! :)","['schemes', 'algebraic-geometry', 'definition']"
+2301730,How to show that $\int_{0}^{\infty}{1\over x}\ln\left({1\over x}\right)\sin(2x)\sin^2(x)\mathrm dx={\pi \gamma \over 8}?$,"Given that: Where $\gamma$ is Euler-Masheroni Constant $$\int_{0}^{\infty}{1\over x}\ln\left({1\over x}\right)\sin(2x)\sin^2(x)\mathrm dx={\pi \gamma \over 8}\tag1$$ $$\sin(2x)\sin^2(x)$$
+$$=\sin(2x)[1-\cos^2(x)]$$
+$$={\sin(2x)\over 2}[1-\cos(2x)]$$
+$$={\sin(2x)\over 2}-{\sin(4x)\over 4}$$ $${1\over 2}\int_{0}^{\infty}{1\over x}\ln\left({1\over x}\right)\sin(2x)\mathrm dx-{1\over 4}\int_{0}^{\infty}{1\over x}\ln\left({1\over x}\right)\sin(4x)\mathrm dx\tag2$$","['integration', 'calculus']"
+2301738,Simple calculation in imprecise probability urn example,"In Miranda and de Cooman's chapter 3, ""Structural judgements"" , in Augustin et al.'s Introduction to Imprecise Probability , example 3.4 on p. 65 shows that independence in the selection (type-2 independence) does not imply strong independence (type-3 independence) for lower previsions.  One of the numerical values in the example seems incorrect to me.  I'm not sure whether there is a typo (there is an obvious trivial typo at the top of the same page, so this seems possible), or whether I don't fully understand the example (quite plausible). There are two possible configurations, or compositions, for a pair of urns containing red ( $R$ ) and green ( $G$ ) balls, but we don't know which configuration is actual.  Given a configuration, draws from each urn are random, i.e. independent. Configuration 1:    Urn 1: $\{R, R, G\}$ Urn 2: $\{R,R,G\}$ Configuration 2:    Urn 1: $\{R, G, G\}$ Urn 2: $\{R,G,G\}$ Let $X_k$ be the r.v. representing the outcome of the draw from the $k$ th urn.  The text claims that given this setup, the lower prevision $\underline P$ of $X_1=R$ & $X_2=G$ is \begin{equation}
+\underline P(X_1 = R, X_2=G) = \frac{4}{9} .
+\end{equation} It seems to me that this value should be 2/9.  Since the draws are independent within each configuration, the probability (linear prevision) corresponding to configuration 1 is \begin{equation}
+P(X_1 = R, X_2=G) = P(X_1=R) \times P(X_2=G) = \frac{2}{3} \times \frac{1}{3} = \frac{2}{9} .
+\end{equation} Similarly, the probability corresponding to configuration 2 is \begin{equation}
+\frac{1}{3} \times \frac{2}{3} = \frac{2}{9} .
+\end{equation} Since the lower prevision is the lower envelope of the probabilities in this example, it seems to follow that $\underline P(X_1 = R, X_2=G) = 2/9$ .  However, I suspect that I've interpreted the example incorrectly in some respect or have some more basic misunderstanding. (I believe that if 2/9 were the correct value here, the example would still illustrate the point that independence in the selection doesn't imply strong independence.  For that point all that's needed is that $\underline P(X_1 = R, X_2=G) > 1/9$ .)","['bayesian', 'probability', 'imprecise-probability']"
+2301766,"A frog sitting on the second of three stones jumps to left with probability $0.4$, what is the probability that it will reach the zeroth stone first?","A blind frog sits on the second of three stones in a line. At each minute, it jumps either to left (with probability $0.4$) or right. To the right of third stone there is a lake in which an alligator is waiting for the frog. To the left of the first stone there is a stork waiting for the frog. Find the probability that the stork eats the frog. I tried to solve this by recurrence relations, but couldn't establish a proper definition of $a_n$. I mean $n$ can denote the stone number that the frogs is sitting, but then I have find $a_0$, and I don't know whether that kind of configurations are allowed. In another case, I can choose the second stone as my $n=0$, and $n$ can denote, again, the stone numbers, but then I need to include the negative $n$s, which, again, I don't know whether it is eligible, so I'm stuck.","['random-walk', 'combinatorics', 'probability-theory', 'probability']"
+2301802,what is the difference between derivative and differentiation?,"I want to know more about what is the difference， both in single variable and multivariable， I want to know about the general definition if there is one.
+I will appreciate it if someone can help me!!
+thx!!","['derivatives', 'definition']"
+2301803,Any ring homomorphism from $C_b(X)$ to $C_b(Y)$ is continuous?,"For topological space $X$ , let $C_b(X)$ denote the set of all bounded real valued continuous functions on $X$ . It is a ring w.r.t. pointwise addition and multiplication of functions and it is a metric space with respect to the supremum metric (basically a Banach space w.r.t. the sup norm ) . If $X,Y$ are topological spaces then is   any ring homomorphism from $C_b(X)$ to $C_b(Y)$  continuous ?","['banach-spaces', 'continuity', 'ring-theory', 'general-topology', 'metric-spaces']"
+2301814,Prove that the Green´s Function satisfy the Differential Equation,"Prove that the Green´s Function: $$G(t,t´)=\theta(t-t´) \dfrac{\sin{[(t-t´)(\omega_0^2-\gamma^2)^{1/2}}]}{(\omega_0^2-\gamma^2)^{1/2}}\cdot e^{-\gamma(t-t´)}  \tag{1}$$ satisfy the Differential Equation: $$\left(\dfrac{d^2}{dt^2}+2\gamma\dfrac{d}{dt}+\omega_0^2\right)G(t,t´)=\delta(t-t´) \tag{2}$$ Starting with the equation:
+$$\ddot{x}(t)+2\gamma\dot{x}(t)+\omega_0^2x(t)=F(t) \tag{3}$$
+And using the Fourier transform, we get the given Greens Function:
+$$G(t,t´)=\theta(t-t´) \dfrac{\sin{[(t-t´)(\omega_0^2-\gamma^2)^{1/2}}]}{(\omega_0^2-\gamma^2)^{1/2}}\cdot e^{-\gamma(t-t´)} \tag{4}$$ But i dont know how i can show that this Green function satisfy the given equation.","['greens-function', 'dirac-delta', 'ordinary-differential-equations']"
+2301826,A rigorous proof for a Riemann-like sum,"I am asked to find the limit of the following sum: $$
+\lim_{n\rightarrow\infty}\sum_{k=1}^{n}\sin{\left(\frac{k}{n}\right)}\sin{\left(\frac{k}{n^2}\right)}
+$$ My attempt: For $n\rightarrow\infty$ and for $1\leq k\leq n$ : $$
+\sin{\frac{k}{n^2}}\approx \frac{k}{n^2}
+$$ So $$
+\sin{\left(\frac{k}{n}\right)}\sin{\left(\frac{k}{n^2}\right)}\approx \frac{k}{n^2}\sin{\left(\frac{k}{n}\right)}=\frac{1}{n}\frac{k}{n}\sin{\left(\frac{k}{n}\right)}
+$$ Thus, we get a reimann sum, so the limit would be equal to: $$
+\lim_{n\rightarrow \infty}\sum_{k=1}^{n}\frac{1}{n}\frac{k}{n}\sin{\left(\frac{k}{n}\right)}=\int_{0}^{1}x\sin{x}dx=\sin{1}-\cos{1}
+$$ Now the question is, how can I prove this rigorously because the way ""I did it"" is obviously incorrect, if someone can guide me through a rigorous proof, it would be perfect. Thanks in advance.","['integration', 'sequences-and-series', 'calculus', 'riemann-sum']"
+2301857,"Find partial derivatives of $f(x,y) = g(e^{xy^2}, \sin x+\cos y)$","Find partial derivatives of $f(x,y) = g(e^{xy^2}, \sin x+\cos y)$, with $g:\mathbb{R}^2 \to \mathbb{R}$ a differentiable function. So I called $u(x,y) = e^{xy^2}$ and $v(x,y)=\sin x+\cos y$ Then, I calculated $\frac{\partial f}{\partial x} = \frac{\partial g}{\partial u}\frac{\partial u}{\partial x} + \frac{\partial g}{\partial v}\frac{\partial v}{\partial x} = y^2e^{xy^2}\frac{\partial g}{\partial u} + \cos x\frac{\partial g}{\partial v}$ And $\frac{\partial f}{\partial y} = \frac{\partial g}{\partial u}\frac{\partial u}{\partial y} + \frac{\partial g}{\partial v}\frac{\partial v}{\partial y} = 2xye^{xy^2}\frac{\partial g}{\partial u} - \sin y\frac{\partial g}{\partial v}$ Now, I don't how to proceed, I have the derivatives in function of $u(x,y)$ and $v(x,y)$, not only on $x$ and $y$. Any help?","['multivariable-calculus', 'partial-derivative']"
+2301858,Could a Riemannian metric be uniquely determined by its exponential map?,"It is known that isometric metrics have the same exponential maps. I am interesting in the converse, can we recover the metric from the exponential map? Suppose that $(M,g_1)$ and $(M,g_2)$ are Riemannian manifolds with the same exponential maps, i.e., the maps $\exp_{1}:TM\rightarrow M$ and $\exp_{1}:TM\rightarrow M$ are equal. Does it follow that $(M,g_1)$ is isometric to $(M,g_2)$ ? If someone have already asked this question I will appreciate the answer.","['riemannian-geometry', 'differential-geometry', 'geodesic']"
+2301894,Convergence in Law implies a.s. convergence (Donsker-like statement),"I am currently working on a Donsker-like convergence result and I am not quite sure, whether my conclusions are correct (I am dropping the technicalities here): Let $\hat{N}_n(t)$ be a an estimator for $N(t)$, we then have
+$$
+\sqrt n(\hat{N}_n(t)-N(t))\overset{\mathcal L} \longrightarrow \mathbb G  \text{ in } \ell^\infty (\mathbb R)
+$$
+where $\mathbb G $ denotes some Gaussian random variabel (with known covariance structure) and $\ell^\infty$ is the space of bounded real-valued functions ( why actually not only continuous-bounded as usual? ) equipped with the sup-norm. Convergence in Law for $X_n\overset{\mathcal L}\longrightarrow X$ means here in this setting
+$$
+\forall f\in \ell^\infty:\lim_{n\to\infty}Ef(X_n)=Ef(X)
+$$
+which means we have actually 
+$$
+\forall f\in \ell^\infty:\lim_{n\to\infty}Ef\left(\sqrt n(\hat{N}_n(t)-N(t))\right)=Ef\left(\mathbb G \right)
+$$ 
+I was wondering, in a setting like this, can we conclude 
+$$
+\hat{N}_n(t)\to N(t)\text{ a.s.?}
+$$
+Here is my thinking: We have
+$$
+\forall f\in \ell^\infty:\lim_{n\to\infty}Ef\left(\sqrt n(\hat{N}_n(t)-N(t))\right)=Ef\left(\mathbb G \right)
+$$
+which means that the convergence also holds for the continuous bounded-functions and then by the Portmanteau theorem we have convergence of the distribution functions in all continuous points $c$, we have
+$$
+\forall c:\lim_{n\to\infty}P\{\left(\sqrt n(\hat{N}_n(t)-N(t))\right)\leq c\}=P\{\mathbb G \leq c\}
+$$ Now we are interested in $(\hat{N}_n(t)-N(t))$, so
+$$
+\forall c:\lim_{n\to\infty}P\{\left(\hat{N}_n(t)-N(t))\right)\leq c\}=\lim_{n\to\infty} P\{\left( \sqrt n(\hat{N}_n(t)-N(t))\right) \leq \sqrt n c\}
+$$
+which is for $c>0$ equal to $1$ and for $c<0$ equal to $0$. For $c=0$ we don't have a continuous point of $F$. So we have the distribution function of random variable a.s. equal to $0$ (Dirac distribution). Since $(\hat{N}_n(t)-N(t))\to 0 $ in distribution we have even $(\hat{N}_n(t)-N(t)) \overset{\text{a.s.}} \longrightarrow 0 $. EDIT : As pointed out by Did in the comments, the convergence  of
+$(\hat{N}_n(t)-N(t)) \longrightarrow 0$ is actually in probability. The implication is: Convergence in distribution against a constant implies convergence against this constant in probability. Is this reasonable or have I overseen anything?","['weak-convergence', 'probability-theory', 'convergence-divergence', 'central-limit-theorem']"
+2301901,Holonomic basis and commutativity,"I am trying to better understand the concept of connection in diff. geometry by defining different vectors fields and working with them. For example, if I take the usual coordinates $x$ and $y$ coordinates on the plane, I have the vector fields $\partial_x$ and $\partial_y$. Now if I replace the coordinate $y$ by $z=y+x^2$, then I should replace $\partial_y$ with $\partial_z=\partial_y+2x\partial_x$. On the one hand, I think the pair $\{\partial_x,\partial_z\}$ can still be used as a basis for the tangent space at every point and this basis is holonomic, i.e. the elements are derivatives with respect to coordinates. On the other hand, holonomic basis are supposed to be commutative, but I get $[\partial_x,\partial_z]\neq 0$. Can someone clarify this, please?",['differential-geometry']
+2301913,Checking the Solution of a First Order ODE,"Please consider the following differential equation:
+\begin{eqnarray*}
+	(x + 2y - 4) dx + (-2x + 4y) dy &=& 0 \\
+\end{eqnarray*}
+I have solved the equation and my solution is:
+\begin{eqnarray*}
+\ln{( 4(y-1)^2) + (x-2)^2)} - 2 \arctan{ \Big( \frac{2y - 2}{x - 2} \Big) } &=& C \\
+\end{eqnarray*}
+Since this solution matches the answer in the back of the book, I believe it to be correct but I always like to check my answer so I take the answer and try to derive the original equation which should work if my answer is wrong.
+\begin{eqnarray*}
+	D\Big( \ln{( 4(y-1)^2) + (x-2)^2)} - 2 \arctan{ \Big( \frac{2y - 2}{x - 2} \Big) } \Big) &=& 0 \\
+\end{eqnarray*}
+\begin{eqnarray*}
+	D\Big( \ln{( 4(y-1)^2) + (x-2)^2)} \Big) &=&
+	\frac{8(y-1) \frac{dy}{dx} +2(x-2)}{4(y-1)^2 + (x-2)^2} \\
+	D\Big(  \arctan{\Big(\frac{2y-2}{x-2}\Big)} \Big) &=&
+	\frac{(x-2)(2 \frac{dy}{dx}) - (2y-2)} { (\frac{2y-2}{x-2})^2 + 1} \\
+	D\Big(  \arctan{\Big(\frac{2y-2}{x-2}\Big)} \Big) &=&
+	\frac{(x-2)(2 \frac{dy}{dx}) - (2y-2)} { 4(\frac{y-1}{x-2})^2 + 1} \\
+	D\Big(  \arctan{\Big(\frac{2y-2}{x-2}\Big)} \Big) &=&
+	\frac{(x-2)^3(2 \frac{dy}{dx}) - (2y-2)(x-2)^2} { 4(y-1)^2 + (x-2)^2} \\
+\end{eqnarray*}
+%
+\begin{eqnarray*}
+	\frac{ 8(y-1) \frac{dy}{dx} +2(x-2) - 2(x-2)^3 \frac{dy}{dx} + (2y-2)(x-2)^2}{4(y-1)^2 + (x-2)^2} &=& 0 \\
+	8(y-1) \frac{dy}{dx} +2(x-2) - 2(x-2)^3 \frac{dy}{dx} + (2y-2)(x-2)^2 &=& 0 \\
+	4(y-1)\frac{dy}{dx} + (x-2) - (x-2)^3 \frac{dy}{dx} + (y-1)(x-2)^2 &=& 0 \\
+\end{eqnarray*}
+At this point, I feel my solution is not going to check. Please tell me what I am missing? Thanks Bob",['ordinary-differential-equations']
+2301919,Heegaard Splittings of Non-orientable 3 manifolds,"A well known and oft-utilized fact from 3-manifold topology is that all closed, orientable 3-manifolds admit Heegaard splittings. I am trying to understand what the appropriate notion of Heegaard splitting for a closed, nonorientable 3-manifold should be, assuming I want lots of familiar facts to carry over to this setting. I'm also curious about the interaction with the orientable case. In particular, some things  I am pondering include: Given a closed, nonorientable 3-manifold $Y$, 1) Can one decompose $Y = H_{1} \cup_{\Sigma}H_{2}$, for some surface $\Sigma \hookrightarrow Y$, and some (possibly nonorientable) handlebodies $H_{1},H_{2}$ ? 2) Can one decompose $Y = \Sigma \coprod \tilde{H}$, for a one-sided surface $\Sigma \hookrightarrow Y$ and an open handlebody $\tilde{H}$? And in the same vein as this question: 3) Can one realize $Y$ as a quotient $M/h$ of a free, involutive, orientation reversing homeomorphism $h:M \rightarrow M$ of an orientable 3-manifold $M$, where $h$ exchanges the two sides $U,V$ of some Heegaaard splitting $M= U \cup V$?","['algebraic-topology', 'low-dimensional-topology', 'general-topology', 'differential-topology']"
+2301947,Formal underpinnings of cross-validation?,"In the past, I've used cross-validation in a purely instrumental way--namely, to ensure that models have decent predictive ability. I know that cross-validation works, but I don't know why it works on a formal mathematical level. Is there a formal derivation showing that cross-validation of any form (leave one out, exhaustive, or other) maximizes predictive validity, or is cross-validation an ad hoc tool that we use because it intuitively makes sense?","['statistics', 'statistical-inference']"
+2301982,"If $f'(0)$ doesn't have eigenvalue $1$, then there is a neighborhood where $f(x)\neq x$","Let $f:\mathbb{R}^m\to\mathbb{R}^m$, differentiable, with $f(0) = 0$.
+  If the linear transformation $f'(0)$ has no eigenvalue $1$, prove that
+  there exists a neighborhood $V$ of $0$ in $\mathbb{R}^m$ such that
+  $f(x)\neq x$ for all $x\in V-\{0\}$ My book solves it by the following: Since the operator $f'(0)$ has no fixed point in the compact
+  $S^{n-1}$, there exists $\epsilon>0$ such that $|u|=1\implies
+ |f'(0)\cdot u -u|\ge \epsilon$. Being $f$ differentiable, with $f(0) =
+ 0$, we have $f(x) = f'(0)\cdot x + p(x)\cdot |x| = |x|\left(f'(0)\cdot
+ \frac{x}{|x|}+p(x)\right)$ and exists $\delta >0 $ such that
+  $0<|x|<\delta \implies |p(x)|<\epsilon$ (why? - 1) . So, if
+  $0<|x|<\delta$, then $|f(x)-x|\ge |x|\left[\left|f'(x)\cdot
+ \frac{x}{|x|}-\frac{x}{|x|}\right|-|p(x)|\right]>0$ and then $f(x)\neq
+ x$ (why? - 2) Also, what the compact $S^{n-1}$ have to do with all of this?","['multivariable-calculus', 'real-analysis', 'calculus', 'derivatives']"
+2301984,Is it mandatory to specify integration variables before taking the integral?,"This very simple question was asked of me recently and I was unable to give a convincing answer. For example, if you were simply told to 'integrate $2x$'. Then we would normally write $$\int 2x\,\mathrm{d}x=x^2 + C$$ But where did the $\mathrm{d}x$ come from? In other words should it be 'integrate $2x\,\mathrm{d}x$'? When we integrate $2x$, is the integration variable $\mathrm{d}x$ already specified and is part of the integration operation? Or, do we need to specify it before we carry out the integration? Alternatively, if I wrote instead 'integrate $2x$ with respect to $x$'. Does this guarantee the integration variable $\mathrm{d}x$ is included? I ask this question because there are times in physics and math when we in fact do specify the integration variable before hand. Using differential equations as an example if asked to solve $$x\frac{\mathrm{d}y}{\mathrm{d}x}=1$$
+then in this simple case we would treat the $\frac{\mathrm{d}y}{\mathrm{d}x}$ as though it is a fraction and separate the variables such that $$\mathrm{d}y=\frac{1}{x}\mathrm{d}x\tag{1}$$ and then put integral signs in front  $$\int\mathrm{d}y=\int\frac{1}{x}\mathrm{d}x\tag{2}$$  $$\implies y=\ln x + k$$ So for $(1)$, placing the integral signs out in front didn't introduce the integration variables like this: $$\int\mathrm{d}y\,\mathrm{d}y=\int\frac{1}{x}\mathrm{d}x\,\mathrm{d}x\ne (2)$$ I have shown both ways that there is room for confusion. So to summarize; Is it mandatory to specify the integration variables first (before taking the integral) or not?","['indefinite-integrals', 'intuition', 'integration', 'calculus']"
+2301992,"function positive, if positive on axis","I'm stuck on this little problem, and I'd appreciate some help shouldn't be too hard, but I can't really get my head around it: Let $f: \mathbb R^2 \to \mathbb R$ be a $C^1$ function such that \begin{cases}
+\frac{\partial f}{\partial t}(x,t) = \frac{\partial f}{\partial x}(x,t), & \forall \, (x,t) \in \mathbb R^2 \\
+f(x,0) > 0, & \forall \, (x,0) \in \mathbb R^2
+\end{cases} Show that $f(x,t) >0$, $\forall \, (x,t) \in \mathbb R^2$. By continuity I can show that there exists a region around the $x$-axis where this is true.
+I'm not sure though how to extend this idea!","['multivariable-calculus', 'calculus', 'functions']"
+2302007,Riemann integrable function that is zero at some point in every open interval,"Let $f:[a,b] \to\mathbb{R}$ be integrable. Suppose that for all $a < c < d < b$ exits a point $x \in ]c,d[$ such that $f(x) = 0$. Prove that $\int_a^bf = 0$. I have tried to prove it using the Theorem of embedded intervals, so let two sequences {$c_n$} and {$d_n$} be such that both of them tend to $x$. Then at that point, $f(x)=0$ so we have $f(x)=0 \; \forall x \in [a,b]$. Then $\int_a^bf = 0$.","['integration', 'calculus']"
+2302023,Markov Chain for Conditional Entropy,"These informations are given. 
+I need to prove that $X \rightarrow Y \rightarrow Z$ is a Markov chain, then so is $Z \rightarrow Y \rightarrow X$ is a Markov chain I tried to find some answers; $Z \rightarrow Y \rightarrow X$ $H(Z) \ge H(Z:Y) \ge H(Z:X)$ $H(Z:Y,X) = H(Z:X)+H(Z:Y)$ $H(Z:Y) +H$ As you can see, I could not find any reasonable answer. By the way, this is not a homework. It is a question from my worksheet that is given to study for final examination. Any help would be appreciated.","['markov-chains', 'entropy', 'discrete-mathematics']"
+2302051,The Classifying Topos of Local Rings and Algebraic Geometry,"I have recently been made aware of the fact that the category $\mathbf{Zar} = \mathbf{Sh}(\mathbf{Ring}_\mathrm{fp}, J)$ of sheaves on the category of finitely presented rings equipped with the Zariski topology is the classifying topos of local rings. (Mac Lane & Moerdijk, Sheaves in Geometry and Logic , $\S$VIII.6.) I have also heard of similar results regarding the étale (resp. Nisnevich) topology and strictly Henselian (resp. Henselian) rings. I was wondering what consequences this has for the study and practice of algebraic geometry. In particular, how could an algebraic geometer make use of these facts in their day-to-day work? could (and if so, should) a student take them as a guiding principle in their study of the vast discipline of algebraic geometry? and, perhaps going a bit too far afield, does any of this connect to the story of $\mathbb{A}^1$-homotopy theory? It is entirely possible that the only conclusion one should draw from these facts is that one should expect to encounter local (resp. Henselian, strictly Henselian) rings while practicing algebraic geometry, though I hope there is more to the story.","['topos-theory', 'algebraic-geometry']"
+2302075,Distribution of sample means explanation,Say a casino has N slot machines all with the same expected value and standard deviation. Why is it when the standard deviation gets really large you end up with more machines under the expected value than over? I understand that the average of the samples will be approximately the expected value of the slot. But the samples means don't appear to be normally distributed. This seems not to be in line with the central limit theorem. I am wondering what bit I have confused. Thanks!,['statistics']
+2302082,Structure sheaf of support of coherent sheaf,"Consider a coherent sheaf $F$ over a locally noetherian scheme $X$. Further assume that $F$ has a global section $s:\mathcal{O}_X\to F$. Then, $J:=\ker s$ is an ideal sheaf defining a closed subscheme of $X$ and there is an injective map $s':\mathcal{O}_X/J\hookrightarrow F$. Let $I$ be the ideal sheaf defining the support of $F$. Since the section may vanish in more points than the support we find that $I\subseteq J$. I want to know what can we say about the sheaf $\mathcal{O}_X/I$ with respect to $\mathcal{O}_X/J$ and $F$. 1) Do we have an inclusion $\mathcal{O}_X/I\hookrightarrow F$ ? 2) Is there a more concrete relation between $\mathcal{O}_X/I$ and $\mathcal{O}_X/J$ ?","['schemes', 'coherent-sheaves', 'algebraic-geometry']"
+2302122,Normed vector space inequality $|\|x\|^2 - \|y\|^2| \le \|x-y\|\|x+y\|$,"I'm looking at an old qualifying exam, and one question is to prove the following inequality in any normed vector space:
+$$ |\|x\|^2 - \|y\|^2| \le \|x-y\|\|x+y\| $$ My initial thought was that
+$$ |\|x\|^2 - \|y\|^2| = |(\|x\|+\|y\|)(\|x\|-\|y\|)|=\left|(\|x\|+\|y\|)\right||(\|x\|-\|y\|)|,$$
+and it's easy to show $|\|x\|-\|y\||$ is less than both $\|x-y\|$ and $\|x+y\|$, but it isn't true that $\|x\|+\|y\|$ is less than either in general (by the triangle inequality it's 'usually' larger than the latter), so I'm unsure what to do. Any guidance is appreciated.","['normed-spaces', 'real-analysis']"
+2302157,"On ""small triangles"" in a square lattice","A ""small triangle"" in a square lattice is defined as one whose vertices are non-collinear lattice points, and whose boundary and interior contain no other lattice points. I recently came across the following: Claim: the area of any ""small triangle"" is 1/2 the area of the lattice's unit cell. I'm looking for a simple proof of this claim. I see that the claim would hold if the following condition holds: Condition: the shortest side of the smallest ""lattice rectangle"" 1 containing the small triangle has length 1. Then the claim follows from the elementary formula $\frac{1}{2} b h$ for the area of a triangle, since the condition implies that $b = h = 1$. This condition, however, does not hold for all small triangles.  (In fact, the triangle defined by lattice points $(0, 0), (1, 2),$ and $(2, 3)$ is small, and the smallest lattice rectangle that contains it has sides with lengths $2$ and $3$.) It is not clear to me that the claim would hold for all small triangles that don't satisfy the condition above. Update One possibility is that the condition above should have been part of the definition of a small triangle, but was omitted by mistake.  After all, the context for the claim was a proof of Pick's theorem, and it seems to me that this proof would have still gone through even if the definition of small triangles included the condition above. IOW, if we define a ""tiny triangle"" as any small triangle that satisfies the condition above, then one could derive a proof of Pick's theorem from the proposition that the polygon in the theorem's premise can always be covered by a set of tiny triangles.  I don't have a proof of this last assertion (anything that I can think of would probably be a tedious slog through a number of cases), but it seems to me very plausible. 1 By ""lattice rectangle"" I mean a rectangle whose corners are lattice points, and whose sides are parallel to the sides of a lattice unit cell.",['geometry']
+2302173,"Proof of formula for the the divergence of a totally anti-symmetric rank (2,0) tensor","I would like to prove that $$\nabla_\mu T^{\mu \nu} = \frac{1}{\sqrt{|g|}}\partial_\mu\left(\sqrt{|g|}T^{\mu\nu}\right)$$ Given that $T^{\mu\nu}$ is totally anti-symmetric. I know that $$\nabla_\mu T^{\mu\nu} = \partial_\mu T^{\mu\nu} + \Gamma^{\mu}_{\mu\rho}T^{\rho\nu} + \Gamma^{\nu}_{\mu\rho}T^{\mu\rho}$$ and that $$\Gamma^{\mu}_{\mu\rho} = \partial_\mu \ln\sqrt{|g|}$$. So my idea is to eliminate the term $\Gamma^{\nu}_{\mu\rho}T^{\mu\rho}$ and apply the above formula, however I am having difficulties to do so. I suspect I have to take advantage of the anti-symmetry of $T^{\mu\nu}$. Any help in working this out would be appreciated.","['tensors', 'differential-geometry']"
+2302204,"Counting set partitions of $\{1,2,...,n\}$ into exactly $k$ non-empty subsets with max size $m$","Let $a(n,k,m)$ denote the number of set partitions of $\{1,2,...,n\}$ into exactly $k$ non-empty subsets with max size $m$. Thus all subsets have number of elements $\leq m$. (Here size $m$ doesn't have to be attained by a subset, but if it makes the question easier, then that's fine). The number with no restriction on part sizes is given by the Stirling number of the second kind $S(n,k)$. I tried to construct a recurrence to the Stirling numbers but couldn't work in the constraint of the maximal size. $$a(n+1,k,m) = a(n,k-1,m) + k. a(n,k,m-1) + ?? $$
+or
+$$a(n+1,k,m) = a(n,k-1,m) + k. a(n,k,m) - ?? $$
+with initial conditions $a(n,n,m) = 1, a(1,1,m)=1$ for $m\geq 1$ and $a(n,k,m) = 0$ for $m<n/k$.","['permutations', 'combinatorics', 'stirling-numbers']"
+2302209,"Use Cauchy's Theorem to find $\lim_{(x,y)\to(0,0)} \frac{\cos(x) - \cos(y)}{x^2 - y^2}$.","I'm starting with Cauchy's theorem and I have this exercise... I don't understand how the theorem would help me in finding the limit. $$f(x,y)=\left\{
+\begin{array}{ll}
+      \lim_{(x,y)\to(0,0)} \frac{\cos(x) - \cos(y)}{x^2 - y^2} & x \neq y \\
+      -\frac{1}{2} &  x=y\\
+\end{array} 
+\right.$$ Suggestions? Perhaps I just need to see how what the theorem states is applicable to this situation... thanks!","['derivatives', 'limits', 'calculus', 'multivariable-calculus', 'analysis']"
+2302211,How to pullback a gradient,"In Guillemin and Pollack's ""Differential Topology"" on p. 134, there is a definition of the pullback of a vector field $v:X\rightarrow \mathbb{R}^k$, given as $\phi^*v(u):=d\phi^{-1}_u v(\phi(u))$ where $\phi:U\subset\mathbb{R}^k\rightarrow X$ is a diffeomorphic parameterisation of a subset of the $k$-dimensional manifold $X$ and $v(x)\in T_x(X)$. Later on p. 140, one is asked to derive that 
+  \begin{equation}
+\phi^*\text{grad}(f)=\sum_{i,j=1}^k \frac{\partial(f\circ\phi)}{\partial x_i}g^{ij}e_j,\qquad g_{ij}(u):=\langle d\phi_u(e_i),d\phi_u(e_j)\rangle,
+\end{equation}
+  where $\langle \cdot,\cdot\rangle$ denotes the scalar product and $\text{grad}(f)$ is defined by the relation $df_x(w)=\langle\text{grad}(f)(x),w\rangle$, i.e. $df_x=\langle \text{grad}(f)(x),\cdot\rangle$. 
+  ($\{e_1,\cdots,e_k\}$ denotes the standard basis of Euclidean space.) I hope to receive some support in doing that. What I thought about:
+    \begin{equation*}
+  \begin{split}
+    &\langle\phi^*\text{grad}(f)(u),e_j\rangle
+    =\langle d\phi^{-1}_{u} (\text{grad}(f)(\phi(u))),e_j\rangle
+  \end{split}
+\end{equation*}
+and
+    \begin{equation*}
+  \begin{split}
+    &\sum_{i,j=1}^k \frac{\partial(f\circ\phi)(u)}{\partial x_i}g_{ij}(u)e_j
+    =\sum_{i,j=1}^k d(f\circ\phi)_u(e_i)g_{ij}(u)e_j
+    =\sum_{i,j=1}^k df_{\phi(u)}d\phi_u(e_i)\langle d\phi_u(e_i),d\phi_u(e_j)\rangle e_j
+  \end{split}
+\end{equation*}
+but I just don't know how to get these expressions together. Help would be appreciated.","['differential-geometry', 'differential-topology']"
+2302276,"Maximum and Minimum Values using Trigonometric Functions: $f(t)=t-2\cos(t)$ for $t\in[-\pi, \pi]$","RESOLVED How would I go about finding the maximum and minimum values for an expression I cannot factor to find zeros? I have some function: $$f(t)=t-2\cos(t)$$ With the interval $[-\pi, \pi]$. I would like to know how to find the absolute maximum and absolute minimum values specifically.","['algebra-precalculus', 'trigonometry', 'maxima-minima', 'calculus']"
+2302346,Shortest paths in the Hypercube,"We'll ask for lengths of shortest paths in the hypercube which obey dimensional constraints. Given $n\in\mathbb N$, the hypercube or n-cube is the $n$-fold product of the unit interval (so it's not the Hilbert cube!). It is thus the set
+$$F_{n,n}\:=\:\left\{\sum\nolimits^n_{i=1}\beta_ie_i\:\Big\vert\:
+\beta_i\in \big[0\,,1\big]\right\}$$
+where $\,(e_i)_{1\le i\le n}\,$ denotes the standard ONB of $\mathbb R^n$, equipped with the Euclidean distance. For $1\leqslant d\leqslant n\,$ the union of $\,d$-dimensional faces of the $n$-cube is defined as
+$$F_{n,d}:=\left\{\sum\nolimits^n_{i=1}\beta_ie_i\:\Big\vert
+\text{ where $d$ coefficients }\beta_i\in \big[0\,,1\big],\text{ the remaining ones live in }\{0,1\}\right\},\\[2.5ex]
+\text{then } F_{n,1}\:\subsetneq\:F_{n,2}\:\subsetneq\:\ldots\:\subsetneq\: \,F_{n,n}\,.$$ What is the length $\,s(n,d)\,$ of a shortest path between the corner at the origin and the opposite corner at $\,(1,1,\ldots,1)\,$ when the path is constrained to lie in $F_{n,d}\,$? For $\,F_{n,1}$, thus edges only, and $\,F_{n,n}$, allowing for the straight line, the question is quickly answered by $\,s(n,1)=n\,$ and $\,s(n,n)=\sqrt n\,$:
+\begin{matrix}{\begin{matrix}&d\\n&\end{matrix}}&1&2&3&4&\ldots\\
+1&1\\
+2&2&\sqrt 2\\
+3&3&\sqrt 5&\sqrt 3\\
+4&4&?&??&2\\
+\vdots&&&&&\ddots\end{matrix} The less obvious entry $\,s(3,2)=\sqrt 5\,$ is furnished by this eye-catching answer to the post ""What is the geodesic between two opposite corners of a cube on its surface? [closed]"". But what about all the rest? How can the decreasing (certainly!) sequence
+$$\,s(n,1),\;s(n,2),\;\ldots,\;s(n,n-1),\;s(n,n)$$
+be determined? I didn't find references, neither @SE  nor in the residual internet. Furthermore I'm not sure about the appropriate tagging of the post, but omitting graph-theory was intended.","['discrete-geometry', 'combinatorics', 'geodesic']"
+2302375,Proving a set open in a subset of a metric space is open in the whole space,"I have a few questions about this proof: let $(X,d)$ be a metric space. Let $Y \subseteq X$ be an open subset
+  in $X$. If $G \subseteq Y$ is open in $Y$, prove that $G $ is open in
+  $X$. PF: Since $G$ is open in $Y$, there is an open set $U$ in $X$ such
+  that $G = U \cap Y$. Since $Y$ is open in $X$, it follows that $G$, as
+  an intersection of two open sets in $X$, is open in $X$. How do we know that $U$ exists? Why do we need to intersect it with $Y$?","['general-topology', 'metric-spaces']"
+2302389,Show that $M(t)=(W(t)-t)e^{-W(t)-t/2}$ is a martingale,"Define $$M(t)=(W(t)-t)exp(-W(t)-\frac{1}{2}t)$$ where $W(t)$ is Brownian motion. I want to show that this is a martingale. I have tried with Ito formula and end up with only a $dW_t$ term. However I failed to proof that the Integrand of $dW_t$ term is square integrable. Furthermore I want to ask if it is possible to proof with direct definition of martingale, I.e. Without using Itos formula. Edit: Sorry for the late reply, for the completeness I will finish the question to Did's Suggestion. I could use Ito's Lemma to prove the following identity:
+$$dM(t)=(t-W(t)+1)exp(-W(t)-\frac{1}{2}t)dW(t)$$. So if I can prove that the factor is square integrable then we are done.
+Define a stochastic exponential$$L(T)=exp(-2W(T)-T)$$, one can use the Girsanov theorem to deduce(Novikov condition is fulfilled since we have a deterministic function):
+$$E[(t-W(t)+1)^2*L(t)]=E^{\Bbb{Q}}[(t-W(t)+1)^2]=E^{\Bbb{Q}}[(t-(W(t)+2t)+2t+1)^2]=E^{\Bbb{Q}}[(t-\tilde W(t)+2t+1)^2]<\infty$$, where $\tilde W(t)$ is a $\Bbb Q$ brownian motion. As the integrand is square integrable one can show easily that $\int _0^T E[((t-W(t)+1)exp(-W(t)-\frac{1}{2}t))^2]dt<\infty$, which ensures that the stochastic integral is a martingale.","['stochastic-processes', 'probability-theory']"
+2302411,On Solution's of Initial Value Problems for ODE,"Consider the following IVP $\bullet $ 
+$\;\;y'=2\sqrt{y}\;\;\;\; , y(0)=0$ The solution of the above IVP is given by ;
+$$ y(x) = \cases{0 & for $x \le x_0$\cr (x-x_0)^2 & for $x > x_0$}$$ where $x_0 \ge 0$. According to my understanding of IVP's, their solutions are curves that satisfy the ODE and also pass through the point specified in the initial conditions. Hence they must satisfy the initial conditions (say),$\;\;y(x_0)=y_0$. Now the above IVP has 2 family of solutions. But what confuses me is that, $y(x)= (x-x_0)^2$, for $x > x_0$ is a solution but, $y(0)=(-x_0)^2$ which need not be $0$. (So it fails to satisfy the initial condition $y(0)=0$) I feel I have misunderstood the concept. I have the same doubt with solutions of the following IVP too, $\bullet$ $\;\;y'=y^{1/3}\;\;\; , y(0)=0$ The solution of the above IVP is given by ; $$y(x)=\cases{0 & for $x\le x_0$\cr \pm \left(\frac{2}{3}(x-x_0)\right)^{3/2} & for $x> x_0$}$$ where $x_0 \ge 0$. Can anyone clear this misunderstanding of mine. And also providing a geometrical interpretation of IVP would help a lot.","['ordinary-differential-equations', 'initial-value-problems']"
+2302417,Exact vs Total differential,I'm not sure I understand the difference between the two. Is it correct to claim that a total differential is always exact but not vice versa? Thanks,['multivariable-calculus']
+2302429,Number of different counts of $1$s in sliding windows,"Consider a tuple $A = (a_1, \dots, a_{2n-1})$ where $a_i \in  \{0,1\}$.   For each sub-tuple of length $n$ in order from left to right, that is $(a_i, \dots, a_{i+n-1})$ for all $i$, we count the number of $1$s and output the result as a ""counting tuple"".  For example if $n = 3$ and $A= (1,0,1,1,1)$  the resulting counting tuple is  $C_A = (2,2,3)$. Not every different tuple $A$ gives a different counting tuple. For example for $n = 3$, if $A= (1,0,1,1,0)$ we get the counting tuple $C_A = (2,2,2)$ which is the same as we get for $A' = (0,1,1,0,1)$. For a given $n$, what is the total number of distinct counting tuples $C_A$
+  taken over all $2^{2n-1}$ possible input tuples $A$? @orlp has found that $3^{n-2}(n+5)$ fits perfectly for $n \leq 13$. Is it possible to prove this is the right formula?  The sequence also occurs at https://oeis.org/A038765 .",['combinatorics']
+2302450,For what values of $\alpha > 0$ the equation $p(x) = x^3-9x^2+26x-\alpha =0$ has three positive real roots?,"For what values of $\alpha > 0$ the equation $p(x) = x^3-9x^2+26x-\alpha =0$ has three positive real roots? The options given are as follows : $(A)$ $\alpha \ge 27$ $(B)$ $\alpha > 81$ $(C)$ $27 < \alpha <81$ $(D)$ $54 < \alpha \le 81$ What I have tried is that I first transform the equation to the form $y^3 + 3Hy + G = 0$ and then I have applied the fact that this equation has three positive real roots if $G^2 + 4H^3 < 0$ .Here I found $G = 24 - \alpha$ and $H = -\frac {1} {3}$ and then calculating we get $\alpha \in (24-\frac {2 {\sqrt 3}} {9} , 24 + \frac {2 {\sqrt 3}} {9})$ which is not similar to any of the given options.Please help me in finding the right option. Thank you in advance.","['algebra-precalculus', 'roots', 'polynomials']"
+2302506,Show a curve is not a regular surface,"A set $S\subseteq\mathbb{R}^3$ is said to be a regular surface, if for every $p\in S$ there exists an open ball $B_p(r)$ around $p$, an open set $A\subseteq\mathbb{R}^2$ and a function $f:A\to\mathbb{R}^3$ such that $f(A) = B_p(r)\cap S$, $f$ is continuously differentiable and $rank(D_f) = 2$. I need to show that a straight line $\gamma(t) = \gamma(0) + tv$ where $v\in\mathbb{R}^3$ is not a regular surface. I don't think the definition has fully sinked in, and this seems really intuitive but I just can't think how to start.","['curves', 'differential-geometry', 'surfaces']"
+2302515,Convergence in distribution of $\sqrt n X_n$,"This is a follow-up question from my earlier one - context and motivation can be found there: If we have a sequence of random variables $Z_n:=\sqrt n X_n$ converging in distribution to X (all defined on the same probability space), i.e. for the all continuous points of the distribution Function of $F$ 
+$$
+\lim_{n\to\infty}F_{Z_n}(x\leq c)=F_X(x\leq c)\iff\lim_{n\to\infty}P(Z_n \leq c)=\lim_{n\to\infty}P(\sqrt X_n \leq c)=P(X\leq c)
+$$
+can we then say actually draw the following conclusion (is this implication even correct) for $c_{+}>0,c_{-}<0$:
+$$
+P(X_n \leq c_{+})=P(\sqrt nX_n \leq \sqrt n c_{+})\implies\lim_{n\to\infty} P(\sqrt nX_n \leq \sqrt n c_{+})=P(X\leq \infty)=1
+$$
+and
+$$
+P(X_n \leq c_{-})=P(\sqrt nX_n \leq \sqrt n c_{-})\implies\lim_{n\to\infty} P(\sqrt nX_n \leq \sqrt n c_{-})=P(X\leq -\infty)=0
+$$
+I don't see a reason why this shouldn't hold, nevertheless the implication feels somehow not quite right (in the definition of convergence in distribution the right hand side is always fixed, here we let it grow itself). On the other hand, if $\sqrt n X_n$ really converges in some way, $X_n$ would somehow need to compensate the extra growth of $\sqrt n$ and therefore need to go to zero itself in probability. (which would be the implication of the above).
+Anyone has a reference or any other insight?","['weak-convergence', 'probability-theory', 'measure-theory']"
+2302521,"Premise of Minkowski's theorem: ""Irrational"" Line","If we take a straight line $L$ in $\Bbb{R}^2$ of the form $y=ax$ where $a\in\Bbb{R}\setminus{\Bbb{Q}}.$ Then we see that (except at the origin $(0,0)$) $$L\cap \Bbb{Z}^2=\emptyset.$$ But now if the line becomes a strip of width $r>0$ denoted $S$ how can we be sure that $$S\cap \Bbb{Z}^2\ne\emptyset?$$ I know about Minkowski's theorem but in this particular case is there a high school argument? Perhaps by writing the continued fraction of $a?$","['real-analysis', 'geometry']"
+2302553,Natural quotient map,Let  $X$ be a Banach space and let  $M $  be a closed subspace of  $X $. When is the quotient map $Q :X \to X/M $ closed? I got somewhere that it happens iff$ M=X$ or $M=(0) $. But I couldn't prove it. Please suggest.,"['functional-analysis', 'closed-map', 'banach-spaces', 'quotient-spaces']"

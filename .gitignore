@@ -1,3 +1,4 @@
 .ipynb_checkpoints
 .cache
-data/vectorized_data/
+data/vectorized_data/sparse_matrices/
+data/parsed_data.csv

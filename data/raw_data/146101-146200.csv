@@ -1,0 +1,852 @@
+question_id,title,body,tags
+2391100,Is there a closed form for $\int_0^\infty \frac{1-\cos(tx)}{e^t-1}dt$?,When $|x|<1$ $$f(x)=\int_0^\infty \frac{1-\cos(tx)}{e^t-1}dt = \sum_{n=1}^\infty \zeta(2n+1)x^{2n}$$ This is also the imaginary part of the analytic continuation of the harmonic series. Numerically the following seem to be true: $$\int_0^{\pi/x}\frac{1-\cos(tx)}{e^t-1}dt\to \zeta(2)$$ $$\int_{\pi/x}^{3\pi/x}\frac{1-\cos(tx)}{e^t-1}dt\to \zeta(3)$$ Does the pattern continue? And is there a closed form for $f$ ?,"['complex-analysis', 'integration', 'definite-integrals']"
+2391118,selecting 3 couples from 6 couples,Shouldn't the answer be $\binom{6}{3}$ since the order doesn't matter? But the answer is 36 - how can I get this answer?,"['algebra-precalculus', 'combinatorics']"
+2391176,Chinese Remainder Theorem : Size of loop,"We say that two integer points $(a,b)$ and $(c,d)$ in the plane can see each other if the line segment joining them passes through no other integer points. A loop is a non-empty set of integer points such that each element can see precisely two other elements of the set. Does there exist a loop of size 100 ? My attempt : Equation of the lines pass through the points $(a,b)$ and $(c,d)$, $pa=qb+r$ $pc=qd+r$ , $p, q, r \in \mathbb{N}$ so $p(2c-a)=q(2d-b)+r$ and the points $(2c-a,2d-b)$ and $(\frac{c+a}{2},\frac{d+b}{2})$ are not on the loop. By induction, $\forall k \in \mathbb{Z}$, $t+k=1$ we have $(tc+ka,td+kb)$ are not on the loop. so the size of loop depends on the value of $a,b,c,d$.","['number-theory', 'chinese-remainder-theorem']"
+2391187,Is $K[X]\hookrightarrow K[[X]]$ an epimorphism?,Let $K$ be a field and $X$ an indeterminate. Is the natural monomorphism $K[X]\hookrightarrow K[[X]]$ an epimorphism? By epimorphism I mean epimorphism in the category of commutative rings . EDIT. The question can be spelled out as follows: Are there distinct morphisms from $K[[X]]$ to some commutative ring $A$ which coincide on $K[X]$?,"['abstract-algebra', 'formal-power-series', 'polynomials', 'commutative-algebra']"
+2391191,Recursively constructed set definition,"Let $\Sigma$ be some finite set of elements. A function $f$ is a mapping: $f: \Sigma\rightarrow\Sigma$. Let also define that elements of $\Sigma$ has some boolean property $c(x)\in\{T,F\}$. Consider the set $X$ which is constructed recursively, using disjunction of two conditions: or $c(x)=T$ or $f(x)\in X$. The latter condition means that inclusion of some element $x$ depends on the current state of $X$. Will it be mathematically correct to describe this set in the following form? $X=\{x\in\Sigma | c(x)=T\text{ or }f(x)\in X\}$ I doubt that it is rigorous definition. For instance, it is probably needed to define an order in which elements of $\Sigma$ are considered for adding into $X$. Will it be enough strict in this case or it should be defined in some different way?","['recursive-algorithms', 'recursion', 'elementary-set-theory', 'definition']"
+2391228,"How to find the equation of plane given 3 points: $(a,0,0), (0,b,0),(0,0,c)$?","Find the equation of plane given 3 points: $(a,0,0), (0,b,0), (0,0,c)$. The way I would go about this is first finding two vectors:
+$$
+\overrightarrow{AB}=(0,b,0)-(a,0,0)=\langle -a,b,0\rangle\\
+\overrightarrow{AC}=(0,0,c)-(a,0,0)=\langle -a,0,c\rangle
+$$
+Then we can get the normal vector by doing a cross product:
+$$
+\overrightarrow{AB}\times\overrightarrow{AC}=\langle -bc,-ac,-ab\rangle
+$$
+so the plane equation is something like:
+$$
+-bcx-acy-abz+d=0
+$$
+plug in one of the points for example $(a,0,0)$ to find $d$:
+$$
+-bcx-acy-abz+abc=0
+$$ What I came across is another plane equation for these points:
+$$
+\frac{x}{a}+\frac{y}{b}+\frac{z}{c}=1
+$$
+which is inarguably much simpler. How does one arrive to this representation?","['multivariable-calculus', 'proof-explanation']"
+2391229,"Evaluation of complete elliptic integrals $K(k) $ for $k=\tan(\pi/8),\sin(\pi/12)$","This is inspired from here . I will repeat some information from the linked question for the benefit of readers. Let $k\in(0,1)$ and the elliptic integrals $K, E$ are defined as follows: $$K(k)=\int_{0}^{\pi/2}\frac{dx}{\sqrt{1 - k^{2}\sin^{2}x}},\,E(k)=\int_{0}^{\pi/2}\sqrt{1-k^{2}\sin^{2}x}\,dx\tag{1}$$ The number $k$ is called the modulus and a complementary modulus $k'$ is defined by $k'=\sqrt{1-k^{2}}$ and if the value of $k$ is available from context then the integrals $K(k), E(k), K(k'), E(k') $ are generally denoted by $K, E, K', E'$. If $n$ is a positive rational number then it can be proved that there is a unique modulus $k$ such that $K'/K=\sqrt{n} $ and moreover this $k$ is an algebraic number. Such values of $k$ are famous and are called singular moduli and one may denote them by $k_{n} $ corresponding to the rational number $n$. Chowla and Selberg proved in this paper that Theorem : Let $k$ be a singular modulus. Then the elliptic integrals $K(k), E(k) $ can be expressed in terms of Gamma values at rational points and $\pi$. The linked paper of Chowla and Selberg uses theory of quadratic forms and related complex analytic techniques to prove their theorem. On the other hand Ramanujan knew the evaluation of $K$ in terms of Gamma values and $\pi$ for some singular moduli $k$. In his classic paper Modular Equations and Approximations to $\pi$ he gave the evaluations for $n=1,2,3$ without proof. It is thus reasonable to assume that the evaluations are possible by remaining within the limits of real analysis methods at least for $n=1,2,3$. The case $n=1$ is covered in this answer . My question  concerns the cases $n=2,3$ for which $k=\tan(\pi/8),\sin(\pi/12)$ respectively: Show that $$\int_{0}^{\pi/2}\frac{dx}{\sqrt{1-\tan^{2}(\pi/8)\sin^{2}x}}=\frac{\sqrt{\sqrt{2} +1} \Gamma (1/8)\Gamma (3/8)}{2^{13/4}\sqrt{\pi}}\tag{2}$$ and $$\int_{0}^{\pi/2}\frac{dx}{\sqrt{1-\sin^{2}(\pi/12)\sin^{2}x}}=\frac{3^{1/4}\Gamma ^{3}(1/3)}{2^{7/3}\pi}\tag{3}$$ Evaluation based on real analysis methods is desirable. Update : I have managed to prove the above mentioned results using hints given in exercises from Borwein's Pi and the AGM (see my answer). But these methods are totally non-obvious and it is desirable to find solutions based on general techniques for evaluation of definite integrals. Borwein's book was with me for a long time and these exercises lay dormant until I receieved a gentle push via user ""Simply Beautiful Art""'s question linked above. Thanks to him for the same.","['integration', 'definite-integrals', 'elliptic-integrals', 'calculus']"
+2391243,"Differential equation $y'(x)=\frac{-\sqrt{y(x)}}{1+x}$ with two branches, are these both valid?","I have the following differential equation:
+$$\frac{dy}{dx} = \frac{-\sqrt{y}}{1+x} $$
+by simple integration we end up with:
+$$y(x) = (C-\frac{\ln{1+x}}{2})^2 $$
+where C is a constant. Now we do also have the condition $y(0) = 1$, which leads to $C=\pm 1$. My question is: are both branches (constants) valid? $C_1 = 1$ does obviously lead to a valid solution, but how about $C_2=-1$? $C=-1$ gives $$y_2(x) = (-1-\frac{\ln{1+x}}{2})^2 $$ which when substituted back in the differenial equation gives the correct result. However, we also have: $$y_2(x) = (-1)^2(1+\frac{\ln{1+x}}{2})^2 = (1+\frac{\ln{1+x}}{2})^2$$ which when substituted back doesn't give the right result, as the minus sign is missing. What solves this apparent contradiction?",['ordinary-differential-equations']
+2391259,How to derive or logically explain the formula for curl?,"Most books state that the formula for curl of a vector field is given by $\nabla \times \vec{V}$ where $\vec{V}$ is a differentiable vector field. Also, they state that: ""The curl of a vector field measures the tendency for the vector field to swirl around"". But, none of them state the derivation of the formula. In other words : ""How can we derive the formula for the quantity which measures the tendency for the vector field to swirl around"" ?","['multivariable-calculus', 'vectors', 'vector-analysis']"
+2391343,A multiplicative Taylor theorem?,"In a first calculus course it is often that one learns about the Taylor polynomials $$f(x) \approx \sum_{k=0}^{N}\frac{f^{(k)}(x_0)(x-x_0)^k}{k!}$$ Which provide increasingly better approximation to a function which needs to be differentiable at the point as many times as the highest exponent. ($f^{(n)}(x_0)$ must exist). Now to my question. What happens if we replace the sum by a product? Is there some concept we can use to create a multiplicative refinement as contrary to an additive one? $$f(x) \approx \prod_{k=0}^N\mathcal F \{f,k,x_0\}(x)$$ Can we derive what this $\mathcal F$ thing (functional?) could be for this to make sense, and what must we demand of $f$ to hold on or around $x_0$?","['functional-analysis', 'calculus', 'approximation']"
+2391358,Normal approximations: What is the probability that player A will have at least 10 points more than player B?,"Two players $A$ and $B$ play the following game. Player $A$ uses a fair 8-sided die with numbers of $1, ...,8$ and rolls it to earn points. For each roll player $A$ collects a numbers of points corresponding to the number shown on the die. Player $B$ uses a fair coin and flips it to earn points. If the outcome is ""heads"", then player B collects $1$ point, if ""tails"" player $B$ collect $8$ points. This game is as follows: Player $A$ rolls the die $n=50$ times and player $B$ flips the coin $n=50$ times, after which player $A$ has collected $Y_A$ points and player B has collected $Y_B$ points. After $n=50$ trials: a) What is the probability that player $A$ will have at least $10$ points more than player $B$? Use normal approximations. b) What is the probability that player $A$ and player $B$ together will have more than $340$ points? Use normal approximations. c) What is the probability that player $B$ will have exactly $225$ points? I have calculated the means/expected values to: mean($Y_A$) = 4,5 and mean($Y_B$) = 4,5, the variances I have calculated to: Var($Y_A$)=5,25 and Var($Y_B$)=12,25. a) 
+Following @callculus answer: 
+I have in a table found Φ(.32) to be .6255. So 1 - 0.6255 = 0.3745, will that say that the probability for player A having at least 10 more points than player B is 37% b) 
+Following the method from a): 
+$$P(Y_A + Y_B > 340) = 1- P(Y_A + Y_B >= 340) = 1 - Φ((340+0.5-450)/\sqrt{875}) \\= 1 - Φ(-3.7) = 1-0.00009 = 99.991\% \approx 100\%$$
+There is almost 100% $P(Y_A+Y_B > 340).$ c)
+Using the binomial PMF with $50$ trials and $25$ successes. $$(50!)/((25!)*(50-25)! * 0.5^{25} * (1-0.5)^{50-25} = 0.112275173.$$ 
+So $P(Y_B = 225) = 11\%.$","['normal-distribution', 'probability-theory', 'statistics', 'probability', 'random-variables']"
+2391382,How to prove $\lim_{x \to 2} x^2 = 4$ and make sure it's correct?,"I would like to specify that english is not my primary language so I had to do some translation here, I do really hope every mathematical term I used is correct, if not please forgive me :) Let's say I want to prove that $\lim_{x \to 2} x^2 = 4$, from what I've read, in order to do that, the solution to $|f(x)-l|<\epsilon$ must contain a neighborhood of $x_{0}$ such as $x_{0}-\delta<x<x_{0}+\delta$ which proves that $|x-x_{0}|<\delta$ So in this case $|x^2-4|<\epsilon$ must contain a neighborhood of $2$, so I proceed by solving that: $-\epsilon<x^2-4<\epsilon$ $4-\epsilon<x^2<4+\epsilon$ $\sqrt{4-\epsilon}<x<\sqrt{4+\epsilon}$ and this is as far as my book goes The limit is proven true because $\sqrt{4-\epsilon}<x<\sqrt{4+\epsilon}$ is a neighborhood of $x_{0}$ which is 2, so when $x\to2$ then $y\to4$ but what I don't understand is: how do we know that $\sqrt{4-\epsilon}<x<\sqrt{4+\epsilon}$ is really a neighborhood of $2$? That doesn't seem obvious to me. Let's say that instead of a ""true"" limit I wanted to prove (Or prove wrong) a ""false"" limit such as $\lim_{x \to 2} x^2 = 8$ which is not true. How do I do that? I can do the usual steps: $-\epsilon<x^2-8<\epsilon$ $8-\epsilon<x^2<8+\epsilon$ $\sqrt{8-\epsilon}<x<\sqrt{8+\epsilon}$ but how do I check if this is really a neighborhood of 2 so that $|x-x_{0}|<\delta$ or not? How do I know if this limit is really proven or not? PS: This is what I've learned reading my book, if anything I said is wrong, please let me know! And if you know a faster/better/simpler method of proving a limit please tell me!","['limits', 'functions', 'calculus', 'algebra-precalculus', 'functional-analysis']"
+2391403,An integral giving back a function which is a factor in the integrand,"I suspect that, under opportune assumptions on $\varphi:\mathbb{R}^3\times\mathbb{R}\to\mathbb{R}$ , $(\boldsymbol{\xi},\tau)\mapsto \varphi(\boldsymbol{\xi},\tau)$ , such as $\varphi\in C_c^2(\mathbb{R}^4)$ , the following identity holds, for any $\alpha\in\mathbb{R}$ : $$
+\int_{\mathbb{R}^3}\frac{\nabla_{\boldsymbol{\xi}}^2\varphi(\boldsymbol{y},t-\alpha\|\boldsymbol{x}-\boldsymbol{y}\|)}{\|\boldsymbol{x}-\boldsymbol{y}\|} -\frac{\alpha^2\ddot\varphi(\boldsymbol{y},t-\alpha\|\boldsymbol{x}-\boldsymbol{y}\|)}{\|\boldsymbol{x}-\boldsymbol{y}\|} d\mu_{\boldsymbol{y}}=-4\pi\varphi(\boldsymbol{x},t)\label{1}\tag{1}$$ where $\nabla_{\boldsymbol{\xi}}^2\varphi$ is the Laplacian calculated with respect to the first tridimensional variable of $\varphi$ (called $\boldsymbol{\xi}$ at the beginning of the post) and $\ddot\varphi$ is the second order derivative with respect to the second variable of $\varphi$ . I am convinced that this equality holds because, if it did, it could be used to rigourously prove that the Lorenz gauge retarded potential $\boldsymbol{A}$ satisfies the equality $$
+\nabla^2\boldsymbol{A}-\varepsilon_0\mu_0\frac{\partial^2 }{\partial t^2}\boldsymbol{A}=-\mu_0\boldsymbol{J}
+$$ in the same way the same equality with $\alpha=0$ , which holds as proved here , can be used to rigourously prove that the the magnetostatic potential is such that $$
+\nabla^2\boldsymbol{A}=-\mu_0\boldsymbol{J}.
+$$ Can anybody help me to prove the equality \eqref{1}? As pointed out in the comments, whose author Daniel Fischer I thank again, the integral might be calculated by integrating by parts and taking the limit of the (Riemann) integral $$
+\int_{\mathbb{R}^3\setminus{B(\boldsymbol{x},\delta)}}\frac{\nabla_{\boldsymbol{\xi}}^2\varphi(\boldsymbol{y},t-\alpha\|\boldsymbol{x}-\boldsymbol{y}\|)}{\|\boldsymbol{x}-\boldsymbol{y}\|} -\frac{\alpha^2\ddot\varphi(\boldsymbol{y},t-\alpha\|\boldsymbol{x}-\boldsymbol{y}\|)}{\|\boldsymbol{x}-\boldsymbol{y}\|} dy_1dy_2dy_3
+$$ as $\delta\to 0$ , but, in the formula of integration by parts $$
+\int_\Omega \frac{\partial f}{\partial x_j} g\ d^3x = \int_{\partial \Omega} fgn_j\, d\sigma -\int_{\Omega} f\frac{\partial g}{\partial x_j}\, d^3x
+$$ (where $n_j$ is the $j$ -th component of the external normal vector to $\partial\Omega$ ), I do not know what to chose as $f$ and $g$ in our integrand. I heartily thank any answerer.","['multivariable-calculus', 'real-analysis', 'integration', 'lebesgue-integral']"
+2391419,plane curve of degree 4,"I was dealing with exercise IV.3.2 in Hartshorne, which says the following: Let $X$ be a plane curve of degree 4. a) Show that the canonical divisors on $X$ are exactly the hyperplane divisors. b) If $D$ is any effective divisor of degree 2 on $X$ , then $\dim |D|=0$ . c) Conclude $X$ is not hyperelliptic. To prove that $X$ is not hyperelliptic it is sufficient to use adjunction formula to obtain $\omega_X=O_X(1)$ , so the canonical divisor $K$ is very ample, hence $X$ is not hyperelliptic. But I wanted to follow the exercise to get a more geometric view of the problem. a) The curve has genus 3 and so $l(K)=3$ and $\deg(K)=4$ . Set $D:=X\cdot L$ , where $L$ is a line. We then have that $D=p_1+...+p_4$ and thus by Riemann-Roch $$l(D)=2+l(K-D).$$ Since $K$ is bpf $l(K-D)\in \{0,1\}$ , if it is $1$ , we get $$K-D\sim 0,$$ as $\deg(K-D)=0$ . Now, to prove $l(K-D)=1$ , I would like to prove $l(D)=3$ . Is there a way of doing it by exploiting the fact that $D=X\cdot L$ ? b) Let $P+Q$ be our degree 2 effective divisor. By Riemann-Roch $$l(P+Q)=l(K-P-Q)$$ and by adjunction we have K bpf as seen before and so $l(P+Q)=1,$ as required. Is there a way to prove it exploiting a)? c) follows by b).","['algebraic-curves', 'algebraic-geometry']"
+2391421,Field importance in a Vector Space,"I know the definition of a vector space. But heuristically, what is the meaning of defining a vector space over a field ? What is the intuition behind the field in a vector space?","['vector-spaces', 'linear-algebra', 'geometry']"
+2391423,Set Functions: Monotonicity and Sub-additivity are Independent?,"This is also asked in MathOverflow https://mathoverflow.net/q/278809 , with confirmation of proposal in a comment. I'm trying to untangle the relationship between monotone and sub-additive functions, and would like confirmation or correction on the proposition that monotonicity and sub-additivity are independent .. If $\mu$ is a set function mapping some collection $\mathscr B$ of subsets of $X$ to $[0, \infty]$ then $\mu$ is monotone if for $A, B \in \mathscr B $ and $A \subset B$ then $\mu(A) \le \mu(B)$ $\mu$ is sub-additve if for $A, B$ and $A \cup B \in \mathscr B $ then $\mu(A \cup B) \le \mu(A) + \mu(B)$ Proposition: monotonicity and sub-additive are independent. Proof by example. Let $\mathscr B $ be the powerset of {$a, b$} (so, $\mathscr B $ has the structure of an algebra) and $\mu$ take the values $\mu(\emptyset) = 0; \mu(\{a\}) = 1 ; \mu(\{b\}) = 1 ; \mu(\{a, b\}) = 0 $ or $3 $ Then for $\mu(\{a, b\}) = 0 $,  $\mu$ is sub-additive $\mu(\{a, b\}) = 0 \le 2 = \mu(\{a\}) + \mu(\{b\}) $, but not monotone $\{a\} \subset \{a, b\}$ but $1 = \mu(\{a\}) > 0 = \mu(\{a, b\})$ While for $\mu(\{a, b\}) = 3 $,  $\mu$ is monotone $\{a\} \subset \{a, b\}$ and $1 = \mu(\{a\}) < 3 = \mu(\{a, b\})$, but not sub-additive $\mu(\{a, b\}) = 3 > 2 = \mu(\{a\}) + \mu(\{b\}) $ (I found this particularity confusing since it seems that finitely monotone $\implies$ finitely sub-additive and countably monotone $\implies$ countably sub-additive. It appears that monotone (as defined above) is of a somewhat different nature to finitely monotone).","['measure-theory', 'elementary-set-theory']"
+2391429,Does there exist a real everywhere differentiable function with the set of critical values of non zero measure?,"By Sard's theorem, the measure of the set of critical values of a continuously differentiable real function defined on the real line is zero. Is there a counterexample when one omits the condition of continuity of the derivative (but still demands its existence)? (I have read about the Pompeiu derivative in the answers on this site, whose antiderivative as I understood has a $G_\delta$ dense set of critical values in the unit interval, but I did not find a statement about its measure).","['real-analysis', 'examples-counterexamples']"
+2391453,"Almost every section of measurable set in $[0,1]^2$ is measurable","Let $A\subseteq[0,1]^2$ be a Lebesgue-measurable set. For $x\in [0,1]$, we define $A_x$ as $\{y:(x,y)\in A\}$. Prove that $A_x$ is measurable for almost all $x\in[0,1]$. I know that the ""almost every'' is indeed needed, since we could have $A=V\times\{0\}$ for $V$ the Vitali set -- then $A$ has outer measure zero, so it is measurable, but $A_0$ is not measurable. This question is similar, but it asks about product measure, while the Lebesgue measure on $[0,1]^2$ is not just the product measure, but completion of it.","['lebesgue-measure', 'measure-theory']"
+2391457,"How to find an integer matrix $P$ such that $PAP^{-1}=B$ for given two similar, integer matrices $A$ and $B$?","An integer matrix is a matrix whose coefficients are integers. Suppose that two given invertible, integer $3\times 3$ matrices $A$ and $B$ are similar to each other, that is, there exists an invertible, integer matrix $P$ such that $PAP^{-1}=B$. Assuming that we know such a matrix $P$ exists, how can we concretely find $P$? I would like to know how to find $P$ for the case that $A=\begin{bmatrix}0&25&37\\ 0&2&3\\1&0&38\end{bmatrix}$ and $B=\begin{bmatrix}0&23&297\\ 0&12&155\\1&0&28\end{bmatrix}$. (One can check that $A$ and $B$ are similar by using a theorem of Latimer and MacDufee.)","['matrices', 'linear-algebra']"
+2391509,Is there a way to associate a Lie algebra to the group of diffeomorphisms?,"Let $M$ a closed (smooth) manifold. The group $Diff(M)$ of all difeomorphisms of $M$ is infinite dimensional, therefore it is not a Lie group. Is there a way to associate a Lie algebra to this? If so, is there some concrete descrpition of such Lie algebra? EDIT: I would welcome some references. 
+According to the question in the comments: the Lie algebra of the Lie group $G$ is defined as Lie algebra of left invariant vetor fields on $G$. Therefore for an infinite dimensional $G$ we would like to have a notion of a vector field. Vector fields are defined as section of the tangent bundle: the fibers of the tangent bundle are tangent spaces. We define the tangent space at a given point $x$ as the set of classes of smooth curves $\gamma:I \to G, \gamma(0)=x$ with equivalence relation $\gamma_1 \sim \gamma_2$ iff for any chart $\varphi$ we have $\frac{d}{dt}(\varphi \circ \gamma_1)(0)=\frac{d}{dt}(\varphi \circ \gamma_2)(0)$. This set is in one to one correspondence with $\mathbb{R}^n$ for $n$-dimensional manifolds and the linear structure is transported via this correspondence. In infinite dimension there are few delicate moments: instead $\mathbb{R}^n$ we need another ,,model space''. Which model space we choose for infinite dimensional Lie groups, in particular for $Diff(M)$? Moreover while defining tangent space we need derivative: which notion do we use?","['smooth-manifolds', 'differential-geometry', 'lie-algebras', 'lie-groups']"
+2391516,Primes that can't be written as sum of two squares. Mod,I came to this conclusion: the primes that can't be written as the sum of two squares (lets use$p\prime$ to denote) can be written as ${p}\prime \equiv 3 \;(\bmod\; 4)$. I need a simple proof to show this and am stuck. I would appreciate guidance!,"['discrete-mathematics', 'modular-arithmetic', 'elementary-number-theory']"
+2391531,All Solutions to $ \frac{dy}{dx} = (y-1)e^x $,$ \frac{dy}{dx} = (y-1)e^x $ a) Find all solutions to the above differential equation b) Find the solution of the differential equation above that satisfies $y(0) = 5 $ c) Find the solution of the differential equation above that satisfies $y(0) =1 $ Here is what I have done: a) $\int \frac{dy}{y-1} = \int e^x dx $ $ln|y-1| = e^x + C$ $y= Ce^{e^x} +1 $ Does the above cover all cases for the absolute value? The division by zero case: When $(y-1) = 0 \implies (y-1)e^x = 0 \implies (y-1) = 0 \implies y=1 $ b) $5= Ce^{e^0} + 1 \implies \frac{4}{e} = C \implies y = \frac{4}{e}e^{e^x} + 1 $ c) $ 1= Ce^{e^0} + 1 \implies C=0 \implies y = 1 $ Does this work look alright?,"['ordinary-differential-equations', 'calculus']"
+2391533,Notation for zero matrix [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 6 years ago . Improve this question I'm confused by notation for matrices. Does $0_n$ mean a zero matrix of size nXn or a zero vector of size nX1 ?","['matrices', 'linear-algebra']"
+2391561,$\cos (\cos x) > \sin (\sin x)$,"Show that $\forall x \in \mathbb{R}\ \cos (\cos x) > \sin (\sin x)$ I've tried the obvious thing to do: $\varphi: x \mapsto \cos(\cos x) - \sin (\sin x)$ $\varphi ' (x) = \sin (\cos x) \sin x - \cos(\sin x) \cos x$ I'd like to show now that $\varphi$ is a positive function for all $x \in \mathbb{R}$, but the derivative does not look friendly so either there's something with $\varphi '$. I'm not seeing or it's not the right way. Any hint or idea?","['inequality', 'trigonometry', 'cauchy-schwarz-inequality']"
+2391564,How to change the appearence of the correct answer of $\cos55^\circ\cdot\cos65^\circ\cdot\cos175^\circ$,"I represented the problem in the following view and solved it: $$\begin{align}-\sin35^\circ\cdot\sin25^\circ\cdot\sin85^\circ\cdot\sin45^\circ&=A\cdot\sin45^\circ\\ -\frac{1}{2}(\cos20^\circ-\cos70^\circ)\cdot\frac{1}{2}(\cos50^\circ-\cos120^\circ)&=A\cdot\sin45^\circ\\ \cos20^\circ\cdot\cos50^\circ-\cos50^\circ\cdot\cos70^\circ+\frac{\cos20^\circ}{2}-\frac{\cos70^\circ}{2}&=A\cdot(-4)\cdot \sin45^\circ\\ \frac{1}{2}(\cos30^\circ+\cos70^\circ)-\frac{1}{2}(\cos20^\circ+\cos120^\circ)&=A\cdot(-4)\cdot \sin45^\circ\\ \frac{\sqrt{3}}{4}+\frac{\cos70^\circ}{2}-\frac{\cos20^\circ}{2}+\frac{1}{4}+\frac{\cos20^\circ}{2}-\frac{\cos70^\circ}{2}&=-2\sqrt{2}A\\ A&=-\frac{\sqrt{6}+\sqrt{2}}{16}  \end{align}$$ I believe that the above answer is true. But that didn't match a variant below: A) $-\frac{1}{8}$ B) $-\frac{\sqrt{3}}{8}$ C) $\frac{\sqrt{3}}{8}$ D) $-\frac{1}{8}\sqrt{2-\sqrt{3}}$ E) $-\frac{1}{8}\sqrt{2+\sqrt{3}}$ I did the problem over again. After getting the same result, I thought that the apperance of my answer could be changed to match one above, so I tried to implement one of formulae involving radical numbers: all to no avail. How to change that?","['algebra-precalculus', 'trigonometry']"
+2391594,How to prove existence of this limit?,"Prove that
+$$\lim_{n\to\infty}(g(n+1)-g(n))$$
+exists when $$g(n)=16^n\left(1+2\sum_{j=1}^n (-1)^j \cos^{2n}\left(\frac{j \pi}{2n+1}\right)\right)^2$$
+I can't see how to do this. What' the first step?","['convergence-divergence', 'calculus', 'limits']"
+2391638,Closed Form for this Taylor Series?,"Does anybody know whether or not this sum has a closed form?
+$$f(x)=\sum_{n=0}^\infty \frac{x^n}{n!(2^n+1)}$$
+I can't get WA to even understand it when I type it in. For context, the reason I want to know is that I calculated it as the solution to the functional equation
+$$f(x)+f(2x)=e^x$$","['taylor-expansion', 'summation', 'sequences-and-series', 'closed-form']"
+2391685,Infimum of a metric is continuous [duplicate],"This question already has an answer here : Distance of a point to a subset. (1 answer) Closed 6 years ago . So assume $(X,d)$ is a metric space with $A \subseteq X$ as a subspace. Show that the function $f: X \rightarrow \mathbb{R}$ defined by $f(x)=\inf\{d(x,a)|a\in A\}$is continuous. My instinct is to use the definition of continuity for metric spaces. Namesly, given any $\epsilon >0$, there is a $\delta$, such that: $d(x,y) < \delta \implies d(f(x),f(y))< \epsilon$, can I therefore assume that $\mathbb{R}$ has the usual topology or does that change the nature of what's being asked? Thanks","['continuity', 'general-topology', 'metric-spaces']"
+2391703,Estimator of $\mu - \mu^2$ when sampling without replacement,"Question Consider a population of known size $N$, from which we sample $n$ individuals without replacement and measure their trait value $X_i$. All traits values are bounded between $[0,1]$. Let $\mu = \frac{\sum_i^N x_i}{N}$ be the average trait value in the population. If it makes things easier, I am happy to consider that $X$ is boolean ($0$ or $1$). What is the unbiased estimator for $\mu - \mu^2$? Attempt $$ \begin{align}
+\mu - \mu^2
+&= \operatorname{E}[\bar X] - \operatorname{E}[\bar X]^2\\
+&= \operatorname{E}[\bar X] - \operatorname{E}[\bar X]^2 - \operatorname{var}[\bar X] + \operatorname{var}[\bar X] \\
+&= \operatorname{E}[\bar X] - \operatorname{E}[\bar X]^2 - \operatorname{var}[\bar X] + \frac{1}{n} \sigma^2 \\
+&= \operatorname{E}[\bar X] - \operatorname{E}[\bar X^2] + \frac{1}{n} \operatorname{E}[\hat \sigma^2],
+\end{align}$$ where $\hat \sigma^2$ is the estimator for the variance. Looking at this post , $$\hat\sigma^2 = \frac{N-1}{N(n-1)} \sum_{i=1}^n (X_i-\bar X)^2$$ Hence, $$\mu - \mu^2 = \operatorname{E}\left[ \bar X - \bar X^2 + \frac{1}{n} \frac{N-1}{N(n-1)} \sum_{i=1}^n (X_i-\bar X)^2\right] $$ Test Looked good to me so I tried it out (in R ) nbtrials = 5000      # number of independent samples
+N = 20               # Number of individuals in the population
+pop = rep(0:1, N/2)  # Create a boolean population with $\mu = 0.5$
+n = 17               # Sample size
+
+out = numeric(nbtrials)  # out will collect the estimates of $\mu - \mu^2$
+for (trial in 1:nbtrials)
+{
+    s = sample(pop,size=n, replace=FALSE)   # Take a sample without replacement
+    xbar = sum(s) / n                       # Compute the average frequency in the sample
+    out[trial] = xbar - xbar^2 + 1/n * (N - 1) / (N*(n-1)) * sum((s - mean(s))^2)   # Compute the estimator
+}
+
+# Now compare the population with the average of estimations taken from the samples
+trueMean=sum(pop) / length(pop)
+print(paste(""True value  = "",trueMean *(1-trueMean)))
+print(paste(""Average estimated value = "",mean(out))) which outputs something like ""True value  =  0.25""
+""Average estimated value =  0.262343771626298"" showing a clear systematic overestimation. Where did I go wrong? Where does the mistake lie? From @EinarRødland's comment, it seems likely that my mistake is in the equation $var[\bar X] = \frac{\sigma^2}{n}$, which is wrong due to the fact that sampling occurs without replacement from a finite population.","['sampling', 'variance', 'statistics', 'estimation', 'probability']"
+2391727,Finite difference second derivative: Error analysis,"I want to approximate $f''(x)$ using finite differences. From 
+\begin{align*}
+f(x+h)=f(x)+f'(x)h+\frac{1}{2}f''(x)h^2+\frac{1}{6}f'''(x)h^3+O(h^4),\\
+f(x-h)=f(x)-f'(x)h+\frac{1}{2}f''(x)h^2-\frac{1}{6}f'''(x)h^3+O(h^4),
+\end{align*}
+we easily obtain
+\begin{align}
+f''(x)=\frac{f(x+h)-2f(x)+f(x-h)}{h^2}+O(h^2).
+\end{align}
+Alternatively, we can apply centered finite differences twice with step size $h/2$ and error $O(h^2)$ to write: 
+\begin{align}
+f''(x) &= \frac{f'(x+h/2)-f'(x-h/2)}{h}+O(h^2)\\
+&=\frac{\frac{f(x+h)-f(x)}{h}-\frac{f(x)-f(x-h)}{h}+O(h^2)}{h}+O(h^2)\\
+&=\frac{f(x+h)-2f(x)+f(x-h)}{h^2}+O(h)+O(h^2).
+\end{align}
+I do not understand the inconsistency between the two approaches. Should the $O(h)$ error term above vanish?","['derivatives', 'numerical-methods', 'taylor-expansion', 'finite-differences']"
+2391764,Proof that Connection is local operator.,"Recently i tried to studying Riemannian Geometry using John Lee's book Riemannian Manifolds : An Introduction to Curvature. There is an exercise about completing the proof in Lemma 4.1. Its about showing that a connection is a local operator. I've already done that, but i was not really sure that my proof is valid. Let $\mathfrak{X}(M)$ space of smooth vector fields and $\Gamma(E)$ be the space of smooth sections on $\pi :E \rightarrow M$. And
+$$\nabla : \mathfrak{X}(M) \times \Gamma(E) \rightarrow \Gamma(E) $$
+be a connection in a bundle $E$. Show that $\nabla$ is a local operator. I.e 1).Show that
+$\nabla_X Y (p) = 0 $ if $Y \in \Gamma(E)$ is vanishes on a nbhd $U$ of $p$. $\textbf{Proof from the book} :$ Let $p \in U \subset M$,  $\mathfrak{X}(M)$ , $Y \in \Gamma(E)$ s.t $Y(p)\equiv 0$ for all $p \in U$. Choose a smooth bump function $$\varphi : M \rightarrow \mathbb{R}, \qquad \text{supp }\varphi \subset U,\qquad \varphi(p)=1$$ So $\varphi Y \equiv 0$ for all $M$. Therefore by linearity $$\nabla_X(\varphi Y) (p) = \nabla_X(0 \cdot \varphi Y)(p) = 0 \cdot \nabla_X(\varphi Y)(p) = 0$$ and product rule gives $$0 = \nabla_X(\varphi Y)(p) = (X\varphi )(p)Y_p + \varphi(p) \nabla_X Y(p) = 0+ 1.\nabla_X Y(p) = \nabla_X Y(p) \qquad \qquad \square$$ When i'm trying to prove it, i end up choose bump function differently. $\textbf{My proof} :$ The subset $M \smallsetminus \{p\}$ is open and $M \smallsetminus U$ is closed. Choose a smooth bump function $\varphi$ for $M \smallsetminus U$ supported in $M \smallsetminus \{p\}$. Because $\varphi \equiv 1$ on $M \smallsetminus U$ and supp $ \varphi \subset M \smallsetminus \{p\}$, $\varphi Y \equiv Y$ in all $M$. So 
+$$\nabla_X Y(p) = \nabla_X (\varphi Y)(p) = (X \varphi)(p) Y_p  + \varphi(p)\nabla_X Y(p) = 0 \qquad \qquad \qquad \square$$ Is this this valid ? Thank you. $\textbf{EDIT}$ : I just want to tell that i accidentally i encounter the similar technique to choose bump function as i did above in Helgason's book Differential Geometry, Lie Groups, and Symmetric Spaces.","['connections', 'riemannian-geometry', 'differential-geometry']"
+2391766,Proof marginal distribution of multivariate normal with mgf,"How I can proof that if $\bf{Y}$ is a random vector with distribution
+  multivariate normal $N_p(\bf{\mu},\bf{\Sigma}$) each $Y_i\sim
+ N(\mu_i,\sigma_i^2)$. I know that $$M_\bf{Y}(\bf{t})=\exp\{\bf{\mu}'\bf{t}+\frac{1}{2}\bf{t}'\bf{\Sigma}t\}$$ If I take $\bf{t}=(0,\dots,0,1,\dots,0)=t_i$ then
+$$M_\bf{Y}(\bf{t})=\exp\{\mu_i+\frac{1}{2}t_i^2\sigma_i^2\}=M_{Y_i}(t_i)=M_\bf{Y}(0,\dots,0,1,\dots,0)$$ and $M_{Y_i}(t_i)$ is the moment generating function of a normal random variable so $Y_i\sim N(\mu_i,\sigma_i^2)$. Is it valid? I mean it proofs anything?","['statistics', 'probability', 'normal-distribution']"
+2391769,"What is the number of binary strings of length N with exactly R runs of ones, with C total ones?","I'm concerned with the total number of ones, and the total number of runs, but not with the size of any of the runs. For example, $N=8$, $R=3$, $C=5$ includes 11101010, 01101011 among the 24 total possible strings. I can compute these for small $N$ easily enough, but I am specifically interested in the distribution for $N=65536$. As this will result in very large integers, the log probability distribution is equally useful. I found [1] and [2], which includes this: Let $N_{n;g_k,s_k}$ denote the number of binary strings which contain for given $g_k$ and $s_k$, $g_k=0,1,…,⌊\frac{s_k}{k}⌋$, $s_k=0,k,k+1,…,n$, exactly $g_k$ runs of 1’s of length at least $k$ with total number of 1’s (with sum of lengths of runs of 1’s) exactly equal to $s_k$ in all possible binary strings of length $n$. An expression for this is given in eq. (24): $N_{n;g_k,s_k} = \sum_{y=0}^{n-s_k}
+{y+1 \choose g_k }
+{s_k-(k-1)g_k-1 \choose g_k-1}
+\sum_{j=0}^{⌊\frac{n-y-s_k}{k}⌋}
+(-1)^j
+{y+1-g_k \choose j}
+{n-s_k-kj-g_k \choose n-s_k-kj-y}
+$ for $g_k \in \{1, ..., ⌊\frac{s_k}{k}⌋\}$, $s_k \in \{k, k+1, ..., n\}$. I think this is exactly what I'm looking for, with $k = 1$, $s_k = C$ and $g_k = R$. However, when I implemented this I did not get the expected results (Python shown below, edge cases omitted), based on comparing to counting all strings for N=8. I am working backwards to try to understand where I might have gone wrong, but not having much luck yet. I wonder if I am misunderstanding the result. def F(x, y, n):
+    # x = C or s_k (cardinality)
+    # y = R or g_k (runCount)
+    # n = N (total bits)
+
+    a1 = 0
+    for z in range(n-x+1):
+        b1 = choose(z+1, y) * choose(x-1, y-1)
+        a2 = 0
+        for j in range(n-z-x+1):
+            a2 += (-1) ** j * choose(z+1-y, j) * choose(n-x-j-y, n-x-j-z)
+        a1 += b1 * a2
+
+    return a1 Note that the choose function uses factorial, which I realize won't work for larger $N$ - but should be fine for $N=8$. Edit: corrected a sign error typo in eq. (24) and the equivalent error in the python code. [1] Counting Runs of Ones and Ones in Runs of Ones in
+Binary Strings, Frosso S. Makri, Zaharias M. Psillakis, Nikolaos Kollas https://file.scirp.org/pdf/OJAppS_2013011110241057.pdf [2] On success runs of a fixed length in Bernoulli sequences: Exact and asymptotic results, Frosso S.Makria, Zaharias M.Psillakis http://www.sciencedirect.com/science/article/pii/S0898122110009284","['binary', 'bit-strings', 'probability', 'combinatorics', 'polya-urn-model']"
+2391771,Coordinate free equation for electric field by a pure dipole.,"I am trying to derive $$\mathbf E(\mathbf r) =  \dfrac1{4\pi\varepsilon_0} \left(3(\bf p \cdot \mathbf {\hat {r}} ) \mathbf{\hat{r}} - \bf p \right)$$ From $$V(\mathbf r) =\dfrac{ \bf \hat r\cdot  p}{4\pi\varepsilon_0 r^2}  $$ Where $\bf p$ is the dipole vector defined by  $$\mathbf p = \int_\text{Volume} \mathbf r^\prime {\rho}{(}\mathbf r^\prime{)}{d\tau^\prime}$$ Where $d\tau^\prime$ is the volume element, Using $\mathbf E = {-\nabla V}$, $$\mathbf E  = -\dfrac1{4\pi\varepsilon_0}\left( \dfrac{\mathbf{ \hat{r}}}{r^2} \times (\nabla\times \mathbf p) + \mathbf p \times \left(\nabla\times \dfrac{\mathbf{ \hat{r}}}{r^2}\right) +   (\mathbf p\cdot\nabla)\dfrac{\mathbf{ \hat{r}}}{r^2} + \left(\dfrac{\mathbf{ \hat{r}}}{r^2}  \cdot\nabla\right) \mathbf p\right)$$. Now I don't know how to simplify this expression without using a specific coordinate system. Any hints ?","['physics', 'mathematical-physics', 'calculus', 'multivariable-calculus', 'linear-algebra']"
+2391787,"Proving a set $E$ satisfying that $m^*(E\cap(a,b))<b-a$ for all $(a,b)$ has zero Lebesgue measure.","Let $m^*$ denote the outer measure corresponding to the Lebesgue measure on $\mathbb{R}$, i.e., $$m^*(A)=\inf\{\sum_{n=1}^\infty l(I_n):A\subset\bigcup_{n=1}^\infty I_n\},$$ where $A\subset\mathbb{R}$, $I_n\subset\mathbb{R}$ is a bounded open interval for $n=1,2,\dots$ and $l((a,b))$ is the length of the interval $(a,b)$. Let $0<\rho<1$. Proof that if $E\subset\mathbb{R}$ and for all intervals $(a,b)$ we have that $m^*(E\cap(a,b))\leq\rho(b-a)$, then $E$ has zero Lebesgue measure. Commonly, I would add some comments and thoughts about the question, but I'm pretty stuck on this one.","['lebesgue-measure', 'measure-theory']"
+2391812,"The largest integer that divides $p^4-1$, in which p is a prime greater than $5$ [duplicate]","This question already has answers here : What is the greatest integer that divides $p^4-1$ for every prime number $p$ greater than $5$? (4 answers) Closed 6 years ago . The question is to find the largest integer that divides all $p^4-1$, where p is a prime greater than 5. Being asked this question, I just assume this number exists. Set $p = 7$, then $p^4-1=2400$. I don't have any background in number theory and not sure what to do next. Thank you for your help!",['number-theory']
+2391815,Large sums of quadratic residues,"Let $p \equiv 3 \pmod{4}$ be prime, and define
+$$
+f(p)=\sum_{m=1}^{\frac{p-1}{2}}\sum_{n=1}^{\frac{p-1}{2}}\left(\frac{m+n-\frac{p+1}{4}}{p}\right),
+$$
+where $\left(\frac{a}{p}\right)$ denotes the Legendre symbol (i.e. +1,-1,0, depending on whether $a$ is a quadratic residue/non-residue/zero). The construction of $f(p)$ is admittedly artificial and was essentially done by trial-and-error to create a ""large"" f(p). What I'm interested in showing (which I'm not even sure is true) is that
+$$
+f(p) = \Theta(p \sqrt{p}).
+$$ Now, I've programmatically computed $f(p)$ for all $p < 50000$, and it is from this that I'm conjecturing
+$$
+\frac{p \sqrt{p}}{6} \le f(p) \le \frac{p \sqrt{p}}{4}.
+$$
+In particular, it is the lower bound that I'm actually interested in (though the upper bound might also be interesting in its own way), since I would have expected $f(p)$ to be close to zero. More generally, are there any papers that research something similar to this? The closest things I can find are related to clique numbers of Paley graphs, or the smallest quadratic non-residue, but neither of these seem to relate directly to this question.","['number-theory', 'quadratic-residues']"
+2391822,Which set is considered to be well defined in set theory?,"I just started learning set theory and in my book a lot of questions start with ""Let A be the set defined as ..."" , but it in most cases turns out that the set $A$ (for which they claim is ""defined"" ) is actually not defined, but just satisfies some statements. I am looking for a set of rules which will help me determine if a given statement is ""completelly defining"" a set or just ""describing"" it. Here are some examples to help me better explain what I mean. For example, statement $A=\{\}$ completelly defines set $A$. There is exactly one set $A$ for which it is true (and obviously $A$ is empty set). However, statement $A=A\cup\left\{\{\}\right\}$ just describes set $A$. It tells us that $A$ contains empty set, but it doesn't tell us anything more about set $A$. We cannot, for example, determine if $\left\{\left\{\{\}\right\}\right\}\in A$ or not. However, there are also the third type of sets which are contradictory to itself. For example $A\in A$ tells us that there is no set $A$ which satisfies that statement. So, I'm looking for a way to determine if a given statement which includes some set $A$ is defining it, describing it or making it inconsistent. It may look obvious, but there are some sets I really cannot figure out are they well-defined or not. For example, lets see some test suites: $$A=\left\{a\mid a=\{\}\lor\exists b\in A\left(a=\{b\}\right)\right\}$$ Is the above set well-defined? I mean, is there exactly one set $A$ which satisfies the above statement? I think it is well-defined, but I cannot prove it. Also, lets see another example I came up with: $$A=\{a\mid a\notin A\}\cap\left\{\right\}$$ Is the above set well defined? I really have no clue what to think in this situation. Our book is focusin on pretty pragmatical examples and doesn't cover these edge cases. But, I'm just curious how to determine if some set is well-defined or not. I know we cannot determine for every set is it well-defined because of Godel theorem. But, I am pretty sure these two examples can be proved to be either well-defined (exactly one set $A$ satisfies it), just described (more than one set $A$ satisfies it) or inconsistent (there is no such set $A$). So, my questions has two parts: How to generally determine if a statement is well-defining a set? Does the first example I posted well-define set $A$? Does the second example well-define it? Thank you in advance. Edit To avoid misunderstanding, I'm using ZFC set of axioms.","['axioms', 'proof-theory', 'elementary-set-theory', 'quantifiers']"
+2391836,find the limit of a measure,"Suppose $E$ is a Lebesgue measurable set of finite measure. Find $$\lim_{h\to 0^+} \frac{m(E\cap[x,x+h])}{h}$$.
+ It seems to me that this limit is the indicator function over E, if we consider it into two cases: x in E and x not in E.
+In the case when x is in E, I want to have the fraction equal to 1 when h is sufficiently small, but I got stuck.
+Please help me, thank you",['measure-theory']
+2391840,Isosceles triangle,"$\Delta ABC$ in the figure below: $\angle 1+\angle 2=\angle 3+\angle 4,\quad$ $E\in AB,\; D\in AC,\; F=BD\cap CE,$ $BD=CE$. Prove: $AB=AC$ The exact version figure should look like: This problem should be a little more difficult than the Steiner-Lehmus Theorem.","['trigonometry', 'analytic-geometry', 'euclidean-geometry', 'triangles', 'geometry']"
+2391908,is the sum of the square of two real numbers greater than or equal to twice the product of the two real numbers?,"I'm learning how to write proofs and cant seem to figure out how to do this one. Specifically Im interested if it is possible to prove the inequality by contradiction, contraposition, or by a direct proof; or if its possible at all.",['discrete-mathematics']
+2391911,"Maximum Likelihood Estimator of Uniform($-2 \theta, 5 \theta$)","Let $X = (X_1, \dots, X_n)$ be a random sample from the Uniform($-2 \theta, 5 \theta$) distribution with $\theta > 0$ unknown. Find the maximum likelihood estimator (MLE) for $\theta.$ Furthermore, determine whether the MLE $\hat{\theta}$ is a function of a one-dimensional sufficient statistic for $\theta.$ Let $M = \max{ \{X_1, \dots, X_n \}}$ and $L = \min{ \{X_1, \dots, X_n \}}.$ Consider the likelihood function of $\theta$ $$L(\theta; x) = \prod_{k=1}^{n} f(x_k ; \theta) = \prod_{k=1}^{n} \frac{1}{7 \theta} \cdot \mathbf{1}_{(-2 \theta, 5 \theta)}(x_k) = \frac{1}{(7 \theta)^n} \cdot \mathbf{1}_{(-2 \theta, 5 \theta)}(m) \cdot \mathbf{1}_{(-2 \theta, 5 \theta)}(\ell) \cdot \prod_{k=1}^{n} \mathbf{1}_{\mathbf{R}}(x_k).$$ By the Factorization Theorem, it follows that $(M, L)$ is sufficient for $\theta,$ and in fact, it is easy to show that $(M, L)$ is minimal sufficient for $\theta.$ Our candidates for the MLE include $M,$ $L,$ and functions of $M$ and $L,$ e.g., the midrange $\frac{M-L}{2};$ however, I am running into difficulty finding the MLE and establishing that it gives a maximum. On first glance, it appeared that $\hat{\theta} = L$ because $m \geq \ell$ implies that $\frac{1}{(7m)^n} \leq \frac{1}{(7 \ell)^n};$ however, this is only true if $m \geq \ell > 0.$ Reading a few other posts on here, I considered the possibility that the midrange $\frac{M-L}{2}$ is the MLE for $\theta.$ Of course, the difficulty arises out of the fact that there are many possibilities for $L$ and $M$: $m \geq \ell > 0,$ $m \geq 0 > \ell,$ and $0 \geq m > \ell,$ to name a few. Can anyone offer any helpful insight or tips?","['maximum-likelihood', 'probability-theory', 'statistics', 'parameter-estimation']"
+2391942,Analyze $y' = y\cdot \cos(x+y)$,"Anyone familiar with Mathematica will realize this ODE is the first example of the NDSolve command's documentation, a screenshot of which is shown below I am wondering if it possible to get some insight of this ODE analytically. For example, I tried the standard perturbation approach. First introduce a small parameter $\epsilon$ so that the ODE becomes $$
+y' = y \cdot \cos(x + \epsilon y)
+$$ The initial conditions is still $y(0) = 1$. Substitute $y = y_0 + \epsilon y_1$ and expand, the 0th order system is
+$$
+y_0'=y_0 \cos(x), y_0(0) = 1
+$$
+The solution is $y_0(x) = e^{\sin(x)}$. The 1st order system is
+$$
+y_1' = y_1 \cos(x)  -\sin(x) e^{2 \sin(x)}, y_1(0) = 0
+$$
+Unfortunately, there is no analytical solution for $y_1$ and I got stuck. Are there more advanced analytical methods that can extract something from this equation? For example, to predict that there is a decreasing trend of the function? Or even get the rate of this trend? Thanks! Update (Aug. 14) A minor improvement is to use the ansatz $y = f(x)e^{\sin(x)}$, substitute to have
+$$
+f' + f\cos(x) = f\cos(x + f e^{\sin(x)}); f(0) = 1
+$$
+If we lump $e^{\sin(x)}$ to be the average over $2\pi$, which is about 1.27; and we further use $f\sim 1$ in the $\cos$ function to linearize it, we have:
+$$
+f' + f\cos(x) = f\cos(x + 1.27); f(0) = 1
+$$
+Solve $f$ and $f e^{\sin(x)}$ is plotted (blue) below together with the ""exact"" numerical solution (yellow). The analytical solution roughly captures the solution behavior up to $x \sim \pi$, and becomes useless for larger $x$. I would appreciate it if anyone can bring up a method that captures the ""long-term"" solution behavior. Update 2 (Aug. 16) Having no clue of analytical methods, I decide to play with the numbers. Putting the numerical solution in log-log plot suggests overall the function decreases as $1/x$. For large $x$, $y \ll x$ in the cosine function, and $y' = y \cos(x)$ gives $y \propto e^{\sin(x)}$. Unfortunately, the decreasing trend is NOT captured at all! Anyway, piecing all the hints together, and with some eyeballing, I got to ""fit"" a function $2 e^{\sin(x)} /x$. It is plotted below (black, oscillating curve). Shown together are two envelope curves $5/x$ and $0.6/x$ (black, smooth curves), and the numerical curve (red, oscillating curve). I do feel the leading order behavior is captured--I may still be wrong, but how to derive it analytically?","['asymptotics', 'ordinary-differential-equations', 'perturbation-theory']"
+2391973,Show that if $ \ A \cup B = A$ and $ \ A\cap B = A$ then $ \ A = B$,"Question: Show that if $ \ A \cup B = A$ and $ \ A\cap  B = A$ then $ \ A = B$ My attempt: Proof by contradiction: Assume $ \ A \cup B = A$ and $ \ A\cap  B = A$ and $ \ A \neq B$ Case 1: $ \exists \ x \in A, x\notin B$ If $ x \in A \implies x\in A \cap B \implies x \in A \ and \  x\in B 
+\implies x\in B$, a contradiction. Case 2: $ \exists \ x \in B, x\notin A$ If $ \ x \in B \implies x\in A \cup B \implies x\in A$, since $ \ A \cup B = A$. Contradiction. Is this approach correct? Could someone please show me how to do a direct proof?","['proof-writing', 'elementary-set-theory']"
+2391978,Is there a geometrical method to prove $x<\frac{\sin x +\tan x}{2}$?,"Suppose $x \in (0,\frac{\pi}{2})$ and we want to prove $$x<\frac{\sin x +\tan x}{2}$$I tried to prove it by taking $f(x)=\sin x+ \tan x -2x$ and show $f(x) >0 ,when\space  x \in (0,\frac{\pi}{2})$ take f'$$f'=\cos x +1+\tan ^2 x-2\\=\tan^2 x-(1-\cos x)\\=\tan ^2 x-2sin^2(\frac x2)$$ I get stuck here ,because the last line need to be proved $\tan ^2 x>2sin^2(\frac x2) ,when\space  x \in (0,\frac{\pi}{2})$
+$\bf{Question}:$ Is there a geometrical method to prove the first inequality ? (or other idea) Thanks in advance. $\bf{Remark}: $I can see the function is increasing $when\space  x \in (0,\frac{\pi}{2})$ like below : https://www.desmos.com/calculator/www2psnhmu","['alternative-proof', 'trigonometry', 'calculus', 'proof-writing', 'geometry']"
+2391988,Finding number $\overline{ATOM}$ such that $\sqrt{\overline{ATOM}}=A+\overline{TO}+M$,"$\overline{ATOM}$ is four digits number such that
+$\sqrt{\overline{ATOM}}=A+\overline{TO}+M$. How to find the numbers  ? I am sure that $M\neq2,3,7,8$ because it is a perfect square. I wrote $\overline{ATOM}=M+10O+100T+1000T$ and r.h.s as $M+O+10T+A$ I tried some algebraic calculations, but I  can't go further more. I have no clue to solve this problem. 
+If you can give an idea to solve, I am thankful.","['number-theory', 'elementary-number-theory']"
+2391994,Neighbourhood filter of a uniform space,"The Wikipedia page for Uniform space includes the following section: Every uniform space $V$ becomes a topological space by defining a subset $O$ of $X$ to be open if and only if for every $x$ in $O$ there exists an entourage $V$ such that $V[x]$ is a subset of $O$. In this topology, the neighbourhood filter of a point $x$ is $\{V[x] : V∈Φ\}$. This can be proved with a recursive use of the existence of a ""half-size"" entourage. Compared to a general topological space the existence of the uniform structure makes possible the comparison of sizes of neighbourhoods: $V[x]$ and $V[y]$ are considered to be of the ""same size"". While I have worked through and proved that the topology described is in fact a topology, I'm stuck on how it can be proved that $\{V[x] : V∈Φ\}$ defines the neighbourhood filter of $x$, as I don't understand what the hint there is trying to tell me. I want to work through the full proof myself, but are there any extra hints to push me in the right direction?","['general-topology', 'uniform-spaces', 'filters']"
+2392001,recurrence relation with min-max,"While solving a puzzle I got stuck with this recurrence \begin{align*}  &A(n) = \min_x \left \{ \max \left [ x,  1+A(n-x)
+\right ] \right \} \\ &\text{where }A(1) = 1,A(0) = 0 \text{ and } 1 \leq x
+\leq n , \text{ x is natural }\\ \end{align*} Please give some idea how to proceed ?
+Thanks !","['recurrence-relations', 'discrete-mathematics']"
+2392029,"Why does Rudin say ""the rational number system is inadequate as a field""?","In the INTRODUCTION of chapter 1 of Baby Rudin, he says The rational number system is inadequate for many purposes, both as a field and as an ordered set. Addition and multiplication of rational numbers are commutative and associative, and multiplication is distributive over addition. Both 'zero' and 'one' exist. Plus, as I recall, rational numbers are the smallest subfield of $\mathbb{C}$. So exactly what does Rudin mean by “inadequate as a field”?","['rational-numbers', 'analysis']"
+2392088,Find the set of $x>0$ such that the series $\sum\limits_n x^{\ln{n}}$ converges,"If $x>0$, find the set of all values of $x$ such that series is convergent$$\sum_{n=1}^{\infty} x^{\ln{n}}$$ My attempt:- I used Ratio test for finding the set of all values of $x$ such that series is convergent. $$\lim_{x\to\infty}\frac{x^{\ln{n+1}}}{x^{\ln{n}}}$$ $$=\lim_{x\to\infty}x^{\ln\frac{n+1}{n}}$$
+This quantity must be less than one for getting a convergent series, I am not able to judge. Can you please help me to find the interval of convergence?","['real-analysis', 'sequences-and-series', 'proof-verification']"
+2392090,Find the determinant of the following $4 \times 4$ matrix,Use a cofactor expansion across a row or column to find the determinant of the following matrix $$B=\begin{pmatrix}1 &c&0&0\\0&1&c&0\\0&0&1&c\\c&0&0&1\end{pmatrix}$$ Clearly indicate the steps you take. I have tried $$ \begin{aligned} \det B &= 1 \det \begin{pmatrix}1 &c&0\\0&1&c\\0&0&1\end{pmatrix}+(-c) \det \begin{pmatrix}c &0&0\\1&c&0\\0&1&c\end{pmatrix} \\ &= \det\begin{pmatrix}1 &c\\0&1\end{pmatrix}+c(-c)\det\begin{pmatrix}c &0\\1&c\end{pmatrix} \\ &= 1-c^4 \end{aligned}$$,"['matrices', 'circulant-matrices', 'linear-algebra', 'determinant']"
+2392144,Solve the differential equation $\left(\arctan(xy)+\frac{xy-2xy^{2}}{1+x^{2}y^{2}}\right)dx+\left(\frac{x^{2}-2x^{2}y}{1+x^{2}y^{2}}\right)dy=0$,"This is problem 9, exercise 10 from Tannebaum and Pollard's ODE book. I have deduced that the differential equation is exact, but I can't find all the integrable combinations. Any hints that would help me to move forward would be great! Solve the differential equation  $\left(\arctan(xy)+\frac{xy-2xy^{2}}{1+x^{2}y^{2}}\right)dx+\left(\frac{x^{2}-2x^{2}y}{1+x^{2}y^{2}}\right)dy=0$ Solution. We have, $\begin{align}
+P&=\arctan(xy)+\frac{xy-2xy^{2}}{1+x^{2}y^{2}}\\
+\frac{\partial P}{\partial y}&=\frac{x}{1+x^{2}y^{2}}+\left[\frac{(1+x^{2}y^{2})(x-4xy)-(xy-2xy^{2})(2x^{2}y)}{(1+x^{2}y^{2})^{2}}\right]\\
+&=\frac{x}{1+x^{2}y^{2}}+\left[\frac{x-4xy+x^{3}y^{2}-4x^{3}y^{3}-2x^{3}y^{2}+4x^{3}y^{3}}{(1+x^{2}y^{2})^{2}}\right]\\
+&=\frac{x}{1+x^{2}y^{2}}+\left[\frac{x-4xy-x^{3}y^{2}}{(1+x^{2}y^{2})^{2}}\right]\\
+&=\frac{x(1+x^{2}y^{2})+x-4xy-x^{3}y^{2}}{(1+x^{2}y^{2})^{2}}\\
+&=\frac{x+x^{3}y^{2}+x-4xy-x^{3}y^{2}}{(1+x^{2}y^{2})^{2}}\\
+&=\frac{2x-4xy}{(1+x^{2}y^{2})^{2}}\\
+Q&=\frac{x^{2}-2x^{2}y}{1+x^{2}y^{2}}\\
+\frac{\partial Q}{\partial x}&=\frac{(1+x^{2}y^{2})(2x-4xy)-(x^{2}-2x^{2}y)(2xy^{2})}{(1+x^{2}y^{2})^{2}}\\
+&=\frac{2x-4xy+2x^{3}y^{2}-4x^{3}y^{3}-2x^{3}y^{2}+4x^{3}y^{3}}{(1+x^{2}y^{2})^{2}}\\
+&=\frac{2x-4xy}{(1+x^{2}y^{2})^{2}}
+\end{align}$ Since $\partial{P}/\partial{y}=\partial{Q}/\partial{x}$, this is an exact differential equation. We know that- $\begin{align}
+d(x\cdot \arctan(xy))&=\arctan(xy)dx+x\frac{1}{1+x^{2}y^{2}}(xdy+ydx)\\
+&=\arctan(xy)dx+\frac{x^{2}dy}{1+x^{2}y^{2}}+\frac{xydx}{1+x^{2}y^{2}}
+ \end{align}$ I am not able to find an integrable combination for the remaining two terms.",['ordinary-differential-equations']
+2392150,Yet an other conjecture about odd numbers $n=a+b$ such that $a^2+b^2$ is prime,"This question is related to A conjecture about an unlimited path and Any odd number is of form $a+b$ where $a^2+b^2$ is prime but I present it on its own if anyone would like to help finding counterexamples. Conjecture: For all odd numbers $n>159$ there are positive integers $a\le b$ such that: $\quad n=a+b$ $\quad a^2+b^2$ and $a^2+(b+2)^2$ are primes Let $S_n=\{a\in\mathbb Z^+|\exists b\in\mathbb Z^+:n=a+b\wedge a^2+b^2\in\mathbb P\}$.
+Below there is a list of $n$ and $S_n\cap S_{n+2}$, the set of the possible $a\,$ that fulfills the conjecture for the odd number $n$, $1<n<1000$ (0 denotes the empty set): 3 {1}
+5 {1,2}
+7 {2}
+9 0 
+11 {3,5}
+13 {4}
+15 {1,2,7}
+17 {2,7}
+19 0 
+21 {5}
+23 {9}
+25 {1,7}
+27 {5,10}
+29 {5,10}
+31 {5}
+33 {4,13}
+35 {2,6,12}
+37 {2,5,10}
+39 {5,10}
+41 {3,8,13}
+43 {8,13}
+45 {16,22}
+47 {2,15,22}
+49 0 
+51 {8,20,25}
+53 {4,8,18,23}
+55 {1,17}
+57 {7,17}
+59 {15}
+61 {23}
+63 {8,19,23,29}
+65 {11,12,16,17,21}
+67 {2,20}
+69 {10,20}
+71 {13,20}
+73 {13,14,29,34}
+75 0 
+77 {5,17,25,27,30}
+79 {5,25}
+81 {8,25}
+83 {4,9,14,18,23,24,39}
+85 {7,26,32,41}
+87 {2,32}
+89 {40}
+91 {40,43}
+93 {4,28,29,34}
+95 {11,17,26,37,41}
+97 {2,17}
+99 {5}
+101 {3,5,18,35,38,50}
+103 {19,43,44}
+105 {26}
+107 {17,25,37,40,45,50}
+109 {10,35,50}
+111 {5,10,20,23,28,35,50}
+113 {3,18,28,39,48,54}
+115 {47}
+117 {2,10,40,47,55}
+119 {10,30,40}
+121 {13,23,50,58}
+123 {4,13,19,38,58}
+125 {1,21,27,47}
+127 {35,47,50,55}
+129 {5,20}
+131 {15,45,53,60,65}
+133 {43,53}
+135 {31,32,37,56}
+137 {2,5,10,22,32,42,52,57}
+139 {5}
+141 {5,25,28,50,58}
+143 {3,23,24,34,53,54,64}
+145 {11,17,37,41,62}
+147 {10,17,20,32,37,50,67}
+149 {30}
+151 {5,40,53,65}
+153 {8,74}
+155 {12,17,26,46,52,57,66,71,72}
+157 {40,52,67,77}
+159 0 
+161 {10,13,43,50,65,78}
+163 {23,28,58,68,74}
+165 {31,32,61,76}
+167 {12,32,37,50}
+169 {5}
+171 {10,23,43,65,68,85}
+173 {19,23,29,43,48,59,68,73}
+175 {16,17,22,82}
+177 {7,40,55}
+179 {35,40,50}
+181 {38,65,83}
+183 {8,34,38,49,53,83}
+185 {6,21,36,52,56,62,76,82,91}
+187 {20,37,40,50,62}
+189 {20,50,55,85}
+191 {3,18,23,35,68,70}
+193 {14,19,23,34,53,58,68,79,94}
+195 {46,47,92}
+197 {20,27,40,55,60,72,75,92,95}
+199 {20,95}
+201 {20,25,43,65,73,85}
+203 {3,38,53,54,64,93,94}
+205 {1,52,86,91}
+207 {5,32,82}
+209 {5,40,45,75,80}
+211 {13,25,53,70,103}
+213 {13,44,59,88}
+215 {11,37,46,61,72,76,81,102,106}
+217 {2,25,55,65,107}
+219 {5,10,25,40}
+221 {3,20,23,25,33,40,50,63,70,83,98}
+223 {4,23,88,98,104}
+225 {26,41,46,52,67,86,91,97,107}
+227 {7,17,52,55,65,72,77,95,97}
+229 {85}
+231 {68,83,85,103}
+233 {4,14,39,48,59,74}
+235 {2,26,31,62,116}
+237 {65,70,97}
+239 {35,65,70,95}
+241 {13,80,88,100,113}
+243 {13,58,64,104}
+245 {2,11,16,47,51,71,101,122}
+247 {7,10,40,47,115,122}
+249 {50,115}
+251 {8,65,78,85,98,100,123}
+253 {59,74,98,113}
+255 {2,7,26,52,112}
+257 {12,25,52,60,72,85,100,102,125}
+259 {85}
+261 {23,28,40,103,130}
+263 {23,24,34,38,49,63,69,99,109,118}
+265 {32,37,46,56,62,71,82,92}
+267 {2,20,22,32,55,95,100,107,127}
+269 {25,45,50,55,75,100}
+271 {8,25,55,68,73,88,100,103,115,128}
+273 {8,23,73,83,103,128}
+275 {36,42,47,92,111,112}
+277 {2,10,20,65,67,97,112,125,127}
+279 {20,25,55}
+281 {18,25,28,38,55,68,73,78,83,113,118,135}
+283 {29,64,68,73,79,89,118}
+285 {22,86,116}
+287 {5,45,47,57,62,67,127,130}
+289 {40,130}
+291 {40,83,98,115,118,128}
+293 {4,13,19,24,29,39,98,109,128}
+295 {61,67,106,136,142}
+297 {10,32,47,62,67,112,145}
+299 {5,120,145}
+301 {23,65,95,125,130,143,145}
+303 {4,34,58,89,104,113,119}
+305 {17,21,32,46,71,81,82,116,117,132,136}
+307 {25,40,47,107,122}
+309 {20,25,40,100,125}
+311 {8,20,30,40,70,90,98,110,113,125,138}
+313 {23,38,44,88,104,118}
+315 {37,71,76,101,142}
+317 {5,10,17,30,97,102,135,137,152}
+319 {5,10,50,85}
+321 {5,50,58,70,83,115,128,140,155}
+323 {23,44,49,58,63,74,88,118,129,138,148,159}
+325 {37,76,92,106,122,151}
+327 {20,40,50,67,82,92,115,137}
+329 {55,75,125,130,145}
+331 {28,38,55,58,85,113,125,130,133,145}
+333 {14,29,38,83,113,139}
+335 {11,12,22,26,31,37,42,66,77,102,111,116,126,142,156,161}
+337 {7,32,77,85,92,100,152,155,160}
+339 {5,70,145}
+341 {5,10,23,60,73,83}
+343 {19,58,83,124,134,139,143}
+345 {61,67,97,101,121,146,152,172}
+347 {5,25,42,45,75,87,90,102,120,132,172}
+349 {10,40,110}
+351 {80,88,118,133,148,158}
+353 {8,13,59,99,119,133,158,164}
+355 {26,67,76,127,137,146,166,172}
+357 {20,25,55,67,137,172}
+359 {20,55,60,85,100,105,170}
+361 {5,53,85}
+363 {14,53}
+365 {27,52,86,91,106,132,151,166}
+367 {10,17,37,40,92,112,125,157,170,175}
+369 {20,85,110}
+371 {5,15,43,45,55,65,83,88,93,113,145,150,160,165}
+373 {13,49,68,83,94,133,139,169,179}
+375 {2,31,32,37,47,61,76,86,107,142,151,166,187}
+377 {7,10,20,25,27,30,60,90,92,102,142,155,160,185}
+379 {80,95,130,160}
+381 {73,95,130,140,143,160,178}
+383 {3,8,73,74,78,113,123,124,169}
+385 {1,122,146,151}
+387 {5,22,47,70,112,155}
+389 {5,25,65,70}
+391 {13,43,53,70,103,130,140,148}
+393 {4,13,43,49,53,58,64,103,134,148,188}
+395 {37,56,71,87,97,126,131,137,166,167}
+397 {97,160,197}
+399 {80}
+401 {5,35,38,58,63,68,73,80,105,123,145,153,175,188,193}
+403 {14,29,38,43,44,73,109,128,164,179,193}
+405 {17,41,62,82,131,151,172}
+407 {15,17,35,42,65,80,97,107,117,152,162,175}
+409 {35,65,95,110}
+411 {8,13,20,40,53,65,85,113,145,200}
+413 {3,8,13,24,39,53,64,109,124,163,164,183,194,198,204}
+415 {47,61,137,142,161}
+417 {10,47,52,67,110,140,142,170,187}
+419 {95,105,110,140,180}
+421 {5,35,85,100,110,115,118,128,140,163}
+423 {13,43,44,59,74,83,128,133,163,179}
+425 {2,11,16,32,52,106,117,127,156,162,191,207}
+427 {2,25,32,50,67,92,115,145,152,185}
+429 {5,50,70,115,160}
+431 {28,43,63,68,78,95,118,140,143,160,183,193,208}
+433 {34,68,89,94,134,169,179,184,188,193,208}
+435 {22,32,52,107,136,151,191}
+437 {20,25,70,85,90,117,155,157,165,195}
+439 {215}
+441 {38,118,220}
+443 {13,18,19,78,88,173,179,184}
+445 {17,26,31,71,91,92,97,112,116,121,131,142,182,212}
+447 {5,7,92,95,115,127,130,200,212,215,217}
+449 {5,20,30,85,160,175,200,210,215}
+451 {23,25,35,58,100,103,178,193,200}
+453 {38,44,73,79,103,149,178}
+455 {2,11,36,51,62,81,116,146,157,186,192}
+457 {7,10,62,107,130,137,157,160,202,205,215}
+459 {35,80,130,160,190}
+461 {35,43,55,68,80,93,100,110,120,138,168,178,188,190,208,210,225,228}
+463 {73,74,109,118,139,143,169,208}
+465 {1,11,46,47,52,112,116,131,142,157,196,206,221}
+467 {12,60,65,97,117,137,157,160,177}
+469 {40,145,160}
+471 {8,38,53,70,95,128,148,190,235}
+473 {48,49,59,63,104,113,124,148,174,208}
+475 {17,31,32,46,67,122,136,137,167,206,221}
+477 {2,22,65,155,172,185,187,205,217,230}
+479 {90,100,165,210,230,235}
+481 {5,10,50,73,158,193,223,233}
+483 {8,13,34,68,79,158,163,164,223}
+485 {11,32,41,72,86,107,117,126,136,146,152,171,186,227,231,237}
+487 {25,35,47,82,110,137,185}
+489 {25,145,230}
+491 {8,25,48,60,70,73,90,100,120,130,135,138,163,180,198,230}
+493 {8,19,59,109,194,199}
+495 {92,101,106,136,157,236}
+497 {12,30,50,75,102,122,135,157,160,162,190,205,207,222}
+499 {85,115,205,230}
+501 {28,133,163,185,193,205,215}
+503 {23,58,74,103,109,139,154,168,174,184,193,213,218,233}
+505 {31,76,122,131,146,187,191,197,211}
+507 {5,37,50,70,77,107,122,160,170,185,212,215,232,250}
+509 {15,145,150,250}
+511 {85,100,125,163,178,205,230}
+513 {13,163,178,194,199,214,224,233}
+515 {16,41,61,81,107,116,131,142,152,161,182,217,226,241}
+517 {50,107,142,152,155,172,232}
+519 {5,40,190,215}
+521 {13,65,93,105,118,135,148,158,190,218,225,238,255,260}
+523 {13,89,103,118,164,218,239}
+525 {26,61,82,101,127,166,226,227,251}
+527 {10,32,37,72,75,80,97,122,140,145,152,162,165,197,210,212,227,240,247}
+529 {35,80,145,220}
+531 {35,38,50,58,158,188,190,200,220,223,230,233,250}
+533 {24,29,63,94,98,109,119,163,184,213,218,223,249,254,259,264}
+535 {17,47,91,211,232,242,247}
+537 {10,52,80,130,160,167,185,197,215,227,232,247}
+539 {20,90,130,145,155,160,215}
+541 {5,8,20,28,100,130,133,145,148,155,158,170,235}
+543 {8,13,14,29,133,139}
+545 {6,12,17,31,52,56,86,87,112,117,137,162,182,216,241,256,267}
+547 {47,62,65,95,142,170,187,197,247,260,265}
+549 {25,50,65,70,115,125,130,160,170}
+551 {33,45,78,88,113,115,123,135,183,205,225,240}
+553 {23,68,89,139,173,193,208,244}
+555 {67,101,136,166,187,197,272}
+557 {5,45,62,70,87,90,100,107,115,152,157,167,220,235,270,272}
+559 {25,50,70,115,185,205}
+561 {53,115,118,125,173,185,190,193,203,205,215}
+563 {29,34,43,58,59,63,69,74,93,98,104,153,154,173,193,204,219,228,238,258,263,268}
+565 {22,52,121,137,256,272,277,281}
+567 {67,130,142,152,235}
+569 {50,100,245,255,265}
+571 {38,95,125,160,173,233,253,260,265}
+573 {8,14,28,109,148,173,179,208,229,233,238,244}
+575 {17,32,157,182,186,196,206,212,232,257,271}
+577 {17,22,32,35,115,137,157,175,187,212,247,257,260,280}
+579 {100,260}
+581 {10,48,90,93,130,148,153,178,180,193,200,233,243,260}
+583 {8,23,28,113,118,148,149,158,193,214,224,268,269}
+585 {11,67,122,157,166,172,181,197,212,226,241,242}
+587 {10,17,20,50,55,85,130,140,177,195,212,222,232,242,245,275}
+589 {10,20,35,250,275}
+591 {35,38,73,100,103,110,145,158,223,263}
+593 {73,74,94,124,163,169,174,183,194,209,234,243,249,254,263}
+595 {47,86,131,142,151,157,172,232,271}
+597 {47,92,122,157,247,280,290}
+599 {30,65,205,240,285}
+601 {10,40,103,125,128,143,148,155,188,208,233,245,283}
+603 {43,49,74,79,113,169,188,199,284}
+605 {7,26,57,62,82,96,117,192,201,227,241,267,276}
+607 {2,10,62,167,172,197,227,230,275,292,295}
+609 {25,110,170,220}
+611 {15,25,30,33,38,68,70,73,80,83,88,133,138,145,153,170,173,218,223,298}
+613 {34,59,88,128,133,218,223,224,248,263}
+615 {2,11,56,71,107,167,176,182,202,232,241,266,292,296}
+617 {12,17,45,85,95,142,147,165,172,267,282,285,292,305}
+619 {35,70,130,215,265}
+621 {8,13,25,130,220,293,295}
+623 {8,13,34,59,64,69,99,123,129,148,183,188,199,243,253,293,299}
+625 {26,106,127,181,226,236,251,257,272,287}
+627 {47,50,82,125,127,155,167,200,212,235,245,260}
+629 {10,20,50,115,165,245,270,290}
+631 {23,35,50,58,110,115,128,145,178,193,238,250,275,278}
+633 {103,104,128,143,154,179,194,218,224,278}
+635 {1,16,81,92,152,157,167,191,197,232,261,282,291}
+637 {80,115,167,185,215,242,262,265,317}
+639 {10,170,185,245,250,275}
+641 {8,20,55,73,78,100,128,138,158,165,185,225,228,240,258,275,280,318}
+643 {38,73,158,173,194,203,233,289}
+645 {1,16,67,107,122,151,187,196,202,236,281,287}
+647 {25,27,42,87,125,195,207,230,235,265,312}
+649 {125,190,200,235}
+651 {73,95,110,118,173,200,218,220,235,275}
+653 {13,18,23,44,73,103,138,144,173,174,203,229,244,248,279,294}
+655 {7,11,52,71,76,136,137,166,176,187,227,256,271}
+657 {52,67,82,107,130,137,175,197,205,280,310,322}
+659 {55,130,145,155,175,195,270,285,310,315}
+661 {28,53,55,70,118,125,133,140,145,155,298,310}
+663 {53,64,79,118,164,179,268,278,298,313}
+665 {2,17,26,41,47,66,106,117,121,131,157,166,177,212,216,222,241,257,262,267,271,297,326}
+667 {2,17,52,82,172,205,217,257,262,277,292}
+669 {125,160,215,230,320}
+671 {48,60,118,120,135,185,215,233,235,248,313}
+673 {29,34,128,133,143,193,328}
+675 {17,22,46,56,77,82,142,151,157,182,332}
+677 {17,62,67,75,117,127,130,155,157,247,260,262,272,300,305,317,325,335}
+679 {65,260}
+681 {20,65,98,110,163,170,230,253,308}
+683 {3,9,19,24,39,43,54,83,139,148,163,213,214,219,224,264,303,308,329}
+685 {31,37,41,61,71,76,107,127,136,142,161,172,187,197,226,232,257,266,271,272,337}
+687 {112,127,187,200,242,272,307,322}
+689 {5,15,20,55,75,90,105,200,225,255,290,340}
+691 {20,85,208,218,268,290,293,310,323,340}
+693 {4,13,59,128,149,158,188,218,229,283,299,323,334}
+695 {6,42,47,61,81,117,121,132,162,171,191,251,262,276,302,331}
+697 {20,40,80,100,130,145,182,302,307,325}
+699 {40,310,325}
+701 {40,108,125,135,160,170,173,183,188,203,240,255,273,293,325}
+703 {4,14,28,53,109,169,184,203,223,239,283}
+705 {26,97,151,166,167,181,187,251,316,317,346}
+707 {10,32,52,65,100,160,180,205,222,270,300}
+709 {10,55,85,100,160,185,295,335}
+711 {50,58,88,110,113,185,233}
+713 {19,48,53,73,103,158,168,224,233,239,243,284,304,309,314,353,354}
+715 {1,112,161,212,277,281,302,307,311}
+717 {7,40,202,212,232,245,250,262,277,302,320,332,355}
+719 {115,180,250,295,320}
+721 {8,25,85,160,188,220,295,305,358}
+723 {13,34,79,124,158,163,169,208,259,268,328,334,338,343,358}
+725 {16,22,107,122,131,137,156,161,207,237,246,252,267,282,286,287,302,341,351}
+727 {5,22,82,212,220,230,235,265,280,325}
+729 {125,140,175,220,235,290,325}
+731 {18,40,53,63,125,140,148,173,193,200,203,208,220,240,245,248,270,273,298,318,338,350,355}
+733 {19,83,88,89,134,169,173,193,254,274,319,338,349}
+735 {17,52,71,101,122,221,251,296}
+737 {12,35,65,80,115,135,140,142,197,295,305,315,350}
+739 {35,40,145,230,305,320}
+741 {20,73,83,145,158,160,163,215,218,248,265,283,290,293,313,358}
+743 {4,28,39,49,79,99,114,119,138,163,193,219,263,264,284,289,313,323,329,364}
+745 {2,11,32,37,107,121,152,167,182,236,247,257,286,331,347}
+747 {20,52,110,152,242,275,277,305,340,370}
+749 {25,80,125,170,195,230,265,340,345,360,365}
+751 {13,25,70,73,115,125,130,133,143,163,170,233,278,328,338,365}
+753 {13,73,74,143,149,173,214,233,254,274,278,343,359,364}
+755 {2,52,57,106,132,147,181,187,242,307,316,322,326,327,356,361}
+757 {10,52,62,112,200,265,355}
+759 {50,100,140,265,355,365}
+761 {13,45,65,85,100,120,145,153,158,163,178,180,198,230,260,265,270,283,338,340,345,355}
+763 {38,58,158,184,188,214,278,283,298,304,353}
+765 {47,71,92,101,112,161,172,211,256,257,266,296,307}
+767 {17,47,72,75,85,105,115,142,190,220,285,307,310,352,355,365,375,382}
+769 {55,85,115,145,190,235,260,310}
+771 {85,115,145,193,218,223,250,323,325,340}
+773 {4,9,38,48,74,94,108,149,163,233,259,299,333}
+775 {22,52,107,137,142,146,181,187,191,256,272,281,332,337,386}
+777 {65,107,122,187,215,230,260,317,337}
+779 {25,100,135,170,230,255,280,305,345}
+781 {5,8,73,83,188,200,223,235,268,305,325,383}
+783 {8,19,83,149,188,209,214,229,253,278,329,383}
+785 {32,37,56,61,66,96,97,117,121,166,167,182,212,226,241,261,266,277,306,312,336,351,352,371}
+787 {2,70,85,95,110,167,187,212,250,262,292,380}
+789 {55,380}
+791 {8,15,18,45,68,73,100,115,220,243,253,285,288,295,300,348,353,360,373}
+793 {14,98,133,154,164,199,209,218,229,233,254,259,289,304,314,353,379,388}
+795 {16,47,52,56,86,101,157,196,206,232,307,316,332,341,361,391}
+797 {30,42,82,87,117,145,147,150,175,205,212,240,270,310,312,322,362,367}
+799 {25,145,215,295,350}
+801 {8,25,70,85,100,148,185,203,223,263,280,295,298,340}
+803 {3,39,74,148,204,258,269,298,328,369,398}
+805 {137,191,242,251,286,397}
+807 {10,47,65,67,125,130,182,220,262,265,335,392,395}
+809 {10,125,130,190,300,320,330,375,395}
+811 {10,43,113,128,130,178,208,238,325,383,395,400}
+813 {29,43,68,113,119,128,323,373,379}
+815 {32,97,101,106,116,276,286,311,331,336,357,377,406}
+817 {32,97,142,170,320,352,365,367}
+819 {25,125,145,170,185,215,320,340}
+821 {95,98,125,150,170,203,250,263,268,288,300,323,340,345,368,388,390,410}
+823 {4,8,34,188,203,223,229,263,268,299,323,334,364,368,373}
+825 {17,71,86,91,142,151,197,211,241,377,406}
+827 {22,80,85,120,122,152,157,165,187,197,207,215,217,220,237,255,275,287,317,320,377}
+829 {130,170,215,310}
+831 {58,130,143,155,163,215,248,265,268,295,313,365}
+833 {38,54,58,123,148,173,174,183,234,248,279,298,353,359,369,389,394,398,409}
+835 {52,76,212,221,271,272,326,376,382,407}
+837 {5,52,82,160,175,182,187,200,230,332,347,407}
+839 {10,35,55,70,115,160,165,200,225,295,405}
+841 {10,35,38,68,103,133,193,253,295,323,383,388}
+843 {14,29,73,103,133,148,179,224,233,244,259,284}
+845 {27,37,51,72,76,92,107,116,172,212,226,241,246,277,317,327,332,337,362,367,376}
+847 {2,20,50,127,247,310,320,332,355,410}
+849 {35,50,80,260,290,310,340,410}
+851 {13,25,30,35,48,98,103,110,120,168,175,190,240,260,275,290,308,350,363,410,418,420}
+853 {28,34,53,74,119,139,164,248,268,274,308,313,403}
+855 {37,61,112,116,146,167,176,182,232,326,367,371,386,401,427}
+857 {47,85,87,105,110,112,122,135,160,177,305,342,345,360,370,382,395}
+859 {25,110,170,260,265,290,355,370,395,415}
+861 {25,38,83,170,200,208,218,235,248,335,355,395,403,428}
+863 {4,43,59,83,149,154,178,213,219,248,254,293,334,349,374,384,429}
+865 {22,41,62,91,121,172,226,232,356,392,397,412,431}
+867 {10,25,32,52,67,70,97,142,155,185,197,217,232,295,347,370,377,380,412}
+869 {80,105,120,185,200,380,425}
+871 {23,73,80,128,133,160,233,245,275,290,293,298,313,380,395,400,428}
+873 {128,164,184,244,289,293,349,359,368,418}
+875 {97,101,146,151,166,167,177,191,197,216,256,267,282,327,332,386,397,407}
+877 {22,32,65,95,97,112,145,227,230,275,277,332,347,355,385}
+879 {55,130,145,230,265,275,280,350,385,395,430}
+881 {33,53,83,118,130,168,178,213,230,263,280,298,310,313,393,395,398,403,415,430,440}
+883 {4,14,103,104,169,203,254,259,298,403,428,434}
+885 {31,56,91,122,166,281,292,382,416}
+887 {45,62,65,82,102,110,115,117,122,155,160,192,235,247,285,365,387,430}
+889 {115,335,365}
+891 {70,115,130,175,205,260,340,343,358,368}
+893 {18,23,44,93,103,123,143,158,168,174,198,214,219,224,243,244,249,263,273,343,348,373,414,419}
+895 {31,37,71,86,106,116,131,146,166,236,317,361,386,392,401,406,421}
+897 {25,77,137,172,220,257,280,337,365,407,410}
+899 {10,15,55,125,150,185,195,215,260,300,320,365}
+901 {10,88,110,125,185,188,193,205,325,338,358,383,400,433}
+903 {19,59,104,143,178,253,254,319,338,359,389}
+905 {2,7,26,47,57,67,116,157,171,176,177,222,241,247,276,291,311,326,392,412,432,441,442,447,451}
+907 {112,157,167,187,247,272,295,320,332,347,350,395}
+909 {160,320,370}
+911 {18,58,73,75,90,130,140,148,158,160,190,205,238,255,278,318,335,338,355,378}
+913 {23,148,233,283,338,413,454}
+915 {11,26,92,97,121,127,206,232,277,326,331,382,412,422}
+917 {5,32,82,97,202,225,247,277,302,377,382,395,410,425,445}
+919 {80,155,250,295,340,370,400,425,445}
+921 {68,113,133,155,223,233,248,250,283,295,328,340,398,425,440}
+923 {14,44,108,124,159,164,183,199,218,223,224,229,258,283,309,328,339,369,393,454}
+925 {86,91,92,127,137,232,271,326,431,452}
+927 {55,127,152,160,232,242,290,295,305,440,452}
+929 {25,30,55,65,165,215,345,370,445}
+931 {53,55,83,158,220,265,293,298,320}
+933 {53,79,113,164,193,203,259,268,269,293,299,304,358,359,389,434,464}
+935 {26,27,91,111,112,152,161,202,212,217,307,316,332,347,372,381,397,441,467}
+937 {17,77,142,145,170,182,200,212,242,322,325,355,455}
+939 {5,40,125,140,170,220,290,325,395,455,460}
+941 {13,153,163,240,305,375,383,388,395,420,455,468}
+943 {13,109,113,143,148,169,188,323,353,388,418}
+945 {32,41,62,136,232,286,296,317,367,401,412}
+947 {32,42,62,90,105,175,190,197,240,242,255,282,297,327,357,372,385,402,405,445}
+949 {80,85,340,385,415,445}
+951 {20,43,65,85,88,140,185,250,290,325,328,353,358,403,440,443,475}
+953 {29,43,49,88,99,133,134,149,159,188,199,229,234,268,273,284,294,308,309,318,323,328,333,353,379,384,418,464}
+955 {17,32,47,56,82,107,136,146,202,211,241,247,281,397,431,442,467}
+957 {5,40,92,107,122,125,265,340,397,425,430,442}
+959 {125,265,365,445}
+961 {13,35,85,98,103,118,173,253,260,278,290,365,368,433,448}
+963 {13,49,64,73,118,119,134,169,173,208,268,283,368,374,403,424,433,439}
+965 {21,31,86,102,136,186,222,247,271,317,357,372,401,447,452,461}
+967 {10,40,200,215,230,317,362,382,400,422,452}
+969 {55,145,200,215,230,295,370,400}
+971 {18,23,55,80,88,110,123,143,193,200,223,230,233,253,295,335,338,360,370,373,400,408,425,438,460,465}
+973 {58,74,103,148,149,223,239,298,379,383,388,404,424,428,479}
+975 {62,131,176,187,196,206,271,281,301,316,322,332,346,427,472}
+977 {7,10,17,30,62,95,112,120,160,210,222,237,270,310,322,332,387,390,417,432,437,442,472}
+979 {125,160,205,260,310,355,400}
+981 {25,28,58,68,110,133,155,178,208,275,298,328,355,368,380,433}
+983 {28,29,73,178,208,228,229,233,243,254,304,308,313,328,378,389,398,399,424,429,444,449}
+985 {22,26,31,151,172,202,352,377,412,421}
+987 {20,40,52,95,142,265,352,377,397}
+989 {10,65,125,160,255,265,270,340,365,415,450,485}
+991 {10,65,110,115,143,173,278,323,368,370,428,473,478}
+993 {19,104,109,124,143,173,299,308,404,443,449,478}
+995 {6,7,61,76,101,107,117,127,146,152,192,217,221,241,256,266,296,327,341,382,387,406,416,442,446,466,472,496}
+997 {97,107,127,130,152,217,232,310,337,367,395,422,425,442,460}
+999 {230,395,400,430,470} So far tested for $n<50,000$.","['conjectures', 'sums-of-squares', 'number-theory', 'computational-mathematics', 'prime-numbers']"
+2392160,Can a non-cyclic group of order $p^2$ act on an orientable surface with no free elements?,"Firstly, can a group of order $p^2$ for a prime $p>2$ that is not cyclic act on an orientable surface of genus $g>1$? If so, is it possible that it acts so that no element acts freely? My hope is that the answer to the second of these is no, but I'm struggling to establish it. Any thoughts would be great!","['geometric-topology', 'group-actions', 'geometry', 'algebraic-topology', 'hyperbolic-geometry']"
+2392179,Inverse function to $f(x)=\frac{e^x-e^{-x}}{2}$,"Let $f$ be a function defined by $$f(x)=\frac{e^x-e^{-x}}{2}$$ Find $f^{-1}(x)$. Domain for $x$ is $R$ My attempt, Let $$f^{-1}(x)=a$$ $$x=f(a)$$ $$=\frac{e^a-e^{-a}}{2}$$ $$2x=e^a-e^{-a}$$ Let $$e^a=u$$ $$2x=u-u^{-1}$$ $$u^2-2xu-1=0$$ Solving $u$ by quadratic formula. $$u=x\pm \sqrt{x^2+1}$$ $$e^a=x\pm \sqrt{x^2+1}$$ $$a=\ln(x\pm \sqrt{x^2+1})$$ $$f^{-1}(x)=\ln(x\pm \sqrt{x^2+1})$$ But my tutor said I'm wrong. Why?","['hyperbolic-functions', 'exponential-function', 'algebra-precalculus', 'inverse', 'quadratics']"
+2392198,Smooth continuation of a real function,"Somehow I always knew we could continue a smooth real function to a larger domain uniquely. I can't seem to find such a result however and I am probably confusing it with the analytic continuation of a complex function. Thinking about this I am growing more and more convinced that the smooth continuation of a real function is not unique. For example I think I vaguely recall that in functional analysis we could construct multiple different functions, all of which had some desired asymptotic properties at infinity. Of course this is just on the level of intuition, but it seems to contradict the uniqueness of the continuation. Anyway, better to ask and be sure, so I should do this (somewhat) clearly... Given intervals $A\subset B\subset\mathbb{R}$ and a smooth function $f:A\longrightarrow\mathbb{R}$, can we find a smooth function $g:B\longrightarrow\mathbb{R}$, such that $g$ is unique and $g|_A=f$?","['functional-analysis', 'real-analysis', 'analytic-continuation', 'functions']"
+2392220,If $\frac {a_{n+1}}{a_n} \ge 1 -\frac {1}{n} -\frac {1}{n^2}$ then $\sum\limits_na_n$ diverges,"Let $(a_n)_{n \ge 1}$ be a sequence of positive real numbers such that, for every $n\ge1$,
+  $$\frac {a_{n+1}}{a_n} \ge 1 -\frac {1}{n}  -\frac {1}{n^2} \tag 2$$ Prove that $x_n=a_1 + a_2 + .. + a_n$ diverges. It is clear that $x_n$ is increasing, so it has to have a limit. I tried to prove the limit is $+\infty$ but without success. No divergence criteria from series seems to work here. UPDATE Attempt: 
+Suppose a stronger inequality holds, namely that, for every $n\ge1$, $$\frac{a_{n+1}}{a_n}\geqslant1-\frac1n \tag 1$$ Then:
+$$\frac {a_3}{a_2} \ge \frac 1 2\qquad
+\frac {a_4}{a_3} \ge \frac 2 3\qquad
+\ldots\qquad
+\frac {a_{n-1}}{a_{n-2}} \ge \frac {n-3}{n-2}\qquad
+\frac {a_n}{a_{n-1}} \ge \frac {n-2}{n-1}$$
+Multiplying all the above yields
+$$\frac {a_n}{a_2} \ge \frac 1 {n-1}$$
+The last inequality proves the divergence.",['sequences-and-series']
+2392222,$(a_n)$ is a bounded sequence and every convergent subsequence of $(a_n)$ converges to $a\in\mathbb{R}$. Show $(a_{n})$ converges to $a$.,"To me, the problem is asking: Assume $(a_n)$ is a bounded sequence. 
+Prove:$[\text{Every convergent subsequence of }(a_n)\text{ converges to }a]\implies[\lim a_n=a]$ Step 0: We decide we'll prove the contrapositive, so the problem is now: Assume $(a_n)$ is a bounded sequence. Prove:
+$[\lim a_n\ne a]\implies[\text{There exists a convergent subsequence of }(a_n)\text{ that does not converge to }a ]$ Step 1: $\lim a_n\ne a\implies\exists\ \epsilon_{0}>0:|a_n-a|\ge \epsilon_{0}\ \forall\ n\in\mathbb{N}$ Step 2: $(a_n)$ is bounded $\implies$ $(a_n)$ has a convergent subsequence. Call this convergent subsequence $(a_{n_{k}})$. Step 3: The only things we know about $(a_{n_{k}})$ are that A) it converges to something and B) it's a subsequence of $(a_n)$. I think the only task left is to show $(a_{n_{k}})$ cannot converge specifically to $a$. Step 4: To show $(a_{n_{k}})$ does not converge to $a$,  we must show $\exists\ \epsilon_{1}>0:|a_{n_{k}}-a|\ge\epsilon_{1}\ \forall\ k\in\mathbb{N}$. Step 5: $(a_{n_{k}})$ is a subsequence of $(a_n)$ $\implies$ All the terms of $(a_{n_{k}})$ come from $(a_{n})$. Since all terms of $(a_{n})$ are at least $\epsilon_{0}$ away from  $a$, then so are all terms of $(a_{n_{k}})$. Step 6: Let $\epsilon_{1}=\epsilon_{0}$. Then we have found an $\epsilon_{1}$ such that $|a_{n_{k}}-a|\ge \epsilon_{1}\ \forall\ k\in\mathbb{N}$. Conclusion: $(a_{n_{k}})$ is a convergent subsequence of $(a_{n})$ (step 2) that does not converge to $a$ (steps 4-6). So we've found a convergent subsequence of $(a_{n})$ that doesn't converge to $a$. I wrote this in these steps so it's easier to point out where I'm wrong. I don't understand why every solution I read (that doesn't involve limit superior) requires a sub-subsequence. It seems to me the reason the convergent sub-subsequence doesn't converge to $a$ is the same reason the convergent subsequence $(a_{n_{k}})$ doesn't converge to $a$, so why do we have to make a sub-subsequence? I know this exact question has been asked on here ad nauseam. I read the posts I could find, but I still don't understand why a sub-subsequence is necessary. I'm self-learning, and I've been stuck on this for the past three days. I decided to finally just ask. I'm sorry.","['real-analysis', 'sequences-and-series', 'limits']"
+2392313,Irreducible finite dimensional complex representation of $GL_2(\Bbb C)$,"I know the basic theory of representation theory of compact Lie groups and I want to understand a non-compact example: How to find all irreducible finite dimensional complex representations of $GL_2(\Bbb C)$? Are its finite dimensional complex representations always completely irreducible? I think there cannot exist an invariant inner product on it's representations, is there some way to find it's representations using something like it's lie algebra?","['abstract-algebra', 'general-linear-group', 'representation-theory', 'lie-groups']"
+2392318,"Prove that $||\nabla u||^2+||\nabla v||^2=\frac{0.5}{\sqrt{x^2+y^2}}$ if $x=2uv, y=u^2-v^2$","$x,y$ are functions of $u,v$ and $x=2uv, y=u^2-v^2$. There's an inverse map from such that $u,v$ are functions of $x,y$. Prove that $$||\nabla u||^2+||\nabla v||^2=\frac{0.5}{\sqrt{x^2+y^2}}$$ This is an exercise for implicit differentiation. I thought of the following:
+$$
+u_u=v_x 2v+v_y 2v\\
+v_v=v_x 2u-v_y 2v\\
+u_u=u_x 2v+u_y 2u\\
+u_v=u_x 2u-u_y 2v
+$$
+Even if this is correct I don't see how we can factor out the gradients from here.","['multivariable-calculus', 'partial-derivative', 'implicit-differentiation']"
+2392356,Logarithm size comparison,"Which of the following is less than log $_747$ ? a. $\ln e^2$ b. log $_4418$ c. log $_547$ d. log $_{14}94$ e. None of these. Clearly, a,b,c are all equal to 2 or larger than 2. However, without a calculator (since I am not allowed to use a calculator for this problem), how can I know whether the answer is d or e?","['algebra-precalculus', 'inequality', 'logarithms']"
+2392381,Intuition behind row vectors of orthonormal matrix being an orthonormal basis,"By definition, in an orthonormal matrix, all the column vectors are unit vectors and mutually orthogonal. However, the row vectors also turn out to be an orthonormal basis. I know how to prove it mathematically, but is there any intuition or geometric interpretation behind this observation?","['matrices', 'linear-algebra', 'vector-spaces']"
+2392390,Measurability of functions with values in Banach spaces,"The function $f:M\subset \mathbb{R}^n\to Y$ with values in Banach space is called measurable iff the following hold 1) The domain is measurable 2) There exists a sequence $(f_j)$ of step functions $f_j :M\to Y$ such that $$\lim_{j\to\infty}f_j(x)=f(x)$$ for almost every $x\in X$. Proposition $\,$ $f$ is measurable if the following hold: 1) $M$ is measurable and $Y$ is separable Banach space 2) $f$ is continuous almost everywhere What is the proof of that fact? One should construct a sequance of step functions. To do so, separability would be useful I guess. If $Y$ is separable we may take the values needed for step functions from the dense and countable subset of $Y$. How to define $M_i$? The very first idea that came to my mind is: if $a_i$ is a value from dense and contable subset of $Y$, why not to set $M_i=f^{-1}(a_i)$?","['functional-analysis', 'bochner-spaces', 'real-analysis', 'measure-theory']"
+2392398,Proving the product expansion of $\sin\theta$. Where did I go wrong?,"You can prove the expansion$$\frac {\sin\theta}{\theta}=\left\{1-\left(\frac {\theta}{\pi}\right)^2\right\}\left\{1-\left(\frac {\theta}{2\pi}\right)^2\right\}\ldots$$By taking the expansion$$\sin n\phi=2^{n-1}\sin\phi\cos\phi\left(\sin^2\frac {\pi}n-\sin^2\phi\right)\left(\sin^2\frac {2\pi}{n}-\sin^2\phi\right)\ldots$$substituting $\phi=\theta/n$ and dividing by$$n=2^{n-1}\sin\frac {\pi}n\sin\frac {2\pi}n\ldots\sin\frac {\pi(n-1)}{n}$$ However, when I try, I always get zero as the answer. I started off with$$\sin\theta=2^{n-1}\sin\frac {\theta}n\cos\frac {\theta}n\left(\sin^2\frac {\pi}n-\sin^2\frac {\theta}n\right)\left(\sin^2\frac {2\pi}n-\sin^2\frac {\theta}n\right)\ldots$$And divided it to get$$\frac {\sin\theta}n=\frac {\sin\frac {\theta}n\cos\frac {\theta}n\left(\sin^2\frac {\pi}n-\sin^2\frac {\theta}n\right)\left(\sin^2\frac {2\pi}n-\sin^2\frac {\theta}n\right)\ldots}{\sin\frac {\theta}n\cos\frac {\theta}n\ldots\sin\frac {\pi(n-1)}n}$$However, when I multiply both sides by $n$ and take the limit as $n$ tends towards infinity, I get the expansion as$$\begin{align*}\sin\theta & =\theta\left\{\frac 12-\frac 12\left(\frac {\theta}n\right)^2\right\}\left\{\frac 13-\frac 13\left(\frac {\theta}{2\pi}\right)^2\right\}\ldots\\\\ & =\theta\prod\limits_{k=1}^{\infty}\left\{\frac 1{k+1}-\frac 1{k+1}\left(\frac {\theta}{k\pi}\right)^2\right\}\\ & =0\end{align*}$$ Question: I'm trying to prove$$\frac {\sin\theta}{\theta}=\prod\limits_{k\geq1}\left\{1-\left(\frac {\theta}{k\pi}\right)^2\right\}$$So where did I go wrong?",['trigonometry']
+2392418,Probability distribution of $\frac{1}{\sigma^2}Y'AY$,"If $A_{p\times p}$ is a non-random matrix, symmetric and idempotent
+  matrix with $\mu_{p\times 1}=0$ and $\Sigma=\sigma^2
+ I_{p\times p}$, then $$V=\frac{1}{\sigma^2}Y'AY\sim \chi_r^2$$ where
+  $Y_{p\times 1}\sim N(\mu,\Sigma)$ and $r=rank(A)$. First I used the matrix properties of $A$, so
+$$V=\frac{1}{\sigma^2}Y'AY=\frac{1}{\sigma^2}Y'AAY=\frac{1}{\sigma^2}(AY)'AY$$ Let $Z_{p\times 1}=AY$ then
+$$V=\frac{1}{\sigma^2}Z'Z=\frac{1}{\sigma^2}\sum_{i=1}^pZ_i^2 \quad(*)$$ To find the distribution of $Z$ I used moment generating function $$M_Z(t)=E[\exp(t'(AY)]=E[\exp(A't)'Y]=M_Y(t)(A't)$$
+$$=\exp\Big(\frac{1}{2}t'(A\Sigma A')t\Big)$$
+so $Z\sim N_p(0,A\Sigma A')$ and from marginalization propertie I know that each $Z_i$ have Normal distribution also. The problem is that I don't find a way to link it with $(*)$ I'm not understanding well the relationsheep between the rank of $A$ and the degree of freedom in the chi-squared distribution. Why when I have $A=I_{p\times p}$ (identity matrix) I get that $V\sim \chi_p^2$?","['statistics', 'probability', 'normal-distribution']"
+2392428,8th non-isomorphic matroid on set of 3 elements,"Let E = {1, 2, 3}. Show that there are exactly eight non-isomorphic matroids on E. So far I listed 7 non-isomorphic matroids but I have no idea what the eighth one should be. $\{ \emptyset \}$ $\{ \emptyset, \{1\} \}, \{ \emptyset, \{2\} \}, \{\emptyset, \{3\}\}$ $\{ \emptyset, \{1\}, \{2\}\}, \{ \emptyset, \{1\}, \{3\}\}, \{ \emptyset, \{2\}, \{3\}\}$ $\{ \emptyset, \{1\}, \{2\}, \{1, 2\}\}, \{ \emptyset, \{1\}, \{3\}, \{1, 3\}\}, \{ \emptyset, \{2\}, \{3\}, \{2, 3\}\}$ $\{ \emptyset, \{1\}, \{2\}, \{3\}\}$ $\{ \emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}\}$ $\{ \emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}$ Can one of these matroids that I listed be non-isomorphic on their own right (instead of being isomorphic with others as I've shown) or did I just miss something?","['graph-theory', 'matroids', 'discrete-mathematics']"
+2392440,"Is this an issue with the law of the excluded middle, or an issue with the proof?","Part of a proof requiring you to prove that if $x^2$ is odd then $x$ is odd (given that $x \in \mathbb{N}$). It is my understanding that the contrapositive is used for this as follows. $x=2n, n \in \mathbb{N}$ $\Rightarrow x^2 = 4n^2$ $\Rightarrow x^2$ is even Then using the contrapositive: $\Rightarrow \lnot Even(x^2) \rightarrow \lnot Even(x)$ Now the Law of the excluded middle: $\Rightarrow Odd(x^2) \rightarrow Odd(x)$ So reasonably straight forward. However, my issue with this is whilst $x^2$ is even, it is even more strictly defined as a multiple of $4$. So in the contrapositive sense it doesn't feel right that it can be any even number. So what happens if that said number is 6? Not strictly divisible by 4 but still even. This is a bit difficult because this proof's conclusion is actually correct and any squared integer is either divible by 4 or odd. But that was found through exhaustion in a different way. Using the law of the excluded middle after saying that it wasn't just any even number seems spurious. Could someone please clarify if I am right with reservation about this? If not, please explain (without just saying it is contrapositive, therefore). I feel like there should be a continuing connection between the definition of what type of even and what can be deduced from that.",['number-theory']
+2392462,Is the travelling wave ansatz the only solution for linear PDEs?,"If I have a linear PDE such as $$U_t=U_{xxx}+U_{xx}+U,$$ I know that particular solutions exist of the form $U=e^{\lambda t}e^{\alpha x}$. 
+I heard that the total solution is the sum of such travelling waves. However can't other types of solutions exist? I often hear textbooks say they ""seek"" travelling wave solutions or that the solution is an ansatz, implying that other types exist. If not, what's the proof? Furthermore if I have coupled equations such as \begin{align}
+U_t&=U_{xx}+V_x+V\\
+V_t&=V_{xx}+U_x,
+\end{align} is the solution that $U,V$ are travelling waves also the only type of solution?","['wave-equation', 'ordinary-differential-equations', 'calculus', 'partial-differential-equations']"
+2392474,Have $A$ and $A^{-1}$ the same set of eigenvectors?,Do $A$ and $A^{-1}$ have the same set of eigenvectors? My try : Yes they have the same set of eigenvectors. $AX = cX$ we can multiply $A^{-1}$ both sides we get $$A^{-1} X = c^{-1} X$$ Am I right? Any help will be highly appreciated.,"['matrices', 'eigenvalues-eigenvectors', 'linear-algebra', 'vector-spaces']"
+2392479,"When is a vector ""glued"" to the origin?","Let $V$ be a real finite-dimensional vector space (I guess this forces $V$ to be $\mathbb{R}^n$). My intuition is that a vector $v\in V$ must be ""glued"" to the origin, since the origin is the only canonical thing that $V$ has (not even the basis is canonical, and I suspect the origin (aka. the zero vector) is the only vector that has the same representation under every basis). But, in many contexts, vectors are not thought of as being ""glued"" to the origin, in particular when we think of them as ""displacements"": a ""displacement vector"" from $a$ to $b$ can be the same as a displacement vector from $c$ to $d$ under suitable conditions. (Intuitively, a ""displacement vector"" can be moved around without making it a different vector.) In stark contrast, a ""position"" in Euclidean space cannot be moved around without making it a different position, since a position is only equal to itself and no other position. So ""displacements"" and ""positions"" can be written as vectors, but clearly they don't behave the same. In calculus texts, authors usually switch back and forth between vectors that are ""glued"" to the origin, and vectors that are ""not glued"" to the origin. But I find that this obscures the nature of what a vector is, and I'd like a rigorous distinction. Spivak's A Comprehensive Introduction to Differential Geometry, Volume I (Chapter 3: The tangent bundle) suggests that the appropriate language is that of tangent bundles . Namely, at each point $x\in\mathbb{R}^n$ we have a copy of $\mathbb{R}^n$: its tangent space. So, a point together with its tangent space looks like $(x,\mathbb{R}^n)$. If we let $x$ vary over $\mathbb{R}^n$, I suppose the set of all tangent spaces would be the set $\{(x,\mathbb{R}^n) \ | \ x\in\mathbb{R}^n\}$, which looks suspiciously like $\mathbb{R}^n\times\mathbb{R}^n$, ie. $\mathbb{R}^{2n}$. Now a "" position vector "" seems to be a vector in the original ${\mathbb R}^n$, and a "" displacement vector "" starting at $x \in {\mathbb R}^n$ seems to be a vector in the tangent space $(x, {\mathbb R}^n)$. Then a vector space always has an origin, and a vector is always ""glued"" to that origin. What allows us to ""move vectors around"" with impunity is that ${\mathbb R}^n$ is isomorphic to ${\mathbb R}^n$. Moreover, a motivation for tangent spaces seems to be precisely to formalize the idea of ""displacements"" on a manifold. How this is related to the idea of affine spaces (which also seem to deal with ""displacements""), I don't know. Is any part of the above discussion correct? When is a vector ""glued"" to the origin? What is a rigorous formulation of ""position vectors"" and ""displacements vectors""? Does it use tangent bundles? Does it use affine spaces?","['calculus', 'affine-geometry', 'differential-geometry', 'vectors', 'vector-spaces']"
+2392517,Is every Baire space Cech-complete?,"I can't think of any example of a topological space satisfying the Baire Category Theorem which is not Cech-complete. (A space is Cech-complete if it is a Tychonoff space and if it is a $G_\delta$ subset of its Stone-Cech compactification, or equivalently of any other compactification). There isn't even an example of one in $\pi$-base. However, it's very well known every Cech-complete space is Baire, and I've never seen it mentioned that the reverse is true as well. Are these properties equivalent? Is there a counterexample?","['general-topology', 'baire-category']"
+2392544,Total injective relations are always functions?,"I was watching the following video, and around 6:12, he says ""Whenever there is a total injective relation, there is always a total injective function"" as well. https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/proofs/tp3-3/vertical-aecd80da5c9a/ I cannot quite understand this statement because if there are less elements in set A then set B, and its a total injective relation, there needs to be at least one element in set A that maps to two elements in set B, meaning that it is not a ""function"". Can anyone explain me what he means here? Thanks!","['binary-operations', 'functions', 'discrete-mathematics']"
+2392562,Finding normal probabilities (battery life),"The lifespan of a calculator battery is normally distributed with a mean of 1100 days & standard dev. of 60 days. $$\\$$ 1) What percent of batteries is expected to survive more than 1200 days? 2) What percent of batteries will survive fewer than 800 days? 3) What length of warranty is needed so that no more than 10% of the batteries will be expected to fail during the warranty period? $$\\$$ This is what I have so far: 1) $P(x > 1200)$ = $1-P(\frac{1200-1100}{60})$ = $1-P(1.67)$ = $1-0.9525$ = 0.0475 2) $P(x < 800)$ = $P(\frac{800-1100}{60})$ = $P(-5)$ = 0 I'm not sure how to do #3. I would appreciate your help, thanks!","['statistics', 'probability', 'normal-distribution']"
+2392577,Why is the determinant of the all one matrix minus the identity matrix n-1? [duplicate],"This question already has answers here : How to calculate the determinant of all-ones matrix minus the identity? [duplicate] (8 answers) Determinant of a matrix with diagonal entries $a$ and off-diagonal entries $b$ [duplicate] (9 answers) Closed 6 years ago . Context (skippable) I was asked (by a friend who is preparing for an exam) whether there was a special trick to compute the determinant of the following matrix. I didn't see anything beyond using the standard computations (like using ""Gauss"" to compute the value). Then I asked another math student who, while quite bright, is a bit rusty in linear algebra and using sagemath we empirically found the below formula. Of course we were both confused as to a) whether it actually always holds and b) why it holds. Actual question Let $n\in\mathbb N$ be a positive integer. Let $I_n\in\mathbb R^{n\times n}$ be the identity matrix and let $1_n\in\mathbb R^{n\times n}$ be the all-one matrix, that is, the matrix for which every entry is $1$. Now I am confused as to why the following (empirically found) statement holds (or does not): $$\forall n\in\mathbb N:\det(1_n-I_n)=(-1)^{n-1}(n-1)$$ For illustration purposes, here is the matrix for $n=4$ (with the determinant being $-3$):
+\begin{pmatrix}
+0&1&1&1\\
+1&0&1&1\\
+1&1&0&1\\
+1&1&1&0
+\end{pmatrix}","['matrices', 'symmetric-matrices', 'determinant']"
+2392623,Show that $ \ B \subset A \iff (A-B) \cup B = A$,"Question: Show that $ \ B \subset A \iff (A-B) \cup B = A$ My attempt: First we prove $ \ B \subset A  \implies (A-B) \cup B = A$ Assume $ \ B \subset A$ WTS $ \ (A-B) \cup B = A$ First show $ \ (A-B) \cup B \subseteq A$ $ x \in (A-B) \cup B \implies x\in A-B$ or $ \ x \in B$ If $ \ x \in A -B \implies x \in A$. Otherwise $ \ x\in B \implies x\in A$, since $ \ B \subset A$. Now we show $  A \subseteq \ (A-B) \cup B$ $ x \in A \implies x\in A-B \implies x \in (A-B) \cup B$ Now we prove $ (A-B) \cup B = A  \implies B \subset A $ Assume $ (A-B) \cup B = A $ WTS $ \ B \subset A$ $ x \in B \implies x\in (A-B) \cup B \implies x\in A$, since  $ (A-B) \cup B = A $ I am not quite sure if this approach is correct. Any feedback would be appreciated.","['elementary-set-theory', 'proof-verification']"
+2392628,Find all functions for $x+f(\frac1x) = 2f(x)$,"This is a very interesting word problem that I came across in an old textbook of mine. So I know its got something to do with induction, which yields the shortest, simplest proofs, but other than that, the textbook gave no hints really and I'm really not sure about how to approach it. Any guidance hints or help would be truly greatly appreciated. Thanks in advance :) So anyway, here the problem goes: Find all functions $f:\mathbb{R}\setminus\{0\}\rightarrow \mathbb{R}$ such that, for all $x\in \mathbb{R}\setminus\{0\}$ , $$x+f\left(\frac1x\right) = 2f(x).$$","['functions', 'functional-equations']"
+2392632,Why is the S-transform necessary in free probability?,"In classical probability, adding two independent random variables corresponds to adding their cumulant generating functions, i.e. the logarithms of their Fourier transforms. In Voiculescu's free probability, adding two freely independent random variables corresponds to adding their $R$-transforms. However, in Voiculescu's free probability there is a separate notion used in the situation of multiplying two freely independent variables, called the $S$-transform. My question is, why is a separate transform needed for multiplication in the free case, and why is it not needed in the classical (commutative) case?","['cumulants', 'probability-theory', 'operator-algebras']"
+2392645,"Are there $x,y,z \in \mathbb Q \left(\sqrt[3]{2} \exp\left(\frac{2\pi i}{3}\right)\right)$ such that $x^2+y^2+z^2=-1$?","The question in the headline was given as a practice exercise at the first quarter of an intro to Galois theory course. I noticed that $\mathbb Q \left(\sqrt[3]{2} \exp\left(\frac{2\pi i}{3}\right)\right)$ is an algebraic extension of degree $3$, since $\mathrm{irr} \left(\sqrt[3]{2} \exp\left(\frac{2\pi i}{3} \right)\right) = x^3-2$ (Eisenstein's criterion/general knowledge about complex roots of unit polynomials). Things got complicated from there. My intuition was that there aren't such $x,y,z$, but I was unable to prove that. I tried to assume that there are such $x,y,z$ and mess around with field extensions degrees, in order to arrive at a contradiction. This seemed promising, because we have
+$$\mathbb{Q} \subset \mathbb{Q} \left(q\right) \subset \mathbb{Q}\left(\sqrt[3]{2} \exp\left(\frac{2\pi i}{3} \right)\right) \subset \mathbb{Q}\left(\sqrt[3]{2} \exp\left(\frac{2\pi i}{3} \right)\right) \left(q \right)$$
+for $q=-(y^2+z^2+1)$ and $\left[\mathbb{Q}\left(\sqrt[3]{2} \exp\left(\frac{2\pi i}{3} \right)\right): \ \mathbb{Q} \right]=3$. Thus, the multiplication theorem implies, among other things,
+$$3\Big|\left[\mathbb{Q}\left(\sqrt[3]{2} \exp\left(\frac{2\pi i}{3} \right)\right) (q): \ \mathbb{Q} \right].$$ However, whatever scheme I tried, I didn't manage to arrive at a contradiction. I then noticed that I can show that $\mathbb{Q}\left(\sqrt{q}\right)=\mathbb{Q}\left(q\right)$. That didn't lead me anywhere interesting, either. I tried many different variations on these themes. Eventually, I got the sense that I wasn't able to arrive at a contradiction because none of my attempts really use the particular ""structure"" of the polynomial whose existence I was trying to disprove. Instead, my solutions depended on a too abstractly defined field extensions. That is, while I was playing with field extension of the form $K(q)$ or $K(\sqrt{q})$, the operations I tried on them didn't take into consideration the actual definition of $q$, which was derived from the given polynomial $x^2+y^2+z^2+1$. When I tried to develop this line of thought, I got stuck again. At this point, I feel I developed a mental block regarding this question. In my desperation, I even tried to prove the proposition, rather than disprove it. It didn't work. I'd love a nudge in the right direction. A hint, preferably not a subtle one. Thanks!","['abstract-algebra', 'galois-theory', 'polynomials']"
+2392658,Prove that the rational numbers are countable.,"I see that the hint give me the answer, so if I were to prove the statement I will write the hint but I do not think that the proof is so trivial like this. could anyone show me how he/she will write the proof in terms of this hint please. Also I have another question from where did $Q_{0}$ come? if $k=0$ we can not divide by 0 in the definition for $Q_{k}$, so may be $Q_{0}$ comes from $j \in \mathbb{N}$, but our union is over k which belongs to $\mathbb{N}$, so k may be equal 0. I got confused, could anyone explain this for me please?","['proof-writing', 'elementary-set-theory']"
+2392698,"Spanning Trees: Prove if $e_1$ is an edge in $X$ that isn't in $Y$, then there exists an edge ...","Say $X$ and $Y$ are two different spanning trees of a simple and connected and undirected graph $G$. Prove that if $e_1$ is an edge in $X$ that isn't in $Y$, then there exists an edge $e_2$ in $Y$ that isn't in $X$... so the graph $(X − e_1) + e_2$ (obtained from $X$ on replacing $e_1$ by $e_2$) is also a spanning tree of the original graph, $G$.","['graph-theory', 'discrete-mathematics']"
+2392749,Upper bound for $\frac{2^n}{n!} \sum_{m=1}^n \frac{\#\{\text{surjections } [n] \to [m]\}}{m}$,"In connection with this question , I would like to do some estimates using the Baker-Campbell-Hausdorff formula. Let us define $$a_n= \frac{2^n}{n!} \sum_{m=1}^n \frac{ \mathrm{Surj}(n,m)}{m}$$ where $\mathrm{Surj}(n,m)$ denotes the number of surjective maps from an $n$-element set to an $m$-element set. If one prefers, one may use $\mathrm{Surj}(n,m)=m! S(n,m)$, where $S(n,m)$ denotes the Stirling number of the second kind (i.e. the number of partitions of an $n$-element set into $m$ nonempty parts). Question: What kind of upper bounds for $a_n$ can we come up with? Can we prove that the power series $\sum_{n=1}^\infty a_n x^n$ has a positive radius of convergence?","['estimation', 'combinatorics', 'upper-lower-bounds', 'power-series', 'lie-groups']"
+2392754,Control Limits (stat),"An $\bar{x}$ chart is to be established based on standard values: $μ=600, σ=12, n=9.$ The control limits are based on $α$-risk of $0.01$. What are the appropriate control limits? $$\\$$ This is what I have so far: I know the mean/centerline = $600$. I don't know which formula to use to find the control limits: μ $\pm  z_\frac{α}{2}$$(\frac{σ}{\sqrt{n}})$ OR μ $\pm  3(\frac{σ}{\sqrt{n}})$ I would appreciate your help, thanks!",['statistics']
+2392763,Computing $E\left(\exp\left(B_t+\int_0^tB_sdB_s - \frac12\int_0^tB^2_sds\right)\right)$ if $B$ is a standard Brownian Motion,"Let $B_t$ be a standard Brownian motion under probability $P$ . I'm considering computing this: $$E^P\left[ e ^ { B_t + \int_{0}^{t}B_s\mathrm dB_s - \frac{1}{2}\int_{0}^{t}B^2_s\mathrm ds  } \right], t\in[0,T]$$ I'm suggested that we should use Girsanov's Theorem, but I am wondering if it works: Let $Z_t=e ^ {\int_{0}^{t}B_s\mathrm dB_s - \frac{1}{2}\int_{0}^{t}B^2_s\mathrm ds  }$ , then $E[Z_T]=1$ . Let $\mathscr{F}_T=\sigma(B_t,0\leq t \leq T)$ , then we can introduce a new measure $\tilde{P}$ by defining as follow: $$
+\tilde P(A)=\int_{A}Z_T\mathrm dP, \forall A\in \mathscr{F}_T
+$$ Obviously $\tilde P$ is also a probability over $\mathscr{F}_T$ . Thus $E^{\tilde P}[X]=E^P[XZ_t]$ for $X\in \mathscr{F}_t$ . Then by Girsanov's Theorem, $\tilde{B}_t=B_t-\int_{0}^{t}B_s\mathrm ds$ is a standard Brownian motion under $\tilde P$ . Thus we have: $$\begin{align*}
+E^P\left[ e ^ { B_t + \int_{0}^{t}B_s\mathrm dB_s - \frac{1}{2}\int_{0}^{t}B^2_s\mathrm ds  } \right] &= E^P[e^{B_t}Z_t] 
+\\&=E^{\tilde P}[e^{B_t}]\\
+&=E^{\tilde P}[e^{\tilde B_t+\int_{0}^{t}B_s\mathrm ds}]
+\end{align*}$$ Then I don't know what to do next. Is it possible to use Girsanov's Theorem here? Or is there a probabilistic way or pde way to solve this?
+Thank you!","['brownian-motion', 'probability-theory', 'stochastic-calculus']"
+2392765,"Show that $ \left( 1 + \frac{x}{n}\right)^n$ is uniformly convergent on $S=[0,1]$. [duplicate]","This question already has answers here : Show that $(1+\frac{x}{n})^n \rightarrow e^x$ uniformly on any bounded interval of the real line. (4 answers) Closed 6 years ago . Show that $ \left( 1 + \frac{x}{n}\right)^n$ is uniformly convergent on $S=[0,1]$. Given $f_n(x)=\left( 1 + \frac{x}{n}\right)^n$ is a sequence of bounded function on $[0,1]$ and $f:S \rightarrow \mathbb R$ a bounded function , then $f_n(x)$ converges uniformly  to $f$ iff $$\lim\limits_{n \rightarrow \infty} ||f_n - f|| = \lim\limits_{n \rightarrow \infty}\left(\sup |f_n(x) - f(x)| \right)= 0$$ As $$f(x) = \lim\limits_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n = e^x$$ We have $$\begin{split}
+\lim\limits_{n \rightarrow \infty} \left\|\left( 1 + \frac{x}{n} \right)^n - e^x\right\| &= \lim\limits_{n \rightarrow \infty} \left|\sup_{x \in S}\left[\left( 1 + \frac{x}{n}\right)^n - e^x \right ]\right|\\
+&= \lim\limits_{n \rightarrow \infty} \left|\left( 1 + \frac{1}{n} \right)^n - e^1 \right|\\
+&= \lim\limits_{n \rightarrow \infty} |e-e| \\
+&= 0
+\end{split}
+$$ I am new to sequence. Is this appropriate to show convergence? Going back to the definition, How can I show that: ""$f_n(x)=\left( 1 + \frac{x}{n}\right)^n$ is a sequence of bounded function on $[0,1]$""? $f:S \rightarrow \mathbb R$ a bounded function?","['real-analysis', 'sequences-and-series']"
+2392795,Domino tiling on a 3 by N rectangle,"The question is how to tile $3×N$ rectangle with $1×2$ domino. I know exactly how to get the stuff below.(Assume that there is a g(x) which is an rectangle with one square on the latest row) This link asked the same question, you can't look at it if you don't understand what I mean $$f(0) = g(0) = 1$$ $$f(n) = f(n-1) + 2g(n-1)$$ $$g(n) = f(n) + g(n-1)$$ But how can I transfer these equations into $$f(n) = 4f(n-1) - f(n-2)?$$","['recurrence-relations', 'proof-writing', 'tiling', 'sequences-and-series', 'discrete-mathematics']"
+2392811,Six men and six women are paired to dance. What is the probability each pair is wearing the same color shirt?,"Six men and six women are paired to dance. Two men wear red shirts, two men wear white shirts, and two men wear blue shirts. Similarly, two women wear red shirts, two women wear white shirts, and two women wear blue shirts. The men and women are paired off into couples (one man, one woman) at random. What is the probability all the couples are wearing the same color shirts? My answer is $\frac{1}{90}$. There are $6! = 720$ ways to pair the couples and for each color there are $2$ ways to pair the men and women such that partners have the same color shirt. Thus there are $2^3=8$ pairings in which all partners wear the same color shirt, and $\frac{8}{720} = \frac{1}{90}$. But my textbook says the answer is $\frac{1}{9}$. Thanks in advance.","['combinatorics', 'self-learning', 'probability']"
+2392814,Constructing joint confidence intervals/multiple confidence intervals,"Consider $n$ iid observations $X_1,X_2,\dots ,X_n$ from a $Uniform(a,b)$ distribution, where $a$ and $b$ are both unknown. How do we construct a joint confidence interval for $(a,b)$? I would prefer a rectangular shape confidence interval, which can be obtained by using Bonferroni's method, so I guess the question can also be reformed as: How do we get a confidence interval for $a$?","['uniform-distribution', 'statistics', 'confidence-interval', 'probability-distributions']"
+2392823,Identity elements in a cyclic group,"Let's say we have  $C_8 = \langle x\rangle$ and $C_6 = \langle y \rangle$. We define $\varphi:C_8 \rightarrow C_6$ by $\varphi(x)=y^3$. I have to find $ker(\varphi)$ and $im(\varphi)$. So in this case $ker(\varphi) = \{x \in C_8: \varphi(x) = e'\} $ and
+$im(\varphi) = \{\varphi(x): x \in C_8\}$ Here's what I have so far: We know that the $\ker(\varphi)$ is all the elements in $C_8$ that map to the identity of $C_6$,
+\begin{align*}
+\text{Now an element } x^k \in ker(\varphi) &\iff \varphi(x^k)=1\iff \\
+(\varphi(x))^k=1 &\iff n|k 
+\end{align*}
+(for n being the order of $C_6$). Thank you so much in advance!","['abstract-algebra', 'group-theory', 'cyclic-groups']"
+2392834,"If $\operatorname{Spec}(A)$ is a finite discrete set, then $A=\prod_i A_i$, where $A_i$ contains a unique maximal ideal.","Lemma 6.2 of Waterhouse's Introduction to Affine Group Schemes has a Lemma stating, for $k$ a field, Let $A$ be a finite dimensional, commutative $k$ algebra. Then $A$ is a finite direct product of algebras $A_i$, each of which has a unique maximal ideal consisting of nilpotent elements. Proof: Using the fact that $A$ is finite dimensional, Waterhouse first shows that every prime ideal of $A$ is in fact maximal, and that there are only finitely many primes. Since each is maximal, it follows that in the Zariski topology $Z(P)=\{P\}$, so each point is closed. Hence $\operatorname{Spec}(A)$ is a finite discrete set. I understand this, but I lose him when he then immediately states, that hence $A=\prod_i A_i$, (without mention of what $A_i$ is), and that the unique prime in $A_i$ is maximal, and its elements must be nilpotent. I know that since $\operatorname{Spec}(A)$ is finite and discrete, each $Z(P_i)=\{P_i\}$ is clopen, hence $Z(P_i)=Z(e_i)$ for an idempotent $e_i\in A$. Does $\operatorname{Spec}(A)=Z(e_1)\sqcup\cdots\sqcup Z(e_m)$ imply somehow that $A\simeq Ae_1\times\cdots\times Ae_m$? I know that if $e$ is an idempotent, $\operatorname{Spec}(A)=Z(e)\sqcup Z(1-e)$ implies $A\simeq Ae\times A(1-e)$, but if there are more than two clopen sets, I'm not sure how it extends. For instance, is $\operatorname{Spec}(A)=Z(e_1)\sqcup Z(e_2)\sqcup Z(e_3)=Z(e_1)\sqcup Z(e_2e_3)$, then we have $1-e_1=e_2e_3$, so that
+$$
+A\simeq Ae_1\times A(1-e_1)\simeq Ae_1\times Ae_2e_3.
+$$ But it doesn't seem like $Ae_2e_3\simeq Ae_2\times Ae_3$. Edit Would it be fair to say 
+$$
+\operatorname{Spec}(A)=Z(P_1)\sqcup\cdots\sqcup Z(P_m)\simeq\operatorname{Spec}(Ae_1)\sqcup\cdots\sqcup\operatorname{Spec}(Ae_m)\simeq\operatorname{Spec}(\prod_{i}Ae_i)
+$$
+so that $A\simeq \prod_i Ae_i$ since $\operatorname{Spec}$ reflects isomorphism as an equivalence of categories?","['abstract-algebra', 'algebraic-geometry', 'commutative-algebra']"
+2392836,Generalizing the Mercator projection to the $n$-sphere,"I'm interested in how we might generalize the Mercator projection from the 2-sphere to the $n$-sphere. The Mercator projection is normally defined for spherical coordinates given in the form $(r, \theta_1^\text{lat}, \theta_2)$, where $\theta_1^\text{lat} \in [-\pi / 2, \pi / 2]$, $\theta_2 \in [0, 2\pi]$ , and the superscript 'lat' denotes latitude. In this case, the cartesian coordinates $(x_1, x_2)$ of the projected point are given by
+$$
+x_1 = \theta_2 \quad\text{and}\quad
+x_2 = \ln\left( \tan \left( \frac{\theta_1^\text{lat}}{2} + \frac{\pi}{4} \right) \right).
+$$ Converting to the usual definition of spherical coordinates, where $\theta_1$ is the polar angle, with $\theta_1^\text{pol} \in [0, \pi]$, gives
+$$
+x_2 = \ln\left( \cot \left( \frac{\theta_1^\text{pol}}{2}\right) \right).
+$$ Now consider the hyperspherical coordinates $(r, \theta_1^\text{pol}, \theta_2^\text{pol}, \ldots, \theta_{n - 1})$, where $\theta_i^\text{pol} \in [0, \pi]$ and $\theta_{n - 1} \in [0, 2\pi]$. How can we generalize the Mercator projection to this coordinate system? It's clear to me that $x_1 = \theta_{n - 1}$ as before, but I'm not sure if the projections for the other angles generalize in the same way. Is it still true that
+$$
+x_i = \ln\left( \cot \left( \frac{\theta_{i - 1}^\text{pol}}{2}\right) \right),
+$$
+for $i \in [2, n]$? If not, how could we derive the formula?","['analytic-geometry', 'spheres', 'spherical-coordinates', 'geometry', 'conformal-geometry']"
+2392867,"Construct $4 \times 4$ magic square with fixed ""1""","The method I have found to generate $4\times 4$ magic squares gives me a result in which the number ""1"" is at of the corners of the square. How can we extend this to a method to generate a magic square, for a fixed location of number ""$1$""? The number ""$1$"" can be in $16$ different locations (cells). If we name the cells, from upper left corner: $1, 2, 3,4, 5, \ldots,$ and the number ""$1$"" is at the $i^{th}$ cell, then how we can fill the other cells to make a magic square? You can see variations here .","['magic-square', 'number-theory', 'algorithms', 'combinatorics', 'discrete-mathematics']"
+2392885,Show that between any two roots of $e^x\cos(x)=1$ there exists atleast one root of $e^x\sin(x)-1$,"Show that between any two roots of $e^x\cos(x)=1$ there exists atleast
+  one root of $e^x\sin(x)-1$ My Attempt: Let $f(x)=e^x\cos(x)-1$ and $g(x)=e^{x}\sin(x)-1$ Let $a$ and $b$ be two consecutive roots of $f(x)$. By Rolle's theorem, there exists a $c \in (a,b)$ such that $f'(c)=0$ 
+$\implies e^c(\cos(c)-\sin(c))=0 \implies e^c\cos(c)-1=e^c\sin(c)-1$. $c$ is not a root of $e^x\cos(x)-1$. So, I don't see how there can be a root of $e^{x}\sin(x)-1$ in $[a,b]$. Am I going wrong somewhere?","['derivatives', 'rolles-theorem', 'calculus']"
+2392906,Determine the highest order of an element of a Rubik's Cube group,"The period of a sequence of moves on a Rubik's Cube is the number of times it must be performed on a solved cube before the cube returns to its solved state. For example, a $90$° clockwise turn on the right face has a period of four; a $180$° clockwise turn on the right face and a $180$° turn on the top face has a period of $12$. Let's make a $3\times3\times3$ Rubik's Cube group $G$. Each element of $G$ corresponds to each possible scramble of the cube - the result of any sequence of rotations of the cube's faces. Any position of the cube can be represented by detailing the rotations that put a solved cube into that state. With a solved cube as a starting point, each of the elements of $G$ directly align to each of the possible scrambles of the Rubik's Cube. The cardinality of $G$ is $|G|=43{,}252{,}003{,}274{,}489{,}856{,}000=2^{27}3^{14}5^{3}7^{2}11$ and the largest order/period of any element in $G$ is $1260$. To elaborate, no algorithm needs to be performed on a cube more than $1260$ times to return it to the solved state. Now let's say we extended $G$ for other sizes of cubes, so $G_3$ is the group of a $3\times3\times3$ and $G_4$ is a the group of a $4\times4\times4$. (If this isn't a valid naming convention, forgive me, I've just begun learning group theory). Is there a way to find the highest order for any sequence of moves in $G_x$? For example, could I define a function $f$ such that $f(x)$ would give the highest order for any sequence of moves in $G_x$? What would $f$ look like? Would such a function be possible for any size of cube? Thanks a lot in advance. Once again I apologize for any mistakes I've made; feel free to point them out or correct them.","['rubiks-cube', 'recreational-mathematics', 'group-theory', 'functions']"
+2392933,"Find all polynomials with real coefficients $P(x),Q(x)$ such that for every real number $x$ we have: $P(Q(x))=P(x)^{2017}$","Find all polynomials  with real coefficients $P(x),Q(x)$ such that for every real number $x$ we have: $$P(Q(x))=P(x)^{2017}$$ This problem is really hard to me!! I have no idea for the solution! It has been given in summer camp for Iranian MO.","['algebra-precalculus', 'contest-math', 'polynomials']"
+2392937,"nice inequality $\sum\limits_{i=1}^{n}\max({a_{1},\cdots,a_{i}})\min{(a_{i},\cdots,a_{n}})\le\frac{n}{2\sqrt{n-1}}\sum\limits_{i=1}^{n}a^2_{i}$","Let $n\ge 2$ be a positive integer, and $a_{i}>0,i=1,2,\cdots,n$ . Show that $$\sum_{i=1}^{n}\max({a_{1},a_{2},\cdots,a_{i}})\min{(a_{i},a_{i+1},\cdots,a_{n}})\le\dfrac{n}{2\sqrt{n-1}}\sum_{i=1}^{n}a^2_{i}.$$ maybe use Cauchy-Schwarz inequality,because this form $$n\sum_{i=1}^{n}a^2_{i}\ge(a_{1}+a_{2}+\cdots+a_{n})^2$$","['real-analysis', 'inequality']"
+2392961,arrangements with all digits present,"I was pondering over a closed formula for the number of arrangements of elements ('digits') $1,2,\dots,n$ into a string of $n+r$ elements, such that all digits are present at least once. So $r$ is the number of non-unique occurrences. If $r=0$ we get permutations, which are $n!$ in number. If $r=1$, we get $n$ choices for a repeated digit, then $n+1\choose 2$ choices to place two non-unique digits, and then $(n-1)!$ choices for the remaining unique digits, totaling in $n {n+1\choose 2} (n-1)!={n+1\choose 2} n!$ arrangements. However, when $r$ grows we have many shapes for repeated digits, corresponding to partitions of $r$, and the formulas seem intimidating. Another way to describe this class of arrangements, is to call them permutations with unspecified repetitions, i.e. we have all digits present, the order matters, but we are not given which digits repeat. The strings of digits having these properties are sometimes called 'pandigital numbers' (except that they don't allow $0$ in the first position). Question: is there a nice closed formula for the number of such class of arrangements? UPDATE:
+User ""Especially Lime"" has provided a nice answer using inclusion-exclusion principle (and I accepted his answer). It turned out that his formula simplifies to 
+$$
+n! S(n+r,n)
+$$
+where $S(n,m)$ is the Stirling number of the second kind , measuring the number of ways to partition an $n$-element set into $m$ nonempty subsets. Now it is obvious how to obtain this number from the very beginning: the shapes describing which positions among places $1,2,\dots,n+r$ are unique and which repeat, define a partition of the $n+r$-element set into $n$ nonempty subsets. Acting by $n!$ permutations by renumbering labels on parts yields the result.","['permutations', 'combinatorics']"
+2392978,When are the inverses of stochastic matrices also stochastic matrices?,"A stochastic matrix, with elements $\in[0,1]$ and rows summing to 1 are known to have one eigenvalue 1 (stationary distribution) and the rest of lower magnitude. However I don't know about many results regarding their inverses. In which cases is it possible to find another stochastic matrix being the inverse to the first? If we can not find an inverse fulfilling the requirements, can we find some ""pseudo"" inverse? Can we ""expand"" the probability space to find a larger space where it is possible to find a matrix ? EDIT: The closest I have come so far is to expand the space to double number of states and allowing elements > 1. Let us call the $N\times N$ probability transition matrix $\bf P$, then assuming $\bf P$ nonsingular we can calculate ${\bf P}^{-1}$, build the new matrices : $${\bf P_e = P \otimes I}_2\hspace{1cm}{\bf P_{ie}} = |{\bf P}^{-1}|\otimes ({{\bf 1}_2{\bf 1}_2}^T-{\bf I}_2)^{(1-\text{sgn}({\bf P}))\otimes {\bf I}_2}$$ Where the $|\cdot|$ and power are scalar wise operations. If we do this then of course $\bf P_{ie}P_e \neq I\hspace{1cm}\bf P_{e}P_{ie} \neq I$, but that is because we are not finished yet! If we now turn each $2\times2$ block $\bf A$ into a scalar by the following calculation: $[1,0] {\bf A} [1,-1]^T$ And systematically apply to all blocks: $$\cases{({\bf I}_N \otimes [1,0])({\bf P_{ie}P_e})({\bf I}_N \otimes [1,-1]^T)\\
+({\bf I}_N \otimes [1,0])({\bf P_{e}P_{ie}})({\bf I}_N \otimes [1,-1]^T)}$$ Now we do indeed get identities! Row sums of $\bf P_{ie}$ equals 1 if we treat every second bin as $-1$ (as the construction above does). But how to interpret the elements of $\bf {P_{ie}}$ which can be >1 ? Furthermore $\sum_j |({\bf P_{ie}})_{ij}|$ seems to be a measure of the confusion, it goes to $\infty$ as ${\bf P} \to \frac{1}{N^2}{{\bf 1}_N} {{\bf 1}_N}^T$ which is indeed the maximally confusing distribution as we lose all information except the mean values ( all other eigenvalues except stationary distribution will be 0 ).","['matrices', 'stochastic-matrices', 'linear-algebra', 'inverse']"
+2392992,Matrix condition number and loss of accuracy,"There are quite a few sources online that say something along the lines of : ""As a rule of thumb, if the condition number $\kappa(A)=10^k$ then you may lose up to $k$ digits of accuracy on top of what would be lost to the numerical method due to loss of precision from arithmetic methods."" What's the reason for this?","['matrices', 'condition-number', 'numerical-linear-algebra', 'linear-algebra']"
+2392996,Evaluating $\int_{\Omega}\frac{e^{x^2}}{e^{x^2} + e^{y^2}}dxdy $,"Title says it all. I want to calculate $\int_{\Omega}\frac{e^{x^2}}{e^{x^2} + e^{y^2}}dxdy$ where $\Omega = [-1, 1]^2$. It seems to defy all integration techniques. The function $e^{x^2}$ does not have a standard anti-derivative, so how do we calculate this integral?","['multivariable-calculus', 'integration', 'definite-integrals', 'calculus']"
+2393005,"If $450^\circ<\alpha<540^\circ$ and $\cot\alpha=-\frac{7}{24},$ calculate $\cos\frac{\alpha}{2}$. Why is my solution wrong?","The problem says: If $450^\circ<\alpha<540^\circ$ and $\cot\alpha=-\frac{7}{24},$ calculate $\cos\frac{\alpha}{2}$ I solved it in the following way: $$\begin{align} -\frac{7}{24}&=-\sqrt{\frac{1+\cos2\alpha}{1-\cos2\alpha}}\\ \frac{49}{576}&=\frac{1+\cos2\alpha}{1-\cos2\alpha}\\ 625\cos2\alpha&=527\\ 2\cos^2\alpha-1&=\frac{527}{625}\\ \cos\alpha&=-\frac{24}{25}, \end{align}$$ therefore, $$\begin{align} \cos\frac{\alpha}{2}&=\sqrt{\frac{1-\frac{24}{25}}{2}}\\ &=\sqrt{\frac{1}{50}}\\ &=\frac{\sqrt{2}}{10}. \end{align}$$ But there is not such an answer: A) $0.6$ B) $\frac{4}{5}$ C) $-\frac{4}{5}$ D) $-0.6$ E) $0.96$ I have checked the evaluating process several times. While I believe that my answer is correct and there is a mistake in the choices, I want to hear from you.","['algebra-precalculus', 'trigonometry']"

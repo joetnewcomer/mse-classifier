@@ -1,0 +1,458 @@
+question_id,title,body,tags
+801975,local parameter on an irreducible affine algebraic curve,"On page 14 of Shafarevich's Basic Algebraic Geometry 1 , it is stated that for an irreducible affine algebraic curve $X: f(x,y) = 0$, and a nonsingular point $P \in X$, there is a regular function $t$ (called the local parameter) that vanishes at $P$, and such that for every rational function $u$ that is not identically $0$ on $X$, $u = t^k v$ for some $k$ and some regular function $v$ where $v(P) \neq 0$. Now, it is proved in the case where $P = (0,0)$ and where $\dfrac{\partial f}{\partial y} \neq 0$, and in this case we get $t = x$. He calls $k$ the multiplicity of the zero of $P$ on $u$. My questions are: (1) How would our function $t$ change if we didn't have $P = (0,0)$ or $\dfrac{\partial f}{\partial y} \neq 0$? (2) What is the significance of the number $k$? In particular, is it related at all to the multiplicity of a point on $X$ ($m_P(X)$ as in Fulton's Algebraic Curves )? (3) In the absence of any commutative algebra machinery (e.g. local rings), how can I make sense of any of this?! For the answers, it would be nice if the use of things like local rings, etc..., could be kept to a minimum. I am more or less familiar with just pages 1-14 of Shafarevich. EDIT: I realize this is asking for a lot, so any partial answers will get votes, and in time, I'll select the best one.","['affine-geometry', 'algebraic-geometry', 'algebraic-curves']"
+801984,Is it possible to find the limit of a sequence using the definition of a limit?,"Suppose we have a sequence $x_n = (\frac{1}{n})$ and we want to find $$\lim_{n \to \infty} x_n = \ ?$$ by the definition of limit. Clearly, the limit is $0$ but if we were not able to determine this by intuition (as is the case with more complex sequences), is there a way to find that the limit of this sequence is $0$ by using the definition of a limit? Or is the only option to make an educated guess and attempt to prove it using the definition?",['limits']
+801986,Prove that a sequence defined by a recurrence relation converges,"Consider the following recurrence relation: $$
+  a_i = \frac{i+2}{2} \cdot \left(\frac{i}{i+1} - \sum_{j=1}^{i-1} \frac{2 a_j}{2i - j + 2}\right).
+$$ The first ten terms are: $0.75$ $0.733333333333$ $0.728174603175$ $0.725850340136$ $0.72458353375$ $0.723808024231$ $0.723294499472$ $0.722934619774$ $0.722671361045$ $0.722472200516$. It is natural to conjecture that the sequence converges. How can one prove it? Actually, for my application it would be enough to prove convergence in the sense of Cesàro. Some partial results. It is easy to see that if $a_i$ converges, then the limit is equal to $1 / \ln 4 \approx 0.722$. If we assume that for a very large $i$ we have $a_j = 1 / \ln 4$ for all $j < i$, then we get
+$$
+  a_i = \frac{7}{8 \ln 2} - \frac{1}{2} + o(1),
+$$
+which is strictly larger than $1 / \ln 4$.
+Thus, we must use the fact that $a_i$ does not converge too fast. One can check empirically, that $a_i - 1 / \ln 4$ behaves roughly like $i^{-\alpha}$, where $\alpha$ is around $1.6$. Probably, with some effort one can even find the exact value of $\alpha$, but it would be great to do things more systematically.","['dynamical-systems', 'matrices', 'sequences-and-series', 'analysis']"
+802016,"Is there standard notation to handle ""chains of functions""?",Let $f(x)=g  $ $g(y)=z  $ Is there standard notation to express z in terms of f(x)? Something like (f(x))(y)?,"['notation', 'functions']"
+802032,Complex power series divergent and convergent on dense subsets of the circumference of convergence?,Is it possible to have a complex power series $ \sum a_nz^n $ with radius of convergence R such that the series diverges on a dense subset of the circumference of convergence and converges on another dense subset of that circumference? By circumference of convergence I mean the set $ {z: |z| = R} $.,"['power-series', 'complex-analysis']"
+802077,cross product in cylindrical coordinates,"Hi i know this is a really really simple question but it has me confused. I want to calculate the cross product of two vectors
+$$
+\vec a \times \vec r.
+$$
+The vectors are given by
+$$
+\vec a= a\hat z,\quad \vec r= x\hat x +y\hat y+z\hat z.
+$$
+The vector $\vec r$ is the radius vector in cartesian coordinates. My problem is:
+I want to calculate the cross product in cylindrical coordinates, so I need to write $\vec r$ in this coordinate system. The cross product in cartesian coordinates is
+$$
+\vec a \times \vec r=-a y\hat x+ax\hat y,
+$$
+however how can we do this in cylindrical coordinates?  Thank you","['multivariable-calculus', 'cross-product', 'vector-analysis']"
+802092,Extension of Goldstine theorem,"Is the following claim true? Claim. Let $E$ be a Banach space and $F$ its closed subspace. Assume $x\in (E\setminus F)\cup\{0\}$ and $y^{**}\in F^{\perp\perp}$, then there exist a net $(y_\alpha)\subset F$ such that $\sup_{\alpha}\Vert x+y_\alpha\Vert\leq\Vert x+y^{**}\Vert$ and $(y_\alpha)$ weak-$^*$ converges to $y$ in $\sigma(Y^{**}, Y^*)$ topology. To get the Goldstine theorem just take $x=0$. If claim is untrue what are additional assummptions?","['nets', 'weak-convergence', 'functional-analysis', 'banach-spaces']"
+802111,$L^1$ function unbounded on every interval,"[My question concerns part of Exercise 2.25 in Folland's Real Analysis text.] I'm looking at the function $g(x)=\sum_{n=1}^\infty 2^{-n}f(x-r_n)$, where $f(x)=x^{-1/2}$ for $x\in (0,1)$ and $f(x)=0$ elsewhere, and $\{r_n\}$ is some enumeration of the rational numbers.  I am trying to prove that $g$ is discontinuous at every point.  It is easy enough to see that $g$ is discontinuous wherever it is finite (since it is unbounded on every interval), and that it is finite almost everywhere (since it is in particular in $L^1$).  However, it seems to me that to show that $g$ is discontinuous at a point $x_0$ with $g(x_0)=+\infty$, one would have to exhibit a sequence $\{x_n\}$ converging to $x_0$ such that $\{g(x_n)\}$ is bounded.  It seems intuitively obvious to me that such a sequence exists, but I have not been able to construct one.  Any suggestions? (Hints preferred to answers.)",['real-analysis']
+802117,Covering a closed disk in a rigid analytic space by residue classes,"Recently I have been reading through the PhD thesis of Dr. Louis Brewis, ""Ramiﬁcation theory of the p-adic open disc and the lifting problem"", which is available free here: http://webdoc.sub.gwdg.de/ebook/dissts/Ulm/Brewis2009.pdf?origin=publication_detail The set-up for my question is based on the third chapter at the bottom of the 58th page. Namely, we have a complete DVR R with maximal ideal $(\pi)$, field of fractions K, and algebraically closed residue field k of prime characteristic p. We let $Y = (Spf R[[z]]) \otimes K$ be an open rigid disk over K, with $G$ a finite p-group of automorphisms of $Y$ that has a nonempty number of fixed points. We denote the set of fixed points by $\Delta$. We let $D \subset Y$ be the smallest closed disk that contains $\Delta$. The part I don't understand is that Brewis writes we can find a finite family $(E_j)_{j \in J}$ of residue classes $E_j \subset D$ such that $E_j \cap \Delta \neq \emptyset$ and that $\cup_j E_j = D$. How do we know that this can be done? In the context of this paper, we are inducting on the cardinality of $\Delta$, and so this finite cover by residue classes cannot just be one set equal to $D$. I assumed residue class refers to the residue class of an element, i.e. the set of points that have the same image in the special fiber as a given point. Via translation, we should be able to assume WLoG that $D = \{z : v(z) \geq n\}$ where $v$ is the order of $z$ with respect to the uniformizer $\pi$, and where $n \in \mathbb{N}$ is fixed. In such a case, I don't see how we can get a finite cover by residue classes. As n is positive ($Y$ is open) and $E_j$ is assumed to be in $D$, it would seem to me that we may only consider the residue class of an element in the ideal $(\pi)$, at which point we will have all of $D$ (and possibly more) in the residue class. Might the residue class refer instead to open sets about a point of the form $\{z : |z-a| < p^{-n}\}$? In that case, because the residue field is infinite, I am still unsure how to get a finite cover by residue classes. Thank you for reading, Garnet",['algebraic-geometry']
+802126,$\mu(X)<\infty$. $f_n \rightarrow f$ in measure iff $\int_X \frac{|f_n-f|}{1+|f_n-f|}d\mu \rightarrow 0$.,"Let $f,f_n\in \mathcal{M}$ and $\mu(X)<\infty$. Then $f_n \rightarrow f$ in measure if and only if $\int_X \frac{|f_n-f|}{1+|f_n-f|}d\mu \rightarrow 0$. To prove from left what I did is if the integral converges to 0 then either measure of $X$ is small or the term in it. First case gives the result directly. For second $|f_n-f|$ must converge to 0. Which means almost everywhere convergence and in finite measure space it implies convergence in measure by Egoroff's Theorem. Is this true? And what should I do for $""\implies""$?","['measure-theory', 'real-analysis']"
+802144,Integrating a 0-form,"The Stokes theorem states:
+$$\int_\mathcal M d\omega =\int_{\partial \mathcal M} \omega $$ If we have that $\mathcal M$ is a one dimensional manifold with two extreme points, like a closed interval of $\mathbb R$, and $d\omega$  is a one-form, how could the integral in the second term be done? Does that make sense? Because $\partial\mathcal M$ is just two isolated points. We are integrating a function to a single point? The only thing that makes some sense would be the value of the function at those points, and only because it coincides in a specific problem with what I should get by integrating $d\omega$ to the curve, but I don't see that clear at all. I know this is actually what gives: $$\int_a^b df=\left. f\right|_a^b$$ but I can't prove it.",['differential-geometry']
+802145,"is $T:C[0,1]\rightarrow C[0,1]$: $x(t)\mapsto x(t^2)$ compact?","Is $T$ a compact operator? $T:C[0,1]\rightarrow C[0,1]$: $x(t)\mapsto x(t^2)$ where $t\in[0,1]$ with supremum norm.","['operator-theory', 'compact-operators', 'functional-analysis', 'real-analysis']"
+802154,"Is formal logic necessary for pure/""higher"" mathematics?","I'm asking this as an autodidact who wants to learn math rigorously for its own sake. And I was just wondering if understanding proofs could be achieved without a formal grounding in symbolic logic. I ask because I have all the books I need but I simply don't have the patience I'd like to have for the formal logic book, as I'm itching to get into continuous math. And to clarify, I'm interested predominantly in calculus/analysis, ODEs/PDES, and differential geometry.","['foundations', 'calculus', 'logic', 'self-learning', 'education']"
+802162,Eigenvectors of the Zero Matrix,"Given the following matrix: $ \begin{pmatrix}
+   -1 & 0 \\
+    0 & -1 \\ 
+   \end{pmatrix} $. I have to calculate the eigenvalues and eigenvectors for this matrix, and I have calculated that this matrix has an eigenvalue of $-1$ with multiplicity $2$
+However, here is where my problem comes in: To calculate the eigenvector, I need to use: $$ \begin{pmatrix}
+   -1-\lambda & 0 \\          
+    0 & -1-\lambda\ \\ 
+   \end{pmatrix} $$ Multiply it by $$ \begin{pmatrix}
+                               x \\
+                               y \\
+                               \end{pmatrix} $$ and set it equal to $$ \lambda\ \begin{pmatrix}
+                               x \\
+                               y \\
+                               \end{pmatrix} $$ Using my value of $\lambda = -1$, I end up having the following: $ \begin{pmatrix}
+   0 & 0 \\          
+    0 & 0 \\ 
+   \end{pmatrix} $ which equals $ \begin{pmatrix}
+                               -x \\
+                               -y \\
+                               \end{pmatrix}. $ However, apparently I am meant to get an eigenvector of $  \begin{pmatrix}
+                               1 \\
+                               0 \\
+                               \end{pmatrix} $. I have no idea where I am going wrong","['matrices', 'linear-algebra', 'eigenvalues-eigenvectors']"
+802223,When can we have $(A+B)\cap C=A\cap C+B\cap C$?,"With $A+B=\{a+b:a\in A, b\in B\}$ and any non-empty sets A,B,C. When can we have $(A+B)\cap C=A\cap C+B\cap C$? I am looking for the most general conditions (if any) such that the equality stands.
+Thanks Let's start by finding out what happens when $A,B,C\subset \mathbb{R}$.","['elementary-set-theory', 'real-analysis']"
+802232,Rudin's 'Principle of Mathematical Analysis' Exercise 3.14,"Since I'm studying real analysis using this book by myself, I'm not sure whether or not my method to prove convergence of sequence is right. I'm working on the above question's (d), and my solution was kind of different from the solution provided by the following website. The solution in the website is much more beautiful and more concise than mine, but I believe my method also works. http://minds.wisconsin.edu/handle/1793/67009 3.14 If $\{s_n\}$ is a complex sequence, define its arithmetic means $\sigma_n$ by $$\sigma_n = \dfrac{s_0+s_1+...+s_n}{n+1} (n=0,1,2,...).$$ (d) Put $a_n=s_n-s_{n-1}$, for $n\geq 1$. Show that $$s_n-\sigma_n=\dfrac{1}{n+1}\sum_{k=1}^n k a_n$...$(1)$$ Assume that lim$(n a_n)=0$ and that ${\sigma_n}$ converges. Prove that $\{s_n\}$ converges. My solution: Since $\sigma_n$ converges, it is a Cauchy sequence. So, $\forall\epsilon,\forall\delta>0, \exists N\in\mathbb{N}$ s.t.$\forall n, \forall m> N , |n a_n-0|<\epsilon$ and 
+$|\sigma_n-\sigma_m|<\delta$ Let $M=\max\{k |a_k|:1\leq k\leq m\}$ From eq. $(1)$, \begin{align}
+|s_n-s_m|&=|(\sigma_n-\sigma_m)+(\dfrac{1}{n+1}\sum_{k=1}^{n}k a_k-\dfrac{1}{m+1}\sum_{k=1}^{m}k a_n)|\\&\leq|\sigma_n-\sigma_m|+\dfrac{|(m+1)(a_1+2a_2+...+n a_n)-(n+1)(a_1+2a_2+...m a_m)|}{(n+1)(m+1)}\\&=|\sigma_n-\sigma_m|+\dfrac{|(m+1)((m+1)a_{m+1}+(m+2)a_{m+2}+...+n a_n)+(m-n)(a_1+2a_2+...m a_m)|}{(n+1)(m+1)}\\&<\delta+\dfrac{(m+1)(n-m)\epsilon+(m-n)mM}{(n+1)(m+1)}\\&=\delta+\dfrac{(n-m)\epsilon}{n+1}+\dfrac{(m-n)mM}{(n+1)(m+1)}\end{align} As $\epsilon, \delta \to 0, n \to \infty$ and $m \to n$, the right side converges to $0$; therefore, the Cauchy sequence $\{s_n\}$ converges.","['proof-verification', 'convergence-divergence', 'proof-writing', 'real-analysis']"
+802260,Regular matrix and regular stochastic matrix,"We know that : A matrix is regular if its determinant is non zero. A stochastic matrix is regular if at a certain power all elements are positive. Question is how can I make the link between the two definitions, if there are any ? thanks in advance.","['stochastic-calculus', 'matrices', 'linear-algebra', 'stochastic-processes']"
+802288,What's the multiplier value inside a trig function called?,"I'm trying to figure out what the b-value is called?  y=sin(bx) I've heard some say that it's the frequency or angular frequency, but if my x-values are radian values and not time then what would ""b"" be called? Angular frequency seems more accurate than frequency. In my understanding, angular frequency, or angular speed, is the number of radians per second. And frequency is the number of cycles per second. But those are both per a time unit which means that ""b"" must be a unit of time. But my x value is the number of radians.",['trigonometry']
+802293,Is $\overline{\{x: f(x) < a\}} = \{x: f(x) \leq a\}$?,"Let $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$ be a continuous function. Is $\overline{A} =\overline{\{x: f(x) < a\}} = \{x: f(x) \leq a\} = B$? Since $B$ is closed and contains $A$, $\overline{A} \subset B$ as $\overline{A}$ is the smallest closed subset containing $A$. It remains to show $B \subset \overline{A}$. Let $x \in B$. If $f(x) < a$, then we are done. Now suppose $f(x) = a$. There exists $x_{n} \in \mathbb{R}^{2}$ such that $x_{n} \rightarrow x$. However, I cannot guarantee that $f(x_{n}) < a$.","['real-analysis', 'analysis']"
+802335,"Understanding an ""obvious"" deduction in analysis","In Elementary topology , page $365$ reads: Since $\varphi(s)<s$ for $s\in (0,1)$ it follows that the sequence $\varphi^n(s)$ is monotonically decreasing, and we easily see that it tends to $0$ for each $s\in (0,1)$ $($ here $\varphi^n (s)$ denotes $\varphi(\varphi(\cdots \varphi(s)\cdots ),\;n$ times, where $\varphi $ is continuous $(0,1)\to(0,1))$ I don't understand why it is ""easy"" to see that $\varphi^n(s)\to 0$ . What prevents it from converging to some $0<\lambda <1?$ I am guessing continuity will come into play, but I don't see how.","['real-analysis', 'limits']"
+802339,Finding the area of the shaded region on a circle.,"So I need help finding the area of the shaded A region.
+I was going to do pi*(r^2)*(45/360) - (the area of the smaller triangle).
+I just dont know how to get the angle or the lengths of it. Is there an easier
+way to solve this problem?","['algebra-precalculus', 'circles', 'area']"
+802340,What is wrong with this limit $\lim_{x \rightarrow \infty} \frac{2x^4-1}{-4x^5+x^2}$?,"The arrow indicates an elimination due to numbers becoming negligible at high values of x. 
+The correct answer is 0, but I got infinity and I'm not sure where my reasoning went wrong. $$\lim_{x \rightarrow \infty} \frac{2x^4-1}{-4x^5+x^2}=\lim_{x \rightarrow \infty} \frac{x^4(2-\frac{1}{x^4})}{x^5(-4+\frac{x^2}{x^5})}=\lim_{x \rightarrow \infty} \frac{x^4(2)}{x^5(\frac{1}{x^3})}=\lim_{x \rightarrow \infty} \frac{2x^4}{x^2}=\lim_{x \rightarrow \infty} 2x^2 = \infty$$ Thanks!","['calculus', 'limits']"
+802351,Solving the exact differential equation y'=(x-y)/(x+y),"I need to solve the following exact equation: $y' = \frac{(x-y)}{(x+y)}$ I've been taught to put those in the form $M(x, y)dx + N(x, y)dy = 0$ and to make sure ${dM}\over{dy}$ = ${dN}\over{dx}$ So I transform the equation into
+$\frac{1}{(x+y)} dx + \frac{1}{(y-x)}dy=0$ However, $\frac{dM}{dy}=\frac{-1}{(y+x)^2}$ and $\frac{dN}{dx}=\frac{1}{(x-y)^2}$ They are not equal? I'm not supposed to use an integrating factor either.. so I'm a bit at a loss :( The answer is supposed to be $x^2 -2xy -y^2 = c$ How do I get there? Thanks a lot in advance :)","['ordinary-differential-equations', 'problem-solving']"
+802367,Calculating the derivative in terms of $y(x)$,"It has been a few years since I have taken calculus, and I must have forgotten how to do this. I need to find the derivative of the Sigmoid function in terms of $y(x)$. I have found this page which shows the answer is $y(1-y)$. I know how to derive the final derivative using the derivative rules, but I don't know how to get  $y(1-y)$? I need to find the derivative in this form for several functions to be used in back propogation of a neural network. This is list of activation functions .","['calculus', 'derivatives']"
+802413,Noetherian implies Hopfian,"Can someone provide me with a reference for the following 2 statements, or indicate a proof? A finitely generated nilpotent group is Noetherian A Noetherian group is Hopfian.","['hopfian', 'group-theory', 'abstract-algebra']"
+802416,Is there a useful relationship between pointwise and $L^2$ distance?,"It would be really convenient to get a bound on the point-wise closeness of functions by knowing their $L^2$ distance. Clearly, if two functions are close in the $L^2$ sense, you cannot get a general bound on their point-wise distance, but maybe they are close along some parts of their domain. In my mind a theorem might go something like this: Given a measurable, bounded function $f:U\rightarrow\mathbb{R}$, if $||f||_2<\varepsilon$ then there is some 'small'  $\delta > 0$ and a set $V\subset U$ where $|f(x)|<\delta \ \forall\  x\in V,$ and $ \mu(V)\geq\mu(U)-\eta_{\varepsilon, \ \delta}$ Then if we had $f_1,f_2\ni||f_1-f_2||_2<\varepsilon$ there would be a 'fairly large' set $V$ where $|f_1-f_2| < \varepsilon$ throughout $V$. Do theorems like this exist?","['integration', 'measure-theory', 'normed-spaces', 'real-analysis', 'hilbert-spaces']"
+802441,Dini Derivative [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 7 years ago . Improve this question Let $f$ be defined on $\mathbb{R}$ such that $$
+f(x) =
+\begin{cases}
+|x|, & \text{if }x \in \mathbb{Q} \\
+|2x|, & \text{if }x \notin \mathbb{Q} 
+\end{cases}
+$$
+Calculate $D^{+}f(0),D^{-}f(0),D_{+}f(0),D_{-}f(0)$ and $D^{+}f(1),D^{-}f(1),D_{+}f(1),D_{-}f(1)$.","['real-analysis', 'analysis', 'lebesgue-integral', 'lebesgue-measure', 'derivatives']"
+802451,"Prove that a closed unit ball in $C[0,1]$ is not weak-compact","I have to prove that a closed unit ball in $C[0,1]$ is not weak-compact. The hint is that I should consider sets:
+$$V_t=\{f\in C[0,1]:|f(t)|>1/3\}$$
+and
+$$U_t=\{f\in C[0,1]:|f(t)|<2/3\}$$
+Now I should show that $$\{V_t:t\in \mathbb{Q}\cap[0,1]\} \cup \{U_t:t\in (\mathbb{R} \setminus \mathbb{Q})\cap[0,1]\}$$
+is an open cover of a closed unit ball in weak topology such that we can't choose a finite subcover. Weak topologies are sth new to me. Can anyone help me? I did only manage to show, that $\phi_t:C[0,1]\ni f \rightarrow f(t)\in K$ are bounded linear functionals.","['general-topology', 'weak-convergence', 'functional-analysis']"
+802463,Show that the polynomial $x^2 + x + 1$ is irreducible in $\mathbb Z/2\mathbb Z[x]$,"I've looked up Eisensteins criterion, but I don't understand how to apply it to show that
+$ x^2 + x + 1$ is irreducible. Edit: Ok, I see now that Eisensteins criterion does not apply here.","['irreducible-polynomials', 'abstract-algebra', 'polynomials']"
+802487,Finding the area under a curve represented by the equations $x=a\cos{t}+\frac{a}{2}\ln{\left(\tan^2{\frac{t}{2}}\right)}$ and $y=a\sin t$,"How do I find the area of the curve represented by the following equations,
+$$x=a\cos{t}+\frac{a}{2}\ln{\left(\tan^2{\frac{t}{2}}\right)}\\
+y=a\sin t$$ Here's what I tried: Let $A$ denote the area of the curve then $$A=\int y\,dx\\ and\;dx=\left(-a\sin t + \frac{a}{2}\cot {\frac{t}{2}}.\sec^2 {\frac{t}{2}}\right)dt\\So,\;A=\int (a\sin t)\left(-a\sin t + \frac{a}{2}\cot {\frac{t}{2}}.\sec^2 {\frac{t}{2}}\right)dt $$ Now not only does this seem excessively complicated but also I have no idea within which limits should I integrate this expression. Are there any easier alternatives ? $\mathbf {P.S}$: Also how would one graph this curve ? What would it look like ?","['definite-integrals', 'calculus', 'integration', 'area']"
+802534,"If $f'(x) = 0$ for all $x \in \mathbb{Q}$, is $f$ constant? [duplicate]","This question already has an answer here : Let $f:\mathbb{R}\longrightarrow \mathbb{R}$ a differentiable function such that $f'(x)=0$ for all $x\in\mathbb{Q}$ [closed] (1 answer) Closed 7 years ago . Let $f$ be a differentiable function on $\mathbb{R}$ such that $$f'(x)=0,\forall x\in \mathbb Q.$$ Prove or disprove that $$f(x)=c$$ for some constant $c$. I've heard this problem is true, but I'm not sure. Can you prove it or provide a counterexample? Auxiliary question: I wonder the converse of it, if $f′=0$ for all irrational, can we say that $f$ is constant?","['calculus', 'real-analysis', 'analysis']"
+802547,"$h^{p,q}$ of projective space","How can we calculate the Hodge number $h^{p,q}= \dim H^p(\mathbb{P^n},\Omega^q_{\mathbb{P}^n})$ of projective space? Is there a reference for that?","['algebraic-geometry', 'reference-request']"
+802573,Problem on Law of Sines from 'Geometry Revisited',"This problem is from 'Geometry Revisited', Exercise number 4 in section 1.1. The question and answer below are from the textbook. Copy of book found here Question:- Let $p$ and $q$ be the radii of two circles through $A$, touching $BC$ at $B$ and $C$,
+      respectively. Then $pq = R^2$. Answer from the book :- $$c = \frac{2p}{\sin B} = \frac{pb}{R},  
+    b = \frac{2q}{\sin C} = \frac{qc}{R}$$ Multiply and simplify. My understanding :- $R$ is the circumradius of triangle $ABC$. By Law Of Sines, $a/\sin A = b/\sin B = c/\sin C = 2R$. The side $AB$ is common to the 2 triangles having radii p and R, just
+as $AC$ is common to other 2 triangles having radii q and R. By the Law Of Sines, $2p = c/\sin C'$ ,if we call C' as the side
+which is the 3rd side of triangle whose radius is p and shares AB
+with ABC. Similarly $2q = a/\sin A'$ if we call A' as the side which is not
+shared by the triangle whose radius is q. Have I understood correctly so far ? If then, how is $c=2p\sin B$?",['geometry']
+802708,Evaluating a limit (involving derivative),"Evaluate the following limit:  $$\mathop {\lim }\limits_{x \to 1} {\left( {{{f(x)} \over {f(1)}}} \right)^{{1 \over {\log x}}}}$$ My work: $$\eqalign{
+  & \mathop {\lim }\limits_{x \to 1} f(x) = \mathop {\lim }\limits_{x \to 1} {{f(x) - f(1)} \over {x - 1}} \cdot (x - 1) + f(1) = \mathop {\lim }\limits_{x \to 1} f'(1) \cdot (x - 1) + f(1)  \cr 
+  & \mathop {\lim }\limits_{x \to 1} {\left( {{{f'(1) \cdot (x - 1) + f(1)} \over {f(1)}}} \right)^{{1 \over {\log x}}}} = \exp \left( {\ln \left( {{{f'(1) \cdot (x - 1) + f(1)} \over {f(1)}}} \right) \cdot {1 \over {\log x}}} \right) \cr} $$ Now, I have an expreesion which is essentially $0\cdot \infty$ which is problamatic. I think I'm on the right way, but missing something here. Can you help me? Update: $f$ is differentiable at $x=1$ and $f(1) > 0$","['calculus', 'derivatives', 'real-analysis', 'limits']"
+802717,A question from Isaac's Book,"Let $A$ act via automorphisms on $G$, and $(|A|,|G|)=1$ and $G=HK$ where $H,K$ are $A$ invariant subgroups of $G$. Show that $$C_G(A)=C_H(A)C_K(A)$$ I can solve the question when I assume $H\cap K =1$ but in general I could not solve. ($3.E.2$) Edit: I think there is a problem in the solution of Derek at last step. When we have $A^h =A^{t} \implies A^{ht^{-1}}=A \implies ht^{-1}\in N_H(A)$ so how can we conclude that $ ht^{-1}\in C_H(A)$ ? Can anyone explain this ?","['finite-groups', 'group-theory', 'abstract-algebra']"
+802724,Different ways of Arranging balls in boxes,"This question is generalization of different cases of  combinatorics problems that are generally asked. 
+We will find general way of arranging $n$ balls in $r$ boxes. Cases : Identical Balls. Distinct Balls. Order considered. Distinct Balls. Order not considered. Two cases arise in each case : Empty boxes allowed. Empty boxes not allowed. Please feel free to add any other cases or minor variations you might think can be generalized.","['faq', 'combinatorics']"
+802732,"Need help with a definite integral $\int_0^{\infty} \frac{x-1}{\sqrt{2^x-1}\ln(2^x-1)}\,dx$ [duplicate]","This question already has answers here : A conjectured closed form of $\int\limits_0^\infty\frac{x-1}{\sqrt{2^x-1}\ \ln\left(2^x-1\right)}dx$ (5 answers) Closed 10 years ago . Evaluate:
+$$\int_0^{\infty} \frac{x-1}{\sqrt{2^x-1}\ln(2^x-1)}\,dx$$ I am not sure where to start or what should be the best approach towards this problem. I tried the substitution $2^x-1=t^2$ but that seems to make things more worse. Using this substitution, I got:
+$$\int_0^{\infty} \frac{1}{\ln^2 2}\frac{\ln\left(\frac{1+t^2}{2}\right)}{(1+t^2)\ln t}\,dt$$
+I don't see how to proceed after this. :( Any help is appreciated. Thanks!","['definite-integrals', 'calculus', 'integration']"
+802766,"This limit supposed to be $0$ but I get $2$, why?","I am told that
+$$
+\lim_{x\to0}\left(4x^2\sin^2\left(\frac{1}{x}\right)-x\sin\left(\frac{2}{x}\right)\right)=0,
+$$
+but when I calculate this by hand, I get $2$, why? I thought that this limit is
+$$
+4\lim_{x\to0}\left(\frac{\sin\left(\frac{1}{x}\right)}{\frac{1}{x}}\right)^2-2\lim_{x\to0}\frac{\sin\frac{2}{x}}{\frac{2}{x}}=4-2=2.
+$$ What I am doing wrong? And in general how can I notice that the method I used is not correct?","['calculus', 'limits']"
+802767,Show that $\sin(x)\sin(y)\sin(z) \leq \frac{1}{8}$,"Let $(x,y,z) \in (\mathbb{R}^+)^3$ such that $x + y + z \leq \frac{\pi}{2}$ . Show that $$\sin(x)\sin(y)\sin(z) \leq \frac{1}{8}$$ I have a solution using convexity of $\sin$ but I am looking for a method wich does not use convexity. EDIT: I don't want to use convexity because I'd like to do the exercise in accordance with the program of high school (although I do not know if this is possible)","['trigonometry', 'inequality', 'real-analysis']"
+802782,Differentials on a curve,"Say I have an algebraic curve $C$ over a field $k$ and a group $G$ acting on $C$. Under what conditions on $C$ and/or the action of $G$ on $C$ can one conclude that $H^0(C,\Omega^1_C)^G = H^0(C/G,\Omega^1_{C/G})$ holds? For example, if the morphism $C \to C/G$ has some ramification, what can one say? Could it be that as long as both $C$ and $C/G$ are smooth and projective, this equality holds, for example?",['algebraic-geometry']
+802801,Definition of intersection of a family of sets,"The definition of an intersection of family($F$) is: $$\cap F=\bigl\{x\mid\forall A: (A\in F \implies x\in A)\bigr\} $$ If my understanding serves me correctly this notation means that all the $x$ that pass the elementhood test are in the set. So $\forall A: (A\in F \implies x\in A)$ must be either true or false for each different $x$. But in this case isn't $F$ also a free variable, so we can't assign a truth value to $\forall A:(A\in F \implies x\in A)$ as it contains a free variable $F$ ($x$ and $A$ are bounded). Is there some implicit assumption about $F$ ? Also in case of an indexed family $F=\{A_i\mid i\in I\}= \bigl\{x\mid\exists i\in I: x=A_i\bigr\}$, is $A_i$ (which is a function of $i$) bound or free (if free isn't it the same problem as the first question) ?","['logic', 'quantifiers', 'elementary-set-theory', 'definition']"
+802803,To solve $2^x+4^x+2^{\lfloor x \rfloor}+4^{\lfloor x \rfloor}+2^{x- \lfloor x \rfloor}-4^{x-\lfloor x \rfloor}=50+\sqrt{50}$,How to solve for positive real $x$: $$2^x+4^x+2^{\lfloor x \rfloor}+4^{\lfloor x \rfloor}+2^{x- \lfloor x \rfloor}-4^{x-\lfloor x \rfloor}=50+\sqrt{50}$$ ?,['algebra-precalculus']
+802840,Stability of equilibrium in diff EQ symbiotic growth model,"Consider the following system, which is designed to model a symbiotic
+  relationship between two species: $$\dot{x}(t) = x(\epsilon_1
+ -\alpha_1 x + \beta_1 y)\\  \dot{y}(t) = y (\epsilon_2 + \beta_2x - \alpha_2y)$$ Here $\alpha_i,\, \beta_i, \, \epsilon_i\,$ are positive constants. Under what circumstances is there an equilibrium point with both    species present? What can you say about the stability of the equilibrium? For an equilibrium point with both species present, we need $x(\epsilon_1 -\alpha_1 x + \beta_1 y)=y (\epsilon_2 + \beta_2x - \alpha_2y)=0$ and $x,y>0$. This gives us a linear system
+$$
+\left[  
+\begin{matrix}
+\alpha_1 & -\beta_1\\
+-\beta_2 & \alpha_2
+\end{matrix}
+\right]
+\left[
+\begin{matrix}
+x\\y
+\end{matrix}
+\right]
+=
+\left[
+\begin{matrix}
+\epsilon_1\\\epsilon_2
+\end{matrix}
+\right] 
+$$ I claim that if $\alpha_1\alpha_2 - \beta_1\beta_2 = 0$, there are no solutions with $x,y>0$.  If $\alpha_1\alpha_2 - \beta_1\beta_2 \neq 0$, this has a unique solution
+$$
+x_{\text{eq}} = \frac{1}{\alpha_1\alpha_2 - \beta_1\beta_2}\left( \alpha_2 \epsilon_1 + \beta_1 \epsilon_2 \right)\\
+y_{\text{eq}}= \frac{1}{\alpha_1\alpha_2 - \beta_1\beta_2}\left( \beta_2\epsilon_1 + \alpha_1 \epsilon_2 \right),
+$$
+and if we want $x,y>0$, we will need $\alpha_1\alpha_2 - \beta_1\beta_2>0$. So an equilibrium point with both species present exists iff $\alpha_1\alpha_2 - \beta_1\beta_2>0$. Now, the stability of this point is the part I have a question about. I conjecture that any ball around the equilibrium point which stays in the first quadrant will be positive invariant, but I don't really know. I had no luck looking for a Lyapunov function. Any ideas?",['ordinary-differential-equations']
+802848,Why did the ancients hate the Parallel Postulate?,"I am reading this book, Gödel's Proof , by James R. Newman, at location 117 (Kindle), it says, For various reasons , this axiom, (through a point outside a given line only one parallel to the line can be drawn), did not appear ""self-evident"" to the ancients. Any idea what the various reasons might be? It's self-evident enough to me. Edit Sorry, my bad, right after the sentence, (the above quote), there is a footnote, says that: The chief reason for this alleged lack of self-evidence seems to have been the fact that the parallel axiom makes an assertion about infinitely remote regions of space. Euclid defines parallel lines as straight lines in a plane that, ""being produced indefinitely in both directions,"" do not meet. Accordingly, to say that two lines are parallel is to make the claim that the two lines will not meet even ""at infinity."" But the ancients were familiar with lines that, though they do not intersect each other in any finite region of the plane, do meet ""at infinity."" Such lines are said to be ""asymptotic."" Thus, a hyperbola is asymptotic to its axes. It was therefore not intuitively evident to the ancient geometers that from a point outside a given straight line only one straight line can be drawn that will not meet the given line even at infinity.","['geometry', 'math-history']"
+802879,Truth set of a Universal Quantifier and Family of sets,"The definition of an intersection of family($F$) is: $$\cap F=\bigl\{x\mid\forall A(A\in F \implies x\in A)\bigr\} $$ If my understanding serves me correctly this notation means that all the $x$ that pass the elementhood test are in the set. So $\forall A(A\in F \implies x\in A)$ must be either true or false for each different $x$. Assume $x\in A$ and $A\notin F$, doesn't that mean that $x$ is in $\cap F$(including any element $x\in A$ for any $A\notin F$)   ? So any $x$ can be in $\cap F$ if $A\notin F$ since $\forall A(A\in F \implies x\in A)$ will be true if $A\notin F$. This case is similar to $A=\{z|\forall n (n\in N\implies z=n)\}$($N$ is the set of natural numbers), if $n\notin N $  then the set $A$ can contain any value in the real system since $\forall n (n\in N\implies z=n)$ will be true if $n\notin N$.","['logic', 'quantifiers', 'elementary-set-theory']"
+802886,Subnets and finer filters,"Suppose $G$ is a finer filter than $F$ in a topological space $X$. 
+Is the net base in $G$ a subnet of the net base in $F$? I am using the definitions of General Topology of Willard: Definition 12.15. If $(x_\lambda)$ is a net in $X$, the filter generated by the filter base $\mathscr C$ consisting of the sets $B_{\lambda_0}=\{x_\lambda; \lambda\ge\lambda_0\}$, $\lambda_0\in\Lambda$, is called the filter generated by $(x_\lambda)$. Definition 12.16. If $\mathscr F$ is a filter on $X$, let $\Lambda_{\mathscr F}=\{(x,F); x\in F\in\mathscr F\}$.
+  Then $\Lambda_{\mathscr F}$ is directed by the relation $(x_1,F_1)\le(x_2,F_2)$ iff $F_2\subset F_1$, so the map
+  $P\colon \Lambda_{\mathscr F} \to X$ defined by $P(x,F)=x$ is a net in $X$. It is called the net based on $\mathscr F$. The definition of subnet used in Willard is the second one from this post: Different definitions of subnet Thank you","['general-topology', 'filters', 'nets']"
+802902,"Line integral: $u = ( \frac{-y}{x^2 + y^2}, \frac{x}{x^2 + y^2}, z)$","Let $u = ( \frac{-y}{x^2 + y^2}, \frac{x}{x^2 + y^2}, z)$ and D the domain bounded by the torus obtained by rotating the circunference $(x-2)^2 + z^2 =1, y=0$ around the z-axis. Show that $rot( u )=0 $ in D, but 
+$$ \int_C u.dr \neq 0$$
+if $C$ is the circunference $x^2 + y^2 = 4, z=0$. Determine all the possible values for the integral $$\int_{(2,0,0)}^{(0,2,0)} u.dr$$ over a path in $D$ My attempt : I've show the first part but I am having troubles with the last one. If $y$ is not zero, then $\phi(x,y,z)=\arctan(-\frac{x}{y})+\frac{z^2}{2}$ would be a good potential for $u$, but I couldnt find the case that $y=0$. Thanks!","['definite-integrals', 'multivariable-calculus', 'integration']"
+802908,Find compressed form for cumbersome calculation,"Given the three functions
+$u^{\mathrm{(I)}}(t)\;=t \left(t^2\right)^{k}\,e^{2\beta t^2},\\
+u^{\mathrm{(II)}}(t)=\sqrt{\left(t^2\right)^{2k}-\left(t^2\right)^{2k+1}}\,e^{2\beta t^2},\\
+u^{\mathrm{(III)}}(t)\,=\sqrt{\left(t^2\right)^{2k+1}-\left(t^2\right)^{2k+2}}\,e^{2\beta t^2}$ for $k \in \{0,...,n\}$ and $C,\beta \in \mathbb{R}$ fixed. such that $$u'''(t)^{\mathrm{(x)}}-\frac{t}{(1-t)}u'(t)^{\mathrm{(x)}}+4\left(A_n^{\mathrm{(x)}}\frac{(2t)}{(1-t^2)}+\ \beta \frac{(2t)^2}{(1-t^2)}+ \frac{C}{(1-t^2)}\right)u(t)^{\mathrm{(x)}}=0$$ where $A_n^{\mathrm{(I)}} = n\\$ $A_n^{\mathrm{(II)}} = 2n\\$ $A_n^{\mathrm{(III)}} = 3n\\$ Now, I was wondering whether it is possible to find an explicit representation for this, such that for every $k \in \{0,...,n\}$ and $(I,II,III)$ you end up with an equation that looks like $c_0 (t^2)^{k-1} + c_1 (t^2)^{k} +c_2 (t^2)^{k+1} = 0$?","['calculus', 'derivatives', 'real-analysis', 'analysis']"
+802933,Ricci Soliton geometric meaning,"I wonder what is the geometrical, intuitive meaning of a Ricci soliton on a manifold. 
+The definition that I use is as follows. $V$ is a vector field on the manifold, $g$ is a Riemannian metric. $\lambda$ a real constant.
+$$\mathcal L_Vg+2Ric+2\lambda g=0$$","['riemannian-geometry', 'differential-geometry']"
+802953,Rayleigh and Exponential distributions?,If $X$ is Rayleigh distributed random variable. What is the distribution of $|X|^2$? If $X$ is Exponential distributed random variable. What is the distribution of $|X|^2$?,['probability']
+802954,How to think when solving $3\frac{\partial f}{\partial x}+5\frac{\partial f}{\partial y}=0$?,"Solve this differential equation
+$$3\frac{\partial f}{\partial x}+5\frac{\partial f}{\partial y}=0$$ Usually, when we get these problems, they tell us what variable change is smart to do and we just chunk through the chain rule and end up with an answer. Now, you have to think for yourself what variables to put. Therefore, I did not know how to do. I know the variable substitution that they made, but not why the made it . How should I think here? My first guess was $e^{5x-3y}+C$ which does indeed solve it, but that solution is not general enough. Any one function $g(5x-3y)$ will do it, according to the solution manual.","['multivariable-calculus', 'ordinary-differential-equations', 'calculus']"
+802960,How to solve the following summation problem?,"$$\sum\limits_{k=1}^n\arctan\frac{ 1 }{ k }=\frac{\pi}{ 2 }$$
+Find value of $n$ for which equation is satisfied.","['trigonometry', 'sequences-and-series']"
+802998,Find a matrix such that $Ax=0$,"Let
+$$W = span\left\{ {\left( {\matrix{
+   1  \cr 
+   0  \cr 
+   0  \cr 
+   1  \cr 
+ } } \right),\left( {\matrix{
+   0  \cr 
+   2  \cr 
+   1  \cr 
+   { - 1}  \cr 
+ } } \right)} \right\}$$ I was asked to find a matrix, $A$ which satisify the following:
+$$W = \left\{ {x \in {\mathbb{R}^4}|Ax = 0} \right\}$$ $A$ must be $n\times 4$. $W$ is actually $null(A)$, so every linear combination of the vectors is a solution for $Ax = 0$. Other then those observations, I am not sure how to find $A$. Looking for guidance. Thanks.","['vector-spaces', 'matrices', 'linear-algebra']"
+803032,Counting $k$-ary ordered trees,"The (full) binary counting tree problems give the number of binary trees that can be formed using $N$ nodes $T(n)= C_n$ , where $C_i$ are the Catalan numbers.    The recursion form is $T_n = \sum_{i=0}^{n-1}T_iT_{n-1-i}$ .
+Now, I want to generalize the binary counting tree by: the order of children nodes matters.  This seems simple enough. The number of trees now is $T_n = n!C_n$ .  The recursion form is $n\sum_{i=0}^{n-1}{{n-1\choose i}T_iT_{n-1-i}}$ $k$ -ary tree: instead of binary, now it's $k$ -ary (and of course with ordered nodes).  I am not sure if there is a specific name for this issue, but I can't find a ""nice"" recursion form or closed formula for $T_n$ . The question thus asks for the recurrence form (and closed form if possible) of the $k$ -ary ordered trees problem above. What about a simpler version of counting ternary trees (no label) ?  The recurrence form is easy to get but what about the closed form of it ?","['trees', 'combinatorics']"
+803070,"integral involving hypergeometric function $\int^1_0\frac{_2F_1(p,p;p+1;-\frac{1}{y})}{y}\,dy$","I arrived at the following result $$\tag{1}\int^\infty_0 z^{p-1} E^2(z)\,dz=\frac{\Gamma(p)}{p}\int^1_0\frac{_2F_1(p,p;p+1;-\frac{1}{z})}{z}\,dz$$ where the exponential integral $E(z)$ is defined as $$E(z)=\int^\infty_z \frac{e^{-t}}{t}\,dt$$ I have two questions [1] Does (1)  hold for all $p>0$ ? [2] Is there a way to simplify or solve the integral on the right ?","['definite-integrals', 'improper-integrals', 'special-functions', 'integration']"
+803076,How to calculate volume of non-convex polyhedron?,"I need to calculate volumes of not-necessarily-convex polyhedrons defined by x,y,z coordinates.  In reality, these are shapes of tree crowns.  We have points on the perimeter of the crowns (usually around 8 - 15 points, taken in clockwise fashion), and one top and one bottom point. I have seen this page: http://www.ecse.rpi.edu/~wrf/Research/Short_Notes/volume.html , ( link via Archive.org ) but I'm not sure if those algorithms are valid for non-convex polyhedrons. Any suggestions would be greatly appreciated! Thanks,
+Alex",['geometry']
+803082,How t show $f=g$ almost everywhere,"How to show $f=g$ almost everywhere Let two real-valued measurable functions $f$ and $g$ be such that for any measurable set $E$ the integrals $\int_E f\,d\mu$  and  $\int_E g\,d\mu$ coincide. Could you please help. It seems obvious. we could define the integrals as charges. can we do sth from here. but I do not know how to approach.","['measure-theory', 'almost-everywhere', 'real-analysis']"
+803087,L'Hospital's rule vs Taylor series,"One classical application of Taylor expansions is to obtain polynomial equivalents of complicated functions and use them to compute limits. For example, with Landau notations, we have $$\begin{array}{rcl}
+\lim_{x\to 0}\frac{e^x-x-\cos(x)}{x^2} & = & \lim_{x\to 0}\frac{1+x+\frac{x^2}{2}-x-1+\frac{x^2}{2}+o(x^3)}{x^2} \\
+                                       & = & \lim_{x\to 0}\frac{x^2+o(x^2)}{x^2}\\
+                                       & = & \lim_{x\to 0} 1+o(1)=1 
+\end{array}
+$$ But this example can be dealt with using L'Hospital's Rule twice. It seems to me that it would be always the case: since we basically consider ratio of ""infinite degree polynomials"", we can use repeatly l'Hospital's Rule in order to kill the indetermination. My question: is there an example where Taylor expansions can be used but not L'Hospital's rule? I guess no so an example where computations with l'Hospital's Rule are awfully complicated but reasonable with Taylor would make me happy.","['calculus', 'examples-counterexamples', 'taylor-expansion']"
+803099,Calculation of integral $\int\exp \left(-\alpha \sin^2 \left(\frac{x}{2} \right) \right) dx$,"Given $\alpha$ is a constant. How to calculate the following integral? \begin{equation}
+\int \exp \bigg(-\alpha \sin^2 \bigg(\frac{x}{2} \bigg) \bigg) dx
+\end{equation} Thanks for your answer.","['exponential-function', 'integration', 'indefinite-integrals']"
+803106,Sum of sum of $k$th power of first $n$ natural numbers.,"I was working on a problem which involves computation of $k$-th power of first $n$ natural numbers. Say $f(n) = 1^k+2^k+3^k+\cdots+n^k$ we can compute $f(n)$ by using Faulhaber's Triangle also by fast computation of Bernoulli numbers. Here we have to compute $G(n)= f(1)+f(2)+f(3)+\cdots+f(n)$ I did some work on this to simplify but unable to come up with any easy equation. Can someone help me how to compute $G(n)$ efficiently , I can efficiently compute $f(n)$. Here $n<123456789$
+and $k<321$. Thanks.","['natural-numbers', 'power-series', 'number-theory']"
+803127,Proof for $\sin(x) > x - \frac{x^3}{3!}$,"They are asking me to prove $$\sin(x) > x - \frac{x^3}{3!},\; \text{for} \, x \, \in \, \mathbb{R}_{+}^{*}.$$ I didn't understand how to approach this kind of problem so here is how I tried:
+$\sin(x) + x -\frac{x^3}{6} > 0 \\$
+then I computed the derivative of that function to determine the critical points. So:
+$\left(\sin(x) + x -\frac{x^3}{6}\right)' = \cos(x) -1 + \frac{x^2}{2} \\ $
+The critical points:
+$\cos(x) -1 + \frac{x^2}{2} =  0 \\ $
+It seems that x = 0 is a critical point. 
+Since $\left(\cos(x) -1 + \frac{x^2}{2}\right)' =  -\sin(x) + x \\ $
+and $-\sin(0) + 0 = 0 \\$
+The function has no local minima and maxima. Since the derivative of the function is positive, the function is strictly increasing so the lowest value is f(0) .
+Since f(0) = 0 and 0 > 0 I proved that $ \sin(x) + x -\frac{x^3}{6} > 0$. I'm not sure if this solution is right. And, in general, how do you tackle this kind of problems?","['trigonometry', 'inequality', 'derivatives']"
+803136,"Why are polyhedra related to the prime numbers 2, 3 and 5, but not to the prime number 7?","Just take a quick glance at all the numbers in these Wikipedia pages on polyhedra: http://en.wikipedia.org/wiki/Platonic_solid http://en.wikipedia.org/wiki/Archimedean_solid http://en.wikipedia.org/wiki/Kepler-Poinsot_polyhedra http://en.wikipedia.org/wiki/Catalan_solids One thing is very curious: there are a lot of numbers divisible by 2, by 3, and by 5, but there are almost none divisible by 7 (or any prime number greater than 7). Therefore it seems that 2, 3 and 5 are particularly important in geometry. While 7 is not. Is this really true? And if yes, why are 2, 3 and 5 very common, but not 7?","['geometry', 'polyhedra', 'solid-geometry', 'euclidean-geometry', 'platonic-solids']"
+803149,Finding efficiency of an estimator for Poisson random variables,"$\newcommand{\eff}{\operatorname{eff}}$ I am asked to derive the efficiency of the estimator $\hat{\lambda}_1 = \frac{1}{2}(Y_1+Y_2)$ relative to $\hat{\lambda}_2=\bar{Y}$, where $Y_1,Y_2,\ldots,Y_n$ denotes a random sample of size n from a Poisson distribution with mean $\lambda$. I know that $\eff(\hat{\theta}_1,\hat{\theta}_2)=\frac{V(\hat{\theta}_2)}{V(\hat{\theta}_1)}$ for two unbiased estimators $\hat{\theta_1}$ and $\hat{\theta_2}$. So far I have: $$
+\begin{align}
+\eff(\hat{\lambda}_1,\hat{\lambda}_2) & =\frac{V(\bar{Y})}{V(\frac{1}{2}(Y_1+Y_2))} \\[8pt]
+& =\frac{\lambda/n}{\frac{1}{4}V(Y_1)+\frac{1}{4}V(Y_2)} \\[8pt]
+& =\frac{\lambda/n}{\lambda/2} \\[8pt]
+& =n/2
+\end{align}
+$$ Is this correct, or am I missing something? I have to do a short presentation of this problem in class and I'd like to make sure I didn't screw up somewhere.","['statistics', 'probability-distributions', 'random-variables']"
+803155,How to show that $e^x$ is differentiable?,"I tried to search for a few minutes but I didn't find this question so I hope it's not a duplicate. So I want to show that $(e^x)' = e^x$. To do that, I must proof that the limit: $$\lim_{h\to0}\frac{f(x+h) - f(x)}{h} = \lim_{h\to0}\frac{e^{x+h} - e^x}{h}$$
+exists and equals to $e^x$. So I have: $$\frac{e^{x+h} - e^x}{h} = \frac{e^x \cdot e^h - e^x}{h} = e^x \bigg(\frac{e^h - 1}{h}\bigg) \\ e^h - 1 = z \implies e^h = 1+z >0 \implies h = \ln(1+z)$$
+Because of the continuity of the $\ln$ and $e^x$ functions, we have: $$h\to 0 \iff e^h \to 1 \implies z\to0 \\
+z > 0 \implies \frac{1}{z} \to +\infty \\
+z < 0 \implies \frac{1}{z} \to -\infty \\
+\frac{e^h - 1}{h} = \frac{z}{\ln(1+z)} = \frac{1}{\frac{1}{z}\ln(1+z)} = \bigg[ y = \frac{1}{z} \bigg] =  \frac{1}{y\ln(1+\frac{1}{y})} = \frac{1}{\ln(1+\frac{1}{y})^y} \\
+h \to 0 \implies |y| \to +\infty \implies \bigg(1+\frac{1}{y}\bigg)^y \to e \implies \\
+\lim_{h\to0}\frac{e^h - 1}{h} = \frac{1}{\ln e} = 1
+\implies (e^x)' = e^x \cdot 1 = e^x$$ But how do I prove that $\lim_{\pm\infty}(1 + \frac{1}{x})^x = e$ ? We defined $e$ like this:
+$$\lim_{n\to\infty} \bigg(1 + \frac{1}{n}\bigg)^n = e \space \,, \space n\in\mathbb{N}$$ I thought of the sandwich theorem: $\forall x \geq 1 \,, x\in\mathbb{R} \,, \lfloor x \rfloor \leq x < \lfloor x \rfloor + 1$ and $\lfloor x \rfloor , \lfloor x \rfloor + 1 \in \mathbb{N} $ and if I denote $\mathbb{N} \ni n = \lfloor x \rfloor$ I have:
+$$ \bigg(1 + \frac{1}{n+1}\bigg)^n \leq  \bigg(1 + \frac{1}{x}\bigg)^x \leq \bigg(1 + \frac{1}{n}\bigg)^{n+1} \\ 
+ \lim_{n\to+\infty}\bigg(1 + \frac{1}{n+1}\bigg)^n = \frac{\lim_{n\to+\infty}\bigg(1 + \frac{1}{n+1}\bigg)^{n+1}}{\lim_{n\to+\infty}\bigg(1 + \frac{1}{n+1}\bigg)} = \frac{e}{1+0} = e \\
+ \lim_{n\to+\infty}\bigg(1 + \frac{1}{n}\bigg)^{n+1} =  \lim_{n\to+\infty}\bigg(1 + \frac{1}{n}\bigg)^n \cdot \lim_{n\to+\infty}\bigg(1 + \frac{1}{n}\bigg) = e \cdot (1 + 0) = e$$ and now I could apply the theorem but then again, how do I show that this: $\bigg(1 + \frac{1}{n+1}\bigg)^n \leq  \bigg(1 + \frac{1}{x}\bigg)^x \leq \bigg(1 + \frac{1}{n}\bigg)^{n+1}$ is true? I mean, I can say that (left side):
+$$ n+1 > x \implies \frac{1}{n+1} < \frac{1}{x} \implies 1 + \frac{1}{n+1} < 1 + \frac{1}{x} \\
+\forall y\in\mathbb{R_+} \space n \leq x \implies y^n \leq y^x \\
+\implies \bigg(1 + \frac{1}{n+1}\bigg)^n \leq  \bigg(1 + \frac{1}{x}\bigg)^x$$
+and by analogy the right side but is this a proof in terms of limits? and that's just $+\infty$ for $x \geq 1$, what do I do for $-\infty$ ? For $x\in\langle 0, 1\rangle$, a substitution $y = \frac{1}{x}$ gives me:
+$$\lim_{y\to 0}\bigg(1 + y\bigg)^\frac{1}{y}$$ I'll stop here to see if I'm on the right track, any hints, suggestions, edits, comments and answers are welcome!","['derivatives', 'real-analysis', 'analysis']"
+803161,Solving a system of integral-partial differential equations,"Hi I am a student in electrical engineering. Currently I am facing a difficult problem solving a coupled integral-differential partial equations arising from mean field game. The problem is similar as in http://mfglabs.com/wp-content/uploads/2012/12/cfe.pdf The Bellman cost function is defined as $u(t,R) = \max_{p(s)\geq0,s\geq t} E\left[\int_t^{\infty}-\left[p(s)g_1 - g_2(I(s)+N_0)\right]^2e^{-r(s-t)}ds\right]$ where $g_1,g_2,N_0 > 0$ are constant and $R \geq 0$ $dR = -pdt + \lambda dW$ where $W$ is a Wiener process $I(t) =\frac{d}{dt}\int Rm(t,R)dR $ where $m(t,R)$ is the probability distribution of $R$ at time $t$ For mean field game, I assume $I(t)$ and $p(t)$ are independent. I applied the HJB equation and the Fokker Planck equation to get a system of partial equations as : $\partial_tu(t,R) +\lambda^2\partial^2_{RR}u(t,R) -ru(t,R)+ \max_{p\geq 0}\{-(pg_1 - g_2(I+N_0))^2-p\partial_{R} u(t,R)\}= 0 $ $\partial_t m(t,R) - \partial_R [p(t,R)m(t,R)] = \frac{\lambda^2}{2} \partial^2_{RR}[m(t,R)] $ $\int m(t,R)dR = 1 $ $I$ is calculated as above. The initial condition is known as $m(0,R) = f(R)$ where $f$ are known distribution Solving the Hamiltonian I can get the optimal control $p$. However when I replace $p$ back into the HJB this becomes a system of integral-partial differential equations that I can not solve. The paper suggests using eductive method to find the answer however using Google search returns no result. I want to ask if someone know any directions or (Matlab) methods to approximately solve these equations in order to find $m$ and $u$ ? Thank you very much.","['multivariable-calculus', 'optimal-control', 'partial-differential-equations']"
+803167,Determine scale for random x and y so that aspect ratio is maintained and product is <256,"It's entirely possible that this question already exists on here, I just simply don't have the vocabulary to search for it. That fact probably shows in the question title as well. Here's the question: The largest size output by the third-party renderer I'm working with is 256 in^2. There are no proscriptions on width and height. So, what I need to calculate is, for all area > 256, the scale that would need to be applied to width and height, retaining the aspect ratio between the two and reducing the area to ~256. Thanks.","['geometry', 'area']"
+803175,Automorphisms of a field extension permute roots of irreducible factors.,Would someone mind confirming (or refuting) the following... Proposition. Let $K$ be a field and let $f \in K[X]$. Suppose $g \in K[X]$ is an irreducible factor of $f$. Let $L$ be a splitting field for $f$ over $K$. Then Aut$(L/K)$ permutes the roots of $g$. Proof. Let $x \in L$ be a root of $g$ and let $\sigma \in$ Aut$(L/K)$. As $g \in K[X]$ we have $\sigma g = g$. Clearly $\sigma(x)$ is a root of $\sigma g$ and so the result follows. // Many thanks :),"['galois-theory', 'abstract-algebra']"
+803193,The relationship between CPTP maps and quadratic forms,"Let $H$ be a finite-dimensional Hilbert space (so there is a canonical isomorphism $H\cong H^*$). For a Hilbert space $H$ define $B(H)$ to be the space of linear operators on $H$; we have $B(H)\cong H\otimes H^*$. Suppose $\Lambda:B(H)\to B(H)$ is a CPTP (completely positive trace preserving) map. In particular it is linear, so we can view it as an element of $B(H)\otimes B(H)^*\cong (H\otimes H^*)\otimes (H\otimes H^*)^*$. There is an isomorphism $F$ from this space to $[(H\otimes H^*)\otimes (H\otimes H^*)]^*$, the space of bilinear (or quadratic) forms on $H\otimes H^*$. The map is defined by $F(|E_{kl}\rangle\langle E_{ij}|)=\langle E_{ki}|\otimes \langle E_{lj}|$. (I think--if another map makes more sense then replace this.) Note here we are viewing matrices as vectors in the space $B(H)$. Question : What is the condition on $F(\Lambda)$ that is equivalent to $\Lambda$ being CPTP (and why might it intuitively hold), and is there a way to prove this directly? Is this a useful perspective? By the Kraus representation, the CPTP maps $\Lambda$ are exactly those in the form $\Lambda(\rho)=\sum_i A_i\rho A_i^{\dagger}$. The above then maps $\Lambda$ to the quadratic form $\sum_i\langle A_i|\otimes \langle A_i|$, which is positive semidefinite quadratic form. In particular, for example, this tells us that we need at most $n^2$ matrices $A_i$. So $F(\Lambda)$ being positive semidefinite is a necessary condition for $\Lambda$ to be CPTP; what is a necessary and sufficient condition? Furthermore, this was proved using Kraus representation, but could it be proved directly (and hence the Krause representation would be a corollary)?","['linear-algebra', 'hilbert-spaces']"
+803196,What is meant by gluing two metric spaces together?,"""Gluing"" constructions are common in topology: by gluing two disks along their boundaries we get a sphere; by gluing a cylindical ""handle"" to a sphere we get a torus, and so forth. If the original spaces have a metric in addition to topology, when and how do these metrics carry over to the result of gluing? What are the compatibility conditions required for the glued space to have a metric of its own?","['general-topology', 'quotient-spaces', 'metric-spaces']"
+803221,"$\operatorname{ord}(u)=r,\,\operatorname{ord}(v)=s$ $\,\Rightarrow\,\operatorname{ord}(uv)=rs\,$ if $\,r,s\,$ (co)primes","Let u and v be elements of a commutative group, and suppose that their
+  orders are r and s, respectively. Show that if r and s are distinct
+  primes then the order of uv is rs. I will use the follwing theorem to proof this. Theorem : Let x be an element of order m in a finite group G. Then $$x^s=1$$ in G if and only if s i a multiple of m. My attempt We can here see that
+$$(uv)^{rs}=[commutative]=u^{rs}v^{rs}=1^s1^r=1$$
+By the theorem, this tells us that this is true only if only rs is a multiple of the order of $uv$. Let the order be $ord(uv)=k$. We know that every positive integer can be written as
+$$a=bm+l, 0<=l<b$$
+and since $r$ and $s$ is primes (positive integers), $rs$ can be written as
+$$rs=km+l, 0<=l<k$$
+This gives ut that
+$$1=(uv)^{rs}=(uv)^{km+l}=1^muv^l=(uv)^l$$
+If l>0 then the equation $(uv)^l=1$ contradicts that the positive integer k is the least positive integer for which $(uv)^k=1$. Therefore l=0 and $rs=km$ . We can here see that $rs$ is a multiple of k ( and this proof also the theorem) . 
+$$rs=km => k | rs => k|r     ORk|s$$
+But we know that $r$ and $s$ are distinct primes, so k must be equal to one of the primes . $$k=r => (uv)^k=(uv)^r=1v^r=v^r=1$$
+And since we know that $ord(v)=s$ the theorem tells us that $r$ must be a multiple of $s$. But since both of them is primes, we get that $r=s$ but this is a contradiction (r and s are distincts as the exercise tells us). Now, we try with $k=s$. Same as above, we get that $s=r$ which is a contradiction. Neither k=r nor k=s is right since by the theorem we get that $k=r=s$ and we have that $r$ and $s$ are distincts. This tells us that k cannot be equal to r nor s, since this gives us that $r=s$. And since we know (and as i did proof)that  $$rs=km$$, this tells us, as i wrote before, that
+$$k|rs$$
+Since k is neither equal to $r$ or $s$, this tells us that k must be equal to $rs$. Therefore $$ord(uv)=k=rs$$. Edit: i know that this can be prooved by l.c.m(x,y) but we have not used it so far. That's why i did not proof it with l.c.m(x,y)","['discrete-mathematics', 'group-theory', 'abstract-algebra']"
+803250,Asymptotic divisor function / primorials,"Let $p_n\#\equiv\prod_{k=1}^{n}p_k$ ( primorial ), and $\sigma(n)=\sum_{d|n}^{}d$ ( divisor function ). Could someone please tell me what the general asymptotic of $\dfrac{\sigma(p_n\#)}{p_n\#}$ is? It looks like $O \log(n)$ . Is there anything more precise? Update Thank you to Daniel Fischer for his answer. Out of interest, I include the plot of $\dfrac{\sigma(p_n\#)}{p_n\#}$ against $\dfrac{6 e^{\gamma}}{\pi^2} \log p_n$ . The primorial curve is surprisingly smooth though - why is this?","['prime-numbers', 'divisibility', 'number-theory']"
+803276,Rooks in 3D chess board,How many rooks are needed for a 3D chess board of size NxNxN so that every empty cube on the board can be reached by a rook in a single move?,"['puzzle', 'recreational-mathematics', 'combinatorics']"
+803290,"If $\int_0^\infty x f(x) \ dx < \infty$, is $\int_0^\infty \int_0^\infty f(x+y) \ dx \ dy< \infty$?","Question: Let $f : [0, \infty) \to [0,\infty)$ be a measurable function which, more than being integrable, satisfies $\int_0^\infty x f(x) < \infty$. Does it follow that  $\int_0^\infty \int_0^\infty  f(x+y) \ dx \ dy< \infty$? Remark: The conclusion does not hold if you only assume $\int_0^\infty f(x) \ dx <\infty$. For example, the sequence $a_n = \frac{1}{n} - \frac{1}{n+1}$ is such that $\sum_{n=1}^\infty a_n < \infty$, but $\sum_{n=1}^\infty \sum_{m=1}^\infty a_{n+m} = \infty$.  It's not difficult to adapt this example to the present setting. Remark: Things also fall apart if the integral $\int_0^\infty \int_0^\infty  f(x+y) \ dx \ dy$ isn't taken over the first quadrant only. If $f : \mathbb{R} \to [0,\infty)$ is measurable and not zero almost everywhere, then assuming $\int_0^\infty x f(x) \ dx < \infty$ doesn't change the fact that the integral of $f(x+y)$ over every, e.g., horizontal line will be the same positive number so that $\int_{-\infty}^\infty \int_{-\infty}^\infty f(x+y) \ dx \ dy = \infty$. Added: In retrospect, a nice geometric way to see that the two integrals should be equal is to note that $(x,y) \mapsto f(x+y)$ is constant along lines of slope $-1$, the value of $f$ on $x+y = a$  being $f(a)$.  Meanwhile, the length of the intersection of $x+y = a$ with the 1st quadrant grows linearly with $a$.","['integration', 'real-analysis']"
+803298,simple question about $\nabla r$,"In my physics notes, it says $\nabla r = \underline{e_r} = \frac{\underline{r}}{r}$ and $\nabla \frac{1}{r} = - \frac{\underline{r}}{r^3} = - \frac{1}{r^2} \underline{e_r}$ I don't quite understand why this is? I know that $\nabla \varphi = (\frac{\delta\varphi}{\delta x},\frac{\delta\varphi}{\delta y},\frac{\delta\varphi}{\delta z})$ but I do not understand the above. Thanks.","['multivariable-calculus', 'calculus', 'physics']"
+803303,"How to integrate $\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{\pi} r^2 \sin\theta \sqrt{1 - r^2\cos^2\theta - r^2\sin^2\theta} \,d\phi\, d\theta \,dr$","Find the center of mass of the hemispherical region $W$ defined by the inequalities $x^2 + y^2 + z^2 \leq 1$ and $z \geq 0$ with unity density. By symmetry we know the $x$ and $y$ coordinates will be $0$ so we just need the $z$ coordinate. The volume of a hemisphere is just $\frac{2}{3} \pi$ from the formula for the volume of a sphere, so we just need to compute $\iiint_{W}^{} z \, dz \, dy \, dz$. This formula along with using the same limits for the integration of the volume of a hemisphere, we have: $\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{\pi} r^2 \sin\theta z \, d\phi \, d\theta \, dr$. $z = \sqrt{1 - x^2 - y^2} = \sqrt{1 - r^2\cos^2\theta - r^2\sin^2\theta}$, so we substitute that in and get: $\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{\pi} r^2 \sin\theta \sqrt{1 - r^2\cos^2\theta - r^2\sin^2\theta} \, d\phi \, d\theta \, dr$. Is there an easy way to integrate this?","['definite-integrals', 'multivariable-calculus', 'integration']"
+803329,Multivariate normal distribution independet iff uncorrelated,"I found a few threads about this but none of them answered my question. I am supposed to show that if you have random variables $X_1$,$X_2$ that are gaussian distributed and they fulfill that $$E(X_1)E(X_2) =E(X_1 X_2)$$ which is our definition of being uncorrelated, then they are also independent. Most answers use that in that case the matrix in a multivariate normal distribution has to be diagonal, but I don't see the relationship between $$E(X_1)E(X_2) =E(X_1 X_2)$$ and this diagonal fact? By the way: I know that this would solve the problem, as in that case we would have that $f_{(X_1,X_2)} = f_{X_1}f_{X_2}$ which would mean that they are independent, but I still don't understand this first thing.","['random-variables', 'probability-theory', 'real-analysis', 'probability-distributions', 'probability']"
+803332,"Embeddings $A → B → A$, but $A \not\cong B$?","Are there any nice examples of structures (groups, modules, rings, fields) $A$ and $B$ such that there are embeddings $A → B → A$ while $A \not\cong B$? I would especially like to see an example for modules $A$, $B$. Or is it even true that the existence of such embeddings implies $A \cong B$? Background: I’m correcting exercises and I wanted to give a counterexample to a failing argument. (Well, I’m not certain it fails, but I’m pretty sure it does and it’s not sufficiently justified at least.)","['modules', 'abstract-algebra', 'universal-algebra']"
+803336,Sum of Residues Modulo $p^2$.,Let $p$ be an odd prime. Prove that $$ \sum_{k = 1}^{p-1} k^{2p-1} \equiv \frac{p(p+1)}2 \pmod{p^2}$$,"['prime-numbers', 'elementary-number-theory', 'number-theory']"
+803344,Pointwise a.e. convergence and weak convergence in Lp,"I'm trying to prove the following Theorem: Let $\{f_n\}_{n\in\mathbb N}\subset L^p(\Omega)$ , $f_n \rightharpoonup f$ in $L^p(\Omega)$ ( $\Omega\subset\mathbb{R}^n$ is open and bounded, $1\leq p \leq \infty$ ) and $f_n \to \hat{f}$ almost everywhere. Then $f=\hat{f}$ almost everywhere. Ideas for the proof: We should prove that $$\int (f-\hat{f}) =0$$ We can write $$\int (f-\hat{f}) = \int (f-f_n)+\int (f_n-\hat{f})$$ Then, by weak convergence, the first integral tends to $0$ (because $1\in L^\infty\subseteq L^p$ ). The problem is the limit of the second integral. We can write $$ \int (f_n-\hat{f})=\int_{\Omega \cap E} (f_n-\hat{f}) + \int_{\Omega\cap E^c} (f_n-\hat{f})$$ where $E=\{x: f_n(x) \not \to \hat{f}(x)\}$ . Then $|E|=0$ and the first integral vanishes. My question is: What should I do with the second integral? Is it enough if I use the Lebesgue Dominated Convergence Theorem, since by Hölder inequality I can easily dominate $\{f_n\}$ in $L^1$ ?","['weak-convergence', 'measure-theory', 'convergence-divergence', 'functional-analysis']"
+803356,"Is a non-compact Riemannian manifold a ""measure space""?","One can define $L^p$ spaces for measure spaces with a given measure. Is a non-compact (i.e., it has a boundary) bounded Riemannian manifold a measure space? I am thinking of the manifold $(0,T) \times S$ where $S$ is a $n-1$ dimensional hypersurface embedded in $\mathbb{R}^n$. I want to know so I can use the $L^p$ theory already available. Are there any technicalities I need to worry about?  Basically I want density of continuous functions on a manifold that I have in mind. Thanks.","['manifolds', 'functional-analysis', 'lp-spaces']"
+803363,Integral $\int_0^\infty \frac{\sin^2 ax}{x(1-e^x)}dx=\frac{1}{4}\log\left( \frac{2a\pi}{\sinh 2a\pi}\right)$,"How can we prove this ${\it{interesting}}$ integral
+$$
+I:=\int_0^\infty \frac{\sin^2 ax}{x(1-e^x)}dx=\frac{1}{4}\log\left( \frac{2a\pi}{\sinh 2a\pi}\right)
+$$
+I to write
+$$
+I=\frac{1}{2}\int_0^\infty \frac{(1-\cos a x)}{x}dx \sum_{n=0}^\infty e^{nx}
+$$
+simplifying
+$$
+I=\frac{1}{2} \int_0^\infty \sum_{n=0}^\infty e^{nx}\frac{dx}{x} -\frac{1}{2}\int_0^\infty \frac{\cos a x}{x}dx \sum_{n=0}^\infty e^{nx}
+$$
+but didn't help much.  Thank you","['calculus', 'integration', 'definite-integrals', 'real-analysis', 'complex-analysis']"
+803371,Bus arrival poisson paradox,"I have a question about the waiting time paradox for poisson processes(in this case in terms of bus arrivals). Suppose I know that buses arrive with poisson distribution(lambda). I arrive at fixed time t. I want to figure out three things - The mean length of time I will wait until the next bus. The mean length of time since the last bus. Mean length of time between bus arrivals. I think 1 should be 1/lambda - the poisson process is memoryless, so it shouldn't matter when I arrrive. I think 3 should also be 1/lambda, because that is the mean of the exponential distribution, which determines the distribution of times between buses. I'm not sure about 2. Can anyone help/tell me if my reasoning is wrong/right?","['probability-distributions', 'probability', 'paradoxes']"
+803376,Show $\int_0^\infty \log(1+x^2) \frac{\cosh \frac{\pi x}{4}}{\sinh^2 \frac{\pi x}{4}}dx=4\sqrt 2-\frac{16}{\pi}+\frac{8\sqrt 2}{\pi}\log(\sqrt 2+1)$,"I am trying to prove this interesting integral
+$$
+I:=\int_0^\infty \log(1+x^2) \frac{\cosh \frac{\pi x}{4}}{\sinh^2 \frac{\pi x}{4}}dx=4\sqrt 2-\frac{16}{\pi}+\frac{8\sqrt 2}{\pi}\log(\sqrt 2+1).
+$$
+I tried to write
+$$
+\int_0^\infty \log(1+x)\frac{\cosh \frac{\pi x}{4}}{\sinh^2 \frac{\pi x}{4}}dx+\int_0^\infty \log(1-x)\frac{\cosh \frac{\pi x}{4}}{\sinh^2 \frac{\pi x}{4}}dx
+$$
+and now using
+$$
+\int_0^\infty \sum_{n=1}^\infty \frac{(-1)^{n+1}}{n}x^n\frac{\cosh \frac{\pi x}{4}}{\sinh^2 \frac{\pi x}{4}}dx-\int_0^\infty \sum_{n=1}^\infty \frac{x^n}{n}\frac{\cosh \frac{\pi x}{4}}{\sinh^2 \frac{\pi x}{4}}dx
+$$
+and now introducing a parameter
+$$
+I(a)=\int_0^\infty \sum_{n=1}^\infty \frac{(-1)^{n+1}}{n}x^n\frac{\cosh \frac{a \pi x}{4}}{\sinh^2 \frac{\pi x}{4}}dx-\int_0^\infty \sum_{n=1}^\infty \frac{x^n}{n}\frac{\cosh  \frac{a\pi x}{4}}{\sinh^2 \frac{\pi x}{4}}dx.
+$$
+But writing $I'(a)$ didn't simplify much.  The substitution $y=\sinh \pi x/4$ also was of no use because of the $x^n $ factor.  So How can we prove this interesting integral?  Thanks","['calculus', 'integration', 'definite-integrals', 'real-analysis', 'complex-analysis']"
+803382,"Integral $\int_0^\infty \log \frac{1+x^3}{x^3} \frac{x \,dx}{1+x^3}=\frac{\pi}{\sqrt 3}\log 3-\frac{\pi^2}{9}$","I am trying to prove this interesting integral
+$$
+I:=\int_0^\infty \log \frac{1+x^3}{x^3} \frac{x \,dx}{1+x^3}=\frac{\pi}{\sqrt 3}\log 3-\frac{\pi^2}{9}.
+$$
+I tried using $y=1+x^3$ but that didn't help.
+  We can possibly try
+$$
+I=\int_0^\infty \frac{\log(1+x^3) x}{1+x^3} \,dx-\int_0^\infty \frac{\log(x^3) x}{1+x^3}\,dx.
+$$ These integrals would be much easier had the bounds been from $0 $\ to $\infty$, however they are not.  Perhaps partial integration will work but I didn't find the way if we try
+$$
+dv=\frac{x}{1+x^3}, \quad u= \log(1+x^3)
+$$
+but I ran into a divergent integral. Thanks how can we prove I?","['calculus', 'integration', 'definite-integrals', 'real-analysis', 'complex-analysis']"
+803389,Integral $I:=\int_0^1 \frac{\log^2 x}{x^2-x+1}\mathrm dx=\frac{10\pi^3}{81 \sqrt 3}$,"Hi how can we prove this integral below?
+$$
+I:=\int_0^1 \frac{\log^2 x}{x^2-x+1}\mathrm dx=\frac{10\pi^3}{81 \sqrt 3}
+$$
+I tried to use
+$$
+I=\int_0^1 \frac{\log^2x}{1-x(1-x)}\mathrm dx
+$$
+and now tried changing variables to $y=x(1-x)$ in order to write
+$$
+I\propto \int_0^1 \sum_{n=0}^\infty y^n 
+$$
+however I do not know how to manipulate the $\log^2 x$ term when doing this procedure when doing this substitution.  If we can do this the integral would be trivial from here. Complex methods are okay also, if you want to use this method we have complex roots at $x=(-1)^{1/3}$.  But what contour can we use suitable for the $\log^2x $ term? Thanks","['calculus', 'integration', 'definite-integrals', 'real-analysis', 'complex-analysis']"
+803422,Integral $P\int_0^\infty \frac{x^{\lambda-1}}{1-x} dx$,"I am trying to calculate the following principle value integral
+\begin{equation}
+P\int_0^\infty \frac{x^{\lambda-1}}{1-x} dx
+\end{equation}
+for $\lambda \in [0,1].$  I tried to turn this into a contour integral so our complex function is given by
+$$
+f(z)=\frac{z^{\lambda-1}}{1-z}
+$$
+which has a simple pole at $z=1$ and branch points at $z=0$ and $z=\infty$.  We integrate over a contour with two indented paths thus we pick up half residues at these two contours), thus we can write the contour C as
+$$
+C=\sum_{i=1}^6 C_i + C_{\epsilon}+C_{R}=C_1+C_2+C_3+C_4+C_5+C_6+C_{\epsilon}+C_R.
+$$
+Since the contour encloses no poles and $f(z)$ is holomorphic, by the Cauchy-Goursat theorem we know that
+$$
+\oint_C f(z) dz=0.
+$$
+I can show that the integrals of the contours $C_R$ and $C_\epsilon$ vanish since
+$$
+\bigg|\int_{C_R}\bigg| \leq \bigg| \int_{0}^{2\pi} d\theta \frac{R^{\lambda-1} R}{R}	\bigg|=\bigg|	\frac{2\pi}{R^{1-\lambda}}\bigg| \to 0 \ \text{as} \ R\to\infty \ \text{for} \ \lambda < 1
+$$
+and
+$$
+\bigg|\int_{C_\epsilon}\bigg| \leq \bigg|	\int_{0}^{2\pi} d\theta \epsilon^{\lambda-1}\cdot \epsilon	= \big|2\pi\epsilon^\lambda\big| \to 0 \ \text{as} \ \epsilon \to 0 \ \text{for} \ \lambda > 0.
+$$
+Now write the contour integral as
+$$
+0=\oint_C f(z)dz=P\int_{C_1}  + \ P\int_{C_2} +\  P\int_{C_3}+\ P\int_{C_4}+\ P\int_{C_5}+\ P\int_{C_6}.
+$$
+Explicitly we can now calculate three contour integrals over $C_1, C_2, C_3$ by using $z=xe^{2\pi i}$, $dz=dxe^{i2\pi}=dx$ and we obtain
+\begin{equation}
+P\int_{C_1}+\ P\int_{C_2}+\ P\int_{C_3}=\lim_{R\to\infty} \lim_{\epsilon \to 0}\int_{Re^{i(2\pi-\epsilon)}}^{(1+\epsilon)2\pi i} \frac{z^{\lambda-1}}{1-z}dz-\frac{1}{2}2\pi i\cdot Res_{z=e^{2\pi i} }[f(z)]	+e^{2\pi i(\lambda-1)}	\int_{1}^{0} \frac{x^{\lambda-1}}{1-x}dx.
+\end{equation}
+Note the first integral in terms of $z$ can just be written as
+$$
+\lim_{R\to\infty} \lim_{\epsilon \to 0}\int_{Re^{i(2\pi-\epsilon)}}^{(1+\epsilon)2\pi i} \frac{z^{\lambda-1}}{1-z}dz=\int_{\infty}^{1} \frac{x^{\lambda-1}}{1-x}dx
+$$
+however I am stuck as to how go from here.  Thanks","['residue-calculus', 'integration', 'definite-integrals', 'analysis', 'complex-analysis']"
+803434,Diagonalisability…without the characteristic polynomial,"Let us consider an $n\times n$ matrix  $A$  defined as follows
+$$
+A=\begin{pmatrix}
+1+a&1&\cdots &1\\
+1&1+a&\ddots&\vdots\\
+\vdots&\ddots&\ddots&1\\
+1&\cdots&1&1+a
+\end{pmatrix}
+$$
+is diagonalizable without using the characteristic polynomial of $A$. My matrix contains $1+a$ ($a$ is a real number) along the diagonal and $1$ elsewhere. I just noticed that $a$ is   eigenvalue but I don't know how to conclude with that.. Thanks.","['matrices', 'linear-algebra', 'eigenvalues-eigenvectors']"
+803443,Why do we have this relation between $\frac{\sin \left(\pi x\right)}{\pi }$ and $x!$?,"https://www.desmos.com/calculator/jpbffl8fhe Why do we have $\frac{x}{(x!(-x)!)}$ = $\frac{\sin \left(\pi x\right)}{\pi }$ ? With gamma functions that gives us : $\frac{x}{(\Gamma(x+1)\Gamma(-x+1))}$ = $\frac{\sin \left(\pi x\right)}{\pi }$ Prove that $\Gamma(p)\times \Gamma(1-p)=\frac{\pi}{\sin (p\pi)},\: \forall p \in (0,\: 1)$ tells us that $\left(x-1\right)!\left(-x\right)!$ = $\frac{\pi }{\sin \left(\pi x\right)}$, maybe I can make something out of it ?",['functions']
+803449,$\mathbb{Z} _{29}$ is a field. True or False.,"My answer was True and this is my argument: Since $\mathbb{Z}_{n}$ has got $2$ operations plus the other properties of a ring, I figured that it is indeed a ring. On the other hand, since $\mathbb{Z}_{n}$ is abelian (commutative) and has the multiplicative identity $1$, It can be concluded that it is a $Commutative$ Ring with an $identity$, hence implies that it is a Field. I've also read a theorem which states that: ""Every finite integral domain is a field."" Is my argument acceptable and can I also use the above theorem as an argument? Your help would be really appreciated.","['ring-theory', 'abstract-algebra']"
+803465,How to derive $\frac{d}{dx}\left(x+1\right)^{\sin\left(x\right)}$,"I need help to find derivative of: $\frac{d}{dx}(x+1)^{\sin x}$ i tried to do something like this.. $$(x+1)^{\sin x}\cdot \ln\left(x+1\right)=\sin x(x+1)^{\sin\left(x\right)-1}\cdot \ln(x+1)-(x+1)^{\sin(x)}\cdot \frac{1}{x+1}\:=\sin x(x+1)^{\sin\left(x\right)-1} \ln(x+1)-\frac{(x+1)^{\sin x}}{x+1}$$ I tried another way: $\left(x+1\right)^{sinx}\:=\:ln\left(x+1\right)^{sinx}\:=\:sin\left(x\right)ln\left(x+1\right)\:=\:cos\:\cdot \:ln\left(x+1\right)+sin\left(x\right)\cdot \frac{1}{x+1}\:=\:cos\left(x\right)ln\left(x+1\right)\:+\:\frac{sin\left(x\right)}{x+1}$ ok i got the solution! I put it there, maybe this will help someone! i used this rule : $e^a=e^{a\cdot ln\cdot e}$ $\left(x+1\right)^{sinx}=\:e^{sinx\cdot ln\left(x+1\right)}=\:e^{sinx\cdot ln\left(x+1\right)}\cdot cosx\:\cdot \:ln\left(x+1\right)\:+\:sinx\cdot \frac{1}{x+1}\:=\:\left(x+1\right)\left(cosxln\left(x+1\right)\:+\:\frac{sinx}{x+1}\right)$","['trigonometry', 'calculus', 'derivatives']"
+803468,Compute $\det(A^n+B^n)$,"Let $A, B $ be two real $3\times 3 $ matrices, $AB=BA$, and $ \det(A-B)=\det(A^2+B^2)=1,\det(A+B)=3, \det(B)=0 $, then, what is ? 
+
+$$\det(A^n+B^n)$$
+
+here $n$ is a positive integer. The problem looks very horrible. Any help will be appreciated","['matrices', 'linear-algebra', 'determinant']"
+803478,True? $\sum_{n=1}^\infty {n+m-1 \choose m}^{-1} = 1 + \frac {1}{m-1} $,"Prove (or disprove) that for all positive integers $m>1$, $ \displaystyle \sum_{n=1}^\infty {n+m-1 \choose m}^{-1} = 1 + \frac {1}{m-1} $",['combinatorics']
+803497,Inequality $\sum\frac{x}{(x + n^2)^2}<\frac{1}{2} \sum \frac{1}{x + n^2} $,"$x\geq0$, then, we have
+
+$$\sum_{n=1}^{\infty}\frac{x}{(x + n^2)^2}<\frac{1}{2} \sum_{n=1}^{\infty} \frac{1}{x + n^2} $$ The problem is not easy, even $x=1$. Any help will be appreciated","['inequality', 'sequences-and-series', 'real-analysis']"
+803499,Continuous function on closed unit ball,"Take a continuous mapping $f: \bar{B^{n}} \rightarrow \bar{B^{n}}$, where $\bar{B^{n}}$ is a closed unit ball in $\mathbb{R}^{n}$. Assume that $f(x) \neq x$ for every $x \in \bar{B^{n}}$. Define another function $r$ by following the directed line segment from $f(x)$ through $x$ to its intersection with $\partial B^{n}$, and let the intersection point be $r(x)$. Is it immediately evident that $r$ is a continuous function? Is so how does it follow? Thanks.","['fixed-point-theorems', 'continuity', 'functional-analysis', 'real-analysis']"
+803556,Card Problem from Gardner,"The following problem is from aha! Insight by Martin Gardner. On a draw of $n$ cards from a deck without replacement, what is the
+  probability that seven of the $n$ cards all have the same suit? It has been a while since I have done a probability computation so I am here to have my solution verified. Let $X_n$ be the random event of drawing at least seven cards of the same suit upon drawing $n$ cards. $$P(X_n) = \left\{
+     \begin{array}{ll}
+       0 & : n < 7\\
+       \dfrac{\binom{4}{1}\binom{13}{7}\binom{39}{n-7}}{\binom{52}{n}} & : 7 \le n < 25\\
+       1 & : 25 \le n
+     \end{array}
+   \right. $$ EDIT: So this counts the number of ways to draw exactly seven cards with $n$ draws. Robert's post gives the desired answer, but I am wondering if there is a simpler expression for the probability given solely in terms of $n$. EDIT2: Started bounty looking for a solution in terms of $n$. I would also accept an explanation as to why Robert's solution is as simple as it gets.","['card-games', 'probability']"
+803591,Find the expected value from a point to three edges of a right triangle.,"Given a right triangle with a, b, c are the lengths of three edges. Here $a^2=b^2+c^2$. A point is randomly chosen inside the right triangle. Find the expected value of the sum of the distances from the point to three edges.",['probability']
+803627,Does every nontrivial finite group have a subgroup of prime index?,"I know that a finite group need not have a subgroup for any particular prime index (for example, $A_4$ has no subgroup of index $2$, but it does have one of index $3$). Is there a nontrivial finite group with no subgroups of prime index?",['group-theory']
+803628,A fair coin is flipped 2k times. What is the probability that it comes up tails more often than it comes up heads? [duplicate],This question already has an answer here : Probability a coin comes up heads more often than tails (1 answer) Closed 10 years ago . I'm studying for a probability exam and came across this question. I watched the video solution to it but I don't really understand it. I was hoping someone could explain this problem to me. Are there different ways to go about this?,"['probability-theory', 'probability-distributions', 'probability', 'combinatorics']"
+803636,Question on morphism locally of finite type,"The exercise 3.1 in GTM 52 by Hartshorne require to prove that $f:X \longrightarrow Y$ is locally of finite type iff for every open affine subset $V=\text{Spec}B$,  $f^{-1}(V)$ can be covered by open affine subsets $U_j=\text{Spec}A_j$, where each $A_j$ is a finitely generated $B$ algebra. Now, if  $f:X \longrightarrow Y$ is locally of finite type, then there exists a covering $Y_i=\text{Spec}B_i$ of $Y$ such that $f^{-1}(Y_i)$ can be covered by open affine subsets $U_{ij}=\text{Spec}A_{ij}$ such that each $A_{ij}$ is a finitely generated $B_i$ algebra. My question is: From that covering of $f^{-1}(Y_i)$ how can we construct the alike covering for $f^{-1}(V)$ in the exercise? Please help me. Thanks.","['algebraic-geometry', 'schemes']"
+803659,Logic behind cubic resolution of $x^4+px^2+qx+r=0$,"I'm reading ""A course in algebra"" by E. B. Vinberg to have a basic understanding of algebra. In its Chapter 3 there's an interesting demonstration on cubic resolution of equation $x^4+px^2+qx+r=0$. Define $\sigma_i$ the elementary symmetric polynomials:
+$$\sigma_i=\sum_{k_1<k_2<\cdots<k_i}x_{k_1}x_{k_2}\cdots x_{k_i}$$ Define $h_i(x_1,x_2,x_3,x_4)$: $$ \left\{
+     \begin{array}{ll} 
+     h_1=x_1x_2+x_3x_4 \\ 
+     h_2=x_1x_3+x_2x_4\\
+     h_3=x_1x_4+x_2x_3
+     \end{array}
+     \right.$$ Then one has: $$ \left\{
+     \begin{array}{ll}
+       h_1+h_2+h_3&=\sigma_2 \\
+       h_1h_2+h_1h_3+h_2h_3&=\sigma_1\sigma_3-4\sigma_4\\
+       h_1h_2h_3&=\sigma_1^2\sigma_4+\sigma_3^2-4\sigma_2\sigma_4
+     \end{array}
+   \right. $$ Let $c_1$, $c_2$, $c_3$, $c_4$ be the roots of equation $x^4+px^2+qx+r=0$. Then 
+$$ \left\{
+     \begin{array}{ll} 
+     \sigma_1(c_1,c_2,c_3,c_4)=0\\ 
+     \sigma_2(c_1,c_2,c_3,c_4)=p\\
+     \sigma_3(c_1,c_2,c_3,c_4)=-q\\
+     \sigma_4(c_1,c_2,c_3,c_4)=r
+     \end{array}
+     \right.$$ Let $d_i=h_i(c_1,c_2,c_3,c_4)$. So $d_i$ are the roots of equation $y^3+a_1y^2+a_2y+a_3=0$ where 
+$$ \left\{
+     \begin{array}{ll} 
+     a_1=-(d_1+d_2+d_3)\\ 
+     a_2=d_1d_2+d_1d_3+d_2d_3\\
+     a_3=-d_1d_2d_3
+     \end{array}
+     \right.$$ From step 2 one has $a_1=-p$, $a_2=-4r$, $a_3=4pr-q^2$. So the equations has the form $y^3-py^2-4ry+(4pr-q^2)=0$. This is assumed solvable. Define
+$$ \left\{
+     \begin{array}{ll} 
+     b_1=c_1+c_2-c_3-c_4\\ 
+     b_2=c_1-c_2+c_3-c_4\\ 
+     b_3=c_1-c_2-c_3+c_4
+     \end{array}
+     \right.$$ So one has
+$$ \left\{
+     \begin{array}{ll} 
+     b_1^2=4(d_1-p)\\ 
+     b_2^2=4(d_2-p)\\ 
+     b_3^2=4(d_3-p)\\ 
+     b_1b_2b_3=-8q
+     \end{array}
+     \right.$$ From here it leads to
+$$ \left\{
+     \begin{array}{ll} 
+     c_1+c_2+c_3+c_4&=0\\ 
+     c_1+c_2-c_3-c_4&=b_1&=2\sqrt{d_1-p_1}\\ 
+     c_1-c_2+c_3-c_4&=b_2&=2\sqrt{d_2-p_1}\\ 
+     c_1-c_2-c_3+c_4&=b_3&=2\sqrt{d_3-p_1}
+     \end{array}
+     \right.$$ So it's solved:
+$$c_{1,2,3,4}=\frac{1}{2}(\pm\sqrt{d_1-p_1}\pm\sqrt{d_2-p_1}\pm\sqrt{d_3-p_1})$$
+, with number of minuses being even, and the value of the square roots chosen so that $b_1b_2b_3=-8q$. Now, all these steps I understand, and they are quite smart. However, if we look at step 5, is it just some math trick (being sensitive to math forms) or there's something, some higher logic behind  it? The logic before step 5, to put it simple, is to get $d_i$ via $\sigma_i$, using the symmetry, without knowing exactly $c_i$. This is quite smart. So step 5 the idea is to get $c_i$ from $d_i$. How ppl get the formula in step 5 to achieve that? is it just by try and error, by luck? Or, there's some logic behind it? I suspect so as $b_i$ look similar to $d_i$, there seems also some ""indirect symmetry"" behind the construction of $b_i$. Please throw some lights?","['abstract-algebra', 'polynomials']"
