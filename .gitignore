@@ -2,3 +2,6 @@
 .cache
 data/vectorized_data/sparse_matrices/
 data/parsed_data.csv
+models/deep_nn/
+models/recurrent_nn/embeddings/
+models/recurrent_nn/weights/
