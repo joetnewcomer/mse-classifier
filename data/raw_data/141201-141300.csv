@@ -1,0 +1,828 @@
+question_id,title,body,tags
+2281956,Prove that $n=\frac{4^p+1}{5}$ is a strong $2$-pseudoprime for all $p>5$,"I want to prove that $n=\frac{4^p+1}{5}$ is a strong $2$ -pseudoprime for all $p>5$ where $p$ is a prime.
+i.e. $n$ is a composite number which passes the Miller-Rabin test. It is easy to check that it is indeed a composite no.
+We write $n-1=2^st$ where $t$ is an odd number. $n$ passes the test if either $$a^t\equiv1 \pmod{n}$$ or $$a^{{2^i}t}\equiv-1 \pmod{n}$$ for some $i<s$ . Then $n-1=\frac{4^p+1}{5}-1= \space ... \space=2^2(\frac{4^{p-1}\space-1}{5})$ so $s=2$ and $t=\frac{4^{p-1}\space-1}{5}$ So is $$2^{\frac{4^{p-1}\space-1}{5}}\equiv1\pmod{\frac{4^p+1}{5}}$$ or $$2^{2^1(\frac{4^{p-1}\space-1}{5})} \equiv -1 \pmod{\frac{4^p+1}{5}}$$ ? I checked the results for the first few primes (Yup, WolframAlpha did help).
+It turns out that it is always the latter case which holds My guess is that: if $p\equiv3 \space \pmod{4}$ then $2^{\frac{4^{p-1}\space-1}{5}}\equiv2^p \pmod{\frac{4^p+1}{5}}$ if $p\equiv1 \space \pmod{4}$ then $2^{\frac{4^{p-1}\space-1}{5}}\equiv-2^p\space \pmod{\frac{4^p+1}{5}}$ . Squaring both sides and the result follows. Could anyone show why my guess is correct (or not?)?","['number-theory', 'primality-test']"
+2281959,Bound on $x^TAx$ for SPD matrix $A$ in terms of its main diagonal,"Let $A\in\mathbb{R}^{n\times n}$ be a symmetric positive definite matrix and $x\in\mathbb{R}^n$ some vector. I want to find a bound of the form $$x^T Ax \leq c \sum_{i=1}^n a_{ii} x_i^2$$ with a constant $c>0$ . If $\lambda_\text{min}$ and $\lambda_\text{max}$ denote the smallest and largest eigenvalue of $A$ (both are positive due to spd assumption), then one bound that holds is $$x^T Ax \leq \frac{\lambda_\text{max}}{\lambda_\text{min}} \sum_{i=1}^n a_{ii} x_i^2.$$ Proof: $$x^TAx \leq \lambda_\text{max} \Vert x\Vert^2 = \frac{\lambda_\text{max}}{\lambda_\text{min}} \sum_{i=1}^n \lambda_\text{min} x_i^2 \leq \frac{\lambda_\text{max}}{\lambda_\text{min}} \sum_{i=1}^n a_{ii} x_i^2$$ where we used that $a_{ii} \geq \lambda_\text{min}$ for all $i$ . However, I think there should be a tighter bound. For example, the inequality holds with $c=1$ if $A$ is diagonal. Any ideas?","['eigenvalues-eigenvectors', 'matrices', 'symmetric-matrices', 'quadratic-forms', 'linear-algebra']"
+2281998,Polynomial power over finite fields with certain conditions,"Let $f$ be a polynomial of degree 5 over $\mathbb F_p$ which has no multiple roots in $\overline{\mathbb F_p}$. ($p$ is prime and large enough. We can assume $p>100$). Is it possible to find a such $f$ such that $$f^{(p^2-1)/2}(x)=s_0(x)+x^{p^2}s_1(x)+x^{2p^2}s_2(x)$$ where $s_0,s_1,s_2$ of degree $<p(p-1)$. Note 1: For all such polynomials, there is always such $s_2$ because of the degrees of polynomials. So the problem is actually depending to $s_0$ and $s_1$. Note 2: Computational, I couldn't find any such $f$. The other version of this question (not same but this one gives that the other one exists) Is it possible to find a such $f$ such that $$f^{(p-1)/2}(x)=s_0(x)+x^{p}s_1(x)+x^{2p}s_2(x)$$ where $s_0,s_1,s_2$ of degree $<p-3$. Similar notes here too.","['finite-fields', 'multinomial-coefficients', 'algebraic-geometry']"
+2282011,What do we mean when we say the Schur functions form a basis.,"This has always bugged me.  When we are examining symmetric functions (or polynomials if you prefer finitely many variables), we have an easy choice of basis with the monomial symmetric functions.  As this basis tends to be hard to work with, we then look at the complete homogeneous symmetric functions and the elementary symmetric functions.  Finally, we see that to prove things (and to link to Representation theory), it is usually best to work in the Schur basis.  What I don't get is why the Schur basis is indeed a basis.  It is not clear to be because we have the following relationships: $$s_{(i)} = h_{i}$$
+$$s_{\left(1^\ell\right)} = e_{\ell}$$ This clearly shows that the complete homogeneous symmetric functions and the elementary symmetric functions are special cases of the Schur functions.  Would this not lead to independence issues for the Schur functions, as there are clearly more Schur functions then the ones described above, which would mean the set of Schur functions is not linearly independent? Thanks for any help, this has driven me crazy for a while!","['symmetric-functions', 'combinatorics', 'algebraic-combinatorics', 'symmetric-polynomials']"
+2282044,'Dodgy-cancelable' numbers,"A recent meme showed the following ""algebra"": $$\frac{777}{4773} = \frac{7(77)}{4*(77)*3}=\frac{7}{43}$$ which is, amazingly, true! Clearly, there are infinitely many natural number pairs that satisfy this property (by adding on a zero to numerator and denominator, hence multiplying by 10), but we ignore those solutions as trivial. We define $\text{value}(a_M,a_{M-1},...,a_1,a_0) = \sum_{m=0}^M a_m 10^m$ let $A, B \in \mathbb{N}$ be given. We then say that $A = \text{value}(a_M,a_{M-1},...,a_1,a_0)$ and $B= \text{value}(b_N,b_{N-1},...,b_1,b_0)$ are dodgy-reducible if $$\frac{\text{value}(a_M,a_{M-1},...,a_1,a_0)}{\text{value}(b_N,b_{N-1},...,b_1,b_0)}=\frac{\text{value}(a_{k_i},a_{{k_{i-1}}},...,a_{k_1},a_{k_0})}{\text{value}(b_{l_j},b_{{l_{j-1}}},...,b_{l_1},b_{l_0})}$$ where the $k_i$s and the $l_i$s are any selection of the numbers $\{0,1,...,M\}$ and $\{0,1,...,N\}$ respectively. The first handful are: 64  16
+65  26
+95  19
+98  49
+121 22
+132 33
+136 34
+143 44
+154 55
+165 66
+176 77
+184 138
+185 148
+187 88
+192 96
+194 97
+195 39
+196 49
+196 98
+198 99 I have tried (and failed) to make any analytic headway, but my friend wrote a program to naïvely iterate through all integer pairs below a given threshold, yielding the following distribution: 0 - 300 (excluding trivial solutions) 0-300 0-~4800 (excluding trivial solutions) 0-4800 The question: Is this a special case of a known sequence in number theory, and if not, what can be determined about its distribution?",['number-theory']
+2282048,How to prove the orthogonality of the Fourier basis from the dot product?,"In order to prove the discrete fourier basis $$ w^{(k)}_n = e^{-j\frac{2\pi}{N}nk}$$ is orthogonal, the following was stated But I am confused why it is 0 when $k \neq h$ , How can the sum from $n=0$ to $ N-1 $ be $0$ ? I tried substituting values for $h-k$ by $2$ , and $N$ by $5$ , but in the summation there is always that $e^0$ which equals to 1 and no negative term to cancel it. Can someone clear this please?","['fourier-analysis', 'linear-algebra']"
+2282147,How do I differentiate a product $a(x) b(x) c(x)$ of three functions?,"If I have a function $$f(x)=a(x)\cdot b(x)\cdot c(x),$$ where I cannot simplify any further, how do I differentiate it? For example, how would I differentiate $$f(x)=(x^2+5x+6)\cdot(e^{2x})\cdot(\cos(\pi+x))\ ?$$","['derivatives', 'products', 'calculus']"
+2282149,"Let $f$ be continuous in $\left[0,\infty\right]$ and $\lim_{x\rightarrow\infty}f(x)=a$. Prove $\lim_{x\to\infty}\frac{1}{x}\int_{0}^{x}f(t)dt=a$.","Let $f$ be a continuous function in $\left[0,\infty\right]$ such that $\displaystyle \lim_{x\to\infty}f(x)=a$ Prove $\displaystyle \lim_{x\to\infty}\frac{1}{x}\int_{0}^{x}f(t)dt=a$. Well, i made this: As $f$ is a continuos function in $\left[0,\infty\right]$ by the fundamental theorem of calculus I exists a $F(x)$ such that $f(x)=F'(x)$ and by the FTC II we have $\int_{0}^{x}f(t)dt=f(x)-f(0)$, Then: $\displaystyle \lim_{x\rightarrow\infty}\frac{1}{x}\int_{0}^{x}f(t)dt=\lim_{x\rightarrow\infty}\frac{1}{x}(f(x)-f(0))=0-0=0\neq a $ Can someone help?","['real-analysis', 'integration']"
+2282153,"If the average of a sequence converges, does the average of the square roots converge?","I'm looking for a nice proof or counterexample for the following claim: If $d_i \in [0,1]$ are such that $\lim_{n \to \infty} (d_1+...+d_n)/n$ is well-defined, then $\lim_{n \to \infty} (\sqrt{d_1}+...+\sqrt{d_n})/n$ is well-defined.","['sequences-and-series', 'average', 'limits']"
+2282167,"Differential Equation : One question, two methods, both result in different answers","A continuous function $f:\mathbb R \to \mathbb R$ satisfying the differential equation $$f(x)=\left(1+x^2\right)\left(1+\int_{0}^{x} \frac{f^2(t)}{1+t^2} dt\right)$$
+  Then find the value of $f(1)$. The options are: $a) -6$ $b) -4$ $c) -2$ $d) ~\text{None}$ Now, since this question is MCQ type, I just rejected options as follows: $$f(1)=2\left(1+\int_{0}^{1} \frac{f^2(t)}{1+t^2} dt\right)$$
+  since $$\frac{f^2(t)}{1+t^2}\ge0$$ Hence $f(1) \gt 0$ Thereby rejecting options $a, b$, and $c$, I marked option $d$. But to my surprise, the answer given was option $a$, i.e., $-6$ Their solution goes as follows: $$\frac{f(x)}{ 1+x^2 }= 1+\int_{0}^{x} \frac{f^2(t)}{1+t^2} dt \implies \frac{dy}{dx}=\left( \frac{2x}{1+x^2}\right)y+y^2$$ $ \text{Let}~~ \dfrac{-1}{y}=t$ $$\therefore ~~f(x)=\frac{-3(1+x^2)}{x^3+3x-3}~ \text{(How? I don't know!)}~ \implies f(1)=-6$$ Can someone please explain what is going on here? (Which method is wrong and why?) Most probably they are doing something wrong. I know that this is probably poor framing of question, but both methods seem correct to me. Thanks!","['integration', 'ordinary-differential-equations', 'functions']"
+2282173,Reformulate the initial value problem as an equivalent integral equation,"Reformulate this initial value problem as an equivalent integral equation.
+$$\dfrac{d^2y}{dx^2}+y=x,  \ \ \ \ 0\leq x \leq 1, \ \ \ \ y(0)=1, y'(1)=0 $$ I'm not sure how to do this.
+I think I start by letting $\phi=\dfrac{d^2y}{dx^2}$ and integrating over $[0,1]$ which gives:
+$$y'(1)-y'(0)=\int^1_0 \phi(t) \ dt $$
+Then using $y'(1)=0$, this gives:
+$$y'(0)=-\int^1_0 \phi(t) \ dt$$ Do I then integrate this over $[0,x]$? This is one example of a few inital value problems that I'm not sure how to reformulate so is there a method I follow so that I can apply this to the others?","['integral-equations', 'ordinary-differential-equations', 'initial-value-problems']"
+2282179,Does Fermat's Last Theorem apply for numbers between $1$ and $2$?,"Warning: I am an amateur recreational mathematician in highschool who knows everything I know about Fermat's Last Theorem by watching Numberphile videos on YouTube, so please forgive me if I'm getting anything wrong here. Fermat's Last Theorem, to my understanding, states that $a^n+b^n \neq c^n$ where $n \gt 2$. Could you have $a^n+b^n=c^n$ for $1< n<2$, like a solution(s) for $n=1.2$ or $n=\pi/2$? If so, are there any known examples?",['number-theory']
+2282180,Probability that these characters win a game.,"I have 11 characters, $[2,3,4,5,6,7,8,9,10,11,12]$, and they all play a game. Game Description: All players stand at the start line $n$ spaces away from finish line. Two fair dice are rolled. The two results on each of the dice are summed up, and it gives a result that is equal to the names of one of the characters. The owner of that number moves forward one space. The winner is the character who gets to the finish line first. For example, on a turn, the dice gives a result of $[3,4]$. Since $3+4=7$, the character 7 moves forward. If the dice gives $[6,2]$, the character 8 moves forward. What are the chances that each character wins? Basically I want the chances of winning for all the characters, with respect to other players. By respect to other players , I mean that one can win it quicker than another.  And I want the probabilities to be in terms of $n$, for example, $P(x) = \frac{1}{36^{n}}$ Images of a state midgame: Here, character 6 has won the game, and in this case, $n=9$, since that is the number of spaces a character has to move in order to win. Sources: The game originated from my school The image state example was created by me using Microsoft Excel The question is a challenge set by myself. I need help basically.",['probability']
+2282248,"The limit of the nth root of a to the n plus b to the n is the maximum of (a,b) [duplicate]","This question already has answers here : How to evaluate $ \lim_{x\rightarrow +\infty } \sqrt[x]{a^x+b^x} = ? $ (3 answers) Closed 7 years ago . I've been asked to prove the following from Spivak's Calculus $$\lim_{n\to\infty}\sqrt[n]{a^n+b^n}=\max(a,b); a,b > 0$$ I understand that this is a proof by cases, and that our cases are $a=b$, $a>b$, and $b>a$. I have done the $a=b$ case, but I am stuck on the $a>b$ and $b>a$ cases. Some hints would be appreciated- Thanks!","['real-analysis', 'proof-writing', 'limits']"
+2282272,Volume of $E=\{5x^8 \le y \le 7x^8; 2y^5 \le z \le 3y^5; z^7 \le x \le 6z^7\}$.,"I am stuck with the following problem: Compute volume of $E=\{5x^8 \le y \le 7x^8; 2y^5  \le z  \le 3y^5; z^7 \le x \le 6z^7\}$. My progress: It is easy to see that $x,y,z \ge 0$. Therefore I can add all inequalities and after simple algebra get the following: $$5x^8 + 2y^5+z^7 \le x+y+z \le 7x^8 + 3y^5+6x^7$$
+Update: as it was pointed out by A.Γ. adding inequalities does not work because different sets can give the same inequalities. So, it looks like I should solve or at least get some kind of information for integration directly from the system somehow. Any hint? Thanks a lot for your help!","['multivariable-calculus', 'integration', 'definite-integrals', 'calculus']"
+2282342,Central limit theorem: Poisson equals Normal? Tell me where I'm wrong,"We just covered the Central Limit theorem in class, and I stumbled upon the following reasoning that makes me think I am missing some key part of... well, something. So, here goes: Let $X_1$ and $X_2$ be independent Poisson random variables with parameters $\lambda _1$ and $\lambda _2$ respectively. Then, $X_1 + X_2 \sim P(\lambda_1 + \lambda_2)$. By induction, for any finite $n$, if $X_i \sim P(\frac1n)$ iid, $\sum ^n X_i= X \sim P(1)$, and this holds (I think) for $n \to \infty$. But, by the CLT,
+$$ \frac{\sum ^n X_i - n\cdot\frac1n}{\sqrt{n\cdot \frac1n}}\to \tilde Y \sim N(0, 1) $$ And rearranging I get $X \to Y \sim N(1, 1)$. But $X$ was a Poisson random variable, therefore discrete, and thus its CDF is constant everywhere except over the integers; while $Y$ is a Normal, and therefore its CDF is never constant. How is one supposed to converge to the other? This result is clearly wrong, but I can't understand why. Can anyone please explain where in my argument I made a mistake?","['probability-theory', 'central-limit-theorem']"
+2282343,Spectrum of formal series ring on several variables,"I know that $\operatorname{Spec}\mathbb{C}[[x]]=\{(x),(0)\}$, can I generalize it for formal series on several variables? $\operatorname{Spec}\mathbb{C}[[x_1,...,x_n]]=(x_1,...,x_n)$?
+Any suggestion is appreciated.","['algebraic-geometry', 'commutative-algebra']"
+2282375,What does it mean for a function to be differentiable?,"What does it mean for the derivative of a function to exist at every point on the function's domain? It seems a very abstract thing to visualize. Can someone elaborate?
+ Answers are much appreciated.","['derivatives', 'calculus']"
+2282420,Uniqueness of induced covariant derivatives of tensor fields,"I'm working on proving Lemma 4.6 in John Lee's ""Riemannian Manifolds"": Lemma. Let $\nabla$ be a linear connection on a Riemannian manifold $M$. There is a unique connection in each tensor bundle $T_l^kM$, also denoted $\nabla$, such that the following conditions are satisfied: On $TM$, $\nabla$ agrees with the given connection. On $T^0M$, $\nabla$ is given by ordinary differentiation of functions: $$\nabla_X f = Xf.$$ $\nabla$ obeys the following product rule with respect to tensor products: $$\nabla_X(F \otimes G) = (\nabla_X F)\otimes G + F \otimes (\nabla_X G).$$ $\nabla$ commutes with all contractions: if ""$\mathrm{tr}$"" denotes the trace of any pair of indices, $$\nabla_X(\mathrm{tr}Y) = \mathrm{tr}(\nabla_X Y).$$ $\nabla$ obeys the following product rule with respect to the natural pairing between a covector field $\omega$ and a vector field $Y$: $$\nabla_X\langle \omega, Y\rangle = \langle \nabla_X \omega, Y \rangle + \langle \omega, \nabla_X Y \rangle.$$ For any $F \in \mathcal T_l^k(M)$, where $\mathcal T_l^k(M)$ is the space of smooth $(k,l)$-tensor fields on $M$, and for any vector fields $Y_i$ and 1-forms $\omega^j$,
+\begin{align}
+(\nabla_X F)(\omega^1, \ldots, \omega^l, Y_1, \ldots, Y_k) = &X(F(\omega^1, \ldots, \omega^l, Y_1, \ldots, Y_k)) \\
+&- \sum_{j=1}^l F(\omega^1, \ldots, \nabla_X \omega^j, \ldots, \omega^l, Y_1, \ldots, Y_k) \\ &- \sum_{i=1}^k F(\omega^1, \ldots, \omega^l, Y_1, \ldots, \nabla_X Y_i, \ldots, Y_k). 
+\end{align} Lee suggests using 1-4 to prove 5 and 6 (and thus to prove uniqueness), and prove existence using 5 and 6 (ie using 5 and 6 to prove 1-4). The one part of this I'm having trouble with is proving 5 from 1-4 (I can prove 2-4 from 6 and 1 (note 5 follows from 6 also), and 6 follows from 3). Certainly 5 bears resemblance to 3, but 3 involves explicit tensor products, and 5 does not; besides, $\langle \omega, Y \rangle \in C^\infty(M) = \mathcal T^0(M)$, which seems to suggest 2 should be used, but again, the exact computation is lost on me. Any insights?","['smooth-manifolds', 'connections', 'riemannian-geometry', 'differential-geometry']"
+2282427,Finding the area of intersection and area of union between two sets of overlapping rectangles,"Suppose I have $N_r$ number of red rectangle boxes and $N_b$ rectangle boxes in an image of some arbitrary size. Each box is parameterized as $(x_{\min}, y_{\min}, x_{\max}, y_{\max})$. I would like to find the area of intersection $A_I$ and the union $A_U$ between two sets of overlapping rectangles. This is because I would like to calculate the intersection over union between the two sets. That is, I would like to find the pink area in the two examples shown in the image below: I came up with a solution to find the intersection between two rectangles: $$ A_I = [\min(x_{\max,r},x_{\max,b}) - \max(x_{\min,r},x_{\min,b}) + 1] \cdot [\min(y_{\max,r},y_{\max,b}) - \max(y_{\min,r},y_{\min,b}) + 1] $$ $$ A_U = (x_{\max,r}-x_{\min,r})\cdot(y_{\max,r}-y_{\min,r}) + (x_{\max,b}-x_{\min,b})\cdot(y_{\max,b}-y_{\min,b}) - A_I$$ However, I am having trouble coming up with a solution for a problem with multiple boxes in each of the red and blue rectangle sets. It should be noted that the solution needs to be differentiable. This is because I am using it to calculate the error between the red and blue rectangles and trying to optimize the parameters in a neural network that would produce a set of the rectangles. So you can think of the red rectangles as the prediction and the blue as the ground truth.","['optimization', 'calculus', 'rectangles', 'geometry', 'linear-algebra']"
+2282435,How to solve this ODE? How to evaluate this integral?,"How to solve the following ODE?
+$$ \frac{ \mathrm{d} x(t) }{ \mathrm{d} t} = \alpha x(t) \left( 1 - 
+\frac{ x(t) }{ \beta + \frac{ \gamma }{ 1 + \mathrm{e}^{- \gamma (t - \lambda) }}  } \right),$$ where $x = x(t)$ is the unknown function, whereas $\alpha$, $\beta$, $\gamma$, and $\lambda$ are constants. My Attempt: We can write the given ODE as 
+  $$ -\frac{1}{x^2} x^\prime + \frac{\alpha}{x} = \frac{ \alpha }{ \beta + \frac{ \gamma }{ 1 + \mathrm{e}^{-\gamma(t-\lambda) }}  }. $$
+  Or, 
+  $$ \frac{ \mathrm{d} }{ \mathrm{d} t} \left( \frac{1}{x} \right) + \frac{\alpha}{x} = \frac{ \alpha }{ \beta + \frac{ \gamma }{ 1 + \mathrm{e}^{-\gamma(t-\lambda) }}  }. $$
+  Multiplying both sides of the last ODE by $\mathrm{e}^{\alpha t}$, we get 
+  $$ \frac{ \mathrm{d} }{ \mathrm{d} t} \left( \frac{1}{x} \right) \mathrm{e}^{\alpha t} + \frac{\alpha \mathrm{e}^{\alpha t}}{x} = \frac{ \alpha \mathrm{e}^{\alpha t} }{ \beta + \frac{ \gamma }{ 1 + \mathrm{e}^{-\gamma(t-\lambda) }}  }, $$
+  which can be written as 
+  $$ \frac{ \mathrm{d} }{ \mathrm{d} t} \left( \frac{\mathrm{e}^{\alpha t} }{x} \right) = \frac{ \alpha \mathrm{e}^{\alpha t} }{ \beta + \frac{ \gamma }{ 1 + \mathrm{e}^{-\gamma(t-\lambda) }}  }, $$
+  and so 
+  $$
+\begin{align}
+\frac{\mathrm{e}^{\alpha t} }{x} &= \int \ \left(  \frac{ \alpha \mathrm{e}^{\alpha t} }{ \beta + \frac{ \gamma }{ 1 + \mathrm{e}^{-\gamma(t-\lambda) }}  } \right) \ \mathrm{d} t. \\
+&= \alpha \int \ \left( \frac{ \mathrm{e}^{\alpha t} }{ \beta + \frac{\gamma \mathrm{e}^{\gamma(t-\lambda)}}{ \mathrm{e}^{\gamma(t-\lambda)} +1  } } \right) \ \mathrm{d} t \\
+&= \alpha \int \ \left( \frac{\mathrm{e}^{\alpha t} \left( \mathrm{e}^{\gamma(t-\lambda) } + 1 \right) }{\beta \left( \mathrm{e}^{\gamma(t-\lambda) } + 1 \right) + \gamma \mathrm{e}^{\gamma(t-\lambda) } } \right) \ \mathrm{d} t \\
+&= \alpha  \mathrm{e}^{-\gamma \lambda} \int \ \left( \frac{ \mathrm{e}^{ (\alpha+\gamma)t } + \mathrm{e}^{\alpha t} }{ (\beta + \gamma)  \mathrm{e}^{-\gamma \lambda} \mathrm{e}^{\gamma t} + \beta } \right) \ \mathrm{d} t \\
+&= 
+\end{align} $$ What next? Is what I've done so far correct? If so, then can we analytically evaluate the integral? I'm afraid I can't think of any trick that will work for sure.","['ordinary-differential-equations', 'analysis']"
+2282437,Evaluate the closed form $\int_{0}^{\pi/2}\sin^k(x)\ln\left[\sin(x)\sin^2\left({x\over 2}\right)\right]\mathrm dx=F(k)$,"Proposed: $$\int_{0}^{\pi/2}\sin^k(x)\ln\left[\sin(x)\sin^2\left({x\over 2}\right)\right]\mathrm dx=F(k)\tag1$$ Where $k=1,3,5,...$ Where $F(1)=-2$, $F(3)=-{17\over 18}$, $F(5)=-{587\over 900}$, $... $ It looks that $F(k)$ only yield rational numbers. My try: Split out the integral $$\int_{0}^{\pi/2}\sin^k(x)\ln\sin(x)+2\int_{0}^{\pi/2}\sin^k(x)\ln\left[\sin\left({x\over 2}\right)\right]\mathrm dx\tag2$$ How may one find the closed form for $F(k)?$","['integration', 'definite-integrals']"
+2282445,"""A two-envelopes puzzle""","This is Problem 1.25 from Tsitsiklis, Bertsekas, Introduction to Probability, 2nd edition. You are handed two envelopes, and you know that each contains a
+  positive integer dollar amount and that the two amounts are different.
+  The values of these two amounts are modeled as constants that are
+  unknown. Without knowing what the amounts are, you select at random
+  one of the two envelopes, and after looking at the amount inside, you
+  may switch envelopes if you wish. A friend claims that the following
+  strategy will increase above $1/2$ your probability of ending up with
+  the envelope with the larger amount: Toss a coin repeatedly. Let  $X$  be equal to $1/2$ plus the number of
+  tosses required to obtain heads for the first time, and switch if the
+  amount in the envelope you selected is less than the value of  $X$ . 
+  Is your friend correct? The answer given in the solution manual claims that this indeed helps, and that the probability of getting the better envelope is given by $$p = \frac{1}{2} + \frac{1}{2} P(B)$$ where $B$ is the event that $a<X<b$, with $a,b$ being the smaller and larger amount of dollars, respectively. I do not buy this solution for the following reason: tossing a coin has nothing to do with the contents of the envelopes. You do not gain any information by doing it. You could just as well count the amount of leaves on a nearby tree instead and use that for $X$. Similarly, opening the first envelope also gives you no useful information about the ordering relation between $a$ and $b$, so surely that's another red herring. Even if you forget the coin tossing, the probability of ""winning"" is still $1/2$, swap or no swap. I suppose maybe the catch is in interpreting the following sentence: ""The values of these two amounts are modeled as constants that are unknown"". I take it to mean that they're just two randomly and independently generated numbers. Am I out of my mind? Surely the solution manual is wrong.","['probability', 'paradoxes']"
+2282470,Cuboid nearest to a cube,"Cuboid nearest to a cube. While answering this question, euler bricks: way to calculate them? I noticed one result was not too far from cube shaped, and wondered if there was a more cubic cuboid. $$x^2+y^2=u^2$$
+$$y^2+z^2=v^2$$
+$$x^2+z^2=w^2$$ $x,y,z,u,v,w$ positive integers, and $x<y<z$ The result I noticed was $(240,252,275)$, and decided to use $\alpha=\large \frac{z^2}{xy}$ as a measure of nearness to a cube. For $(240,252,275)$ we have  $\alpha=1.25041336$ Diagram: https://en.wikipedia.org/wiki/Euler_brick#/media/File:Euler_brick_examples.svg Despite a fair bit of calculation, I can only find one more cubic cuboid:
+$$(1008,1100,1155)$$ This has $\alpha=1.203125$ and is produced from the following solution generator using $(240,252,275)$,
+“If $(x,y,z)$ is a solution, then $(xy,xz,yz)$ is also a solution”. My questions.
+Is there a better measure of nearness to a cube than $\alpha= \large\frac{z^2}{xy}$ ? Is there a better solution than $(1008,1100,1155)$ ? Thank you.","['diophantine-equations', 'elementary-number-theory', 'pythagorean-triples', 'geometry']"
+2282473,Euler equations for the incompressible fluids,"Incompressible fluid with constant density ρ fills the three-dimensional domain below the free surface $z = η(r)$ in cylindrical polar coordinates. The flow is axisymmetric and steady, and the only non-zero velocity component is $u_θ$. Gravity acts upon the fluid. The fluid in $r\lt a$ rotates rigidly about the z-axis with angular velocity $\Omega$ and the fluid $r \ge a$ is irrotational. Use the radial and vertical components of the Euler equations to show that the pressure $p$ in the region $z < η$, $r < a$ satisfies $$\frac{p}{\rho} = \frac{1}{2}{Ω^2}{r^2} −gz + \text{constant}$$ and find the constant. $$\frac{∂u_r}{∂t}+\left(u_r\frac{∂}{∂r}+u_z\frac{∂}{∂z}\right)u_r-\frac{(u_θ)^2}{r}+\frac{1}{\rho}\frac{∂p}{∂r}=0 $$ $$\frac{∂u_θ}{∂t}+\left(u_r\frac{∂}{∂r}+u_z\frac{∂}{∂z}\right)u_θ+\frac{u_θu_r}
+{r}=0 $$ $$\frac{∂u_z}{∂t}+\left(u_r\frac{∂}{∂r}+u_z\frac{∂}{∂z}\right)u_z+\frac{1}{\rho}\frac{∂p}{∂z}=-g $$ I have the Euler equation in cylindrical coordinate. Then how should I figure out the $\Omega$. The next question is to show that the free surface position in $ r<a $ is 
+$$ η=\frac{\Omega^2a^2}{g}(\frac{r^2}{2a^2}-1) $$ if it is helpful. Thank you so much!","['multivariable-calculus', 'fluid-dynamics', 'mathematical-physics', 'partial-differential-equations']"
+2282482,Let $H_i (i \in I)$ be a family of subgroups of $G$. Does $\bigcap \mathrm{core}(H_i) = \mathrm{core}(\bigcap H_i)$?,"If $H \leq G$, then we define $\mathrm{core}(H) = \bigcap\limits_{g \in G} (gHg^{-1})$. It seems to me that $\mathrm{core}(\bigcap H_i ) \subseteq \bigcap \mathrm{core}(H_i )$, but I'm not sure of the converse. Any clues?","['abstract-algebra', 'group-theory']"
+2282527,"Markov Property, running maximum of Brownian Motion.","Let $B = (B_t)_{t \geqslant 0}$ be standard Brownian motion. Set $$X_t = \max_{0 \leqslant s \leqslant t} B_s, \ \text{for} \ t \geqslant 0.$$ Is $X= (X_t)_{t\geqslant 0} $ a Markov Process with respect to its natural filtration?","['probability-theory', 'markov-process', 'probability']"
+2282538,Clarification on the proof of $|HK|=\displaystyle{\frac{|H||K|}{|H\cap K|}}$.,"Okay so I would like some clarification on a very elegant answer given by Martin Brandenburg on the following post: Order of a product of subgroups I am well aware of the orbit stabiliser theorem and understand the direction he wants to take with the proof. There is just $2$ steps which I think should be easy to fill in in his proof but I cannot seem to do either. 1) Why is it obvious that the action is transitive? That is given $hk$ and $h'k'$ in $HK$ why is it true that there exists $(h^*,k^*)$ such that $(h^*,k^*)hk=h'k'$. I tried to reverse engineer an element to show transitivity but failed. 2) Why is it easy to see the stabiliser of $1 \in HK$ is isomorphic to $H \cap K$. Could someone explain in more detail the missing parts of the argument here so I can understand the details of this proof. Thanks!",['group-theory']
+2282570,Integrating Factors Proof Help,I am trying to learn the methodology behind this ODE technique.  I feel the source I am using (pic-related) leaves out something between Steps 2 and 3.  How does the original equation transform to that in Step 3 without any algebraic manipulation?  Help!?,"['integrating-factor', 'ordinary-differential-equations']"
+2282584,An application of the pigeonhole principle in analysis,"The pigeonhole principle is stated here . I found in a book the following application: We can obtain the nature of the series $\sum \frac 1{n^2\sin^2(n)}$ from the pigeonhole principle. The issue is that the book did not give any hint in how to derive this result from the pigeonhole principle. I don't even know if this series diverges or converges. Do you know how one should proceed? Do you have any reference where this is done? Maybe this is a duplicate, but I don't think so since I found nothing here .","['reference-request', 'pigeonhole-principle', 'sequences-and-series']"
+2282598,"Proof that the complement of zero-measure set on $[0,1]$ is dense in $[0,1]$","As a problem during introduction to measure theory, I am asked to prove the following. Let $A \subset [0,1]$ such that $A$ is measurable with $\mu(A) = 0$ ($\mu$ being the Lebesgue measure). Prove that $A^c =
+ [0,1] \setminus A$ is dense in $[0,1]$. This makes intuitive sense to me $-$ since $\mu(A) = 0$, using that $\mu(X) = \mu(X \cap A) + \mu(X \cap A^c)$ for every $X \subseteq \mathbb{R}$ we get $\mu([0,1]) = \mu(A) + \mu(A^c) = \{\mu(A)=0\} = \mu(A^c)$. Thus, $A^c$ has the same measure as $[0,1]$. I am aware that this is not the definition of $A^c$ being dense in $[0,1]$ though, and I do not know how to formalize this proof. Any advice would be appreciated.","['lebesgue-measure', 'measure-theory']"
+2282607,What distinguishes weak and strong convergence of bounded linear operator in Banach spaces?,"I'm self-studying using Applied Analysis by John Hunter and Bruno Nachtergaele. In chapter 5 on Banach space, the authors defined strong convergence and weak convergence as followed: A sequence ($T_{n}$) in $\mathcal{B}(X,Y)$ converges strongly if:
+$\lim_{n\to\infty} T_{n}x = Tx$ for every $x \in X$ We say that $T_{n}$ converges weakly to $T$ in $\mathcal{B}(X,Y)$ if the pointwise values $T_{n}x$ converge weakly to $Tx$ in Y. Then they say they will not consider the weak convergence of operators in this book..., but I'm confused between the two. They look quite identical to me. So, what is/are the difference(s) and why the difference(s) is/are important to keep in mind?","['operator-theory', 'strong-convergence', 'functional-analysis', 'weak-convergence', 'convergence-divergence']"
+2282620,A Fibonacci identity and $f(Av)=\det(A)f(v)$,"Given a diagonalizable linear transformation $A:V\to V$ over an algebraically closed field $k$, and an eigenbasis $v_1,\ldots v_n$ with $Av_i=\lambda_i v_i$, consider the following procedure to define a function $f_A$. Given a vector $v\in V$, express it as as $v=\sum a_i v_i$.  Let $f_A(v)=\prod a_i$.  This satisfies the nice property that $f_A(Av)=\det(A)f_A(v)$. I came across this construction when trying to find invariants for generalized Fibonacci sequences.  In particular, define $G_0=a, G_1=b, G_{n+1}=G_n+G_{n-1}$ for $n>1$.  Applying this construction to the equation $$ \pmatrix{1 & 1\\ 1 & 0}^n\pmatrix{b \\ a} =\pmatrix{G_n \\ G_{n-1}}$$ yields that $G_{n}G_{n+2}-G_{n+1}^2=(-1)^n(G_0G_2-G_1^2)=(-1)^n(a(a+b)-b^2)$.  In particular, $|G_{n}G_{n+2}-G_{n+1}^2|$ is independent of $n$, so if one wanted to determine whether $(c,d)=(G_n,G_{n+1})$ for some $n$, then a necessary condition is that $c(c+d)-d^2=(-1)^n(a(a+b)-b^2)$. This identity is similar to but more general than the classical identity $F_{n-1}F_{n+1}-F_n^2=(-1)^n$ My question: Has this construction been studied before? Is there a cleaner approach to it?  Does it generalize?  Are there other, better ways to generate functions that satisfy $f(Av)=\det(A)f(v)$? Update: The construction can be rephrased (up to a constant) as $\det(M(v))$ where $M(v)$ is the matrix whose columns are the $A$-eignevectors which sum to $v$.  The property $f(Av)=\det(A)f(v)$ comes from the property that $M(Av)=AM(v)$.  Therefore, this question could be answered by a classification of the maps $V\to \hom(V,V)$ which commute with $A$. I feel like this kind of tensor construction has a better chance of having been studied.","['reference-request', 'linear-algebra', 'tensor-products']"
+2282622,Expected number of unpecked chicks - NYT article,"In this article , the winner of the math competition answered this question correctly: In a barn, 100 chicks sit peacefully in a circle. Suddenly, each chick randomly pecks the chick immediately to its left or right. What is the expected number of unpecked chicks? The answer was given as 25. I am interested to know the correct method for solving this problem as well as a general way to find this out for N chicks. I was thinking of trying to solve by figuring out the number of occurrences of (something?) inside a binary string of length 100 (or N), but I don't know if that is the right way to approach it.","['expectation', 'probability']"
+2282623,Can an open set be covered by proper open subsets?,"Let $(X, \tau)$ be a topological space, let $U\in\tau$. An open cover of $U$ is a set $\{U_i \ |\ i\in I\}$ (of open sets $U_i$) whose union $\bigcup U_i$ contains $U$. If $U\subsetneq X$, then $U$ admits an open covering by open sets $\{U_i \ |\ i\in I\}$, where an arbitrary open set $U_i$ may not be a subset of  $U$. (I think.) Does $U$ admit an open covering by open sets $\{U_i \ |\ i\in I\}$ where every open set $U_i$ is a proper subset of $U$? Less formally: given an arbitrary open set $U$, can we find an open cover of $U$ made up only of open sets ""inside"" of $U$? If the answer is no, then what are the open sets $U$ that admit such ""internal"" coverings? Is the answer any different if we replace $U$ by an arbitrary closed set?",['general-topology']
+2282643,Why is it true that $\int_0^\infty \sin(qx) dx = 1/q$.,"In a Quantum Mechanics class the professor pointed out a calculation from Zetilli's textbook on Quantum Mechanics (page 630) . There he says that: $$\int_0^\infty \sin(qx) dx = \lim_{\lambda \to 0} \int_0^\infty e^{-\lambda x} \sin(qx) dx$$ Then he writes the $\sin$ as complex exponentials and reaches the result that the integral is $1/q$. WHAT? I was taught at my calculus course that this integral does not converge. For me this result is plain wrong, and I do not understand it at all. I even don't see why the limit can be imposed like that. Any thoughts on this ""trick""?","['distribution-theory', 'integration', 'definite-integrals']"
+2282652,Continuity of a function with two variables,"Is the function 
+       $f(x)=\frac{x^2y}{x^2+y^2}, f(0,0)=0$ continuous? Is this function differentiable at (0,0)?","['multivariable-calculus', 'derivatives', 'continuity', 'limits']"
+2282667,What is the locus of $u|z-P| = v|z-Q|$?,"What is the locus of $u|z-P| = v|z-Q|$
+where $u \ge 0, v \ge 0,
+u+v > 0$? This is a generalization of Identify the plane defined by $|z-2i| = 2|z+3|$ . My result,
+after some annoyingly complex algebra
+is this: Let $P=a+bi$
+and
+$Q = c+di$. If $u=v$
+the locus is the
+line
+$$0
+=-2x(a-c)
+-2y(b-d)
++(a^2+b^2-c^2-d^2)
+$$
+which is the 
+perpendicular bisector of
+the line joining
+$P$ and $Q$. If
+$u \ne v$
+the locus is the circle
+with center
+$\left(\dfrac{au^2-cv^2}{u^2-v^2},
+\dfrac{bu^2-dv^2}{u^2-v^2}\right)
+$
+and radius
+$\dfrac{uv}{u^2-v^2}\sqrt{(a-c)^2+(b-d)^2}
+$. My questions are
+is this correct
+(especially the second part)
+and
+is there a simpler way
+(probably using vectors)
+to derive these? I wouldn't be surprised if this is
+already here, somewhere.","['algebra-precalculus', 'plane-geometry', 'locus', 'complex-numbers']"
+2282720,What is the difference between a 2-dimensional plane in $R^3$ and $R^2$?,A $3\times 3$ matrix with $2$ independent vectors will span a $2$ dimensional plane in $\Bbb R^3$ but that plane is not $\Bbb R^2$. Is it just nomenclature or does $\Bbb R^2$ have some additional properties that other planes don't?,['linear-algebra']
+2282765,PreCalc Roots of Unity,"Let $\omega$ be a complex number such that $\omega^5 = 1$ and $\omega \neq 1$. Find
+$$\frac{\omega}{1 + \omega^2} + \frac{\omega^2}{1 + \omega^4} + \frac{\omega^3}{1 + \omega} + \frac{\omega^4}{1 + \omega^3}$$ So far, I have simplified that down to $\frac{-2}{(1+\omega)^2}$, but I don't know how to continue. Thank you!",['algebra-precalculus']
+2282769,$y=(1+\frac{1}{n^3})(1+\frac{2^3}{n^3})...(1+\frac{n^3}{n^3})$,If $$y=\left(1+\frac{1}{n^3}\right)\left(1+\frac{2^3}{n^3}\right)...\left(1+\frac{n^3}{n^3}\right)$$ then what is $$\lim_{n\rightarrow \infty } y^{\frac{1}{n}}$$ ? Can anyone guide me for this? Hints are appreciated. Thanks in advance.,"['calculus', 'limits']"
+2282818,Solve for all possible functions f: $|f(x)-f(y)|=2|x-y|$. [closed],"Closed. This question does not meet Mathematics Stack Exchange guidelines . It is not currently accepting answers. Please provide additional context , which ideally explains why the question is relevant to you and our  community. Some forms of context include: background and motivation, relevant definitions, source, possible strategies, your current progress, why the question is interesting or important, etc. Closed 4 years ago . Improve this question I'm getting $f(x)=2x+f(0)$ and $f(x)=f(0)-2x$ by setting $y=0$, but I'd like to verify. Am I right?","['algebra-precalculus', 'contest-math', 'functions', 'functional-equations']"
+2282828,Find tangent equation for a curve which is perpendicular to a line,"How do I find the point on the curve $y=1/(2x−1)$ where the tangent line will be perpendicular to the line defined by $x−2y−1=0$? What I have so far: 
+The equation of the given line is $y= 0.5x+1$
+Since the slope is $-0.5$, the tangent slope must be $2$ .: $y=-2x+b$ (tangent line) The differential of the curve is $y=-2/((2x-1)^2)$. I can't figure out how to get the b value for the tangent, nor the point at which this happens.","['derivatives', 'tangent-line', 'calculus']"
+2282840,"For a continuous random variable, when can you use the PMF vs. the CDF?","I think I am missing a core concept in my (fairly basic) probability class.  I will try to explain my confusion as best I can... If I am given a continuous random variable
+(for instance, say that we have $X$ which follows an exponential distribution with expected value $E(X)=3$)
+and we want to to find the probability that the outcome is greater/less than a particular value (continuing with my example, say we are trying to find $P(x>5)$,) my intuition tells me that I would need to integrate the exponential PMF from 5 to infinity.  However, in looking at the solution for this particular problem, I can actually calculate the answer by simply plugging 5 into the exponential PMF. Can anybody explain to me when I would be able to simply plug the value into the PMF and when I would need to instead integrate the PMF? I apologize if this is unclear! My best guess here is that I am missing some key difference between the PMF and the CDF. If anybody could try and elucidate this for me I would be very grateful!  Thanks in advance.","['statistics', 'probability']"
+2282842,Number of permutations of BANANA if (1) the two Ns are separated and (2) the three As are all separated,"One way to do (1) is subtract all permutations of BAXAA (where X = NN) from all the permutations of BANANA: $\frac{6!}{2!3!} - \frac{5!}{3!}.$ I was wondering if it is possible to solve (1) by letting X = NBN, Y = NAN, counting the number of permutations of BAYA and XAAA and taking their sum to get $\frac{4!}{3!} + 3(\frac{4!}{2!})$ where the coefficient $3$ is to account for three different A's. The reason I am unsure about the second method for (1) is that I can't seem to get (2) right. Here I let X = AA, Y = AAA, count the number of permutations of BXNNA and BYNN and subtract their sum from the total number of permutations of BANANA which is $\frac{6!}{2!3!} - (\frac{4!}{2!} + \frac{5!}{2!}) = -12.$ My questions. Is the second method for (1) correct? Why do I keep getting $-12$ in the solution of (2)? How do I fix it?","['permutations', 'combinatorics', 'combinations', 'discrete-mathematics']"
+2282845,An example of evaluating an integral using partial fraction decomposition,"How do you evaluate the integral 
+  \begin{equation*}
+    \int \frac{3x^3+ 7x^2+ 5x+ 3}{(x+1)^2(x^2+1)}\,\mathrm{d}x
+    \,?
+\end{equation*} This is just an exercise that I wanted to have typed up for my class. Maybe it'll help other students to see an example worked out.","['partial-fractions', 'integration', 'calculus']"
+2282851,Set of a random variable's range is an event in the sample space?,"My book has the following definition for the range of a random variable. Since a random variable is defined on a probability space, we can calculate these probabilities given the probabilities of the sample points. Let $a$ be any number in the range of a random variable $X$. Then the set $\{\omega \in \Omega :X(\omega)=a\}$ is an event in the sample space (simply because it is a subset of $\Omega$). I think I'm misunderstanding the provided notation but to me this expression: $$\{\omega \in \Omega :X(\omega)=a\}$$ seems to be saying ""For each sample point $\omega$ in the sample space $\Omega$, compute $X(\omega)$ and store the result $a$ in the set"". If the above expression is saying what I think it says how can we say that a set of $\{X(\omega_1), X(\omega_2),\ldots,X(\omega_{|\Omega|})\}$ is an event in the sample space? Aren't events a subset $\{ \omega_1, \omega_2, \ldots\}$ of $\Omega$ ?","['probability-theory', 'probability', 'random-variables']"
+2282887,Darboux Integral Partition Question,"I looking at a sample problem to use the Darboux Integral to find the integral of $f(x)=x^2$. Textbook Solution: For a partition P $={0=t_0<t_1<t_2<...<t_n=b}$ we have,
+$U(f,P) = \sum^n_{k=1}sup(x^2:x \in [t_{k-1},t_k])*(t_k-t_{k-1})$ (I get lost here) If we choose $t_k=\frac{kb}{n}$ then we have: $U(f,P) = \sum^n_{k=1} \frac{k^2b^2}{n^2}(\frac{b}{n}) $... My question is how was $t_k=\frac{kb}{n}$ ""picked"". There is no explanation for it in the book.","['real-analysis', 'integration', 'analysis', 'riemann-sum']"
+2282923,What does existence of the Real numbers mean?,"It is a common practice in real analysis text book to show that a complete ordered field exist, this ordered field is then called the Real numbers. What does this existence mean (where does it exist) and why is it needed? I also want to know the validity of the following observation (I understand the observation is not very rigorous) . It seems that the completeness axiom of Real numbers has to do with the construction of the Real numbers and similarly the successor and the induction axioms in Peano axioms have to do with construction of Natural numbers from other intuitive concepts. I have the following questions: Is this observation valid? Why would we need this axioms for Natural and real Numbers (the axioms to do with their construction)? (Why do not we have such axioms for rationals, negative numbers or complex numbers?) How do these axioms help in logical treatments of Natural and Real numbers (what would happen without them)?","['number-theory', 'real-analysis', 'logic']"
+2282938,Converting from quaternion to angular velocity then back to quaternion,"I am trying to write a small physics simulator. I have q(t), the quaternion orientation in the inertial frame. I would like to simulate the gyroscope input, so I need to get the moving frame angular velocity. My first question is, how to calculate the temporal derivative of a quaternion by sampling q(t). I thought about two solution $(q(t+dt) - q(t))/dt$ and $q(t+dt)*q(t)^{t}$ where the superscript t is for the conjugate. I found the second one by thinking that it would give me the change of $q(t)$ during $dt$ in the inertial reference. The first one seems weird to me for a rotation. I am not sure if they are both correct or equivalent. If not, why ? My second question is, assuming I have the correct $dq(t)/dt$, How do I get: the body frame angular velocity (to simulate gyroscope input) $\omega_B$ And then from the angular velocity, how do I retrieve the body frame quaternion temporal derivative. $dq_B(t)/dt$ Then how to integrate that temporal derivative to get the new attitude $q_B(t+dt)$ with respect to the body frame I assume that from there, I could retrieve $q(t+dt)$ by composing with the rotation $q(t)$: $q(t+dt) = q_B(t+dt)*q(t)$ ? Is that correct ? I have made some attempt by using https://www.astro.rug.nl/software/kapteyn/_downloads/attitude.pdf . But I was very unsuccessful so far http://paste.awesom.eu/lzKh Thank you in advance for your help","['quaternions', 'integration', 'change-of-basis']"
+2282953,"On relations between flasque , injective and fine sheaves","As we all know, injective sheaves are flasque. On a paracompact Hausdorff space $X$, what's the relation between flasque and fine sheaves on $X$ ? And what about fine and injective?
+Recall that a sheaf $\mathcal{F}$ over a topological space $X$ called flasque if for any inclusion $V \subset U$ of open sets,the restriction map from $\mathcal F(U) \to \mathcal F(V)$ is surjective.
+fine sheaf over a paracompact Hausdorff space means that it is a sheaf and has a P.O.U.
+Injective sheaf is a injective object in the category of abelian group sheaves.
+Thanks in advance!","['homological-algebra', 'algebraic-geometry']"
+2282972,"Proving $f(x,y)$ is not Lipschitz but still has a unique solution to initial value problem","Consider $g:\mathbb R\to\mathbb R$ defined by $g(y)=1+\sqrt |y|$. Let $h:\mathbb R\to \mathbb R$ be a continous function such that $h(x)\neq 0$ for all $x\neq 0$. I'm asked to prove the following: Prove the function $f(x,y)=\frac {h(x)}{g(y)}$ is not Lipschitz respect to $y$ around the origin. Prove the initial value problem associated with $(0,0)$ has a unique solution. Find the solution in the case $h(x)=1$. The first point is clear since $\partial f(x,y)/\partial y \to \infty $ as $y\to 0$. My problem lies on the second point. My only tool for proving uniqueness is the Picard theorem but $f(x,y)$ is not Lipschitz so I don't know how to tackle this problem. I tried using the method of separating variables but don't really know if it ensures uniqueness. Any help is appreciated.","['real-analysis', 'ordinary-differential-equations']"
+2283005,a subset of a zero Lebesgue measure set is measurable?,"This question is related to What's the quickest way to see that the subset of a set of measure zero has measure zero? But I'm specifically concerned about Lebesgue measure, $m$, on a real interval, $X=[a,b]$, and specifically about why a subset, $A$, of zero measure set, $E$, is measurable ?  Is it by the construction of the Lebesgue measure? I can understand that the outer measure of $A$ is zero, i.e. $m^*(A)=0$, since any open cover of $E$ also covers $A$.  But to claim that $A$ is measurable, I think (by definition) we need to show that $A$ is a countable union of finitely $m$-measurable sets.  It's not clear to me how this may be done?  I'd appreciate some help. BTW, according to Rudin's Principles of Mathematical Analysis , a set $B$ is finitely $m$-measurable, if there is a sequence $\{B_n\}$ of elementary sets such that $B_n \to B$.","['real-analysis', 'measure-theory']"
+2283029,Can a subspace of a vector space $V$ have a different form of zero vector?,"In Linear algebra, a necessary condition for a subset of a vector space to be a subspace, is to contain the zero vector. For example, The following subspaces of Vector space $\mathbb {R^3}$ has $0$-D subspace( the origin ), 1-D subspace ( lines through the origin ),2-D subspace ( planes through the origin ) and finally $\mathbb {R^3}$ have the same zero vector But the subspaces of Vector space of all polynomials with degree at most n, $\mathbb{P_n}$ have the same form of zero vector defined as the function value to be $0$ $\forall$ t , with different coordinate mappings which are one to one and onto $\mathbb{R^k}$ with $k$ = dim $\mathbb{P_m}$ $\forall$ $m < n$ Can a subset of a Vector space $V$ having a zero vector in its own right different from that of $V$ ( may be non trivial, here is an example Zero vector of a vector space ) closed under vector addition and scalar multiplication be called a subspace of $V$ ?","['linear-algebra', 'vector-spaces']"
+2283041,Please help me identify these mathematicians,"In the English translation of Sharygin's Problems in Geometry by Mir Publishers, there are a number of instances in which the names of mathematicians are clear misspellings. For example, ""Lemuan"" for Lemoine and ""Herdesh"" for Erdös. It's obvious that in these cases the translator for Mir, who almost certainly wasn't a mathematician, was unable to determine who these mathematicians were from the Russian spellings of their names. I'd like help in identifying the authors of the following theorems mentioned in the book, whose names may well have been mangled by the translator. I've left the translations as they are, warts and all. I’ve added the original Russian name after each problem statement. Problem 262: Prove that the middle perpendiculars [i.e., the perpendicular bisectors] to the line segments joining the intersection points of the altitudes [i.e., the orthocentres] to the centres of the circumscribed circles of the four triangles formed by four arbitrary straight lines in the plane intersect at one point ( Herwey’s point ). Точка Эрвея Problem 282: An arc $AB$ of a circle is divided into three equal parts by the points $C$ and $D$ ($C$ is nearest to $A$). When rotated about the point $A$ through an angle of $\pi/3$, the points $B$, $C$ and $D$ go into points $B_1$, $C_1$ and $D_1$; $F$ is the point of intersection of the straight lines $AB_1$ and $DC_1$; $E$ is a point on the bisector of the angle $B_1 B A$ such that $|BD| = |DE|$. Prove that the triangle $CEF$ is regular [i.e., equilateral] ( Finlay’s theorem ). Финлей","['mathematicians', 'geometry']"
+2283059,Radon-Nikodym application,"Let $ \mathcal{M}$ be the set of $\sigma$-algebra of Lebesgue measurable subsets of $ \mathbb{R} $. Let $f:\mathbb{R} \rightarrow (0,+\infty)$ be measurable and $g \in L^1(\mathbb{R}) $. For $E \in \mathcal{M}$, define
+  \begin{equation*}
+\mu(E)= \int_E f(x)dx \text{ and } \lambda(E)= \int_E g(x)dx
+\end{equation*}
+  whenever $ E \in \mathcal{M} $. Show $ \lambda << \mu $. Find $ d\lambda/d\mu $. if we write f= $\frac{d\mu}{dx} $ and g= $\frac{d\lambda}{dx} $ then $\frac{g}{f} = \dfrac{\frac{d\lambda}{dx}}{\frac{d\mu}{dx}} = \frac{d\lambda}{d\mu}$. So the Radon-Nikodym derivative of $ \lambda $ with respect to $ \mu $ is $\frac{d\lambda}{d\mu}=\dfrac{g(x)}{f(x)}$. I need some help to show that $ \lambda << \mu $. Given $E \in \mathcal{M}$ such that $\mu(E)=0$, we want to show that $\lambda(E)=0$","['real-analysis', 'lebesgue-measure', 'lebesgue-integral', 'measure-theory', 'analysis']"
+2283126,Does $A$ and $A^TA$ have the same eigenvalues,Do matrices $A$ and $A^TA$ have the same eigenvalues? I think they do but I can't find anything online about it,"['matrices', 'eigenvalues-eigenvectors', 'symmetric-matrices']"
+2283271,"The set $S=\{a+1,a+2, a+3,\dots,a+2015,a+2016\}$ with exactly 20 primes","Consider a set $S=\{a+1,a+2, a+3,\dots,a+2015,a+2016\}$, where $a$ is a positive integer. The question is to prove that there exists a number $a$ such that the set contains exactly $20$ primes. I already know that, denoting $a=2016!+1$, the set $S$ is left with no primes. And if $a=0$ there exists more than $20$ primes. So by intuition somewhere between $0<a<2016!+1$ there is a number $a$ that does the trick. Is there deeper or more formal way to prove this, or even find an exact value for $a$? Thanks for your answers.","['number-theory', 'combinatorics', 'analysis']"
+2283274,Inverse Function Theorem proof: f is injective,"I am trying to prove the Inverse Function Theorem from the Implicit Function Theorem for Banach spaces. My attempt so far is as follows: Let $f:\mathbf{X}\to \mathbf{Y}$ be a $\mathcal{C}^k$ function between Banach spaces, and let $x^*\in\mathbf{X}$ and $y^*:=f(x^*)$ be such that the Fréchet derivative $\mathrm{d}\,f(x^*):\mathbf{X}\to\mathbf{Y}$ is bounded with bounded inverse. Consider $F:\mathbf{X}\times\mathbf{Y}\to\mathbf{Y}$ given by $F(x,y):=f(x)-y$ . Then the partial Fréchet derivative $\partial_xF(x^*,y^*)\equiv \mathrm{d}\,f(x^*)$ is bounded with a bounded inverse, so $F$ satisfies the hypotheses of the Implicit Function Theorem. Hence, there are open sets $U\subseteq\mathbf{X}$ and $V\subseteq\mathbf{Y}$ containing $x^*$ and $y^*$ , respectively, and a $\mathcal{C}^k$ function $g:V \to U$ such that $F(g(y), y) = 0$ for all $y\in V$ , i.e. $f(g(y)) = y$ . The above shows that $g$ is a right inverse of $f$ , but I want to be able to conclude, further, that $g$ is a left inverse of $f$ on $U$ , i.e. $g(f(x)) = x$ for all $x \in U$ . I know this to be equivalent to showing that the restriction $f|_U$ is injective (possibly by choosing a smaller neighbourhood of $x^*$ in $U$ ), but I am not sure how to do this. I would greatly appreciate any hints!","['implicit-function-theorem', 'functional-analysis', 'multivariable-calculus', 'inverse-function-theorem', 'frechet-derivative']"
+2283285,"How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 + x_5 = 21$,","Question How many solutions are there to the equation $x_1 + x_2 + x_3 + x_4 + x_5 = 21$ , such that all of $x_{i}$ where $i=1,2,3,4,5$ are non negative and $0\leq x_1 \leq 3$ $1\leq x_2 \lt 4$ and $x_3 \geq 15$ Attempt first used $0\leq x_1 \leq 3$ and $1\leq x_2 \lt 4$ and then find the number of solutions violating $0\leq x_1 \leq 3$ $\\,\,$ and $\,\,$$1\leq x_2 \lt 4$ will give $x_1 \gt 3$$\\,\,$ and $\,\, x_2 \gt 3$ Now number of  solutions are there to the equation $x_1 + x_2 + x_3 + x_4 + x_5 = 21$ , = $\binom{21+5-1}{21}=12,650$ Now number of  solutions are there to the equation $x_1 + x_2 + x_3 + x_4 + x_5 = 21$ , such that $0\leq x_1 \leq 3$ and $1\leq x_2 \lt 4$ = $12650-$ number of  solutions are there to the equation $x_1 \gt 3$$\\,\,$ and $\,\, x_2 \gt 3$ $-----------------------------------------------$ solving number of equation for $x_1 \gt 3$$\\,\,$ and $\,\, x_2 \gt 3$ let $x_1=x_1^{'}+3$ $x_2=x_2^{'}+3$ our equation becomes $x_1^{'}+3+x_2^{'}+3+x_3+x_4+x_5=21$ $\Rightarrow x_1^{'}+x_2^{'}+x_3+x_4+x_5=15$ $\therefore $ number of equation= $\binom{15+5-1}{15}=3876$ Now, Now number of  solutions are there to the equation $x_1 + x_2 + x_3 + x_4 + x_5 = 21$ , such that $0\leq x_1 \leq 3$ and $1\leq x_2 \lt 4$ = $12650-3876=8,774$ now among $8,774$ we have to find $x3 \geq 15$ for $x_3 \geq 15$ , let $x_3 =x_3 ^{'}+15$ our equation becomes $x_1 + x_2 + x_3^{'} +15+ x_4 + x_5 = 21$ , $x_1 + x_2 + x_3 + x_4 + x_5 = 6$ $\therefore$ number of equation = $\binom{6+5-1}{6}=210$ so final  answer $=8,774-210=8,564$ But the answer is $106$ Where am i wrong?? Please correct me or else give me the correct way Thanks! ,","['combinatorics', 'discrete-mathematics']"
+2283359,Cardinality of the set of all polynomials with coefficients in $\mathbb R$,"I'm trying to find the cardinality of the set of all polynomials with coefficients in ℝ.
+What's wrong with the following proof: Let $f$ be a function: 
+$$f: \mathbb R[x] \to P(\mathbb R)$$
+$$f(a_{0}+a_{1}x^{1}+...+a_{k}x^{k}) = \left \{ a_{0}, a_{1}, ..., a_{k} \right \}$$ For example:
+$$f(4.3x+2.5) = \left \{ 4.3,2.5 \right \}$$ f is obviously not injective, but is onto . 
+Meaning that  $$|\mathbb R[x]]| \geq \left | P(R) \right | $$ What am I missing?","['cardinals', 'polynomials', 'elementary-set-theory']"
+2283396,I am getting two answer for this 1st order logic question.,"I had a doubt about a first order logic question given in this lecture which is a series on Discrete Mathematical structures from IIT. If $x*y=x$ for all $y$ , then $x=0$ .
+You have to represent this in predicate logic. The universe of discourse is set of non-negative integers. Let $P(x,y,z)$ represent: $x*y=z$ Answer given by the instructor is; $$∀x[∀y P(x,y,x) => x=0]$$ Which I understood and is true.
+But the answer I managed was: $$∃x[∀y P(x,y,x) ∧ x=0]$$ This also seems right. Also if you expand the first assertion, $$∀x[∀y P(x,y,x) => x=0]$$ $$∀x[¬∀y P(x,y,x) ∨ x=0]$$ $$∀x ¬[∀y P(x,y,x) ∧ x≠0]$$ $$¬∃x[∀y P(x,y,x) ∧ x≠0]$$ Which is not the same as I managed but I am not able to figure out where I am wrong. Or are they both right? My first question so sorry for any mistakes. Thanks!","['predicate-logic', 'quantifiers', 'first-order-logic', 'discrete-mathematics']"
+2283407,"Functional equation $f(xy) = f'(x)f(y)$, am I doing it right?","So I want to find all functions $f : \mathbb R \to \mathbb R$ so that: $$f(xy) = f'(x)f(y), \forall x,y \in \mathbb R$$ My try : $y=1$ gives: $f(x) = f'(x)f(1)$ or $f'(x) = \frac{f(x)}{f(1)}$ $$f(x) = e^{\frac{x}{f(1)}}$$ where $f(1)$ must fulfil $$f(1) = e^{\frac 1 {f(1)}}$$ We can conclude $f(1)>0$ and since $\cases{1/x & \text{is monotonic decaying}\\ e^x &\text{is monotonic increasing}}$ Therefore there must exist one and only such $f(1) \in \mathbb R$. Does this make sense?","['ordinary-differential-equations', 'calculus', 'functional-equations']"
+2283428,"Critical points of function $f(x):=\frac{<Ax,x>}{|x|^2}$ are eigenvectors of $A$","I'm stuck on the following problem: ""Show that the critical points $\bar{x}$ of the function $f:\mathbb{R}^n-\{0\}\to\mathbb{R}, f(x):=\frac{<Ax,x>}{|x|^2}$ are eigenvectors of the symmetric matrix $A$ of eigenvalue $A\bar{x}/|\bar{x}|^2$."" Being a bit rusty on linear algebra, I don't know how to proceed;
+so I'd like to have just an hint about how to get started.","['multivariable-calculus', 'linear-algebra']"
+2283576,Discrete math probability biased coin,"If a biased coin flips heads with probability $\frac{3}{7}$ and tails with probability $\frac{4}{7}$ is flipped $80$ times, what is the probability that heads is flipped $30$ times? I used binomial distribution so I get
+$$
+{80 \choose 30}\left(\frac{3}{7}\right)^{30}\left(\frac{4}{7}\right)^{50}\\
+=\frac{80!}{30!50!}\left(\frac{3}{7}\right)^{30}\left(\frac{4}{7}\right)^{50}
+$$ Is this right?","['combinations', 'binomial-distribution', 'probability', 'combinatorics', 'discrete-mathematics']"
+2283631,"Minimize $\|AXBd -c \|^2$, enforcing $X$ to be a diagonal block matrix","Currently, I am minimizing the quadratic objective $\|\mathbf{A}\mathbf{X}\mathbf{B}\mathbf{d} -\mathbf{c} \|^2$ using CVX , as follows echo on
+cvx_begin
+    variable xx(num_triangles*3,num_triangles*3)
+    minimize( norm( A * xx * B * d - c ) )
+cvx_end
+echo off However, $\mathbf{X}$ is a very large matrix (about $50,000 \times 50,000$, which is too big). Good news is that $\mathbf{X}$ is a block diagonal matrix (of $3 \times 3$ transformation matrices) and, therefore, it is highly sparse. To give an example, for $\mathbf{X} \in \mathbb{R}^{9 \times 9}$ I would be looking for such matrix. |  X1  X4  X7   0   0   0   0   0   0 |
+|  X2  X5  X8   0   0   0   0   0   0 |
+|  X3  X6  X9   0   0   0   0   0   0 |
+|   0   0   0 X10 x13 x16   0   0   0 |
+|   0   0   0 X11 x14 x17   0   0   0 |
+|   0   0   0 X12 x15 x18   0   0   0 |
+|   0   0   0   0   0   0 X19 x22 x25 |
+|   0   0   0   0   0   0 X20 x23 x26 |
+|   0   0   0   0   0   0 X21 x24 x27 | so in fact I am only solving for $27$ variables, not $9 \times 9 = 81$. And this scales pretty badly. But I don't know how I can enforce such structure when formulating the minimization problem. If I declare a normal square matrix of the size I need, the memory just explodes. Any ideas on how to reformulate the problem in a way that I actually solve for the number of unknowns? I currently look for solutions in MATLAB.","['cvx', 'least-squares', 'matrices', 'matlab', 'convex-optimization']"
+2283669,"How to evaluate the closed form for $\int_{0}^{\pi/2}{\mathrm dx\over \sin^2(x)}\ln\left({a+b\sin^2(x)\over a-b\sin^2(x)}\right)=\pi\cdot F(a,b)?$","Proposed: $$\int_{0}^{\pi/2}{\mathrm dx\over \sin^2(x)}\ln\left({a+b\sin^2(x)\over a-b\sin^2(x)}\right)=\pi\cdot F(a,b)\tag1$$
+  Where $a\ge b$ Examples: Where $F(1,1)= \sqrt{2}$, $F(2,1)=\sqrt{2-\sqrt{3}}$, $F(3,1)={1\over \sqrt{3}}(2-\sqrt{2})$, $...$ How do we evaluate the closed form for $(1)?$","['integration', 'definite-integrals', 'calculus', 'closed-form']"
+2283684,How to solve this integral using the method of residues?,"Using the method of residues, verify the following. $$\int_0^{\pi} \frac{d \theta}{(3+2cos \theta)^2} = \frac{3 \pi \sqrt{5}}{25}$$ I tried doing this but can't get the correct answer, here is my attempt: first I substituted $cos \theta = \frac{z+ \frac{1}{z}}{2}$ and $d \theta = \frac{dz}{iz}$ and got $\int_0^{\pi} \frac{dz}{iz(3+z+\frac{1}{z})^2}$ then I multiplied top and bottom my $iz$ so that the $i$ moves to the top and on the bottom I'll have $z^2$ so I can distribute it into the rest of it and get $-i \int_0^{\pi} \frac{zdz}{(3z+z^2+1)^2}$ the denominator has two zeroes at $-\frac{3}{2} \pm \sqrt{\frac{5}{4}}$, since the denominator is squared the function has poles here of order two. The I used Cauchy's Residue theorem but first I needed to find the residue at $-\frac{3}{2} + \sqrt{\frac{5}{4}}$ because only this pole is inside the unit circle. I found the residue using theorem 1 on pdf page 324/579 from this textbook http://english-c.tongji.edu.cn/_SiteConf/files/2014/05/05/file_53676237d7159.pdf After finding the residue using that formula and applying cauchy's residue theorem I do not get an answer close to $\frac{3 \pi \sqrt{5}}{25}$ I am not sure how to handle the fact that the integral is from $0$ to $\pi$ rather then from $0$ to $2\pi$, and I am not sure if I made any mistakes when finding the poles and residues.","['complex-analysis', 'residue-calculus', 'complex-integration']"
+2283711,"In a Hilbert space $X$, $T \in B(X)$, $|\lambda|=\lVert T \rVert$. Prove that $Im(\lambda I - T)+Ker(\lambda I-T)$ is dense in $X$","Let $X$ be a Hilbert space, $T\in B(X)$ and $\lambda$ be a scalar such that $|\lambda|=\lVert T \rVert$. Prove that $Im(\lambda I - T)+Ker(\lambda I-T)$ is dense in $X$. Since $Ker(\lambda I -T)=Im(\bar{\lambda}I-T^*)^\perp$ where $T^*$ is the adjoint of $T$, we need to show $Im(\lambda I-T)+Im(\bar{\lambda} I-T^*)^\perp$ is dense. My attempt is to assume it is not dense. Hence we can find something outside its closure. However, I am kind of stuck at this point. I have proved that if $T^*x = \bar{\lambda}x$, then $Tx = \lambda x$. I don't know if this helps.","['functional-analysis', 'hilbert-spaces']"
+2283745,Is it possible to evaluate analytically the following double integral?,"In a mathematical physical problem related to the search of Green's functions in an anisotropic medium, I came across a non-trivial double integral. Is it possible to evaluate analytically the following double integral? $$
+\varphi(h, A, B) = -\frac{1}{(2\pi)^2} \int_0^{\infty} \int_{0}^\pi \frac{\sin^3\theta \, e^{ihk\cos\theta}}{\cos^4\theta-A\cos^2\theta-B}\, \mathrm{d}\theta \, \mathrm{d}k \, , 
+$$
+where $h$, $A$ and $B$ are all positive real numbers. 
+Making the change of variable $q=\cos\theta$, the above integral can conveniently be written as
+$$
+\varphi(h, A, B) = -\frac{1}{(2\pi)^2} \int_0^{\infty} \int_{-1}^1 \frac{(1-q^2) \, e^{ihkq}}{q^4-Aq^2-B}\, \mathrm{d}q \, \mathrm{d}k \, .
+$$ Now, by changing the integration range for $q$ we obtain
+$$
+\varphi(h, A, B) = -\frac{1}{2\pi^2} \int_0^{\infty} \int_{0}^1 \frac{(1-q^2) \, \cos(hkq)}{q^4-Aq^2-B}\, \mathrm{d}q \, \mathrm{d}k \, .
+$$ By making use of Maple, I have noticed that the function $\varphi$ depends solely on $h$ and $B$ and does not depend on $A$. More precisely 
+$$
+\varphi (h,A,B) = \varphi(h,B) = \frac{1}{4\pi B h} \, .
+$$
+Is there a way to show that mathematically in a rigorous way? 
+Is that true?
+Any help / hints / indication would be highly appreciated. Thank you, Fede","['complex-analysis', 'improper-integrals', 'integration', 'definite-integrals']"
+2283772,The differences between $\aleph$ and $\mathfrak{c}$ [duplicate],"This question already has answers here : Symbol for the cardinality of the continuum (3 answers) Closed 7 years ago . In elementary set theory, the cardinal of the real numbers is denoted by $|\mathbb{R}| = \aleph$. After a few months here on MathExchange, I have seen quite a few times the notation $\mathfrak{c}$ for the exact same thing. Recently an answer of mine was edited such that every time I used $\aleph$ it was replaced with $\mathfrak{c}$ which made me wonder: Are there any actual differences between the two notation? Of course, they're defined to be the exact same thing, but maybe differences in the source of the notation, or where you should use each, or something like that... I appreciate your help in advance :)","['notation', 'elementary-set-theory']"
+2283778,Summing series in the form: $\sum_{n=\infty}^{\infty}f(n)$ via Complex Methods?,"$(1.)$ $$\sum_{n=\infty}^{\infty}f(n)$$ $(2.)$ $$\sum_{n=1}^{\infty}f(n)=\lim_{n\to\infty}\sum_{n=1}^{n}f(n)$$ How would via the tools of Complex Analysis approach the summation of series in the from defined in $(1.)$ via the tools of Complex Variables ? If possible provide applicable examples. $$EDIT$$ Adding to our original question how would handle the upper bound and lower bound of sum defined in $(1.)$ as $n \, \rightarrow \infty$, how would generalize the approach seen in real-variable methods as seen and defined in $(2.)$.","['complex-analysis', 'summation']"
+2283810,A number $x$ such that $x^n = x$ for every $n$,"Is there proof fully algebraic that shows that $1$ is the only number that when put in the function $f(x) = x^n$, for $n = $ any number , the output is always $x$? This is pretty obvious, but you seem to prove it using the trivial knowledge . For example, $1^4 = 1, 1^{46373} = 1$, but $2^4 \neq 2$","['calculus', 'functions']"
+2283842,"How to find the ""most upright"" orthogonal vector to another vector?","Given an arbitrary vector, I can find any orthogonal vector by solving $ax + by + cz = 0$. I want to find the ""most upright"" orthogonal (unit) vector, where $z$ is maximized. There must be a straightforward closed form solution to this, right?","['linear-algebra', 'vectors']"
+2283891,Uniformly Most Powerful test for normal distribution,"Let ${Y_1,...,Y_n}$ be independent random variables and $Y_i$~$N(\beta x_i, 1)$ where $x_1,...,x_n$ are fixed known constants, and $\beta$ is an unknown parameter. I'm trying to find a uniformly most powerful level $\alpha$ test for $$H_0: \beta=0 \quad \text{vs} \quad H_1:\beta>0$$ First I found the Likelihood Ratio statistic $$\begin{align}\frac{L(0)}{L(\beta_1)}&=\frac{e^{-\frac{1}{2}\sum^n_{i=1}(y_i-0x_i)^2}}{e^{-\frac{1}{2}\sum^n_{i=1}(y_i-\beta_1x_i)^2}}
+\\[15pt] & = \frac{e^{-\frac{1}{2}\sum^n y_i^2}}{e^{-\frac{1}{2}(y_i^2-2y_i\beta_1x_i+\beta_1^2x_i^2)}}  
+\\[15pt] & =e^{\beta_1\sum^n y_ix_i-\frac{1}{2}\beta_1^2\sum^nx_i^2}\end{align}$$ Then the rejection region of the LRT is
+$$e^{\beta_1\sum^n y_ix_i-\frac{1}{2}\beta_1^2\sum^nx_i^2} \le k \\$$ Now moving the constants to the right side
+$$\\[15pt]\Rightarrow\beta_1\sum^n y_ix_i-\frac{1}{2}\beta_1^2\sum^nx_i^2 \;\le\; \text{ln}(k)$$ $$\\[15pt]\Rightarrow\sum^ny_ix_i \;\le\; \frac{\text{ln}(k)+1/2\sum^n\beta_1^2x_i^2}{\beta_1}$$ Here is where I get confused because I'm not sure what to leave on the left side. From what I have read I'm supposed to move constants to the right. I'm thinking that only $y_i$'s should remain on the left. Since $x_i$'s are constants shouldn't I move it? The steps that follow to find the rejection region by using the distribution of the left of the inequality, then equating to a quantile, puzzle me because of the $x_i$ I'm not even sure I'm going about this correctly or if there are more straight forward methods.","['statistics', 'statistical-inference', 'hypothesis-testing', 'probability-distributions']"
+2283916,Are Inverse Trig functions a different form of log?,"When studying complex analysis, we realize that trigonometric functions are nothing but exponentials, and we can define real trigonometric functions in terms of complex exponentials. 
+I was wondering if we can apply this logic to define inverse trigonometric functions (arcsin, for example) in terms of complex logarithms, who are the inverse functions of complex exponentials. Can we? Is it appropriate?","['complex-analysis', 'trigonometry', 'inverse-function']"
+2283939,Calculate number of graphs,"Hi I have a problem with following assigment. 
+We have a simple graph with $6$ vertices and $5$ edges. I need to calculate the number of graphs in which degree of every vertex is bigger than zero.
+So my idea is :
+$$$$
+1) I can choose one starting vertex (6 ways to do so). Number of avalible vertices to connect it, is 5.$$$$
+2) I have 2 connected vertices and 4 unconnected. Now there are 4 ways to pick another vertex that hasn't been connected yet and 5 avalible vertices.
+$$...$$
+And I do it until I have all my vertices taken care off. So number of graphs is :$6\cdot 5 \cdot 4 \cdot 5 \cdot 3 \cdot 5 \cdot 2 \cdot 5\cdot 1\cdot 5$","['graph-theory', 'discrete-mathematics']"
+2283981,"Is there a symbol for ""taking a derivative of something""?","When presented with an equation, say, $y=5x^3+7x^2+4x+9$, you can write on the second line, $\frac{dy}{dx}=15x^2+14x+4$. Similarly, $f(x)=5x^3+7x^2+4x+9$ and $f'(x)=15x^2+14x+4$. But is there a way to write ""the derivative of $5x^3+7x^2+4x+9$ is $15x^2+14x+4$"" in just one line? What should l write, $\frac{dy}{d5x^3+7x^2+4x+9}=\cdots$? That fraction just gives me a headache trying to understand it. What about $f'(5x^3+7x^2+4x+9)=\cdots$? For all the reader knows, $f(x)$ could be anything, and the writer wanted them to plug in $5x^3+7x^2+4x+9$ into the original $f(x)$ and then take the derivative. So has anyone come up with a better way to write this that does not involve defining anything and then using the newly defined function/operator?","['derivatives', 'notation', 'calculus']"
+2284004,Calculate $\lim_{n\rightarrow \infty} \int_{-\infty}^{\infty}\frac{1}{1+\frac{x^{4}}{n}}dx$ if it exists.,"Calculate $$\lim_{n\rightarrow \infty} \int_{-\infty}^\infty \frac{1}{1+\frac{x^4}{n}} \, dx$$
+if it exists. If this limit does not exist, show why it does not exist. My attemp: Consider $f_n(x):=\frac{1}{1+\frac{x^{4}}{n}}$,  since $f_n$ is continuous in $\mathbb{R}$, then $f_n$ is $f_n$ are Lebesgue measurable in $\mathbb{R}$, futhermore, note that $f_n\leq f_{n+1}$ for all $n\in\mathbb{N}$. Moreover, we have
+$$\lim_{n\rightarrow \infty }f_n(x)=1.$$
+Therefore,. by Monotone convergence Theorem we have
+$$\lim_{n\rightarrow \infty} \int_{-\infty}^\infty\frac{1}{1+\frac{x^4}{n}} \, dx=\int_{-\infty}^\infty\lim_{n\rightarrow \infty}\frac{1}{1+\frac{x^4}{n}} \, dx= \int_{-\infty}^\infty 1\,dx=\infty.$$ Quiestion: This last conclusion brought me doubts. Does the monotone convergence theorem guarantee that the integral exists? I have read over and over the theorem and I do not find guarantee the existence, it only allows to enter the limit in the integral. I would like to know if I am correct. Additionally, know if there is any error in my attempt and know another way to do it.","['real-analysis', 'lebesgue-measure', 'integration', 'lebesgue-integral', 'measure-theory']"
+2284025,Proof that a holomorphic square root of function exists,"Problem : Let $f(z)$ be a polynomial of even degree. We want to prove that it has a holomorphic square root in the annulus ouside all the zeros of the polynomial. I asked this question before and got this answer from Lord Shark The Unknown. To summarise the bit I want to understand better, I will write it out here. Firstly some definitions are given: $$f(z)=b_0 z^{2n}+b_{1}z^{2n-1}+\cdots+b_{2n}
+=b_0z^{2n}F(1/z)$$where$$F(z)=1+\frac{b_1}{b_0}z+\cdots+\frac{b_{2n}}{b_0}z^{2n}
+=\prod_{k=1}^{2n}(1-\alpha_k z).$$ Then the following concluding sentence is given: Now $F(z)$ will be nonzero for $|z|<1/a$ so each $|\alpha_k|<a$.
+  Each $(1-\alpha_kz)$ will have a holomorphic square root on the disc
+  $\{z:|z|<1/a\}$. I do not understand fully why such a conclusion can be made. Firstly, why must $F(1/z)$ be used? What is the problem with using $F(z)$ instead? Secondly, why can we say each $(1-\alpha_k z)$ has a holomorphi square root in that disc? Is there some theorem which allows us to make this conclusion?",['complex-analysis']
+2284040,"Comparing $x*f(x)$ with C.D.F., $F(x)$ [closed]","Closed . This question needs details or clarity . It is not currently accepting answers. Want to improve this question? Add details and clarify the problem by editing this post . Closed 7 years ago . Improve this question If $x$ is a continuous r.v., with pdf as $f(x)$ and cdf as $F(x)$, then say I take $x=A$, and wish to compare the quantities ($A*f(A)$) with $F(A)$. Since $F(A)=\int_0^Af(x)dx$ doesn't it follow that $F(A)>A*f(A)$? However, I also have this argument: Consider a discrete distribution where $f(x)$ has value 4 in the range 0.95 to 1.00.  The value of $xf(x)$ in this range will be around 4, but the contribution to $F(x)$ is only 0.05*4 = 0.20.  The value of $F(x)$ meanwhile is 1.00.  So $xf(x) > F(x)$. Where am I going wrong? Please guide. Thanks.","['probability-theory', 'statistics', 'probability-distributions']"
+2284041,How to solve this partial fraction decomposition? [closed],"Closed. This question does not meet Mathematics Stack Exchange guidelines . It is not currently accepting answers. Please provide additional context , which ideally explains why the question is relevant to you and our  community. Some forms of context include: background and motivation, relevant definitions, source, possible strategies, your current progress, why the question is interesting or important, etc. Closed 4 years ago . Improve this question Please help me to solve the following partial fraction decomposition:
+$$\frac{1-v^2}{v+v^3} = \frac{A}{v}+\frac{Bv+C}{1+v^2}$$","['partial-fractions', 'ordinary-differential-equations', 'calculus']"
+2284054,Multivariable limit using polar coordinates?,"$$\lim_{(x,y)\to(0,0)} \frac {2\sin (x^2 + y^2) + y^3}{3x^2+3y^2}$$ I am actually very new to polar coordinates so I'm a little bit confused about this part. I substitute this into this: $\frac {2sin (r^2) + (r cos \theta)^3}{3r^2}$ But I am not even sure if it's right and what should I do after this.
+Does the limit even exist? I need an explanation. Thank you!","['multivariable-calculus', 'calculus', 'limits']"
+2284056,"Closure of $(a,b)$ in one-point compactifcation of $\mathbb{Q}$","Take $\mathbb{Q}$ to be the rational numbers with the usual topology induced by the absolute value.
+Let $\mathbb{Q}^*=\mathbb{Q} \cup \{ \infty \}$ be the one-point compactification of $\mathbb{Q}$.
+Let $a$, $b \in \mathbb{R}$ be any real numbers, $a < b$. What is the closure of the set $(a,b) \cap \mathbb{Q}$ in $\mathbb{Q}^*$? I suspect that the answer is not $[a,b] \cap \mathbb{Q}$.
+My reasoning is that the complement of that set, i.e. $\mathbb{Q}^* \setminus ( [a,b] \cap \mathbb{Q})= \{ \infty \} \cup (\mathbb{Q} \setminus [a,b] )$, is not open.
+That is because $[a,b]$ is not a compact set in $\mathbb{Q}$. Clearly this is not a proof of my suspicion, but I think it could be expanded to a proof.
+However this is very unintuitive, as $[a,b] \subset \mathbb{R}$ is in fact the closure of $(a,b) \subset \mathbb{R}$ in $\mathbb{R}^*$. Is my guess correct?","['general-topology', 'rational-numbers', 'compactification']"
+2284106,Function Composition and Expected Value,"I was presented with the question The function $f(x)$ is equal to $x^2$ and the function $\chi(x)$ gives a random real number from 0 to $x$. Which usually has a greater expected value, $(f \circ \chi)(x)$ or $(\chi \circ f)(x)$ For what values of $x$? I am almost entirely unexperienced in the field of probability. My approach to this was first to find the expected value of $\chi(x)$, which I think should be
+$$\frac{1}{x}\int_0^x x dx=\frac{1}{2}x$$
+meaning that the expected value of $(f \circ \chi)(x)$ should be 
+$$f(\frac{1}{2}x)=\frac{1}{4}x^2$$
+Then I figured that the expected value of $(\chi \circ f)(x)$ would be
+$$\frac{1}{x^2}\int_0^{x^2} x dx=\frac{1}{2}x^2$$
+Are my methods correct here? If not, how would I go about doing this?","['means', 'expectation', 'probability', 'random-functions']"
+2284134,5 boys and 3 girls are to be arranged such that only one girl has a boy adjacent to her . Find the number such arrangement,Suppose 5 boys and 3 girls are to be arranged  such that only one girl has a boy  adjacent to her . Find the number such arrangement . My work :  I think there are only  such  possible arrangment $2 \times 3!\times 5! $ . If the girls are aren't together then one girl will have two boys adjacent to her .So girls must be to-gather and they should be at the either of the two extreme side of the arrangement of the  boys . There are two possible side that one of the $3$ girls can take . Now the girls can arrange among themselves in $3!$ ways and boys can arrange among themselves in $5!$ ways.So there are about $3!\times 5! $ arrangements when girls are together and are at the left of the $5$-boys . Similarly there are $3!\times 5!$ other cases when girls are to be put on the left . So total cases= $2\times 3! \times 5! $,"['combinations', 'proof-verification', 'probability', 'permutations', 'combinatorics']"
+2284170,The maximum value of a trigonometric expression (without derivative),"For how trivial it may appear, here I am with this question: find the value of $x$ for which this expression has its maximum. $$f(x) = 1 + 4\sin^2(x) + 4\sin(x)\cos(x)$$ Without making use of derivatives, and only basing on trigonometric expressions / formulas. What I have tried is to manipulate a bit the expression, but I couldn't be able to reach any interesting expression.","['maxima-minima', 'trigonometry']"
+2284197,"In $\ell^2(\mathbb{Z})$, using Fourier coefficients calculate the spectrum of the right-shift operator?","In $\ell^2(\mathbb{Z})$, what is the spectrum of the right-shift operator? I have looked at relevant posts on the website and noticed that someone had mentioned in hints that $\ell^2(\mathbb{Z})$ is $L^2(\mathbb{T})$ and hence the right-shift operator can be transformed into a multiplication operator. I am interested in this approach and could anyone show how this is achieved?","['functional-analysis', 'spectral-theory']"
+2284205,"Proof: Let $C \subseteq [0,1]$ be uncountable, show that $C \cap [a,1]$ is uncountable for some $a \in (0,1)$","I have a question regarding the following exercise from Stephen Abbott's Understanding Analysis - 2nd edition: Let $C \subseteq [0,1]$ be uncountable. Show that exists $a \in (0,1)$ such that $C \cap [a,1] $ is uncountable Actually, someone already asked this question here . However I came up with a slightly different proof and I would appreciate some comments on the correctness. First we define $ S:= \{ a \in (0,1] \, | \, s.t. \ C \ \cap [a,1] \  \text{is countable}   \}$. Clearly $S$ is bounded from below by 0 and non-empty as $1$ is always an element of S. Thus it follows from the Axiom of Completness that $ s := \inf(S)$ exists. It also holds that $ s > 0 $, as $s = 0$ would implicate that $C \cap (0,1]$ is countable, however then $ C = \{0 \} \ \cup \ (C \ \cap \ (0,1] ) $  would be countable as an union of two countable sets, which contradicts our initial assumption.
+It follows that for $a:= s/2 $ it holds that $1 > a > 0$  and also $C \ \cap [a,1]$ is uncountable as $s > a$ and thus $a \notin S $. Thanks for your feedback,
+Max","['real-analysis', 'alternative-proof', 'elementary-set-theory', 'proof-verification']"
+2284250,Easy way to find out limit of $a_n = \left (1+\frac{1}{n^2} \right )^n$ for $n \rightarrow \infty$?,What's an easy way to find out the limit of $a_n = \left (1+\frac{1}{n^2} \right )^n$ for $n \rightarrow \infty$? I don't think binomial expansion like with  $\left (1-\frac{1}{n^2} \right )^n = \left (1+\frac{1}{n} \right )^n \cdot \left (1-\frac{1}{n} \right )^n$ is possible. And Bernoulli's inequality only shows $\left (1+\frac{1}{n^2} \right )^n \geq 1 + n \cdot \frac{1}{n^2} = 1 + \frac{1}{n} \geq 1$ which doesn't seem to help as well.,"['sequences-and-series', 'limits']"
+2284274,Visualizing a restriction function,"So I'm doing really basic review of functions to get back into the spirit of self-study. I came across this definition that I was hoping you guys could help me visualize: $A \subset B, \ \  $ $f:A\to B,$ defined by $f(a)=a, \ \ \forall a\in A,$ $ \\ g:B\to C ,$ then, $g|_{A}: A\to C$ is a restriction of g to A. My question then is how would I go about visualizing this particular function? Below is how I see it working, but maybe someone has a more elegant picture? Thanks guys!","['elementary-set-theory', 'functions', 'elementary-functions']"
+2284302,Riemann surface of zeroes,"I am trying to figure out why $ X =\{(z,w) \in \mathbb {C}^2 | z^2 -w^3  = 0\}$ is not a Riemann Surface. I have a hunch that there is an issue at (0,0). It is possibly not related to connectedness. How can we show that no neighborhood of (0,0) in X is homeomorphic to open unit Disk in complex plane?","['riemann-surfaces', 'complex-analysis']"
+2284356,what numbers are integrally represented by this quartic polynomial (norm form),"My last question on this was a bit of a dud. I would, at least, like confirmation that the polynomial $f$ below does, in fact, integrally represent all primes $p \equiv 1 \pmod 5,$ along with all squared primes $q^2$ when prime $q \equiv 4 \pmod 5.$ It is easy to show that the polynomial represents the product of any two numbers it represents. It is not hard to show that, for any represented number, we can adjust the quadruple $(w,x,y,z)$ so that $w,x,y,z \geq 0.$ If possible, confirm that all represented numbers (with $\gcd(w,x,y,z) = 1$  ) are the product of such primes (including $5$ itself) and such squares. Let me find some jpegs... In this $f$ I am going to demand $\gcd(w,x,y,z) = 1.$
+$$ f(w,x,y,z) = \det( w I + x A + y A^2 + z A^3),  $$ where
+$$
+A =
+\left(
+\begin{array}{rrrr}
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+-1 & -1 & -1 & -1
+\end{array}
+\right),
+$$ 
+or x^4 + (-w + (-y - z))*x^3 + (w^2 + (-3*y + 2*z)*w + (y^2 + 2*z*y + z^2))*x^2 + (-w^3 + (2*y + 2*z)*w^2 + (2*y^2 - z*y - 3*z^2)*w + (-y^3 - 3*z*y^2 + 2*z^2*y - z^3))*x + (w^4 + (-y - z)*w^3 + (y^2 - 3*z*y + z^2)*w^2 + (-y^3 + 2*z*y^2 + 2*z^2*y - z^3) w + (y^4 - z y^3 + z^2*y^2 - z^3*y + z^4)) 5  w  0  x  1  y  2  z  2  new record w+x+y+z = 5
+11  w  0  x  0  y  1  z  2 
+31  w  1  x  1  y  1  z  3  new record w+x+y+z = 6
+41  w  0  x  1  y  2  z  3
+61  w  0  x  0  y  1  z  3
+71  w  0  x  1  y  4  z  2  new record w+x+y+z = 7
+101  w  1  x  1  y  4  z  2  new record w+x+y+z = 8
+131  w  1  x  1  y  2  z  4
+151  w  0  x  1  y  2  z  4
+181  w  0  x  1  y  1  z  4
+191  w  0  x  1  y  5  z  3  new record w+x+y+z = 9
+211  w  2  x  2  y  2  z  5  new record w+x+y+z = 11
+241  w  1  x  2  y  5  z  1
+251  w  0  x  1  y  5  z  2
+271  w  0  x  2  y  4  z  5
+281  w  1  x  1  y  5  z  2
+311  w  1  x  2  y  3  z  5
+331  w  1  x  4  y  6  z  1  new record w+x+y+z = 12
+401  w  0  x  1  y  2  z  5
+421  w  0  x  0  y  3  z  5
+431  w  1  x  2  y  6  z  2
+461  w  0  x  1  y  1  z  5
+491  w  2  x  3  y  6  z  1
+521  w  0  x  0  y  1  z  5
+541  w  0  x  2  y  5  z  6  new record w+x+y+z = 13
+571  w  2  x  2  y  3  z  6
+601  w  1  x  1  y  6  z  3
+631  w  2  x  2  y  6  z  1
+641  w  0  x  1  y  6  z  2
+661  w  1  x  2  y  4  z  6
+691  w  0  x  1  y  4  z  6
+701  w  1  x  2  y  7  z  4  new record w+x+y+z = 14
+751  w  1  x  1  y  3  z  6
+761  w  2  x  3  y  7  z  2
+811  w  1  x  4  y  7  z  1
+821  w  2  x  4  y  7  z  1
+881  w  0  x  1  y  2  z  6
+911  w  2  x  2  y  7  z  3
+941  w  0  x  1  y  7  z  5
+971  w  1  x  2  y  7  z  2
+991  w  0  x  1  y  1  z  6
+1021  w  1  x  3  y  7  z  1
+1031  w  2  x  2  y  2  z  7
+1051  w  2  x  3  y  7  z  1
+1061  w  2  x  6  y  8  z  1  new record w+x+y+z = 17
+1091  w  2  x  3  y  8  z  4
+1151  w  0  x  2  y  5  z  7
+1171  w  1  x  1  y  7  z  4
+1181  w  1  x  3  y  5  z  7
+1201  w  1  x  1  y  7  z  3
+1231  w  2  x  3  y  8  z  3
+1291  w  0  x  1  y  5  z  7
+1301  w  1  x  2  y  3  z  7
+1321  w  1  x  2  y  2  z  7
+1361  w  3  x  3  y  8  z  4  new record w+x+y+z = 18
+1381  w  0  x  1  y  4  z  7
+1451  w  3  x  5  y  8  z  1
+1471  w  0  x  2  y  8  z  3
+1481  w  1  x  1  y  2  z  7
+1511  w  0  x  2  y  3  z  7
+1531  w  0  x  1  y  3  z  7
+1571  w  1  x  2  y  8  z  3
+1601  w  0  x  3  y  7  z  8
+1621  w  0  x  0  y  4  z  7
+1721  w  0  x  1  y  8  z  5
+1741  w  0  x  2  y  9  z  6
+1801  w  3  x  4  y  8  z  1
+1811  w  2  x  7  y  9  z  1  new record w+x+y+z = 19
+1831  w  2  x  3  y  3  z  8
+1861  w  0  x  1  y  8  z  4
+1871  w  0  x  0  y  2  z  7
+1901  w  1  x  2  y  8  z  2
+1931  w  2  x  3  y  4  z  8
+1951  w  3  x  4  y  9  z  3
+2011  w  2  x  3  y  5  z  8
+2081  w  1  x  1  y  8  z  4
+2111  w  2  x  6  y  9  z  1
+2131  w  1  x  4  y  9  z  2
+2141  w  0  x  1  y  8  z  3
+2161  w  3  x  6  y  9  z  1
+2221  w  0  x  3  y  5  z  8
+2251  w  1  x  7  y  9  z  1
+2281  w  2  x  3  y  9  z  3
+2311  w  3  x  3  y  9  z  4
+2341  w  1  x  6  y  9  z  1
+2351  w  1  x  2  y  9  z  6
+2371  w  1  x  2  y  8  z  1
+2381  w  1  x  2  y  2  z  8
+2411  w  3  x  4  y  9  z  2
+2441  w  1  x  1  y  8  z  2
+2521  w  2  x  5  y  9  z  1
+2531  w  0  x  1  y  8  z  2
+2551  w  1  x  1  y  3  z  8
+2591  w  1  x  6  y  10  z  2
+2621  w  1  x  5  y  9  z  1
+2671  w  0  x  2  y  3  z  8
+2711  w  3  x  4  y  10  z  5  new record w+x+y+z = 22
+2731  w  2  x  2  y  9  z  5
+2741  w  0  x  1  y  3  z  8
+2791  w  0  x  2  y  9  z  3
+2801  w  1  x  1  y  1  z  8
+2851  w  0  x  3  y  10  z  4
+2861  w  3  x  4  y  5  z  9
+2971  w  2  x  2  y  9  z  3
+3001  w  0  x  0  y  3  z  8
+3011  w  0  x  1  y  2  z  8
+3041  w  2  x  4  y  10  z  3
+3061  w  4  x  5  y  10  z  3
+3121  w  3  x  4  y  9  z  1
+3181  w  3  x  7  y  10  z  1
+3191  w  2  x  3  y  4  z  9
+3221  w  2  x  4  y  6  z  9
+3251  w  4  x  4  y  10  z  5  new record w+x+y+z = 23
+3271  w  2  x  3  y  5  z  9
+3301  w  0  x  1  y  9  z  4
+3331  w  1  x  3  y  6  z  9
+3361  w  0  x  2  y  6  z  9
+3371  w  1  x  2  y  9  z  2
+3391  w  2  x  2  y  3  z  9
+3461  w  2  x  2  y  4  z  9
+3491  w  1  x  3  y  5  z  9
+3511  w  1  x  3  y  9  z  1
+3541  w  3  x  3  y  9  z  1
+3571  w  2  x  2  y  5  z  9
+3581  w  1  x  2  y  6  z  9
+3631  w  1  x  3  y  4  z  9
+3671  w  1  x  8  y  11  z  2
+3691  w  0  x  2  y  5  z  9
+3701  w  2  x  4  y  11  z  5
+3761  w  4  x  5  y  10  z  2
+3821  w  1  x  4  y  10  z  2
+3851  w  4  x  4  y  5  z  10
+3881  w  1  x  2  y  10  z  5
+3911  w  2  x  3  y  10  z  3
+3931  w  2  x  2  y  9  z  1
+4001  w  1  x  2  y  2  z  9
+4021  w  1  x  6  y  10  z  1
+4051  w  0  x  3  y  11  z  5
+4091  w  1  x  3  y  11  z  6
+4111  w  3  x  4  y  4  z  10
+4201  w  0  x  1  y  4  z  9
+4211  w  3  x  4  y  11  z  6  new record w+x+y+z = 24
+4231  w  1  x  1  y  3  z  9
+4241  w  1  x  2  y  10  z  4
+4261  w  4  x  5  y  11  z  4
+4271  w  2  x  4  y  11  z  4
+4391  w  0  x  3  y  8  z  10
+4421  w  1  x  1  y  2  z  9
+4441  w  0  x  0  y  5  z  9
+4451  w  3  x  5  y  10  z  1
+4481  w  1  x  5  y  10  z  1
+4561  w  0  x  1  y  3  z  9
+4591  w  3  x  6  y  11  z  2
+4621  w  0  x  0  y  4  z  9
+4651  w  5  x  5  y  5  z  11  new record w+x+y+z = 26
+4691  w  3  x  3  y  5  z  10
+4721  w  2  x  9  y  11  z  1
+4751  w  3  x  3  y  10  z  2
+4801  w  1  x  2  y  10  z  3
+4831  w  0  x  2  y  11  z  8
+4861  w  2  x  3  y  11  z  6
+4871  w  2  x  2  y  10  z  3
+4931  w  4  x  5  y  11  z  3
+4951  w  1  x  4  y  7  z  10
+5011  w  0  x  4  y  7  z  10
+5021  w  0  x  3  y  11  z  4
+5051  w  0  x  1  y  10  z  8
+5081  w  0  x  2  y  7  z  10
+5101  w  0  x  2  y  11  z  6
+5171  w  2  x  3  y  6  z  10
+5231  w  1  x  3  y  11  z  4
+5261  w  4  x  4  y  4  z  11
+5281  w  1  x  4  y  6  z  10
+5351  w  1  x  5  y  11  z  2
+5381  w  1  x  1  y  10  z  5
+5431  w  2  x  2  y  3  z  10
+5441  w  3  x  4  y  11  z  3
+5471  w  2  x  7  y  11  z  1
+5501  w  1  x  3  y  5  z  10
+5521  w  3  x  5  y  11  z  2
+5531  w  2  x  2  y  5  z  10
+5581  w  3  x  3  y  11  z  6
+5591  w  1  x  2  y  6  z  10
+5641  w  3  x  3  y  10  z  1
+5651  w  4  x  7  y  11  z  1
+5701  w  1  x  3  y  4  z  10
+5711  w  4  x  5  y  12  z  6  new record w+x+y+z = 27
+5741  w  1  x  9  y  12  z  2
+5791  w  1  x  8  y  11  z  1
+5801  w  4  x  4  y  5  z  11
+5821  w  1  x  2  y  11  z  7
+5851  w  1  x  3  y  3  z  10
+5861  w  4  x  4  y  11  z  3
+5881  w  0  x  1  y  6  z  10
+5981  w  4  x  5  y  12  z  5
+6011  w  2  x  4  y  12  z  5
+6091  w  3  x  10  y  12  z  1
+6101  w  4  x  5  y  6  z  11
+6121  w  0  x  1  y  10  z  3
+6131  w  1  x  2  y  3  z  10
+6151  w  1  x  3  y  12  z  7
+6211  w  0  x  1  y  5  z  10
+6221  w  3  x  7  y  12  z  2
+6271  w  1  x  1  y  6  z  10
+6301  w  2  x  3  y  11  z  3
+6311  w  1  x  4  y  11  z  2
+6361  w  3  x  4  y  12  z  7
+6421  w  1  x  1  y  4  z  10
+6451  w  0  x  3  y  4  z  10
+6481  w  0  x  3  y  9  z  11
+6491  w  1  x  6  y  11  z  1
+6521  w  1  x  2  y  10  z  1
+6551  w  4  x  6  y  11  z  1
+6571  w  2  x  2  y  11  z  6
+6581  w  1  x  5  y  12  z  3
+6661  w  5  x  5  y  12  z  6  new record w+x+y+z = 28
+6691  w  2  x  5  y  12  z  3
+6701  w  3  x  4  y  12  z  5
+6761  w  3  x  3  y  4  z  11
+6781  w  1  x  2  y  11  z  4
+6791  w  4  x  4  y  11  z  2
+6841  w  5  x  5  y  5  z  12
+6871  w  0  x  3  y  3  z  10
+6911  w  3  x  4  y  6  z  11
+6961  w  0  x  3  y  8  z  11
+6971  w  1  x  1  y  2  z  10
+6991  w  3  x  5  y  7  z  11
+7001  w  2  x  2  y  11  z  4
+7121  w  1  x  4  y  8  z  11
+7151  w  3  x  9  y  13  z  2
+7211  w  5  x  6  y  11  z  1
+7321  w  2  x  3  y  11  z  2
+7331  w  2  x  9  y  12  z  1
+7351  w  2  x  4  y  4  z  11
+7411  w  1  x  3  y  11  z  2
+7451  w  0  x  2  y  12  z  7
+7481  w  3  x  8  y  12  z  1
+7541  w  1  x  4  y  7  z  11
+7561  w  0  x  5  y  11  z  12
+7591  w  2  x  2  y  11  z  3
+7621  w  2  x  3  y  3  z  11
+7681  w  2  x  3  y  5  z  11
+7691  w  1  x  3  y  7  z  11
+7741  w  0  x  1  y  2  z  10
+7841  w  0  x  1  y  11  z  9
+7901  w  2  x  4  y  13  z  7
+7951  w  1  x  4  y  6  z  11
+8011  w  3  x  5  y  13  z  5
+8081  w  4  x  5  y  5  z  12
+8101  w  0  x  3  y  13  z  7
+8111  w  2  x  4  y  12  z  3
+8161  w  0  x  3  y  12  z  4
+8171  w  1  x  1  y  11  z  5
+8191  w  4  x  6  y  13  z  4
+8221  w  5  x  8  y  12  z  1
+8231  w  4  x  5  y  13  z  7  new record w+x+y+z = 29
+8291  w  1  x  4  y  5  z  11
+8311  w  2  x  2  y  3  z  11
+8431  w  2  x  2  y  2  z  11
+8461  w  3  x  7  y  12  z  1
+8501  w  6  x  7  y  12  z  2
+8521  w  0  x  1  y  11  z  4
+8581  w  3  x  5  y  12  z  2
+8641  w  1  x  9  y  12  z  1
+8681  w  1  x  4  y  13  z  5
+8731  w  1  x  6  y  13  z  3
+8741  w  1  x  8  y  12  z  1
+8761  w  4  x  7  y  12  z  1
+8821  w  4  x  4  y  12  z  3
+8831  w  1  x  3  y  3  z  11
+8861  w  1  x  2  y  12  z  6
+8941  w  3  x  3  y  12  z  4
+8951  w  1  x  2  y  4  z  11
+8971  w  4  x  10  y  13  z  1
+9001  w  0  x  3  y  5  z  11
+9011  w  4  x  5  y  12  z  2
+9041  w  1  x  9  y  14  z  3
+9091  w  0  x  0  y  1  z  10
+9151  w  3  x  4  y  13  z  7
+9161  w  5  x  10  y  13  z  1
+9181  w  5  x  6  y  13  z  4
+9221  w  1  x  1  y  11  z  3
+9241  w  1  x  1  y  6  z  11
+9281  w  1  x  2  y  3  z  11
+9311  w  1  x  2  y  12  z  9
+9341  w  3  x  4  y  13  z  8
+9371  w  1  x  1  y  5  z  11
+9391  w  3  x  4  y  13  z  6
+9421  w  3  x  10  y  13  z  1
+9431  w  0  x  1  y  5  z  11
+9461  w  5  x  5  y  13  z  6
+9491  w  1  x  4  y  14  z  8
+9511  w  3  x  6  y  12  z  1
+9521  w  2  x  6  y  12  z  1
+9551  w  2  x  2  y  11  z  1
+9601  w  2  x  8  y  14  z  3
+9631  w  1  x  3  y  12  z  3
+9661  w  2  x  2  y  12  z  7
+9721  w  2  x  7  y  13  z  2
+9781  w  0  x  5  y  9  z  12
+9791  w  3  x  4  y  12  z  2
+9811  w  1  x  4  y  12  z  2
+9851  w  3  x  10  y  14  z  2
+9871  w  4  x  6  y  12  z  1
+9901  w  2  x  2  y  12  z  5
+9931  w  0  x  0  y  6  z  11
+9941  w  3  x  5  y  7  z  12
+10061  w  0  x  1  y  4  z  11
+10091  w  1  x  8  y  14  z  3
+10111  w  2  x  5  y  9  z  12
+10141  w  3  x  5  y  8  z  12
+10151  w  3  x  5  y  14  z  7
+10181  w  1  x  7  y  13  z  2
+10211  w  4  x  7  y  13  z  2
+10271  w  1  x  4  y  14  z  7
+10301  w  0  x  1  y  12  z  8
+10321  w  4  x  4  y  13  z  7
+10331  w  1  x  2  y  12  z  4
+10391  w  2  x  5  y  13  z  3
+10501  w  0  x  3  y  8  z  12
+10531  w  6  x  7  y  12  z  1
+10601  w  1  x  5  y  8  z  12
+10631  w  2  x  11  y  13  z  1
+10651  w  0  x  2  y  13  z  8
+10691  w  0  x  3  y  13  z  5
+10711  w  0  x  2  y  9  z  12
+10771  w  2  x  4  y  5  z  12
+10781  w  4  x  4  y  13  z  5
+10831  w  3  x  5  y  14  z  6
+10861  w  5  x  5  y  6  z  13
+10891  w  0  x  1  y  12  z  6
+Tue May 16 18:02:32 PDT 2017 ==================================================== Appears we can also represent $q^2$ where prime $q \equiv 4 \pmod 5$ 361 =  19^2  w  0  x  1  y  5  z  1  new record w+x+y+z = 7
+841 =  29^2  w  0  x  1  y  6  z  1  new record w+x+y+z = 8
+3481 =  59^2  w  0  x  2  y  9  z  2  new record w+x+y+z = 13
+6241 =  79^2  w  0  x  3  y  11  z  3  new record w+x+y+z = 17
+7921 =  89^2  w  0  x  1  y  10  z  1
+11881 =  109^2  w  0  x  1  y  11  z  1
+19321 =  139^2  w  0  x  2  y  13  z  2
+22201 =  149^2  w  0  x  4  y  15  z  4  new record w+x+y+z = 23
+32041 =  179^2  w  0  x  5  y  17  z  5  new record w+x+y+z = 27
+39601 =  199^2  w  0  x  3  y  16  z  3
+52441 =  229^2  w  0  x  3  y  17  z  3
+57121 =  239^2  w  0  x  1  y  16  z  1
+72361 =  269^2  w  0  x  4  y  19  z  4
+121801 =  349^2  w  0  x  5  y  22  z  5  new record w+x+y+z = 32
+128881 =  359^2  w  0  x  7  y  24  z  7  new record w+x+y+z = 38
+143641 =  379^2  w  0  x  1  y  20  z  1
+151321 =  389^2  w  0  x  5  y  23  z  5
+167281 =  409^2  w  0  x  3  y  22  z  3
+175561 =  419^2  w  0  x  1  y  21  z  1
+192721 =  439^2  w  0  x  6  y  25  z  6
+201601 =  449^2  w  0  x  8  y  27  z  8  new record w+x+y+z = 43
+229441 =  479^2  w  0  x  2  y  23  z  2
+249001 =  499^2  w  0  x  9  y  29  z  9  new record w+x+y+z = 47
+259081 =  509^2  w  0  x  4  y  25  z  4
+323761 =  569^2  w  0  x  5  y  27  z  5
+358801 =  599^2  w  0  x  1  y  25  z  1
+383161 =  619^2  w  0  x  5  y  28  z  5
+434281 =  659^2  w  0  x  10  y  33  z  10  new record w+x+y+z = 53
+502681 =  709^2  w  0  x  4  y  29  z  4
+516961 =  719^2  w  0  x  11  y  35  z  11  new record w+x+y+z = 57
+546121 =  739^2  w  0  x  6  y  31  z  6
+591361 =  769^2  w  0  x  9  y  34  z  9
+654481 =  809^2  w  0  x  7  y  33  z  7
+687241 =  829^2  w  0  x  9  y  35  z  9
+703921 =  839^2  w  0  x  5  y  32  z  5
+737881 =  859^2  w  0  x  3  y  31  z  3
+844561 =  919^2  w  0  x  3  y  32  z  3
+863041 =  929^2  w  0  x  1  y  31  z  1
+1018081 =  1009^2  w  0  x  8  y  37  z  8
+1038361 =  1019^2  w  0  x  2  y  33  z  2
+1079521 =  1039^2  w  0  x  11  y  40  z  11  new record w+x+y+z = 62
+1100401 =  1049^2  w  0  x  13  y  42  z  13  new record w+x+y+z = 68
+1142761 =  1069^2  w  0  x  4  y  35  z  4
+1229881 =  1109^2  w  0  x  11  y  41  z  11
+1274641 =  1129^2  w  0  x  7  y  38  z  7
+1510441 =  1229^2  w  0  x  5  y  38  z  5
+1560001 =  1249^2  w  0  x  3  y  37  z  3
+1585081 =  1259^2  w  0  x  1  y  36  z  1
+1635841 =  1279^2  w  0  x  15  y  47  z  15  new record w+x+y+z = 77
+1661521 =  1289^2  w  0  x  8  y  41  z  8
+1739761 =  1319^2  w  0  x  10  y  43  z  10
+1957201 =  1399^2  w  0  x  6  y  41  z  6
+1985281 =  1409^2  w  0  x  11  y  45  z  11
+2042041 =  1429^2  w  0  x  13  y  47  z  13
+2070721 =  1439^2  w  0  x  2  y  39  z  2
+2128681 =  1459^2  w  0  x  9  y  44  z  9
+2217121 =  1489^2  w  0  x  11  y  46  z  11
+2247001 =  1499^2  w  0  x  7  y  43  z  7
+2399401 =  1549^2  w  0  x  3  y  41  z  3
+2430481 =  1559^2  w  0  x  1  y  40  z  1
+2493241 =  1579^2  w  0  x  7  y  44  z  7
+2588881 =  1609^2  w  0  x  5  y  43  z  5
+2621161 =  1619^2  w  0  x  17  y  53  z  17  new record w+x+y+z = 87
+2785561 =  1669^2  w  0  x  12  y  49  z  12
+2886601 =  1699^2  w  0  x  15  y  52  z  15
+2920681 =  1709^2  w  0  x  17  y  54  z  17  new record w+x+y+z = 88
+3094081 =  1759^2  w  0  x  2  y  43  z  2
+3200521 =  1789^2  w  0  x  15  y  53  z  15
+3530641 =  1879^2  w  0  x  9  y  49  z  9
+3568321 =  1889^2  w  0  x  16  y  55  z  16
+3798601 =  1949^2  w  0  x  5  y  47  z  5
+3916441 =  1979^2  w  0  x  1  y  45  z  1
+3996001 =  1999^2  w  0  x  19  y  59  z  19  new record w+x+y+z = 97
+4116841 =  2029^2  w  0  x  12  y  53  z  12
+4157521 =  2039^2  w  0  x  5  y  48  z  5
+4280761 =  2069^2  w  0  x  1  y  46  z  1
+4363921 =  2089^2  w  0  x  17  y  58  z  17
+4405801 =  2099^2  w  0  x  19  y  60  z  19  new record w+x+y+z = 98
+4532641 =  2129^2  w  0  x  8  y  51  z  8
+4748041 =  2179^2  w  0  x  10  y  53  z  10 ======================= ? p = 1
+%8 = 1
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%9 = 
+[Mod(1, 2)*x^4 + Mod(1, 2)*x^3 + Mod(1, 2)*x^2 + Mod(1, 2)*x + Mod(1, 2) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%10 = 
+[Mod(1, 3)*x^4 + Mod(1, 3)*x^3 + Mod(1, 3)*x^2 + Mod(1, 3)*x + Mod(1, 3) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%11 = 
+[Mod(1, 5)*x + Mod(4, 5) 4]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%12 = 
+[Mod(1, 7)*x^4 + Mod(1, 7)*x^3 + Mod(1, 7)*x^2 + Mod(1, 7)*x + Mod(1, 7) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%13 = 
+[Mod(1, 11)*x + Mod(2, 11) 1]
+
+[Mod(1, 11)*x + Mod(6, 11) 1]
+
+[Mod(1, 11)*x + Mod(7, 11) 1]
+
+[Mod(1, 11)*x + Mod(8, 11) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%14 = 
+[Mod(1, 13)*x^4 + Mod(1, 13)*x^3 + Mod(1, 13)*x^2 + Mod(1, 13)*x + Mod(1, 13) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%15 = 
+[Mod(1, 17)*x^4 + Mod(1, 17)*x^3 + Mod(1, 17)*x^2 + Mod(1, 17)*x + Mod(1, 17) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%16 = 
+[Mod(1, 19)*x^2 + Mod(5, 19)*x + Mod(1, 19) 1]
+
+[Mod(1, 19)*x^2 + Mod(15, 19)*x + Mod(1, 19) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%17 = 
+[Mod(1, 23)*x^4 + Mod(1, 23)*x^3 + Mod(1, 23)*x^2 + Mod(1, 23)*x + Mod(1, 23) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%18 = 
+[Mod(1, 29)*x^2 + Mod(6, 29)*x + Mod(1, 29) 1]
+
+[Mod(1, 29)*x^2 + Mod(24, 29)*x + Mod(1, 29) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%19 = 
+[Mod(1, 31)*x + Mod(15, 31) 1]
+
+[Mod(1, 31)*x + Mod(23, 31) 1]
+
+[Mod(1, 31)*x + Mod(27, 31) 1]
+
+[Mod(1, 31)*x + Mod(29, 31) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%20 = 
+[Mod(1, 37)*x^4 + Mod(1, 37)*x^3 + Mod(1, 37)*x^2 + Mod(1, 37)*x + Mod(1, 37) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%21 = 
+[Mod(1, 41)*x + Mod(4, 41) 1]
+
+[Mod(1, 41)*x + Mod(23, 41) 1]
+
+[Mod(1, 41)*x + Mod(25, 41) 1]
+
+[Mod(1, 41)*x + Mod(31, 41) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%22 = 
+[Mod(1, 43)*x^4 + Mod(1, 43)*x^3 + Mod(1, 43)*x^2 + Mod(1, 43)*x + Mod(1, 43) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%23 = 
+[Mod(1, 47)*x^4 + Mod(1, 47)*x^3 + Mod(1, 47)*x^2 + Mod(1, 47)*x + Mod(1, 47) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%24 = 
+[Mod(1, 53)*x^4 + Mod(1, 53)*x^3 + Mod(1, 53)*x^2 + Mod(1, 53)*x + Mod(1, 53) 1]
+
+? p = nextprime(1 + p); factormod( x^4 + x^3 + x^2 + x + 1, p )
+%25 = 
+[Mod(1, 59)*x^2 + Mod(26, 59)*x + Mod(1, 59) 1]
+
+[Mod(1, 59)*x^2 + Mod(34, 59)*x + Mod(1, 59) 1] ==================","['number-theory', 'norm-forms', 'algebraic-number-theory', 'cyclotomic-fields']"
+2284368,How to find the Laplace transform of $f(t)=t e^t$?,"How to find the Laplace transform of the following function:
+$$f(t)=t e^t$$
+$$F(s)=\int_0^\infty (te^t e^{-st})dt$$
+What method do I use to find the integral?","['laplace-transform', 'real-analysis', 'ordinary-differential-equations', 'calculus']"
+2284388,Probability and counting assignment,"I have this assignment I am almost done but I am not sure if it is correct.
+As of right now I am a little second guessing myself on whether or not the Venn diagram is right.
+I also don't know what P( A union B) would be in part (c).","['combinatorics', 'probability']"
+2284406,$\pi$ as an Infinite Series using Taylor Expansion on Equation of a Circle,"If we write $\ y = \sqrt{r^2-x^2}$ for the equation of a circle in Cartesian coordinates with radius $r$ and perform a Taylor expansion on this equation, then integrate term by term from $0$ to $r$, giving the area of a quarter of a circle. Then, isolating $\pi$, all $r$ terms conveniently drop out and the expression becomes:
+$$\pi = 4 - \frac{4}{3!}- \frac{12}{5!}- \frac{180}{7!}- \frac{6300}{9!}- \frac{396900}{11!} - ...$$ This can be written as: $$\ \pi = \sum_{n=1}^\infty \frac{-4[(2n-3)!!]^2}{(2n-3)(2n-1)!}$$ I attach here a WolframAlpha Link of this evaluated to 2700 terms. I haven't seen this expression anywhere else. I was wondering if you have, or if you know if this is valid?","['sequences-and-series', 'convergence-divergence', 'pi']"
+2284422,Are all symmetric matrices with positive eigenvalues a product of a matrix and its transpose?,"Given an $m \times n$ matrix $A$, it's easy to show that the matrix products $B = A^TA$ and $C = AA^T$ are both symmetric. I was wondering if any symmetric matrix with positive eigenvalues could be expressed as the product of some matrix and its transpose? Note: It's obvious that if the eigenvalues are not all positive then this cannot be the case, as $A^TA$ and $AA^T$ both have to be positive semidefinite. However this is all I can think of regarding this problem.","['eigenvalues-eigenvectors', 'linear-algebra']"
+2284440,Show that the determinant of any outer product is 0,"I want to show that for any two vectors $a, b \in \mathbb{R}^n$, and given $M = ab^T$, $\det(M) = 0$. I've come up with the following proof, but I'm not sure if it's sufficient; could someone double-check it? Given $M = ab^T$, the system of equations $Mx = 0$ is equivalent to $ab^Tx = a(b \cdot x) = 0$. Then there exists a nonzero vector $x$ that is orthogonal to $b$, and so $a(b \cdot x) = a \times 0 = 0$. The existence of a nonzero $x$ such that $Mx = 0$ implies that $M$ is singular, and therefore $\det(M) = 0$. Is this proof correct? More interestingly, is there a much simpler proof that I'm missing?","['linear-algebra', 'determinant']"
+2284443,Show that there doesn't exists a space $X$ such that $X\times X=S^{2}$.,"Problem : Show that there doesn't exist a space $X$ such that $X\times X$ is homeomorphic to $S^{2}$, the 2-dimensional sphere. Is there any solution which doesn't use algebraic topology? I solved this problem by using Kunneth formula and there is another solution using homotopy group $\pi_{2}$. However, it seems that there might be an elementary proof that only uses general topology. If such space exists, we can prove that $X$ is connected and compact. Also, we can show that $X$ is simply-connected. Anything else? Thanks in advance.","['algebraic-topology', 'general-topology']"
+2284496,Proof of an inverse function inequality.,"It is given that $f$ is a monotonically increasing function 
+$\forall x\in\mathbb R$ such that $f''(x) \gt 0$. Provided that $f^{-1}$ exists, It is to be shown that, 
+$$\frac{f^{-1}(x_1) + f^{-1}(x_2) +f^{-1}(x_3)}{3} \lt f^{-1}\left(\frac{x_1 +x_2 +x_3}{3}\right)$$ I assumed that $f^{-1}(x)$ is the mirror image of $f(x)$ about the origin, it must have all values of its derivatives negative, since $f$ is monotonically increasing. Is this correct? If not, how can the above be proved?","['derivatives', 'inverse-function']"

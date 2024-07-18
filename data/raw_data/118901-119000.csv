@@ -1,0 +1,573 @@
+question_id,title,body,tags
+1769736,Complex polynomial P with $P(n)= (-1)^n$,"I want to show that there is no polynomial P with complex coefficients such that
+$P (n) = (−1)^n$ for all integers n.Does there exist an entire function
+with this property ? Thank you.","['complex-analysis', 'polynomials', 'complex-numbers']"
+1769816,Approximate an integrable function using a simple function (Proving existance),"Let $f \in L^1(\mathbb{R})$, and let $\epsilon > 0$. Show that exists simple function $g=\sum_{k=1}^{n}c_k 1_{A_k}$, such that, 
+$$\int_\mathbb{R} |f(x)-g(x)|dx \leq \epsilon$$,and such that $n \in \mathbb{N}$ and $A_k$ are bounded.
+I can't find a good partition, and I don't understand how to find the $n$ which will satisfy my needs. It's like I miss information.","['real-analysis', 'lebesgue-integral', 'measure-theory', 'lebesgue-measure']"
+1769818,"Show that for the triples $V \subset H \subset V^{*}$, the following are true","Let $H$ be a Hilbert space equipped with scalar product $(,)$ and the corresponding norm $|\cdot|$. Let $V \subset H$ be a linear subspace that is dense in $H$. Assume that $V$ is a Banach space for $\|\cdot\|$. Assume also that the injection from $V$ to $H$ is continuous i.e $|v| \le C\|v\|,\forall v \in V $. Consider the operator $$T: H \to V^*$$ defined by $$ (Tu,v)_{V^*,V}=(u,v), \forall u \in H, \forall v \in V$$ Prove that $\|Tu\|_{V^*} \le C|u|, \forall u \in H$ Ans: $\|Tu\|_{V^*}=\sup_{\|v\| \le 1}|(Tu,v)|_{V^*,V}=\sup_{\|v\| \le 1}|(u,v)| \le |u||v| \le \sup_{\|v\| \le 1}C|u|\, \|v\| \le C|u|$ Prove that $T$ is injective Ans: Suppose that $Tu=0$ for some $u \in H$. Then $(Tu,v)=0, \forall v \in V \implies (u,v)=0, \forall v \in V$. Since $V$ is dense in $H$, there exists a sequence $\{v_n\}\in V$ which converges to $u$. Then $(u,v_n) \to (u,u)$ and hence $u=0$. Prove that $R(T)$ is dense in $V^*$ if $V$ is reflexive. This I am unable to show. Any hints for this? I know that the map $J(V)=V^{**}$. But How do I construct a sequence? Given $f \in V^*$, prove that $f \in R(T)$ iff there is a constant $a \ge 0$ such that $|(f,v)_{V^{*},V}| \le a|v|, \forall v \in V$ Ans: Suppose there is  constant $a \ge 0$ such that $|(f,v)_{V^{*},V}| \le a|v|, \forall v \in V$. Then Define a map $\phi: V \to K$ by $\phi(v)=(f,v)_{V^*,V}$. Then $\phi$ is continuous  and since $V$ is dense in $H$ , it can be extended to $\tilde{\phi}:H \to K$ . Then since $H$ is a Hilbert space, by the Riesz Representation Theorem, there exists $v_f \in H$ such that $\tilde{\phi}(u)=(v_f,u), \forall u \in H $. Then $(Tv_f,v)=(v_f,v)=(f,v), \forall v\in V$. Hence $f \in R(T)$. The other side is trivial. The only thing that remains to show is $3$ and I have not used that $V$ is Banach with respect to $\|\cdot\|$. How do I show it? I need a hint. Thanks for the help!","['functional-analysis', 'hilbert-spaces', 'analysis']"
+1769830,VERIFICATION: Prove that $\int_{-\infty}^{\infty}\frac{1-b+x^{2}}{\left(1-b+x^{2}\right)^{2}+4bx^{2}}dx=\pi$ for $0<b<1$,"I need some reassurance that what I did here actually shows what need to be shown. Please correct me if I'm wrong. In Donald Sarason's ""Notes on complex function theory"", this question appears at section VII.4, (pg 93) in the context of Cauchy's theorem for convex region. To be accurate, the exercise is Let $0<b<1$. Derive the equality $$\int_{-\infty}^{\infty}\frac{1-b+x^{2}}{\left(1-b+x^{2}\right)^{2}+4bx^{2}}dx=\pi$$ by integrating the function  $\left(1+z^{2}\right)^{-1}$ around the rectangle with vertices $\pm a,\pm a+i\sqrt{b}$ $a>0$ and taking limit as $a\rightarrow\infty$ I tried to follow the suggestion and got (by Cauchy's theorem for convex region): $$\int_{-a}^{a}\left(1+t^{2}\right)^{-1}dt+\int_{0}^{\sqrt{b}}\left(1+\left(a+it\right)^{2}\right)^{-1}\cdot i\cdot dt+\int_{a}^{-a}\left(1+\left(i\sqrt{b}+t\right)^{2}\right)^{-1}dt+\int_{\sqrt{b}}^{0}\left(1+\left(-a+it\right)^{2}\right)^{-1}\cdot i\cdot dt=0$$ Or in somewhat more conventional form: $$\int_{-a}^{a}\left(1+t^{2}\right)^{-1}dt-\int_{-a}^{a}\left(1+\left(i\sqrt{b}-t\right)^{2}\right)^{-1}dt=i\left[\int_{0}^{\sqrt{b}}\left(1+\left(-a-it\right)^{2}\right)^{-1}dt-\int_{0}^{\sqrt{b}}\left(1+\left(a+it\right)^{2}\right)^{-1}dt\right]$$ Assuming I didn't make any mistakes so far, we get that RHS is zero hence: $$\int_{-a}^{a}\left(1+\left(i\sqrt{b}-t\right)^{2}\right)^{-1}dt=\int_{-a}^{a}\left(1+t^{2}\right)^{-1}dt$$ Taking limit $a\rightarrow\infty$ gives us $\pi$ on the RHS. So We'll have to figure out what the LHS has to do with the function in the question... Cauchy's theorem gives us ""free of charge"" that the integral of any imaginary part will be equal to zero, so in order to simplify the real part, I'll multiply and divide by the complex conjugate of $1+\left(i\sqrt{b}-t\right)^{2} $ which is  $\overline{1-b+t^{2}-2i\sqrt{b}t}=1-b+t^{2}+2i\sqrt{b}t$ and get: $\int_{-a}^{a}\frac{1}{1-b+t^{2}-2i\sqrt{b}t}dt=\int_{-a}^{a}\frac{1-b+t^{2}+2i\sqrt{b}t}{\left(1-b+t^{2}-2i\sqrt{b}t\right)\left(1-b+t^{2}+2i\sqrt{b}t\right)}dt=\int_{-a}^{a}\frac{1-b+t^{2}+2i\sqrt{b}t}{\left(1-b+t^{2}\right)^{2}+4bt^{2}}dt$ hence (by preceding statement) we have: $$\lim_{a\rightarrow\infty}\int_{-a}^{a}\frac{1-b+t^{2}}{\left(1-b+t^{2}\right)^{2}+4bt^{2}}dt=\lim_{a\rightarrow\infty}\int_{-a}^{a}\left(1+t^{2}\right)^{-1}dt$$
+And (as stated before and easy to see):
+$$\lim_{a\rightarrow\infty}\int_{-a}^{a}\left(1+t^{2}\right)^{-1}dt=\pi$$
+So indeed 
+$$\int_{- \infty}^{\infty}\frac{1-b+t^{2}}{\left(1-b+t^{2}\right)^{2}+4bt^{2}}dt = \pi$$","['complex-analysis', 'proof-verification', 'complex-integration']"
+1769834,Definition of adjoint of a linear map,"I am having a tough time understanding adjoint of a linear map.
+Consider a linear map between two vector spaces $\, f:V\rightarrow W,$ let us denote $f^*$ to denote its adjoint. Accroding to this video https://www.youtube.com/watch?v=SjCs_HyYtSo (around time 5:50) the author explains that adjoint of a linear map is a function from dual of $\,W$ (denoted by $\,W^*$) to the dual of $\,V$ (denoted by $\,V^*$). So this implies $\,f^*:W^*\rightarrow V^*.$ On the other hand in the pdf http://math.mit.edu/~trasched/18.700.f10/lect17-article.pdf , the adjoint of the linear map is defined as another linear map from $\,W$ to $\,V.$ So this implies  $\,f^*:W\rightarrow V.$ Can some body clarify this discrepancy?","['linear-algebra', 'adjoint-operators']"
+1769854,"Any integer written as ""polynomial"" in irrational number","Does there exist an irrational number $x>2$ such that any positive integer $n$ can be written in the form $n=a_0+a_1x+a_2x^2+\dots$, where $a_i\in\{0,1,\dots,6\}$? Some irrational numbers like $\varphi=\frac{\sqrt{5}+1}{2}$ combine well to give integers: $\varphi^2-\varphi=1$. But we need plus instead of minus and also $x>2$.",['algebra-precalculus']
+1769864,$\det(I+A)$= sum of all principal minors of $A$,"I'm having a hard time proving or finding a proof for the following result. It should follow from an application of the Laplace expansion. Let $n\in\mathbb{N}$, $[n]=\{1,\dots,n\}$, and $A\in\mathbb{R}^{n\times n}$. Then,
+  $$\det\left(  I_{n}+A\right)  =\sum\limits_{G\subseteq\left[  n\right]  }
+\det\left(  A_{G}\right).$$
+  where $A_{G}$ is the matrix $A$ with all columns and rows not in $G$ removed. For instance, here is the proof for $n=3$: $\det\left(  I_{n}+A\right)  =\det\left(
+\begin{array}
+[c]{ccc}
+1+a_{1,1} & a_{1,2} & a_{1,3}\\
+a_{2,1} & 1+a_{2,2} & a_{2,3}\\
+a_{3,1} & a_{3,2} & 1+a_{3,3}
+\end{array}
+\right)  $ $\;\;\;\;=\left(  1+a_{1,1}\right)  \left(  1+a_{2,2}\right)  \left(  1+a_{3,3}
+\right)  +a_{1,2}a_{2,3}a_{3,1}+a_{1,3}a_{2,1}a_{3,2}$ $\;\;\;\;\;\;\;\; -\left(  1+a_{1,1}\right)  a_{2,3}a_{3,2}-a_{1,2}a_{2,1}\left(
+1+a_{3,3}\right)  -a_{1,3}\left(  1+a_{2,2}\right)  a_{3,1}$ $\;\;\;\;=a_{1,1}a_{2,2}-a_{1,2}a_{2,1}+a_{1,1}a_{3,3}-a_{1,3}a_{3,1}+a_{2,2}a_{3,3}$ $\;\;\;\;\;\;\;\; -a_{2,3}a_{3,2}+a_{1,1}a_{2,2}a_{3,3}-a_{1,1}a_{2,3}a_{3,2}-a_{1,2}
+a_{2,1}a_{3,3}$ $\;\;\;\;\;\;\;\; +a_{1,2}a_{3,1}a_{2,3}+a_{2,1}a_{1,3}a_{3,2}-a_{1,3}a_{2,2}a_{3,1}
++a_{1,1}+a_{2,2}+a_{3,3}+1$ $\;\;\;\;=\underbrace{a_{1,1}a_{2,2}a_{3,3}+a_{1,2}a_{2,3}a_{3,1}+a_{1,3}
+a_{2,1}a_{3,2}-a_{1,1}a_{2,3}a_{3,2}-a_{1,2}a_{2,1}a_{3,3}-a_{1,3}
+a_{2,2}a_{3,1}}_{=\det A=\det\left(  A_{\left\{  1,2,3\right\} }\right)  }$ $\;\;\;\;\;\;\;\;+\underbrace{a_{1,1}a_{2,2}-a_{1,2}a_{2,1}}_{=\det\left(  A_{\left\{
+1,2\right\}  }\right)  }+\underbrace{a_{1,1}
+a_{3,3}-a_{1,3}a_{3,1}}_{=\det\left(  A_{\left\{  1,3\right\} }\right)  }+\underbrace{a_{2,2}a_{3,3}-a_{2,3}a_{3,2}}_{=\det\left(  A_{\left\{
+2,3\right\}    }\right)  }$ $\;\;\;\;\;\;\;\;+\underbrace{a_{1,1}}
+_{=\det\left(  A_{\left\{  1\right\}  }\right)  }+\underbrace{a_{2,2}}_{=\det\left(  A_{\left\{  2\right\} }\right)  }+\underbrace{a_{3,3}}_{=\det\left(  A_{\left\{
+3\right\}   }\right)  }+\underbrace{1}_{=\det\left(
+A_{\varnothing}\right)  }$ $\;\;\;\;=\sum\limits_{G\subseteq\left[  n\right]  }\det\left(  A_{G}\right)  $.","['matrices', 'linear-algebra', 'determinant']"
+1769874,Construct a matrix of polynomials to optimize condition-like score,"I'm a physicist currently working on my PhD. Within my studies, my colleagues & I encountered a (strictly mathematical) problem that baffles us (and anyone else we've talked to so far) and is also sort of a showstopper for our studies. We'd like to use this as a forum to ask people with more expertise in linear algebra & numerics than our immediate social circle for suggestions and opinions on this problem. The Problem Consider an expression 
+\begin{eqnarray*}
+\mathcal{L} & = & \left(\sum_{g\in G_{1}}g\right)^{2}\cdot\left(\sum_{g\in G_{2}}g\right)^{2}
+\end{eqnarray*}
+where $G_{1}$and $G_{2}$ are possibly overlapping sets of parameters
+$g\in\vec{g}$, where $\vec{g}\in\mathbb{R}^{N}$. After expanding,
+this expression takes the form
+\begin{eqnarray*}
+\mathcal{L} & = & \sum_{i}c_{i}P_{i}\left(\vec{g}\right)
+\end{eqnarray*}
+where the $c_{i}$ absorb all the numerical constants arising from
+the expansion and the $P_{i}$ are polynomials of the type $P_{i}=g_{\alpha}g_{\beta}g_{\gamma}g_{\delta}$
+where $\alpha,\beta,\gamma,\delta\in1,\dots,N$. With these polynominals
+a matrix is constructed 
+\begin{eqnarray*}
+M=\left(\begin{matrix}P_{1}\left(\vec{g}_{1}\right) & \cdots & P_{1}\left(\vec{g}_{n}\right)\\
+\vdots & \ddots & \vdots\\
+P_{n}\left(\vec{g}_{1}\right) & \cdots & P_{n}\left(\vec{g}_{n}\right)
+\end{matrix}\right)
+\end{eqnarray*} For a given region $X$, we have to find a set $S$ of vectors $\vec{g}_{i}\in S$ ($i=1,\dots,n$)
+with $g_{i,j},\ j=1,\dots,N$ such that \begin{eqnarray*}
+ & \min_{S\in\mathbb{R}^{n\times N}}\left(\left\Vert M^{-1}\right\Vert _{X}\cdot\left\Vert M\right\Vert _{X}\right)
+\end{eqnarray*}
+where $\left\Vert \cdot\right\Vert _{X}$ is defined as
+\begin{eqnarray*}
+\left\Vert A\right\Vert _{X} & = & \inf\left\{ c>0:\left\Vert Av\right\Vert \leq c\left\Vert v\right\Vert \forall v\in I\left(X\right)\subset\mathbb{R}^{n}\right\} 
+\end{eqnarray*} where $I\left(X\right)$ is the image of the map $x:\vec{g}\to\left(P_{i}\left(\vec{g}\right)\right)_{i\le n}$. Remark: We have borrowed the definition of the minimized quantity from the condition number. The reason why we don't want to use the condition number directly is that we already know the region $X$ in which we will want to evaluate our method, thus optimizing with respect to this particular region is favorable. If the solution to this problem would become significantly simpler when dropping this additional constraint and using the real condition number instead, that would also be an option. Simple Example For illustration, we have constructed a simple show-case example. For realistic applications, the matrices will be much larger (up to 1600x1600). But even for this simple example, finding a solution is not straight-forward. Consider an expression
+\begin{eqnarray*}
+\mathcal{L} & = & g_{1}^{2}\left(g_{2}+g_{3}\right)^{2}
+\end{eqnarray*}
+such that $P_{1}\left(\vec{g}\right)=g_{1}^{2}g_{2}^{2}$ and $P_{2}\left(\vec{g}\right)=g_{1}^{2}g_{3}^{2}$
+and $P_{3}\left(\vec{g}\right)=g_{1}^{2}g_{2}g_{3}$. Hence, 
+\begin{eqnarray*}
+M=\left(\begin{matrix}P_{1}\left(\vec{g}_{1}\right) & P_{1}\left(\vec{g}_{2}\right) & P_{1}\left(\vec{g}_{3}\right)\\
+P_{2}\left(\vec{g}_{1}\right) & P_{2}\left(\vec{g}_{2}\right) & P_{2}\left(\vec{g}_{3}\right)\\
+P_{3}\left(\vec{g}_{1}\right) & P_{3}\left(\vec{g}_{2}\right) & P_{3}\left(\vec{g}_{3}\right)
+\end{matrix}\right)=\left(\begin{matrix}g_{1,1}^{2}g_{1,2}^{2} & g_{2,1}^{2}g_{2,2}^{2} & g_{3,1}^{2}g_{3,2}^{2}\\
+g_{1,1}^{2}g_{1,3}^{2} & g_{2,1}^{2}g_{2,3}^{2} & g_{3,1}^{2}g_{3,3}^{2}\\
+g_{1,1}^{2}g_{1,2}g_{1,3} & g_{2,1}^{2}g_{2,2}g_{2,3} & g_{3,1}^{2}g_{3,2}g_{3,3}
+\end{matrix}\right)
+\end{eqnarray*} Now, $S=\left\{ \vec{g}_{1}=\left(g_{1,1},g_{1,2},g_{1,3}\right),\vec{g}_{2}=\left(g_{2,1},g_{2,2},g_{2,3}\right),\vec{g}_{3}=\left(g_{3,1},g_{3,2},g_{3,3}\right)\right\} $. Let us now consider a region $X=\left\{ \left(g_{1},g_{2},g_{3}\right)\in\mathbb{R}^{3}\vert ag_{1}^{2}+bg_{2}^{2}+cg_{3}^{2}\leq1\right\} $
+for some fixed values $a,b,c\in\mathbb{R}$. Find $S$ such that \begin{eqnarray*}
+ & \min_{S\in\mathbb{R}^{n\times N}}\left(\left\Vert M^{-1}\right\Vert _{X}\cdot\left\Vert M\right\Vert _{X}\right)
+\end{eqnarray*} For the simplest case, consider $a=b=c=1$. Naive Solution Our first attempted solution was a brute-force numeric one, using the gsl minimization library. However, this naive solution has several shortcomings, as it does not converge in acceptable time and is highly inefficient. #include <iostream>
+#include <fstream>
+#include <limits>
+#include <random>
+#include <Eigen/Dense>
+#include <Eigen/SVD>
+#include <gsl/gsl_vector.h>
+#include <gsl/gsl_multimin.h>
+
+using Eigen::Matrix3d;
+using Eigen::Vector3d;
+using Eigen::JacobiSVD;
+
+#define PI 3.1415926
+
+const int nvars = 9;
+const double shift = 1e-5;
+
+void getMatrix3d(Matrix3d& target, const Vector3d& g1,const Vector3d& g2,const Vector3d& g3){
+  target(0,0) = g1[0]*g1[0]*g1[1]*g1[1];
+  target(0,1) = g2[0]*g2[0]*g2[1]*g2[1];
+  target(0,2) = g3[0]*g3[0]*g3[1]*g3[1];
+  target(1,0) = g1[0]*g1[0]*g1[2]*g1[2];
+  target(1,1) = g2[0]*g2[0]*g2[2]*g2[2];
+  target(1,2) = g3[0]*g3[0]*g3[2]*g3[2];
+  target(2,0) = g1[0]*g1[0]*g1[1]*g1[2];
+  target(2,1) = g2[0]*g2[0]*g2[1]*g2[2];
+  target(2,2) = g3[0]*g3[0]*g3[1]*g3[2];
+}
+
+
+void setVector(Vector3d& v, double r1, double r2, double r3, double phi, double theta){
+  v[0] = r1*cos(phi)*cos(theta);
+  v[1] = r2*sin(phi)*cos(theta);
+  v[2] = r3*sin(theta);
+}
+
+void print_gsl(const gsl_vector* vec){
+  for(size_t i=0; i<vec->size; ++i){
+    std::cout << vec->data[i] << "" , "";
+  }
+  std::cout << std::endl;
+}
+double abs_gsl(const gsl_vector* vec){
+  double result;
+  for(size_t i=0; i<vec->size; ++i){
+    result += vec->data[i]*vec->data[i];
+  }
+  return sqrt(result);
+}
+
+
+
+double condition(const Matrix3d& A){
+  JacobiSVD<Matrix3d> svd(A);
+  return svd.singularValues()(0) / svd.singularValues()(svd.singularValues().size()-1);
+}
+
+double norm(Matrix3d& m){
+  double x = 0;
+  static Vector3d myvec;
+  for(double phi=0; phi<2*PI; phi+=0.02*PI){
+    for(double theta=0; theta<PI; theta+=0.01*PI){
+      setVector(myvec,1,1,1,phi,theta);
+      x = std::max((m * myvec).norm(),x);
+    } 
+  }
+  return x;
+}
+
+double f(const gsl_vector *v, void* /*params*/){
+  Vector3d x1(gsl_vector_get(v, 0),gsl_vector_get(v, 1),gsl_vector_get(v, 2));
+  Vector3d x2(gsl_vector_get(v, 3),gsl_vector_get(v, 4),gsl_vector_get(v, 5));
+  Vector3d x3(gsl_vector_get(v, 6),gsl_vector_get(v, 7),gsl_vector_get(v, 8));
+  static Matrix3d m;
+  getMatrix3d(m,x1,x2,x3);
+  double val = condition(m);
+  if(val != val) return std::numeric_limits<double>::infinity();
+  return val;
+}
+
+void df(const gsl_vector *v, void* /*params*/, gsl_vector *df){
+  double val = f(v, NULL);
+  static gsl_vector* v_shift = gsl_vector_alloc(nvars);
+  for(size_t i=0;i<v->size;++i){
+    for(size_t j=0;j<v->size;++j){
+      if(i!=j) gsl_vector_set(v_shift, j, gsl_vector_get(v,j));
+      else     gsl_vector_set(v_shift, i, gsl_vector_get(v,i)+shift);
+    }
+    double thisdf = (val-f(v_shift, NULL))/shift;
+    gsl_vector_set(df, i, thisdf);
+  }
+}
+
+void fdf(const gsl_vector *x, void* /*params*/, double *thisf, gsl_vector *thisdf){
+  *thisf = f(x, NULL); 
+  df(x, NULL, thisdf);
+}
+
+int main(){
+  size_t iter = 0;
+  int status;
+
+  gsl_multimin_function_fdf func;
+  func.n = nvars;
+  func.f = &f;
+  func.df = &df;
+  func.fdf = &fdf;
+  func.params = NULL;
+
+  /* Starting point */
+  gsl_vector *x;
+  x = gsl_vector_alloc(nvars);
+
+  gsl_vector_set (x, 0,  1.); // sample1 gHgg
+  gsl_vector_set (x, 1,  1.); // sample1 gSM
+  gsl_vector_set (x, 2,  0); // sample1 gBSM
+
+  gsl_vector_set (x, 3,  1.); // sample2 gHgg
+  gsl_vector_set (x, 4,  1.); // sample2 gSM
+  gsl_vector_set (x, 5,  1.); // sample2 gBSM
+
+  gsl_vector_set (x, 6,  1.); // sample3 gHgg
+  gsl_vector_set (x, 7,  1.); // sample3 gSM
+  gsl_vector_set (x, 8, -1.); // sample3 gBSM
+
+  const gsl_multimin_fdfminimizer_type *T;
+  T = gsl_multimin_fdfminimizer_steepest_descent;
+  gsl_multimin_fdfminimizer *s;
+  s = gsl_multimin_fdfminimizer_alloc(T, nvars);
+
+  gsl_multimin_fdfminimizer_set(s, &func, x, 1e20/* step size */, 0.1/* tolerance */);
+
+  do{
+    iter++;
+    status = gsl_multimin_fdfminimizer_iterate(s);
+    if(status){
+      std::cout<<""status ""<<status<<std::endl;
+      break;
+    }
+
+    status = gsl_multimin_test_gradient(s->gradient, 0.1);
+
+  }while (status == GSL_CONTINUE && iter < 1e8);
+
+  if (status == GSL_SUCCESS)
+    printf (""Minimum found at:\n"");
+  else 
+    printf(""finished with status %d after %d iterations\n"",status,iter);
+
+  gsl_multimin_fdfminimizer_free(s);
+  gsl_vector_free(x);
+
+  return 0;
+} Goal As the ultimate goal is implementing this method in a C++ code environment, a numeric (or even heuristic) solution would be perfectly acceptable. However, given that the number of parameters is extremely large for realistic problems, we do not expect a brute-force approach to be feasible. A closed-form solution would of course be great, but we do not really expect this problem to be sufficiently well-behaved.
+With this post, we are looking for ideas on how to tackle this problem (or parts of it) using mathematical identities or advanced numerical algorithms we are unaware of. 
+Any help, including pointers to literature concerned with similar problems, is highly appreciated.","['matrices', 'linear-algebra', 'optimization']"
+1769877,Covering pairs with permutations,"Consider an $n \times n$ matrix $M_n$ with the following properties: Each row is a permutation of $A_n \equiv \{1, 2, ..., n\}$. Every ordered pair $(i,j)$, $i,j \in A_n$, $i \neq j$, appears as a horizontally adjacent pair in $M_n$ exactly once (which works out since there are $n(n-1)$ such pairs). Together with user Sp3000 we've ran some automated search for these matrices. It seems that solutions are not possible for all $n$. Here are some working cases (of course, these are not unique): $$
+M_1 = \left(\begin{array}{c} 1 \end{array}\right) \\
+M_2 = \left(\begin{array}{cc} 1 & 2 \\ 2 & 1 \end{array}\right) \\
+M_4 = \left(\begin{array}{cccc} 1&2&3&4\\2&4&1&3\\3&1&4&2\\4&3&2&1\end{array}\right)  \\
+M_6 = \left(\begin{array}{cccc} 1&2&3&4&5&6\\2&1&3&6&5&4\\3&1&4&6&2&5\\4&2&6&1&5&3\\5&1&6&4&3&2\\6&3&5&2&4&1\end{array}\right) 
+$$ We also have solutions for all further $n$ up to and including $26$. However, we've verified that no solutions exist for $n = 3$ and $n = 5$. So the interesting question is: for which values $n$ does at least one $M_n$ exist? Are $3$ and $5$ the only exceptions? When solutions do exist, can one of them be constructed from some obvious pattern or do they always have to be searched for? A few additional observations on our part: This problem has an equivalent formulation in graph theory. For the complete digraph $K_n$ can you find a set of $n$ (edge disjoint) Hamiltonian paths whose union covers all edges? The first and last column of the matrix are necessarily permutations of $A_n$ as well. If we remove the constraint that the individual rows are permutations, then $n = 3$ has solutions, e.g. $(121, 232, 313)$, as does $n = 5$. Final note: I actually have an application for this problem. I came across this question while trying to devise test cases for a programming challenge where I wanted to cover all possible cases in as few lists as possible (with $n$ lists of length $n$ being the minimum).","['graph-theory', 'hamiltonian-path', 'permutations', 'combinatorics', 'latin-square']"
+1769898,"$(f(1 - f(x)) = 1 - x^9$, $f(1) = 0$ and $f'(1) < 0$, then where is the real number $r$ such that $f(r) = r^{99}$?","If $f(1 - f(x)) = 1 - x^9$ , $f$ : R $\to$ R is differentiable, $f(1) = 0$ and $f'(1) < 0$ , how to show there is a real number $r$ such that $$f(r) = r^{99}?$$ Edit: Taylor Theorem makes no use. I try to take $a = 1 - {1 \over n}$ , where n is also a real no. Then as $f'(1) < 0$ , $f$ is decreasing at $x = 1$ and $f(a) > f(1) = 0$ . By mean-value theorem, $$f(a) - f(1) = f'(a_0)(a - 1), a < a_0 < 1$$ Let $g(x) = f(x) - x^{99}$ , then clearly $g(1) < 0$ and $g(r) = 0$ . How about showing $g(a) > 0$ ? Or to take $a$ as something else?",['analysis']
+1769900,Specific Radon-Nikodym Derivative Interpretation,"Suppose $(\Omega, \mathcal{F}, P)$ and $(\Omega, \mathcal{F}, Q)$ are two probability spaces. The Radon-Nikodym theory says that if $P$ is absolutely continuous with respect to $Q$, then there exists a finite measurable function $f$ on $\Omega$ that satisfies $$
+P(A) = \int_A f dQ
+$$ If $P$ is fixed and we consider a change in the function $f$, what does this imply about $Q$? Are we changing the probability measure with respect to which $f$ is the Radon-Nikodym derivative of $P$? For instance, in Girsanov theory one can choose $f$ to move from a possibly more complex probability measure $Q$ to a simpler one $P$, but what is the intution for the effect of some change in $f$ on this new measure $P$?","['radon-nikodym', 'probability-theory', 'measure-theory']"
+1769903,Part of proof to show Lebesgue-lebesgue measurable,"I want to prove the following: Suppose $E$ is a subset of $\Bbb R$, let $\gamma(E)=\{ (x,y)\in \Bbb R \times \Bbb R :x-y\in E\}$. If $E\in \Bbb B$ (Borel/Lebesgue measurable set), show that $\gamma(E)\in \Bbb B \times \Bbb B$ . Here’s my idea: I want to first prove the following: Let $(X,\Bbb X)$ be a measurable space, $f$ be a measurable function on $X$ to $\Bbb R$, and let $\phi$ be a Borel measurable function, want to show that $\phi \circ f$ is measurable. 
+Then I will take $\phi=\chi_E$ and $f(x,y)=x-y$ to come up with the result. But I’m not sure how to prove $\phi \circ f$ is $X$-measurable. Could someone help to provide a proof please? I’m also not sure if I’m on the right track. Thanks.","['real-analysis', 'lebesgue-integral', 'measure-theory', 'lebesgue-measure']"
+1769915,Exact value of Hausdorff measure of middle-third Cantor set,"Is there any result about the exact value of $\log_3 2$-dimensional Hausdorff measure of the middle-third Cantor set? And is there any fractal (in $\mathbb R^n$) which is not contained in a $p$-dimensional space(hyperplane) and the exact value of the $\alpha$-dimensional (nonzero and finite) Hausdorff measure of the fractal with $0<\alpha < p$? (That is, the $p$-dimensional Hausdorff measure of the fractal is 0.)","['hausdorff-measure', 'measure-theory', 'fractals']"
+1769940,Is there any nice explanation of why the complex exponential function has no roots in the complex plane? [duplicate],"This question already has answers here : Intuitive Explanation why the Fundamental Theorem of Algebra fails for infinite sums (5 answers) Closed 8 years ago . Here I am not looking for an explanation that uses basic properties that complex exponential function has, such as $e^{z+w}=e^ze^w$ or $e^0=1$ or any other, if this fact can be explained by using those basic properties. I am seeking for some explanation that has to do with the positions and number of the roots of the truncated exponential function and suppose that we only know how Taylor series for $e^z$ looks like, so in fact I seek for an explanation in which we do not know that complex exponential function has the basic properties it has. Suppose that we truncate complex exponential function and define a function $e_{k}{(z)}=\sum_{i=0}^{k} \dfrac {z^i}{i!}$. Because of the fundamental theorem of algebra we have that $e_{k}{(z)}$ has $k$ complex roots so bigger the $k$ the more roots we have. But when we pass to the limit $\lim_{k\to\infty} e_{k}{(z)}=e^{z}$ somehow all the roots ""disappear"", and instead of maybe expected an infinite number of roots we have none. How to explain this?","['complex-analysis', 'exponential-function', 'polynomials', 'roots']"
+1769944,$X_n\to 0$ in probability implies $E[f(X_n)]\to f(0)$ for $f$ uniformly cts and bounded,"Let $f$ be a uniformly continuous and bounded function.  I've shown that if $X_n\to 0$ in probability, then $f(X_n)\to f(0)$ in probability as well.  Now I want to say that $$\lim_{n\to\infty} E(f(X_n))=\lim_{n\to\infty}\int_{\Omega}f(X_n)dP=\int_{\Omega}\lim_{n\to\infty}f(X_n)dP=\int_{\Omega}f(0)dP=f(0).$$ The second equality should hold from DCT since $f$ is bounded.  However, the third equality is where I'm unsure if I'm using the fact that $f(X_n)$ converges to $f(0)$ in probability, because it looks like I'm using almost everywhere convergence which isn't implied by convergence in probability.  Can someone please help clear this up? edit: I've solved the problem a different way by splitting up the integral over where the difference between $f(X_n)$ and $f(0)$ is bigger/less than some epsilon, but I'm just curious if I can do it the way above.","['probability-theory', 'convergence-divergence']"
+1769960,What is the difference between weak and strong convergence?,"What is the difference between strong and weak convergence? I am reading ""Introductory functional analysis"" by Kreyszig and I dont appreciate the differences between the two. Definition of strong convergence: A sequence $(x_n)$ in a normed space $X$ is said to be strongly convergent if there is an $x \in X$ such that $$\lim_{n \to \infty}||x_n-x||=0$$ Definition of weak convergence: A sequence $(x_n)$ in a normed space $X$ is said to be weakly  convergent if there is an $x \in X$ such that $$\lim_{n \to \infty}f(x_n)=f(x)$$ I do not appreciate the differences between the two, does anyone have an example to highlight the differences? How does the proof differ in showing if a sequences converges weakly
+  or strongly?",['functional-analysis']
+1770006,$ \lim_{x\rightarrow a} f(x)= \lim_{x\rightarrow a} [f(x)]$ then at $x=a$ is there a maxima or minima?,$$ \lim_{x\rightarrow a} f(x)= \lim_{x\rightarrow a} [f(x)]$$ Where [.] denotes the greatest integer function (floor) function. $f(x)$ is non-constant in the neighborhood of 'a' and is continuous function. I was able to solve one part which concluded that $\lim_{x\rightarrow a}[f(x)]$ exists only when $f(x)$ either increases or decreases at both sides of 'a'. Also since it is a floor function therefore $ \lim_{x\rightarrow a} f(x)= \lim_{x\rightarrow a} [f(x)]$ has to be an integer. But how can we check whether it is a point of maxima or minima?,"['ceiling-and-floor-functions', 'functions', 'limits']"
+1770035,How can I prove $\sqrt{a^{2}}\le \sqrt{a^{2}+b^{2}}$ if $a^{2}\le a^{2}+b^{2}$?,"Given that $$a^{2}\le a^{2}+b^{2},$$ how can I prove that $$\sqrt{a^{2}}\le \sqrt{a^{2}+b^{2}}$$ strictly from the definition of an ordered field ? A derivation step by step would be appreciated.","['radicals', 'real-analysis', 'inequality', 'ordered-fields', 'analysis']"
+1770055,Finding the inverse of $f(x) = x^3 + x$,How can one find the inverse of functions like $f(x) = x^3 + x$? I know how to do it for explicit quadratic functions; how do I express $x$ as a function of $y$ here?,"['inverse-function', 'functions', 'inverse']"
+1770114,Understanding counting.,"I encountered this question recently: Suppose there are 3 benches in the front row and 7 benches in the
+  second row, how many ways a group of 10 children can be seated in such
+  arrangement? There were given two solutions to the same problem: Its an Arrangement hence there are $10!$ ways. The solution seem easy to understand. The other solution was like: We can choose $3$ children for the first row in $10\choose 3$ ways, those $3$ can be arranged in $3!$ ways and the remaining $7$ can be arranged in $7!$ ways in the back row. So, the total number of ways are ${10 \choose 3}*3!*7!$ which equals $10!$. I seriously got bowled over by the second solution, it went over my head like anything. I am new to discrete math and as far as I know counting boils down to two simple rules sum and product. Both of the above solutions are using the same product rule but why I am failing to understand the second one? Question I know the product rule but still the multiplication of the sub-parts is not making sense to me. How, to understand or get better mental model of it?","['combinatorics', 'discrete-mathematics']"
+1770127,Show that a discrete set is at most countable,"How to show that a discrete subset $A$ of $\mathbb C$ is at most countable? Ok I read the relevant questions here but I still don't understand how I should create an injection from $A$ to $\mathbb Q$. If $a \in A$ then I can find a rational number $q(a)$ such that $D(a,q(a)) \cap A = $ {$a$}. But the map $a \mapsto q(a)$ is not necessarily injective because for example take {$1,2$}: it is discrete and I can for example take the rational number associated to each number to be $1/4$. So we don't necessarily have an injection unless something is done. Please explain in detail without hints how to construct this injection thanks",['general-topology']
+1770171,Counter example for uniqueness of second order differential equation,"I have a second order differential equation, 
+\begin{eqnarray}
+\dfrac{d^2 y}{d x^2} = H\left(x\right) \hspace{0.05ex}y \label{*}\tag{*}
+\end{eqnarray} where, $\,H\left(x\right) = \dfrac{\mathop{\rm sech}\nolimits\left(x\right) \mathop{\rm sech}\nolimits\left(x\right)}{x + \ln\big(2\cosh\left(x\right)\big)}$.
+Plot of function $\,H\left(x\right) $ is shown below: I need to find solution of the  equation  $\eqref{*}$ for the boundary conditions $$\begin{aligned}
+y\left(x\right)\bigg\rvert_{-\infty} &= 0, &
+\left.\dfrac{d\hspace{0.1ex}y\left(x\right)}{d\hspace{0.1ex}x}\right\rvert_{ -\infty}  &= 0 
+\end{aligned} \label{**}\tag{**}$$ Obvious solution of the problem is $\,y=0$.
+But $\,y = x + \ln\big(2 \cosh\left(x\right)\big)\,$  also satisfies  differential equation $\eqref{*}$, and  satisfies boundary conditions $\eqref{**}$. Plot of $y\left(x\right)$ is shown below: As far as I know there cannot be two solution of the differential equation satisfying given boundary conditions. What am I missing here? Is uniqueness theorem not valid if the boundary conditions are applied at $\,\pm\infty$. EDIT Thanks to the comment by Santiago, appearance contradiction is better seen: Differential eq.
+$%\begin{align}
+y'\left(x\right) = y\left(x\right)
+%\end{align}
+$
+with boundary condition $\displaystyle\lim_{x \to \infty}y\left(x\right) = 0$. There are infinitely many solution to this problem all of the form $y\left(x\right) = k\exp\left(x\right)$, where $k$ is some constant. Post Edit Is it possible to generalize observation above that, boundary conditions at $\pm \infty$ may not yield unique solution?","['boundary-value-problem', 'ordinary-differential-equations']"
+1770180,Limit solved by definite integral (Demidovich),"I was solving this limit from the Demidovich's book of exercises:
+$$\lim_{n\to\infty} \frac{\sqrt[n]{\vphantom{\Large a}\, n!\,}}{n}$$ and I managed to get it to this state but then I got stuck: $$e^{\frac{1}{n}(\log(n) + \log(n - 1) + ... + \log(1)) - \log(n)}$$ where $\log x$ is a natural logarithm of x. Can you please provide any hint?","['limits', 'calculus', 'integration', 'definite-integrals', 'riemann-sum']"
+1770188,Example of an open map on $\mathbb{R}^2$ that is not a submersion,"I am searching for an example of a map $f : \mathbb{R}^2 \to \mathbb{R}$ that is open but is not a submersion... I know that any constant map is not a submersion, but it is indeed closed, I am wondering for an example where $f$ is an open map. I appreciate any help!",['real-analysis']
+1770189,Deriving the Normalization formula for Associated Legendre functions: Stage $2$ of $4$,"The question that follows is a continuation of this previous Stage $1$ question needed as part of a derivation of the Associated Legendre Functions Normalization Formula: $$\color{blue}{\displaystyle\int_{x=-1}^{1}[{P_{L}}^m(x)]^2\,\mathrm{d}x=\left(\frac{2}{2L+1}\right)\frac{(L+m)!}{(L-m)!}}$$ where for each $m$, the functions $${P_L}^m(x)=\frac{1}{2^LL!}\left(1-x^2\right)^{m/2}\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\tag{1}$$ are a set of Associated Legendre functions on $[−1, 1]$. The question in my textbook asks me to Write $(1)$ with $m$ replaced with $-m$ then use the fact that $$\begin{align}\frac{\mathrm{d}^{L-m}}{\mathrm{d}x^{L-m}}\left(x^2-1\right)^L&=\frac{(L-m)!}{(L+m)!}\left(x^2-1\right)^m\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\end{align}\quad \longleftarrow\text{(Stage 1)}$$ to show that $${P_L}^{-m}(x)=(-1)^m\frac{(L-m)!}{(L+m)!}{P_L}^{m}(x)\tag{2}$$ Start of attempt: $$\begin{align}\require{enclose}{P_L}^{-m}(x)&=
+\frac{1}{2^LL!}\left(1-x^2\right)^{-m/2}\frac{\mathrm{d}^{L-m}}{\mathrm{d}x^{L-m}}\left(x^2-1\right)^L\\&=
+\frac{1}{2^LL!}\left(1-x^2\right)^{-m/2}\frac{(L-m)!}{(L+m)!}\left(x^2-1\right)^m\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\quad\quad\longleftarrow\bbox[#AFA]{\text{Using Stage 1}}\\&=
+\frac{(-1)^{-m/2}}{2^LL!}\left(x^2-1\right)^{-m/2}\frac{(L-m)!}{(L+m)!}\left(x^2-1\right)^m\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\\&=
+\frac{(-1)^{-m/2}}{2^LL!}\left(x^2-1\right)^{m/2}\frac{(L-m)!}{(L+m)!}\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\\&=
+\frac{\color{#F8F}{\enclose{updiagonalstrike}{\color{black}{(-1)^{-m/2}}}}\cdot\color{#F8F}{\enclose{updiagonalstrike}{\color{black}{(-1)^{m/2}}}}}{2^LL!}\left(1-x^2\right)^{m/2}\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\frac{(L-m)!}{(L+m)!}\\&=
+\frac{(L-m)!}{(L+m)!}\frac{1}{2^LL!}\left(1-x^2\right)^{m/2}\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\\&=
+\frac{(L-m)!}{(L+m)!}{P_{L}}^m(x)\quad\quad\longleftarrow\bbox[#FFA]{\text{By substituting Equation (1)}}\\&\ne
+(-1)^m\frac{(L-m)!}{(L+m)!}{P_L}^{m}(x)\end{align}$$ End of attempt. So basically I am missing a factor of $(-1)^m$ as the $(-1)^{-m/2}$ and $(-1)^{m/2}$ cancelled each other out, and I'm therefore unable to prove Equation $(2)$. I have checked the proof for errors and am unable to find any. I am guessing that I have overlooked something simple thus making a trivial mistake somewhere along the line. Is anyone able to locate and explain where I have made the error? EDIT: Taking the advice of the answer given by Markus: $$\begin{align}\require{enclose}{P_L}^{-m}(x)&=
+\frac{1}{2^LL!}\left(1-x^2\right)^{-m/2}\frac{\mathrm{d}^{L-m}}{\mathrm{d}x^{L-m}}\left(x^2-1\right)^L\\&=
+\frac{1}{2^LL!}\left(1-x^2\right)^{-m/2}\frac{(L-m)!}{(L+m)!}\left(x^2-1\right)^m\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\quad\quad\longleftarrow\bbox[#FA8]{\text{Using Stage 1}}\\&=
+\frac{1}{2^LL!}(-1)^m\left(1-x^2\right)^m\left(1-x^2\right)^{-m/2}\frac{(L-m)!}{(L+m)!}\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\\&=
+(-1)^m\frac{(L-m)!}{(L+m)!}\frac{1}{2^LL!}\left(1-x^2\right)^{m/2}\frac{\mathrm{d}^{L+m}}{\mathrm{d}x^{L+m}}\left(x^2-1\right)^L\\&=
+(-1)^m\frac{(L-m)!}{(L+m)!}{P_{L}}^m(x)\quad\quad\longleftarrow\bbox[#AFF]{\text{By substituting Equation (1)}}\end{align}$$
+as required ..... but only thanks to Markus :) ..... and not me :(","['derivatives', 'legendre-polynomials', 'proof-verification']"
+1770206,Geometric intuition of the equation of a plane,"Let $\pi$ be a plane in an $d$-dimensional space with normal vector $\underline{w} = [w_1, \dots,w_d]^T$. If point $\underline{p} = [p_1, \dots,p_d]^T$ is in the plane and $\underline{x}= = [x_1, \dots,x_d]^T$ denotes a generic point in this space, we can write the plane equation as \begin{equation}
+\pi := \quad \underline{w}^T\cdot (\underline{x} - \underline{p}) = 0.
+\end{equation} If we develop this expression and rewrite it with summations we get \begin{equation}
+\pi := \quad \sum_{i=1}^d w_ix_i +w_0=0,
+\end{equation} where $w_0 = - \sum_{i=1}^d w_ip_i$. If we chose a different point in the plane, for instance $\underline{q} = [q_1, \dots,q_d]^T$, and proceed as before, we obtain \begin{equation}
+\pi := \quad \sum_{i=1}^d w_ix_i +\tilde{w}_0=0,
+\end{equation} where $\tilde{w}_0 = - \sum_{i=1}^d w_iq_i$. Thus, the conclusion is that \begin{equation}
+\sum_{i=1}^d w_ip_i = \sum_{i=1}^d w_iq_i,
+\end{equation} That is, the dot product between the normal vector and any plane point is always the same. I have tried to see this as \begin{equation}
+||\underline{w} || \cdot || \underline{p} || \cdot \cos(\theta_{\underline{w},\underline{p}}) = ||\underline{w} || \cdot || \underline{q} || \cdot \cos(\theta_{\underline{w},\underline{q}}),
+\end{equation} which implies that $|| \underline{p} || \cdot \cos(\theta_{\underline{w},\underline{p}}) = \cdot || \underline{q} || \cdot \cos(\theta_{\underline{w},\underline{q}})$, where $\theta_{\underline{a},\underline{b}}$ denotes the angle between two vectors $\underline{a}$ and $\underline{b}$. Which is the geometric interpretation of this?","['vector-spaces', 'plane-geometry', 'vector-analysis', 'geometry']"
+1770219,Calculating the lipschitz constant of this function?,"So I have a function $f:\mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}$ given by $$f(x,y) = \sum_{i=1}^m y_i A_ix$$ where $A_i$ are $n$ by $n$ real symmetric positive definite matrices (not that it really matters in this case) for $i=1, \dots m$ . I would like to calculate the Lipschitz constant of $\nabla_x f(x,y)$ on the set that $\|x \| \leq 1$ . When I fix $x \in \mathbb{R}^n\cap\{x: \|x\| \leq 1\}$ and take $y^1,y^2 \in \mathbb{R}^m$ I have $$ \|\nabla_x f(x,y^1) - \nabla_x f(x,y^2)\| = \|\sum_{i=1}^m (y^1_i - y^2_i) A_ix\| $$ but I'm having trouble majorizing this for $L\|y^1 - y^2\|$ . How can I calculate such an $L$ so that the inequality works?","['multivariable-calculus', 'real-analysis', 'lipschitz-functions', 'functions']"
+1770222,Properties of the solution of a linear system with random equations,"$x_i$ is drawn from $\mathrm{unif}(a,b)$, $y_i$ is drawn from $\mathrm{unif}(c,d)$. $x_i$ are independent from each other.
+$y_i$ are independent from each other.
+$x_i$ are independent of $y_i$. $i$ goes from $1$ to $n$. I have the linear system $$y_i=\alpha \cdot x_i+\beta$$ I solve the linear system for $\alpha$ and $\beta$ with least squares; what properties do the estimates of $\alpha$ and $\beta$ have?","['uniform-distribution', 'statistics', 'least-squares', 'systems-of-equations']"
+1770260,"Prove $2^{X \cap Y \cap Z} = 2^X \cap 2^Y \cap 2^Z$ for any three sets $X, Y, Z$","Could anybody check my solution to this question please? Question:
+Prove $2^{X \cap Y \cap Z} = 2^X \cap 2^Y \cap 2^Z$ for any three sets $X, Y, Z.$ My solution: If $a \in 2^X \cap 2^Y \cap 2^Z$, then $a \in 2^X, a \in 2^Y, a \in 2^Z$. So $a \subset X, a \subset Y, a \subset Z$. So a $\subset X \cap Y \cap Z$. Then $a \in 2^{X \cap Y \cap Z}$ So  $2^{X \cap Y \cap Z} \subset 2^X \cap 2^Y \cap 2^Z$. Conversely if $a \in 2^{X \cap Y \cap Z}$ then $a \subset X \cap Y \cap Z$ and so $a \subset X, a \subset Y$ and $a \subset Z$ Then $a \in 2^X, a\in 2^Y, a \in 2^Z.$ Clearly $a \in 2^X \cap 2^Y \cap 2^Z$ So $2^X \cap 2^Y \cap 2^Z \subset 2^{X \cap Y \cap Z}$ and $2^X \cap 2^Y \cap 2^Z = 2^{X \cap Y \cap Z}$",['discrete-mathematics']
+1770278,Explicit functions evaluated,"(a) Defined $f$ by $f(y):=\int_0^\infty\frac{xy}{(x^4+y^4)^{3/4}}dx$. Prove $f(y)$ is defined (i.e integral exists) for every $y\in\mathbb{R}$. (b)Prove that actually $f(y)=c\operatorname{sign} y$ for some positive number $c$. *So in particular $f$ is not continuous at $0$, therefore a substitution may help and no need to evaluate $c$ explicitly. (c)Prove that $g(y):=\int_0^\infty\frac{xy}{(x^4+y^4+x^2)^{3/4}}dx$ DOES define a function that is continuous for all $y\in \mathbb{R}$. These are a few examples I ran across in the midst of a self study. Please, any help is appreciated.","['continuity', 'real-analysis', 'definite-integrals', 'analysis']"
+1770279,How can you divide an octagon into 5 equal parts?,"How would you divide an octagon into 5 equal parts? This is a question that we are working on in 2nd grade. Do you have an answer for us? Thanks, 
+Mrs. Parsons Class West View Elementary Burlington, Wa",['geometry']
+1770310,How to show Plancherel's Theorem for Fourier Transform implies $L^2$ Transform Convergence.,"The Plancherel Theorem for the Fourier transform $\hat{f}(s)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}f(t)e^{-ist}dt$ on $\mathbb{R}$ states that
+$$
+           \int_{-\infty}^{\infty}|\hat{f}(s)|^2ds = \int_{-\infty}^{\infty}|f(t)|^2dt,\;\;\;\; f \in L^2(\mathbb{R})\cap L^1(\mathbb{R}).
+$$
+Without appealing to classical convergence results, can this result be used to show that
+$$
+     \lim_{u,v\rightarrow\infty}\left\|\frac{1}{\sqrt{2\pi}}\int_{-u}^{v}\hat{f}(s)e^{isx}ds-f\right\|_{L^2(\mathbb{R})} = 0. \;\;\; ?
+$$
+Does anyone know of a nice way to show this? Background: This is not a homework problem or something I found in a text. It would seem reasonable to expect this result because of the discrete version where Parseval's equality for the Fourier series implies $L^2$ convergence of the Fourier series; or, if $\{ e_n \}_{n=1}^{\infty}$ is an orthonormal set in an inner product space, then 
+$$\sum_{n=1}^{\infty}|(f,e_n)|^2=\|f\|^2 \iff \lim_{N\rightarrow\infty} \left\|\sum_{n=1}^{N}(f,e_n)e_n -f \right\|=0.
+$$","['functional-analysis', 'fourier-analysis', 'fourier-transform']"
+1770374,The matrix square root is not differentiable on the boundary of the manifold of positive semi-definite matrices?,"$\newcommand{\psym}{\operatorname{P}_{\ge 0}}$
+$\newcommand{\Sig }{\Sigma}$ Let $\psym$ denote the subset of symmetric positive semi-definite matrices. Let $S:\psym \setminus \{0\} \to \psym \setminus \{0\}$, where $S(A)=\sqrt{A}$ is the unique positive semi-definite square root of 
+$A$. $\psym \setminus \{0\}$ is a manifold with boundary.
+I am trying to prove $S$ is not differentiable at every point in $\{A \in \psym | \, \, \det(A)=0 \}$ (i.e, on the boundary). Am I correct about this claim? and its proof? Here is my attempt: Assume it was differentiable at such an $A$. Since $S^{-1}(A)=A^2$ is differentiable everywhere, we would get: $$ Id=d(S^{-1} \circ S)_A = dS^{-1}_\sqrt{A} \circ dS_A \Rightarrow dS^{-1}_\sqrt{A} \text{ is invertible}$$ But this is false since $dS^{-1}_A(X)=AX+XA$ is non-invertible. Let's see why. First, note that $dS^{-1}_A:\operatorname{sym}_n \to \operatorname{sym}_n$ (where $\operatorname{sym}_n$ is the space of symmetric matrices). We want to show there is a symmetric, non-zero $X$ such that $AX+XA=0$.
+Since $A$ is symmetric we can orthogonally diagonalize it: $A=V \Sig V^T, V \in O_n$ Then $AX+XA=V \Sig V^T X+XV \Sig V^T=0 \iff \Sig (V^TXV) + (V^TXV) \Sig =0$ Since $X$ is non-zero and symmetric $\iff$ $V^TXV$ is non-zero and symmetric, it is enough to show this for non-zero diagonal matrices* $\Sig$ such that $\det(\Sig)=0$. In this case, the equation becomes $X_{ij}(\sigma_i+\sigma_j)=0$. Assume without loss of generality $\sigma_1 = 0$ (since $\det(\Sig)=0$), and choose $X_{11}=1$ and all the other $X_{ij}$ to be zero. Is this proof true? Is there an easier argument? *There are other, perhaps easier ways to see it is enough to consider the diagonal case only. (For example, using the fact that taking squares commutes with conjugation, and orthogonal conjugation is a self-diffeomorphism)","['matrix-calculus', 'smooth-manifolds', 'proof-verification', 'differential-geometry', 'linear-algebra']"
+1770414,Are all normal subgroups Abelian?,"If $H \subset G$ is a normal subgroup of G, => $xHx^{-1} = H$ or $xH = Hx$ for all $x \epsilon G$ => $xH = Hx$ for all $x \epsilon H$ Hence, all normal subgroups of a group are themselves Abelian? Also, does that mean that all normal towers of subgroups are also Abelian?","['normal-subgroups', 'group-theory']"
+1770416,Solving For Sin Using Pi,"Solving for sin using pi I was messing around with calculating pi by finding the perimeter of a many sided polygon, and dividing it by the diameter (Like the thing Archimedes did). The equation I found was n(sin(180/n))=pi , where n is the number of sides the polygon has. I was wondering if there was any way to reverse this equation, making it so that you can solve for sine using pi. Here is what I tried: (Note: This is all in degrees because I do not know radians that well) This is what I started with n(sin(180/n))=pi Divide both sides by n (sin(180/n))=pi/n Substitute a for 180/n to get (sin(a))=pi/n . This means 180/n=a Then I multiplied both sides of that by n to get 180=a*n And divided both sides by a to get 180/a=n Now I have solved that equation for n , so I can substitute it back into my original equation for n to get (sin(a))=pi/(180/a) , which can be simplified to sin(a)=pi*a/180 . What this says is that the sin(a) is equal to pi*a/180 , which definitely isn't true. One interesting thing about this equation is that it is the equation to convert degrees into radians. Also, if you graph it, you will is very close to the sin wave until about 25. (If you graph this equation, make sure you are using degrees and not radians) After trying this out, I did some reasearch and found there is no easy way to calculate sine. However, I would still like to know what was wrong with the math I did to simplify this. Thanks. I am 13 and this is my first question I have posted, so please excuse any mistakes.","['trigonometry', 'pi']"
+1770458,Show that two metrics known not to be strongly equivalent actually induce the same topology.,"Suppose on $\mathbb{R}$, we have the usual Euclidean metric, $\rho_{1}(x,y) = \Vert x-y \Vert$, and also the metric $\rho_{2}(x,y) = \displaystyle \frac{\rho_{1}(x,y)}{1+\rho_{1}(x,y)}$. I need to show that the topologies that $\rho_{1}$ and $\rho_{2}$ respectively induce are equal to each other (i.e., if $\rho_{1}$ induces $\tau_{1}$ and $\rho_{2}$ induces $\tau_{2}$, then $\tau_{1} = \tau_{2}$). I understand that $\rho_{1}$ and $\rho_{2}$ are not strongly equivalent metrics on $\mathbb{R}$, so I am looking to use them as an example of two metrics that induce the same topology but are not strongly equivalent. The only problem is I don't know how to show that $\rho_{1}$ and $\rho_{2}$ induce the same topology...Could someone please let me know how to do this?  Thanks. I would prefer something very elementary rather than something very technical. I am putting a bounty on this question for a fully worked solution.","['general-topology', 'real-analysis', 'metric-spaces']"
+1770459,I need help with doing two inductive proofs using integration by parts.,"$$\int_0^{\pi/2} \sin^{2n - 1}x \, dx = \frac{2\cdot4\cdot6\cdots2n}{3\cdot5\cdot7\cdots(2n + 1)}$$
+I have made the integration by parts substitutions as follows:
+$$u = \sin^{2n}(x) \text{ and } dv = \sin x\,dx$$ $$du = (2n)\sin(x)^{2n-1} \cos x \, dx$$ $$v = -\cos x$$ I am not sure if these are the correct substitutions to make and I am also unsure of the rest of the methods to complete the proof. $$\int_0^{\pi/2} \sin^n x \, dx = \frac{n-1}{n} \int_0^{\pi/2} \sin^{n-2} x\,dx$$ $$u = \sin^{n-1} x \, dv = \sin x\,dx$$ $$du = (n-1)\sin^{n-2}(x)\cos x \, dx$$ $$v=-\cos x$$ I am pretty confident with these substitutions I just had a hard time with the rest of it.","['integration', 'trigonometry', 'integration-by-parts']"
+1770460,Lebesgue-integrability of derivatives,"Let $f:\mathbb R\to\mathbb [0,\infty)$ be a non-negative, twice-differentiable function. Suppose that $\int_{-\infty}^{\infty}f(x)\,\mathrm dx<\infty$, $\int_{-\infty}^{\infty}|f''(x)|\,\mathrm dx<\infty$. Does it necessarily follow that the first derivative is integrable as well:
+$$\int_{-\infty}^{\infty}|f'(x)|\,\mathrm dx<\infty$$ in Lebesgue’s sense ( i.e. , absolutely integrability, not merely the existence of improper integrals)? More generally, if $f:\mathbb R\to\mathbb [0,\infty)$ is a non-negative function differentiable $k\in\mathbb N$ times ($k\geq 2$), and $\int_{-\infty}^{\infty}f(x)\,\mathrm dx<\infty$, $\int_{-\infty}^{\infty}|f^{(k)}(x)|\,\mathrm dx<\infty$, then is it true that $$\int_{-\infty}^{\infty}|f^{(\ell)}(x)|\,\mathrm dx<\infty\quad\text{forall $\ell\in\{1,\ldots,k-1\}$}?$$ N.B. : continuity is not assumed on $f^{(k)}$.","['real-analysis', 'lp-spaces', 'measure-theory', 'calculus']"
+1770498,Finding the volume of the region bounded by $z=\sqrt{\frac{x^2}{4}+y^2}$and $x+4z=a$. Cylindrical coordinates.,"I would like the answer to preferably be done using either using a surface integral, or an integral with substitutions. But anything other than this is alright, if nothing else exists. I have to find the volume of the region bounded by $z=\sqrt{\frac{x^2}{4}+y^2}$and $x+4z=a$. So, here we have a cone and a plane ""cutting"" it. I definitely must do this using some some of coordinate substitution. When doing a problem in class, that is, the area to be found being bounded in between $(z-1)^2=x^2+y^2$ and $z=0.$ the substitution was made, (which would be logical here to do aswell): $$x=r\cos\varphi \\ y=r \sin\varphi \\ z=z$$ and I also understand that the bounderies being $0\leq r\leq 1,0\leq\varphi\leq2\pi,0\leq z\leq 1-r.$ But in the problem I give that is a lot more difficult to do, I know that the bounderies for $\varphi$ should be the same,but with $z$ and $r$ I find it impossible. Should I find these conditional extreme points on the cone with the plane equation or am I not seeing something quite obvious here?","['multivariable-calculus', 'integration', 'volume', 'calculus']"
+1770515,The closure of $\mathbb{N}$ is $\mathbb N$. The closure of $\mathbb Z$ is $\mathbb Z$... etc,"Prove this lemma Lemma: The closure of $\mathbb{N}$ is $\mathbb N$. The closure of $\mathbb Z$ is $\mathbb Z$. The closure of $\mathbb Q$ is $\mathbb R$, and the closure of $\mathbb R$ is $\mathbb R$. The closure of the empty set is the empty set. My Attempt 1) The closure of $\mathbb N$ is $\mathbb N$: Let $x\in \bar{N}$ such that $\epsilon >0$, then there exists $n\in N$ such that $|n-x| \leq \epsilon$. Let $\epsilon = 1/4$. Then $|n-x|<1/4$ <=> $x-1/4 \leq n \leq x+1/4$. Not sure where to go from here","['general-topology', 'real-analysis']"
+1770527,A Game of Coin and Die,"This game is played with a fair coin and a die. First player flips a coin. If it turns out head(H), the player proceeds with tossing a die. If it turns out tail(T), the player proceeds with flipping a coin for the second time. The player wins if it gets head on the first tossing and 6 on the second or tails on both flips of coin. What is the probability of winning a game?","['statistics', 'probability']"
+1770604,Solving a radical equation for real $x$,"Solve for $x \in \mathbb{R}$ $$\dfrac{\sqrt{x^2-x+2}}{1+\sqrt{-x^2+x+2}} - \dfrac{\sqrt{x^2+x}}{1+\sqrt{-x^2-x+4}} = x^2-1$$ I tried squaring the equation but it became a sixteen degree equation. I also tried substitutions, but that didn't help. There must be some elegant solution to it in its current form. Any help will be appreciated. Thank you.","['algebra-precalculus', 'radicals', 'roots', 'functions']"
+1770640,Bijection from $\mathbb {Z}^3$ to $\mathbb {Z}$,"I am not a mathematician. Let $\mathbb {Z}$ be a positive integer set. I need to know whether there exist a bijection from $\mathbb {Z}^3$ to $\mathbb {Z}$, what might be a possible mapping? I know that bijection exists from $\mathbb {R}^3$ to $\mathbb {R}$.","['real-analysis', 'cardinals', 'functions']"
+1770674,"If $\varphi$ is bounded above, increasing, and concave down, does $x\varphi'(x)$ go to zero? How fast?","Suppose $\varphi: [0,\infty)\rightarrow [0,1)$ is an increasing differentiable function ($C^\infty$ if you want) with $\varphi \rightarrow 1$ and $\varphi'>0, \varphi''<0$. My question is: Is it true that $$\limsup_{x\rightarrow \infty}\frac{{\color{blue}{x\varphi'(x)}}}{\color{green}{1-\varphi(x)}}\leq 1~~~, \text{or even} < \infty~~?$$ If not, and you see some additional hypotheses on $\varphi$ that make it true, that would also be welcome. In fact, I'm even having trouble proving $x\phi'(x)\rightarrow 0$, even though it seems obvious from the picture.","['real-analysis', 'ordinary-differential-equations', 'analysis']"
+1770696,"Connected Components for $(\Bbb R, \mathcal T_{ lower limit})$","$(\Bbb R, \mathcal T_{{ lower }{ limit}})$ is a topological space $\Bbb R$ with Lower limit topology. As I know,  $(\Bbb R, \mathcal T_{{ lower }{ limit}})$ is disconnected. What 
+are the Connected Components of $(\Bbb R, \mathcal T_{ lower limit})$ or how can we describe the Connected Components of $(\Bbb R, \mathcal T_{ lower limit})$? I know that $[a,b)$ , $(-\infty,a)$, $[a,\infty)$ are clopen for any $a,b\in \Bbb R$. And $\Bbb R = (-\infty,\infty)=(-\infty,0)\cup [0,\infty)$, so $(-\infty,0)$,$[0,\infty)$ are Connected Components of $(\Bbb R, \mathcal T_{ lower limit})$?",['general-topology']
+1770721,Solve $ 1 + \frac{\sqrt{x+3}}{1+\sqrt{1-x}} = x + \frac{\sqrt{2x+2}}{1+\sqrt{2-2x}} $,"Solve for $x \in \mathbb{R}$ $$ 1 + \dfrac{\sqrt{x+3}}{1+\sqrt{1-x}} = x + \dfrac{\sqrt{2x+2}}{1+\sqrt{2-2x}} $$ I tried some substitutions and squaring but that didn't help. I also tried to use inequalities as done in my previous problem , but that too didn't help.","['algebra-precalculus', 'radicals']"
+1770750,Finding all real roots of the equation $(x+1) \sqrt{x+2} + (x+6)\sqrt{x+7} = x^2+7x+12$,"Find all real roots of the equation $$(x+1) \sqrt{x+2} + (x+6)\sqrt{x+7} = x^2+7x+12$$ I tried squaring the equation, but the degree of the equation became too high and unmanageable. I also tried substitutions, but it didn't work out correctly. This question was in my weekly class worksheet as were this and this question which I previously asked. Any help will be appreciated. Thanks.","['algebra-precalculus', 'radicals', 'roots', 'functions']"
+1770787,Deriving formula for asymptotes of a hyperbola,"I'm trying to find a precalculus-level derivation of the formula for the asymptotes of a hyperbola. My book says: Solving $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ for $y$, we obtain $y = \pm \frac ba \sqrt{x^2 - a^2}$ $ = \pm \frac ba \sqrt{x^2(1 - \frac {a^2}{x^2})}$ $ = \pm \frac bax \sqrt{(1 - \frac {a^2}{x^2})}$ then goes on to say $\frac {a^2}{x^2}$ approaches 0, and therefore the asymptotes are at $y = \pm \frac ba x$ However, in my attempt to derive the formula, I have been unable to get to the first equation. I got as far as
+$y^2 = -b^2(1 - \frac {x^2}{a^2})$",['algebra-precalculus']
+1770791,Exercise $2$ from chapter $5$ of Eisenbud's Geometry of Syzygies book,"I am trying to solve exercise $2$ from chapter $5$ of Eisenbud's The Geometry of Syzygies book.The problem is as follows: Let $X$ be the union of two disjoint lines in $\mathbb P^3$, or a conic   contained in a plane in $\mathbb P^3$. Then $2=\mathrm{reg}(I_X) > \deg(X)-\mathrm{codim}(X)+1$.","['algebraic-geometry', 'commutative-algebra']"
+1770809,Count the partial equivalence relations on a set,"A partial equivalence relation is a relation that is symmetric and transitive. The number of equivalence relations on a set is given by the Bell numbers. How can I count the partial equivalence relations on a set $\{ 1, \cdots , n\} $?","['set-partition', 'equivalence-relations', 'combinatorics', 'relations', 'discrete-mathematics']"
+1770823,How to Find $ \lim\limits_{x\to 0} \left(\frac {\tan x }{x} \right)^{\frac{1}{x^2}}$.,"Can someone help me with this limit? I'm working on it for hours and cant figure it out. $$ \lim_{x\to 0} \left(\frac {\tan x }{x} \right)^{\frac{1}{x^2}}$$ I started transforming to the form
+$ \lim_{x\to 0} e^{  {\frac{\ln \left(\frac {\tan x}{x} \right)}{x^2}}  }$
+and applied the l'Hopital rule (since indeterminated $\frac00$), getting: $$ \lim_{x\to 0} \left( \frac{2x-\sin 2x }{2x^2\sin 2x} \right)$$ From here, I try continue with various forms of trigonometric substitutions, appling the l'Hopital rule again and again, but no luck for me. Can someone help me?","['real-analysis', 'limits', 'exponential-function', 'trigonometry', 'limits-without-lhopital']"
+1770825,Solving a mixed radical and quadratic equation,"Solve for $x \in \mathbb{R}$ $$4x^2(x+2) +3(2x^2-4x-3)\sqrt{4x+3} +6x = 0$$ I tried taking square by isolating the radical, but the resultant equation couldn't be solved. Any help will be appreciated. Thanks.","['algebra-precalculus', 'radicals', 'roots', 'functions']"
+1770880,Find real roots of the equation,"Find all real solutions to $$\dfrac{\sqrt{x+1}}{2+\sqrt{2-x}} - \dfrac{\sqrt{x^2-x+2}}{2+\sqrt{-x^2+x+1}} = x^3-x^2-x+1$$ This question is very similar to one of my previous problem , except I cannot find a monotonic function as has been done in the solution to that problem. Any help will be appreciated. Thanks.","['algebra-precalculus', 'radicals', 'roots', 'functions']"
+1770888,Prove series converge for almost every $x$,"Let $f\in L^p(\mathbb{R})$, $1<p<\infty$, and let $\alpha>1-\frac{1}{p}$. Show that the series $$\sum_{n=1}^{\infty}\int_n^{n+n^{-\alpha}} |f(x+y)|dy$$ converges for a.e. $x\in \mathbb{R}$. The question came from old qualifying exam . Although not specified, in the context of the test measure on $\mathbb{R}$ is always Lebesgue measure. I define $q=(1-\frac{1}{p})^{-1}$. The integral can be estimated by Hölder's inequality $$\begin{align}\int_n^{n+n^{-\alpha}} |f(x+y)|dy&=\int_{n+x}^{n+n^{-\alpha}+x} |f(y)|dy\\&=||f||_1\\&\leq||f||_p||1||_q\\&=\left(\int_{n+x}^{n+n^{-\alpha}+x} |f(y)|^pdy\right)^{\frac{1}{p}}(n^{-\alpha})^{\frac{1}{q}}\end{align}$$ Here $||\cdot||_p$ means the norm on $L^p \left([n+x,n+n^{-\alpha}+x]\right)$. Suppose we can prove the integral $\int_{n+x}^{n+n^{-\alpha}+x} |f(y)|^pdy$ decays faster than $n^{-(1+\frac{1}{q})}$ then the $n^{th}$ term should decay faster than $\frac{1}{n}$ and therefore converge. However this is the farthest I can get, any idea how to proceed?","['real-analysis', 'lp-spaces', 'lebesgue-integral', 'convergence-divergence', 'sequences-and-series']"
+1770895,Dividing books between two couples,"Two couples of boys and girls, $(b_1,g_1)$ and $(b_2,g_2)$, are dividing a pile of books. Every book will go to one of the couples, and they'll read it together. Each person has a (nonnegative) value for each book they read and a total value of $1$ for the whole set of books in the pile; moreover some subset of books gives him/her value exactly $0.5$. Does there exist a constant $c>0$ for which it is always possible to give everyone value at least $c$, no matter the values and the number of books? Without the $0.5$ condition, the answer is no. For example, there is only one book that everyone values $1$, so one couple will get $0$.",['combinatorics']
+1770897,Carrying out a substituting to evaluate $\int (x + 1) (x^2 + 2 x)^5dx$,"The problem is:
+$$ \int { (x+1)({ x }^{ 2 } } +2x{ ) }^{ 5 }dx $$ The next step given by WolframAlpha is 
+$$\int { (x+1)({ x }^{ 2 } } +2x{ ) }^{ 5 }dx\\ =\quad \frac { 1 }{ 2 } \int { { u }^{ 5 }du }  $$ (While I realize I am doing somthing worng) The steps I am taking are : $ \int { (x+1)({ x }^{ 2 } } +2x{ ) }^{ 5 }dx$. Let $u={ x }^{ 2 }+2x, \, du = 2x+2\, dx$. Then I see I can rewrite $du$ as $du = 2(x+1)dx$ giving me $\frac { du }{ 2 } = (x+1)\, dx$. I can now see where the $ \frac { 1 }{ 2 }  $ is coming from, but I cannot seem to visualize the next steps to get to $$ \int { (x+1)({ x }^{ 2 } } +2x{ ) }^{ 5 }dx=\frac { 1 }{ 2 } \int { { u }^{ 5 }du }  $$","['indefinite-integrals', 'substitution', 'integration', 'calculus']"
+1770970,How to prove $ \int_{a}^{b}f\left ( x \right )\cot\left ( x \right )dx=2\sum_{n=1}^{\infty }f\left ( x \right )\sin\left ( 2nx \right )dx$,How to prove this equality below $$\int_{a}^{b}f\left ( x \right )\cot\left ( x \right )\mathrm{d}x=2\sum_{n=1}^{\infty }\int_{a}^{b}f\left ( x \right )\sin\left ( 2nx \right )\mathrm{d}x$$ The series RHS seems to be divergence...I don't know how to do first.,"['integration', 'sequences-and-series', 'calculus', 'analysis']"
+1770976,What is the probability that a pokemon gets frozen within 3 turns using ice beam?,"Ice beam is a pokemon move that has a 10% chance to freeze the enemy pokemon each turn.  What is the probability that I freeze the enemy pokemon if I have 3 turns? On one hand 'logically' the answer should be 30% On the other hand, if we add up all the cases we get 27.1%: (1) Freeze on the first turn 10% (2) Freeze on the second turn, but not the first: 90% * 10% (3) Freeze on the third turn, but not the first/second: 90% * 90% * 10% What is the correct way to go about this? Also, I observe that both methods are very close to each other.  Is it generally true that the probability of an event firing within N turns is the same (or very close to) as the probability of the event firing * N?",['probability']
+1771002,Riemann Sum Approximations: When are trapezoids more accurate than the middle sum?,"We can approximate a definite integral, $\int_a^b f(x)dx$ , using a variety of Riemann sums. If $T_n$ and $M_n$ are the nth sums using the trapezoid and midpoint (middle) sum methods and if the second derivative of $f$ is bounded on $[a, b]$ then does the following theorem imply that $M_n$ ""tends to be more accurate"" then $T_n$ ? If $f''$ is continuous on $[a, b]$ and $|f''(x)| \leq K$ , $\forall$ $x \in [a, b]$ . Then, $\left| \int_a^b f(x)dx - T_n \right| \leq K\frac{(b-a)^3}{12n^2}$ and $\left| \int_a^b f(x)dx - M_n \right| \leq K\frac{(b-a)^3}{24n^2}$ For this question let, $E_{T_n} = \left| \int_a^b f(x)dx - T_n \right| $ and $E_{M_n} = \left| \int_a^b f(x)dx - M_n \right| $ The theorem is presented (without proof) in a calculus 2 book. It only really seems to imply that, we can with 100% certainly bound $E_{M_n}$ smaller than we can bound $E_{T_n}$ . But, that says nothing about the actual values of $E_{T_n}$ or $E_{M_n}$ . So, isn't it possible to customize a function so that $E_{T_n} < E_{M_n}$ for a particular n? Could we even make a function so that $E_{T_n} < E_{M_n}$ $\forall n$ ?","['numerical-methods', 'approximate-integration', 'calculus', 'riemann-sum']"
+1771005,Probabilities playing bridge,"Being very bad with probabilities, I would greatly appreciate help for the following problem. The first bid of my partner indicates that, among his $13$ cards, he handles $6$ hearts and a maximum of $3$ spades. In my hand, I handle $0$ hearts and $6$ spades. So, my question is : what are the probabilities corresponding to $0$, $1$, $2$ or $3$ spades in my partner's hand ? Should I need to precise that this is not homework ? Thnaks for your help.","['probability', 'card-games']"
+1771013,How is the null space related to singular value decomposition?,"It is said that a matrix's null space can be derived from QR or SVD. I tried an example: $$A= \begin{bmatrix} 
+1&3\\
+1&2\\
+1&-1\\
+2&1\\
+\end{bmatrix} 
+$$ I'm convinced that QR (more precisely, the last two columns of Q) gives the null space: $$Q= \begin{bmatrix} 
+-0.37796&   -0.68252&   -0.17643&   -0.60015\\   
+-0.37796&   -0.36401&   0.73034&   0.43731\\   
+-0.37796&   0.59152&   0.43629&   -0.56293\\   
+-0.75593&   0.22751&   -0.4951&   0.36288\\   
+\end{bmatrix} 
+$$ However, neither $U$ nor $V$ produced by SVD ( $A=U\Sigma V^*$ ) make $A$ zero (I tested with 3 libraries: JAMA, EJML, and Commons): $$ U= \begin{bmatrix} 
+0.73039&   0.27429\\   
+0.52378&   0.03187\\   
+-0.09603&   -0.69536\\   
+0.42775&   -0.66349\\
+\end{bmatrix} 
+$$ $$ \Sigma= \begin{bmatrix} 
+4.26745&   0\\   
+0&   1.94651\\   
+\end{bmatrix} 
+$$ $$ V= \begin{bmatrix} 
+0.47186&   -0.88167\\   
+0.88167&   0.47186\\  
+\end{bmatrix} 
+$$ This is contradiction to Using the SVD, if $A=U\Sigma V^*$ , then columns of $V^*$ corresponding to small singular values (i.e., small diagonal entries of $\Sigma$ ) make up the a basis for the null space.","['matrix-decomposition', 'svd', 'linear-algebra']"
+1771068,"Algebra defined by $a^2=a,b^2=b,c^2=c,(a+b+c)^2=a+b+c$","Let $\cal A$ be the (noncommutative) unitary $\mathbb Z$-algebra defined by three generators
+$a,b,c$ and four relations $a^2=a,b^2=b,c^2=c,(a+b+c)^2=a+b+c$. Is it
+true that $ab\neq 0$ in $A$ ? This question is natural in the context of
+an older question here on MSE. My thoughts : The following two relations follow easily from the axioms : $$
+\begin{array}{lcl}
+cb &=& -(ab+ac+ba+bc+ca) \\
+cab &=& ca+ab+2(ba+ac+bc)+aba+abc+aca+bac+bca \\
+\end{array}\tag{1}
+$$ Denote by $W$ the set of words on $a,b,c$ (they are called monomials in the algebra $\cal A$). We order $W$ with the shortlex $a<b<c$ ordering (which we denote by $\prec$).
+The two relations above express $cb$ or $cab$ in terms of $\prec$-smaller monomials. Iterating those two relations and using induction on $\prec$ ,any monomial
+can be transformed in $\cal A$ into a term whose monomials do not contain any
+of  $aa,bb,cc,cb,cab$. Denote by $W'$ the set of all monomials satisfying
+this condition. We therefore have a surjection $s : {\cal A}' \to {\cal A}$ where ${\cal A}'=\oplus_{w\in W'} {\mathbb Z}w$. Conjecture 1. The mapping $s$ is bijective, in other words $W'$ is a
+$\mathbb Z$-basis for $\cal A$. Note that the action of $a$ or $b$ on $W'$ is trivial to describe : for any monomial $w\in W'$, if $w$ does not start with an $a$ then $aw$ stays in $W'$, and $aw=w$ otherwise. Similarly for $b$. The action of $c$ is more complicated. Using the two relations in (1) 
+and induction on $\prec$ again, we see that there is a unique $\mathbb Z$-linear
+map $C:{\cal A}' \to {\cal A}'$ such that $C(1)=c,C(a)=ca$ and $$
+\left\lbrace\begin{array}{lcl}
+C(abw) &=& (Ca+ab+2(ba+aC+bC)+aba+abC+aCa+baC+bCa)w \ ( \ \text{if} \ bw\in W') \\
+C(acw) &=& cacw \ ( \ \text{if} \ acw\in W') \\
+C(bw) &=& -(ab+aC+ba+bC+Ca)w \ ( \ \text{if} \ bw\in W') \\
+C(cw) &=& cw \ ( \ \text{if} \ cw\in W')
+\end{array}\right.\tag{2}
+$$ Indeed, any monomial distinct from $1$ or $a$ starts with exactly one of
+$ab$, $ac$, $b$ or $c$.
+It is not clear however (at least to me) how to show that Conjecture 1 (equivalent form). This $C$ satisfies $C^2=C$ and $(a+b+C)^2=a+b+C$.","['abstract-algebra', 'idempotents', 'examples-counterexamples', 'linear-algebra']"
+1771075,Distinguishing between unimodal and bimodal normal data,"I have a large number of data sets that have either a unimodal normal distribution or a bimodal normal distribution. I'm not a statistician by any means, so I'm quite limited in my experience. For the bimodal data sets, I have implemented (through a library) the Expectation-Maximization method for identifying the distributions of the two constituents and that works great. The only problem is, when the algorithm is fed a unimodel distribution, it doesn't really converge to just one distribution (or two very close ones). The number I'm mostly interested in, is the delta between the two means, and so in the case of a unimodal distribution, the delta-mean is overestimated. So my question is: Is there a good test for identifying bimodal distributions? Sometimes the means are quite close to one another, in the sense that there is no ""dip"" between the two means. Example images: Bimodal: it works great in this case, identifying the two peaks Unimodal: it identifies two peaks that aren't really there, I would wish the two means were (much) closer Close Bimodal: it identifies this one just fine, I would not want this to be considered unimodal","['statistics', 'algorithms', 'normal-distribution']"
+1771081,Integral with arctan(sinx),For those who cannot see the picture; $$ \int^{\frac{5\pi}{2}}_{\frac{\pi}{2}} \frac{e^{\tan^{-1}(\sin(x))}}{e^{\tan^{-1}(\cos(x))} + e^{\tan^{-1}(\sin(x))}} ~dx = \pi$$ The problem is that the standard way of computing it by transforming $x \rightarrow 3\pi-x$ is not working.How to prove that the integral will come as $\pi$?,"['integration', 'calculus']"
+1771089,Integral involving minimum,"How can I show that: 
+$\int_0^t min(s,u)\phi_u du +\int_0^s min(t,u) \phi_u du = \int_0^t \int_0^s min(u,v) \phi_u \phi_v du dv =0$
+when I know: $s \phi_s=\phi_s \int_0^s \phi_u u du$ for all $s \geq 0$","['real-analysis', 'integration', 'definite-integrals', 'analysis']"
+1771102,Is a subsequence of an exchangeable sequence exchangeable?,"Consider a finite sequence of random variables $X_1,...,X_n$ (1) SUFF COND: Suppose $X_1,...,X_n$ are exchangeable, meaning that the joint probability distribution of $X_1,...,X_n$ is equivalent to the joint probability distribution of $X_{\varphi(1)},...,X_{\varphi(n)}$ for any finite permutation $\varphi$ over $1,...,n$. Does this imply exchangeability of the elements of every finite subsequence? (2) NEC COND: Does exchangeability of the elements of every finite subsequence implies exchangeability of the elements of the whole sequence? I know that for infinite sequences the answer to both questions is yes. I don't know how to solve the finite case","['random', 'probability-theory', 'probability-distributions', 'probability', 'random-variables']"
+1771136,Probability. Find the CDF of $Y = X^2 $,"Let $X$ have the uniform distribution $U(−1, 3)$. Find the CDF of $Y = X^2$. 
+I thought this would be simply  $$G(y)= \int_{-\sqrt{(y)}}^{\sqrt{(y)}} \frac{1}{4}  dx$$ where $0\leq{y}<9$. Which is $G(y) = \frac{\sqrt{(y)}}{2}$. However, the answer says when $0\leq{y}<1$ , $G(y) = \frac{\sqrt{(y)}}{2}$ And when $1\leq{y}<9$, $G(y) = \int_{-1}^{\sqrt{(y)}} \frac{1}{4} dx$ =
+$\frac{\sqrt{(y)}+1}{4}$. And $G(y)$ is the piecewise function of the 2 cases combined. My question is, why are the cases considered separately?","['probability', 'probability-distributions']"
+1771194,Can we cover the entire plane with the square with area 1/n for each positive integer n?,"We have one square with area 1/n for each positive integer n. Is it possible to place these squares in the xy-plane in such a way that they completely cover the entire plane. If Yes, can you describe how this can be done
+(you might also want to draw a picture). 
+If No, explain why this cannot be done. The sum of their areas correspond to the harmonic series which is divergent. That is the 'total' area is 'infinite'. The 'total' area of the entire plane is also 'infinite'. Yet, infinity has some levels, how can we compare them? Edit: We could consider both cases : the first case : overlap of squares is allowed the second case : overlap of squares is not allowed. I am particularly interested in that case.","['tiling', 'divergent-series', 'sequences-and-series', 'calculus']"
+1771203,Approximate point spectrum of a normal operator,"Let $H$ be a Hilbert space and $T:H \to H$ a linear, continuous and normal operator. Then for every $\lambda \in \sigma(T)$ there exists a sequence $(x_n)_{n \in \mathbb N}$ with $\Vert x_n \Vert = 1$ for all $n \in \mathbb N$ such that $$\lim_{n \to \infty} \Vert Tx_n - \lambda x_n \Vert = 0,$$ what means basically $\sigma(T) \subseteq \sigma_{ap}(T)$ . Thanks for your help.","['hilbert-spaces', 'normal-operator', 'operator-theory', 'functional-analysis', 'spectral-theory']"
+1771211,Find how many such complex numbers exist,"Let $f:\mathbb{C}\to\mathbb{C}$ be defined by $f(z)=z^2+iz+1$ . How many complex numbers $z$ are there such that $\text{Im}(z)>0$ and both the real and the imaginary parts of $f(z)$ are integers with absolute value at most $10$ ? A. $\, 399 \quad$ B. $\, 401 \quad$ C. $\, 413 \quad$ D. $\, 431 \quad$ I cannot make much progress here. I tried putting $z=a+ib$ . I also tried putting $z=e^{i\theta}$ . But, none of them worked. Any kind of help would be appreciated.","['functional-inequalities', 'complex-numbers', 'functions']"
+1771231,Expected value of $g(X)$.,"If $\mathrm{E}(X) = \sum_{x\in I} x\,\mathrm{P}(X=x)$, how can I deduce that $E(g(X)) = \sum_{x\in ?} g(x)\,\mathrm{P}(X=x)$? I don't see why it isn't $E(g(X)) = \sum_{g(x)\in ?} g(x)\,\mathrm{P}(X=g(x))$ instead. Are these simply definitions, or is there any logic behind this notation?","['probability', 'notation']"
+1771240,Implicit derivation to find $\partial x/\partial v$?,"I saw this question: $$\begin{cases} x^2+y^2=u \\
+x\sin y+y=v\end{cases}$$ What is the $\partial x/\partial v$? I think it should be $1/\sin(y)$ because $\partial v/\partial x=\sin y$, but the answer is $$\frac{-y}{x^2\cos y+x-y\sin y}$$ But why?","['multivariable-calculus', 'implicit-differentiation', 'partial-derivative', 'calculus']"
+1771246,Not unique Hahn Banach extension,"$G = \{(x_n) \in l_1: x_{2n+1} = 0, \forall n \in \mathbb{N} \}$ Let $f: G \to \mathbb{K}$ be a continuous linear functional, $f \neq 0$. Show that the Hahn Banach extension of $f$  is not unique. My attempt Let $g: l_1 \to \mathbb{K}$ be the Hahn Banach extension of $f$. We have: $$g(x_1,x_2,x_3,x_4, \cdots)= g(x_1,0,x_3,0, \cdots) + g(0,x_2,0,x_4, \cdots)
+=  g(x_1,0,x_3,0, \cdots) + f(0,x_2,0,x_4, \cdots) = \sum_{n=0}^{\infty}
+g(e_{2n+1})x_{2n+1} + f(0,x_2,0,x_4, \cdots) $$ I realised the following: if $g(e_{2n+1}) = 0, \forall n \geq 1$ and $g(e_1) = \|f\|$, then 
+$|g(e_n)| \leq \|f\| , \forall n \geq 0$ and $$\|g\| = \sup |g(e_n)| = \|f\|$$ Now, if  $g(e_{2n+1}) = 0, \forall n \geq 0, n \neq 1,$ and $g(e_3) = \|f\|$, then 
+$|g(e_n)| \leq \|f\| , \forall n \geq 0$ and $$\|g\| = \sup |g(e_n)| = \|f\|$$ Thus $g$ has at least two Hahn Banach extensions. Am I right?","['functional-analysis', 'banach-spaces']"
+1771247,"bijective function from [a,b] to [c,d]","Im trying to think about bijective function from the closed interval [a,b] to the closed interval [c,d]. When $a,b,c,d \in \mathbb{R}$ and $a < b,\;c < d$ . Is there such a function?",['functions']
+1771300,What are the basis vectors of the cone of positive semi definite matrices?,"I was wondering if we could find a set of basis vectors that span the cone of positive semidefinite matrices? I know this question is hard, but I would really appreciate if even someone can share a related paper about this topic in the literature of Linear Algebra. I could not find any paper about this issue. I should mention that any answer to this question should be highly related to the topic of semidefinite programming in the area of mathematical optimization. Thanks","['matrices', 'semidefinite-programming', 'linear-algebra']"
+1771323,Spectral norm of a matrix of cosines,"I am considering the following matrix:
+$$
+M_m = \begin{bmatrix}
+\cos\bigl(\tfrac{0\cdot 0}{m}\pi\bigr) & \cos\bigl(\tfrac{0\cdot 1}{m}\pi\bigr) & \dots & \cos\bigl(\tfrac{0\cdot m}{m}\pi\bigr) \\
+\cos\bigl(\tfrac{1\cdot 0}{m}\pi\bigr) & \cos\bigl(\tfrac{1\cdot 1}{m}\pi\bigr) & \dots & \cos\bigl(\tfrac{1\cdot m}{m}\pi\bigr) \\
+\vdots & \vdots & \ddots & \vdots \\
+\cos\bigl(\tfrac{m\cdot 0}{m}\pi\bigr) & \cos\bigl(\tfrac{m\cdot 1}{m}\pi\bigr) & \dots & \cos\bigl(\tfrac{m\cdot m}{m}\pi\bigr) \\
+\end{bmatrix} \in \mathbb R^{(m+1)\times(m+1)}
+$$ A short notation would be
+$$M_m = \Bigl(\cos\bigl(\tfrac{ij}{m}\pi\bigr)\Bigr)_{i,j=0}^m.$$ I want to calculate the spectral norm $\|M_m\|_2$. Since $M_m$ is symmetric, one could investigate its Eigenvalues, but I could not come up with anything. Maybe one can come up with a clever vector $v$ with $\|v\|_2 = 1$, where it can be seen that it maximizes $\|M_m\cdot v\|_2$? I already saw that numerically, the norm $\|M_m\|_2$ seems to grow like $\sqrt m$, so I suppose in the algebraic expression for $\|M_m\|_2$ there should be something like $\sqrt m$. I also saw that I may be a good idea to consider $m=2k$ and $m=2k+1$ differently, since it seems the norm is jumping around between two slightly different functions. I would conjecture that for
+$$
+\alpha(m) = \begin{cases}\frac1{\sqrt2}\sqrt{2m+1 + \sqrt{4m+1}},&m\text{ is even}\\
+\frac12\sqrt{4m+1 + \sqrt{8m+1}},&m\text{ is odd}\\\end{cases}
+$$
+it holds
+$$
+\alpha(m) = \|M_m\|_2.
+$$ I know that it is true for $m=2,\dots,8$, because of this Mathematica Code: mM[m_] := Table[Cos[(i j)/m Pi], {i, 0, m}, {j, 0, m}]
+alpha[m_] := If[EvenQ[m],
+  Sqrt[(2 m + 1 + Sqrt[4 m + 1])/2],
+  Sqrt[ 4 m + 1 + Sqrt[8 m + 1]]/2  ]
+Table[Norm[mM[m]] - alpha[m], {m, 2, 8}] The conjecture can be formulated a bit different and easier: For
+$$
+\beta(m) = \begin{cases}\frac12(1 + \sqrt{4m+1}),&m\text{ is even}\\
+\frac{\sqrt{2}}4(1 + \sqrt{8m+1}),&m\text{ is odd}\\\end{cases}
+$$
+it (probably) holds
+$$
+\beta(m) = \|M_m\|_2.
+$$
+Again, validation for $m=2,\dots,8$ via Mathematica: mM[m_] := Table[Cos[(i j)/m Pi], {i, 0, m}, {j, 0, m}]
+beta[m_] := 
+ If [EvenQ[m], (1 + Sqrt[4 m + 1])/2, (1 + Sqrt[8 m + 1]) Sqrt[2]/4]
+Table[Norm[mM[m]] - beta[m], {m, 2, 8}] // FullSimplify","['matrices', 'trigonometry', 'spectral-norm']"
+1771377,Prove that $ABA^T$ is symmetric when $A$ and $B$ are symmetric matrices,"I have been learning about matrix symmetry and came up with a question that I can't seem to prove.  The idea is that the product of $ABA^T$ is a symmetric matrix. What I mainly have to go off of is The product of two symmetric matrices is symmetric iff the matrices commute. I also know $(AB)^T$ = $B^TA^T$ I know that $A$ and $B$ are symmetric matrices (not symmetric to each other) but they are not necessarily invertible matrices. If I test an example such as
+\begin{equation}
+ABA^T=\begin{pmatrix}1 & 2 \\ 2 & 3\end{pmatrix}\begin{pmatrix}-4 & -1 \\ 1 & 0\end{pmatrix}\begin{pmatrix}1 & 2 \\ 2 & 3\end{pmatrix} = \begin{pmatrix}0 & -1 \\ -1 & -4\end{pmatrix}
+\end{equation} I get a symmetric matrix, and I can't find an example where it does not work, but I don't understand how to prove it.  The reason this example is interesting to me is that $AB$ is not a symmetric matrix, but once you multiply $AB$ by $A^T$ (or just $A$ since $A$ = $A^T$), the resulting matrix is symmetrical. But I don't know how this could be applied to make a proof that would hold for any size.","['matrices', 'linear-algebra']"
+1771378,German translation of final sentences of a paper by Hilbert,"I am translating a paper by Hilbert into English. I am finished except for the last few sentences, which are confusing me. If anyone can give me a rough/quick translation it would be greatly appreciated. Here are the sentences: Zum Schluß erlaube ich mir darauf hinzuweisen, daß ich bei der
+  vorstehenden Entwickelung stets den nirgends konkaven Körper als ganz im Endlichen gelegen angenommen habe. Wenn jedoch in der durch die
+  ursprünglichen Axiome definierten Geometrie eine Gerade und ein Punkt
+  vorhanden ist von der Eigenschaft, daß durch diesen Punkt zu der Geraden nur eine einzige Parallele möglich ist, so ist jene Annahme nicht
+  gerechtfertigt. Es wird leicht erkannt, welche Abänderungen meine Betrachtung dann zu erfahren hat. Kleinteich bei Ostseebad Rauschen, den 14. August 1894. Here is my poor, certainly very wrong, translation of the above: Finally, I take the liberty to point out that I, in the above development, have always assumed that the the nowhere concave body [convex set] is very finitely located [bounded?]. However, if in the original axioms that defined the geometry a straight line and a point have  only one parallel  possible [through that point], then that assumption is not justified [here]. It is easily recognized then, that amendments have to be found. Thank you in advance! For Hilbert's paper, see page 88 of Grundlagen der Geometrie .","['mathematical-german', 'math-history', 'translation-request', 'geometry']"
+1771412,Can the product of two $\mathsf Y$'s be embedded in 3-space?,"Let $Y$ denote the space homeomorphic to the (sans serif) letter $${\huge\mathsf Y}$$ or, equivalently, the space of three closed intervals glued together at one endpoint. Consider the space $Y\times Y$. Here is my attempt at a drawing: What I drew is not embedded in $\mathbb R^3$ -- it intersects itself. Is there any topological embedding $Y\times Y\to\mathbb R^3$? If not, why not? What is the strategy for attacking problems like this?",['general-topology']
+1771418,A purely algebraic proof of $\vec{a}\cdot \vec{b} = \lVert\vec{a} \rVert\lVert\vec{b} \rVert\cos(\theta)$,"I have seen a proof of the fact that 
+$$
+\vec{a}\cdot \vec{b} = \lVert\vec{a} \rVert\lVert\vec{b} \rVert\cos(\theta)
+$$
+where $\vec{a}$ and $\vec{b}$ are two vectors. The proof relies on the Law of Cosines . The proofs that I have seen of the Law of Cosines all rely on pictures ( see for example this ). So I was wondering if there is a purely algebraic proof of the above formula. This could be done by proving a purely algebraic proof of the Law of Cosines. I am thinking that the reason for using pictures, is that cosine is often defined using pictures (triangles). But what if we take 
+$$
+\cos(x) = \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!}
+$$ 
+as the (algebraic) definition. Is there then a purely algehraic proof of the Law of Cosines or the formula above? If there is a nicer proof that relies on some other (algebraic) definition of $\cos(x)$, then I would be interested in seeing how that can be used as well. Edit: From the comment below I see that this has to do with the definition of angle. So, I change by question: Is there a way to purely algebraically arrive at the above formula? I understand that this would involve choosing specific definitions. Can one, for example, prove the Law of Cosines, using $\vec{a}\cdot \vec{b} = \lVert\vec{a} \rVert\lVert\vec{b} \rVert\cos(\theta)$ as teh definition of the angle between two vectors?","['vectors', 'trigonometry', 'alternative-proof', 'calculus']"
+1771457,How to determine the number of digits needed to represent a number in different bases?,"I am not a mathematician, but I do some computer programming and I am trying to find a solution to a fairly simple problem. Is there any known formula/equation/function for mathematically determining the number of display digits (aka ""places"") that will be required when converting one number between two different number bases? Example: Let us use the number 65535 (base 10) set as the variable N. N base 10 requires 5 decimal digits (N10 = 65535) N base 2 requires 16 binary digits (N02 = 1111111111111111) N base 16 requires 4 hexadecimal digits (N16 = FFFF) I want to feed N base 10 (N10) and another base into a formula or subroutine of some sort which returns a single number. Using the above example it might look something like this: function(65535,2) returns 16 function(65535,16) returns 4 I want to explore some fairly large numbers in several different number bases and I am hoping this can be done as pure math, even if it requires multiple steps, rather than some sort of indexed table that would have to be created for each base. Example: function(1222333444555,99) = ??? PS: Feel free to add any other appropriate tags since I am not sure what else would be right for this question.",['functions']
+1771500,"If $f:\mathbb{R}\to[0, \infty)$ (uniformly) continuous and $f \in L^1$, then $\lim_{x\to\pm\infty}f(x)=0$?","I'm learning about measure theory and need help with the following questions: True or False (justify): $(1)$ If $f:\mathbb{R}\to[0, \infty)$ measurable and $f \in L^1$ , then $\lim_{x\to\pm\infty}f(x)=0$ . $(2)$ If $f:\mathbb{R}\to[0, \infty)$ continuous and $f \in L^1$ , then $\lim_{x\to\pm\infty}f(x)=0$ . $(3)$ If $f:\mathbb{R}\to[0, \infty)$ uniformly continuous and $f \in L^1$ , then $\lim_{x\to\pm\infty}f(x)=0$ . Since I'm having some difficulties for $(2)$ and $(3)$ I'm going to show my work for $(1)$ . My work for $(1)$ : The proposition is false . We consider the characteristic function of the rationals, that is the function $f:\mathbb{R}\to\mathbb{R}$ with $$f(x)=\chi_{\mathbb{Q}}(x) = \begin{cases} 1 &\text{if $x\in\mathbb{Q}$} \\ 0& \text{if $x\notin\mathbb{Q}$} \end{cases}.$$ The characteristic function of the rationals is measurable. It is equal to zero almost everywhere. Therefore the function $f$ is integrable and and $\int f = 0$ . However $\lim_{x\to\pm\infty}f(x)$ does not exist. Edit: Considering the great answer of Umberto P. , here's my complete answer for $(2)$ : The proposition is false . We start with the constant zero function. On the interval $[1, 3]$ we raise the graph as a triangle with a top at the point $(2, 1)$ . The area under the first triangle, say $A_1$ , is equal to $1$ . From the point $(0, 3)$ we move one unit to the right on the real axis. On the interval $[4, 4.5]$ we raise again the graph as a triangle with a top at the point $(4.25, 1)$ . The area under the second triangle $A_2$ is equal to $1/4$ . We repeat this process indefinitely for triangles of height $1$ . The resulting function is continuous, non-negative and therefore integrable. Moreover $$A_1=1, A_2=\frac{1}{4}, A_3=\frac{1}{9}, A_4=\frac{1}{16}, \ldots \implies \int f = \sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{\pi^2}{6}.$$ We see that the function integrates to $\frac{\pi^2}{6}$ but the graph has infinitely many bumps of height $1$ . So the limit of $f$ does not exist.","['real-analysis', 'lebesgue-integral', 'measure-theory', 'lebesgue-measure']"
+1771525,Transformation that preserves an increasing ratio between vectors,"Consider two vectors $x=(x_1,x_2,\ldots,x_n)$, $y= (y_1,y_2,\ldots,y_n)$ such that all $x_i,y_i>0$ and 
+\begin{align}
+\frac{y_1}{x_1}\le \frac{y_2}{x_2}\le\cdots\le \frac{y_n}{x_n}
+\end{align} Now consider an upper triangular matrix $A$ with elements $a_{ij}\ge 0$
+I want to prove (or come up with conditions on $A$ so) that 
+\begin{align}
+\frac{[yA]_1}{[xA]_1}\le \frac{[yA]_2}{[xA]_2}\le\cdots\le \frac{[yA]_n}{[xA]_n}
+\end{align} For example, for $n=3$,
+\begin{align}
+A = \left( \begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\
+0 & a_{22} & a_{23} \\
+0 & 0 & a_{33} \end{array} \right)
+\end{align}
+We would want to show
+\begin{align}
+\frac{a_{11}y_1}{a_{11}x_1}\le \frac{a_{12}y_1 + a_{22}y_2}{a_{12}x_1+a_{22}x_2}\le \frac{a_{13}y_1 + a_{23}y_2 + a_{33}y_3}{a_{13}x_1 + a_{23}x_2 + a_{33}x_3}
+\end{align} I am interested in proving this for general $n$. Update: I'm thinking that a sufficient condition for this to hold is that the column sums are increasing in the column index. That is, for $n=3$, $a_{11} \le a_{12} + a_{22} \le a_{13}+a_{23}+a_{33}$. Is this true?","['matrices', 'inequality', 'fractions']"
+1771552,Prove that a subset C of $\mathbb R^n$ is closed if and only if it contains all its limit points.,"Prove that a subset C of $\mathbb R^n$ is closed if and only if it contains all its limit points. A closed set is defined by a set of all boundary points My professor said 
+""We may prove that C is not closed if and only if $C^c$ has a limit point of C.
+To prove this, it suffices to show that a point x in $C^c$ is a boundary point of C if and only it is a limit point of C."" and he left it as an exercise. I am a beginner of analysis and I want you to check if my proof is okay. This is how I prove: If part)
+Let $x\in C^c$ and x is a limit point of C. Then there is a sequence $\{x_k\}$ of distinct points in C such that $0<\Vert x_k -x \Vert<1/k$. Thus $N'(x;r)\bigcap C$ is infinite. It follows that $N(x;r)\bigcap C\neq\emptyset$. Since $x\in C^c$, we get $N(x;r)\bigcap C^c\neq\emptyset$. Hence x is a boundary point of C. Only if part)
+Let $x\in C^c$. Since x is a boundary point of C, there exists $x_k\in C$ such that $x=\lim_{k\to \infty} x_k$. Choose $\{x_{k_j}\}$ where $x_{k_j}\neq x_{k_l}.$ Then $\Vert x- x_{k_j} \Vert > \Vert x- x_{k_{j+1}} \Vert$, so $\{x_{k_j}\}$ converges to x. Thus x is a limit point. Please tell me if there is wrong or insufficient.
+Is it okay just to say that ""Choose $\{x_{k_j}\}$ where $x_{k_j}\neq x_{k_l}$""?",['analysis']
+1771567,"Can we show that $1+2+3+\dotsb=-\frac{1}{12}$ using only stability or linearity, not both, and without regularizing or specifying a summation method?","Regarding the proof by Tony Padilla and Ed Copeland that $1+2+3+\dotsb=-\frac{1}{12}$ popularized by a recent Numberphile video , most seem to agree that the proof is incorrect, or at least, is not sufficiently rigorous. Can the proof be repaired to become rigorously justifiable? If the proof is wrong, why does the result it computes agree with other more rigorous methods? Critiques of the proof seem to fall into two classes. One class of responses is to appeal to higher math for justification. For example, appeal to zeta function regularization , as is done by Edward Frenkel in a followup video for Numberphile and a more recent video by Mathologer , or to use an exponential regulator, as shown by Luboš Motl here on M.SE , or a smooth cutoff regulator as in Terry Tao's wonderful blog post on the subject . These are great, but don't really address what's wrong with the naive computation. Another response is that the sum is infinite, the series is divergent, and the manipulations are wrong, because manipulations of divergent series can lead to inconsistent results. See for example the answer by robjohn at this question , where he uses similar manipulations to show that the sum must also be $-\frac{7}{12}$. A similar contradiction is shown at the beginning of Tao's post. And Wikipedia's article on the series has a subheading showing that any stable and linear summation method which sums the series implies 0=1. See also Hagen von Eitzen's answer here for some excellent discussion. A reference to the Riemann series theorem may also be appropriate here. These responses are perhaps too dismissive, since there are a variety of rigorous ways to assign finite numbers to divergent sums. People say you have to be careful with divergent series, but few seem to be willing to say what steps the careful observer may take. Proofs of the type given in that first Numberphile video can be valid if one is careful. For comparison, without specifying a summation method, but just manipulating series in a similar fashion, you can show that the geometric series $1+x+x^2+\dotsb$ sums to $\frac{1}{1-x}$, which is valid for any value of $x$ for which there exists any stable linear summation method. So for example once we know that $1+2+4+8+_\dotsb$ converges 2-adically , without any further information we know that its sum must be $-1$, even though classical summation cannot sum the divergent series. With that in mind, let's reexamine the computation in the Numberphile video (which I've pasted below in its entirety, copied from Kenny LJ from this question with some edits for understability and rigor). He uses the Grandi series $1-1+1-1+\dotsb = \frac{1}{2}$ and the series $1-2+3-4+\dotsb=\frac{1}{4}$ to derive his result. These series are Cesàro summable , and Cesàro summation is stable and linear, and which allows the manipulations to be justified. I think this first half of the computation is completely justifiable. All we lack is a proof that the two series are Cesàro summable, which is not hard. However the third series $1+2+3+\dotsb$ is not Cesàro summable, nor indeed can any stable linear method sum it, as already mentioned. Zeta function regularization can sum it. Given a series $\sum a_n$, we may perform analytic continuation of $\sum \dfrac{1}{a_n^s}$ to $s=-1$. This is stable, but not linear. Alternatively the Dirichlet series can sum it. That is analytic continuation of $\sum \dfrac{a_n}{n^s}$ to $s=0$, which is linear but not stable.  Either method can sum $1+2+3+\dotsb$ and in fact the two methods coincide for this series. So I think is the error in the Numberphile video, where they write $(0 + 4 + 0 + 8 + 0 + 12 + \dotsb) =  4+8+12+\dotsb$. If you want to use a linear summation method, you should not also assume stability. Can the calculation be saved? Can we show by a naive computation using only linearity but not stability, or vice versa only stability but not linearity, that $1+2+3+\dotsb=-\frac{1}{12}$, without an explicit choice of a summation method? This question is mostly a duplicate of What mistakes, if any, were made in Numberphile's proof that $1+2+3+\cdots=-1/12$? , or perhaps What consistent rules can we use to compute sums like 1 + 2 + 3 + ...? or What can be computed by axiomatic summation? which I am reposting with more context, because I feel that the answers there did not completely engage or address the question. Numberphile's Proof of $1+2+3+\dotsb=-\frac{1}{12}$. $S_1 = 1 - 1 + 1 - 1 + 1 - 1 + \dotsb$ $S_1 = 1 + (-1 + 1 - 1\dotsb)$ using stability $-1 + 1 - 1\dotsb = -S_1$ using linearity hence $S_1=1-S_1$ and $S_1=\frac{1}{2}$. $S_2 = 1 - 2 + 3 - 4 + \dotsb $ $S_2' = 0 + 1 - 2 + 3 - 4 + \dotsb = 0 + S_2 = S_2$ by stability $S_2 + S_2' = 1 - 1 + 1 - 1 \dotsb = 2S_2$ by linearity hence $2S_2  = S_1 = \frac{1}{2}$ and $S_2=\frac{1}{4}.$. $S_3 = 1 + 2 + 3 + 4 + \cdots $ Finally, take \begin{align}
+S_3 - S_2 & = 1 + 2 + 3 + 4 + \cdots 
+         \\ & - (1 - 2 + 3 - 4 + \cdots)
+         \\ & =   0 + 4 + 0 + 8 + \cdots 
+         \\ & = 4 + 8 + 12 + \cdots 
+         \\ & = 4S_3
+\end{align}
+here we used linearity to get to line 3, stability to get to line 4, and linearity to get to line 5. Hence $-S_2=3S_3$ or $-\frac{1}{4}=3S_3$. And so $S_3=-\frac{1}{12}$. $\blacksquare$ Wikipedia's proof that stable linear summation methods cannot sum $1+2+3+\dotsb$ $S_3=1 + 2 + 3 + \dotsb$ $S_3' = 0 + 1 + 2 + 3 + \dotsb = 0 + S_3 = S_3$ by stability. $S_4 = S_3 - S_3' = 1 + 1 + 1 + \dotsb = S_3 - S_3 = 0$ $S_4' = 0 + 1 + 1 + 1 + \dotsb = 0 = S_4$ by stability again, and $S_4 - S_4' = 1 + 0 + 0 + \dotsb = 1$ by linearity, which is a contradiction.","['summation-method', 'regularization', 'cesaro-summable', 'divergent-series', 'sequences-and-series']"
+1771616,Finding all solutions for $3^c=2^a+2^b+1$,"Given the equation: $3^c=2^a+2^b+1$ Find all solutions for $a,b,c$ - given that they are positive integers and $b>a$. Any ideas?",['number-theory']
+1771628,Conditions on characteristic polynomial to define a matrix submanifold.,"I'm trying to find conditions on the characteristic polynomial, $p$, of a matrix such that the pre-image of matrices with characteristic polynomial $p$ form a manifold. More precisely, we can write down a map $\phi: \textrm{Mat}_n(\mathbb{R}) \to \mathbb{R}[x]$ given by $\phi(A) = \textrm{det}(xI-A)$ and so now the question reduces to finding $p \in \mathbb{R}[x]$ such that the derivative of $f$ evaluated at pre-images of $p$ is surjective. Using the ""Jacobi formula"" for the derivative of a determinant, namely $T_Af(X) = \mathrm{det}(A)Tr(A^{-1}X)$ where $f(A) = \mathrm{det}(A)$, I think we can deduce that the determinant of $\phi$ is given by: $$T_A(\phi)(X) = det(xI-A)tr((xI-A)^{-1}X)$$ This is where I first get in to trouble, how do we know in this case that $xI-A$ is even invertible? Surely this is only true in some finite interval (bounded by the norm of $A$)? Is this actually the correct formula for the derivative? It also seems impossible to determine if this map is surjective or not? How can we understand which polynomials are hit by this map? Edit: I've made some progress but am still struggling with this. Thanks to Qiaochu Yuan I'm now trying to show this when $p$ has distinct real roots. To find the derivative we can write $\phi(A+tH) = det(xI - (A+tH))$ and attempt to evaluate $\frac{\phi(A+tH) - \phi(A)}{t}$ as $t \to 0$. Now the numerator here gives: $$x^n + ... - tr(A+tH)x + det(A+tH) - det(xI-A)$$ Expanding out the determinants: $$x^n + ... - tr(A)x - t tr(H)x + det(A+tH) - x^n + ... + tr(A)x - det(A)$$ Now I'm left with the $x^n$ terms cancelling and the constant term will again just be the derivative of $det(A)$ which is $det(A)tr(A^{-1}H)$ and the $x$ term will be $-tr(H)$. The difficulty is, I have no idea what the $1<k<n-1$ terms should be, and these are the important ones because they describe the tangent space of the n monic polynomials!","['manifolds', 'smooth-manifolds', 'differential-geometry', 'lie-groups']"
+1771630,Checking measurability on open sets,"This is exercise 5 of section 53 in Halmos' Measure theory. Let $X$ be a locally compact Hausdorff space and $\mu^{*}$ an outer measure on the hereditary class of $\sigma$-bounded sets. Suppose $\mu^{*}(C)=\inf_{C \subset U, U \: \text{open}} \mu^{*}(U)<+\infty$ for every compact $C$. Let $E$ be a $\sigma$-bounded set such that 
+\begin{equation*}
+\mu^{*}(U)=\mu^{*}(U\cap E) + \mu^{*}(U\cap E^{c})
+\end{equation*}
+for every open $U$. Is it true that $E$ is $\mu^{*}$-measurable ? My guess is no, but I can't find a counter example.","['outer-measure', 'measure-theory']"
+1771642,Limit of the nth power of certain partial sums,Evaluate $$\lim_{n\to \infty}\left (\frac{6}{\pi^2}\sum_{k=1}^{n} \frac{1}{k^2} \right )^n.$$ The context is: I just thought it up and thought some members of MSE would like to try it.,"['real-analysis', 'calculus', 'limits']"
+1771678,Strong Markov property proof,"Let $X$ be a Markov chain with state space $\mathcal{S}$ and denote $\mathbb{N} := \{0,1, \cdots\}$. I need to show that for any stopping time $\tau < \infty$ and any bounded measurable function $\phi : \mathcal{S} \longrightarrow \mathbb{R}$, there exists a function $\psi: \mathbb{N}\times \mathcal{S} \longrightarrow \mathbb{R}$ such that: $\mathbb{E}[\phi(X_{\tau +1}) | \mathcal{F}_{\tau}] = \psi(\tau, X_{\tau})$ Here is the way I tried to show this, using iterated property of expectation: \begin{align}
+\mathbb{E}[\phi(X_{\tau +1}) | \mathcal{F}_{\tau}] &= \mathbb{E}[ \; \mathbb{E}[\phi(X_{\tau +1}) \; | \; \tau, \; \mathcal{F}_{\tau}] \; | \; \mathcal{F}_{\tau}] \\
+& = \mathbb{E}[ \; \mathbb{E}[\mathbb{1}_{\{\tau = n\}} \;\phi(X_{\tau +1}) \; | \; \tau, \;\mathcal{F}_{\tau}] \; | \; \mathcal{F}_{\tau}] \\
+&= \mathbb{E}[ \; \mathbb{1}_{\{\tau = n\}} \; \mathbb{E}[\phi(X_{n+1}) \; | \; \mathcal{F}_n] \; | \; \mathcal{F}_{\tau}] \\
+&= \mathbb{E}[\; \mathbb{1}_{\{\tau = n\}} \;h(X_n) \; | \; \mathcal{F}_{\tau}]\\ 
+&= \mathbb{1}_{\{\tau = n\}} \; h(X_n) \; , \; \forall n \\
+&= \psi(X_{\tau}, \tau) 
+\end{align} I am not sure whether the way I tried to employ smoothing property of expectation is sound and correct. I wonder if you could provide your insights about my approach. Thanks.","['stochastic-processes', 'markov-chains', 'probability-theory', 'stopping-times']"
+1771681,convergence in distribution of exponential of a brownian motion,"If $(B_t)_{t≥0}$ is a standard Brownian motion, show that, as $t \to \infty$,
+$$
+\left(\int_0^t e^{B_s} \, ds\right)^{1/\sqrt{t}} 
+\text{ converges in distribution to} \ e^{M_1},
+$$
+where $M_1 = \sup_{0 \leq s \leq1} B_s$. I know that $M_1$ has the same distribution as $|N|$ where $N$ $\sim \mathcal{N}(0,1) $. Any hints on how to get started.","['stochastic-processes', 'probability-theory', 'brownian-motion']"
+1771683,"Prove that $F(x,y)=f(x-y)$ is Borel measurable","Suppose $A$ is a subset of $\Bbb R$, let $s(A)=\{ (x,y)\in \Bbb R \times \Bbb R :x-y\in A\}$. I already showed: If $A\in \Bbb B$ (Borel measurable set), then $s(A)\in \Bbb B \times \Bbb B$. I want to use this to prove that if $f$ is a Borel measurable function on $\Bbb R$ to $\Bbb R$, then the function $F$ defined by $F(x,y)=f(x-y)$ is measurable with respect to $\Bbb B \times \Bbb B$. Could someone help to provide a proof please? Thanks.","['real-analysis', 'lebesgue-integral', 'measure-theory', 'lebesgue-measure']"
+1771724,Diophantine Equation $x^2+y^2+z^2=c$,"$x^2+y^2+z^2=c$ Find the smallest integer $c$ that gives this equation one solution in
+  natural numbers. Find the smallest integer $c$ that gives this equation two distinct
+  solutions in natural numbers. Find the smallest integer $c$ that gives this equation three distinct
+  solutions in natural numbers. Clearly the first answer is c = 3. I know how to do linear diophantine equations, but I am stumped on this one. By distinct solutions, I am looking for different threesomes (unordered triples) Can you help?","['number-theory', 'diophantine-equations']"
+1771730,Why does a ring homomorphism not necessarily map unit to unit?,"I'm having trouble understanding why in a ring homomorphism, say maps from $R$ to $R'$, doesn't necessarily map the unit $1$ in $R$ to $1'$ in $R'$. If you use the definition that it preserves multiplication: $H(1a) = H(1)H(a)$ for some $a \in R$, does this not imply $H(1)$ is the unit in $R'$? Or is this because the multiplication is not necessarily commutative? Thanks a lot!","['abstract-algebra', 'ring-theory']"
+1771731,Use Rouche's Theorem to find the radius of the roots of the following polynomial,"Using Rouche's Theorem, find the radius of the roots of $z^{3}+z^{2}-2z+3$ To answer this question, I have set functions $f\left(z\right)=z^{3}$ and $g\left(z\right)=z^{2}-2z+3$, to try and show that $\left|f\left(z\right)\right|\geq \left|g\left(z\right)\right|$. Then, by Rouche's Theorem $f+g$ and $f$ have the same number of roots. I have so far that $\left|f\left(z\right)\right|=|z|^{3}$ and $\left|g\left(z\right)\right|=|z|^{2}+2|z|+3$ but I'm unsure where to go from here to show that $\left|f\left(z\right)\right|\geq \left|g\left(z\right)\right|$","['complex-analysis', 'cauchy-principal-value', 'analysis', 'functions']"
+1771789,The curvature is equal to the derivative of the angle between the curve and the x-axis?,"I'm trying to prove that if $\vec{x}:I\rightarrow\mathbb{R}^2$ is a curve parametrized by arc length and $\theta(t)$ is the angle between the tangent line to $\vec{x}$ at point $t$ and the $x$ axis, then $\kappa=\theta'$, where $\kappa$ denotes the curvature. I know that for a curve in $\mathbb{R}^2$, the curvature is given by $\kappa=\frac{1}{|\vec{x}'|^3}det(\vec{x}'\vec{x}'')$. I also know that the tangent line to $\vec{x}$ at point $\alpha\in\mathbb{R}$ is given by $y(t)=\vec{x}(\alpha)+t\vec{x}'$. I can picture the problem, but can't write the solutions. Any ideas?",['differential-geometry']
+1771824,Monotone property of transition density of rotational $\alpha$-stable process,"For a Brownian motion $B_t$ in $\mathbb R^d$, the transition density of $B_t$ is the normal distribution
+$$P_x[B_t\in dy]=(2\pi t)^{-d/2}e^{-\frac{|x-y|^2}{2t}}dy$$
+and obviously the density is decreasing with $|x-y|$. My question is does it also hold for rotational $\alpha$-stable process? ($\alpha\in(0,2)$).
+$X_t$ is called a rotational $\alpha$-stable process, if it is a Levy process and the characteristic function of $P_0[X_t\in dy]$ has the form $e^{-t |z|^\alpha}$. Then by the inverse Fourier transformation, the transition density has the form
+$$(2\pi)^{-d}\int_{\mathbb R^d}e^{-i(x-y,z)}e^{-t|z|^\alpha} \, dz$$ I tried but can't figure out from this form whether it is decreasing with $|x-y|$. Any help please.","['stochastic-processes', 'probability-theory', 'fourier-transform', 'levy-processes']"
+1771835,Random points on a sphere — expected angular distance,Suppose we randomly select $n>1$ points on a sphere (all independent and uniformly distributed). What is the expected angular distance from a point to its closest neighbor? What is the expected angular distance from a point to its $m^{\text{th}}$ closest neighbor (where $m<n$)?,"['spherical-trigonometry', 'probability-theory', 'expectation', 'geometry']"
+1771845,Number of real solutions of a cubic equation without using derivatives,"The problem is to find the number of real solutions of a cubic equation. This exercise is in a book, in the chapter about functions, limits and continuity. This chapter is before the chapter about derivatives therefore I assume that they cannot be used to solve the exercise. $$f(x) = x^3-9x^2+24x-17 = 0$$ Factoring it as $x(x^2-9x+24)-17$ and since $x^2-9x+24$ is always positive we can conclude that there are no solutions in $[-\infty,0]$. Since $x^2-9x+24$ is monotonically increasing in $[4.5,+\infty]$ then $f(x)$ also is. Given that $f(4.5) < 0$ we can conclude that there is an unique solution in $[4.5,+\infty]$. How to study the function in $[0,4.5]$?","['continuity', 'functions']"
+1771849,Applying the Schur algorithm to finite Blaschke products,"A Schur function is a function which is holomorphic in the unit disk $\mathbb{D}$ satisfying $|f(z)|\leq 1$. The Schur algorithm is a way of producing a sequence of Schur functions starting with a given Schur fanction $f(z)$ in the following way : $$ f_{n+1}(z)=\frac{1}{z} \frac{f_n(z)-\gamma_n}{1-\overline{\gamma_n}f_n(z)} \ \ \ \ (\star) \ \ \ \ \text{with} \ \ f_0(z)=f(z) \ \ \text{and} \ \ \ \gamma_n = f_n(0) $$ One continues this algorithm as long as $|\gamma_n|<1$, if $|\gamma_m|=1$ for some $m$, we set $f_j(z) \equiv0$ for $j>m$. I need to prove that the Schur algorithm stops ($|\gamma_m|=1$ for some $m>0$) if and only if the Schur function $f(z)=f_0(z)$ that we start with is a finite Blaschke product $\displaystyle e^{i\theta}\prod^{N}_{i=1}\frac{z-z_i}{1-\overline{z_i}z
+}$; $|z_i|<1$. This is how I approached this : ($\Leftarrow$) Proof by induction on the number of factors in the Blaschke product. Base of induction: for $N=1$ we have $$f(z)=e^{i\theta}\frac{z-z_1}{1-\overline{z_1}z
+} \ \ \ \ \ \ \ \ \ |z_1|<1 $$
+We have that $$ f_1(z)= \frac{e^{i\theta}+\gamma_0\overline{z_1}}{1-|\gamma_0|^2-(\overline{z_1}+\overline{\gamma_0}e^{i\theta})z}  $$ so $$\gamma_1=\frac{e^{i\theta}+\gamma_0\overline{z_1}}{1-|\gamma_0|^2} \ \ \ \Rightarrow |\gamma_1|=|e^{-i\theta}\gamma_1|=1$$ To prove the inductive step, I need to prove that if we apply the Schur algorithm to a finite Blaschke product with $m+1$ factors, we will get another Blaschke product with $m$ factors, and then using the induction hypothesis we are done. but I had failed so far to prove this fact. My attempt for ($\Rightarrow$): Suppose for some $m$ we have that $f_m(0)=\gamma_m \in \mathbb{T}$, where $\mathbb{T}$ is the unit circle. By a simple calculation we can show that $$f_{m-1}(z)=\frac{\gamma_{m-1}+zf_m(z)}{1+\overline{\gamma_{m-1}}zf_m(z)} \ \ \ \  \ \ (\star \star) $$ from $(\star)$. However, by maximum modulus principle we have that $$f_m(z) \equiv \gamma_m$$
+so by the above equation for $f_{m-1}(z)$ we will find that $$f_{m-1}(z)=\gamma_m \frac{z-(-\overline{\gamma_m}\gamma_{m-1})}{1-\overline{\left( \overline{\gamma_m}\gamma_{m-1} \right)}z}$$ which is a Blaschke product with one factor. however, to finish the proof , I need to show that if $f_j(z)$ is a Blaschke product $\displaystyle e^{i\theta}\prod^{k}_{i=1} \frac{z-z_i}{1-\overline{z_i}z}$ then $f_{j-1}(z)$ given by $(\star \star)$ is also a Blaschke product (with $k+1$ factors?); plugging into $(\star \star)$ gives us $$f_{j-1}(z)=\frac{\gamma_{j-1}\prod_{i=1}^{k}(1-\overline{z_i}z)+z\prod_{i=1}^{k}(z-z_i)}{\prod_{i=1}^{k}(1-\overline{z_i}z)+\overline{\gamma_{j-1}}z\prod_{i=1}^{k}(z-z_i)}$$ 
+The numerator is a polynomial of degree $k+1$, so I can write it as $\displaystyle \prod^{k+1}_{i=1} (z-w_i)$; but this is not at all clear to me why I can write the denominator as $\displaystyle \prod^{k+1}_{i=1} (1-\overline{w_i}z)$ for the same $w_i$ appearing in the numerator; to get a Blaschke product. (somehow the same problem that I run into when I want to prove $(\Leftarrow)$) Any help, hints, or suggestion of alternative ways to approach this problem is very much appreciated, Thanks !",['complex-analysis']

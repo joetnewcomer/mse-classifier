@@ -1,0 +1,790 @@
+question_id,title,body,tags
+3243142,$G$ is a non-abelian group of order 6 $ \implies G \approx S_3 $. Simpler proof?,"I've seen some proofs of this fact but they seemed more complicated than necessary, so I've tried to come up with my own, which is hopefully simpler. Can you kindly tell me if it's correct? Proof. $G$ cannot have an element of order 6, else it would be cyclic and thus abelian. So the elements of $G$ different from $e$ can only have order 3 or 2. If all $g \in G$ have order 2 then $G$ is abelian, so there must be at least one element $a \in G$ of order 3. The subgroup $H= \langle a \rangle$ is normal in $G$ because its index is 2. $G/H$ is a cyclic group of order 2. Let $b \not \in H$ . We have $(bH)^2=H \implies b^2 \in H$ . If $o(b)=3$ , then $ b=b^4=b^2b^2 \in H$ , a contradiction. So we must conclude that every $g \in bH$ has order 2. We have $G= H \cup bH = \{e, a, a^2, b, ba, ba^2 \}$ .  Moreover, $ab \in Hb = bH$ so $(ab)^2=e$ . Then $ab=b^{-1}a^{-1}=ba^2$ , which is exactly the relation in $S_3$ . $\square$","['group-isomorphism', 'proof-verification', 'finite-groups', 'abstract-algebra', 'group-theory']"
+3243157,Equivalence class in X as a subset of $\mathscr P(X)$,"Due to Halmos: There is no standard notation for the equivalence class of $x$ with
+  respect to $R$ ; we shall usually denote it by $x/R$ , and we shall
+  write $X/R$ for the set of all equivalence classes $\ldots$ Exercise: show that $X/R$ is indeed a set by exhibiting a condition
+  that specifies exactly the subset $X/R$ of the power set $\mathscr
+P(X)$ . ~P. R. Halmos, Naive Set Theory (p. 28) EDIT: Taking the answers I've received thus far, here's what I'm currently working with. Let $X$ be a set, and let $R$ be an equivalence relation in $X$ . Then $x/R$ (or $[x]$ if you prefer) is a set comprising the elements $y$ such that $(x, y) \in R$ . Each such equivalence class for each element $x \in X$ is a subset of $X$ and therefore a member of $\mathscr P(X)$ . This in turn means that $X/R$ , the set of all $x/R$ for our given $X$ and our given equivalence $R$ , is a set of subsets of $X$ , making it a subset of $\mathscr P(X)$ . Now, I've worked through two examples: If we let $X = \{1, 2, 3, 4\}$ and let $R$ be the relation of equality in $X$ , then $X/R = \{\{1\}, \{2\}, \{3\}, \{4\}\}$ . This is a subset of $\mathscr P(X)$ as expected. If we let $X = \{1, 2, 3\}$ and let $R$ be the cartesian product $X \times X$ , then $X/R = \{\{1, 2, 3\}\}$ , which is a subset of $\mathscr P(X)$ as expected. As for how one can come up with a general specification that achieves both of these results: $$X/R = \{S \in \mathscr P(X): (s \in S) \iff ([t \in S] \land [s \space R \space t]) \}$$ Or, in English, the set of equivalence classes in $X$ with respect to a given relation $R$ is the set of all sets $S$ in the power set of $X$ for which an element $s$ is only in $S$ if there is also $t$ in $S$ and $s$ and $t$ stand in equivalence to one another. This strikes me as a massive cop out, but I'm stuck on how to take it more primitive.","['elementary-set-theory', 'equivalence-relations']"
+3243178,"We have a sequence $a_0,a_1,a_2,...,a_9$ so that each member is $1$ or $-1$. Is it possible: $a_0a_1+a_1a_2+...+a_8a_9+a_9a_0=0$","We have a sequence $a_0,a_1,a_2,...,a_9$ so that each member is $1$ or $-1$ . Is it possible: $$a_0a_1+a_1a_2+...+a_8a_9+a_9a_0=0$$ This problem was given on contest, but I don't know how to solve it. Clearly we must have $5$ terms $a_ia_{i+1}$ equal $-1 $ and other $5$ equal $1$ . I have created a graph in which $a_i$ is connected with $a_{i+1}$ (modulo 10) if their product is -1. So we have $5$ edges and we can write handshake lemma $$\sum_{i=0}^9 d_i=10$$ where $d_i \in \{0,1,2\}$ , but all this is usless. I tried to find a configuration but failed every time. Any idea? For sure there must be simple argumentation why this does not hold or simple configuration why it does. Just don't see.","['graph-theory', 'invariance', 'combinatorics', 'contest-math']"
+3243196,Lottery - Probability,"Looking over Canada's Western Lotto Max and Daily Grand lottery probabilities, a combinations calculator shows the actual chance of getting 7/7 with 50 numbers is 1 in 99,884,400. However, that's if you only had 1 selection per ticket. Since there are 3 selections per ticket, their website accurately shows the chance is 3 times better (99,884,400/3 = 33,294,800). There are also 14 additional draws to the main draw where you must match 7/7 for another chance to win a jackpot. Their website shows that winning 1 of the 14 additional draws has an equal chance of 1 in 33,294,800 just as the main draw. Now, this is where my question comes in: aren't the odds of winning the jackpot of 7/7 actually better than 1 in 33,294,800 considering there is more than 1 jackpot of 7/7? With 15 draws (1 main draw + 14 additional draws), aren't the odds of winning 7/7 for any 1 of the 15 draws actually 1 in 2,219,653 (33,294,800/15)? The odds should be 1 in 33,294,800 if there was only one main draw, but with 14 additional draws, it seems like the number is wrong. Also, the Daily Grand lottery shows that winning 5/5 from a range of 49 numbers per one ticket has a chance of 1 in 2,224,698. However, the combinations calculator shows the real chance is 1 in 1,906,884. It seems that matching 5/5 has a higher probability than what is shown on the official lottery website. While their website is correct that matching a specific 7/7 combination has a chance of 1 in 33,294,800 - my question is whether matching 7/7 for any 1 of the 15 main draws has a probability of 1 in 2,219,653 (33,294,800/15) versus 1 in 33,294,800? Since it doesn't matter which of the 15 specific combinations you match, any 1 of the 15 has a better chance than the website claims, am I right?",['probability']
+3243209,"Is there a notion of ""localization morphism"" of schemes?","Let $A$ be a ring and $S\subseteq A$ a multiplicative system. Then the localization homomorphism of rings $\phi:A\to S^{-1}A$ induces a morphism between the spectra: $f=\mathrm{Spec}(\phi):\mathrm{Spec}(S^{-1}A)\to\mathrm{Spec}(A)$ . Is there a property of scheme morphisms $f:X\to Y$ that captures the
+  idea that $f$ locally looks like the Spec of a localization
+  homomorphism of rings? Does this have a name? Interesting properties/characterizations? Notice that $S$ doesn't have to be of the form $\{f^n\}_{n\geq 0}$ for $f\in A$ or $A\smallsetminus \mathfrak{p}$ for a prime ideal $\mathfrak{p}\subset A$ . Here's an attempt. $f:X\to Y$ is a localization morphism if there is an affine open cover $\{V_i\}$ of $Y$ such that every $f^{-1}(V_i)$ has an affine open cover $\{U_j\}$ such that the morphism $f:U_j \to V_i$ corresponds to a homomorphism $\phi=f^{\sharp}:A\to B$ , where $A=\mathcal{O}_Y(V_i)$ and $B=\mathcal{O}_X(U_j)$ , and there is a multiplicative system $S\subseteq A$ and an isomorphism $\alpha:B\tilde{\to} S^{-1}A$ such that $\alpha\circ\phi=\lambda$ , where $\lambda:A\to S^{-1}A$ is the canonical map to the localization.","['algebraic-geometry', 'schemes', 'commutative-algebra', 'reference-request']"
+3243228,Simple Lie Algebra + $Z(G) = \{1\}$ $\Rightarrow$ Simple Lie Group.,"Let $G$ be a connected Lie Group ( $\mathrm{dim}G>1$ ) such that $Z(G) = \{1\}$ (center of $G$ ) and $\mathrm{Lie}(G) = \mathfrak g$ is a simple Lie Algebra. How do I prove that these conditions imply $G$ simple (as a group)? Can anyone help me? Some Ideas If $H< G$ is a normal group of $G$ , then $\overline{H}$ is a Lie Group (since $\overline{H}$ is closed), then $\mathrm{Lie}\left(\overline{H}\right)$ is a ideal of $\mathfrak{g}$ , implying $\mathrm{Lie}\left(\overline{H}\right) = \{0\}$ or $\mathrm{Lie}\left(\overline{H}\right) = \mathfrak{g}$ , if $\mathrm{Lie}\left(\overline{H}\right) = \{0\}$ then $H$ is discrete normal set $\Rightarrow$ $H\subset Z(G) = \{1\}$ . On the other hand, if $\mathrm{Lie}\left(\overline{H}\right) = \mathfrak{g}$ , $H$ is dense in $G$ , and I don't know how to proceed. Moreover, since $\mathfrak{g}$ is simple $\mathfrak g' = [\mathfrak g,\mathfrak g] =g$ , which implies $G' = [G,G] = G$ , then \begin{align*}
+\det \mathrm{Ad}(g) &= \det \mathrm{Ad}([g_1,h_1]\cdot \ldots \cdot[g_k,n_k])\\ 
+&=[\det(\mathrm{Ad}(g_1),\det\mathrm{Ad}(h_1)]\cdot \ldots\cdot[\det(\mathrm{Ad}(g_k),\det \mathrm{Ad}(h_k)]\\
+&= 1\cdot\ldots\cdot 1 = 1,
+\end{align*} then $\det \mathrm{Ad}(g)=1$ , $\forall$ $g\in G$ . Note $$\rho : G\to SL(n,\mathbb{R}) $$ $$g\mapsto \mathrm{Ad}(g) $$ is a homomorphism such that $\mathrm{Ker}(\mathrm{Ad})= Z(G)={1}$ . Then $\rho$ is a embedding in of $G$ in $SL(n,\mathbb{R})$ , however I do not know, again, how to proceed. Finally, if $G$ is simply connected then $H$ normal and connected $\Rightarrow$ $H$ closed $\Rightarrow$ $H$ is lie group $\Rightarrow$ $\mathrm{Lie}(H)$ is a ideal of $\mathfrak{g}$ , then $H=\{1\}$ or $H = G$ (using the same argument of the beginning). If $G$ is not simply connected I don't know what to do.","['lie-algebras', 'haar-measure', 'differential-topology', 'lie-groups', 'differential-geometry']"
+3243275,Using numerical methods to solve $x^2 \sin (2 \pi x)=33 \sin \left(\frac{66 \pi }{x}\right)$,"On a recent question I asked , Claude Leibovici had a nice answer . However, I do not understand one part when he says ""[solving the equation] would require numerical methods"". What are these ""numerical methods"" and how would I use it to solve my problem? For reference, I put my equation below: $$x^2 \sin (2 \pi  x)=33 \sin \left(\frac{66 \pi }{x}\right)$$ I am primarily focused on intergral solutions.","['calculus', 'trigonometry']"
+3243276,sum of primes squared equals a prime squared,"Find all $p_1,\dots,p_8$ so that $$
+p_1^2+\dots+p_7^2 = p_8^2
+$$ What I have done so far: Since an odd number $n$ has $n^2 \equiv 1$ (mod $4$ ) then the only two possibilities are if $2$ or $6$ of the primes on the left are $2$ . When $6$ of them are $2$ , then I found a solution when $p_7 = 5$ and $p_8=7$ . I cannot figure out the other case though. I got to $$
+p_3^2 + p_4^2 + p_5^2 + p_6^2 + p_7^2 = p_8^2-8
+$$ but that's it. But I cannot find a way to find them all or prove none exist.","['number-theory', 'prime-numbers']"
+3243283,Derivative of Tr$(\rho\log\rho)$,"The von Neumann entropy is the analogue of the Shannon entropy and is defined for positive semidefinite matrices as $$S = \text{Tr}(\rho\log\rho)$$ It is computed in terms of the eigenvalues $\lambda_i$ as $S = \sum_i\lambda_i\log\lambda_i$ where we set $0\log(0) = 0$ . Is $S$ differentiable with respect to $\rho$ ? The answer to this seems to be yes (see for example the question here and links therein) and is given as $S'(\rho) = I + \log\rho$ . If the result above is true, what happens when $\rho$ has at least one eigenvalue of zero? The von Neumann entropy is defined for positive semidefinite matrices while the log is only defined for positive definite matrices.","['derivatives', 'singularity', 'linear-algebra']"
+3243321,Motion of a particle described by a simple differential equation,"Let $X_0 = \frac12$ . Let $a : \mathbb R_+ \to \{-1,0,1\}$ be a measurable function. A particle moves in the interval $[0,1]$ as follows: $$ dX_t = a_t dt \implies X_t = X_0 + \int_0^t a_s ds$$ where the integral is the Lebesgue integral. Both $0$ and $1$ are absorbing, i.e. once $X_t$ hits $0$ or $1$ it remains there. Suppose $a_t$ is Markovian. That is, $\exists$ a function $g: [0,1] \to \{-1,0,1\}$ such that, $a_s = g(X_s)$ for all $s$ . Therefore, $$X_t = X_0 + \int_0^t g(X_s) ds$$ I would like to claim the following: Claim: $X_t$ moves only in one direction. That is, if $X_t = x >X_0$ for some $t$ . Then, $\nexists s > t$ such that $X_s \in (X_0,x)$ . The reasoning is the following. Since $X_t$ reached $x$ and $a_t$ is Markovian, for any $y \in (X_0,x)$ , $a(y) = 1$ (with some abuse of notation). So, it should be impossible for the particle to return back to $y$ once it moves forward. How do I argue this formally? Can we write the claim for when $a_t$ is everywhere Markovian? Thanks.","['calculus', 'analysis', 'dynamical-systems']"
+3243328,Proof that $E[X^2]$ = $\sum_{n=1}^\infty (2n-1) P(X\ge n)$,X is a random variable with values from $\Bbb N\setminus{0}$ I am trying to show that $E[X^2]$ = $\sum_{n=1}^\infty (2n-1) P(X\ge n)$ iff $E[X^2]$ < $\infty$ . I rewrote $P(X \ge n)$ : $E[X^2]$ = $\sum_{n=1}^\infty (2n-1)\sum_{x=1}^\infty 1_{x \ge n}P(X=x)$ Now I tried to rearrange the sums: $E[X^2]$ = $\sum_{x=1}^\infty \sum_{n=1}^x (2n-1)P(X=x)$ But I think that I made a mistake. Could you give me some hints?,"['expected-value', 'probability-theory', 'probability']"
+3243344,Linear first-order systems of ODEs - Proving linear dependence of a set of function vector solutions on an entire interval from a single point,"In my Analysis course at university, the professor's textbook describes linear first-order systems of ordinary differential equations, and more precisely, the solutions to the homogeneous equation of the form $$\vec{Y}\,'(t)=A(t)\vec{Y}(t)$$ where $\vec{Y}(t)$ is a vector of $n$ components that are each a function of $t$ . Now, the book states that given $n$ solutions to this equation, $\vec{Y}_1(t) ... \vec{Y}_n(t)$ , one can prove that these solutions are linearly dependent or linearly independent on an entire interval $I$ based on just a single $t_0\in I$ for which the solutions are one of both. I have spent quite some time trying to wrap my head around the proof, and I can't seem to do it, so I was wondering if anyone could reformulate it, or perhaps point me to appropriate search terms so that I can do my own further reading on the internet. The proof uses the case of linear dependence, and is as follows: Suppose $\vec{Y}_1(t) ... \vec{Y}_n(t)$ are solutions to the homogeneous differential equation above, and for a certain $t_0 \in I$ , it holds that $$\sum_{i=1}^nc_i\;\vec{Y}_i(t_0)=\vec0$$ with not all $c_i=0$ . Then, there can be defined a vector function $\vec{Y}_{total}(t)$ that is this linear combination, for which - by linearity - the differential equations above holds. This same $\vec{Y}_{total}(t)$ can then be seen as the solution to the initial value problem $\vec{Y}\,'(t)=A(t)\vec{Y}(t)$ with $\vec{Y}_{total}(t_0)=\vec0$ . Thus, because of the uniqueness of a solution, it must be true that this $\vec{Y}_{total}(t)$ is the trivial solution, proving the linear dependence of $\vec{Y}_1(t) ... \vec{Y}_n(t)$ on the entire interval $I$ . It is this final step in italics I am just not getting. How so does ""uniqueness of a solution"" come into play here? It baffles me every time I read it.","['systems-of-equations', 'linear-algebra', 'ordinary-differential-equations']"
+3243347,Calculate $\int ^{4\pi} _{-4\pi} \frac{(\sin x)^2-(\sin x)^4}{1-(\sin x)^4}dx$,"Calculate $$\int ^{4\pi} _{-4\pi} \frac{(\sin x)^2-(\sin x)^4}{1-(\sin x)^4}dx$$ I tried to do this task in several ways, but none of them proved to be effective. For example: $$\int ^{4\pi} _{-4\pi} \frac{(\sin x)^2-(\sin x)^4}{1-(\sin x)^4}dx=\int ^{4\pi} _{-4\pi} \frac{(\sin x)^2(1-(\sin x)^2)}{1-(\sin x)^4}dx=\int ^{4\pi} _{-4\pi} \frac{(\sin x)^2}{1+(\sin x)^2}dx=\int ^{4\pi} _{-4\pi} \frac{1}{1+\frac{1}{(\sin x)^2}}dx$$ However I don't know what I can do the next to finish this task. When I use $u=(\sin x)^2 $ I have $du=\cos x dx$ so I can't use it. Have you got some intelligent way to do this task?","['trigonometry', 'definite-integrals', 'real-analysis']"
+3243380,Can we let $n$ go to $\infty$ after applying the fundamental theorem of algebra to a polynomial of degree $n$?,"Recently I came across a proof of the infinite product for $\sin z$ ( https://www.sciencedirect.com/science/article/pii/0022247X77902347 ). It applies the fundamental theorem of algebra to $$p_{n}(z)=\dfrac{1}{2}\left(\left(1+\frac{z}{n}\right)^{n}-\left(1-\frac{z}{n}\right)^{n}\right),$$ which it factors to a product.
+But it also states that $n=2m+1$ and lets $n$ and $m$ go to infinity. Then how is the factorization to a product, by applying the fundamental theorem of algebra, possible? I'm confused because the fundamental theorem of algebra holds only for finite polynomials , but $p_{n}(z)$ is not a finite polynomial if we let $n$ go to $\infty$ .","['complex-analysis', 'calculus', 'abstract-algebra', 'polynomials', 'trigonometry']"
+3243390,Greatest perimeter polygon on a geoboard,"A physical geoboard is an organized set pegs that are distributed in a grid pattern which sits on (or is a part of) a thin rectangular base. Different sized Rubber bands can wrap around the pegs of geoboard, which can form a large number of patterns and shapes. An example of this is shown in the picture below. When I was a kid I had a computer program that was a digital version of a geoboard. The program had a square grid of nodes. The grid was ten nodes by ten nodes. Nodes on the grid could be connected by line segments. One feature of the digital geoboard is that if a closed shape was formed by line segments, the perimeter of the shape could be measured. One unit on the geoboard was the distance between two adjacent points in the horizontal or vertical direction. Here is a YouTube video of the program. One thing I tried to do during the time when I had the program was to find the largest perimeter closed shape that I could create with the grid. After a lot of trial and error I eventually came up this: If the dot coordinates are defined by $(x,y)$ and the bottom left node is defined as $(1,1)$ then the polygon in the picture directly above can be defined by the connected nodes $(1,10)\rightarrow (1,9)\rightarrow (2,9)\rightarrow (1,8)\rightarrow (3,9)\rightarrow (1,7)\rightarrow (4,9)\rightarrow (1,6)\rightarrow (5,9)\rightarrow (1,5)\rightarrow
+(6,9)\rightarrow (1,4)\rightarrow
+(7,9)\rightarrow (1,3)\rightarrow
+(8,9)\rightarrow (1,2)\rightarrow (9,9)\rightarrow (1,1)\rightarrow (9,8)\rightarrow (2,1)\rightarrow (9,7)\rightarrow (3,1)\rightarrow 
+(9,6)\rightarrow (4,1)\rightarrow 
+(9,5)\rightarrow (5,1)\rightarrow 
+(9,4)\rightarrow (6,1)\rightarrow
+(9,3)\rightarrow (7,1)\rightarrow 
+(9,2)\rightarrow (8,1)\rightarrow
+(10,1)\rightarrow (10,10)\rightarrow
+(1,10)$ This polygon has a polygon has a perimeter of $\approx 202.32\space units$ The exact amount is presented by the following expression $$20+8\sqrt{2}+2\sum_{n=1}^{15}\sqrt{\lceil\frac{n^2}{2}}\rceil$$ At the time I came up with this I thought that this wasn't the absolute maximum, but It was very close to the maximum and I was quite satisfied with result. This problem has never completely left my mind and much later I realized that I could do a lot better. The polygon directly below is my best thus far. This is defined by the connected points $(1,10)\rightarrow  (1,9)\rightarrow (2,9)\rightarrow (1,8)\rightarrow
+(3,9)\rightarrow (2,8)\rightarrow
+(4,9)\rightarrow (1,7)\rightarrow
+(3,8)\rightarrow (2,7)\rightarrow
+(5,9)\rightarrow (1,6)\rightarrow
+(4,8)\rightarrow (3,7)\rightarrow
+(6,9)\rightarrow (2,6)\rightarrow
+(5,8)\rightarrow (1,5)\rightarrow
+(4,7)\rightarrow (3,6)\rightarrow
+(7,9)\rightarrow (2,5)\rightarrow
+(6,8)\rightarrow (1,4)\rightarrow
+(5,7)\rightarrow (4,6)\rightarrow
+(8,9)\rightarrow (3,5)\rightarrow
+(7,8)\rightarrow (2,4)\rightarrow
+(6,7)\rightarrow (1,3)\rightarrow
+(5,6)\rightarrow (4,5)\rightarrow
+(9,9)\rightarrow (3,4)\rightarrow
+(8,8)\rightarrow (2,3)\rightarrow
+(7,7)\rightarrow (1,2)\rightarrow
+(6,6)\rightarrow (5,5)\rightarrow
+(9,8)\rightarrow (4,4)\rightarrow
+(8,7)\rightarrow (3,3)\rightarrow
+(7,6)\rightarrow (2,2)\rightarrow
+(6,5)\rightarrow (1,1)\rightarrow
+(5,4)\rightarrow (4,3)\rightarrow
+(9,7)\rightarrow (3,2)\rightarrow
+(8,6)\rightarrow (2,1)\rightarrow
+(7,5)\rightarrow (6,4)\rightarrow
+(9,6)\rightarrow (5,3)\rightarrow
+(8,5)\rightarrow (4,2)\rightarrow
+(7,4)\rightarrow (3,1)\rightarrow
+(6,3)\rightarrow (5,2)\rightarrow
+(9,5)\rightarrow (4,1)\rightarrow
+(8,4)\rightarrow (7,3)\rightarrow
+(9,4)\rightarrow (6,2)\rightarrow
+(8,3)\rightarrow (5,1)\rightarrow
+(7,2)\rightarrow (6,1)\rightarrow
+(9,3)\rightarrow (7,1)\rightarrow
+(9,2)\rightarrow (8,1)\rightarrow
+(10,1)\rightarrow (10,10)\rightarrow
+(1,10)$ This polygon has a perimeter of $\approx 355.06 \space units$ The exact amount is presented by the following expression $$122+16\sqrt{2}+7\sqrt{5}+13\sqrt{13}+17\sqrt{41}+5\sqrt{61}$$ Question: Can we find and prove a maximum for the ten by ten grid? If so can we generalize this strategy to find the maximum for the $N$ x $N$ grid? Just for clarification on the rules, the only two requirements is that the line segment end points must be on the nodes whose coordinates are positive integers (within  the square) and the shape must be closed. A shape like the one shown in the picture below is allowed, however only the distances between the intersection points are counted toward the perimeter of the shape.","['recreational-mathematics', 'geometry', 'polygons']"
+3243473,Why do we care about perfect sets?,"When I first heard the name `perfect' set, I thought that these would be especially nice sets that show up a lot. Maybe it's because I haven't done that much analysis, but it seems like perfect sets are introduced, you can prove a funny theorem about uncountability of them in certain spaces, and then you're done and they never come up again. Why does anyone care about perfect sets? What's so special about them?","['general-topology', 'analysis']"
+3243552,"I pick a number n, if you guess it, I pay you $n. What is the fair value of the game?","This is from Mark Joshi's classic book. The full question is: ""I pick a number n from 1 to 100. If you guess correctly, I pay you $n and zero otherwise. How much would you pay to play this game?"" Joshi offers a solution, but I am struggling with it. From what I understand, the person picking the number has incentive to pick lower numbers as this will result in lower payoffs. However, low numbers will likely be selected by the player so the number should not be too low. Joshi suggests the following as the expectation of the game: $$\Big(\sum_{i=1}^{100}\frac{1}{i}\Big)^{-1}$$ Not sure if anyone could with the intuition on how the solution was obtained. I guess it arises as the initial person picking the number should pick with decaying probability going from 1 to 100? Thanks","['expected-value', 'game-theory', 'probability']"
+3243560,$\vert\{\alpha\in I:F_\alpha\cap V\neq\emptyset\}\vert<\aleph_0\implies \bigcup\limits_{\alpha\in I} F_\alpha$ is closed.,"Let $X$ be a topological space and $\{F_\alpha:\alpha\in I\}$ a family of closed subsets of $X.$ If for all $x\in X,$ there exists $V\in\mathcal V(X)$ such that $\vert\{\alpha\in I:F_\alpha\cap V\neq\emptyset\}\vert<\aleph_0$ , then $\displaystyle\bigcup_{\alpha\in I} F_\alpha$ is closed. I have no much idea on how to prove it. I've checked others questions and found only one similar Natural conditions implying the union of closed sets is closed and I think the conversely of Alex Ravinsky's answer has something to do with my statement: Conversely, if a point $x$ has a neighborhood $O_x$ intersecting only finitely many members of the family $\mathcal F$ then $O_x\setminus\bigcup \{S\in\mathcal F:S\cap O_x\ne\varnothing\}$ is an open neighborhood of the point $x$ disjoint from $F$ . However I could not see how the arguments induce to the desired result $\displaystyle\bigcup_{\alpha\in I} F_\alpha$ is closed. Can someone please help me with this difficult exercise? Thanks in advance.","['elementary-set-theory', 'general-topology']"
+3243582,Double integral bounds of integration polar change of coordinate,"I hope that someone can help me determine the the bounds of integration for this problem. Evaluate $$\iint\limits_{R}xydA$$ where, $$R={(x,y): \frac{x^2}{36}+\frac{y^2}{16}\leq1, x\geq0,y\geq0}$$ my attempt, r=1, since $${(x,y): \frac{x^2}{36}+\frac{y^2}{16}\leq1}$$ The region of integration is in the first quadrant since $${x\geq0,y\geq0}$$ I change from cartesion to polar $$f(x,y)=xy $$ $$f(r,\theta)=rcos(\theta)rsin(\theta)$$ $$dA=rdrd\theta$$ So from everything above I thought the bounds would be r=0 to r=1 and $\theta=0$ to $\theta=\frac{\pi}{2}$ When I put everything together I get $$\int\limits_{0}^\frac{\pi}{2}\int\limits_{0}^{1}rcos(\theta)rsin(\theta)rdrd\theta$$ If I compute the integral above I get $\frac{1}{8}$ , I know that $\frac{1}{8}$ is not the correct answer since the question is multiple choice and the options are (a) 5 (b) 25 (c) 55 (d) 72 (e) 73. I don't know where to go from here I assume that my error has to do with $(x,y): \frac{x^2}{36}+\frac{y^2}{16}\leq1$ since I don't use $0\leq{y}\leq4$ and $0\leq{x}\leq6$ I'm just not sure how to incorporate the fractions are they part of r? Any help would be greatly appreciated, thank you.","['integration', 'definite-integrals', 'multivariable-calculus', 'calculus', 'polar-coordinates']"
+3243593,How can I solve this rates of change problem?,"How can I find the change in the surface area of this problem ? I tried finding the different areas of the cylinder. For its sides, I get: $$A_\mathrm{side}=2\pi rh,$$ for the half sphere: $$A_\mathrm{sphere}=2\pi r^3,$$ for the circle in the bottom $$A_\mathrm{circle}=\pi r^2,$$ for total surface area: $$S=2\pi rh+2\pi r^3+\pi r^2,$$ since $$\frac{dS}{dt}=\frac{\partial{S}}{\partial{r}}\frac{dr}{dt}+\frac{\partial{S}}{\partial{h}}\frac{dh}{dt}.$$ So: $$\frac{dS}{dt}=2\pi\left[-\frac{t}{2}(h+3r^2+r)+6rt\right]\label{1}\tag{1}$$ Given the values $$t=4;\:r(4)=4;\:h(4)=50,$$ when I evaluate \eqref{1} I get: $$\frac{dS}{dt}=-216\pi$$ while the correct answer is $$
+\frac{dS}{dt}=-56\pi.
+$$ Now, what am I doing wrong?","['integration', 'calculus', 'partial-differential-equations', 'partial-derivative', 'derivatives']"
+3243614,"Angle formed by orthocenter, incenter and circumcenter of a triangle $>135^\circ$?","If $H$ is the orthocenter, $I$ the incenter and $O$ the circumcenter of a triangle , the I need to show that the angle $HIO>135^\circ$ With the assumptions of $OI^2=R^2-2Rr$ , $OH^2=9R^2-(a^2+b^2+c^2)$ , $HI^2=2r^2-4R^2\cos A\cos B \cos C$ and $R^2\cdot8(1+\cos A\cos B\cos C)= a^2+b^2+c^2$ Applying the $cosine$ rule  I got to something like $$\cos (HIO)=\frac{2r^2-2Rr+R^2\cdot 4\cos A\cos B\cos C}{2(2r^2-4R^2\cos A\cos B\cos C)(R^2-2Rr)}$$ I need to show that the LHS is between $\left[-\frac{1}{\sqrt{2}},-1\right]$ How t0 proceed? Is there any simpler way to prove the question (without applying cosine rule) ?","['triangles', 'inequality', 'geometric-inequalities', 'geometry']"
+3243621,When is an open subset of an orientable manifold an orientable submanifold?,"I am trying to complete problem $4$ from the introductory chapter of Riemannian Geometry by do Carmo. The question asks us to show that the projective plane $P^2(\mathbb{R})$ is non-orientable, first by proving any open subset of an orientable manifold is an orientable submanifold. do Carmo's definition for a manifold $M$ to be orientable is if it admits a differentiable structure $\left\{(U_\alpha,\mathbf{x_\alpha}) \right\}_{\alpha \in \Gamma}$ such that for every pair $\alpha,\beta$ with $\mathbf{x_\alpha}(U_\alpha)\cap\mathbf{x_\beta}(U_\beta)$ nonempty the differential of the change of coordinates, $d(\mathbf{x_\beta}^{-1} \circ \mathbf{x_\alpha})$ , has positive determinant. My approach to this was to say let open $V \subset M$ be given.  Then $\left\{(U_\alpha\cap \mathbf{x_\alpha}^{-1}(V),\mathbf{x_\alpha}) \right\}_{\alpha \in \Gamma}$ is a differentiable structure on $V$ that satisfies the definition. My confusion stems from the fact that an open Möbius band can embedded in $\mathbb{R}^3$ , for example by the embedding $f:U\to \mathbb{R}^3$ $$f(x,y) = \left(\left(1+\frac{y}{2}\cos\frac{x}{2}\right)\cos{x},\;\left(1+\frac{y}{2}\cos\frac{x}{2}\right)\sin{x},\;\frac{y}{2}\sin\frac{x}{2}\right)$$ Where $U = \left\{(x,y)\in \mathbb{R}^2 : 0 \leq x < 2\pi,\;-1 < y < 1\right\}$ (taken from Wikipedia). So I guess my confusion comes down to ""why isn't the open Möbius band a submanifold of $\mathbb{R}^3$ ?""","['mobius-band', 'manifolds', 'riemannian-geometry', 'differential-geometry']"
+3243653,Better method to solve a geometric problem.,"This question is Q.13 of International Mathematical Olympiad Preliminary Selection Contest - Hong Kong 2019. $A$ , $B$ , $C$ are three points on a circle while $P$ and $Q$ are two points on $AB$ . The extensions of $CP$ and $CQ$ meet the circle at $S$ and $T$ respectively. If $AP=2$ , $AQ=7$ , $AB=11$ , $AS=5$ and $BT=2$ , find the length of $ST$ . My approach: Let $BC=y$ and $AC=z$ . It can be found that $CP=\dfrac{2y}5$ , $PS=\dfrac{45}y$ , $CQ=2z$ and $QT=\dfrac{14}z$ . By applying cosine formula on $\triangle BCQ$ , $\triangle BCT$ , $\triangle ACP$ and $\triangle ACS$ , I know that $y^2=\dfrac{1620}{11}$ and $z^2=\dfrac{994}{55}$ . Then I can find $\cos\angle PCQ$ and hence deduce that $ST=\dfrac{25}4$ . The calculation is tedious and I am quite sure that I have missed something. Does anybody have a better method? Edit: Michael Rozenberg gave a quick solution using cross-ratio. https://math.stackexchange.com/a/3268709/268334","['contest-math', 'circles', 'geometry']"
+3243673,"In a topology, can one always choose a connected neighborhood of a point?","I am trying to show something that requires me finding a connected neighborhood of a point. This seems true, but I don't know why I am doubting myself: Let X be a topological space. If $x \in X$ , then there exists an open
+  neighborhood $U$ of $x$ that is connected. Can I just pick any open neighborhood and then if it's not connected, then decompose it into disconnected components and pick the one that $x$ is in. Then if it's still not connected then I can repeat. But I am afraid what if this procedure doesn't terminate? Is the statement above true in general? From my book, the definition of a neighborhood is: $U$ is a neighborhood of $x \in X$ if there exists an open set $V$ such that $x \in V \subset U \subset X$ .","['general-topology', 'connectedness']"
+3243704,what is pilot estimator?,"I have met with a term ""pilot estimator"" in some papers .I have no idea what it is and I have searched the website like wiki but in vain. Can anybody tell me what it is ? Thanks in advance.","['statistics', 'estimation']"
+3243716,A very quick question on interpreting upper bounds of a union $S\cup T$,"Let $S \subset\Bbb{R}$ and $T \subset \Bbb{R}$ be nonempty and
+  bounded. Further suppose that $M$ is an upper-bound of $S \cup T$ . Could someone point out my mistake in the following interpretation please? $M$ is an upper-bound of $S\cup T$ $\Rightarrow$ $x \leq M $ for all $x \in S \cup T$ $\Rightarrow$ Two possible cases : [case 1 : $x \in S$ ] With $x \in S$ and $x \leq M$ , $M$ is an upper bound of $S$ and by the completeness axiom there exists a supremum such that $x \leq \sup(S) \leq M$ [case 2 : $x \in T$ ] With $x \in T$ and $x \leq M$ , $M$ is an upper bound of $T$ and by the completeness axiom there exists a supremum such that $x \leq \sup(T) \leq M$ Now,intuitively I thought that the following interpretation is correct: For $x \in S \cup T$ , either $\sup(S) \leq M$ or $\sup(T) \leq M$ However, when I look around on the internet the results there seem to suggest that: For $x \in S \cup T$ , $\sup(S) \leq M$ and $\sup(T) \leq M$ . Continuing from (2) with : Therefore $M \geq \max(\sup(S),\sup(T))$ And finally $M \geq \sup(S \cup T) \geq \max(\sup(S),\sup(T))$ This I am sure is a silly question...but could someone explain why (1.) is wrong and (2.) is correct please?","['elementary-set-theory', 'proof-explanation', 'real-analysis']"
+3243724,Which geometric shape of icosahedron origin has 180 faces 270 edges 92 vertices?,"Essentially, I am trying to find the specific name of the convex polyhedron or icosahedron shape in the gif below. The 3d software ( Blender ) reports 92 vertices, 180 faces and 540 edges, although there are 270 unique edges. Every face is a triangle, composite surface patterns include a number of hexagons and pentagons . The convex shape is of icosahedron 3v origin , as the pentagon frequency (or edge quantity from one pentagon to another) is 3 edges (see link). However, the frequency (and 3v ) naming scheme seems to be non-standard. The snub dodecahedron matches the convex shape specified (see gif below) very closely, except that the regular pentagons (within the snub dodecahedron ) have a central vertex, thus increased vertices, edges and triangle faces. The pentakis dodecahedron matches the icosahedron 2v . The icosahedron is the 1v variant. Perhaps there's a pattern in naming convention I'm missing to help discover the name of the shape in question.","['polyhedra', 'geometry', 'terminology']"
+3243814,Relation between the measures of two sets defined via Lebesgue integration,"Suppose $a : \mathbb R_+ \to \{-1,1\}$ is a measurable function. Let $X_0 =\frac12$ . Consider a particle that moves on the $X-$ axis as follows. $$X_t = X_0 + \int_0^t a_s ds$$ where the integral is a Lebesgue integral. Fix a $T=\frac12$ . So, $X_t \in [0,1]$ for all $t \le T$ . Let $S \subset [0,1]$ be a set such that $\ell(S) =1$ , where $\ell(\cdot)$ is the Lebesgue measure. Define, $$G:= \{t \le T: X_t \in S\}.$$ Is it the case that $\ell(G) = \ell([0,T]) = \frac12$ ? That is, the particle spends almost no time outside $S$ ?","['dynamical-systems', 'lebesgue-measure', 'lebesgue-integral', 'real-analysis']"
+3243828,How many vertices can a hypercube-hyperplane intersection have?,"Consider the n-hypercube $[-1, 1]^n$ , and intersect it with an n-hyperplane. The intersection is in general an $(n-1)$ -dimensional polytope. How many vertices can it have? For example, when $n=2$ , it must be a line segment, so it can have at most 2 vertices. When $n=3$ , it can have at most 6 vertices. I'm having difficulty with $n\ge 4$ . When $n=4$ , we can intersect the cube by $\{x | \sum_{i=1}^4 x_i = 0\}$ to get a rhombic dodecahedron with 14 vertices, so that's a lower bound at least.","['extremal-combinatorics', 'combinatorial-geometry', 'combinatorics', 'geometry']"
+3243845,What is $f(\phi)$ evaluated for the first $n$ terms?,Background I have been recently toying with the following function: $$ f(x) = x - x^2 + x^4 - x^8 + x^{16} - \dots = \sum_{r=0}^\infty (-1)^{r}x^{2^r}$$ My idea was to expand around $x \to \phi$ where $\phi + \phi^2 = 1$ and evaluate the answer for the first $n$ terms. It's obvious the answer must be of the form: $$ f(\phi) = \lim_{n \to \infty}(a_1(n) + a_2(n) \phi)$$ where $a_1(n)$ and $a_2(n)$ is the sum of the first $n$ terms in the simplified to the form: $$\sum_{r=0}^n (-1)^{r}\phi^{2^r} = \underbrace{\text{Integer}_1}_{a_1(n)} + \underbrace{\text{Integer}_2}_{a_2(n)} \phi $$ Question Is there any nice asymptotic or exact expression a for $a_1(n)$ and $a_2(n)$ ?,"['functions', 'linear-algebra', 'asymptotics']"
+3243849,Evaluate $\lim_{n\to\infty} \frac{b_n}{a_n}$,"Problem: Two sequence $a_n, b_n$ which satisfy \begin{cases} a_{n+1}=n^2a_n -2b_n \\ b_{n+1}=n^2b_n +2a_n  \end{cases} and $$a_1 =1, \quad b_1 = 0$$ Find $$\lim_{n\to\infty} \frac{b_n}{a_n}$$ How can I approach? I couldn't find any relation of $a_n$ and $b_n$ .","['limits', 'analysis', 'sequences-and-series']"
+3243868,How Do You Call The Probability That An Outcome Is By Chance,"I can't find an answer to my question because I don't know what to search for, i.e. the terminology. To explain the word I'm looking for, let me start with an example. Say we know that the probability for having heads up after a coin flip is 50%. Now say I have a theory that if you flip the coin a certain way, it increases your chance of having the coin land with heads up. I try the theory 100 times (flipping the coin), and have heads up 60% of the time. Now I want to have a metric that meaningfully represents how likely it is that my technique actually increased the the heads-probability, vs. it just being chance. What do you call this metric? I'm naturally interested in the maths behind this question, but am rather asking for the terminology only to avoid duplicate questions. Optionally, if this is a ""new"" question, feel free to also include the maths.","['probability-distributions', 'probability']"
+3243878,Difference in my and wolfram's integration.,"Calculate $$\int \frac{\sin ^3(x)+1}{\cos (x)+1} \, dx$$ Let $$u = \tan(x/2)$$ $\int \frac{\sin ^3(x)+1}{\cos (x)+1} \, dx = \int \frac{2\left(\frac{8u^3}{(u^2+1)^3}+1 \right)}{(u^2+1)\left( \frac{1-u^2}{u^2+1} + 1 \right)} \, du = \int \frac{8u^3}{(u^2+1)^3 } + 1 \, du$ $$ s := u^2 \wedge ds = 2u \, du $$ $ u + \int \frac{8su}{(s+1)^3 } (2u)^{-1} \, ds = u + 4\int \frac{s}{(s+1)^3 }  \, ds = $ $ u + 4\int \frac{1}{(s+1)^2 } - \frac{1}{(s+1)^3 }  \, ds =  u + 4\left(\frac{-1}{s+1} +\frac{1}{2(s+1)^2} \right) + C =$ $ u + 4\left(\frac{-1}{u^2+1} +\frac{1}{2(u^2+1)^2} \right)  + C = $ $ \tan(x/2) + 4\left(\frac{-1}{(\tan(x/2))^2+1} +\frac{1}{2((\tan(x/2))^2+1)^2} \right)  + C := F(x)$ $$F(\pi/2) - F(-\pi/2) = 2 $$ Wolfram tells that result ( $=2$ ) is okay, but my integral is different from wolfram result: $$ \frac{1}{8} \sec \left(\frac{x}{2}\right) \left(8 \sin \left(\frac{x}{2}\right)-4 \cos \left(\frac{x}{2}\right)-3 \cos \left(\frac{3 x}{2}\right)+\cos \left(\frac{5 x}{2}\right)\right) $$ Where I failed?","['integration', 'indefinite-integrals', 'substitution', 'real-analysis']"
+3243910,Does the blow-up induce an isomorphism in top cohomology (real coefficients)?,"Let $X$ be a (possibly singular) compact complex manifold of complex dimension $n$ and let $Y\subset X$ be a submanifold along we blow-up $X$ . So we get a blow-down map $P:Bl_Y X\to X$ . Is $P^*: H^{2n}(X,\mathbb R)\to H^{2n}(Bl_YX,\mathbb R)$ an
+  isomorphism? So far I looked at the Mayer Vietoris sequence for $Bl_YX = (Bl_YX\setminus E) \cup E$ , where $E$ is the exceptional divisor. We also call the corresponding intersection $Z$ .  If $X$ is non-singular, then $Z=S^{2n-1}$ . $Bl_YX\setminus E \simeq  X\setminus Y$ and as $\dim Y \le 2n-2$ , it follows that $H^{2n}(X) = H^{2n}(X\setminus Y)$ and $H^{2n-1}(X) = H^{2n-1}(X\setminus Y)$ . Also, $\dim E = 2n-2$ , so $H^{2n}(E)=H^{2n-1}(E) =0$ . Thus $$\to H^3(X) \stackrel j \to H^3 (Z)\to H^4(Bl_YX)\stackrel {i^*}\to H^4(X) \to 0$$ is exact. Thus in order for $H^4(Bl_YX)$ to be isomorphic to $H^4(X)$ , we need $j$ to be surjective. But even so, this would only tell me that $i^*$ is an isomorphism. I am interested in $P^*$ .","['blowup', 'complex-geometry', 'algebraic-geometry', 'algebraic-topology', 'differential-geometry']"
+3243952,Proof of $\sum_{k=1}^{i} \binom{n-k}{n-i} = \frac{n \cdot \binom{n-1}{n-i}}{n+1-i}$,"I'm trying to prove the following identity: For each $$i \in \mathbb{N}, \sum_{k=1}^{i} \binom{n-k}{n-i} = \frac{n \cdot \binom{n-1}{n-i}}{n+1-i}$$ My attempt: I've tried to prove that $(n+1-i) \cdot \sum_{k=1}^{i} \binom{n-k}{n-i} = n \cdot \binom{n-1}{n-i}$ , and I've noticed that: $$\sum_{k=1}^{i} \binom{n-k}{n-i} = \sum_{k=1}^{i} \binom{n-k}{i-k}$$ $$n \cdot \binom{n-1}{n-i} = n \cdot \binom{n-1}{i-1}$$ I don't want to use induction, so I've tried proving it combinatorically: The right-hand side counts the number of ways of constructing a subset of $i$ elements (from $n$ elements), with a ""special"" element. However, I cannot interpret the left-hand side similarily. Is there a way of interpreting it, or proving it in a different way? (For example, using the Binomial theorem)","['summation', 'binomial-coefficients', 'combinatorial-proofs', 'discrete-mathematics']"
+3244086,More elegant way of finding generating function coefficient,"I am looking to find the number of ways to pay a £50 bill in £1 and £2 coins. The generating function for this is $g(x)=(1+x+...)(1+x^2+...)$ , which after a few lines of algebra becomes $g(x) = \sum_{i=0}^{\infty}(1+i)x^i\sum_{j=0}^{\infty}(-1)^jx^j$ . The following is the only formula I can think of for finding the coefficient $\alpha$ of $x^{50}$ in $g(x)$ $\alpha = \sum_{k=0}^{50}(-1)^k(51-k) = 26$ , but this feels quite tedious. My first question is whether or not this answer is correct. The second is whether there is another, more elegant way to find this coefficient $\alpha$ .","['discrete-mathematics', 'generating-functions']"
+3244136,Non-intersection of sets,"I have two sets, $A$ and $B$ : $B$ is in $A$ , so $A \cap B = B$ . I would like to mathematically express the non-intersection of these sets.
+ It is not the same $C= A \setminus B$ or $B \setminus A$ than $A$ (non $\cap$ ) $B$ . In this case it will be $A \setminus B$ , but how I now if $A\subset B$ or $B\subset A$ ?
+How can I do it?",['elementary-set-theory']
+3244236,Can we reduce finding matrix roots to finding roots of Jordan blocks?,"I just found some interesting question about matrix square roots and I came to think of one way to find them, or at least reduce them to a set of simpler problems. Assume we have a matrix $\bf A$ and it can be put on some Jordan form: $${\bf A} = {\bf SJS}^{-1}$$ Where $\bf J$ is block-diagonal consisting of famous Jordan blocks of the shape: $${\bf J_{k}} = \begin{bmatrix} \lambda_k&1&0&\cdots&0\\0&\ddots&\ddots& & 0\\\vdots&\ddots&\ddots&\ddots&\vdots\\0&\cdots&0&\lambda_k&1\\0&\cdots&\cdots&0&\lambda_k\end{bmatrix}$$ In other words main diagonal full with eigenvalue $\lambda_k$ and first off-diagonal filled with ones. The problem of finding some n'th root to $\bf A$ can now be written $${\bf SJ}^{1/n}{\bf S}^{-1}$$ (Why?). So If I am correct so far .. we have reduced down to find some way of calculating square root of such Jordan blocks $\bf J_k$ , and in simplest case blocks of dimensionality 1, finding some root over our scalar field (for the eigenvalues themselves). Firstly, is this reasoning correct so far? Secondly, how can we approach finding square root to matrices of the form $\bf J_k$ . Is there some simplification or short-cut that can be done?","['matrices', 'jordan-normal-form', 'linear-algebra', 'polynomials']"
+3244297,First integral for non-linear system of equations.,"I have the dynamics \begin{align}
+x'&=y\\
+y'&=-y-x-x^2\tag1
+\end{align} which represents a one-dimensional mechanical system with velocity $y$ and coordinate $x$ , or in other words the second order equation $$x''=-y-x-x^2 \Longleftrightarrow x''+g(x)=0 \tag2$$ where $g(x)=y+x+x^2.$ Since the origin is an asymptotically stable equilibrium point, I want to find its region of attraction using an appropriate Lyapunov function $V(x,y)$ . So in the book they give the formula $$V(x,y)=\text{Kinetic energy}+\text{Potential energy}=\frac{y^2}{2}+\int_0^xg(z)dz, \tag3$$ plugging in my expression for $g(z)$ I get $$V(x,y)=\frac{y^2}{2}+\int_0^xy+z+z^2 \ dz=\frac{y^2}{2}+\frac{x^2}{2}+\frac{x^3}{3}+xy.\tag4$$ However, according to the book the $xy$ should not be at the end. I assume it is because they get their $g(x)$ to be $g(x)=x+x^2$ . How come?",['ordinary-differential-equations']
+3244334,Fractional pole residue calculation,"According to m.l.boas, one can solve integrations involving a simple pole using residue theorem and using those principles, I can solve integrals like $$\int_{-\infty}^\infty \frac{\sin{x}}x dx$$ Converting to $$\frac{e^{iz}}z$$ and calculating residue at origin . But what to do when we encounter something like a fractional pole . If I am to do $$\int_{-\infty}^{\infty} \frac{\sin{x^q}}{x^q}dx$$ Then we get a laurent series at origin with fractional power by converting to a complex integral in a similar way . How to proceed with such integrals ? Apart from way of making use of residue theorem, I am looking for a way of solving this integral, too . q may be a fraction","['complex-analysis', 'residue-calculus']"
+3244337,"What does the notation $Z \sim N(\mu,\sigma^2)$ stand for in statistics?","What does the notation $Z \sim N(\mu,\sigma^2)$ stand for in statistics? I was reading an answer in stats exchange and a user mentioned that. What does it mean?","['statistics', 'random-variables']"
+3244366,Question about equilibrium points of non-linear system of ODEs.,"So I have the system \begin{align}
+x'&=y\\
+y'&=-x-y\ln(x^2+4y^2)
+\end{align} To find the equilibrium points I need $x'=0$ and $y'=0$ , thus I obtain \begin{align}
+y&=0\\
+-x-y\ln(x^2+4y^2)&=0
+\end{align} I don't see how to proceed here. If $y=0$ in the second equation we get $-x=0\Leftrightarrow x=0$ but if $x=0$ and $y=0$ the logarithm is undefined. So $(0,0)$ can't be an equilibrium point.",['ordinary-differential-equations']
+3244370,Is there any mathematical significance of this sequence?,"Let's say I sum up all of the numbers from 1 to $n$ (we'll say $n$ is 6 for this example). In this case, I'd get a total of 21 ( $1+2+3+4+5+6=21$ ). Now let us pose the following question: if I replaced the $+$ s with $\times$ s, what would I have to divide/multiply each element in the sequence by to get the same answer as with addition? As in, if $$f_1(x)=1+2+3+...+x$$ then what would $y$ be at each point in $$f_2(x)=\frac{1}{y_1}\times\frac{2}{y_2}\times\frac{3}{y_3}...\times\frac{x}{y_x}$$ I started calculating some of the elements of $y$ , and (if I didn't make a mistake), I got: $$\begin{array}{c|c|c|c|} 
+n & \text{Total ($f_1$)} & \text{Fraction of $y_n$} & \text{Decimal of $y_n$} \\ \hline
+\text{1} & 1 & 1 & 1\\ \hline
+\text{2} & 3 & \frac{2}{3} & 0.66\dot6\\ \hline
+\text{3} & 6 & \frac{3}{2} & 1.5\\ \hline
+\text{4} & 10 & \frac{12}{5} & 2.4 \\ \hline
+\text{5} & 15 & \frac{10}{3} & 3.33\dot3 \\ \hline
+\text{6} & 21 & \frac{30}{7} & 4.286... \\ \hline
+\end{array}$$ Rather, we could get the value of $y_n$ at any point using the following formula (provided a positive integer $n$ , $1<n$ ): $$y_n=\frac{(\sum_{i=0}^{n-1} i)\times n}{\sum_{i=0}^{n} i}$$ The question is, is there a more effective way to calculate this - the above formula is essentially doing the same as I did by hand (adding up all of the numbers, dividing, etc.), but... as a formula. I'm also aware of Gauss's method of summing numbers, but I'm curious to find out if there's some deeper mathematical link between these numbers - possible a connection to some sequence on OEIS?","['summation', 'sequences-and-series']"
+3244379,Is the number transcendental?,Consider the following number: $R=\frac{1}{9}\sum^\infty_{n=1} 10^{-\frac{n\left(n+1\right)}{2}}\left(10^n-1\right)\left(n\left(\operatorname{mod}10\right)\right)$ =0.122333444455555666666777777788888888999999999000000000011111111111222222222222333333333333344444444444444555555555555555666666666666666677777777777777777888888888888888888999999999999999999900000000000000000000... which is formed by concatenating $n$ copies of $n\left(\operatorname{mod}10\right)$ after $0$ . The long sequences of repeating digits allow better and better rational approximations as the lengths of repeating digit blocks grow. Can this be a basis to prove this number transcendental?,"['number-theory', 'transcendence-theory', 'transcendental-numbers']"
+3244395,Similar and directly similar figures,What is the difference between similar and directly similar triangles. I googled it but did not find anything that I could understand. please explain it to me with the help of diagram,['geometry']
+3244425,What is the covariant derivative of a wedge product?,"If we have a covariant derivative for vector fields given by an affine connection on a manifold, can we extend that to a covariant derivative for k-vectors by assuming that the product rule hold for wedge products of vectors? In other words, does it make sense to assume that: $$\nabla_v(a\wedge b) = (\nabla_va)\wedge b+a\wedge (\nabla_vb) $$ where $v$ is a vector field, $a$ and $b$ are $p$ -vector and $q$ -vector fields, and $\nabla_va$ agrees with the covariant derivative of vectors when $a$ is a vector field? (I am wondering since the product rule for the exterior derivative has a grade-dependent sign in it, but I think that should not be the case here.)","['exterior-algebra', 'differential-geometry']"
+3244447,How to find $\lim\limits_{n \to \infty}\int_{0}^{1}(\cos x-\sin x)^ndx$?,"I want to compute $$\lim\limits_{n \to \infty}\int_{0}^{1}(\cos x-\sin x)^n dx.$$ I tried the squeeze theorem, tried simplifying the integral, but I eventually got nothing.","['limits', 'calculus']"
+3244489,How to find $\lim\limits_{n \to \infty}n\int_{0}^{1}(\cos x-\sin x)^ndx$?,"I want to compute $$\lim\limits_{n \to \infty}n\int_{0}^{1}(\cos x-\sin x)^ndx$$ Someone helped me find the limit of the integral , which is $0$ , but now I can't figure out this one. Also tried squeeze theorem but I only get only one side of it to converge to $1$ . Moreover, I'm bound to using elementary calculus.","['limits', 'calculus', 'trigonometric-integrals', 'real-analysis']"
+3244544,Which positive continuous functions satisfy $F(x) = F(e^x)-F(e^{-x})$ for $x\geq 0$?,"There is at least one such function. It is the cdf of the equilibrium probability distribution for the chaotic sequence $x(n+1) = |\log x(n)|$ with $x(1) = 2$ . Its graph (approximation) is pictured below. I am interested in a series expansion for the density $f(x)$ , which is the derivative of $F(x)$ . Note I expect that if you start with a different seed, say $x(1) =3$ , you end up with the same distribution, unless you pick up one of the very rare seeds (called bad seed) that results in a different $F$ . The set of bad seeds has Lebesgue measure zero, but it is infinite and even dense. My intuition is based on the following: consider instead $x(n+1) = bx(n) - \lfloor bx(n) \rfloor$ . The equilibrium distribution is uniform on $[0, 1]$ this time (if $b$ is an integer larger than 1) unless you pick up a bad seed. All rational numbers are bad seeds. Tons of other numbers are bad seeds. But the vast majority are good seeds. A good seed is equivalent to a normal number: its digits in base $b$ are evenly distributed. No one knows if $\pi, e, \log 2$ or $\sqrt{2}$ is a good seed. More on this in my article on the theory of randomness or my book on organized chaos . Similarly, in our context here, proving that $x(1) = 2$ is a good seed is a very hard problem, and possibly un-provable. Yet plenty of evidence makes you believe that it is a good seed. Some sequences such as $x(n+1) = b+x(n) - \lfloor b + x(n)\rfloor$ do not have bad seeds if $b$ is irrational. The logistic map $x(n+1) = 4x(n)\cdot (1-x(n))$ has plenty of bad seeds. In our example $x(1) = 0.567143...$ is a bad seed because $x(2) = x(1)$ and thus $x(n) = x(1)$ for all $n$ .","['stochastic-processes', 'functional-equations', 'taylor-expansion', 'sequences-and-series']"
+3244590,"What is the cardinality of the set of subgroups of $(\mathbb R, +)$?","Let $X$ be the set of subgroups of $(\mathbb R, +)$ . What is $|X|$ ? An attempt at a proof that $|X| = 2^{2^{\aleph_0}}$ : Clearly $|X| \le 2^{2^{\aleph_0}}$ , because $X \subset P(\mathbb R)$ . For a lower bound, let $H$ be a Hamel basis of $\mathbb R$ over $\mathbb Q$ . Since $H$ is linearly independent over $\mathbb Q$ (and thus also over $\mathbb Z$ ), every subset of $H$ generates a distinct subgroup of $\mathbb R$ . Since $|H| = 2^{\aleph_0}$ (I think), the set of all such groups then has cardinality $2^{|H|} = 2^{2^{\aleph_0}}$ . Since this is a subset of $X$ , we must have $2^{2^{\aleph_0}}\le |X|$ . Thus, $|X| = 2^{2^{\aleph_0}}$ . Does this work? Also, is there a way to prove this that isn't quite so reliant on Choice (needed for the Hamel basis of $\mathbb R$ and possibly some of the cardinality comparisons)?","['group-theory', 'proof-verification', 'cardinals']"
+3244622,Multivalued functions and branch points: Evaluate the following integral,"I have this integral : $$ {J}=\int_{-1}^{+1}\frac{(1-x)^{-\frac{2}{3}}(1+x)^{-\frac{1}{3}}}{4+x^2}\,dx$$ There are three branch points for this integral : $1,-i,+i$ and two pole points $-2i$ and $+2i$ which lie outside. So can we say that there are no pole points for this integral and how to solve it.","['complex-analysis', 'contour-integration']"
+3244636,Character Tables,"I have a question about some contradictory instructions provided in group theory. This website says that the character table for the group $C_3$ is as shown below. where the cyclic group is $A, A^2, A^3=E$ , and $\Gamma^{(i)}$ are the irreducible representations of the group. To my understanding, the rows and columns in a character table must be orthogonal, which works for all rows and columns except when multiplying $\Gamma^{(2)}$ by $\Gamma^{(3)}$ , where we get $1+1+1=3\neq0$ . The orthogonality of rows just means that multiplying entries in a row together and summing them up gives zero. So for $\Gamma^{(1)}$ and $\Gamma^{(2)}$ , the orthogonality is that $(1)(1)+(1)\text{e}^{2\pi i/3}+(1)\text{e}^{-2\pi i/3}=0$ . The same applies to columns. We also know that the characters are just the traces of the irreducible representations. The dimensionalities of the irreducible representations are all 1, so the characters must just be group elements of the irreducible representations. Correct me if I am wrong on that point. I've seen several character tables where the orthogonality does no seem to hold and its very confusing because that is how you find a character table, by finding characters which make it orthogonal. Edit: I was thrown off because on this website the character table at the bottom is not orthogonal and it has all real characters, so I was unsure if I was doing it correctly.",['group-theory']
+3244699,Meaning of an Equation,"What exactly is the meaning of the variables in an equation? That’s probably not a good way to write the question I’m trying to ask, but take the equation $$x^2 = 4$$ Does the $x$ represent all values in the domain, and is the equation is asking us to find which values of $x$ the equation is true for? Or is $x^2 = 4$ always true, and are we just looking for what values $x$ represents.",['algebra-precalculus']
+3244706,Explain why the following is or isn't a multiplicative function.,"I'm working through practice problems for my exam in class and I need some help with the following problem: A function $f(n)$ is defined to be the greatest power of $2$ that divides $n$ . For example, $f(20) = 2^2 = 4$ , $f(32) = 2^5 = 32$ , $f(72) = 2^3 = 8$ , etc. Is $f(n)$ a multiplicative function? Explain your answer. I believe that it is a multiplicative function by looking at the examples, but I'm not sure how to explain the logic behind it and prove it for all cases. Please correct me if I'm wrong, thank you for the help!","['multiplicative-function', 'number-theory', 'elementary-number-theory']"
+3244710,Integral $\int_{-1}^{1} \frac{\mathrm dx}{x}$,"Consider the following integration $$\int_{-1}^1\frac{\mathrm dx}{x}$$ B thinks this expression should be written as $$\int_{-1}^0\frac{\mathrm dx}{x}+\int_0^1\frac{\mathrm dx}{x}$$ which is not convergent, but A thinks it is zero because it is an odd function with the symmetric region so the integration is zero. B thinks that the integration doesn't converge, so we are not allowed to use the properties of integration. I think B is correct. Right?",['calculus']
+3244771,About composition of Transversal Maps,"Can anyone give me a hint to prove the following? If $f:M\rightarrow N$ and $g:N\rightarrow P$ are $C^{k}$ maps and $g$ is transversal to a submanifold $S$ of $P$ , then: $f$ is tranversal to $g^{-1}(S)$ if and only if $g\circ f$ is transversal to $S$ . Remark: $h:A\rightarrow B$ is transversal do $W$ if $T_{h(p)}B=Dh_{p}(T_{p}A)+T_{h(p)}W$ I only found it as exercise in the books. Any clue will be great. Thanks","['geometry', 'smooth-manifolds', 'manifolds', 'differential-topology', 'differential-geometry']"
+3244850,Canonical Form for Commuting Vector Fields,"I am reading Introduction to Smooth Manifolds by John M. Lee, and I have a question about the proof of a theorem about canonical form for commuting vector fields. The statement and the proof of the theorem (Theorem 9.46 in the book) goes as follows: Theorem . Let $M$ be a smooth $n$ -manifold, and let $(V_1,\dots,V_k)$ be a linearly independent $k$ -tuple of smooth commuting vector fields on an open subset $W\subseteq M$ . For each $p\in W$ , there exists a smooth coordinate chart $(U,(s_i))$ centered at $p$ such that $V_i=\partial/\partial s^i$ for $i=1,\dots ,k$ / If $S\subseteq W$ is an embedded codimension- $k$ submanifold and $p$ is a point of $S$ such that $T_p S$ is complementary to the span of $(V_1\mid _p,\dots V_k\mid _p)$ , then the coordinates can also be chosen such that $S\cap U$ is the slice defined by $s^1=\cdots=s^k=0$ . Proof. Choose a slice chart $(U,(x^i))$ for $S$ centered at $p$ , so that $U\cap S$ is equal to the slice $\{x\in U\mid x^1=\cdots =x_k=0\}$ . Because the theorem is local, it suffices to consider the case where $U$ is an open set of $\mathbb{R}^n$ . Let $\theta_i$ denote the flow of $V_i$ for $i=1,\dots, k$ , and choose $\varepsilon>0$ and a neighbrohood $Y$ of $p$ such that the composition $(\theta_1)_{t_1} \circ \cdots \circ(\theta_k)_{t_k}$ is defined on $Y$ and maps $Y$ into $U$ whenever $|t_1|,\dots |t_k|$ are all less than $\varepsilon$ . Define $\Omega\subseteq \mathbb{R}^{n-k}$ by $$\Omega=\{(s^{k+1},\dots,s^n)|(0,\dots,0,s^{k+1},\dots,s^n)\in Y\},$$ and define $\Phi:(-\varepsilon,\varepsilon)^k\times \Omega\to U$ by $$\Phi(s^1,\dots s^n)=(\theta_1)_{s^1} \circ \cdots \circ(\theta_k)_{s^k}(0,\dots,0,s^{k+1},\dots ,s^n).$$ The hypothesis that $\theta_i$ commutes ensures us that $\partial/\partial s^i$ is $\Phi$ -related to $V_i$ for $i=1,\dots ,k$ . By construction, we also have $d\Phi_0(\partial/\partial s^i|_0)=\partial/\partial x^i \mid _p$ for $i=k+1,\dots, n$ ; it follows that the differential $d\Phi _0$ of $\Phi$ at the origin is invertible, so $\Phi$ restricts a diffeomorphism from a neighborhood of $0$ onto an open set $\tilde U$ of $M$ . The chart $(\tilde U,\varphi):=(\tilde U, \Phi^{-1})$ is the desired slice chart for $S$ . $\square$ I do not understand why the chart $(\tilde U,\varphi)$ a slice chart for $S$ . For sure, by construction we have $\Phi (\{0\}\times \Omega)=S\cap Y$ , so if $q\in \tilde U$ satisfies $\varphi(q)\in \{0\}\times \mathbb{R}^{n-k}$ , then $q$ has to lie in $S$ . However, (if my understanding is correct) the construction above does not exclude the possibility that $\varphi(\tilde U\cap S)\supsetneq \varphi(\tilde U)\cap (\{0\}\times \mathbb{R}^{n-k})$ . So the question really boils down to finding some neighborhood of $0$ whose point is mapped into $S$ by $\Phi$ if and only if its first $k$ coordinates are all $0$ ; and intuitively, it is not hard to convince ourselves that such a neighborhood does exist. But I have been having a hard time proving it. Can anyone help me? Thanks in advance.","['vector-fields', 'differential-topology', 'smooth-manifolds', 'differential-geometry']"
+3244883,Canonical Divisors versus Principal Divisors,"Perhaps this is so obvious a question that no one has asked it before, but can someone provide a simple example of a canonical divisor which is not a principal divisor or conversely on a Riemann Surface? I know that if $g(X)=1$ then $\operatorname{KDiv}(X)=\operatorname{PDiv}(X)$ , but I imagine that this does not always hold. Here is my presumably false proof that $""\operatorname{KDiv}(X)=\operatorname{PDiv}(X)""$ in general: If $\omega$ is a meromorphic $1-$ form on $X$ , then $\operatorname{div}(\omega)=\sum_{p\in X} \operatorname{ord}_p(\omega)\cdot p$ , and for $f\in \mathcal{M}(X)$ , we have $\operatorname{div}(f)=\sum_{p\in X} \operatorname{ord}_p(f)\cdot p$ . However, $\operatorname{ord}_p(\omega)=\operatorname{ord}_0(g_p(z) dz)$ where $z$ is a local parameter near $p$ , centered at $p$ . I believe one should be able to glue together the $g_p$ to form a global meromorphic function $g\in \mathcal{M}(X)$ with $\operatorname{div}(g)=\operatorname{div}(\omega)$ . In this case, we would get that $\operatorname{KDiv}(X)=\operatorname{PDiv}(X)$ . I think my mistake is that the gluing procedure produces something undesirable because of the method by which differential forms transform under a change of variables.","['riemann-surfaces', 'divisors-algebraic-geometry', 'algebraic-geometry', 'sheaf-theory']"
+3244900,How likely is it for the polynomial obtained from a base-$b$ expansion of $n$ to be reducible?,"Let $n$ and $b$ be integers larger than $1$ , and write the base- $b$ expansion of $n$ as $n = \sum\limits_{i=0}^\infty a_i b^i$ (only finitely many of the $a_i$ are nonzero). We can define the polynomial $P_b^n(X)$ associated to this expansion by $P_b^n(X) = \sum\limits_{i=0}^\infty a_iX^i$ . Now define the set $S_n = \{b \mid b \lt n \text{ and } P_b^n(X)\text{ is reducible in }\mathbb Z[X]\}$ . Note that a linear polynomial $a_0+a_1X$ can also be considered reducible if $\gcd(a_0, a_1) \gt 1$ . What do we know about lower/upper bounds and asymptotic behavior for $|S_n|$ (particularly when $n$ is composite)? The motivation for this question is that given an integer $n$ , we can try to factor it by finding a base $b$ in which $P_b^n(X)$ is reducible, and obtaining factors of $n$ by replacing $X$ with $b$ in the polynomial factors. I am interested in the likelihood that such a strategy may succeed. Of course I am aware of better integer factorization algorithms, such as the Quadratic Sieve or the General Number Field Sieve, but I want to know how such an algorithm would perform, and whether/how often it can fail on composite numbers.","['number-theory', 'polynomials', 'asymptotics', 'reference-request']"
+3245028,Complex analysis. Continuous and differentiable function in polar form,"Given a function $f:\mathbb{R} \rightarrow \mathbb{C}$ that is continuous and differentiable everywhere. Is it true that I can write $f(t)$ as: $$f(t) = r(t)e^{i\theta(t)}$$ for some $r(t)$ and $\theta(t)$ that are real, continuous and differentiable everywhere. Intuitively the answer seems yes to me. I can choose $$r(t) = |f(t)|$$ I can start with $$\theta(t) = arg(f(t))$$ for nonzero $f(t)$ and modify it to remove discontinuities by adding or subtracting $2\pi$ at discontinuous t values. At values where $f(t) = 0$ ,  I can choose $\theta(t)$ to maintain continuity. But I'm interested in a rigorous answer. Thanks.","['complex-analysis', 'polar-coordinates']"
+3245030,"IMO 1984: Prove that $0 ≤ yz + zx +xy −2xyz ≤ \frac {7}{27}$, where $x,y$ and $z$ are non-negative real numbers for which $x + y + z = 1.$","I tried to solve this inequality because I find exotic.  Actually, I didn't look at the right solution.  Because before I look at the right solution, I want to know if my solution is right or not. Prove that $0 ≤ yz + zx +xy -2xyz≤\frac{7}{27}$ , where $x,y$ and $z$ are non-negative real numbers for which $x + y + z = 1.$ Attempts: If $x=0$ . The left side of the inequality is correct. So, I can accept $x,y,z≠0$ . It is enough to prove $\frac 1x+\frac1y+\frac1z≥2$ We have, $x+y+z≥3\sqrt[3]{xyz}\Longrightarrow xyz≤\frac1{27}$ $\frac 1x+\frac1y+\frac1z≥\frac3{\sqrt[3]{xyz}}≥9≥2$ The left side proved. It is obvious at least one of the numbers is less than $\frac 12.$ So, we can choose $y$ , such that $y≤\frac 12$ . Therefore, we have $yz + zx +xy −2xyz ≤ \frac7{27}$ $x(y+z)+yz(1-2x)-\frac7{27}≤0$ $x(1-x)+y(1-x-y)(1-2x)-\frac7{27}≤0$ $x-x^2+y-xy-y^2-2xy+2x^2y+2xy^2-\frac7{27}≤0$ $x^2-x-y+xy+y^2+2xy-2x^2y-2xy^2+\frac{7}{27}≥0$ $x^2(1-2y)+x(3y-2y^2-1)+(y^2-y+\frac7{27})≥0$ $2(\frac12-y)\left(x+\frac{y-1}{2}\right)^2+\frac{1}{108} (3y-1)^2(6y+1)≥0$ Of course, I'm not sure the solution is correct.  Can you verify the solution? Thank you.","['contest-math', 'inequality', 'proof-verification', 'proof-writing', 'algebra-precalculus']"
+3245085,Question regarding proof that the composite mapping of two one-one maps is one-one,"I have come across a question regarding composite mappings. The question is as follows- Prove that the composite mapping of two one-one maps is one-one. My proof is as follows- let us consider two one to one mappings $f : X \to Y$ and $g : Y \to Z$ . Since $g $ is one to one, then if ${\rm z}_0 = {\rm z}_1$ $\implies$ $g({\rm y}_0) = g({\rm y}_1)$ $\implies$ $g(f({\rm x}_0)) = g(f({\rm x}_1))$ $\implies$ $(g \circ f){\rm x}_0 = (g \circ f){\rm x}_1$ $\implies$ ${\rm x}_0 = {\rm x}_1$ Hence, $(g \circ f)$ is one to one function. Is my proof considerable ? Can I be provided with a more formal and a detailed proof ? ( I would like to be as pedantic as possible)","['elementary-set-theory', 'functions', 'discrete-mathematics']"
+3245094,Why does limit not exist?,"I don't understand how the limit does not exist for the composite function. The limit as x approaches -2 for g(x) is zero. So, the last step is to evaluate h(0), which is -1. Yes, there is a hole at x=0 but that doesn't mean you can't evaluate h(0).","['limits', 'calculus']"
+3245097,"$f(ax)=f(x)^2-1$, what is $f$?","Suppose $f(ax)=(f(x))^2-1$ and suppose that $f$ is analytic in some neighborhood of $x=0$ . Expanding in power series, we get $a=1+\sqrt{5}$ or $1-\sqrt{5}$ . We take positive $a$ . If $f\neq{\rm const}$ then $f'(0)\neq0$ - it can be any non-zero number. After that, we can uniquely define coefficients in power series $f^{(n)}(0)/n!$ step by step using differentiation of the functional equation $$
+ f(0)=f(0)^2-1\ \Rightarrow\ f(0)=\frac{1\pm\sqrt{5}}2;\ 2f'(0)f(0)=af'(0)\ \Rightarrow\ f(0)=a/2;\ \ 2f''(0)f(0)+2(f'(0))^2=a^2f''(0)\ \Rightarrow\ f''(0)=\frac{2(f'(0))^2}{a^2-a};\ \ ....
+$$ Can $f$ be expressed in terms of some known functions? It seems that $f$ is entire function of order $1$ . Indeed, due to the Leibnitz formula, we have $$
+ a^nf^{(n)}(0)=\sum_{k=0}^n\binom{n}{k}f^{(n-k)}(0)f^{(k)}(0),
+$$ which leads to \begin{equation}\label{l1}
+ f^{(n)}(0)=\frac{\sum_{k=1}^{n-1}\binom{n}{k}f^{(n-k)}(0)f^{(k)}(0)}{a^n-a}.
+\end{equation} It is true that $|f''(0)|\leq|f'(0)|^2=:C^2$ , see above. Suppose that we already proved $|f^{(k)}(0)|\leq C^k$ , $1\leq k\leq n-1$ . Then $$
+ |f^{(n)}(0)|\leq \frac{C^n2^n}{(\sqrt{5}+1)^{n-1}\sqrt{5}}\leq C^n.
+$$ Hence, the power series converges everywhere and $|f(x)|\leq|f(0)|+e^{C|x|}-1$ , $x\in\mathbb{C}$ . (The functional equation is somewhat similar to $\cos 2x=2\cos^2x-1$ . If we denote $g(x)=f(x)/f(0)$ then $$
+ g'(x)=g'(0)g(a^{-1}x)g(a^{-2}x)g(a^{-3}x)....
+$$ Also, the polynomial $$
+ P_n(x)=f(a^nf^{-1}(x))=P\circ...\circ P(x),\ \ \ P(x)=x^2-1
+$$ is some analog of Chebyshev polynomial $T_{2^n}(x)$ . The polynomials $P_n(x)$ are related to the representations of some class of infinite Lie algebras, but I forgot the story behind that...) Remark. It is seen that $f(\lambda x)$ satisfies also the functional equation, for any $\lambda$ . So, we can choose $f'(0)$ freely. Instead of this, let us choose the closest to $0$ zero as $x_0:=1$ (if zeroes exist), i.e. $f(1)=0$ . Then $f(a^{-1})=1$ (not $-1$ , since $x_0$ is the first zero and $f(0)>0$ ). Applying again the functional equation, we get $$
+ f(1)=0,\ f(a^{-1})=1,\ f(a^{-2})=\sqrt{2},\ ...,\  f(a^{-n})=\sqrt{1+f(a^{-n+1})},\ ....
+$$ Theoretically, we can recover $f(x)$ from infinite number of values $f(a^{-n})$ covergent to $f(0)=a/2$ . The next statement is wrong because, perhaps, $f$ can have complex zeros along with real zeros. I leave it just for possible improvements. Due to $f'(ax)=2a^{-1}f(x)f'(x)=(2a^{-1})^2f(x)f(a^{-1}x)f'(a^{-1}x)=...$ (see above infinite product for $g$ ), we can conclude that $f'(x)\neq0$ for $x\in[0,a)$ and, hence $f$ is monotonic on this interval. $f$ is also monotonic for $x\in(a,a^2)$ , since $f'(ax)=2a^{-1}f(x)f'(x)$ . Due to $f(a^2x)=f(x)^2(f(x)^2-2)$ , we see that $x_1=a^2$ is a double zero, $x_2=a^4$ is a zero of fourth order, etc. Following the same arguments as above, there are no other zeroes. Then $$
+ f(x)=e^{h(x)}\prod_{n=0}^{\infty}\left(1-\frac{x}{a^{2n}}\right)^{2^n}.
+$$ Is $h(x)=\ln a-\ln 2$ ? Perhaps, something wrong can be here... but if this is true then $$
+ \ln f(x)=\ln a-\ln 2-\sum_{k=1}^{\infty}\frac{a^{2k}x^k}{k(a^{2k}-2)}
+$$ or something like that. While the previous section was wrong, the true Hadamard expansion perhaps exist. This is still rough. Let $\{x_r\}$ be the smallest primitive zeros of $f$ , such that all are other zeroes are $a^{2n}x_r$ . Dentote $H(x)=\prod_r(1-x/x_r)$ - I do not know about the convergence of the product, I am trying to explain some ideas. We can follow the arguments from the wrong section above. Then, perhaps, it is true that $$
+ f(x)=\frac{a e^{dx}}{2}\prod_{n=0}^{\infty}H\left(\frac x{a^{2n}}\right)^{2^n}
+$$ with some constant $d$ (I hope it is $0$ ), since the order of $f$ does not exceed $1$ . Substituting this identity into $f(a^2x)=f(x)^2(f(x)^2-2)$ we obtain also $$
+ f(x)=\sqrt{2+e^{d(a^2-2)x}(2/a)H(a^2x)}.
+$$ Using $f'(ax)=f'(0)\prod_{n=1}^{\infty}(2f(x/a^n)/a)$ (see above $g$ ), we obtain $$
+ f'(x)=f'(0)e^{\frac{dx}{a-1}}\prod_{n=1}^{\infty}H\left(\frac{x}{a^{2n}}\right)^{2^n-1}\prod_{n=1}^{\infty}H\left(\frac{x}{a^{2n-1}}\right)^{2^n-1}.
+$$ It is possible to obtain other formulas. There is also another motivation to study $f$ : $$
+ f(a^nx)=P\circ..\circ P(f(x)),\ \ P(x)=x^2-1.
+$$ Thus, we can try to analyze the stability of values $f(z)$ under the action of the group of polynomials. This question is related to dynamical systems, fractals... Maybe the dynamical systems community already studied such analytic functions? There is an exact relation to fractals and holomorphic dynamics. Using $f(z)=P\circ...\circ P(f(a^{-n}z))$ , $P(z)=z^2-1$ , we obtain that if $z_0$ (located in the strip $S_n:=\{z:\ a^n\leq|z_0|<a^{n+1}\}$ ) is a primitive zero of $f$ , i.e. $f(a^{-k}z)\neq0$ , $k\geq1$ , then $f(a^{-n}z_0)$ is a non-trivial root of the polynomial $P_n=P^{\circ n}$ . All such non-trivia roots have the form $$
+ q= s_0\sqrt{1+s_1\sqrt{1+...+s_{n-1}\sqrt{1+s_n\sqrt{2}}}},
+$$ where $s_j\in\{-1,1\}$ . Without loss of generality, consider the case $f'(0)=1$ . Then, for sufficiently large $n_0$ , we have $$
+ \frac{a}2+a^{-n-n_0}z_0\approx f(a^{-n-n_0}z_0)= s_0\sqrt{1+s_1\sqrt{1+...+s_{n-1}\sqrt{1+s_n\sqrt{2}}}}.
+$$ Hence $$
+ a^{-n-n_0}z_0\approx s_0\sqrt{1+s_1\sqrt{1+...+s_{n-1}\sqrt{1+s_n\sqrt{2}}}}-\frac{a}2(=q)
+$$ and all such $q$ lying in $a^{-n_0}\leq|q|<a^{-n_0+1}$ correspond to primitive roots of $f$ lying in $S_n$ . I have computed them for $n=20$ (and $n_0=4$ ): It looks like a Julia set. So, zeros of $f$ (even primitive zeros) are very complex. I hope I did not make large mistakes somewhere... It is also possible to introduce more general functions satisfying $$
+ f(ax)=bf(x)^2+cf(x)+d\ \ \ {\rm or\ even}\ \ \ f(ax)=Q(f(x)) 
+$$ with some polynomial or rational $Q$ . Such class of functions contain $\sin,\cos,\exp,...$ One of the main questions is still open: are there any relations between $f$ and some known functions? Of course, any information about asymptotics, expansions, numerical results, differential equations, etc. is very welcome. A relation with the approximation of the golden ratio. Finally, I found one relation with more or less known functions. Consider $$
+ g(z)=\lim_{n\to\infty}a^n\biggl(\underbrace{\sqrt{1+\sqrt{1+...\sqrt{1+z}}}}_n-\frac{a}2\biggr).
+$$ The function $g$ is analytic (not entire), it is considered in Paris, R. B. ""An Asymptotic Approximation Connected with the Golden Number."" Amer. Math. Monthly 94, 272-278, 1987. It satisfies the functional equation $$
+ g(z)=ag(\sqrt{1+z}).
+$$ Hence, $f$ is exactly the inverse function to $g$ . It is useful to note that $g'$ admits an explicit representation $$
+ g'(z)=\frac{a}{2\sqrt{1+z}}\cdot\frac{a}{2\sqrt{1+\sqrt{1+z}}}....
+$$ Edit - 04 June 2019. There are few remarks: due to the product expansion for $g'(x)$ , all primitive zeros are simple and each simple zero of $f$ is primitive. Due to the comments and answers below (many thanks to the authors), the order of $f$ is $\rho=\ln 2/\ln a<1$ . This value can be obtained by substituting $e^{A|z|^{\rho}}$ into $f(az)=f(z)^2-1$ , which gives $a^{\rho}=2$ . Because the order $\rho<1$ , we have $d=0$ in the Weierstrass-Hadamard expansion. Something like this... For me, it was a bit strange to see the more or less explicit entire function $f$ whose zeros form fractals. Edit - 05 June 2019 As mentioned above, the function $f$ has a lot of multiple roots. There is a linear transform which leaves simple roots of only. Without loss of generality, consider the case $f'(0)=1$ . Recall that, see above, if $(x_r)$ are simple roots of $f$ then $f$ can be expressed in terms of $H(x)=\prod(1-x/x_r)$ as $$
+ f(x)=\sqrt{2+(2/a)H(a^2x)}
+$$ or $$
+ f(x)^2-1=1+(2/a)H(a^2x),
+$$ which leads to $$
+ f(x)=1+(2/a)H(ax).
+$$ The function $H$ has simple zeros only forming a fractal structure. Edit - 06 June 2019 People from IMRN said that $f(az)=P(f(z))$ is a Poincare equation. They provided also somereference: [main] P. Fatou, ""Memoire sur les equations fonctionnelles"", Bull. Soc. Math. Fr., 47, 161-271; 48, 33-94, 208-314 (1919). [2] A. Eremenko and G. Levin, 
+""Periodic points of polynomials"", 
+Ukrain. Mat. Zh., 41 (1989), 1467--1471 [3] A. Eremenko, M. Sodin, 
+""Iterations of rational functions and the distribution of the values of 
+Poincare functions"", 
+Teor. Funktsii Funktsional. Anal. i Prilozhen., No. 53 (1990), 18--25; 
+translation in J. Soviet Math. 58 (1992), no. 6, 504–509 At the moment, I did not find a detailed analysis of Hadamard expansion for Poincare functions (especially for the case $P(z)=z^2-1$ ), but there is something in, e.g., [4] G. Derfel, P. Grabner, F. Vogl, ""Complex asymptotics of Poincare functions and properties of Julia sets"", Math. Proc. Cambridge Philos. Soc., 145 (2008), 699-718 Edit - 10 June 2019 There is a closed-form expression for $f(z)$ based on the explicit formula for inverse $g(w)=f^{-1}(w)$ , see above, $$
+ g(w)=(w-a/2)\frac{2a}{a+2\sqrt{1+w}}\cdot\frac{2a}{a+2\sqrt{1+\sqrt{1+w}}}\dot....
+$$ We can obtain explicit Vi`ete-type formulas, involving nested radicals, for all zeros of $f$ . Then, Weierstrass-Hadamard factorization gives us $$
+ f(z)=\frac{a}{2}\prod_{\sigma\in\Sigma}\left(1+\frac{2z}{a}\prod_{n=1}^{\infty}\frac{a+2\sigma_n\sqrt{1+\sigma_{n-1}\sqrt{1+...+\sigma_1\sqrt{1}}}}{2a}\right),
+$$ where $$
+ \Sigma=\{\sigma:\mathbb{N}\to\{\pm1\},\ \ \lim_{n\to\infty}\sigma_n=1\}.
+$$ This factorization is one of those I was looking for.","['complex-analysis', 'functional-equations', 'entire-functions', 'dynamical-systems']"
+3245120,Standard inequality and Cauchy integral formula,Let $f$ be holomorphic on $\overline{D_2}$ with $|f(z)|\leq 1$ for all $z\in\overline{D_2}$ . Show that $|f''(z)|\leq 4$ for all $z\in\overline{D_1}$ . My attempt: By the standard inequality and the Cauchy integrla formula we have for all $z\in\overline{D_1}$ : $$|f''(z)|=\left|\frac{2!}{2\pi i}\oint_{\partial D_2}\frac{f(w)}{(w-z)^3}dw\right|=\frac{1}{\pi }\left|\oint_{\partial D_2}\frac{f(w)}{(w-z)^3}dw\right|\leq$$ $$\leq\frac{1}{\pi}\cdot 2\pi \max_{|w|=2}\left|\frac{f(w)}{(w-z)^3}\right|=2\max_{|w|=2}\frac{|f(w)|}{|w-z|^3}$$ Now I want to use $|f(w)|\leq 1$ since $D_1\subset D_2$ and also the triangle inequality: $$2\max_{|w|=2}\frac{|f(w)|}{|w-z|^3}\leq\max_{|w|=2} \frac{2}{||w|-|z||^3}=\frac{2}{|2-|z||^3}$$ And since $|z|\leq 1$ this is always less or equal to $2$ . So in total $|f''(z)|\leq 2$ on the given disk which is obviously less than $4$ . Is this correct?,"['complex-analysis', 'proof-verification', 'cauchy-integral-formula']"
+3245208,"Use the directional derivative to estimate the change in $f(x,y)=\cos\pi xy+xy^2$ as point $(-1,-1)$ moves distance of $0.1$ along vector $i+j$","Use the directional derivative to estimate how much $f(x,y)=\cos\pi xy+xy^2$ will change if the point $P$ is moved from $(-1,-1)$ a distance of $0.1$ along the vector $i+j$ I don't know how to solve this problem can someone please give me some hints about what the problem wants? the answer in my textbook is $0.15\sqrt2$","['partial-derivative', 'multivariable-calculus', 'derivatives']"
+3245240,A problem about finding the probability a random variable is bigger than another random variable,"I'm studying statistics through Khan Academy and it had this question: ""Yuki and Zana are on a swimming team. They often compete against each
+  other in the 100 meter freestyle race. Yuki's times in this race are
+  normally distributed with a mean of 80 seconds and a standard
+  deviation of 4.2 seconds. Zana's times are also
+  normally distributed with a mean of 85 seconds and a standard
+  deviation of 5.6 seconds. We can assume that their
+  times are independent. Suppose we choose a random 100-meter freestyle race and calculate the
+  difference between their times. Find the probability that Yuki's time is faster than Zana's."" Khan Academy's answer to the question is 0.7611 or approximately 0.76. I've spent hours working on this problem and I frustratingly keep on ending up with an answer of 0.2389. Can someone please help me on what I'm doing wrong?","['statistics', 'probability-distributions', 'normal-distribution', 'probability-theory', 'random-variables']"
+3245260,Fenchel-Legendre Transform Intuition in Large Deviations,"Does anyone have a good intuitive reason why the Fenchel-Legendre Transform appears all over the theory of Large Deviations. The Fenchel-Legendre Transform appears in both Sanov Theory and Friedlin-Wentzell Theory, from reading I see that it is appearing in these two areas because of the role that it plays in Cramer's Theorem, and the role that Cramer's Theorem plays in these two areas. I guess the Fenchel-Legendre Transform of the $\log$ moment generating function is whats really playing a role. Maybe some insight into the $\log$ moment generating function would be of use.","['convex-optimization', 'large-deviation-theory', 'convex-analysis', 'probability-theory']"
+3245265,conditional expectation coin,"A 10-yen coin is thrown $N$ times, where $N$ is the number of total heads of obtained by tossing three $100$ -yen coins together. Calculate the expected value of the number of total heads obtained by tossing the $10$ yen coin. My attempt Let $10$ yen coin be thrown $N$ times $= X_1+X_2+X_n$ $E(\sum_{i=1}^{N} X_i)\mbox{ for } i=1,2,3 $ $P(N=k)$ is for total of head when three 100 yen coin is tossed. $$\begin{aligned}
+P(N=0) &= \frac18 \\
+P(N=1) &= \frac38 \\
+P(N=2) &= \frac38 \\
+P(N=3) &=\frac18 \\
+P(N=k) &\approx \frac32 \end{aligned} \\
+P(\text{number of total 100 yen head})\cdot E(\sum_{i=1}^{N} X_i\mid P(N=k)) \\
+E(\sum_{i=1}^{N} X_i)=P(N=k) \cdot E(\sum_{i=1}^{N} X_i\mid P(N=k)$$ Is this right? What should I do next? I'm quite confused, of the relation of N and expectation Answer is $3/4$ , but how can I find it? I computed expectation, $N$ for $10$ yen is $$\begin{aligned}
+N &= 0~, & 0.5 \cdot 0 &= 0 \\
+N &= 1~, & 0.5  \\
+N &= 2~, & 0.5 \cdot 2 & \\
+N &= 3~, & 0.5 \cdot 3 & \end{aligned} \\
+P(\text{number of total 100 yen head}) \cdot E(\sum_{i=1}^{N} X_i\mid P(N=k))
+= 0 \cdot \frac18 + \frac3 8 \cdot 0.5 + \frac38 \cdot1 + \frac18 \cdot 1.5$$ am I right??","['conditional-expectation', 'probability-theory', 'probability']"
+3245269,Topological spaces which are not pseudometrizable.,"Let $(X,\tau)$ be a topological space. Then we know some conditions under which $(X,\tau)$ is metrizable (see for example this and this ). It is also clear from these theorems that not every topological space is metrizable. However, I am wondering whether the same is true for pseudometric spaces also. To be more specific, Does there exist topological spaces which are not pseudometrazible? Where we agree to call a topological space $(X,\tau)$ to be pseudometrizable iff  there exists a pseudometric $d$ on $X$ such that the topology induced by the psuedometric is $\tau$ .","['general-topology', 'metric-spaces', 'examples-counterexamples']"
+3245306,Evaluating $\int_0^{\infty} \frac{1}{1-x^2+x^4}\ln\left(\frac{x^2}{1-x^2+x^4}\right)dx$,Can we find the exact value expressed by elementary functions of $$\int_0^{\infty} \frac{1}{1-x^2+x^4}\ln\left(\frac{x^2}{1-x^2+x^4}\right)dx?$$,"['integration', 'improper-integrals', 'definite-integrals']"
+3245335,"If a representation is Galois-invariant, is it defined over the smaller field?","Take a finite extension of characteristic zero fields $L/F$ which is Galois. Let $G$ be a finite group and $(V,\rho)$ a finite-dimensional representation of $G$ over $L$ . Assume that the representations $V$ and $V^{\sigma}$ are isomorphic for every $\sigma\in\text{Gal}(L/F)$ . Does this mean that $V$ is realizable over $F$ ? Remark: I write $V^{\sigma}$ for the same set as $V$ , but with each $g\in G$ acting by $\sigma(\rho(g))$ rather than by $\rho(g)$ . By $\sigma(\rho(g))$ I refer to the entry-wise conjugation of the matrix $\rho(g)$ . EDIT : It would also be nice to know what happens when the extension $L/F$ is not finite (but still Galois).","['group-theory', 'representation-theory', 'modules']"
+3245336,"The directional derivative of a given function $w = f (x, y)$ at point $Po (1, 2) $","The directional derivative of a given function $w = f (x, y)$ at point $Po (1, 2) $ in the
+direction toward $P1 (2, 3)$ is $2\sqrt2$ and in the direction toward $P2 (1, 0)$ is $(-3)$ . What is
+the value of $\frac{dw}{ds}$ at Po in the direction toward the origin? I don't understand what the question wants and how to solve, but I know that the topic is ""Directional Derivative"" so it contains partial derivatives and vectors, please tell me some tips and hints, where should I start?","['vector-spaces', 'calculus', 'partial-differential-equations', 'partial-derivative', 'derivatives']"
+3245392,construct a quadrilateral with 4 given points as midpoints,"Given 4 points $P_1$ , $P_2$ , $P_3$ , $P_4$ in the plane, is it always possible to construct a quadrilateral with these points as midpoints? With 3 points is very easy but I don't know how to proceed with four ...",['geometry']
+3245427,Why dont we only consider complete measure spaces?,"This question has been asked a few months ago , but in my opinion, it has not yet received a satisfying answer. So I ask again: Why should one consider non-complete measure spaces instead of requiring every measure space to be complete per definition? Most answers on similar questions are like: If $f$ is a measurable function, one wants its codomain to contain fewer measurable sets, so that one finds more measurable functions beside $f$ . Lebesgue-Lebesgue-measurable functions are pretty useless because not even continous functions have to be L-L-measurable (but diffeomorphisms are). If $\Omega$ is a probability space and $X:\Omega \to \mathbb{R}$ a random variable (where $\mathbb{R}$ is endowed with any $\sigma$ -Algebra), its distribution (pushforward measure) isnt necessarily a complete measure. But I see a mistake in those thoughts. The category of measurable spaces (set + $\sigma$ -Algebra) is confused with the category of measure spaces (set + $\sigma$ -Algebra + measure). Of course, Lebesgue-Borel-measurable functions are important, because they are the subject of separably-valued integration (on $\mathbb{R}^n$ ). But for a Bochner-measurable function (a.e. pointwise limit of simple functions) that one wants to integrate, it is irrelevant if there is a measure on its codomain. The $L_1$ -functor goes $$ L_1 : \mathsf{MeasureSpaces} \times \mathsf{BanachSpaces} \to \mathsf{BanachSpaces} \ ,\ (X,A,\mu) , E \mapsto L_1(X,\mu,E)$$ so it may be wrong to think of any sigma-Algebra on the codomain of an integrable function. Also, if $(X,A,\mu)$ is a measure space and $(X,\bar A,\bar \mu)$ is its canonical completion, a function $f:X \to E$ into a Banach space $E$ is Bochner-measurable with respect to $\mu$ , if and only if it is Bochner-measurable with respect to $\bar \mu$ . So, for Bochner integration theory, non-complete measure spaces are completely redundant. And concerning the distribution argument: If one has a random variable $X : \Omega \to \mathbb{R}$ , I see no reason to postulate a $\sigma$ -Algebra on $\mathbb{R}$ and the measurablitiy of $X$ . I think it to be more natural to view $\mathbb{R}$ as simply a set and consider every subset of $\mathbb{R}$ to be measurable, whose preimage is measurable. This yields a $\sigma$ -Algebra, bears no needless abandonment of per se measure-accessible subsets and if $\Omega$ is complete, the pushforward measure will be too.","['measure-theory', 'lebesgue-integral', 'random-variables']"
+3245432,Proving $V(X) = E(V(X|Y)) + V(E(X|Y))$ using the pythagorean theorem,"I know the textbook proof of $$V(X) = E(V(X|Y)) + V(E(X|Y))$$ but I'm interested in understanding the weird proof/analogy with the pythagorean theorem my professor gave in class. With $X, Y$ random variables, His explanation was that covariance defines an inner product, $X$ is a vector and $X|Y$ is the projection of $X$ on the ""plane"" of all posible functions of $Y$ . We proved that Cov $(X - E(X|Y), G(Y)) = 0$ and that would mean that $X - E(X|Y)$ is normal to the ""plane"" of all possible functions of $Y$ . Fine so far but then he uses the fact that $X - E(X|Y)$ and $E(X|Y)$ are perpendicular to show that $$V(X) = V(X - E(X|Y)) + V(E(X|Y))$$ which is directly taken from the pythagorean theorem. My only problem with this is the way to get from $V(X - E(X|Y))$ to $E(V(X|Y))$ . It's easy to show that $V(X - E(X|Y)) = E((X - E(X|Y))^2)$ which almost looks like the definition of variance for $X|Y$ but $X$ is not quite $X|Y$ . What justifies that $$E((X - E(X|Y))^2) = E(E((X|Y - E(X|Y))^2)) = E(V(X|Y))$$ ? Is there something else I should be assuming about this to get to this conclusion? PS: This is my first probability course. I did some linear algebra and I know inner products and abstract vector spaces but the professor didn't go as deep in this course. Thus I don't really know what formally are the components of $X$ as a vector and what is the ""plane"" of all possible functions of $Y$ .","['conditional-expectation', 'variance', 'probability-theory', 'random-variables']"
+3245481,Rotate and scale a point around different origins,"I am trying to rotate an arbitrary, 2D point (x,y) around another point (a,b), and at the same time, scale it from a different point (c,d). To transform the point, I must use a 3x3 transformation matrix. For example, say I have a rectangle. I want to rotate its topleft point around its center, and scale it around its topleft: Given point: \begin{pmatrix} x\\ y \end{pmatrix} rotational origin: \begin{pmatrix} a\\ b \end{pmatrix} and scaling origin: \begin{pmatrix} c\\ d \end{pmatrix} (1) rotate (x,y) around (a,b) (2) scale (x,y) from (c,d) I know I can transform it around one origin using homogeneous coordinates, but how I can incorporate different origins for scaling and rotating in just one transformation matrix?","['matrices', 'geometric-transformation', 'rotations']"
+3245510,Calculate Gram matrix from distance matrix,"I've been trying to wrap my head around this homework question we've gotten for a few days but made little progress. We've been instructed, given a euclidean distance matrix of $n$ coordinates in $\mathbb R^2$ to calculate the Gram matrix of the coordinates, namely, $X^TX$ if $X$ is a $2 \times n$ matrix whose columns are the coordinates (note we don't have $X$ ). We've also been told that the center of mass (namely the average of the coordinates) is exactly (0,0). As the second part of the question, we've been given a $312 \times 312$ distance matrix and the first 5 coordinates and have been asked to find the full coordinate matrix. I've tried to use eigenvalue decomposition and calculate $U\sqrt D$ assuming it'd satisfy the demands but I am not sure how to use the coordinates we have been given. It is important to note that for the second part it is not known what the center of mass is. I tried searching on here but only found solutions for when (0,0) is $x_1$ and I am not sure how to move from there. Thank you in advance!","['matrices', 'linear-algebra']"
+3245546,Distance of two points in $\mathbb{R}^N$ $\leq$ length of curve,"Let $\gamma$ be a $C^1$ -curve and $x,y \in \mathbb{R}^N$ with $\gamma: [0,1] \longrightarrow \mathbb{R}^N, \gamma(0)=x, \gamma(1)=y$ . My intuition tells me that $||x-y|| \leq \ell(\gamma)$ , where $\ell$ is the length of a curve. Is this true and how to show it?",['real-analysis']
+3245588,How many group homomorphisms $g: \mathbb{Z}_{5} \oplus \mathbb{Z}_{10} \to \mathbb{Z}_{15}$ are there?,"I know there are similar questions asked here on MSE, but none of them really address the specific questions I have (also, I'd like to know if my approach is valid and/or if there is a 'better' way to go about this). (a) If $f: \mathbb{Z}_{15} \to \mathbb{Z}_{5} \oplus \mathbb{Z}_{10}$ is a nontrivial group homomorphism, what is the kernel of $f$ ? (b) How many group homomorphisms $g: \mathbb{Z}_{5} \oplus
+ \mathbb{Z}_{10} \to \mathbb{Z}_{15}$ are there? My attempt: (a) (I think I've got this part.) Let $G = \mathbb{Z}_{15}$ , $H = \mathbb{Z}_{5} \oplus \mathbb{Z}_{10}$ , and $K = \ker f$ . By the First Isomorphism Theorem, $|G|/|K| = |f(G)|$ and $|f(G)|$ divides $|H|$ . Since $|G| = 15$ and $|H| = 50$ (and since $f$ is, by assumption, nontrivial) this means $|K|$ must be $3$ . So, since $K$ is a (normal) subgroup of $G$ of order $3$ , $K = \{0, 5, 10\}$ . (b) If $g: H \to G $ is a homomorphism, then by an argument similar to that in (a), $|\ker g|$ must be $50$ or $10$ . If $|\ker g|= 50$ , then $g$ is the trivial homomorphism (so that's one homomorphism). If $|\ker g| = 10$ , then $g(H)$ is a subgroup of $G$ of order $5$ ; and so $g(H) = \{0, 3, 6, 9, 12 \}$ . But how do I know if such a homomorphism exists? Furthermore, if such a homomorphism exists, is there more than one?","['group-theory', 'abstract-algebra', 'finite-groups']"
+3245592,How is the derivative of $x\cos x\sin x$ $\frac12\sin2x + x\cos2x$?,"Find $f'(x)$ when $f(x) = x\cos(x) \sin(x)$ I tried using the product rule on $x\cos x$ and got: $$(x\cos x)' = -x\sin x + \cos x$$ then I used the product rule to differentiate $x\cos x\sin x$ and got: $$(x\cos x \sin x)' = (-x \sin x + \cos x)\sin x+ (x\cos x \cos x)= -x\sin^2x+ \sin x \cos x + x\cos^2x$$ My testbook says the answer is $\frac12\sin2x+ x\cos2x$ Can someone please explain how to achieve the answer shown in my textbook? I am new to calc and trig, and I'm very confused.  Any help is appreciated.","['calculus', 'derivatives', 'trigonometry']"
+3245664,Symbolic approximation through integration by parts,"This is a slightly soft question. Suppose I have an integral $f(x) =\int_a^x g(t) dt $ which cannot be expressed in terms of elementary functions. One might still be able to integrate by parts to get something like: $$ f(x) = h_1(t) |_{a}^{x} - \int_a^x g_1(x)$$ by repeating this process, you could end up with: $$f(x) =  \left( \sum_{k=0}^n h_k(t)|_a^x \right) + \int_a^x g_n(x) $$ and if you can bound $\int_a^x g_n(x)$ by something small then you have an approximation for the integral, $f$ , in terms of elementary functions. My questions are: Are there any instances in which something like this turns out to be a successful strategy? Could someone direct me toward a book or resource about symbolically approximating integrals? By symbolic approximation I mean finding a good approximation to an integral $f(x) = \int_a^x g(t) dt $ of an elementary function in terms of elementary functions. When I google this, I only get results about numerically approximating integrals.","['approximation', 'real-analysis', 'calculus', 'symbolic-computation', 'indefinite-integrals']"
+3245676,"On the correspondence between vector fields, derivations and 1 parameter groups of diffeomorphisms","Let X be a smooth n-manifold.  Then there is a 1-1 correspondence between 
+derivations $\delta: C^{\infty}(X) \rightarrow C^{\infty}(X)$ and vector fields $v\in C^{\infty}(TX)$ . For example given $\delta$ we can define a vector field by setting $v\in C^{\infty}(X)$ to be $$v: x \mapsto v_x := (a \mapsto \delta(a)\vert_x)$$ Now suppose we have a 1-parameter group of diffeomorphisms $\varphi: \mathbb{R} \times X \rightarrow X$ . Then we can define a derivation by letting $$\delta: a\mapsto \frac{d}{dt}(a\circ\varphi_t(x))\vert_{t=0}$$ My question is this: what is the derivation that corresponds to $\varphi$ ? I found some notes that claimed that the vector field would be $$v: x\mapsto v_x:= \frac{d}{dt}(\varphi_t(x))|_{t=0}$$ But I fail to see how this would act on smooth maps $a\in C^{\infty}(X)$ ...","['geometry', 'differential-geometry']"
+3245714,Differentiating an ODE,"Suppose we have the ODE $\dot{u}^2 = au^2 + bu +c $ with real constants $a,b,c$ and initial values $u(0) = \dot{u} (0) = 0$ . Since I know no better way to solve this, I want to differentiate this ODE, so I get $$2\dot{u}\ddot{u} = 2au \dot{u} + b \dot{u}.$$ After cancelling $\dot{u}$ we have a linear second-order ODE which is no problem to solve, but this gives us our required $u$ only up to a constant. Is there a fast / easy way to get this constant? If I plug the linear-ODE-solution into the equation from the beginning, the calculation gets really annoying.","['integration', 'calculus', 'derivatives', 'ordinary-differential-equations']"
+3245728,"Prove that the only solution to $X^4+4=pY^4$. is $X=\pm 1,Y=\pm 1,p=5$ for $p \ge 3$ prime.","Let $p$ , be a prime, $p\ge 3$ . Consider the equation $X^4+4=pY^4$ . Prove that the only solution is $X=\pm 1,Y=\pm 1,p=5$ Hint: $x^4+4=(x^2-2x+2)(x^2+2x+2)$ . I've tried Fermat's Little Theorem and the linear Diophantine Equation, but it doesn't work. I have been taught Congruence","['number-theory', 'polynomials', 'elementary-number-theory']"
+3245791,Volume of compact rectangle in $\mathbb{R}^d$,"Very often I find difficult to prove what it seems obvious. This is the problem: Let $R\subseteq \mathbb{R}^d$ a compact rectangle and $R_1,\ldots,R_n$ open rectangles such that $R\subseteq R_1\cup\ldots\cup R_n$ . Then show that $v(R) \le v(R_1)+\ldots + v(R_n)$ Now my guess is, since $\cup R_i$ is open then we can write it like a union of nonoverlapping cubes and then we take volumes. Thanks in advance for your help.","['measure-theory', 'lebesgue-measure', 'real-analysis']"
+3245822,Why a circle with a hole in it is not compact?,"Take the real plane $\mathbb R^2$ with the standard topology, and take $A\subset \mathbb R^2$ which is a closed circle minus a smaller closed circle: I am trying to understand why this set is not compact, the hint is to use the Heine-Borel theorem. For me, intuitively, the set is bounded because it can be enclosed by an open ball, so the property it lacks is being closed. One definition for a closed set states that the set must contain all its frontier points, in this case it doesn't contain the ""interior"" frontier points, but i don't think is a good explanation. Another way to prove it is not closed is $\mathbb R^2-A$ is open, but the resultant set has a closed ball at its center, so i think that this doesn't explain it either. Any insights will be greatly appreciated.",['general-topology']
+3245841,"Prove or disprove: If $a+b \leq \frac{1}{2}$, then $\frac{(1-a)(1-b)}{ab} \geq 1$ for positive $a,b$","Let $a,b$ be two positive numbers. Prove or disprove the statement: If $a+b \leq \frac{1}{2}$ , then $\dfrac{1-a}{a} \dfrac{1-b}{b} \geq 1$ . True. Assume $a+b \leq \frac{1}{2}$ . Then $$\dfrac{1-a}{a} \dfrac{1-b}{b}=\dfrac{1-b-a+ab}{ab}=\dfrac{1}{ab}-\dfrac{a+b}{ab}+1=-\dfrac{a+b}{ab}+\dfrac{1}{ab}+1\geq \dfrac{-1}{ab}+\dfrac{1}{ab}+1=1. $$ Can you check my answer?","['inequality', 'proof-writing', 'analysis']"
+3245865,$\lim \int \sqrt[n]{f^{n} + g^{n}} d\mu$ exists as extended real number.,"Let $f, g$ be measurable on $(X, \mathcal{M}, \mu)$ with $0 \leq f \leq g$ a.e. Prove that $$\lim_{n\rightarrow \infty} \int \sqrt[n]{f^{n} + g^{n}} d\mu$$ exists as an extended real number. What is its value? So Far: We know $\sqrt[n]{f^{n} + g^{n}} \leq \sqrt[n]{2g^{n}} \leq 2g$ . Also, \begin{align}
+\log(g) &\leq \lim_{n\rightarrow \infty} \frac{\log(f^{n} + g^{n})}{n} \\
+	&= \lim_{n\rightarrow \infty} \frac{f^{n}\log(f) + g^{n}\log(g)}{f^{n} + g^{n}} & (\text{L'Hospital}) \\
+	&\leq \lim_{n\rightarrow \infty} \frac{f^{n}\log(g) + g^{n}\log(g)}{f^{n} + g^{n}} \\
+	&= \log(g),
+\end{align} whence $\sqrt[n]{f^{n} + g^{n}} \rightarrow g$ . Thus if $\int g d\mu < \infty$ then Dominated Convergence gives us $$\int \sqrt[n]{f^{n} + g^{n}} d\mu \longrightarrow \int g d\mu.$$ Where I'm Stuck: If $\int g$ is not finite, I'm not quite sure how to show the limit exists in $[-\infty, \infty]$ . According to Dominated Convergence Theorem on Wiki, it is necessary for $g$ to be integrable. So I cannot get an extended real number limit just from that theorem. I also tried integrating over the sets $\{f < 1\}$ and $\{f \geq 1\}$ . On the second set, $\frac{d}{dn}\sqrt[n]{f^{n} + g^{n}}$ is positive and I can apply Monotone Convergence Theorem over this set, which forgets about whether $\int g$ is infinite or not (if I remember correctly). But then integrating over the other set gets me at most $\int_{f< 1} \sqrt[n]{f^{n} + g^{n}} \leq \int_{f>1} \sqrt[n]{1 + g^{n}}$ .","['integration', 'measure-theory']"
+3245900,How do I solve this log equation for x? $3\log _5\left(\sqrt{2+x}\right)+\log _5\left(\sqrt{2-x}\right)-3=\log _5\left(\sqrt{4-x^2}\right)$,"$3\log _5\left(\sqrt{2+x}\right)+\log _5\left(\sqrt{2-x}\right)-3=\log _5\left(\sqrt{4-x^2}\right)$ I only managed to solve up to this step: $\left(2+x\right)^{\frac{3}{2}}\sqrt{2-x}=\sqrt{4-x^2}\cdot \:125$ However, I'm not too sure about squaring both sides as I would have to handle ridiculously large numbers to find x, so I'm not too sure that I'm doing it correctly.","['algebra-precalculus', 'logarithms']"
+3245901,"Random points on interval, expected lengths of pieces","Many years ago I came across the following task. If we have the interval $[0; 1]$ and we throw $N$ uniformly distributed and mutually independent points on it, then we'll get $N+1$ segments. What is the expected length of the longest segment? The 2nd longest? Etc. For $N=1$ , the solution is trivial: $3/4$ and $1/4$ (since the longest segment is uniformly distributed in [1/2; 1] and the shorter one is uniformly distributed in $[0; 1/2]$ ). For $N=2$ , the solution is not trivial, but possible. One just has to draw a quadrat 1 x 1. A point in it would mean that the longest segment has the x coordinate, and the 2nd longest segment has the y coordinate (and the shortest one is 1 - 1st - 2nd). One then has to carefully draw the possible area (this will be a triangle), and find its middle point. But for $N>2$ I have no clue how to solve it. I remember, the book I saw the task in, had a general solution for arbitrary $N$ , but I don't know anymore what book it was. Note that the task is somewhat similar to Average Distance Between Random Points on a Line Segment , but just somewhat.","['geometry', 'probability']"
+3245938,$DF(a)$ is invertible and $F(a)=0$. Imply $C^1$?,"Suppose $F:\mathbb{R}^3\mapsto\mathbb{R}^3$ via $F(x)=(f_1(x),f_2(x),f_3(x))$ . Assume $DF(a)$ is invertible and $F(a)=0$ . Prove that there are infinitely many values $x\in\mathbb{R}^3$ such that $f_1(x)=f_2(x)=f_3(x)$ . I was just asked this question on a quiz and I don't know where to start , especially because there is no assumption about continuity. My first instinct is to use inverse function theorem but I know this isn't right.",['multivariable-calculus']
+3245982,"Showing that $R^pf_*\mathcal{F} \cong \widetilde{H^p(X, \mathcal{F})}$","$\newcommand{\oh}{\mathcal{O}} \newcommand{\QCoh}{\mathsf{QCoh}} \newcommand{\ra}{\rightarrow} \newcommand{\F}{\mathcal{F}} \newcommand{\Mod}{\text{-}\mathsf{Mod}}$ I'm working through the proof of Proposition 10 of Murfet's notes . The proposition is as follows: Let $f : X \ra Y$ be a morphism of schemes, where $X$ is noetherian and $Y = \text{Spec} A$ is affine. Then for any $ \F \in \QCoh(X)$ and $i \geq 0$ there exists a canonical isomorphism of sheaves of modules on $Y$ natural in $\F$ $$ \beta : R^if_* \F \longrightarrow \widetilde{H^i(X, \F)}.$$ The proof goes as follows (I've denoted my questions with "" Q: ""): $R^if_* \F$ has a canonical $\oh_Y$ -module structure and $H^i(X, \F)$ has a canonical $\Gamma(X, \F)$ -module structure, and since $\Gamma(X, \F)$ has the structure of an $A$ -module, $H^i(X, \F)$ has an $A$ -module structure. Also, $X$ noetherian implies that $f_* \F \in \QCoh(Y)$ . Therefore, we have a canonical isomorphism of sheaves $$ f_* \F \cong \widetilde{\Gamma(X, \F)}. $$ Q: I'm not sure why we have this. I know that if in general $\F$ is a quasi-coherent sheaf on $X$ , then for $U_i$ opens of a particular cover of $X$ , we have $\F|_{U_i} \cong \widetilde{F(U_i)}$ . But I'm not sure as to how we derive the above? I've tried $$ f_* \F|_{U_i} = \F(f^{-1}(-))|_{U_i} $$ but this doesn't really get me anywhere. Proceeding with the proof, we have for $i=0$ a canonical isomorphism natural in $\F$ $$ \mu^0 : R^0f_* \F \cong f_* \F \cong \widetilde{\Gamma(X, \F)} = \widetilde{H^0(X, \F)} \quad \checkmark $$ Now, since the tilde functor $\widetilde{-}: A \Mod \ra \oh_Y \Mod$ is exact, we have two cohomological $\delta$ -functors $\{ R^i f_*(-) \}_{i \geq 0}$ and $\{ \widetilde{H^i(X, -)} \}_{i \geq 0}$ between $\QCoh(X)$ and $\oh_Y \Mod$ . Q: Why does this follow from exactness of the tilde functor? Apologies; this may be obvious (I'm not too brushed up on my $\delta$ -functor knowledge). Quasi-coherent sheaves may be embedded into flasque quasi-coherent sheaves. Hence, both functors are effaceable for $i>0$ . Q: Why does the $\delta$ -functors being effaceable follow from this? Effaceable means (in this case) that for any object $\F \in \QCoh(X)$ there exists a monomorphism $u : \F \ra \mathcal{G}$ such that $\{ R^i f_*(u) \}_{i \geq 0} = 0$ and $\{\widetilde{H^i(X, u)} \}_{i \geq 0}=0$ , some $\mathcal{G}$ . I think that this is because we can say $u$ is the embedding into a flasque quasi-coherent sheaf, and since sheaf cohomology vanishes for flasque sheaves and higher direct images, we get the result. Is this correct modulo details? Then by a theorem of Grothendieck, both of the $\delta$ -functors are universal (i.e. a universal $\delta$ -functor is characterised by the property that giving any morphism from it to any other $\delta$ -functor is equivalent to giving just the $0$ th degree). Therefore, $\mu^0$ gives rise to the canonical natural equivalence that we require. Apologies for the lengthy post and thank you for any answers!","['sheaf-cohomology', 'category-theory', 'algebraic-geometry', 'sheaf-theory', 'schemes']"
+3246000,Graceful graphs with Valence $k$,"For a graceful graph ( code ), vertices are labeled with values from 0 to $e$ so that the $e$ edge differences are all values from 1 to $e$ . The below is now OEIS sequence A308722 . $K_3$ is the minimal valence 2 graph with $e=3$ . $K_4$ is the minimal valence 3 graph with $e=6$ . $O$ is the minimal valence 4 graph with $e=12$ . The minimal graceful graph with valence 5 has $e=20$ . The minimal graceful graph with valence 6 has $e=27$ . The minimal graceful graph for valence 7 has $e=35$ . It is unique. What are minimal graceful graphs with valence 8 and up? These are heavily related to sparse rulers .  My guess for future behavior is: e=48 with 12 vertices of valence 8. (verified this one) e=63 with 14 vertices of valence 9. Verified.  The graph complement
+of the following is graceful. Or in the more normal form e=75 with 15 vertices of valence 10.  Verified. There are 37 such graphs.  The graph complement of the following is graceful. e=99 with 18 vertices of valence 11. (e=88 proved impossible). Verified. e=108 with 18 vertices of valence 12.  Verified. The graph complement of the following is graceful. e=130 with 20 vertices of valence 13. Verified. e=147 with 21 vertices of valence 14. e=180 with 24 vertices of valence 15. e=192 with 24 vertices of valence 16. e=221 with 26 vertices of valence 17. e=243 with 27 vertices of valence 18. e=285 with 30 vertices of valence 19. e=320 with 32 vertices of valence 20. e=336 with 32 vertices of valence 21. Many of these graceful graphs are based on data obtained for the Sparse Ruler Conjecture .  That page lists sample sparse rulers to length 600.  Here are lengths 601 to 1100. 601 43 1 | 1×8 8×1 16×8 33×9 17×9 1×7
+602 43 0 | 1×8 8×1 16×7 33×10 17×8 1×8
+603 43 0 | 1×8 9×1 17×8 35×8 18×9 1×8
+604 43 0 | 1×6 6×1 12×7 25×17 13×6 1×5
+605 43 0 | 1×6 6×1 12×6 25×17 13×7 1×5
+606 43 0 | 1×6 6×1 12×5 25×18 13×6 1×6
+607 43 0 | 1×6 7×1 13×6 27×15 14×7 1×6 7×1
+608 43 0 | 1×6 7×1 13×5 27×16 14×6 1×7 7×1
+609 44 1 | 1×8 8×1 16×9 33×9 17×8 1×7 9×1
+610 43 0 | 1×7 8×1 15×8 31×5 15×1 31×6 16×7 1×7
+611 43 0 | 1×7 8×1 15×8 31×5 16×1 31×6 16×7 1×7
+612 43 0 | 1×7 8×1 15×7 31×6 16×1 31×5 16×8 1×7
+613 43 0 | 1×6 7×1 13×7 27×7 14×1 27×8 14×6 1×6
+614 43 0 | 1×7 7×1 14×8 29×13 15×7 1×6
+615 43 0 | 1×7 7×1 14×7 29×13 15×8 1×6
+616 43 0 | 1×7 7×1 14×6 29×14 15×7 1×7
+617 44 1 | 1×8 7×1 14×6 29×14 15×7 1×7
+618 44 1 | 1×7 7×1 14×8 29×13 15×7 1×6 4×1
+619 44 1 | 1×7 7×1 14×8 29×13 15×7 1×6 5×1
+620 44 1 | 1×7 7×1 14×8 29×13 15×7 1×6 6×1
+621 44 1 | 1×7 7×1 14×8 29×13 15×7 1×6 7×1
+622 44 1 | 1×7 7×1 14×8 29×13 15×7 1×6 8×1
+623 44 1 | 1×7 7×1 14×7 29×13 15×8 1×6 8×1
+624 44 1 | 1×7 7×1 14×6 29×14 15×7 1×7 8×1
+625 44 1 | 1×7 8×1 15×10 31×11 16×7 1×7
+626 43 0 | 1×7 8×1 15×8 31×12 16×7 1×7
+627 43 0 | 1×7 8×1 15×7 31×12 16×8 1×7
+628 44 1 | 1×8 8×1 15×7 31×12 16×8 1×7
+629 44 1 | 1×6 6×1 12×7 25×18 13×6 1×5
+630 44 0 | 1×6 6×1 12×6 25×18 13×7 1×5
+631 44 0 | 1×6 6×1 12×5 25×19 13×6 1×6
+632 44 0 | 1×7 8×1 15×8 31×12 16×7 1×7 6×1
+633 44 0 | 1×8 8×1 16×9 33×10 17×8 1×7
+634 44 0 | 1×8 8×1 16×8 33×10 17×9 1×7
+635 44 0 | 1×8 8×1 16×7 33×11 17×8 1×8
+636 44 0 | 1×7 8×1 15×6 31×13 16×7 1×8 8×1
+637 44 0 | 1×8 9×1 17×9 35×9 18×8 1×8
+638 44 0 | 1×8 9×1 17×8 35×9 18×9 1×8
+639 44 0 | 1×6 7×1 13×7 27×8 13×1 27×8 14×6 1×6
+640 44 0 | 1×6 7×1 13×7 27×8 14×1 27×8 14×6 1×6
+641 44 0 | 1×7 8×1 15×8 31×6 15×1 31×6 16×7 1×7
+642 44 0 | 1×7 8×1 15×8 31×6 16×1 31×6 16×7 1×7
+643 44 0 | 1×7 7×1 14×8 29×14 15×7 1×6
+644 44 0 | 1×7 7×1 14×7 29×14 15×8 1×6
+645 44 0 | 1×7 7×1 14×6 29×15 15×7 1×7
+646 45 1 | 1×8 7×1 14×6 29×15 15×7 1×7
+647 45 1 | 1×8 9×1 17×8 35×9 18×9 1×8 9×1
+648 45 1 | 1×5 6×1 11×6 23×22 12×5 1×5
+649 45 1 | 1×5 6×1 11×5 23×22 12×6 1×5
+650 45 1 | 1×7 7×1 14×8 29×14 15×7 1×6 7×1
+651 45 1 | 1×7 7×1 14×8 29×14 15×7 1×6 8×1
+652 45 1 | 1×6 7×1 13×9 27×16 14×6 1×6
+653 44 0 | 1×6 7×1 13×7 27×17 14×6 1×6
+654 44 0 | 1×6 7×1 13×6 27×17 14×7 1×6
+655 45 1 | 1×7 7×1 13×6 27×17 14×7 1×6
+656 45 1 | 1×7 8×1 15×10 31×12 16×7 1×7
+657 44 0 | 1×7 8×1 15×8 31×13 16×7 1×7
+658 44 0 | 1×7 8×1 15×7 31×13 16×8 1×7
+659 45 1 | 1×8 8×1 15×7 31×13 16×8 1×7
+660 45 0 | 1×7 8×1 15×8 31×13 16×7 1×7 3×1
+661 45 0 | 1×7 8×1 15×8 31×13 16×7 1×7 4×1
+662 45 0 | 1×7 8×1 15×8 31×13 16×7 1×7 5×1
+663 45 0 | 1×7 8×1 15×8 31×13 16×7 1×7 6×1
+664 45 0 | 1×7 8×1 15×8 31×13 16×7 1×7 7×1
+665 45 0 | 1×7 8×1 15×8 31×13 16×7 1×7 8×1
+666 45 0 | 1×8 8×1 16×9 33×11 17×8 1×7
+667 45 0 | 1×8 8×1 16×8 33×11 17×9 1×7
+668 45 0 | 1×8 8×1 16×7 33×12 17×8 1×8
+669 46 1 | 1×9 8×1 16×7 33×12 17×8 1×8
+670 46 1 | 1×8 8×1 16×9 33×11 17×8 1×7 4×1
+671 46 1 | 1×9 10×1 19×10 39×7 20×9 1×9
+672 45 0 | 1×8 9×1 17×9 35×10 18×8 1×8
+673 45 0 | 1×8 9×1 17×8 35×10 18×9 1×8
+674 45 0 | 1×7 7×1 14×6 29×16 15×7 1×7
+675 46 1 | 1×9 9×1 18×8 37×9 19×9 1×9
+676 46 1 | 1×8 8×1 16×8 33×11 17×9 1×7 9×1
+677 46 1 | 1×8 8×1 16×7 33×12 17×8 1×8 9×1
+678 46 1 | 1×8 9×1 16×7 33×12 17×8 1×8 9×1
+679 46 1 | 1×6 6×1 12×7 25×20 13×6 1×5
+680 45 0 | 1×6 7×1 13×7 27×18 14×6 1×6
+681 45 0 | 1×6 7×1 13×6 27×18 14×7 1×6
+682 46 1 | 1×7 7×1 13×6 27×18 14×7 1×6
+683 46 1 | 1×7 8×1 14×6 29×16 15×7 1×7 8×1
+684 46 1 | 1×6 7×1 13×7 27×18 14×6 1×6 4×1
+685 46 1 | 1×6 7×1 13×7 27×18 14×6 1×6 5×1
+686 46 1 | 1×6 7×1 13×7 27×18 14×6 1×6 6×1
+687 46 1 | 1×7 8×1 15×10 31×13 16×7 1×7
+688 45 0 | 1×7 8×1 15×8 31×14 16×7 1×7
+689 45 0 | 1×7 8×1 15×7 31×14 16×8 1×7
+690 46 0 | 1×8 8×1 15×7 31×14 16×8 1×7
+691 46 0 | 1×7 8×1 15×8 31×14 16×7 1×7 3×1
+692 46 0 | 1×7 8×1 15×8 31×14 16×7 1×7 4×1
+693 46 0 | 1×7 8×1 15×8 31×14 16×7 1×7 5×1
+694 46 0 | 1×7 8×1 15×8 31×14 16×7 1×7 6×1
+695 46 0 | 1×7 8×1 15×8 31×14 16×7 1×7 7×1
+696 46 0 | 1×7 8×1 15×8 31×14 16×7 1×7 8×1
+697 46 0 | 1×7 8×1 15×7 31×14 16×8 1×7 8×1
+698 46 0 | 1×7 8×1 15×6 31×15 16×7 1×8 8×1
+699 46 0 | 1×8 8×1 16×9 33×12 17×8 1×7
+700 46 0 | 1×8 8×1 16×8 33×12 17×9 1×7
+701 46 0 | 1×8 8×1 16×7 33×13 17×8 1×8
+702 46 0 | 1×7 7×1 14×7 29×16 15×8 1×6
+703 46 0 | 1×7 7×1 14×6 29×17 15×7 1×7
+704 46 0 | 1×7 8×1 15×8 31×7 16×1 31×7 16×7 1×7
+705 46 0 | 1×7 8×1 15×7 31×7 16×1 31×7 16×8 1×7
+706 47 1 | 1×8 9×1 17×11 35×10 18×8 1×8
+707 46 0 | 1×8 9×1 17×9 35×11 18×8 1×8
+708 46 0 | 1×8 9×1 17×8 35×11 18×9 1×8
+709 47 1 | 1×9 9×1 17×8 35×11 18×9 1×8
+710 47 1 | 1×9 9×1 18×10 37×9 19×9 1×8
+711 47 1 | 1×9 9×1 18×9 37×9 19×10 1×8
+712 47 1 | 1×9 9×1 18×8 37×10 19×9 1×9
+713 47 1 | 1×8 9×1 17×9 35×11 18×8 1×8 6×1
+714 47 1 | 1×8 9×1 17×9 35×11 18×8 1×8 7×1
+715 47 1 | 1×8 9×1 17×9 35×11 18×8 1×8 8×1
+716 47 1 | 1×8 9×1 17×9 35×11 18×8 1×8 9×1
+717 47 1 | 1×8 9×1 17×8 35×11 18×9 1×8 9×1
+718 47 1 | 1×7 8×1 15×10 31×14 16×7 1×7
+719 46 0 | 1×7 8×1 15×8 31×15 16×7 1×7
+720 46 0 | 1×7 8×1 15×7 31×15 16×8 1×7
+721 47 0 | 1×8 8×1 15×7 31×15 16×8 1×7
+722 47 0 | 1×7 8×1 15×8 31×15 16×7 1×7 3×1
+723 47 0 | 1×7 8×1 15×8 31×15 16×7 1×7 4×1
+724 47 0 | 1×7 8×1 15×8 31×15 16×7 1×7 5×1
+725 47 0 | 1×7 8×1 15×8 31×15 16×7 1×7 6×1
+726 47 0 | 1×7 8×1 15×8 31×15 16×7 1×7 7×1
+727 47 0 | 1×7 8×1 15×8 31×15 16×7 1×7 8×1
+728 47 0 | 1×7 8×1 15×7 31×15 16×8 1×7 8×1
+729 47 0 | 1×7 8×1 15×6 31×16 16×7 1×8 8×1
+730 47 0 | 1×7 7×1 14×8 29×17 15×7 1×6
+731 47 0 | 1×7 7×1 14×7 29×17 15×8 1×6
+732 47 0 | 1×8 8×1 16×9 33×13 17×8 1×7
+733 47 0 | 1×8 8×1 16×8 33×13 17×9 1×7
+734 47 0 | 1×8 8×1 16×7 33×14 17×8 1×8
+735 47 0 | 1×6 7×1 13×6 27×20 14×7 1×6
+736 47 0 | 1×7 8×1 15×7 31×8 16×1 31×7 16×8 1×7
+737 48 1 | 1×8 8×1 16×9 33×13 17×8 1×7 5×1
+738 48 1 | 1×8 8×1 16×9 33×13 17×8 1×7 6×1
+739 48 1 | 1×8 8×1 16×9 33×13 17×8 1×7 7×1
+740 48 1 | 1×8 8×1 16×9 33×13 17×8 1×7 8×1
+741 48 1 | 1×8 9×1 17×11 35×11 18×8 1×8
+742 47 0 | 1×8 9×1 17×9 35×12 18×8 1×8
+743 47 0 | 1×8 9×1 17×8 35×12 18×9 1×8
+744 48 1 | 1×9 9×1 17×8 35×12 18×9 1×8
+745 48 1 | 1×8 9×1 17×9 35×12 18×8 1×8 3×1
+746 48 1 | 1×8 9×1 17×9 35×12 18×8 1×8 4×1
+747 48 1 | 1×9 9×1 18×10 37×10 19×9 1×8
+748 48 1 | 1×9 9×1 18×9 37×10 19×10 1×8
+749 48 1 | 1×9 9×1 18×8 37×11 19×9 1×9
+750 47 0 | 1×7 8×1 15×8 31×16 16×7 1×7
+751 47 0 | 1×7 8×1 15×7 31×16 16×8 1×7
+752 48 0 | 1×8 8×1 15×7 31×16 16×8 1×7
+753 48 0 | 1×7 8×1 15×8 31×16 16×7 1×7 3×1
+754 48 0 | 1×7 8×1 15×8 31×16 16×7 1×7 4×1
+755 48 0 | 1×7 8×1 15×8 31×16 16×7 1×7 5×1
+756 48 0 | 1×7 8×1 15×8 31×16 16×7 1×7 6×1
+757 48 0 | 1×7 8×1 15×8 31×16 16×7 1×7 7×1
+758 48 0 | 1×7 8×1 15×8 31×16 16×7 1×7 8×1
+759 48 0 | 1×7 7×1 14×8 29×18 15×7 1×6
+760 48 0 | 1×7 7×1 14×7 29×18 15×8 1×6
+761 48 0 | 1×7 7×1 14×6 29×19 15×7 1×7
+762 48 0 | 1×6 7×1 13×6 27×21 14×7 1×6
+763 49 1 | 1×7 7×1 13×6 27×21 14×7 1×6
+764 49 1 | 1×8 8×1 16×11 33×13 17×8 1×7
+765 48 0 | 1×8 8×1 16×9 33×14 17×8 1×7
+766 48 0 | 1×8 8×1 16×8 33×14 17×9 1×7
+767 48 0 | 1×8 8×1 16×7 33×15 17×8 1×8
+768 49 1 | 1×9 8×1 16×7 33×15 17×8 1×8
+769 49 1 | 1×8 8×1 16×9 33×14 17×8 1×7 4×1
+770 49 1 | 1×8 8×1 16×9 33×14 17×8 1×7 5×1
+771 49 1 | 1×8 8×1 16×9 33×14 17×8 1×7 6×1
+772 49 1 | 1×8 8×1 16×9 33×14 17×8 1×7 7×1
+773 49 1 | 1×8 8×1 16×9 33×14 17×8 1×7 8×1
+774 49 1 | 1×8 8×1 16×9 33×14 17×8 1×7 9×1
+775 49 1 | 1×8 8×1 16×8 33×14 17×9 1×7 9×1
+776 49 1 | 1×8 9×1 17×11 35×12 18×8 1×8
+777 48 0 | 1×8 9×1 17×9 35×13 18×8 1×8
+778 48 0 | 1×8 9×1 17×8 35×13 18×9 1×8
+779 49 1 | 1×9 9×1 17×8 35×13 18×9 1×8
+780 49 1 | 1×7 8×1 15×10 31×16 16×7 1×7
+781 48 0 | 1×7 8×1 15×8 31×17 16×7 1×7
+782 48 0 | 1×7 8×1 15×7 31×17 16×8 1×7
+783 49 1 | 1×8 8×1 15×7 31×17 16×8 1×7
+784 49 0 | 1×9 9×1 18×10 37×11 19×9 1×8
+785 49 0 | 1×9 9×1 18×9 37×11 19×10 1×8
+786 49 0 | 1×9 9×1 18×8 37×12 19×9 1×9
+787 49 0 | 1×8 9×1 17×8 35×13 18×9 1×8 9×1
+788 49 0 | 1×9 10×1 19×10 39×10 20×9 1×9
+789 49 0 | 1×9 10×1 19×9 39×10 20×10 1×9
+790 49 0 | 1×7 7×1 14×6 29×20 15×7 1×7
+791 49 0 | 1×7 8×1 15×6 31×18 16×7 1×8 8×1
+792 50 1 | 1×9 9×1 18×10 37×11 19×9 1×8 8×1
+793 50 1 | 1×9 9×1 18×10 37×11 19×9 1×8 9×1
+794 49 0 | 1×8 9×1 17×9 35×6 17×1 35×7 18×8 1×8
+795 49 0 | 1×8 9×1 17×9 35×6 18×1 35×7 18×8 1×8
+796 49 0 | 1×8 9×1 17×8 35×7 18×1 35×6 18×9 1×8
+797 49 0 | 1×7 8×1 15×8 31×8 16×1 31×9 16×7 1×7
+798 49 0 | 1×8 8×1 16×9 33×15 17×8 1×7
+799 49 0 | 1×8 8×1 16×8 33×15 17×9 1×7
+800 49 0 | 1×8 8×1 16×7 33×16 17×8 1×8
+801 50 1 | 1×9 8×1 16×7 33×16 17×8 1×8
+802 50 1 | 1×8 8×1 16×9 33×15 17×8 1×7 4×1
+803 50 1 | 1×8 8×1 16×9 33×15 17×8 1×7 5×1
+804 50 1 | 1×8 8×1 16×9 33×15 17×8 1×7 6×1
+805 50 1 | 1×8 8×1 16×9 33×15 17×8 1×7 7×1
+806 50 1 | 1×8 8×1 16×9 33×15 17×8 1×7 8×1
+807 50 1 | 1×8 8×1 16×9 33×15 17×8 1×7 9×1
+808 50 1 | 1×8 8×1 16×8 33×15 17×9 1×7 9×1
+809 50 1 | 1×8 8×1 16×7 33×16 17×8 1×8 9×1
+810 50 1 | 1×8 9×1 16×7 33×16 17×8 1×8 9×1
+811 50 1 | 1×8 9×1 17×11 35×13 18×8 1×8
+812 49 0 | 1×8 9×1 17×9 35×14 18×8 1×8
+813 49 0 | 1×8 9×1 17×8 35×14 18×9 1×8
+814 50 1 | 1×9 9×1 17×8 35×14 18×9 1×8
+815 50 1 | 1×6 7×1 13×7 27×23 14×6 1×6
+816 50 0 | 1×6 7×1 13×6 27×23 14×7 1×6
+817 50 0 | 1×7 7×1 14×8 29×20 15×7 1×6
+818 50 0 | 1×7 7×1 14×7 29×20 15×8 1×6
+819 50 0 | 1×7 7×1 14×6 29×21 15×7 1×7
+820 50 0 | 1×8 9×1 17×9 35×14 18×8 1×8 8×1
+821 50 0 | 1×9 9×1 18×10 37×12 19×9 1×8
+822 50 0 | 1×9 9×1 18×9 37×12 19×10 1×8
+823 50 0 | 1×9 9×1 18×8 37×13 19×9 1×9
+824 51 1 | 1×10 9×1 18×8 37×13 19×9 1×9
+825 51 1 | 1×9 9×1 18×10 37×12 19×9 1×8 4×1
+826 51 1 | 1×10 11×1 21×11 43×8 22×10 1×10
+827 50 0 | 1×9 10×1 19×10 39×11 20×9 1×9
+828 50 0 | 1×9 10×1 19×9 39×11 20×10 1×9
+829 50 0 | 1×8 9×1 17×9 35×7 17×1 35×7 18×8 1×8
+830 50 0 | 1×8 9×1 17×9 35×7 18×1 35×7 18×8 1×8
+831 50 0 | 1×8 8×1 16×9 33×16 17×8 1×7
+832 50 0 | 1×8 8×1 16×8 33×16 17×9 1×7
+833 50 0 | 1×8 8×1 16×7 33×17 17×8 1×8
+834 51 1 | 1×9 8×1 16×7 33×17 17×8 1×8
+835 51 1 | 1×9 10×1 19×10 39×11 20×9 1×9 8×1
+836 51 1 | 1×9 10×1 19×10 39×11 20×9 1×9 9×1
+837 51 1 | 1×9 10×1 19×10 39×11 20×9 1×9 10×1
+838 51 1 | 1×9 10×1 19×9 39×11 20×10 1×9 10×1
+839 51 1 | 1×8 8×1 16×9 33×16 17×8 1×7 8×1
+840 51 1 | 1×8 8×1 16×9 33×16 17×8 1×7 9×1
+841 51 1 | 1×8 8×1 16×8 33×16 17×9 1×7 9×1
+842 51 1 | 1×7 8×1 15×10 31×18 16×7 1×7
+843 50 0 | 1×7 8×1 15×8 31×19 16×7 1×7
+844 50 0 | 1×7 8×1 15×7 31×19 16×8 1×7
+845 51 1 | 1×8 8×1 15×7 31×19 16×8 1×7
+846 51 1 | 1×8 9×1 17×11 35×14 18×8 1×8
+847 50 0 | 1×8 9×1 17×9 35×15 18×8 1×8
+848 50 0 | 1×8 9×1 17×8 35×15 18×9 1×8
+849 51 1 | 1×9 9×1 17×8 35×15 18×9 1×8
+850 51 0 | 1×8 9×1 17×9 35×15 18×8 1×8 3×1
+851 51 0 | 1×8 9×1 17×9 35×15 18×8 1×8 4×1
+852 51 0 | 1×8 9×1 17×9 35×15 18×8 1×8 5×1
+853 51 0 | 1×8 9×1 17×9 35×15 18×8 1×8 6×1
+854 51 0 | 1×8 9×1 17×9 35×15 18×8 1×8 7×1
+855 51 0 | 1×8 9×1 17×9 35×15 18×8 1×8 8×1
+856 51 0 | 1×8 9×1 17×9 35×15 18×8 1×8 9×1
+857 51 0 | 1×8 9×1 17×8 35×15 18×9 1×8 9×1
+858 51 0 | 1×9 9×1 18×10 37×13 19×9 1×8
+859 51 0 | 1×9 9×1 18×9 37×13 19×10 1×8
+860 51 0 | 1×9 9×1 18×8 37×14 19×9 1×9
+861 52 1 | 1×10 9×1 18×8 37×14 19×9 1×9
+862 52 1 | 1×9 9×1 18×10 37×13 19×9 1×8 4×1
+863 52 1 | 1×8 8×1 16×11 33×16 17×8 1×7
+864 51 0 | 1×8 8×1 16×9 33×17 17×8 1×7
+865 51 0 | 1×8 8×1 16×8 33×17 17×9 1×7
+866 51 0 | 1×9 10×1 19×10 39×12 20×9 1×9
+867 51 0 | 1×9 10×1 19×9 39×12 20×10 1×9
+868 52 1 | 1×10 10×1 19×9 39×12 20×10 1×9
+869 52 1 | 1×10 10×1 20×11 41×10 21×10 1×9
+870 52 1 | 1×10 10×1 20×10 41×10 21×11 1×9
+871 52 1 | 1×10 10×1 20×9 41×11 21×10 1×10
+872 52 1 | 1×9 10×1 19×10 39×12 20×9 1×9 6×1
+873 52 1 | 1×7 8×1 15×10 31×19 16×7 1×7
+874 51 0 | 1×7 8×1 15×8 31×20 16×7 1×7
+875 51 0 | 1×7 8×1 15×7 31×20 16×8 1×7
+876 52 1 | 1×8 8×1 15×7 31×20 16×8 1×7
+877 52 1 | 1×7 7×1 14×6 29×23 15×7 1×7
+878 52 1 | 1×7 8×1 15×8 31×20 16×7 1×7 4×1
+879 52 1 | 1×7 8×1 15×8 31×20 16×7 1×7 5×1
+880 52 1 | 1×7 8×1 15×8 31×20 16×7 1×7 6×1
+881 52 1 | 1×8 9×1 17×11 35×15 18×8 1×8
+882 51 0 | 1×8 9×1 17×9 35×16 18×8 1×8
+883 51 0 | 1×8 9×1 17×8 35×16 18×9 1×8
+884 52 0 | 1×9 9×1 17×8 35×16 18×9 1×8
+885 52 0 | 1×8 9×1 17×9 35×16 18×8 1×8 3×1
+886 52 0 | 1×8 9×1 17×9 35×16 18×8 1×8 4×1
+887 52 0 | 1×8 9×1 17×9 35×16 18×8 1×8 5×1
+888 52 0 | 1×8 9×1 17×9 35×16 18×8 1×8 6×1
+889 52 0 | 1×8 9×1 17×9 35×16 18×8 1×8 7×1
+890 52 0 | 1×8 9×1 17×9 35×16 18×8 1×8 8×1
+891 52 0 | 1×8 9×1 17×9 35×16 18×8 1×8 9×1
+892 52 0 | 1×8 9×1 17×8 35×16 18×9 1×8 9×1
+893 53 1 | 1×9 8×1 17×8 35×16 18×9 1×8 10×1
+894 53 1 | 1×9 9×1 18×12 37×13 19×9 1×8
+895 52 0 | 1×9 9×1 18×10 37×14 19×9 1×8
+896 52 0 | 1×9 9×1 18×9 37×14 19×10 1×8
+897 52 0 | 1×9 9×1 18×8 37×15 19×9 1×9
+898 52 0 | 1×8 8×1 16×8 33×18 17×9 1×7
+899 52 0 | 1×8 8×1 16×7 33×19 17×8 1×8
+900 52 0 | 1×8 9×1 17×9 35×8 18×1 35×8 18×8 1×8
+901 52 0 | 1×8 9×1 17×8 35×8 18×1 35×8 18×9 1×8
+902 53 1 | 1×9 9×1 18×10 37×14 19×9 1×8 7×1
+903 53 1 | 1×9 9×1 18×10 37×14 19×9 1×8 8×1
+904 53 1 | 1×9 10×1 19×12 39×12 20×9 1×9
+905 52 0 | 1×9 10×1 19×10 39×13 20×9 1×9
+906 52 0 | 1×9 10×1 19×9 39×13 20×10 1×9
+907 53 1 | 1×10 10×1 19×9 39×13 20×10 1×9
+908 53 1 | 1×9 10×1 18×8 37×15 19×9 1×9 10×1
+909 53 1 | 1×9 10×1 19×10 39×13 20×9 1×9 4×1
+910 53 1 | 1×10 10×1 20×11 41×11 21×10 1×9
+911 53 1 | 1×10 10×1 20×10 41×11 21×11 1×9
+912 53 1 | 1×10 10×1 20×9 41×12 21×10 1×10
+913 53 1 | 1×10 11×1 21×10 43×10 22×11 1×10
+914 53 1 | 1×9 10×1 19×10 39×13 20×9 1×9 9×1
+915 53 1 | 1×9 10×1 19×10 39×13 20×9 1×9 10×1
+916 53 1 | 1×8 9×1 17×11 35×16 18×8 1×8
+917 52 0 | 1×8 9×1 17×9 35×17 18×8 1×8
+918 52 0 | 1×8 9×1 17×8 35×17 18×9 1×8
+919 53 0 | 1×9 9×1 17×8 35×17 18×9 1×8
+920 53 0 | 1×8 9×1 17×9 35×17 18×8 1×8 3×1
+921 53 0 | 1×8 9×1 17×9 35×17 18×8 1×8 4×1
+922 53 0 | 1×8 9×1 17×9 35×17 18×8 1×8 5×1
+923 53 0 | 1×8 9×1 17×9 35×17 18×8 1×8 6×1
+924 53 0 | 1×8 9×1 17×9 35×17 18×8 1×8 7×1
+925 53 0 | 1×8 9×1 17×9 35×17 18×8 1×8 8×1
+926 53 0 | 1×8 9×1 17×9 35×17 18×8 1×8 9×1
+927 53 0 | 1×8 9×1 17×8 35×17 18×9 1×8 9×1
+928 54 1 | 1×9 8×1 17×8 35×17 18×9 1×8 10×1
+929 54 1 | 1×8 8×1 16×11 33×18 17×8 1×7
+930 53 0 | 1×8 8×1 16×9 33×19 17×8 1×7
+931 53 0 | 1×8 8×1 16×8 33×19 17×9 1×7
+932 53 0 | 1×9 9×1 18×10 37×15 19×9 1×8
+933 53 0 | 1×9 9×1 18×9 37×15 19×10 1×8
+934 53 0 | 1×9 9×1 18×8 37×16 19×9 1×9
+935 53 0 | 1×8 9×1 17×9 35×8 18×1 35×9 18×8 1×8
+936 53 0 | 1×7 8×1 15×8 31×22 16×7 1×7
+937 53 0 | 1×7 8×1 15×7 31×22 16×8 1×7
+938 54 1 | 1×8 8×1 15×7 31×22 16×8 1×7
+939 54 1 | 1×9 9×1 18×10 37×15 19×9 1×8 7×1
+940 54 1 | 1×9 9×1 18×10 37×15 19×9 1×8 8×1
+941 54 1 | 1×9 9×1 18×10 37×15 19×9 1×8 9×1
+942 54 1 | 1×9 9×1 18×10 37×15 19×9 1×8 10×1
+943 54 1 | 1×9 10×1 19×12 39×13 20×9 1×9
+944 53 0 | 1×9 10×1 19×10 39×14 20×9 1×9
+945 53 0 | 1×9 10×1 19×9 39×14 20×10 1×9
+946 54 1 | 1×10 10×1 19×9 39×14 20×10 1×9
+947 54 1 | 1×9 10×1 19×10 39×14 20×9 1×9 3×1
+948 54 1 | 1×9 10×1 19×10 39×14 20×9 1×9 4×1
+949 54 1 | 1×9 10×1 19×10 39×14 20×9 1×9 5×1
+950 54 1 | 1×9 10×1 19×10 39×14 20×9 1×9 6×1
+951 54 1 | 1×10 10×1 20×11 41×12 21×10 1×9
+952 53 0 | 1×8 9×1 17×9 35×18 18×8 1×8
+953 53 0 | 1×8 9×1 17×8 35×18 18×9 1×8
+954 54 0 | 1×9 9×1 17×8 35×18 18×9 1×8
+955 54 0 | 1×10 11×1 21×11 43×11 22×10 1×10
+956 54 0 | 1×10 11×1 21×10 43×11 22×11 1×10
+957 54 0 | 1×8 9×1 17×9 35×18 18×8 1×8 5×1
+958 54 0 | 1×8 9×1 17×9 35×18 18×8 1×8 6×1
+959 54 0 | 1×8 9×1 17×9 35×18 18×8 1×8 7×1
+960 54 0 | 1×8 9×1 17×9 35×18 18×8 1×8 8×1
+961 54 0 | 1×8 9×1 17×9 35×18 18×8 1×8 9×1
+962 54 0 | 1×8 9×1 17×8 35×18 18×9 1×8 9×1
+963 54 0 | 1×8 8×1 16×9 33×20 17×8 1×7
+964 54 0 | 1×8 8×1 16×8 33×20 17×9 1×7
+965 54 0 | 1×8 8×1 16×7 33×21 17×8 1×8
+966 55 1 | 1×9 8×1 16×7 33×21 17×8 1×8
+967 54 0 | 1×7 8×1 15×8 31×23 16×7 1×7
+968 54 0 | 1×7 8×1 15×7 31×23 16×8 1×7
+969 54 0 | 1×9 9×1 18×10 37×16 19×9 1×8
+970 54 0 | 1×9 9×1 18×9 37×16 19×10 1×8
+971 54 0 | 1×9 9×1 18×8 37×17 19×9 1×9
+972 55 1 | 1×10 9×1 18×8 37×17 19×9 1×9
+973 55 1 | 1×9 9×1 18×10 37×16 19×9 1×8 4×1
+974 55 1 | 1×9 9×1 18×10 37×16 19×9 1×8 5×1
+975 55 1 | 1×9 9×1 18×10 37×16 19×9 1×8 6×1
+976 55 1 | 1×9 9×1 18×10 37×16 19×9 1×8 7×1
+977 55 1 | 1×9 9×1 18×10 37×16 19×9 1×8 8×1
+978 55 1 | 1×9 9×1 18×10 37×16 19×9 1×8 9×1
+979 55 1 | 1×9 9×1 18×10 37×16 19×9 1×8 10×1
+980 55 1 | 1×9 9×1 18×9 37×16 19×10 1×8 10×1
+981 55 1 | 1×9 9×1 18×8 37×17 19×9 1×9 10×1
+982 55 1 | 1×9 10×1 19×12 39×14 20×9 1×9
+983 54 0 | 1×9 10×1 19×10 39×15 20×9 1×9
+984 54 0 | 1×9 10×1 19×9 39×15 20×10 1×9
+985 55 1 | 1×10 10×1 19×9 39×15 20×10 1×9
+986 55 1 | 1×8 9×1 17×11 35×18 18×8 1×8
+987 54 0 | 1×8 9×1 17×9 35×19 18×8 1×8
+988 54 0 | 1×8 9×1 17×8 35×19 18×9 1×8
+989 55 1 | 1×9 9×1 17×8 35×19 18×9 1×8
+990 55 0 | 1×9 10×1 19×10 39×15 20×9 1×9 7×1
+991 55 0 | 1×9 10×1 19×10 39×15 20×9 1×9 8×1
+992 55 0 | 1×10 10×1 20×11 41×13 21×10 1×9
+993 55 0 | 1×10 10×1 20×10 41×13 21×11 1×9
+994 55 0 | 1×10 10×1 20×9 41×14 21×10 1×10
+995 55 0 | 1×8 9×1 17×9 35×19 18×8 1×8 8×1
+996 55 0 | 1×8 8×1 16×9 33×21 17×8 1×7
+997 55 0 | 1×8 8×1 16×8 33×21 17×9 1×7
+998 55 0 | 1×10 11×1 21×11 43×12 22×10 1×10
+999 55 0 | 1×10 11×1 21×10 43×12 22×11 1×10
+1000 56 1 | 1×11 11×1 21×10 43×12 22×11 1×10
+1001 56 1 | 1×11 11×1 22×10 45×11 23×11 1×11
+1002 55 0 | 1×9 10×1 19×10 39×7 19×1 39×8 20×9 1×9
+1003 55 0 | 1×9 10×1 19×10 39×7 20×1 39×8 20×9 1×9
+1004 55 0 | 1×9 10×1 19×9 39×8 20×1 39×7 20×10 1×9
+1005 55 0 | 1×8 9×1 17×9 35×9 18×1 35×10 18×8 1×8
+1006 55 0 | 1×9 9×1 18×10 37×17 19×9 1×8
+1007 55 0 | 1×9 9×1 18×9 37×17 19×10 1×8
+1008 55 0 | 1×9 9×1 18×8 37×18 19×9 1×9
+1009 56 1 | 1×10 9×1 18×8 37×18 19×9 1×9
+1010 56 1 | 1×10 11×1 21×10 43×12 22×11 1×10 11×1
+1011 56 1 | 1×9 9×1 18×10 37×17 19×9 1×8 5×1
+1012 56 1 | 1×9 9×1 18×10 37×17 19×9 1×8 6×1
+1013 56 1 | 1×9 9×1 18×10 37×17 19×9 1×8 7×1
+1014 56 1 | 1×9 9×1 18×10 37×17 19×9 1×8 8×1
+1015 56 1 | 1×9 9×1 18×10 37×17 19×9 1×8 9×1
+1016 56 1 | 1×9 9×1 18×10 37×17 19×9 1×8 10×1
+1017 56 1 | 1×9 9×1 18×9 37×17 19×10 1×8 10×1
+1018 56 1 | 1×9 9×1 18×8 37×18 19×9 1×9 10×1
+1019 56 1 | 1×9 10×1 18×8 37×18 19×9 1×9 10×1
+1020 56 1 | 1×10 11×1 21×11 43×6 22×1 43×6 22×10 1×10
+1021 56 1 | 1×9 10×1 19×12 39×15 20×9 1×9
+1022 55 0 | 1×9 10×1 19×10 39×16 20×9 1×9
+1023 55 0 | 1×9 10×1 19×9 39×16 20×10 1×9
+1024 56 1 | 1×10 10×1 19×9 39×16 20×10 1×9
+1025 56 1 | 1×9 10×1 19×10 39×16 20×9 1×9 3×1
+1026 56 0 | 1×9 10×1 19×10 39×16 20×9 1×9 4×1
+1027 56 0 | 1×9 10×1 19×10 39×16 20×9 1×9 5×1
+1028 56 0 | 1×9 10×1 19×10 39×16 20×9 1×9 6×1
+1029 56 0 | 1×8 8×1 16×9 33×22 17×8 1×7
+1030 56 0 | 1×8 8×1 16×8 33×22 17×9 1×7
+1031 56 0 | 1×8 8×1 16×7 33×23 17×8 1×8
+1032 56 0 | 1×9 10×1 19×10 39×16 20×9 1×9 10×1
+1033 56 0 | 1×10 10×1 20×11 41×14 21×10 1×9
+1034 56 0 | 1×10 10×1 20×10 41×14 21×11 1×9
+1035 56 0 | 1×10 10×1 20×9 41×15 21×10 1×10
+1036 57 1 | 1×11 10×1 20×9 41×15 21×10 1×10
+1037 57 1 | 1×10 10×1 20×11 41×14 21×10 1×9 4×1
+1038 57 1 | 1×10 10×1 20×11 41×14 21×10 1×9 5×1
+1039 56 0 | 1×8 9×1 17×9 35×10 17×1 35×10 18×8 1×8
+1040 56 0 | 1×8 9×1 17×9 35×10 18×1 35×10 18×8 1×8
+1041 56 0 | 1×10 11×1 21×11 43×13 22×10 1×10
+1042 56 0 | 1×10 11×1 21×10 43×13 22×11 1×10
+1043 56 0 | 1×9 9×1 18×10 37×18 19×9 1×8
+1044 56 0 | 1×9 9×1 18×9 37×18 19×10 1×8
+1045 56 0 | 1×9 9×1 18×8 37×19 19×9 1×9
+1046 57 1 | 1×11 11×1 22×10 45×12 23×11 1×11
+1047 57 1 | 1×10 11×1 20×9 41×15 21×10 1×10 11×1
+1048 57 1 | 1×10 11×1 21×11 43×13 22×10 1×10 7×1
+1049 57 1 | 1×10 11×1 21×11 43×13 22×10 1×10 8×1
+1050 57 1 | 1×10 11×1 21×11 43×13 22×10 1×10 9×1
+1051 57 1 | 1×10 11×1 21×11 43×13 22×10 1×10 10×1
+1052 57 1 | 1×10 11×1 21×11 43×13 22×10 1×10 11×1
+1053 57 1 | 1×10 11×1 21×10 43×13 22×11 1×10 11×1
+1054 57 1 | 1×9 9×1 18×9 37×18 19×10 1×8 10×1
+1055 57 1 | 1×9 9×1 18×8 37×19 19×9 1×9 10×1
+1056 57 1 | 1×8 9×1 17×11 35×20 18×8 1×8
+1057 56 0 | 1×8 9×1 17×9 35×21 18×8 1×8
+1058 56 0 | 1×8 9×1 17×8 35×21 18×9 1×8
+1059 57 1 | 1×9 9×1 17×8 35×21 18×9 1×8
+1060 57 1 | 1×9 10×1 19×12 39×16 20×9 1×9
+1061 56 0 | 1×9 10×1 19×10 39×17 20×9 1×9
+1062 56 0 | 1×9 10×1 19×9 39×17 20×10 1×9
+1063 57 1 | 1×10 10×1 19×9 39×17 20×10 1×9
+1064 57 0 | 1×8 8×1 16×7 33×24 17×8 1×8
+1065 57 0 | 1×9 10×1 19×10 39×17 20×9 1×9 4×1
+1066 57 0 | 1×9 10×1 19×10 39×17 20×9 1×9 5×1
+1067 57 0 | 1×9 10×1 19×10 39×17 20×9 1×9 6×1
+1068 57 0 | 1×9 10×1 19×10 39×17 20×9 1×9 7×1
+1069 57 0 | 1×9 10×1 19×10 39×17 20×9 1×9 8×1
+1070 57 0 | 1×9 10×1 19×10 39×17 20×9 1×9 9×1
+1071 57 0 | 1×9 10×1 19×10 39×17 20×9 1×9 10×1
+1072 57 0 | 1×9 10×1 19×9 39×17 20×10 1×9 10×1
+1073 58 1 | 1×10 10×1 20×13 41×14 21×10 1×9
+1074 57 0 | 1×10 10×1 20×11 41×15 21×10 1×9
+1075 57 0 | 1×10 10×1 20×10 41×15 21×11 1×9
+1076 57 0 | 1×10 10×1 20×9 41×16 21×10 1×10
+1077 58 1 | 1×11 10×1 20×9 41×16 21×10 1×10
+1078 58 1 | 1×10 10×1 20×11 41×15 21×10 1×9 4×1
+1079 58 1 | 1×9 9×1 18×12 37×18 19×9 1×8
+1080 57 0 | 1×9 9×1 18×10 37×19 19×9 1×8
+1081 57 0 | 1×9 9×1 18×9 37×19 19×10 1×8
+1082 57 0 | 1×9 9×1 18×8 37×20 19×9 1×9
+1083 58 1 | 1×10 9×1 18×8 37×20 19×9 1×9
+1084 57 0 | 1×10 11×1 21×11 43×14 22×10 1×10
+1085 57 0 | 1×10 11×1 21×10 43×14 22×11 1×10
+1086 58 1 | 1×11 11×1 21×10 43×14 22×11 1×10
+1087 58 1 | 1×10 10×1 20×9 41×16 21×10 1×10 11×1
+1088 58 1 | 1×10 11×1 20×9 41×16 21×10 1×10 11×1
+1089 58 1 | 1×11 11×1 22×12 45×12 23×11 1×10
+1090 58 1 | 1×11 11×1 22×11 45×12 23×12 1×10
+1091 58 1 | 1×11 11×1 22×10 45×13 23×11 1×11
+1092 57 0 | 1×8 9×1 17×9 35×22 18×8 1×8
+1093 57 0 | 1×8 9×1 17×8 35×22 18×9 1×8
+1094 58 1 | 1×9 9×1 17×8 35×22 18×9 1×8
+1095 58 1 | 1×8 8×1 16×9 33×24 17×8 1×7
+1096 58 1 | 1×8 8×1 16×8 33×24 17×9 1×7
+1097 58 1 | 1×8 8×1 16×7 33×25 17×8 1×8
+1098 58 1 | 1×8 9×1 17×9 35×22 18×8 1×8 6×1
+1099 58 1 | 1×9 10×1 19×12 39×17 20×9 1×9
+1100 57 0 | 1×9 10×1 19×10 39×18 20×9 1×9","['graph-theory', 'recreational-mathematics', 'combinatorics']"
+3246009,Is there a way to bound expected value with limited information of the CDF?,"Suppose I want to evaluate $E[X]$ , where $X$ is a univariate random variable and takes values in $\mathcal{X}$ , where the smallest element of $\mathcal{X}$ is 0 and the largest element of $\mathcal{X}$ is $\overline{X}$ . The problem is that I don't have the pdf or cdf of $X$ . Instead, suppose that I know the exact value of the CDF at finitely many (but never all) values of the support. So for example, I know $Pr(X\leq x_1)=0.1$ , $Pr(X\leq x_2)=0.2$ ,..., $Pr(X\leq \overline{X})=1$ . Is there a way to bound $E[X]$ ? In other words, given this partial information what is the highest possible value of the expectation and the lowest possible value and how can I compute it? Will the characterization of the solutions in discrete and continuous random variable cases differ a lot? Intuitively, it seems that as the number of points over which I know the CDF increases (even if finitely many), I should have a good idea of the shape of the CDF and be able to bound the expectation. I am not sure how to formalize this intuition or whether it is correct.","['statistics', 'probability-distributions', 'upper-lower-bounds', 'probability-theory', 'probability']"
+3246020,Help with $-\int_0^1 \ln(1+x)\ln(1-x)dx$,I have been attempting to evaluate this integral and by using wolfram alpha I know that the value is $$I=-\int_0^1 \ln(1+x)\ln(1-x)dx=\frac{\pi^2}{6}+2\ln(2)-\ln^2(2)-2$$ My Attempt: I start off by parametizing the integral as $$I(a)=\int_0^1 -\ln(1+x)\ln(1-ax)dx$$ where $I=I(1)$ . I then differentiate to get $$I'(a)=\int_0^1 \frac{ax\ln(1+x)}{1-ax}dx=\int_0^1 ax\ln(1+x)\sum_{n=0}^\infty(ax)^ndx=\sum_{n=1}^\infty a^{n+1}\int_0^1 x^{n+1}\ln(1+x)dx$$ Evaluating this integral by integration by parts and geometric series I get $$\int_0^1 x^{n+1}\ln(1+x)dx=\frac{x^{n+2}}{n+2}\ln(1+x)|_0^1-\frac{1}{n+2}\int_0^1 \frac{x^{n+2}}{1+x}dx=\frac{\ln(2)}{n+2}-\frac{1}{n+2}\int_0^1 x^{n+2}\sum_{k=0}^\infty(-x)^kdx=\frac{\ln(2)}{n+2}-\frac{1}{n+2}\sum_{k=0}^\infty(-1)^k\int_0^1 x^{k+n+2}dx=\frac{\ln(2)}{n+2}-\frac{1}{n+2}\sum_{k=0}^\infty\frac{(-1)^k}{k+n+2}=\frac{\ln(2)}{n+2}-\frac{1}{2(n+2)}\left(\psi_0\left(\frac{n}{2}+2\right)-\psi_0\left(\frac{n}{2}+\frac{3}{2}\right)\right)$$ So I arrive at $$I'(a)=\sum_{n=0}^\infty a^{n+1}\left(\frac{\ln(2)}{n+2}-\frac{1}{2(n+2)}\left(\psi_0\left(\frac{n}{2}+2\right)-\psi_0\left(\frac{n}{2}+\frac{3}{2}\right)\right)\right)$$ Re-indexing I get $$I'(a)=\frac{\ln(2)}{a}\sum_{n=2}^\infty \frac{a^n}{n}+\frac{1}{2}\sum_{n=2}^\infty \frac{\psi_0\left(\frac{n+1}{2}\right)}{n}a^{n-1}-\frac{1}{2}\sum_{n=2}^\infty \frac{\psi_0\left(\frac{n}{2}+1\right)}{n}a^{n-1}$$ Integrating both sides from $0$ to $1$ I recover $I(1)$ $$I(1)=\int_0^1 \frac{\ln(2)}{a}\left(-\ln(1-a)-a\right)da+\frac{1}{2}\sum_{n=2}^\infty \frac{\psi_0\left(\frac{n+1}{2}\right)}{n^2}-\frac{1}{2}\sum_{n=2}^\infty \frac{\psi_0\left(\frac{n}{2}+1\right)}{n^2}$$ Then using the integral equation for the Dilogarithm I arrive at $$I(1)=\ln(2)\int_0^1 -\frac{\ln(1-a)}{a}da-\ln(2)+\frac{1}{2}\sum_{n=2}^\infty \frac{\psi_0\left(\frac{n+1}{2}\right)}{n^2}-\frac{1}{2}\sum_{n=2}^\infty \frac{\psi_0\left(\frac{n}{2}+1\right)}{n^2}$$ $$I(1)=\frac{\ln(2)\pi^2}{6}-\ln(2)+\frac{1}{2}\sum_{n=2}^\infty \frac{\psi_0\left(\frac{n+1}{2}\right)}{n^2}-\frac{1}{2}\sum_{n=2}^\infty \frac{\psi_0\left(\frac{n}{2}+1\right)}{n^2}$$ At this point I could not continue further as I did not know how to simplify the Digamma terms in the sums. I think that by using the Digamma function's relation to the Harmonic Numbers it could be possible to exploit known values of Harmonic sums to arrive at the answer but I could not get the sums in a form where this would work. If anyone could help me continue further or let me know if I am on the right track I would greatly appreciate it. Thank you in advance.,"['integration', 'definite-integrals', 'digamma-function', 'sequences-and-series']"
+3246080,"Prove that if $Z(G) =\{e\}$, then $Z(\operatorname{Aut}(G))=\{e\}$","I know $Z(\operatorname{Aut}(G))=\{e\}$ , then $Z(G)$ may not be identity.  As, for example, take $G = V$ (Klein's $4$ -group). Then $\operatorname{Aut}(G)=S_3$ . Hence $Z(\operatorname{Aut}(G))=\{e\}$ but $Z(G) =G$ . (Here $Z(G)$ means center of $G$ ) My question is the converse of the result.  I know this is true but How can I proceed?  Any hint?","['automorphism-group', 'group-theory', 'abstract-algebra']"
+3246082,Closed Form of $a_n = \int_0^1 \ln(1+x^n) dx$,"I want to know the closed form of : $$a_n = \int_0^1 \ln(1+x^n)dx, \quad \forall n \in \mathbb{N}$$ I found : $$0<a_n<\frac{1}{n+1}, \quad \lim_{n\to\infty} a_n =0$$ I started from \begin{align}
+&\ln (1+x)=\sum_{k=0}^\infty \frac{(-1)^k x^{k+1}}{k+1} \\
+& \Rightarrow \ln(1+x^n)=\sum_{k=0}^\infty \frac{(-1)^k x^{nk+n}}{k+1} \\
+& a_n = \int_0^1 \ln(1+x^n)dx = \sum_{k=0}^\infty \frac{(-1)^k}{k+1}\int_0^1 x^{n+nk}dx \\
+&=\sum_{k=0}^\infty \frac{(-1)^k}{k+1} \times \frac{1}{n+nk+1} \\
+&=\sum_{k=0}^\infty \frac{(-1)^k}{k+1} \times \frac{1}{(n+1)(k+1)-k} 
+\end{align} But I stucked here. Is there any closed (or approximated) from exist? These are some results for litte $n$ : \begin{align}
+& a_1 = 2\ln 2 - 1 \\
+& a_2 = \ln2 - 2 + \frac{\pi}{2} \\
+& a_3 = 2\ln 2 - 3 + \frac{\pi \sqrt{3}}{3} \\
+\end{align}","['integration', 'closed-form', 'real-analysis']"
+3246120,Prove: $ (A \times C) \setminus (B \times C) = (A \setminus B) \times C $,"Prove: $ (A \times C) \setminus (B \times C) = (A \setminus B) \times C $ So, what I have done so far is: $(x,y) \in (A \times C) \setminus (B \times C) \Rightarrow \\ 
+(x,y) \in (A \times C) \space and \space(x,y) \notin (B \times C) \Rightarrow \\
+(x \in A \space and  \space y\in C) \space and \space (x\notin B \space or \space y\notin C) \Rightarrow
+$ and I'm not sure what to do next in order to get $(A \setminus B) \times C$ because I assume that I need something like: $ (x\in A \space and \space x\notin B) \space and \space y\in C$ ?","['elementary-set-theory', 'discrete-mathematics']"
+3246136,"On generalizing the harmonic sum $\sum_{n=1}^{\infty}\frac{H_n}{n^k}z^n = S_{k-1,2}(1)+\zeta(k+1)$ when $z=1$?","Given the n th harmonic number $ H_n = \sum_{j=1}^{n} \frac{1}{j}$ . In this post it asks for the evaluation, $$\sum_{n=1}^{\infty}\frac{H_n}{n^3}=\tfrac{5}{4}\zeta(4)$$ while this post and this answer discusses the next one, $$ \sum_{n=1}^{\infty}\frac{H_n}{n^4} = -\zeta(2)\zeta(3)+3\zeta(5)$$ Given the more general sum, $$F_k(z) = \sum_{n=1}^{\infty}\frac{H_n}{n^k}z^n\tag1$$ It seems the special cases $z=1$ is, $$F_k(1)= \sum_{n=1}^{\infty}\frac{H_n}{n^k} = S_{k-1,2}(1)+\zeta(k+1)\tag2$$ while $z=-1$ is, $$F_k(-1)= \sum_{n=1}^{\infty}\frac{H_n}{n^k}(-1)^n = S_{k-1,2}(-1)-\frac{2^k-1}{2^k}\zeta(k+1)\tag3$$ where $S_{n,p}(z)$ is the Nielsen generalized polylogarithm , $$S_{n,p}(z) = \frac{(-1)^{n+p-1}}{(n-1)!\,p!}\int_0^1\frac{(\ln t)^{n-1}\big(\ln(1-z\,t)\big)^p}{t}dt$$ However, for the range $-1\leq z \leq 1$ , the closely related sum in this answer has a simple formula, $$G_k(z) = \sum_{n=1}^{\infty}\frac{H_n}{(n+1)^k}\,z^{n+1} = S_{k-1,2}(z)\tag4$$ Q: Like $G_k(z)$ , does $F_k(z) = \sum_{n=1}^{\infty}\frac{H_n}{n^k}z^n$ have a common closed-form in the range $-1\leq z \leq 1$ ?","['definite-integrals', 'harmonic-numbers', 'polylogarithm', 'closed-form', 'sequences-and-series']"

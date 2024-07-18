@@ -1,0 +1,538 @@
+question_id,title,body,tags
+1214668,Prove that the set consisting of isolated points is finite.,"1. Let A be a compact subset in $R^n$. Investigate whether the following assertion is
+true or not: If A consists of isolated points only then A is finite. I couldn't demonstrate my answer.We know that when A is a compact subset then it is closed and bounded. I was looking and I found that it resembles this question Is a closed subset of isolated points in a compact set necessarily finite? I am still not fully convinced.",['analysis']
+1214688,Proof of fractal dimension of Thomae's function,"Thomae's function is defined to be $0$ if x is irrational. Its defined to be $1 \over q$ where $x={p \over q}$ in lowest terms and $q \gt 0$. Its measure is $0$ since the set of rational numbers is countable. However, it seems that this function might be a fractal and/or have fractal dimension. If it does, how does one find this fractal dimension? A proof or reference would be appreciated.","['dimension-theory-analysis', 'fractals', 'measure-theory']"
+1214711,"A question on ""Linear Algebra"" by Kenneth Hoffman","I'm reading ""Linear Algebra"" by Kenneth Hoffman and Ray Kunze. I'm now lost at $\S$6.4 Theorem 6: the proof looks OK, but when I pick an example, somehow it does not tally.
+Please find below the theorem and proof, and my example in $\color{blue}{\texttt{blue}}$, and question in $\color{red}{\texttt{red}}$ in step 8. Please kindly help me: where did I mistake? Theorem: Let $V$ be a finite-dimensional vector space over the field $F$ and let $T$ be a linear operator on $V$. Then $T$ is diagonalizable if and only if the minimal polynomial for $T$ has the form
+$p = (x - c_1) \dots (x - c_k)$ where $c_1, \dots , c_k$ are distinct elements of $F$.
+$$\color{blue}{\texttt{Example: Choose }
+V=\mathbb R^3, F=\mathbb R, T=\begin{bmatrix} 
+      1 & 0 & 0\\
+      0 & 2 & 1\\
+      0 & 0 & 1
+  \end{bmatrix}, p=(x-1)(x-2), c_1=1, c_2=2
+}$$ The proof is: (the (1)(2).. numbers are added by me)
+Proof (1) We have noted earlier that, if $T$ is diagonalizable, its minimal polynomial is a product of distinct linear factors (see the discussion prior to Example 4). (2)To prove the converse, let $W$ be the subspace spanned by all of the characteristic vectors of $T$, and suppose $W \ne V$.
+$$\color{blue}{\texttt{characteristic vectors:}
+v_1=\begin{bmatrix} 
+      1 \\
+      0 \\
+      0 
+  \end{bmatrix} \texttt{for } c_1=1, 
+v_2=\begin{bmatrix} 
+      0 \\
+      1 \\
+      0 
+  \end{bmatrix} \texttt{for } c_2=2.\\
+W=\langle v1, v2 \rangle,
+W\ne V=\mathbb R^3.
+}$$ 
+(3)By the lemma used in the proof of Theorem 5, there is a vector $\alpha$ not in $W$ and a characteristic value $c_j$ of $T$ such that the vector $\beta= (T - c_jI)\alpha$ lies in W. 
+$$\color{blue}{\texttt{Choose: }
+\alpha=\begin{bmatrix} 
+      0 \\
+      0.5 \\
+      0.5 
+  \end{bmatrix}, c_j=c_1=1, \\
+\beta=\begin{bmatrix} 
+      0&0&0 \\
+      0&1&1 \\
+      0&0&0 
+      \end{bmatrix}
+   \begin{bmatrix} 
+      0 \\
+      0.5 \\
+      0.5 
+  \end{bmatrix}
+      =\begin{bmatrix} 
+      0 \\
+      1 \\
+      0 
+  \end{bmatrix}, \beta=v_2 \in \langle v_1, v_2 \rangle = W. 
+}$$ 
+(4)Since $\beta$ is in $W$, $\beta = \beta_1+\dots\beta_k$ where $T\beta_i = c_i\beta_i$, $1\le i\le k$, and therefore the vector $h(T)\beta = h(c_1)\beta_1+\dots+h(c_k)\beta_k$
+is in $W$, for every polynomial $h$. (5)Now $p = (x-c_j)q$, for some polynomial $q$. 
+$$\color{blue}{
+p=(x-1)(x-2)=(x-1)q \Rightarrow q=(x-2) 
+}$$ 
+(6)Also $q- q(c_j) = (x - c_j)h$.
+$$\color{blue}{
+q-q(c_1)=q-q(1)=(x-2)-(1-2)=(x-1)=(x-1)h \Rightarrow h=1
+}$$ 
+(7)We have
+$q(T)\alpha - q(c_j)\alpha = h(T)(T - c_jI)\alpha = h(T)\beta$.
+$$\color{blue}{
+q(T)=(T-2I)=\begin{bmatrix} 
+      -1&0&0 \\
+      0&0&1 \\
+      0&0&-1 
+      \end{bmatrix}, \\ 
+q(T)\alpha=\begin{bmatrix} 
+      -1&0&0 \\
+      0&0&1 \\
+      0&0&-1 
+      \end{bmatrix} 
+      \begin{bmatrix} 
+      0 \\
+      0.5 \\
+      0.5 
+      \end{bmatrix}
+=\begin{bmatrix} 
+      0 \\
+      0.5 \\
+      -0.5 
+      \end{bmatrix}\\
+q(c_j)\alpha=q(c_1)\alpha=q(1)\alpha=(1-2)\alpha=-\alpha=\begin{bmatrix} 
+      0 \\
+     - 0.5 \\
+     - 0.5 
+  \end{bmatrix}, \\
+  q(T)\alpha-q(c_j)\alpha=\begin{bmatrix} 
+      0 \\
+     1 \\
+     0
+  \end{bmatrix} = h(T)\beta = 1\beta\\
+}$$ 
+(8)But $h(T)\beta$ is in $W$ and, since
+$0 = p(T)\alpha = (T - c_jI)q(T)\alpha$,
+$$\color{blue}{
+p(T)=0\\
+q(T)\alpha =  
+  \begin{bmatrix} 
+      -1&0&0 \\
+      0&0&1 \\
+      0&0&-1 
+      \end{bmatrix}
+  \begin{bmatrix} 
+      0 \\
+     0.5  \\
+     0.5
+  \end{bmatrix} = \begin{bmatrix} 
+      0 \\
+     0.5  \\
+     -0.5
+  \end{bmatrix} \\
+0=p(T)\alpha =  (T - c_jI)q(T)\alpha = \begin{bmatrix} 
+      0 & 0&0\\
+     0& 1&1 \\
+     0&0&0
+  \end{bmatrix}   
+  \begin{bmatrix} 
+      0 \\
+     0.5  \\
+     -0.5
+  \end{bmatrix} 
+}$$ 
+the vector $q(T)\alpha$ is in $W$. 
+$$\color{red}{
+q(T)\alpha   = \begin{bmatrix} 
+      0 \\
+     0.5  \\
+     -0.5
+  \end{bmatrix} 
+    \notin
+    W=
+  \langle
+ v_1, v_2
+\rangle
+= \left \langle
+  \begin{bmatrix} 
+      1\\
+     0   \\
+     0
+  \end{bmatrix} ,
+    \begin{bmatrix} 
+      0 \\
+     1 \\
+     0
+  \end{bmatrix} 
+\right \rangle\\
+\texttt{--What happen? why this step does not tally?}
+}$$ 
+(9)Therefore, $q(c_j)\alpha$ is in $W$. (10)Since $\alpha$ is not in $W$, we have $q(c_j) = 0$. (11)That contradicts the fact that $p$ has distinct roots. QED.",['linear-algebra']
+1214718,Finding a line integral along the curve of intersection of two surfaces,"Find \begin{align*} \int_C \sqrt{1+4x^2 z^2} ds, \end{align*} where $C$ is the curve of intersection of the surfaces $x^2 + z^2 = 1$ and $y = x^2$. Attempt at solution: So first I need a parametrization of this curve. I let $x = t$. Then we have $y = t^2$ and $z = +- \sqrt{1-t^2}$. But I'm not sure what sign I should pick here, and what my integration bounds are? Any help would be appreciated.","['calculus', 'multivariable-calculus']"
+1214719,Advice on finding counterexamples,"I am reaching out for specific advice on how one should go about finding counterexamples. It seems almost every time I've ever attempted a ""find a counterexample"" problem, I have to cheat by asking a friend, or I have to use a computer. That being said, I've encountered another problem which I can look up the solution to, and probably understand why it is a counter example after it is given to me, but I am helpless when it comes to actually finding it. That being said, I am asking if someone could post a counterexample to the following problem and explain to me their thought process. This would help me so much. Problem: Give an example of two subgroups $H$ and $K$ of a group $G$ whose union $H\cup K$ is not a subgroup of $G$. How far I've gotten: I know that a nonempty subset $H$ of a finite group $G$ is a subgroup if and only if $a,b\in H$ implies $ab\in H$. Using this we can know that  If $a,b\in H\cup K$, but $ab\not \in H\cup K$, then $H$ is not a subgroup of $G$. So I know what a counterexample should look like if I see one, but how do I find it? Thanks so much.","['abstract-algebra', 'examples-counterexamples']"
+1214721,"Can $[0,1]$ be partitioned with the following property? [duplicate]","This question already has answers here : $E$ measurable set and $m(E\cap I)\le \frac{1}{2}m(I)$ for any open interval, prove $m(E) =0$ (2 answers) Closed 9 years ago . Let $I:= [0,1]$. Does there exist a partition $\{I_1,I_2\}$ of $I$ such that for all Borel subsets $A$ of $[0,1]$ we have: $$ \mu (I_1 \cap A) = \frac{1}{2} \mu(A) = \mu (I_2 \cap A)$$ where $\mu$ is the Lebesgue measure? Many thanks for your help.","['probability-theory', 'lebesgue-measure', 'measure-theory']"
+1214733,Interpretation of sheaf flat over a base,"I am trying to get an interpretation of what means for a sheaf to be flat with respect to a base. The definition is that, given $f:X \rightarrow Y$ morphism of schemes, $\mathcal{F}$ is flat over $Y$ at $x \in X$ if $\mathcal{F}_x$ is a flat $\mathcal{O}_y$ module. It is said to be flat it if holds true on the whole $X$. Given $\mathcal{F}$ flat over $Y$, does it imply that given a short exact sequence
+\begin{equation}
+0 \rightarrow \mathcal{G}' \rightarrow \mathcal{G} \rightarrow \mathcal{G}'' \rightarrow 0
+\end{equation}
+on $Y$, then
+\begin{equation}
+0 \rightarrow f^*\mathcal{G}' \otimes \mathcal{F}\rightarrow f^*\mathcal{G}\otimes \mathcal{F} \rightarrow f^*\mathcal{G}'' \otimes \mathcal{F}\rightarrow 0
+\end{equation}
+is exact on $X$? Is it true? I was thinking so, since the stalk of the pullback, say of $\mathcal{G}$, is $f^*\mathcal{G}_x=\mathcal{G}_{f(x)}\otimes_{\mathcal{O}_{f(x)}}\mathcal{O}_x$. Also $\mathcal{G}_{f(x)}\otimes_{\mathcal{O}_{f(x)}}\mathcal{O}_x \otimes_{\mathcal{O}_x} \mathcal{F}_x=\mathcal{G}_{f(x)}\otimes_{\mathcal{O}_y}\mathcal{F}_x$. So I basically have the exactness on stalks for the exact sequence I claim and then I could conclude. Is my argument correct? If not, where am I mistaken? What is a nice interpretation for flatness over a base? Thank you","['commutative-algebra', 'algebraic-geometry', 'schemes', 'flatness', 'sheaf-theory']"
+1214743,Showing that the space of bounded measurable functions can't be used to characterize convergence in distribution,"An exercise I am doing from Chung's book asks me to find some asbsolutely continuous probability measures $\mu_n, \mu$ and some measurable and bounded (but not continuous!) function $f: \mathbb{R} \rightarrow \mathbb{R}$ such that $$ \mu_n \rightarrow \mu$$ but such that $$ \int f d\mu_n \not\to  \int f d\mu.$$ I am really stuck with this. Many thanks for your help.","['probability-theory', 'probability', 'measure-theory']"
+1214816,affine scheme that is finite type over $\mathbb{Z}$,"I have an affine scheme that is finite type over $\mathbb{Z}$, so by definition I can cover this Spec $A$ by Spec $B_i \ (1 \leq i \leq n)$ where each $B_i$ is a finitely generated $\mathbb{Z}$ algebra. I used the fact that Spec $A$ is quasi compact to get that we can cover Spec $A$ by finite number of these affine opens sets. Does it then follow that $A$ is also a finitely generated $\mathbb{Z}$ algebra? Thank you!","['algebraic-geometry', 'affine-schemes']"
+1214832,Teaching cardinality,I would like to give a class of 60 minutes to my undergraduate students about cardinality. I would like to begin with the definition of cardinality and end with one or two good application of this theory. I need some advices and some books suggestions. Any help is welcome Thanks in advance,"['education', 'elementary-set-theory', 'book-recommendation', 'cardinals']"
+1214846,Difference between Stabilizer and Centralizer?,"I know that the Centralizer of an element $a$ in a group $G$ is defined as follows $$C_G(a) = \{ g \in G \space  | \space ga = ag \}.$$ It can also be defined as follows $$C_G(a) = \{ g \in G \space  | \space  gag^{-1} = a \}$$ Informally, It contains all the elements in $G$ that commutes with $a$ And also I know that $C_G(a)$ is a subgroup of $G$ Now the center of a group is defined as follows $$Z(G) = \{ g \in G \space | \space gx =xg \space\forall x \in G \}$$ I also know that the center $Z(G)$ of the group $G$ is a subgroup of $G$ and $Z(G) \subseteq C_G(a)$ and hence $Z(G)$ is a subgroup of $C_G(a)$ And so $Z(G) \leq C_G(a) \leq G $ where $\leq$ denotes a subgroup Now I am very confused about the nature of the Stabilizer. All I know is that if $G$ is a group acting on a set $S$ and $s \in S$ then the stabilizer of $s$ in $G$ is the set $$G_s = \{ g\in G \space | \space gs = s \}.$$ Here are my questions (1) Is the stabilizer a subgroup of $G$ I figured this one out. First of all it's not empty since by the definition of a group action $es = s$ and so $e \in G_s$ Now let $g,h \in G_s$ then $(gh)s = g(hs)= g(s) =s$ hence $gh \in G_s$ Now let $g \in G_s$ then $g^{-1}s = g^{-1} (gs) = (g^{-1}g)s = es = s$ and so $g^{-1} \in G_s$ and hence $G_s \leq G$ (2) What is the difference between the Stabilizer and the centralizer because most of the time I see them used interchangeably especially when dealing with the number of element in a conjugacy class. (3) Is it true that $[G:C_G(a)] = [G:G_a]$? (4) Where does that stabilizer fit in  here  $Z(G) \leq C_G(a) \leq G $ where $\leq$  denotes subgroup?","['abstract-algebra', 'group-theory', 'group-actions']"
+1214870,Let $p$=prime and $\sqrt{x}+\sqrt{y}<\sqrt{2p}$,"Let $p$ be a fixed odd prime. Let $x,y\in \mathbb{Z}_+$ such that $\sqrt{x}+\sqrt{y}<\sqrt{2p}$. Prove that $$\sqrt{x}+\sqrt{y}\le \sqrt{\frac{p-1}{2}}+\sqrt{\frac{p+1}{2}}.$$ Any ideas at all? This seems extremely difficult to do using elementary methods. Note: It is from the 2015 Moldova TST (IMO selection test). The original problem was: Let $p$ be a fixed odd prime and $x,y\in \mathbb{Z}_+$. Find the minimum positive value of $\sqrt{2p}-\sqrt{x}-\sqrt{y}$. EDIT! : This is apparently an old IMO Shortlist problem which Moldova recycled for their TST. I note that my reformulation of it was correct; see here for a solution: See here.","['number-theory', 'elementary-number-theory', 'inequality']"
+1214874,Parameterizing equilateral polygons,"I'm not exactly sure how to describe what I want, so if I butcher terms, please forgive me :) I want to ""parameterize"" the space of simple ir regular equilateral polygons with n sides, or at least a large-ish subset of them.  That is, the user provides the number of edges in the polygon ($n$) and a set of parameters $[x_1, x_2, ... x_m]$ that satisfy some equalities and  inequalities (so $Ax \ge b, Cx = d$ for $A \in \mathbf{R}^{p \times m}, b \in \mathbf{R}^p, C \in \mathbf{R}^{q \times m}, d \in \mathbf{R}^q$).  For each valid configuration vector $x$ I want to be able to construct a unique equilateral $n$-gon.  I want the space of polygons I can construct to be as rich as possible. As an example, if $n$ is 3, then the only valid equilateral 3-gon is the equilateral triangle and the configuration space is basically empty so the whole thing is moot.  If $n$ is 4, then valid polygons are convex and shaped like kites, and there's basically only a single degree of freedom and I could use the width, say, as my configuration vector. For larger values of $n$, though, the obvious possibilities for $x$ start to break down.  For instance if you take the sum of the internal angles of the polygon and force them to add to $\pi (n - 2)$ you're not guaranteed that the ends meet up and form a complete circuit.  If you try to require that the ends meet up I don't see a way to express that as a linear equality.  (Notice that constructing the polygon doesn't have to be a linear operation.  Just that the constraints on the configuration vector are linear). Or if you assume the polygon is a star-shaped polygon, with the values of $x$ being the distances from some ""center"" point in the kernel to the vertices of the polyogn, I don't see a way to enforce the equilateral-ness of the polygon without adding non-linear constraints. If you assume the polygon is regular, it gets quite easy of course, but the configuration space isn't very rich.  Ideally I'd like to support at least some amount of concave polygons.  Limiting it to some large-ish subset of the equilateral star-shaped polygons would be reasonable, for instance.  But even being able to parameterize generic convex polygons (maybe as some intersection of half planes) would be interesting. I'm just not sure what so search for or how to frame the problem mathematically.","['linear-programming', 'geometry', 'polygons']"
+1214887,Geometric characterization of critical points of the Gauss map.,Let $\Sigma \subset \mathbb{R}^3$ an oriented surface by Gauss map $N: \Sigma \rightarrow S^2$. How can I find a geometric characterization of critical points of $N$?,['differential-geometry']
+1214894,how to prove the limit and continuity?,"For a closed set $F\subseteq \mathbb{R}^{k}$, define $$f_n (x) := \max\{1-n d(x,F),0\}.$$ Show that $f_n \downarrow I_F$ and that $f_n$ is continuous and bounded. I am trying to use $f_{n}(x)=\frac{1-nd(x,F)+|1-nd(x,F)|}{2}$. 
+For $x\in F$, $f_{n}(x)\rightarrow 1$ for $n\rightarrow\infty$. For $x\notin F$, how can I get that? Also for continuity, it would be more complicated.
+Can someone give hints?","['multivariable-calculus', 'functional-analysis']"
+1214902,GCD of two polynomials in $ \mathbb{Z} [X]$,"Let $(P,Q) \in ( \mathbb{Z} [X])^2$, such that $P$ and $Q$ don't have a common complex root, show that the sequence $\gcd(P(n),Q(n))_{n\ge0}$ is periodic. It seems to be a hard problem, please help.","['polynomials', 'number-theory']"
+1214909,Is it possible to extend well ordering principle/induction to all well ordered sets?,"Today I was thinking about well ordering of naturals,and how by induction we can prove some properties of natural numbers.Now I started wondering if this is property of natural numbers,which are well ordered by membership relation,then does this apply to all well ordered sets? Namely what I say is following: If $T$ is a nonempty infinite set,well ordered by some relation $\leq$,and let P be property such that : 1)$P(x_0) $ holds where $x_0$ is least element of $T$ 2)When $P(x)$ holds for some $x\in T$ then it holds for least element of set $T -\{p\in T | p \leq x\}$ then I assume it should hold for all elements. Only issue I see so far is maybe that we should consider only sets which do not have greatest element,but I do not see clearly how could presence of greatest element destroy this hypothesis. I happen to see this as generalization of induction to all well ordered sets,but I might be just naive because I am not very experienced on this level. Is it possible to continue down this path and formalize such general induction,just for the fun of it?If not why,and if yes also why?What kinds of problems would one have to consider to define this,or what kind of paradox could arise? Thanks in advance","['elementary-set-theory', 'induction']"
+1214914,Proving $(n+1)!>2^{n+3}$ for all $n\geq 5$ by induction,"I am stuck writing the body a PMI I have been working on for quite some time. Theorem: $∀n∈N ≥ X$, $(n+1)!>2^{n+3}$ I will first verify that the hypothesis is true for at least one value of $n∈N$. Consider $n=3$: (not valid)
+$$(3+1)!>2^{3+3} \implies 4!>2^{6} \implies 24>64$$ Consider $n=4$: (not valid)
+$$(4+1)!>2^{4+3} \implies 5!>2^{7} \implies 120>128$$ Consider $n=5$: (valid)
+$$(5+1)!>2^{5+3} \implies 6!>2^{8} \implies 720>256$$ Consider $n=6$: (valid)
+$$(6+1)!>2^{6+3} \implies 7!>2^{9} \implies 5040>512$$ So clearly $X$ is $5$. For the inductive assumption, we will assume the hypothesis holes from $n=5$ up to some arbitrary values $k$: $(k+1)!>2^{k+3}$ This is where I am lost. Originally I had written: Now I will prove true for $k+1$ showing that: $(k+2)!>2^{k+4}$. Consider the $k+1$ term: $$(k+2)(k+1)k! = (k+2)(k+1)2^k = (k+2)(k+1)2^k = (2)(2)(2^k) = (4)(2^k) = 2^{k+4}$$
+by the inductive assumption since $k>5$ so $k+1>2$ and $k+2>2$ but I know this isn't correct. I know the proof should look something like this, but I have no idea why: $$(k+2)(k+1)!>(k+2)(2^{k+3})>2(2^{k+3})=2^{k+4}$$","['induction', 'discrete-mathematics']"
+1214933,Solve second order differential equations,"There are two differential equations that I could not solve. Can someone please help me solve them?
+$$
+(x^2+y^2)y′′-y(y^{′})^3+xy′-y=0   
+$$
+and
+$$
+xy^2y′′+2y^2y′-4xy(y^{′})^2+2x^2(y^{′})^3=0,
+$$
+where $y=y(x)$. Thanks in advance!",['ordinary-differential-equations']
+1214941,"What does ""almost everywhere"" mean in convergence almost everywhere?","Here is a very intuitive definition of convergence almost anywhere from ProofWiki: Sequence of function $(f_n)_{n \in \mathbb N}$ is said to converge almost everywhere on $ D$ to $ f$ if and only if $$\mu (\{x \in D \mid f_n(x) \text { does not converge to } f(x)\})=0$$ and we write it as $$f_n \xrightarrow {a.e.} f. $$ Intuitively, it means that the measure of the set, containing all the $x$'s that do not make $f_n$ converge to $ f $, is zero. But here comes my question: How does the adjective ""almost everywhere"" fit in?  Am I correct in saying that the adjective ""almost everywhere"" means there is a few being left out because the way $\mu $ is defined? Thank you for your time and effort.","['analysis', 'real-analysis', 'measure-theory']"
+1214953,Proof of identity: cross product of three vectors,"A book I'm reading contains the following (paraphrased)
+\begin{equation}
+(a \times b) \times c = (a \cdot c)b - (b \cdot c)a
+\end{equation}
+This is supposed to follow from:
+\begin{equation}
+(a \times b) \cdot (c \times d) = (a \cdot c)(b \cdot d) - (a \cdot d)(b \cdot c)
+\end{equation}
+Where in both equations $a, b, c, d$ are all vectors. The question is how to prove this?","['calculus', 'cross-product', 'linear-algebra']"
+1214964,How many students to award a prize? Combinations,"Question:  80 tickets were sold to 50 engineering and 30 science students, one ticket per student.
+The tickets are entered in a prize draw. Five prizes are drawn: the Grand Prize, the
+Second Prize, and three more identical prizes. How many ways are there to award the
+prizes if the Grand Prize goes to an engineering student, and the Second Prize goes to
+a science student? Attempt at a solution:
+I know that there are 3 prizes left after allocating the Grand Prize and the Second Prize to the engineering student, which is (78 choose 3). What I'm stuck on is how to allocate the Grand Prize and the Second Prize to the equation. Since the engineering student won the grand prize, there is 49 engineers who could win. Since the science student won the Second Prize, there are 29 scientists who could win a prize. Where do I go from here","['combinations', 'discrete-mathematics', 'combinatorics']"
+1214973,"Let $|f(z)| \to \infty$ as $|z| \to \infty$, prove that $f(\mathbb{C})= \mathbb{C}$?","I've been on this for a while and would appreciate some help. I need to prove that if a holomorphic function $f:\mathbb{C \to C}$ satisfies $|f(z)| \to \infty$ as $|z|\to \infty$, then $f(\mathbb{C})= \mathbb{C}$. Here's what I have so far. I know that if I can show that $f(\mathbb{C})$ is open closed and nonempty then $f(\mathbb{C})= \mathbb{C}$. It's obviously not empty since it has at least one value since its the image of a function. It is also open by open mapping theorem since $\mathbb{C}$ is open and $f$ is a non-constant function, $f$ sends open sets to open sets. Finally to show $f(\mathbb{C})$ is closed I've tried to show that $\mathbb{C}\setminus f(\mathbb{C})$ is open but to no avail. I've also tried to show that $f$ contains all its limit points but again unable. Could someone help? Thanks.","['analysis', 'complex-analysis', 'real-analysis']"
+1214997,Variance of the square variation process,"Let $X = (X_n)_{n\in\mathbb{N}_0}$ a square integrable $(\mathcal{F_n})_{n\in\mathbb{N}_0}$-martingale. The predictable process $\langle X \rangle_n = \sum_{i=1}^n \Bigl(\mathbf{E}\bigl[X_i^2\vert \mathcal{F}_{i-1}\bigr] - X_{i-1}^2\Bigr)$ is called the square variation process of $X$. My question is why the following holds: 
+$$\mathbf{E}\bigl[\langle X \rangle_n\bigr] = \mathbf{Var}[X_n - X_0]$$ I guess I know the answer: We use the telescoping property of the sum: $$\mathbf{E}\bigl[\langle X \rangle_n \bigr]= \mathbf{E}\biggl[\sum_{i=1}^n \Bigl(\mathbf{E}\bigl[X_i^2\vert \mathcal{F}_{i-1}\bigr] - X_{i-1}^2\Bigr)\biggr] = \sum_{i=1}^n \Bigl(\mathbf{E}\bigl[\mathbf{E}\bigl[X_i^2\vert \mathcal{F}_{i-1}\bigr]\bigr] - \mathbf{E}\bigl[X_{i-1}^2\bigr]\Bigr) = \\
+\sum_{i=1}^n \Bigl(\mathbf{E}\bigl[X_i^2\bigr] - \mathbf{E}\bigl[X_{i-1}^2\bigr]\Bigr)= \mathbf{E}\bigl[X_n^2\bigr] - \mathbf{E}\bigl[X_0^2\bigr]\, .$$ Using the tower property and the martingale property we obtain that $$\mathbf{E}\bigl[X_n X_0\bigr] =\mathbf{E}\Bigl[\mathbf{E}\bigl[X_n X_0|\mathcal{F}_0\bigr]\Bigr]=\mathbf{E}\Bigl[X_0\,\mathbf{E}\bigl[X_n |\mathcal{F}_0\bigr]\Bigr] = \mathbf{E}\bigl[X_0^2\bigr]\, .$$ We also know that since $X_n$ is a martingale its expectation is constant, i. e. $\mathbf{E}\bigl[X_n\bigr] = \mathbf{E}\bigl[X_0\bigr]$, so 
+\begin{align}
+\mathbf{Var}\bigl[X_n - X_0\bigr] &= \mathbf{E}\bigl[(X_n - X_0)^2\bigr] - \mathbf{E}\bigl[X_n - X_0\bigr]^2 \\ & = \mathbf{E}\bigl[(X_n - X_0)^2\bigr]\\
+&=\mathbf{E}\bigl[X_n^2\bigr] - 2\,\mathbf{E}\bigl[X_n X_0\bigr] + \mathbf{E}\bigl[X_0^2\bigr] \\
+&= \mathbf{E}\bigl[X_n^2\bigr] - \mathbf{E}\bigl[X_0^2\bigr] \,.\;
+\end{align}
+$ \square$ Is that right? Please answer if you know it, this is very important for me! Thank you!","['probability-theory', 'martingales']"
+1215006,Show that all the intervals in $\mathbb{R}$ are uncountable,"Question: Show that all the intervals in $\mathbb{R}$ are uncountable. I have already proven that $\mathbb{R}$ is uncountable by using the following: Suppose $\mathbb{R}$ is countable. Then every infinite subset of $\mathbb{R}$ is also countable. This contradicts the fact that $\mathbb{I} \subset \mathbb{R}$ is uncountable. Consequently, $\mathbb{R}$ must be uncountable. However, how can I show that ALL the intervals in $\mathbb{R}$ are uncountable?","['elementary-set-theory', 'real-analysis']"
+1215022,Transforming a function by a sequence geometric operations on its graph.,"I am solving the following problem: Let $f(x) =\sqrt{x}$. Find a formula for a function $g$ whose graph is obtained from $f$ from the given sequence of transformations: shift right $3$ units horizontal shrink by a factor of $2$ shift up $1$ unit I think that$ g(x) = f(2(x-3)) + 1 = \sqrt{2x-6} + 1$, but in the answers it says $\sqrt{2x-3} + 1$, so i assume $g(x) = f(2x-3) +1$, but wouldn't that mean that the horizontal shrink was done first and afterwards the right horizontal shift?","['transformation', 'graphing-functions', 'algebra-precalculus', 'functions']"
+1215042,"Method of Characteristics, Quasilinear pde","I am attempting to solve the quasilinear pde: $u_t+uu_x=-u$;  $x\in \mathbb{R}$, $t>0$ $u(x,0)=-x/2$ ; $x\in \mathbb{R}$ I understand everything except from the last step. If I make $\xi$ the subject of (s2) I get: $\xi=\frac{2x}{1+e^{-t}}$, then subbing into (s1) $u(\frac{2x}{1+e^{-t}},t)=-\frac{xe^{-t}}{1+e^{-t}}$ How do I get to what is written in the green box?","['multivariable-calculus', 'partial-differential-equations']"
+1215047,Nonsingular projective variety of degree $d$,For each $d>0$ and $p=0$ or $p$ prime find a nonsingular curve in $\mathbb{P}^{2}$ of degree $d$. I'm very close just stuck on one small case. If $p\nmid d$ then $x^{d}+y^{d}+z^{d}$ works. If $p\mid d$ then I have chosen the curve $zx^{d-1}+xy^{d-1}+yz^{d-1}$. After some work using the Jacobian criterion for nonsingularity I arrive at $3z=0$. As long as $p\neq 3$ this curve is nonsingular. But I haven't been able to deal with the $p=3$ case. Any ideas? Thanks in advance.,"['abstract-algebra', 'algebraic-geometry', 'algebraic-curves']"
+1215063,Prove the distributive property of the dot product using its geometric definition?,"The geometric definition of the dot product:
+$$\mathbf{a} \cdot \mathbf{b} = a \cdot b \cos \theta\qquad\forall\mathbf{a} , \mathbf{b} \in \mathbb{R} ^n.$$
+The distributive property of the dot product:
+$$\mathbf{a} \cdot ( \mathbf{b} + \mathbf{c} ) = \mathbf{a} \cdot \mathbf{b} + \mathbf{a} \cdot \mathbf{c} \qquad\forall\mathbf{a} , \mathbf{b},\mathbf{c}  \in \mathbb{R} ^n.$$
+I don't understand how the concepts 'length' and 'angle' make sense in $n \geq 4$. They seem to be defined using the dot product. But we're defining the dot product with them so that's a circular definition. Maybe the geometric definition isn't valid for those higher dimensions. Anyway, I want to prove the distributive property of the dot product using its geometric definition for all $n$ or at least for $n = 3$ using basic things like geometry, trigonometric identities etc. I've proven it for $n = 2$ by defining the vectors $\hat{\mathbf{x}}$ and $\hat{\mathbf{y}}$ as vectors that are of unit length and are perpendicular to each other. Then I assumed that all vectors in $\mathbb{R} ^2$ can be written as a linear combination of these unit vectors since you can reach anywhere on a plane by going forwards/backwards and left/right. And then I rewrote the scalars of the linear combinations in polar coordinates. And finally by using trigonometric identities the distributive property can then be demonstrated to be true. I'm not sure how to prove the case $n = 3$ since the geometry is more complicated.
+And I'm not even sure if geometry works for $n \geq 4$ as I've mentioned above.
+This would be a lot simpler using the algebraic definition of the dot product but the proof that the two definitions are equivalent on Wikipedia requires the distributive property.","['geometry', 'linear-algebra']"
+1215066,Simple convergence proof,"I'm asked to prove, using the definition of convergence, that limits approach a certain value. For example, $$\lim_{n\rightarrow\infty}\dfrac{n^2+4}{n^2}.$$ I can see that it converges to $1$, but I'm not sure how to go about the proof of it using the definition of convergence. (There exists an $N$ such that for all $n\geq N$, $\mid x_n-x\mid<\epsilon$ for all $\epsilon>0$ )","['sequences-and-series', 'convergence-divergence', 'limits', 'epsilon-delta']"
+1215108,Showing $iz+\sqrt{1-z^2}$ has positive real part,"Claim: for all $z\in\Bbb C$, $\Re[iz+\sqrt{1-z^2}]\ge0$. Note that this square root function has its branch cut defined to take the square root with positive real part when one is available, or nonnegative imaginary part if both solutions are pure imaginary. The claim is false on the other branch, so this is important. This problem comes up in the course of finding basic properties of the arcsin function via its definition in terms of $\log$, namely $\arcsin z=-i\log(iz+\sqrt{1-z^2})$, and it was verified ""by inspection"" in Mathematica by graphing it. The problem is of course reducible to $\Re[\sqrt{1-z^2}]\ge\Im[z]$ or $\Re[\sqrt{1-(x+iy)^2}]\ge y$ (switching $z\mapsto -z$ to get rid of the extra sign), but beyond this requires more detailed information on the behavior of the complex square root function. If $1-z^2$ is a nonpositive real, then $z=x$ for some real $|x|\ge1$, in which case the expression reduces to $0\ge0$, because $\Im[z]=0$ and $\sqrt{1-x^2}$ is pure imaginary. Otherwise, we can use the following expansion for $\sqrt z$, which is valid when $|z|\ne-z$, i.e. $z$ is not a nonpositive real: $$\sqrt z=\sqrt{|z|}\frac{|z|+z}{||z|+z|}.$$ Plugging in $z=1-(x+iy)^2$ to this expression, we get $$\Re[\sqrt{1-(x+iy)^2}]=\frac{\sqrt{\alpha}(\alpha+x)}{\sqrt{1+2\alpha x-x^2+x^4+3y^2+2x^2y^2+y^4}},$$ where $\alpha=\sqrt{(2xy)^2+(1-x^2+y^2)^2}$, and this expansion includes only square roots of positive real numbers. Then the claim is that this expression is greater than $-y$. I'll stop here, since the algebra only gets worse from here and I'm not certain I haven't made the original expression unnecessarily complicated. What is a nice way to derive the Claim? More solution progress: We can assume that $x,y\ge0$, because the stronger equation $\Re[\sqrt{1-(x+iy)^2}]\ge|y|$ (with $|y|$ replacing $y$) is symmetric with respect to both $x\mapsto -x$ and $y\mapsto -y$, and reduces to the original equation when $y\ge0$. (To see the $x,y$ symmetries, note that $\Re[\sqrt{1-z^2}]=\Re[\sqrt{1-(-z)^2}]$, and we also have $\Re[\sqrt{1-\bar z^2}]=\Re[\overline{\sqrt{1-z^2}}]=\Re[\sqrt{1-z^2}]$ assuming $1-z^2$ is not a nonpositive real, which we have already dealt with above.) Then since all the terms are manifestly nonnegative (except possibly the $-x^2$ term in the denominator, but this is not a problem since $1-x^2+x^4\ge0$) we can feel free to cross-multiply and square: $$\frac{\sqrt{\alpha}(\alpha+x)}{\sqrt{1+2\alpha x-x^2+x^4+3y^2+2x^2y^2+y^4}}\ge y\iff$$
+$$\sqrt{\alpha}(\alpha+x)\ge y\sqrt{1+2\alpha x-x^2+x^4+3y^2+2x^2y^2+y^4}\iff$$
+$$\alpha^3+2\alpha^2 x+\alpha x^2\ge y^2(1+2\alpha x-x^2+x^4+3y^2+2x^2y^2+y^4)\iff$$
+$$\overbrace{2x^5 - x^4y^2 + 4x^3 (y^2-1) + 2 x (y^2+1)^2 + 
+ x^2 (y^2-2y^4) - y^2 (y^4+3y^2+1)}^u + 
+ \alpha \overbrace{(x^4 - 2 x y^2 + (1 + y^2)^2 + x^2 (2 y^2-1))}^v\ge0$$ Now at this stage, I would like to rewrite the equation as $u\ge -\alpha v$ so I can square it, but unfortunately the terms are not nonnegative any longer. However, $v\ge0$ appears to hold for all $x,y\ge0$ (proof by graphing), so it suffices to prove $u^2\le\alpha^2v^2$ for all $u\le0$: $$u^2\le((2xy)^2+(1-x^2+y^2)^2)v^2\iff$$
+$$1 + x^{12} + 6 y^2 + 2 x^9 y^2 + 14 y^4 + 14 y^6 + 4 y^8 + 
+ x^{10} (-9 + 6 y^2) +\\ 2 x (y + y^3)^2 (1 + 4 y^2 + y^4) + 
+ x^7 (-4 y^2 + 8 y^4) + x^8 (27 - 30 y^2 + 14 y^4) +\\
+ 4 x^3 y^2 (-1 - 2 y^2 + 5 y^4 + 2 y^6) + 4 x^5 (y^2 + y^4 + 3 y^6) + 
+ 2 x^6 (-19 + 12 y^2 - 14 y^4 + 8 y^6) +\\
+ x^4 (27 + 24 y^2 - 21 y^4 - 2 y^6 + 9 y^8) + 
+ x^2 (-9 - 30 y^2 - 28 y^4 + 2 y^6 + 5 y^8 + 2 y^{10})\ge0$$
+$$\mbox{when}\quad 2x^5 - x^4y^2 + 4x^3 (y^2-1) + 2 x (y^2+1)^2 + 
+ x^2 (y^2-2y^4) - y^2 (y^4+3y^2+1)\le0.$$ Now it is finally a pure polynomial inequality. However, it is now a total mess, considering that the original problem doesn't seem like it should get this ugly, and this is some kind of polynomial optimization problem that I have no idea how to solve.","['complex-analysis', 'algebra-precalculus']"
+1215144,equivalence of two measures,"Show that, if for two $\sigma$-finite measures $\mu$ and $\nu$ defined on a $\sigma$-algebra $\mathscr{F}$, one has $\mu(A)=\nu(A)$ for all $A\in\mathscr{A}$, where $\sigma(\mathscr{A})=\mathscr{F}$, then $\mu=\nu$. Can some give me hints?","['probability-theory', 'real-analysis', 'measure-theory']"
+1215147,Finding a grammar for given language,"So for this problem we are given a language and we have to find the grammar for that set. I am confused and what the constructors should be. The language in this problem is: $\{bb, bab, baab, baaab,...\}$ = $\{ba^nb | n \in \mathbb{N} \}$ For some, I know that one of the constructors involves the empty string, like $S \rightarrow \Lambda$, but that is usually when the empty string is included in the language (at least in the examples the professor showed us). So like $\{ \Lambda, bb, bab,...\}$. I looked in the back of the book and some of the other problems didn't have an empty string as one of their constructors. I was thinking it's something like: $S \rightarrow \Lambda$ | $bSb$ | $aS$ So that: $S => bSb => b\Lambda b => bb$ or $S => bSb => baSb => baaSb => baa\Lambda b => baab$ This gives me the language I am looking for somewhat, but what if $S => \Lambda$ right from the start? Then that messes me up since $\Lambda$ is not included in the language. Any idea on how to fix this?","['computer-science', 'context-free-grammar', 'formal-languages', 'discrete-mathematics']"
+1215178,Eritrea's Theorem,"According to this newspaper , an Eritrean high school student named Saied Mohammed Ali has discovered a new geometric theorem. Another source seems to say that it's the following: Say you have a triangle, with sides of length $a$, $b$, and $c$. Draw the medians (lines $\overline{AG}$, $\overline{BI}$, and $\overline{CH}$ in the diagram), and the altitudes (lines $\overline{AD}$, $\overline{BF}$, and $\overline{CE}$ in the digram). Call the distance between where the median and altitude hit a given side the sma of that side. In the diagram, the smas are $\overline{GD}$, $\overline{IF}$, and $\overline{HE}$. Call the length of the sma on side $a$, $\alpha$. Similarly, on sides $b$ and $c$ we have smas $\beta$ and $\gamma$. The theorem is:
+$$a\alpha+b\beta=c\gamma$$ In the picture, we have $5.19\times0.09+4.28\times0.9=4.39\times0.98$, which is true up to rounding error. How would you prove this? I have almost no experience in geometry, so I wouldn't even know where to start on this. Thanks!","['euclidean-geometry', 'geometry', 'triangles']"
+1215193,"Using the Mean Value Theorem, prove that $|\sin{a} - \sin{b}| \leq |a - b|$ $\forall a, b \in \mathbb{R}$","Using the Mean Value Theorem, prove that $|\sin{a} - \sin{b}| \leq |a - b|$ $\forall a, b \in \mathbb{R}$. I'm working towards figuring out an approach for finding that $|\sin{a} - \sin{b}| \leq |a - b|$ $\forall a, b \in \mathbb{R}$, but I've not yet included an application of the MVT, and I believe that my approach has some redundancy (or at least isn't that elegant). Furthermore, I'm not even so certain what I've written is at all very helpful in proving this conclusion. $$
+\begin{align*}
+\\ \text{Assume } \forall \sin{x} \implies \sin{x} = \sin{(x \bmod 2\pi)}
+\\ \text{case: }
+    a &> b \wedge a \leq \pi \wedge b \leq \pi \implies
+\\  1 &\geq \sin{a} \geq 0 \wedge  1 \geq \sin{b} \geq 0 \implies
+\\  0 &\leq |\sin{a} - \sin{b}| \leq 1
+\\
+\\ \text{case: }
+    a &> b \wedge a \geq \pi \wedge b \leq \pi \implies
+\\ -1 &\leq \sin{a} \leq 0 \wedge  1 \geq \sin{b} \geq 0 \implies
+\\  0 &\leq |\sin{a} - \sin{b}| \leq 2
+\\
+\\ \text{case: }
+    a &> b \wedge a \geq \pi \wedge b \geq \pi \implies
+\\ -1 &\leq \sin{a} \leq 0 \wedge -1 \leq \sin{b} \leq 0 \implies
+\\  0 &\leq |\sin{a} - \sin{b}| \leq 1
+\\
+\\ \text{case: }
+     a &= b \implies
+\\   0 &= |\sin{a} - \sin{b}| = |a - b|
+\\
+\\ \text{case: }
+    a &< b \wedge a \leq \pi \wedge b \leq \pi \implies
+\\  1 &\geq \sin{a} \geq 0 \wedge  1 \geq \sin{b} \geq 0 \implies
+\\  0 &\leq |\sin{a} - \sin{b}| \leq 1
+\\
+\\ \text{case: }
+    a &< b \wedge a \leq \pi \wedge b \geq \pi \implies
+\\  1 &\geq \sin{a} \geq 0 \wedge -1 \leq \sin{b} \leq 0 \implies
+\\  0 &\leq |\sin{a} - \sin{b}| \leq 2
+\\
+\\ \text{case: } a &< b \wedge a \geq \pi \wedge b \geq \pi \implies
+\\ -1 &\leq \sin{a} \leq 0 \wedge -1 \leq \sin{b} \leq 0 \implies
+\\  0 &\leq |\sin{a} - \sin{b}| \leq 1
+\end{align*}
+$$ I find it's fairly intuitive for $|a - b| \geq 2$ that $|\sin{a} - \sin{b}| \leq 2$, considering $\sin{x} \leq 1 \text{ } \forall x \in \mathbb{R}$. But grasping and considering cases for $|a - b| < 2$ seems a little less intuitive, as it is perhaps conceivable (but not necessarily true) that $|\sin{a} - \sin{b}| > |a - b|$ for some values where $|a - b| < 2$. Insight? Edit: I've refined my proof to the following structure: The Mean Value Theorem states: a function $f$ which is continuous on the closed interval $[a, b]$ $^{\textbf{(1)}}$ and differentiable on the open interval $(a, b)$ $^{\textbf{(2)}}$ has at least one value $c: a < c < b$ where $f'(c) = \dfrac{f(b) - f(a)}{b - a}$. Set $f(x) = \sin{x} \implies f(x)$ is continuous and differentiable $\forall x \in \mathbb{R}$ and all sub-intervals $^{\textbf{(1, 2)}}$ $ \therefore$ when $\exists a, b: b < c < a \implies \exists f'(c) = \dfrac{f(a) - f(b)}{a - b} \implies \cos{c} = \dfrac{\sin{a} - \sin{b}}{a - b}$. Take the absolute value of both sides of this equality to find $\dfrac{|\sin{a} - \sin{b}|}{|a - b|} = |\cos{c}|$, and since $\dfrac{|\sin{a} - \sin{b}|}{|a - b|} = \dfrac{|\sin{b} - \sin{a}|}{|b - a|}$, this holds true $\forall a, b \in \mathbb{R}$. Since $|\cos{x}| \leq 1 \text{ } \forall x \in \mathbb{R} \implies |\cos{c}| \leq 1 \implies \dfrac{|\sin{a} - \sin{b}|}{|a - b|} \leq 1.$ Multiplying across the inequality by $|a - b|$ finds the result: $|\sin{a} - \sin{b}|  \leq |a - b|$.","['calculus', 'absolute-value', 'trigonometry']"
+1215201,Are there two meanings to induction?,"I've seen mathematical induction in two forms. First form : It seems that if $P(0)$ holds and $\displaystyle \overbrace{\frac{k(k+1)}{2}+(k+1)}^{adding}=\overbrace{\frac{[k+1]([k+1]+1)}{2}}^{\text{Switching k for [k+1]}}$, then we can suppose that it holds for arbitrary $n\in\mathbb{N}$. In this case, it seems that the result holds because of the arithmetical laws allowed for that expressions. In here, it seems that the induction forces the exibition of the truth by showing the behavior of the expression under some given laws. Second form: Proving that $m+0=m=0+m$. To prove that, I had only a few laws: $S:\mathbb{N}\to\mathbb{N}$ is an injection; $0\in\mathbb{N}\setminus S(\mathbb{N})$ and the principle of finite induction. $m+0:=m \quad\quad\quad m+S(n):=S(m+n)$ The proof given in this book is: PROOF : By induction, $0+0=0$ follows from the definition, and $[[$if $0+n=n$, then $0+S(n)=S(0+n)=S(n)$$]]$. In this case, it seems that the sentence enclosed in double brackets is not something that follows from the given laws, it seems more like something that we want to be true and if it's true, then the conclusion holds. In this case, it seems that induction is something that forces something to be true instead of showing it is a consequence of the laws given earlier. Is that correct? I don't see how that could follow from the laws given in $2.$ Rephrasing it a little shorter: Induction is used to force some behavior under some given laws and then show that under that laws, it actually holds. Induction is used to force something that we actually want to be true, instead of showing it as a consequence of previous laws.","['elementary-set-theory', 'induction', 'logic']"
+1215247,"Surjective morphism of varieties with finite fibers but not ""finite""","Let $X$ and $Y$ be affine varieties, and $f : X \to Y$ a dominant regular map. Following Shafarevich, I will call $f$ finite if the induced map on coordinate rings is integral. One consequence of finiteness is that the fibers are finite, and that $f$ is surjective. Can someone provide an example of a regular $f$ that satisfies these set theoretic properties but fails to be finite? Are there conditions under which these necessary conditions become sufficient?","['algebraic-geometry', 'commutative-algebra']"
+1215256,Average Cost of Obtaining in game Item,"I know this will sound like a trivial maths problem, but recently I've been playing a game in which you can pay 5 in game gems to get a Rare (R), Super Rare (SR), and Ultra Rare (UR) characters randomly. And the probability of getting said characters are 90%, 9%, and 1% respectively. What I have calculated thus far is that each character is worth approximately 5.5, 55, and 500 gems respectively by doing the following calculation: Average Cost = Cost of Rolling/Probability But I have no proof that this is correct or incorrect. I thought it had something to do with expected value as taught in school, but something seems off about it. To further complicate things, you can spend 50 gems to roll 11 times. And on top of that, occasionally you can roll spend 50 gems to roll 11 times with 1 guaranteed SR. What would then be the expected average cost for each respective rarity? Probability has always been interesting to me, but definitely not my strong suit.","['economics', 'probability', 'statistics']"
+1215261,Find all positive integers $n$ such that $\phi(n)+\sigma(n)=2n$.,"I'm asked to find all integers $n$ such that $\phi(n)+\sigma(n)=2n.$ I know that when $n$ is a prime, $\phi(n)+\sigma(n)=(n-1)+(n+1)=2n.$ My guess is that $n$ can be primes only, and I want to derive a contradiction when $n$ is a composite number. But I can only show that when $n=pq$ ($p$, $q$ distinct primes), $\phi(n)+\sigma(n)=2pq+2=2n+2.$ How do I generalize from here?","['number-theory', 'arithmetic-functions']"
+1215267,"How to show that when an edge is removed from K5, the resulting subgraph is planar.","This question might be simple to others, but I'm stuck on this question. ""prove that when I deleted an edge from $K5$ , it has planar sub-graph . So, I know that G is planar if and only if G contains no sub-division of $K5$ or $K3,3$ . So that means when I delete an edge from K5, I no longer have sub-division of K5 and therefore, the subgraph is planar. But how do I show that explicitly that when I remove edge from $K5$ , it will have planar subgraph? (I think this question is somewhat related to Kuratowski's theorem)","['planar-graphs', 'graph-theory', 'discrete-mathematics']"
+1215283,Is the boundary of a boundary a subset of the boundary?,The definition of a boundary of a set $S$ in a topological space $X$ is $\text{comp}\{\text{Int}(S) \cup \text{Ext}(S)\}$ (complement of the interior union exterior). The definition for interior is the set of all interior points. The definition for interior point of $S$ is if there exists an open neighborhood $N$ of that point such that $N \subset S$. The definition of neighborhood of a point $x$ is a subset of the topological space $X$ that contains an open set such that $x$ is in that open set. The definition for exterior of $S$ is $\text{Int}(\text{Comp}(S))$. So $\text{Bdry}(\text{Bdry}(S)) = \text{comp}\{\text{Int}(\text{comp}\{\text{Int}(S) \cup \text{Ext}(S)\}) \cup \text{Ext}(\text{comp}\{\text{Int}(S) \cup \text{Ext}(S)\})\}$ which I can't make heads or tails of. Is there an easier approach to checking of the boundary of the boundary is a subset of the boundary using these definitions?,['general-topology']
+1215292,Does $\sum\limits_{n=1}^\infty\sin(n)\sin\left(\frac{\pi}{2n}\right)$ converge?,"I must determine whether if the following series converges, converges absolutely, or diverges: $$\sum_{n=1}^\infty\sin(n)\sin\left(\frac{\pi}{2n}\right)$$ By the comparison test, I have already found that $\sum\limits_{n=1}^\infty \left(\sin\left(\frac{\pi}{2n}\right)\right)^p$ converges for $p>1$ and diverges for $p \leq 1$. Thus, $
+\sum\limits_{n=1}^\infty\sin\left(\frac{\pi}{2n}\right)$ diverges by this criterion. I suspect the entire series will also diverge, and that I have to use the comparison test, but I encountered an issue: Since $-1 \leq \sin n \leq 1$, we have that $\sin(n)\sin\left(\frac{\pi}{2n}\right) \leq \sin\left(\frac{\pi}{2n}\right)$. This would be useful if the series represented by the term on the right converged; in its current state, this cannot be used to prove divergence. Is my reasoning wrong? Should I be using another test for this series? Thank you.","['calculus', 'limits', 'real-analysis', 'sequences-and-series', 'convergence-divergence']"
+1215333,Proving that $\int_{-\pi}^{\pi} \ln |1 - e^{i\theta}| d\theta = 0$,"I found this on some comprehensive exam. Prove that $\int_{-\pi}^{\pi} \ln |1 - e^{i\theta}| d\theta  = 0$. I was wondering would standard approach work? By that I just mean splitting the integerl up into 
+$\int_{-\pi}^{0} + \int_{0}^{\pi}$, and then use $$\ln(1 - e^{i\theta}) = -\sum\frac{e^{i\theta n}}{n}.$$ I found that the first integral yields $-\frac{2}{i n^2}$ and the second yields the negative of that, which yields $0$. But I feel like this is a real-analysis approach. Can someone give me some insight?","['complex-analysis', 'improper-integrals']"
+1215341,Is ordering of (possibly infinite) sets by cardinality a total ordering?,"Given sets $A$ and $B$. Can you show that either there exists an injective map of $A$ into $B$ (that is, a map such that each element of $A$ maps to an element of $B$ and no two elements of $A$ map to the same element of $B$) or there exists an injective map of $B$ into $A$ (or both). . If this can be proven then the ordering of sets by their cardinality is a total ordering; if it is false, there are two sets $A$ and $B$ such that neither $|A|<|B|$ nor $|B|<|A|$.  Of course, it might also be undecidable, in which case my question becomes has it been proven to be undecidable within ZF? I strongly suspect that the ordering is total and that there is an easy proof but I can't come up with one.","['elementary-set-theory', 'cardinals']"
+1215345,Uncorrelated but not independent random variables,"Is it possible to construct two random variables $X, Y$ both of them assuming exactly two non-zero values which are uncorrelated, i. e. $\mathbf{E}[X \, Y] = \mathbf{E}[X]\,\mathbf{E}[Y]$, but not independent? If that is not possible, what is the simplest example of non-zero discrete random variables which are uncorrelated but not independent? Thanks a lot!","['probability', 'correlation', 'random-variables']"
+1215347,"How can I find the closed form of this recursive relationship: $a_{n}=(a_{n-1})^2+a_{n-1},a_{0}=1$","This comes up in OEIS as A007018 . However the recursive form is useless to me, I need the closed form. I've been trying for several hours and I simply come up empty. Any advice? Thanks.","['sequences-and-series', 'discrete-mathematics']"
+1215359,Cardinality of the set of algebraically independent transcendental numbers,It is not difficult to see that there must be an uncountable infinity of transcendental numbers – but has anybody yet proved that there is an uncountable infinity of algebraically independent transcendental numbers ?,"['transcendental-numbers', 'number-theory']"
+1215365,Are all functions that have an inverse bijective functions?,"To have an inverse, a function must be injective i.e one-one. Now, I believe the function must be surjective i.e. onto, to have an inverse, since if it is not surjective, the function's inverse's domain will have some elements left out which are not mapped to any element in the range of the function's inverse. So is it true that all functions that have an inverse must be bijective? Thank you.",['functions']
+1215372,Inquiry about determinant of $ \left(\begin{matrix} A & B \\ B^T & C \end{matrix}\right)$,"Based off of http://en.wikipedia.org/wiki/Determinant#Block_matrices , I'm trying to find the formula for $\det(M)$ when $M = \left(\begin{matrix} A & B \\ B^T & C \end{matrix}\right)$. It is known that $A$ and $C$ are diagonal matrices in my use case. I don't even know where to begin proving this. Any proofs or hints in the right direction would be appreciated.","['determinant', 'matrices']"
+1215405,$\int_{a}^{b} f(x) = \int_{a}^{b}A dx - \int_{a}^{b} B dx$,"Let $f:[a,b] \rightarrow \mathbb{R}$ be an integrable function. Define
+A = \begin{cases} f(x), & \mbox{if } f(x) \ge 0\mbox{} \\ 0, & \mbox{if } f(x) < 0\mbox{ } \end{cases} Define B = \begin{cases} 0, & \mbox{if } f(x) \ge 0\mbox{} \\ f(x), & \mbox{if } f(x) < 0\mbox{ } \end{cases} How to prove that $A,B:[a,b] \rightarrow \mathbb{R}$  are integrable and 
+$$\int_{a}^{b} f(x) = \int_{a}^{b}A dx - \int_{a}^{b} B dx$$ Please help!","['analysis', 'calculus', 'integration']"
+1215409,A Question on a second countable $T_2$ space,"I have a question: Does a second countable $T_2$ space $X$ always have a $G_\delta$-diagonal? (If $X$ is regular, then it is metrizable, and it obviously has a $G_\delta$-diagonal.) Thanks for your help.",['general-topology']
+1215413,Groups involving matrices,"Let $$H=
+  \left\{\left( {\begin{array}{ccc}
+   1 & b \\
+    0 & 1 \\
+  \end{array} } \right)\Bigg\vert b\in \mathbb{R}\right\}$$ How do I show that H is a group and under which operation? I have not done so much with matrices in algebra.
+I believe there is a pattern/guide of which I have to follow like when showing subgroups.","['abstract-algebra', 'matrices']"
+1215442,If $x$ and $y$ are irrational but $x + y$ is rational then $x - y$ is irrational [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 9 years ago . Improve this question Prove that if $x$ and $y$ are irrational but $x + y$ is rational then $x - y$ is irrational. I can understand how it works in my head, I don't know how to prove it though.","['rational-numbers', 'number-theory', 'proof-writing', 'irrational-numbers', 'rationality-testing']"
+1215465,Showing $\sum\frac{\sin(nx)}{n}$ converges pointwise,"I do not understand how one can say using ""Dirichlet conditions"" that $\sum_{n=1}^{\infty}\dfrac{\sin(nx)}{n}$ is pointwise convergent. I know the proof for $x=1$ but how can one show it is convergent for all $x>0$ , pointwise? The Dirichlet theorem for series of functions only lays down criteria for uniform convergence of series, not pointwise convergence. One method to show the series is convergent pointwise is to show it is the Fourier sum of the $2\pi$ periodic function $\dfrac{\pi-x}{2}$ in (which is differentiable and hence the Fourier sum converges to the function) but I want to prove it without using Fourier series. Please note that I have gone through all the sites offered by MSE where this question has been posted and in almost all of them, upvoted answers just write down ""USING DIRICHLET CONDITIONS"" and then possibly give a link to the Wiki page. However, I do not understand how one can use Dirichlet theorem to prove just the pointwise convergence of a series. Any help is appreciated.","['sequences-and-series', 'dirichlet-series']"
+1215533,"Distribution of the lifetime of a system consisting of two exponentially distributed components, one being backup","I have a system consisting of components $S_1$ and $S_2$ whose lifetimes $T_1$ and $T_2$ follow the exponential distribution with parameter $\lambda$. At time $t=0$ the component $S_1$ is switched on and $S_2$ is kept off until $S_1$ fails (and is immediately switched on). What is the distribution of the lifetime of the system? To me the logical solution would be $f(T_1,\lambda)+f(T_2,\lambda)$ where f is the probability density function $f(x,\lambda)=\lambda e^{-\lambda x}$. $\Rightarrow$ $\lambda e^{-\lambda T_1}+\lambda e^{-\lambda T_2}$ but I have nothing to verify it with. Am I on the right track?","['probability', 'probability-distributions', 'random-variables']"
+1215555,Determinant of matrix times a constant.,Prove that $\det(kA) = k^n \det(A)$ for and ($n \times n$) matrix. I have tried looking at this a couple of ways but can't figure out where to start. It's confusing to me since the equation for a determinant is such a weird summation.,"['linear-algebra', 'matrices']"
+1215568,a tangent vector which belongs to intersection of a manifold and a subspace is tangent to their intersection?,"I have the following situation: There is an embedded submanifold (in my particular case it is of codimension one but I do not think it matters here) $M\subseteq R^n$, and a vector subspace $P\subsetneq R^n$. There are also a point $p\in P\cap M $ and a tangent vector point $v\in P\cap T_pM $. (Since $M$ is a submanifold of $R^n$ I am using the standard identification and considering $T_pM\subsetneq R^n$ so $P\cap T_pM $ makes sense). It is also given that the intersection $P\cap M $ is a submanifold of $M$. My question is: does $v\in  T_p(P\cap M) $? My ideas so far are: $v \in P∩T_pM$ implies we can build two curves:
+$\alpha :I \mapsto P, \beta:I \mapsto M $ such that $\alpha (0)=\beta(0)=p, \alpha' (0)=\beta'(0)=v$. But I am not sure it is possible to find a single curve which passes throug $p$ with velocity $v$ that lies inside $P\cap M$.",['differential-geometry']
+1215569,Under what conditions is the product of two invertible diagonalizable matrices diagonalizable?,"The answer in this question gives an example for the statement product of two invertible diagonalizable matrices is not diagonalizable. My question is: Are there some conditions, perhaps on the eigenvalues and eigenvectors of matrices, under which the product of two invertible diagonalizable matrices is diagonalizable?",['linear-algebra']
+1215620,What is the maximum entropy distribution over all integers (ie. including negative ones) with fixed mean and variance?,"I know that the maximum entropy distribution with over the non-negative integers fixed mean is a geometric distributions. However, I cannot find conclusive information about what are the maximum entropy distributions over the whole integers (negative + non-negatives). As per the comment below, in this case, we need at least to specify both the mean and the standard deviation of the distribution for the ""maximum entropy"" criterion to make sense. It is well known that if we consider the whole real line, the maximum entropy distribution with a given mean and variance is a Gaussian normal distribution. My questions are therefore:
+1- For a given mean and variance, is there a maximum entropy distribution over the integers? 
+2- If it exists, can it be expressed in a closed form, like gaussian or geometric distributions? My guess is that the answer is ""yes"" for 1) and ""no"" for 2) (since I cannot find any mention of a closed form anywhere). But I would be very happy to see a confirmation of this. EDIT: Since it is now clear that the variance needs to be specified for the ""maximum entropy"" criterion to make sense, I rewrote the question accordingly.","['entropy', 'probability', 'statistics', 'probability-distributions']"
+1215632,"Variation of Parameters: why do we assume the ""constraint"" $v'_1\left(t\right)y_1\left(t\right)+v_2'\left(t\right)y_2\left(t\right)=0$? [duplicate]","This question already has answers here : Justifying an Assumption Made While Deriving the Method of Variation of Parameters (3 answers) Closed 3 years ago . I am reviewing the method of variation of parameters for solving non-homogeneous second-order differential equations that look like
+\begin{align}
+a\frac{d^2 y}{dt^2}+b\frac{dy}{dt}+cy=f\left(t\right),\;\;a\neq 0.\tag{1}
+\end{align}
+But I have a question. One of the reasons this method didn't quite stick the first time around is because I did not fully understand why we might assume that
+\begin{align}
+v'_1\left(t\right)y_1\left(t\right)+v_2'\left(t\right)y_2\left(t\right)=0.\tag{2}
+\end{align}
+All I could find on this site is this question , but that doesn't quite ask what I am asking. For instance, I see why it is done, i.e. to make sure we don't end up with higher-order derivatives of our parameters, but then what if we did not make this assumption? In what case would we necessarily make that assumption?",['ordinary-differential-equations']
+1215636,What are Mumford's 'moduli topologies'?,"I've been reading Mumford's Paper 'Picard Groups of Moduli Problems'.  Stated in modern language, the most famous result from the paper is that the moduli stack of elliptic curves has Picard group $\mathbb Z/12$. In the original paper, however, Mumford introduces various (Grothendieck pre)topologies, including one called the 'moduli topology' for the moduli problem of curves of genus $g$, defined on the category of all families of genus $g$ curves; i.e., on the stack $\mathcal M_g$ itself rather than on the base category. It is clear that, when he wrote the paper, Mumford considered these topologies to be very important objects of study.  But I'm having trouble relating something like the moduli topology to the modern idea of a stack. How do the topologies in this paper relate to stacks?  And can anyone point me towards an exposition of Mumford's argument in the language of stacks?","['algebraic-geometry', 'reference-request', 'algebraic-stacks', 'grothendieck-topologies']"
+1215641,Does there exist a group isomorphism from Z to ZxZ?,"I know that $\mathbb Z$ and $\mathbb{Z}\times\mathbb{Z}$ have the same cardinality because you can create a bijection between the two. The example I was taught is Cantor's pairing function, which maps $\mathbb{N}^2\to\mathbb{N}$ like so: $\displaystyle C(x,y)=y+\frac{(x+y)(x+y+1)}{2}$, and has an inverse $C^{-1}:\mathbb{N}\to\mathbb{N}^2$ which is explained nicely on Wikipedia . Given that $+$ is defined on $\mathbb{Z}^2$ such that $(x_1,y_1)+(x_2,y_2)=(x_1+x_2,y_1+y_2)$ (i.e. simple vector addition), I was trying to draw some sort of a relation between the sums of integers and the sums of the pairs they map to using the pairing function. I honestly can't see much of a pattern, but I'm willing to conjecture that: $C^{-1}(a + b) = C^{-1}(a) + C^{-1}(b)$ is true if and only if a or b is $0$ I'm not sure how to prove that, but I have a hunch that it somehow relates to the answer of my actual question: Is there a function $f:\mathbb{Z}\to\mathbb{Z}\times\mathbb{Z}$ such that: $f^{-1}:\mathbb{Z}\times\mathbb{Z}\to\mathbb{Z}$ exists $\forall a,b \in \mathbb{Z}, f(a+b) = f(a)+f(b)$ $\forall a,b \in \mathbb{Z}\times\mathbb{Z}, f(a+b) = f(a)+f(b)$ Can I have a bijective group homomorphism from the integers to pairs of integers?","['abstract-algebra', 'group-isomorphism']"
+1215648,Finding the limit of $\sqrt[n]{{kn \choose n}}$,"As part of homework I'm trying to find the limit of $\sqrt[n]{{kn \choose n}}$ (with $k\in\mathbb{N}$ a given parameter). I've seen This limit: $\lim_{n \rightarrow \infty} \sqrt [n] {nk \choose n}$. , on which the only answer suggests using Stirling's approximation, which I've never learned and I can't seem to understand. Trying to solve this myself, I first tried finding the ratio directly, which gave me $$\frac{{kn+k \choose n+1}}{{kn \choose n}}=\frac{\frac{\left(kn+k\right)!}{\left(n+1\right)!\left(kn+k-n-1\right)!}}{\frac{kn!}{n!\left(kn-n\right)!}}=\frac{\left(kn+k\right)!n!\left(kn-n\right)!}{\left(n+1\right)!\left(kn+k-n-1\right)!kn!}
+ =\frac{\left(kn+k-n\right)\left(kn+k-n+1\right)\cdots\left(kn+k\right)}{\left(n+1\right)\left(kn-n+1\right)\cdots\left(kn-n\right)}
+$$
+That I'm not really sure how to use. So instead I tried finding something that I might be able to say is bigger and smaller to use squeeze on, which gave me: $${kn \choose n}=\frac{kn!}{n!\left(kn-n\right)!}=\frac{\left(kn-n+1\right)\cdots\left(kn\right)}{n!}\leq k^{n}\frac{n^{n}}{n!}$$
+And then showing that 
+$$
+\frac{\frac{\left(n+1\right)^{n+1}}{\left(n+1\right)!}}{\frac{n^{n}}{n!}}=\frac{\left(n+1\right)^{n+1}n!}{n^{n}\left(n+1\right)!}=\frac{\left(n+1\right)^{n}\left(n+1\right)}{n^{n}\left(n+1\right)}=\left(1+\frac{1}{n}\right)^{n}\to\epsilon$$
+gives the larger limit of $$\sqrt[n]{{kn \choose n}}\leq\sqrt[n]{k^{n}\frac{n^{n}}{n!}}=\sqrt[n]{k^{n}}\sqrt[n]{\frac{n^{n}}{n!}}=k\cdot\sqrt[n]{\frac{n^{n}}{n!}}\to k\cdot e
+ $$ But it's obviously not the limit itself since for i.e. $k=1$ the limit is 1 and $k=2$ the limit is 4. So I'm pretty much stuck, any hints on how I might be able to solve it?","['limits-without-lhopital', 'sequences-and-series', 'calculus']"
+1215667,"Direct products, direct sums and coproducts in category of groups","I have couple questions about terms I mentioned in the title. Why we don't define direct sum of non-abelian groups (subset of direct products which consists of elements with almost every component equal to identity element)? Why is direct sum used in definition of coproduct in category of Abelian groups but it is not ""good"" for category of groups in general (I know free groups are used)? Where is essential difference?","['abstract-algebra', 'category-theory']"
+1215691,When is the stabilizer topologically closed?,"An exercise in Armstrong says if the topological group $G$ acts on the topological space $X$ by homeomorphisms, then the stabilizer $\text{st}(x)=\{g\in G\mid g(x)=x\}$ is a closed subset of $G$. If $X$ were Hausdorff this would be easy.  But he doesn't assume that.  I can't manage to prove it or find a counter-example. Note that Armstrong assumes $G$ is Hausdorff in his definition of topological group.  And he assumes the identity in $G$ gives the trivial homeomorphism, and he assumes the map $G\times X\rightarrow X$ is continuous. I've searched this site and the web in general and can't find a resolution of this question either way.",['general-topology']
+1215727,Convergent series? Gamma/power function,"Is it true to use as a general rule of thumb that the Gamma function always ""kills"" power function in a series? I mean:
+$$\sum_{n=1}^{\infty} \frac{C^n}{\Gamma(n)^p}<\infty$$
+no matter the constant $C>0$ and power $p>0$ in the gamma function as long as they are fixed and independent of $n$. Am I correct? Now I wonder what happens with
+$$\sum_{n=1}^{\infty} C^n \frac{\Gamma( a_n )^p}{\Gamma(b_n)^q}\, ?$$ How can we decide when the series is convergent? For instance if $a_n=b_n$ and $q>p>0$ I guess the series converges right? Is there a general rule/criterion one can use here? Actually, I have $a_n= an$ and $b_n=bn+c$ with $a,b,c>0$. I mean
+$$\sum_{n=1}^{\infty} C^n \frac{\Gamma( an )^p}{\Gamma(bn+c)^q}\, ?$$
+What would be the conditions on $p,q,a,b,c$ so that the sum converges? Thanks a lot! :D","['summation', 'divergent-series', 'real-analysis', 'sequences-and-series', 'analysis']"
+1215740,"Visual understanding for ""the genus"" of a plane algebraic curve","I am trying to understand the genus of an algebraic curve in the complex plane $\mathbb{C}P2$. I am looking for a visual or intuitive understanding. The difference between a sphere and a torus as a surface of genus 0 and 1 resp. is clear, but how does the surface relate to the planar curve? As an example take the following parametrization:
+$$
+  t \in \mathbb{C} \mapsto (x,y,z) := (t+t^3, t-t^3, 1+t^4) \in \mathbb{C}P2
+$$
+Where $(x,y,z)$ are complex homogeneous coordinates, i.e. $(x',y') := (x/z, y/z) $ would be ""normal"" complex coordinates. The parameter $t$ is $\in \mathbb{C}$ so one may regard the parameter $t$ on a Riemann sphere, where some points on the sphere are singular. Is that the reason the genus of this curve is $0$, because it has a
+  parametrization on a Riemann sphere? Wikipedia claims that the Cassini ovals are curves of genus 1. However the lemniscate is of genus 0. I am inclined to believe that the Cassini oval looking like an ellipse is also genus $0$. Is that correct? It could be that the Cassini oval consisting of two seperate parts is of genus 1. Is one part of the two seperate ovals then of genus $0$?","['algebraic-geometry', 'geometry', 'algebraic-curves']"
+1215781,Example of algebraic structure that is non distributive for BOTH distributive laws and how to do computation in them?,"(Apologies if this one sounds like I have not done much research, or I did not aware already have an answer, but I have been searching ev er yw h er e and all of these structures presented here, even including the highly exotic division by zero proposals such as Wheels and Meadows , they all seemed to either retain the distributive law (both side) or at least retain the right distributive law So my question then becomes Q1 Any famous or widely used example of an algebraic structure where BOTH right and left distributive law fails? Q2. Suppose I have an algebraic structure on the set $S$ with the following $$S=\left\{a,b,c,d\right\}$$ with the axiom $$a^2=a$$ with right addition defined as $$+:(a_1,a_2)\rightarrow(a_1+a_2),a_1,a_2 \in S$$ and some left operation $$\circ : (k,a)\rightarrow (k^2 a), k,a \in S$$ I am then interested in computing this entry in the Cayley table for $\circ$ $$a \circ(b+c)$$ How should I approach it since I don't have distributive laws (BOTH left and right) that allow me to simplify this expression to this and apply the axioms I know about $S$ $$a \circ b+a \circ c$$",['abstract-algebra']
+1215823,"FLATLAND's sphere intersection scenario, explored for four dimmensions","I recently finished this wonderful new vintage edition of FLATLAND. http://amzn.com/918775116X In 1884, Edwin Abbott wrote this strange and enchanting novella called FLATLAND, in which a square who lives in a two-dimensional world comes to comprehend the existence of a third dimension but is unable to persuade his compatriots of his discovery. Through the book, Abbott skewered hierarchical Victorian values while simul¬taneously giving a glimpse of the mathematics of higher dimensions. There is in one place a very interesting description of how the FLATLAND people would observe the intersection of a sphere through their flatland - namely, like the bing bang of a point which expands as a circle and then contracts again to a point and disappears. My question is twofold: (1) I am searching very excitedly literature - and I  mean both fiction and academic mathematical references - where the same concept is being described for a three dimensional world (geometry). What are scenarios for a a three dimmensional world that undergoes the intersection of a ""hyper""- sphere of four dimmensions? (2) Beyond references, any mathematical ""intuition"" (including even sketched ideas) for scenarios would be also of interest to me? I would be very thankful for your insights. Thanks","['geometry', 'mathematical-physics', 'general-topology', 'reference-request', 'recreational-mathematics']"
+1215829,Doubt on Tail events and Kolmogorov Zero-One Law,"In this wiki article on the law of the iterated logarithm, one states that, given $M>0$, the event 
+$$A=\left\{\limsup_{n \to \infty} \frac{S_n}{\sqrt{n}} > M\right\}$$
+has probability $0$ or $1$ by Kolmogorov Zero One Law. This leads me to believe that $A$ is a tail event. While trying to show that $A$ is a tail event, I observed that $S_n$ is measurable with respect to $\sigma\left(\bigcup\limits_{k=1}^n \mathcal{F}_k\right)$ where $\mathcal{F_k} = \sigma(X_k)$. Even though the random variables $X_n$ are independent, the random variables $S_n$ are not. So how does one show that $A$ is a tail event? I looked at this question , but I think that there is a jump where they say that $A$ is in $\sigma\left(\bigcup\limits_{k=n}^\infty \mathcal{F}_k\right)$. Kindly help me in understanding how to go about this problem. Hints and tips as always are appreciated.","['probability-theory', 'limsup-and-liminf']"
+1215850,"How does this ""integration by differentiation"" method work","Apparently, the integral of a function f(x) from a to b can be done through differentiation through this method:
+$$
+  \int_a^b f(x)dx = \lim_{x \rightarrow  \ 0 }  f(\frac{d}{d x} )\frac{e^{bx}-e^{ax}}{x}
+$$
+Can anyone explain why this works? We can assume that f has a MacLauren representation with an infinite radius of convergence.
+An example with f(x) = c, c constant, the integral of f from a to b is:
+$$
+\lim_{x \rightarrow  \ 0 }  c\frac{e^{bx}-e^{ax}}{x} = 
+\lim_{x \rightarrow  \ 0 }  c\frac{1+bx+0.5(bx)^2...-1-ax-0.5(ax)^2...}{x} = c(b-a)
+$$ as expected. However I don't know how to show this is true for all (most?) functions with a MacLauren series. Help? The f(d/dx) and limit is what's being difficult to deal with. If f is something like x^2 then f(d/dx) is d^2/dx^2 but with a general function f I can't establish a pattern.","['derivatives', 'sequences-and-series', 'calculus', 'integration']"
+1215866,Separation in compact spaces,"There was recently a question that I cannot find about separation in compact spaces. The answer to that question was no for trivial reasons. Motivated by that, let me ask a less trivial version of this question. Given two points $x,y$ in a (separable) compact Hausdorff space $X$ , can we find two open sets $V,U$ in $X$ and a continuous function $f\colon X\to \mathbb{R}$ such that $x\in V, y\in U$ $f(t)=1$ for all $t\in V$ $f(t)<0$ for all $t\in U$ $f^{-1}(\{0\})$ has empty interior My feeling is that in general the answer should be no . Yet for familiar compact metric compacta such open sets and function $f$ can be constructed. (Of course this is not a proof.) EDIT : I modified the question by removing one of the requirements; I believe now it will be more tractable. It seems that the answer is yes if $X$ is perfectly normal. Indeed, take $f$ that satisfies the first three clauses and by perfect normality take a function $g$ that is positive on the interior of $f^{-1}(\{0\})$ and $0$ otherwise. Then consider simply $f+g$ .","['continuity', 'proof-verification', 'real-analysis', 'general-topology']"
+1215892,Every open neighborhood of a point in the closure contains a point in the set,"Definitions: Neighborhood: The neighborhood of a point $x$ is a subset of the topological space $X$ that contains an open set such that $x$ is in that open set. Closure: The closure of a set $S$ is the intersection of all the closed subsets of the topological space $X$ which contain $S$ as a subset. Closed: A set is closed if the complement of that set is open. I want to prove that every open neighborhood of a point $x$ in the closure of a set $S$ contains a point in $S$. If $x \in S$, then we're done. If $x \not\in S$, then $x \in \operatorname{cl}S \setminus S$. Since we don't know if $S$ is open, closed, both, or neither, I guess we have to do cases: 1) $S$ is closed: then $S = \operatorname{cl}S$, so we're done. 2) $S$ is open: then $S = \operatorname{Int}S$ and $\operatorname{cl}S \setminus S$ is closed. If $x \in \operatorname{cl}S \setminus S$, and there exists an open neighborhood of $x$.... I don't know how to show that a point in this neighborhood can also be in $S$. 3) $S$ is both open and closed: No idea how to start this one 4) $S$ is neither open nor closed: No idea how to start this one",['general-topology']
+1215943,"How find the postive $m,n$,such $a^n\equiv 1\pmod m$","Find all positive integer pairs $(m,n)$ with $m,n \ge 2$ such that for all $a\in\{1,2,\cdots,n\}$, $$a^n\equiv 1\pmod m$$ If $(a,m)=1$, Euler's Theorem tells us that 
+$$a^{\phi(m)}\equiv 1\pmod m.$$
+So one family of solutions is $(n,m) = (\phi (m), m)$. Is it possible to describe all families?",['number-theory']
+1215979,Complement of a set and inverse image.,"I'm currently taking a real analysis class and we are working on measurable functions (the notes can be found here under ""Measurable Functions""; the exercise is the first one on the last page). $$\text{Let }f:E \to \mathbb{R}\text{ and }A\subseteq \mathbb{R}.\\\text{
+Show that }f^{-1}(A^{C}) = E - f^{-1}(A).$$ I can easily visualize that this is indeed true (I drew a graph), but I'm unsure how to approach the proof. This chapter is dealing with measurable functions, however we do not have in the hypothesis that $f$ is measurable, and I'm not sure this is even needed in proving the claim. My first strategy was assuming in two cases that $A$ is closed and open (therefore $A^{C}$ is open and closed respectively) and then going from there using neighborhoods, but this route seems like I'm making the problem harder than it is. I'm also unsure if I could prove the claim this way. I'm also curious if I can prove this equality by basic set inclusion, i.e.: an element from set $A$ is in set $B$ and vice versa. Any assistance in approach would be greatly appreciated. EDIT: Also, I believe this could be a simple property of preimages and such, but still I'm unsure how to approach.","['elementary-set-theory', 'set-theory']"
+1215985,Complex Analysis proof of multinomial expression,"I've recently come across the following identity 
+$$
+\displaystyle \sum_{k = 0}^n {n \choose k}^2= {2n \choose n}
+$$ A nice complex analysis proof (by Felix Marin, here ) follows as:
+$\newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}
+ \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}
+ \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}
+ \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}
+ \newcommand{\dd}{{\rm d}}
+ \newcommand{\ds}[1]{\displaystyle{#1}}
+ \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}
+ \newcommand{\fermi}{\,{\rm f}}
+ \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}
+ \newcommand{\half}{{1 \over 2}}
+ \newcommand{\ic}{{\rm i}}
+ \newcommand{\iff}{\Longleftrightarrow}
+ \newcommand{\imp}{\Longrightarrow}
+ \newcommand{\pars}[1]{\left(\, #1 \,\right)}
+ \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}
+ \newcommand{\pp}{{\cal P}}
+ \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}
+ \newcommand{\sech}{\,{\rm sech}}
+ \newcommand{\sgn}{\,{\rm sgn}}
+ \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}
+ \newcommand{\ul}[1]{\underline{#1}}
+ \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}$
+\begin{align}
+\color{}{\large\sum_{k\ =\ 0}^{n}{n \choose k}^{2}}&=
+\sum_{k\ =\ 0}^{n}{n \choose k}
+\oint_{\verts{z}\ =\ 1}{\pars{1 + z}^{n} \over z^{k + 1}}\,{\dd z \over 2\pi\ic}
+=\oint_{\verts{z}\ =\ 1}{\pars{1 + z}^{n} \over z}
+\sum_{k\ =\ 0}^{n}{n \choose k}\pars{1 \over z}^{k}\,{\dd z \over 2\pi\ic}
+\\[5mm]&=\oint_{\verts{z}\ =\ 1}{\pars{1 + z}^{n} \over z}
+\pars{1 + {1 \over z}}^{n}\,{\dd z \over 2\pi\ic}
+=\oint_{\verts{z}\ =\ 1}{\pars{1 + z}^{2n} \over z^{n + 1}}\,{\dd z \over 2\pi\ic}
+=\color{}{\large{2n \choose n}}
+\end{align} Is there a way to generalise this technique to find the value of $$
+\displaystyle \sum_{k_1 + k_2  = 0}^n {n \choose k_1, k_2}^2
+$$
+where
+$$
+{n \choose k_1, k_2} = \frac{n!}{(n-(k_1+k_2))!k_1!k_2!}
+$$
+(please note that this is not the definition of the multinomial coefficient which would actually be 
+$$
+{n \choose k_1, k_2} = \frac{n!}{k_1!k_2!}
+$$) tl;dr Find the value of (if possible)
+$$
+\displaystyle \sum_{k_1 + k_2  = 0}^n {n \choose k_1, k_2}^2
+$$
+using complex analytical techniques. EDIT: If it helps, it is easy to show that 
+$$
+{n \choose k_1, k_2} = \frac{n!}{(n-(k_1+k_2))!k_1!k_2!} = {n \choose k_1} {n - k_1 \choose k_2} 
+$$
+A similar problem dealing with binomials and trinomials has been solved using complex analytic techniques here","['multinomial-coefficients', 'binomial-coefficients', 'summation', 'combinatorics', 'complex-analysis']"
+1215990,Any rational map can be extended to codimension one.,"If I understand correctly: Given a rational map $f$, between two (smooth) varieties $X$ and $Y$, with indeterminacy locus $\Sigma$ of codimension 1 in $X$, then $f$ can be extended to a regular map $X\rightarrow Y$. How is this done? Elaboration and/or reference for this beautiful phenomenon would be much appreciated. Edit: As Asal's answer suggests below, I had a misunderstanding. My question originated from the following concrete example: let $X$ be a smooth cubic surface in space, containing a line $\ell$. Consider the pencil of conics on $X$ obtained by residual intersection of $X$ and the $\Bbb{P}^1$ of planes containing $\ell$. This yields a regular map $f:X\setminus\ell\rightarrow\Bbb{P}^1$. The questions are: is there a general result guaranteeing that $f$ can be extended to $X$ ? geometrically, how would the extension be defined on $\ell$ ? Another way to look at this example is the following situation: assume that on a smooth surface $X$ we have a complete linear system written in mobile and fixed part decomposition as $|L|=|M|+F$. (In our example $|M|$ is the pencil of conics and $F=\ell$). Assume $|M|$ is basepoint free. Then we get a regular map $X\setminus F\rightarrow\Bbb{P}^N$. To my understanding, then we can always extend this morphism to $F$ as well. Is this statement correct (why) ?",['algebraic-geometry']
+1216018,Solving a differential equation with a square root,"I am trying to solve the differential equation $
+A(x)\frac{d^{2}f(x)}{dx^{2}}+B(x)\frac{df(x)}{dx}=\frac{1}{3}\frac{1}{\sqrt{f(x)}},
+$ where
+$
+A(x)=\frac{x}{x+1}
+$
+and
+$
+B(x)=\frac{2x+1}{(x+1)^{2}}
+$. for $1\ll{x}$, the equation simplifies to $
+\frac{d^{2}f(x)}{dx^{2}}+\frac{2}{x}\frac{df(x)}{dx}=\frac{1}{3}\frac{1}{\sqrt{f(x)}},
+$ Substituting, $k x^{p}$ for $f(x)$, and solving for $p$ and $k$ gives the solution as $f(x)=c(x^{4/3})$, where $c$ is some constant. for $x\ll{1}$, the equation simplifies to $
+x\frac{d^{2}f(x)}{dx^{2}}+\frac{df(x)}{dx}=\frac{1}{3}\frac{1}{\sqrt{f(x)}},
+$ Substituting, $k x^{p}$ for $f(x)$, and solving for $p$ and $k$ gives the solution as $f(x)=c(x^{2/3})$, where $c$ is some constant. However, I could only solve the equation for $x\ll{1}$ and $1\ll{x}$, Is it possible to solve this equation for all $x$?","['ordinary-differential-equations', 'differential']"
+1216050,Problem on distributive lattices,"I'm trying to prove the following:
+ Show that a lattice is distributive if and only if it does not contain a sublattice isomorphic to either of the two lattices below. I was able to prove that neither of these two lattices are distributive. Then  showed the forward direction, which is as follows (proved by the contrapositive): Let $D$ be a lattice. Suppose there is some $L\subseteq D$ such that $L\cong A$ or $L\cong B$. Then by our previous argument (above), $D$ would contain at least three elements that do not satisfy the distributive property. Hence, $D$ is not a distributive lattice. I can't figure out how to get the converse! I started with (contrapositive approach): Suppose $D$ is a lattice, but it is not distributive. Then there exist $x,y,z\in D$ such that either $x\wedge (y\vee z)>(x\wedge y)\vee (x\wedge z)$ or $x\wedge (y\vee z)<(x\wedge y)\vee (x\wedge z)$. I can't figure out how to show that $D$ will have a sublattice isomorphic to one of the lattices above. Any help is appreciated. Thanks!","['discrete-mathematics', 'lattice-orders', 'combinatorics']"
+1216069,Some statistical (learning) issues,"im reading about statistical learning ( Trevor Hastie, Robert Tibshirani, Jerome Friedman The elements of statistical learning ) and for some reason it seems to be trivial that $E[XX^T]$ is non-singular (with $X \in \mathbb{R}^P$ a random real valued vector) but I dont really think its that easy, am i missing something here?","['statistics', 'matrices']"
+1216078,Two definitions of upper limit,"I have some confusion on the definition of upper limit of a sequence. Usually we see this definition: Let $(x_n)$ be a bounded sequence and for each natural number $n$, let $$\overline{x_n}=\sup \left \{ x_k:k\ge n \right \}$$
+  Then $\overline{x}=\lim \overline{x_n}$ is the upper limit of the sequence $(x_n)$. However, in Rudin's Priciple of Mathemetical Analysis, he wrote: Let $(s_n)$ is the sequence of real numbers. Ler $E$ be the set of numbers $x$ (in the extended real system) such that $s_{n_k}\rightarrow x$ for some subsequence $(s_{n_k})$. Define $$s^*=\sup E$$ then $s^*$ is called the upper limit of the sequence $(s_n)$. I'm confused with the two definitions. I cannot find any connection between them. When doing exercises, I usually use the first definition, but how those two definitions are the same? Thanks a lot.","['limits', 'real-analysis']"
+1216097,proving recursively defined sequence by induction,"I would like to prove the following recursively defined sequence from $n-1$ to $n$ by induction. Im not realy sure about it. Any help or alternative ways to understand and prove it are highly appreciated : $0,1,4,12,35,98$ $a_0=0$, $a_1=1$, $a_n=a_{n-1}+5a_{n-2}+3$ for  $n\geq2$ To prove $a_n\leq 3^n$ I thougt of it as: $a_{n-1}\leq 3^{n-1}$, $a_{n-2}\leq 3^{n-2}$ and thus: $a_n\leq 3^{n-1} + 5\cdot 3^{n-2}+3$ $=3^{n-2} \cdot(3+5)+3$ $=3^{n-2} \cdot(8)+3$ $=3^{n-2} \cdot(9)+3$ $=3^{n-2} \cdot(3 \cdot 3)+3$ $=3^{n}+3$ $\leq 3^{n}$",['analysis']
+1216106,Why can we always take the zero section of a vector bundle?,"$\require{AMScd}$
+As I understand it, a rank $k$ vector bundle is a pair of topological spaces with a map between them
+$$
+E\xrightarrow{p}B
+$$
+such that there exists an open cover $(U_\alpha)$ of $B$ over which $E$ locally looks like $U_\alpha\times\mathbb R^k$.  Precisely, we have homeomorphisms
+$$
+\phi_\alpha\colon p^{-1}(U_\alpha)\to U_\alpha\times\mathbb R^k
+$$
+such that the diagram
+\begin{CD}
+p^{-1}(U_\alpha) @>\phi_\alpha>> U_\alpha\times\mathbb R^k\\
+@VVbV @VV\text{pr}_1V\\
+U_\alpha @>\text{id}>> U_\alpha
+\end{CD}
+commutes (I can't do diagonal arrows). A section of the vector bundle is a continuous map $s\colon B\to E$ such that $p\circ s=\text{id}_B$.  A basic fact about vector bundles is that every vector bundle admits at least one section, namely the zero section, obtained by identifying each $p^{-1}(U_\alpha)$ with $U_\alpha\times\mathbb R^k$ and taking $s(b)=0$.  Explicitly, we are taking:
+$$
+s(b)=\phi_\alpha^{-1}((b,0))
+$$
+for $b\in U_\alpha$. But in order to get a well defined continuous map, we need to ensure that $\phi_\alpha^{-1}(b,0)=\phi_\beta^{-1}(b,0)$ if $b\in U_\alpha\cap U_\beta$.  Now one thing we certainly can't do is require that $\phi_\alpha$ and $\phi_\beta$ actually agree on the intersection - then we could glue them all together to get a global trivialization of the bundle, which we can't do in general.  Why then are we able to insist that they agree at a certain point?  To me, it seems equivalent to the existence of a global section, and hence completely circular. There must be something obvious I'm missing.  In the meantime, here's an equivalent formulation of the problem: we define an affine bundle $E\xrightarrow{p}B$ to be the same as a vector bundle, but we identify the fibres with $k$-dimensional affine linear subspaces of some fixed real vector spaces.  So they needn't contain a special zero point. Since affine spaces are homeomorphic to vector spaces of the same dimension, any rank $k$ affine bundle is isomorphic to some rank $k$ vector bundle ( though I'm not at all sure about whether this is true, for similar reasons ).  So an affine bundle should admit a global section, but there is no easy way to see how to get one.","['differential-topology', 'geometry', 'vector-bundles', 'general-topology']"
+1216121,"Proof that the set $\{(x_1, x_2) \in E^2: x_1>x_2\}$ is open","(Note: $E^2$ denotes $2$-dimensional Euclidean space) My question concerns the below ""proof."" Once the radius of the open ball is determined, how can it be shown that the ball contains only points in S? Let $S \subset E^2 = \{(x_1, x_2) \in E^2: x_1>x_2\}$ .
+Let the point $\ p = (x_i, x_j) \in S$. Since $x_i>x_j$, the difference $x_i-x_j$ is a positive real number. Call this $\epsilon$. Then $p$ is the center of an open ball with radius $\frac{\epsilon}{\sqrt{2}}$ which contains only points in S.","['analysis', 'real-analysis', 'general-topology']"
+1216125,Why is the construction of the real numbers important?,"There are a lot of books, specially in Real Analysis and set theory, which define the real numbers by Cauchy sequences or Dedekind cuts. So my question is why don't we simply define the Real numbers as a complete ordered field? What's the importance of studying the construction of the Real numbers? Is it just for historical reasons?","['analysis', 'foundations', 'soft-question']"
+1216162,Lowering powers of $\cos^2x \sin^4x$,"First, I will be straight up, this is a homework question. I need to write $\cos^2 x \sin^4 x$ in terms of cosine to the first power. I know that $\sin^4x$ = $$ \frac{3-4\cos 2x+\cos 4x}{8}$$ from there I go: $$ \frac{1+\cos 2x}{2} \cdot \frac{3-4\cos 2x+\cos 4x}{8}$$ $$ \frac{3(1 + \cos 2x) - 4\cos 2x(1 + \cos 2x) + \cos 4x (1 + \cos 2x)} {16} $$ $$ \frac{3 + 3\cos 2x - 4\cos 2x \color{red}{+} 4 \cos^2 2x + \cos 4x + \cos 4x \cos 2x}{16}$$ $$ \frac{3 - \cos 2x + \cos 4x + 4 \frac{1 + \cos 4x}{2} \cos 4x  \cos 2x}{16}$$ Then $$ 4 \frac{1 + \cos 4x}{2}$$ simplifies to $$ 2 + 2\cos 4x$$ adding this into the rest of the fraction gives me $$ \frac{5 - \cos 2x + 3\cos 4x + \cos 4x \cos 2x}{16}$$ However, the answer sheet that I have says the answer is $$ \frac{1 - \cos 2x - \cos 4x + \cos 2x \cos 4x }{16}$$ This is problem $13$ from section $7.3$ of Stewart, Redlin and Watson precalculus $6$th edition Where is my mistake?","['algebra-precalculus', 'trigonometry']"
+1216203,Prime ideals in a finite direct product of rings,"Let $S=\prod_{i=1}^{n}{R_i}$ where each $R_i$ is a commutative ring with identity. The prime ideals of $S$ are of the form $\prod_{i=1}^{n}{P_i}$ where for some $j$, $P_j$ is a prime ideal of $R_j$ and for $i\neq j$, $P_i=R_i$.","['abstract-algebra', 'maximal-and-prime-ideals', 'ideals']"
+1216246,Determining the 3rd vertex of an Equilateral and Right angled isoceles triangle.,"I am really having problems solving the following problems: If $(x_1,y_1)$ and $(x_2,y_2)$ are the coordinates of the two vertices on the hypotenuse of a right angled isosceles triangle then the coordinates of the 3rd vertex are? Similarly-If $(x_1,y_1)$ and $(x_2,y_2)$ are the coordinates of the two vertices of an Equilateral Triangle then the coordinates of the 3rd vertex are? The answer to 1 and 2 respectively are- $$\left(\frac{x_1+x_2 \pm(y_1-y_2)}{2},\frac{y_1+y_2 \pm(x_1-x_2)}{2}\right)$$ And $$\left(\frac{x_1+x_2 \pm\sqrt 3(y_1-y_2)}{2},\frac{y_1+y_2 \pm\sqrt 3(x_1-x_2)}{2}\right)$$ How do I solve this problem? I tried attempting it by using the fact that the triangle is isosceles and right angled in the first case. So I applied pythagoras theorem but failed to get this answer it was a complicated equation. Secondly I tried multiplying the slopes of the legs of the triangle to get -1 but even this attempt failed. It was similar with the equilateral triangle problem. I guess if I understand how to do even one easily the second should bit be difficult. Please help.","['geometry', 'analytic-geometry']"
+1216265,"Projection on closed subspace of $L^1$, $L^{\infty}$","For $p=1,\infty$ let $K$ be a closed subspace of $L^p(\mathbb{R},m)$. According to this question, it should be easy to find examples of $K$ and $f\in L^p(\mathbb{R},m)$ such that there exists a non-unique function $h\in K$ which minimizes $||f-g||_p ,g\in K.$ I'd appreciate some help finding such examples.","['banach-spaces', 'hilbert-spaces', 'real-analysis', 'functional-analysis']"
+1216275,What is the geometric interpretation of the Koszul formula?,"I saw this simple form of Koszul formula on a book: $$2\ g(\nabla_XY,Z) = \mathcal{L}_Yg(X,Z) + (d\theta_Y)(X,Z)$$ where $\theta_Y$ is the one-form $g(Y,\cdot)$ . It is equivalent to the more commonly seen version since: $$\mathcal{L}_Yg(X,Z) = Yg(X,Z) - g([Y,Z],X)-g(Z, [Y, X])$$ and $$d\theta_Y(X,Z) = Xg(Y,Z) - Zg(X,Y)-g([X,Z],Y)$$ I can follow the proof that Christoffel symbols and this formula are equivalent. But I still don't know how to interpret this. I googled and found that Lie derivative of Riemannian metric is related to strain tensor, is there a geometrical or physical interpretation of this formula?","['differential-geometry', 'riemannian-geometry']"
+1216277,"Classification of finitely generated multigraded modules over $K[x_1,\ldots,x_n]$?","Let $K$ be a field and $R=K[x_1,\ldots,x_n]=\bigoplus_{a\in\mathbb{N}^n}Kx^a$ the multigraded
+  polynomial ring. Have
+  finitely-generated multigraded $R$-modules been classified? Are they
+  of the form $R^r\oplus\bigoplus_{i=1}^sR/Rx^{a_i}$ for some (unique?)
+  $a_1,\ldots,a_s\in\mathbb{N}^n$? I was thinking along the following lines. If an $\mathbb{N}^n$-graded $R$-module $M$ is generated by $v_1,\ldots,v_r$, then we may assume that every $v_i$ is homogenous of degree $a_i$ (otherwise each of these $v_i$ is a further finite combination of homogenous vectors). Let $R^{[a]}$ be the $R$-module $R$ with the grading shifted by $a\!\in\!\mathbb{N}^n$. Thus the map $R^r\!=\!\bigoplus_{i=1}^rR^{[a_i]}\rightarrow M$ that sends $e_i\mapsto v_i$ is a surjective graded morphism, so its kernel $A$ is a graded submodule and $M\cong R^r/A$, i.e. $$\textstyle{A=\bigoplus_{b\in\mathbb{N}^n}(R^r)_b\cap A=\bigoplus_{b\in\mathbb{N}^n}\prod_iKx^{a_i+b}\cap A}.$$ Hence $A$ is generated by $u_1,\ldots,u_s$ where every component of $u_i$ is $\alpha_{ji}x^{a_i+b_j}$ for some $\alpha_{ji}\!\in\!K$. Thus our module is isomorphic to the cokernel of the matrix $$\left[\begin{matrix}
+\alpha_{11}x^{a_1+b_1} &\alpha_{12}x^{a_1+b_2}&\ldots&\alpha_{1s}x^{a_1+b_s}\\
+\alpha_{21}x^{a_2+b_1} &\alpha_{22}x^{a_2+b_2}&\ldots&\alpha_{2s}x^{a_2+b_s}\\
+\vdots&\vdots&\vdots&\vdots\\
+\alpha_{r1}x^{a_r+b_1} &\alpha_{r2}x^{a_r+b_2}&\ldots&\alpha_{rs}x^{a_r+b_s}\\
+\end{matrix}\right].$$
+Now we can do row and column operations, without changing the isomorphism type of the module. But I'm not sure how the above can be transformed into
+$$\left[\begin{matrix}
+x^{c_1} &&&\\
+ &x^{c_2}&&\\
+&&\ddots&\\
+ &&&x^{c_s}\\
+\end{matrix}\right].$$ If my conjecture is not valid, I ask for a counterexample. For instance, if $n=2$ and $R=K[x,y]$, are $Coker\left[\begin{smallmatrix}
+x^2y &xy\\ & xy^2\\
+\end{smallmatrix}\right]$ or $Coker\left[\begin{smallmatrix}
+x &y\\
+\end{smallmatrix}\right]$  or $Coker\left[\begin{smallmatrix}
+x \\y
+\end{smallmatrix}\right]$ not of the above form? Is there some other classification of
+  $\mathbb{N}^n$-graded $K[x_1,\ldots,x_n]$-modules? Maybe they are of the 
+  form $\bigoplus_{i=1}^sR^{[a_i]}/\langle x^a; a\!\in\!A_i\rangle$ for some
+  (unique?) $a_1,\ldots,a_s\!\in\!\mathbb{N}^n$ and $A_1,\ldots,A_s\!\subseteq\!\mathbb{N}^n$? By Monomial Ideals (Herzog & Hibi, 2011) , Dickson’s lemma 2.1.1, every $A_i$ may be finite. Also, elements of $A_i$ are assumed to be incomparable w.r.t. the componentwise partial order on $\mathbb{N}^n$.","['homological-algebra', 'abstract-algebra', 'graded-modules', 'commutative-algebra']"
+1216298,How to calculate true lengths from perspective projection?,Suppose that I have a single point perspective drawing like . and suppose also that I know some of the real horizontal distances and distances along lines converging to vanishing point. E.g if i know the real length and breadth of a slab of pavement. Is it possible to derive other real distances e.g the width of the road and the length of a house?,"['projective-geometry', 'geometry', 'trigonometry']"
+1216302,Find a sequence of random variables $(X_n)$ with $\lim E(X_n^2) = 0$ but not obeying SLLN,"I am looking for some sequence of random variables $(X_n)$ such that $$ \lim_{n \rightarrow \infty} E(X_n^2) = 0  $$ but such that the following almost sure convergence does NOT hold: $$ \frac{S_n - E(S_n)}{n} \rightarrow 0$$ where the $S_n$ are the partial sums of the $X_n$. Note: for any such sequence the convergence in probability will always hold; if the random variables are not correlated, so will the convergence almost surely. In particular, any counterexample must consist of correlated random variables. Many thanks for your help.","['probability-theory', 'law-of-large-numbers', 'random-variables', 'probability', 'examples-counterexamples']"
+1216320,Is there a fibre bundle with fibre homeomorphic to $\mathbb R^k$ which cannot be given the structure of a vector bundle?,"We define a (rank $k$) vector bundle to be a fibre bundle with fibre $\mathbb R^k$ such that the local trivializations are fibre-by-fibre vector space isomorphisms.  I'm curious whether this linearity condition is enough to stop certain fibre bundles from being turned into vector bundles. Question: Given a fibre bundle $E\xrightarrow{p}B$ with fibre homeomorphic to $\mathbb R^k$, can we find an open cover $(U_\alpha)$ of $B$ and local trivializations $\phi_\alpha\colon p^{-1}(U_\alpha)\to U_\alpha\times \mathbb R^k$ such that the local trivializations are fibre-by-fibre vector space isomorphisms? I expect that the answer is 'No', but I'd be very interested to see a counterexample. A counterexample might take the form of a fibre bundle which demonstrably has no global section, or it might be a fibre bundle which cannot admit $GL_k(\mathbb R)$ as a structure group. I'd be particularly interested if the example had the affine group $Aff(\mathbb R^k)$ as a structure group.","['geometry', 'fiber-bundles', 'vector-bundles', 'differential-geometry']"
+1216326,How to find the variance of this p.d.f?,"X is distributed so that:
+$$X=\begin{cases}
+\frac{ x-80}{400}&  80\le x \le 100\\
+\frac{120-x}{400} &  100\le x\le 120\\
+ 0 &\text{otherwise}
+\end{cases}
+$$
+$Var(X)= E((X)^2)-(E(X))^2$ and $E(X)=100$ by symmetry, so what has me confused is how to go about finding $E((X)^2)$ because of the 'split' in the p.d.f. Thanks!","['statistics', 'expectation']"
+1216364,Prove that the problem has at most one solution,"Prove that the initial and boundary problem $$\\u_t(x,t)-u_{xxx}(x,t)=0,0<x<1,t>0 \\
+u(x,0)=\phi(x),0<x<1 \\
+u_x(0,t)=h(t),t>0 \\
+u_{xx}(0,t)=H(t), t>0 \\
+u_x(1,t)=g(t),t>0$$ has at most one solution. Hint: Use the function $$\frac{1}{2} \int_0^1 u_x^2(x,t)dx$$ I have done the following: We consider the function $E(t)=\int_0^1 u_x^2(x,t)dx$. $$E'(t)=\int_0^1 2u_x(x,t)u_{xt}(x,t)dx=\int_0^1 2u_x(x,t)(u_t(x,t))_x dx \\ =\left[2u_x(x,t)u_t(x,t)\right]_0^1-\int_0^1 2u_{xx}(x,t)u_t(x,t)dx \\=2u_x(1,t)u_t(1,t)-2u_x(0,t)u_t(0,t)-\int_0^1 2u_{xx}(x,t)u_{xxx}(x,t)dx\\= -\int_0^1 (u_{xx}^2)_x dx=-u_{xx}^2(1,t) \leq 0$$ So $E(t)$ is decreasing. $E(0)=\int_0^1 u_x^2(x,0)dx=0$ because $u(x,0)=0 \Rightarrow u_x(x,0)=0$. $t \geq 0 \Rightarrow E(t) \leq 0 \Rightarrow E(t) \leq 0$ $$\left\{\begin{matrix}
+E(t)\leq 0\\ 
+E(t) \geq 0
+\end{matrix}\right. \Rightarrow E(t)=0 \Rightarrow u_x^2(x,t)=0 \Rightarrow u_x(x,t)=0 $$ We would know that the solution is unique when $u(x,t)=u(x_0,t), 0<x_0<1$. How could we show this??","['ordinary-differential-equations', 'partial-differential-equations']"
+1216378,Find $z$ s.t. $\frac{1+z}{z-1}$ is real,"I must find all $z$ s.t. $\dfrac{1+z}{z-1}$ is real. So, $\dfrac{1+z}{1-z}$ is real when the Imaginary part is $0$. I simplified the fraction to $$-1 - \dfrac{2}{a+ib-1}$$ but for what $a,b$ is the RHS $0$?","['complex-analysis', 'complex-numbers']"
+1216395,Here is a riddle that I have no idea how to solve.,"Okay, so I was trying to solve this riddle found here . It is a diagram of a star with 16 points. Each point corresponds uniquely to a number between 1 and 16. The letters on each point represent a letter of some saying, where if the unique corresponding to a point is $n$, then the letter on that point is the $n$th letter of the saying. We are also given the condition that the sum of the 4 numbers on a given line segment is the same. I noticed that $\sum^{16}_{i=1} i = 136$, and each point is counted exactly twice, so each line should add up to $2\cdot136/8 = 34$. So we can find 8 equations in this way. $$x_1 + x_2 + x_3 + x_4 = 34 $$
+$$x_4 + x_5 + x_6 + x_7 = 34 $$
+$$x_2 + x_7 + x_8 + x_9 = 34 $$
+$$x_5 + x_9 + x_{10} + x_{11} = 34 $$
+$$x_8 + x_{11} + x_{12} + x_{13} = 34 $$
+$$x_{10} + x_{13} + x_{14} + x_{15} = 34 $$
+$$x_3 + x_{12} + x_{15} + x_{16} = 34 $$
+$$x_1 + x_6 + x_{14} + x_{16} = 34 $$ So, I have 8 equations and 16 unknowns, and finding the coefficient matrix and putting it in rref didn't shed that much light on the matter, because there are still too many unknowns. Now, I know there will be more than one solution. We can rotate it 7 times and there are 8 lines of symmetry; however, I think we should be able to narrow down our solutions farther than what I have already done. Does anyone have other ideas on how to approach this problem?","['puzzle', 'linear-algebra', 'recreational-mathematics']"
+1216397,Bounded linear map on topological vector spaces is continuous,"Let $X$ and $Y$ be topological vector spaces and $T\colon X\to Y$ linear. Suppose that $T$ sends bounded sets to bounded sets and that $X$ is first countable. The claim is that $T$ is continuous. Here's what I've tried so far. Since $X$ is first countable, we need only show that $T$ is sequentially continuous and since $T$ is linear it suffices to show $T$ is continuous at $0$. Let $(x_n)$ be a sequence in $X$ with $x_n\to 0$. We want $Tx_n\to 0$ as well. $(x_n)$ is convergent, so $\{x_n:n\in\mathbf{N}\}$ is bounded in $X$. Hence $\{Tx_n:n\in\mathbf{N}\}$ is bounded in $Y$. Let $W$ be a neighborhood of $0$ in $Y$. Then there is $s>0$ with $\{Tx_n:n\in\mathbf{N}\}\subset sW$. So, $\{x_n:n\in\mathbf{N}\}\subset sT^{-1}(W)$. But I'm not sure how to/if I can continue successfully from here. Any thoughts?","['functional-analysis', 'topological-vector-spaces']"
+1216420,A problem with exponent laws...,"Solve for $x$: $$x^{\frac 13}={32\over \sqrt{x}}$$ I'm not sure how start up this problem. I thought you had to multiply both sides by $\sqrt{x}$ so that it cancels out on the right side and moves to the other side and then convert it to a exponent to equal: $$x^{\frac 13} \times x^{\frac 12}=32$$ 
+But due to exponent laws the two exponents are unable to add together because the denominators are different.","['exponentiation', 'algebra-precalculus']"

@@ -1,0 +1,396 @@
+question_id,title,body,tags
+924177,Distance from point to parabola (quadratic bezier),"I'm trying to draw quadratic bezier curve (as line).
+I approximate  quadratic bezier curve as parabola ($y=x^2$), according to this document http://http.developer.nvidia.com/GPUGems3/gpugems3_ch25.html There, in section ""25.5 Antialiasing"" Loop/Blinn claims that signed distance from point (x,y) to the curve $f$(which is $y=x^2$) is: or: Is this correct? [I read, that it is impossible to have another ""parallel"" bezier curve] I ask this because, if I want to detect distance more than 1-2 pixels, and have a high triangle base/height ratio, than ""distance"" shrinks on the base direction. For example, here is 50px distance from inner side of the curve filled green, all other red (all ok): And this one shrunken (pay attention, that distance on height axis still is correct): Curve drawing in triangle with coordinates (0,0) (0.5,0) (1,1). Which is 1st quadrant.","['geometry', 'bezier-curve']"
+924180,Modified Hermite interpolation,"I asked similar questions here and here , but I tried to formulate this
+one in a sharper way. Is anyone aware of some literature on polynomial interpolation where we sample the function and its derivatives, but perhaps we sample the derivative at a point where we have not sampled the function? For instance, given a function $f$, suppose we choose a polynomial $p$ of degree at most 3 where 
+$$p(a_1)=f(a_1)\\p(a_2)=f(a_2)\\p'(a_3)=f'(a_3)\\p'(a_4)=f'(a_4).$$ Finding such a polynomial $\alpha_3 x^3 + \alpha_2 x^2 + \alpha_1 x + \alpha_0$ is equivalent to solving 
+$$\left[
+\begin{matrix}
+1&a_1 & a_1^2 & a_1^3\\
+1&a_2 & a_2^2 & a_2^3\\
+0&1 & 2a_3 & 3a_3^2\\
+0&1 & 2a_4 & 3a_4^2
+\end{matrix}
+\right]
+\left[
+\begin{matrix}
+\alpha_0 \\ \alpha_1 \\ \alpha_2 \\ \alpha_3
+\end{matrix}
+\right] = 
+\left[
+\begin{matrix}
+f(a_1) \\ f(a_2) \\ f'(a_3) \\ f'(a_4)
+\end{matrix}
+\right].
+$$ I claim that the determinant of that matrix is $\frac{\partial^2}{\partial x_3\partial x_4}\left( \prod_{i<j}(x_i-x_j) \right) \left. \right|_{x_i=a_i\,\,\forall i}$. Therefore, $\frac{\partial^2}{\partial x_3\partial x_4}\left( \prod_{i<j}(x_i-x_j) \right) \left. \right|_{x_i=a_i\,\,\forall i}\neq 0$ is a necessary and sufficient condition for such a polynomial to exist uniquely. In particular, I am interested in estimating the error of such a polynomial interpolation, since I don't see how to modify the normal Hermite estimation.","['calculus', 'polynomials', 'interpolation', 'reference-request', 'derivatives']"
+924182,"Prove that the set $\{(x,y) \in\mathbb R^2\mid y<x^2\}$ is an open set by giving an explicit radius","I´m basically trying to prove that if $S$=$\{(x,y) \in\mathbb R^2\mid y<x^2\}$. Then, for any $(x,y) \in S$ there exists a radius $\delta$ such that
+ $B_\delta(x,y) \subseteq S$. What values of $\delta$  would you recommend?",['general-topology']
+924266,Definition of Bilinear maps.,"Please I need a layman's definition of the bilinear map.
+Wikipedia has a brilliant one, I however don't seem to make anything of it.","['linear-algebra', 'bilinear-form', 'real-analysis']"
+924298,Exchanging max and expectation,"If $X$ is a random variable and $\rho$ is a parameter, and $L$ is a concave function of $(\rho,X)$, under what conditions is the following statement true?
+$$\mathbb{E}\max_{\rho} L(\rho,X) =\max_{\rho}\mathbb{E}( L(\rho,X)).$$ I can show that 
+$$\mathbb{E}\max_{\rho} L(\rho,X) \geq \max_{\rho}\mathbb{E}( L(\rho,X)),$$
+for all $L$ and $X$ (using a proof very similar to that of the min-max theorem). However, I am not able to derive conditions under which the other inequality holds.","['optimization', 'probability', 'expectation']"
+924310,Bound for $\left|\sin(x) +\cos(x)\right|$,I'm taking a numerical analysis class and i'm needing to bound $\left|\sin(x) + \cos(x)\right|$ quite often. So far i've been putting that this is always $\leq |1 + 1| = 2$. Is this the minimal bound? I sort of get a feeling that it might be $\sqrt{2}$. If anyone knows and could give an explanation that would be great.,"['trigonometry', 'numerical-methods']"
+924322,The periods of the Weierstrass function $\wp(z)$,"Is it true that the periods $\omega_1$, $\omega_2$ of $\wp(z)$ are $\omega_1 = 4K$ and $\omega_2 = 4iK'$, respectively? Here, $K = K(k)$ is the complete elliptic integral of the first kind, and $K' = K(k')$ with $k' = \sqrt{1 - k^2}$, where $0 < k < 1$ is the elliptic modulus. I could not find these stated explicitly anywhere, but I deduced that $\omega_1 = 4K$ and $\omega_2 = 4iK'$ from some relations in Greenhill's book on elliptic functions. It seems to be correct, but it bothers me that I could not find a single book on elliptic functions (not even Whittaker and Watson) that states that $\omega_1 = 4K$ and $\omega_2 = 4iK'$. Any help would be appreciated.","['elliptic-functions', 'reference-request', 'complex-analysis', 'periodic-functions']"
+924326,"Diner Combinations, Each Pair Sits Together Exactly Once","There are $N^2$ guests at a party. How can we seat these guests at $N$ tables, in a number of rounds, so that each guest sits with every other guest exactly once? I've come up with an algorithm that works only for prime $N$ In each round, row $i$ consists of the ""diagonal elements"" stemming from the first element of row $i$ in the previous round. After N rounds, also include the transpose of the original matrix. This works for $N = 3$ 1 2 3
+4 5 6
+7 8 9
+
+1 5 9
+4 8 3
+7 2 6
+
+1 8 6
+4 2 9
+7 5 3
+
+1 4 7
+2 5 8
+3 6 9 But not for $N = 4$ 1  2  3  4
+ 5  6  7  8
+ 9 10 11 12
+13 14 15 16
+
+ 1  6 11 16
+ 5 10 15  4
+ 9 14  3  8
+13  2  7 12
+
+ 1 10  3 12
+ 5 14  7 16
+ 9  2 11  4
+13  6 15  8
+
+ 1 14 11  8
+ 5  2 15 12
+ 9  6  3 16
+13 10  7  4
+
+ 1  5  9 13
+ 2  6 10 14
+ 3  7 11 15
+ 4  8 12 16 Note $1$ and $3$ in arrangements 1 and 3 This isn't a homework problem.","['combinatorial-designs', 'number-theory', 'combinatorics']"
+924341,Banach Algebras: Continuity of Inversion?,"Context: This question is related to this thread: Spaces of Functions Given a topological space $X$ and a Banach algebra with unit $B$. Consider a continuous map $F:X\to B$ that is invertible pointwise:
+$$F(x)F(x)^{-1}=1=F(x)^{-1}F(x)$$
+Define its inverse:
+$$F:X\to B:x\mapsto F(x)^{-1}$$
+Then, is it continuous, too?
+$$x_\lambda\to x\implies F^{-1}(x_\lambda)\to F^{-1}(x)$$ Put more abstract, is inversion continuous over Banach algebras with unit:
+$$\iota:B^*\to B^*:a\mapsto a^{-1}$$ Note: This is not the same as the formal inverse of operators: $$T:E\to E:\quad T\text{ continuous}\implies T^{-1}\text{ continuous}$$","['spectral-theory', 'functional-analysis', 'banach-spaces']"
+924376,How to compute: $\lim_{x\to 0}x^2 e^{\sin(1/x)}$?,Does anyone know how to compute the following limit? $$\lim_{x\to 0}x^2 e^{\sin(1/x)}$$ My attempt is that this limit does not exist because the limit of $\sin(1/x)$ as $x$ tends to $0$ does not exist. Anyone has a good proof for this?,"['calculus', 'real-analysis', 'limits']"
+924386,Distribution of the sample variance of n iid exponential variables,"I have to check some properties of an estimator, but I can't find its distribution. Let $X_1,...,X_n $ be independent identically distributed exponential variables with parameter $ \theta $, i.e. with pdf $ f(x) = \frac{1}{\theta} \exp(-\frac{x}{\theta})$.
+What is the distribution of the sample variance $ \overline{X^2} - (\overline X)^2$? What I found so far: $\frac{2n}{\theta}\overline X$ ~ $ \Gamma(n,2)$ But how can I find the distribution of the sample variance? Any help is greatly appreciated!","['statistics', 'probability-distributions', 'estimation']"
+924391,Prove that the limit exists and then find its limit,"We are given a function $h(x)$ which strictly positive. The function $h$ is defined on $\mathbb{R}$ and that satisfies the following:\ $$\lim_{x\to 0}(h(x)+\frac{1}{h(x)})=2$$ The question is to prove that the limit of $h$ exists at$ 0$ and then find its limit as $x\to 0$ If we assume that the limit exists (say it's equal to $\lambda$, then we have $\lambda+\frac{1}{\lambda}=2$ and by solving this equation, we get $\lambda=1$. However, I am completely clueless on how to prove the existence of the limit of $h(x)$ when $x\to 0$.","['calculus', 'real-analysis', 'limits']"
+924399,How many integers between $1$ and $10^n$ contain $14$? [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 8 years ago . Improve this question How can we derive a formula to calculate the number of integers between $1$ and $10^n$ that contain the number $14$ (as a string)? For example, there are $20$ integers from $1$ to $1000$ that contain at least one $14$: ""14"",""114"",""140"",""141"",""142"",""143"",""144"",""145"",""146"",""147"",""148"",""149"",""214"",""314"",""414"",""514"",""614"",""714"",""814"",""914""","['combinations', 'combinatorics']"
+924424,"$X,Y$ independent then $X+Y$, $X-Y$ independent as well?","My question is simple: If $X$, $Y$ are independent random variables then $X+Y$, $X-Y$ independent as well?","['probability', 'random-variables']"
+924434,Distribution Weibull,"I'm trying to find the parameters of the weibull distribution, the only thing that they gave me were the mean=EX=40 and the standard deviation=VX=35^2 I have gotten there so far but I'm stuck, have any idea of how to solve for beta and delta.  The values are supposed to be beta=1.14566 and delta=41.98348","['statistics', 'descriptive-statistics', 'probability']"
+924466,Solve the equation:$ \bar{z}=z^{n-1}$,"Solve the following equation: $\bar{z}=z^{n-1}$ Where $\bar{z}$ is the complex conjugate of z, and n is a natural number such that $n\neq 2$. I have tried to write z in rectangular form and polar form. I have tried to play with De Moivre's formula. But I still do not see where to proceed from here. Could you please point me to the right direction? Thanks.",['complex-analysis']
+924474,"Prove that $\sin(x+a), \sin(x+b),\sin(x+c), \hspace{5pt} a,b,c \in \mathbb{R}$ are linearly dependent","I just want an answer verification (or not). We have that: $\begin{array}[t]{l}
+\sin(x+a)=\cos a\cdot \sin x + \sin a \cdot \cos x\\
+\sin(x+b)=\cos b\cdot \sin x + \sin b \cdot \cos x\\
+\sin(x+c)=\cos c\cdot \sin x + \sin c \cdot \cos x\\
+\end{array}$ Since $\sin(x+a), \sin (x+b), \sin(x+c) \in  \hspace{5pt} V=\langle\cos x , \sin x\rangle$ and $\dim V=2\implies$ given functions cannot be a basis of $V$. Consequently, they are linearly dependent.",['linear-algebra']
+924498,Solve $x\frac{dy}{dx}-y=(x^2+y^2)$.,Solve the following differential equation - $$x\frac{dy}{dx}-y=(x^2+y^2).$$ It most probably involves a change of variables so that it becomes variable separable.,['ordinary-differential-equations']
+924507,Find a solution to the following ordinary differential equation : $\frac{dy}{dx}=e^{x−y}(e^x−e^y).$,Find a solution to the following ordinary differential equation - $$\frac{dy}{dx}=e^{x−y}(e^x−e^y).$$ A change of variables so that it becomes variable separable may be required.,['ordinary-differential-equations']
+924510,Could someone explain DeMorgan Laws?,"I'm having a bit of trouble visualizing these laws we learned in class today.  He mentioned DeMorgan's Law when dealing with Quantifiers, and wrote this on the board: $$\neg \forall x P(x) \iff \exists x \neg P(x)$$ $$\neg \exists x P(x) \iff \forall x \neg P(x)$$ I can't really visualize the two in my head (at least with real world examples), would someone be able to spell it out for me? (I'm also not familiar with MathJax or any of that so I pretty much copied/pasted it from my online notes, I hope it goes through ok)","['logic', 'discrete-mathematics']"
+924518,Is there a simple group of order $105$?,"By Sylow theorem, we see the number of the $7$-sylow subgroup is $n_7$. Then $n_7=1$ (mod $7$) and $n_7$ divides $15$; thus $n_7=15$, but why do we have $6\cdot 15=90$ elements of order $7$? And just by using $n_7,n_5,n_3$, how to answer the following question: Is there a simple group of order $105$? Thank you.","['finite-groups', 'group-theory', 'abstract-algebra']"
+924551,How to evaluate $\displaystyle \lim_{x \to \infty}\frac{8-\sqrt{x}}{8+\sqrt{x}}$,$$\displaystyle \lim_{x \to \infty}\dfrac{8-\sqrt{x}}{8+\sqrt{x}}$$ I tried rationalizing the numerator: $$\lim_{x \to \infty}\dfrac{8-\sqrt{x}}{8+\sqrt{x}} \times \dfrac{(8-\sqrt{x})}{(8-\sqrt{x})}$$ $$\lim_{x \to \infty}\dfrac{64-16\sqrt{x}+x}{64-x}$$ Is this correct? how do I proceed from here?,"['calculus', 'limits']"
+924557,"If a connected Lie group is divisible, is its exponential map surjective?","A group $G$ is divisible if for all $g \in G$ and $k \in \mathbb{Z}_+$ there is an element $h \in G$ such that $h^k = g$; we call such an $h$ a $k$th root of $g$ . In an answer to a recent question asking for nonabelian examples , Micah pointed out than any if the exponential map of a Lie group $G$ is surjective, then the group is divisible, as any element $g \in G$ can written as $g = \exp X$ for some $X \in T_0 G$, and for any such $X$, $\exp(\frac{1}{k} X)$ is a $k$th root of $g$ for all $k$. On the other hand, there are examples of connected Lie groups that are not divisible---for example, $\left(\begin{array}{c}-1&0\\0&-2\end{array}\right)$ has no square root in $GL_+(n, \mathbb{R}) := \{A \in GL(2, \mathbb{R}) : \det A > 0\}$. Are there examples of connected, divisible Lie groups whose exponential map is not surjective? In other words, is surjectivity here (not) necessary?","['lie-groups', 'differential-geometry']"
+924561,Simple Differential Equation $\displaystyle xy \frac{dy}{dx}=\sqrt{x^2-y^2-x^2y^2-1}$,Solve $\displaystyle xy \frac{dy}{dx}=\sqrt{x^2-y^2-x^2y^2-1}$ I started off by assuming $y^2=V$ but could not get far,['ordinary-differential-equations']
+924585,Finding asymptotes for $f(x)=\frac{x^2+3x-10}{3x^2+13x-10}$,"$$f(x)=\frac{x^2+3x-10}{3x^2+13x-10}$$ I know that the horizontal asymptote is $1/3$. To find the vertical asymptotes, I set the denominator equal to zero and used the quadratic formula, and I got $-5$ and $2/3$, and this is wrong. How do you find the vertical asymptotes for this problem? 
+thanks.","['calculus', 'algebra-precalculus', 'functions']"
+924596,"Solve $x+3y=4y^3,y+3z=4z^3 ,z+3x=4x^3$ in reals","Find answers of this system of equations in reals$$
+\left\{ 
+\begin{array}{c}
+x+3y=4y^3 \\ 
+y+3z=4z^3  \\
+z+3x=4x^3  
+\end{array}
+\right. 
+$$ Things O have done: summing these 3 equations give $$4(x+y+z)=4(x^3+y^3+z^3)$$
+$$x+y+z=x^3+y^3+z^3$$ I've also tried to show that $x,y,z$ should be between $1$ and $-1$(As $(-1,-1,-1)$ and  $(1,1,1)$ are answers of this system of equations) but I was not successful.","['algebra-precalculus', 'systems-of-equations', 'polynomials']"
+924599,Why are matrices written as such?,"Another thread has talked about the purpose of a matrix . Dr. Math roughly summarized it as: A matrix is just a compact notation, which allows you to specify
+several linear equations at once without having to write them all out.
+For example, instead of writing 3x + 4y + 5z =  7
+
+  2x - 3y + 6z =  6
+
+  2x + 5y - 9z = 11 I can write the same thing more compactly using matrices: $$
+\begin{bmatrix}
+3 & 4 & 5\\ 
+2 & -3 & 6\\
+2 & 5 & -9\\ 
+\end{bmatrix}
+\begin{bmatrix}x\\
+y\\ 
+z\\
+\end{bmatrix} = \begin{bmatrix}7\\
+6\\ 
+11\\ 
+\end{bmatrix}
+$$ However, it seems that the more obvious way to do it would be: $$
+\begin{array}{ll}
+\begin{bmatrix}
+x & y & -z\\ 
+\end{bmatrix}
+\\
+\begin{bmatrix}
+3 & 4 & 5\\ 
+2 & -3 & 6\\
+2 & 5 & -9\\ 
+\end{bmatrix} = \begin{bmatrix}7\\
+6\\ 
+11\\ 
+\end{bmatrix}
+\end{array} 
+$$ Why are matrices written in a seemingly more complex way than the alternative? What's the advantage of doing so?","['matrices', 'linear-algebra', 'systems-of-equations', 'analysis', 'intuition']"
+924601,What is $\cdots ((((1/2)/(3/4))/((5/6)/(7/8)))/(((9/10)/(11/12))/((13/14)/(15/16))))/\cdots$? [duplicate],"This question already has answers here : Tall fraction puzzle (3 answers) Closed 9 years ago . What does this number equal if it goes on forever?
+$$\frac{\frac{\frac{\frac{\frac{1}{2}}{\frac{3}{4}}}{\frac{\frac56}{\frac78}}}{\frac{\frac{\frac{9}{10}}{\frac{11}{12}}}{\frac{\frac{13}{14}}{\frac{15}{16}}}}}{\frac{\frac{\frac{\frac{17}{18}}{\frac{19}{20}}}{\frac{\frac{21}{22}}{\frac{23}{24}}}}{\frac{\frac{\frac{25}{26}}{\frac{27}{28}}}{\frac{\frac{29}{30}}{\frac{31}{32}}}}}$$
+$$.$$$$.$$$$.$$ Treat the fraction in blocks, one divides what is under it, then that pair is divided by the next pair, those four are divided by the next four. ETC Edit .  I'm reformatting as I can't read the original... aged eyes I guess ;-( but in deference to almagest's comment I am leaving the original too.
+$$\frac{\frac{\frac{1}{2}\Big/\frac{3}{4}}{\frac{5}{6}\Big/\frac{7}{8}}\Bigg/
+  \frac{\frac{9}{10}\Big/\frac{11}{12}}{\frac{13}{14}\Big/\frac{15}{16}}}
+  {\frac{\frac{17}{18}\Big/\frac{19}{20}}{\frac{21}{22}\Big/\frac{23}{24}}\Bigg/
+  \frac{\frac{25}{26}\Big/\frac{27}{28}}{\frac{29}{30}\Big/\frac{31}{32}}}
+  \cdots$$","['fractions', 'sequences-and-series']"
+924620,Problem on Linear Differential Equations,"If $y_1,y_2$ be two solutions of $y''+p(x)y'+q(x)y=0$, show that the Wronskian can be expressed as $\displaystyle W(y_1,y_2)=ce^{-\int pdx}$ My thoughts: Wronskian, $\displaystyle W= \begin{vmatrix}
+y_1 &y_2 \\ 
+y_1' &y_2' 
+\end{vmatrix}$ Now, If p, q are given specifically, I can try to find the complementary function (C.F.) and move on from there. But here, p and q are general functions. How do I proceed to solve this problem ? Any hints ?",['ordinary-differential-equations']
+924666,"Show limits of function $f(x) := \lambda(B \cap (-x,x])$ and there exist a Borel-set $A$ such that $A \subseteq B$ and $\lambda(A)=a$.","Consider the measure space $(\mathbb R, \mathcal B(\mathbb R), \lambda)$, where $\lambda$ denote the Lebesgue-measure on $\mathbb R$. Let $B \in \mathcal B(\mathbb R)$ and $f:(0, \infty) \rightarrow [0, \infty)$ be given by $f(x) := \lambda(B \cap (-x,x])$,  $\ x \in (0,\infty)$. I've shown that $f$ is continuous and increasing on $(0,\infty)$. However I don't know how to formally find the limits: $\lim_{x \rightarrow \infty} f(x)$ and $\lim_{x \rightarrow 0} f(x)$. I should probably use what I've shown ? I've come to notice that $0 \le \lambda(B \cap (-x,x]) \le 2x$ and $\lambda(B \cap (-x,x]) \le \lambda(B)$, but I don't think I should use the sandwich theorem from Calculus here ? Also I've tried to show that for every real number $a$ in $[0, \lambda(B)]$ there exist a Borel-set $A$ such that $A \subseteq B$ and $\lambda(A)=a$. Can someone help me out ?","['measure-theory', 'elementary-set-theory']"
+924692,Can't understand this simple passage involving multivariable calculus,"A certain passage in my Fundamentals of Thermodynamics book is driving me crazy. I considered posting this is Physics.SE, but I think the question is eminently mathematical. Here is the passage: As we know, $c_p$ is defined as: $$c_p = \left(\frac{\partial h}{\partial T} \right)_p \tag1$$
+  We also have seen that: $$T\ ds = dh - v\ dp \tag2$$
+  Therefore: $$c_p = T \left({\partial s \over \partial T} \right)_p \tag3$$ I've spent hours trying to figure out how to get to $(3)$. I really want to do this as rigorously as a graduated mechanical engineer can. So far I have two ""approaches,"" one that is fine for most of my friends but is very informal and another that is more correct, but leads me nowhere. In case it's needed, let me give some background on the thermodynamic variables: for curiosity's sake, $c_p$ means specific heat in a constant pressure process; $p, v, T, u, h, s$ are properties, of which any one can be seen as a function of any other two; the notation $\left({\partial a \over \partial b}\right)_c$ means that, in that derivative, $a = a(b,c)$, so its purpose is to make it clear that the variable held constant is $c$. Approach 1: simple but ""wrong"" From $(2)$, we have: $$dh = T\ ds + v\ dp \tag4$$ We plug that directly into $\partial h$ of $(1)$ to obtain: $$c_p = \left({T\ \partial s + v\ \partial p \over \partial T} \right)_p \tag5$$ Since $p$ is held constant, $\partial p = 0$, so $(3)$ emerges. My problems with this: Making $\partial h = dh$ and plugging it in $(1)$ looks awful to me. I've never seen a ""partial differential"" outside of a partial derivative (e.g. $\partial h$ by itself). We usually take that liberty with ""total differentials,"" but I've never seen that done with partials. $\partial p$ can't even exist inside the derivative of $(5)$, since it would mean $p = p(T, p)$, which... does it make any sense?! Anyway, it can be argued that the partial derivative would indeed be zero, but it sucks. Approach 2: correct but dead end If we make $h = h(T, p)$, then comes: $$dh = \left({\partial h \over \partial T} \right)_p  dT + \left({\partial h \over \partial p} \right)_T dp\tag6$$ Equating with $(4)$ gives: $$\left({\partial h \over \partial T} \right)_p = T\frac{ds}{dT} + \frac{dp}{dT}\left[v - \left({\partial h \over \partial p} \right)_T \right] \tag7$$ So, from $(1)$: $$c_p = T\frac{ds}{dT} + \frac{dp}{dT}\left[v - \left({\partial h \over \partial p} \right)_T \right] \tag8$$ Which doesn't look like $(3)$ at all. In order to make it better, we could ""open up"" $\frac{ds}{dT}$ with $s(T,p)$ and eventually find: $$c_p = T \left({\partial s \over \partial T} \right)_p + \frac{dp}{dT}\left[v - \left({\partial h \over \partial p} \right)_T + T \left({\partial s \over \partial p} \right)_T \right] \tag9$$ We'd need the second term to be zero, but $\frac{dp}{dT}$ certainly isn't and I don't see why the $[\cdots]$ would be either. Did I go wrong somewhere? Is Approach 2 really optimal? I appreciate any help.",['multivariable-calculus']
+924705,Flipping a matrix?,"Real quick question: I was wondering, how would one denote mathemathically the flipping of a matrix, horizontally or vertically, around its own axis?","['matrix-equations', 'matrices', 'matrix-calculus']"
+924745,How to encode matrices uniquely,"Given a square matrix $A=[a_{ij}]_{n \times n}$, an operation $swap(A, i, j)$ is defined to swap row $i$ and $j$ of $A$ and do the same thing with the corresponding columns. For example, in the following example, we can see the $swap(A, 1, 3)$: $$A=\left[ \begin{array}{ccc}
+a & b & c \\
+d & e & f \\
+g & h & i \end{array} \right] ~~~~~\Rightarrow~~~~~ swap(A,1,3)=\left[ \begin{array}{ccc}
+i & h & g \\
+f & e & d \\
+c & b & a \end{array} \right]$$ For a matrix $A$, let $swap^k(A)$ be the set of matrices produced by exactly $k$ swaps.  For example $B \in swap^3(A)$ means that there is a sequence of 3 swaps that can convert $A$ into $B$. A unique encoding $\phi$ of this matrix is a function of $A$ such that: $$\phi(A)=\phi(B) ~~~~ \Leftrightarrow ~~~~ \exists k ~:~ B \in swap^k(A)$$ For simplicity, we can assume that the matrix is symetric and its elements are in $\{0,1\}$. I am interested to know whether there exist such encoding for this case of matrices or if there is a proof for its non-existence. Edit. What is the most efficient way to do this?","['matrices', 'linear-algebra', 'computer-science']"
+924747,Simple ODE with given initial value,"Find all solutions of $$2x'=3x^{1/3}, \ x(0)=0,\ x(1)=a$$ for which $\lim_{t\rightarrow -\infty}x(t) = 0 $, in respect to $a$ parameter, $a\in\mathbb{R}$. It's quite easy to notice that the solutions are $x(t)=t^{3/2}, \ x(t)=-t^{3/2}$ and$ \ x(t)=0$. Does that mean the only solution that meets this exercise requirements is $x(t)\equiv0$ along with $a=0$?",['ordinary-differential-equations']
+924774,Applying angle addition formulas for subtraction,The angle addition formula says that: $\sin(\phi + \theta) = \sin(\phi) \cdot \cos(\theta) + \cos(\phi) \cdot \sin(\theta)$ Why are the following steps valid?: $\sin(\phi − \theta) = \sin(\phi) \cdot \cos(−\theta) + \cos(\phi) \cdot \sin(−\theta)= \sin(\phi) \cdot \cos(\theta) − \cos(\phi) \cdot \sin(\theta)$ Thanks.,['trigonometry']
+924776,Finding the mean and median of a probability density function,"I suspect this is super-easy, but I haven't done any math in about ten years and I'm working with concepts that have been woefully explained... I need to find the mean and median of a continuous random variable that has a probability density function of: $f(x) = 2x^{-3}$ for $x > 1$ I know that this involves working out integrals and whatnot but, again, this is one of those concepts that wasn't actually explained to me.","['statistics', 'random-variables']"
+924783,approximate a Borel set by a continuous,"I wonder if it is possible to approximate a Borel set by a continuous function
+i.e. Let $B$ a Borel set in $(X,d)$ (compact separable metric space) I wonder if there continuous functions $f_n:X\rightarrow \mathbb{R}$ such that $f_n\rightarrow\chi_B$ ? It is possible that  $f_n\rightarrow\chi_B$ uniformly ? Note: $\chi_B$ is the characteristic function of B. Any suggestion is welcome, thanks.","['convergence-divergence', 'continuity', 'real-analysis', 'analysis']"
+924822,Limit involving sin,"The question is $$\lim_{t\to0}{{1\over 2+ \sin (t)}-{1\over 2}\over \sin (t)}$$ since I cannot directly substitute, how would I go about factoring the $\sin t$. Any help is appreciated!","['trigonometry', 'calculus', 'limits']"
+924869,Book suggestion for probability theory,"I need a good rigorous book to learn probability theory. So far, I've been suggested Gnedenko’s Theory of Probability ; Shiyayev’s Probability ; Feller’s An Introduction to Probability Theory and Its Applications . . Which one would you reccomend the most and why? Are there other books worth mentioning?","['book-recommendation', 'probability-theory', 'reference-request', 'soft-question', 'probability']"
+924908,How many solutions does the ODE $u'=\frac{4tu}{u^2+t^2}$ have?,"Given the problem:
+$$
+\left\{
+\begin{aligned}
+u^\prime(t) & = \frac{4 t u(t)}{u^2(t)+t^2}  &&\text{ for } t\in(0,a)\\
+u(0) & = 0  &&\text{ for } t=0
+\end{aligned}
+\right.
+$$ Now I need to show that this ODE has infinitely many solutions. However, I cannot find any non-trivial. Has anyone a hint how to get a right solution.",['ordinary-differential-equations']
+924924,Elementary proof of Monsky's theorem,"The following curious problem was posed in our problem set for the weekly problem solving session in our institute: Prove that a square cannot be decomposed into an odd number of triangles with equal area. I learnt later that this is called ' Monsky's theorem '. I did not read Monsky's proof , but apparently he used ' Sperner's lemma ' and some 2-adic analysis to prove this result. So, Does relaxing 'equal areas' to 'congruent triangles' admit an elementary proof? It looks like Monsky's statement is true for any polygon with even number of sides. Is this true? Thanks!","['geometry', 'combinatorics']"
+924947,Bounded linear operator commuting with every compact operators,"Let $A$ be a bounded linear operator on the Banach space $X$. Assuming that $AK = KA$ for every compact operator $K$, how do I show that $A$ must be a scalar multiple of the identity, i.e., we have $A = \lambda I$ for some number $\lambda$. So far I attempt to solve this using Schur's lemma but I can't reason that $A$ will have an eigenvalue in the first place for the lemma to applies (the book where I got the problem from doesn't even specify if the field is real or complex). Any hint or help is highly appreciated.","['operator-theory', 'compact-operators', 'functional-analysis']"
+924968,Consecutive terms in Pascal's Triangle,"is it known whether or not there are infinitely many pairs of consecutive terms in this sequence: http://oeis.org/A006987 ? The sequence is the list of numbers expressible in the form $\dbinom{n}{k}$, where $1<k<n-1$, and $n,k\in \mathbb{N}$ (obviously).","['sequences-and-series', 'binomial-coefficients']"
+924973,How to solve this limits question,"I have a problem with this limit question.
+$$\lim_{x \to \infty} \frac{x^3-4x}{7-2x^3}$$ How can the answer become $-\frac12$?",['limits']
+924999,Bilinear interpolation of angles,"Is their a solution to do a bilinear interpolation in x,y of angles in [0°-360°[ ? The elementary formula of bilinear interpolation don't work on angles due to the discontinuity at 360°-0°. http://en.wikipedia.org/wiki/Bilinear_interpolation I have found a formula the mean of angles but it doesn't seems usefull for bilinear interpolation of angles. http://en.wikipedia.org/wiki/Mean_of_circular_quantities#Mean_of_angles","['interpolation', 'trigonometry']"
+925036,Understanding branch cuts by manually choosing the branch cuts of a function,"Below I will explain what I have done in order to illustrate my confusion with branch cuts of a typical function. If I say something wrong at any point please do not hesitate to correct me! In order to understand branch cuts and to go about implementing tailored versions of multivalued complex functions in python (or any other language), I have experimented with some implementations, and the writing in this post can be thought of me ""thinking aloud."" I will explain all the code so it won't be necessary to know python specifically, its basically pseudo code anyway. So lets start, I have the complex function: \begin{align}
+w = \sqrt{z^2-1}.
+\end{align} With $z=x+iy$. This function will be used in a computer program, and I want to ensure that for all values $z$ can take on along a specified path, $w$ will remain continuous. Furthermore let's say for this particular problem that I want to ensure that my branch cuts are +1 to $+\infty$ and -1 to $-\infty$, and that $w$ is continuous in the upper half plane. I don't trust the way standard functions in python handle branch cuts, so I start by looking at real and imaginary $w$ over the argand plane. Here is the python version: def python_func(z):
+    return np.sqrt(z**2-1) #pretty self explanatory: returns sqrt(z^2-1) for a given z I then take this function and plot the real and imaginary parts over the argand plane: So it appears python introduces a discontinuity along the imaginary axis! This is not what I want so I decide to define my own version of the function above. The code consists mainly of two functions, a ""myatan"" which manually assigns the inverse tangent in the range $(0,2\pi)$ as a point moves along the quadrants anti-clockwise, and ""my_func"" which implements my required version of $w$. In constructing this function I reason as follows: For the required branch cuts above, if $|z|<1$ then arg$(w)$ should be continuous around the origin. But if $|z|>1$ then we need to factorize $ \sqrt{z^2-1}=\sqrt{z-1}\sqrt{z+1}$ and look at each factor in turn: $\sqrt{z-1}$: make arg$(\sqrt{z-1})$ jump across the line +1 to $+\infty$ $\sqrt{z+1}$: make arg$(\sqrt{z+1})$ jump across the line -1 to $-\infty$ The python definition of the functions are: import numpy as np #a module needed for some of the math functions used.
+import math         #a module needed for some of the math functions used.
+
+#(x,y) are the coordinates of a point on a 2D plane
+# the math.atan function does what you expects, it returns the inverse tangent as in a triangle 
+
+def myatan(y,x):
+      if y == 0:
+           if x > 0:
+                return 0
+           if x < 0:
+                return np.pi
+           if x == 0:
+                return 0
+      if y > 0:
+           if x > 0:
+                return math.atan(y/x)
+           if x < 0:
+                return np.pi + math.atan(y/x)
+           if x == 0:
+                return np.pi/2
+      if y < 0:
+           if x > 0:
+                return 2*np.pi + math.atan(y/x)
+           if x < 0:
+                return np.pi + math.atan(y/x)
+           if x == 0:
+                return 1.5*np.pi 
+
+def my_func(z):
+    """"""Calculate sqrt(z^2-1) for a complex number z. Manually choose branch cuts.
+    """"""
+    #For reference all functions return what their name suggests: abs() returns the magnitude of a complex number, 
+    #np.imag() the imaginary part, np.real() the real part of a number etc.
+    temp = z**2-1
+    if abs(z) < 1: #if condition is true execute the next few lines indented 
+        theta = myatan(np.imag(temp),np.real(temp))
+        return np.sqrt(abs(temp))*np.exp(1j*theta/2)            
+    elif abs(z) > 1: #else if condition is true execute the next few lines indented 
+        q1, q2 = z-1, z+1
+    r1, theta1 = abs(q1), myatan(np.imag(q1),np.real(q1))      #should be a jump on the positive real axis
+    r2, theta2 = abs(q2), math.atan2(np.imag(q2),np.real(q2)) #should jump on the negative real axis
+        return np.sqrt(r1*r2)*np.exp(1j/2*(theta1+theta2)) With this new definition of our function we get the following plot: and now there are clear branch cuts as we want them. However the plots from the two methods look very different and so I started thinking, am I really getting the value I am supposed to from my customised function? To look at the values returned by the function I decided to plot the real and imaginary values of $w$ as I walk along a circle of different radii: For circle radius 0.9, we see that my_func does not have any jumps as we want: For circle radius 1.1, we see that my_func has jumps at $\theta = \pi$ and $\theta = 2\pi$ as expected: The only problem I have is this: I am happy with the branch cuts of my function: it seems that I have gotten that part right because my_func is continuous in the range I want it to be. But how do I know that it takes on the right value in that range? I am using this function in a physics based simulation, so it should clearly matter whether the real/imaginary part of $w$ takes on the negative or positive possibility as can be seen from the latest graphs above. How do I know I am calculating the correct ""version"" of my function given the branch cuts I have chosen?","['branch-cuts', 'complex-analysis']"
+925051,A funtion equation $2f(x)+f''(x)=xf'(x)$,"Suppose $f(x)\in C^2(\mathbb R)$ solves the equation $$
+2f(x)+f''(x)=xf'(x),\forall x\in\mathbb R
+$$
+Assume that $(f(0),f'(0))\neq (0,0)$. Prove that $(f(x),f'(x))$ is unbounded.",['ordinary-differential-equations']
+925053,"Using Limits to Determine Big-O, Big-Omega, and Big-Theta","I am trying to get a concrete answer on using limits to determine if two functions, $f(n)$ and $g(n)$, are Big-$O$, Big-$\Omega$, or Big-$\Theta$.  I have looked at my book, my lecture notes, and have even done some online research but I still haven't found anything that gives me a solid yes or no.  From what I understand about each of the three notations I have come up with 3 sets of rules: $\displaystyle f(n) = O(g(n)) \implies \lim_{n \to \infty}\;\frac{f(n)}{g(n)} = 0$ $\displaystyle f(n) = \Omega(g(n)) \implies \lim_{n \to \infty}\;\frac{f(n)}{g(n)} = \infty$ $\displaystyle f(n) = \Theta(g(n)) \implies 0 < \; \lim_{n \to \infty} \; \frac{f(n)}{g(n)}  \;< \infty$ The reason I am trying to get such a definite answer on this is because for a HW assignment we have to briefly explain why $\;f(n) = O(g(n))$, $\;f(n) = \Omega(g(n)),$ or $\;f(n) = \Theta(g(n))$.  If I can just use those 3 rules above my explanations will be short, sweet, and to the point. Any help or advice would be great appreciated","['asymptotics', 'algorithms', 'limits']"
+925054,"Why are centers, centralizers and normalizers called that way?","I know what they are, but where do the names come from?","['terminology', 'group-theory', 'abstract-algebra']"
+925055,Proof of Pascal' identity,"The identity 
+$$\binom{x+1}{k}-\binom{x}{k}=\binom{x}{k-1}$$
+is claimed to hold (using the binomial polynomials, considered as lying in $\mathbf{Q}[x]$) for $k$ at least $1$.
+Proof: by the usual Pascal identity it holds for all $x=n$ at least $k$ and hence (using that these are polys of the same degree?) we can conclude (?) that these must be equal as polynomials. Is my proof ok?","['polynomials', 'discrete-mathematics', 'binomial-coefficients', 'combinatorics']"
+925063,Find the generating function of the sequence $a_n = \sum\limits_{k=0}^n k(k-1)$,"Find the generating function of the sequence $ a_n =\sum\limits_{k=0}^n k(k-1)$ My try: Let's assume $k(k-1)$ is genereated by $F(x)$ then $a_n$ is generated by $\frac{F(x)}{1-x}$ (that's a common trick). So have we reduced the problem to: Find the generating function of $a_k = k(k-1)$. Now, there's another trick: If $G(x)$ generates $b_k$ then $x\cdot G'(x)$ generates $c_k = n\cdot b_k$ If so, we need to find the generating function of $c_k = k-1$. I'm not sure I'm on the right path, can you help me with it? Thanks!","['generating-functions', 'discrete-mathematics', 'functions']"
+925073,"When plotting a bell curve from an array of values, is it possible that +/- 2 standard deviations from the mean can fall outside the range of values?","First, this is not homework, it is actually for work. It's been a couple of years since I've done stats and need some help! I've googled for this problem but was unavailable to find any resources that could help answer my question. I have 25 values: 11.5
+11.6
+11.9
+12.2
+12.4
+12.4
+12.5
+12.5
+12.5
+12.8
+12.8
+12.9
+13.1
+13.3
+13.5
+13.5
+13.7
+13.7
+13.8
+13.9
+13.9
+14
+14.3
+14.5
+15 From here, I calculate the mean and from that, the variance and then the standard deviation : The variance formula and my variance calculations: $$
+\sigma^{2} =\frac{\sum_{i=1}^{n}(x_{i}-\mu )^{2}}{n}=\frac{\sum_{i=1}^{25}(x_{i}-13.128)^{2}}{25}=0.7996159999999999
+$$ Of course, standard deviation is simply the square root of variance : $$
+\sigma =\sqrt{0.7996159999999999}=0.8942125027083886
+$$ Here's where I feel like I'm messing up: One standard deviation less than the mean: $$
+-\sigma + \mu = -0.8942125027083886 + 13.128 = 12.2337874972916114
+$$ Two standard deviations less than the mean: $$
+-2\sigma + \mu = -2*0.8942125027083886 + 13.128 = 11.3395749945832228
+$$ This value, 11.3395749945832228 , falls below the smallest value in the array, 11.5 . How is this possible? Where am I messing up my calculations? Thank you for any and all help! I really appreciate it.","['statistics', 'standard-deviation']"
+925092,Another way of expressing $\sum_{k=0}^{n} (-1)^k\frac{H_{k+1}}{n-k+1}$,"In this post Another way of expressing $\sum_{k=0}^{n} \frac{H_{k+1}}{n-k+1}$ I asked for a solution of the non-alternating series. How about the alternating series? Can we find a nice way of expressing this sum?
+$$\sum_{k=0}^{n} (-1)^k\frac{H_{k+1}}{n-k+1}$$","['sequences-and-series', 'complex-analysis', 'calculus', 'real-analysis']"
+925097,Spectrum of self-adjoint operator on Hilbert space real,"My book says that a self-adjoint bounded linear operator $A:H\to H$ on a complex Hilbert (not sure if separability is needed) space has a real spectrum. I guess that the key is in the fact that any $f\in H^{\ast}$ can be represented by a functional of the form $\langle-,x_0\rangle$ for some $x_0\in H$, but I am not able to use that fact. I also see that $\forall x,y\in H\quad\langle(A-\lambda I)x,y\rangle=\langle x,(A-\bar{\lambda} I)y\rangle$ but I'm not sure that can be useful to prove the statement... Thank you very much for any help!!!","['spectral-theory', 'hilbert-spaces', 'functional-analysis']"
+925121,Prove there's $\left|A-B\right| = \aleph$.,Let A a set such that $\left|A\right| \ge \aleph$. Prove there's a $B\subseteq A$ such that $\left|B\right|\ge \aleph$ and $\left|A-B\right| = \aleph$. Lets assume there's a $B\subseteq A$ such that $\left|B\right| = \aleph$ (are we allowed to assume that?) $A-B \subseteq A$ implying $\left|A-B\right| \le \aleph \le \left|A\right|$ I don't know how to continue. There must be some rule or theorem I'm missing.. I'd be glad for help. Note: $\aleph$ is the cardinality of thecontinuum.,"['cardinals', 'elementary-set-theory']"
+925152,"How to calculate t-value, given degrees of freedom and $\alpha$.","While solving problems, we can look up physical t-tables or use a statistical analysis software like R to calculate t-values. But how do we actually calculate these values ? 
+What is the algorithm behind it ?
+How does the widget in this website ( http://www.danielsoper.com/statcalc3/calc.aspx?id=10 ) calculates it ?","['statistics', 'probability']"
+925181,Proving that the given function $F:\mathbb N\times \mathbb N\to\mathbb N$ is bijective,"Consider the function $F:\mathbb N\times\mathbb  N\to \mathbb N$ defined by 
+$$F(a,b)=\frac{(a+b-2)(a+b-1)}{2} +a$$ How can I prove that it is a bijective function? I proved it using Partial derivatives by assuming the function to be continuous and defined on $\mathbb{R}$. But how can I prove it using definition of one-one and onto functions?","['elementary-set-theory', 'functions']"
+925203,How to prove this version of the Cantor-Schroder-Bernstein theorem?,"My text states the Cantor-Schroder-Bernstein theorem as follows: Suppose that $X$ and $Y$ are non-empty sets such that $|X|>|Y|$ . Then, any function $f:X\rightarrow Y$ is not an injection, i.e. there exists distinct elements $x_1$ and $x_2\in X$ such that $f(x_1)=f(x_2)$ My first question is: This version of the theorem is different than what I have seen in other texts, which typically takes this form. How is the theorem stated in my text equivalent to the version stated in the Proofwiki? This looks more like the pigeonhole principle to me (without requiring that $X$ and $Y$ be finite sets). I'd like some help on proving this theorem as stated in my text. What I've tried: I will prove the contrapositive of the theorem, namely: For non empty sets $X$ and $Y$ , if $f:X\rightarrow Y$ is an injection, then $|X|\le |Y|$ So, if $f$ is an injection, then $f$ may or may not be a surjection. If $f$ is also a surjection, then we have a bijection $X\rightarrow Y$ , which means each $X$ and $Y$ can be paired together. Hence, both $X$ and $Y$ have the same cardinality. if $f$ is not surjective, then this means $\exists y \in Y,\forall x\in X,f(x)\ne y$ . This means that there is at least one element in $y$ that can't be paired with an element in $X$ . Hence we conclude that the cardinality of $Y$ is larger that the cardinality of $X$ . Therefore, $|X|\le |Y|$ as required. Is my proof acceptable? I feel a bit uneasy stating that $X$ and $Y$ can or can not be paired, but given the information in the theorem, I don't know of a more precise way to write this proof. EDIT :
+Asaf Karagila's comment made me reread my text and found the following definition of comparing the cardinalities of two sets: Two sets $X$ and $Y$ have the same cardinality, written $|X|=|Y|$ , if there are equipotent, i.e. there is a bijection $X\rightarrow$ Y. If there is an injection $X\rightarrow Y$ , then we write $|X|\le |Y|$ . We write $|X|<|Y|$ to mean that $|X|\le |Y|$ and $|X|\ne|Y|$ and say that $X$ has smaller cardinality than $Y$ . So, in light of the above definition, the contrapositive of the theorem is true because the definition above makes it true. Is that all there is to it?","['proof-verification', 'proof-writing', 'elementary-set-theory', 'functions']"
+925224,Is this proof that $\lfloor x \rfloor \geq n \left\lfloor \frac{x}{n} \right\rfloor$ correct?,"In this text the fractional part of a real $x$ shall be denoted $\{x\}$, such that $x = \lfloor x \rfloor + \{x\}$. Theorem : $$ \forall x \in \mathbb{R}_{\geq 0} \forall n \in \mathbb{N}_{\geq 1} : \left\lfloor x \right\rfloor \geq n \left\lfloor \frac{x}{n} \right\rfloor $$ Proof : Let $n$ be a positive integer. Let $x$ be a nonnegative real number. $$ x = n \frac{x}{n} = n \left( \left\lfloor \frac{x}{n} \right\rfloor + \left\{\frac{x}{n}\right\} \right) $$ Keeping in mind that the floor function is increasing: $$ \lfloor x \rfloor = \left\lfloor n \left\lfloor \frac{x}{n} \right\rfloor + n \left\{\frac{x}{n}\right\} \right\rfloor \geq \left\lfloor n \left\lfloor \frac{x}{n} \right\rfloor \right\rfloor = n \left\lfloor \frac{x}{n} \right\rfloor $$ $$\square$$ Having just written it down it seems so clear (and unexpectedly short), but is this proof correct? What could be improved about it?","['inequality', 'discrete-mathematics', 'elementary-number-theory', 'proof-verification', 'ceiling-and-floor-functions']"
+925248,"Find the result of $ \sum_{x = 1}^{\infty}\frac{1}{x}\,\log\left(\frac{kx}{\left\lfloor kx\right\rfloor}_{o}\right)$","I would like to calculate the sum $$
+\sum_{x = 1}^{\infty}\frac{1}{x}\,
+\log\left(\frac{kx}{\left\lfloor kx \right\rfloor}_{o}\right)
+$$ where $k = \sqrt{\, 2\,} + 1$, $x$ is an odd integer and
+$\left\lfloor z \right\rfloor_o$ indicates the greatest odd integer $\leq z$. Considering that the odd greatest integer function satisfies
+$\left\lfloor z \right\rfloor_{o} =
+ 2\left\lfloor\frac{z + 1}{2}\right\rfloor - 1$, and setting $x = 2n - 1$ to obtain a summation over all positive integers, the sum can also be written as $$
+\sum_{n = 1}^{\infty}\frac{1}{2n - 1}\,
+\log\left(\frac{k\left[2n - 1\right]}
+{2\left\lfloor kn - k/2 + 1/2\right\rfloor - 1}\right)
+$$ The numerical value of the sum converges to $0.952842\ldots$ ( these first six decimal digits are stable after summing the first $10^{8}$ terms ). I tried several approaches to determine an explicit expression for this limit, including transformations of floor function by Fourier series or Laplace transforms, but I was not able to get it. Even if  a closed expression could maybe not exist, I would be very interested in obtaining a simpler expression for this infinite sum.","['ceiling-and-floor-functions', 'limits', 'summation', 'number-theory']"
+925269,"Finding a $C^1$ function $F(x,y)$ that is not of class $C^2$","I am trying to find a function $f:\mathbb{R}^2\rightarrow \mathbb{R}$ of class $C^1$, but not of class $C^2$. Meaning that $\frac{\partial^2 F}{\partial x \partial y}$ won't be equal to  $\frac{\partial^2 F}{\partial y \partial x}$. I've thought of a lot of possible functions, but in each one of them there is only a single singular point in which they are not of class $C^2$. Can someone help me find such a function? Thanks in advance.","['multivariable-calculus', 'examples-counterexamples', 'partial-derivative']"
+925296,Proving $\arg(zw)=\arg(z)+\arg(w)$,"This is my attempt I know this is incomplete or may even be wrong. Let $θ_1 \in \arg(z)$ and $θ_2 \in \arg(w)$ . Then, $θ_1+θ_2 \in \arg(z)+\arg(w)$ . Also, $θ_1+θ_2 \in \arg(zw)$ . Is this sufficient for the proof or correct at all? Hope someone could help me out. Thanks. EDIT: Just to avoid any confusions I will add how $\arg z$ is defined. $\arg z=\{\text{Arg}\, z+2\pi k\mid k\text{ is an integer}\}$","['complex-numbers', 'complex-analysis']"
+925322,Properties and notation of third-order (and higher) partial-derivatives,"This question has been bothering me for quite a while and I still haven't found a satisfying answer anywhere on the internet or in any of my books (which may not be that advanced, mind you...). Since I couldn't find a similar question here on MSE, it probably is rather obvious if you have a sufficiently  advanced level, which I do not (I'm still undergraduate and my knowledge of tensors is really small!). Out of simplicity, I'll take a specific example for my question. Here it is: Let $f : \mathbb{R}^2 \rightarrow \mathbb{R}$ ; $(x,y) \rightarrow f(x,y)$ be a continous function with two variables $x$ and $y$. The ""equivalent"" of the first derivative known from single-variable functions would be the gradient: $\nabla f = \left(\begin{array}{cccc}
+f_x \\
+f_y
+\end{array}\right)$ The second derivative is the Hessian-Matrix: $H_f(x,y) = \left(\begin{array}{cccc}
+f_{xx} & f_{xy} \\
+f_{yx} & f_{yy}
+\end{array}\right)$ So what does the third-order derivative of this function (or in general...) look like? I've been able to work out that it is a tensor with order $3$. How does one notate such a geometric object? Concerning the properties: the gradient is a vector field depicting the ""slope"" of the function in any point using a vector (i.e.: an orientation and a magnitude). The Hessian-Matrix shows us the rate of change of the gradient (correct use of words?). So by this analogy, the third derivative measures the rate of change of the second derivative. But how? Feel free to change the tags and edit my answer, if you think it necessary. I'm looking forward to any answers! Thanks in advance, SDV","['multivariable-calculus', 'soft-question', 'tensors', 'derivatives']"
+925332,"Atiyah-Macdonald, Problem 6 of Chapter 1","I was trying to solve the following problem from Introduction to Commutative Algebra by Atiyah and Macdonald. (It is Problem 6 of Chapter 1.) While trying to solve the problem, I am facing trouble in the final stage of my attempt which is mentioned after the problem. Please help me to solve it. A ring $A$ is such that every ideal not contained in the nilradical contains a nonzero
+idempotent (that is, an element $e$ such that $e^2 = e \ne 0$ ). Prove that the
+nilradical and Jacobson radical of $A$ are equal. I have tried and what I have done so far is the following: Since one side inclusion ie Nilradical = $N(A)\subseteq J(A)$ = Jacobson radical is obvious so I think it is sufficient to prove that every prime ideal in $A$ is maximal. To prove so let $P$ be a prime ideal and say $x\in A-P$ (ie $x+P\ne 0+P$ ) and thus by applying given condition on $<x>$ we have $\exists a\in A $ such that $a\ne0,ax=a^2x^2$ So considering $A/P$ (which is integral domain as $P$ is prime ideal) we see $(ax+P)((ax+P)-(1+P))=0+P$ and hence $ax\in P$ or $ax-1\in P$ If the later is true then $(a+P)(x+P)=1+P \Rightarrow A/P$ is field $\Rightarrow P$ maximal. But I failed to exclude the first case ie I can't prove $ax\notin P$ . Maybe I am missing something very easy or there may be an easier way to solve the problem. Please help me. Thnx in advance.","['commutative-algebra', 'ring-theory', 'abstract-algebra']"
+925338,derive limit to make a function continuous,"Here's the problem: Choose the value of k that makes the following 
+function continuous at $x = 1$: $f(x)=\begin{cases}
+\frac{-8x^2 + 48x - 40}{x - 1} &	x < 1\\
+-2x + k &x \geq 1
+\end{cases}$ My steps:
+$\lim_{x\uparrow 1} f(x) = \lim_{x\downarrow 1} f(x)$ $\frac{-8x^2 + 48x - 40}{x - 1} = -2x + k$ $\frac{-8(x^2 - 6x + 5)}{x - 1} = -2x + k$ $\frac{-8(x - 5)(x - 1)}{x - 1} = -2x + k$ $-8(x - 5) = -2x + k$ $-8x - (-8)\cdot5 = -2x + k$ $-8x + 40 = -2x + k$ $-8x + 2x + 40 = k$ (See note at bottom) $-6x + 40 = k$ $-6\cdot1 + 40 = k$ $-6 + 40 = k$ $36 = k$ The solution steps: For f to be continuous at $x = 1$ we need $\lim_{x\uparrow 1} f(x) = \lim_{x\downarrow1} f(x) = f(1)$ First lets evaluate lim x→1− f(x) . Since x < 1 as x approaches 1 from the left, f(x) = (−8x^2 + 48x − 40)/(x − 1) as x→1− So lim x→1− f(x) = lim x→1−  (−8x^2 + 48x − 40)/(x − 1) Start by factoring the numerator. In this case we find: lim x→1− (−8x^2 + 48x − 40)/(−3x^2 − 15x + 18) = lim x→1− (−8x + 40)(x − 1)/(x − 1) Aside: can anyone explain (−3x^2 − 15x + 18) in the denominator? Since we are taking the limit as x→1− , we may assume that x ≠ 1 . Canceling factors we see: \lim x→1− (−8x + 40)(x − 1)/(−3x − 18)(x − 1) = \lim x→1− (−8x + 40) We can evaluate this linear function at x = 1 . Hence, lim x→1− −8x^2 + 48x − 40)/(−3x^2 − 15x + 18) = −8(1) + 40 . Thus, lim x→1− f(x) = 32 . Thus lim x→1− f(x) = 32 lim x→1+ f(x) = lim x→ (−2x + k) , because x > 1 as x approaches 1 from the right. lim x→ (−2x + k) = −2⋅1 + k = −2 + k = f(1) because linear functions are continuous. For f to be continuous, these limits have to be equal. Thus 32 = −2 + k When k = 34 , f is continuous. NOTE: This is where I diverged from the solution by moving -2x to the left. My question is, assuming the given solution is correct, why is this nominally valid algebraic step not permitted?",['limits']
+925371,How is every subset of real numbers measurable despite the existence of a non-measurable set?,"We know the existence of nonmeasurable subsets of $\mathbb R$ by Vitali , but many books and lecture notes on real analysis still include the statement that every subset of real numbers is measurable. What am I missing? Context On page 2 under the title General Constructions in these notes , it is said that the collection of all subsets forms a sigma-algebra. On the other hand, every element of a sigma algebra is measurable by: Charalambos, Real Analysis (3rd edition), page 112, Theorem 15.3. How to resolve this apparent contradiction?","['measure-theory', 'real-analysis']"
+925383,$\dim (D-P)=\dim (D)-1$,"I'm trying to prove this question: Let $D$ be a divisor in $F|K$ such that $\dim (D)\gt 0$ and $0 \neq
+ f\in \mathscr L(D)$. Thus $f\notin \mathscr L(D-P)$ for almost all $P$.
+   Then show that $$\dim (D-P)=\dim (D)-1$$ for almost all $P$. I proved the first part of the question, but I couldn't prove $\dim (D-P)=\dim (D)-1$ using this first part. Thanks Source: first chapter of Algebraic function fields and codes from Henning Stichtenoth","['coding-theory', 'algebraic-geometry', 'algebraic-curves', 'linear-algebra', 'function-fields']"
+925387,trace map is continuous,"Prove that $tr: M_n(k)\to k$ is continuous. I did continuity of determinant map using induction, but how to prove trace map is continuous. please give a thorough answer. My analysis is not too good.","['manifolds', 'analysis']"
+925394,How to evaluate the integral $e^{-(c\ln(\frac{1}{x}))^s} dx$?,"Can anyone help me evaluate $$\int_{\alpha}^1  \exp{\left\{-\left(c\ln\left(\frac{1}{x}\right)\right)^s\right\}} dx$$, Where $0 \leq \alpha \leq 1$ and $s \in \mathbb{R}$. I tried changing variables, integration by parts etc. and got nowhere. Any clues on how to handle this would be appreciated. I tried integration by parts with $dv=1$ and $u = \exp{\left\{-\left(c\ln\left(\frac{1}{x}\right)\right)^s\right\}}$. This gives us: $$x \exp{\left\{-\left(c\ln\left(\frac{1}{x}\right)\right)^s\right\}} {\Huge|}_{\alpha}^1 - s c\int_{\alpha}^1   \left(c\ln\left(\frac{1}{x}\right)\right)^{s-1}\exp{\left\{-\left(c\ln\left(\frac{1}{x}\right)\right)^s\right\}} dx .$$ Note that the second term reminds the incomplete Gamma function (with $ln(1/x)$ instead of $t$), however, i couldn't reach further than this.","['calculus', 'integration', 'definite-integrals', 'approximation', 'real-analysis']"
+925407,Making a Piecewise Function a Single Function,Is there a way to turn a piecewise function into one function. For example: $$\ f(x)=\begin{cases} g(x) & \text{if $a≤x<b $} \\ h(x) & \text{if $b≤x≤d$} \end{cases}$$ (Can you use the Heaviside Step Function? $\theta(x))$,"['ordinary-differential-equations', 'calculus']"
+925427,"What is the gradient of $f(x, y, z) = \sqrt{x^2+y^2+z^2}$?","What is the gradient of $f(x, y, z) = \sqrt{x^2+y^2+z^2}$? I know that $\nabla f = \left\langle\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z}\right\rangle$ or equivalently $\nabla f = \frac{\partial f}{\partial x}\mathbf{i} + \frac{\partial f}{\partial y}\mathbf{j} + \frac{\partial f}{\partial z}\mathbf{k}$. Eventually, I am going to evaluate this gradient at a point and then dot it with some given unit vector to find a directional derivative. I think maybe what is troubling me is the radical in $f$. Will I have to use the chain rule in order to find the three partial derivatives? I tried this: $$\frac{\partial f}{\partial x} = \frac{1}{2}(x^2 + y^2 + z^2)^{-\frac{1}{2}}2x$$
+$$= \frac{x}{\sqrt{x^2 + y^2 + z^2}}$$ That result looks ugly to me. However, if I did that partial derivative correctly, then I think I know what I am doing.","['multivariable-calculus', 'partial-derivative']"
+925454,Proving that a definition of e is unique,"We can define $e$ as the number such that $\lim_{h \to 0} \frac{e^h-1}{h}=1$.  However, of course we can only define $e$ this way if it is unique, i.e., there is no other value $c$ for which that is a true statement. Could someone prove this uniqueness for me? I am tutoring a calculus student and he asked me something to this effect and I couldn't see why. Thanks!","['exponential-function', 'calculus']"
+925465,Is there any geometric explanation of relationship between Integral and derivative?,"It is said integral is anti-derivative, derivative is tangent of graph function in each point on the function and integral is the area of the region in the $xy$ -plane bounded by the graph. I can not understand the relationship between these, can anyone help me? I want understand the relationship between area and slope of tangent line.","['integration', 'derivatives']"
+925471,Is $\sum_{n=1}^\infty \frac{\sin(2n)}{1+\cos^4(n)}$ convergent?,"As I was just checking this 'child prodigy' out on Youtube, I stumbled upon this video, in which Glenn Beck asks the kid to do the following proof: Further on, the kid starts sketching a proof (without a shadow of a doubt regarding the accuracy of his solution ) including the Integral Test.
+I don't know much about improper integrals since I just finished highschool, but this integral approach seemed, intuitively, pretty inaccurate to me since this is not a strictly decreasing function. Then I found this out from Wikipedia ! Conditions for the Integral Test. Furthermore, the blunt assessment that the series are convergent seems dubious as well..Upon a few computations of my own(mostly partial sums) , I tend to believe that the series are, in fact, divergent . Can anyone suggest a rigurous take on this problem (easy as it may seem to some amongst you) ?","['divergent-series', 'sequences-and-series']"
+925473,Approximating by smooth functions with compact support.,"Consider a bounded domain $D \subset \mathbb{R}^n$ and the Sobolev space $H^1_{0}(D):=\overline{C_c^{\infty}(D)}^{W^{1, 2}(D)}$. Further, consider a Sobolev function which happens to be smooth: $u\in H^{1}_{0}(D)\cap C^{\infty}(D)$ . Now remove some point $a\in D$ and restrict our function $u$ by removing the point $a$ of the domain of definition, i.e. consider the function $u_{\vert D-\lbrace{a\rbrace}}$. I'm wondering if the restricted function is still a sobolev space, i.e. $u_{\vert D-\lbrace{a\rbrace}}\in H^{1}_0(D-\lbrace{ a\rbrace})$? Or to put it in an equivalent way: Is it possible to approximate $u_{\vert D-\lbrace{a\rbrace}}$ with respect to $\Vert\cdot \Vert_{W^{1,2}(D)}$ by smooth functions with compact support? I appreciate any help!
+Best regards","['sobolev-spaces', 'functional-analysis', 'analysis']"
+925490,Obtain a special solution for a differential equation,"If I have a differential equation $y"" + 4y' + 4y = 2e^{-x} + xe^{-x}$ and $f(x)$ is a special solution to this equation, how can I determine $f(x)$ if I know f(0)=0 and $f'(0)=0$ ?","['linear-algebra', 'ordinary-differential-equations']"
+925524,number of patterns of suit distributions in bridge deal,"I would like to find the number of ways the suits can be distributed when the cards in a deck are dealt to 4 bridge players. If we let $a_{ij}$ be the number of cards in suit $j$ which are held by player $i$, I believe this should be given by the number of solutions in nonnegative integers to the system of equations $a_{i1}+a_{i2}+a_{i3}+a_{i4}=13$ for $1\le i\le 4$, and $a_{1j}+a_{2j}+a_{3j}+a_{4j}=13$ for $1\le j\le 4$; so how could I find the number of solutions to this system?","['discrete-mathematics', 'combinatorics']"
+925545,Determine the PDF from the MGF [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 8 years ago . Improve this question How can I calculate PDF using MGF? .e.g
+If the moment generating function is given as; $ \psi_X(s) = e^{s^2}$ How can I determine the PDF of $X$ ?","['moment-generating-functions', 'probability-distributions', 'probability']"
+925607,clarification of algebraic closure and algebraically closed field,"Definition of Algebraic closure: An extension $K$ of $F$ is called an algebraic closure of $F$ if (a) $F \subset K$ is algebraic; (b) $K$ is algebraically closed. Given the above definition, I have been trying to solve the following question: Q. Let $F \subset K$ where $K$ is algebraically closed. Let $L$ be the algebraic closure of $F$ in $K$. Then prove that $L$ is also algebraically closed. I feel that the answer is evident from the definition, but It involves a proof.
+Please  make some clear distinctions between 'algebraic closure' and 'algebraically closed' and explain these concepts by helping me solve the above question.","['extension-field', 'abstract-algebra', 'field-theory']"
+925646,Reference request: modern reference for Cantor's theorems of size of algebraic and transcendental numbers?,Cantor showed that the set of algebraic numbers is countable and the set of transcendental numbers is uncountable. Is there any (modern)book with the proof of these theorems?,"['reference-request', 'elementary-set-theory']"
+925662,"Proof that if $Z$ is standard normal, then $Z^2$ is distributed Chi-Square (1).","Suppose that $Z\sim N(0,1)$ and let $V=Z^2$.  Prove that $V\sim \chi^2(1)$. I want to use the method of moment generating functions, because I already understand the proof using the method of distribution functions.  I will show my work, and then where I got stuck. Since $Z\sim N(0,1)$, then $\mu=0$ and $\sigma^2=1$, and we have $$M_V(t) =E[e^{tV}]=E[e^{tZ^2}]=\int_{-\infty}^\infty e^{tz^2}\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}z^2}dz=\int_{-\infty}^\infty \frac{1}{\sqrt{2\pi}}e^{z^2(t-\frac{1}{2})}dz.$$ At this point, I'm out of ideas.  I want to eventually get something that looks like $\frac{1}{(1-2t)^{\frac{1}{2}}}$.  Could I get a hint please?","['statistics', 'normal-distribution', 'moment-generating-functions', 'probability']"
+925674,Soft question: what are some elementary motivations of using functional analysis to study probability theory?,"Recently I've become curious about the links between functional analysis and probability theory.  What are some simple reasons why a functional analytic approach is preferable to a measure-theoretic approach?  (For example, why would it be interesting to do probability theory via the expectation operator $\mathbb{E}$ instead of the measure $\mathbb{P}$ on a probability space?) What are some interesting, yet elementary applications, examples and theorems taking this direction?","['probability-theory', 'probability', 'soft-question', 'analysis', 'functional-analysis']"
+925704,Finitely generated group $G$ such that $G\cong G*G$ must be trivial,"So, I need to show that a finitely generated group isomorphic to the free product of two copies of itself (obviously thinking every factor as being generated by diferent letters) must be trivial. I must clarify that is just a conjecture I made to complete a proof of another thing, but I think it is true. I have tried taking minimal sets of generators but didn't get too far. Any help would be awesome.","['finitely-generated', 'free-groups', 'group-theory']"
+925706,Is it true that group of real numbers under addition isomorphic to group of complex numbers under addition [duplicate],This question already has an answer here : Is it true that $\mathbb{R}$ and $\mathbb{R}^2$ are isomorphic as abelian groups? (1 answer) Closed 9 years ago . Is it true that set of all real numbers under addition isomorphic to set of all complex numbers under addition,['group-theory']
+925731,Separable implies second countable,"We have $(X,d)$ a metric space. The problem I want to prove is quite long so I'll just put what I need to get it: if $X$ is compact then is separable if $X$ is separable then is second countable I've already proved the first one, but I'm having a trouble trying to prove the second. What I've been doing is, we take a dense set $A\subset X$, and because of the hypothesis we know is countable, I want to build the countable base from it. Lets take $p\in A$ fixed and an open set $U$ given by the topology induced by the metric $d$ and $p\in U$. But now things get confusing for me, on the one hand the topology given by $d$ is generated in terms of a base, on the second hand we have the countability of $A$, but I can't work this in a proper way. Is my approach wrong? Something tells me there is an easier way.","['general-topology', 'separable-spaces', 'second-countable']"
+925738,Can a function be applied to itself?,"There are some functions f that can be composed with themselves. But is there a function which can be applied to itself? In other words, is there a function f such that f is an element of Domain(f)?","['elementary-set-theory', 'functions']"
+925743,Testing statistic $\frac{MSS(X)}{MSS(Y)}$,"Suppose a test statistic $\frac{MSS(X)}{MSS(Y)}$, where $MSS$ denotes Mean Sum of Squares, is to be used for testing the significance of the factor $X$. Do we need the assumption $$\mathbb E[MSS(X)]=\mathbb E[MSS(Y)]$$ to be satisfied? Why? As far i know if the assumption is true , then the test statistic follows F-distribution . Is that the only case?Is their any detail explanation?","['statistics', 'self-learning', 'normal-distribution', 'probability-distributions', 'statistical-inference']"
+925793,Infinite algebraic extension of $\mathbb{Q}$,"I have this problem in a exercise list: ""Prove that $K=\mathbb{Q}(2^{\frac{1}{2}},2^{\frac{1}{3}}, 2^{\frac{1}{4}}, \ldots)$ is an algebraic extension, but not a finite extension of $\mathbb{Q}$."" What I did: Let $\alpha \in K$, then $\alpha = a_0 + a_12^{\frac{1}{n_1}}+a_22^{\frac{1}{n_2}}+\cdots+a_m2^{\frac{1}{n_m}}$. Now, since each factor of the sum above is algebraic over $\mathbb{Q}$, it follows that $\alpha$ is indeed algebraic over $\mathbb{Q}$ (because the set of algebraic numbers is a field). Suppose now that $K$ is a finite extension of $\mathbb{Q}$. Then, by Steinitz's theorem, there is $u \in K$ such that $K=\mathbb{Q}(u)$. Let $p(x)$ be the minimal polynomial of $u$, and let $n$ be $p$'s degree. Then, K is an extension os degree $n$. However, the minimal polynomial of $2^{\frac{1}{n+1}}$ has degree $n+1$, so K is an extension of degree at least $n+1$, contradicting the hypothesis that $K$ is an extension of degree $n$. So, $K$ is an infinite extension of $\mathbb{Q}$. My doubts: Can $\alpha$ be an infinite sum? If yes, can I use the same argument?","['extension-field', 'abstract-algebra', 'field-theory']"
+925809,$G \cong G \times H$ does not imply $H$ is trivial.,"In Aluffi's Algebra: Chapter $0$ there is a question asking to give a counterexample to the claim $G \cong G \times H$ implies $H$ is trivial. I am looking for a hint.  Obviously, at least one of $G$ or $H$ needs to be infinite.  Doing something with $\mathbb{Z}$ seems to be the natural thing.  I tried showing $\mathbb{Z} \cong \mathbb{Z} \times (\mathbb{Z}/2\mathbb{Z})$ by an ``interlacing evens and odds'' argument, but the ""odd + odd"" case killed my homomorphism... Am I on the right track? Thanks.","['group-theory', 'abstract-algebra']"
+925916,How can I find this limit involving thrice-iterated logarithm?,"$$\lim_{x \to 0}\dfrac{\ln \ln \ln
+ \left[x+(1+x)^{(1+x)^{1/x}/x}\right]+x\left[1-\dfrac{1}{e^{e+1}}\right]}{x^2}$$ How can I find the limit of this question? Any hint. Thank you so much.","['logarithms', 'calculus', 'limits']"
+925979,How can I construct a specific sigmoid function?,"The simple sigmoid function $$f(x)=1/(1+e^{−x})$$ approaches zero as x tends to negative infinity, and approaches $1$ as x tends to positive infinity. But I want to set $1$ and $20$ instead of $0$ and $1$. Simply my sigmoid function should behave like this:
+$$\lim_{x \to +\infty} f(x) = 20,$$ and $$ \lim_{x \to -\infty} f(x) = 1.$$","['sequences-and-series', 'calculus', 'functions', 'asymptotics', 'limits']"
+926046,Fundamental group of the complement of an eight shape,"What is $\pi_1(\mathbb{R}^3 \setminus (S^1 \vee S^1))$? I would say that the space deformation retracts to a sphere $S^2$ surrounding the missing eight with two sticks stuck in the two loops of the eight. Those sticks can each be closed to form a loop, so that the space would be homotopy equivalent to $S^1 \vee S^2 \vee S^1$, yielding $\mathbb{Z} \ast \mathbb{Z}$ as the fundamental group. Is this correct?","['general-topology', 'algebraic-topology', 'fundamental-groups']"
+926050,A Lagrange Multiplier Problem : How to deal with this case when $b< 8$,"I was trying to solve the following problem of several variables calculus given in my class.I am stuck in a particular case of the problem.Please help me to solve the problem.Thnx in advance. Find the shortest distance from $(0,b)$ to the parabola $x^2-16y=0$ using Langrange multiplier method. What I done so far: To minimise $f(x,y)=x^2+(y-b)^2$ subject to $g(x,y)=0$ where $g(x,y)=x^2-16y$ I formed $F(x,y)= x^2+(y-b)^2+\lambda (x^2-16y)$ and thus solving for stationary points using $$F_x=2x(\lambda+1)=0,F_y=2(y-b)-16\lambda=0,x^2-16y=0$$ I got $(0,0)$ is a staionary point and when $\lambda=1$ staionary points are $(\pm4\sqrt{b-8},b-8)$ provided $b\ge8$ In this case ($b\ge8$) minimum value of $f$ can easily checked by putting those points in $f(x,y)$ My problem is that what will happen if $b< 8$ ?How should I deal with this case?
+I am totally stuck here. Please help me. Thnx again.","['multivariable-calculus', 'calculus', 'lagrange-multiplier']"
+926076,"Monotonicity of the sequences $\left(1+\frac1n\right)^n$, $\left(1-\frac1n\right)^n$ and $\left(1+\frac1n\right)^{n+1}$","I am working on the following sequences. $$x_n=\left(1+\frac1n\right)^n \qquad z_n=\left(1-\frac1n\right)^n \qquad y_n=\left(1+\frac1n\right)^{n+1}$$ I am trying to prove that $x_n$ and $z_n$ are increasing sequences and $y_n$ is a decreasing sequence. I proved that $x_n$ is increasing using the binomial theorem: as $n$ increases, the number of terms in my sum increases. Also, for $k\ge1$ and $n\ge k$ the $(k+1)th$ term in our sum is $$\frac{n(n-1)(n-2)\cdots(n-k+1)}{k!}\left(\frac{1}{n}\right)^k$$
+which can be rewritten as $$\frac{1}{k!}\left[\left(1-\frac1n\right)\left(1-\frac2n\right)\cdots\left(1-\frac{k-1}{n}\right)\right]\qquad(1)$$
+Here, the product in $(1)$ increases as $n$ increases. I am in trouble proving that $z_n$ and $y_n$ are decreasing. Could you suggest me an approach to this problem please? Thank you. Edit Since I obtained an answer for $y_n$, I kept working on $z_n$. I took the continuous function $z(x)=(1-\frac1x)^x=\exp \left\{x\log(1-\frac1x)\right\}$. Then I derived it to obtain $$z'(x)=\exp\left\{x\log(1-\frac1x)\right\}\left[\log(1-\frac1x)+\frac{x}{(x-1)/x}\cdot\frac{1}{x^2}\right]$$
+But $$z'(x)=\exp\left\{x\log(1-\frac1x)\right\}\left[\log(1-\frac1x)+\frac{1}{x-1}\right]$$ $e^a$ is always positive. Hence the sign of $z'(x)$ depends on what we have between square brackets, which is greater than zero (I don't know how to prove it; I used a plot) for $x\ge1$.  Hence $z_n$ is increasing.","['sequences-and-series', 'real-analysis']"
+926123,Proving $\sum_{k=1}^{\infty}\frac{\sin kx}{x}=\frac{\pi-x}{2}$ for $0\le x\le 2\pi$,"Refer to this OP: Sign of a series , we have the following equation \begin{equation}
+\sum_{k=1}^{\infty}\frac{\sin kx}{k}=\frac{\pi-x}{2}
+\end{equation} defined for $0\le x\le 2\pi$. Here is my attempt to prove it:
+\begin{align}
+\sum_{k=1}^{\infty}\frac{\sin kx}{k}&=\sum_{k=1}^{\infty}\int\cos kx\,dx\\
+&=\int\left(\sum_{k=1}^{\infty}\cos kx\right)\,dx\\
+&=\int\left(\sum_{k=1}^{\infty}\frac{e^{ikx}+e^{-ikx}}{2}\right)\,dx\\
+&=\frac{1}{2}\int\left(\frac{1}{1-e^{ix}}+\frac{1}{1-e^{-ix}}\right)\,dx\\
+&=\frac{1}{2}x+C
+\end{align}
+Here is the problem: To get the value of $C$, let $x=0$ and I get $C=0$, but if I let $x=\pi$ I get $C=-\frac{\pi}{2}$. Similarly, if I I let $x=2\pi$ I get $C=-\pi$. Where am I doing it wrongly? Could you please point out my mistake and guide me to prove the above equation? Any help would be greatly appreciated. Thank you.","['sequences-and-series', 'fourier-series', 'calculus', 'proof-verification']"
+926124,Urysohn's lemma with Lipschitz functions,"In a complete and separable metric space $(X,\mathrm{d})$ , let an open set $U$ and a closed set $K\subset U$ be given. Is it possible to find a Lipschitz function $f$ such that $f|_K=1$ and $f|_{X\setminus U}=0\,$ ? By Urysohn's Lemma we know that a complete metric space is normal (i.e. the closed sets are separable by neighbourhoods), and as such, the closed sets are separable by continuous functions. So a continuous function exists but I don't see anything more than that.","['general-topology', 'lipschitz-functions', 'holder-spaces', 'functional-analysis']"
+926139,Closure of the product of two sets vs product of their closures.,"This exercise is from Chapter 2, Section 17, number 9, pag. 101, from Munkres's Topology. Let $A \subset X$ and $B \subset Y$. Show that in the space $X \times Y$, we have $\overline {A \times B} = \overline A \times \overline B$.",['general-topology']
+926180,etale neighborhoods,"I've read that quasi-compact etale morphisms of schemes over a not necessarily algebraiclly closed field $F$ (I'm happy to take $F$ a field of char $0$) are the algebraic analogs of local diffeomorphisms. I also know that etale morphisms are open maps, but not usually open immersions (for this, we also need ""radiciality""). Now, my question concerns the notion of etale neighborhoods . Let $f : Y \to X$ be a quasi-compact etale map of $F$-schemes (I'm happy to take $X,Y$ to be smooth and proper and $X$ also geometrically connected). Let $y \in Y$ and let $x = f(y) \in X$ and let $\phi: (S,y) \to (X,x)$ be an etale neighborhood. My intuition tells me that, since the word ""neighborhood"" is there, I should be able to make $S$ small enough (but still an etale neighborhood) such that $\phi$ is an open immersion . Is this intuition correct? If not, how can we get something resembling a local isomorphism between $S$ and $X$?","['arithmetic-geometry', 'algebraic-geometry', 'schemes']"
+926186,$f$ is uniformly continuous $\Leftrightarrow$ $\mathrm{Re}f$ and $\mathrm{Im}f$ are uniformly continuous.,"Let $f$ be a complex-valued function. In many  complex analysis textbook, I have just found that $f$ is continuous $\Leftrightarrow$ $\mathrm{Re}f$ and $\mathrm{Im}f$ are continuous. I wonder that whether $f$ is uniformly continuous $\Leftrightarrow$ $\mathrm{Re}f$ and $\mathrm{Im}f$ are uniformly continuous. Do you know any book contain this statement? I would very much appreciate any help or guidance you are able to give me.","['complex-analysis', 'uniform-continuity']"
+926190,"nonlinear, nonhomogeneous ODE 1. order","Solve $x'(t)-\dfrac{a}{t}x(t)=b(t),~a=const,~x(0)=0$. Homogeneous Solution: $\dfrac{x'(t)}{x(t)}=\dfrac{a}{t}\quad|\int\\
+\ln(x(t))=a\ln(t)+c,~c=const\quad| e\\
+x(t)=t^ae^c$ Is that correct? No clue how to figure the particular solution or the general solution respectively. edit: Thanks  @agha for the helpfull comment. I try to write down the entire solution. With a slighty different Noation. Let $t\in[0,t_f]$
+$$(1)~ x'(t) - \dfrac{a}{t}x(t) = b(t)$$
+$$(2)~ x_h(t) = Kt^a$$ Particular Solution:
+$$x_s(t) = c(t)t^a~\text{with}~ x'(t) = c'(t)t^a + c(t)at^{a-1}$$ Substitute in (1)
+$$c'(t)t^a + c(t)at^{a-1} - \dfrac{a}{t}c(t)t^a = b(t)$$
+$$c'(t) = \dfrac{b(t)}{t^a}\quad |\int{}$$
+$$c(t) = \int{\dfrac{b(t)}{t^a}dt} + K'$$ It follows for $x_s(t)$
+$$(3)~ x_s(t) = \left(\int{\dfrac{b(t)}{t^a}dt} + K'\right)t^a$$ The general solution reads (2)+(3), i.e.
+$$(4)~ x(t) = Kt^a + \left(\int{\dfrac{b(t)}{t^a}dt} + K'\right)t^a = \left(\int{\dfrac{b(t)}{t^a}dt} + K''\right)t^a\\
+\text{where}~ K''=K+K'$$ With the initial conditon $x(0)=0$ we might identify $K''$ 
+$$(5)~ x(0) = 0 = \int{\dfrac{b(t)}{t^a}dt}\bigg|_{t_f} + K''\\
+K'' = -\int{\dfrac{b(t)}{t^a}dt}\bigg|_{t_f}$$ Thus the solution reads:
+$$(6)~x(t) = \left(\int{\dfrac{b(t)}{t^a}dt} - \int{\dfrac{b(t)}{t^a}dt}\bigg|_{t_f}\right)t^a$$ Am I right?",['ordinary-differential-equations']

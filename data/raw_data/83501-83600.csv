@@ -1,0 +1,436 @@
+question_id,title,body,tags
+1090570,Factorise a matrix using the factor theorem,"Can someone check this please?
+ $$
+\begin{vmatrix}
+x&y&z\\
+x^2&y^2&z^2\\
+x^3&y^3&z^3\\
+\end{vmatrix}$$
+$$C_2=C_2-C_1\implies\quad
+\begin{vmatrix}
+x&y-x&z\\
+x^2&y^2-x^2&z^2\\
+x^3&y^3-x^3&z^3\\
+\end{vmatrix}$$
+$$(y-x)
+\begin{vmatrix}
+x&1&z\\
+x^2&y+x&z^2\\
+x^3&y^2+xy+x^2&z^3\\
+\end{vmatrix}$$
+$$(y-x)(z-x)
+\begin{vmatrix}
+x&1&1\\
+x^2&y+x&z+x\\
+x^3&y^2+xy+x^2&z^2+xz+x^2\\
+\end{vmatrix}$$
+$$R_2=R_2-xR_1\implies\quad
+(y-x)(z-x)
+\begin{vmatrix}
+x&1&1\\
+0&y&z\\
+x^3&y^2+xy+x^2&z^2+xz+x^2\\
+\end{vmatrix}$$
+$$R_3=R_3-x^2R_1\implies\quad
+(y-x)(z-x)
+\begin{vmatrix}
+x&1&1\\
+0&y&z\\
+0&y^2+xy&z^2+xz\\
+\end{vmatrix}$$
+factor $x$$$\implies\quad
+x(y-x)(z-x)
+\begin{vmatrix}
+1&1&1\\
+0&y&z\\
+0&y^2+xy&z^2+xz\\
+\end{vmatrix}$$
+$$\implies\quad x(y-x)(z-x)(yz^2-zy^2)$$
+$$\implies\quad xyz(y-x)(z-x)(z-y)$$
+Also I'd like practical tips on using the factor theorem for these types of questions. My understanding is that the determinant is $f(x,y,z)$ so if we hold $y$ and $z$ constant we could apply it somehow to $f(x)$ alone. I'm not that great spotting difference of squares etc and want a more fail safe alternative. Thanks in advance.","['matrices', 'factoring']"
+1090573,Show that ${n \choose k}\leq n^k$,"Let $n$ et $k\in \mathbb{N}$ such that : $k\leq n $ Show that : $${n \choose k}\leq n^{k}$$ My thoughts: note that  for all $\ k\leq n$ : $${n \choose k}=\frac{n!}{k!(n-k)!}$$ To prove that the following statement, which we will call $P(n)$ , holds for all natural numbers n: $${n \choose k}\leq n^{k}$$ so my proof that P(n) is true for each natural number n proceeds as follows: Basis: Show that the statement holds for $n=0$ . P( $0$ ) amounts to the statement: $${0 \choose 0}=\frac{0!}{0!(0-0)!}\leq 0^{0},\quad (k\leq 0 \implies k=0)$$ $$0\leq 0 $$ the statement is true for $n=0$ . Thus it has been shown that P( $0$ ) holds. Inductive step: Show that if P( $k$ ) holds, then also P( ${k+1}$ ) holds. This can be done as follows. Assume P( $n$ ) holds. It must then be shown that P( $n+1$ ) holds, that is: $${{n+1} \choose k}\leq {(n+1)}^{k}$$ note that $$\binom{n+1}{k+1} = \frac{(n+1)}{(k+1)}\binom n k$$ $$\binom{n+1}{k} = \frac{(n+1)}{(k)}\binom n {k-1}$$ Using the induction hypothesis that P( $n$ ) holds, the last expression can be rewritten to: $$\binom{n+1}{k} = \frac{(n+1)}{(k)}\binom n {k-1}\leq  \frac{(n+1)}{(k)}{(n)}^{k-1}$$ i'm stuch here thereby i can't showing that indeed P( $n+1$ ) holds. Am i right and is there others ways to prove it Edit: Basis: Show that the statement holds for $n=0$ . P( $0$ ) amounts to the statement: $${0 \choose 0}=\frac{0!}{0!(0-0)!}\leq 0^{0},\quad (k\leq 0 \implies k=0)$$ $$0\leq 0 $$ the statement is true for $n=0$ . Thus it has been shown that P( $0$ ) holds. Inductive step: Show that if P( $k$ ) holds, then also P( ${k+1}$ ) holds. This can be done as follows. Assume P( $n$ ) holds. It must then be shown that P( $n+1$ ) holds, that is: $${{n+1} \choose k}\leq {(n+1)}^{k}$$ note that $\displaystyle{n+1 \choose k}={n \choose k-1}+{n \choose k}$ Using the induction hypothesis that P( $n$ ) holds, the last expression can be rewritten to: $$\displaystyle{n+1 \choose k}\le n^{k-1}+n^k=(1+n)n^{k-1} \le (n+1)^k$$ though for completeness you might add that $${n+1 \choose 0}=1\le (n+1)^0$$ and $${n+1 \choose n+1}=1\le (n+1)^{n+1}$$ . because the main part does not quite work for $$\displaystyle {n+1 \choose 0}={n \choose -1}+{n \choose 0}$$ or for $$\displaystyle{n+1 \choose n+1}={n \choose n}+{n \choose n+1}$$ the inductive hypothesis does not cover either $\displaystyle{n \choose -1}$ or $\displaystyle{n \choose n+1}.$ Is my reasoning correct","['induction', 'inequality', 'binomial-coefficients', 'combinatorics']"
+1090590,Transitive set - Example,"According to my notes, a set $A$ is called transitive if the elements of its elements are elements of $A$.
+For example,  the set of natural numbers $\omega$ is a transitive set. Also, if $n \in \omega$ then $n$ is a transitive set since $n=\{0,1,2, \dots, n-1 \}$ and if we take a $k \in n$ then $k=\{0,1,2, \dots, k-1 \}$. Could you give me an example of an other transitive set? Or can a transitive set only contain natural numbers?",['elementary-set-theory']
+1090607,A group which is $\mathbb{Z}$-by-finite but not finite-by-$\mathbb{Z}$,"I found a lemma which states: If a group $G$ is finite-by-$\mathbb{Z}$, then $G$ is
+  $\mathbb{Z}$-by-finite. I was wondering if the converse is true, i.e. is it true that if a group G is $\mathbb{Z}$-by-finite, it's also finite-by-$\mathbb{Z}$? I suspect not, but as I'm only starting to begin to understand the theory, I can't come up with a counterexample. Thanks in advance! EDIT: A brief explanation of $\mathcal{P}$-by-$\mathcal{Q}$:  Let $\mathcal{P}$ and $\mathcal{Q}$ be 2 properties of groups. Then a group $G$ is $\mathcal{P}$-by-$\mathcal{Q}$ if there exist a normal subgroup $N$ of $G$ such that $N$ has property $\mathcal{P}$ and $G/N$ has property $\mathcal{Q}$. The line ""has property $\mathbb{Z}$"" means: being isomorphic to the infinite cyclic group.","['group-theory', 'abstract-algebra']"
+1090620,How do you find the limit of $ \lim_{y\to0} \frac{x e^{-x^2/y^2}}{y^2}$,I don't know how to solve this limit $$ \lim_{y\to0} \frac{x e^ { \frac{-x^2}{y^2}}}{y^2}$$ $\frac{1}{e^ { \frac{x^2}{y^2}}} \to 0$ but $\frac{x}{y^2} \to +\infty$ This limit presents the indeterminate form $0 \infty$ ?,"['calculus', 'limits']"
+1090654,Solve complex equation with exponential,"I have to solve: $$e^{3z}+3ie^{2z}-ie^z+3=0$$ My attempt: Let $0\ne x:=e^z$. Then we can rewrite our equation as: $$x^3+3ix^2-ix+3=0$$
+$$ix^2(-ix+3)+(-ix+3)=0$$
+$$(-ix+3)(ix^2+1)=0$$ So $x\in \{-3i,\sqrt{i},-\sqrt{i}\}$ Now going back to our subtitution we have:
+$$e^z=-3i \lor e^z=\sqrt{i} \lor e^z=-\sqrt{i}$$ In the first case: $z=\ln3+i(\frac{-\pi}{2}+2k\pi)$ where $k\in\mathbb{Z}$ In the second case: $z=i(\frac{\pi}{4}+2l\pi)$ where $l\in\mathbb{Z}$ In the third case: $z=i(\frac{- 3\pi}{4}+2m\pi)$ where $m\in\mathbb{Z}$ So those above are solutions for our initial equation?","['complex-numbers', 'complex-analysis']"
+1090663,"Does $g'$ need to be continuous for $g(x_0) = 0$, $g'(x_0) \neq 0$ to imply $g$ changes sign in a neighborhood of $x_0$","The following theorem holds: Theorem: Let $g:\mathcal{A} \rightarrow \mathbb{R}$ be differentiable and let $x_0 \in \mathcal{A} $. If $g(x_0)=0, \; g'(x_0)\neq 0$ then $g$ changes sign at a neighbourhood of $x_0$. Questions: Do we need $g'$ to be continous on the interval $\mathcal{A}$? If yes, then give a counter example of a $g$ function that satisfies all the hypothesis but not the conclusion. I suspect that $g'$ should be continous, although I cannot find a counter example. I know a proof of the theorem which come from MVT (mean value theorem) and Taylor , but I don't know if we do need $g'$ to be continuous.","['calculus', 'derivatives', 'real-analysis', 'analysis']"
+1090682,How prove this $\frac{af(a)+bf(b)}{a+b}\ge f(a+b)$,"Assume that 
+$f(x)$ has two derivatives  on $(0,2)$ and $0<a<b<a+b<2$. I have to prove that, if $f(a)\ge f(a+b)$ and $f''(x)\le 0$, then: $$\dfrac{af(a)+bf(b)}{a+b}\ge f(a+b).$$ I think we also have $$f(b)\ge f(a+b)$$
+so
+$$af(a)+bf(b)\ge af(a+b)+bf(a+b)=(a+b)f(a+b)$$ But if this true, then we can prove it.","['convex-analysis', 'analysis']"
+1090733,Constructing the inverse of a number geometrically.,this picture: shows a way to construct the inverse of a number $a\ge1$. but how can we construct for a number that is less than 1? My try:: Q1: is my try correct? Q2: how to prove them both?,"['geometry', 'euclidean-geometry']"
+1090735,Proving that $\sum\limits_{n=2}^{\infty }\frac{\zeta (n)}{2^{n-1}}=\log(4)$,"$$\frac{\zeta (2)}{2}+\frac{\zeta (3)}{2^2}+\frac{\zeta (4)}{2^3}+\frac{\zeta (5)}{2^4}+...=\log(4)$$ I tried to prove it, but the problem with the odd zeta terms so that I don't have a function   which deals with odd terms.I used the WolframAlpha but it couldn't recognize the calculated value is $\log(4)$.","['sequences-and-series', 'zeta-functions']"
+1090736,A proof that the Cantor set is Perfect,"I found in a book a proof that the Cantor Set $\Delta$ is perfect, however I would like to know if ""my proof"" does the job in the same way. Theorem : The Cantor Set $\Delta$ is perfect. Proof: Let $x \in \Delta$ and fix $\epsilon > 0$. Then, we can take a $n_0 = n$ sufficiently large to have $\epsilon > 1/3^{n_0}$.
+  Thus, the interval $[a, b]$ where $x$ lies is a subset of $B_\epsilon
+> (x)$. Hence, by iterating the construction of the Cantor set for $N >
+ n_0$, we have intervals of length $1/3^N$ all included in $B_\epsilon
+ (x)$, but with only one of those intervals such that $x$ lies within. The intution behind the proof was that we should prove that for every $x$, if $x \in \Delta$, then for every $\epsilon >0$, $B_\epsilon (x) \setminus \{x\} \cap \Delta \neq \varnothing$. Now, I do not particularly like my reference to the $[a, b]$ interval that is not mentioned before. Moreover, here – by choosing a closed interval – I am trying to address all at once the case in which $x$ is an endpoint of one of the closed intervals that form $\Delta$. Finally, I did not close the proof with a statement like ""Thus, there are infinitely many points that differ from $x$ and that lie within $B_\epsilon (x)$. In the end, I am not completely sure if this can be considered a proof or not. The intuition is correct (I am kind of positive about it), but I am not sure if I was actually able to write down my intuition in a good way. As always any feedback is more than welcome. Thank you!","['proof-writing', 'proof-verification', 'real-analysis', 'cantor-set']"
+1090756,uniform continuity and equivalent sequences,"Let $X$ be a subset of $\mathbb{R}$, and let $f : X\to \mathbb{R}$ be a function. Then the following two statements are logically equivalent: (a) $f$ is uniformly continuous on $X$. (b) Whenever $(x_n)$ and $(y_n)$ are two equivalent sequences consisting of elements of $X$, the sequences $(f(x_n))$ and $(f(y_n))$ are also equivalent. Proof First I will state the definitions of uniform continuity and equivalent sequences. (Uniform continuity). Let $X$ be a subset of $\mathbb{R}$, and let $f : X\to\mathbb{R}$ be a function. We say that $f$ is uniformly continuous if, for every $\epsilon > 0$, there exists a $\delta > 0$ such that $f(x)$ and $f(x_0)$ are $\epsilon$-close whenever $x, x_0 \in X$ are to points in $X$ which are $\delta$-close. . (Equivalent sequences). Let $m$ be an integer, let $( a_n)_{n=m}^\infty$ and $( b_n)_{n=m}^\infty$ be two sequences of real numbers, and let $\epsilon> 0$ be given. We say that $( a_n)_{n=m}^\infty$ is $\epsilon$-close to $( b_n)_{n=m}^\infty$ iff $a_n$ is $\epsilon$-close to $b_n$ for each $n\geq m$. We say that $( a_n)$ is eventually $\epsilon$-close to $( b_n)$ iff there exists an $N\geq m$ such that the sequences $(a_n)$ and $(b_n)$ are $\epsilon$-close. Two sequences $(a_n)$ and $(b_n)$ are equivalent iff for each $\epsilon> 0$, the sequences $(a_n)$ and $(b_n)$ are eventually $\epsilon$-close. since $x\in X$ is an adherent point to $X$, then there exists a sequence $(a_n)$ such that $a_n \in X$ and converges to x. since f is continuous, then the sequence $(f(a_n))$ converges to $f(x)$. Let $(b_n)$  be a sequence equivalent to $(a_n)$. Therefore, $\forall \epsilon>0, \exists N\text{ such that } |a_n-b_n|\leq\epsilon$. choose $\epsilon=\delta$, then we have $|a_n-b_n|\leq\delta \forall n\geq N$ Hence, $|f(a_n)-f(b_n)|\leq\epsilon\text{   }, \forall n\geq N$ hence, $(f(a_n))$ and  $(f(b_n))$ are equivalent. Is my proof correct?","['epsilon-delta', 'proof-verification', 'real-analysis', 'analysis', 'uniform-continuity']"
+1090761,Integral of a simple function,"The definition of a simple function is that let ($\Omega$,F, $\mu$) be a measure space and for let $\Omega$ be written as disjoint union of $A_i$'s where $i=0,1,..,n$ .
+A function $f$ from $\Omega$ to R is called simple if there exist real constants $\alpha_i$'s such that $f$ can be written in the form $$f=\sum^n_{i=0} \alpha_i \space \chi_{A_i}$$ for all values of $\omega $'s in $\Omega$ where $\chi_{A_i}$ is the indicator function. The integral of $f$ over a measurable set $E$ is defined as $\sum \alpha _i \cdot\mu(E ∩A_i)$ I have two questions: Do we use the same constants $\alpha _i$? How can we take the integral of a function by dividing the domain into finite ""pieces"" $A_i$ ?","['lebesgue-integral', 'measure-theory', 'real-analysis']"
+1090766,Least Impossible Subset Sum,Given a set A which contains natural numbers from 1 to N. Also given another set B which contains p natural numbers between 1 to N. We have to find out the least sum of subset which is not possible in the set A - B One way to do so is to apply subset sum problem on set A - B . Is there any faster method which uses set B to determine the least subset sum that is not possible?,"['discrete-mathematics', 'algorithms', 'arithmetic-combinatorics']"
+1090772,"Difference between local, global and maximum solutions of a differential equation?","Unfortunately I can't find a good answer in 3 different books I have, and I dont get the difference, nor could I find any explanation online for this. Can someone be so kind to explain it to me or point me to the right direction?
+Thank you!",['ordinary-differential-equations']
+1090782,How to solve $\tan x =\sin(x+45^{\circ})$?,How do I solve $\tan x = \sin(x +45^{\circ})$? This is how far I have come: $\sqrt{2}\sin x = \sin x\cdot\cos x + \cos^2 x$,['trigonometry']
+1090801,Showing irrationality of $\zeta(k)$ for some $k$ without calculating the value.,"For $s\in (1,\infty)$ let $\zeta(s):=\sum_{n=1}^\infty \dfrac 1{n^s}$. Is there a way to show that $\zeta(2k)$ is irrational for some integer $k\geq 1$ without finding explicit formulae?","['prime-numbers', 'sequences-and-series', 'number-theory', 'analysis']"
+1090814,Integral inequality given the bounds for derivative,"Let $f:[0,1]\rightarrow \mathbb{R}$ be a continuously differentiable function such that $$\int_0^1 f(x) \, dx=0$$ and $m \leq f'(x) \leq M$ on $(0,1)$. Prove that $$\frac{m}{12} \leq \int_0^1 xf(x) \, dx \leq \frac{M}{12}.$$ This is just the last bonus question in our test yesterday. I wasn't able to answer of course. Though I did verify it by letting $\displaystyle f(x)= \left( x−\frac{1}{2} \right)^3$ for which I found $0\le f′(x)\le 3/4$ on $(0,1)$ and $$0 \le \int^1_0 xf(x) \, dx=\frac{1}{80} \le \frac{3}{48}.$$ I do not know how to prove this.","['definite-integrals', 'inequality', 'derivatives', 'real-analysis']"
+1090818,estimating a particular analytic function on a bounded sector.,"Let $f(z)$ be an analytic function on $C^+=\{\Re z>0\}$, and we have the following (weaker) estimates
+$$
+|f(re^{i\theta},a)|\leq C (r\cos\theta)^{-n}, ~~~r>0,-\frac{\pi}{2}<\theta<\frac{\pi}{2},
+$$
+for some constant $C$ and $n>0$. Furthermore, on the positive real line, and for any fixed $a>0$, we have the following (stronger) estimates
+$$
+|f(r,a)|\leq C \frac{r}{a^{n+1}},~~~0<r\leq a,
+$$
+where $C$ is a constant independent with $a$. My question is can we also get the following improved estimates of $f$
+$$
+|f(re^{i\theta},a)|\leq C \frac{r}{a^{n+1}},~~~0<r< a,~~-\frac{\pi}{2}<\theta<\frac{\pi}{2}?
+$$
+If not, can you give a counterexample to this?
+The motivation of this question comes from estimating the Poisson semigroup $e^{-z\sqrt{-\Delta}}$ for small $|z|$ With  $\Re z>0$.To be more precise, if we let $K(z,x,y)$ be its kernel, then $K$ satisfies the estimates above with $a=|x-y|$. Although we can compute the kernel explicitly (for all $\Re z>0$ ) by using Fourier transform ($K(z,x,y)=\frac{z}{(z^2+a^2)^{n+1}}$,a=|x-y|), I think one may also obtain this by combining the kernel estimates on the positive real line (the second estimate above) with a weaker estimates on the right half plane (the first estimate above) and some analytic function theory. I don't know theorems like Hadamard's Three line lemma or its variants  would be useful here.
+Thanks in advance for any comment.","['interpolation', 'complex-analysis', 'analysis']"
+1090827,The integral of dv,"I'm solving the homogeneous differential equation $$\frac{dy}{dx} = \dfrac{x + y}{x}$$ After substituting $y = vx$ and $\dfrac{dy}{dx} = v + x\cdot \dfrac{dv}{dx}$ (Product rule of $y = vx$), we have: $v + x\cdot \frac{dv}{dx} = 1 + v.\quad$         Cancelling gives, $x\cdot \frac{dv}{dx} = 1.\quad$        Rearranging gives, $$\int\,dv =\int \frac 1x\, dx$$ What is the integral of $dv$? I initially thought it was $+c$ since there is no value under the integral, but elsewhere I have seen the answer as $v + c$. I'm looking for some clarification on this. Many thanks, Adam",['ordinary-differential-equations']
+1090845,What is the algebraic tangent cone really?,"Let $A$ be a (commutative unital) ring, let $\mathfrak{a} \subseteq A$ be an ideal, and let $B = A / \mathfrak{a}$. Then we have a descending filtration
+$$\cdots \subseteq \mathfrak{a}^3 \subseteq \mathfrak{a}^2 \subseteq \mathfrak{a} \subseteq A$$
+and the associated graded module
+$$C = B \oplus \mathfrak{a} / \mathfrak{a}^2 \oplus \mathfrak{a}^2 / \mathfrak{a}^3 \oplus \cdots$$
+is a graded $B$-algebra in an evident way. In the case where $A$ is a local ring and $I$ is the unique maximal ideal, this is the definition of the tangent cone. What about the general case – does the construction still have any geometric significance? Here are some special cases: Suppose $\mathfrak{a} = 0$. Then $C \cong B$ (as $B$-algebras). Suppose $A$ is an integral domain and $\mathfrak{a}$ is a non-zero principal ideal. Then each $\mathfrak{a}^n$ is also a non-zero principal ideal, and it is not hard to see that $C$ is isomorphic (as a $B$-algebra) to the polynomial algebra $B [t]$. Suppose $A \to B$ admits a section (as a ring homomorphism), so that $A$ is a $B$-algebra and $A \cong B \oplus \mathfrak{a}$ as $B$-modules. Then $a \mapsto 1 \otimes \mathrm{d} a$ defines an isomorphism $\mathfrak{a} / \mathfrak{a}^2 \to B \otimes_A \Omega^1_{A \mid B}$, therefore $C$ is a quotient of the symmetric $B$-algebra on $B \otimes_A \Omega^1_{A \mid B}$. Thus, it seems to me that what we get is some kind of relative tangent cone.","['commutative-algebra', 'algebraic-geometry', 'schemes']"
+1090865,primitive element for a Hilbert class field,I am trying to solve the following problem which I found in a book. Find a primitive element for the Hilbert class field for $\Bbb{Q}(\sqrt{-17})$? Any hints..,"['algebraic-number-theory', 'number-theory']"
+1090875,Riemann's explicit formula for $\pi(x)$,"Riemann's explicit formula $J(x)=\mathrm{Li}(x)-\sum_{\Im\varrho>0}\left(\mathrm{Li}(x^\varrho)+\mathrm{Li}(x^{1-\varrho})\right)+\int_x^\infty\frac{\mathrm{d}t}{t(t^2-1)\log t}-\log2,$ where $\varrho$ are the non-trivial zeta zeros, is an expression for $J(x)$, the prime counting function that goes up by $1/k$ for every $k$th power of a prime. For theoretical purposes, this is fine since $J(x)=\Theta(\pi(x))$ and we can recover $\pi(x)$ by Möbius inversion $\pi(x)=\sum_{n\ge1}\frac{\mu(n)}{n}J(x^{1/n}).$ This is the reason why Riemann's suggestion $R(x)=\sum_{n\ge1}\frac{\mu(n)}{n}\mathrm{Li}(x^{1/n})$ is a good candidate for an approximation to $\pi(x)$, and indeed performs well empirically (though it is not really superior by any general measure). My question is: Can we plug the explicit formula for $\mathrm{Li}(x)$ into the inversion formula for $\pi(x)$ and evaluate term-wise? This would lead to $\pi(x)=R(x)-\sum_{\varrho}R(x^\varrho)+\sum_{n\ge1}\frac{\mu(n)}{n}\int_{x^{1/n}}^\infty\frac{\mathrm{d}t}{t(t^2-1)\log t}-\log2\sum_{n\ge1}\frac{\mu(n)}{n}.$ The sum $\sum\frac{\mu(n)}{n}$ actually evaluates to $0$, so the last term would vanish. But since the sum over the zeta zeros converges only conditionally, I am not sure if swapping the order of summation in the second term would be justified and correct. What's more, the lower bound $x^{1/n}$ for the integral converges to $1$ (for a fixed $x$), where the integrand has a pole, hence the integral would blow up to infinity (quicker than the $1/n$ can fix), and so this sum would not converge (as far as I can see and my calculations support). Do I make a mistake in my logic, or is term-wise evaluation indeed not allowed here? Another approach is of course to argue that the inversion sum is actually finite, since $J(x)=0$ for $x<2$ by construction, so we won't run into the convergence problem (but will neither have the convenience that the $\log2$ term vanishes). Would we just adjust the definition of $R(x)$ and the argument would go through? (I would still like to know what goes wrong in my initial train of thoughts with the infinite sum.) I couldn't find a reference for this question, so I hope someone can help me with that.","['convergence-divergence', 'riemann-zeta', 'number-theory', 'analytic-number-theory', 'prime-numbers']"
+1090892,"Let $n\geq 1$ and $\alpha \in [0,1)$ show that : $1\le \bigl(1+\frac{\alpha}{n}\bigr)^{n}\le \frac{1}{1-\alpha}$","Let $n\geq 1$ and $\alpha \in [0,1)$ show that :
+  $$1\le \left(1+\dfrac{\alpha}{n}\right)^{n}\le \dfrac{1}{1-\alpha}$$ This question is related to that one Show that ${n \choose k}\leq n^k$ My thoughts: To prove that the following statement, which we will call P(n), holds for all natural numbers n: $$1\le \left(1+\dfrac{\alpha}{n}\right)^{n}\le \dfrac{1}{1-\alpha}$$ so my proof that P($n$) is true for each natural number $n$ proceeds as follows: Basis: Show that the statement holds for $n=1$. P($1$) amounts to the statement: $$1\le \left(1+\dfrac{\alpha}{1}\right)^{1}\le \dfrac{1}{1-\alpha}$$ $$\iff$$ $$1\le \left(1-{\alpha}^2\right)\le 1$$ since $\alpha \in [0,1) \implies 0\le \alpha < 1 \implies 0\le \alpha^2 < 1 \implies -1 \le -\alpha^2 < 0 \implies 0 \le 1-\alpha^2 < 1$ then the statement is true for $n=1$. Thus it has been shown that P($1$) holds Inductive step: Show that if P($n$) holds, then also P($n+1$) holds. This can be done as follows. Assume P($n$) holds. It must then be shown that P($n+1$) holds, that is: $$1\le \left(1+\dfrac{\alpha}{n+1}\right)^{n+1}\le \dfrac{1}{1-\alpha}$$ I can't manage is my reasoning correct and is there other ways to prove that Edit since there is probleme in the case of P(1) becuase i shouldn't write $1\le \left(1-{\alpha}^2\right)\le 1.$ since  the left inequality is not true. i have to break it in two separate case and do it then we ve : For $\left(1+\dfrac{\alpha}{n}\right)^{n}\le \dfrac{1}{1-\alpha}$ To prove that the following statement, which we will call P(n), holds for all natural numbers n: $$\left(1+\dfrac{\alpha}{n}\right)^{n}\le \dfrac{1}{1-\alpha}$$ so my proof that P($n$) is true for each natural number $n$ proceeds as follows: Basis: Show that the statement holds for $n=1$. P($1$) amounts to the statement: $\left(1+\dfrac{\alpha}{1}\right)^{1}\le \dfrac{1}{1-\alpha}$
+since $\alpha \in [0,1) \implies 0\le \alpha < 1 \implies 0\le \alpha^2 < 1 \implies -1 \le -\alpha^2 < 0 \implies 0 \le 1-\alpha^2 < 1$ then the statement is true for $n=1$. Thus it has been shown that P($1$) holds Inductive step: Show that if P($n$) holds, then also P($n+1$) holds. This can be done as follows. Assume P($n$) holds. It must then be shown that P($n+1$) holds, that is: $$\left(1+\dfrac{\alpha}{n+1}\right)^{n+1}\le \dfrac{1}{1-\alpha}$$ i can't manage For $1\le \left(1+\dfrac{\alpha}{n}\right)^{n}$","['inequality', 'calculus', 'real-analysis', 'analysis']"
+1090987,"Is every prime element of a commutative ring ""veryprime""?","Let $R$ denote a commutative ring. Define a function $$\| : R \times R \rightarrow \mathbb{N} \cup \{\infty\}$$ such that $a \| b$ is the number of times $a$ divides $b$ (and include $0$ in $\mathbb{N}$ to allow for the case where $a$ does not divide $b$). Explicitly: $a \| b$ is the maximum $k \in \mathbb{N}$ satisfying $a^k \mid b$, as long as the set of all $k \in \mathbb{N}$ such that $a^k \mid b$ is bounded. $a \| b=\infty$ otherwise. Then in general, we have $$d \| ab \geq (d \| a) + (d \| b).$$ Call $p \in R$ veryprime iff $p$ is a non-zero, non-unit that satisfies $$p \| ab = (p \| a) + (p \| b).$$ It follows that if $p$ is veryprime, then $p$ is prime. ( Proof. Suppose that $p$ is veryprime and that $p \mid ab$. Then $(p \| ab) \geq 1$. So $(p \| a) + (p \| b) \geq 1$. Hence $(p \| a) \geq 1$ or $(p \| b) \geq 1$. Hence $p \mid a$ or $p \mid b$.) Question. Is every prime element of a commutative ring necessarily veryprime? If not, is veryprime equivalent to a more familiar condition?","['commutative-algebra', 'ring-theory', 'abstract-algebra']"
+1090988,Find the volume of the region of a sphere bounded by two planes,"Calculate the volume of a sphere $x^2+y^2+z^2=R^2$ which is bounded by $z=a$ and $z=b$, where $0\leq a<b<R$ using double integral. I can imagine the picture but I don't know how to set it up.","['multivariable-calculus', 'calculus', 'integration', 'real-analysis']"
+1091007,"Why $A=\{1,2\}$ is different of $B=\{\{1,2\}\}$?","If $A=\{1,2\}$ and $B=\{\{1,2\}\}$, why aren't they equals? I'm really confused with situations where sets are contained in itselves.",['elementary-set-theory']
+1091034,Green's function for Bessel ODE,"I want to compute the Green's function for the Bessel ODE. Its from Arfken (7th ed, Problem # 10.1.5) $ x^2y''(x) + xy'(x) + (k^2x^2 - 1)y(x) = 0 $, subject to the boundary condition, $y(0) = 0$, and $y(1) = 0$. The solution are $J_1(kx)$ and $Y_1(kx)$. But how can I combine to form a linear combination to satisfy the boundary condition? And then compute the Wronskian, for computing A?",['ordinary-differential-equations']
+1091097,Partial derivative notation,"I still have a little problem with notation for partial derivatives. Let $$
+f(x,y) = x^2y
+$$ What do you think that this should equal to? $$
+\frac{\partial f}{\partial x}(y,x) =\, ?
+$$ There are two options $2yx$ or $y^2$ . Do you think that following is the same? $$
+\frac{\partial f(y,x)}{\partial x}= \,?
+$$ And now take substitution $g(x,y)=f(y,x)$ . What is following? $$
+\frac{\partial g}{\partial x}(x,y)=\,?
+$$ I would love to hear your opinions? Based on DanielV comment, I need answer for things like these $$
+\frac{\partial f(y,z)}{\partial z}
+$$ $$
+\frac{\partial f(f(y,z),z)}{\partial z}
+$$ I get constantly confused during physics lectures because of this :(","['notation', 'calculus']"
+1091108,Divisibility of polynomial,"Prove that: 
+  $(x^2+x+1) \mid (x^{6n+2}+x^{3n+1}+1) $ and 
+  $(x^2+x+1) \mid (x^{6n+4}+x^{3n+2}+1) $. I saw proof in book with third roots of unity but i didn't understand it, so i want to see other solution but i dont have idea for that.","['polynomials', 'number-theory']"
+1091111,Independence of sum and difference for random vectors,"Suppose I have two independent random vectors $X,Y\in \mathbb R^n$ such that each entry $x_i\sim\mathcal{N}(0,1)$ i.i.d., $y_i\sim\mathcal{N}(0,1)$ i.i.d.  Define
+$$ S = X+Y, \qquad D = X-Y .$$
+I seem to remember learning that $S$ and $D$ are independent RVs but can't find a reference.  Is this even true, and how could I go about showing this? Does the same apply for any other distributions for $X$ and $Y$ (in particular with non-independent entries)?",['probability']
+1091115,Convergence in $L^1$ and uniform integrability,"Suppose that $X_n\leq Y_n\leq Z_n$ where $X_n\to X$, $Y_n\to Y$, $Z_n\to Z$ in probability. If $E(X_n)\to E(X)$ and $E(Z_n)\to E(Z)$, show that $E(Y_n)\to E(Y)$. I want to solve the task above. I think the following theorem (which we have proven) is useful here: Let $X_n\in L^1$ be a sequence of random variables and $X\in L^1$ then the following holds: $\mathbb E(|X_n-X|)\rightarrow0 \iff  X_n\rightarrow X$ in probability and $(X_n)$ is uniformly integrable. By assumption we have $Y_n\rightarrow Y$ in probability, so we just need to shot that $Y_n$ is uniformly integrable. It is also clear, that $Y_n$ is uniformly integrable, if there is a $g\in L^1$, such that $|Y_n|<g$ for all $n$. All I need to show now, ist that one of the integrable functions $|X|$ or $|Z|$ has the desired property. (But I don't know how to show this..) Please read my ideas and help me according to my attempt. If my attempt is totally wrong, I will be very glad if someone can give me a solution, or better : some hints. Thanks in advance!","['probability-theory', 'uniform-integrability', 'probability', 'expectation']"
+1091137,Rationalizing the denominator in general,How do you rationalize the denominator of something like $$\frac{1}{\sqrt[n]{a_1}+\sqrt[n]{a_2}+...+\sqrt[n]{a_n}}$$? I'm thinking roots of unity.,"['roots-of-unity', 'algebra-precalculus', 'reference-request']"
+1091143,Prime factorizations that yield hyperrectangles with integer diagonals,"I have been looking into $n$-dimensional rectangles (aka hyperrectangles ) with measures given by any orderless prime-factorization of a natural number, where the diagonal is of an integer length. Let's denote these as perfect rectangles . Obviously, every prime number yields a perfect ($1$-dimensional) rectangle. As a more generalized definition - any number whose prime-factorization is given by $\overbrace{{p}\times\dots\times{p}}^\text{N times}$ with $N$ being a square yields a perfect $N$-dimensional rectangle. For example: $81$ yields a perfect $4$-dimensional rectangle with diagonal length $\sqrt{3^2+3^2+3^2+3^2}=6$. However, there are other types of numbers that yield perfect rectangles. For example: $48$ yields a perfect $5$-dimensional rectangle with diagonal length $\sqrt{2^2+2^2+2^2+2^2+3^2}=5$. I have been searching for sequences of consecutive numbers that yield perfect rectangles. For example, $16$ and $17$ yield perfect rectangles with diagonal lengths $4$ and $17$ respectively. $2729-2730-2731$ yield perfect rectangles with diagonal lengths $2729-16-2731$ respectively. Searching up to $16$ million, I have not been able to find any sequence longer than $3$ numbers. In addition, I have noticed that in every sequence of $3$ numbers, one or two of them are prime. So my question is - has either one of these two statements been conjectured, proved or refuted? C-code is given below (should anyone wishes to extend the tested range): #include <math.h>
+#include <stdio.h>
+
+#define RANGE 16000000
+#define SEQUENCE_LEN 4
+
+typedef unsigned char      uint08;
+typedef unsigned int       uint32;
+typedef unsigned long long uint64;
+
+uint08 sieve[RANGE] = {0};
+uint32 prime[RANGE] = {0};
+uint32 numOfPrimes  =  0 ;
+
+void CalcAuxiliaryData()
+{
+    uint32 i,j;
+
+    uint32 root = (uint32)sqrt((double)RANGE);
+
+    for (i=2; i<=root; i++)
+    {
+        if (sieve[i] == 0)
+            for (j=i+i; j<RANGE; j+=i)
+                sieve[j] = 1;
+    }
+
+    for (i=2; i<RANGE; i++)
+    {
+        if (sieve[i] == 0)
+            prime[numOfPrimes++] = i;
+    }
+}
+
+uint32 CalcDiagonalLen(uint32 n)
+{
+    uint32 i;
+
+    uint64 square;
+    uint32 length;
+
+    if (sieve[n] == 0)
+        return n;
+
+    square = 0;
+    for (i=0; i<numOfPrimes && n>1; i++)
+    {
+        uint32 p = prime[i];
+        uint64 pp = (uint64)p*p;
+        while (n%p == 0)
+        {
+            n /= p;
+            square += pp;
+        }
+    }
+
+    length = (uint32)sqrt((double)square);
+    if ((uint64)length*length == square)
+        return length;
+
+    return 0;
+}
+
+int main()
+{
+    uint32 i;
+
+    uint32 sequence_len;
+    uint32 diagonal_len;
+
+    CalcAuxiliaryData();
+
+    sequence_len = 0;
+    for (i=2; i<RANGE; i++)
+    {
+        diagonal_len = CalcDiagonalLen(i);
+        if (diagonal_len == 0)
+        {
+            sequence_len = 0;
+        }
+        else
+        {
+            printf(""%u %u\n"",i,diagonal_len);
+            if (++sequence_len == SEQUENCE_LEN)
+                break;
+        }
+    }
+
+    return 0;
+} UPDATE: Using this implementation advice , I have verified both statements up to $1.2$ billion. UPDATE #$2$: Checking up to $2$ billion, I have counted $1585$ triplets: The trivial triplet $1-2-3$ $2$ triplets of the form $C-C-P$ $4$ triplets of the form $P-C-C$ $7$ triplets of the form $C-P-C$ $1571$ triplets of the form $P-C-P$ I have also encountered the following quadruplet, which refutes the first conjecture: $A_{1776463301}=\sqrt{1776463301^2}=1776463301$ $A_{1776463302}=\sqrt{2^2+3^2+173^2+857^2+1997^2}=2180$ $A_{1776463303}=\sqrt{1776463303^2}=1776463303$ $A_{1776463304}=\sqrt{2^2+2^2+2^2+7^2+11^2+179^2+16111^2}=16112$ UPDATE #$3$: Up to $4$ billion, I have counted $28$ pairs of consecutive non-primes which yield perfect rectangles, but I have not encountered a single triplet of consecutive non-primes which yield perfect rectangles.","['prime-factorization', 'number-theory']"
+1091151,Simplest way of parameterize the surface of a two-sheeted hyperboloid?,I want to parametrize the surface of a given Two-Sheeted Hyperboloid expression:$$\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=-1 $$I have tried with the parametrization that Wolfram|Mathworld give for the two-sheeted hyperboloid (with hiperbolic functions) but I would like to use the simplest way to do it. Maybe I just need a correct parametrization for the ellipse on the xy plane.,"['multivariable-calculus', 'calculus', 'algebra-precalculus']"
+1091155,Can two unknowns of two *unrelated* linear equations be determined?,"This question is based on the storm caused by this twitter post . Since a twitter discussion is not an objective question, I'll simply write out the key elements of the problem. Movie earning estimates were reported as roughly \$15 million in total revenue across about 2 million transactions where the rental option was \$6 and the sale purchase option was \$15 dollars. Emphasizing that the given number of transactions and revenue are rough estimates, can this be solved algebraically? That is, can the two ""rough"" equations simply be solved to determine the two unknowns $r$ and $s$ (rentals and sales)? To be clear, $r$ and $s$ represent the number of transactions. If solving these equations is valid, then what is the graphical explanation for why these two seemingly unrelated equations (one is number of transactions the other is revenue) can be solved?","['linear-algebra', 'algebra-precalculus', 'systems-of-equations']"
+1091157,Better way of factorising $x^2-a^2+x+a$,"I am currently at the subject factorisation and I have the following problem: Fully factorize: $$ {x^2}-{a^2}+x+a $$ What I did was the following: Create a common factor: $$ x({1^2}+1)-a(1^2-1) $$
+But creating a common factor didn't work. After a lot of guessing I got the correct answer: $$(x+a)(x-a+1)$$ My question is, is there any way of getting this answer without guessing a lot?","['factoring', 'algebra-precalculus', 'quadratics']"
+1091198,Better Notation for Partial Derivatives,"I'm constantly seeing questions here where people are confused about the notation $\frac {\partial f}{\partial x}$ or $\frac {\partial f}{\partial x} (x,y)$ or $\frac {\partial f(x,y)}{\partial x}$.  Is there some better notation which exists for partial derivatives?  If not, can anyone suggest one? Problems with this notation: Is the derivative evaluated at the point $(x,y)$ or is that part of the definition of the function?  If it's evaluated at the point, then should we really use $x$ as the name of the first parameter of the function?  If it's just a part of the definition of the function, how do we specify where the function is evaluated?  And if we leave off the $(x,y)$, how do we even know that $x$ is supposed to be the first parameter as opposed to anything else? The same problem that $\frac {df}{dx}$ shares, it looks like division.  But of course $\frac {\partial f}{\partial x}$ is not as simple as division: it's a shorthand for $\lim_{h\to 0} \frac {f(x+h,y)-f(x,y)}{h}$.  This leads students to think that $\frac {\partial f}{\partial g}\frac {\partial g}{\partial x} = \frac {\partial f}{\partial x}$ and other such ""cancellations"" hold.  However, an operator which looks like division isn't entirely a bad thing, in that you get the correct units when doing a physical problem -- obviously this is because the definition does include a division, but only as part of a limit. Kind of a nitpick, but $\frac {\partial^n f}{\partial x^n}$ looks awfully weird to me.  And worse, it could be confusing to some who see the ""denominator"" as $\partial(x^2)$ instead of $(\partial x)^2$. Other notations include $f_x$, $\partial_x f$, and $D_x f$.  I don't like $f_x$ because that looks like an indexed function to me, not like $f$ is being operated on by a differential operator.  $\partial_x f$ and $D_x f$ both look like operators acting on $f$ but don't tell you the units and we get back to ""can we really use $x$ to refer to the first parameter of $f$ outside of the definition of $f$""? Does anyone know of a better notation?  Can anyone come up with one?","['multivariable-calculus', 'partial-derivative', 'soft-question']"
+1091204,"Why can you prove the continuity of $f(x) = \frac{x}{1+x²}$ with $\delta = \min \{ 2, \frac{\epsilon}{2} \} $?","Let's take my question as an example. I just don't get it. What does $\delta = \min \{ 2, \frac{\epsilon}{2} \} $ mean ? (especially 'min{}')","['epsilon-delta', 'real-analysis', 'limits']"
+1091209,Motivating the compact-open topology,"It has been a while since I studied algebraic topology, and I wanted to revisit homotopy theory. Determined to take a more sustainable approach, I started by questioning and verifying every result in one of my books, Switzer's Algebraic Topology - Homology and Homotopy . So in the preliminaries, the compact-open topology on the set $Y^X$ of functions $f: X \to Y$ is defined to be generated by: $$N_{U,K} = \{f: X \to Y \mid f(K) \subseteq U\},\quad U \subseteq Y \text{ open}, K \subseteq X \text{ compact}$$ One of the principal properties of a topology on $Y^X$ would be that it makes the evaluation mapping $e: Y^X \times X \to Y, e(f,x) = f(x)$ continuous (I know that this applies to the COT only under extra conditions, notably if $X$ is locally compact). So, for $U \subseteq Y$ open we expect $e^{-1}(U)$ to be open in the product topology. This amounts to, for every $x$ with $f(x) \in U$ for some $f$, the existence of a neighborhood $V_x$ such that there is a neighborhood $T$ in $Y^X$ with $f(V_x) \subseteq U$ for each $f \in T$. However, taking such $T$s as generators -- explicitly: $$T_{U,V} = \{f \mid f(V) \subseteq U\} \quad V \subseteq X, U \subseteq Y \text{ open}$$ gives rise to a different topology than the compact-open topology. So what compelling reasons are there to consider the compact-open topology rather than the one I just described? If applicable, historical references are also appreciated. In particular, I'm interested in results where we can see that the properties of the COT are really ""needed"" for the proof to follow through.","['general-topology', 'soft-question']"
+1091218,Eigenvalues of compact operator don't have nonzero accumulation points,"In the book Elements of the theory of functions and functional analysis of Kolmogorov and Fomin, there is a proof of the following theorem, Every compact operator $A$ on a Banach space $E$ has for arbitrary $\rho>0$ only a finite number of linearly independent eigenvectors which correspond to the eigenvalues whose absolute value are greater than $\rho$.
+The proof that it gives is later in the errata part of the book as wrong, but it doesn't say why and I don't know what is wrong with the following similar argument, Assume that the theorem is false, that is, there exist a $\rho$ and a sequence $\{x_n\}$ of linearly independent vectors with $A x_n = \lambda_n x_n$ and $|\lambda_n|>\rho$. We can restrict $A$ to the span of this sequence, it is easy to check that it has a bounded inverse (if $x=a_1x_1+ \cdots +a_k x_k$ then $A^{-1}x=a_1 x_1/\lambda_1 + \cdots + a_kx_k/\lambda_k$ and $||A^{-1}|| \leq 1/\rho$) therefore on this space we have a compact operator with bounded inverse and consequently the identity map in this space is compact , arriving to a contradiction since the space is infinite dimensional.","['spectral-theory', 'functional-analysis', 'analysis']"
+1091225,Continuous functions and existence of a root,"Let $\, f:[1,2] \rightarrow \mathbb R$ be a continuous function such that for every $n$ $\in$ $\mathbb N, \exists$ $x \in [1,2]$ with $\ |f(x)| < \frac 1n$ Show that $ \exists \;c \in [1,2]$ such that $ \;f(c)=0$ So with this, I went by contradiction and said that (I'm being informal here) that if f(x) doesn't equal to 0 then the function completely lies on one side of the x axis then argued by Archimedes Principle saying there's a number with 1/n < c (where c is the absolute min of the function in [1,2], which exists by Boundedness Property) leading to a contradiction. Is this an acceptable way to go about this proof?","['continuity', 'proof-verification', 'functions', 'analysis']"
+1091234,Super conic sections?,"I know graphs of the form $A x^2 + B xy + C y^2 + D x + E y + F = 0$ are conic sections, in that they are all cross sections of a cone. But what would happen if I changed the degree of the polynomial to 3? Would these be cross sections of a new 3D shape or a 4D shape? If it is possible, please provide a picture or some sort of representation of this shape thanks. EDIT : Just to make it clear when I ask about the shape I mean the conic section, not the graph itself.","['geometry', 'cubics', 'conic-sections', 'polynomials']"
+1091244,"if $f(x)$ is differentiable at a x, prove that: $\lim_{h\to0}\frac{f(x+h)-f(x-h)}{2h}$","If $f(x)$ is differentiable at x, I need to prove that $\lim_{h\to0}\frac{f(x+h)-f(x-h)}{2h}$ exist and is finite. so if $f(x)$ is differentiable at a $x$, the difference quotient exist for this point, and also $f(x)$ must be continuous at x as well so that mean that:  $\lim_{h\to0^+}\frac{f(x+h)-f(x)}{h} =  \lim_{h\to0^-}\frac{f(x+h)-f(x)}{h}$ and that: $\lim_{x\to x_0^+}=\lim_{x\to x_0^-}=f(x_0)$ I know I should probably use arithmetic limit laws to prove this but I can't see how what I figured out could help me. any help with that? Thanks!","['ordinary-differential-equations', 'calculus', 'derivatives', 'limits']"
+1091281,Is there a generalization of the Lagrange polynomial to 3D?,What is a way to construct a smooth polynomial surface ($\mathbb{R}^2 \rightarrow \mathbb{R}$) with Lagrange-polynomial properties in every partial derivative? I want to try this for image interpolation.,"['interpolation', 'linear-algebra', '3d', 'polynomials']"
+1091328,Write ODE in Polar Coordinates [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 9 years ago . Improve this question I want to write this ODE system in polar coordinates (r,$\theta$). $$\dot x =x-y-x^3 $$ $$\dot y = x+y-y^3$$","['polar-coordinates', 'ordinary-differential-equations']"
+1091339,"$\{p_i\}$ generate the $k$-algebra of symmetric polynomials in $k[t_1, \dots, t_n]$ and are algebraically independent over $k$","Let $k$ be a field of characteristic $0$. For $j \ge 0$, let $p_j = t_1^j + \dots + t_n^j \in k[t_1, \dots, t_n]$. Prove that $p_1, \dots, p_n$ generate the $k$-algebra of symmetric polynomials in $k[t_1, \dots, t_n]$, and are algebraically independent over $k$. As to what I've tried so far, I've messed around with the Newton identities, but they haven't really got me anywhere. Am I going up the right alley? Or is there some other approach I should be taking?","['symmetric-polynomials', 'abstract-algebra', 'field-theory']"
+1091348,What can we say about a vector bundle with trivial unit sphere bundle?,"If you want to avoid the back story to this question, feel free to skip the paragraphs between the horizontal lines. Yesterday Georges Elencwajg asked me the following question (I'm paraphrasing): what can we say about a vector bundle with trivial unit sphere bundle? I told him that if the bundle had rank $k$, then the triviality of the unit sphere bundle gives $k-1$ linearly independent sections of the original bundle. This is not true, or more precisely, the reasoning which lead me to make the statement is false. Allow me to elaborate. Let $\pi : E \to M$ be a rank $k$ real vector bundle on a manifold $M$. If $E$ is trivial, there is an isomorphism of vector bundles $\Psi : E \to M\times\mathbb{R}^k$ and then $r_i(x) = \Psi^{-1}(x, e_i)$ for $i = 1, \dots, k$ is a collection of linearly independent global sections. Now let $SE$ be the unit sphere bundle given by some Riemannian metric on $E$. Then $SE$ is a $S^{k-1}$ fibre bundle over $M$. If $SE$ is trivial, there is an isomorphism of fibre bundles $\Phi : SE \to M\times S^{k-1}$. My thinking was that $e_i \in S^{k-1}$ so, as before, we can define $s_i(x) = \Phi^{-1}(x, e_i)$ and these would be linearly independent global sections - if this actually worked, I'd get $k$ sections rather than the $k - 1$ I had mentioned to Georges. So what's wrong with the approach in the previous paragraph? Well, in the case where $E$ was trivial, the linear independence of $r_i$ relied on the linearity of $\Psi$ when restricted to fibres. In particular, it was important that $\Psi$ was a vector bundle isomorphism rather than a fibre bundle isomorphism (the latter does not require linearity on fibres). In the case of the sphere bundle, we have no such linearity condition (and couldn't possibly as $S^{k-1}$ is not a vector space), so we cannot conclude much about the sections $s_i$, except that they are nowhere zero. So the question still remains What can we say about a vector bundle with trivial unit sphere bundle?","['characteristic-classes', 'fiber-bundles', 'vector-bundles', 'differential-geometry']"
+1091358,A function $f$ such that $f \in L_1$ but $f \notin L_p$ for $p>1$ [duplicate],"This question already has answers here : $f \in L^1$, but $f \not\in L^p$ for all $p > 1$ (2 answers) Closed 9 years ago . I want find a function $f: [0,1] \mapsto \mathbb{R}$ such that $f \in L_1[0,1]$ but $f \notin L_p[0,1]$ for all $p>1$. My attempts: 
+First I thought in the family of functions $\frac{1}{x^\alpha}$ but this function belongs to $L_q$ iff $\alpha \cdot q \leqslant 1$ so I need find $\alpha$ such that:
+$\alpha <1 $ and $\alpha \cdot q \geqslant 1$ for all $q>1$ but this its impossible!! After other attempts using variations and combinations of $1/x$, $ln x$ and $e^x$ I researched in the mathstack and found this questions: Prove that for any $1 < p < ∞$ there exists a function $f ∈ L_p(μ)$ such that $f \notin L_q(μ)$ for any $q > p.$ The kingkongdonutguy's question is exactly what I was looking for, but I do not understand very well the Tomas' (and of Davide) hint... My interpretation: Choice two sequences $\{a_n\}_{n \in \mathbb{N}}$ and $\{t_n\}_{n \in \mathbb{N}}$ com $a_n,t_n \to 0$ now make a sequence os disjoint intervals $\{I_n\}_{n \in \mathbb{N}}$ such that, for each $n$,$0 < m(I_n) < t_n$ and $\bigcup I_n = [0,1]$.
+Define a function: $$f(x)= \sum\limits_{n=1}^{\infty} a_n \cdot \chi_{I_n}(x)$$
+Make a simple calculation:
+$$\int\limits_{0}^{1} f(x)dx = \sum\limits_{n=1}^{\infty} \int_{I_n} a_n dx = \sum\limits_{n=1}^{\infty} a_n\cdot m(I_n) \leqslant \sum a_n \cdot t_n$$
+So I need choice $\{a_n\}$ and $\{t_n\}$ such that $\sum a_n \cdot t_n$ converges but $\sum a_n ^{p} \cdot t_n$ not converges for $p>1$. The problem: using limit comparison test we have
+$$\lim_{n \to \infty} \frac{a_n^p \cdot t_n}{a_n\cdot t_n} = \lim_{n \to \infty} a_n^{p-1}=0 $$(because $p>1$) so don't is possible this choice ... Also found this question Is it possible for a function to be in $L^p$ for only one $p$? but I could not adapt for a finite domain.. Someone can give me a (other) hint to construct this function??","['functional-analysis', 'real-analysis', 'lebesgue-integral', 'lebesgue-measure', 'lp-spaces']"
+1091361,Moscow puzzle. Number lattice and number rearrangement. Quicker solution?,"I have already considered chains of numbers like $4-19, 19-9, 9-22$, to solve the problem and got the answer. However just out of curiosity, can anyone think of a better/quicker solution? (answer is 19 btw)","['matrices', 'discrete-mathematics', 'graph-theory', 'algorithms']"
+1091365,"If $G$ is a finite group and $|G| < |A| + |B|$, then $G=AB$.",Let $G$ be a finite group. Suppose that $A$ and $B$ are to subsets of $G$. If $|G|<|A|+|B|$ prove that $$G=AB.$$,"['finite-groups', 'group-theory']"
+1091372,Evaluating $\int_{-\infty}^{\infty}\frac{\sin ax-a \sin x}{x^3(x^2+1)} \ dx$ using contour integration,"How would you compute the integral $$\int_{-\infty}^\infty \frac{\sin ax-a\sin x}{x^3(x^2+1)} \ dx ?$$
+We will integrate along two circular contours and a striaghtline section between them.(Half donut shape) In the solution my professor give, it stated consider the function $$g(z)=\frac{-1+a+e^{iaz}-ae^{iz}}{z^3(z^2+1)}$$ instead of $$f(z)=\frac{e^{iaz}-ae^{iz}}{z^3(z^2+1)}$$ because $g$ has simple poles at the real lines. However, the result when we calculate the residue at $i$ is different. I checked the answer using Wolfram, the calculation using $g$ is the correct answer. Can someone explain why?","['integration', 'complex-analysis', 'contour-integration']"
+1091384,What are some Applications of the Permanent of a Matrix?,"I have a decent understanding of the determinant of a matrix in terms of its role in Telling you if a matrix is invertible (zero vs. nonzero) Expressing the product of a matrix's eigenvalues with multiplicities Representing the constant term in a matrix's characteristic polynomial Having geometrical interpretations However, I was curious to learn in the operation known as the permanent has any interesting properties. The permanent is defined in the same way a determinant is, but all entries are added instead of alternating between positive and negative terms. In particular, what are the significant applications of defining the permanent as a notable matrix operation? Also, are there any matrix problems whose solutions directly/indirectly depend on understanding the permanent?","['matrices', 'linear-algebra']"
+1091386,Characterizing injective polynomials,"Are there some nice results characterizing which polynomial functions (reals to reals) are injective (for example a necessary and sufficient condition)? Obviously all polynomials of degree $1$ are injective, and for degree ${}>1$ such a polynomial must have odd degree and at at most one root, but that is hardly sufficient.","['functions', 'polynomials']"
+1091404,$\sum_{n=0}^{\infty} \frac{1}{2n+1} = 0.66215 + \frac{1}{2}\log(\infty)^{3}$,"Just finished Euler: The Master of us All . A good fraction of the book is dedicated to explaining in why certain divergent series were useful in proving Euler's theorems, but this one is never explained:
+\begin{align}
+1 + \frac{1}{3} + \frac{1}{5} + \frac{1}{7} + \cdots = 0.66215 + \frac{1}{2}\log(\infty)^{3}
+\end{align}
+I'm baffled by this expression. I'm ok with $\infty = \infty$, but why would it be reasonable to express it in this fashion, and what is the utility?","['divergent-series', 'sequences-and-series']"
+1091431,Spectrum of $\mathcal{O}(U)$,"Let $X=\operatorname{Spec}(A)$ be the spectrum of the comm. ring $A$ and let $\mathcal{O}$ be the associated sheaf of rings, i.e. for $U \subseteq X$ open, $\mathcal{O}(U)$ is the ring of all functions $s: U \to \prod_{p \in U}A_p$ such that for all $p \in U$ there is an open neigbourhood $V \subseteq U$ of $p$ and there are $a \in A, f \in A \setminus \bigcup_{q \in V}q$ with $s(q) = a/f$ for all $q \in V$. Question: What is $\operatorname{Spec}\mathcal{O}(U)$ ? There are two special cases for $U$ that are easy to handle: (1) We have $\mathcal{O}(X)=A$ and thus $\operatorname{Spec}\mathcal{O}(U)(X)=X$. (2) For a principal open subset $D(f),\, \,\mathcal{O}(D(f))=A_f$ and thus $\operatorname{Spec}\mathcal{O}(D(f))=D(f)$. Therefore I suppose $\operatorname{Spec}\mathcal{O}(U)=U$. I found the map $$U \to \operatorname{Spec}\mathcal{O}(U),\, q \mapsto \mathcal{O}(U) \cap \prod_{p \in U} B_p$$ where $B_p: =A_p$ for $p \neq q$ and $B_q := qA_q$. But I'm not able to show that it is surjective. Any hint or reference is appreciated. Please note that the question is no homework, but an attempt to get a better understanding of the ring $\mathcal{O}(U)$.","['algebraic-geometry', 'schemes']"
+1091456,"$\int f(y)e^{-y^2} e^{2xy}\,dy$, to prove $f=0$","Show that, if $f \in S(\mathbb{R})$, where $S(\mathbb{R})$ defines  Schwartz's space, and
+$$\int_{-\infty}^{+\infty} f(y)e^{-y^2}e^{2xy} \, dy =0,$$ for all $x \in \mathbb{R}$, then $f=0$ I don't know how start , it occurs to me some property of convolution functions , Greetings..",['ordinary-differential-equations']
+1091464,Simplexes in $\mathbb R^n$ have at most $n+1$ points,"This is an exercise from the book Espaços Métricos (metric spaces) by Elon Lima. I'm translating it (the part of it that I'm having trouble with): Show that if $X\subset\mathbb R^n$ is such that $\left\|x-y\right\|=1$ whenever $x\neq y$ and $x,y\in X$, then $X$ has at most $n+1$ points. This is pretty straightforward when $n=1$, easy with some algebra when $n=2$, a little bit exhaustive with lots of algebra when $n=3$, but I'm not able to generalize the argument to $\mathbb R^n$ at all. I know this looks like induction, but I've been trying for some time, and I can't do it.","['simplex', 'geometry', 'induction', 'metric-spaces']"
+1091465,Is it true that $\int_{a}^b h^2=0\implies h=0$?,I am working on a few examples where my author said this is true if $h$ is continuous. Can someone explain why? Just because the integral is $0$ doesn't mean the integrand is zero as well. $\int_{a}^b h^2=0\implies h=0$?,"['calculus', 'integration']"
+1091475,Textbooks on permutation groups?,"I need good texts on group theory that cover the theory of permutation groups. I think there is a book called Wielandt. Is it good? are there newer alternatives? Can I find books that are not specifically about representation groups that cover thoroughly the most important results? Also, when browsing Amazon I kept getting sent to books on representation theory of finite groups, would this be a good way to approach the topic? I got interested in the topic thanks to this question I asked recently . Thank you very much in advance. Regards.","['permutations', 'book-recommendation', 'representation-theory', 'group-theory', 'combinatorics']"
+1091479,Sum $\frac{1}{6} + \frac{5}{6\cdot 12} + \frac{5\cdot 8}{6\cdot 12\cdot 18} + \frac{5\cdot 8\cdot 11}{6\cdot 12\cdot 18\cdot 24}+\ldots$ [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 6 years ago . Improve this question A series is given as follows $$\frac{1}{6} + \frac{5}{6\cdot 12} + \frac{5\cdot 8}{6\cdot 12\cdot 18} + \frac{5\cdot 8\cdot 11}{6\cdot 12\cdot 18\cdot 24}+\ldots$$ Can you give me hints to get started finding its value? Thanks.",['sequences-and-series']
+1091493,Checking the consistency and Bias of $\frac{\sum X_i +\sqrt{n}/2}{n+\sqrt{n}}$,"Let $X_1,\ldots,X_n$ be i.i.d. $B(1,\theta)$ random variables, $0<\theta<1$. Then, as an estimator $\theta$, check if $T(X_1,\ldots,X_n)= \dfrac{\sum_{i=1}^n X_i +\sqrt{n}/2}{n+\sqrt{n}}$ is consistent and/or unbiased. $$T=\frac{\frac{1}{n}\sum_{i=1}^n X_i +\frac{1}{2\sqrt{n}}}{1+\frac{1}{\sqrt{n}}}$$ $$T=\frac{\bar{X} +\frac{1}{2\sqrt{n}}}{1+\frac{1}{\sqrt{n}}}$$ $$E(T)=\frac{E(\bar{X} +\frac{1}{2\sqrt{n}})}{1+\frac{1}{\sqrt{n}}}=\dfrac{\theta +\frac{1}{2\sqrt{n}}}{1+\frac{1}{\sqrt{n}}}.$$ So, $T$ is biased. Consistency: $\lim\limits_{n \to\infty}E(T)=\lim\limits_{n \to\infty}\dfrac{E(\theta +\frac{1}{2\sqrt{n}})}{1+\frac{1}{\sqrt{n}}}$ So $T$ is consistent. But The given answer is ""neither unbiased nor consistent"" Where did I go wrong ? Please advise.","['statistics', 'estimation', 'statistical-inference']"
+1091508,"On separable Hilbert space $H$, weak operator topology is metrizable on bounded parts of $B(H)$","The following is a theorem of Takesaki's operator theory: In this proof, weak topology means weak operator topology. I'm wonder why the theorem holds just for bounded parts of $B(H)$ and also where does he  use of boundedness?  Thanks.","['operator-theory', 'topological-vector-spaces', 'functional-analysis']"
+1091514,"How prove such that $2^n-8$ is divisible by $n$, and $n$ has least three distinct prime factors.","Prove that there are infinitely many postive integers $n$ such that $2^n-8$ is divisible by $n$, and $n$ has least three distinct prime factors. I only find infinitely many postive integers $n$ such that $2^n-8$ is divisible by $n$, such $n=3p$, use 
+$$2^{3p}-8=8(2^{3(p-1)}-1)$$
+Use Fermat theorem we have 
+$$2^{p-1}-1\equiv 0\pmod p$$
+and it is clear 
+$$2^{3p}-8\equiv (-1)^{3p}-2\equiv 0\pmod 3$$
+But this example is not  such $n$ has least three distinct prime factors.so How find it? Thank you PS:This problem is from Croatia Mathematical Olympiad exam (2013 or 2014)",['number-theory']
+1091566,"How is Loomis and Sternberg's ""Advanced Calculus"" as an introductory analysis text?","Will it be a good substitute for a standard mathematical analysis text like Baby Rudin or should I buy both of them to avoid any gaps in my knowledge before progressing any further?
+(P.S., what exactly does ""advanced calculus"" mean? Every single book I've seen on ""advanced calculus"" seems to have vastly differing table of contents.)","['multivariable-calculus', 'calculus', 'vector-analysis', 'real-analysis']"
+1091610,How I can prove the following equivalence: $f(x)= 2/(2^{1/x}-1)⇔x=1/k$,"Let us consider the function (see http://mathworld.wolfram.com/DevilsStaircase.html ): $$f(x)=∑_{n=1}^{∞}⌊nx⌋/2ⁿ$$
+for $x∈(0,1)$, where $⌊nx⌋$ is the floor function. This function is monotone increasing and continuous at every irrational $x$ but discontinuous at every rational $x$. We know that $$f(1/k)= 2/(2^{k}-1)$$ for all positive integers $k$. My question is: How I can prove the following equivalence: $$f(x)= 2/(2^{1/x}-1)⇔x=1/k$$ where $k$ is  positive integer.","['functions', 'real-numbers', 'real-analysis']"
+1091616,If $xa=xb$ then $a=b$,"We just defined the axioms of a group in our lecture notes on algebra, but silently assumed that the properties of the $=$ relation are known. A few lemmas after the definition of a group we prove that (if $G$ is a group): $\forall x \in G, \forall a,b \in G: \ xa=xb \implies a=b$ by multiplying both sides by $x^{-1}$. Now I wonder why we are allowed to do so. Is it a general property of equivalence relationships that if $a=b,c=d \implies ac=bd$ , or is it a group property?","['group-theory', 'abstract-algebra']"
+1091653,What is the derivative of the integral of a function?,"Is this correct ? $$
+\frac{d}{dt} \left( \int_0^t \phi(t)dt \right) = \phi(t)
+$$ If not, how can I recover $$ \phi(t) $$ knowing only $$ \int_0^t \phi(t)dt $$ ?","['integration', 'derivatives']"
+1091662,Find least possible number of factors,Number $A$ has $24$ factors. Number $A\cdot B$ has $105$ factors. Find least possible number of factors of $B$. I have tried. But there seems to be no general approach.. The answer given is $12$.,"['discrete-mathematics', 'elementary-number-theory', 'combinatorics']"
+1091682,"Find the limit of $f_{n}(1)$ if $f_{n}(x)=\int^{x}_{0}f_{n-1}(y)\,dy$ for each $n$ [closed]","Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 6 years ago . Improve this question Consider the sequence $(f_n)$ defined by
+  $$
+f_{0}(x)=\frac{1}{(1+x)^3}\quad
+f_{n}(x)=\int^{x}_{0}f_{n-1}(y)\;\text{dy},\ n\ge1.$$
+  Find 
+  $$\lim_{n\to \infty}f_{n}(1).$$ I computed $f_{1}(x)$, $f_{2}(x)$, $f_{3}(x)$, but I couldn’t get it that way.","['sequences-and-series', 'calculus', 'limits']"
+1091683,"Let $A\subseteq E\subseteq B\subset \mathbb R^d$ where $A,B$ are measurable, show that $E$ is measurable.","Let $A\subseteq E\subseteq B\subset \mathbb R^d$ where $A,B$ are measurable and  $m(A)=m(B)<\infty $. Show that $E$ is measurable. In the correction they do like this:
+$$m^*(B\backslash E)\leq m^*(B\backslash A)=m(B)-m(A)=0.$$
+Let $\varepsilon>0$ and Let $O\supset B$ an open set such that $$m^*(O\backslash B)<\varepsilon,$$
+then
+$$m^*(O\backslash E)\leq m^*(O\backslash B)+m^*(B\backslash E)=m^*(O\backslash B)<\varepsilon$$
+therefore $E$ is measurable. Question: We just have shown that for all open set $O\supset E$ that contain $B$ (therefore $O$ depend of $B$ and $\varepsilon$ and not of $\varepsilon$ only),
+$$m^*(O\backslash E)\leq \varepsilon$$
+not that for all open set $O\supset E$,
+$$m^*(O\backslash E)\leq \varepsilon$$ so we a priori can't conclude, no ? P.S: $m$ is the Lebesgue measure and $m^*$ the exterior measure of Lebesgue.","['measure-theory', 'lebesgue-measure']"
+1091690,Textbook suggestion-Vector Analysis,"I took a course in vector analysis this year. It was a two fold course. The first part covered linear algebra and basic euclidean geometry. The second took to more advanced areas such as differential geometry, and the integration theorems. We used vector analysis by Schaum(author: Murray Speigel). I was wondering if there are more books on the subject? Please make sure you state the things covered in the textbooks you mention.","['multivariable-calculus', 'book-recommendation', 'vector-analysis']"
+1091705,Laplace tranform of $t^{5/2}$,It is asked to transform $t^{5/2}$. I did $t^{5/2}=t^3\cdot t^{-1/2}$. Then followed the table result $$L\{{t^nf(t)}\}=(-1)^n\cdot\frac{d^n}{ds^n}F(s)$$ However i got $\frac{1}{2} \cdot\sqrt\pi \cdot s^{-7/2}$ instead of $\frac{15}{8} \cdot\sqrt\pi \cdot s^{-7/2}$. Can you help me with the derivations? Thanks,"['laplace-transform', 'derivatives']"
+1091709,"Moore space, induced map in homology","Let $A$ be a finitely generated abelian group and $n$ a positive integer. I have built a connected space $M(A,n)$ such that all its reduced homology groups are zero but the i-th reduced homology group that is equal to $A$ (Moore space). Let $A_0$ and $A_1$ be finitely generated abelian groups and
+let $F: A_0 \to A_1$ a homomorphism.  How could I construct a map $$f: M(A_0,n) \to M(A_1,n)$$ such that $f_*=F$ . Context For me, if $A \simeq Z$ , $M(A,n)=S^n$ . If $A \simeq Z_m$ , then $M(A,n)$ is given by the mapping cone $C(S^n) \cup_f S^n$ , where $C(S^n)$ is $S^n\times [0,1]/((x,0)\simeq(x',0))$ and $f: S^n \times 1 \to S^n$ comes from a map from $S^n$ to $S^n$ of degree $m$ .","['algebraic-geometry', 'algebraic-topology']"
+1091711,"Find $\mathbf{F}$ such that $\nabla \times \mathbf{F} = (-3xz^2, 0, z^3)$","Let $S$ be the surface defined by $z = x^{2} + y^{2}$ for $z \leq 4$, oriented
+  with upward-pointing normal. Use Stokes' theorem to evaluate
+  $\iint_{S}\left(\, -3xz^{2}\ ,\ 0\ ,\ z^{3}\,\right)\cdot{\rm d}\mathbf{S}$. Hint: You may look for a vector field
+  $
+\mathbf{F}
+=
+M\left(\,x,y,z\,\right)\mathbf{i} + N\left(\,x,y,z\,\right)\mathbf{j}
+$
+  such that $\nabla \times \mathbf{F} = (-3xz^2, 0, z^3)$. The question itself is straightforward except the fact that we need to find out $\mathbf{F}$. Upon expanding $\nabla \times \mathbf{F}$, we get $$(-\frac{dN}{dz}, \frac{dM}{dz}, \frac{dN}{dx}-\frac{dM}{dy})=(-3xz^2, 0, z^3).$$ Problem arises as I try to find out $M$ and $N$. First, I have $$N = xz^3 + g(x,y)$$for some function $g$.It then gives $$\frac{dM}{dy}=g_x$$
+which I cannot proceed. Is it even possible to find out $M$ and $N$ explicitly? Or do I need to solve the above question without finding $M$ and $N$?",['multivariable-calculus']
+1091742,Transforming a matrix A into a zero matrix using finitely many steps.,Let $A$ be a $m\times n$ matrix whose entries are positive integers. A step consist of transforming the matrix either by multiplying every entry of a row by $2$ or subtracting $1$ from every entry of a column. My question is can we transform $A$ into the zero matrix in finitely many steps??,"['matrices', 'recreational-mathematics']"
+1091752,"Why is the volume one third of that? I mean, where's the fault in my logic? [duplicate]","This question already has answers here : Why isn't the volume formula for a cone $\pi r^2h$? (2 answers) Closed 9 years ago . The volume of a cuboid is $l \times b \times h$. That is, it is equal to base area times height . I think it means that the base is added up height times, it becomes volume (It makes sense if we think about it) And if we think about cylinder, the above mentioned logic still holds. The volume of cylinder is $\pi r^2 \times h$ . Which is same as saying the area of bottom circle (i.e. $\pi r^2$) times the height $h$. But when it comes to a cone , it doesn't makes sense. In above examples  2-d shapes have been collected one upon another, a specific number of times(h). In a cone its kinda same except that now a triangle isn't collected one upon another (that would make a prism), but collected in  a circular way. We can imagine a cone to be group of right triangles with their axis being one of the sides (except hypotenuse, that would make a compound shape of two cones ). We can also imagine it this way, A right triangle is rotated with one of the sides being axis. So now the volume should be, by above mentioned logic, the area of repeated shape times number of shapes. And there are 2pi x r triangles because, well, it is rotated that much number of times. Visualize it in your mind, it'll become clear. Hope you get the idea. Now, Volume of cone should be 
+  area of the triangle times the circumference of the base => $1/2 \times b \times h \times 2\pi r$ Now the base of triangle is same as the radius of the base and the 2s cancel each other out we are left with $\pi r^2 h$ But the volume of cone if one third of that value. My question is Why is that?","['geometry', '3d', 'triangles', 'volume', 'area']"
+1091758,How to express the Pythons' NumPy linspace or arange arrays mathematically?,"How one can express digital one dimensional array, such as x = np.linspace(0, 10, 1000) or x = np.arange(-1, 1, 0.01) (examples taken from Python) mathematically? To be more specific, say one have the range expressed as x = np.arange(-1, 1, 0.1) , which gives: [ -1  -9.00000000e-01  -8.00000000e-01  -7.00000000e-01
+  -6.00000000e-01  -5.00000000e-01  -4.00000000e-01  -3.00000000e-01
+  -2.00000000e-01  -1.00000000e-01  -2.22044605e-16   1.00000000e-01
+   2.00000000e-01   3.00000000e-01   4.00000000e-01   5.00000000e-01
+   6.00000000e-01   7.00000000e-01   8.00000000e-01   9.00000000e-01] How can I write it down mathematically as a short description of, say, set? Thank you in advance.","['vector-spaces', 'linear-algebra', 'elementary-set-theory']"
+1091778,Invertible matrices in commutative rings,Let $A$ be a square matrix over a commutative ring $R$. Then $A$ has a left inverse iff it is invertible. Does there exist a elementary proof of this fact? (i.e. without using the determinant!),"['matrices', 'commutative-algebra', 'abstract-algebra']"
+1091780,How prove this inequality $b-a\ge \pi$,"let postive function $f(x)$ have two derivative on $(a,b),b>a$,and such
+  $$f''(x)+f(x)\ge 0,x\in(a,b)$$
+  and $f(a)=f(b)=0$,  show that $$b-a\ge \pi$$ if $$f''(x)+f(x)=0$$
+then
+$$f(x)=C_{1}\cos{x}+C_{2}\sin{x}$$
+but this problem is inequality,so then I  consider
+$$F(x)=f'^2(x)+f^2(x)\Longrightarrow F'(x)=2f'(x)f''(x)+2f(x)f'(x)=2f'(x)[f''(x)+f(x)]$$
+But seem this also not solve this problem",['analysis']
+1091794,Prove P$(\sup_{n\in\mathbb N}|\sum_{k=1}^{n}X_k|<\infty)>0 \iff$ P$(\sum_{k=1}^{\infty}X_k$ exists in $\mathbb R)=1$,"Let $X_n$ be a sequence of independent random variables, with $\mathbb E(X_n)=0$ and $|X_n|<K, \forall n,\omega$, then: P $(\sup_{n\in\mathbb N}|\sum_{k=1}^{n}X_k|<\infty)>0 \iff$ P $(\sum_{k=1}^{\infty}X_k$ exists in $\mathbb R)=1$ This can be also found in David Williams, probability with martingales (Remark in p.113). But this is not proven there. New question deleted. It can be found here .","['probability-theory', 'almost-everywhere', 'probability', 'expectation']"
+1091798,A rigorous characterization for a ringed spaces to be isomorphic to an affine scheme.,"On page 21-22 of the book The Geometry of Schemes by Eisenbud and Harris there is a characterization for when a ringed spaces $(X,\mathcal{O}_X)$ is isomorphic to an affine scheme $(\text{Spec}(R),\mathcal{O}_{\text{Spec}(R)})$. He states that this is the case exactly when all of the following conditions are satisfied: $R = \mathcal{O}_X(X)$. $\mathcal{O}(X_f) = R[f^{-1}]$ for all $f \in R$, where $X_f := \{ x \in X: x \text{ maps to a unit in } \mathcal{O}_{X,x}\}$. $(X,\mathcal{O}_X)$ is a locally ringed space. The natural map $X \to |\text{Spec}(R)|$, which takes $x \in X$ to the prime ideal of $\mathcal{O}_X(X)$ that is the preimage of the maximal ideal of $\mathcal{O}_{X,x}$, is a homeomorphism. Of course already the first one is supposed to be an isomorphism instead of an equality, which makes it tricky for me to wrap my head around this. Also Eisenbud and Harris do not give a proof for this characterization. So my question is: Is there a rigorous analog characterization for $(X,\mathcal{O}_X)$ to be isomorphic to $(\text{Spec}(R),\mathcal{O}_{\text{Spec}(R)})$ as a (locally) ringed space, which one can prove and which does not involve identifications?","['affine-schemes', 'algebraic-geometry', 'schemes', 'ringed-spaces']"
+1091812,Ways to prove $ \int_0^1 \frac{\ln^2(1+x)}{x}dx = \frac{\zeta(3)}{4}$?,"I am wondering if we can show in a simple way that
+$$
+I=\int_0^1 \frac{\ln^2(1+x)}{x}dx = \int_1^2 \frac{\ln^2(t)}{t-1}dt = \frac{\zeta(3)}{4}.
+$$ Because the end result is very simple, I suspect that there might be a fast way to prove this.
+Can you prove it without using polylog identities? Complex analysis is allowed.
+It may be easier to show the equivalent identity
+$$
+\sum_{k=1}^\infty \frac{(-1)^k H_k}{k^2} = -\frac{5 \zeta (3)}{8}
+$$
+I know you can do that one with the generating function of the harmonic numbers, but that gives a nasty expression with polylogs which I would like to avoid.","['definite-integrals', 'polylogarithm', 'sequences-and-series', 'integration']"
+1091818,Deriving inverse matrix formula,"If matrix $A$ is given with dimensions $2 \times2 $ then, A is invertible if, and only, if $ad - bc \neq 0$: $$\begin{bmatrix}a & b\ \\c & d \ \end{bmatrix}^{-1} = \frac{1}{ad - bc}\begin{bmatrix}d & -b\ \\-c & a \ \end{bmatrix}$$ How can this be derived? I just need hints, I am not good at properties etc.. of matrices, please help!","['matrices', 'linear-algebra', 'real-analysis', 'analysis']"
+1091849,All $a$ that equation has at least one root. $a^2+7|x+1|+5 \sqrt{x^2+2x+5}=2a+3|x-4a+1|$,"Find all $a$ such that the equation has at least one root. $$a^2+7|x+1|+5 \sqrt{x^2+2x+5}=2a+3|x-4a+1|$$
+What have I done: substitution $t=x+1$ and some rearrangements
+$$(a-1)^2-1+7|t|+5\sqrt{t^2+4}-3|t-4a|=0$$
+I solved a lot of equations like this, but now I can't easily see the way through. Usually I noticed something like that the square root $\sqrt{m^2+36} \ge 6$. Then usually opened up the modulus considering two different cases  $t>4a$ and other. Then found that $7|t|+3t \ge 0$ and $7|t|-3t \ge 0$ . It helped me along with rearrangements that made left side bigger or equal to one number, the right less or equal to the same number... But now nothing helps. Please show your thinking process as thorough as you can. Show how you came up to that way of solution.","['parametric', 'absolute-value', 'algebra-precalculus']"
+1091871,Prove convergence in distribution,"I need help with the following problem. Let $X_{n1}, X_{n2}, . . . , X_{nn}$ be independent random variables, with the same distribution as follows.
+Let for k = 1, 2, . . . , n och n = 1, 2, . . . ,
+$$P(X_{nk} = 0) = 1 −
+\frac{2}{n}
+−
+\frac{4}{n^3}$$
+$$P(X_{nk} = 1) = \frac{2}{n}$$
+$$P(X_{nk} = 2) = \frac{4}{n^3}$$
+and $S_n =\sum^n_{k=1} X_{nk}$. Show that
+$Sn
+→ P o(λ)$ when $n → ∞$
+and determine $λ$. I was thinking of using $G_{s_n}(t)=G_N(G_X(t))$ I got that $G_X(t)=1-\frac{2}{n}(1+t)+\frac{4}{n^3}(t^2-1)$ I don't know if this is the correct approach and if it is I don't know how to continue from here. How do I then find $G_N(t)$ Anyone know? Thanks!","['statistics', 'convergence-divergence', 'probability', 'probability-theory']"
+1091873,Is a function changed into another function by a change of variables?,"If I have a function $ u(x,t) = p(x+ct) + q(x-ct) $ (which is the d'Alembert solution to the $1D$-wave equation), I can make the substitutions $$ \xi(x,t) = x + ct\\
+\eta(x,t) = x - ct $$ So I am now left with $$ u(x,t) = p(\xi) + q(\eta) $$ I could then take that a step further and write $$ u(x,t) = p(\xi) + q(\eta) = u(\xi, \eta) $$ but I suspect the latter equality simply is wrong... Is that the case? Should I instead be defining a new function, say $v(\xi, \eta)$, so that $$ u(x,t) = v(\xi, \eta) $$ Even in that last equality, I suspect you can not really 'equate' two functions of different variables. What is the correct approach/terminology here, to make it clear that two functions are equal, save for an appropriate change of variables?",['functions']
+1091898,An inequality for positive operators,"Let $S$ and $T$ be positive operators on a Hilbert space $\mathcal{H}$. Suppose that $S \le T$. Since the square root function is operator monotone, it follows that $S^{1/2} \le T^{1/2}$. Does the inequality $$S^{1/2}RS^{1/2} \le T^{1/2}RT^{1/2}$$ hold for all positive operators $R$?","['operator-theory', 'hilbert-spaces', 'functional-analysis']"
+1091908,How to stop forgetting proofs - for a first course in Real Analysis?,"I am taking my first course in analysis. I like the subject. I study it almost on a daily basis. I try to prove theorems on my own without even looking at the hints. If I really get stuck I just read the first line of the proof and then try to continue on my own. I find this approach to be very rewarding. The problem is that I tend to forget all the proofs later. Some I still remember because I liked the idea of the proof, but most of the others I will forget fast. What am I doing wrong? Any tips on how to study analysis?","['soft-question', 'self-learning', 'learning', 'real-analysis']"
+1091925,"How do ""Dummy Variables"" work?",I do not understand how dummy variables work in math. Suppose we have: $$I_1 = \int_{0}^{\infty} e^{-x^2} dx$$ How is this equivalent to: $$I_2 = \int_{0}^{\infty} e^{-y^2} dy$$ How does this dummy variable system work? Since $y$ is the dependent variable for $I_1$ How can $y$ itself be and independent variable for $I_2$ ?? Thanks!,"['calculus', 'integration']"
+1091929,Trace of a matrix $A$ with $A^2=I$,"Let $A$ be a complex-value square matrix with $A^2=I$ identity.
+Then is the trace of $A$ a real value?",['linear-algebra']
+1091931,"Closest point on a 3D triangle, is this algorithm correct?","Given a point $P$ and three triangle vertices $U$, $V$, $W$, all in $\mathbb{R}^3$, I need to find the point in the triangle $UVW$closest to $P$. Does the following algorithm work, or have I missed any case? Project $P$ onto the plane spanned by $UVW$. If the projected point lies inside the triangle, this is the closest point. Otherwise: Project $P$ onto the three lines $UV$, $VW$, $WU$. If any of the projections lies on the edge, add these points to a list of candidates. Add the three vertices to the list of candidates. Now we have 3-6 solution candidates, and one of these must be the closest point on the triangle. Have I missed anything? For instance, could the solution lie on the edge of the triangle even if that edge was discarded in step 2? I couldn't find a counter-example, but I don't trust my skills that much.","['geometry', 'triangles', 'linear-algebra', 'convex-optimization']"
+1091950,Is there a name for the recursive incenter of the contact triangle?,"Recently, I became aware that there are many more triangle centers than the four I learned about in school. This reminded me of a thought I had when I first learned about the incenter: what point would you get if you took a triangle of the three tangent points of the inscribed circle (that I now know is called the contact triangle) an infinite number of times? Where is it located (e.g. what are its barycentric and/or trilinear coordinates), and does it have a name/number in the Encyclopedia of Triangle Centers? Is it transcendental?","['geometry', 'triangles', 'recursion', 'euclidean-geometry']"
+1091960,Complex integration $\int_{-\pi}^{\pi} \frac{\sin^2 t}{3+\cos t}dt$,"I'm trying to evaluate the integral $$\int_{-\pi}^{\pi} \frac{\sin^2 t}{3+\cos t}dt$$ using complex numbers. Meaning, instead of calculating $$\int_{-\pi}^{\pi} \frac{\sin^2 t}{3+\cos t}dt,$$ I want to calculate the integral $$\int_\Gamma \frac{\sin^2 z}{3+\cos z}dz$$ where $\Gamma$ is half the circle with center at origin and radius $\pi$ (in the positive direction), and then the straight line on the $x$ axis from $-\pi$ to $\pi$. We know that this integral is $0$ because $$\frac{\sin^2 z}{3+\cos z}$$ is analytic in the entire area bounded by $\Gamma$. So that's not an issue, but to evaluate our original integral, we need to now calculate $$\int_\gamma \frac{\sin^2 z}{3+\cos z}dz$$ where $\gamma$ is just the upper half of the circle I mentioned above. Without the line that goes from $-\pi$ to $\pi$ on the $x$ axis. How do I calculate this integral? Edit: A good parametrization might be $z=\pi e^{i\theta}$ where $0 \leq \theta \leq \pi$. And then we need to calculate the integral $$\int_{0}^{\pi} \frac{\sin^2 (\pi e^{i \theta})}{3+\cos (\pi e^{i\theta})}i\pi e^{i\theta} d\theta.$$ Doesn't seem easy to do.","['complex-numbers', 'integration', 'complex-analysis', 'contour-integration']"
+1092002,How to define an affine transformation using 2 triangles?,"I have $2$ triangles ($6$ dots) on a $2D$ plane.
+The points of the triangles are: a, b, c and x, y, z I would like to find a matrix, using I can transform every point in the 2D space.
+If I transform a , then the result is x . For b the result is y , and for c the result is z And if there is a given d point, which is halfway from a to b , then after the transformation the result should be between x and y halfway. I've tried to solve it according to NovaDenizen's solution, But the result is wrong. The original triangle: $$
+a =
+\left[
+\begin{array}{ccc}
+-3\\
+0\\
+\end{array}
+\right]
+$$ $$
+b =
+\left[
+\begin{array}{ccc}
+0\\
+3\\
+\end{array}
+\right]
+$$ $$
+c =
+\left[
+\begin{array}{ccc}
+3\\
+0\\
+\end{array}
+\right]
+$$ The x, y, z dots: $$
+x =
+\left[
+\begin{array}{ccc}
+2\\
+3\\
+\end{array}
+\right]
+$$ $$
+y =
+\left[
+\begin{array}{ccc}
+3\\
+2\\
+\end{array}
+\right]
+$$ $$
+z =
+\left[
+\begin{array}{ccc}
+4\\
+3\\
+\end{array}
+\right]
+$$ I've created a figure: I tried to transform the (0, 0) point, which is halfway between a and b , but the result was (3, 3.5) instead of (3, 3) The T matrix is: $$\left[
+\begin{array}{ccc}
+1/3 & 1/6 & 0\\
+0 & -1/2 & 0\\
+3 & 3,5 & 1\\
+\end{array}
+\right]$$","['affine-geometry', 'matrices', 'linear-algebra', 'transformation']"
+1092006,simple formula for det(AB-BA)?,"I was wondering whether there exists a simple formula for $\det(AB-BA)$ , given two square matrices $A$ and $B$ with coefficients in a commutative ring.","['matrices', 'linear-algebra', 'determinant']"
+1092009,the Teichmüller character,"Let $d \geq 2$ be an integer, $K$ a number field containing the $d$-th roots of unity $\mu_d(\mathbb{C})$ and $\mathfrak{p}$ a prime ideal of $K$ not dividing $d$. Let $\mathbb{F}_q$ be the residue field of $\mathfrak{p}$. I have seen in several places a multiplicative character 
+$$
+\chi: \mathbb{F}_q^\times \to \mu_d(\mathbb{C})
+$$ defined by 
+$$
+\chi(x)=Teich_{\mathfrak{p}}(x^{(q-1)/d})
+$$ where $Teich_{\mathfrak{p}}: \mu_d(\mathbb{F}_q) \to \mu_d(\mathbb{C})$ is the inverse of reduction mod $\mathfrak{p}$. For this to make sense, we need that reduction mod $\mathfrak{p}$ of roots of unity gives an isomorphism (then it follows that $d$ divides $q-1$). But why is this true? Also, is there any relation between the Teichmüller character here and the one for $p$-adic numbers? Thanks for your help!","['p-adic-number-theory', 'number-theory']"
+1092013,"For a hermitian element $a$ in a $C^*$-algebra, show that $\|a^{2n}\| = \|a\|^{2n}$","Let $\mathcal{A}$ be a $C^*$-algebra. Suppose that $a \in \mathcal{A}$ with the property that $a^* = a$ (that is, suppose that $a$ is hermitian ). I would like to show that $\|a^{2n}\| = \|a\|^{2n}$ for all $n \ge 1$. This fact is stated in Conway's A Course in Functional Analysis , and I'm having trouble proving it. Here's what I have so far: the $n =1 $ base cases just uses the basic $C^*$-algebra property: $$\|a^2\| = \|a^* a \| = \|a\|^2.$$ But now I get stuck on the induction step (assume we have $\|a^{2n}\| = \|a\|^{2n}$, show that $\|a^{2n + 2}\| = \|a\|^{2n + 2}$). I have been trying to give myself some insight by studying small cases, for instance, $n = 3$: $$\|a^6\| = \|(a^3)^2\| = \|a^3\|^2,$$ where the last equality follows from the base case. But then I end up with an odd exponent inside the norm. This is what is really giving me trouble. Hints or solutions are greatly appreciated.","['c-star-algebras', 'banach-algebras', 'functional-analysis']"
+1092074,"$\{(x,y)\in \mathbb C^2|y^2=\sin x\}$ as interior of compact Riemann Surface with Boundary","A takehome exam problem for my Riemann Surfaces class, which used Griffith's Introduction to Algebraic Curves, was the following: Show that $S=\{(x,y)\in \mathbb C^2|y^2=\sin x\}$ is not interior of a compact
+  Riemann Surface with boundary. (the exam is over now, so don't worry about plagiarism!) I tried to prove this but to no avail. My strategy was that: The solution set $S$ has ""infinitely many holes"", i.e. it has infinite dimensional first homology group $H_1(S,\mathbb Z)$. I am guessing that this may be shown by supplying a holomorphic form on $S$ with nonvanishing loop integrals over countably many loops on $S$, with each loop integral yielding a different value. A compact set can't have infinite dimensional homology group. If $S$ is interior of a Riemann Surface with boundary $T$, then $S$ having infinitely many non-equivalent 1-cycles (in homology group $H_1$) also supplies $T$ with infinitely many non-equivalent 1-cycles in $H_1$, and now this should give a direct contradiction with #2. I am not sure about whether each step works... any ideas? This problem seems really interesting at any case.","['riemann-surfaces', 'algebraic-geometry']"
+1092088,Derivative of a continuous function.,"Let $g:R\to R$ be a continuous function with $g(x+y)=g(x)+g(y), \forall x,y\in R.$ Find $\frac{dg}{dx},$ if it exist.","['derivatives', 'real-analysis']"

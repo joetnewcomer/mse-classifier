@@ -1,0 +1,406 @@
+question_id,title,body,tags
+389907,Show that sequence approaches fixed point of a function,"Problem Let $f(x)$ be a differentiable function on $\Bbb R$ with $\left|\,f ' (x)\right| \leq r < 1$, where $r$ is constant.  Then consider the sequence $\{x_n\}$ such that $x_1 = 0$, $x_{n+1} = f(x_n)$, $n\geq1$.  Show that $x_n \to x^*$ as $n$ approaches infinity.  Moreover, $x^* = f(x^*)$. Attempt I tried showing that when $f ' (x) = r$, then eventually you end up with $x_{n+1} = \sum_{n=1}^{\infty}r^n$.  That sum converges by the $p$ test, so then $f(x)$ should converge to some number $x^*$.  Then for $\epsilon>0$ there exists $N$ such that $n\geq N$ such that
+$$
+\left|\,f(x^*)-x^*\right| \leq \left|x_{n+1} - x_n\right| \leq \epsilon.
+$$
+Then to show for $f ' (x) < r$ use direct comparison test to say the bigger series converges so the smaller one must converge as well. I'm not sure if I can just do this or not, can someone let me know if I'm using the correct method or not?","['fixed-point-theorems', 'sequences-and-series', 'convergence-divergence', 'analysis', 'limits']"
+389909,When are groups of order 12 non-abelian?,"I am currently reading http://www.math.uconn.edu/~kconrad/blurbs/grouptheory/group12.pdf , and have a quick question about the group being non-abelian. Let me explain: Let $|G|=12=2^2\cdot 3$ and let $n_2,$ $n_3$ denote the number of Sylow $2,3$-subgroups respectively. By using Sylow's Theorems and counting elements we see that either $n_3=1$, or $n_3=4$ (and $n_2=1$). So we always have a normal Sylow $2$-subgroup or a normal Sylow $3$-subgroup. On page 2 the author turns to the case $n_2\ne 1$ (so $n_2=3$, $n_3=1$) and says "" Since $n_2\ne 1$, the group is non-abelian "". Why is this true?","['group-theory', 'abelian-groups']"
+389913,Involution in $L^{1}(G)$ is isometric.,"(Sorry for asking so many questions of the same type.  There is an underlying issue that I think once resolved will allow me to understand them all at once.) Let $G$ be a locally compact group, and $f\in L^{1}(G)$.
+I'm trying to verify that $\|f^{*}\|_{p} = \|f\|_{p}$, where the involution $*$ is defined by $f^{*}(x) = \delta(x)^{-1}\overline{f(x^{-1})}$. So my computations so far look like: \begin{eqnarray*}
+\int_{G}f^{*}(y)\mu(dy) &=& \int_{G}\left|\delta(y^{-1})\overline{f(y^{-1})}\right|^{p}\mu(dy)\\
+                        &=& \int_{G}\delta(y^{-1})^{p}\left|\overline{f(y^{-1})}\right|^{p}\mu(dy)\\
+\end{eqnarray*} Here I am stuck at the central issue I am facing where the calculations stop making sense and I feel like I'm just throwing things around hoping it's true. How do I use the definition of the $\delta$ map: $$\text{the unique group homomorphism }\delta:G\to(0,\infty)\text{ such that }\\\delta(x)\mu(E) = \mu(Ex)\text{ for all Borel sets }E$$ when its argument is not independant of the variable of integration? Ted has already confirmed in his answer to: How to use the modular function of a locally compact group? that the definition of $\delta$ implies: $$\int_{G}\delta(x)f(y)\mu(dy) = \int_{G}f(y)\mu(dy\cdot x)$$ If I try to use that step in my current problem, I end up with \begin{eqnarray*}
+\int_{G}\delta(y^{-1})^{p}\left|\overline{f(y^{-1})}\right|^{p}\mu(dy) &=& \int_{G}\left|\overline{f(y^{-1})}\right|^{p}\mu(dy\cdot (y^{-1})^{p})
+\end{eqnarray*}
+which I don't have any clue how to interpret, and I suspect is wrong.  What is the correct way to handle this function?  I dont know what measure to associate with the notation $\mu(dy\cdot (y^{-1})^{p})$. I think the answer to this question is what I really need to be able to finish the verifications I'm working on. Thanks to whoever can help me!","['measure-theory', 'harmonic-analysis']"
+389932,Tangent bundle of Grassmann manifold,"I have to prove that the tangent bundle of Grassmann manifold $G_n(\mathbb{R}^{n+h})$ is isomorphic to $\operatorname{Hom}(\gamma^n(\mathbb{R}^{n+k}),\gamma^\perp)$, with $\gamma^{\perp}$ is the ortogonal complement of the tautological bundle $\gamma^n(\mathbb{R}^{n+k})$ in the trivial bundle $\epsilon^{n+k} $.","['geometry', 'algebraic-topology']"
+389936,Simple Partial Derivative Chain Rule Question,"Say $f: \mathbb{R}^n \rightarrow \mathbb{R}$ by some $f(x_1,x_2,\cdots,x_n)$. Further suppose that each $x_i: \mathbb{R}^m \rightarrow \mathbb{R}$ by some $x_i=x_i(\eta_1,\eta_2,\cdots,\eta_m)$. Does it then follow that
+$$\frac{\partial f}{\partial \eta_i} = \sum_{k=1}^{n} \frac{\partial f}{\partial x_k}\frac{\partial x_k}{\partial \eta_i},$$
+assuming all of $\frac{\partial f}{\partial x_k}$ and $\frac{\partial x_k}{\partial \eta_i}$ exist on some subset of $\mathbb{R}^n$ and $\mathbb{R}^m$ respectively? I don't have much formal education in way of partial derivatives and aside from the fact of treating variables that we aren't taking the derivative with respect to to be constants. Really, my goal is to be able to successfully take some PDE like:
+$$u_{xx}+u_{yy}=0$$
+with $u=u(x,y)$ and doing some coordinate change $\xi = x+y$ and $\eta=x-y$ and doing the change of variable to the homogenous equation. What do people call this? Doing a change of variable to the PDE or equation? If this is correct I will be able to move forward in at least being able to do the chain rule I need to for my class.","['multivariable-calculus', 'partial-differential-equations']"
+389937,Canonical Form and DE,"If we have the differential equation $x'' = x - \cos(x')$, then In part a) Compute the corresponding non-linear 2D system and and its (unique) equilibrium part b) compute the linearized system at the equilibrium and classify its equilibrium. so in part a, I let y = x' and x'' = y' so I get then: F(x,y) = (x',y') = (y, x-cos(y)) and the equilibrium is y = 0 and back-substituting, I get x = 1, so the unique equilibrium is (x,y) = (1,0) in part b, I get the Jacobian matrix of F(x,y) and evaluate it at (1,0) and get the eigenvalues and realize that the system is NOT hyperbolic. Now, how can we do part c, d, and e? c) What can we tell about the non-linear system from the linearized one at the equi-
+librium; draw an approximative phase-portrait of the non-linear system around the equilibrium d) computing the Jordan form of the linearized system matrix and and the linear map
+that puts it in Jordan canonical form e) Is this system a gradient system, a hamiltonian system, or none of these? If so,
+what is the hamiltonian/potential function then? So, for part a), I introduced $y' = x$ and $y'' = x''$, I need help especially with part c), d), and e). I did parts a) and b). b) I get hyperbolic equilibria after computing the Jacobinan matrix and evaluating it at (1,0). The jacobian matrix I get is: (0, 1  as the first row (1, (x-cos(y))*sin(y)) as the second row and evaluating at (1,0) I get hyperbolic equilibriia",['ordinary-differential-equations']
+389945,Use the Handshake Lemma to determine the number of edges in GK_n,"In chess, a knight's move consists of two spaces either vertically or horizontally, followed by one space in the perpendicular direction. In this way, every knight's move results in an L shaped displacement from the original position. To model all of the legal knight's moves on an n x n chessboard, we can create a graph where each vertex represents a square on the board, and two vertices are adjacent if an only if a knight can legally move between the corresponding squares. 
+Use the handshake lemma to determine the number of edges in GK_n Is GK_n always, sometimes or never Eulerian Does GK_n always, sometimes or never contain an Euler trail By use of the Handshake Lemma edges are twice the amount of degree sum so if you had a graph GK_4 with 16 vertices, it would have degree sum 48 and 24 edges. I'm not sure how to use this information to determine the number of edges in GK_n. The abstractness is what confuses me.","['graph-theory', 'discrete-mathematics']"
+389965,Artinian rings are perfect,Definition. A ring is called perfect if every flat module is projective. Is there a simple way to prove that an Artinian ring is perfect (in the commutative case)?,"['ring-theory', 'projective-module', 'abstract-algebra', 'modules', 'commutative-algebra']"
+389974,What is the equivalent of a diagonal in a non-square matrix or array?,"I have a non-square matrix $M$, that looks something like this: $M=\left[
+\begin{array}
+& a & b & c \\
+d & e & f \\
+g & h & i \\
+j & k & l \\
+\end{array}\right]$ I would like to refer the cells $M_{ij}$ where $i=j$, like $\{a,e,i\}$ in this case. If this was a square matrix, that would be the diagonal. Is that still the right word, or is there something more fitting that avoids confusion?","['notation', 'matrices', 'terminology', 'definition']"
+389980,Counting flower and committee questions,"$1$) You want dozen roses. The florist has white, pink, red, and violet roses. How many possible ways could you make the order? $2$) There are $35$ men and $15$ women. Committee needs to have four men and four women, the chair will be a woman and secretary a man. How many ways can the committee be filled? My attempt: $1$) For the first one, I am not sure which one is right answer:  $\dfrac{4^{12} -4}{12} + 4$ or $\dbinom{12+4-1}{12}$. $2$) For the second one, my answer is $$\dbinom{35}4 \times \dbinom{15}4 \times \dbinom{35-4}1 \times \dbinom{15-4}1$$ Am I thinking this correctly?","['discrete-mathematics', 'combinatorics']"
+389991,"Closed form for $\prod_{n=1}^\infty\sqrt[2^n]{\tanh(2^n)},$","Please help me to find a closed form for the infinite product
+$$\prod_{n=1}^\infty\sqrt[2^n]{\tanh(2^n)},$$
+where $\tanh(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$  is the hyperbolic tangent .","['closed-form', 'calculus', 'hyperbolic-functions', 'infinite-product', 'trigonometric-series']"
+389992,Reducing Boolean expressions,"Just learning mathematical proof writing and came upon this interesting question Writing an expression using logic . $$(P \land Q \land \lnot R) \lor (P \land \lnot Q \land \lnot R) \lor (\lnot P \land Q \land R)$$
+Just to help myself prepare for these kind of questions (this question might have already been solved, but), how would you reduce this boolean sentence where as the question states, solving for (???) ?","['boolean-algebra', 'discrete-mathematics']"
+389999,"How can I see if this integral is convergent or not $\int_0^\infty \ \frac{1}{1 + x^4\sin x} \,dx $","I think the integral is convergent, but I don't know how to prove it. $\int_0^\infty \ \frac{1}{1 + x^4\sin x} \,dx $","['improper-integrals', 'calculus']"
+390016,"existence continuous function $f:X\to [0,1]$ such that $f(x_1)=0 , f(x_2)=\frac{1}{2}, f(x_3)=1$","Let $X$ be a Hausdorff normal topological space and $x_1, x_2, x_3$
+  are three distinct points.prove that there exist continuous function
+  $f:X\to [0,1]$ such that $f(x_1)=0 , f(x_2)=\frac{1}{2}, f(x_3)=1$ I think Urysohn's Lemma will be helpful here. By Urysohn's Lemma there exists a continuous function $f:X\to [0,1]$ such that $f(x_1)=0 , f(x_3)=1$ and moreover there exists a continuous function $g:X\to [0,1/2]$ such that $g(x_1)=0 , g(x_2)=1/2$. But how can I add them to get a single function?",['general-topology']
+390030,Let G be a graph in which every vertex has degree 2.,"Is G necessarily a cycle? I suspect not but I'm having hard time showing this. Also, Let be a tree. Prove that the average degree of a vertex in T is less than 2. I know that the sum of degrees of all vertices is $2|E|=2|V|-2$. Thus the graph must be connected, and the average degrees of a vertex is less than 2, so the vertices must be a degree of one. Is this correct?","['graph-theory', 'discrete-mathematics']"
+390031,Geometric solution to classic committee problem,"Most people know the classic committe style problems. I read this solution to one of the basic version of the committe problem and was impressed, but not sure why it works. I was hoping someone could explain why does it work.","['geometry', 'combinatorial-designs', 'finite-fields', 'combinatorial-geometry', 'combinatorics']"
+390049,How can I prove that the solutions of this differential equation is monotone?,"I'm trying to proof if $x:I\to \mathbb R$ a maximal regular solution of $x'=f(x)$, such that the image $x(I)\subset \mathbb R$ is bounded and $f:\mathbb R\to \mathbb R$ is $C^1$, then $x$ is strictly monotone. How can I prove that $f$ doesn't change sign? I need help Thanks a lot",['ordinary-differential-equations']
+390051,Map Quadrant Conformally onto the Unit Disc and find $|g'(1+i)|$.,"If $w = g(z)$ maps the quadrant $\{z = x + iy \; : \; x,y >0\}$ conformally onto $|w|<1$ with $g(1) = 1$, $g(i) = -1$, and $g(0) = -i$, find $|g'(1+i)|$. My initial reaction was to directly compute the transform and then take the derivative, i.e. set $g(z) = \frac{az + b}{cz + d}$ and use the given data to solve for the coefficients. I was expecting something similar to $\frac{z^2 - i}{z^2 + i}$ but I ended up getting $g(z) = (1+i)z - i$. This satisfies the given data but doesn't seem to map the quadrant to the unit disc... I'm not sure if I am making some kind of algebra mistake or my approach is wrong.",['complex-analysis']
+390056,Simplex with edges of length at least s having smallest circumradius,"Is it true that of all $k$-simplices with edge lengths greater than or equal to some parameter $s$, the regular simplex with edge lengths $s$ has the smallest circumradius? Please supply a proof or reference if possible. Thank you.","['optimization', 'geometry', 'discrete-geometry']"
+390063,"If $A$ is orthogonal, for any vector $x$ such that $Ax = b$, $\Vert x \Vert = \Vert b \Vert$","Is this statment true: For any vector $x$ such that $Ax = b$, $\Vert x \Vert = \Vert b \Vert$, if $A$ is orthogonal. I was working on a proof for my linear algebra class, when I noticed that the entire proof could be reduced to simple algebraic work conditional on the following statement being true: $$\text{For any vector $x$ such that $Ax = b$, $\Vert x \Vert_2 = \Vert b \Vert_2$, if $A$ is orthogonal.}$$ I have not found a straight answer to this question. I believe the statement is true but I am not sure about how to prove it. Thanks in advance.",['linear-algebra']
+390080,Definite Integral of square root of polynomial,"I need to learn how to find the definite integral of  the square root of a polynomial such as: 
+    $$\sqrt{36x + 1}$$ or $$\sqrt{2x^2 + 3x + 7} $$ EDIT: It's not guaranteed to be of the same form. It could be any polynomial that can't be easily factored into squares. This isn't homework, I'm studying for a final. And for context, I'm finding the arc length of a function.","['calculus', 'integration']"
+390088,What are some reasonable things to prove about the Collatz Conjecture?,"I am writing an undergraduate paper on the $3n+1$ problem, and I am looking for some theorems related to the problem that would be reasonable for someone with my mathematical background to prove. I'm near the end of my undergraduate studies. I have had a pretty basic introduction to Number Theory and Group Theory. I have also taken a few introductory Computer Science courses. Those are the only courses that I've taken that seem to be relevant to the problem but otherwise my math classes have been: the usually calculus sequence, real analysis, introductory topology, linear algebra. A good answer to my question would do the following: Either state one or more non-trivial theorems related to the Collatz conjecture, or reference sources that would contain this kind of information. Would NOT state any proofs unless a proof or partial proof would be essential for someone with my requisites if they are to be able to provide a full proof. Theorems that I have already proved: If $L(n)$ is a function that counts the number of mappings in the Collatz function for $n$ to get to 1, then if $n = 8k+4$, $L(n) = L(n+1)$. If $n = 128k+28$ then $L(n) = L(n+2)$.","['collatz-conjecture', 'reference-request', 'advice', 'number-theory']"
+390094,Number Theory: $x^2+y^2=a^2$,"Is there a coprime triple $(x,y,z)$ such that $x^2+y^2=a^2, x^2+z^2=b^2, y^2+z^2=c^2$, where $a,b,c$ are integers P.S. such solution doesn't exist for $a,b,c<1000$, as the computer says P.P.S. the statement above is WRONG","['elementary-number-theory', 'number-theory']"
+390097,About measure theoretic interior and boundary,"Reference:-  Evans-Gariepy, Federer, other books and notes of geometric measure thoery. I just want to clarify whether these definitions of measure theoretic interior 
+and boundary are correct. Given a Borel regular measure $ \mu $ in $\mathbb{R}^n $, given a $\mu$-measurable subset $E \subset \mathbb{R}^n $, let $$ \psi(x,E) = \lim_{r\rightarrow 0}\frac{\mu(E\cap B(x,r))}{\mu(B(x,r))} $$ Here $\psi $ is defined wherever the limit exists. Then do we have interior and exterior as $$ Int_\mu(E) = \{ x \in \mathbb{R}^n\ |\ \psi(x,E) = 1\},\\ Ext_\mu(E) = \{ x \in \mathbb{R}^n\ |\ \psi(x,E) = 0\} $$ and boundary $$\partial_\mu(E) = \mathbb{R}^n\setminus (Int_\mu(E)\cup Ext_\mu(E)) $$ I wold be extremely obliged if someone can tell me whether these are correct and whether they imply $$ \mu(E\setminus Int_\mu(E))= \mu(E^c\setminus Ext_\mu(E)) = \mu(\partial_\mu(E)) = 0 $$ from Lebesgue differentiation theorem. Also how exactly the topological and measure theoretic boundaries are related ? There is also another question, pardon me if it's too lame. Given a $\mu $ can we define a topology on $\mathbb{R}^n $ such that it's topological interior and boundary are the measure theoretic interior and boundary ?","['general-topology', 'measure-theory', 'real-analysis', 'analysis', 'geometric-measure-theory']"
+390102,Trees with vertex set,"I am having hard time understanding and solving the following question: There are exactly three trees with vertex set {1,2,3}. Note that all these trees are paths; the only difference is which vertex has degree 2. How many trees have a vertex set {1,2,3,4}? So how I understand it is we have $K_3$ trees for the vertex set {1,2,3}. So since a tree is a path, we have a walk that repeats no vertex twice, or a path. When I drew it out, every time, only one vertex at a time has 2 degrees. (So far correct?) So what I don't understand is how we can determine the number of trees we can find for a vertex set $K_4$.","['graph-theory', 'discrete-mathematics', 'trees']"
+390104,Niceness of the projection of a closed subscheme of affine space?,"Let $k$ be an algebraically closed field, and suppose $C\subseteq \mathbb{A}^{n+m}_k$ is a closed subscheme. What can we say about the image under the projection $\pi: \mathbb{A}^{n+m}_k\rightarrow \mathbb{A}^n_k$? We have the very general result from Chevalley's Theorem that $\pi(C)$ is a constructible set. Can we say more? For instance does it have a natural scheme structure? $\pi(C)$ is not necessarily closed, for instance when $C=(xy-1)\subseteq\mathbb{A}^2_k$. However in this case we do have that $\pi(C)$ is locally closed rather than being a finite union of locally closed subsets. Does this hold in general? The examples I can think of where the image of a nice subscheme is properly a constructible subset don't involve a morphism as nice as the projection from an affine space. Note that it doesn't seem that the image under $\pi$ of a locally closed set is locally closed. For instance take the standard ""constructible but not locally closed set"" example in $\mathbb{A}^2_k$ which is the complement of the $x$-axis, but including the origin (i.e. $\left(\mathbb{A}^2_k\setminus (y)\right) \cup (x,y)$). This is the image under $\pi:\mathbb{A}^3_k\rightarrow\mathbb{A}^2_k$ of $(z)\setminus (z,y)$ union the line $(t,t,1)$ (i.e. $((x-y),(z-1))$).","['general-topology', 'algebraic-geometry']"
+390115,Find $\lim_{n \to \infty}\frac{\sin 1+2\sin \frac{1}{2}+\cdots+n\sin \frac{1}{n}}{n}$ [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 6 years ago . Improve this question Find $$\lim_{n \to \infty}\frac{\sin 1+2\sin \frac{1}{2}+\cdots+n\sin \frac{1}{n}}{n}.$$ This is a recent exam question, which I couldn't figure out in the exam. My guess is it doesn't exist.","['calculus', 'real-analysis', 'limits']"
+390117,"Prove that if $Q^tQ = I$ and $A = QR$, then $\|Ax - b\| = \|Rx - Q^tb\|$","I have a linear algebra final tomorrow and was practicing a few proofs. I want to make sure this proof is correct. Prove that: If $Q^tQ = I$ and $A = QR$, then $\|Ax - b\| = \|Rx - Q^tb\|$ $$\begin{align*}
+A &= QR\\[0.1cm]
+Ax &= QRx\\[0.1cm]
+Ax - b &= QRx - b\\[0.1cm]
+\qquad Ax - b &= QRx - QQ^tb \quad\text{(since $QQ^t = I$)}\\[0.1cm]
+Ax - b &= Q(Rx - Q^tb)\\[0.1cm]
+\|Ax - b\| &= \|Q(Rx - Q^tb)\|\\[0.1cm]
+\end{align*}$$
+  Since the orthogonal transformation preserves length, $\|Q(Rx - Q^tb)\| = \|(Rx - Q^tb)\|$. This completes the proof: $\|Ax - b\| = \|Rx - Q^tb\|$",['linear-algebra']
+390123,What will be a circle look like considering this distance function?,"I am working on some exercises in the book Geometry: A Metric Approach with Models by R.S. Millman. He defines the following map: $$d_S(P,Q):\mathbb R^2\times\mathbb R^2\to\mathbb R\\\ d_S(P,Q)=\max\{~|x_2-x_1|,~|y_2-y_1|~\}$$ where in $P(x_1,y_1),~Q(x_2,y_2)$ are points in $\mathbb R^2$ and then wants the reader to show that $d_S$ is a distance function on $\mathbb R^2$. I was thinking to myself of what would be a circle looked like regarding this function in Cartesian plane? I fixed a point, for example the origin, as a centre and then probed the case with a given positive constant $r$ as a radius. I just got two horizon $|y|=r$ or two vertical $|x|=r$ lines. the results didn't have good taste. Any help? Was I right? Thanks","['general-topology', 'geometry', 'analysis']"
+390154,3D rotation group,"It is known that the group $\text{SO}(3)$ of rotation-matrices (matrices $A$ with $\det(A)=1$)
+are generated from three parameters. This can be expressed by the fact, that
+any rotation matrix is a composition of axis rotations $$
+\begin{pmatrix}
+\cos(\phi)&-\sin(\phi)&0\\
+\sin(\phi)&\cos(\phi)&0\\
+0&0&1\\
+\end{pmatrix},
+\begin{pmatrix}
+\cos(\phi)&0&\sin(\phi)\\
+0&1&0\\
+-\sin(\phi)&0&\cos(\phi)\\
+\end{pmatrix},
+\begin{pmatrix}
+1&0&0\\
+0&\cos(\phi)&-\sin(\phi)\\
+0&\sin(\phi)&\cos(\phi)\\
+\end{pmatrix}
+$$ The question is: Why is the second matrix (Usually called rotation around the $y$-axis ) in almost any textbook written like this? Related to the other two matrices, I would say that the negative 
+$$
+\begin{pmatrix}
+\cos(\phi)&0&-\sin(\phi)\\
+0&1&0\\
+\sin(\phi)&0&\cos(\phi)\\
+\end{pmatrix},
+$$
+is conceptual more straight forward. Any help or guidance will be appreciated.","['matrices', 'linear-algebra', 'abstract-algebra', 'rotations']"
+390162,Bernoulli differential equation help?,"We have the equation $$3xy' -2y=\frac{x^3}{y^2}$$ It is a type of Bernouli differential equation. So, since B. diff equation type is 
+$$y'+P(x)y=Q(x)y^n$$
+I modify it a little to: $$y'- \frac{2y}{3x} = \frac{x^2}{3y^2}$$ $$y'-\frac{2y}{3x}=\frac{1}{3}x^2y^{-2}$$ Now I divide both sides by $y^{-2}$. What should I do now?",['ordinary-differential-equations']
+390170,is this function injective?,"Is this function injective? $f:\mathbb{N}\to \mathbb{N\times N}$ defined as $f:n\to (n, n+1)$ $f(n_{1})=f(n_{2})\Rightarrow (n_{1},n_{1}+1)=(n_{2},n_{2}+1)\Rightarrow$ $n_{1}=n_{2} \wedge n_{1}+1=n_{2}+1\Rightarrow n_{1}=n_{2}$ Is this correct?","['elementary-set-theory', 'functions', 'solution-verification']"
+390181,How to find the discontinuity set?,"What is the discontinuity set of the function $f:\mathbb{R}^2 \rightarrow \mathbb{R}$,
+  $ f(x,y) := \sup \{ \sin (tx) + \sin (ty) : t \in \mathbb{R} \} ?$",['multivariable-calculus']
+390205,A hard 'if and only if' trigonometric identity proof,"Prove 
+$$
+\frac{-2+2\tan A+2\cos B\cdot\sin B+\cot^2 A\cdot({\sec^4A-\operatorname{cosec}^2A-2)}}{2+\tan^2A-2\sin^2A} =(\sin A+\cos A)^2
+$$ if and only if B is the double angle of A, or $B=2A+2k\pi$, $k=0,1,2,3...$ Advice is welcome as to improve notation and format. i understand the RHS can be simplified to 1+sin(2A), but that doesn't seen to go anywhere . Also, I have been able to simplify the left hand side of the expression down a little, but it's not taking me anywhere at all. I have a feeling that the difficulty of this proof lies in using the 2's in the LHS. again, many thanks,
+Yun Fei",['trigonometry']
+390206,Calculate an integral in a measurable space,"Let $(X,\mathcal{M})$ a measurable set with measure  $\mu$. Let $f$ be an integrable non negative function, such that $K:=\int_{E}f \mathrm d\mu<\infty$, where $E\in(X,\mathcal M)$. Let $\alpha>0$. Calculate the following integral $\displaystyle \lim_{n\rightarrow\infty}\int_{E} n \ln\left(1+\left(\frac{f}{n}\right)^{\alpha}\right)\mathrm{d}\mu$ I prove that for $\alpha=1$ the previous integral is $K$, and $\forall \alpha>1$ is zero. It follows by the identity $(1+x^{\alpha})\leq\alpha x$, $\forall x\geq0$ $\forall \alpha\geq1$. And the Dominated Convergence Theorem. But I don´t know how to take the case $0<\alpha<1$.
+    Thanks in advance! Suppose that $\alpha>1$. We take the sequece
+ $\{f_{n}\}_{n\in\mathbb N}$ of measurable functions, $f_{n}:=n\ln(1+(f/n)^{\alpha})$.  Moreover by the identity, for $\alpha>1$, 
+ we have the following $|f_{n}|=\left|n\log\left(
+ 1+\left(\frac{f}{n}\right)^{\alpha}\right) \right|\leq n \alpha\frac{f}{n}=\alpha f$,
+  $\alpha f$ is measurable. We need only to prove that$\{f_{n}\}_{n\in\mathbb N}$ converges pointwise to a function. In this case $f\equiv 0$
+   $\forall x\in Dom(f)$, $\displaystyle\lim_{n\rightarrow \infty}n\log\left(\left(\frac{f}{n}\right)^{\alpha}+1\right)= 
+ \lim_{t\rightarrow 0}\frac{\log((ft)^{\alpha}+1)}{t}$.
+  Making the change of variables $t=\frac{1}{n}$. And by L'Hopital, it arises
+  $\lim_{t\rightarrow 0}\alpha f^{\alpha}  
+ \frac{t^{\alpha-1}}{(ft)^{\alpha}+1}=0$. ($\alpha-1>0$). Finally, using the Dominated Convergence Theorem, it leads to $
+ \displaystyle\lim_{n\rightarrow \infty} \int f_{n}  \mathrm d \mu=\int 0 \mathrm d\mu =0$",['measure-theory']
+390231,On the primality of integers of the form $p^2+k$,"I am not able to find an answer to the following question: For which positive even integers $k$ is the integer
+  $$p^2+k$$ prime, where $p$ is a prime number $\gt5$?","['prime-numbers', 'number-theory']"
+390237,"Embeddings of $\mathrm{GL}(n-1,q)$ into $\mathrm{GL}(n,q)$","Let $n>2$ and $q$ be a prime power. I want to find all the embeddings of $\mathrm{GL}(n-1,q)$ into $\mathrm{GL}(n,q)$ . An embedding I first thought of is as following. Let $V$ be an $n$ -dimensional vector space over $\mathrm{GF}(q)$ and $H$ is a subgroup of $\mathrm{GL}(V)$ fixing a nonzero vector in $V$ . Then $H$ is isomorphic to $\mathrm{GL}(n-1,q)$ .","['linear-algebra', 'finite-groups', 'group-theory']"
+390239,Second-order ODE with substitution,"I’m struggling with this question: Use the substitution $y(t) = z(t)\,e^{-t}$ to transform the ordinary differential equation
+  $$\frac{d^2 y}{dt^2} + 2\,\frac{dy}{dt} + y = t^2 e^{-t}$$
+  into an ordinary differential equation for $z(t)$. Hence obtain the general solution for $y(t)$. What is the specific solution which satisfies the initial conditions, $y(0) = 1$ and $y'(0) = 0$? I have an exam in two hours, and I can’t get around this question. So far I managed to get the first order and second order differentials for $z(t)$, and found that $z''(t) = t^2$, but I don’t know what to do next. How should I proceed?",['ordinary-differential-equations']
+390251,Why can't this be a coset?,"Let $H$ be a subgroup of $G$ and H is not normal, there are left  cosets $aH$ and $bH$ whose product isn't a coset. My attempt: $ab H\subset aHbH$ and if H is not normal, if $ah_1bh_2=abh_3$ for all $h_1$, $h_2$, and $b$ then $h_1b=bh'$ for all $b$ and $H$ is normal a contradiction. So,$ab H\neq aHbH$ for some  $a,b$ and as cosets don't overlap $aHbH$ is not a coset of $H$. However, I don't know how to show that this isn't a coset of some other subgroup.","['group-theory', 'abstract-algebra']"
+390252,Cross section is a regular hexagon.Is it a cube?,One of the cross sections in a rectangular box is a regular hexagon.Prove that the box is a cube I tried to prove that certain lengths were equal by showing that certain triangles are congruent but that was of no use.Could someone help me with this one?,"['geometry', '3d', 'contest-math']"
+390260,Do we really need polynomials (In contrast to polynomial functions)?,"In the following I'm going to call a polynomial expression an element of a suitable algebraic structure (for example a ring, since it has an addition and a multiplication)
+that has the form $a_{n}x^{n}+\cdots+a_{1}x+a_{0}$ , where $x$ is
+some fixed element of said structure, a polynomial function a function of the form $x\mapsto a_{n}x^{n}+\cdots+a_{1}x+a_{0}$ (where the same algebraic considerations as above apply) a polynomial an element of the form $a_{n}X^{n}+\cdots+a_{1}X+a_{0}$ with indeterminates $X$ (these
+can be formalized, if we are in a ring, with strings of $0$ s and
+a $1$ ). Note that when we are very rigorous/formal, polynomial expressions
+and polynomials are something different (although in daily life we
+often use them synonymously). Polynomial functions and expressions
+are also different from each other although in this case the relationship
+is a closer one, since every polynomials expression can be interpreted
+as a polynomial function evaluated at a certain point (thus ""polynomial
+functions"" are something more general than ""polynomial expressions""). My question is: Why do we use polynomials ? It seems to me that every
+piece of mathematics I have encountered so far, one could replace
+every occurrence of polynomials with polynomial expressions/functions
+without any major change in the rest of the proof/theorem/definition
+etc. My thoughts: The only reasons that I can see to use polynomials are the following
+two: After one makes the idea precise that one can plug ""suitable""
+elements into polynomials (which may lie a ring containing the ring
+in which the coefficients live in), one can save time in certain setting,
+by handling the ""plugging of suitable elements into polynomials""
+more elegantly: For example in case of the theorem of Cayley-Hamilton,
+which in its ""polynomial function"" version would look like: Let $A$ be an $n\times n$ matrix over $K$ , whose characteristic
+polynomial (function) is $x\mapsto a_{n}x^{n}+\cdots+a_{1}x+a_{0}$ .
+Then $$
+a_{n}A^{n}+\cdots+a_{1}A+a_{0}I=0.
+$$ whereas the ""polynomial"" version looks more elegant: Let $A$ be an $n\times n$ matrix over $K$ , whose characteristic
+polynomial is $p_{A}\in K\left[X\right]$ . Then $$
+p_{A}\left(A\right)=0.
+$$ The only thing that polynomials can ""do"", but algebraic expressions/functions can't, is to be different, when the algebraic expressions/functions are the same (i.e. there's a theorem that tells us that the mapping of polynomials to polynomials expressions/functions
+isn't injective, if the field is finite). Maybe this small difference makes a big enough difference
+to consider polynomials after all, but as I said, I haven't encountered
+any situation in which this difference could manifest itself. ( I'm guessing that maybe cryptography or higher number theory really needs
+polynomials and not just polynomial expressions/functions. Since I don't know
+anything about these subjects, I would be very happy with an example
+of a theorem (whose content isn't merely technical as it is the case with the theorem above) involving polynomials, where these absolutely cannot
+be replaced by polynomial expressions/functions. Conversely I would also be happy with an authoritative statement from someone knowledgeable that indeed we could dispense of polynomials, if we wanted to. )","['finite-fields', 'functions', 'abstract-algebra', 'polynomials', 'soft-question']"
+390272,Drawing an arc between two points,"I was writing a java program to draw an arc.
+Arc2D.Double(int x,int y,int width,int height,int startAngle,int arcAngle,int type); Since, I'm not familiar with the mathematics behind drawing arc, I'm facing the problem.
+Basically, what I want to is...I want to draw an arc between two points A and B. 
+I want to draw an arc between the two lines depicting the angle between them. 
+Some body please help me in calculating the startAngle and arcAngle. Please help me out. 
+Thanks in advance. Well, I found the answer to my scenario here ... Since, I don't have enough reputation to answer I'm writing it here.... Lets say that the center of the circle is (x0, y0) and that the arc contains your two points (x1, y1) and (x2, y2). Then the radius is: r=sqrt((x1-x0)(x1-x0) + (y1-y0)(y1-y0)). So: int r = (int)Math.sqrt((x1-x0)*(x1-x0) + (y1-y0)*(y1-y0));
+int x = x0-r;
+int y = y0-r;
+int width = 2*r;
+int height = 2*r;
+int startAngle = (int) (180/Math.PI*atan2(y1-y0, x1-x0));
+int endAngle = (int) (180/Math.PI*atan2(y2-y0, x2-x0));
+graphics.drawArc(x, y, width, height, startAngle, endAngle); Thanks & Regards","['geometry', 'trigonometry']"
+390274,a problem on nonconstant holomorphic function has a zero or no in the closed unit disk,"Let $f:D \to \mathbb{C}$ be a non-constant holomorphic function ($D$ is the closed unit disk) such that $|f(z)|=1$ for all $z$ satisfying $|z|=1$ . Then prove that there exist $z_0 \in D$ such that $f(z_0)=0$ My thought:- By Maximum Modulus Theorem $|f(z)|$ has Maximum value on the curve which is $1$. By Minimum Modulus Theorem if $f(z)\ne0$ for all $z\in D$, then it has its minimum value on the boundary which is $1$. Then $|f(z)|=1$ for all $z\in D$. Hence $|f(z)|$ is constant which is a contradiction. Is my thinking correct?",['complex-analysis']
+390276,Sum of kth roots ($\sum\sqrt[k]{m}$),"I'm trying to find an asymptotic to $$S(n) = \sum_{k=1}^n\sqrt[k]{m}$$ From computational tests, it seems to grow nearly as slowly as $n$. However even $$\sum_{k=1}^\infty\sqrt[k]{m}-1$$ diverges (for $m\neq1$) by the comparison test. I'm thinking it might be something like $n\log{\log n}$, but I don't know how to show it. Update: So it turns out to be closer to $n\sqrt[n]{m}$. Does anybody know if there is a nice formula?","['asymptotics', 'summation', 'sequences-and-series', 'divergent-series']"
+390277,Painting chess board,"The task is to paint each of the $64$ squares on a chess board either blue or red.
+I need to find the number of distinct ways this can be done given that any $2\times 2$ square on the board has two red and two blue squares. I've tried solving it for a $4\times 4$ board, but I am getting no where.
+Would appreciate any help","['coloring', 'combinatorics']"
+390280,$\cos(x)+\cos(x\sqrt{2})$ is not periodic,Show that the function $$f(x)=\cos(x)+\cos(x\sqrt{2})$$ is not periodic. I tried $x = a$ and $a\sqrt{2}$. I am guessing that the method of contradiction would be of some help over here. What else should I try?,"['trigonometry', 'calculus', 'functions', 'periodic-functions']"
+390288,Multiplication of determinants,"Show that for any vectors $\bf{a}$,$\bf{b}$,$\bf{c}$,$\bf{u}$,$\bf{v}$,$\bf{w}$ in $\mathbb{R}^3$, $$[\bf{a},\bf{b},\bf{c}][\bf{u},\bf{v},\bf{w}]=\begin{vmatrix}\bf{a}\cdot\bf{u}&\bf{a}\cdot\bf{v}&\bf{a}\cdot\bf{w}\\
+\bf{b}\cdot\bf{u}&\bf{b}\cdot\bf{v}&\bf{b}\cdot\bf{w}\\
+\bf{c}\cdot\bf{u}&\bf{c}\cdot\bf{v}&\bf{c}\cdot\bf{w}\\
+\end{vmatrix}$$ My question: is there a more elegant way to prove that without actually delving into tedious direct approach by definition? I was considering that ""summing"" approach, using the fact that $$[\textbf{a},\textbf{b},\textbf{c}][\textbf{u},\textbf{v},\textbf{w}]=\bigg(\sum^3_{i,j,k=1}\epsilon_{ijk}a_ib_jc_k\bigg)\bigg(\sum^3_{i,j,k=1}\epsilon_{ijk}u_iv_jw_k\bigg)$$ But I am very weak with manipulations of sums and can't get much further. Any hints? Note This problem occured when the text book formalized the corkscrew rule and discussed orientation of vectors in $\mathbb{R}^3$, meaning even matrices has not been introduced yet, as the chapter itself was analyzing vectors in the given space.","['linear-algebra', 'determinant']"
+390305,"How to find all elements of $\mathbb{Z}_{4} \times\mathbb{Z}_{4}/\langle(1,1)\rangle$?","I am studying factor groups, and I saw an example that says Find all the elements of the factor group $\mathbb{Z}_{4}   \times \mathbb{Z}_{4}/\langle(1,1)\rangle$. I know that the order of  $\mathbb{Z}_{4}  \times \mathbb{Z}_{4}$  is $16$, and the order of $\langle(1,1)\rangle$ is $4$, so we must have $4$ elements, but how can I find them? Edit: Actually, this is not a homework, I have the answer saying that those elements are  $\{(1,1),(2,2),(3,3),(0,0)\} , \{(1,2),(2,3),(3,0),(0,1)\} , \{(2,1),(3,2),(0,3),(1,0)\},\{(1,3),(2,0),(3,1),(0,2)\}$. But I did not understand how they are found, can anyone please explain the steps to find them? Thanks.","['group-theory', 'abstract-algebra']"
+390323,A photon in expanding Universe (a snail on a tree),"I want to know how far a snail can reach in expanding universe. It has a constant speed c = 1 and tree is expanding at speed $v= H_0 D$, with Hubble constant $H_0 = 1$. Here D(T) is the distance of snail from the origin that I am looking for. I want to know how it depends on time T. At every moment of time, t, D increases as $dD = H_0 D dt + c dt = (D + 1)dt$ because we add the tree growth to the snail speed. This is non-homogenous equation and I had to look into handbook to get the result $D(T) = e^T-1$. This looks right, as we have snail at the origin, D = 0, at time 0. However, I do not know how to compute inhomogeneity myself. I keep in mind only that exponentials are solutions of homogenous equations. For instance, the Hubble equation, $dD = r_0 D\:dt$, gives exponentially expanding Universe $D = r_0 e^t$. To avoid inhomogeneity (and differential equations altogether), I tried to derive the solution right in the closed form. I considered this way: in the first moment of time, snail travels $r_0 = dt$. This length starts expanding, according to Hubble law, $r(T-dt) = r_0 e^{T-dt} = e^{T-dt} dt$ to the snail's distance because it has $T-dt$ seconds to expand. This is the contribution of the first snail step to the resulting distance. During the next step, snail makes another $r_0 = dt$, but it has $dt$ less time to expand, resulting in contribution of $e^{T-2dt} dt$. The third step, will produce the same $r_0$, expanded to $e^{T-3dt} dt$ and so on, until, in the final step there will be no time to expand at all, $e^{T-T} dt = dt$. So, we need to sum up the infinitecimal plots, whose sizes grow exponentially with t. In the form $D(T) = \int r(t) dt$, where $r(t) = e^{T-\int dt = T-t}$. Likewise $\int_0^Y {y dy} = \int_0^Y {(Y-y) dy} $, I think that we'll get the same result if, instead of reducing expansion time linearly, from T to 0, it would be increased linearly, from 0 to T, $D = \int_0^T e^{T-t} dt = \int_0^T e^{t} dt = e^t|_0^T = e^T-1$ Surprisingly, while I typed this text, the closed form integral matched the diffeq solution above! I had a discrepancy on the paper. It seems not a question anymore. Is it ok to leave the solution on this site? You may just check if it is ok. So, photon with a constant speed, 1, in expanding Universe travels at $d(e^t-1)/dt = e^t$ -- exactly the speed of expanding Universe! Otherwise, you may answer why Ant on a rubber rope is consedered as a model of Universe expansion rather than my problem? I see that ant has it tree growing linearly, rather than exponintially, which cannot correspond to the Hubble Universe expansion.","['closed-form', 'ordinary-differential-equations', 'recreational-mathematics', 'integration']"
+390327,Is zero a limit point of the sequence $(\sqrt n \sin n)$,Is zero a limit point of the sequence $(\sqrt n \sin n)_n$?,"['sequences-and-series', 'real-analysis']"
+390329,Levi-Civita Connection for 2-dimensional Riemannian manifold,"I'm trying to show the following. Suppose $(M, g)$ is a $2$-dimensional Riemannian manifold with connection $\nabla$. Suppose also that $\nabla$ is metric compatible, and that length extremizing curves $\gamma$ for $g$ are geodesics in the sense that $$\nabla_{\gamma '}\gamma ' \propto \gamma '$$ Then $\nabla$ is torsion-free. I've got stuck partway through the proof - does anyone know how to finish it off correctly? My working is below. Let $p$ be an arbitrary point in $M$ and choose a vector field $T$ around $p$ such that $\{T, \nabla_T T\}$ forms a local frame for $M$. In other words $$ \nabla_T T \not\propto T$$ We now immediately know that the integral curve $\gamma$ of $T$ through $p$ is not length extremizing. Thus there exists a variation $\tilde{\gamma}(t,s)$ of $\gamma$ and a vector field $N = \tilde{\gamma}_*(\partial/\partial s)$ such that $$L'(s) = \int_{-\epsilon}^\epsilon N_{\tilde{\gamma}(t,s)}|T_{\tilde{\gamma}(t,s)}|dt$$ is nonzero at $s = 0$. Writing this out more explicitly we get \begin{align} L'(s) &= \int |T|^{-1} g(\nabla_N T, T)dt\\
+&= \int |T|^{-1} g (\nabla_T N,T) + Tors(N,T) dt
+\end{align} But here I'm stuck. I have no idea how to use this information to prove that the torsion must be $0$. I think perhaps some kind of contradiction argument might work, but I can't quite see how to implement it. Any ideas?","['calculus-of-variations', 'manifolds', 'differential-geometry', 'geodesic']"
+390347,On the definition of the structure sheaf attached to $Spec A$,"Let $A$ be a ring (commutative with $1$),if $X=Spec A$ we want to attach a sheaf of rings to $X$. If  $f\in A$, $D(f)=X\setminus V(f)$ is an element of the base and we define
+$$\mathcal O_X(D(f)):=A_f$$ I've problems to show that $\mathcal O_X(\cdot)$ is well defined on the set $\mathcal B=\{D(f)\,:\, f\in A \}$. If $D(f)=D(g)$, then it is easy to show that $A_f\cong A_g$, but these two rings are not the same, so we have that $\mathcal O_X(D(f))\neq \mathcal O_X(D(g))$ even if they are isomorphic. Textbooks say ""we can identify  $A_f$ with $ A_g$"" but what they exactly mean with the word ""identify""?","['sheaf-theory', 'algebraic-geometry']"
+390351,$X\subsetneqq Y$ but $X^\star=Y^\star$,"Are there $X,Y$ real Banach spaces, such that $X\subsetneqq Y$ (strictly contained) and $X^\star=Y^\star$, where $\star$ denotes the topological dual? This property is not true for Hilbert spaces, nor even for $L^p$ spaces, so I was thinking to try some function space: continuous functions or bounded... Any help is appreciated. Thank you",['functional-analysis']
+390371,accumulation point of recursive sequence,"Given is a sequence with: $(a_0)=1$, $(a_1=1)$, $a_{n+2}=\frac{1+a_{n+1}}{a_n}$ I now have to show what the accumulation points are: I guess that the sequence is jumping from number to number like this:
+1->1->2->3->2->1->1->2.. So the acc.points should indeed be ""1, 2 and 3"". Is this correct? If yes, how can I 'show' this?
+Furthermore: Is there any way to build some subsequence of $a_n$ that converges against ""1, 2 and 3"" ? Thank you :)",['limits']
+390387,"Gelfand's formula, different field","Gelfand's formula says that for a complex matrix $A \in \mathbb{C}^{n \times n}$, $$\rho(A) = \lim_{m \rightarrow \infty} \|A^m\|^{1/m},$$ where $\rho$ is the spectral radius (norm of maximal eigenvalue / maximal norm of eigenvalues) and $\|\cdot \|$ is any matrix norm. I looked at the proof at http://en.wikipedia.org/wiki/Spectral_radius and to me it seems like this should be valid (maybe with slight changes to the proof) over any algebraically closed field $K = \overline{K}$ with a nontrivial valuation (in particular, over $\overline{\mathbb{Q}_p}$). Can anyone confirm this?","['matrices', 'spectral-theory', 'p-adic-number-theory']"
+390410,Properties matrix $A^2=I$,"Let be $A$ a matrix such that $A^2=I$. According my book the $A$'eigenvalues are $-1$ and $+1$?. but, For me is only $+1$, this because $A = \sqrt{I} = I$.","['matrices', 'linear-algebra']"
+390411,Coinflip statistics,"There is a betting strategy for coinflips, called Martingale, in which the player should pick heads or tails and keep betting on it (doubling their bet on every loss) to eventually make a win when it appears. In theory this is watertight, but with one caveat: there can be very long strings of losses, and the player runs out of money, and looses it all. Now, some people wait until they have seen a very long string of outcomes for one side, and start betting at the other side, with the idea that has a larger chance now. I know that mathematicly this is nonsense, both sides still have 50% chance no matter what happend before. Although I can understand a dice/coin/ball has no notion of past/future, so will always remain 50% chance, I never quite understanded the following. You can proof there is only a very slight possibility of me ever witnessing 50 heads in a row during my lifetime. So after 49 spins, I will either observe something extraordinary (50 heads) or something less special (first tail), how can that not effect chance? Maybe the answer is obvious, that for math/statistics it doesnt matter whether someone is observing the event or not, but please enlighten me.","['statistics', 'dice', 'probability']"
+390432,"What is the meaning of ""independent events "" and how can we logically conclude independence of two events in probability?","What is the meaning of  ""independent events "" in probability For eg: Two events (say A and B)are independent , what I understand is the occurrence of A is not affected by occurrence of B .But I am not comfortable with this understanding , thinking this way every events I meet upon are independent!, does there exist a more mathematical definition( I don't want the formula associated with it) Another thing I want to know in a real case or a problem how do we
+  understand(logically) if two events are independent? That is without verifying that $P(A\cap B) = P(A)P(B) \Large\color{blue}{\star}$  how do we conclude that two events $A$ and $B$ are independent or dependent?. Take for eg an example by ""Tim"" Suppose you throw a die. The probability you throw a six(Event $A$) is $\frac16$ and the
+  probability you throw an even number(Event $B$) is $\frac12$. And event $C$ such that $A$ and $B$ both happen would mean $A$ should happen(As here $A$ is a subset of $B$) hence it's too $\frac16$ My thought: The above example suggest something like this ""Suppose I define two events $A$ and $B$ and if one of the even is a subset of the other then the events are not independent"". Of course such an argument is not a sufficient condition for dependency , for eg: consider an event $A$ throwing a dice and getting an odd number and event $B$ getting 6. They aren't independent ($\Large\color{blue}{\star}$ isn't satisfied) . So again I improve my suggestion ""Suppose I define two events $A$ and $B$ and if one of them is a subset of the other or their intersection is a null-set then the events are not independent $\Large\color{red}{\star}$"" So at last is $\Large\color{red}{\star}$ a sufficient condition?. Or does there exist a suffcient condition (other than satisfying the formulas $\Large\color{blue}{\star}$? And what is the proof, I can't prove my statement as the idea for me is not that much mathematical .","['independence', 'probability']"
+390438,cardinality of the union of 2 sets with at least two elements and cardinality of cartesian product,"Suppose X,Y are sets with at least 2 elements. Show that 
+$X\cup Y\le X\times Y$ So my first thought was that cardinality $|X|\ge 2$ and the same for $|Y|\ge 2$ but by the inclusion-exclusion principle we have $|X\cup Y|=|X|+|Y|-|X\cap Y|$ but the problem does not say if they are disjoint or not.
+If we assume that they are disjoint then $|X\cup Y|\ge 4$ right?
+But from the definition of the cardinality for the cartesian product we have similar
+$|X\times Y|\ge 4$. But I have to find an injective function (including the number of elements) s.t $f:X\cup Y\to X\times Y$ and thus conclude the result. 
+How should I do it?",['elementary-set-theory']
+390439,"Possible ways to do stability analysis of non-linear, three-dimensional Differential Equations","For example Lorenz system,
+$$
+\frac{d}{dt}\begin{pmatrix}
+x\\ 
+y\\ 
+z
+\end{pmatrix}=\begin{pmatrix}
+-\sigma & \sigma & 0\\ 
+\rho & -1 & -x\\ 
+y & 0 & -\beta
+\end{pmatrix}\begin{pmatrix}
+x\\ 
+y\\ 
+z
+\end{pmatrix}
+$$ The article on Wiki describes the system of differential equations to have stable equilibrium for a specific value of $\rho$. Given some three dimensional system of differential equations, I would like to know how to do the stability analysis? or explain how stability analysis of Lorenz system is done ...","['bifurcation', 'ordinary-differential-equations', 'analysis']"
+390444,if $\sin24^\circ = p$ what is $\cos24^\circ$?,Let $p=\sin 24^\circ$ Then what would $\cos (24^\circ)$ be in terms of $p$? What would $\sin (168^\circ) \cdot  \sin(-78^\circ)$ be in terms of $p$? I'm not sure how to approach these as we have only started this section. Thanks.,['trigonometry']
+390445,"$f(a+b,\lambda) = f (a,\lambda) \cdot f(b,\lambda)$","Consider the equation: $f(a+b,\lambda) = f (a,\lambda) \cdot f(b,\lambda)$, for $a \geq 0$ and $b \geq 0$. Is my understanding that this simple functional equation is important in analysis. Can someone give me examples where this can be used in practice, its theoretical importance and maybe some literature where I can find more? Also, if $f(\cdot,\lambda)$ is continuous, then one can show that $f(a,\lambda) =$exp$(ag(\lambda))$, for some function $g(\lambda)$. Is this the only type of function that will satisfy the equation above?","['functional-analysis', 'real-analysis', 'functional-equations']"
+390465,Limit as n approaches infinity involving roots,"$$\lim_{n\to\infty}\frac{n}{1+2\sqrt{n}}$$ Given my understanding of how to solve these problems, I need to take the highest power of $n$ in the denominator and then divide both the numerator and denominator by that power. But the highest power in the denominator is lower than the one in the numerator, so I will still be left with $n^{1/2}$ in the numerator, which gives $\frac{\infty}{2}=\infty$. Is that the correct answer or am I missing something? I would have thought that since the power of the denominator is smaller than the numerator that you could factor it by long division, but I'm not sure I know how to do that.","['calculus', 'limits']"
+390478,on the commutator subgroup of a special group,"Let $G'$ be the commutator subgroup of a group $G$ and $G^*=\langle g^{-1}\alpha(g)\mid g\in G, \alpha\in Aut(G)\rangle$. We know that always $G'\leq G^*$. It is clear that if $Inn(G)=Aut(G)$, then $G'=G^*$. Also if $G$ is a non abelian simple group or perfect group, then  $G'=G^*=G$. Now do there exist a group such that  $Inn(G)\neq Aut(G)$ and $G'=G^*\neq G$? Thank you","['group-theory', 'abstract-algebra']"
+390482,Reciprocal of Laurent series,"I understand how to use long division to find the reciprocal of a power series. Are there any theorems that allow you to divide Laurent series that have a finite number of terms with negative exponents?  That is, if I have a Laurent series around $0$, such as $f(z) = \frac{1}{z^2} + 3z + 5z^4 + \ldots$, can I use long division to come up with a series for $\frac{1}{f(z)}$ and know anything about its convergence?",['complex-analysis']
+390518,"Gaussian Elimination, Question Check.","I'm going through my practice problems, and just want to know if I am doing this right: $$ 2x_1 - 3x_2 = -2$$
+$$ 2x_1 + x_2 = 1$$
+$$ 3x_1 + 2x_2 = 1$$ And this is my solution:
+$$
+\begin{align}
+\begin{bmatrix}
+2 & 3 & -2\\
+2 & 1 & 1\\
+3 & 2 & 1
+\end{bmatrix}
+\end{align}
+$$ $$
+\begin{align}
+\begin{bmatrix}
+1 & -3/2 & -1\\
+2 & 1 & 1\\
+3 & 2 & 1
+\end{bmatrix}
+\end{align}
+$$ $$
+\begin{align}
+\begin{bmatrix}
+1 & -3/2 & -1\\
+0 & -1 & -1\\
+3 & 2 & 1
+\end{bmatrix}
+\end{align}
+$$ $$
+\begin{align}
+\begin{bmatrix}
+1 & -3/2 & -1\\
+0 & -1 & -1\\
+0 & -1 & -2
+\end{bmatrix}
+\end{align}
+$$ $$
+\begin{align}
+\begin{bmatrix}
+1 & -3/2 & -1\\
+0 & 1 & 1\\
+0 & -1 & -2
+\end{bmatrix}
+\end{align}
+$$ $$
+\begin{align}
+\begin{bmatrix}
+1 & -3/2 & -1\\
+0 & 1 & 1\\
+0 & 0 & -1
+\end{bmatrix}
+\end{align}
+$$ Can anyone tell me if I did this right, or if I did a mistake where? Thanks.","['matrices', 'linear-algebra', 'gaussian-elimination']"
+390532,Manually Finding Values of Inverse Trigonometric Functions,"I'm trying to solve (for $x$) some problems such as $\arctan(0)=x$, $\arcsin(-\frac{\sqrt{3}}{{2}})=x$, etc. What is the best way to go about this? So far, I have been trying to solve the problems intuitively (e.g. I ask myself what value of sine will give me $-\frac{\sqrt{3}}{{2}}$? ), maybe drawing a triangle to help. Is there a better way to solve these problems?","['trigonometry', 'algebra-precalculus']"
+390538,Group actions and natural isomorphisms,"Let $G$ be a group-as-category, and let $S$ be the image of $G$ by the $Hom(G,-)$ functor. The $Hom$ functor defines a bijection $\chi: G \to S$ between elements of $S$ and morphisms of $G$, and thus $S$ is equipped with a canonical group action $\psi$ given by $\psi(g,s) = \chi(g\cdot\chi^{-1}(s))$. However, one can define many other group actions, given an element $h$ of G, by $\psi'(g,s) = \chi(h \cdot g \cdot h^{-1} \cdot \chi^{-1}(s))$. It seems to me that these group actions are related to the natural isomorphisms of the $Hom(G,-)$ functor. If $h=(\chi^{-1}(s))^{-1}$, we can even get the right group action on $s$. My question is: what framework should I use if I'd like to use all these group actions on $S$ and not just the canonical one ?","['category-theory', 'group-theory']"
+390543,Integrate: $\int_0^\infty \frac{\sin^2(x)}{x^2}dx$ [duplicate],"This question already has answers here : Proof of $\int_0^\infty \left(\frac{\sin x}{x}\right)^2 \mathrm dx=\frac{\pi}{2}.$ (15 answers) Closed 6 years ago . I am trying to integrate $\displaystyle \int_0^\infty \frac{\sin^2(x)}{x^2} dx$  by method of contour. I am considering the following contour but I am not being able to. Also I am not sure if it's right approach. $$\int_\Gamma f(z) dz + 2 \int_0^\infty f(z) dz + \int_\gamma f(z)dz = 0$$
+The first integral tends to zero as $R \to \infty $, but letting $\epsilon \to 0$, for the last integral I am getting.
+$$\int_{\pi }^0 \frac{\sin^2({\epsilon e^{i\theta}})}{\epsilon^2 e^{i2\theta }} i \epsilon e^{i\theta}d\theta = 0$$ ADDED :: Taking the above contour, we do not have any pole inside the contour.
+$$\int_{-\infty}^\infty \frac{1 - e^{i2z}}{2z^2}dz + \int_\Gamma \frac{1 - e^{i2z}}{2z^2} dz + \int_\gamma \frac{1 - e^{i2z}}{2z^2} dz = 0 \hspace{1 cm }(1)$$ $\displaystyle \int_\Gamma \frac{1 - e^{i2z}}{2z^2} dz \to 0$ due to Jordan Lemma. To evaluate $\displaystyle \int_\gamma \frac{1 - e^{i2z}}{2z^2} dz $ let the radius of the small semi circle be $\epsilon \to 0 $. $$\lim_{\epsilon \to 0}\int_\pi^0 \frac{1 - e^{i2\epsilon e^{i\theta}}}{2\epsilon ^2 e^{i2\theta}} i \epsilon e^{i\theta}d\theta =\lim_{\epsilon \to 0} \int_\pi^0 \frac{1 - 1 - 2i\epsilon e^{i\theta} + O(\epsilon^2)}{2\epsilon e^{i\theta}} i  = \lim_{\epsilon \to 0} \int_\pi^0 1+  O(\epsilon) d\theta = -\pi \hspace{1 cm }(2)$$ From $(2)$, $(1)$ reduces to 
+$$\int_{-\infty}^\infty \frac{1 - e^{i2z}}{2z^2}dz - \pi = 0 \implies \Re \int_{-\infty}^\infty \frac{1 - e^{i2z}}{2z^2}dz = \int_{-\infty}^{\infty}\frac{\sin(x)^2}{x^2}dx = \pi$$ Including singularity at $z = 0$, we will have that small inner circle on lower plane.
+$$\int_{-\infty}^\infty \frac{1 - e^{i2z}}{2z^2}dz + \int_\Gamma \frac{1 - e^{i2z}}{2z^2} dz + \int_\gamma \frac{1 - e^{i2z}}{2z^2} dz = 2 \pi i \text{Residue}[f(z), z = 0] = 2\pi \hspace{1 cm }(3)$$ As for $\displaystyle \int_\gamma \frac{1 - e^{i2z}}{2z^2} dz = \lim_{\epsilon \to 0}\int_{-\pi}^0 \frac{1 - e^{i2\epsilon e^{i\theta}}}{2\epsilon ^2 e^{i2\theta}} i \epsilon e^{i\theta}d\theta = \pi \hspace{1 cm }(4)$ From $(3)$ and $(4)$ we get the same result.",['complex-analysis']
+390545,An open cover that is not locally finite,I could not understand why example $13.4$ is not locally finite. Can you give me an explanation please.,"['differential-geometry', 'general-topology', 'manifolds', 'linear-algebra', 'real-analysis']"
+390575,What is an overlap?,"I want to ask what an overlap is. My teacher said that for example $1$: Everything is an overlap hence it is not locally finite. For example $2$, it doesnt overlap. Please teach me these two examples. Thanks.","['differential-geometry', 'general-topology', 'manifolds', 'linear-algebra', 'real-analysis']"
+390577,Inclusion Exclusion Principle Problem,"There are 28 people in your family consisting of 18 adults, 13 females, and 11 who have purple hair.  There are 11 adult females, 6 of whom sport purple hair.  There are 10 adults with purple hair.  No female children have purple hair.  How many male children without purple hair are in the family? I know this problem is an application of the inclusion exclusion principle. However I am not sure how to express one of the statements in the prompt:  ""No female children have purple hair. How many male children without purple hair are in the family?"" I'm pretty confident in expressing the rest up until that sentence: A = adults, F = females, P = purple hair, and $N()$ represents the cardinal number of a set $N(A) = 18$ $N(F) = 13$ $N(P) = 11$ $N(A \cap F) = 11$ $N(A \cap F \cap P) = 6$ $N(A \cap P) = 10$ I thought maybe it meant $N(F \cap P)=0$, but when I did that I didn't get the right answer which is 7. Any help is appreciated.  Thank you in advance!","['discrete-mathematics', 'probability']"
+390580,Is restriction of compact operator always compact?,"Question 1: Is a compact operator $T:X\to Y$ 's restriction on a subspace $Z\subset X$ still compact? (I think I've got the answer) I think the compact operator's restriction on any subspace must still be compact since for any bounded sequence $\{ x_n\}\subset Z$, it's also bounded in $X$ since the subspace shares the norm. However a subspace can be equipped with a different norm. For example, it's not immediately clear whether the injection $i: (C^\infty,\| \cdot\|_\infty )\to (L^2,\| \cdot\|_{L^2})$ is compact. But we know that the injection: $i_2: (C^\infty,\| \cdot\|_{L^2} )\to (L^2,\| \cdot\|_{L^2})$ is compact by the above argument and $i_1: (C^\infty,\| \cdot\|_\infty )\to (C^\infty,\| \cdot\|_{L^2} )$ is continuous. Therefore $i=i_2\circ i_1$ is compact. (Such argument won't work for $H^1\to L^2$, you can try by yourself) The lesson is we can't discuss the operator's compactness ignoring the norm of the space. The definition of compactness heavily depends on them(bounded, convergent). Maybe someone can furnish us with an example that the operator is compact in one norm but not in the other. Question 2: From Fredholm alternative, we know that the range of $\lambda I -T$ is always closed if $\lambda \neq 0$. So how about the range of a compact operator itself? Is it always closed or open? Are there any examples?","['compact-operators', 'functional-analysis']"
+390612,Why do we need to find the intersection between these lines?,"We have the functions $$ x = -1 + 2 \cos(t)$$ $$ y = 3 + 2 \sin(t)$$ They give P's orbit with $t$ on $\left[0, \dfrac{3}{2} \pi\right]$ Find (to 2 decimal places accurate) for which values of t the Point t is left of the line $x=-2.$ So we're allowed to use our calculators, and the answer model says that to find the solution you first need to find the intersection between $\;y=-2\;$ and $\;y=-1 + 2\cos (x)$. My question is; why does this work?","['trigonometry', 'parametric']"
+390640,Closed form for $\int_0^1\log\log\left(\frac{1}{x}+\sqrt{\frac{1}{x^2}-1}\right)\mathrm dx$,"Please help me to find a closed form for the following integral:
+$$\int_0^1\log\left(\log\left(\frac{1}{x}+\sqrt{\frac{1}{x^2}-1}\right)\right)\,{\mathrm d}x.$$ I was told it could be calculated in a closed form.","['closed-form', 'calculus', 'integration', 'definite-integrals', 'logarithms']"
+390641,"Show that $\exp: \mathfrak{sl}(n,\mathbb R)\to \operatorname{SL}(n,\mathbb R)$ is not surjective","It is well known that for $n=2$, this holds. The polar decomposition provides the topology of $\operatorname{SL}(n,\mathbb R)$ as the product of symmetric matrices and orthogonal matrices, which can be written as the product of exponentials of skew symmetric and symmetric traceless matrices. However I could not find  out the proof that  $\exp: \mathfrak{sl}(n,\mathbb R)\to\operatorname{SL}(n,\mathbb R)$ is not surjective for $n\geq 3$.","['matrices', 'linear-algebra', 'lie-algebras', 'lie-groups']"
+390651,Examples of systems conforming the Lorenz Attractor,"Might sound like a trivial question but would you please show me some examples of real systems conforming the Lorenz Attractor? It can be any kind of system, just a little list. It can be a system arising from Economical, Social, Biological or Physical matters.","['dynamical-systems', 'ordinary-differential-equations', 'chaos-theory']"
+390653,The geometric interpretation [duplicate],"This question already has answers here : Stieltjes Integral meaning. (3 answers) Closed 11 years ago . In the course of mathematical analysis, there was one problem that i excited to know more about it:
+What is the geometric interpretation of
+$$ \int_a^b f(x)\,d(\alpha(x)) $$
+and $\alpha(x)$ is function in $[a,b]$","['integration', 'analysis']"
+390655,Expected value of $|H-T|$ in $n$ coin flips,"Let $H_n$ be the number of heads in $n$ coin flips. Let $T_n$ be the number of tails in $n$ coins flips. Is there a good way to calculate $E_n = E[|H-T|]$ that isn't brute force computation, i.e. directly evaluating $$E[|H-T|] = \frac{1}{2^n} \sum {n \choose r} |n-2r|. $$ I don't see any approach that can simplify this calculation.",['probability']
+390672,bifurcation value,"I tried to understand how to locate the bifurcation value for the one-parameter family. From my understanding the bifurcation value is the maximum or minimum point of a parabola, so I set the differential equals to zero to find the equilibrium points. From two equilibrium point, I'll find the midpoint and try to find the output value that corresponding to that midpoint. For example: I got this differential equation $dy/dt=y^2-ay+1$ I let $dy/dt=0$ then solve for $y$. I got $y= (a+\sqrt{a^2-4})/2$ and  $y= (a-\sqrt{a^2-4})/2$ . I find the midpoint of these two value and got $y=a/2$. Plug back to the differential equation, solve for $a$ and got $a=2$ and $a=-2$. What do I do from here if I want to use the values of $a$ to draw the phase line ?",['ordinary-differential-equations']
+390686,"Lie subalgebra, Lie subgroup and membership","Let $G$ be a Lie group with Lie algebra $\mathfrak{g}$ and let $H$ be a connected Lie subgroup with Lie algebra $\mathfrak{h}$. We have that $X \in \mathfrak{h} $ iff $exp(tX) \in H \ \ \  \forall  t \in \mathbb{R} $ . I have seen a proof of this but I don't understand why we need that $\forall t \in \mathbb{R}$. 
+An answer to this question shows that it is equivalent to ask $\forall t \in \mathbb{R}$ or just in $\forall t \in \, ]-t_0,t_0[$ for some $t_0$. Therefore I'm not worried about ""for all $t$"" versus ""for $t$ small enough"", but about ""for just one $t$"" versus ""for more than one $t$"" (of course $t\neq 0$). I'd like to see an example in which you have some vector $X \in \mathfrak{g}$ such that $exp(X) \in H$ but $X \not \in \mathfrak{h}$. Is this possible?","['lie-algebras', 'lie-groups', 'differential-geometry']"
+390697,All number fields with absolute value of discriminant $\le 20$,I need to find all number fields with absolute value of discriminant $\le 20$. Using Minkovsky's theorem I understood that it should be quadric or cubic extension. The case of quadric is very easy. As for cubic case I understood that it should have 2 complex embeddings and his ideal class group should be trivial. But I don't know to how find all of them.,"['extension-field', 'algebraic-number-theory', 'abstract-algebra', 'number-theory']"
+390701,What is this limit called? Is it a different kind of derivative?,"(first I should notice you this is not something I can look up in a textbook, because I'm learning partial derivatives, alike I do with most Maths, as a hobby. If something below is wrong, blame the internet and please let me know) I know I can take a mixed partial derivative of a multi-argument function, for expl.: $$
+w = f(x; y; z) = x^2 y+ y^2z + xz^2\\
+\frac{\partial^2 w}{\partial x\ \partial y} = \frac{\partial w}{\partial x}\frac{\partial w}{\partial y} = \frac{\partial}{\partial y}(2xy+z^2)= 2x = ^*\frac{\partial}{\partial x}(2yz+x^2)
+$$
+(* = double check) But that's taking 2 partial derivatives. What If I want more than one variable to vary at once?
+$$
+\lim_{h \to 0} \left( \frac{f(x+h;y+h;z)-f(x;y;z)}{h}\right)=\\
+=\lim_{h \to 0} \left( \frac{(x+h)^2 (y+h)+(y+h)^2 z+(x+h)^2z^2-(x^2 y+ y^2z + xz^2)}{h}\right)=\\
+=\lim_{h \to 0} \left( \frac{(x^2+2xh+h^2)(y+h)+(y^2+2hy+h^2) z+(x+h)z^2-(x^2 y+ y^2z + xz^2)}{h}\right)=\\
+=\lim_{h \to 0} \left( \frac{2hxy+h^2y+hx^2+h^2x+h^3+2hyz+h^2z+hz^2}{h}\right)=\\
+=\lim_{h \to 0} \left( 2xy+hy+x^2+hx+h^2+2yz+hz+z^2\right)
+=2xy+x^2+2yz+z^2
+$$ Note: I took a while to write this, and only now I notice that the result of the above is the sum of $\frac{\partial w}{\partial x}$ and $\frac{\partial w}{\partial y}$, while the mixed partial in the beginning is its multiplication Nonetheless, the question remains: what is this limit called? Can it be seen as another type of derivative? What are its applications? Is there a notation in which I can write it such as the one for other derivatives? Thank you readers in advance (and for reading, my questions are not usually short).","['partial-derivative', 'infinitesimals', 'derivatives', 'limits']"
+390708,Proof that ${\left(\pi^\pi\right)}^{\pi^\pi}$ (and now $\pi^{\left(\pi^{\pi^\pi}\right)}$) is a noninteger.,"Conor McBride asks for a fast proof that $$x = {\left(\pi^\pi\right)}^{\pi^\pi}$$ is not an integer.  It would be sufficient to calculate a very rough approximation, to a precision of less than $1,$ and show that $n < x < n+1$ for some integer $n$ .  But $x$ is large enough ( $56$ digits) that that method is not obviously practical without electronic computation tools. Is there a purely theoretic proof that works with no calculation at all, or is there a calculational argument that would be practical prior to $1950$ ? Edit : Let me phrase the question a little differently, as a spur to your mathematical imagination. I go back in time to $1847$ and have lunch with Carl Friedrich Gauss.  We are chatting about the developments in $20$ th and $21$ st-century mathematics, and because I am a horrible person, I mention that $(\pi^\pi)^{\pi^\pi}$ has been proven to be an integer. Gauss is incredulous, but I insist. After I leave, can Gauss convince himself that I am nothing but a troll? Edit : After I looked back at McBride's original question , I saw to my dismay that he had not asked about $x= (\pi^\pi)^{\pi^\pi}$ , but $$y=\pi^{\left(\pi^{\pi^\pi}\right)}$$ which is a rather different animal. The value of $x$ has $57$ decimal digits; the value of $y$ has $10^{57}$ digits .  So Alexander Walker's impressive display of direct numerical calculation will avail nothing for deciding that $y$ is not an integer, neither in $1873$ nor in $2013,$ and perhaps not in $2153$ either. (""We should attempt to destroy the aliens."") More powerful theoretical methods will be required.  I am posting an additional bounty to see if anyone can suggest anything of that sort; it need not be theory that was available in the $19$ th century.","['pi', 'arithmetic', 'numerical-methods', 'number-theory']"
+390715,Proof the following trig series,"Prove that
+$$\frac{ \sin x}{ \cos x}+\frac{\sin2x}{\cos^{2}x}+\frac{\sin3x}{\cos^{3}x}+\cdots+\frac{\sin nx}{\cos^{n}x}=\cot x-\frac{\cos(n+1)x}{\sin x \cos^{n}x}$$ I am not necessarily looking for a solution to this question but a way to approach it, i.e. when I get a question like this in the test what should I do, what should I look for?","['trigonometry', 'summation', 'sequences-and-series']"
+390721,Disc with two points identified,"Is a disc $D^2$ with two points on the boundary identified, same as $D^2 \vee D^2$ ? They both have boundary $S^1 \vee S^1$. I am confused because an exercise in Hatcher seems to ask the same question about the two spaces (i.e. to prove that there doesn't exist a retraction from each of this space to $S^1 \vee S^1$).","['general-topology', 'algebraic-topology']"
+390722,Homeomorphism between open unit ball and $\mathbb R^n$,"Let $B=\{x\in\mathbb R^n : ||x||<1\}$ the open unit ball with the subapce topology of $\mathbb R^n$. I want to show that $B^n\cong\mathbb R^n$ with the map $F(x)=\tan(\frac{\pi ||x||}{2})\frac{x}{||x||}$ for $x\not=0$ and $F(0)=0$ Well $\frac{x}{||x||}$ is more or less the direction of the vector $x$, the norm is a number out of $[0,1)$ and the scaled tangent is a Homeomorphism from $[0,1)$ to the positive real numbers. I want to show that $F(x)$ is contionous, bijective and there is an inverse map. Injectivity : Let $F(x)=F(y)\leftrightarrow ||F(x)||=||F(y)||\leftrightarrow \tan(\frac{\pi ||x||}{2})||\frac{x}{||x||}||=\tan(\frac{\pi ||y||}{2})||\frac{y}{||y||}||$ I know that the tangent is injective but I do not see how $x=y$ can be followed. Surjectivity : Let $y\in\mathbb R^n$, now I need to show $\exists x\in B^n: F(x)=y$, i.e $\tan(\frac{\pi ||x||}{2})\frac{x}{||x||}=y$ I do not see how surjectivity can be followed form this. Inverse map : I know that the tangent has an inverse map, namely the arctangent, but how can this be used here? Continuity : Well I know that the tangent is only contin. on $\mathbb R\setminus\{(n+\frac{1}{2})\pi: n\in \mathbb Z\}$","['general-topology', 'continuity', 'real-analysis']"
+390737,Linear equivalence of Divisors on a Surface,"Studying algebraic geometry, while the abstract theory is pretty clear to me I often feel puzzled in practice. Here I am trying to understand linear equivalence of divisors in some practical situations. Consider the following example. Let $S\subset\Bbb{P}^3$ be a smooth surface of degree $d\geq3$ and let $\ell\subset S$ be a line. A plane containing $\ell$ cuts on $S$ the divisor 
+$$ H_0=\ell+C$$
+where $C\subset S$ is a curve of degree $d-1$. Let $H$ be the divisor cut on $S$ by a generic plane. So $H$ cuts $\ell$ in one point. I am not sure about the following: Question: why can we say that $H_0\sim H \ $ (linear equivalence) ? This is then a nice example for showing that even the most simple divisor like $\ell$ can have negative self-intersection: if $H_0\sim H$ then
+$$1=H\cdot\ell=H_0\cdot\ell=(\ell+C)\cdot\ell=\ell^2+C\cdot\ell=\ell^2+d-1 $$
+Hence $\ell^2=2-d<0$.","['intersection-theory', 'algebraic-geometry']"
+390747,Is $y=|x^3|$ a smooth function?,"Is this a smooth function? $y=|x^3|$ The graph of this function has no sharp cuts or corners, so I think it is a smooth function but someone told me that it's not.","['derivatives', 'functions']"
+390769,Statistics Workshop for High School Students,"We are going to hold an introductory workshop about the statistics. The participants will be students who have just finished their 8th or 9th grade. The workshop consists of 10 two-hour sessions. The students have a very limited background about the statistics: They can compute arithmetic average of a set of data, create pie charts, etc. So we’re looking for some good educational material to introduce the students to some of the main statistical ideas, methods and concepts as well as to illustrate the importance of statistics in daily life. Your suggestions would be of great help. Thanks.","['statistics', 'education', 'soft-question']"
+390782,Without calculating limit directly show that it is equal to zero,"$$\lim_{n\rightarrow\infty}\left(\frac{n+1}{n}\right)^{n^2}\frac{1}{3^n}=0$$
+I am not really sure what it means by ""without calculating limit"" and I don't really have ideas how to do it.","['calculus', 'limits']"
+390790,Laurent Series Expansion,"Give the Laurent series development of the function $f(z)=\frac{1}{z(z-1)(z-2)}$ in the three rings $A_1=\{z:|z|<1\}$, $A_2=\{z:1<|z|<2\}$ and $A_3=\{z:2<|z|\}$. I have gotten the partial fraction form $f(z)=\frac{1}{2z}-\frac{1}{z-1}+\frac{1}{z-2}$ For $A_1$, I think it's the standard Taylor expansion about 0 and I can do this for the second and third terms: $-\frac{1}{z-1}=(1-z)^{-1}=\sum^\infty_{n=0}z^n$ and $\frac{1}{2(z-2)}=\frac{1}{4}\sum^\infty_{n=0}(\frac{z}{2})^n$. How do I get the Taylor expansion of the first term? I foresee similar problems if I work out the expansion for $A_2$ and $A_3$ as well, so a general method is appreciated. Thanks!",['complex-analysis']
+390801,Closed form for $\sum_{n=1}^\infty\frac{1}{2^n\left(1+\sqrt[2^n]{2}\right)}$,"Here is another infinite sum I need you help with:
+$$\sum_{n=1}^\infty\frac{1}{2^n\left(1+\sqrt[2^n]{2}\right)}.$$
+I was told it could be represented in terms of elementary functions and integers.","['sequences-and-series', 'closed-form', 'calculus']"
+390810,"Improper integral $\sin(x)/x $ converges absolutely, conditionally or diverges?","Improper integral of $\sin(x)/x $ converges absolutely, conditionally or diverges? We have $$\int_1^{\infty}\frac{\sin x}{x}\text{d}x$$ Integrating by parts $$u=\frac{1}{x}$$ $$\text{d}u=-\frac{1}{x^2}\text{d}x$$ $$\text{d}v=\sin x\;\text{d}x$$ $$v=-\cos x$$ $$
+\begin{aligned}
+\int_1^{\infty} \frac{\sin x}{x} \text{d}x
+& = \frac{-\cos x}{x} \Big|_1^{\infty} 
+    - \int_1^{\infty} \frac{\cos x}{x^2} \text{d}x \\
+& = \cos 1 - \int_1^{\infty} \frac{\cos x}{x^2} \text{d}x
+\end{aligned}
+$$ $\int_1^{\infty} \frac{\cos x}{x^2} \text{d}x$ converges absolutely
+(using the Comparison Test For Improper Integrals): $$ 
+\int_1^{\infty} \frac{|\cos x|}{x^2} \text{d}x < 
+\int_1^{\infty} \frac{1}{x^2} \text{d}x
+$$ So $\int_1^{\infty} \frac{\sin x}{x} \text{d}x$ converges. Now I need to find out if $\int_1^{\infty} |\frac{\sin x}{x}| \text{d}x$ converges or diverges.","['improper-integrals', 'integration', 'real-analysis']"
+390818,REVISITED $^2$: Does a solution in $\mathbb{R}^n$ imply a solution in $\mathbb{Q}^n$? [duplicate],"This question already has an answer here : System of linear equations having a real solution has also a rational solution. (1 answer) Closed 8 years ago . Let $A ∈ M_{m\times n}(\mathbb{Q})$ and $B ∈ \mathbb{Q}^m$. Suppose that the system of linear
+equations $AX = B$ has a solution in $\mathbb{R}^n$. Does it necessarily have a solution
+in $\mathbb{Q}^n$? Where do I start? I feel I can use this to help : $$x_i=\frac{1}{a'_{ii}}\left(b'_i - \sum_{j=i+1}^{k} a'_{ij} x_j \right).$$ Here is a thought that just crossed my mind, but I'm not sure if this is legal: Suppose $Y\in \{\mathbb{R}\setminus \mathbb{Q}\}^n$ and $Y'\in\mathbb{Q}^n$ are solutions to $AX=B$. Then $AY=AY'=B$, or $A(Y-Y')=A(Y+(-Y'))=0$, but  addition between $\{\mathbb{R}\setminus \mathbb{Q}\}^n$ and $\mathbb{Q}^n$ is . . .","['matrices', 'linear-algebra']"
+390836,When is it valid for me to just integrate a trig function?,"I am having a problem identifying when I need to use some kind of integration technique or am I just over complicating things. Could someone please explain to me when I need to or not? Normally, I would just integrate as normal when the problem is like this $$\int \cos(x) dx = \sin(x) + c$$ But when things become like the following, I don't have rules to fall back on and just rely on memory and experience of solving problems. $$\iiint \cos(x+y+z) dz dx dy$$ $$\int \sin(2x) dx$$","['multivariable-calculus', 'integration']"
+390842,multivariable limit question,"Is this an acceptable solution?
+$$\lim_{(x,y)\rightarrow(0,0)}\frac{\sin(2(x^2+y^2))}{x^2+y^2}$$
+$$t=x^2+y^2$$
+So $t\rightarrow0$. Now I change the limit to:
+$$\lim_{t\rightarrow0}\frac{\sin(2t)}{t}=2$$
+This solution makes sense to me, but I am still having doubts.","['multivariable-calculus', 'limits']"
+390850,"Integrating $\int^{\infty}_0 e^{-x^2}\,dx$ using Feynman's parametrization trick","I stumbled upon this short article on last weekend, it introduces an integral trick that exploits differentiation under the integral sign . On its last page, the author, Mr. Anonymous, left several exercises without any hints, one of them is to evaluate the Gaussian integral
+$$
+\int^\infty_0 e^{-x^2} \,dx= \frac{\sqrt{\pi}}{2}
+$$
+using this parametrization trick. I had been evaluating it through trial and error using different paramatrizations, but no luck so far. Here are what I have tried so far: A first instinct would be do something like:$$
+I(b) = \int^\infty_0 e^{-f(b)x^2}\,dx
+$$
+for some permissible function $f(\cdot)$, differentiating it will lead to a simple solvable ode:
+$$
+\frac{I'(b)}{I(b)} = -\frac{f'(b)}{2f(b)}
+$$
+which gives:
+$$
+I(b) = \frac{C}{\sqrt{f(b)}}.
+$$
+However, finding this constant $C$ basically is equivalent to evaluating the original integral, we are stuck here without leaving this parametrization trick framework. A second try involves an exercise on the same page:
+$$
+I(b) = \int^\infty_0 e^{-\frac{b^2}{x^2}-x^2}dx.
+$$
+Taking derivative and rescaling the integral using change of variable we have:
+$$
+I'(b) = -2I(b).
+$$
+This gives us another impossible to solve constant $C$ in:
+$$
+I(b) = C e^{-2b}
+$$
+without leaving this framework yet again. The third try is trying modify Américo Tavares's answer in this MSE question :
+$$
+I(b) = \int^\infty_0 be^{-b^2x^2}\,dx.
+$$
+It is easy to show that:
+$$
+I'(b) = \int^\infty_0 e^{-b^2x^2}\,dx - \int^\infty_0 2b^2 x^2 e^{-b^2x^2}\,dx = 0
+$$
+by an integration by parts identity:
+$$
+\int^\infty_0 x^2 e^{- c x^2}\,dx = \frac{1}{2c}\int^\infty_0 e^{- c x^2}\,dx .
+$$
+Then $I(b) = C$, ouch, stuck again at this constant. Notice in that Proving $\displaystyle\int_{0}^{\infty} e^{-x^2} dx = \frac{\sqrt \pi}{2}$ question, Bryan Yocks's answer is somewhat similar to the idea of parametrization, however he has to introduce another parametric integration to produce a definite integral leading to $\arctan$. Is there such a one shot parametrization trick solution like the author Anonymous claimed to be ""creative parameterizations and a dose of differentiation under the integral""?","['definite-integrals', 'improper-integrals', 'leibniz-integral-rule', 'integration']"
+390859,Using the Intermediate Value Theorem and Rolle's theorem to determine number of roots,Use the Intermediate Value Theorem and Rolle's Theorem to show the that the polynomial $$p(x) =  x^{5} + x^{3} + 7x - 2$$ has a unique real root. Can someone please give some hints on how to do this question. Thanks in advance.,"['calculus', 'rolles-theorem']"
+390864,Homomorphisms between $ \mathbb{Z} $ modules.,"Calculate $\newcommand\Hom{\operatorname{Hom}}\Hom(\mathbb Z \oplus \mathbb Z_{p^\infty},\mathbb Z \oplus \mathbb Z_{p^\infty})$. Where $ \mathbb Z_{p^\infty}= \bigcup_{k=1}^{\infty}\bar{\langle\frac1{p^k}\rangle}$ for $p$ prime. As $\mathbb Z$ and  $\mathbb Z_{p^\infty}$ are $\mathbb Z$-modules then applying the theorem $\Hom_A ( \bigoplus_{i \in I} M_i, \prod_{j \in J} N_j ) \cong\prod_{(i,j) \in I \times J} \Hom(M_i,N_j)$ because for finite indices have $\bigoplus_{i=1}^{n}M_i = \prod_{i=1}^n M_1$. Then the problem reduces to find those $\Hom$ where $$ \Hom(\mathbb{Z}, \mathbb{Z}) \cong \mathbb{Z} $$
+$$ \Hom(\mathbb{Z},\mathbb{Z}_{p^\infty}) \cong \mathbb{Z}_{p^\infty}$$ 
+but  $\Hom(\mathbb{Z}_{p^\infty},\mathbb{Z})$ and  $\Hom(\mathbb{Z}_{p^\infty},\mathbb{Z}_{p^\infty})$ not how to calculate them.","['modules', 'group-theory', 'abstract-algebra']"

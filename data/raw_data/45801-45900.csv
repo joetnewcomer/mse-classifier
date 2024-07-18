@@ -1,0 +1,417 @@
+question_id,title,body,tags
+458421,"Show $\partial _x \int_{(x_0, y_0)}^{(x,y)}P(s,t)ds + Q(s,t)dt = P(x,y)$","There is a theorem from advanced calculus that I'm trying to prove. Suppose $P(x,y)$, $Q(x,y) \in C^2$ on a simply connected domain $D$, and suppose that $P_y = Q_x$ (i.e. $\omega = Pdx + Qdy$ is closed), we have that $$\partial _x \int_{(x_0, y_0)}^{(x,y)}P(s,t)ds + Q(s,t)dt = P(x,y)  \\
+\partial _y \int_{(x_0, y_0)}^{(x,y)}P(s,t)ds + Q(s,t)dt = Q(x,y).$$ (Note the integral is well-defined since $\omega$ closed means that the integral is path-independent.) I looked for a proof of this property of the derivatives but didn't find it. If anyone could provide a reference or a quick demonstration, it would be much appreciated. Thanks!","['multivariable-calculus', 'reference-request', 'derivatives']"
+458434,Understanding Basic Categorical Duality with an Example from Group Theory,"I am trying to understand the concept of duality in category theory, but I am having a problem, well illustrated by the following situation. Let $H$ be any nontrivial subgroup of the alternating group $G=A_5$. Thus there exists a group monomorphism $H \to G$. By duality, there exists a group epimorphism $G \to H$. This implies $H \cong G/N$ for some normal subgroup $N$ in $G$. This is ridiculous, as $A_5$ is simple. What is wrong here?","['category-theory', 'group-theory', 'abstract-algebra']"
+458447,"Solution Manual for Chapters 13 and 14, Dummit & Foote","I bought the third edition of ""Abstract Algebra"" by Dummit and Foote. In my opinion this is the best ""algebra book"" that has been written. I found several solution manual but none has solutions for Chapters 13 and 14 (Field extensions and Galois theory respectively) Is there a solution manual for these chapters?","['reference-request', 'abstract-algebra']"
+458455,Show that a set of projectors summing to the identity implies mutually orthogonal projectors,"The general setting is the study of positive operator measures in quantum mechanics ,
+instead of the projector operator measures.
+Going from the PVM to the POVM is just saying that our bunch of operators are not pairwise orthogonal.
+SO the question is: In a matrix algebra or the bounded operators on a Hilbert space, how to prove that if a bunch of projectors sums to the identity [or their sum is less than or equal to the identity], they must be mutually orthogonal ? Can we prove this when we only know that a projector is an operator $p$ such that $
+p = p^* = p^2
+$ a projector is always positive, i.e., $$
+\forall\,\,{ \lvert \psi \rangle} \qquad 0 \leq  \langle\psi \lvert P \lvert  \psi \rangle.
+$$ I cannot find a proof that if $p, q$ are (positive) projectors then $pq$ is again positive. We know that in general, if two operators commute and are positive, then their product is again positive.
+But how the constraint by the identity forces them to be orthogonal in our setting ? My book on quantum mechanics says, $
+\sum_j p_j \leq \text{Id} \iff \forall{ i \neq j} \quad p_i \leq \text{Id} - p_j
+$ without proof unfortunately.","['c-star-algebras', 'matrices', 'linear-algebra', 'quantum-mechanics']"
+458470,show that $\int_{0}^{\pi/2}\ln(\tan x)dx=0$,show that $$\int_{0}^{\pi/2}\ln(\tan x)dx=0$$ using two ways The first with real analysis and the second with contour integration,"['integration', 'contour-integration']"
+458472,Solution of ODE $u''+4u=0$,"Just doing some revision for ODEs and came across this problem. Find the general solution to $$u''+4u=0.$$ So far I've applied the characteristic polynomial:
+$$\begin{array}{r c l}
+\lambda^2 +4 & = & 0 \\
+\lambda^2 & = & -4 \\
+\lambda & = & i\sqrt{4} \\
+\lambda & = & 2i, -2i. \\
+\end{array}$$ So the general solution should be:
+$$\begin{array}{l c l}
+u_H & = & Ae^{2ix}+Be^{-2ix} \\
+& = & A(\cos{2x}+i\sin{2x})+B(\cos{(-2x)}+i\sin{(-2x)}) \\
+& = & A\cos{2x}+iA\sin{2x}+B\cos{2x}-iB\sin{2x} \\
+& = & (A+B)\cos{2x}+i(A-B)\sin{2x} \\
+& = & C_1\cos{2x}+iC_2\sin{2x}. \\
+\end{array}$$ The answers have $u=C_1\cos{2x}+C_2\sin{2x}$, and my question is ""what happened to the $i$?"" Does it drop out somewhere or is there an error in the answers? Many thanks for a quick explanation/link to the appropriate website explaining this. :)",['ordinary-differential-equations']
+458473,Find the value of $x$ and $y$ given this equation,"So I have a College Admission test tomorrow and I am hoping that you could help me understand how to arrive at the solution to this: 1.) Given the following equations:
+  $$3x-y=30\\ 
+5x-3y=10$$
+  What are the values of $x$ and $y$? $\quad$ a. $x=20, \; y=30$ $\quad$ b. $x=30, \; y=20$ $\quad$ c. $x=20, \; y=40$ $\quad$ d. $x=10, \; y=30$ $\quad$ e. $x=30, \; y=30$ When we solved this our teacher said that the correct answer is $\quad a. x=20, \;y=30$ Could you please explain me why is that the answer please... and please tell me the title of the lesson so that I could study further in this field.. Thank you.","['algebra-precalculus', 'systems-of-equations']"
+458511,Type of singularity of $\log z$ at $z=0$,"What type of singularity is $z=0$ for $\log z$ (any branch)?
+What is the Laurent series for $\log z$ centered at 0, if exist? If the Laurent series has the form $\sum_{k=-\infty}^{\infty} a_kx^k$, then certainly among $a_{-1},a_{-2},...,a_{-j},...$, at least one is nonzero (or otherwise $\log z$ would be analytic at $0$). Since $\lim_{z\to 0}z\log z=0$, we must have $a_{-j}=0$ for all $j>0$, a contradiction. Hence the Laurent series centered at $0$ cannot exist. Is the singularity at $0$ a pole? If so, what is its order? Thanks.","['laurent-series', 'singularity-theory', 'analysis', 'complex-numbers', 'complex-analysis']"
+458523,How to find the area of a segment of an ellipse,"I need to find the area of the yellow part of the arc 
+given the a, b , start and end angle of the sector points Also the ellipse is centered at the origin How to find the area of the yellow part?",['geometry']
+458530,Showing a certain pre-Hilbert space is complete,"The following is problem 1.3 in chapter 1 of Conway's A Course in Functional Analysis . Show the space $\mathcal H$ in Example 1.8 is a Hilbert space. For reference, I give the text of Example 1.8. The field $\mathbb F$ can be either $\mathbb R$ or $\mathbb C$. Let $\mathcal H=$ the collection of all absolutely continuous
+  functions $f:[0,1]\rightarrow \mathbb F$ such that $f(0)=0$ and $f'\in
+ L^2(0,1)$. If $\langle f,g \rangle =\int_0^1 f'(t)\overline{g'(t)}\ dt$ for $f$
+  and $g$ in $\mathcal H$, then $\mathcal H$ is a Hilbert space
+  (Exercise 3).","['hilbert-spaces', 'functional-analysis']"
+458539,Initial value problem $t\frac{dx}{dt}=x+\sqrt{t^2+x^2}$,"Another question on ODEs, this time just wondering how I should start with this one.
+$$t\frac{dx}{dt}=x+\sqrt{t^2+x^2}, \qquad x(1)=0.$$ It looks like a linear ODE and so after playing around with it I eventually got $$\frac{dx}{dt}-\frac{2}{t}x=\frac{dt}{dx}$$ to which I multiplied the integrating factor $$I(t)=t^{-2}=\frac{1}{t^2}.$$ This in turn gave me $$\frac{x}{t^2}=\int{\frac{1}{t^2}t'dt},$$ and then I used integration by parts to get $$\frac{x}{t^2}=\frac{-1}{t}+C.$$ Applying the initial conditions gave me $$x=t(t-1).$$ The answer in the book is however $$x=\frac{1}{2}(t^2-1).$$ Where did I go wrong? What should I do to solve this problem? Thanks.",['ordinary-differential-equations']
+458549,Probability that number of heads flipped is divisible by 3,"You toss a coin n times. What is the probability that the number of heads you’ll get is divisible by 3? (Find an exact formula, not involving sums of unbounded length; it may depend on
+the remainder of n modulo 6). I believe that the problem is to find a formula for: $$\frac{\sum\limits_{i=0}^{\lfloor n/3\rfloor} {n \choose 3i}}{2^n}$$ but I'm not really sure how to find a formula for the sum in the numerator. A hint for how to evaluate $$\sum\limits_{i=0}^{n/3} {n \choose 3i}$$ when n is divisible by three would also be much appreciated ( Note : this is not a homework problem)","['combinatorial-proofs', 'combinations', 'combinatorics']"
+458558,How to obtain the arbitrary-constant-free solution of this differential equation?,"I know that the substitution $$ u := y^3 $$ changes the differential equation $$ (x + y^3) + 6xyy^{\prime} = 0 $$ into the linear equation $$ u^{\prime} + \frac{1}{2x} u = - \frac{1}{2}, $$ and the latter has a solution $$ u = c x^{-1/2} - \frac{1}{3}x,$$ where $c$ is an arbitrary constant, for $x > 0$. However, the above equation also has the solution $$ u = -\frac{1}{3}x $$ for all $x$. How to obtain this solution? What is the systematic procedure?",['ordinary-differential-equations']
+458559,A linear manifold in a Hilbert space is dense if and only if it has trivial orthogonal complement,"Conway, in A Course in Functional Analysis , leaves the following corollary (2.11) to the reader. If $\mathcal S$ is a linear manifold in $\mathcal H$, then $\mathcal
+ S$ is dense in $\mathcal H$ iff $\mathcal S^\perp=(0)$. The term linear manifold denotes a linear subspace that is not necessarily closed.","['hilbert-spaces', 'functional-analysis']"
+458597,Definition of equalizer for $\textbf{Sh}(X)$,"Let $\textbf{Sh}(X)$ denote the category of all (set - valued) sheaves on a topological space $X$. My question is: Given sheaves $F,G \in \textbf{Sh}(X)$ and morphisms $\varphi : F \to G$ and $\psi : F\to G$, is there a definition in the literature for the equalizer of $\varphi$ and $\psi$? I looked in Mac Lane's book and searched on the stacks project but couldn't find anything. Can we define it as the sheaf $E$ such that for any $W \subseteq X$ open, $$E(W) \to F(W) \begin{array}{c} \longrightarrow \\ \longrightarrow \end{array} G(W) $$ is an equalizer?","['category-theory', 'sheaf-theory', 'algebraic-geometry']"
+458599,"What is this ""Schreier factor function""?","I'm now reading the paper ""Automorphisms of Group Extensions"" by C. Wells [Trans. Amer. Math. Soc. 1971]. There is a paragraph mentions about the Schreier factor function $\mu\colon\Pi^2\to G$ ($\Pi$ and $G$ are groups) satisfying the following relations: $\mu(x,yz)+\mu(y,z)=\mu(xy,z)+\mu(x,y)z$ where $x,y,z\in\Pi$, and $(ax)y=[a(xy)]^{\mu(x,y)}=-\mu(x,y)+a(xy)+\mu(x,y)$ where $a\in G$, $x,y\in\Pi$. I tried to find more properties of this function but I found nothing. Could anyone provide me the full definition and properties of this fuction?","['group-theory', 'functions']"
+458600,a property of Analytic functions,Let $D$ be the open unit disk. How can I find all analytic functions $f: D\longrightarrow D$ such that $f(\frac 14) = \frac 14$ and $f'(\frac 14) = \frac 7{15}$ ?,['complex-analysis']
+458607,Cartesian Product of large circle and small circle,"I am bit confused with cartesian product. Suppose I have a set in R2 space and another set in R2 space so would it be right to say that cartesian product of those is in R4 space?? Following to this what is cartesian product of a small circle and a large cirlce?? If we go by previous question(if it is true??) then the geometric answer would be some shape in R4 so how to analyze this. I hope I have clarified my question carefully. Please look at it and share your views and suggestions. Thanks,","['geometry', 'calculus', 'real-analysis']"
+458652,contour integration of logarithm function,"I'm new to contour integral involving branch point and stuck on this particular integration. Here is the problem: $$\int_{\mathcal{C}}\log z\,\mathrm{d}z,$$ where $\mathcal{C}$ is a closed square contour connecting the points $-0.5+i$, $-1.5+i$, $-1.5-i$, $-0.5-i$. The branch cut of $\log z$ is chosen as the positive real axis. As far as I understand, the integrand within the contour is analytic so the result is zero. But Mathematica gives me $-2\pi i$. Could anybody point it out for me where the problem is?","['logarithms', 'complex-analysis', 'contour-integration']"
+458665,"prove that there is $c \in (a,b)$ (about calculus)","Statement $f$ is not a constant function. $f'$ is continuous, differentiable in $(a, b)$. $f(a)=f(b)=0$ $n\in\mathbb{R}$ Prove it There is $c$ in $(a, b)$ such that $f'(c)+nf(c)=0$. I used the Rolle's theorem to prove it, but I didn't prove. Because of $+nf(c)$. +Please do not use DE.","['calculus', 'derivatives']"
+458674,Regular apeirohedra?,Have been toying with structures that I think are best describe as unbounded regular polyhedra . More specifically I arrived at non-convex polyhedra that are unbounded in one direction: Alternate view of segments: My question: what is the proper terminology for these structures? Should I refer to these as regular apeirohedra ? Is there a classification for such structures? Can these be generalized to structures that are unbounded in more dimensions?,"['geometry', 'polyhedra']"
+458680,How to prove: Moment Generating Function Uniqueness Theorem,"Many results are based on the fact of the Moment Generating Function (MGF) Uniqueness Theorem, that says: If $X$ and $Y$ are two random variables and equality holds for their MGF's: $m_X(t) = m_Y(t)$ then $X$ and $Y$ have the same probability distribution: $F_X(x) = F_Y(y)$. The proof of this theorem is never shown in textbooks, and I cannot seem to find it online or in any book I have access to. Can someone show me the proof or tell me where to look it up? Thanks for your time.","['moment-generating-functions', 'probability', 'functions']"
+458708,"Is the region $\mathbb{C} \setminus \gamma $ simply connected, where $\gamma (t) = t + it^2$.","Let $ \gamma (t) = t + it^2$ be a curve in the complex plane, $0 \leq t \leq \infty$ . Is $ D = \mathbb{C} \setminus \gamma $ simply connected? The curve separates the complex plane in two parts, one above the curve and one below. What I find difficult is the point at $t = \infty$ . Does this make the curve closed? And how can one make an argument about that $D$ is simply connected (if it is)? Thanks.","['general-topology', 'connectedness', 'complex-analysis']"
+458711,"Solution of $y'+2y=g(t)$, $y(0)=0$, for a given $g(t)$ having a jump discontinuity","The differential equations book that I'm reading states the following: Linear differential equations sometimes occur in which one or both of the functions $p$ and $g$ have jump discontinuities. If $t_0$ is such a point of discontinuity, then it is necessary to solve the equation separately for $t < t_0$ and $t > t_0$. Afterward, the two solutions are matched so that $y$ is continuous at $t_0$; this is accomplished by a proper choice of the arbitrary constants. Then it asks to solve the following initial value problem: $y' + 2y = g(t),\ y(0) = 0$ where $g(t)=\begin{cases} 1 & \text{ if $0 \leq t \leq 1$} \\ 0 & \text{ if $t > 1$}\end{cases}$ For $0 \leq t \leq 1$: $$y' + 2y = 1$$ The integrating factor is $e^{2t}$: $$(ye^{2t})' = e^{2t}$$ $$ye^{2t} = \dfrac{e^{2t}}{2} + C_1$$ Since the interval $0 \leq t \leq 1$ contains the initial point $t = 0$, the constant $C_1$ is determined by the initial condition $y(0) = 0$: $0e^{0} = \dfrac{e^{0}}{2} + C_1$. So, $C=-\dfrac{1}{2}$ Therefore, the solution for this interval is $y = \dfrac{1}{2}\left(1-e^{-2t}\right)$. For $t > 1$: $$y' + 2y = 0$$ The integrating factor is $e^{2t}$: $$(ye^{2t})' = 0$$ $$ye^{2t} = C_2$$ $$y = C_2e^{-2t}$$ The above solution should be ""matched"" with the previous one at $t=1$. So, setting $t = 1$ and equalling both solutions gives the value of $C_2$: $$\dfrac{1}{2}\left(1-e^{-2}\right) = C_2e^{-2}$$ $$C_2 = \dfrac{1}{2}(e^2-1)$$ So, the second solution becomes $y = \dfrac{1}{2}(e^2-1)e^{-2t}$ Now, a continuous function can be created, joining these two solutions gives the general solution: $$y(t)=\begin{cases} \dfrac{1}{2}(1-e^{-2t}) & \text{ if $0 \leq t \leq 1$} \\ \dfrac{1}{2}(e^2-1)e^{-2t} & \text{ if $t > 1$}\end{cases}$$ This attempt is correct, because this is the answer given by the book. But, although the function above is continuous at $t=1$, it is not differentiable, since the derivative of $y(t)$ is not continuous at $t=1$ (there is a ""kink"" at $y(1)$). So, why is the function above a solution for $t\geq 0$? Shouldn't a solution be differentiable everywhere?","['ordinary-differential-equations', 'continuity']"
+458712,Show $(3306 \cdot 3834)^2 - (11^2 \cdot 13 \cdot 17^2)^2 $ is divisible by $10875593$,"Let $n = 10875593 $ Given $3306^2 - n = 11\cdot 17^3$ and $3834^2 - n = 11^3\cdot 13^2 \cdot 17$ Deduce that $(3306 \cdot 3834)^2 - (11^2 \cdot 13 \cdot 17^2)^2 $ is divisible by $n$. Then use a calculator and the Euclidean Algorithm to find a factor of $n$. What is the smallest $a$ such that $a^2 - n $ is a square? Hi everyone, thanks in advance for the help. Here is what I have so far, first part seemed reasonably easy: Given $3306^2 - n = 11\cdot 17^3$ and $3834^2 - n = 11^3\cdot 13^2 \cdot 17$ Then  $(3306^2 - n)(3834^2 - n) = (11\cdot 17^3)(11^3\cdot 13^2 \cdot 17) $ so, $(3306 \cdot 3834)^2 - (11^2 \cdot 13 \cdot 17^2)^2 = 3306^2n + 3834^2n $ therefore, LHS is divisble by n and = $ 3306^2 + 3834^2 $ The next part, I used the Euclidean Algorithm, and as I understand it so far, it takes two arguments, so I used $n$ and $ 3306^2 + 3834^2 $, I obtained the gcd to be 1. Which seems to me that $n$ could be prime? I understand that the Euclidean Algorithm does not imply this, but should I just  pick random numbers to try with $n$ until I find otherwise? What sort of process should I use here? For the final part of the question, I have tried to use Fermat's factorization method. By Fermat's factorization method, I know that $a >= \sqrt{n}$, so I have simply started from $ 3397^2 - n $ to try and find a perfect square. I've tried enough iterations to feel like this is not the way to go about it, but we're in week 1 of the semester and I am a bit stuck. Any hints or directions would be greatly appreciated!!",['number-theory']
+458714,Far-field Poynting vector for time varying source [check my math please],"This is a question from classical electrodynamics, but it's the maths of it I need some help in. I have fields $\rho\left(\vec{r},t\right)$, $\vec{J}\left(\vec{r},t\right)$, $\vec{E}\left(\vec{r},t\right)$ and $\vec{B}\left(\vec{r},t\right)$ in $\mathbb{R}^3$. The fields $\rho$ and $\vec{J}$ are related by the Continuity Equation :
+$$
+-\dfrac {\partial \rho (\vec{r}, t)} {\partial t} = \nabla \cdot \vec{J} (\vec{r}, t)
+$$
+Let us say $\mathbb{V}_s \subset \mathbb{R}^3$ is the smallest spherical volume such that:
+$$
+\forall t, \qquad \forall \vec{r}\notin \mathbb{V}_s: \qquad\qquad \rho\left(\vec{r},t\right) = \vec{J}\left(\vec{r},t\right) = 0
+$$
+$$
+\forall t, \qquad \forall \vec{r}\in \partial\mathbb{V}_s: \qquad\qquad \rho\left(\vec{r},t\right) = \vec{J}\left(\vec{r},t\right) = 0 
+$$
+Since $\mathbb{V}_s$ is a sphere, I say that its center is at $\vec{r}_0$, and its diameter id $\mathcal{D}$. Now given the definitions:
+$$
+\vec{r}_s \in \mathbb{V}_s,\qquad
+\vec{R} = \vec{r} - \vec{r}_s,\qquad
+R=\left|\vec{R}\right|, \qquad
+\hat{R}=\frac {\vec{R}} {R}, \qquad
+t_r = t - \frac {R} {c}
+$$
+The fields $\vec{E}$ and $\vec{B}$ are as follows:
+$$
+\vec{E}\left(\vec{r},t\right) =
+\frac {1} {4 \pi \epsilon_0}
+\iiint_{\mathbb{V}_s} {\left[
+\frac {\rho (\vec{r}_s, t_r)} {R^2} \hat{R} +
+\frac {1} {R c} \frac {\partial \rho (\vec{r}_s, t_r) } {\partial t} \hat{R} -
+\frac {1} {R c^2} \frac {\partial \vec{J} (\vec{r}_s, t_r) } {\partial t} \right]}
+\space dV\left(\vec{r}_s\right)
+$$
+$$
+\vec{B}\left(\vec{r},t\right) =
+\frac {\mu_0} {4 \pi}
+\iiint_{\mathbb{V}_s} {\left[
+\frac {\vec{J}  (\vec{r}_s, t_r)} {R^2} \times \hat{R} +
+\frac {1} {R c} \frac {\partial \vec{J}  (\vec{r}_s, t_r) } {\partial t} \times \hat{R} \right]}
+\space dV\left(\vec{r}_s\right)
+$$
+(Physically, $\vec{E}$, $\vec{B}$. $\vec{J}$ & $\rho$ have the standard meanings from Electrodynamics. The equations above are the Jefimenko's equations ) Now the paper ""The Relation Between Expressions for Time-Dependent Electromagnetic Fields Given by Jefimenko and by Panofsky and Phillips"" by Kirk T. McDonald shows that the expression for $\vec{E}$ can be transformed into:
+$$
+\scriptsize{
+\vec{E}\left(\vec{r},t\right) =
+\frac {1} {4 \pi \epsilon_0}
+\iiint_{\mathbb{V}_s} {\left[
+\frac {\rho (\vec{r}_s, t_r)} {R^2} \hat{R}
+ + \frac 
+      { \left(\vec{J} (\vec{r}_s, t_r) \cdot \hat{R}\right)\hat{R} + \left(\vec{J} (\vec{r}_s, t_r) \times\hat{R}\right) \times \hat{R} } 
+      {R^2 c}
+ + \frac {1} {R c^2} \left( \frac {\partial \vec{J} (\vec{r}_s, t_r) } {\partial t} \times \hat{R} \right) \times \hat{R}
+\right]}
+\space dV\left(\vec{r}_s\right)
+}
+$$
+Now I want to compute the quantity $\vec{S}\left(\vec{r},t\right) = 
+\dfrac {\vec{E}\left(\vec{r},t\right) \times \vec{B}\left(\vec{r},t\right)} {\mu_0}$ for $\vec{r}$ for which $R \gg \mathcal{D}$. I figured that for such values of $\vec{r}$, the maximum possible difference between the values of $\dfrac 1 R$ for any two points $\vec{r}_s \in \mathbb{V}_s$ is:
+$$\frac{1}{R} - \frac{1}{R+\mathcal{D}} = \frac{\mathcal{D}}{R\left(R+\mathcal{D}\right)} = \frac{1}{R}\cfrac{ \color{red}{\frac{\mathcal{D}}{R}}}{1+\color{red}{\frac{\mathcal{D}}{R}}}$$
+Similarly, the maximum possible angle between the values of $\hat{R}$ for any two points $\vec{r}_s \in \mathbb{V}_s$  is:
+$$
+2\;{\tan}^{-1}\left(\frac12 \color{red} {\frac{\mathcal{D}}{R}}\right)
+$$
+When $R \gg \mathcal{D}$, $\dfrac {\mathcal{D}} R \approx 0$, and each of the two expressions above are $\approx 0$ as well. So $\dfrac 1 R$ and $\hat{R}$ are essentially independent of $\vec{r}_s$. We can, therefore, bring out all $\dfrac 1 R$ and $\hat{R}$ factors outside the integral sign. So if I define the following:
+$$
+W\left(\vec{r},t\right) = 
+\iiint_{\mathbb{V}_s} 
+\rho \left( \vec{r}_s, t_r \right)
+\space dV\left(\vec{r}_s\right)
+$$
+$$
+\vec{Y}\left(\vec{r},t\right) = 
+\iiint_{\mathbb{V}_s} 
+\vec{J} \left( \vec{r}_s, t_r \right)
+\space dV\left(\vec{r}_s\right)
+$$
+$$
+\vec{Z}\left(\vec{r},t\right) = 
+\iiint_{\mathbb{V}_s} 
+ \frac {\partial \vec{J} \left( \vec{r}_s, t_r \right) } {\partial t}
+\space dV\left(\vec{r}_s\right) 
+= \frac {\partial \vec{Y}\left(\vec{r},t\right)} {\partial t}
+$$
+I can then say:
+$$
+\vec{E}\left(\vec{r},t\right) =
+\frac {1} {4 \pi \epsilon_0}
+\left[
+   \frac {W (\vec{r}, t)} {R^2} \hat{R}
+    + \frac {\vec{Y} (\vec{r}, t) \cdot \hat{R}} {R^2 c} \hat{R}
+    + \frac {\left(\vec{Y}(\vec{r}, t) \times \hat{R}\right) \times \hat{R}} {R^2 c}
+    + \frac {\left(\vec{Z}(\vec{r}, t) \times \hat{R}\right) \times \hat{R}} {R c^2}  
+\right]
+$$
+$$
+\vec{B}\left(\vec{r},t\right) =
+\frac {\mu_0} {4 \pi}
+\left[
+    \frac {\vec{Y}  (\vec{r}, t) \times \hat{R}} {R^2}
+    + \frac {\vec{Z}(\vec{r}, t) \times \hat{R}} {R c} 
+\right]
+$$
+Applying $\color{blue}{\left(\vec{a} \times \hat{u}\right) \times \hat{u} \equiv \left(\vec{a}\cdot\hat{u}\right)\hat{u} - \vec{a}}$, we can then say:
+$$
+\vec{E}\left(\vec{r},t\right) =
+\frac {1} {4 \pi \epsilon_0} \left[
+ \left(
+    \frac {W (\vec{r}, t)} {R^2}
+    + 2\frac 
+      {\vec{Y} (\vec{r}, t) \cdot \hat{R}} 
+      {R^2 c}
+    + \frac
+      {\vec{Z}\left( \vec{r}, t \right)\cdot\hat{R}}
+      {R c^2}
+   \right) \hat{R}
+ - \frac 1 {Rc} \left(
+     \frac {\vec{Y} (\vec{r}, t) } {R}
+   + \frac {\vec{Z}(\vec{r}, t)} {c} 
+  \right)
+\right]
+$$
+$$
+\vec{B}\left(\vec{r},t\right) =
+\frac {\mu_0} {4 \pi} \left[
+\frac 1 R
+{\left(
+\frac {\vec{Y}  (\vec{r}, t)} {R} +
+\frac {\vec{Z}(\vec{r}, t)} {c} \right)}
+\times \hat{R}
+\right]
+$$
+Thus, if I define:
+$$
+\mathcal{U}\left(\vec{r},t\right) = 
+ \color{blue}{
+  \vec{W} \left(\vec{r},t\right) 
+  + \frac {\vec{Y} \left(\vec{r},t\right) \cdot \hat{R}} {c}
+ }
+ = \iiint_{\mathbb{V}_s} \left[
+   \rho \left( \vec{r}_s, t_r \right)
+   + \frac { \vec{J} \left( \vec{r}_s, t_r \right) \cdot \hat{R} } {c}
+\right] \space dV\left(\vec{r}_s\right)
+$$
+$$
+\vec{\mathcal{X}} \left(\vec{r},t\right) =
+  \color{blue}{ 
+   \frac {\vec{Y} \left(\vec{r},t\right)} {R} 
+   + \frac {\vec{Z} \left(\vec{r},t\right)}  {c}
+  }
+= \iiint_{\mathbb{V}_s} \left[
+   \frac { \vec{J} \left( \vec{r}_s, t_r \right) } {R}
+   + \frac 1 c \frac {\partial \vec{J} \left( \vec{r}_s, t_r \right) } {\partial t}
+\right] \space dV\left(\vec{r}_s\right)
+$$
+I get:
+$$
+\vec{E}\left(\vec{r},t\right) =
+\frac {1} {4 \pi \epsilon_0} 
+\left[
+  \frac {\mathcal{U}\left(\vec{r},t\right)} {R^2} \hat{R}
+  + \frac {\left( \vec{\mathcal{X}}\left(\vec{r},t\right) \times \hat{R}\right) \times \hat{R}} {Rc} 
+\right]
+$$
+$$
+\vec{B}\left(\vec{r},t\right) =
+\frac {\mu_0} {4 \pi} 
+\left[
+  \frac {\vec{\mathcal{X}} \left(\vec{r},t\right) \times \hat{R}} {R} 
+\right]
+$$
+Finally giving me:
+$$
+\vec{S}\left(\vec{r},t\right) =
+  \mathcal{U} \left(\vec{r},t\right) \frac {\hat{R} \times \left( \vec{\mathcal{X}} \left(\vec{r},t\right) \times \hat{R} \right) } {16 \pi^2 \epsilon_0 R^3}
+  + \frac {\left| \vec{\mathcal{X}} \left(\vec{r},t\right) \times \hat{R} \right|^2}  {16 \pi^2 \epsilon_0 R^2 c} \hat{R}
+$$
+Now my first question is: Is my math correct so far? Now, I define a sphere $\mathbb{V}$ with its center at $\vec{r}_0$ (the center of the source volume $\mathbb{V}_s$.) such that point $\vec{r}$ is on its surface. Then the unit vector $\hat{R}$ will actually be the unit normal $\hat{n}\left(\vec{r}\right)$ at $\vec{r}$. I want to compute the power passing the surface of $\mathbb{V}$, which should be:
+$$
+\oint_{\partial\mathbb{V}}
+  \vec{S}\left(\vec{r},t\right) \cdot \hat{R}
+\;ds\left(\vec{r}\right)
+= \frac 1 {16 \pi^2 \epsilon_0 R^2 c} \oint_{\partial\mathbb{V}} \left| \frac {\vec{Y}\left(\vec{r},t\right) \times \hat{R}} {R} + \frac {\vec{Z}\left(\vec{r},t\right) \times \hat{R}} {c} \right|^2 \;ds\left(\vec{r}\right) 
+$$ My second question is: How do I parameterize and compute this surface integral? I have got to the following expression (it seems to me that when I am integrating over $\vec{r}$, I can still take $\dfrac 1 R$ out from under the integral, but not $\hat{R}$), but I'm stuck after this: $$ \color{blue}{\dfrac {\oint_{\partial\mathbb{V}} \left|\vec{Y}\left(\vec{r},t\right) \times \hat{R}\right|^2 \;ds\left(\vec{r}\right)} {16 \pi^2 \epsilon_0 R^4 c} + \dfrac {\oint_{\partial\mathbb{V}} \left(\vec{Y}\left(\vec{r},t\right) \times \hat{R}\right)\cdot\left(\vec{Z}\left(\vec{r},t\right) \times \hat{R}\right) \;ds\left(\vec{r}\right)} {8 \pi^2 \epsilon_0 R^3 c^2}} \color{red}{+ \dfrac {\oint_{\partial\mathbb{V}} \left|\vec{Z}\left(\vec{r},t\right) \times \hat{R}\right|^2 \;ds\left(\vec{r}\right)} {16 \pi^2 \epsilon_0 R^2 c^3}} $$ I expected to prove that the term in $\color{red}{red}$ is independent of $R$, and the term in $\color{blue}{blue}$ is 'reversible', by which I mean if there are two time instants $t_1$ and $t_2$ such that: $$\forall \vec{r}_s \in \mathbb{V}_s:\qquad \rho\left(t_1\right) = \rho\left(t_2\right), \qquad\vec{J}\left(t_1\right) = \vec{J}\left(t_2\right)$$ ... then I hoped to prove that: $$ \int_{t_1}^{t_2} \dfrac {\oint_{\partial\mathbb{V}} \left|\vec{Y}\left(\vec{r},t\right) \times \hat{R}\right|^2 \;ds\left(\vec{r}\right)} {16 \pi^2 \epsilon_0 R^4 c} + \dfrac {\oint_{\partial\mathbb{V}} \left(\vec{Y}\left(\vec{r},t\right) \times \hat{R}\right)\cdot\left(\vec{Z}\left(\vec{r},t\right) \times \hat{R}\right) \;ds\left(\vec{r}\right)} {8 \pi^2 \epsilon_0 R^3 c^2}\;dt = 0$$ ... but so far I have not been able to make any progress. Would appreciate any help...","['multivariable-calculus', 'vector-analysis']"
+458740,Nested Radical of Ramanujan,"I think I have sort of a proof of the following nested radical expression due to Ramanujan for $x\ge 0$. $$\large x+1=\sqrt{1+x\sqrt{1+(x+1)\sqrt{1+(x+2)\sqrt{1+\cdots}}}}$$ for $ x\ge -1$ I just want to know if my proof is okay or there is a flaw, and if there is one I request to give some suggestions to eliminate them. Thank you. The proof is the following: Proof: Let us define $$ a_n(x)=\underbrace{\sqrt{1+x\sqrt{1+(x+1)\sqrt{1+(x+2)\sqrt{1+\cdots}}}}}_{n \ \mbox{terms}}$$ for $x\ge 0$ so that $$ a_1(x)=\sqrt{1+x},\ a_2(x)=\sqrt{1+x\sqrt{1+(x+1)}},\ a_3(x)=\cdots$$ and so on. Since $x\ge 0$ each one of the $a_n$ is defined (I am taking only the positive square root). Also, we note that $$a_{n+1}^2(x)=1+xa_{n}(x+1)$$ Now, we note that $\{a_n(x)\}$ is an increasing sequence and that $$a_n(x)<x+1$$ $\forall n\ge 1$, this is easy to prove by induction as below: For $n=1$, $a_1(x)=\sqrt{1+x}<1+x$ since $x\ge 0\Rightarrow 1+x\ge 1$. SO it is true for $n=1$. Similarly, the truth can be proved for $n>1$. Then $a_n(x)$ converges to $$l(x)=\sup_{n}a_n(x)\le x+1$$ Now I make the following claim: Claim: $l(x)=x+1\quad \forall i\ge 0$ Proof: Fix $x$. Let $l(x)<x+1$. Then, $l(x)=x+1-\epsilon$ for some $\epsilon>0$. Now, I claim that there must be a $n$ such that $$x+1-a_n(x)<\epsilon$$, and if that is true then $$a_n(x)>x+1-\epsilon=l(x)$$ which is a contradiction since $$l(x)=\sup_{n}a_n(x)$$ and then it implies that $$l(x)=x+1$$ To prove my claim it requires $$x+1-a_n(x) <  \epsilon$$ Now, \begin{align}
+x+1-a_n(x) = & x+1-\sqrt{1+xa_{n-1}(x+1)} \\
+\ =& \frac{(x+1)^2-({1+xa_{n-1}(x+1)})}{x+1+\sqrt{1+xa_{n-1}(x+1)} } \\
+\ =& x\frac{(x+1)+1-a_{n-1}(x+1)}{x+1+\sqrt{1+xa_{n-1}(x+1)} } \\
+\ <& \frac{x}{x+2}((x+1)+1-a_{n-1}(x+1))\\
+\ <& \frac{x}{x+2}\cdot\frac{x+1}{x+3}((x+2)+1-a_{n-2}(x+2))\\
+\ <& \frac{x}{x+n-1}\cdot \frac{x+1}{x+n} ((x+n-1)+1-a_{1}(x+n-1))\\
+\ <& \frac{x}{x+n-1}\cdot \frac{x+1}{x+n}(x+n-\sqrt{x+n})\\
+\ <& \frac{x(x+1)}{x+n-1}
+\end{align} Now, if one is able to find $n$ such that $$\frac{x(x+1)}{x+n-1}<\epsilon
+\Rightarrow x< \frac{-(1-\epsilon)+\sqrt{(1-\epsilon)^2+4\epsilon(n-1)}}{2}$$ then we're done. Now from the upper bound it seems that there always exists some $n$ that satisfies this requirement. Hence the claim is proved.","['nested-radicals', 'sequences-and-series', 'proof-verification']"
+458767,Are filters in lattices exactly the homomorphic preimages $\varphi^{-1}(1)$ of top elements?,"Say I got a lattice $L$, a bounded lattice $K$ with top-element $1$ and a homomorphism $\varphi : L \to K$, then $\varphi^{-1}(1)$ is a filter in L. I wondered whether I can represent every filter $F \subset L$ in that way, i.e. I find some other bounded-above lattice such that $F$ is some preimage of the top element. This should be some kind of contraction of $F$ into a new, single element. My idea would be to define an equivalence relation on $L$ $$a \sim b :\Leftrightarrow a = b \text{ or } a, b \in F$$ and show that it's in fact a congruence. Then $L/\sim$ should be the lattice I look for. Is this proposition in fact true and is there an easier proof? Thanks","['filters', 'lattice-orders', 'abstract-algebra']"
+458771,"Area of supercircles, or how to integrate $\int_0^1 \sqrt[n]{1-x^n}dx$?","Martin Gardner, somewhere in the book Mathematical Carnival ; talks about superellipses and their application in city designs and other areas. Superellipses (thanks for the link anorton) are defined by the points lying on the set of curves: $$\left|\frac{x}{a} \right|^n + \left|\frac{y}{b} \right|^n = 1$$ After reading the chapter, I was wondering how to calculate the area of these shapes. So I started by the more simplistic version of supercircles' area: $$\frac{A}{4}=\int_0^1 \sqrt[n]{1-x^n}dx$$ Although, it looks simple, but I wasn't able to evaluate the integral(except some simple cases, i.e. $n=1,2,\frac{1}{2},\frac{1}{3},\cdots$). So I asked Mathematica to see if its result can shed some light on the integration procedure, the result was: $$\int_0^1\sqrt[n]{1-x^n}dx=\frac{\Gamma \left(1+\frac{1}{n}\right)^2}{\Gamma \left(\frac{n+2}{n}\right)}$$
+where $\Re(n)>0$. But I still couldn't figure out the integration steps. So my question is: how should we do this integration? SideNotes: It's easy to evaluate the integral in the limit of $n \rightarrow \infty$! One way to do it is using Taylor series expansion, and keeping the relevant terms(only first term in this case). Some beautiful supercircles are shown in the image bellow: As one can see their limiting case is a square. Also, it will be really nice, if one can calculate the volume of the natural generalization of the curve to 3(or $k$) dimensions: $$\left|\frac{x}{a} \right|^n + \left|\frac{y}{b} \right|^n +\left|\frac{z}{c} \right|^n = 1$$","['definite-integrals', 'volume', 'integration', 'surfaces']"
+458780,Probability that a random edge coloring of the complete graph is proper,"Suppose we color the edges $\{1,\ldots, {n \choose 2}\}$ of the complete graph on $n$ vertices with $m$ colors each edge being assigned a color picked uniformly at random from $\{1,\ldots, m\}.$ I would like to estimate the probability that the obtained random coloring is proper, that is all edges incident with a vertex $v$ are colored with different colors. One way to do this is as follows. Suppose $E_i$ is the event that the edge $e_i$ of $K_n$ is colored with a color that already occurs at its adjacent edges. Then $$Pr[E_i] = \frac{1}{m} (1 - (1-\frac{1}{m})^{2n-4})$$ and thus the probability that $G$ is not colored properly is estimated as $$Pr[E_1\cup \ldots E_{n \choose 2}] \leq \frac{n(n-1)}{2m}  (1 - (1-\frac{1}{m})^{2n-4} )$$ Now this is not a good estimate since the right hand size is larger then one for any $m$ that is not ""large enough"". Another way to estimate this is to define the event $V_i$ to be that the $i$th vertex of our graph is incident with edges of distinct colors and use a similar estimate. But again the given bound is not very sharp. Hence I am wondering is there a more delicate way to estimate the mentioned probability? Is this known? Is there a different way to model this ?","['graph-theory', 'coloring', 'probability', 'combinatorics']"
+458784,Space of global sections for a smooth projective curve of genus $g$,"Let $X$ be a smooth projective curve of genus $g$, $T_{X}$ its tangent bundle and $H^{0}(X,T_{X})$ the space of global sections for $X$. What is $\dim H^{0}(X,T_{X})$ and why?","['projective-space', 'dimension-theory-analysis', 'algebraic-geometry', 'algebraic-curves']"
+458785,When would the intersection of the empty set mean anything?,"The following question come from remarks from Velleman, How to Prove it (pp.82, ex. 14). Let $F$ denote a family of sets and consider the case where $ F = \emptyset$. Then the statement, $ x \in \cap F$ is always true, regardless of $x$. Thus the intersection of an empty set is the universe of discourse. Paraphrasing from Velleman, the universe of discourse means different things depending upon the context and sometimes no universe of discourse is used. Thus some mathematicians consider $\cap \emptyset$ to be meaningless. Since only some mathematicians consider it to be meaningless, this suggests that some mathematicians believe it to have meaning. In what situations may the intersection of an empty set have meaning?","['logic', 'elementary-set-theory']"
+458791,Irrationality of the points on $x^2 + y^2 = 3$,"On page 79 of his book ""The Irrationals"", Julian Harvil sets out to prove that all the points on the Cartesian plane of the circle described by $x^2 +y^2 =3$ are irrational... (paraphrased below) Assume that a rational point ($\frac{p}{q},\frac{r}{s}$) lies on the circle. Hence $p^2s^2 + q^2r^2 = 3q^2s^2$ Which we can restate as $a^2 + b^2 = 3c^2$ where $a, b, c$ are all positive integers. I follow this up to this point, but then he stipulates ""since the sum of two even numbers and the sum of two odd numbers are each even, it must be that one of $a^2$ and $b^2$ is even and the other odd"". Why is it necessary for the sum of $a^2 + b^2$ to be odd? Update My mistake - he stipulates that $a^2$ and $b^2$ may not both be even as well as may not both be odd - have correctly quoted him now","['algebraic-geometry', 'irrational-numbers']"
+458795,What's are all the prime elements in Gaussian integers $\mathbb{Z}[i]$,"So far, I know if $p$ is a rational prime, then $(1)$ if $p\equiv 3\mod4$, then $p$ is prime in $\mathbb{Z}[i]$. $(2)$ If $p\equiv1\mod4$  then $p=π_1 π_2$ where $π_1 $ and $π_2$ are conjugate, Then $π_1 $ and $π_2$ are primes in $\mathbb{Z}[i]$. $(3)$ $2=(1+i)(1-i)$, then $(1+i)$and$(1-i)$ are primes in $\mathbb{Z}[i]$. What's are all the prime elements in Gaussian integers $\mathbb{Z}[i]$? For example, $-3$ are prime in $\mathbb{Z}[i]$, but not in the above $3$ cases.","['ring-theory', 'abstract-algebra', 'number-theory']"
+458801,Find the number of terms common in two sequences,"How many terms do the two sequences $S_1$ and $S_2$ have in common? $S_1 = 1, 3, 6, 10, 15\dots$ up to $200$ terms. $S_2 = 3, 6, 9, 12, 15\dots$ up to $200$ terms. I need to know the number of common terms in these two sequences (irrespective of their position in respective series.) For example, $3,6$ and $15$ are a few of the common terms in these two sequences, but I need to know the exact number of common terms. My approach: $n^{th}$ term of $S_1 = \dfrac{[n(n+1)]}{2}$ $k^{th}$ term of $S_2 = 3k$ Now for common terms: $\dfrac{[n(n+1)]}{2} = 3k$ Which gives: $n(n+1) = 6k$ Had the above equation been linear in terms of $n$ and $k$ then I might have been able to solve it for possible integral values of $k$ and $n$ but now I am stuck here and don't know how to proceed further. Kindly provide assistance in solving this further. Answer is 22 common terms",['sequences-and-series']
+458802,Irreducibility check for polynomials not satisfying Eisenstein Criterion.,"My Question is to check Irreducibility for polynomials not satisfying Eisenstein Criterion. As an Illustration, to check whether $x^{p-1}+.....+x+1$ for p a prime is irreducible or not, we replaced $x$ by $x+1$ and by using Eisenstein's Criterion for the resulting polynomial we conclude that resulting polynomial is irreducible and so is the original polynomial. In general, for a given irreducible polynomial $f(x)$ with coefficients in a known U.F.D, is there some element $a$ such that we can apply Eisenstein's criterion to $f(x+a)$? I am sure there would be no general structure for this but I expect there to be at least some special cases. Any Reference/suggestion would be appreciated. Thank You.","['ring-theory', 'irreducible-polynomials', 'abstract-algebra']"
+458808,What is the quotient of a cyclic group of order $n$ by a cyclic subgroup of order $m$?,"Suppose that $H$ is a (cyclic) subgroup of order $m$ of a cyclic group
+  $G$ of order $n$. What is $G/H$? It's a very simple question but I am still struggling with getting accustomed to the notion of the quotient group. Now, I know that $m$ divides $n$ and that $G/H$ will be a group of cosets such that $\{gH:g\in G\}$. As a result, there will be $n/m$ of such cosets. I was wondering I can say anything more specific than just that?","['finite-groups', 'group-theory', 'abstract-algebra']"
+458825,Deriving calculation formulas for torsion and curvature,"With much blood, sweat, and tears, I have managed to derive the formulas
+$$k = \frac{||a' \times a''||}{||a'||^3}, \quad \tau = \frac{\langle a' \times a'', a''' \rangle}{||a' \times a''||^2}$$
+for the curvature and torsion of a smooth regular space curve $a$. In general, is there any elegant way of proving such formulas, or is it inevitably a mindless differentiation bash and application of cross product identities? I suppose these are what you'd call calculation formulas, so there might not be any meaning to assign to the right-hand sides, and hence my hope might be in vain. Nonetheless, thanks for any advice. Even any suggestions on how to cull the working would be good -- I spent at least two pages on the former and around three on the latter.",['differential-geometry']
+458852,Interesting Harmonic Sum $\sum_{k\geq 1}\frac{(-1)^{k-1}}{k^2}H_k^{(2)}$,Here http://integralsandseries.prophpbb.com/topic119.html We came across the following harmonic sum $$\tag{1} \sum_{k\geq 1}\frac{(-1)^{k-1}}{k^2}H_k^{(2)}$$ Note that we define $$H_k^{(2)}=\sum_{n\geq 1}^k\frac{1}{n^2} $$ Also we have $$\psi_1(k+1)= \zeta(2) -H_k^{(2)} $$ Any ideas how to evaluate (1) ?,"['closed-form', 'sequences-and-series', 'calculus', 'integration', 'harmonic-numbers']"
+458871,Scheme theoretic image,"Let $f : Z \rightarrow X$ be a morphism of schemes. I want to get a unique closed subsheme $Y$ of $X$ with the following propertie : the morphism $f$ factor through $Y$ and if $Y'$ is any other closed subscheme of $X$ through which $f$ factors, then $Y \rightarrow X$ factor through $Y'$ also. I approached in the following manner. Let $\mathfrak{I}$ be the kernel of the morphism of scheme $O_X \rightarrow f_*O_Z$. I want to claim that $Y = O_X/ \mathfrak{I}$. To show that $Y$ is a scheme I need to show that $\mathfrak{I}$ is quasicoherent ideal. For this I may assume $X$ is affine as it is a local property. Is my claim correct? If not what is the example where $\mathfrak{I}$ fails to be quasi coherent? how to prove the statement?",['algebraic-geometry']
+458883,Geometric Sig.$\frac{d}{dt}(|\lVert \boldsymbol{r}(t)\rVert )=\frac{\boldsymbol{r}(t).\frac{d}{dt}(\boldsymbol{r}(t))}{\lVert\boldsymbol{r}(t)\rVert}$,"Suppose $\boldsymbol{r}\not=0$, what's the geometric derivation/significance of the above, the question is a show that, I could (probably) just use definitions. Instead I thought about when it'd be zero, if the derivative of the magnitude of a vector is 0, it's never changing length, it could be doing nothing (so r`(t)=0) or it could be moving in a circle/sphere/whatever is above that around the origin, thus never changing length. If the vector starts at the origin and is moving away from the origin then in the same direction as it's position (vector) .... I can see there's something nice here, not quite sure what. Anyway I'm faffing with poorly drawn diagrams is there a nice way of doing this, I'd like to show this geometrically, I've ""done"" the case when change in length is zero. Perhaps I am wrong and there isn't something nice here, but the circle/spherical thing is just a special case, then I shall defer to from definitions. If there is something nice, what is it? Thanks I've not used Latex much in the text because I'd rather use pictures and a thought process, if you want me to Latex what 'lil math there is, add a comment. using $r=\boldsymbol{r}(t)$ and $|r| = \lVert\boldsymbol{r}(t)\rVert$ and r` as the derivative of r $$\frac{d}{dt}(|r|) = \frac{r.r'}{|r|}$$
+implies (iff? why not, why implies? Not entirely confident here) $$|r|\frac{d}{dt}(|r|)=r.r'=|r||r'|cos(\theta)$$
+where theta is the angle between r and r` Now 
+$$\frac{d}{dt}(|r|)=|r'|cos(\theta)$$ ""The rate of change of length from the origin to a point on the curve is the amount of it's magnitude of it's rate of change in the direction from the origin to that point"" Shall I pose this as my own answer?",['differential-geometry']
+458922,Deducing PA's axioms in ZFC,"Recently I've stumbled across this claim: Peano axioms can be deduced in ZFC I found a lot of info regarding this claim (e.g. what would (one version of) the natural numbers look like within the universe of sets: $0 = \emptyset$, $n + 1 = n \cup \{n\}$), but not what the deductions (ZFC $\vdash$ PA) actually look like. What do they look like?","['logic', 'set-theory', 'peano-axioms', 'number-theory']"
+458930,Are there Infinite Quotients of Algebraic Extensions of $\mathbb{Z}$?,"It is well known that $\mathbb{Z}[a_1, \dots, a_n]/(a)$ is a finite ring if each $a_i$ is an algebraic integer and $a \neq 0.$ I suppose this statement becomes wrong if we just require those $a_i$ to be arbitrary algebraic numbers, but unfortunately I failed in finding any counterexample until now. 
+  I would appreciate it if somebody could name one. I am particularly interested in the case where $a$ is irreducible. Thank you in advance!","['commutative-algebra', 'ring-theory', 'algebraic-number-theory', 'abstract-algebra']"
+458933,Why is $\sum_{k=-\infty}^\infty \frac{1}{(z-n)^2}$ uniformly convergent in $|y| \geq 1$,"In the Complex Analysis text by Ahlfors', he says that it's easy to see that the series
+$$\sum_{k=-\infty}^\infty \frac{1}{(z-k)^2}$$ converges uniformly in the set $\{x+iy:|y| \geq 1\}.$ I can't see why is it the case. I tried using the Weierstrass M-test, but the bounds I got were $\left|\frac{1}{(z-n)^2} \right| \leq 1$ and the series $\sum_{-\infty}^\infty 1$ diverges.","['sequences-and-series', 'complex-analysis']"
+458935,combining conditional probabilities,"I've come across a physics paper in which pdf
+$$
+p(a|b)
+$$
+is desired, but only
+$$
+p(a|c)\\
+p(c|b)
+$$
+are known. It is claimed that
+$$
+p(a|b)=\int p(a|c)p(c|b) dc.
+$$
+Is this correct wlog? I can't prove it. I think it is in fact a conditional expectation for $p(a|c)$. Am I right? Is it possible to find $p(a|b)$ exactly?","['statistics', 'bayesian', 'bayes-theorem', 'probability']"
+458939,For what values will f(x) be necessarily one-one?,"Let $g:\mathbb{R}\to\mathbb{R}$ be a differentiable function such that
+  $|g'(x)|\le M$ for all $x\in \mathbb{R}$. For what values of
+  $\epsilon$ will the function $f(x)=x+\epsilon g(x)$ will be
+  necessarily one-one? Not getting any idea how to proceed, maybe Mean value theorem will work.","['derivatives', 'functions']"
+458970,solving the integral $ \int_0^\infty \dfrac{\sin xt}{x(x^2+1)} dx $,"How to solve the following integral by differential equations techniques?
+$$ \int_0^\infty \dfrac{\sin xt}{x(x^2+1)} dx $$","['ordinary-differential-equations', 'calculus', 'partial-differential-equations']"
+458974,Does the boundary of an open set have measure zero (in $\mathbb{R}^n$)?,"When studying weak border conditions (in Sobolev Spaces), the usual motivation for the weak meaning of inequalities is that the boundary of most open sets in $\mathbb{R}^n$ has zero Lebesgue measure. But is there any open set $U\subseteq\mathbb{R}^n$ such that it's boundary has positive Lebesgue measure? I really can't think of anything like that.","['measure-theory', 'analysis']"
+458975,Help understanding CW-complex construction.,"From p.5 of Hatcher's Algebraic Topology : I thought attachment maps would be from $n$-cell to $n$-cell since it says ""by attaching $n$-cells"", but in that link they're from $S^{n-1}$ to $(n-1)$-cell?  Please shed some light on what they mean and how it's related to attachment maps. What do they mean by $D^n_\alpha$?  Is that the open disk in $R^n$?  Does this mean CW-complexes are always subsets of $R^n$?","['general-topology', 'algebraic-topology']"
+458981,Elementary Vectors proof,"This question is basically based on elementary vector laws like the polygon law of vectors.Here's how it goes: Let there be six vectors $A_1,\dots, A_6 $ taken head to tail arranged in the form of a regular hexagon.Use the fact that the resultant of these vectors is zero to prove that :
+$$\cos 0 + \cos \frac{\pi}{3} + \cos \frac{2\pi}{3}+\cos\frac{3\pi}{3}+\cos \frac{4\pi}{3}+\cos\frac{5\pi}3=0 $$ Thanks for any Help.","['vector-spaces', 'geometry']"
+458993,Showing sets have measure zero.,"Let $L=L(X,\textbf{X},\mu)$ denote the set of an integrable functions. Recall, we define the indefinite integral of $f$ by $$\lambda(E)=\int_{E} f \, d\mu$$ for $E \in \textbf{X}$. Let $f_1$ and $f_2$ be in $L$ and let $\lambda_1$ and $\lambda_2$ be their indefinite integrals. Show that $\lambda_1 (E) = \lambda_2 (E)$ for all $E \in \textbf{X}$ if and only if $f_1(x)=f_2(x)$ for almost all $x \in X$. Similar to my last question, I am having trouble with one direction of the proof. I am assuming $\lambda_1 (E) = \lambda_2 (E)$ for all $E \in \textbf{X}$. My idea is to show that the set $F= \{x \in X: f_1(x)\neq f_2(x)\}$ has measure $0$. The rational numbers are countable; hence, they can be indexed by the natural numbers. Let $(r_n)$ be the sequence of rational numbers. Set $$ F_n = (\{x \in X: f_1(x)>r_n\} \cap \{x \in X: f_2(x)<r_n\}) \cup (\{x \in X: f_1(x)<r_n\} \cap \{x \in X: f_2(x)>r_n\})$$ for each $n$. Then, $\bigcup F_n = F$. But, I am not too sure how to show that $\mu(F_n)=0$ for each $n$. Or, perhaps, there is a much easier way. Based on this and my previous question, it appears I am lacking in techniques of how to show sets have measure $0$. Any help would be greatly appreciated. Thank you!",['measure-theory']
+458997,Can this matrix inverse be re-written?,"I have a matrix inverse of the form $(\mathbf{AB}+\mathbf{C})^{-1}$, where each matrix is $2\times 2$ and each of the subelements below are known a priori . $$
+\left(
+\left[
+\begin{array}{cc}
+A_1&A_2\\
+A_3&A_4\\
+\end{array}
+\right]\mathbf{B}+
+\left[
+\begin{array}{cc}
+C_1&C_2\\
+C_3&C_4\\
+\end{array}
+\right]
+\right)^{-1}
+$$ $\mathbf{B}$ is also known, but it varies in each iteration, whereas $\mathbf{A}$ and $\mathbf{C}$ are fixed for all. When I implement the above in code, I run into instability issues with numerical matrix inverses. I was wondering if it would be possible to re-write the above inverse using all the known terms so that the inverse is implemented as a series of matrix/scalar multiplications instead of finding the inverse numerically.","['matrices', 'linear-algebra', 'inverse']"
+459010,Properties of quotient sheaves,"I am reading Hartshorne's Algebraic Geometry, II.6 about Cartier Divisor. It is defined to be the global section of the sheaf $K^*/O^*$ . Then it said: "" thinking of the properties of the quotient sheaves, we see that a Cartier divisor can be described by an open cover $U_i$ of $X$ , and for each $i$ an element $f_i \in \Gamma(U_i, K^*)$ such that for $i,j$ , $f_i/f_j \in \Gamma(U_i \cap U_j, O^*)$ . I couldn't make sense of this part. Can someone explain more for me please? So, we need to take the presheaf $U \rightarrow K^*(U)/O^*(U)$ , and make it a sheaf? I am always uncertain about how to deal with sheafification.",['algebraic-geometry']
+459021,Prove that if $AB$ is invertible then $B$ is invertible.,"I know this proof is short but a bit tricky. So I suppose that $AB$ is invertible then $(AB)^{-1}$ exists. We also know $(AB)^{-1}=B^{-1}A^{-1}$. If we let $C=(B^{-1}A^{-1}A)$ then by the invertible matrix theorem we see that since $CA=I$(left inverse) then $B$ is invertible. Would this be correct? Edit
+Suppose $AB$ is invertible. There exists a matrix call it $X$ such that $XAB=I$. Let $C=XA$ Then $CB=I$ and it follows that $B$ is invertible by the invertible matrix theorem.","['matrices', 'linear-algebra', 'inverse']"
+459024,Inequalities for Differences of Absolute Values of matrices,"Let $A$ and $B$ be two real symmetric $n\times n$ matrices. Let $A=USU^T$ be the eigen-decomposition $A$ and let $|A|=U|S|U^T$ where $|S|$ just denotes elementwise absolute value of the diagonal matrix $S$. $|B|$ is defined similarly. (Sometimes it is written $|A|=(A^T A)^{1/2}$. Ie $|A|$ is the positive definite matrix with the same eigenvectors and same singular values as $A$). Suppose $\|\cdot\|$ is the standard $L^{2}$ operator norm on $n\times n $ matrices, so $\|A\|=\sup_{x} \frac{\|Ax\|_2}{\|x\|_2}$. Is it true that $\|A-B\| \geq \| |A|-|B|\|$? Note, for vectors and the 2-norm where we take the absolute value element-wise, this is true since it is true of the real numbers.","['matrices', 'linear-algebra', 'inequality']"
+459042,Rewriting $\{x\ \mid\ x \in A \textrm{ and } (x \in B \implies x \in C)\}$,"I'm reviewing some basic set theory, and for some reason the following problem (Munkres 1.7) is tripping me up. Rewrite in terms of $A, B,$ and $C$ the following set using the symbols $\cup, \cap,$ and $-$.
+  $$F = \{x\ \mid\ x \in A \textrm{ and } (x \in B \implies x \in C)\}.$$ Now, I know quite well what all of the symbols mean, but I'm having trouble ascertaining what the parenthetical term comes out to. The statement $x \in B \implies x \in C$ is true for all $x \in B \cap C$, obviously. The intersection of this and $A$ gets us $A\cap B \cap C$. The contrapositive says that $x \notin C \implies x \notin B$. So this is true for all elements that are not in $C$ and also not in $B$. Therefore, I should have
+$$\begin{align*}
+(A - (A\cap B)) \cup (A\cap B \cap C) &= ((A - A) \cup (A - B))\cup (A\cap B \cap C) \\
+ &= (A-B) \cup (A \cap B \cap C).
+\end{align*}$$ Am I correct?",['elementary-set-theory']
+459064,Adelic lattices,"Let $\mathbb{A} = \widehat{\mathbb{Z}} \otimes \mathbb{Q} \times \mathbb{R}$ be the adeles over $\mathbb{Q}$. In Deligne's article ""Formes modulaires et representations de GL(2)"" he states without proof the following result: there is a bijection between $\mathbb{Q}$-lattices in $\mathbb{A}^n$ (i.e. discrete and cocompact $\mathbb{Q}$-vector subspaces) and $\mathbb{Z}$-lattices $L \subset \mathbb{R}^n$ equipped with an isomorphism $L \otimes \widehat{\mathbb{Z}} \to \widehat{\mathbb{Z}}^n$. Does anyone know of a place where this is actually proved? I don't think it's difficult, but there are a few details I can't figure out. For example: given a $\mathbb{Q}$-lattice $R \subset \mathbb{A}^n$, why does the second projection make $L = R \cap (\widehat{\mathbb{Z}} \times \mathbb{R})^n$ a $\mathbb{Z}$-lattice in $\mathbb{R}^n$, and why does the first projection induce an isomorphism $L \otimes \widehat{\mathbb{Z}} \to \widehat{\mathbb{Z}}^n$? Edit: A friend explained to me how one proves that the projection $L \to \mathbb{R}^n$ is injective. The kernel $L \cap \widehat{\mathbb{Z}}^n$ is compact and discrete, i.e. finite, but $L \subset R$ is torsion-free.","['integer-lattices', 'number-theory']"
+459067,How is the extended real number line modeled?,"In set theory, numbers are often constructed, e.g. from nestings of sets which eventually contain the empty set. The operations are defined in term of taking unions etc.etc. The extended real number line hat plus and minus infinity $\infty,-\infty$ in addition to the reals, and they fulfill certain axioms . How are the two objects ""$\infty$"" and ""$-\infty$"" of the extended real number line $\mathbb R\cup\{-\infty,\infty\}$ modeled in rigorous set theory? I figure it might be related to ordinal numbers. But these are two things and they behave somewhat similarly. So I wonder what they are made of, set theoretically.","['set-theory', 'real-analysis']"
+459081,Combinatorial Proof of ${n\choose{m}}=\frac{n}{m}{{n-1}\choose{m-1}}$,"How do prove the following identity combinatorially?
+$${n\choose{m}}=\frac{n}{m}{{n-1}\choose{m-1}}$$ Any help or hints would be great!","['problem-solving', 'contest-math', 'combinatorics']"
+459082,Rings in which every irreducible ideal is primary,"Suppose $R$ is a commutative ring with $1$. It is well-known that if $R$ is Noetherian, then every irreducible ideal is primary (Lemma 7.12 in Atiyah & Macdonald). Is the converse true? That is: If every irreducible ideal of $R$ is primary, then is it necessarily
+  true that $R$ is Noetherian? This is just to satisfy my own curiosity. :) Note the following related problem. There, the question is about different converse (which is false). Added. In order to make the post self-contained, I will add the relevant definitions. An ideal $\mathfrak{a}$ is called irreducible if $\mathfrak{a}=\mathfrak{b}\cap\mathfrak{c}$ implies $\mathfrak{a}=\mathfrak{b}$ or $\mathfrak{a}=\mathfrak{c}$. An ideal $\mathfrak{a}$ is called primary if $\mathfrak{a}\neq R$, and for all $x,y\in R$, $xy\in \mathfrak{a}$ implies $x\in\mathfrak{a}$ or $y^{n}\in\mathfrak{a}$ for some $n\in\mathbb{N}$.","['commutative-algebra', 'ring-theory', 'abstract-algebra']"
+459088,"$\sum_{k=0}^{n/2} {n\choose{2k}}=\sum_{k=1}^{n/2} {n\choose{2k-1}}$, Combinatorial Proof:",How am I supposed to prove combinatorially: $$\sum_{k=0}^{n/2} {n\choose{2k}}=\sum_{k=1}^{n/2} {n\choose{2k-1}}$$ $${n\choose{0}}+{n\choose{2}}+{n\choose{4}}+\dots={n\choose{1}}+{n\choose{3}}+{n\choose{5}}+\cdots$$ Absolutely clueless.,"['contest-math', 'combinatorics']"
+459094,Net convergence and norm-convergence in Hilbert spaces,"Let $\mathcal H$ be a Hilbert space which is not necessarily separable. Given a sequence of element $h_n$ indexed by $\mathbb N$, we say their sum converges in norm if the sequence $\{\sum_{n=1}^k h_n \}$ converges in norm. This is the usual notion of a convergent sum in a Hilbert space. However, there is also the concept of convergence as a net, which applies also to uncountable sums. Given some index set $I$ and elements $h_i$, $i\in I$, we let $\mathcal F$ be the collection of all finite subsets of $I$, ordered by inclusion. This makes $\mathcal F$ into a directed. set. For each $F\in \mathcal F$, we define $$h_F = \sum\{ h_i : i\in F\}.$$ This is a finite sum, so it is an element of $\mathcal H$. The set of sums $h_F$ forms a net in $\mathcal H$. We say the sum over $I$ of the $h_i$ converges if the net converges. ( See here for more information on nets. ) Given a set of elements of $\mathcal H$ indexed by $\mathbb N$, one naturally wonders about how net convergence and norm convergence relate. I would like to prove the following. If $\{ h_n\}$ is a sequence in Hilbert space and $\sum\{ h_n: n\in
+ \mathbb N\}$ converges to $h$ as a net, then $h_n$ converges to $h$ in
+  norm. The converse is false. The problem and definitions are taken from chapter 1, section 4 of Conway's A Course in Functional Analysis , second edition.","['hilbert-spaces', 'functional-analysis', 'nets']"
+459095,Prove $(f+g)'(x) = f'(x) + g'(x)$,"In Rudin's textbook, ""Principles of Mathematical Analysis"", theorem 5.3 says: If $f$ and $g$ are defined on $[a, b]$ and are differentiable at a point $x \in [a,b]$, then
+  $$(f+g)'(x) = f'(x) + g'(x)$$ Rudin said this statement is clear by theorem 4.4, but I tried to prove it by myself. Could you tell me if my way is correct? My proof: \begin{align}
+(f+g)'(x) &= \lim_{t\to x} \frac{(f+g)(t) - (f+g)(x)}{(t-x)}\\
+&= \lim _{t\to x} \frac{f(t) + g(t) - f(x) - g(x)}{(t-x)}\\
+&= \lim _{t\to x} \frac{f(t)-f(x)}{t-x} + \lim _{t\to x} \frac{g(t)- g(x)}{t-x}\\
+&= f'(x) + g'(x)
+\end{align}",['real-analysis']
+459097,In topology $X$ is also $Y$ means homeomorphic?,E.g. $\mathbb{R}P^n$ is also the quotient space $S^n / (v \sim -v)$.  And when is it safe to refer to a space as one of it's homeomorphic spaces and perform further deductions from that homeomorphic space?,"['general-topology', 'category-theory', 'equivalence-relations']"
+459112,limit of 'exponential type' sequences,"I am trying to study limits of the form $$ \sum_{i=1}^{\infty}\frac{p(i)}{i!}$$ where $p$ is a polynomial function of degree $d$. For example, 
+$$\sum_{i=1}^{\infty}\frac{i^2}{(i+1)!} = e-1$$
+I want to study the limit for different polynomials. Currently, I am evaluating these limits by hand, by reducing them to partial fractions of factorials. Is there any 'ready-made' formula, or any other approach that will be suitable for coding?","['sequences-and-series', 'limits']"
+459114,"Find all the linear involutions $f: E \to E$, where $E$ is a finite-dimensional real vector space","Can someone help me? I've been thinking about this question for a while and got stuck. At first I only found the Identity transformation ($I$) and the anti-Identity transformation ($-I$). But then I realized that every reflection is also an involution. The only relevant information I got about the transformation's matrix is that $A^{-1} = A$ and, of course, $(A - I)\cdot(A + I) = 0$.","['matrix-equations', 'matrices', 'linear-algebra']"
+459124,"For integer $k > 1$, is $\sum_{i=0}^{\infty} 1/k^{2^i}$ transcendental or algebraic, or unknown?","Title says it all, I have an itch about series like this that seem to fall in the gray area where classical proofs that rational partial sums that converge too quickly must converge to transcendental don't seem to apply.  This is such a special case, does any one know if the series $$\sum_{i=0}^{\infty} \frac1{k^{2^i}}$$ converges to algebraic or transcendental, perhaps the answer/lack of an answer depending on the choice of integer $k > 1$?","['sequences-and-series', 'transcendental-numbers']"
+459129,Finding all solutions to an inequality equation,"I have the following inequality that I need to find all solutions of: $2x^3-8x > 5x^2-20$ My guess is that you would have to turn this into a polynomial equation and let the right hand side equal to $0$ (i.e. $2x^3-5x^2-8x+20=0$). By using the factor theorem you could guess a solution that is a factor of $20$, then use long division to solve for the other two roots. But how would you know whether the inequality is greater than the root (i.e. $>$) or less than the root (i.e. $<$)? Is it something you just need to guess and check? Or is there another way?",['algebra-precalculus']
+459134,"If $u$ is harmonic and bounded in $0 < |z| < \rho$, show that the origin is a removable singularity","This is a reworking of a previous question here which was marked as a duplicate. Some nice folks have referred me to solutions to similar problems. I still have a couple of questions, since one of the solutions used the Poisson kernel, which is not the desired solution in the text, because the Poisson kernel has not been introduced yet. The other solutions were for problems that were similar, but whose solutions were only partially applicable, as I understand them. I'm working on a problem from p. 166 of Lars Ahlfors' Complex Analysis : If $u$ is harmonic and bounded in $0 < |z| < \rho$, show that the origin is a removable singularity in the sense that $u$ becomes harmonic in $|z|<\rho$ when $u(0)$ is properly defined. My Solution So Far: Here's what I've got for a non-Poisson kernel solution: We want to find a harmonic conjugate for $u$ in the punctured disk, and then we can apply big Picard to show that $0$ is a removable singularity. The problem is that the punctured disc is not simply connected. If we take $\sigma = (u \circ \exp)(z): L \to \mathbb{C}$, where $L$ is the left half-plane, now we have $\sigma$ harmonic, and defined in a simply connected set $L$, so it has a harmonic conjugate $\tau$. Now we wish to take $v = (\tau \circ \log):\{0 < |z| < \rho\}\to \mathbb{C}$, but in order to do so we need $\tau$ to be $2\pi i$-periodic. This is where my proof breaks down. One of the similar problems which readers referred me to used the following strategy: note that since $\sigma$ is $2\pi i$-periodic, and $\sigma, \tau$ satisfy the Cauchy-Riemann equations, we have that $\nabla\tau(z) = \nabla\tau(z + 2 \pi i)$ for all $z\in L$, or in other words, $\tau(z) - \tau(z+2\pi i)$ is a constant function, say, equal to $\alpha \in \mathbb{R}$. Then, the solution suggests, we can set $$g(z) = u + iv - \frac{c}{2\pi}z,$$ in order to make $g$ $2\pi i$-periodic, and then we can use $(g\circ \log)$ on $\{0 < |z| < \rho\}$. But the reason why this won't work for my purposes is: now we have changed $u$! On the other hand, we can't simply subtract $\frac{c}{2\pi}\Im{(z)}$, and try to leave $u$ untouched, because now $g$ is not analytic. How can we get around this? Another strategy entirely might be to try to use the mean-value property. Ahlfors discusses that a lot in the preceding section, and his main example is the punctured disc. Since $u$ is harmonic, we know that the average over circles centered at zero is a constant...","['harmonic-functions', 'complex-analysis']"
+459141,What does the quotient space of a CW complex by a subcomplex mean?,"From p.8 of Hatcher's Algebraic Topology : If $(X,A)$ is a CW pair consisting of a cell complex $X$ and a subcomplex $A$, then the quotient space $X/A$ inherits a natural cell complex structure from $X$. It talks about a quotient space of $X/A$ where $A$ is a subcomplex of $X$.  What is the equivalence relation forming this quotient space?  Thanks.",['general-topology']
+459144,Expected number of trials until n-th success urn problem without replacement,"I have a close relative of the urn problem, but with a slight twist. Given an urn containing $r$ red balls and $b$ blue balls, how many balls should I expect to pull out of the urn before I have pulled $d \leq b$ blue balls out of the urn? In the standard version of this problem you are only interested in the number of balls one has to pull out before the FIRST success (and there are a number of places where one can look for that piece of information), but I am instead interested the expected number of balls one has to pull out of the urn before the $n$-th success.",['probability']
+459147,How to find $\int x^{1/x}\mathrm dx$,"EDIT : The full answer has been posted by myself. Feel free to check the logic within. How does one indefinitely integrate a function in the form of $$f(x)=x^{1/x}$$
+Looking at all the things that I know there is nothing about exponents with variables.
+So how does one find:
+$$\int x^{1/x}\;\mathrm dx?$$
+I am more interested in the technique for doing so rather than the solution as it is of no real significance but merely a curiosity.","['calculus', 'integration', 'indefinite-integrals']"
+459160,Classification of orientable non-closed surfaces,"How does the classification of closed (compact, boundaryless) surfaces imply the classification of all orientable not-necessarily-compact surfaces with boundary? It seems to be that they are all obtained by deleting points and the interiors of closed disks from closed surfaces. This gives three indices: (genus, number of disks deleted, number of points deleted). Why is this exhaustive? Why is there only one such triple for every surface? Clearly the second index is unique (it determines the number of boundary components), but how do you know you can't change both the first and third and wind up with the same space?","['general-topology', 'manifolds', 'low-dimensional-topology']"
+459164,Topologist's Sine Curve not a regular submanifold of $\mathbb{R^2}$?,"I am trying to work out the details of following example from page 101 of Tu's An Introduction to Manifolds : Example 9.3. Let $\Gamma$ be the graph of the function $f(x) =
+ \sin(1/x)$ on the interval $]0, 1[$, and let $S$ be the union of
+  $\Gamma$ and the open interval $I=\{(0,y)\in \mathbb{R^2} |−1<y<1\}$. The subset $S$ of $\mathbb{R^2}$ is not a regular submanifold for the
+  following reason: if $p$ is in the interval $I$, then there is no
+  adapted chart containing $p$, since any sufficiently small
+  neighborhood $U$ of $p$ in $\mathbb{R^2}$ intersects $S$ in infinitely
+  many components. Using Tu's definitions, I need to show that given a neighborhood $U$ of $p$, there exists no homeomorphism $\phi$ from $U$ onto an open set of $V \subset\mathbb{R^2}$ with the property that $U \cap S$ is the pre-image with respect to $\phi$ of the $x$ or $y$ axes intersected with $V$. I am not sure where the fact that $U \cap S$ has infinitely many components comes into play. I tried to derive a contradiction using this fact; but even if restrict my attention to connected neighborhoods $U$ of $p$, the intersection of the connected set $\phi(U)$ with the $x$ or $y$ axes might have infinitely many components (I think), so there's no contradiction with the fact that homeomorphism preserves components. I would appreciate any help!","['general-topology', 'manifolds', 'examples-counterexamples']"
+459173,"If $F(a_1,\ldots,a_k)=0$ whenever $a_1,\ldots,a_k$ are integers such that $f(x)=x^k-a_1x^{k-1}-\cdots-a_k$ is irreducible, then $F\equiv0$","I'm trying to understand a proof of the following theorem (from section II of Hall's paper An Isomorphism Between Linear Recurring Sequences and Algebraic Rings ): If $F(a_1, \ldots, a_k)$ is a polynomial in $a_1, \ldots, a_k$ with integer coefficients and $F = 0$ whenever $a_1, \ldots, a_k$ are integers such that $f(x) = x^k - a_1x^{k - 1} - \cdots - a_k$ is irreducible, then $F \equiv 0$. The proof provided was that taking $f(x)$ modulo $p$ for some $p$ (prime?) irreducible mod $q$, we find that $F = 0$ (modulo $p$). Since $F \equiv 0$ (mod $p$) for any appropriate $a_1, \ldots, a_k$ for arbitrary $p$, we have that $F \equiv 0$. I'm confused about the first part of the proof because irreducibility over integers doesn't imply irreducibility modulo $p$ for any prime $p$. Also, does it make sense to consider $q$ to be an arbitrary positive integer? EDIT: Does the theorem assume that we're considering irreducibility mod $q$? Does this change anything?","['irreducible-polynomials', 'abstract-algebra', 'polynomials']"
+459183,Does $\sum_{p \leq x} 1/p - \log \log x$ converge as $x \rightarrow \infty$?,"It is known that 
+$$\sum_{p \leq x} 1/p - \log(\log(x)) = O(1)$$ 
+(where $p$ denotes that the denominators vary over the primes. For example see Ribenboim, The Book of Prime Number Records , 2nd ed., p. 333.) But is it also known that 
+$$\sum_{p \leq x} 1/p - \log(\log(x))$$ converges as $x \rightarrow \infty$?",['number-theory']
+459186,Purpose of cusps,"In the theory of of modular forms, there is the set of of cusps defined by $\mathbb{P}^1 (\mathbb{Q})= \mathbb{Q} \cup \{\infty\}$. For an subgroup $\Gamma < \text{SL}_2(\mathbb{Z})$ of finite index, we call $\Gamma\backslash \mathbb{P}^1 (\mathbb{Q})$ the set of cusp classes . For example, I know that $\text{SL}_2(\mathbb{Z})/\mathbb{P}^1 (\mathbb{Q})$ consists of one element, i.e. represented by $\infty$; Modular forms which are written as Taylor series and vanish at any belonging cusp are named cusp forms. However, what is so important of these two definitions? Do they have 'special' properties, i.e. allow a geometric interpretation of modular forms? Which are the features they provide and in which contexts of modular forms I maybe re-encounter them?","['modular-forms', 'group-theory', 'elliptic-curves']"
+459224,Time between 3 and 4 that the hour and minute hands overlap each other?,"This problem is on the practice problems for my math club, but I'm not sure how to solve it. What's the exact time that the hour and minute hands overlap each other between 3 and 4 o clock on an analog clock? Thanks!","['algebra-precalculus', 'problem-solving']"
+459227,Characterizing functions taking a circle to an ellipse,"Let $X$ be the unit circle centered at 1 and let $F: X\rightarrow {\Bbb C}$ satisfy $F(0)=0$ and, for $a,b,c,d\in X$, if $(a-b)/(c-d)$ is real, then so is
+$(F(a)-F(b))/(F(c)-F(d))$.   Is it true that $F(z)=uz+v\overline z$ for some complex $u,v$ and all $z\in X$  (i.e., $F(X)$ is an ellipse)? A strategy I have tried:  1) extend $F$ to a function $G$ on the whole right half-plane by defining $G(z)=F(cz)/c$ where $c$ is unique positive real so that $cz$ is in $X$;  2) use the main hypothesis to show that $G$ takes lines to lines;  3) conclude $G$ is linear as a function from ${\Bbb R}^2$ to itself and so $G(z)=uz+v\overline z$ (and the image $F(X)$ is an ellipse).     Step (2) is holding me up. Thanks for any help.",['geometry']
+459229,Why does the boundary of a cube in $\mathbb{R}^n$ have measure zero?,"I'm trying to develop the fact that the measure of a box is equal to the volume of a box for any measure $m$, i.e., a function satisfying the standard properties of monotonicity, positivity, countable sub-additivity, translation invariance, etc. I'm trying to show that the sets $(1,\frac{1}{q})^n$ and $[1,\frac{1}{q}]^n$ in $\mathbb{R}^n$ both have measure $\frac{1}{q^n}$, for $q>1$ an integer. First, by translating each coordinate by $k/q$ where $0\leq k\leq q-1$, one sees that $q^n$ disjoint translates of $(0,1/q)^n$ are contained in $[0,1]^n$. But normalization, monotonicity, and translation invariance, it follows that 
+$$
+q^n m((0,1/q)^n)\leq 1$$
+so $m((0,1/q)^n)\leq q^{-n}$. Similarly, the $q^n$ translates of $[0,1/q]^n$ cover $[0,1]^n$, so $q^nm([0,1/q]^n)\geq 1$, which implies $m([0,1/q]^n)\geq q^{-n}$. To finish, I'd like to show that $m([0,1/q]^n\setminus(0,1/q)^n)=0$. So given $\epsilon>0$, I'm trying to cover the boundary of the cube by a family of boxes whose measure is less than $\epsilon$. But without knowing at this point what the measure of a box is, since the measure is not necessarily the Lesbegue measure, I'm stuck. How can I show the measure of the boundary of the cube is $0$? Thanks. The axioms for $m$ are as follows: $\mathbb{R}^n$ is a Euclidean space. Every open and closed set is measurable. The complement of every measurable set is measurable. Finite/countable unions and intersections of measurable sets are measurable. $m(\emptyset)=0$. $0\leq m(A)\leq\infty$ for every measurable set. If $A\subseteq B$, then $m(A)\leq m(B)$. If $(A_j)_{j\in J}$ is a family of measurable sets, then $m(\bigcup A_j)\leq\sum m(A_j)$. If $(A_j)_{j\in J}$ is a family of disjoint measurable sets, then $m(\bigcup A_j)=\sum m(A_j)$. $m([0,1]^n)=1$. If $A$ is measurable, $m(x+A)=m(A)$ for all $x\in\mathbb{R}^n$.","['measure-theory', 'real-analysis']"
+459230,Computing Brauer characters of a finite group,"I am studying character theory from the book ""Character Theory of Finite Groups"" by Martin Isaac. (I am not too familiar with valuations and algebraic number theory.)
+In the last chapter on modular representation theory, Brauer characters, blocks, and defect groups are introduced. My question is this: How do we find the irreducible Brauer characters and blocks, given a group and a prime? For instance, let's say we have $p=3$ and the group $G = S_5$, the symmetric group.
+An example of the precise calculation or method used to determine the characters would be very helpful. Thanks.","['representation-theory', 'characters', 'algebraic-number-theory', 'symmetric-groups', 'group-theory']"
+459236,Constructing the character table of a group,"I am aware that, given a group, there is no simple general procedure to construct the character table of the group (over complex numbers). However, for specific groups, we could use helpful additional information regarding the characters, (apart from orthogonality relations, etc.) to construct the character table. For instance, we know that the characters of a symmetric group are all integers. Now suppose we have the group $S_5$, the symmetric group on 5 elements. Suppose we are given only the degrees of the irreducible representations/characters, namely $1,1,4,4,5,5,6$.
+Can this alone (apart from general results on characters) be used to derive the entire character table of $S_5$?","['representation-theory', 'abstract-algebra', 'characters', 'symmetric-groups', 'group-theory']"
+459240,Doubt in Hartshorne's algebraic geometry book,"I'm studying by myself Algebraic Geometry and I didn't understand this part in the Hartshorne's book: I know that every polynomial $f$ in $\mathfrak a$ is written as $f=g_1f_1+\ldots + g_rf_r$, where $g_i\in A$, but I can't go further, I need help. Thanks in advance.","['commutative-algebra', 'algebraic-geometry', 'abstract-algebra']"
+459241,Which texts do you recommend to learn about the work of Cantor?,"A friend asked me if I know texts which talk about Cantor's Work on infinity and Set theory . 
+And this is the reason Which pushed me to ask the question here . I prefer if you recommend texts for reading "" for those who are not interested in techincal and the rigorous point of view "" and another texts for the mathematical study . I mean , I ask you to recommend 2 kinds of books : 1- Books for the mathematical study as a real study with less required mathematical background as possible as his mathematical knowledge is that topics which is provided in the level of high school. 2- Texts for reading "" about "" the work of cantor , I mean texts for those who are not going to study the subject in depth nor in a rigorous way , but they want to know about the subject , texts for public  such that ""ABC relativity"" written by Bertrand Russel or "" Brief history of the universe "" written by Stephen Hawking . He is interested in theories and points of view about infinity.","['elementary-set-theory', 'infinity', 'reference-request']"
+459266,Help understanding $x=y\Rightarrow(x=z\Rightarrow y=z)$,"I was reading a proof that opened with the integer axiom of $x=y\Rightarrow(x=z\Rightarrow y=z)$ What would be an accurate statement in English to express this?  The ""implies"" within the first ""implies"" is kind of confusing to me.  I believe the general idea is that if $x$ equals $y$, then if $x$ equals $z$, $y$ also equals $z$.","['axioms', 'discrete-mathematics']"
+459277,Expand $(4+i)(5+3i)$ and show $\pi/4=\arctan{1/4}+\arctan{3/5}$,I can't remember ever having done this before so if someone could help me out that would be great. The question is expand $(4+i)(5+3i)$ and hence show that $\pi/4=\arctan{1/4}+\arctan{3/5}$. Expansion: $$(4+i)(5+3i)=20+17i-3=17(1+i)=17\sqrt{2}e^{i\frac{\pi}{4}}.$$ But I don't see how this shows me anything about $\arctan$. Any pointers would be appreciated. :),"['complex-numbers', 'complex-analysis']"
+459329,Principal ultrafilter and free filter,"I have 2 questions about filter and (ultra-)filters: Which relations are there between free filter, principal filter, ultrafilter, Frechet filter, and co-finite filter? If a filter is free, does it imply that it is a principal ultrafilter?","['general-topology', 'filters']"
+459344,Can every set be a group? [duplicate],This question already has answers here : Does every set have a group structure? (4 answers) Closed 10 years ago . Lets consider a set A. Can we prove that  there exists at least one operation * such that under it the set forms a group. May I know how to approach this question?,['group-theory']
+459357,Diameter of a triangle,"If $T\subseteq \mathbb R^2$ is a generic plane triangle, I want to find its diameter
+$$d=\sup\{\lvert| x-y \rvert|: x,y\in T\}$$
+Intuitively I think that $d$ is the length of the longest edge of $T$. How can I formally prove this?",['geometry']
+459366,How many $p$-elements does $G$ have?,"Let $G$ be a group with a non normal $p$-sylow subgroup $P$.
+Is there any information about the number of $p$-elements(an element with $p$-power order) of $G$?","['group-theory', 'p-groups']"
+459373,Prove $\sum_{n=1}^\infty \text{arccot }a_n^2=\frac{\pi}{12}$ where $a_n=\frac{\left(2+\sqrt{3}\right)^n-\left(2-\sqrt{3}\right)^n}{\sqrt{3}}$,"Let $a_1=2$, $a_2=8$, $a_n=4a_{n-1}-a_{n-2}$, $n=3,4,5,\ldots$. Prove:
+$$\sum_{n=1}^\infty \mathrm{arccot} (a_n^2)=\frac{\pi}{12} $$ My attempt: I have worked out $a_n=\frac{\left(2+\sqrt{3}\right)^n-\left(2-\sqrt{3}\right)^n}{\sqrt{3}}$, but I do not know how to do it afterwards. Can anyone give me some suggestions? Thank you.",['sequences-and-series']
+459396,"Integration of $z^{1/2}$ along a contour winding the origin twice, without introducing Riemann surface","If we introduce a Riemann surface, it is easy to show that the integral of $z^{1/2}$ along a contour winding the origin twice is zero. An anti-derivative exists everywhere, so the integral depends only on the end points of the contour. Thus, every closed contour in the surface gives zero.
+Is there any way to ubderstand this result only with branchcuts and without introducing multi-valued functions or Riemann surfaces?",['complex-analysis']
+459397,Why is the infinite sphere contractible? [duplicate],"This question already has answers here : Unit sphere in $\mathbb{R}^\infty$ is contractible? (2 answers) Closed 4 years ago . Why is the infinite sphere contractible? I know a proof from Hatcher p. 88, but I don't understand how this is possible. I really understand the statement and the proof, but in my imagination this is weird. Thanks for your help.","['general-topology', 'algebraic-topology']"
+459422,continuity of the derivative under certain conditions,"I am working on this exercise in a book which asks to prove that $f$ is differentiable if $f$ is continuous and that $\lim \limits_{x\rightarrow x_0} f'(x)$ exists. I know that this is easy to show using the Mean Value Theorem. Now the problem asks: what can be said about the continuity of $f'$? Well since $f$ is differentiable, I only have to show that $\lim \limits_{x\rightarrow x_0} f'(x)=f'(x_0)$. But ideas how to proceed elude me a bit. Any suggestions? EDIT: Oh shoot...didn't realize how easy this was. The previous problem in this book showed how to prove half of it and I didn't realize till I read the comments below. Thanks guys!","['continuity', 'derivatives', 'real-analysis', 'analysis']"
+459432,Square root of a stochastic process,"I need help with the following problem. How can I derive $d\sqrt v$ using Ito's lemma for the following process: $$d\sqrt v=(\alpha−\beta \sqrt v)dt+\delta dX$$ The parameters $\alpha, \beta, \delta$ are constant. Using Itô's lemma show that $$dv = (\delta^2 + 2\alpha\sqrt v − 2\beta v)dt + 2\delta \sqrt vdX$$ any ideas?","['stochastic-calculus', 'stochastic-processes', 'ordinary-differential-equations']"
+459436,Figure out domain and range,"Is there a hard and fast way, step by step process to figure out domain and range? I don't know where to start and lack the insight to just know what it can and can't be. Thanks",['algebra-precalculus']
+459478,the range of a function in $C_c(X)$ is compact,"Consider the corollary of theorem 2.10 in Rudin's book R&C: the range of every $f\in C_c(X)$ is a compact subset of $\mathbb{C}$. First, if $K$ is the support of $f$, then $f(X)\subset f(K)\cup\{0\}$. That's easy to understand. If $X$ isn't compact,then $0\in f(X)$, this really confuses me. I want to explain that like this: if $0$ is not in $f(X)$, then $X$ may be considered as the support of $f$, but the support of $f$ is compact since $f\in C_c(X)$, hence it contradicts to the hypothesis of $X$, thus $0\in f(X)$. Do anyone have a more preciser interpretation?","['functional-analysis', 'real-analysis']"
+459486,"Is the set $\{(x,y)\in\mathbb R^2:x^{2/3}+y^{2/3}\le1\}$ connected?","Is the set $\{(x,y)\in\mathbb R^2:x^{2/3}+y^{2/3}\le1\}$ connected? Please help me. I'm clueless. Added: Is the set convex?",['general-topology']
+459488,Proving Abel's identity for the Dilogarithm.,"Abel's Identity for the dilogarithm is stated as follows Theorem (Abels Identity) Given that $x,y \,{\not\in}\,[1,\infty)$ then
+  \begin{align*}
+	\log(1-x) \log(1-y) 
+                = 
+\operatorname{Li}_2(u) + \operatorname{Li}_2(v) - \operatorname{Li}_2(u v) - \operatorname{Li}_2(x) - \operatorname{Li}_2(y)\,
+ \end{align*}
+  holds for all $x,y$. Where $u = \frac x{1-y}$ and $v = \frac y{1-x}$. I was able to find the original paper where the statement is proven. It can be read here Abels Identity . I was very pleased finding the paper, and being from Norway I thought I should be able to read it. (No pun inteded.) Alas the paper is written in french, a language foreign to me. Can anyone help me outline the proof for this identity? I tried differentiating the expression with regard to both $x$ and $y$ but it all got very messy, very fast. All help is appreciated =)","['special-functions', 'calculus', 'real-analysis']"
+459509,Number of great$^n$ grandfathers.,"OK so I as just wondering how I could explain this fact: I have 2 parents,4 grandparents and 2^{n+2} great$^n$ grandparents. suppose that the average gap between generations is 40 years (a vast overestimation). Since humans have existed for 50,000 years all of my great$^{998}$ grandparents where human (at least I hope so) and I have $2^{1000}\approx10^{100}$ of those. However a rough estimation of the number of human beings who have lived on earth gives $1.07*10^{11}$ which is very off. So The only conclusion I can make is that most people who are my great grandfather are my great grandfather many,many times, is this correct?",['combinatorics']

@@ -1,0 +1,679 @@
+question_id,title,body,tags
+2877688,Evaluating $\lim_{x\to\infty}\frac{\int_0^{2x}\sqrt{1+t^2}dt}{x^2}$,"How do I evaluate the following limit?  $$\lim_{x\to\infty}\frac{\int_0^{2x}\sqrt{1+t^2}dt}{x^2}$$ What I've noticed so far is that due to the limit going to infinity, the integral is indefinite. Since when you work it out, you'd get an indeterminite form, I've tried L'Hopital rule but that didn't work either. Can someone give me a tip?","['integration', 'improper-integrals', 'fractions', 'calculus', 'limits']"
+2877701,Why can you find the roots a of polynomial by factoring it?,"Let $f(x) = x^2 - 9x- 10$ We can state that $f(x) = (x + 1)(x-10)$ since I simply factored it. The roots of this function is $-1$ and $10$. However, what is the relationship between a factored polynomial and its roots? Why can we assume this?","['algebra-precalculus', 'functions', 'roots', 'polynomials']"
+2877720,Intersection of Compact Sets Is Not Compact,"What is an example of a topological space $X$ such that $C,K\subseteq X$; $C$ is closed; $K$ is compact; and $C\cap K$ is not compact? I know that $X$ can be neither Hausdorff nor finite. I am interested in this question because I recently read the following definition (in a Rudin book): If $\left(X,\tau\right)$ is a topological space and $\infty\not\in X$, then $\left(X_\infty,\tau_\infty\right)$, where $X_\infty=X\cup\left\{\infty\right\}$ and every $U\in\tau_\infty$ is such that $U\in\tau$ or $U^c\subseteq X$ is compact, is a topological space. I believe that this definition requires that $U^c\subseteq X$ be compact and closed. Edit : The first question was my attempt to show that if $U,V\in\tau_\infty$ are such that $U\in\tau$ and $V^c\subseteq X$ is compact, then $\left(U\cup V\right)^c=U^c\cap V^c$ is not compact. However, this holds, as the comments show. A correct counter-example would be to show that if $U,V\in\tau_\infty$ are such that $U^c,V^c\subseteq X$ are compact, then $\left(U\cup V\right)^c=U^c\cap V^c$ is not compact, as Rob Arthan shows in his answer.",['general-topology']
+2877733,"$f(x) = x^TMx$, using Lagrange multipliers to prove SVD decomposition","I'm reading the existence proof of singular value decomposition . It considers $f:\mathbb{R}^n\to \mathbb{R}, f(x) = x^TMx$. It talks about the gradient of $f$ and make it equal to a multiple of the gradient of $x^tx$. I suppose that it's because the constraint is the unit sphere, so that's why it made $x^tx = x_1^2 + \cdots x_n^2$, right? I'm trying to understand this so I took $f$ with a generic matrix $M$ $$f(x) =\begin{bmatrix} 
+    x_1  & \cdots & x_n 
+    \end{bmatrix}\begin{bmatrix} 
+    a_{11} & a_{12} & \dots \\
+    \vdots & \ddots & \\
+    a_{n1} &        & a_{nn} 
+    \end{bmatrix}\begin{bmatrix} 
+    x_1  \\
+    \vdots  \\
+    x_n  
+    \end{bmatrix} = \\ x_1(a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n) + \\x_2 (a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n) + \\
+\cdots  + \\x_n(a_{n1}x_1+a_{n2}x_2 + \cdots + a_{nn}x_n)$$ Taking the partials to construct the gradient vector, I can see that I'll end up with: $$\begin{bmatrix} 
+    2a_{11}x_1 + a_{21} + \cdots a_{n1}  \\
+    a_{12} + 2a_2x_2 + \cdots + a_{n2} \\
+    \vdots \\
+    a_{1n} + a_{2n}\cdots + 2a_{nn}x_n\\  
+    \end{bmatrix} $$ Now, I need to equal this with $\lambda$ gradient of $x^tx$:
+$$\begin{bmatrix} 
+    2x_1  \\
+    2x_2 \\
+    \vdots \\
+    2x_n\\  
+    \end{bmatrix}$$ so: $$\begin{bmatrix} 
+    2a_{11}x_1 + a_{21} + \cdots a_{n1}  \\
+    a_{12} + 2a_2x_2 + \cdots + a_{n2} \\
+    \vdots \\
+    a_{1n} + a_{2n}\cdots + 2a_{nn}x_n\\  
+    \end{bmatrix} = \lambda \begin{bmatrix} 
+    2x_1  \\
+    2x_2 \\
+    \vdots \\
+    2x_n\\  
+    \end{bmatrix} $$ As an example, the first line becomes: $2a_{11}x_1 + a_{21} + \cdots a_{n1} = \lambda 2x_1 \implies \lambda 2x_1 -2a_{11}x_1 =  a_{21} + \cdots a_{n1}\implies x_1(2\lambda - 2a_{11}) =  a_{21} + \cdots a_{n1}$ What should I do now? It says that I should end up with $Mu = \lambda u$ Also, is there a more elegant way of calculating the gradients or it's just all this mess?","['multivariable-calculus', 'linear-algebra', 'lagrange-multiplier', 'vector-analysis']"
+2877771,"If $g(x) \ne f(x)$ almost everywhere, then polynomial transformation of $P(g(x)) \ne P(f(x))$?","Suppose that we have two functions $f(x)$ and $g(x)$. We know that $f(x) \ne g(x)$ on the interval, except for measure zero subsets of $[a,b]$. Assume that both functions are positive everywhere and both are strictly increasing almost everywhere (i.e. there is a subset $S$ of the interval $[a,b]$, where $[a,b] \setminus S$ has measure $0$, and $f, g$ are strictly increasing on $S$). Under these conditions on $f$ and $g$ (positive, strictly increasing a.e.), is it possible that there exists a non-constant polynomial transformation $P$ such that $P(f(x)) = P(g(x))$ almost everywhere on $[a,b]$?","['calculus', 'functional-analysis', 'measure-theory']"
+2877772,There are 10 marbles in a bag. $6$ are red and $4$ are blue. You must chose at least 1 red marble. In how many ways can you chose three total marbles.,I thought the answer is $^9C_2$ since the first (red) marble didn't count. You have to pick a red marble which reduces the total count from 10 to 9. The answer is 116 possible ways.,"['permutations', 'combinations', 'probability']"
+2877780,complex and real spectral theorem for matrices,"I am studying the spectral theorem for matrices, and the book says that if a $nxn$ matrix A is real and symmetric then its diagonalizable over $\mathbb{R}$. And that this fact is a corollary of the Spectral Theorem for the complex case of normal matrices. Although I agree that since $A$ is symmetric then $A$ is normal hence it implies that $A$ is diagonalizable over $\mathbb{C}$, and moreover it is easy to prove that all eigenvectors are real. But how can I see that all eigenvectors are also real? Thanks in advance.","['matrices', 'spectral-theory', 'eigenvalues-eigenvectors']"
+2877804,You flip a coin $10$ times. How many ways can you get at least $7$ heads?,You flip a coin $10$ times. How many ways can you get at least $7$ heads? My answer. $$\binom{10}{10}+ \binom{10}9\cdot\binom{10}1 + \binom{10}8\cdot\binom{10}2+\binom{10}7\cdot\binom{10}3$$ You have $10$ Heads and $0$ tails $+$ $9$ Heads $\cdot$ $1$ Tail $+$ $8$ Heads $\cdot$ $2$ tails $+$ $7$ Heads $\cdot$ $3$ tails. The answer is $176$ though.,"['combinations', 'combinatorics']"
+2877822,How many cards out of a standard deck would you need to draw to ensure two of them are different suits?,"I believe that we are determining, in a worst case scenario, how many cards must we pick to draw a two different suit. My thought process is that we must get rid of all 13 cards to deplete an entire suit before we would be able to ensure the next card drawn is of a different suit. If this is so, then would the correct answer be to draw 14 cards(13 same suit and 1 different suit) to ensure a different suit? Followup Question for Clarification What is the probability that we will pick two cards with two different suits?  I know we are able to pick any card for first one so I believe that means we have a 52/52 possibility for the first card. For the second card would we then have a 39/51 possibility (where 39 is the remaining number of cards that are not the suit)?",['probability']
+2877929,Finite Unions of Dendrites [closed],"Closed . This question needs to be more focused . It is not currently accepting answers. Want to improve this question? Update the question so it focuses on one problem only by editing this post . Closed 3 years ago . Improve this question The question is a bit specific, but seems to be the most general question to ask after handling some obvious counterexamples. Initially, I was wondering the following.  Let $X$ be a one-dimensional Peano continuum.  If $X$ , aside from its points whose neighborhoods are arcs, has only finitely many local cut points, can $X$ be written as a finite union of dendrites $D_1, \dots, D_n$ ?  If so, does $n$ depend on $X$ specifically, or just the number/orders of the local cut points? A Peano Continuum is a compact, connected, locally connected metric space.  A Dendrite is a Peano continuum which contains no copies of the circle.  By a local cut point I mean a point $x \in X$ such that $x$ has an open, connected neighborhood $U$ such that $U \setminus x$ is not connected.  By the 'order' of a local cut-point $x$ I mean the maximal number of components it cuts a neighborhood $U$ into as $U \rightarrow x$ . Answer 1: No.  The Sierpinski Carpet is a one-dimensional Peano continuum which contains all one-dimensional, planar continua: It happens to be locally connected with no local cut-points.  In particular, it contains the Cantor Fan, which is just $C \times [0,1] / [\sim]$ where $C$ is the Cantor Set and $\sim$ collapses $C \times \lbrace 0 \rbrace$ to a point.  Its vertex has order the continuum, clearly impossible for a finite union of dendrites (or any subset thereof). A useful concept is hereditarily locally connected (hlc), i.e. every subcontinuum is locally connected.  Such a continuum is also regular (a stronger condition): Every point has a neighborhood base whose elements have finite boundary.  However, it is known that the union of two dendrites need not be hlc; there is a counterexample constructed in Nadler's Continuum Theory. It is also known that the union of rational continua is rational: A rational continuum is one whose points have neighborhood bases with countable boundary.  Dendrites are rational.  Thus ""connected, finite unions of dendrites"" forms a class of curves nicer than rational continua, but either independent of, or weaker than, hlc.  To my knowledge it has not been studied, but such a class sits in a very useful place in the hierarchy of curves. Main question: What continua can be written as the finite union of dendrites?  What hlc (resp. regular) continua cannot be written as the finite union of dendrites? In particular, can anyone give an example of an hlc continuum which can't be written as the union of a finite collection of dendrites?  I tried looking at examples of hlc-but-not regular continua; however, the standard examples I found can be written as the finite union of dendrites.  In each case I was able to construct them as the union of only two dendrites. Examples of continua which can be written as the union of three dendrites, but not two, would be useful.  A trivial example would be three copies of the Cantor Tree identified at the endpoints - visually trivial, I should say, but if someone wants to write the details then go for it.  In a sentence, too many arcs are produced at the Cantor Set for one dendrite to 'seep' into one of the others and pick up some extra space. Q2: Suppose that $X$ is locally cyclically connected (every point is contained in arbitrarily small open neighborhoods $U$ each of whose pair of points is connected by a simple closed curve in $U$ ).  Can $X$ be written as the union of two dendrites?  Three? Q2b: Suppose that $X$ is locally cyclically connected and known to be the finite union of dendrites.  Can it be two?  Three? Q3: Can the Sierpinski Triangle be written as the finite union of dendrites?  How many are required, if so? I made this one a separate question, since it can potentially be solved without any topological sophistication. Sierpinski Triangle as Finite Union of Dendrites It's been solved, now.  It's not possible. Q4: (Stronger than Q2) If $X$ is locally $n$ -connected (every point is contained in arbitrarily small open neighborhoods $U$ each of whose pair of points is connected by $n$ arcs in $U$ intersecting only in their end points), can we bound the necessary number of dendrites?  Is it $n$ (or $n+1$ )? Q5: What continua can be written as the union of two (or finitely many) dendrites each of which intersect at most in a subset of their end points?  This problem has some tangential relevance to conformal welding theory and SLE, so has probably been studied in the geometric function theory literature if it hasn't already been studied back in the early 1900's when curve theory was a hot area. Regarding Q5, I don't think there's anything interesting to ask about dendrites which only intersect in endpoints or vertices.  It seems to be an equivalent question to Q1, as any 'vertex' intersection can be obtained as a regular intersection of two dendrites augmented by small triods attached along arcs where we'd want a vertex.  But this might be different: Q5b: Classify finite Dendrite unions $D = D_1 \cup \cdots \cup D_n$ such that if $x \in D_i \cap D_j$ for $i \neq j$ then $x$ is an endpoint of some $D_k$ .  Here we don't require that $x$ be an endpoint of any other dendrite it belongs to. Q6: What if we restrict how many dendrites can intersect in a single point to 2?  Or $k < n$ ?  What if we require any intersection point to belong to at least three (or $k$ ) dendrites?  This second part has some problems with (local) duplicates to iron out to get an interesting question, probably. Q7: Anything nice happen if you restrict to continua in the plane? Have fun!","['continuum-theory', 'plane-curves', 'infinite-graphs', 'plane-geometry', 'general-topology']"
+2877963,Why we define the completeness of a space by the converge of a Cauchy sequence rather than a normal sequence?,"The intuition of the completeness to me is that the limit of any sequence converges to the point inside the set itself.
+But why we define a set to be complete as any Cauchy sequence converge into the set itself? It seems a more complex definition than a simple convergent sequence. Why we use Cauchy sequence rather than a simple sequence? For the simple sequence, can we use $\lim_{n\rightarrow \infty }x_n=x$?","['cauchy-sequences', 'convergence-divergence', 'functional-analysis', 'real-analysis']"
+2877972,inequality in geometry,"Given triangle $ABC$ has $BC=a$, $CA=b$, $AB=c$ and  $M$ is a point of the triangle plane. Prove that:
+  \begin{align*}
+  \cos \dfrac{A}{2} \cdot MA+\cos \dfrac{B}{2} \cdot MB+\cos \dfrac{C}{2} \cdot MC \geq \dfrac{a+b+c}{2}.
+ \end{align*} My attempts: 
+\begin{eqnarray*}
+   a \cdot \overrightarrow{IA}+b \cdot \overrightarrow{IB}+c \cdot \overrightarrow{IC}=\overrightarrow{0} \Rightarrow \dfrac{\cos \dfrac{A}{2}}{IA}\overrightarrow{IA}+\dfrac{\cos \dfrac{B}{2}}{IB}\overrightarrow{IB}+\dfrac{\cos \dfrac{C}{2}}{IC}\overrightarrow{IC}=\overrightarrow{0}??????
+  \end{eqnarray*}
+with $I$ is center of inscribed circle of triangle $ABC$.
+\begin{eqnarray*}
+  	\cos \dfrac{A}{2} \cdot MA=\dfrac{\cos \dfrac{A}{2}}{IA} \cdot MA \cdot IA\geq \dfrac{\cos \dfrac{A}{2}}{IA} \cdot \overrightarrow{MA} \cdot \overrightarrow{IA}.
+  \end{eqnarray*}
+The same as,
+\begin{eqnarray*}
+   \cos \dfrac{B}{2} \cdot MB &\geq& \dfrac{\cos \dfrac{B}{2}}{IB} \cdot \overrightarrow{MB} \cdot \overrightarrow{IB}\\
+ \cos \dfrac{C}{2} \cdot MC &\geq& \dfrac{\cos \dfrac{C}{2}}{IC} \cdot \overrightarrow{MC} \cdot \overrightarrow{IC}.
+  \end{eqnarray*}
+I am stuck here.","['inequality', 'geometric-inequalities', 'geometry']"
+2877974,Ramanujan Near Misses [closed],"Closed . This question is opinion-based . It is not currently accepting answers. Want to improve this question? Update the question so it can be answered with facts and citations by editing this post . Closed 5 years ago . Improve this question S. Ramanujan explored how to add two different cubes in two different ways, which made many, including me, think that he was working on FLT.  But like always we need to see a direct link, so let's look at FLT for $n=3$.  Let's suppose $x^3+y^3=z^3$ has solutions where $x,y,z\in{\mathbb{Z^+}}$.  Since $x,y,z\in{\mathbb{Z^+}}$, we can say that $x=a+1$, $y=b-1$, and $z=c+1$ where $a,b,c\in{\mathbb{Z^+}}$ and $b\neq 1$. In particular,
+\begin{eqnarray*}
+(a+1)^3+(b-1)^3&=&(c+1)^3\\a^3+3a^2+3a+1+b^3-3b^2+3b-1&=&c^3+3c^2+3c+1\\a^3+b^3&=&c^3+1+3(c^2-a^2+b^2+c-a-b)\\a^3+b^3&=&c^3+1+3k\text{, where }k\in{\mathbb{Z}}.
+\end{eqnarray*}
+From this point we see that our solutions, if any, belong to
+\begin{eqnarray*}
+a^3+b^3\equiv{c^3+1}\ (\text{ mod 3 )} 
+\end{eqnarray*}
+which gives us the link between Ramanujan's near misses and FLT. That's not all! By a very wonderful proposition of 
+\begin{eqnarray*}
+(m+n)^p\equiv{m^p+n^p}\ \text{( mod $p$ ), where $p$ is prime}
+\end{eqnarray*}
+and similar thinking from the $n=3$ case we can generalize this idea of near misses for exponents that are odd primes. Carefully observe,
+\begin{eqnarray*}
+(a+1)^p+(b-1)^p&=&(c+1)^p\\a^p+pq+1+b^p+pr-1&=&c^p+pv+1\text{, where $p$ is an odd prime and }q,r,v\in{\mathbb{Z}}\\a^p+b^p&=&c^p+1+p(v-q-r)\\a^p+b^p&=&c^p+1+pm\text{, where }m\in{\mathbb{Z}}\\a^p+b^p&\equiv&{c^p+1}\ \text{( mod $p$ )}\ \\(a+b)^p&\equiv&(c+1)^p\ \text{( mod $p$ )}
+\end{eqnarray*}
+From this point let's consider a special case where $a+b=c+1$. So, 
+\begin{eqnarray*}
+(a+1)^p+(b-1)^p&=&(a+1+b-1)^p\\&=&(a+1)^p+(b-1)^p+pw\text{, where }w\in{\mathbb{Z^+}}\\0&=&pw
+\end{eqnarray*}
+since $p$ and $w$ are strictly greater than zero, we know that $0=pw$ isn't true. So, $a+b\neq c+1$. Now consider the slightly trickier and a more general case where $l\in \mathbb{Z}$ such that $a+b-pl=c+1$, since $a+b\equiv{ c+1 }\text{( mod $p$ )}$. Consequently,
+\begin{eqnarray*}
+(a+1)^p+(b-1)^p&=&(a+1+b-1-pl)^p\\&=&(a+1+b-1)^p-(pl)^p+pf\text{, where $f\in \mathbb{Z}$}\\&=&(a+1)^p+(b-1)^p+pw-(pl)^p+pf\\&=&(a+1)^p+(b-1)^p+p(w-p^{p-1}l^p+f)\\&=&(a+1)^p+(b-1)^p+p\sigma \text{, where }\sigma \in \mathbb{Z}\\0&=&p\sigma
+\end{eqnarray*}
+If one could prove that $\sigma\neq 0$, then we could say by similar thinking in the $a+b=c+1$ case, we can clearly deduce that $0\neq p\sigma$. So, we could conclude that $a+b-pl\neq c+1$ where $l\in\mathbb{Z}$. From that point, we could further say since $a+b-pl\neq c+1$ where $l\in\mathbb{Z}$, we know that this contradicts our supposition that FLT isn't true. My question is does anybody have any insight on how to show that $\sigma\neq 0$ using elementary methods, or show that there something wrong with my reasoning? Any help would be very much appreciated.","['number-theory', 'math-history']"
+2877979,What is a surjective homomorphism of algebraic groups?,"Question is as in the title. I know this is a very basic question, but I couldn't find a definition anywhere. I thought it means that the morphism of varieties is surjective, and I think that should imply the morphism is also surjective on functor of points (correct me if I'm wrong!), but I saw somewhere that the morphism $\mathbb{G}_m \xrightarrow[]{x \mapsto x^n}\mathbb{G}_m$ is surjective but $\mathbb{G}_m(\mathbb{R}) \xrightarrow[]{n}\mathbb{G}_m(\mathbb{R})$ is not.","['algebraic-geometry', 'algebraic-groups']"
+2877983,Variance of dot product of two normalized random vector,"Given a set of normalized vectors $\mathbf{x}$ and $\mathbf{y}$ of length $N$, 
+with each entry independently sampled from $\mathcal{N}(0,1)$ before being divided by the vector norm. By running simulations I got this empirical result: $$var(\mathbf{x}^T\mathbf{y})=\frac{1}{N}$$ Can this be proved?","['random-matrices', 'statistics', 'probability', 'random-variables']"
+2877996,When does trace and determinant of a 2 x 2 matrix equal each other? (Linear Algebra),"Background Information: I am new to linear algebra, and I recently came across this homework question that I am confused about. I appreciate any explanation that can help me improve my solution. Question: What condition on the entries of a 2x2 matrix A means Tr(A) = det(A)? Provide
+two distinct examples of 2x2 matrices which satisfy this. My approach (Not Complete): Considering the following 2 x 2 matrix, the det(A) = 4, and Tr(A) = 4 \begin{bmatrix}
+    2       & 0\\
+    0    &   2
+\end{bmatrix} However, considering this 2 x 2 matrix, the det(A) = 9, and Tr(A) = 6 \begin{bmatrix}
+    3       & 0\\
+    0    &   3
+\end{bmatrix} I think the condition would be having 2 x 2 matrix such that the matrix is 
+(symmetric) and (n = 2). \begin{bmatrix}
+    n       & 0\\
+    0    &   n
+\end{bmatrix} My solution makes sense, but I feel it is incomplete. Am I missing a key point or a concept that I can add to my answer? Edited: I have tried this solution with so many numbers and it seems to work. Would this be an acceptable solution? \begin{bmatrix}
+    a       & b\\
+    c    &   d
+\end{bmatrix} such that a = c = d and b = c - 2, so here is an example \begin{bmatrix}
+    5       & 3\\
+    5    &   5
+\end{bmatrix} det(A) = 25 - 15 = 10 , and Tr(A) = 5 + 5 = 10","['matrices', 'trace', 'determinant', 'linear-algebra']"
+2878072,"Find all polynomials $P(x) \in \mathbb{Z}[x]$ such that if $P(s)$ and $P(t)$ are both integers, then $P(s+t)$ is also an integer","Find all polynomials $P(x)$ with integer coefficients such that for all
+real numbers $s$ and $t$ , if $P(s)$ and $P(t)$ are both integers, then $P(s+t)$ is also an integer. This is a problem inspired by problem $5$ of APMO $2018$ . Without loss of generality, we may assume $$P(x) = \displaystyle \sum_{i=0}^n a_i x^i, \, a_n>0.$$ This is because if $P(x)$ is a solution, then so is $-P(x)$ . However, I can't even guess what kind of polynomials could be other than integer constant.","['contest-math', 'functions', 'polynomials']"
+2878090,Why do we compute normal vector for computing projection?,"A First Course in Complex Analysis by Matthias Beck, Gerald Marchesi, Dennis Pixton, and Lucas Sabalka Exer 3.27 (Exer 3.27) Consider the plane $H$ determined by the equation $x + y -z = 0$. What is a unit normal vector to $H$? Compute the image of $X:=H\cap \mathbb S^{2}$ under the stereographic projection $\Phi$. - For 2,  I computed $X$ to be a 3D circle , parametrised here , and its image to be $Y:= \Phi(X) = \{|z-(1+i)|^2 = 3\}$, but now I ask: - For 1, What's the relevance of asking about the unit normal vector? I computed the unit normal vectors to be $[1,1,-1]\frac{\pm 1}{\sqrt{3}}$. I observe their terminal points to be on the unit sphere. Here are the parametrisations: $Y:= \Phi(X) = \{|z-(1+i)|^2 = 3\}$ is parametrised: $$\begin{bmatrix}
+y_1(t)\\ 
+y_2(t)\\ 
+y_3(t)
+\end{bmatrix} = \begin{bmatrix}
+\sqrt{3}\cos(t) + 1\\ 
+\sqrt{3}\sin(t) + 1\\ 
+0
+\end{bmatrix} = \begin{bmatrix}
+1\\ 
+1\\ 
+0
+\end{bmatrix} + \begin{bmatrix}
+1\\ 
+0\\ 
+0
+\end{bmatrix}\sqrt{3}\cos(t)+   \begin{bmatrix}
+0\\ 
+1\\ 
+0
+\end{bmatrix}\sqrt{3}\sin(t)$$ $X$ is parametrised: $$\begin{bmatrix}
+x_1(t)\\ 
+x_2(t)\\ 
+x_3(t)
+\end{bmatrix} = \begin{bmatrix}
+\sqrt{\frac 2 3} \cos[t]\\ 
+-\sqrt{\frac 2 4} \sin[t] - \sqrt{\frac 2 {12}} \cos[t]\\ 
+-\sqrt{\frac 2 4} \sin[t] + \sqrt{\frac 2 {12}} \cos[t]
+\end{bmatrix} = \begin{bmatrix}
+\sqrt{\frac 1 3}\\ 
+-\sqrt{\frac 1 {12}}\\ 
+\sqrt{\frac 1 {12}}
+\end{bmatrix}\sqrt{2}\cos(t)+   \begin{bmatrix}
+0\\ 
+-\sqrt{\frac 1 {4}}\\ 
+-\sqrt{\frac 1 {4}}
+\end{bmatrix}\sqrt{2}\sin(t)$$ $$H = \{x + y -z = 0\} = \{[1,1,-1] \cdot [x,y,z]=0\} = \{[1,1,-1]\frac{1}{\sqrt{3}} \cdot [x,y,z]=0\}$$ is parametrised: $$\begin{bmatrix}
+h_1(r,s)\\ 
+h_2(r,s)\\ 
+h_3(r,s)
+\end{bmatrix}=\begin{bmatrix}
+1\\ 
+0\\ 
+1
+\end{bmatrix}r +   \begin{bmatrix}
+0\\ 
+1\\ 
+1
+\end{bmatrix}s$$","['geometry', 'analysis', 'complex-analysis', 'multivariable-calculus', 'linear-algebra']"
+2878112,Recovering a cylinder from five points,"I asked a question a while back about how to form a ( Cylinder in 3D from five points? ).  I'm still in search for a good solution, as my last solution produced too much error and required nine points. Here's my updated problem statement. A cylinder's surface can easily be expressed as all points $p$ which reside a particular distance $r$ from a line with origin $c$ and direction $n$ (seven variables in total). A simple way to express this is:
+$\left\Vert (p - c) \times n \right\Vert_2 = r$ To make my life sane, I have added the following requirements that ought to reduce my problem space to five free variables: $n^T \; n = 1$ $c^T \; n = 0$ After a bunch of steps (including using orthogonal vectors to $n$ to do projections and avoid a cross product), I found that I can express it as: $n^T \; P \; n + 2 \; c^T p + r ^2 - c^T c - 1 = 0$ where $P = p\; p^T = \left[\begin{array}{c c c}
+p_x^2 & p_x p_y & p_x p_z \\
+p_x p_y & p_y^2 & p_y p_z \\
+p_x p_z & p_y p_z & p_z^2
+\end{array}\right]$ In theory, with only five free variables, I should be able to use five points to recover the free variables. But I had another thought:  After doing a partial Gaussian elimination (with five input points), I can produce a single symmetric matrix $M$ such that: $n^T \; M \; n = 0$. Now the question still remains - how do I solve for $n$?  I tried to diagonalize $M$ via eigenvalues/vectors to develop a solution for $n$, but I couldn't figure out how to transform the solution space back to $n$ without complications. Any advice?  I'm sure I probably need at least two $M$ matrices, along with the earlier assumption ($n^T \; n = 1$) to recover $n$, but I'm just plain lost.  It's been way too long since I took linear algebra. Thanks in advance!","['trigonometry', 'linear-algebra', 'eigenvalues-eigenvectors']"
+2878113,Is there a special name for primes $p = 2^n+1$ and what is the largest known to date?,"I'm reading a paper by Pohlig and Hellman on computing discrete logarithms, they use primes $p = 2^n+1$ as a simple special case to explain their algorithm. I'm curious, is there a special name for these primes and what's the largest known prime with this structure? In the paper they mentioned that $2^{16}+1$ is the largest known, but the paper is from 1978.","['number-theory', 'prime-numbers']"
+2878129,"Example of nef and big, not ample","What would be a common, simple example of a nef and big divisor that is not ample? Are there any common, less simple examples? Are there any common strategies for finding examples?","['complex-geometry', 'divisors-algebraic-geometry', 'algebraic-geometry']"
+2878187,Average distance detween two random points on two line segments,"Suppose you have two straight line of length $L_1$ and $L_2$, and a point is chosen at random along each line. What is the expected distance between these points? This question is a complement of Average Distance Between Random Points on a Line Segment . Best regards!","['geometric-probability', 'geometry', 'probability']"
+2878189,How to expand in a non-orthogonal basis in an intuitive way?,"I have a basis that consists of four non-orthogonal vectors $\{|u_i\rangle\}, 1 \le i \le 4$. Can the formula for an orthonormal expansion be modified so that it holds true for any given basis? $$|v>=\sum_i |u_i\rangle\langle u_i|v\rangle$$ I could always write $|v\rangle$ as a linear conbination of $\{u_i\}$ and solve the equation system, but I would like to approach the problem from a different perspective. I am not interested in finding an orthonormal basis with the Gram–Schmidt process.",['linear-algebra']
+2878196,Domain of multivariable function,"I have a function of two real variables which is given by the transformation rule
+$$f(x,y)=\frac{y}{1+x^2+y^2}.$$
+I have to find the domain of $f$ which consists of all points $(x,y)$. When I examine the function I would say the domain is $$|x,y \in \Bbb{R}^2:y\neq0, x \text{ are real numbers|}$$, but looking at the results-list it says that both $x$ and $y$ are real numbers. How come that is? This might be straightforward for some of you, but I can't seem to wrap my head around this on my own and hope some of you can help. Thanks in advance","['multivariable-calculus', 'functions']"
+2878247,Is the identity axiom in the definition of group action redundant?,"The definition of a group action , as given on wikipedia , is the following: Let $G$ be a group and $X$ a set. A (left) group action of $G$ on $X$ is a function $$G\times X\ni(g,x)\mapsto g.x\in X$$ such that $\forall x\in X,\, e.x=x$ $\forall( x\in X, \,g,h\in G),\,\, (gh).x=g.(h.x)$ What I do not understand is why do we have to assume $e.x=x$. Indeed, given a group homomorphism $\varphi:X\to Y$, the identity is always preserved: $\varphi(e_X)=e_Y$. But the second axiom above seems to be enough for the mapping $\phi:G\to\operatorname{Aut}(X)$, defined as $$\phi(g)(x)\equiv g.x,$$ to be a group homomorphism:
+$$\phi(gh)(x)=(gh).x=g.(h.x)=\phi(g)(\phi(h)(x))\equiv[\phi(g)\circ\phi(h)](x).$$
+If $\phi$ is a group homomorphism, then it should be ensured that $\phi(e_X)=e_{\operatorname{Aut}(X)}$, so that
+$$\forall x\in X,\,\, \phi(e)(x)=e.x=x.$$ A more direct way to see this is to consider that $\forall g\in G,\,\,x\in X$,
+$$g.x=(ge).x=g.(e.x),$$
+and multiplying on the left by $g^{-1}$ we should get $x=e.x$. In conclusion, am I missing something in the reasoning above, or is the identity axiom in the definition redundant?","['group-theory', 'group-actions']"
+2878256,N-dependent (even) function integral,"We want to compute, for any $n \in \mathbb{N}$ the following integral: $$\int_{-1}^{1} \frac{x^n}{\sqrt[n]{1+x}+\sqrt[n]{1-x}}dx$$ My attempt: 
+if $n$ is odd, the integral is trivially equal to $0$ since $x^n/(\sqrt[n]{1+x}+\sqrt[n]{1-x})$ is itself an odd function. If $n$ is even, so does $x^n/(\sqrt[n]{1+x}+\sqrt[n]{1-x})$ and therefore $$\int_{-1}^{1} \frac{x^n}{\sqrt[n]{1+x}+\sqrt[n]{1-x}}dx=2\int_{0}^{1} \frac{x^n}{\sqrt[n]{1+x}+\sqrt[n]{1-x}}dx$$ but this is not really helping. Any ideas?
+Thanks","['integration', 'definite-integrals', 'even-and-odd-functions', 'analysis', 'calculus']"
+2878303,Rectangular Hyperbola - A Property of Normals,"Consider the rectangular hyperbola $xy = c^2$. Normals at points $P,Q,R$ and $S$ on the curve are concurrent, and meet at point $O(h,k)$. Find $OP^2 + OQ^2 + OR^2 + OS^2$. I managed to solve the problem using coordinate geometry, and I'm hoping to discover rather interesting methods of approaching it, here on Math SE. A solution using geometry , if possible would be great. (Of course, other methods are welcome too!) Also, is the sum $OP^2 + OQ^2 + OR^2 + OS^2$ constant for any rectangular hyperbola, or is it something special about $xy = c^2$? It is worth noting that a geometrical solution would probably also help us understand whether or not the result is general - addressing the second query. Thanks a lot! P.S. For the sake of completeness of this post, I shall share how I approached the particular result using coordinate geometry. First, I wrote the equation of the normal (in parametric form) to the given rectangular hyperbola, and plugged in $(h,k)$ into it (the coordinates of point $O$). What resulted was a fourth degree equation, and I used Vieta's theorem to directly evaluate the required expression, to get $3(h^2+k^2)$.","['analytic-geometry', 'conic-sections', 'geometry']"
+2878323,"Convergence of ${\Large\int} _{1}^{+\infty}\left(\frac{\pi}{2}-\arctan(\sqrt{x})\right)^{\alpha}(\cos(x^2)) dx$, for $\alpha \geqslant0$","Study the convergence of the following integral for $\alpha \geqslant0$ $${\Large\int} _{1}^{+\infty}\left(\frac{\pi}{2}-\arctan(\sqrt{x})\right)^{\alpha}(\cos(x^2)) dx$$ I have solved it for $\alpha =0$, which is the convergence of $f(x)=\cos(x^2)$, using substitution $t=x^2$ and Dirichlet test. And also for $\alpha\geqslant2$, using Taylor and absolute convergence.
+What about $0 \lt \alpha \lt 2$, maybe by the comparision test?","['integration', 'improper-integrals', 'real-analysis']"
+2878324,Asymptotic Density vs a Partition of Natural Numbers,"I have the following sets: $$A_{m,n} = \{ x \in \mathbb{N} | x \equiv r_{m,n} \pmod{p_n}\}$$ such that for all $n$, $p_n < p_{n+1}$. Also, $A_{m_1,n_1} \cap A_{m_2,n_2} \neq \emptyset \Longrightarrow m_1=m_2\text{ and }n_1=n_2$. Suppose $q_n$ is a strictly increasing sequence such that $p_{n-1} < q_n < p_n$ and $q_n$ is a prime power. Let $$U_n = \left\{x \in \bigcup_{k=1}^n A_{m,k} \mid x < q_n, \text{ for any }m \right\}$$ I can show that $$\lim_{n\to \infty}\dfrac{|U_n|}{q_n} = 1$$ So, I know that the union of these sets are asymptotically dense in the set of Natural Numbers. Do they form a partition of Natural Numbers? Years ago when I was in grad school, my professors always told me to be careful with limit sets, as they rarely function the way finite sets would function. This problem originated when I was trying to calculate probabilities in Axis and Allies. As I was playing around with those numbers, it led to me playing around with numbers in general, and a situation like this eventually emerged. The sequences $r_n,p_n,q_n$ are not unique, which is why I am not defining them here. If it matters, or if it would help, I can provide an example this weekend. I would just need to work it out what each sequence would be. The $r_n$ sequence is a bit more difficult to come up with than the $p_n$ and $q_n$ sequences, but I was hoping there was a general way to show that yes, this turns into a partition, or no, the best I can say is that the union is asymptotically dense. Edit: I think I may need to give some more details on these sequences of sets. I want to put this problem on hold until I have a chance later this week to give more details of what I am looking for (maybe even include a couple of examples). I was not careful when I was playing around with these sets, and I may have made some simplifications that were not justified when stating the problem. I apologize for my rush to post without checking my work.",['number-theory']
+2878327,"As a high school student, what resources are there to learn discrete mathematics?","I am currently taking AP Calculus AB in high school, but I am very interested in computer science and mathematics as a whole. I understand that discrete math and computer science are very closely related. Although I am in high school and there is currently no discrete math offered at my school, I would still like to learn some before going into a college setting. Are there any books, PDFs, or other resources I could use to learn the basics or an introduction to discrete mathematics?",['discrete-mathematics']
+2878340,Bounding $(x^n-y^n)/(x-y)$?,"Let $x,y \in [0,1]$ it follows then from the binomial theorem that for integers $n \ge 1:$ $$\sup_{x,y} \left\lvert \frac{x^n-y^n}{x-y} \right\rvert \le n.$$ Is this also true if $q \in [1,\infty)$: $$\sup_{x,y} \left\lvert \frac{x^q-y^q}{x-y} \right\rvert \le q?$$","['analysis', 'real-analysis', 'multivariable-calculus', 'linear-algebra', 'inequality']"
+2878355,Unambiguous set abstraction (set-builder) notation with parameters,"I know two common variants of set abstraction notation .  An examples of the first variant is
+$$
+\{\,(x, y)\in\mathbf{R}^2\,|\,x^2 + y^2 = 1\,\}
+$$
+(it is reminiscent of the axiom schema of specification of ZF),
+and an example of the second is
+$$
+\{\,(\cos t,\sin t)\,|\,t\in\mathbf{R}\,\}
+$$
+(it is reminiscent of the axiom schema of replacement of ZF).
+I think that in common mathematical tradition, these two ""set-builder"" expressions unambiguously denote the same set. The first form of the notation can always be used instead of the second, for example:
+$$
+\{\,(\cos t,\sin t)\,|\,t\in\mathbf{R}\,\} =
+\{\,(x, y)\in\mathbf{R}^2\,|\,(\exists t\in\mathbf{R})(x =\cos t\wedge y =\sin t)\,\}.
+$$
+However, the ""translated"" expression is noticeably more verbose. Sometimes the two are combined:
+$$
+\{\,(\cos t,\sin t)\,|\,t\in\mathbf{R}\wedge 0 < t <\pi\,\},
+$$
+or simply
+$$
+\{\,(\cos t,\sin t)\,|\,0 < t <\pi\,\}.
+$$ The first form can be translated into the combined form without much ""overhead"":
+$$
+\{\,(x, y)\in\mathbf{R}^2\,|\,x^2 + y^2 = 1\,\} =
+\{\,(x, y)\,|\,x^2 + y^2 = 1\wedge (x, y)\in\mathbf{R}^2\,\}.
+$$
+The second form is just a particular case of this combined form. In practice, the combined form of ""set-builder"" notation is quite convenient, but it appears to be ambiguous, unless some artificial syntactic conventions are made.  For example, what set $S$ is defined in the following sentence? Let $p = 1$ and $S = \{\,(p + q, p - q)\,|\,pq = 1\wedge p\in\mathbf{R}\wedge q\in\mathbf{R}\wedge 1 < 2\,\}$. I see two equally legitimate values for $S$ so defined: $S =\{(2, 0)\}$ or $S =\{\,(x, y)\in\mathbf{R}^2\,|\,x^2 - y^2 = 4\,\}$. Once you think of it, there is also a possibility for $S$ to be empty, if both $p$ and $q$ are viewed as parameters and if the value of $q$ happens to be different from $1$. Does there exist an unambiguous form of the combined variant of ""set-builder"" notation? In general, I do not see how to specify in an expression like
+$$
+\{\,\{\,f(\bar a,\bar b,\bar c)\,|\,\Phi(\bar a,\bar b,\bar c)\,\}\,|\,\Psi(\bar a,\bar b,\bar c)\,\}
+$$
+that, for example, $\bar c$ are parameters, and $\bar b$ are parameters in the inner ""set-builder"" but not in the outer one.
+(Note that though all the variables are listed in parentheses each time, it does not mean that all of them are ""used"": $f$, $\Phi$ and $\Psi$ may very well not depend on some of these ""formal parameters."") For reference, here is how some programming languages deal with a similar issue in list comprehension.  More precisely, in programming languages there is no issue, because iterating over a collection and testing a predicate are two different operations in programming, while they are indistinguishable in mathematics. In Haskell, [ (m, n) | m <- [0..5], 0 <= n, n <= 5, m^2 + n^2 == 25 ] is the list of all pairs $(m, n)$, where $m$ is an integer from $0$ to $5$,
+$0\le n\le 5$, and $m^2 + n^2 = 25$.  Note that this very sentence in English is ambiguous!  The above expression in Haskell is only valid if $n$ is defined.  The value of this expression is [(3,4)] if the value of $n$ is 4 , but it is [] (the empty list) if the value of $n$ is 2 , for example. A similar definition in Python will be: [ (m, n) for m in range(0, 6) if 0 <= n and n <= 5 and m**2 + n**2 == 25 ] However, the analogous ""set-builder"" notation
+$$
+\{\,(m, n)\,|\,m\in\{0,\dotsc,5\}\wedge 0\le n\le 5 \wedge m^2 + n^2 = 25\,\}
+$$
+is ambiguous (are ""$m$"" and ""$n$"" parameters or bound variables of this expression?). Here is another example of an ambiguous situation:
+$$
+\{\,\{\,x\,|\,x\in\mathbf{Z}\}\,|\,x\in\mathbf{R}\,\}.
+$$ For my personal needs, I start considering using my own notation $\{\ldots|\ldots|\ldots\}$ with bound variables listed in the middle, with the following formal ""translation"":
+$$
+S =\{\,f(\bar x, \bar y)\,|\,\bar x\,|\,\Phi(\bar x, \bar y)\,\}\\
+\equiv
+(\forall\xi)(\xi\in S\Leftrightarrow(\exists\bar x)(\xi = f(\bar x, \bar y)\wedge\Phi(\bar x, \bar y))),
+$$
+where the new variable $\xi$ is distinct from all variables in $\bar x$ and $\bar y$.
+For example:
+$$
+A =\{\,(\cos t,\sin t)\,|\,t\,|\,t\in\mathbf{R}\,\},\\
+B =\{\,(x, y)\,|\,x, y\,|\,x^2 + y^2 = 1\wedge (x, y)\in\mathbf{R}^2\,\},\\
+C =\{\,(m, n)\,|\,m\,|\,m\in\{0,\dotsc,5\}\wedge 0\le n\le 5 \wedge m^2 + n^2 = 25\,\},\\
+D =\{\,\{\,f(\bar a,\bar b,\bar c)\,|\,\bar a\,|\,\Phi(\bar a,\bar b,\bar c)\,\}\,|\,\bar a,\bar b\,|\,\Psi(\bar a,\bar b,\bar c)\,\},\\
+E =\{\,\{\,x\,|\,|\,x\in\mathbf{Z}\,\}\,|\,x\,|\,x\in\mathbf{R}\,\}\quad
+(=\{\,\{x\}\,|\,x\,|\,x\in\mathbf{Z}\,\}\cup\{\{\}\}),
+$$
+or, alternatively, with words instead of symbols:
+$$
+A =\{\,(\cos t,\sin t)\ \text{for}\ t\ \text{such that}\ t\in\mathbf{R}\,\}.
+$$
+Isn't there some kind of a standard alternative? It seems that the Z notation might be an example of what I am looking for, but at a first glance it looks incompatible with the usual mathematical ""set-builder"" syntax, and I wonder how standard it is. Some comments and answers suggest to never use the same variable name for different variables, at least when their scopes are nested, thus avoiding variable shadowing altogether.
+IMO, such a restriction is unusual (surely uncommon in programming or formal languages), unnecessary, not easy to observe, and it would require explicit introduction of all parameters (consider omitting ""Let $p = 1$"" in my example above while still using ""$p$"" as a parameter). Quoting the HoTT Book (page 23), Of course, this should all be familiar to any mathematician:  it is the same phenomenon as the fact that if $f(x):\equiv\int_1^2\frac{dt}{x - t}$, then $f(t)$ is not $\int_1^2\frac{dt}{t - t}$, but rather $\int_1^2\frac{ds}{t - s}$.","['elementary-set-theory', 'notation', 'predicate-logic', 'logic']"
+2878364,Proving the Leibniz integral rule in measure theory,"The task at hand is to prove that for a function $f\colon X\times (0,1)\rightarrow \mathbb C$ there holds 
+$$
+\frac d {dt}\int_X f(x,t)\,\mathrm d\mu(x)=\int_X \frac{\partial f}{\partial t}(x,t)\,\mathrm d\mu(x)
+$$
+at certain conditions, for $X$ a space with measure $\mu$. Namely, the conditions are that: $f(\cdot, t)\colon X\rightarrow \mathbb C$ is integrable $\forall t\in (0,1)$, $\frac{\partial f}{\partial t}(x,t)$ exists for almost all $(x,t)\in X\times (0,1)$, $\exists g\in L^1\colon \forall t\in(0,1)\colon\left\lvert\frac{\partial f}{\partial t}(x,t)\right\rvert \leq g(x)$. Let $F(t)=\int_Xf(x,t)\, d\mu(x)$. Fix $t\in(0,1)$; by the definition of derivative, we have 
+\begin{align}
+F'(t)&=\lim_{n\rightarrow \infty} n\left(F\left( t+\frac 1 n\right)-F(t)\right)\\
+&=\lim_{n\rightarrow\infty}n\left(\int_X f\left(x,t+\frac 1 n\right)\, \mathrm d\mu(x)-\int_X f(x,t)\,\mathrm d\mu(x)\right)\\
+&\stackrel{lin.}=\lim_{n\rightarrow \infty}\int_X n\left(f\left(x,t+\frac 1 n\right)-f(x,t)\right)\,\mathrm d\mu(x),
+\end{align}
+and now let $f_n(x,t):=n\left(f(x,t+\frac 1 n)-f(x,t)\right)$. It's worth noting that $t+\frac 1 n$ may fall out of $(0,1)$, but we can ignore that by defining the expressions above only for large enough $n$ because the limit in $n$ is independent of the first finitely many terms. By assumption, we have that $\frac{\partial f}{\partial t}=\lim_{n\rightarrow \infty} f_n$ exists almost everywhere and therefore so does $\frac{\partial f}{\partial t}(\cdot,t)$. In order to be able to exchange the limit with the integral, we utilize the dominated convergence theorem. However, the condition to use it is $\lvert f_n (\cdot, t)\rvert\leq g_0$ for some integrable function $g_0$ for all $t\in(0,1)$. The assumed function $g$ above is such that $\lvert\lim_n f_n(\cdot,t)\rvert\leq g$, but $(f_n(\cdot,t))$ isn't necessarily increasing in $n$ (for $X=\mathbb R$ we can have a function that is convex in $x$), thus taking $g_0\equiv g$ isn't appropriate. I've thought of taking $g_0(x)=\sup\{\lvert f_n(x,t)\rvert\;;\;t\in(0,1), n\in \mathbb N\}$, but have no idea how to prove $g_0\in L^1$ then. After finding the function $g_0$ in question, the rest is straightforward. Additionally, I would like to know if the last condition above can be deduced from continuity of the function $\frac{\partial f}{\partial t}$ in case of $X=\mathbb R$ with Lebesgue measure.",['measure-theory']
+2878404,Relative Interior of the relative interior of a convex set,"Let $X \subseteq \mathbb R^n$ be a convex set. I'm curious whether the relative interior of the relative interior of X is equal to the relative interior of X, i.e., using the notation in this Wikipedia article , $$\text{relint}(\text{relint}(X)) = \text{relint}(X). $$ Definition of $\text{relint}(X)$ for a convex set $X$ can be reduced to the following: $$\text{relint}(X):=\left\{ x \in X \ | \ \forall y\in X \ \exists \lambda>1  \text{ s.t. } \lambda x + (1- \lambda) y \in X \right\}$$ $\text{relint}(X)$ is also a convex set, which implies that $$\text{relint}(\text{relint}(X)):=\left\{ x \in \text{relint}(X) \ | \ \forall y\in \text{relint}(X) \ \exists \lambda>1 \text{ s.t. } \lambda x + (1- \lambda) y \in \text{relint}(X) \right\}$$ I couldn't show that these two sets are subsets of each other. Does anyone have any idea on whether these sets are equal or not?","['elementary-set-theory', 'convex-optimization', 'convex-analysis']"
+2878453,characteristic function determines the distribution,"I noticed that some probability and stats books talk about the characteristic function of a probability distribution of $\mathbb{R}^n$ and make the claim that the characteristic function uniquely determines the distribution even if the distribution does not have a density wrt to lebesgue measure (else this follows from injectivity of the fourier transform).  I assume this is not true for all Borel probability measures?  What are the correct general conditions on the measure?  And can I somehow use the proof I already know that the fourier transform is injective (namely by convolving $f$ with a sequence of $\phi_k$ so that $$f\ast \phi_k \rightarrow f$$ in $L^1$ and using properties of the Fourier transform to write $f\ast \phi_k$ in terms of $\hat{f}$) to prove the statement about characteristic functions? I notice, in trying to adapt the proof, for instance, that i would at least need translation to be continuous with respect to the $L^1_P$ norm, where $P$ is the probability distribution. I'm not sure whether or not this in itself implies $dP$ is absolutely continuous with respect to Lebesgue measure...","['statistics', 'analysis', 'real-analysis', 'complex-analysis', 'probability']"
+2878507,"Over a commutative unital ring, does $\det A = 0$ imply that $A\mathbf{x} = 0$ has a non-zero solution?","This is a standard theorem in linear algebra over fields that is still true when working over an integral domain . For a commutative unital integral domain $R$, let $A$ be an $n\times n$ matrix with entries in $R$. The system of linear equations $A\mathbf{x}=0$ has a non-zero solution if and only if $\det(A) = 0$. The forward direction of this statement is not true though if we are working over a ring $R$ that is not an integral domain, a counter example being 
+$$
+R = \boldsymbol{Z}_6 
+\qquad 
+A = \begin{pmatrix} 3 & 0  \\ 0 & 3 \end{pmatrix} 
+\qquad 
+\mathbf{x} = \begin{pmatrix} 2 \\ 2 \end{pmatrix}
+\,.
+$$ But what about the other direction? Does $\det(A) = 0$ imply that $A\mathbf{x} = 0$ has a non-zero solution over an arbitrary commutative unital ring? I've played around for a bit, and have yet to find a counterexample.","['determinant', 'abstract-algebra', 'linear-algebra', 'commutative-algebra']"
+2878516,Tangent space of topological manifold,"The ordinary definition of a tangent space uses the differentiable structure of differentiable manifolds and is hence not applicable to topological manifolds. However for locally ringed spaces one can define the tangent space as the dual of the vector space obtained as a quotient by its maximal ideal, i.e. $\mathfrak{m}/\mathfrak{m}^2$ . Why is this latter construction not applicable to topological manifolds?","['general-topology', 'differential-topology', 'differential-geometry']"
+2878521,$G$-invariant operators on $L^2(G)$,"Let $G$ be a Lie group equipped with a left-invariant Haar measure. Then elements of $G$ act as bounded operators on $L^2(G)$, with action given by translation: $$(g\cdot f)(h):=f(g^{-1}h),$$ for any $f\in L^2(G)$, $g,h\in G$. Let us say that an operator $T\in\mathcal{B}(L^2(G))$ is $G$-invariant if $$g\circ T\circ g^{-1} = T$$ for all $g\in G$. One can check that, for example, convolution by a function in $C_c(G)$ is $G$-invariant. Question: does every $G$-invariant operator in $\mathcal{B}(L^2(G))$ arise as the limit of a sequence of elements of $C_c(G)$ acting by convolution? In other words, are the $G$-invariant operators in $\mathcal{B}(L^2(G))$ precisely the elements of the reduced group $C^*$-algebra $C^*_\lambda(G)$?","['operator-algebras', 'operator-theory', 'functional-analysis', 'lie-groups', 'differential-geometry']"
+2878559,Simplifying expression: $1 - \frac{1}{ (1 + a) / (1 - a)}$,Correct Answer is $a$ My attempt: $$1 - \frac{1}{ (1 + a) / (1 - a)}= 1 - \frac{1 - a}{1 + a}  $$ multiply $(1 + a)$ on num and dem for the first term. $$=\frac{1 + a}{1 + a} - \frac{1 - a}{1 + a}$$ combine and subtract. $$=\frac{2a}{1 + a}$$ How does this simplify to $a$?,['algebra-precalculus']
+2878580,Find the general term of $x_{n+1} = \frac{x_n + 1}{n+1}$ where $x_1 = 0$,"Find the general term of $x_{n+1} = \frac{x_{n} + 1}{n + 1}$ where $x_1 = 0$ I've tried finding the general term by introducing a generating function $G(z)$ and then solving for $G(z)$ with no luck. I've also tried to express $x_n$ and get rid of the constant doing the following: $$
+x_{n+1} = \frac{x_n + 1}{n+1}\\
+x_n = \frac{x_{n-1} + 1}{n}
+$$ Subtract one from another: $$
+(n+1)\cdot x_{n+1} - n\cdot x_n = x_n - x_{n-1}
+$$ So:
+$$
+(n+1)\cdot (x_{n+1} - x_n) = -x_{n-1}
+$$ Not sure how to proceed from here. I've seen how recurrence relations are solve with characteristic equations. Should i introduce some characteristic polynomial and solve it? Basically i'm more interested in a common approach than in solution (yet an example would be nice) since i am going to solve lots of similar problems after this one.","['algebra-precalculus', 'sequences-and-series']"
+2878598,"How to prove that $\frac{1}{2\pi}\int^{2\pi}_0 e^{\cos \theta}\,d\theta = \sum\limits^\infty_{n=0}\frac{1}{(n!2^n)^2}$","How to prove that $$\frac{1}{2\pi}\int^{2\pi}_0 e^{\cos \theta}\,d\theta = \sum\limits^\infty_{n=0}\frac{1}{(n!2^n)^2}.$$ It seems Laurent expansion doesn't work well here. I visited similar questions, maybe expand $1=\cos^2(\theta)+\sin^2(\theta)$ or some different arguments? Still not working to me.","['integration', 'complex-analysis']"
+2878606,"Show $T=X_1(X_3+X_4)+X_2$ is not sufficient for $p$ where $X_1,...,X_4$ are iid Bernoulli(p)","I am attempting to show that $T=X_1(X_3+X_4)+X_2$ is not sufficient for $p$ where $X_1,...,X_4$ are iid Bernoulli(p), and the question specifies that I am to use the conditional distribution method. Here is my work: It can be shown first that $T=0$ iff $[X_1=0$ $\cup$ ($X_3=0$ $\cap$ $X_4=0$)] $\cap$ $X_2=0$. So the probability of obtaining $\bigcap_{i=1}^4X_i=0 $ given that $T=0$ can be expressed as: $$ \frac{Pr[\bigcap_{i=1}^4X_i=0]}{Pr[T=0]}=\frac{(1-p)^4}{(1-p)^2+(1-p)^3-(1-p)^4}  $$
+Hence, $T$ is not sufficient for $p$ because the above expression depends on $p$. My questions are, first, did I successfully prove the statement that $T$ is not sufficient for $p$? And second, could I have completed this proof without using particular values of $X$ and $T$?","['statistics', 'probability-theory']"
+2878625,Finding center of a solid,"I am finding the center of mass of sphere $x^2+y^2+z^2=2z$ when $\delta(x,y,z)=\sqrt{x^2+y^2+z^2}$. I did the mass as follows (I hope it is right): $$M=\int_0^{2\pi}d\theta\int_0^{\pi/2}\int_0^{2\cos{\phi}}\rho^3\sin{\phi}\,d\rho \,d\phi=8\pi/5.$$ Now I did the $x_0$ of the center: $$x_0=\frac{1}{M} \int_0^{2\pi} \cos(\theta) \, d\theta \int_0^{\pi/2} \int_0^{2\cos\phi} \rho^4\sin^2 \phi \, d\rho \, d\phi=0.$$ Here, I suspect the rest for $y_0$ and $z_0$ is obvious. Indeed, I think that I would get $y_0=0, z_0=1$ after evaluating the corresponding integrals because the center of the sphere is $(0,0,1)$. What do you think?","['integration', 'multivariable-calculus']"
+2878675,Confusion between function and multivalued function.,"""What is a function?"" can be  answered as ""Single-valued relations are called functions"" . But how can ""What are the multi-valued function?"" be answered? Will someone clarify my doubt why multi-valued functions are not violating the classical definition of function? EDIT This is what Wikipedia says on multivalued functions: In mathematics, a multivalued function from a domain X to a codomain Y is a heterogeneous relation. However, in some contexts such as the complex plane (X = Y = ℂ), authors prefer to mimic function theory as they extend concepts of the ordinary (single-valued) functions. In this context, an ordinary function is often called a single-valued function to avoid confusion. The term multivalued function originated in complex analysis, from analytic continuation. It often occurs that one knows the value of a complex analytic function $f(z)$ in some neighbourhood of a point $ z=a$ . This is the case for functions defined by the implicit function theorem or by a Taylor series around $ z=a$ . In such a situation, one may extend the domain of the single-valued function $f(z)$ along curves in the complex plane starting at $a$ . In doing so, one finds that the value of the extended function at a point $z=b$ depends on the chosen curve from $ a$ to $ b$ ; since none of the new values is more natural than the others, all of them are incorporated into a multivalued function. For example, let $f(z)=\sqrt {z}$ , be the usual square root function on positive real numbers. One may extend its domain to a neighbourhood of $z=1$ in the complex plane, and then further along curves starting at $z=1$ , so that the values along a given curve vary continuously from $\sqrt {1}=1$ . Extending to negative real numbers, one gets two opposite values of the square root such as $\sqrt {-1}=\pm i$ , depending on whether the domain has been extended through the upper or the lower half of the complex plane. This phenomenon is very frequent, occurring for $n$ th roots, logarithms and inverse trigonometric functions. To define a single-valued function from a complex multivalued function, one may distinguish one of the multiple values as the principal value, producing a single-valued function on the whole plane which is discontinuous along certain boundary curves. Alternatively, dealing with the multivalued function allows having something that is everywhere continuous, at the cost of possible value changes when one follows a closed path (monodromy). These problems are resolved in the theory of Riemann surfaces: to consider a multivalued function ${\displaystyle f(z)}$ as an ordinary function without discarding any values, one multiplies the domain into a many-layered covering space, a manifold which is the Riemann surface associated to $f(z)$ .","['complex-analysis', 'calculus', 'functions', 'definition', 'multivalued-functions']"
+2878689,"Triangle inequality for integrals, but for an arbitrary norm","Given an arbitrary norm on $\mathbb{R}^q$ . For a continous function $f: [a,b]\times\mathbb{R}^q \rightarrow \mathbb{R}^q$ , I want to find out whether $$ \left\|\int_{a}^{b} f(x,y_1,...,y_q)\,\mathrm{d}x\right\| \le \int_{a}^{b} \| f(x,y_1,...,y_q)\|\,\mathrm{d}x$$ holds. I know that this is easily provable for the euclidean norm $\|\cdot\|_{2}$ , but the proof I know involves the Cauchy-Schwarz inequality which is only available for induced norms. That is why I tried making use of the fact that all norms on $\mathbb{R}^q$ are equivalent, which means $$\exists\, \alpha,\beta>0\,\, \forall v\in\mathbb{R}^q:\alpha\|v\|\le\|v\|_{2}\le\beta\|v\|. $$ Using the triangle equality for $\|\cdot\|_{2}$ , this yields $$ \alpha\left\|\int_{a}^{b} f\,\mathrm{d}x\right\| \le \left\|\int_{a}^{b} f\,\mathrm{d}x\right\|_{2}\le\int_{a}^{b} \| f\|_{2}\,\mathrm{d}x\le \beta\int_{a}^{b} \| f\|\,\mathrm{d}x,$$ but as there is no more information about $\alpha$ and $\beta$ , I cannot conclude the above inequality. I appreciate any help.","['integration', 'multivariable-calculus']"
+2878701,Does there exist such an interval?,"If $f: \mathbb{[a,b]} \to \mathbb{R}$ and $f$ is twice differentiable at a point $c$.
+    Does there exist an interval $[p,q]$ in $[a,b]$ where $f$ is differentiable I think here, $f'$ is continuous at $c$.Then by the definition of continuity there must exist such an interval","['limits', 'continuity', 'real-analysis']"
+2878704,How to solve $8t^3-4t^2-4t+1=0$,I obtain this cubic equation from solving the trigonometric equation $\sin3x=\sin4x$. I don't know how to solve it to obtain 3 roots. Thank you!,"['cubics', 'algebra-precalculus', 'trigonometry']"
+2878721,Evaluate $\int _0^1\frac{dx}{(e^x-1)^{1/3}}$,"Study the convergence of the following integral for $\alpha\in\mathbb{R}$ and evaluate it for $\alpha = \frac{1}{3}$ if it converges for that value. $${\Large\int} _{0}^{1}\frac{dx}{(e^x-1)^{\alpha}} x$$ The integral converges for $\alpha \lt 1$, if I am not wrong, so I can evaluate:
+$${\Large\int} _{0}^{1}\frac{dx}{(e^x-1)^{\frac{1}{3}}}$$ whose primitive, using some razionalizations and change of variables, is: $\frac{1}{2}\log|4(e^x-1)^\frac{2}{3}-4(e^x-1)^\frac{1}{3}+4|+\sqrt{3}\arctan\left(\frac{1}{\sqrt{3}}\left(2(e^x-1)^\frac{1}{3}-1\right)\right)-\log|(e^x-1)^\frac{1}{3}+1|+C$ Anyone knows if there is a less intricate way in order of obtain it than almost 3 sheet full of calculations? Thank you","['integration', 'improper-integrals', 'real-analysis']"
+2878783,Where did I go wrong with my odd proof that $\frac{3dx}{3x} = \frac{5dx}{5x} \iff 3=5$?,"I don't know where I went wrong, but it's interesting for me. Please check where my fault is! 
+It is obvious that the below equation is correct: $$\frac{3dx}{3x}=\frac{5dx}{5x}$$
+$$u=3x$$and$$v=5x$$
+$$\frac{du}{u}=\frac{dv}{v}$$
+integrate both sides:
+$$ln(u)=ln(v)$$
+$$u=v$$
+$$3x=5x$$
+so, 
+$$3=5$$","['calculus', 'fake-proofs']"
+2878799,Let $T: \mathbb{R}^4 \to \mathbb{R}^4$ be any linear transformation. Then how can I show that $T$ has a proper non zero invariant subspace. [duplicate],This question already has an answer here : Invariant subspaces of specific dimension (1 answer) Closed 5 years ago . Let $T: \mathbb{R}^4 \to \mathbb{R}^4$ be any linear transformation. Then how can I show that $T$ has a proper non zero invariant subspace. If $T$ has an eigen value then it is clear but if not then I can't solve it. Please help me. Thanks.,"['matrices', 'abstract-algebra', 'linear-algebra', 'linear-transformations']"
+2878812,Trigonometrical Problem,"I think this is a bit odd but I am juggling since hours with $\sin$, $\cos$, $\tan$ and other stuff to proof a formula, but I can't do it. Slowly I am thinking that this formula is wrong. Maybe there is some expert who could tell me if I am right. I have the following problem: In the end I want to reach the form: $$
+L_{BC} = \frac{L_{AC}\cos{\alpha} - L_{AC'}}{\sin{\alpha}}
+$$ starting with the formula for similar triangles: $$
+\frac{L_{AC}}{\sin{\theta}} = \frac{L_{AC'}}{\sin{( \theta - \alpha )}}
+$$ When I combine these two formulas I come to the point that $$
+L_{BC} = L_{AC'} \frac{\cos\theta}{\sin(\theta - \alpha)}
+$$ Now I don't see any way to replace $ \theta $ so that I am only dependent on the known variables:
+$$
+L_{AC} \hspace{1cm}  L_{AC'} \hspace{1cm} \alpha 
+$$ Also expanding the fractions with sin / cos brings me to an deadend. Am I not seeing an obvious connection in these triangles or is there really something wrong about the formula?
+To make the actual question more clear: I want to calculate $L_{BC}$ using only $\alpha$ , $L_{AC'}$ and $L_{AC}$! And yes, we have $L_{AB}=L_{AB′}$! Thanks!",['trigonometry']
+2878840,What is meant by $\frac{\partial x}{\partial y}\frac{\partial y}{\partial z}\frac{\partial z}{\partial x}=-1$ ? How to interpret it?,"Let $F(x,y,z)=0$. So $x,y,z$ are defined implicitly in function of the other variable, i.e. $x=x(y,z)$, $y=y(x,z)$ and $z=z(x,y)$. Now $$dx=\frac{\partial x}{\partial y}dy+\frac{\partial x}{\partial z}dz=\frac{\partial x}{\partial y}\left(\frac{\partial y}{\partial x}dx+\frac{\partial y}{\partial z}dz\right)+\frac{\partial x}{\partial z}dz$$
+and thus $$\left(\frac{\partial x}{\partial y}\frac{\partial y}{\partial x}-1\right)dx+\left(\frac{\partial x}{\partial z}+\frac{\partial x}{\partial y}\frac{\partial y}{\partial z}\right)dz=0.$$
+Since $dx$ and $dy$ are linearly independent, we finally get \begin{align*}
+\frac{\partial x}{\partial y}\frac{\partial y}{\partial x}&=1 \tag{1}\\
+\frac{\partial x}{\partial y}\frac{\partial y}{\partial z}&=-\frac{\partial x}{\partial z}\tag{2}
+\end{align*} Equation $(1)$ is natural, but equation $(2)$ should be $\frac{\partial x}{\partial y}\frac{\partial y}{\partial z}=\frac{\partial x}{\partial z}\frac{\partial y}{\partial y}=\frac{\partial x}{\partial z},$ no ? So what's the matter here ? I know it's correct, but what does it mean exactly such a contradiction ? Because at the end I get
+$$\frac{\partial x}{\partial y}\frac{\partial y}{\partial z}\frac{\partial z}{\partial x}=-\frac{\partial x}{\partial z}\frac{\partial z}{\partial x}=-1$$
+instead of $1$ (what should be expected). What is the mystery behind ? :)","['partial-derivative', 'derivatives', 'real-analysis']"
+2878868,"$f:\mathbb{R}^4 \to \mathbb{R}$ is a Constant when $Xf = Yf = 0$ for Vector Fields $X,Y$","I'm preparing for some comprehensive exams and this is a question from a previous year that I've been trying to solve. ""On $\mathbb{R}^4$, equipped with coordinates $(x,y,z,t)$, let $X,Y$ be vector fields given by $$X = \frac{\partial}{\partial x}+z \frac{\partial}{\partial y}, \hspace{5mm} Y=x \frac{\partial}{\partial z} + \frac{\partial}{\partial t}.$$ If $f: \mathbb{R}^4 \to \mathbb{R}$ is a smooth function satisfying $Xf = Yf = 0$, show that $f$ is constant."" Here's somethings I've tried.
+By definition, $Xf:=df(X)$. Thus, we first write out $df$ generically. $$df = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y} dy + \frac{\partial f}{\partial z}dz + \frac{\partial f}{\partial t}dt.$$ We have that $df(X) = 0 = \frac{\partial f}{\partial x} + z \frac{\partial f}{\partial y}$ and $df(Y) = 0 = x \frac{\partial f}{\partial z} + \frac{\partial f}{\partial t}$. Observe that $[X,Y] = \frac{\partial}{\partial z}-x \frac{\partial}{\partial y}$. Since we know that $df([X,Y]) = 0$ as well from the assumptions of $Xf = Yf = 0$, then $df([X,Y]) = 0 = \frac{\partial f}{\partial z} - x \frac{\partial f}{\partial y}$. From here, I tried to use the three equations to show that each of the partial derivatives of $f$ are $0$, forcing $f$ to be constant. However, the relations aren't working out to show this so maybe I did some computations wrong though I've checked a few times... Another idea is to consider the distribution $D = \ker df$ and then try and apply Frobenius' theorem in some way. Any help is welcome!","['multivariable-calculus', 'differential-topology', 'differential-geometry']"
+2878891,Maximum difference of Poisson process,"I am trying to understand this remark in a paper by Bollobás and Riordan: Let $X_1, X_2,\dots$ be the points of a Poisson process on $[0,
+\infty]$ with rate $m$, so, setting $X_0 = 0,$ the variables $X_i −
+X_{i−1}$ are iid exponentials with mean $1/m.$ Let $Y_i =
+\sqrt{X_{mi}},$ and let $D_m = \max\{Y_i − Y_{i−1},1 \leq i <
+\infty\}$, noting that this maximum exists with probability one. How do you show the ""maximum exists with probability one""? (Clarification: $m$ is an arbitrary natural number, and $X_{mi}$ means the $(mi)^\text{th}$ point, where $mi=m\text{ times }i$ (in particular, $X_{mi}$ is not ""just another name"" for $X_i$).) Bollobás, B., & Riordan, O. M. (2003). Mathematical results on scale-free random graphs. Handbook of graphs and networks: from the genome to the internet, 1-34.","['stochastic-processes', 'probability-theory', 'poisson-process']"
+2878902,The PDE $u_t = u_{xx}$ follows the path defined by $\dfrac{dx}{dt} = \pm \infty$,"I have the PDE $u_t = u_{xx}$ (heat equation). I am then told that, by writing the equation as $(\partial_x + (0)\partial_t)^2 u = u_t$, we see that its characteristics would follow the path defined by $\dfrac{dx}{dt} = \pm \infty$. I wonder how they came to this conclusion? Please kindly explain. :)","['mathematical-modeling', 'ordinary-differential-equations', 'heat-equation', 'partial-differential-equations', 'characteristics']"
+2878929,Using Averaging and Deck Transformations to Compute de Rham Cohomologies of the $n$-Torus,"I'm preparing for some comprehensive exams and this is a question from a past year. The $n$-torus $T^n = \mathbb{R}^n/\mathbb{Z}^n$ is both a smooth n-manifold and an Abelian group, by virtue of structures inherited from the real vector space $\mathbb{R}^n$. In particular, $T^n$ acts on itself by smooth maps corresponding to translations of $\mathbb{R}^n$. By averaging, prove that each de Rham cohomology class on $T^n$ contains a unique differential form which is translation-invariant. Then use this observation to calculate the dimensions of the de Rham cohomology vector spaces $H^p(T^n)$ for all $p$. I can compute the de Rham cohomology using Kunneth's formula and some induction (I think the dimensions are something like $n \choose p$) but that isn't the point. Plus, I'm quite curious about this idea of averaging so that we get something invariant under group actions. I've seen a similar question on showing that a Lens space is orientable by looking at some averaged form and then showing it is invariant under some orientation preserving transformations, or something like that.","['differential-topology', 'covering-spaces', 'differential-geometry']"
+2878934,Exploiting a Diophantine approximation of $\pi^4$ into giving a series of rationals for $\pi^4$,"A note about this question: The original question asked seems likely impossible so I am really asking if we can exploit the technique below into giving us a 'nice' form for $\pi^4$ . By nice form I mean an explicitly defined series of rationals. A little explanation of the the technique. The technique I use below I reference quite a bit on this site and therefore am putting a nice explanatory picture. The technique is a type of ""Diophantine Approximation"" I suppose. I don't know if the technique goes by a special name. We are going to count the number integer solutions along some Diophantine equation $P(x,y)=n$ . If let $\phi_n$ denote the number of solutions in $\mathbb{Z}$ to $P(x,y)=n$ then we may argue (under some conditions) that $\sum_{n=1}^N \phi_n$ approximates the area of the interior of $P(x,y)=N$ . Let me give a concrete example. Let $P(x,y)=|x|^3+|y|^3$ . The actual area in the interior of $|x|^3+|y|^3=72$ is given by $\frac{72\Gamma(1/3)^3}{4\sqrt{3}\pi} \approx 63.59899501$ and this is weakly approximated by $69$ which is the total number of integers which are on some solution of $|x|^3+|y|^3=n$ as $n$ varies from $0$ to $72$ . Approximating this area as the number of integer solutions should improve as a we let $n$ grow large. Specific Question Let $R$ be a whole number. Is it possible for any whole number $c>0$ that there is a nicer form for $\sum_{r=1}^{R^c}\sum_{d|r}(-1)^{r+d} d^3$ ? I can hope that we can just evaluate this sum but in lieu of that maybe something cheaper computationally.  Taking $c=1$ we can examine: $$f(x)=\sum_{r=1}^{x}\sum_{d|r}(-1)^{r+d} d^3$$ Here is a table of the first 100 values of this function $f$ . This function must grow $O(x^4)$ for reasons which should be clear after reading the exposition. TLDR: $f(x)/x^4$ limits to $\frac{\pi^4}{384}$ as $x$ gets large. Edit 1: After thinking about this specific question I realized it's somewhat an unreasonable ask... In someways this specific question is tantamount to asking the Gauss circle problem but in 8 dimensions and not 2. It's seems that this problem doesn't have an answer for $2$ -d case and it's not likely any easier as we increase the dimension. What I am really after is if we can exploit this summation to arrive at an expression for $\pi^4$ which isn't a divisor sum the same way we can do this in the 2 dimensional case. Full apologies: This is really a different question than the original query but considering the original query is likely impossible... Exposition. Let $\phi_n(r)$ denote the number of integer solutions to the $n$ -dimensional hypersphere $r=\sum_{i=1}^n x_i^2$ . The 2-dimensional case. Then discovering $\phi_2(r)=4 \sum_{d|r} \sin(\frac{\pi}{2}d)$ allows us to find a formula for $\pi$ . Namely, Leibniz's formula for $\pi$ . Considering that the sum of number of integer solutions for each $r$ from $1$ to $R^2$ should approximate the volume of a sphere (which for this special case $n=2$ goes by the special name 'circle') with radius $R$ we arrive at: $$\pi R^2 \approx\sum_{r=1}^{R^2}\phi_2(r)$$ and after dividing both sides by $4R^2$ and unpacking our definitions we arrive $$\frac{\pi}{4}=\lim_{R\to\infty} \frac{1}{R^2}\sum_{r=1}^{R^2}\sum_{d|r}\sin \Big(\frac{\pi}{2}d \Big)=\sum_{n=1}^\infty{\frac{1}{n}\sin\Big(\frac{\pi}{2}n \Big)}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+ \dots $$ The second equality is sometimes referred to as a dirichlet convolution (I think). And it's this step that I can't seem to be able to take in $8$ -dimensional case. I will skip the 4-dimensional case. But indeed, examining the 4 dimensional case we can achieve $\zeta(2)=\pi^2/6$ . This can be found in the last proof in R. Chapman's compilation of proofs of the Basel problem. MSE has it's own compilation of these by the way. So now that we've seen the development for a $2$ and $4$ dimensional sphere: What's the development for 8-dimensional sphere? Note that the ${\phi_8(r)= 16\sum_{d|r} (-1)^{r+d}d^3}$ which gives a way of approximate the volume of an $8$ -dimensional hypersphere: $$\frac{1}{24}\pi^4 R^8 \approx \sum_{r=1}^{R^2}\phi_8(r)$$ We divide both sides by $16R^8$ to arrive at $$\frac{\pi^4}{384}= \lim_{R\to\infty} \frac{1}{R^8}\sum_{r=1}^{R^2} \sum_{d|r} (-1)^{r+d}d^3$$ In fact! It looks to me like for any whole number $c$ , $$\frac{\pi^4}{384}= \lim_{R\to\infty} \frac{1}{R^{4c}}\sum_{r=1}^{R^c} \sum_{d|r} (-1)^{r+d}d^3$$ This does provide a nice sequence which converges to $\pi^4/384$ . Letting $c=1$ this sequence's rate of convergence is pretty atrocious. $$1,\frac{8}{16},\frac{36}{81},\frac{107}{256},\frac{233}{625},\dots $$ The printed numbers are all accurate to ... zero decimal places... it should converge nonetheless. but taking $c$ larger we arrive at this number much faster. For $c=2$ , $$1,\frac{107}{256},\frac{2113}{6561},\frac{19128}{65536}, \dots $$ Only the last number printed is accurate to the first decimal of $\pi^4/384$ . Can I see anything else here? Is there a closed form for this $$\sum_{r=1}^{R^c}\sum_{d|r}(-1)^{r+d} d^3$$ Sequences of interest include A008457 , A138503 . I think this link may be a good resource but (I am pretty sure) the ""formula"" therein should be labelled as a generating function A055414 . I suppose it's unlikely that the problem is easier $c>1$ but I figured I would include this thought just in case the problem is somehow solvable for some specific $c$ . A more general food for thought question Does this development get me similar looking things for other dimensions $n$ ?","['sums-of-squares', 'diophantine-approximation', 'elliptic-curves', 'analytic-number-theory', 'sequences-and-series']"
+2878955,$\sum_{n=1}^{\infty} \frac{1}{n^z}$ diverges if $0 <\Re(z) < 1$,"I have been trying to solve this problem for more that two days and yet i have no idea of what to do. I am trying to show that $\sum_{n=1}^{\infty} \frac{1}{n^z}$ diverges if 0 < $\Re(z)  < 1$. If $z$ is real it turns out to be very simple because $\int_n^{n+1} \frac{dt}{t^z} \leq \frac{1}{n^z}$  and $\int_1^{\infty} \frac{dt}{t^z}$ diverges. But for arbitrary $z \in \mathbb{C}$ the same idea turns out in a mess, the hint is: analyze  $\sum_n^{\infty} \big(\frac{1}{n^z} - \int_n^{n+1} \frac{dt}{t^z} \big) $",['complex-analysis']
+2878980,Understanding this very generic divergence theorem where the open set have border $C^k$,"I'm at a PDE class and my teacher gave a very generic definition of the divergence theorem. I can't find it anywhere. It's something like this: Definition: let $k\in \{1,2,\cdots,\infty\}$, $N\ge 2$ An open $\Omega\in\mathbb{R}^N$ has border of class $C^k$ if: $\Omega$ is bounded and given any $x_0\in\partial\Omega$, there is an
+  open $U_0$ containing $x_0$ and a diffeomorphism $\psi:U_0\to Q$,
+  where $Q = ]-1,1[^N$ such that $\psi(\Omega\cap U_0) = \{t\in Q: t_N>0\}$ $\psi(x_0) = 0$ $\psi(\partial \Omega\cap U_0) = \{t\in Q: t_N = 0\}$ Now he wrote these things: $X(t) = \psi^{-1}(t_1,\cdots,t_{N-1}, 0)$ $X:\{t'\in\mathbb{R}^{N-1}:|t_j|<1, j=1,\cdots,N-1\}\to U_0\cap\partial\Omega$ $$\vec{\theta}(t') = \left(\frac{\partial(x_2,\cdots,x_N)}{\partial(t_1,\cdots,t_{N-1)}}(t'),\cdots,\frac{\partial(x_1,\cdots,x_N)}{\partial(t_1,\cdots,t_{N-1)}}(t')\right)$$ then $\vec{\theta}(t')$ is normal to $\partial\Omega\cap U_0$ at $X(t')$ What are those derivatives? I don't recognize this notation and I don't know how it can be normal to anything. And why he picked the inverse image of $\psi$? The surface element $d\sigma$ of $\partial\Omega$ is represented in $U_0\cap \partial \Omega$ by $$|\vec{\theta}(t')|dt_1\cdots dt_{N-1}$$ finally we can define the exterior unitary normal in $\partial \Omega$: $$\vec{n}:\partial\Omega\to\mathbb{R}^N$$ $$|\vec{n}(p)| = 1, \forall p\in \partial \Omega$$ Divergence Theorem Let $\Omega$ be an open with boundary class $C^k$ and $\vec{X}(x) =
+ (X_1(x), \cdots, X_N(x))$ with $X_j\in C^1(\overline{\Omega}),
+ j=1,\cdots, N$ then $$\int_{\Omega}(\mbox{div} \vec{X})(x)dx =
+ \int_{\partial\Omega}\vec{X}(y)\cdot\vec{n}(y)d\sigma(y)$$ This seems to be a very generic view of the divergence theorem. And it seems that I need to understand what is an open set with a border and what does it mean for it to have class $C^k$. I also need to understand the surface element $d\sigma$. Is there a place where I can learn about those things but not too deep? They're just tools to solve PDEs Also, what does $C^n(\Omega)$ means? Also, the integral on $\Omega$ is supposed to be on an open of $\mathbb{R}^n$, but $div$ applied to $x$ is a real number, and $dx$ looks like a one dimensional thing. UPDATE: I'm downloading some books on vector calculus but I only find ones with a lot of wedge products and differential forms. I needed only a vector explanation of all this. Can someone point me a gook book?","['integration', 'divergence-operator', 'multivariable-calculus', 'vector-analysis', 'partial-differential-equations']"
+2878994,Hunting for a basis: Rational Canonical Form,"I am trying to understand how to find the matrix of transition for the rational canonical form purely using linear algebra (so no $F[x]$ modules). I do realize that Dummit & Foote provide a method for finding the matrix of transition for both RCF and JCF that involves keeping track of the row and column operations done to put our matrix in smith normal form. However, I am trying to do this without that trouble. Here is the particular matrix I'm going to work with: $$ A = \begin{bmatrix} 2 & 0 & 0 \\ 9 & 7 & 5 \\ -9 & -5 & -3 \end{bmatrix}$$ With little to no effort, we get that the minimal polynomial of $A$ is $m(x) = (x-2)^2$ so that the largest invariant factor, and hence the largest block has size 2. All in all we know that the corresponding matrix is
+$$ R = \begin{bmatrix} 0 & -4 & 0 \\ 1 & 4 & 0 \\ 0 & 0 & 2 \end{bmatrix} $$ A basis vector corresponding to the block of size 1 is just an eigenvector, and should be easy enough to find once we have found the other two vectors for the block of size 2. The block of size 2 should have as a basis $\{v, Av\}$. Now I'm not sure where to hunt for the vector $v$. I realize that we need for $Av = Av$ and $A^2 v = 4Av - 4v$. So the question is, where do we hunt for these basis vectors when finding the matrix of transition to the rational canonical form?","['matrices', 'linear-algebra']"
+2879015,Prove that $\int_0^x \frac{\sin t}{t} dt > \arctan x $ for $x>0$,"I'm finding some bounds for the Si function defined as
+$$
+\operatorname{Si}(x) := \int_0^x\frac{\sin t}{t}dt.
+$$
+I observed from WolframAlpha that the inequality
+$$
+\operatorname{Si}(x)>\arctan(x)
+$$
+holds for $x>0$. I tried to show this analytically but failed and could not find any references regarding this. Could someone help me with this?","['calculus', 'inequality', 'real-analysis']"
+2879027,"Any partition of $\{1,2,\ldots,100\}$ into seven subsets yields a subset with numbers $a,b,c,d$ such that $a+b=c+d$. [closed]","Closed. This question does not meet Mathematics Stack Exchange guidelines . It is not currently accepting answers. Please provide additional context , which ideally explains why the question is relevant to you and our  community. Some forms of context include: background and motivation, relevant definitions, source, possible strategies, your current progress, why the question is interesting or important, etc. Closed 5 years ago . Improve this question A set $M = \{1,2,\ldots,100\}$ is divided into seven subsets with no number in $2$ or more subsets. How do you prove that one subset either contains four numbers $a$, $b$, $c$, and $d$ such that $$a + b = c + d$$ or three numbers $p$, $q$, and $r$ such that $$p + q = 2r\,?$$
+I am having some issues with this question whether I don't fully understand the question or my arithmetic is wrong. Grateful for any help.","['pigeonhole-principle', 'functions', 'combinatorics', 'elementary-set-theory', 'problem-solving']"
+2879031,Logarithmic height of algebraic numbers,Let $a$ and $b$ algebraic numbers over $\mathbb{Q}$. Do you know (or recall) if there are simple uppper bounds relating the logarithmic height of $ab$  (or $a/b$) with the logarithmic height of $a$ and the logarithmic height of $b$? With logarithmic height of $a$ I mean here the logarithm of the absolute value of the largest (in the sense of absolute value) coefficient of the minimal polynomial of $a$. Thanks for your answers.,"['algebraic-number-theory', 'number-theory', 'reference-request', 'abstract-algebra', 'arithmetic-geometry']"
+2879039,Finding change of variables to give linear homogeneous system,"I have worked out $a = -5$ and $b = -5/2$ which I'm confident is correct.  However, what I'm struggling with is understanding what matrix $B$ is meant to become. Any help will be appreciated.
+Thanks","['matrices', 'change-of-variable', 'homogeneous-equation', 'ordinary-differential-equations']"
+2879041,"$|f'(x)|\le k|f(x)|$ for some $k$ and $f(a) = 0$ imply that $f(x)$ is zero on $[a,b]$.","Let $f: [a,b] \to \mathbb R$ be continuous on $[a,b]$ and differentiable on $(a,b)$. If $f(a) = 0$ and $|f'(x)|\le k|f(x)|$ for some $k$, then $f(x)$ is zero on $[a,b]$. I tried proving it using Legrange's Mean Value Theorem but couldn't get it. $f(x)$ is differentiable on $(a,b)$. $f(x)$ is continuous on $[a,b]$. Let $x$ belong to $[a,b]$ s.t $a < x$. Consider the interval $[a,x]$. By Legrange's Mean Value Theorem, $$\frac{f(x)-f(a)}{x-a} = f'(t) ; \ \ a \le t \le x.$$ Since $f(a)=0$, $$f(x)=(x-a)f'(t)$$ $$|f(x)| \le (x-a)k|f(t)|.$$ After this, I was thinking of proceeding with the inequality by putting $f(a)$ in the place of $f(t)$.","['calculus', 'derivatives']"
+2879056,Dimension of square rotated in 3D from projection on 2D,"I would like to track four points arranged as a square through 3D space.  The square can rotate freely in the three dimensions.  The example below left shows the square(blue) rotated 30 degrees about the x-axis, 60 degrees about the y-axis and 20-degrees about the z-axis.  On the right is what the camera sees.  The orange figure on left and right is the projection on xy plane. To track the distance from camera, I need to know the dimensions of the blue square. We know everything about the orange figure, all angles and lengths. My problem is I can't make the connection to the blue square. I would appreciate some idea on how to calculate the blue square dimensions from knowing the orange angles and lengths. Here is the Python 2.7 code to generate the figure: (the code has been updated to implement the answer) import numpy as np
+import math
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+def show_the_rotated_square():
+    #create the square in 2d with center at 0,0
+    square_2D = [[-1, 1],[1, 1], [1, -1], [-1, -1]]
+
+    #create a square in 3d so the square can be rotated in all three dimensions
+    square_3D = [add_z(point) for point in square_2D]
+
+    #create the three axis which the square will be rotated about
+    axis = [[1, 0, 0],[0,1,0],[0,0,1]]
+
+    X_ROTATE = 30
+    Y_ROTATE = 60
+    Z_ROTATE = 20
+
+    #create a list of angles the square will be rotated for each axis
+    theta = [np.radians(X_ROTATE),np.radians(Y_ROTATE),np.radians(Z_ROTATE)] 
+
+    #rotate the 3d square about all three axis
+    square_rotated_3D = rotate_point_list(square_3D,axis,theta)
+
+    #create 2d version by removing z element
+    square_rotated_2D = [remove_z(point) for point in square_rotated_3D]
+
+#   print(angle_between_points(square_rotated_2D[0],square_rotated_2D[1],square_rotated_2D[2]))
+
+    plot_3D(square_rotated_3D,121,""3D View, square rotated "" + str(X_ROTATE) + "" "" + str(Y_ROTATE) + "" "" + str(Z_ROTATE),show_projection = True)
+    plot_2D(square_rotated_2D,122,""Projection on XY plane (what camera sees)"")
+
+    solve(square_rotated_2D[0],square_rotated_2D[1],square_rotated_2D[3])
+    solve(square_rotated_2D[1],square_rotated_2D[2],square_rotated_2D[0])
+    solve(square_rotated_2D[2],square_rotated_2D[3],square_rotated_2D[1])
+    solve(square_rotated_2D[3],square_rotated_2D[0],square_rotated_2D[2])
+
+    plt.show()
+
+#see math.stackexchange for discussion of solution
+#https://math.stackexchange.com/questions/2879056/dimension-of-square-rotated-in-3d-from-projection-on-2d
+
+def solve(pa,pb,pd):
+
+    pb = pb - pa
+    pd = pd - pa
+    pa = pa - pa
+
+    xb = pb[0]
+    yb = pb[1]
+    xd = pd[0]
+    yd = pd[1]
+
+    v = -(xb * xd + yb * yd)
+    u = (xd**2 + yd**2) - (xb**2 + yb**2)
+
+    a = 1
+    b = -u
+    c = -(v * v)
+
+    #calculate discriminant
+    d = b**2 - 4*a*c
+
+    sol1 = (-b - math.sqrt(d)) / (2*a)
+    sol2 = (-b + math.sqrt(d)) / (2*a)
+
+    if (sol1>0):
+        calc_square_side_length(sol1,v,xb,yb,xd,yd)
+    if (sol2>0):
+        calc_square_side_length(sol2,v,xb,yb,xd,yd)
+
+def calc_square_side_length(s,v,xb,yb,xd,yd):
+    b = math.sqrt(s)
+    d = v / b
+
+    ab = math.sqrt(xb**2 + yb**2)
+    ad = math.sqrt(xd**2 + yd**2)
+
+    ablen = math.sqrt(ab**2 + b**2)
+    adlen = math.sqrt(ad**2 + d**2)
+
+    print(ablen,adlen) # ablen and adlen should be same and be the side lengh of original 2d square, which is 2.0
+
+#rotation_matrix code courtesy of:
+#https://stackoverflow.com/questions/6802577/rotation-of-3d-vector/12261243
+
+
+def rotation_matrix(axis, theta):
+    """"""
+    Return the rotation matrix associated with counterclockwise rotation about
+    the given axis by theta radians.
+    """"""
+    axis = np.asarray(axis)
+    axis = axis / math.sqrt(np.dot(axis, axis))
+    a = math.cos(theta / 2.0)
+    b, c, d = -axis * math.sin(theta / 2.0)
+    aa, bb, cc, dd = a * a, b * b, c * c, d * d
+    bc, ad, ac, ab, bd, cd = b * c, a * d, a * c, a * b, b * d, c * d
+    return np.array([[aa + bb - cc - dd, 2 * (bc + ad), 2 * (bd - ac)],
+                     [2 * (bc - ad), aa + cc - bb - dd, 2 * (cd + ab)],
+                     [2 * (bd + ac), 2 * (cd - ab), aa + dd - bb - cc]])
+
+def rotate_point_list(point_list,axis_list,theta_list):
+    point_list_return = []
+    for point in point_list:
+    for axis,theta in zip(axis_list,theta_list):
+        point = np.dot(rotation_matrix(axis,theta),point)
+        point_list_return.append(point)
+
+    return point_list_return
+
+def angle_between_points(p1,p2,p3):
+    v0 = p1 - p2
+    v1 = p3 - p2
+
+    angle = np.math.atan2(np.linalg.det([v0,v1]),np.dot(v0,v1))
+    return np.degrees(angle)
+
+def plot_3D(square,arrangement,title='',show_projection = False):
+    x = [point[0] for point in square]
+    y = [point[1] for point in square]
+    z = [point[2] for point in square]
+    x.append(x[0])
+    y.append(y[0])
+    z.append(z[0])
+
+    sa = fig.add_subplot(arrangement, projection='3d')
+    sa.plot(x,y,z,color=""darkblue"")
+
+    if show_projection is True:
+        colors = [""#FF0000"", ""#00FF00"",""#0000FF"",""#000000""]
+        for xx,yy,zz,cc in zip(x,y,z,colors):
+            sa.scatter(xx,yy,zz,color=cc)
+            xl = []
+            xl.append(xx)
+            xl.append(xx)
+            yl = []
+            yl.append(yy)
+            yl.append(yy)
+            zl = []
+            zl.append(zz)
+            zl.append(0)
+            sa.plot(xl,yl,zl,color = cc)
+
+        z = [0 for point in x]
+        sa.plot(x,y,z,color=""orange"")
+
+    AXIS_LIM = 2
+
+    sa.set_xlabel('X')
+    sa.set_ylabel('Y')
+    sa.set_zlabel('Z')
+    sa.set_xlim(-AXIS_LIM,AXIS_LIM)
+    sa.set_ylim(-AXIS_LIM,AXIS_LIM)
+    sa.set_zlim(-AXIS_LIM,AXIS_LIM)
+    sa.set_title(title)
+
+
+def plot_2D(square,arrangement,title='',color = 'darkorange'):
+    x = [point[0] for point in square]
+    y = [point[1] for point in square]
+    x.append(x[0])
+    y.append(y[0])
+    sa = fig.add_subplot(arrangement)
+    sa.plot(x,y,color = color)
+    colors = [""#FF0000"", ""#00FF00"",""#0000FF"",""#000000""]
+    for xx,yy,cc in zip(x,y,colors):
+        sa.scatter(xx,yy,color=cc)
+
+    AXIS_LIM = 2
+
+
+    sa.set_xlabel('X')
+    sa.set_ylabel('Y')
+    sa.set_xlim(-AXIS_LIM,AXIS_LIM)
+    sa.set_ylim(-AXIS_LIM,AXIS_LIM)
+    sa.set_title(title)
+
+def remove_z(point):
+    return np.delete(point,2)
+
+def add_z(point):
+    return np.append(point,0)
+
+fig = plt.figure()
+
+
+show_the_rotated_square()","['trigonometry', 'geometry']"
+2879067,"$\frac{dx}{dt} = p, \frac{dy}{dt} = q$: Solution of these ODE imply the solution is constant along characteristics of the form $qx − py = constant$.","My lecture notes state the following: When we were dealing with first order equations we saw that a differential operator of the form, $$p\frac{\partial}{\partial{x}} + q\frac{\partial}{\partial{y}}$$ Led to the characteristic equations $$\frac{dx}{dt} = p, \frac{dy}{dt} = q$$ The solution of these ODE in turn implied that the solution would be constant along characteristics of the form $qx − py = constant$ . Can someone please demonstrate this?","['differential-operators', 'characteristics', 'ordinary-differential-equations', 'partial-differential-equations']"
+2879072,If $f$ is entire and $\left|f\left(\frac{1}{\ln{(n+2)}}\right)\right|<\frac{1}{n}$ for every positive integer $n$ then $f=0$,"Let $f(z)$ be an entire function satisfying $$\left|f\left(\frac{1}{\ln{(n+2)}}\right)\right|<\frac{1}{n}$$ for every $n\in\mathbb{N}).$ Show that $f(z)=0.$ I need some help for this question, I am looking for some hints which helps to solve this problem (not for possible solution). I know pretty much popular theorems about entire functions, such as Liuville theorem, Casorati-Weierstrass and some nameless theorems. However, for this question, I am not sure what approach is the key. If I am not mistaken $f\left(\frac{1}{\ln{(z+2)}}\right)$ has essential singularity at $z=-1$ , so if I am right then maybe using Casorati-Weierstrass theorem is useful. I can also say as $n\to\infty$ , I get $|f(0)|\leq 0$ , so $f(0)=0$ . Hence, If I can show $f$ is constant it must be identically $0$ .","['complex-analysis', 'holomorphic-functions', 'entire-functions', 'analytic-functions']"
+2879129,How to understand partial differential equations in the sense of distribution?,"I have just studied some elementary distribution theory. However, when attempting to apply them in solving partial differential equations I encounter the following confusion. Consider the heat equation: $$ \frac{\partial u(x,t)}{\partial t} - k^2\Delta u(x,t) = 0,$$ it is certainly clear what this equality means in the sense of ordinary functions. However, when considering the solution $u(x,t)$ as a distribution my textbook makes the following remark: ""...we assume that $ u(x,t) \in C( [0,\infty),S'(\mathbb{R}^n) ) $, i.e., $u(x,t)$ is continuous in $t$, $t \geq 0$, with values in $ S'(\mathbb{R}^n) $..."" My question is what does this mean exactly? I mean, as far as I have encountered distributions has nothing to do with variables unless they are identified with measures or functions. Thus in general I must think of the distribution $u(x,t)$ as a functional acting on certain space of functions. I can try to make sense of this by perhaps looking at a map
+$$ t \mapsto u(x,t) \in S'(\mathbb{R}^n) $$ 
+which is continuous such that the argument $ x $ doesn't really play a role, hence I can consider $ u(x,.) $ as a distribution for every $t \in [0,1)$. Then again, if this is the case, how should I interpret derivative with respect to $t$? Any insight would be grateful! Thanks!","['distribution-theory', 'ordinary-differential-equations', 'partial-differential-equations']"
+2879130,How to show $\int_{0}^{\infty}\frac{x}{x^{2}+1}\log\left(\left|\frac{x^r+1}{x^r-1}\right|\right)dx = \frac{\pi^2}{4r}$?,"After playing around with a few values of $r$ , I have the following conjecture: $$\int_{0}^{\infty}\frac{x}{x^{2}+1}\log\left(\left|\frac{x^r+1}{x^r-1}\right|\right)dx = \frac{\pi^2}{4r}$$ for $r\gt 0$ . My question is whether or not this is true and how to show as such. I was inspired to ask this question after reading Cody's about showing $$\displaystyle \int_{0}^{\infty}\frac{x}{x^{2}+a^{2}}\log\left(\left|\frac{x+1}{x-1}\right|\right)dx=\pi\tan^{-1}(1/a)$$ One can see that the $r=1$ case of mine and the $a=1$ case of Cody's coincide. That integral with $r=1$ lends itself to contour integration in the upper half plane because $\log\left(\left|\frac{x+1}{x-1}\right|\right)$ is an odd function, making the integrand even. However, my integrand lacks that nice symmetry for arbitrary $r$ . For odd integers $r$ , we regain that symmetry but branch points in the upper half plane add complexity. I'm not sure whether the integral with irrational $r$ can be handled with complex techniques, so I feel unsure of how to proceed.","['integration', 'absolute-value', 'logarithms']"
+2879176,Integrate $\int_0^1 \sin^{-1}{\frac{x^2}{1+x^2}}dx$,"Integrate $\int_0^1 \sin^{-1}{\frac{x^2}{1+x^2}}dx$ I tried to put $x=\tan\theta$, which gives
+$\int_0^{\frac{\pi}{4}} {\sin^{-1}({\sin^2\theta}})\sec^2\theta d\theta$, but I don't know how to proceed after this.
+Is there something I am missing here?","['integration', 'definite-integrals', 'calculus', 'trigonometric-integrals', 'trigonometry']"
+2879200,A bounded sequence in metric space that has no convergent sequence,"Let consider first the space $$V=\{(x_1,x_2,...)\mid \sup_i |x_i|<\infty \}.$$ This is a complete metric space (refer to my course). Now I was wondering if the set $$\mathcal A=\{x\in \ell^\infty \mid \|x\|_{\ell^\infty }\leq 1\},$$
+is compact. I know that in a metric space, a set is compact $\iff$ its sequentially compact (i.e. every sequence has a convergent subsequence). I consider the sequence $$x_n=x^i_n,$$
+where $x_n^i=(0,0...,0,1,0,...)$ where the $1$ is at the $i^{th}$ position. In other words, $$x_1=(1,0,0,...)$$
+$$x_2=(0,1,0,0,...)$$
+$$x_3=(0,0,1,0,...)$$ We have that $$\|x_n^i\|_{\ell^\infty }=1$$
+for all $n$ and thus $(x_n)_n$ is a bounded sequence. What could be a convergent subsequence ? I guess that there is no convergent subsequence. To me, if a subsequence converge, it must converge to $0$ (I really don't know how to prove this), but in the same time the norm of the limit must be 1 I guess. So it can't have convergent subsequence. Am I right ? So $\mathcal A$ is not compact ?",['functional-analysis']
+2879212,"Prove that if $f$ differentiable in $x^*$ and $f(x^*)=0$, then $\liminf_{x\to x^*}\frac{|f(x)|}{||x-x^*||}=0$ if $n>1$","Let $f\colon\mathbb{R}^n\to\mathbb{R}$ be differentiable at $x^*$ and $f(x^*)=0$. Prove that if $n>1$, then $$\liminf_{x\to x^*}\frac{|f(x)|}{||x-x^*||}=0.$$
+Is this true for $n=1$? I know that because $f$ is differentiable in $x^*$, there is a linear transformation $L\colon \mathbb{R}^n\to\mathbb{R}$ such that $$0=\lim_{x\to x^*}\frac{|f(x)-f(x^*)-L(x-x^*)|}{||x-x^*||}=\lim_{x\to x^*}\frac{|f(x)-L(x-x^*)|}{||x-x^*||}.$$ How to proceed from there? And what is special about $n=1$?","['limsup-and-liminf', 'derivatives', 'real-analysis']"
+2879219,$f$ is a real valued function. $f$ is differentiable at a point. Does that imply $f$ is continuous in a neighbourhood of $a$?,"$f$ is a real valued function. $f$ is differentiable at a point say $a$. Does that imply $f$ is continuous in a neighbourhood of $a$? I think the answer is false, but I can not find a counterexample. By definition, if a function is differentiable at a point a then the function is defined in a neighbourhood of $a$. Am I right? We can only conclude that $f$ is continuous at that point $a$.","['continuity', 'derivatives', 'examples-counterexamples', 'real-analysis']"
+2879308,Converse part of triangular inequality hold equality when third point lies in the both point,"I was reading following proof. In that I understand first part But In converse part I do not understand Why if equality hold then d(x,z) is scalar times d(z,y)? As shown in yellow highlight. I do not find any reasoning for that. Any Help will be appreciated","['inner-products', 'proof-explanation', 'general-topology', 'metric-spaces']"
+2879351,Can these equations be considered as differential equations?,"Consider a differential equation with  a term containing $y(x_0)$, for example $$y'' - 2y' + y = y(x_0)$$ $x_0 \in \mathbb{R}$ is a constant. My question is, does such equations fall under the category of differential equations? I have never studied any equation with such a term. If its a differential equation, then $y(x_0)$ can be considered a constant coefficient?","['ordinary-differential-equations', 'real-analysis']"
+2879391,Proof of convergence for reciprocal of convergent sequence,"On page - 62 of Bartle and Sherbert's Introduction to Real Analysis, it is proved that- If $Z=(z_n)$ is a sequence of nonzero numbers that converges to nonzero limit z, then the sequence $(1/z_n)$ of reciprocals converges to $(1/z)$. However, i found the given proof somewhat difficult to understand, and made my own attempt at what i hoped was a simpler one. The said proof runs as follows- PROOF: $(z_n)_n\to z\neq0\quad(n\to\infty)$ $\Rightarrow$ $\forall\epsilon\gt0:\exists N_1\in \mathbb{N}:\forall n\geq N_1:\vert z_n -z \vert\lt\epsilon$ Now, for $(1/z_n)$: $$\forall  n \in \mathbb{N}:\vert 1/z_n -1/z \vert = \vert{ z-z_n\over z_n.z}\vert
+= { (\vert z_n - z\vert) \over (\vert z_n \vert . \vert z \vert) } \lt {\epsilon \over \vert z_n \vert \vert z \vert }
+= {\delta \over \vert z_n \vert}  \text{, where }\delta ={\epsilon \over \vert z \vert } $$ $\Rightarrow \vert 1/z_n - 1/z \vert \lt \delta / ( \vert z_n \vert)$ , for all $n\in\mathbb{N}$ Now, $\vert z_n \vert \gt 0$ and $\vert z_n \vert \in  \mathbb {R}, \epsilon/(\vert z_n \vert) \gt 0$ $\Rightarrow \vert 1/z_n - 1/z \vert  \lt \epsilon $ for all $n\in\mathbb{N}$ such that $\epsilon \gt 0 $ Thus, $(1/z_n) \to (1/z)$ Q. E. D. However, my fellow- students found it 'quite incomprehendible and jumbled'. MY question is - Is my proof correct ? If not, why ? If yes, how do I make it clearer ? Edit- The earlier edit by zzussee had somewhat changed my intent regarding the last part of the proof. I had actually intended - 
+$\vert 1/z_n - 1/z \vert \to \upsilon $ , where $\upsilon := { \epsilon \over (\vert z_n \vert )} $, where $\upsilon $ should be position as both $\epsilon $ and $ z_n $ are positive. Of course, this does not invalidate the answer by @Jonas Lenz but it explains both his and @ Lucas' comments about $\epsilon $ in the last part of the proof.","['limits', 'proof-verification', 'sequences-and-series', 'real-analysis']"
+2879401,Is the given set open ball in metric space or not?,"Metric space is $(C[0,1],||.||_\infty)$ with sup norm
+Let $f,g:[0,1]\to R$ be continuous functions and $f(t)<g(t)\forall t\in [0,1]$. $A=\{h\in C[0,1]|f(t)<h(t)<g(t) \forall t\in [0,1]\}$.
+Is $A$ is open ball in $C[0,1]$ or not? If not then what extra condition required to make it open ? As $f,g$ are on compact set then they have max and minima attained on domain somewhere. If $A$ is open then I have to find some radius $\epsilon $>0 such that $B(h_1,\epsilon)\subset$U for some $h_1 \in A$.As $h_1\in A$ $f(t)<h_1(t)$ hence $h_1(t)-f(t)=\delta >0$ But I think I required more smaller radius such that it lies? Any Help will be appreciated","['continuity', 'general-topology', 'metric-spaces']"
+2879426,Deriving the Taylor expansion $f(x+p) = f(x) + \nabla f(x+tp)^Tp$,"I'm trying to derive the Taylor formula: $$f(x+p) = f(x) + \nabla f(x+tp)^Tp$$ For that I think tha I just need to use the formula for one variable taylor  expansion and follow like here: https://math.stackexchange.com/a/222217/166180 . This answer kinda explains the formula I need but for an infinite expansion. I need a finite expansion which guarantees there's a $t$ in which the expansion is exact. I couldn't find a specific taylor theorem like this, so I'm trying to derive this forula and I think it has to do with the mean value theorem: $$f'(c) = \frac{f(x)-f(a)}{x-a}$$ for some $c\in(a,x)$ so $f'(c)x-f'(c)a = f(x)-f(a) \implies f(x) = f(a) + f'(c)x -f'(c)a$ It kinda looks like something I want. UPDATE: Take $a=0$ to get $f(x) = f(0) + f'(c)x$ Call $f$ as $\Phi$ to get: $$(1) = \Phi(t) = \Phi(0) + \Phi'(c)t$$ for some $c\in(0,t)$ If we take $\Phi(t) = \phi(x + pt)$ so $$\Phi'(c) = \lim_{a\to c}\frac{\phi(x+ct)-\phi(x+at)}{c-a} = \ ?$$ I need $\Phi'(c)$ to finish $(1)$ by writing everything in terms of $\phi$ and hopefully achieve the formula with the gradient. PS : how would I achieve the second order expansion $$f(x+p) = f(x) + \nabla f(x)^Tp + \frac{1}{2}p^T\nabla^2f(x+tp)p$$ ? I can't think of a second order version of the mean value theorem.","['multivariable-calculus', 'derivatives', 'taylor-expansion']"
+2879443,How to know when to complete the square,Question is: $$\int \frac{dx}{ x^2+8x+20}$$ Why can I not just solve for $A/(x+2) +B/(x+10)$ and integrate it this way? The answer on symbolab shows I need to complete the square of the denominator first but I don't know hen to do that or when to factor it out. Any help would be great!,['integration']
+2879475,How to argue that a series that isn't a power series is analytic?,"Let $f(z)=\sum_{n=0}^{\infty}\frac{z^{n}}{1-z^{n}}$.  Then $f$ converges in the unit disc.  I want to show that it is analytic in this region as well, but since it is not a power series I don't have any theorems to apply.  My only thought was to try and use similar reasoning as with power series: show that converges is uniform so that we can switch integral and sum to show that the integral of the series is 0, then apply Morera's Theorem.  But the problem is, according to Wolfram Alpha, $\int_{\gamma}\frac{z^{n}}{1-z^{n}}=\int_{0}^{2\pi}\frac{e^{int}ie^{it}}{1-e^{int}}dt$ doesn't converge. EDIT: To apply Morera's Theorem $\gamma$ should be closed path contained in the unit circle.  (It probably should have been obvious that the integral doesn't converge since the unit circle contains 1...).  So the above strategy does works (yay!) since the function is holomorphic in any closed disk with radius less than 1.","['complex-analysis', 'analytic-functions', 'sequences-and-series']"
+2879488,Chebyshev's inequality application and convergence - practical example,"Let $W_n$ be a random variable with mean $\mu$ and variance $\frac{b^2}{n^{2p}}$ , with $p>0$ and $b$ and $\mu$ constants. Show that $$ \lim_{n\to\infty} P(|W_n-\mu| \leq \epsilon) = 1 $$ The solution applies Chebychevs: $$ P(|W_n-\mu| \leq \epsilon) = 1 - P(|W_n-\mu| > \epsilon) $$ $$ \geq 1 - P(|W_n-\mu| \geq \epsilon) $$ $$ = 1 - P(|W_n-\mu| \geq \frac{\epsilon n^p}{b} \frac{b}{n^p}) $$ $$ \geq 1 - \frac{1}{(\frac{\epsilon n^p}{b})^2}$$ and then taking the limit $n\to\infty$ . I do not understand the change of signs in the second line? Also where does $\frac{\epsilon n^p}{b} \frac{b}{n^p} $ in the third line come from? Does this imply $W_n$ converges in probability to $p$ ? $$ \lim_{n\to\infty} P(|W_n-\mu| \geq \epsilon) = 1 - \lim_{n\to\infty}P(|W_n-\mu| < \epsilon) \leq 1 - \lim_{n\to\infty} P(|W_n-\mu| \leq \epsilon) = 0$$ So, this i do not understand. An explanation in plain english of this. This is the first time i worked on exercises for convergence.","['statistics', 'convergence-divergence', 'probability-theory']"
+2879531,In how many ways can $4$ same oranges and $6$ different apples be distributed to $5$ distinct boxes?,"If we have $4$ same oranges and $6$ different apples. In how many ways could we distribute them in $5$ different boxes? I have thought the first part of this problem as saying that the $4$ same oranges have $C(8,4)= 70$ ways of being distributed in $5$ different boxes (using the $C(n+k-1,k)$ formula). But for the $6$ different apples I cannot understand if I should use the $$ n^{k}=5^{6} $$ formula or the $$ \frac{(n+k-1)!}{(n-1)!} $$ formula where $k$ are the apples and $n$ are the boxes. I know the final answer will be the product of $C(8,4)$ and whatever the answer about the apples is, but I am not sure about the formula. If it is the first, why wouldn't the second one work? There is an extra question, which asks what percentage of the above describes the ways where $2$ exactly fruits are placed in each box. I have thought the answer might be $5! C(9,5)$, because the ways of distributing the first $5$ fruits are $5!$ and the ways of distributing the rest in $5$ different boxes are $C(n+k-1,k)$. Am I correct to assume that? I have also thought the formula $C(n-1,k-1)$ because the $C(n+k-1,k)$ does not give one apple to each $5$ necessarily.","['permutations', 'combinations', 'combinatorics', 'discrete-mathematics']"
+2879553,Cancellation in a presentation of a group,"In a method for presenting a subgroup we are given 
+A group
+$$\ G= \bigl\langle\, x, \ y \mid  x^2 yxy^3 , \ y^2 xyx^3\,\bigr\rangle$$
+So
+$$\ G/G' = \bigl\langle\,  x, \ y \mid  x^2 yxy^3 , \ y^2 xyx^3 , [x, \ y] \,\bigr\rangle.$$ Here we notice that $\ y=x$ in $G/G'$ and hence it is isomorphic to $\ C_7$. We then proceed to obtain a presentation for $G'$ by only using the Schereier transversal of $\ C_7$. However in another group, namely 
+$$\ G= \bigl\langle\,  x, \ y \mid  x^3 , \ y^3 , \ (xy)^3\,\bigr\rangle$$
+we say that $G/G'$ is isomorphic to $\ C_3 \times \ C_3$ although by since the quotient is abelian, we find from the last relation that $\; y^3 =   x^{-3} $, why don't we do the same? Why in this second example we did not do as the first one although we have the same result that $\; y^3 = x^{-3}\; $ which means $\;y=x $.","['combinatorial-group-theory', 'group-theory']"
+2879567,Intuition or motivation for the definition of an hypersurface. What are we actually trying to define?,"If we have $x^2 + y^2= 1 $ then we can solve for $y$ and $x$, at least in parts. The implicit function theorem gives us the conditions to solve these things. At this part of this book (Folland, about PDE), it says that if a hypersurface is given by that definition, we can use the implicit funciton theorem to solve for some variable in relation to the other $n-1$ other ones. So how does this definiton arise? I think the open sets $S$ and $V$ have something to do with locality of the solution, as we have inverse solutions for $x^2 + y^2 = 1$ only locally. The definition makes no sense to me, I'd like some help. UPDATE: It also talks about hyperplane without defining it. The only definition is of an hypersurface, which is also something I don't unerstand. What is one and another? Also, the implicit funciton theorem says that the jacobian must be invertible. The closest the book talks about this is when it says the gradient is nonvanishing, but I don't think it implies jacobian invertible. UPDATE : I'm trying to visualize it. The plane should be the subset $S$ of $\mathbb{R}^3$. $V$ is an open around $x_0$. If for every $x_0$ and every open $V$ we can find a function $\phi\in C^k(V)$ with $\nabla \phi$ nonvanishing on $S\cap V $ and $S\cap V  = \{x\in V: \phi(x) = 0\}$, then the plane is an hypersurface. There's no motivation anywhere on google (there's so little about the word hypersurface in general). So the main question is: what is this crazy definition suppose to define? What are the challenges in defining an hypersurface? (what even is an hypersurface?). Please remember that you're explaining to someone who have little background on this manifold thing etc (actually I don't even know what this term means at all) so a little background explanation would be good.","['multivariable-calculus', 'partial-differential-equations', 'real-analysis']"
+2879581,Show that $\int_0^n\sin x^2dx$ converges,"The question Okay. So I'm trying to solve the problem below for a previous exam in real analysis. Thus, only such methods may be used. The integral $\int_0^\infty\sin x^2dx$ is called a Fresnel integral and it arises in wave optics. Show that this integral converges, by proving that the sequence $a_n:=\int_0^n\sin x^2dx$ converges in $\mathbb{R}$. The question also comes with the below hint. Hint: Use the fact that
+  $$
+	\sin x^2=-\frac{1}{2x}\frac{d}{dx}\cos x^2.
+$$ It makes me think of using integration by parts, and that has been the hint in similar questions. However, when I do that things don't get easier. Consequently, I'm kind of stuck. Here are my computations $$
+	\int_0^n\sin x^2dx=-\int_0^n\frac{1}{2x}\frac{d}{dx}\cos x^2dx=[-\frac{1}{2x}\cos x^2]_0^n-\int_0^n\frac{1}{2x^2}\cos x^2dx.
+$$ Related questions There is a thread about evaluating the Fresnel integral called "" Evaluating $\int_0^\infty \sin x^2\, dx$ with real methods? "" and another one called "" Trig Fresnel Integral "", but none of the answers to these questions involve showing convergence as instructed in this question, and both involve the Gamma function, which wasn't included in my course on real analysis.","['sequences-and-series', 'fresnel-integrals', 'real-analysis']"
+2879640,"What is the maximal $m$, such that $\mathbb{Z}_2^m \leq GL(n, 2)$?","Is there any closed formula for the function $m(n)$, that is defined as the maximal $m$, such that there is $GL(n, 2)$ has a subgroup isomorphic to $\mathbb{Z}_2^m$? The only things I know currently, is that $m(1) = 0$ (as $GL(1, 2)$ is trivial) and $m(2) = 1$ (as $GL(2, 2)$ is isomorphic to $S_3$). With $GL(3, 2)$ the things become very complicated (as it is a simple group of order 168), so $m(3)$ or any other $m(n)$ with $3 \leq n$ is unknown to me currently. Any help will be appreciated.","['group-theory', 'abstract-algebra', 'finite-groups', 'linear-groups']"
+2879648,What is the physical significance of the determinants of orthogonal matrices having the value of $\pm 1$?,"I'm new to linear algebra and while studying orthogonal matrices, I found out that their determinant is always $\pm 1$ . Why is that so? What could be the physical significance behind it? I know that linear algebra can be intuitive when visualized, which 3B1B's videos made me realize, hence I would like to know more about this. Thanks in advance!","['determinant', 'matrices', 'orthogonal-matrices', 'linear-algebra', 'intuition']"
+2879650,Divisibility of an Evenly Spaced Binomial Coefficient Series,"By this paper , it can be shown that for $n>0$ and $N\in\mathbb{N}$
+$$\sum_{k=0}^n\binom{Nn}{Nk}=\frac{2^{Nn}}{N}\sum_{k=0}^{N-1}(-1)^{kn}\cos^{Nn}\left(\frac{k\pi}{N}\right)$$ Now, for a recursive sequence defined here,
+$$A_n(N)=-\sum_{k=0}^{n-1}\binom{Nn}{Nk}A_k(N); A_0(N)=1$$ and so $$A_n(N)+1=-\sum_{k=1}^{n-1}\binom{Nn}{Nk}A_k(N)$$ From here it can be easily obtained that $A_1(N)=-1$.  Now I originally wanted to show that for certain values, we have that $$A_n(N)+1\equiv 0\pmod{N+1}$$ But this seems to be only true for certain values of $N$, where $N=2,3,4,6$.  I determined this by an induction argument, whose base case is above.  For all $0<k<m$, we assume $A_m(N)+1\equiv 0\pmod{N+1}$.  This means that $A_m(N)\equiv N\equiv -1\pmod{N+1}$ and thus $A_m(N)=(N+1)q-1$ for $q\in\mathbb{Z}$.  Substituting into the above recursion yields $$A_m(N)+1=-\sum_{k=1}^{m-1}\binom{Nm}{Nk}[(N+1)q-1]=-(N+1)\sum_{k=1}^{m-1}\binom{Nm}{Nk}q+\sum_{k=1}^{m-1}\binom{Nm}{Nk}$$ The first RHS sum is necessarily divisible by $N+1$, so the second sum in question would have to be divisible by $N+1$.  However this is not always the case.  To see its divisibility by $2,3,4$ and $6$, note that \begin{eqnarray*}\sum_{k=1}^{m-1}\binom{Nm}{Nk}&=&\sum_{k=0}^{m}\binom{Nm}{Nk}-\binom{Nm}{0}-\binom{Nm}{Nm}\\&=&\frac{2^{Nm}}{N}\sum_{k=0}^{N-1}(-1)^{km}\cos^{Nm}\left(\frac{k\pi}{N}\right)-2\end{eqnarray*} And from this form, we can show the validity of divisibilities for $N=2,3,4,6$ by cases (replacing $N$ and working out the residue under modulus $(N+1)$) My question is this.  I KNOW that it is not true for all $N$ through a proof presented here .  Is there a way to either 1)  Find more values of $N$ where it holds 2)  if not, prove that for the remaining values of $N$, the hypothesis is wrong? The values of $N$ chosen $(2,3,4,6)$ are based due to the fact the formula above involves cosines and take on simple values to calculate algebraically.  I don't know how to show that it is invalid for the remaining or how to find other values of $N$.  Can anyone help guide the way? EDIT: So I used Mathematica to do a calculation of the divisibility up to $N=50$.    Using the binomial sum instead of the cosine sum, I was able to see that for the first 50 numbers of each recursion for $N$, the values of $N$ that seem to produce the divisibility results are those numbers that are prime powers minus 1, $p^\alpha$, for prime $p$ and positive integer $\alpha$.  This list is found as A181062 .  Can anyone confirm this?","['divisibility', 'number-theory', 'recurrence-relations', 'combinatorics', 'sequences-and-series']"
+2879655,Functional Equation $f(x+y)-f(x-y)=2f'(x)f'(y)$,"I am trying to solve the equation $f(x+y)-f(x-y)=2f'(x)f'(y)$ for all $f:\mathbb{R}\to\mathbb{R}$ non-constant, differentiable functions. Here is my progress: Any solution must be an even function and therefore zero is a critical point. Further if $f(x)$ is a solution, then $f(x)+c$ is also a solution for any constant $c.$ In addition $\dfrac{x^2}2, -\cos x$ and $\cosh x$ are some solutions of our functional equation. How can I solve this equation completely?","['functional-equations', 'recreational-mathematics', 'functions']"
+2879677,"Let $G = (V,E)$ be a tree, then $G$ is a caterpillar graph $\iff$ The line graph of $G$ contains a Hamiltonian path.","Here the line graph $L(G)$ of $G$ is defined by $L(G) := (E,\{ef : e,f \in E, e \bigcap f \neq \oslash\})$. I think I have an argument for the forward direction. If G is a caterpillar graph on $n$ vertices then it is a tree where all vertices are within distance 1 of a central path. So if this path has length $k$ we construct a new path of length $k-1$ in $L(G)$. Label the edges in the simple path $e_1, e_2, ..., e_k$ in $G$ in order of connectedness and label the vertices in the simple path just constructed $v_1, v_2, ..., v_k$ respectively. Then, on each pair of vertices $(v_i,v_{i+1}), i = 1, 2, ..., k-1$, construct the complete graph $K_{r}$ using both $v_i$ and $v_{i+1}$ and $r-2$ new vertices, where $r$ is the number of edges incident on the vertex in $G$ shared by $e_i$ and $e_{i+1}$. Since every complete graph contains a Hamiltonian path between any two vertices, this line graph can be traversed by following such a path in the complete graph from $v_i$ to $v_{i+1}$ when available, and otherwise going straight from $v_i$ to $v_{i+1}$. Have I missed anything? I am struggling to come up with ideas for the converse.","['graph-theory', 'combinatorics', 'hamiltonian-path']"
+2879688,Find a differential equation for geodesics..,"A sphere in $\mathbb{R}^3$
+is parametrically given by
+$$
+x = a \sin(\theta) \cos(\phi) \\
+y = a \sin(θ) \sin(\phi)\\
+z = a \cos(θ)
+$$
+where $a > 0$ is the radius of the sphere, $θ$ is the polar angle $(0 < θ < π)$ and $\phi$ is the
+azimuthal angle $(0 < \phi < 2π)$ . Find a differential equation for geodesics $\phi = \phi(\alpha) $ on the sphere.
+Show that for arbitrary constants $\phi_0$ and $\alpha$, the function $\phi(\theta) - \phi_0 = \sin^{-1} (\alpha \cos (\theta))$ satisfies the differential equation. My solution So, I think I know how the solution goes, however I am stuck on finding derivative in the middle, and after that I do not know how to proceed.
+So first we need basically to find geodesics. We do that knowing that $ds^2=dx^2+dy^2+dz^2$. Then we get that $ds^2 = a^2d\theta^2 + a^2\sin^2(\theta)\, d\phi^2$. (You can trust me with that). Hence we need to find a minimum of an integral 
+$$\int_A^B\sqrt{a^2d\theta^2 + a^2\sin^2(\theta)\, d\phi^2} = 
+a \int_A^B\sqrt{1+\sin^2(\theta)\phi^{'2}(x)}\,d\theta$$ since $\phi=\phi(\theta) \rightarrow d\phi = \phi'(\theta)\,d\theta$. Hence to find a minimum to that integral we need to find a solution to Euler Lagrange equation $\dfrac{dF}{d\phi} - \dfrac{d}{dx}\left(\dfrac{d\phi}{d\phi'}\right)=0$. $\dfrac{dF}{d\phi} =0$ since our equation is independent of $\phi$. So we get that $$\frac{dF}{d{\phi'}} =\text{const}$$
+Now could anyone please help me to find 
+$$\frac{dF}{d{\phi'}}$$ with an explanation please.","['geodesic', 'derivatives', 'mathematical-modeling', 'ordinary-differential-equations']"
+2879761,Show that $GL_n(\mathbb{F}_{23})$ has subgroup of index $2$,"Show that $GL_n(\mathbb{F}_{23})$ has subgroup of index $2$ We know that $|GL_n(\mathbb{F}_{23})|=(23^n-1)(23^n-23) \dots (23^n-23^{n-1})$ and therefore is even. I thought about Cauchy theorem but I don't know that  $GL_n(\mathbb{F}_{23})$ is abelian... Any ideas? EDIT Ok so I get it that I should is the first isomorphism theorem, and get that the kernel is of index $2$, but I don't understand how to build that isomorphism...","['group-homomorphism', 'group-theory', 'normal-subgroups', 'group-isomorphism']"
+2879766,Sharing a pie evenly among an unknown number of people. [duplicate],"This question already has answers here : Minimum Cake Cutting for a Party (2 answers) Closed 5 years ago . This is a question inspired by the question ""Nine gangsters and a gold bar"" on the Puzzling Stack Exchange. Suppose you're throwing a party, and you know that either 7, 8, or 9 people will arrive. Before anyone arrives, you want to cut the pie into the fewest number of pieces such that you can give everyone an equal amount. In this case, you can cut the pie into 18 pieces of the following sizes (this is conjectured to be the minimal number of pieces). $$\frac{1}{168}, \frac{1}{72}, \frac{1}{56}, \frac{1}{36}, \frac{2}{63}, \frac{1}{28}, \frac{23}{504}, \frac{1}{21}, \frac{25}{504}, \frac{5}{84}, \frac{31}{504}, \frac{4}{63}, \frac{19}{252}, \frac{5}{63}, \frac{1}{12}, \frac{47}{504}, \frac{7}{72}, \frac{1}{9}$$ Then you can divide this into nine parts: $$
+\left(\frac{1}{168}, \frac{23}{504}, \frac{5}{84}\right), 
+\left(\frac{1}{72}, \frac{7}{72}\right), 
+\left(\frac{1}{56}, \frac{47}{504}\right), 
+\left(\frac{1}{36}, \frac{1}{12}\right), 
+\left(\frac{2}{63}, \frac{5}{63}\right), 
+\left(\frac{1}{28}, \frac{19}{252}\right), 
+\left(\frac{1}{21}, \frac{4}{63}\right), 
+\left(\frac{25}{504}, \frac{31}{504}\right), 
+\text{ and }
+\left(\frac{1}{9}\right).
+$$ Into eight parts: $$
+\left(\frac{1}{168}, \frac{1}{28}, \frac{1}{12}\right),
+\left(\frac{1}{72}, \frac{1}{9}\right),
+\left(\frac{1}{56}, \frac{1}{21}, \frac{5}{84}\right),
+\left(\frac{1}{36}, \frac{7}{72}\right),
+\left(\frac{2}{63}, \frac{47}{504}\right),
+\left(\frac{23}{504}, \frac{5}{63}\right),
+\left(\frac{25}{504}, \frac{19}{252}\right),
+\text{ and }
+\left(\frac{31}{504}, \frac{4}{63}\right)
+$$ And into seven parts:
+$$
+\left(\frac{1}{168}, \frac{1}{72}, \frac{1}{21}, \frac{19}{252}\right), 
+\left(\frac{1}{56}, \frac{1}{36}, \frac{1}{28}, \frac{31}{504}\right), 
+\left(\frac{2}{63}, \frac{1}{9}\right), 
+\left(\frac{23}{504}, \frac{7}{72}\right), 
+\left(\frac{25}{504}, \frac{47}{504}\right), 
+\left(\frac{5}{84}, \frac{1}{12}\right), 
+\text{ and }
+\left(\frac{4}{63}, \frac{5}{63}\right)
+$$ The question I'm interested in an algorithm that can produce such a minimal pie cut. In this case, it would take in the set of the possible numbers of guests, $\{7,8,9\}$, and output the list of fractions above—or a different list of minimal length. I don't particularly care about the computational complexity of the program. I am interested in proving that the program outputs the minimal number of ""slices"". More examples $$
+\begin{align*}
+  f(\{2\}) = f(\{1,2\}) &= \left(\frac{1}{2},\frac{1}{2}\right) \\
+  f(\{n\}) = f(\{1,n\}) &= \underbrace{\left(\frac{1}{n},\frac{1}{n},\cdots,\frac{1}{n}\right)}_n \\
+  f(\{2,3\}) &= \left(\frac{1}{3},\frac{1}{3},\frac{1}{6},\frac{1}{6}\right)
+\end{align*}
+$$","['integer-partitions', 'combinatorics', 'algorithms']"
+2879783,Example of a CW complex that is not a $\Delta$-complex?,"Hatcher notes in chapter 2.1 (in the paragraph just preceding the section on simplicial homology (page 104 in my edition)), that all $\Delta$-complexes can be realized as CW complexes with some added restrictions on the characteristic maps. Is there a simple example of a CW complex that is not a $\Delta$-complex?","['general-topology', 'cw-complexes', 'algebraic-topology']"
+2879815,A Problem dealing with the Binomial Distribution,"Below is my solution to a problem from a text book. I do not have confidence that my solution is right. I feel like I am missing something. Am I? Thanks, Bob Problem: An airline finds that $5$ percent of the persons making reservations on a
+certain flight will not show up for that flight. If the airline sells $160$
+seats tickets for a fight with only $155$ seats, what is the probability
+that a seat will be available for every person holding a reservation and planning on flying. Answer: First realize that we have a binomial distribution with $n = 160$, $p = 0.95$
+and $q = 0.05$. We are going to approximate that with a normal distribution.
+\begin{eqnarray*}
+u &=& np = 160(0.95) = 152 \\
+\sigma^2 &=& npq = 0.95(0.05)(160) =7.6 \\
+\sigma &=& 2.75681 \\
+\end{eqnarray*}
+Observe that $155$ is $1.08821$ standard deviations above the mean. We then run the following command in R:  pnorm(1.08821) and got $0.8617488$. We
+conclude the probability that all the passengers will have seats is
+$0.8617488$. The book gets $0.8980$. We will now do the problem again using
+Yates's correction. This time we ask what is the probability that we have $155.5$ passengers or less.
+Now we are  $1.26991$ standard deviations above the mean.  We then run the following command in R:  pnorm(1.26991) and got $0.0.89794$ which matches the answer in the book.","['statistics', 'probability']"
+2879862,Reference Request-Discrete Mathematics,"Being a student of Graduate Level, we are learning some good pure mathematics nowdays.
+Studying Discrete Mathematics is somewhat different I thought. We are said that Finite Set is a set that has a finite number of elements. Informally, a finite set is a set which one could in principle count and finish counting. But what does finite mean here? Instead Our professor defined finite as which is not infinite. where infinite set $A$ is a set such that there exists a bijection from some proper subset $B \subset A $ to     A. I tried to search library for some reference, but none are written from Pure Mathematics Point of view, hence
+I request you to suggest me a reference book with some sensible definitions(Pure Mathematics point of view) and some good amount of quality problems I would like to learn the following topics(Problems Solving is more focused) 1- Finite-Infinite 2-Functions and Relations 3- Countable-Uncountable 4-Posets Thanks","['elementary-set-theory', 'book-recommendation', 'discrete-mathematics', 'reference-request']"
+2879883,Proving $f'$=$g'$ has some c such that $g=f+c$,"Suppose that $f$ and $g$ are differentiable functions on $(a,b)$ and suppose that $g'(x)=f'(x)$ for all $x \in (a,b)$. Prove that there is some $c \in \mathbb{R}$ such that $g(x) = f(x)+c$. So far, I started with this: Let $h'(x)=f'(x)-g'(x)=0$, then MVT implies $\exists$ c $\in \mathbb{R}$ such that $h'(c) = \frac{h(b)-h(a)}{b-a} =0$. Then $h'(c)=0 \implies h(c)=c$ After this i'm not sure where to go, or if this is correct at all, any hints?
+This is also my first post in Latex so sorry if there's any mistakes!","['derivatives', 'analysis', 'real-analysis']"
+2879919,Reference request for proof of L.Schwartz's theorem,"The following statement is used by Otto Forster (page 224 of Lectures on Riemann Surfaces ) in the proof of finiteness of sheaf cohomology group $H^1(Y,\mathcal O_E)$ : Theorem of L. Schwartz. Suppose $E$ and $F$ are Fréchet spaces and $\varphi$, $\psi\colon E\to F$ are continuous linear mappings such that $\varphi$ is surjective and $\psi$ is compact. Then the image of the mapping $\varphi-\psi\colon E\to F$ has finite codimesion in $F$. The reference, however, is written in French. Is there any other source for the proof of the above theorem?",['functional-analysis']
+2879935,Volume enclosed by paraboloid and plane,"The volume, $V$, enclosed by paraboloid $z=x^2 + y^2$ and the plane $z=3-2y$ can be expressed as a triple integral. Determine the limits describing the enclosed volume. By evaluating the integral, show the volume is $8\pi$.$\\$ There is then a hint that $\cos^4\theta = \frac{1}{8}\cos4\theta + \frac{1}{2}\cos2\theta + \frac{3}{8}$. I worked out the limits in Cartesian as
+$V=\int_{y=-3}^{y=1}{\int_{x=-\sqrt{4-(y+1)^2}}^{x=\sqrt{4-(y+1)^2}}{\int_{z=x^2+y^2}^{z=3-2y}dz}dx}dy$ This looks pretty hard to compute though, so I then made the polar limits as 
+$V=\int_{R=0}^{R=2}{\int_{\theta=0}^{\theta=2\pi}{\int_{z=R^2}^{z=3-2Rsin\theta}R dz}d\theta}dR$, but when I compute this I don't get $8\pi$. I'm wondering if this is me making a calculation error, or if the limits are incorrect. I also never used the hint, so was wondering if anyone could shine a light on when that comes in handy. Thanks!","['integration', 'multivariable-calculus']"

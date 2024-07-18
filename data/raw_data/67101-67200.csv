@@ -1,0 +1,427 @@
+question_id,title,body,tags
+800474,"Find all holomorphic functions on $\mathbb{C}$, except for some singularities, such that $|f(z)|\leq C(|z|^{3/2}+|z-1|^{-3/2}), z\in\mathbb{C}-\{1\}$","First I wrote the Laurent series of $f(z)$ around $z=1$:
+$$
+f(z)=\sum_{n=-\infty}^{-1}c_n(z-1)^n+\sum_{n=0}^{\infty}c_n(z-1)^n.
+$$
+Now if $|z|$ becomes very large, the first sum with the negatives powers becomes very small. So for some $\varepsilon >0$ we have 
+$$
+\left|\sum_{n=0}^{\infty}c_n(z-1)^n\right|\leq C|z|^{3/2}+\varepsilon\leq(\varepsilon '+C)|z|^{3/2}.$$
+ Now I want to use Louiville's theorem, but I don't know how that works here exactly. Can I say that all terms after $n=2$ are $0$? I need some help on this on this exercise. Thanks in advance.","['functions', 'complex-analysis']"
+800489,Lagrange's Trigonometric Identity,"Lagrange's Trig identity is
+$$
+1+\cos\theta+\cos 2\theta +\cdots + \cos n \theta=\frac{1}{2}+\frac{\sin\frac{(2n+1)\theta}{2}}{2\sin \frac{\theta}{2}},\quad (0<\theta <2\pi).
+$$
+How can we prove this identity using series method and complex variables?  I tried to use 
+$$
+\sum_{n=0}^\infty z^n=\frac{1}{1-z}\quad |z|<1
+$$
+and writing left hand side as
+$$
+\sum_{n=0}^\infty (\cos \theta)^n=\frac{1}{2}+\frac{\sin\frac{(2n+1)\theta}{2}}{2\sin \frac{\theta}{2}}.
+$$
+Re-arranging this I get
+$$
+\sum_{n=0}^\infty (\cos \theta)^n-\frac{1}{2}=\frac{1}{2}+
+\sum_{n=1}^\infty (\cos \theta)^n=\frac{\sin\frac{(2n+1)\theta}{2}}{2\sin \frac{\theta}{2}}.
+$$
+Now if I deal with the right hand side 
+$$
+2\sin \frac{\theta}{2}=2\Im (e^{i\theta/2} ),\quad \sin\frac{(2n+1)\theta}{2}=\Im \big(e^{i(2n+1)\theta/2}\big).
+$$
+This is where I am stuck now. Thank you for reading","['trigonometry', 'sequences-and-series', 'complex-analysis']"
+800490,If $\sum{a_n}$ converges does that imply that $\sum{\frac{a_n}{n}}$ converges?,"I know if $\sum{a_n}$ converges absolutely then $\sum{\frac{a_n}{n}}$ converges since $0\le \frac{|a_n|}{n} \le |a_n| $ for all $n$ so it converges absolutely by the basic comparison test and therefore converges. However, I cannot prove the convergence of $\sum \frac{a_n}{n}$ if $\sum{a_n}$ converges but not absolutely even though I suspect it to be true. Can you give me a proof or a counterexample for this?",['sequences-and-series']
+800492,Help with geometry problem,"I have the following problem that has been annoying me for ages, I can get so close to the answer. I'll outline my working so far below. In the diagram, $|AB|=|OF|=1$ , whereas $|AO|=p$ and $|OG|=q$ . You may assume that all lines are straight. $\angle OAB, \angle OGH, \angle COG$ are right angles and $|AB|=|CO|$ . Well from the outlook we know $|AB|=|OF|=1$ and $|AO|=p$ and $|OG|=q$ . Now we can show by Pythagoras that $|OB|=\sqrt{p^2+1}$ . Also $|FG|=q-1$ and since $\Delta COF\sim\Delta HGF$ by $AA$ rule with have that $|GH|=q-1$ . Now by Pythagoras on $\Delta OGH$ we get $|OH|=\sqrt{q^2+(q-1)^2}$ . Now we can create the triangle $\Delta BIH$ where $I$ the vertice that is horizontal to $H$ and vertical to $B$ . Sorry for the awful paint picture :). And now when I try to use Pythagoras on this triangle I eventually end up with $$(p+q)^2=pq(2q+2p-pq)$$ This apparently can be reduced to the correct answer according to Wolfram Alpha but I can't seem to see the way to do it. I feel like it's something really obvious but I can't see it. Any ideas? Here's the original image .",['geometry']
+800496,How many nonabelian groups of order 2009? (Check work),"I just need someone to check this argument. Let $G$ be a nonabelian group of order $2009$.  The prime factorization of $2009$ is $7^2 \cdot 41$.  Let $n$ be the number of Sylow 7-subgroups. Then $n \equiv 1$ mod $7$ and $n$ divides $41$.  Since $41$ is prime, we must have $n =1$ or $n=41$, but $41 \equiv 6$ mod $7$.  Thus $n=1$ and we have a unique Sylow 7-subgroup $H$. Since $H$ is the unique Sylow 7-subgroup, we have that $H$ is a normal subgroup of $G$.  Taking the quotient we have that $|G/H|=41$, so $G/H$ is cyclic of order 41. Since $G/H$ is cyclic, $G$ is abelian.  Thus there is no nonabelian group of order $2009$.","['groups-enumeration', 'abstract-algebra', 'sylow-theory', 'finite-groups', 'group-theory']"
+800498,How do I write a rigorous proof of the following problem: $(A \triangle B) \cup C \neq (A \cup C) \triangle (B \cup C)$,"Question: How do I write a rigorous proof of the following problem: Does the following equality hold true for any sets $A$, $B$ and $C$:
+$$
+(A \triangle B) \cup C = (A \cup C) \triangle (B \cup C)
+$$
+where $\triangle$ denotes a symmetric difference in the book I'm reading. The above I easily see with Venn diagrams and understand that both sides represent different sets. Writing it down though, rigorously at that, is a big challenge for me. Here's how I've written it down. I decided to simplify the RHS and prove that both sets are not quite the same set. $$
+(A \cup C) \triangle (B \cup C) = 
+$$
+$$
+((A \cup C) \backslash (B \cup C) \cup ((B \cup C) \backslash (A \cup C)) = _*
+$$
+$$
+(A \backslash (B \cup C)) \cup (B \backslash (A \cup C)) = _*
+$$
+$$
+(A \backslash B) \backslash C \cup (B \backslash A) \backslash C = _*
+$$
+$$
+((A \backslash B) \cup (B \backslash A)) \backslash C =
+$$
+$$
+(A \triangle B) \backslash C
+$$ So I get the following equality:
+$$ (A \triangle B) \cup C = (A \triangle B) \backslash C$$
+Here I say that if $x \in C$, then $x \in$ the LHS set but $\notin$ the RHS set, which means that the two sets are different, so the initial equality doesn't hold true. The $=_*$ symbol means that those transitions were intuitively made by me. They seem obvious to me by looking at their respective Venn diagrams but I'm not sure that this is enough to another reader. So, on separate sections of my paper I write the corresponding sets in set-builder notations and try to simplify them so that I get the set-builder notation of the next set, so that I continue my proof. I can also show them here if you want. Background: I'm reading a book about Toplogy, which begins with elementary set theory topics. I have basic understanding of sets, so I'm trying to solve every problem presented along with the theory. With certain problems, however, I'm struggling with presenting rigorous proofs for what seem to be basic and rather elementary facts. And by rigorous I mean a proof that even I, when reading later, will have no difficulty understanding without making 0_o faces. My proofs usually begin with one or two pages of trying different starting approaches, drawing Venn diagrams, etc. until I see the problem in its entirety. Since these proofs are not verified by any authority I have my own common sense to decide whether I have presented them right. And I want to learn to do them right.",['elementary-set-theory']
+800508,Expected value of number of draws,"We have $5$ number in a bag: $(1,3,5,7,9)$. We draw one from the bag and then put it back. We do this until the sum of the numbers can be divided by $3$. Whats the expected value of the number of draws? My idea was to solve it with Markov-chains:
+States: $0,1,2$. So numbers$\mod 3$. The matrix will be:
+$\begin{pmatrix}
+2/5 & 2/5 & 1/5 \\
+1/5 & 2/5 & 2/5 \\
+2/5 & 1/5 & 2/5
+\end{pmatrix}$ Then we have an equation system: 
+$k_1=1+2/5k_1+2/5k_2$, $\ k_2=1+1/5k_1+2/5k_2$ and $k_3=0$. Even if I solve this, I'm not sure how to continue. Thanks for help.","['markov-chains', 'probability-distributions', 'probability', 'expectation']"
+800534,"Could somebody validate my proof regarding the limit of $\ln(x_n)$ when, $x_n$ tends to $a$?","So, let me cearly state the problem: Let $(x_n)$ be a convergent sequence, with: $ x_n > 0 $, $\forall n$, n natural number, and $x_n \to a$, with $a>0$. Then $\ln{x_n} \to \ln{a}$. Here is my idea for a proof: Our goal is to proof that there $\forall\epsilon>0$ there is some $n_{\epsilon}$, such that $\forall n \ge n_{\epsilon} $, we have that $|\ln{x_n}-\ln{a}|<\epsilon$. So here is what I did. First: $|\ln{x_n}-\ln{a}| = |\ln{\frac{x_n}{a}}| $ Then, beacause $\ln{x} <x$, $\forall x>0$, it easily follows that $\ |\ln{x}| <x$, $\forall x>0$. Applying this, we have that: $$|\ln{x_n}-\ln{a}| = |\ln{\frac{x_n}{a}}| < \frac{x_n}{a} = \frac{x_n-a+a}{a}= \frac{x_n-a}{a} +1  $$ Now, we use the basic property of the absolute value: $x_n-a \le |x_n-a|$, that gives us: $$|\ln{x_n}-\ln{a}| <   \frac{x_n-a}{a} +1 \le   \frac{|x_n-a|}{a} +1 $$ Now, we use the fact that $ x_n \to a $. So, $\forall\epsilon>0$ there is some $n_{\epsilon}$, such that $\forall n \ge n_{\epsilon} $, we have that $|x_n-a|<\epsilon$. We choose an epsilon that takes the form $a(\epsilon_0-1)$. This choice is possible for any $\epsilon_0$. Now, we have managed to obtain that: $$|\ln{x_n}-\ln{a}| < \frac{a(\epsilon_0-1)}{a} +1 = \epsilon_0, \forall n \ge n_{\epsilon} $$ Since $\forall \epsilon_0 > 0$ we can find an $n_{\epsilon}$, such that $\forall n \ge n_{\epsilon}$, the above inequality is staisfied, our claim is proved. So, can you please tell me if my proof si correct? I've tried to find a proof, only for the limit of sequences! This problem has been on my nerves for s while. Also, probably there is some simpler way to do it, but I couldn't find it.","['logarithms', 'probability-limit-theorems', 'real-analysis', 'limits']"
+800566,If $A$ is D-Infinite then $|P_{\infty}(A)|=|P(A)|$,"I want to prove that if $A$ is a D-Infinite set (i.e. it contains a countable subset $X$), then the set of the infinite parts of $A$, $P_{\infty}(A)$ has the same cardinality of $P(A)$. I know that if I have sets $|B|=|C|$ such that $|B \cup C|=|B|$; $B \subset D$ and $C \subset (D-B)$ then $|D|=|D-B|$. How can I apply this to the initial theorem? I can consider two cases: Case 1 = $A$ is countable.
+Then the proof is simple. Case 2 = $A$ is more than countable.
+And here I'm stuck! Can I do this without the Axiom of choice or the Countable Axiom of choice?
+Thank you.","['elementary-set-theory', 'axiom-of-choice']"
+800575,Extrema of $x+y+z$ subject to $x^2 - y^2 = 1$ and $2x + z = 1$ using Lagrange Multipliers,"Find the extrema of $x+y+z$ subject to $x^2 - y^2 = 1$ and $2x + z = 1$ using Lagrange multipliers. So I set it up: $$
+1 = 2x\lambda_1 + 2\lambda_2 \\
+1 = -2y\lambda_1 \\
+1 = \lambda_2
+$$ Plug in for $\lambda_2$: $$
+1 = 2x\lambda_1 + 2 \\
+1 = -2y\lambda_1 \\
+$$ So we work with: $$
+1 = 2x\lambda_1 + 2 \\
+1 = -2y\lambda_1 \\
+1 = x^2 - y^2 \\
+1 = 2x + z
+$$ After some algebra I got $x = y$ as a solution but that's impossible because of the constraint $1 = x^2 - y^2$. What am I missing?","['optimization', 'multivariable-calculus', 'lagrange-multiplier']"
+800589,Find the inverse to the matrices in group $G_M$ denoted by...,"Let $G_M$ denote the $2\times2$ matrices of the form $$A=\begin{pmatrix} a & b \\ 0 & 1 \end{pmatrix}$$
+where $a$ and $b$ are elements of $Z_3$ and $a$ is not equal to zero. Find the inverse of each one of the matrices belonging to this group. I know that the matrix inverse is on the form as the matrix A above. One of the matrices belonging to the group $G_M$ is $$B=\binom{2\ 2}{0\ 1}\qquad$$
+since if a and b is in $Z_3$ then 0<=a,b<=2 with a>0.
+The matrix multiplication gives me
+$$B*A =\binom{2a\ 2b+2}{0\ 1}\qquad=\binom{1\ 0}{0\ 1}\qquad=I$$ Now i can solve the equation
+$$2a=1 (in Z_3)$$
+and
+$$2b+2=0 (in Z_3) <=> 2b=1 (in Z_3)$$. So, these equations tells us, since it equal to 1, that a and b are the multiplicative inverses to 2. Therefore I can with Euclid algoritm find a and b, since these equations tells us that$$2a-1=3k <=> 2a-3k_1=1 (in Z)$$
+and
+$$2b-1=3k <=> 2b-3k_2=1 (in Z)$$
+From here we can see that GCD(2,3)=1 and the euclid algoritm tells us that it excist two integers x,y in $Z$ such
+$$2x+3y=1$$ This gives my $3=2*1+1$ $2=1*2$
+and therefore
+$$1=3+(-1)*2=3+2*2$$ Furhtemore, since $3=0$ in $Z_3$ we get that
+$$2*2=1 (in.Z_3)$$ this tells us that x=2. And since the solution above will be the same for the equations $2a=1$ and $2b=1$ in $Z_3$, we can tell that a=b=2 . Putting this in A gives us the inverse matrix $$A=\binom{2\ 2}{0\ 1}\qquad$$
+but it's wrong. They say that b=1. Where am i doing wrong?","['discrete-mathematics', 'group-theory']"
+800634,Power of a statistical test,"I was working on the following problem: Consider two probability density functions on $[0,1]: f_0(x) = 1$, and $f_1(x) = 2x$. Among all tests of the null hypothesis $H_0: X \sim f_0(x)$ versus the alternative $X \sim f_1(x)$, with significance level $\alpha = 0.1$, how large can the power possibly be? I think we need to begin by looking at an arbitrary test with significance level $\alpha = 0.1$ but I am having a hard time doing this. I am not even sure this is the direction we want to head in so I was hoping to get some hints regarding this problem.",['statistics']
+800657,Solving this inequality,"Question : Solve: $$\frac{5x-6}{x+6}<1$$ My attempt: $$\frac{5x-6-x-6}{x+6}<0$$
+$$\Rightarrow \frac{4x-12}{x+6}<0$$
+$$\Rightarrow \frac{x-3}{x+6}<0$$
+$$\Rightarrow (x-3)(x+6) < 0$$ Thus, it implies that the answer is $-6 < x < 3$. However, in my textbook, it is given as wrong answer. Can please someone tell what is the correct procedure for this. Thanks.","['inequality', 'arithmetic', 'algebra-precalculus']"
+800741,"How to tell if $T(x,y,z) = (y \sin x, z \cos y, xy)$ is one-to-one and/or onto?","$T(x,y,z) = (y \sin x, z \cos y, xy)$ from $\mathbb{R^3} \rightarrow \mathbb{R^3}$ To show 1-to-1, we want to show: $$y \sin x = y' \sin x' \\
+z \cos y = z' \cos y' \\
+xy = x'y'$$ I'm not sure what to do here algebraically, since we can't divide anything since we don't know if $x, y, z, x', y', z'$ might be a $0$ value. For onto, we want to solve for $x, y,$ and $z$: $$y \sin x = a \\
+z \cos y = b \\
+xy = c $$ Again, we don't know if any of these values may be a $0$, so we can't be too careful in dividing by $0$. What should I do from here?",['multivariable-calculus']
+800744,Banach-Mazur Game: Proof about winning strategies,"I have to hold a presentation about the Banach-Mazur-Game to undergraduates this week. It should all stay very simple, so I will mainly only talk about the ""original"" Banach-Mazur Game on $\mathbb{R}$. So we play for the set $ A \in \mathbb{R}$. Player I and II alternate choose arbitrary intervals $I_{0} \supseteq I_{1} \supseteq \dots \supseteq I_{2n-1}$, where player I is choosing the intervals with even index, and player II is choosing the intervalls with odd index. Player I wins, when $\bigcap_{i \in \mathbb{N}} I_{i} \cap A \neq \emptyset$, otherwise player II wins. I now want to proof, that there exists a winning strategy for player II (that means, a ""rule"" by which player II has to choose her/his intervals) iff A is meager. meager $\Rightarrow$ winning strategy for II is pretty easy winning strategy $\Rightarrow$ meager is giving me troubles: The proofs in the books are all very long and technical. My advisor gave me the following proof, which I think is either wrong or which I don't understand yet: Let player I choose the first interval $I_{0}$. Then play the game with changed roles for $A^c$. It follows, that player I has a winning strategy, if $A^c$ is meager in $I_0$. (i) My advisor kept claiming, the Banach-Mazur game is symmetric (not quite sure I know what that means), thats why this changing roles works (also not sure what that means, is it just, that player I now plays for empty intersection, and player II for nonempty?) (ii) Maybe this is a really easy thing, but I don't see where I'm using, that player II has a winning strategy and how it follows, that A has to be meager?? I would be really thankful for some thought here before I go bother my advisor again...!!!","['general-topology', 'game-theory', 'descriptive-set-theory']"
+800763,Can three points from a 2-dimensional plane always be transformed to an equilateral triangle in 3-dimensional space?,"Given the following three points $$A(x_{1},y_{1})\\
+B(x_{2},y_{2})\\
+C(x_{3},y_{3})\\$$
+and assuming that at least two of these given points are different, how can $z_{1}$, $z_{2}$ and $z_{3}$ be defined so that
+$$A'(x_{1},y_{1},z_{1})\\
+B'(x_{2},y_{2},z_{2})\\
+C'(x_{3},y_{3},z_{3})\\$$
+form an equilateral triangle? It's easy to follow intuitively that such $z$ values always exist as long as at least two of the original points are not equal, but how could this be proven rigorously?",['trigonometry']
+800771,How do I resrict delta here?,"Prove that $\lim_{x\to 1}(x^2-1)=0$ $|(x^2 -1) -0| < \epsilon$
+\*
+$|x^2 - 1| < \epsilon$
+\*
+$|(x+1)(x-1)| < \epsilon$
+\*
+$|x+1||x-1| < \epsilon$ I know I need to restrict delta now but how do I do that?",['limits']
+800790,"What is the maximal torus in the Lorentz group $O(m,n)$?","I'm close to certain it's just the product of the maximal tori of $O(m)$ and $O(n)$, but I can't quite prove it. I've tried the following: $\newcommand{\mattwo}[4]{\left(\begin{array}{cc}#1&#2\\#3&#4\end{array}\right)}$ Any element of the Lorentz group can be decomposed into $$\mattwo{P}{0}{0}{Q}\exp\mattwo{0}{X}{X^T}{0}$$ Where $P, Q$ are orthogonal block matrices, $P\in O(m)$, $Q\in O(n)$. So we can definitely pick maximal tori in $P$ and $Q$ (call them $T_1, T_2$), and $T_1\times T_2$ will definitely be a torus in $O(m,n)$. To prove it's maximal, assume not. I try to find a contradiction using the fact that tori must be abelian. That's where things get a little ugly. Take an arbitrary element $\mattwo{P'}{0}{0}{Q'}\exp\mattwo{0}{X}{X^T}{0}\in O(m,n)$ and supposed for the sake of contradiction that it lives in a larger torus containing $T_1\times T_2$. Then it must commute with every element in $T_1\times T_2$. This means for every $P\in T_1, Q\in T_2$, we must have $$\mattwo{P}{0}{0}{Q}\mattwo{P'}{0}{0}{Q'}\exp\mattwo{0}{X}{X^T}{0}=\mattwo{P'}{0}{0}{Q'}\exp\mattwo{0}{X}{X^T}{0}\mattwo{P}{0}{0}{Q}$$ Knowing that $\exp\mattwo{0}{X}{X^T}{0}$ is symmetric, we can say $$\exp\mattwo{0}{X}{X^T}{0}=\mattwo{X_1}{X_2}{X_2^T}{X_3}$$ Which multiplies out to $$\mattwo{PP'X_1}{PP'X_2}{QQ'X_2^T}{QQ'X_3}=\mattwo{P'X_1P}{P'X_2Q}{Q'X_2^TP}{Q'X_3Q}$$ and this gives us \begin{align*}
+PP'X_1&=P'X_1P\\
+PP'X_2&=P'X_2Q\\
+QQ'X_2^T&=Q'X_2^TP\\
+QQ'X_3&=Q'X_3Q\\
+\end{align*} which must hold for every $P\in T_1, Q\in T_2$. This seems like it would be a strict enough set of four equations that would force $\exp\mattwo{0}{X}{X^T}{0}=\mattwo{1}{0}{0}{1}$, which would then force $P'\in T_1$, $Q'\in T_2$, but I can't for the life of me get the four equations to imply that.","['matrices', 'group-theory', 'algebraic-topology', 'lie-groups']"
+800830,If $|X|<|Y|$ then $|Y|=|Y-X|$ (with $Y$ infinite),"Like the title says, I would like to prove that if $|X|<|Y|$ then $|Y|=|Y-X|$. (with $Y$ infinite) I know I have to use the axiom of choice, but I've no idea about how to proceed. Any help is welcome :-)","['cardinals', 'elementary-set-theory', 'axiom-of-choice']"
+800862,Convergence of power towers,"Let's define the sequence $\{s_n\}$ recursively as
+$$s_1=\sqrt2,\ \ \ s_{n+1}=\sqrt2^{\,s_n}.$$
+Or, in other words,
+$$s_n=\underbrace{\sqrt2^{\sqrt2^{\ .^{\ .^{\ .^{\sqrt2}}}}}}_{n\ \text{levels}}.$$
+The sequence is monotonically growing, and rapidly converges to a limit $$\lim\limits_{n\to\infty}s_n=2.$$
+I'm interested in estimating its convergence speed. Based on numerical data, I conjectured that
+$$\ln\left(2-s_n\right)=n\ln\ln2+c_{\sqrt2}+O\big(\left(\ln2\right)^n\big)$$
+for some constant $c_{\sqrt2}\approx-0.458709787761420587059021...$ Could you suggest possible approaches to prove (or refute) this conjecture? I am also interested in a possible closed form of the constant $c_{\sqrt2}$. Update: We can try to generalize this problem to other bases beyond $\sqrt2$. Let's use a usual notation for tetration $${^n}a=\underbrace{a^{a^{\ .^{\ .^{\ .^a}}}}}_{n\ \text{levels}}.$$
+It's known that for all $1/e^e<a<e^{1/e}$ there exists a limit$${^\infty}a=\lim\limits_{n\to\infty}{^n}a=e^{-W\left(-\ln a\right)},$$
+where $W(z)$ is the Lambert $W$ function , the inverse of the function $x\mapsto x\,e^x$. I conjecture that for all $1<a<e^{1/e}$
+$$\ln\left({^\infty}a-{^n}a\right)=n \ln\ln\left({^\infty}a\right)+c_a+O\left(e^{n\ln\ln\left({^\infty}a\right)}\right),$$
+where $c_a$ is some constant that depends on $a$ but not on $n$ (also note that $\ln\ln\left({^\infty}a\right)<0$, so the last term is exponentially small).","['sequences-and-series', 'convergence-divergence', 'calculus', 'asymptotics', 'power-towers']"
+800865,The antiderivative of $\cos^5(x)\sin^5(x)$ - is this incorrect?,"I like to check my answers with wolframalpha, and this one's stubbornly coming up as false when set equal to its answer for the antiderivative, but I can't figure out where I'm going wrong. Using the identity $\cos^2x = (1-\sin^2x)$, I rewrote the integral as: $$\int \cos(x)(1-\sin^2x)^2(\sin^5x)\,dx$$ $$u = \sin x\\
+du = \cos x\,dx\\
+dx = du/\cos x$$ Canceling out the stray cosine, that turns into $\int(1-u^2)^2u^5 \, du$ Expanding, it's $\int (1-2u^2+u^4)u^5\,du = \int (u^5-2u^7+u^9)\,du$ $$= \frac{\sin^6 x}{6}-\frac{\sin^8 x}{4}+\frac{\sin^{10} x}{10}+C$$ Basically, does anybody see an error here? Is there an error?",['integration']
+800899,Equivalent of $e^{-x^2}\frac{d^n}{dx^n}e^{x^2}$,"Let $f(x)=e^{x^2}$ and write $f^{(n)}(x)=P_n(x)f(x)$ where $P_n$ are polynomials. Then find an equivalent for $P_n(x)$ for every fixed positive $x$ . My attempt : $f(x)=\exp(x^2) \quad f'(x)=2x\exp(x^2) \quad f''(x)=2\exp(x^2)(1+x^2)$ So $f''(x)-xf'(x)+2x^2f(x)=0$ It's a second order differential equation but I am not sure that it help here, perhaps the solution are the polynomial $P_n$ ? I cannot generalize the derivative so I guess is there exsit an other approach I cannot find it by myself. Thank you in advance","['functions', 'ordinary-differential-equations', 'real-analysis']"
+800902,Solving of the first-order nonlinear differential equation,Good day. Can you give me advice about solution of the equation $(x+1)(y'+y^2)=-y$? I guess it is Riccati's equation.,['ordinary-differential-equations']
+800925,Probability question - (Probably) Bayes' Rule and Total Probability Theorem,"I just took a probability final exam and was fairly confident in my solution of 28/31, but I wanted to be sure... because according to http://www.stat.tamu.edu/~derya/stat211/SummerII02/Final.Summer02.doc which has it as the second question, the answer is .6627. What's discerning is that they have the decimal equivalent of 28/31 as one of their answers which makes it seem like they know something I don't... ""Seventy percent of all cattle are treated by an injected vaccine to combat a serious disease. The probability of recovery from the disease is 1 in 20 if untreated and 1 in 5 if treated. Given that an infected cow has recovered, what is the probability that the cow received the preventive vaccine?"" Here's my solution: Let A be the event a cow recovered, let B be the event a cow received the vaccine. We are given: P(A|B) = 1/5
+
+P(A|~B) = 1/20
+
+P(B) = 7/10 We want to find P(B|A), so use Bayes' rule and the total probability theorem to find P(B|A) = P(A|B) x P(B) / (P(A|B) x P(B) + P(A|~B) x P(~B) ). Plugging in the values from what's given above, we get (.2 x .7) / (.2 x .7 + .05 x .3) which gives 28/31. If I'm wrong, I'd love to be pointed in the right direction haha Thank you!","['statistics', 'probability']"
+800928,How to figure whether it is a compact operator,"How to figure whether it is a compact operator: $$T:C[0,1]\rightarrow C[0,1] $$ $C[0,1]$:the space of all continous function on [0,1] with supremum norm $$(Tx)(t)=\int^t_0 x(s)ds, \ \ \forall t\in[0,1]$$
+Could you please help with this question.","['compact-operators', 'functional-analysis', 'real-analysis']"
+800989,Simple Integral $\int_0^\infty (1-x\cot^{-1} x)dx=\frac{\pi}{4}$.,"Hellow I am trying to prove this result.
+$$
+I:=\int_0^\infty (1-x\cot^{-1} x)dx=\frac{\pi}{4}.
+$$
+The indefinite integral exists for this integral.
+The function $\cot^{-1} x$ is the arc-cotangent function, not the multiplicative inverse.  Note, we can not just break the integral up into two pieces because we will have problems with divergence. Using the relation 
+$$
+x\cot^{-1} x=x \tan^{-1} \frac{1}{x},\to \quad  I=\int_0^\infty \left(1-x\tan^{-1} \frac{1}{x}\right)dx
+$$
+may be of help to some but didn't help me.  I am not sure if I am missing a clever substitution, perhaps integration by parts will work, I obtained using this method
+$$
+I=(x-x^2\cot^{-1} x)\big|^\infty_0-\int_0^\infty \frac{x^2}{x^2+1}dx+\int_0^\infty x\cot^{-1} x \, dx
+$$
+but this is clearly a problem since we have divergence issue now. The indefinite integral is given by
+$$
+\int (1-x\cot^{-1} x ) dx =\frac{1}{2}\left(x+\tan^{-1} x-x^2 \cot^{-1} x\right)
+$$
+but I am unable to prove this result.  Thanks.","['calculus', 'integration', 'definite-integrals', 'real-analysis', 'complex-analysis']"
+800994,"monotone class theorem, proof","I am having difficulty with this proof: It is the three sentences I have colored that is very difficult. Could someone please explain why they are true? red line: I understand ""Since A is an algebra"", but why the conclusion? green line: ""Why does it follow that M(A)=M""? blue text: I dont understand the conclusion?","['monotone-class-theorem', 'measure-theory', 'real-analysis']"
+800997,Flip a coin 6 times. What is probability of at least 4 heads?,"I can figure out the much simpler case of the probability of getting at least 2 heads in 3 coin flips: There are 8 (2^3) ways to flip a coin 3 times: HHH, HHT, TTT, TTH, HTH, HTT, THT, THH. 4 of these contain 2 or more heads. Therefor the probability of at least 2 heads in 3 coin flips is 4/8. How could I have done this without writing out all the possibilities and counting the ones with 2 or 3 H's? Today the Indiana Pacers won the first game in the 4 out of 7 series with the Miami Heat. Assuming that either team has a 50% chance of winning each of the remaining games, what is the probability of the Heat winning 4 of the remaining games?",['probability']
+801023,"Given that $x$ is a rational number, is $\sin(x\pi)$ always expressible through radicals?","This is a theory I just thought of and I am wondering if there is truth to it. Here is the logic that I am working upon: Using Euler's formula, you can deduce that
+$$ (-1)^x = i\sin(x\pi)+\cos(x\pi)$$
+and thus,
+$$\sin(x\pi) = Im((-1)^x)$$
+$$\cos(x\pi) = Re((-1)^x)$$ Now, let us let x be a rational number expressible as $\frac pq$ where $p$ and $q$ are integers Using this, we can calculate $(-1)^x$ by doing
+$$ a+bi=(-1)^{\frac pq} $$
+$$(a+bi)^q=(-1)^p$$
+Now, $(a+bi)^q$ can be expanded into a polynomial and grouped into real parts, and since $p$ is an integer, $(-1)^p$ will be either $1$ or $-1$. We now group it into 2 polynomial parts, the real and imaginary, and set the imaginary part equal to $0$ and the real part equal to $1$ if $p$ is even and $-1$ if $p$ is odd. Here is my example: $$x = 2/3$$
+$$(a+bi)^3=(-1)^2=1$$
+$$a^3-3ab^2+i(3a^2b-b^3)=1$$
+which gives us the two equations:
+$$a^3-3ab^2=1$$ $$3a^2b-b^3=0$$ Now we have a system two equations with two variables and so they can just be solved using algebra, and since $Im((-1)^x)=Im(a+bi)=b$ and $\sin(x\pi) = Im((-1)^x)=b$, then can't we just solve for b with the system of equations and then that is our answer for $\sin(\pi x)$ Since it is a polynomial then shouldn't be be expressible through radicals and thus, shouldn't all $\sin(x\pi)$ be expressible through radicals?","['trigonometry', 'complex-numbers']"
+801039,Existence of fixed point,"I will copy the definition I am using just to make things clearer. Def. Let $(X,d)$ be a metric space and let $F:A(\subset X)\rightarrow X$. We say F is a contraction if there exists $\lambda$ where $ 0\leq \lambda <1$ such that:
+$$
+d(F(x),F(y))\leq \lambda d(x,y)
+$$ for all $x,y\in X$. Now the contraction mappping theorem states that if $(X,d)$ is a complete metric space, then $F$ has a unique fixed point. If we let $x_0$ be any point in $X$, we can define a sequence $(x_n)_{n=1}^{\infty}$ such that $x_1=F(x_0)$, $x_2=F(x_1)$ $\dots$ I understood why it follows that $x_n$ is Cauchy. Then since $(X,d)$ is complete, $(x_n)$ converges to a limit in $(X,d)$, say $x$. The second claim of the theorem is that $x$ is a fixed point. But it was not totally clear to me why this is the case. The proof I have seen says:
+$x$ is a fixed point iff $d(F(x),x)=0$ (so far so good). Then for any $n$:
+$$
+d(x,F(x)) \leq d(x,x_n)+d(x_n,F(x)) \\= d(x,x_n) + d(F(x_{n-1}),F(x))\\
+\leq d(x,x_n)+\lambda d(x_{n-1},x) \rightarrow 0 \text{ as } n\rightarrow \infty
+$$ But this only proves that $d(F(x),x)\rightarrow0$ and not $d(F(x),x)=0$. How can I be certain that $x$ is indeed a fixed point?","['metric-spaces', 'analysis']"
+801042,A group acting on functions of functions of functions,"Given a group acting on a set $X$, there is a standard way to define an action of the group on the set of functions of $X$. This can be extended to the set of functions of functions of $X$ as I show below, and it can also be extended to functions of functions of functions (and of course to higher orders beyond that). However, for the latter (and higher) cases, I can't see a way to write out the action explicitly in terms of function compositions, rather than in terms of the action on ""lower-order"" functions. My question is about whether it's possible to do this. The following paragraphs present the problem in greater detail. Consider a group $G$ acting upon a set $X$. If we consider the set $A$ of functions $a:X\to P$ for some set $P$, there is a natural action of $G$ upon $A$ given by $(g.a)(x) = a(g^{-1}.x)$ for all $g\in G$, $a\in A$, $x\in X$. Here the period '$.$' is used to represent both the action of $G$ upon $X$ and the action of $G$ upon $A$. As a concrete example, let $X$ be the set of faces of a cube and $G$ be its group of rotational symmetries. Then $A$ can be thought of as the set of colourings of the cube's faces, with $P$ being the set of colours. If we write the action of $G$ upon $X$ as $g(x)$ instead of $g.x$ then we can write the action of $G$ upon $F$ as $g.a = a\circ g^{-1}$. This is useful because it allows us to eliminate $x$ from the notation, and allows us to think in terms of function composition rather than the more abstract notion of a group action. Let us now consider the set $B$ of functions of functions of $X$, that is, the set of functions $b:A\to Q$ for some set $Q$. An example might be a functiom that counts the number of blue faces that are adjacent to red faces. We want to define a natural action of $G$ upon $B$. Since we already have an action of $G$ on $A$ we can apply the same trick again and write $(g.b)(a) = b(g^{-1}.a)$, for all $a\in A$, $b\in B$, $g\in G$. In terms of funtion composition this becomes  $(g.b)(a) = b(a\circ g)$, but I can't see an obvious way to eliminate $a$ from the notation as we were able to do with $x$ above. Finally, let us consider the set $C$ of functions $c:B\to R$ for some set $R$. That is, functions of functions of functions of $X$. As before we can write $(g.c)(b) = c(g^{-1}.b)$. However, what I can't see is how to write out this action explicitly in terms of function composition, rather than in terms of the action on $B$. That is, I want to get rid of the '$.$' in the right-hand side of this equation, but I can't see a way to do it. My question is whether it is possible to do this, and if so, how. If it can be done for functions of functions of functions, can it also be done for functions of functions of functions of functions, etc.?","['discrete-mathematics', 'group-theory', 'abstract-algebra']"
+801077,Is $\cos(\frac{\pi}{3})$ exactly equal to 0.5 or approximately equal to 0.5,"We know that $\cos(\frac{\pi}{3})=\frac{1}{2}$, but the expansion for $\cos(x)$ is as follows: $$ \cos(x)=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\ldots$$ So this would make $$\begin{align}
+\cos(\frac{\pi}{3}) & = 1-\frac{(\frac{\pi}{3})^2}{2!}+\frac{(\frac{\pi}{3})^4}{4!}-\frac{(\frac{\pi}{3})^6}{6!}+\ldots\\
+\Rightarrow\frac{1}{2} & = 1-\frac{(\frac{\pi}{3})^2}{2!}+\frac{(\frac{\pi}{3})^4}{4!}-\frac{(\frac{\pi}{3})^6}{6!}+\ldots\qquad{(1)} 
+\end{align}$$ Here the $LHS$ is rational, but the $RHS$ appears to be irrational. So would it be correct to say that $\cos(\frac{\pi}{3})$ is approximately equal to $0.5$ or is there any proof that the $RHS$ in equation $(1)$ is exactly equal to $0.5$","['trigonometry', 'taylor-expansion']"
+801086,Determining how well a curve fits data,"What are some commonly used ways to examine how well a curve fits a given set of data?
+ I am aware of the R Squared test but I was wondering if there are other tests that take into account the appearance of the curves as well. To be more precise, I am trying to model the spread of diseases using various methods such as the classic differential equation SI model as well as others that take into account a bit of network structure. The latter models have a distinctly different appearance than the S shape of the SI model. Thanks.",['statistics']
+801091,Integration factor - First Order Nonlinear ODE,"I can't seem to find the proper integrating factor for this nonlinear first order ODE. I have even tried pulling a bunch of substitution and equation-manipulating tricks, but I can't seem to get a proper integrating factor. $$\frac{1}{x}dx + \left(1+x^2y^2\right)dy = 0$$ EDIT: Due to MSE users complaining about my lack of proof of work, intent of conceptual understanding, etc, here is exactly why I am stuck. To start off, this ODE is obviously inexact: $$\frac{\partial}{\partial y}\left(\frac{1}{x}\right) \neq \frac{\partial}{\partial x}\left(1+x^2y^2\right)$$ And so in order to make this exact (if we choose to go down this route) we must (I'll stick to standard convention/notation) find a function $\mu$ such that if we multiply the entire original ODE by it, we will be able to integrate and solve using 'exact ODE' methods. This is shown as: $$ \mu \left(\frac{1}{x}\right)dx + \mu \left(1+x^2y^2\right)dy = 0$$ $$ \frac{\partial}{\partial y} \left(\mu\left(\frac{1}{x}\right) \right) = \frac{\partial}{\partial x} \left(\mu \left(1+x^2y^2\right) \right)$$ Now expanding by chain rule, we get: $$\mu_y \left(\frac{1}{x}\right) = \mu_x \left(1+x^2y^2\right) + \mu \left(2xy^2\right)$$ Now here is where I'm stuck. We want to avoid dealing with a PDE, so we try to stick to good old ODE techniques by assuming that $\mu$ is either a function of only x or only y. 
+Let's first assume that $\mu$ is only a function of y. The following will then be true. $$ \mu_x = 0$$ $$ \mu_y \left(\frac{1}{x} \right) = \mu \left(2xy^2 \right)$$ $$ \frac{d\mu}{\mu} = 2x^2y^2 dy$$ By looking at the right hand side, we see that it just won't work - x and y are related, so we can't have that integral. Now let's assume that $\mu$ is only a function of x. The following will then be true. $$ \mu_y = 0$$ $$ \mu_x \left(1+x^2y^2\right) = -\mu \left(2xy^2\right)$$ $$ \frac{d\mu}{\mu} = \frac{-2xy^2}{1+x^2y^2} dx$$ And, once again, if you look at the right hand side, we have an integral that we can't immediately work out, just as in the previous case.",['ordinary-differential-equations']
+801116,Does the Euler characteristic of a manifold depend upon the field of coefficients?,"Define the Euler characteristic of a space $X$ to be $$\chi(X)= \sum_i \dim H_i(X, \mathbb Q)$$ This is obviously not necessarily well-defined for an arbitrary space $X$, so let $X$ be a manifold (manifolds have only finitely many nonzero homology groups, and each homology group is finitely generated). I would prefer to keep this question entirely in the realm of closed manifolds. There's an obvious restatement of this for $\Bbb Q$ replaced by another field $F$, so let $$\chi(M,F) = \sum_i \dim H_i(M, F)$$ Question: When does $\chi(M)=\chi(M,F)$ for all fields $F$? This is true for every finite CW-complex $M$, but it is my impression that not every closed manifold is a finite CW-complex, though I don't have a counter-example. If this is the case (again, for closed manifolds), what is a reference for this fact? If it's false, the question stands. Does the Euler characteristic depend on the field? I'm hoping for either a reference or a counter example. Edit: The question was resolved below for smooth manifolds via Morse theory, but as far as I can tell this argument is not generally extendable to the topological case (see: Morse theory in TOP and PL categories? ). Hopefully there's a known fully topological answer.","['general-topology', 'geometric-topology', 'algebraic-topology']"
+801128,"the morphism from $SL(2,\mathbb{Z})$ to $SL(2,\mathbb{R})$","For every morphism $\rho: SL(2,\mathbb{Z}) \to GL(2,\mathbb{R})$, then $Im(\rho)\subset SL(2,\mathbb{R})$? Thanks.","['representation-theory', 'group-theory']"
+801137,Reid's UAG problem 4.7: isomorphism of affine line with a curve,"Let $C:$ $(Y^2=X^3+X^2)\subset \mathbb{A}^2$; the familiar parametrization 
+  $$ \varphi\colon \mathbb{A}^1 \to C,$$ given by 
+  $$ T \mapsto (T^2-1,T^3 -T)$$
+  is a polynomial map, but is not an isomorphism (why not?). Find out whether the restriction 
+  $$ \varphi'\colon \mathbb{A}^1\setminus\{1\} \to C$$ is an isomorphism. Miles Reid, Undergraduate Algebraic Geometry , Problem 4.7. (it is assumed that the underlying field $k$ is algebraically closed) My understanding: We know that $\varphi$ is an isomorphism (of affine varieties) iff 
+$$ \varphi^* \colon k[C] \to k[\mathbb{A}^1] $$
+defined by
+$$ \varphi^* (g) := g \circ \varphi$$
+is an isomorphism (of rings).
+Now $$k[C]=k[X,Y] / (Y^2 - X^3 - X^2),$$
+and denote $k [\mathbb{A} ^1 ]$ by $k[T]$. The image of $\varphi^*$ is easily seen to be the $k$ algebra generated by $T^2-1$ and $T^3-T$, which is not the whole of $k[T]$, so $\varphi^*$ is not an isomorphism, hence neither is $\varphi$. For the second part, asking whether the restriction is an isomorphism, I see that defining 
+$$ \psi (x,y) = y/x$$ where $x\ne 0$, and $\psi(0,0)=-1$, we get an inverse to $\varphi$. But $\psi$ is not a polynomial map. My question: How to show $\varphi'$ is or isn't an isomorphism ?",['algebraic-geometry']
+801157,"How prove that there exists $\xi\in(a,b)$ with $f'(\xi)=\frac{f(\xi)-f(a)}{b-a}$","Let $f(x)$ be continuous on $[a,b]$, differentiable on $(a,b)$, and with some $c\in(a,b)$ such that $f'(c)=0$. Show: There exists $\xi\in(a,b)$ such that
+  $$
+f'(\xi)=\dfrac{f(\xi)-f(a)}{b-a}
+$$ My idea: I know this: Let
+$$F(x)=e^{-\dfrac{x}{b-a}}[f(x)-f(a)]$$
+$$\Longrightarrow F'(x)=-\dfrac{1}{b-a}e^{-\dfrac{x}{b-a}}[f(x)-f(a)]+e^{-\dfrac{x}{b-a}}f'(x)$$
+$$\Longrightarrow F'(c)=e^{-\dfrac{c}{b-a}}[f'(c)-\dfrac{f(c)-f(a)}{b-a}]=-\dfrac{F(c)}{b-a}$$ If $f'(x)$ is continuous, I can prove this problem, But this problem condition can't have $f'(x)$ have continuous, so I can't continue","['derivatives', 'real-analysis', 'analysis']"
+801159,right derivative of a continuous function,"Let $f:(a,b)\longrightarrow \mathbb{R}$ be continuous. Suppose  $D_+f(x)=\lim_{h\to 0+}\frac{f(x+h)-f(x)}{h}\geq 0$ for any $x\in (a,b)$. Prove that $f(x_1)\geq f(x_0)$ whenever $x_1\geq x_0$. How to prove? Thanks.","['calculus', 'functions', 'real-analysis', 'analysis', 'derivatives']"
+801202,On the sum of relatively prime number $<N$,"Let $A(N)$ be a function which is the sum of all numbers relatively prime and $<N$ and $B(N)$ the sum of remaining $N−\phi(N)$ numbers.
+Then I have the following questions- Q-1 For what values of $N$ , $A(N) >B(N)$ ? And for what is $A(N)<B(N)$? Q-2 What are the asymptotics of the  function $A(N)$ and $B(N)$? I have tried working by observing 
+$A(N)= N \phi(N)/2$ and  $B(N)=\frac{N(N-1)-N \phi(N)}{2}$ but in Vain. And I have no hint for the asymptotics","['asymptotics', 'inequality', 'number-theory']"
+801233,Lower bounding the number of children in branching process,"Suppose we have a recursive branching process where the number of children is given by $n p$ for parameters $n$ and (probability) $p$. Each child branches $n p$ children (once) and these children perform the same process. All samples are performed independently. Let $Y_i$ be the number of generation-$i$ children. I believe the expectation of $Y_i$ is given by $(n p)^i$. While the expectation is easy to compute, I would like to have a lower bound on the probability of $Y_i$ being less than $(np)^i / 2$. Chernoff bounds don't seem to be applicable here since there are dependencies between children on the same generation.
+Is there any other concentration result that could be used instead?","['probability-theory', 'computer-science', 'combinatorics']"
+801250,${\rm rank}(BA)={\rm rank}(B)$ if $A \in \mathbb{R}^{n \times n}$ is invertible?,"I'm having some trouble with the following question: Let $A, B \in \mathbb{R}^{n \times n}$ and let $A$ be invertible. Is it true that in this case $rank(BA)=rank(B)$? I think that this statement is correct, but I'm unable to prove it. My thoughts so far: If $B$ is also invertible the statement clearly holds, since $GL_n(\mathbb{R})$ is a group. For $B$ not invertible we immediately have the inequality $rank(BA) \leq rank(B)$ because the columns of $BA$ are linear combinations of the columns of $B$. Now I've tried to prove the other inequality by contradiction, i.e. assuming that $rank(BA)<rank(B)$ and showing that this cannot be. But I can't complete this step. Thanks in advance for any help!","['matrices', 'linear-algebra', 'matrix-rank']"
+801259,Area of Intersection of Circle and Square,"Given a point $(x,y)\in [0,1]^2$ and $r > 0$, I would like to derive a general formula for the area of the intersection of the circle of radius $r$ centered at $(x,y)$ and the unit square. What is the best approach for this? I have thought of a divide-and-conquer approach using cases, but there are quite a few, so I'm wondering if this could be done more elegantly. Perhaps a double integral could help?","['geometry', 'multivariable-calculus', 'integration', 'area', 'euclidean-geometry']"
+801264,Does a randomly chosen series diverge?,"Pick a point at random in the interval $[0,1]$, call it $P_1$. Pick another point at random in the interval $[0,P_1]$, call it $P_2$. Pick another point at random in the interval $[0,P2]$, call it $P_3$. Etc... Let $S = P_1+P_2+P_3+\cdots$ What is the probability that $S$ is divergent? Any thoughts? P.S. random, in this particular case, means equidistributed. I.e. $P(a<P_1<b)=b-a$.","['divergent-series', 'sequences-and-series', 'probability']"
+801278,How to solve this integral: $ \int_{-1}^{1} \frac{x^4}{a^x+1}dx $?,I got this at my final calculus 1 exam. Any help with the solution? $$ \int_{-1}^{1} \frac{x^4}{a^x+1}dx $$ Thank you!,['calculus']
+801279,weak star convergence of signed measures vs convergence in Fortet-Mourier norm,"There is a norm for signed measures given by $$||\mu||_{FM}=\sup_{f\in \mathrm{Lip}_1(X),|f(x)|\leq 1}\langle f,\mu\rangle.$$ This is usually called Fortet-Mourier norm (or more often metric, but it is a norm). For probability measures weak (or weak-star) convergence of measures is equivalent to convergence in $||\cdot||_{FM}$. This equivalence can't happen however for the whole space of signed measures, cause weak-star topology in space $X^*$ is never metrizable  if $X$ is infinitely dimensional. (And by Riesz's representation theorem $X=C_c(X)$ if $X^*$ are signed measures) But it is pretty hard to find an example of sequence of signed measures that convergence in one of this topologies and doesn't in the second one. Can anybody show such a counterexample?","['examples-counterexamples', 'weak-convergence', 'measure-theory', 'functional-analysis']"
+801293,What is the way to solve this geometry problem?,What is the way to solve this geometry problem?,['geometry']
+801307,Does the change of variable function have to be injective?,"Please note that I'm only interested in the one-variable case here. The change of variables formula for integration is: $$\int^{\phi(b)}_{\phi(a)}f(x)\ \text{d}x=
+\int^b_a f(\phi(x))\phi'(x)\ \text{d}x
+$$ Where $\phi$ and $f$ are sufficiently nice (I suppose $f$ has to be integrable and I think $\phi$ needs to be continuously differentiable). However, my Analysis teacher once mentioned to me that $\phi$ has to be injective as well. But I can't find any statements of the theorem (in one variable) that include this condition. It makes sense to me that it wouldn't be necessary: thinking about Riemann sums, if $\phi$ is non-monotonic, then the subdivision will ""backtrack"" at some point, but since we're multiplying by the derivative, those rectangles will be negative, so it's plausible that they would cancel out in such a way that we don't ""double count"" that area.","['calculus', 'integration']"
+801309,What is the smallest possible angle of this polygon?,"A convex polygon contains a square with side-length 1 and is contained in a parallel square with side-length 2 (which is its smallest containing square). What is the smallest possible angle of the polygon? What is its smallest possible area? After some playing around with GeoGebra, I found out that in both cases the minimal value is achieved when the contained square is in a corner of the containing square, so the minimal angle is (probably) 36: and the minimal area is (probably) 1.5: How can I prove that these are indeed the minimal values? Or are they? NOTE: If the polygon is not required to be convex, then obviously its area can be anywhere from 1 to 4 and its angles can be arbitrarily small. So this question is an attempt to quantify the effects of convexity.","['geometry', 'convex-analysis', 'euclidean-geometry']"
+801317,Smallest $n$ such that $S_n$ contains a subgroup isomorphic to $C_5$?,"The Cayley's theorem tells us that every finite group is isomorphic to a subgroup of some $S_n$ I have no idea how to go on about this question. I can list every elements of $S_1 , S_2, S_3, ... $ but I'm guessing that's not how it wants me to do it. I also have to find it for $C_2 \times C_2 \times C_2$ and $S_3 \times S_3$ but could anyone please explain the concept using the $C_5$ example? And maybe I will be able to try the rest myself. Thank you.","['group-theory', 'abstract-algebra']"
+801333,Calculating a Fisher expected information,"Let $X_1,..., X_n$ be a random sample from a distribution with probability density function $f(x;\theta) = (1/2\theta) exp(-|x|/\theta)$ for $-\infty<x<\infty$. (a) Find the maximum likelihood estimator of $\theta$ and calculate the Fisher (expected) information in the sample. I've calculated the MLE to be $\sum |X_i|/n$ and I know the definition of Fisher expectation, but I'm getting really stuck with calculating it. I think the $|X_i|$ terms are throwing me off. Any help in doing this problem would be much appreciated! Thanks",['statistics']
+801340,The law of the iterated logarithm for BM and boundedness of stopping times,"My question is regarding the usefulness of the law of the iterated logarithm, and its connection to stopping times. In many answers of this forum, I understand that some people often claim that some stopping times, such as
+$$\tau_n = \inf\left\{t \geq 0 : B_t = n\right\}
+$$
+are finite almost surely because of the law of the iterated logarithm . I am familiar with the law of course, but I don't really see how we can argue that any stopping time is bounded if, say, in the example above $n$ is very large. This takes me to ask the following two questions: does the law assure that $\mathscr{F}_{t}$-measurable stopping times are always bounded? Is there an example when the Law of the Iterated Logarithm doesn't help us to conclude that a stopping time is not bounded almost surely?","['probability-theory', 'stopping-times', 'stochastic-calculus', 'brownian-motion']"
+801351,"If half the population were murderers, and they could only kill once, how many would survive?","So here's the rules: Half the population are murderers Each murderer can only kill once We assume the nobody will fight back, and only murderers can murder Murderers can kill other murderers Only one murder can be committed at a time, no simultaneous murders No suicide - This means there will be at least one surviving murderer Everybody, including murderers, has an equal chance of being killed It should be obvious, but murderers cannot kill if they've already been killed Nobody is dying of old age or giving birth - it's an infertile and immortal (but not invincible) society Murders occur every second, or whatever measure of time suits your taste Murders are instant How many people should statistically survive? What proportion of them would be murderers? How would you go about working this out?","['statistics', 'probability']"
+801361,"Definition of ""a topological manifold with corners"".","How can we define a topological manifold with corners and its corners? Then, do we use ""invariance of domain"" to define corners, as we really need this theorem in order to define ""boundaries of a manifold""?","['differential-geometry', 'general-topology', 'manifolds', 'differential-topology', 'smooth-manifolds']"
+801381,Normalisation of curve,"I am probably having a lot of confusion with the terminologies in shafarevich. In page 131, Normal varieties, it states a corollary. An irreducible algebraic curve is birational to a nonsingular projective curve . Now I can't find ""algebraic curve""  defined in the book, as well as ""algebraic variety"". I guess algebraic variety = quasiprojective variety and algebraic curve = quasiprojective variety of dimension 1. But to prove the corollary it wants us to use the Theorem 2.23, which states that The normalization of a projective curve is projective. Now I don't see how does that theorem apply to the corollary, as our ""algebraic curve"" need not be projective. (Anyway, I understand what is going on, i.e normal and non-singular coincides in dimension 1, but the confusion remains. )",['algebraic-geometry']
+801382,Solving $df/dx = x\log x$,"I have the following differential equation $$\frac{df}{dx} = Kx\log x,$$ $K$ a constant. I'm wandering how one might solve for $f$.",['ordinary-differential-equations']
+801384,"Expectation of $e^{-4B_\tau}$, where $\tau$ is an extended stopping time","This is an specific example so with a bit of luck I can get some general methodology from your answers. I have this stopping time:
+$$
+\tau =  \inf\{t \geq 0; B_t < t-2 \}
+$$ This is a clear example of the hitting time of the process $B_t$ to an open set, hence $\tau$ is an extended stopping time. I am now trying to calculate:
+$$
+\mathbb Ee^{-4B_{\tau}}
+$$ My problem is that now I cannot substitute $B_{\tau}$ by any value at all like I usually do, because the stopping time is not of the form $B_t = x$. I was thinking of considering the event $B_t = t-3$ to try and compute this, but I am not sure if this is valid. Any hints are more than welcome.","['stochastic-processes', 'martingales', 'probability-theory', 'stochastic-calculus', 'brownian-motion']"
+801399,Specializations of elementary symmetric polynomials,"Let $\mathcal{S}_{x}=\{x_{1,},x_{2},\ldots x_{n}\}$ be a set of $n$
+indeterminates. The $h^{th}$elementary symmetric polynomial is the
+sum of all monomials with $h$ factors
+\begin{eqnarray*}
+e_{h}(\mathcal{S}_{x}) & = & \sum_{1\leqslant i_{1}<i_{2}<\ldots<i_{h}\leqslant n}x_{i_{1}}x_{i_{2}}\ldots x_{i_{h-1}}x_{i_{h}}
+\end{eqnarray*}
+which, from a generating function standpoint, can be built up as the
+coefficients of the $h^{th}$ power of the following linear factorization
+\begin{eqnarray*}
+\prod_{i=1}^{n}(1+x_{i}z) & = & (1+x_{1}z)(1+x_{2}z)(1+x_{3}z)\ldots(1+x_{n}z)\\
+ & = & \sum_{h=0}^{n}e_{h}(\mathcal{S}_{x})z^{h}
+\end{eqnarray*} Some usual specializations of the set $\mathcal{S}_{x}$ lead to
+  known families of numbers and multiplicative identities: binomial
+  coefficients for $x_{i}=1_{i}$, to $q$-binomial coefficients for
+  $x_{i}=q^{i}$ and Stirling numbers of the first kind for $x_{i}=i$; (i) For $\mathcal{S}_{1}=\{1_{1},1_{2},1_{3},\ldots,1_{n}\}$ 
+\begin{eqnarray*}
+(1+z)^{n} & = & (1+1_{1}z)(1+1_{2}z)(1+1_{3}z)\ldots(1+1_{n}z)\\
+ & = & \sum_{h=0}^{n}{n \choose h}z^{h}
+\end{eqnarray*}
+we have binomial coefficients $e_{h}(\mathcal{S}_{1})={n \choose h}$ (ii) For $\mathcal{S}_{q^{i}}=\{q,q^{2},q^{3}\ldots,q^{n-1},q^{n}\}$
+\begin{eqnarray*}
+\prod_{i=1}^{n}(1+q^{i}z) & = & (1+q^{1}z)(1+q^{2}z)(1+q^{3}z)\ldots(1+q^{(n-1)}z)\\
+ & = & \sum_{h=0}^{n}{n \choose h}_{q}q^{{h+1 \choose 2}}z^{h}
+\end{eqnarray*}
+we get the $q$-binomial coefficients (or Gaussian coefficients) $e_{h}(\mathcal{S}_{q^{i}})={n \choose h}_{q}q^{{h+1 \choose 2}}$ (iii) And for $\mathcal{S}_{i}=\{1,2,3,\ldots n-1\}$
+\begin{eqnarray*}
+\prod_{i=1}^{n-1}(1+iz) & = & (1+1z)(1+2z)(1+3z)\ldots(1+(n-1)z)\\
+ & = & \sum_{h=0}^{n}\left[\begin{array}{c}
+n\\
+n-h
+\end{array}\right]z^{h}
+\end{eqnarray*}
+the elementary symetric polynomial generates Stirling numbers of the
+first kind $e_{h}(\mathcal{S}_{i})=\left[\begin{array}{c}
+n\\
+n-h
+\end{array}\right]$ In this context, are there other specializations of the set $\mathcal{S}_{x}=\{x_{1,},x_{2},\ldots x_{n}\}$
+  which lead to other families of numbers or identities?","['symmetric-polynomials', 'generating-functions', 'algebraic-number-theory', 'combinatorics']"
+801400,Very difficult sum of series,"Compute the following sum 
+$$\sum_{n=1}^{+\infty}\frac{1}{n^3 \sin(n \pi \sqrt{2})}$$ Source : Very difficult sum of series Like jmerry on AoPS I have no idea how to compute the sum. Any ideas ? Perhaps someone knows already the result.. Thank you in advance for your time.",['sequences-and-series']
+801408,On the numbers divisible by all the Integers not exceeding their $r^{th}$ roots.,"Consider the set of all numbers which are divisible by all natural numbers not exceeding their square root, and denote this set by $S_2=\{1,2,3,4,6,8,12,24\}$ (Here the subscript indicates that we're taking the 2nd root of the numbers). Thus $|S_2|=8$. Similarly, the set of all numbers which are divisible by all natural numbers not exceeding the cube root is $S_3 = \{1,2,3,4,5,6,7,8,10,12,14,16,18,20,22,24,26,30,36,42,48,54,60,72,84,96,108,120,‌​180,240,300,420\}$, with $|S_3|=32$. Now define $S_r$ similarly as the set of all positive numbers divisible by all the naturals not exceeding their $r^{th}$ roots.  Then I have the folowing questions: Q-1 What is the general formula for finding $|S_r|$ (ie. Cardinality of $S_r$)? Q-2 Is there an expression for the greatest element of $S_r$? Asymptotics will also be encouraged.","['inequality', 'sequences-and-series', 'number-theory']"
+801454,probability of $k$ boxes contain exactly $1$ ball,"Occupancy problem with balls and boxes. Suppose there are $N$ balls and $M$ boxes. The balls are thrown to the boxes at random. What is the probability of $k$ boxes contain exactly $1$ ball? where $k=1,2,...\min(N,M)$","['probability-theory', 'combinatorics']"
+801459,"Prove that there exists a sequence $\{x_{n}\}$ such that for every $n\,\quad f_{n}$ has a global maximum","For every positive integer $n$ consider function $f_{n}(x)=n^{\sin x}+n^{\cos x},\ x \in \mathbb{R}$ . Prove that there exists a sequence $\{x_{n}\}$ such that for every $n,\  f_{n}$ has a global maximum at $x_{n}$ and $x_{n}\to 0$ as $n \to\infty$ . $(f_n(x))'=n^{\sin(x)}\cos(x)\ln(n)-n^{\cos(x)}\sin(x)\ln(n)$ it doesn't seems very nice. I am stuck (inexperience I think..). Any hints would be very appreciated. Thanks.","['functions', 'real-analysis']"
+801464,Does $2^n-1$ divide $1+2^{2i}$?,"Let $2^n-1$ be a prime number. If $1<i<n$, I need to prove that $2^n-1$ does not divide $1+2^{{2i}}$. Any comment would be appreciated.",['number-theory']
+801483,"How to integrate $\int_0^{\pi/2} \ \frac{\cos{x}}{\sqrt{1+\cos{x}}} \, \mathrm{d}x.$","I need to somehow evaluate the following: $$ \int_0^{\pi/2} \ \dfrac{\cos{x}}{\sqrt{1+\cos{x}}} \, \mathrm{d}x. $$ Can anyone give me any hints/pointers? I've tried to use parts, and some feeble substitutions, but to no avail :( Thanks","['integration', 'real-analysis', 'analysis']"
+801499,How to solve inhomogeneous Laguerre equation?,"What is the technique to solve this equation? $$xy''+(1-x)y'+\frac{y}{2}=e^{-x}$$ I tried solutions of the type: $y=Ae^{-x}+Bxe^{-x}$, but not all the terms cancelled. Would I have to use the Wronskian?",['ordinary-differential-equations']
+801526,Prove that $(n!)^{2}>(n)^n$ using inequality [duplicate],"This question already has answers here : Show that if $n>2$, then $(n!)^2>n^n$. (9 answers) Closed 10 years ago . To prove that $(n!)^2>(n)^n$ That is to prove that  $(n!)^2-(n)^n>0$ Now, $(n!)(n!)-(n)^n=[n.(n-1)(n-2)...][n.(n-1)(n-2)...]-[n.n.n...]$ $[n^2.(n-1)^2 . (n-2)^2 ...]-[n.n.n...]$ Comparing the first terms we get, $n^2>n$ Now we prove that all the other individual terms of $(n!)^2$ are greater than $n$ The general term is $(n-r)^2$ To prove that $(n-r)^2>n$, we subtract $n$ from $(n-r)^2 $ $(n-r)^2-n=n^2-2nr+r^2-n=n^2-(2r+1)n+r^2 $, but cannot proceed further, pls help, or this approach totally wrong?","['inequality', 'algebra-precalculus']"
+801535,Probability question related to coin tosses,"In an exam I gave recently, the following question was asked: A fair coin is tossed $10$ times and the outcomes are listed. let $H_i$ be the event that the $i^{th}$ outcome is a head and $A_m$ be the event that the list contains exactly m heads, then are $H_2$ and $A_5$ independent events ? The Official solution to this question was as follows: $$p(H_i) = \frac{1}{2},\qquad p(A_m)=\frac{^{10}C_m}{2^{10}}\\p(H_i\cap{A_m})=\frac{^9C_{m-1}}{2^{10}}.\\\text{For}\;H_i\;\text{and}\;A_m\;\text{to be independent},\;\frac{^9C_{m-1}}{2^{10}}=\frac{1}{2}.\frac{^{10}C_m}{2^{10}}\\ \Rightarrow1=\frac{1}{2}.\frac{10}{m}\Rightarrow m=5\\ \Rightarrow H_2\;\text{and}\;A_5\;\text{are independent events} $$ Now while I understand the mathematics behind this answer, I find it logically confusing that $p(A_5)$ does not get affected whether or not the $2^{nd}$ outcome is heads. Any ideas ?",['probability']
+801538,"For which $n$ is $ \int_0^{\pi/2} \frac{\mathrm{d}x}{2+\sin nx}= \int_0^{\pi/2} \frac{\mathrm{d}x}{2+\sin x}=\frac{\pi}{3\sqrt{3\,}\,}$?","I have been trying to figure out for which $n$ is $$ \int_0^{\pi/2} \frac{\mathrm{d}x}{2+\sin nx} = \int_0^{\pi/2} \frac{\mathrm{d}x}{2+\sin x}=\frac{\pi}{3\sqrt{3\,}\,}$$
+Using maple I got the following values below 100 
+$$
+n = 1
+,\,2
+,\,12
+,\,13
+,\,14
+,\,24
+,\,25
+,\,26
+,\,36
+,\,37
+,\,38
+,\,48
+,\,49
+,\,50
+,\,60
+,\,61
+,\,62
+,\,73
+,\,74
+,\,85
+,\,86
+,\,98
+,\,110
+$$
+But I am having a hard time seeing any pattern. I tried calculating the integral directly.
+The integral seems to converge for all $n$, but a closed form seems hard. Any help would be appreciated =) EDIT: I ran a few more tests and can not find any more integer values that work. Are the list above exhaustive?","['definite-integrals', 'integration', 'analysis']"
+801550,Fill $8$ boxes with $60$ items,I have $8$ boxes and $60$ items: how many ways can I fill the boxes so that The order of the items in each box does not matter It does not matter which boxes are filled with which items. In other words $60\;0\;0\;0\;0\;0\;0\;0$ is the same as $0\;60\;0\;0\;0\;0\;0\;0$. In other words if we have a combination and we swap the items in $2$ of the boxes it will still count as one variation.,"['permutations', 'discrete-mathematics', 'combinations']"
+801570,an analytic function from unit disk to unit disk with two fixed point,prove that if $f:\mathbb{D}\rightarrow\mathbb{D}$ is analytic with two distinct fixed point then $f$ is identity. I thought if one of the fixed points was zero by schwarz lemma this statement is easily proved. but what can I do if fixed points were nonzero?,['complex-analysis']
+801585,Can finite non-isomorphic groups of the same order have isomorphic endomorphism monoids?,"This is related to If $G$ and $H$ are nonisomorphic group with same order then can we say that $Aut(G)$ is not isomorphic to $Aut(H)$? and Can non-isomorphic abelian groups have isomorphic endomorphism rings? but more general than both. The answer given in the first link says that two finite non-isomorphic groups can have isomorphic automorphism groups. The second link (apparently) gives an example of two non-isomorphic infinite groups with isomorphic endomorphism rings. But if $G$ and $H$ are two non-isomorphic finite groups of the same order, is it possible for their endomorphism monoids to be isomorphic?","['finite-groups', 'group-theory', 'abstract-algebra']"
+801589,Why Elliptic Curves have so many nice properties,"As the definition referred from Silverman's book: An elliptic curve is a pair $(E,O)$, where $E$ is a nonsingular curve of genus one and $O\in E$. (We generally denote the elliptic curve by $E$, the point $O$ being understand.) The elliptic curve $E$ is defined over $K$, written $E/K$, if $E$ is defined over $K$ as a curve and $O\in E(K)$. We use Riemann-Roch theorem to prove $E$ has a Weierstrass form(This need us go into the deep part of algebraic geometry). There are some other nice properties, like the dual isogeny, elliptic have CM(there are two simple forms of $End(E)\neq \mathbb{Z}$)... I wonder why it is so beautiful and what may be the most important part that influenced elliptic curve has this properties. Thank you for sharing your mind.","['algebraic-geometry', 'elliptic-curves']"
+801636,Calculate $\int \frac{1}{x^2+x+1}\mathrm{d}x$ [duplicate],This question already has answers here : Integral of $\frac{1}{x^2+x+1}$ and$\frac{1}{x^2-x+1}$ (6 answers) Closed last year . Define the integral $I$ as follow: $$I=\int \dfrac{1}{x^2+x+1}\mathrm{d}x.$$ I do not know how to integrate it. Any suggestions please? I tried a lot of methods: I substituted $x^2+x=u$. I modified the denominator $x^2+x+1=(x+1)^2-x$ and I substituted $x+1=u$. I know that it is somewhat very easy to do it but I am stuck. Thanks.,['integration']
+801644,"Show there exists $g:(0,1)\to\mathbb{R}^2$ such that $h\circ g$ constant, $g$ continuously differentiable and $g$ injective","Let $h\in C^1(\mathbb{R}^2,\mathbb{R})$. Show:
+  There exists $g:(0,1)\to\mathbb{R}^2$ such that $h\circ g$ constant, $g$ continuously differentiable and $g$ injective. Dini's theorem: Let $\Omega \subseteq \mathbb{R}^2$ open, $f \in C^1(\Omega, \mathbb{R})$ and $p \in \Omega$ with $f(p) = 0$. If $\frac{\partial f}{\partial y}(p) \neq 0$, then there exist open intervals $V_1, V_2$ with $p \in V_1 \times V_2 \in \Omega$ and $g \in C^1(V, \mathbb{R})$ with
+$$\{(x,y) \in V_1 \times V_2 \mid f(x,y) = 0 \} = \{(x,g(x) \mid x \in V_1\}$$
+and $g$ furthermore satisfies
+$$g' = -\left(\frac{\partial f}{\partial y}(x, g(x))\right)^{-1}\frac{\partial f}{\partial x}(x, g(x)).$$ Proof of existance of $g$: Let without loss of generality $\frac{\partial f}{\partial y}(p) \gt 0$. Then there exists $\epsilon \gt 0$ with $\overline{B_\epsilon(p)} \subseteq \Omega$ and $\frac{\partial f}{\partial y} \gt 0$ on $\overline{B_\epsilon(p)}$. Let $y^- = p - \frac{\epsilon}{2}$ and $y^+ = p + \frac{\epsilon}{2}$. Then there exists $\delta \in (0, \epsilon)$ with $f(x, y^-) \lt 0 \lt f(x, y^+)$ for $x \in (p - \frac{\delta}{2}, p + \frac{\delta}{2}) =: V_1$ and $(y^-, y^+) =: V_2$. For $x \in V_1$ there exists exactly one $y \in V_2$ with $f(x,y) = 0$ (mean value theorem). Set $y(x) := g$ and the claim follows.","['multivariable-calculus', 'implicit-function-theorem', 'real-analysis']"
+801646,Does the series $\sum\limits_{n=1}^{\infty }\left ( 1-\frac{\ln(n)}{n} \right )^{2n}$ diverge?,"could anyone help me figure out whether this infinite series
+$$\sum_{n=1}^{\infty }\left ( 1-\frac{\ln(n)}{n} \right )^{2n}$$
+diverges? I've tried using Cauchy's and d'Alembert's limit tests but both gave the result 1. I've also tried the necessary condition for convergence, but 
+$$\lim_{n\rightarrow \infty }\left ( 1-\frac{\ln(n)}{n} \right )^{2n}=0$$","['sequences-and-series', 'real-analysis']"
+801666,"A solution for $\int^{2\pi}_0e^{\cos \theta}\cos(a\theta -\sin \theta)\,d \theta $","It can be proved using complex analysis that $$\tag{1}\int^{2\pi}_0e^{\cos \theta}\cos(n\theta -\sin \theta)=\frac{2\pi}{n!}$$ My initial thought that,  we use the Gamma function for non-integer values. But it seems that we cannot since $$\int^{2\pi}_0e^{\cos \theta}\cos\left(\left(\frac{1}{2} +n\right)\theta -\sin \theta \right)=0$$ My Question : Can we solve $$\int^{2\pi}_0e^{\cos \theta}\cos(a\theta -\sin \theta)\,d \theta $$ for specific values of $a$ that are not of the above cases ? EDIT As requested in the comments here is a proof of (1) using contour integeration Consider the following function $$f(z)=e^{z^{-1}}z^{n-1}$$ Now we integrate the function along a circle of radius 1 $$\oint_{|z|=1}e^{z^{-1}}z^{n-1} dz=\oint_{|z|=1}\sum_{k\geq 0}\frac{z^{n-k-1}}{\, k!} dz  $$ Now we need to find the residue which is the coefficient of $1/z$ $$\text{Assume that } n-k-1=-1 \to n=k$$ Hence we have $$\oint_{|z|=1}e^{z^{-1}}z^{n-1} dz= 2\pi i \frac{1}{n!}  $$ Using a parametirzation of the circle $$i\int_{0}^{2\pi i}e^{e^{-i\theta }}e^{i n\theta } d\theta = 2\pi i \frac{1}{n!}  $$ $$\int_{0}^{2\pi i}e^{e^{-i\theta }}e^{i n\theta } d\theta = 2\pi\frac{1}{n!}  $$ Hence we have $$\Re\int_{0}^{2\pi i}e^{e^{-i\theta }}e^{i n\theta } d\theta =\int^{2\pi i}_0 e^{\cos \theta} \cos(n\theta-\sin \theta)\, d\theta= \frac{2\pi}{n!}  $$","['definite-integrals', 'integration', 'complex-analysis']"
+801676,Expected value of number of tosses until we get $k$ tails and $k$ heads,"Let $k$ be a fixed positive number. We toss a normal coin until we get at least $k$ heads and at least $k$ tails (not necessarily consecutively). Let $X$ be number of needed tosses. Find distribution of $X$ and its expected value. So this is my attempt: first of all, we see that $P(X=j)$ is $0$ for $j<2k$. For $j \ge 2k$ we have the following: Let A be the event that in the last toss we get a head. Let B be the event that in the last toss we get a tail. So: $P(X=j) = P(X=j | A) P(A) + P(X=j|B) P(B) = $ ${j-1}\choose{k-1}$$ (\frac{1}{2})^{j-1} \frac{1}{2}$ + ${j-1}\choose{k}$$ (\frac{1}{2})^{j-1} \frac{1}{2} = (\frac{1}{2})^j [$$ {j-1}\choose{k-1}$ ${j-1}\choose{k} $$] = (\frac{1}{2})^j $${j}\choose{k}$ So I found the distribution of $X$. But the problem comes with the expected value: $E(X) = \sum_{j=2k}^\infty j (\frac{1}{2})^j $${j}\choose{k} $=... How to compute it? May you help me and show me how?",['probability']
+801703,"If $f(3x)=f(x)$ and $f$ is continuous, show that $f(x)$ is a constant function.","If $f(x)$ is a continuous function such that $f(3x)=f(x)$ and the domain of $f$ is all non-negative real numbers. Prove that $f$ is a constant function. What I did:
+$$f(3x)=f(x)=f\left(\frac{x}{3}\right)=\cdots= f\left(\frac{x}{3^n}\right)$$
+Now as $n$ tends to infinity, $f(\frac{x}{3^n})$ tends to $f(0)$ and hence $f(x)=f(0)$ for all $x$. However, I think the second step is a bit dodgy. I can't quite tell how, since I lack sufficient mathematical maturity, but it just doesn't seem right. I'd be glad if someone could provide a more rigorous proof of the problem. Thanks in advance.","['functions', 'real-analysis', 'functional-equations']"
+801730,Binomial Sum Related to Fibonacci: $\sum\binom{n-i}j\binom{n-j}i=F_{2n+1}$,"How would I prove $$
+\sum\limits_{\vphantom{\large A}i\,,\,j\ \geq\ 0}{n-i \choose j} {n-j \choose i}
+=F_{2n+1}
+$$ where $n$ is a nonnegative integer and $\{F_n\}_{n\ge 0}$ is a sequence of Fibonacci numbers? Thank you very much! :)","['fibonacci-numbers', 'binomial-coefficients', 'combinatorics']"
+801755,Prove: $\sin (3\pi/2 - x) = -\cos(x)$,"I know the sine of $3\pi/2$ is $-1$. So i plug it in the function making it.
+$\sin(-1-x) = -\cos x$. However, I don't know where to go from here.","['trigonometry', 'special-functions']"
+801765,Integration of $\int_{0}^{\frac{1}{2}}\frac{\sin^{-1}(x)}{\sqrt{1-x^2}} dx$ ??,"I was solving the integration of inverse trigonometric function and faced a question which i find it hard to understand. I need to find the definite integration of this function. $$\int_{0}^{\frac{1}{2}}\frac{\sin^{-1}(x)}{\sqrt{1-x^2}} dx$$ I tried to use the substitutional method by $$u= \sin^{-1}(x)$$ and getting $\dfrac{du}{dx}= \dfrac{1}{\sqrt{1-x^2}}$ and $dx= du(\sqrt{1-x^2})$ but when i substitute that into the function, it does not make any sense.
+This is where i got stuck 
+(not even sure if i did in the right way or not..) am i doing it right? Should I use another method to approach to the answer?
+(Sorry if this question is duplicating, i could not find an appropriate answer..)","['definite-integrals', 'trigonometry', 'calculus', 'integration']"
+801774,Formula for the number of integer solutions of an equation (using generating functions),"Let $a_n$ be the number of integer solutions of $$i+3j+3k=n$$ where $i \geq 0, j \geq 2, k \geq 3$. I want to use the generating function of $(a_n)_{n \in \mathbb N}$ to get a formula for $a_n$. We just introduced generating functions, so I'm fairly new to this stuff and hope you can help me solve this problem. I began by interpreting the problem as a power series. Without the restrictions for $i, j, k$ I get
+$$(1+x+x^2+x^3+\dots)(1+x^3+x^6+x^9+\dots)^2.$$
+Accounting for $i \geq 0, j \geq 2, k \geq 3$ should get me something like
+$$(1+x+x^2+x^3+\dots)(x^6+x^9+x^{12}+\dots)(x^9++x^{12}+x^{15}+\dots).$$
+Is that correct? Now I tried to simplify this like this:
+$$1+x+x^2+x^3+\dots = \frac{1}{1-x}$$
+$$x^6+x^9+x^{12}+\dots
+=(1+x^3+x^6+x^9+x^{12}+\dots)-(1+x^3)
+=\frac{1}{1-x^3}-(1+x^3)
+=\frac{x^6}{1-x^3}$$
+and likewise
+$$x^9++x^{12}+x^{15}+\dots = \frac{x^9}{1-x^3}.$$
+So I have
+$$(1+x+x^2+x^3+\dots)(x^6+x^9+x^{12}+\dots)(x^9++x^{12}+x^{15}+\dots)
+=\frac{x^{15}}{(1-x)(1-x^3)^2}.$$ I hope I didn't make a mistake already. In any case, here I'm stuck. I have to find a formula for the $n$-th coefficient in this power series, but I don't know how to do it. [edit] I'm still quite confused, but I'll try to go over it again one by one. Here is again the complete (and hopefully correct) partial fraction decomposition and my try to expand it:
+$$\frac{1}{(1 - x)^3 (x^2 + x + 1)^2} \\
+=\frac{1}{27} \frac{7x + 8}{x^2 + x + 1}
++ \frac{1}{9} \frac{2x+1}{(x^2 + x + 1)^2}
++ \frac{1}{27} \frac{7}{1-x}
+- \frac{1}{9} \frac{2}{(1-x)^2}
++ \frac{1}{9} \frac{1}{(1-x)^3} \\
+=\frac{1}{27} \frac{(7x + 8)(1-x)}{(1-x^3)}
++ \frac{1}{9} \frac{(2x+1)(1-x)^2}{(1-x^3)^2}
++ \frac{1}{27} \frac{7}{1-x}
+- \frac{1}{9} \frac{2}{(1-x)^2}
++ \frac{1}{9} \frac{-1}{(1-x)^3} \\
+=\frac{ (7x + 8)(1-x)}{27} \sum x^{3n}
++ \frac{ (2x+1)(1-x)^2}{9} \sum (n+1) x^{3n}
++ \frac{7}{27} \sum x^n
+- \frac{2}{9} \sum (n+1) x^n
++ \frac{1}{9} \sum x^{3n}.$$ Still to do: Multiply by $x^{15}$ and find the coefficient of $x^k$.","['generating-functions', 'combinatorics']"
+801778,How to solve this differential equation?,"How to solve the following equation? $$\frac{\mathrm{d}\, f }{\mathrm{d}x} = f(x) \left(1-f(x)\right)$$ (I've studied differential equations as an undergraduate some years ago but right now I don't know where to start with this equation.) EDIT 1: equation corrected. Solution: $$f(x) = \frac{1}{1 + e^{-x + C}}$$","['ordinary-differential-equations', 'functions']"
+801792,Probability of selecting distinct numbers in ascending order,"A relatively simple problem is stumping me on this :( Given a set of 4 distinct numbers that can be chosen from [0-9], what is the probability that after selecting, the first two numbers would be in ascending order? Here's my thinking so far: If we select 0 as our first, we have a 9/10 chance of choosing an appropriate second number If we select 1 as our first, we have an 8/10 chance of choosing an appropriate second number ... If we select 8 as our first, we only have a 1/10 chance of choosing an appropriate second number However if we select 9 as our first, we can't select anything greater So the probability of selecting the first two numbers such that they are ascending should be: P(1st selection) * P(2nd selection > 1st selection) * P(3rd selection that we don't care about) * P(4th selection that we don't care about) = 1/10 * 1/9 * 1/8 * 1/7 => 1/5040 I don't think I'm going about this problem the right way and my answer is completely off - I don't know how to handle what the probability of selecting the second number would be, since we could choose a great number like 0 for the first, or a bad one like 8 or 9 that would give us less choices.  Could someone explain this in a better way?","['statistics', 'probability']"
+801799,"Prove that for an odd function, res(f, z0) = res(f, -z0)","I am having difficulty proving that, for an odd function, the residue function is symmetric. i.e $res(f, z_0) = res(f, -z_0)$ I am using the Laurent series expansion of a function $$f(z)=\sum_{n=-\infty}^\infty a_n(z-z_0)^n$$ I'm trying to get there by substituting $z$ with $-z$ so that I have the expansion of $-f(x)$ (since $f$ is odd. So far I have the residue of $-f$ about $-z_0$ is the $n=-1$ coefficient for  $$f(-z)=\sum_{n=-\infty}^{\infty} a_n(-z+z_0)^n$$ $$=\sum_{n=-\infty}^{\infty} (-1)^na_n(z-z_0)^n$$ so $$res(-f,-z_0)=-a_{-1}$$ Is this correct? If so how does it translate into a proof for $        res(f,z_0)=res(f,-z_0)$.","['residue-calculus', 'complex-analysis']"
+801806,Is the image of a closed subspace under a bounded linear operator closed?,"This seems obvious, but I can't get the proof straight, and I made up the statement myself, so I'm not sure if it's true in the stated generality. Given a bounded linear operator $T$ in Hilbert space, and a closed subspace $A$, I assert that $T(A)$ is a closed subspace. (Note: my definition of closed is in terms of sequences - the set contains all its limits under countable sequences - not the usual topology definition.) Proof strategy: Let $f:\Bbb N\to T(A)$ be given. Using countable choice, select a function $g:\Bbb N\to A$ such that $T\circ g=f$. Assuming $g$ is convergent to some $x$, we have $x\in A$, and since $T$ is continuous, $T\circ g\to T(x)\in T(A)$. The problem is that the preimage function $g$ may not converge even if $f$ does, and there is no limit on $\frac{|g(x)-g(y)|}{|f(x)-f(y)|}$ even though $T$ is bounded, because the inverse may not even exist so that there are whole subspaces to select very distant $g(x),g(y)$ even if $f(x),f(y)$ are close or even identical. Is my search hopeless - have I bitten off more than I can chew with this statement, or can I somehow restrict the base sets from which the $g(x)$ were drawn so that $g$ will converge? What is the ""correct"" statement along these lines?","['linear-algebra', 'hilbert-spaces']"
+801821,Rudin's 'Principle of Mathematical Analysis' Problem 7.12 [closed],"Closed. This question does not meet Mathematics Stack Exchange guidelines . It is not currently accepting answers. Please provide additional context , which ideally explains why the question is relevant to you and our  community. Some forms of context include: background and motivation, relevant definitions, source, possible strategies, your current progress, why the question is interesting or important, etc. Closed 5 years ago . Improve this question Suppose $g$ and $f_n$ ($n = 1,2,\ldots$) are defined on $(0,\infty)$, are Riemann-integrable on $[t,T]$ whenever $0 < t < T < \infty$, $|f_n| \leq g$, $f_n \rightarrow f$ uniformly on every compact subset of $(0,\infty)$, and $$ \int_0^{\infty}\,g(x)\,dx < \infty $$ Prove that $$ \lim_{n \rightarrow \infty}\,\int_0^{\infty}\,f_n(x)\,dx = \int_0^{\infty}\,f(x)\,dx $$ I appreciate all your comments, thanks.","['sequences-and-series', 'functional-analysis', 'uniform-convergence']"
+801823,Find the surface area of portion of the plane that is inside the cylinder.,"I am given the plane $x + y + z = 1$ and the cylinder $x^2 + y^2 = 4,$ and have to find the surface area of  portion of the plane that is inside the cylinder. I am very confused with this. I tried writting the intersection of the two surfaces as a parametric curve and got: $$ \mathbf{r} (t) = (2 \cos{t}, 2 \sin{t}, 1 - 2 \cos{t} - 2 \sin{t}).$$ The plan was then to calculate the surface area enclosed by this curve, but I don't know how to do this. I know there are formulas for doing that when the curve has parametric equation of the form $\mathbf{s}(t) = (x(t), y(t)),$ but not in my case. How can I do it?",['multivariable-calculus']
+801825,Does the Law of Sines and the Law of Cosines apply to all triangles?,"Do the Law of Sines and the Law of Cosines apply to all triangles? Particularly, could you use these laws on right triangles? That is, could you use these laws instead of the Sine=opposite/hypotenuse, Cosine=adjacent/hypotenuse, and Tangent=opposite/adjacent rules to solve right triangles? I can't find this stated in any of my textbooks, nor has my instructor said anything about it, which I find odd.",['trigonometry']
+801833,Number of join-irreducible elements of a lattice: is it monotonic?,"Let $\mathcal L$ be a sub-lattice of $\mathcal P(X)$, where $X$ is a finite set. Denote by $\mathcal I(\mathcal L)$ the set of union-irriducible elements of $\mathcal L$ (i.e. $A\in \mathcal I(\mathcal L)$ iff $A\in\mathcal L$ and it is not possible to write $A$ as a union of other elements of $\mathcal L$). Is it true that $card(\mathcal I(\mathcal L))\leq card(X)$ ? Edit. An important point is that $\mathcal I(\mathcal P (X))=X$. Therefore it is possible to restate the question in general terms as follows: let $\mathcal L'$ be a finite distributive lattice and let $\mathcal L$ be a sub-lattice of $\mathcal L'$, is it true that $card (\mathcal I(\mathcal L)) \leq card (\mathcal I(\mathcal L'))$ ?","['lattice-orders', 'elementary-set-theory', 'abstract-algebra', 'order-theory']"
+801843,An inverse binomial summation.,"I am looking for a closed form for this summation:
+$$
+\sum_{j=1}^m\frac{r^{-j}}{j{m\choose j}} = \sum_{j=1}^m\frac{r^{-j}}{m{m-1\choose j-1}} = \frac1{rm} \sum_{k=0}^{m-1}\frac{r^{-k}}{{m-1\choose k}}
+$$
+I looked at some tables of binomial sums but I couldn't find anything similar to this.
+Could anyone help me to simplify this summation? Or find an upper bound? Thanks.","['summation', 'algebra-precalculus', 'binomial-coefficients', 'combinatorics']"
+801885,Solve for $x$ in $2\log(x+11)=(\frac{1}{2})^x$,"Solve for $x$. $$2\log(x+11)=(1/2)^x$$ My attempt: $$\log(x+11)=\dfrac{1}{(2^x)(2)}$$ $$10^{1/(2^x)(2)}= x+11$$ $$x=10^{1/(2^x)(2)}-11$$ I'm not sure what to do next, because i have one $x$ in the exponent while the other on the left side of the equation.","['logarithms', 'algebra-precalculus']"
+801886,What must a function satisfy in order to say that a certain limit exists?,"Suppose that $f:R_+\to R_+$ is $C^2$, and that $f(0)=f'(0)=f''(0)=0$, and that for all $x$, $\frac{xf''(x)}{f'(x)}\geq1$. From here we can safely say that $\lim\inf_{x\to0}\frac{xf''(x)}{f'(x)}\geq1$. But, under what conditions on $f$ can we say that the $\lim_{x\to0}\frac{xf''(x)}{f'(x)}$ exists and is greater than 1?","['multivariable-calculus', 'calculus', 'limsup-and-liminf', 'real-analysis', 'limits']"
+801894,The periodic nature of the fibonacci sequence modulo $m$,"Let $x_n$ denote the $n$-th element of the fibonacci sequence and $$A:=\begin{pmatrix} 0&1\\1&1 \end{pmatrix}$$ It's easy to show, that it holds: $$A^n=\begin{pmatrix} F_{n-1}&F_n\\F_n&F_{n+1}  \end{pmatrix}$$ However, I want to show that $$(F_n\text{ mod }m)_n\;\;\;\;\;(m\in\mathbb{N})$$ is a periodic sequence. Therefor, it's sufficient to show, that $$(A^n\text{ mod }m)_n$$ is periodic. In other words: We need to show, that $A$ is an element of finite order in $\text{GL}(2,\mathbb{Z}/m\mathbb{Z})$. What's the most elegant way to do that? PS: I know that it might be better to choose $A$ and thereby $A^n$ in an other way, but I'm asked to show the statement for the given choice of $A$.","['matrices', 'linear-algebra', 'finite-groups', 'group-theory']"
+801896,Problematic integral $\int_0^\pi \frac{x\sin x}{1+\cos^2x}\ dx$,"How to calculate $$\int_0^\pi \frac{x\sin x}{1+\cos^2x}\ dx\ ?$$ I wish I could say I ran out of ideas, but actually I have none.","['definite-integrals', 'integration']"
+801903,To equal the straight lines,"I know, it is very simple, but I'm get stuck.
+Let I have two equations of straight lines on a plate. For example:
+$2x + 3y + 5 = 0$;
+3$x + 4y + 7 = 0$ What is the geometric meaning of a new line, that has been got by equaling of equations. $2x + 3y + 5 = 3x + 4y + 7$; $x + y + 2 = 0$ It is a line, lies exactly between them, isn't it? I have a spirit of an old lecture repeats in my mind.
+""To find an intersection point of two functions you need to equal the equations..."" But if I let x = any constant and $y = - 2 - x$ , then I'll get a complete rubbish. What do I forget?","['geometry', 'algebra-precalculus']"
+801909,how to prove that this determinant is a polynomial? [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 10 years ago . Improve this question Given two square matrices $A$ and $B$ of size $n\times n$. I am wondering how to prove that $\det(A+xB)$ is a polynomial function of $x$ ? does anyone has a (simple if possible) proof of this fact? What would be the degree of this polynomial?  Thanks.","['matrices', 'linear-algebra']"
+801925,Help needed - Approximating functions with geometric integration and derivation,"I've somehow managed to approximate some functions using cheap tricks as geometrically derivating the function and then geometrically integrating an easier equivalent of the derivative (see here for an example). However, the proof I finally got in the example above worked 'mathematically' because I managed to get rid of the $\text{o}(1/x^\left(whatever\right))$ in my approximation of $x!$ by using $\frac{\text{d ln}(x!)}{\text{d}x}=\frac{\text{d ln}(\Gamma (x+1))}{\text{d}x} = \psi (x+1)$. Had I used $x!=u(x)+\text{o}((1/x^\left(whatever\right))$, I would have had to take into account the $\frac{\text{d ln}(\text{o}((1/x^\left(whatever\right)))}{\text{d}x}$, and I have absolutely no idea how to deal with that. Therefore, I was wondering, when exactly can I use such a method to get approximation of functions ? To sum it up my question is : When can we approximate a function by geometrically integrating an approximation of its geometric derivative ?","['approximation', 'functions']"
+801948,Frechet/Gateaux differentiability of an integral operator $L^2 \rightarrow R$,"Let $f: R \rightarrow R$ be a continuously differentiable function on the real numbers (if needed also infinitely many often differentiable). Define the Operator $F : L^2([0,1]) \rightarrow R$ for $x \in L^2([0,1])$ by $F(x)=\int_0^1 f(x(s)) ds $ We assume that $F(x)<A−B∫x(s)^2 ds\leq A$ with constants $A,B>0$ .
+Hence it is bounded from above but not from below Question: Is $F$ now Frechet differentiable? Is $F$ Gateaux differentiable? Known: If we were looking at $F$ as an operator on $C([0,1])$ , then it is Frechet differentiable (as shown for example at wikipedia: http://de.wikipedia.org/wiki/Fréchet-Ableitung#Integraloperator )
+But they use that on this space they know that each function is bounded.","['operator-theory', 'gateaux-derivative', 'functional-analysis', 'derivatives']"
+801963,Random walk around circle [duplicate],"This question already has answers here : Random walk on $n$-cycle (4 answers) Closed 8 years ago . For one of the exercises of my homework I need to answer the following question, but I am not sure how I should apply gamblers ruin theory to solve this problem (it is stated as a hint, not that I must use it). The problem is as follows: A mouse is in a room in a circular hallway with $N+1$ rooms. In the the other $N$ rooms there is a cheese. He has a chance of $\frac{1}{2}$ to go either way every step. If he enters a room with a cheese he eats the cheese. Prove that all cheeses have an equal chance of being eaten last, namely $\frac{1}{N}$. I see that eating the $i^{\textrm{th}}$ cheese as last has two possibilities, first mouse walks to $i+1$ and then goes to $i-1$ without passing $i$, and the other way around. But I am at loss what to do next.","['random-walk', 'probability']"

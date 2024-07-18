@@ -1,0 +1,673 @@
+question_id,title,body,tags
+622822,Old Qualifying Exam Question (Real Analysis - Possibly Implicit Function Theorem),"The following is an old qualifying exam question that has stumped me: Let $f,g\in C^\infty(\mathbb{R}^3)$ be real-valued functions such that for some $x_0\in \mathbb{R}^3,$ we have $f(x_0) = g(x_0) = 0$ with $df(x_0)$ and $dg(x_0)$ linearly independent. Let $S_f$ and $S_g$ be the zero sets of $f$ and $g$ respectively. Show that if $h\in C^\infty(\mathbb{R}^3)$ vanishes on $S_f\cup S_g,$ then there exists a neighborhood $U\ni x_0$ such that in $U,$ we have $h(x) = f(x)g(x)H(x),$ for some $H\in C^\infty(U)$. My initial thought was that the implicit function theorem might be a good place to start, but I have not been able to make any progress on it. Any thoughts are much appreciated.",['analysis']
+622841,Can an Element of an Algebraic Structure have Multiple Identities?,"I'm wondering if an element of an algebraic structure can have two (or more) two-sided identities. Google wasn't very helpful, and I have never encountered anything with the given properties. Essentially, I'm looking for $g,h,i \in X$ such that $X$ is an algebraic structure, $ig=gi=g, hg=gh=g,$ and $h \neq i$ I have a basic knowledge of algebraic structures, and would appreciate if someone could provide an example of an algebraic structure that contains an element with two or more two-sided identities, or a brief explanation of why it is not possible. If this property varies based on the type of algebraic structure, the algebraic structures in which I am most interested are Groups, Rings, and Fields. Thanks for the help!",['abstract-algebra']
+622848,Two simple questions about the complex function $f(z)=e^z$,"I am working on basic problems about complex numbers and functions in order to learn complex analysis from Lang's textbook. I am trying to solve the following exercise: Let $f:\mathbb C \to \mathbb C$, $f(z)=e^z$ (if $z=a+bi$, then $e^z=e^ae^{ib}$) a) Find the image under $f$ of the set $S=\{z \in \mathbb C : 0\leq Im(z)<2\pi\}$. b) Show that the image of the line $\{t+it : t \in \mathbb R\}$ is a spiral. For a), I am not so sure how to describe the image, I know that if $z=a+bi$, then $b \in [0,2\pi)$. By definition, $e^{ib}=\cos(b)+i\sin(b)$, so the image of the set $S$ is $T=\{w \in \mathbb C : w=f(z)=e^a(\cos(b)+i\sin(b)), \space b \in [0,2\pi)\}$ Is this a correct way of describing the image of the given set? For part b), I don't know how to show this, maybe I need to find a possible parameterization $\phi(t)$ of the set $\{(u(t),v(t),t) \in \mathbb R^3\}$ where if $w=f(z(t))$, then $w=u(t)+iv(t)$. If $z$ is in the line, then $z=t+it$, and $f(z)=e^t(\cos(t)+i\sin(t))=e^t\cos(t)+ie^t\sin(t)$, so the parametrization would be $\phi(t)=(e^t\cos(t),e^t\sin(t),t)$ Is this the parameterization of a spiral?","['complex-numbers', 'complex-analysis']"
+622869,Elements of order 2 in the absolute Galois group,"So I remember reading once that the only element of $G=Gal(\overline{\Bbb Q} / \Bbb Q)$ that we understand is complex conjugation. Suppose we fix an embedding of $\overline{\Bbb Q}$ into $\Bbb C$. Then complex conjugation in $\Bbb C$ restricts to a ""complex conjugation"", $\sigma \in G$. Clearly $\sigma$ has order $2$, and any conjugate of $\sigma$ also has order $2$. Question: Is it true that any element of order $2$ in $G$ is conjugate to $\sigma$? I've thought about this for a while, but my knowledge of elements of $G$ isn't excellent. For general groups, not all elements of order $2$ are necessarily conjugate. For example, $(12)$ and $(12)(34)$ are both of order $2$ but not conjugate in $S_n$ for any $n\geq 4$. It is unclear how to proceed in the case of $G$. My reason for asking is that the element $\sigma$ I defined above should only be thought of as being defined up to conjugacy, since a different embedding gives a new complex conjugation which is conjugate to $\sigma$. Thus, if all elements of order $2$ in $G$ were conjugate then I believe I could conclude that there is really only a single honest complex conjugation. I apologize if any of this is unclear, I'd be glad to elaborate if necessary. Also, I'd appreciate any intuition on how to think about this in terms of Galois representations, since those seem to be the only way to get a handle on $G$.","['galois-theory', 'algebraic-number-theory', 'group-theory', 'galois-representations']"
+622892,"How to simply show that there are ""78 'strict ordinal' 2x2 game matrices""","In ""Theory of Moves"" , Steven J. Brams analyses two-player games with two strategies per player, where each player can totally rank his payoffs, although payoffs need not be comparable among players. We can thus use values 1,2,3,4 to label the payoffs of each player. This is called a 'strict ordinal' game. An example game matrix, with player A's payoff as the first element, player B's payoff as the second element of the payoff tuples: We now define the equivalence classes of ""identical game matrices"" to reduce the number of distinct cases to analyze. The game matrices in an equivalence class are related by the following operations: Exchange columns (i.e. relabel Player A's strategies) Exchange rows (i.e. relabel Player B's strategies) Exchange the players, which means exchanging the tuple values and mirroring the matrix along the first diagonal For discussion purposes, add the non-elementary operation: Exchange columns, then rows (or the equivalent reverse): ""mirroring"" Question: How many game matrix equivalence classes are there? The author claims ""There are exactly 78 such 'strict ordinal' 2x2 games"". He must be right because his whole book is based on this. And I checked with a little program, and indeed I get 78 distinct ""canonical"" matrixes. However, using exhaustive enumeration is quite a bit in the 'brute force' domain and I am not even sure why the application of a single ""player exchange"" followed by either a ""row exchange"", ""column exchange"" or ""mirroring"" is sufficient to reach all the elements of the equivalence classes. So, is there a better way to show that there are only 78 equivalence classes (which actually is strange because this is 13 * 3 * 2, why is there a factor 13?). There has got to be. I amused myself to design a way to build the canonical matrixes by exploiting symmetries but it seems I am too rusty. Code result: [ (4,4),(1,2) | (2,3),(3,1) ] accepted as canonical entry 1
+[ (4,4),(1,3) | (2,2),(3,1) ] accepted as canonical entry 2
+[ (4,3),(1,1) | (2,2),(3,4) ] accepted as canonical entry 3
+[ (4,4),(1,1) | (2,3),(3,2) ] accepted as canonical entry 4
+[ (4,3),(1,2) | (2,1),(3,4) ] accepted as canonical entry 5
+[ (4,1),(1,4) | (2,2),(3,3) ] accepted as canonical entry 6
+[ (4,1),(1,4) | (2,3),(3,2) ] accepted as canonical entry 7
+[ (4,2),(1,3) | (2,4),(3,1) ] accepted as canonical entry 8
+[ (4,2),(1,1) | (2,4),(3,3) ] accepted as canonical entry 9
+[ (4,3),(1,4) | (2,2),(3,1) ] accepted as canonical entry 10
+[ (4,3),(1,4) | (2,1),(3,2) ] accepted as canonical entry 11
+[ (4,2),(1,1) | (2,3),(3,4) ] accepted as canonical entry 12
+[ (4,1),(1,3) | (2,4),(3,2) ] accepted as canonical entry 13
+[ (4,2),(1,4) | (2,1),(3,3) ] accepted as canonical entry 14
+[ (4,3),(1,2) | (2,4),(3,1) ] accepted as canonical entry 15
+[ (4,2),(1,3) | (2,1),(3,4) ] accepted as canonical entry 16
+[ (4,3),(1,1) | (2,4),(3,2) ] accepted as canonical entry 17
+[ (4,4),(1,1) | (2,2),(3,3) ] accepted as canonical entry 18
+[ (4,2),(1,4) | (2,3),(3,1) ] equivalent to [ (4,1),(1,3) | (2,4),(3,2) ] via row ∘ player
+[ (4,1),(1,3) | (2,2),(3,4) ] accepted as canonical entry 19
+[ (4,4),(1,2) | (2,1),(3,3) ] accepted as canonical entry 20
+[ (4,1),(1,2) | (2,3),(3,4) ] accepted as canonical entry 21
+[ (4,1),(1,2) | (2,4),(3,3) ] accepted as canonical entry 22
+[ (4,4),(1,3) | (2,1),(3,2) ] accepted as canonical entry 23
+[ (4,4),(2,2) | (3,3),(1,1) ] accepted as canonical entry 24
+[ (4,4),(2,3) | (3,2),(1,1) ] accepted as canonical entry 25
+[ (4,3),(2,1) | (3,2),(1,4) ] equivalent to [ (4,1),(1,2) | (2,3),(3,4) ] via mirror ∘ player
+[ (4,4),(2,1) | (3,3),(1,2) ] accepted as canonical entry 26
+[ (4,3),(2,2) | (3,1),(1,4) ] accepted as canonical entry 27
+[ (4,1),(2,4) | (3,2),(1,3) ] accepted as canonical entry 28
+[ (4,1),(2,4) | (3,3),(1,2) ] accepted as canonical entry 29
+[ (4,2),(2,3) | (3,4),(1,1) ] accepted as canonical entry 30
+[ (4,2),(2,1) | (3,4),(1,3) ] accepted as canonical entry 31
+[ (4,3),(2,4) | (3,2),(1,1) ] accepted as canonical entry 32
+[ (4,3),(2,4) | (3,1),(1,2) ] equivalent to [ (4,2),(2,1) | (3,4),(1,3) ] via row ∘ player
+[ (4,2),(2,1) | (3,3),(1,4) ] accepted as canonical entry 33
+[ (4,1),(2,3) | (3,4),(1,2) ] equivalent to [ (4,3),(1,4) | (2,1),(3,2) ] via column ∘ player
+[ (4,2),(2,4) | (3,1),(1,3) ] accepted as canonical entry 34
+[ (4,3),(2,2) | (3,4),(1,1) ] accepted as canonical entry 35
+[ (4,2),(2,3) | (3,1),(1,4) ] accepted as canonical entry 36
+[ (4,3),(2,1) | (3,4),(1,2) ] accepted as canonical entry 37
+[ (4,4),(2,1) | (3,2),(1,3) ] accepted as canonical entry 38
+[ (4,2),(2,4) | (3,3),(1,1) ] equivalent to [ (4,2),(1,1) | (2,4),(3,3) ] via row ∘ player
+[ (4,1),(2,3) | (3,2),(1,4) ] accepted as canonical entry 39
+[ (4,4),(2,2) | (3,1),(1,3) ] equivalent to [ (4,4),(1,3) | (2,2),(3,1) ] via player
+[ (4,1),(2,2) | (3,3),(1,4) ] accepted as canonical entry 40
+[ (4,1),(2,2) | (3,4),(1,3) ] accepted as canonical entry 41
+[ (4,4),(2,3) | (3,1),(1,2) ] accepted as canonical entry 42
+[ (4,4),(3,2) | (1,3),(2,1) ] accepted as canonical entry 43
+[ (4,4),(3,3) | (1,2),(2,1) ] equivalent to [ (4,4),(2,1) | (3,3),(1,2) ] via player
+[ (4,3),(3,1) | (1,2),(2,4) ] equivalent to [ (4,2),(1,3) | (2,1),(3,4) ] via mirror ∘ player
+[ (4,4),(3,1) | (1,3),(2,2) ] accepted as canonical entry 44
+[ (4,3),(3,2) | (1,1),(2,4) ] accepted as canonical entry 45
+[ (4,1),(3,4) | (1,2),(2,3) ] accepted as canonical entry 46
+[ (4,1),(3,4) | (1,3),(2,2) ] accepted as canonical entry 47
+[ (4,2),(3,3) | (1,4),(2,1) ] accepted as canonical entry 48
+[ (4,2),(3,1) | (1,4),(2,3) ] equivalent to [ (4,1),(2,4) | (3,2),(1,3) ] via column ∘ player
+[ (4,3),(3,4) | (1,2),(2,1) ] accepted as canonical entry 49
+[ (4,3),(3,4) | (1,1),(2,2) ] equivalent to [ (4,3),(2,2) | (3,4),(1,1) ] via row ∘ player
+[ (4,2),(3,1) | (1,3),(2,4) ] accepted as canonical entry 50
+[ (4,1),(3,3) | (1,4),(2,2) ] equivalent to [ (4,1),(1,4) | (2,2),(3,3) ] via column ∘ player
+[ (4,2),(3,4) | (1,1),(2,3) ] accepted as canonical entry 51
+[ (4,3),(3,2) | (1,4),(2,1) ] equivalent to [ (4,1),(3,4) | (1,2),(2,3) ] via column ∘ player
+[ (4,2),(3,3) | (1,1),(2,4) ] accepted as canonical entry 52
+[ (4,3),(3,1) | (1,4),(2,2) ] accepted as canonical entry 53
+[ (4,4),(3,1) | (1,2),(2,3) ] accepted as canonical entry 54
+[ (4,2),(3,4) | (1,3),(2,1) ] equivalent to [ (4,3),(1,2) | (2,4),(3,1) ] via row ∘ player
+[ (4,1),(3,3) | (1,2),(2,4) ] accepted as canonical entry 55
+[ (4,4),(3,2) | (1,1),(2,3) ] equivalent to [ (4,4),(1,1) | (2,3),(3,2) ] via player
+[ (4,1),(3,2) | (1,3),(2,4) ] equivalent to [ (4,2),(2,3) | (3,1),(1,4) ] via mirror ∘ player
+[ (4,1),(3,2) | (1,4),(2,3) ] accepted as canonical entry 56
+[ (4,4),(3,3) | (1,1),(2,2) ] accepted as canonical entry 57
+[ (4,4),(3,2) | (2,3),(1,1) ] accepted as canonical entry 58
+[ (4,4),(3,3) | (2,2),(1,1) ] equivalent to [ (4,4),(2,2) | (3,3),(1,1) ] via player
+[ (4,3),(3,1) | (2,2),(1,4) ] equivalent to [ (4,1),(1,3) | (2,2),(3,4) ] via mirror ∘ player
+[ (4,4),(3,1) | (2,3),(1,2) ] equivalent to [ (4,4),(3,2) | (1,3),(2,1) ] via player
+[ (4,3),(3,2) | (2,1),(1,4) ] accepted as canonical entry 59
+[ (4,1),(3,4) | (2,2),(1,3) ] equivalent to [ (4,3),(3,1) | (1,4),(2,2) ] via row ∘ player
+[ (4,1),(3,4) | (2,3),(1,2) ] accepted as canonical entry 60
+[ (4,2),(3,3) | (2,4),(1,1) ] accepted as canonical entry 61
+[ (4,2),(3,1) | (2,4),(1,3) ] equivalent to [ (4,2),(2,4) | (3,1),(1,3) ] via column ∘ player
+[ (4,3),(3,4) | (2,2),(1,1) ] accepted as canonical entry 62
+[ (4,3),(3,4) | (2,1),(1,2) ] equivalent to [ (4,3),(2,1) | (3,4),(1,2) ] via row ∘ player
+[ (4,2),(3,1) | (2,3),(1,4) ] accepted as canonical entry 63
+[ (4,1),(3,3) | (2,4),(1,2) ] equivalent to [ (4,2),(1,4) | (2,1),(3,3) ] via column ∘ player
+[ (4,2),(3,4) | (2,1),(1,3) ] accepted as canonical entry 64
+[ (4,3),(3,2) | (2,4),(1,1) ] equivalent to [ (4,2),(3,4) | (1,1),(2,3) ] via column ∘ player
+[ (4,2),(3,3) | (2,1),(1,4) ] equivalent to [ (4,1),(3,3) | (1,2),(2,4) ] via mirror ∘ player
+[ (4,3),(3,1) | (2,4),(1,2) ] equivalent to [ (4,2),(3,4) | (2,1),(1,3) ] via column ∘ player
+[ (4,4),(3,1) | (2,2),(1,3) ] accepted as canonical entry 65
+[ (4,2),(3,4) | (2,3),(1,1) ] equivalent to [ (4,3),(1,1) | (2,4),(3,2) ] via row ∘ player
+[ (4,1),(3,3) | (2,2),(1,4) ] accepted as canonical entry 66
+[ (4,4),(3,2) | (2,1),(1,3) ] equivalent to [ (4,4),(1,2) | (2,3),(3,1) ] via player
+[ (4,1),(3,2) | (2,3),(1,4) ] equivalent to [ (4,1),(2,3) | (3,2),(1,4) ] via mirror ∘ player
+[ (4,1),(3,2) | (2,4),(1,3) ] accepted as canonical entry 67
+[ (4,4),(3,3) | (2,1),(1,2) ] accepted as canonical entry 68
+[ (4,4),(2,2) | (1,3),(3,1) ] equivalent to [ (4,4),(3,1) | (2,2),(1,3) ] via player
+[ (4,4),(2,3) | (1,2),(3,1) ] equivalent to [ (4,4),(2,1) | (3,2),(1,3) ] via player
+[ (4,3),(2,1) | (1,2),(3,4) ] equivalent to [ (4,3),(1,2) | (2,1),(3,4) ] via mirror ∘ player
+[ (4,4),(2,1) | (1,3),(3,2) ] equivalent to [ (4,4),(3,1) | (1,2),(2,3) ] via player
+[ (4,3),(2,2) | (1,1),(3,4) ] accepted as canonical entry 69
+[ (4,1),(2,4) | (1,2),(3,3) ] equivalent to [ (4,2),(3,3) | (1,4),(2,1) ] via row ∘ player
+[ (4,1),(2,4) | (1,3),(3,2) ] accepted as canonical entry 70
+[ (4,2),(2,3) | (1,4),(3,1) ] equivalent to [ (4,1),(2,4) | (1,3),(3,2) ] via column ∘ player
+[ (4,2),(2,1) | (1,4),(3,3) ] equivalent to [ (4,1),(2,4) | (3,3),(1,2) ] via column ∘ player
+[ (4,3),(2,4) | (1,2),(3,1) ] accepted as canonical entry 71
+[ (4,3),(2,4) | (1,1),(3,2) ] equivalent to [ (4,2),(2,3) | (3,4),(1,1) ] via row ∘ player
+[ (4,2),(2,1) | (1,3),(3,4) ] accepted as canonical entry 72
+[ (4,1),(2,3) | (1,4),(3,2) ] equivalent to [ (4,1),(1,4) | (2,3),(3,2) ] via column ∘ player
+[ (4,2),(2,4) | (1,1),(3,3) ] equivalent to [ (4,2),(3,3) | (2,4),(1,1) ] via row ∘ player
+[ (4,3),(2,2) | (1,4),(3,1) ] equivalent to [ (4,1),(3,4) | (1,3),(2,2) ] via column ∘ player
+[ (4,2),(2,3) | (1,1),(3,4) ] equivalent to [ (4,3),(3,2) | (1,1),(2,4) ] via mirror ∘ player
+[ (4,3),(2,1) | (1,4),(3,2) ] equivalent to [ (4,1),(3,4) | (2,3),(1,2) ] via column ∘ player
+[ (4,4),(2,1) | (1,2),(3,3) ] accepted as canonical entry 73
+[ (4,2),(2,4) | (1,3),(3,1) ] equivalent to [ (4,2),(1,3) | (2,4),(3,1) ] via row ∘ player
+[ (4,1),(2,3) | (1,2),(3,4) ] equivalent to [ (4,3),(3,2) | (2,1),(1,4) ] via mirror ∘ player
+[ (4,4),(2,2) | (1,1),(3,3) ] equivalent to [ (4,4),(1,1) | (2,2),(3,3) ] via player
+[ (4,1),(2,2) | (1,3),(3,4) ] equivalent to [ (4,3),(2,2) | (3,1),(1,4) ] via mirror ∘ player
+[ (4,1),(2,2) | (1,4),(3,3) ] accepted as canonical entry 74
+[ (4,4),(2,3) | (1,1),(3,2) ] accepted as canonical entry 75
+[ (4,4),(1,2) | (3,3),(2,1) ] equivalent to [ (4,4),(3,3) | (2,1),(1,2) ] via player
+[ (4,4),(1,3) | (3,2),(2,1) ] equivalent to [ (4,4),(2,3) | (3,1),(1,2) ] via player
+[ (4,3),(1,1) | (3,2),(2,4) ] equivalent to [ (4,2),(1,1) | (2,3),(3,4) ] via mirror ∘ player
+[ (4,4),(1,1) | (3,3),(2,2) ] equivalent to [ (4,4),(3,3) | (1,1),(2,2) ] via player
+[ (4,3),(1,2) | (3,1),(2,4) ] equivalent to [ (4,2),(2,1) | (1,3),(3,4) ] via mirror ∘ player
+[ (4,1),(1,4) | (3,2),(2,3) ] equivalent to [ (4,1),(3,2) | (1,4),(2,3) ] via row ∘ player
+[ (4,1),(1,4) | (3,3),(2,2) ] equivalent to [ (4,1),(2,2) | (1,4),(3,3) ] via row ∘ player
+[ (4,2),(1,3) | (3,4),(2,1) ] equivalent to [ (4,3),(2,4) | (1,2),(3,1) ] via column ∘ player
+[ (4,2),(1,1) | (3,4),(2,3) ] equivalent to [ (4,3),(2,4) | (3,2),(1,1) ] via column ∘ player
+[ (4,3),(1,4) | (3,2),(2,1) ] accepted as canonical entry 76
+[ (4,3),(1,4) | (3,1),(2,2) ] equivalent to [ (4,1),(2,2) | (3,4),(1,3) ] via row ∘ player
+[ (4,2),(1,1) | (3,3),(2,4) ] accepted as canonical entry 77
+[ (4,1),(1,3) | (3,4),(2,2) ] equivalent to [ (4,3),(1,4) | (2,2),(3,1) ] via column ∘ player
+[ (4,2),(1,4) | (3,1),(2,3) ] equivalent to [ (4,1),(3,2) | (2,4),(1,3) ] via row ∘ player
+[ (4,3),(1,2) | (3,4),(2,1) ] equivalent to [ (4,3),(3,4) | (1,2),(2,1) ] via column ∘ player
+[ (4,2),(1,3) | (3,1),(2,4) ] equivalent to [ (4,2),(3,1) | (1,3),(2,4) ] via mirror ∘ player
+[ (4,3),(1,1) | (3,4),(2,2) ] equivalent to [ (4,3),(3,4) | (2,2),(1,1) ] via column ∘ player
+[ (4,4),(1,1) | (3,2),(2,3) ] equivalent to [ (4,4),(2,3) | (1,1),(3,2) ] via player
+[ (4,2),(1,4) | (3,3),(2,1) ] equivalent to [ (4,1),(1,2) | (2,4),(3,3) ] via row ∘ player
+[ (4,1),(1,3) | (3,2),(2,4) ] equivalent to [ (4,2),(3,1) | (2,3),(1,4) ] via mirror ∘ player
+[ (4,4),(1,2) | (3,1),(2,3) ] equivalent to [ (4,4),(1,3) | (2,1),(3,2) ] via player
+[ (4,1),(1,2) | (3,3),(2,4) ] equivalent to [ (4,2),(2,1) | (3,3),(1,4) ] via mirror ∘ player
+[ (4,1),(1,2) | (3,4),(2,3) ] equivalent to [ (4,3),(1,4) | (3,2),(2,1) ] via column ∘ player
+[ (4,4),(1,3) | (3,1),(2,2) ] accepted as canonical entry 78 Groovy code: #!/usr/bin/groovy
+
+// Payoff Tuple (a,b) found in game matrix position.
+// The Tuple is immutable, if we need to change it, we create a new one.
+// ""equals()"" checks for equality against another Tuple instance.
+// ""hashCode()"" is needed for insertion/retrievel of a Tuple instance into/from
+// a ""Map"" (in this case, the hashCode() actually a one-to-one mapping to the integers.)
+
+class Tuple {
+
+   final int a,b
+
+   Tuple(int a,int b) {
+      assert 1 <= a && a <= 4
+      assert 1 <= b && b <= 4
+      this.a = a
+      this.b = b
+   }
+
+   boolean equals(def o) {
+      if (!(o && o instanceof Tuple)) {
+         return false
+      }
+      return a == o.a && b == o.b
+   }
+
+   int hashCode() {
+      return (a-1) * 4 + (b-1)
+   }
+
+   String toString() {
+      return ""($a,$b)""
+   }
+
+   Tuple flip() {
+      return new Tuple(b,a)
+   }
+}
+
+// ""GameMatrix"" is an immutable structure of 2 x 2 Tuples:
+// top left, top right, bottom left, bottom right
+// ""equals()"" checks for equality against another GameMatrix instance.
+// ""hashCode()"" is needed for insertion/retrievel of a GameMatrix instance into/from
+// a ""Map"" (in this case, the hashCode() actually a one-to-one mapping to the integers)
+
+class GameMatrix {
+
+   final Tuple tl, tr, bl, br
+
+   GameMatrix(Tuple tl,tr,bl,br) {
+      assert tl && tr && bl && br
+      this.tl = tl; this.tr = tr
+      this.bl = bl; this.br = br
+   }
+
+   GameMatrix colExchange() {
+      return new GameMatrix(tr,tl,br,bl)
+   }
+
+   GameMatrix rowExchange() {
+      return new GameMatrix(bl,br,tl,tr)
+   }
+
+   GameMatrix playerExchange() {
+      return new GameMatrix(tl.flip(),bl.flip(),tr.flip(),br.flip())
+   }
+
+   GameMatrix mirror() {
+      // columnEchange followed by rowExchange
+      return new GameMatrix(br,bl,tr,tl)
+   }
+
+   String toString() {
+      return ""[ ${tl},${tr} | ${bl},${br} ]""
+   }
+
+   boolean equals(def o) {
+      if (!(o && o instanceof GameMatrix)) {
+         return false
+      }
+      return tl == o.tl && tr == o.tr && bl == o.bl && br == o.br
+   }
+
+   int hashCode() {
+      return (( tl.hashCode() * 16 + tr.hashCode() ) * 16 + bl.hashCode() ) * 16 + br.hashCode()     
+   }
+
+}
+
+// Check whether a GameMatrix can be mapped to a member of the ""canonicals"", the set of 
+// equivalence class representatives, using a reduced set of transformations. Technically,
+// ""canonicals"" is a ""Map"" because we want to not only ask the membership question, but 
+// also obtain the canonical member, which is easily done using a Map. 
+// The method returns the array [ canonical member, string describing the operation chain ]
+// if found, [ null, null ] otherwise.
+
+static dupCheck(GameMatrix gm, Map canonicals) {
+   // Applying only one of rowExchange, colExchange, mirror will
+   // never generate a member of ""canonicals"" as all of these have player A payoff 4
+   // at topleft, and so does gm
+   def q     = gm.playerExchange()
+   def chain = ""player""
+   if (q.tl.a == 4) {
+   }
+   else if (q.tr.a == 4) {
+      q = q.colExchange(); chain = ""column ∘ ${chain}""
+   }
+   else if (q.bl.a == 4) {
+      q = q.rowExchange(); chain = ""row ∘ ${chain}""
+   }
+   else if (q.br.a == 4) {
+      q = q.mirror(); chain = ""mirror ∘ ${chain}""
+   }
+   else {
+      assert false : ""Can't happen""
+   }
+   assert q.tl.a == 4
+   return (canonicals[q]) ? [ canonicals[q], chain ] : [ null, null ]
+}
+
+// Main enumerates all the possible Game Matrixes and builds the
+// set of equivalence class representatives, ""canonicals"".
+// We only bother to generate Game Matrixes of the form
+// [ (4,_) , (_,_) | (_,_) , (_,_) ]
+// as any other Game Matrix can be trivially transformed into the
+// above form using row, column and player exchange.
+
+static main(String[] argv) {
+   def canonicals = [:]
+   def i = 1
+   [3,2,1].permutations { payoffs_playerA ->
+      [4,3,2,1].permutations { payoffs_playerB ->
+         def gm = new GameMatrix(
+                       new Tuple(4,                  payoffs_playerB[0]),
+                       new Tuple(payoffs_playerA[0], payoffs_playerB[1]),
+                       new Tuple(payoffs_playerA[1], payoffs_playerB[2]),
+                       new Tuple(payoffs_playerA[2], payoffs_playerB[3])
+                  )
+         def ( c, chain ) = dupCheck(gm,canonicals)
+         if (c) {
+            System.out << ""${gm} equivalent to ${c} via ${chain}\n""
+         }
+         else {
+            System.out << ""${gm} accepted as canonical entry ${i}\n""
+            canonicals[gm] = gm
+            i++
+         }
+      }
+   }
+}","['game-theory', 'equivalence-relations', 'combinatorics']"
+622895,Is there much theory developed for analytic functions of quaternions or of octonions?,"The quaternions are associative, so nonnegative integer powers of quaternions are well-defined, and one can consider analytic functions on $\mathbb{H}$ (functions that are given locally by power series).  The octonions are not associative, but from what I have read, I think they are ""associative enough"" that nonnegative integer powers of octonions are defined unambiguously (please correct me if I'm wrong), and one can define analytic functions of octonions. My question is, how much of this have people actually done?  Has a lot of theory been developed about analytic functions on $\mathbb{H}$ and $\mathbb{O}$?  I haven't heard of very much. If not, is it because their properties are very similar to those of analytic functions on $\mathbb{C}$? I know that a lot of people in engineering, kinematics, and computer graphics use quaternions (perhaps more than mathematicians do) so it is not the case that no one is interested in quaternions.  I have heard that some physicists are interested in octonions, but I don't know much about that.","['quaternions', 'complex-analysis']"
+622905,"remainder when $(x+1)^n$ is divided by $(x-1)^3$, where $n\in \mathbb{N}$","Calculation of remainder when $(x+1)^n$ is divided by $(x-1)^3$, where $n\in \mathbb{N}$ $\bf{My\; Try}::$ Using Division Algorithm:: $p(x) = q(x)\cdot g(x)+r(x)$ Now Let $r(x) = ax^2+bx+c$ So $(x+1)^n=q(x)\cdot (x-1)^3+ax^2+bx+c........................(1)$ Now put $x=1$, we get $\boxed{a+b+c=2^n}$ Now differentitae $(1)$, we get $n(x+1)^{n-1} = q(x)\cdot 3(x-1)^2+(x-1)^3\cdot q^{'}(x)+2ax+b$ again put $x=1$, we get $\boxed{2a+b=n(2)^{n-1}}$ Now again differentitae $(1)$ and then put $x=1$, we get $\displaystyle \boxed{2a=n(n-1)2^{n-2}\Rightarrow \displaystyle a=\frac{n(n-1)}{2}\cdot 2^{n-2}}$ Similarly we get $\displaystyle b = n(2)^{n-1}-n(n-1)\cdot 2^{n-2}$ Similarly we get $\displaystyle c= 2^{n}+n(n-1)\cdot 2^{n-2}-\frac{n(n-1)}{2}\cdot 2^{n-2}$ So Remainder $\displaystyle r(x) = \frac{n(n-1)}{2}2^{n-2}x^2+\left\{n(2)^{n-1}-n(n-1) 2^{n-2}\right\}x+2^{n}+n(n-1)\cdot 2^{n-2}-\frac{n(n-1)}{2}2^{n-2}$ is my solution is right , if not then how can i calculate it or If there is any better method , then plz explain here Thanks",['algebra-precalculus']
+622913,"$\alpha,\beta,\gamma$ are roots of cubic equation $x^3+4x-1=0$","If $\alpha,\beta,\gamma$ are the roots of the equation $x^3+4x-1=0$ and $\displaystyle \frac{1}{\alpha+1},\frac{1}{\beta+1},\frac{1}{\gamma+1}$ are the roots of the equation $\displaystyle 6x^3-7x^2+3x-1=0$. Then value of $\displaystyle \frac{(\beta+1)(\gamma+1)}{\alpha^2}+\frac{(\gamma+1)(\alpha+1)}{\beta^2}+\frac{(\alpha+1)(\beta+1)}{\gamma^2}=$ $\bf{My\; Try}::$ Given $x=\alpha,\beta,\gamma$ are the roots of the equation $x^3+4x-1=0$, Then $x^3+4x-1 = (x-\alpha)\cdot(x-\beta)\cdot (x-\gamma)$ put $x=-1$, we get $(1+\alpha)(1+\beta)(1+\gamma) = 6$ Now $\displaystyle \frac{(\beta+1)(\gamma+1)}{\alpha^2}+\frac{(\gamma+1)(\alpha+1)}{\beta^2}+\frac{(\alpha+1)(\beta+1)}{\gamma^2} = 6\left\{\frac{1}{(\alpha+1)\alpha^2}+\frac{1}{(\beta+1)\beta^2}+\frac{1}{(\gamma+1)\gamma^2}\right\}$ Now how can I solve after that, Help required thanks","['cubics', 'algebra-precalculus', 'roots', 'polynomials']"
+622968,"Is it possible to have $f(x)f''(x) \leq -1$ for all $x \in [0,\infty)$?","Let $f : [0,\infty) \longrightarrow \Bbb{R}$ and suppose that $f''$ exists. Is it possible to have $f(x)f''(x)  \leq -1$ for all $x$ ?","['calculus', 'real-analysis']"
+622971,Questions about prime divisors.,"Let $Y$ be a prime divisor on $X$ and $\eta \in Y$ its generic point. Then the local ring $\mathcal{O}_{\eta, X}$ is a discrete valuation ring with quotient field $K$, the function field of $X$. This is in the last paragraph on page 130 of Hartshorne's book: algebraic geometry. I don't know how to prove this. I think that if $X$ is a curve, then $Y=\{\eta \}$ is a closed point. Therefore $\eta$ is a generic point of $Y$. But how could we prove that $\mathcal{O}_{\eta, X}$ is a discrete valuation ring? I think that we have to prove that $\dim \mathcal{O}_{\eta, X}=1$ since regular local ring with dimension 1 is a discrete valuation ring. Thank you very much.",['algebraic-geometry']
+622976,"Show that image of $res$ lies in $H^n(H,A)^{G/H}$","Let $G$ and $G^{\prime}$ be groups, $A$ and $A^{\prime}$ be $G$-module and $G^{\prime}$-module respectively, $C^n(G,A)$ be set of all maps from $G \times \cdots \times G$ ($n$ times) to $A$, $d_n :C^n(G,A) \rightarrow C^{n+1}(G,A)$ be coboundary operator, $H^n(G,A)$ be $n$ dimensional cohomology group. The group homomorphisms $\phi:G^{\prime} \rightarrow G$ and $\psi : A \rightarrow A^{\prime}$ are said to be compatible pair if $\psi$ is a $G^{\prime}$-module homomorphism when $A$ is made into $G^{\prime}$-module by means of $\phi$. This will induce a homomorphism from $C^n(G,A)$ to $C^n(G^{\prime},A^{\prime})$ by $f \mapsto \psi \circ f \circ \phi^n$. Since this homomorphism commutes with coboundary operator, this induces a homomorphism from $H^n(G,A)$ to $H^(G^{\prime},A^{\prime})$. Suppose $H$ is a normal subgroup of $G$. For a fixed $g \in G$, let $\psi(a)=ga$ and $\phi(h)=g^{-1}hg$. ONe can check that $\phi$ and $\psi$ are compatible pair. One can check that the homomorphism $\theta_g$ from $H^n(H,A)$ to $H^(H,A)$ induced by $\phi$ and $\psi$ is automorphism and the quoteint group $G/H$ acts on $H^n(H,A)$ by $\theta_g$. Let $res : H^n(G,A) \rightarrow H^n(H,A)$ be the restriction homomorphism. I need to check that image of $res$ lies in $H^n(H,A)^{G/H}$, where $A^G=\{a \in A|ga=a ~\text{for all}~ g \in G \}$. For this, I need to check that $\theta_g(\bar{f|_H})=\bar{f|_H}$, where $\bar{f|_H}$ represents the class of $f|_H \in C^n(H,A)$. But I am unable to prove this because of following: $\theta_g(\bar{f|_H})(h_1,\cdots,h_n)=\bar{\psi \circ f|_H \circ \phi^n}(h_1,\cdots,h_n)=\bar{gf|_H(g^{-1}h_1g,\cdots,g^{-1}h_ng)}=\bar{f|_H(h_1g,\cdots,h_ng)} $ Am I doing something wrong or missing something?","['homology-cohomology', 'group-cohomology', 'group-theory', 'abstract-algebra']"
+622982,Determine whether the series $\sum_{n=1}^{\infty }\left ( \frac\pi2-\arctan n \right )$ converges or not. [duplicate],"This question already has answers here : Does the series $\;\sum\limits_{n=0}^{\infty}\left(\frac{\pi}{2} - \arctan(n)\right)$ converge or diverge? [closed] (2 answers) Closed 10 years ago . I want to know whether the series
+$\displaystyle{%
+\sum_{n=1}^{\infty }\left[{\pi \over 2} - \arctan\left(n\right)\right ]}$ converges or not. Some series such as $\sum_{n=1}^{\infty}\sin \frac1n$, $\sum_{n=1}^{\infty}\tan \frac1n$ are solved by the comparison test with $\sum_{n=1}^{\infty}\frac1n$. But the given series is not compared with $\sum_{n=1}^{\infty}\frac1n$. Is there another way to determine whether the series converges or not?",['sequences-and-series']
+623017,Asymptotic efficiency of maximum likelihood estimate,"Let us consider a simple statistical model $\{f_{\theta}\}$ where $\theta\in U$, an open subset of $\mathbb{R}$. Let $X_1,\dots,X_n$ be sample drawn from $f_{\theta}$. I know, under some regularity assumptions, that $$ n \text{Var}_{\theta}\left(\hat{\theta}_{MLE}(X_1,\dots.X_n)\right)\to 1/I_{\theta},$$ where $I_{\theta}$ is the Fisher information. Can someone provide a proof (or a link to a reference) to the above result? In the books I have, I could find only proof of the following (relevant) result which is actually called asymptotic normality: $$\sqrt{n}\left(\hat{\theta}_{MLE}(X_1,\dots.X_n)-\theta\right)\stackrel{d}{\to} \mathcal{N}(0,1/I_{\theta}).$$ Thank you.","['statistics', 'statistical-inference']"
+623019,Solving the differential equation $f'(x)=af(x+b)$,"How does one find all the differentiable functions $f\colon \mathbb{R} \to \mathbb{R}$ which satisfy the equation
+$$
+f'(x)=af(x+b),\quad \text{for}\quad  a,b \in \mathbb{R}?
+$$ 
+I see that functions of the form $\alpha e^{\beta x}$ and $\alpha \sin(\beta x + \gamma)$ will be solutions, but I'm not sure how to exhaustively find all of the solutions.","['ordinary-differential-equations', 'delay-differential-equations', 'functional-equations', 'analysis']"
+623020,How find this sum of $\lim_{n\to\infty}\sum_{k=1}^{n}\left(\frac{1}{2^k}\sum_{i=0}^{2^{k-1}-1}\ln{\left(\frac{2^k+2+2i}{2^k+1+2i}\right)}\right)$,"Find the sum  of the limit
+$$\lim_{n\to\infty}\sum_{k=1}^{n}\left(\frac{1}{2^k}\sum_{i=0}^{2^{k-1}-1}\ln{\left(\frac{2^k+2+2i}{2^k+1+2i}\right)}\right)$$ My try: since
+$$\sum_{i=0}^{2^{k-1}-1}\ln{\left(\dfrac{2^k+2+2i}{2^k+1+2i}\right)}=\sum_{i=0}^{2^{k-1}-1}\left(\ln{(2^k+2+2i)}-\ln{(2^k+1+2i)}\right)$$ My friend tells me this sum has an analytical solution. But
+I can't find it. Thank you.","['summation', 'calculus']"
+623026,Bound of the sum $\sum_{p\le n}\frac{1}{\log(p)}$,"While doing a sum I came to the sum $\displaystyle\sum_{p\le n}\dfrac{1}{\log(p)}$.
+Where the $\log$ is the natural logarithm. It was easy to prove that $\displaystyle\sum_{p\le n}\dfrac{1}{\log(p)}<\pi(n)+\text{const.}$. Thus $\displaystyle\sum_{p\le n}\dfrac{1}{\log(p)}=o\left(\frac{n}{\log(n)}\right)$.
+Using my computer I can see that $\displaystyle\sum_{p\le n}\dfrac{1}{\log(p)}=o\left(\log(n)^{3/2}\right)$. I can go further and see that it is $o\left(\log(n)^{1.4}\right)$. It may be true that $o\left(log(n)^{1.35}\right)$. (I have checked $n$ till $10^{19}$. My C++ code can't be trusted anymore because $64$ bit integers can't take in more values and precision of long double is up to like $16$ digits.) My conjecture is that it is $O(\log(n))$. Is this true? Are there any other bounds? I don't want advanced proofs as I am a novice in Maths. If there is any bounds just post them here without the proofs and with some comments, if necessary.","['prime-numbers', 'asymptotics', 'analytic-number-theory', 'number-theory']"
+623036,"If a matrix commutes with all diagonal matrices, must the matrix itself be diagonal?","I'm new to stackexchange so feel free to correct my style/format/logic etc. The question is this: let's say $A$ is a square matrix of size $n$. I would like to show that $AD = DA$, for any diagonal matrix $D$ also of size $n$, if and only if $A$ is also diagonal. I think I have some of the proof but am not very confident in it. $\Leftarrow $: 
+If A is diagonal, it is not too hard to show that $AD = DA$, because multiplying two diagonal matrices just amounts to multiplying the corresponding diagonal entries. $\Rightarrow$: 
+(i) $DA$ is found by multiplying each row in A with the corresponding entry along the diagonal in $D$. $AD$ is found by multiplying each column in $A$ with the corresponding entry along the diagonal in $D$. Since $AD = DA$, this product has to be symmetric. (ii) Now suppose $A$ weren't a diagonal matrix. Then if we make the entries along the diagonal in $D$ all different, $AD$ won't be symmetric anymore (?). This contradicts (i), so we have shown both ways. Does this work? [edited]",['linear-algebra']
+623056,Corollary of Banach Steinhaus theorem,"If $\{M_n\}_{n∈\mathbb{N}}$ is a family of continuous operators for $X$ Banach to $Y$
+normed, such that $M_n(x)$ converges to $M(x)$ for all $x ∈ X$, then $M$ is a linear bounded operator and $||M||_{L(X,Y)}≤\liminf_{n→∞}||M_n||_{L(X,Y)}$.
+I cant understand of which set is taken the inf?","['operator-theory', 'functional-analysis', 'limsup-and-liminf']"
+623091,Cantor-Bernstein Theorem proof,"I am self studying real analysis and I am doing an exercise which is proving the Cantor-Bernstein Theorem. Question: Assume there exists a 1-1 function $f:X \rightarrow Y$ and another 1-1 function $g:Y \rightarrow X$. Follow the steps to show that there exists a 1-1, onto function $h:X \rightarrow Y$ and hence $X \sim Y$. a) The range of $f$ is defined by $f(X) = \{y \in Y : y = f(x) \ \text{for some} \ x \in X\}$. Let $y \in f(X)$. Explain why there exists a unique $x \in X$ such that $f(x) = y$. Now define $f^{-1}(y) = x$, and show that $f^{-1}$ is a 1-1 function from $f(X)$ onto $X$. In a similar way, we can also define the 1-1, onto function $g^{-1}: g(Y) \rightarrow Y$. b) Let $x \in X$ be arbitrary. Let the chain $C_x$ be the set consisting of all elements of the form:
+$$\cdots, f^{-1}(g^{-1}(x)), g^{-1}(x), x, f(x), g(f(x)), f(g(f(x))), \cdots $$ Explain why the number of elements to the left of $x$ in the above chain may be zero, finite, or infinite. c) Show that any two chains are either identical or completely disjoint. d) Note that the terms in the chain above alternate between elements of $X$ and elements of $Y$, i.e.,
+$$\cdots, \underbrace{f^{-1}(g^{-1}(x))}_{\in X}, \underbrace{g^{-1}(x)}_{\in Y}, \underbrace{x}_{\in X}, \underbrace{f(x)}_{\in Y}, \underbrace{g(f(x))}_{\in X}, \underbrace{f(g(f(x)))}_{\in Y}, \cdots  \ \ \ \ \ \ \ \ \ \ (1)$$ Given a chain $C_x$, focus on $C_x \cap Y$, which is just the part of the chain that belongs to $Y$. Define the set $A$ to be the union of all chains $C_x$ satisfying $C_x \cap Y \subseteq f(X)$. Let $B$ be the set of the union of the remaining chains not in $A$. Show that any chain contained in $B$ must be of the form: $$y, g(y), f(g(y)), g(f(g(y))), \cdots $$ where $y$ is an element of $Y$ that is not in $f(X)$. Queries: OK, I can do parts a) to c) , it is part d) which is confusing me right now. Here is my attempt so far. Let $C_{x_0}$ be a chain in $B$, then clearly $C_{x_0} \cap Y \not \subseteq f(X)$, which means there must exist some $y \in Y$ with $y \in C_{x_0}$ such that $y \not \in f(X)$. Referring to expression $(1)$, clearly elements like $f(x_0)$, $f(g(f(x_0)))$, $\cdots$ must be an element of $f(X)$ by definition. So it must be a term of the form like $g^{-1}(x_0)$ which is not an element of $f(X)$. Now I am not exactly sure how to complete the remainder of the question, that is, the chains in $B$ must be of the form given in the question.","['elementary-set-theory', 'functions']"
+623095,finding a limit of a general function. [duplicate],"This question already has answers here : Limits and derivatives - two questions (3 answers) Closed 10 years ago . ${\rm f}$ is differentiable at ${\rm f}\left(1\right),\,$
+${\rm f}\left(1\right) > 0$. Calculate the following limit, and here's what I did:
+$$
+\lim_{n \to \infty }\left[%
+{\rm f}\left(1 + 1/n\right) \over {\rm f}\left(1\right)\right]^{1/n}
+=
+\left[{\rm f}\left(1\right) \over {\rm f}\left(1\right)\right]^{0} = 1
+$$ Now, On the one hand, I can't see why the above isn't true. On the other hand, I got this hunch something is wrong here. Can you direct me please?","['functions', 'calculus', 'real-analysis', 'limits']"
+623096,"An integro differential equation involving $f$,$f_h$ and second derivative of $f$.",Let $f_h$ be the Hilbert transform of the real function $f$. I need some help solving this integro differential equation : $$\alpha f_h(x) + \beta f''(x) = f(x)$$ A simple sinusoid doesn't seem to fit the bill. Kind of puzzzling for me to even guess anything!,"['ordinary-differential-equations', 'integro-differential-equations', 'integral-equations', 'real-analysis', 'functional-analysis']"
+623097,Differentiating mahalanobis distance,"I would like to differentiate the mahalanobis distance: $$D(\textbf{x}, \boldsymbol \mu, \Sigma) = (\textbf{x}-\boldsymbol \mu)^T\Sigma^{-1}(\textbf{x}-\boldsymbol \mu)$$ where $\textbf{x} = (x_1, ..., x_n) \in \mathbb R^n, \;\boldsymbol \mu = (\mu_1, ..., \mu_n) \in \mathbb R^n$ and 
+$$\Sigma = \left( \begin{array}{ccc}
+E[(X_1-\mu_1)(X_1-\mu_1)] & \cdots & E[(X_1-\mu_1)(X_n-\mu_n)] \\
+\vdots & \ddots & \vdots \\
+E[(X_n-\mu_n)(X_1-\mu_1)] & \cdots & E[(X_n-\mu_n)(X_n-\mu_n)] \end{array} \right)$$ $\;$ is the covariance matrix. I want to differentiate $D$ with respect to $\boldsymbol\mu$ and $\Sigma$. Can someone show me how to do this? In other words, how to calculate: $$\frac{\partial D}{\partial \boldsymbol \mu} \;\;\text{and}\;\;\frac{\partial D}{\partial \Sigma}$$? Thnx for any help! I got the motivation for my question from this source (page 13, EM-algorithm): http://ptgmedia.pearsoncmg.com/images/0131478249/samplechapter/0131478249_ch03.pdf","['normal-distribution', 'matrix-calculus', 'calculus', 'derivatives']"
+623123,Show gamma-function $\Gamma(r)$ is well-defined for any $r >0$ (the limit of the improper definite integral exists),"Introduction: I have proved the following: Suppose that Poisson events are occuring at the constant rate of $\lambda$ per unit time. Let the random variable $Y$ denote the waiting time for the rth event, then $Y$ has pdf: $$f_Y(y) = \frac {\lambda^r} {(r-1)!} y^{r-1}e^{-\lambda y} $$ (1) so $Y$ is defined for $r \in \mathbb N$. However the gamma pdf: $$f_Y(y) = \frac {\lambda^r} {\Gamma(r)} y^{r-1}e^{-\lambda y}$$ is a generalization of this function (right?), since $\Gamma(r) = (r-1)!$ for any positive integer $r$. To justify that the gamma pdf is a well-defined function i must that the gamma function: $$\Gamma(r) = \int_0^{\infty} y^{r-1}e^{-y} dy$$ is a well-defined function (I've already verified $$\int_0^{\infty}f_Y(y) dy = \int_0^{\infty} \frac {\lambda^r} {(r-1)!} y^{r-1}e^{-\lambda y} dy = 1$$ under the assumption that it is). Question: 1. How do I show that the gamma function is well-defined, that is the improper definite integral exists for any real number $r >0$ ? I know it exists for any positive integer $t > r$ (the integral with boundaries $0$ and $\infty$ of (1) is equal to $1$?) so $\Gamma(r) \le \Gamma(t)$ (right?) This implies that $\Gamma(r)$ is bounded, but how do I show the limit exists for $y \rightarrow \infty$ ? Also the functions of $y$ in $\Gamma(r)$ are both continuous, which implies the function is integrable ?","['statistics', 'probability-limit-theorems', 'probability', 'limits']"
+623126,Finding the derivative of: $ y(x)=x⋅\sin(x)+x^2⋅\cos(3x) $,"I am a student and I have a problem in solving this derivative, so please help me. The problem:
+    $$ y(x)=x⋅\sin(x)+x^2⋅\cos(3x)$$
+I give this problem to online derivative calculator like derivative-calculator.net but the answer is not equal to my teacher answer. online calc answer:
+$$
+y^\prime(x)=−3x2⋅\sin(3x)+2x⋅\cos(3x)+\sin(x)+x⋅\cos(x)
+$$
+teacher answer:
+$$
+y^\prime(x)  =  1⋅\sin(x)+x⋅\cos(x)+2x⋅\cos(3x)-3x^2⋅\sin(3x)
+$$
+what is the correct answer?
+thanks.",['derivatives']
+623147,Infinitesimal calculus,"I have been reading some non-standard analysis from Keisler's book and I think it is logically consistent till now but there are criticisms against it and why isn't non-standard analysis accepted more widely, the whole book is almost similar to the concept of limit. I have read Apostol's books earlier . Then why aren't we taught only the infinitesimal calculus only and what is special about the $\epsilon - \delta$ approach ?","['nonstandard-analysis', 'calculus', 'infinitesimals']"
+623151,Confidence intervals for the variance. What if data is not normally distributed?,"I am writing an essay about confidence intervals for the variance and there is a lot of information available under the assumption that our data is normally distributed, but there is not much said about other possible distributions. How can we find confidence intervals for the variance if we assume our data is e.g. uniformly distributed? Can it be done? Can it be done for other distributions?",['statistics']
+623153,Rules for cancelling fractions with exponents,"I have an expression that I need to simplify, I know the answer (wolframalpha) but I'm not sure of the rule that gets me there. $\dfrac{(\alpha) X_1^{\alpha -1} X_2^{1-\alpha}}{(1-\alpha)X_1^\alpha X_2^{-\alpha}}$ Basically I know that on the $X_1$ side of the fraction it cancels down to $\frac{1}{x_1}$ and the $X_2$ side cancels to $\frac{x_2}{1}$ leaving me with the alphas still outside and $\frac{X_2}{X_1}$. But I don't know the exponent rule that allows me to do this cancellation. I just want to be sure I understand it fully. Thanks. Edit: Thank you very much to both of you! You've really helped with an upcoming exam. This is my first time posting here, I will fill out my profile and hopefully I can help other people from here on in! Thanks again!","['fractions', 'calculus', 'algebra-precalculus']"
+623172,Conjugacy class of $G$ splitting as Conjugacy class of $H\unlhd G$,"Assume $H\unlhd G$ and $\mathcal{K}$ is a conjugacy class of $G$ contained in $H$ and let $x\in \mathcal{K}$. Prove that $\mathcal{K}$ is union of $k$ conjugacy classes of equal size in $H$ where $k=|G:HC_G(x)|$. I do not really understand the idea behind this : $\mathcal{K}$ is a conjugacy class of $G$ means : Given $x,y\in \mathcal{K}$ we have $g\in G$ such that $x=gyg^{-1}$ He is saying that $\mathcal{K}$ splits into separate classes when seen as classes over $H$. Splitting means there are two elements in $\mathcal{K}$ that their conjugating element is not coming from $H$ I am not able to proceed further.. I would like to see that if it splits then it splits ""Equally"" please help me to clear this. Thank you","['group-theory', 'abstract-algebra', 'normal-subgroups']"
+623177,Topologies such that every point has a finite number of neighborhouds,Are there results known about topologies such that every point is just contained in a finite number of open sets (or neighborhoods)?,"['general-topology', 'analysis']"
+623180,Determinant of a matrix with generalized binomial coefficients,"Let
+$$
+A=
+\begin{bmatrix}\binom{-1/2}{1}&\binom{-1/2}{0}&0&0&...&0\\ \binom{-1/2}{2}&\binom{-1/2}{1}&\binom{-1/2}{0}&0&&...\\...&&&\binom{-1/2}{0}\\ &&&...&&\binom{-1/2}{0}\\ \binom{-1/2}{n}&\binom{-1/2}{n-1}&\binom{-1/2}{n-2}&\binom{-1/2}{n-3}&...&\binom{-1/2}{1}\end{bmatrix}.
+$$
+How can I calculate $\det A$? Thank you very much.","['matrices', 'linear-algebra', 'determinant']"
+623186,Expectation of stochastic integrals related to Brownian Motion,"I'm trying to solve a problem that's now doing my head in a bit. I'll share with you the question and let's see if somebody can shed some light into the matter: Let B be a standard Brownian Motion started at zero, and let M be a stochastic process defined by:
+$$
+M_t = \int_0^{\log(\sqrt{1 + 2t})} e^{s}\mathrm dB_s\,.
+$$ Show that M is a Standard Brownian Motion. Calculate $$E\left(\int_0^tM^6_s\mathrm dM_s\right).$$ Calculate $$E\left(\left(\int_0^tM_s\mathrm dM_s\right)^3\right).$$ Hope you can give me some hints, I have the feeling it's actually not that tricky. I would solve question number one using Lévy's characterization theorem for Brownian Motion, not so sure about questions 2 and 3.","['probability-theory', 'stochastic-processes', 'stochastic-calculus', 'brownian-motion']"
+623210,"could not able to understand Project Euler 18. ""Maximum path sum I""","According to question, By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23. 3
+  7 4
+ 2 4 6
+8 5 9 3 That is, 3 + 7 + 4 + 9 = 23. I think, the largest number should be from top to bottom is 3 + 7 + 6 + 9 = 25 instead of 23 .
+If we will take all the largest number from the rows. Is my understanding wrong? Because when I wrote the program for 75
+                        95 64
+                      17 47 82
+                     18 35 87 10
+                   20 04 82 47 65
+                  19 01 23 75 03 34
+                 88 02 77 73 07 63 67
+                99 65 04 28 06 16 70 92
+               41 41 26 56 83 40 80 70 33
+              41 48 72 33 47 32 37 16 94 29
+             53 71 44 65 25 43 91 52 97 51 14
+            70 11 33 28 77 73 17 78 39 68 17 57
+           91 71 52 38 17 14 91 43 58 50 27 29 48
+          63 66 04 68 89 53 67 30 73 16 69 87 40 31
+         04 62 98 27 23 09 70 98 73 93 38 53 60 04 23 Program.c int main()
+{
+    int max = 0;
+    int temp = 0;
+    int i, j, ans;
+    int myarr[15];
+    int arr[15][15] = {
+        75,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 
+        95,  64,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 
+        17,  47,  82,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 
+        18,  35,  87,  10,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 
+        20,  04,  82,  47,  65,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 
+        19,  01,  23,  75,  03,  34,   0,   0,   0,   0,   0,   0,   0,   0,   0, 
+        88,  02,  77,  73,  07,  63,  67,   0,   0,   0,   0,   0,   0,   0,   0, 
+        99,  65,  04,  28,  06,  16,  70,  92,   0,   0,   0,   0,   0,   0,   0, 
+        41,  41,  26,  56,  83,  40,  80,  70,  33,   0,   0,   0,   0,   0,   0, 
+        41,  48,  72,  33,  47,  32,  37,  16,  94,  29,   0,   0,   0,   0,   0, 
+        53,  71,  44,  65,  25,  43,  91,  52,  97,  51,  14,   0,   0,   0,   0, 
+        70,  11,  33,  28,  77,  73,  17,  78,  39,  68,  17,  57,   0,   0,   0, 
+        91,  71,  52,  38,  17,  14,  91,  43,  58,  50,  27,  29,  48,   0,   0, 
+        63,  66,  04,  68,  89,  53,  67,  30,  73,  16,  69,  87,  40,  31,   0, 
+        04,  62,  98,  27,  23,   9,  70,  98,  73,  93,  38,  53,  60,  04,  23
+    };
+    for(i = 0, ans = 0; i < 15; i++)
+    {
+        for(j = 0; j < 15; j++)
+        {
+           temp = arr[i][j];
+           if(temp > max)
+           {
+               max = temp;
+           }
+        }
+
+        ans += max;
+        cout << ""Max of row "" << i << "" is "" << max << endl;
+        max = 0;
+    }
+    std::cout << ans << endl;
+    system(""pause"");
+} I got the answer as 1313 . But it says it is a wrong answer.
+Please help me understanding the question., where I am going wrong?","['project-euler', 'arithmetic', 'algebra-precalculus', 'discrete-mathematics']"
+623226,Basic Calculus counterexample,"We know that if we have two real differentiable functions $\;f,g\;$ on an interval $\;I\subset \Bbb R\;$ s.t. $\;h'(x)=g'(x)\;\;\forall\,x\in I\;$ , we then get that $\;f(x)=g(x)+C\;$ on $\;I\;$ , $\;C=$ a constant, and from here we get, under the same assumptions, that with a twice differentiable function $\;f\;$ on an interval $\;I\;$ $$(1)\;\;f''(x)=a=\text{ a constant}\;\implies\;\exists\,\text{constants}\;\;b,c\;\;s.t.\;\;f(x)=\frac a2x^2+bx+c\;\;(2)$$ The above is pretty simple, but my problem now is to find a counterexample as simple as possible to the last claim above if $\;I\;$ is not an interval , meaning: a function $\;f\;$ differentiable twice and fulfilling (1) does not necessarily have the form (2) if we don't assume $\;I\;$ is an interval . By simple I mean that this is Calculus I and any argument about connectedness or the like must be avoided if possible. Thanks (Yes, I know: ""Don't thank anyone!"", but my mom's education kicks in here...)",['calculus']
+623228,Simple Quadratic function exercise,I am a math teacher and I want to have some other opinions regarding an exercise made from one of my colleagues because I think that she was wrong when correcting the solutions from her students. The exercise is the following - it's rather easy: Which two of the following answers are correct when considering the following function f(x)=a*x^2+b with a > 0 and b < 0 : (A) f intersects with the y-axis at the point P(0| b ). (B) f has two roots. (C) The bigger b is the steeper is the graph of f . (D) The smaller a is the more flat is the graph of f . (E) f has a maximum.,"['quadratics', 'graphing-functions', 'functions']"
+623276,Infinite radical. How to show it converges to three?,"Recently i have discovered a new infinite radical with non-constant (that means they are not the same and not periodic) coefficients. But i don't have a strict proof of this identity...
+The identity is $$\sqrt[3]{23+\sqrt[3]{54+\sqrt[3]{972+\sqrt[3]{21870+\sqrt[3]{551124+\sqrt[3]{14526054+...}}}}}}=3.$$ The numbers are (besides 23) $3^{2n+1}(3^{n-1}+1)$. I am interested in how can we strictly prove that the limit is $3$.","['nested-radicals', 'sequences-and-series']"
+623314,Cartesian product and closure,"Let $A \subset X$ and $B \subset Y$. Show that in the space $X \times Y$, $$\overline{A \times B}= \overline{A} \times \overline{B}$$ $\subset$: let $x \in \overline{A \times B}$. Then for every open set $W$ containing $x$, $W \cap (A\times B) \neq \emptyset$ Since $W$ is an open set of $X \times Y$, $W= U \times V$ such that $U$ is an open set in $X$ and $V$ is an open set in $Y$. We have: $W \cap (A \times B)\neq \emptyset \iff (U \times V) \cap (A\times B) \neq \emptyset \iff (U \cap A) \times (V \cap B) \neq \emptyset \iff U\cap A \neq\emptyset \text{ or } V \cap B\neq \emptyset$ Since $x \in W= U \times V$, $x= (u,v)$ such that $u \in U$ and $v \in V$ $\bullet$ There exists an open set $U$in $X$ containing $u$ such that $U \cap A= \emptyset$ Therefore $u \in \overline{A}$ $\bullet$ Similarly $v \in \overline{B}$ Since $x= (u,v) \in U \times V, x\in \overline{A} \times \overline{B}$ Hence: $\overline{A \times B} \subset \overline{A} \times \overline{B}$ $\supset$: Conversly, let $x \in \overline{A} \times \overline{B}$ $x=(a,b) \in \overline{A} \times \overline{B}$ such that $a\in \overline{A}$ and $b\in \overline{B}$ $\bullet$ There is an open set $U$ in $X$ containing $a$ such that $U \cap A\neq \emptyset$ $\bullet$ There is an open set $V$ in $Y$ containing $b$ such that $V \cap B\neq \emptyset$ Therefore $U \times V$ is an open set in $X \times Y$ containing $x=(a,b)$ such that $(U\times V) \cap (A\times B)\neq \emptyset \Rightarrow x\in \overline{A \times B}$ $\overline{A} \times \overline{B} \subset \overline{A \times B}$ Hence: $\overline{A \times B}= \overline{A} \times \overline{B}$","['general-topology', 'solution-verification']"
+623327,An inequality: $1+\frac1{2^2}+\frac1{3^2}+\dotsb+\frac1{n^2}\lt\frac53$,"$n$ is a positive integer, then $$1+\frac1{2^2}+\frac1{3^2}+\dotsb+\frac1{n^2}\lt\frac53.$$ please don't refer to the famous  $1+\frac1{2^2}+\frac1{3^2}+\dotsb=\frac{\pi^2}6$. I want to find a better proof. My  stupid method: $$1+\frac1{2^2}+\frac1{3^2}+\dotsb+\frac1{n^2}\lt \left(1+\frac1{2^2}+\dotsb+\frac1{10^2}\right)+\frac1{10\cdot11}+\dotsb+\frac1{n(n-1)}\\<1.549768...+\frac1{10}\lt\frac53$$","['inequality', 'summation', 'calculus', 'real-analysis']"
+623362,How to use logarithmic differentiation in this example (I seem to be going wrong),"I'm revising for my Calculus & Vectors exam in January, and one of the warm-up questions from a previous problem sheet was to differentiate $e^{-t}*\cosh{t}*\sinh{t}$ This could be done through the product rule but having just practised logarithmic differentiation I thought it might be quicker to do that. However, doing that I get $$\ln{y}=\ln{e^{-t}}+\ln{(\cosh{t})}+\ln{(\sinh{t})}$$ $$\ln{y}=-t+\ln{(\cosh{t})}+\ln{(\sinh{t})}$$ $$\frac{1}{y}*\frac{dy}{dt} = -1 + \frac{\sinh{t}}{\cosh{t}} + \frac{\cosh{t}}{\sinh{t}}$$ $$\therefore \frac{dy}{dt} = -y + y\tanh{t} + y\coth{t}$$ Which doesn't involve any form of $e$ and is quite a long way away from what wolfram alpha gives too, so my guess is I've gone wrong somewhere! I'm also pretty new to latex so although that looks ok to me, sorry if it doesn't display properly.","['calculus', 'derivatives']"
+623367,How can we prove that formal smoothness is a property local on the source?,"I have learned from this question that, in spite of the gap in the proof of 17.1.6 (i) in EGA IV, we can still verify that a morphism of schemes is formally smooth locally on the source. But, even assuming the results of Raynaud-Gruson, I did not get the argument in ""Catégories Cofibrées Additives et Complexe Cotangent Relatif"" given by Grothendieck, possibly because I do not know the theory of the cotagent complex. For me it seems that he is using some global version of the critère jacobien de lissité formelle [EGA $0_{\text{IV}}$, 22.6.3], but I could not work out the details. Could someone explain me how can we justify this assuming only the results from EGA $0_{\text{IV}}$ and that the projectivity of modules descends along faithfully flat ring maps?",['algebraic-geometry']
+623369,"how many triples of real numbers $(a,b,c)$ are there such that a,b,c are the roots of the equation","How many triples of real numbers $(a,b,c)$ are there such that $a,b,c$ are the roots of the equation ?? $$x^3 +ax^2+bx+c=0$$","['cubics', 'algebra-precalculus', 'polynomials']"
+623417,Normal bundle of a hyperplane section,"Let $Y\subset \mathbb{P}^n$ be a smooth projective variety and let $H$ be a smooth hypersurface in $\mathbb{P}^n$ such that $Z=Y\cap H$ is smooth. How are the normal bundles of the various embeddings of $Z$ related? More precisely, does either of the following hold? (1) $N_{Z|H}=N_{Y|\mathbb{P}^n}|_Z$? (2) $N_{Z|\mathbb{P}^n}=N_{Y|\mathbb{P}^n}|_Z\oplus N_{H|\mathbb{P}^n}|_Z$? Any hints or references would be greatly appreciated!","['complex-geometry', 'algebraic-geometry', 'vector-bundles', 'differential-geometry']"
+623422,Can only find 2 of the 4 groups of order 2014?,"Let $G$ be a group of order $2014=2\times 19\times 53$. The Sylow Theorems give that the Sylow-19 and 53 subgroups are unique and normal. Let these be $H$ and $K$, respectively. Then since $H$ and $K$ intersect trivially, $HK$=$H \times K$=$C_{19} \times C_{53} \cong C_{1007}$ is a (normal) subgroup of $G$. But this means that $G$ is either the direct product with $C_2$, giving $C_{2014}$, or the semidirect product over the only automorphism of order 2, giving $D_{2014}$. I guess the 2 groups I'm missing are $C_{19} \times D_{106}$ and $C_{53} \times D_{38}$. Is that correct? In either case, what was the flaw in my argument above?",['group-theory']
+623425,Relation between convex set and convex function,"Let $E$ be an normed vector space and $A\subset E$ be a closed nonempty set. Define
+$$\phi(x)=\operatorname{dist}(x,A)=\inf_{a\in A}\|x-a\|$$
+Prove that if $\phi$ is convex then $A$ is convex. Definition of convex set: We will say $A$ is convex if for e
+very $x,y\in A$ and $\lambda \in [0,1]$ we have $\lambda x+(1-\lambda)y\in A$ Definition of convex function: We will say that $\phi$ is convex if for every $x,y\in A$ and $\lambda\in[0,1]$ we have $\phi(\lambda x+(1-\lambda)y)\leq\lambda\phi(x)+(1-\lambda)\phi(y)$.","['convex-analysis', 'real-analysis', 'analysis']"
+623428,Solve for $X$ in $Y = X^TAX$.,"Suppose $$
+Y = X^TAX,
+$$ where $Y$ and $A$ are both known $n\times n$, real, symmetric matrices.  The unknown matrix $X$ is restricted to $n\times n$. I think there should be at least one real valued solution for $X$.  How do I solve for $X$?",['linear-algebra']
+623429,Prove that $\mu_{\star}(A) = \frac{\sup A - \inf A}{2}$ is outer measure.,"Let $X = \mathbb{N}$ and $\mu_{\star}: \mathcal{P}(\mathbb{N}) \rightarrow [0,\infty]$ such that $$\mu_{\star}(A) = \frac{\sup A - \inf A}{2}$$where $\sup \emptyset = \inf \emptyset = 0$. Prove that $\mu_{\star}$ is outer measure. The first condition is obviously, because we have $\mu_{\star}(\emptyset) = 0$. 
+So let $$A \subseteq \bigcup_{n=1}^{\infty} A_n$$we would like show that $$\mu_{\star}(A) \le \sum_{n=1}^{\infty} \mu_{\star}(A_n)$$ Hence from definition of $\mu_{\star}(A)$ we have to show: $$\frac{\sup A - \inf A}{2} \le \sum_{n=1}^{\infty} \frac{\sup A_n - \inf A_n}{2}$$
+So $$ \sup A - \inf A \le \sum_{n=1}^{\infty} \sup A_n - \sum_{n=1}^{\infty} \inf A_n \quad (\dagger)$$ But as you can see in this topic: Inequality with infimum and supremum for $A \subseteq \bigcup_{n=1}^{\infty}A_n$ inequality $( \dagger)$ is not true. So this exercise is wrong? I am really confused, because it is next mistake today... I will grateful for your help.",['measure-theory']
+623433,Asymptotic behaviour of a multiple integral on the unit hypercube,"A few days ago I found an interesting limit on the ""problems blackboard"" of my University:
+$$\lim_{n\to +\infty}\int_{(0,1)^n}\frac{\sum_{j=1}^n x_j^2}{\sum_{j=1}^n x_j}d\mu = 1.$$
+The correct claim, however, is:
+$$\lim_{n\to +\infty}\int_{(0,1)^n}\frac{\sum_{j=1}^n x_j^2}{\sum_{j=1}^n x_j}d\mu = \frac{2}{3}.$$
+In fact, following @Tetis' approach we have:
+$$I_n = \int_{(0,1)^n}\frac{\sum_{j=1}^n y_j^2}{\sum_{j=1}^{n}y_j}d\mu = \int_{(-1/2,1/2)^n}\frac{\frac{1}{2}+\frac{2}{n}\sum_{j=1}^n x_j^2+\frac{2}{n}\sum_{j=1}^n x_j}{1+\frac{2}{n}\sum_{j=1}^n x_j}d\mu,$$
+now setting $x_j=-z_j$ and summing the two integrals
+$$I_n = \int_{(-1/2,1/2)^n}\frac{\frac{1}{2}+\frac{2}{n}\sum_{j=1}^n x_j^2+\frac{4}{n^2}\left(\sum_{j=1}^n x_j\right)^2}{1-\frac{4}{n^2}\left(\sum_{j=1}^n x_j\right)^2}d\mu$$
+follows, so:
+$$ I_n-\frac{2}{3}=\int_{(-1/2,1/2)^n} \left(-\frac{1}{2}+\frac{2}{n}\sum_{j=1}^n x_j^2\right)\frac{\frac{4}{n^2}\left(\sum_{j=1}^n x_j\right)^2}{1-\frac{4}{n^2}\left(\sum_{j=1}^n x_j\right)^2}d\mu < 0,$$
+$$ \left| I_n-\frac{2}{3}\right|\leq\int_{\sum x_i^2\leq\frac{n}{4}}\left(\frac{1}{2}-\frac{2}{n}\sum_{j=1}^n x_j^2\right)\frac{\frac{4}{n^2}\left(\sum_{j=1}^n x_j\right)^2}{1-\frac{4}{n^2}\left(\sum_{j=1}^n x_j\right)^2}d\mu,$$
+$$ \frac{2}{3}-I_n\leq \frac{n^{n/2}}{2^{n+1}} \int_{\sum x_i^2\leq 1}\left(1-\sum_{j=1}^{n}x_j^2\right)\frac{x_1^2}{1-x_1^2}d\mu.$$
+The last bound, anyway, is too crude, since the RHS is
+$$ \Theta\left(\left(\sqrt{\frac{e\pi}{2}}\right)^n\frac{\log n}{n^{3/2}}\right).$$ My question now is: what is the asymptotic behaviour of $I_n$? A second one is: can we prove $I_n\geq\frac{2}{3}-\frac{C}{n}$, for a suitable positive constant $C$, without the Central Limit Theorem? UPDATE: After a few I came out with a proof of my own. The challenge is now to give the first three terms of the asymptotics, and possibly a continued fraction expansion for $I_n$.","['asymptotics', 'inequality', 'real-analysis', 'integral-inequality']"
+623440,Logarithm and tensor products,"We define Von Neumann Entropy for a density matrix $\rho$ (hermitian, positively defined, with trace 1) as : $S(\rho)=-tr(\rho \ln(\rho))$ Considering $\rho = \rho_1 \bigotimes \rho_2$, I want to show that $S(\rho)=S(\rho_1)+ S(\rho_2)$. I do not see how the following equality can be (where $\mathbb{Id}$ stands for the identity matrix with appropriate dimension): $\ln(\rho_1\bigotimes \mathbb{Id})= \ln(\rho_1)\bigotimes\mathbb{Id}$ Actually I don't understand how the definition of ln for matrices applies here. Could someone help me on this step ?","['matrices', 'tensor-products']"
+623449,"negative number divided by positive number, what would be remainder? [closed]","Closed. This question does not meet Mathematics Stack Exchange guidelines . It is not currently accepting answers. Please provide additional context , which ideally explains why the question is relevant to you and our  community. Some forms of context include: background and motivation, relevant definitions, source, possible strategies, your current progress, why the question is interesting or important, etc. Closed 5 years ago . Improve this question my question is If $-27$ is divided by $5$, what would be the remainder?","['discrete-mathematics', 'modular-arithmetic', 'euclidean-algorithm', 'elementary-number-theory', 'arithmetic']"
+623457,Find all entire $f$ such that $f(f(z))=z$.,"Suppose $f:\mathbb{C}\to \mathbb{C}$ is entire. If $f(f(z))=z$, find all such $f$. Can we find $f$ such that $f(f(z))=z^2$? How about $f(f(z))=e^z$? Ideas: For #1, we can show that $f$ must be a bijection, since $f$ failing to be either injective or surjective quickly leads to a contradiction. My intuition tells me that $z\mapsto -z$ should be the only such (non-identity) function. We know $f'(z)\neq 0$ for all $z$ (or else there would be an area where $f$ were not injective). Therefore $1/f'(z)$ is an entire function. Taking derivatives of both sides, we get $f'(f(z))f'(z) = 1$, or $f'(f(z))=1/f'(z)$. $1/f(z)$ should be analytic everywhere, except for a simple pole at $z=f(0)$. Let $\max_{|z|=1}|f(z)-f(0)|=R_1$, then Schwarz's lemma implies that $f'(0)\leq R_1$. Let $\max_{|z|=1}|f(z+f(0))|=R_2$, then Schwarz's lemma implies $f'(f(0))\leq R_2$. But $f'(f(0)) = 1/f'(0)$, so $$\frac1R_2\leq f'(0)\leq R_1.$$ Trying to put all this together... Update: I've got #1. Consider the singularity of $f$ at infinity. If it is removable, then $f$ is a constant by Liouville's theorem. If it is a pole, then $f$ is a polynomial. If it is an essential singularity, then by the Big Picard theorem, $f$ cannot be injective since $f$ will take every value, except perhaps one, in a neighborhood of infinity. Therefore $f$ is a polynomial, and since $f'\neq 0$, we have $f=az+b$ for $a\neq 0$. Now we have $a(az+b)+b = z$, giving that the involutions are $z\mapsto z$ and $z\mapsto -z+c$ for $c\in \mathbb{C}$. Update 2: I think I've got #2 as follows: Suppose $f$ entire such that $f(f(z))=z^2$. Since $z\mapsto z^2$ is surjective, we must have $f$ surjective. Now $2z=f'(f(z))f'(z)$. So we know that $f'(f(z))f'(z)$ is zero only at $z=0$. Either $f'(f(0))=0$ or $f'(0)=0$. Suppose the former holds and not the latter. That is impossible, since then $f(f(z))$ would have zero derivative at two points, zero and $f(0)$. So we know $f'(0)=0$. Since $f$ is surjective, some point must map to zero. It cannot be a nonzero point $a$, because then $f(f(z))$ would have zero derivative at $a$. This implies that zero is the unique point mapping under $f$ to zero. Now $$(z^2)'' = 2 = f''(f(z))f'(z) + f'(f(z))f''(z)$$
+and the right hand side is zero at $z=0$, a contradiction. Update 3: Here's what I've got for #3 so far: Note $e^z$ is nowhere zero. So if $f:w\mapsto 0$ then $w\not\in \text{Rg}(f)$. But only $0$ is not in $\text{Rg}(f)$. So only zero could possibly map to zero, but it does not, because $f(f(0))\neq 0$. So $f$ is nonzero. $f'$ is also nonzero since $$(e^z)'=e^z=f'(f(z))f'(z).$$ $f$ should have an essential singularity at infinity.",['complex-analysis']
+623459,Branch points of global analytic functions (Ahlfors),"In Ahlfors' complex analysis text, page 298 he discusses the case of a global analytic function $\mathbf{f}$ which can be continued analytically along all arcs in some punctured disk $\{0<|z|< \rho\}$. He then fixes a point $0<z_0=r<\rho$, and an initial germ of $\mathbf{f}$ over that point, and continues that germ along all integer powers of the circle $C=\{|z|=r\}$. There are are two cases: The germ obtained after $m$ windings around the circle never equals the initial one. There is a smallest integer $h$, such that tracing the circle $h$ times leads back to the initial germ. Only the second case is considered further: Ahlfors then says that such a function ""can be expressed as a single valued analytic function $F(\zeta)$"" where $\zeta$ is related to $z$ by the equation $$z=\zeta^h .$$
+So far this is only a background, my question regards page 299: On page 299 he constructs $F(\zeta)$ using the initial germ, and expands it in a Laurent series: $$F(\zeta)=\sum_{-\infty}^\infty A_n \zeta^n. $$
+He then writes: It must be observed that this development depends on the choice of the initial germ; different choices may yield entirely different developments and, in particular, different values of $h$. Actually, even the series $(1)$ yields $h$ different developments, corresponding to the $h$ initial values of
+  $z^{1/h}$. If we write $\omega = 
+e^{2 \pi i/h},$ these developments are represented by $$\tag{2} f_\nu(z)=\sum_{-\infty}^\infty A_n \omega^{\nu n} z^{n/h} \; \; (\nu=0,1,\dots,h-1) $$
+  When the germ $(f_\nu,z_0)$ is continued along $C$ it leads to $(f_{\nu+1},z_0)$ with the
+  understanding that the subscript $h$ is identified with $0$. I have a few questions regarding the quoted part above: What does he mean by the initial values of $z^{1/h}$? What does he mean by using the word ""developments""? Obviously, the Laurent development of $F(\zeta)$ holds in the entire punctured disk, but where do these ""Puiseux developments"" $\{f_\nu\}$ hold? How can I rigorously show that continuing $(f_\nu,z_0)$ along $C$ leads to $(f_{\nu+1},z_0)$? Intuitively, I guess as $z$ traces the circle $C$ once, $z$ transforms by the map $z \mapsto e^{2\pi i } z $, and from there $(e^{2 \pi i} z)^{n/h}=\omega^n z^{n/h}$. However, I know that using the power rule $(z w)^r=z^r w^r$ isn't that straightforward for complex numbers... Any help is greatly appreciated, thanks!","['self-learning', 'complex-analysis']"
+623465,How can $n$ variables have $2n$ degrees of freedom?,"Formally, if $Y_i\sim \mathrm{Exp}(\lambda)$, then $2\sum_{i=1}^n Y_i \sim \Gamma(n,2)$, which is the chi-squared distribution with $2n$ degrees of freedom. Intuitively, however, I think of degrees of freedom as the number of variables that are free to vary minus the number of constraints. In other words, the degrees of freedom of a problem, such as a hypothesis test, is like the dimension of the space that the data lives in. And this is, in fact, how most of the webpages I have visited suggest we think about degrees of freedom. But in many tests $2n$ degrees of freedom are used for sample size $n$ without much explanation except the formal one above. An example is a one sided test of the mean of $n$ independent exponential variables or confidence intervals on failure times. So I'm having a hard time trying to attach a meaning to the extra $n$ degrees. I'm thinking that even though there are $n$ variables there is some underlying geometry that is higher dimensional. There has to be an intuitive explanation for the extra ""wiggle room"" in these problems. This question arose from a specific question from a review sheet in my class. The question is if $X_1, X_2, \ldots, X_n$ are iid $N(0,1)$, find a Uniformly Most Powerful test of size $\alpha$ for $H_0: \sigma^2=\sigma_0^2$ vs. $H_1: \sigma^2>\sigma_0^2$. I found that the family of distributions has a monotone likelihood ratio in $Y(X)=\sum X_i^2$ so that a UMP is
+\begin{align*}
+ T(X)=\begin{cases}
+        1 & Y(X)>c, \\
+        0 & Y(X)<c.
+   \end{cases}
+\end{align*}
+Thus, $\alpha=\mathrm{P}_0\left(\frac{Y(X)}{\sigma_0^2}>c/\sigma_0^2\right)$, and since the sum of squares of standard normal variables has a $\chi^2$ distribution with $n$ degrees of freedom, I would have said $c=\sigma_0^2\chi^2_\alpha(n)$. The professor, however says that the notation for this is $c = \sigma_0^2 \chi^2_\alpha(2n)$. The professor is unavailable for comment, but she's used the same review sheet for years so think she means what she says. Thanks!","['statistical-inference', 'probability-distributions', 'probability']"
+623512,Consequences of Properness in Algebraic Geometry,"Let's call a variety $X$ proper if the projection $Y\times X\rightarrow X$ is a closed map (where $Y$ is any variety). I read in Vakil's notes that properness is a version compactness in algebraic geometry (AG) (so it is supposed to compensate for the failure of Hausdorff condition). I want to understand the consequences of this fact. For instance, what kind of operations/properties do we have in the projective space (due to properness) that do not exist in the affine case?","['projective-space', 'algebraic-geometry']"
+623516,What's the name of this quantity?,"For each permutation $\sigma$ of $ \left\{ 1, 2, \dots, n \right\}$ define 
+$$\operatorname{dist}(\sigma)=\sum_{i=1}^{n}\left| \sigma (i)-i \right|$$ 
+For each $n\in\mathbb{N}$, I'm interested in finding the maximum value this function can score, namely
+$$M_n=\max_{\sigma\in D_n}\left\{\operatorname{dist}(\sigma)\right\}$$ Does $M_n$ has a conventional name? Uses? Is there a formula to find it? I've noticed that $M_n$ grows ""in pairs"", meaning that for each odd $a\in \mathbb{N}$ it holds that $$M_{a+1}-M_a=M_{a+2}-M_{a+1}$$ I guess it can represent some kind of measure for hardness to sort.","['permutations', 'terminology', 'combinatorics']"
+623536,How is the radian measure of angles derived/defined?,"I'm currently studying angles and their measures and I've just been told that $\pi$ is the ratio of a circle's circumference to its diameter, so: $\pi =\dfrac {C}{d}$ $\pi =\dfrac {C}{2r}$ $ 2\pi =\dfrac {C}{r}$ So essentially what this is saying is that for every circle the ratio of its circumference to its radius is always $2\pi$. However the textbook then goes onto introduce the radian measure, it says (paraphrasing) that suppose we now take a portion of the circle instead of the entire circumference 'C' and compare that to the radius, this portion of the circumference is some arc length 's', and the angle subtended by it is $\theta $, using ""proportionality arguments"" it stands to reason that $\dfrac {s}{r}$ should be constant among all circles and that this ratio '$\dfrac {s}{r}$' defines the radian measure. My Question is: (1) How was the relationship $\theta =\dfrac {s}{r}$ derived? How do we go from a formula: $ 2\pi =\dfrac {C}{r}$  that is a ratio of the circumference to the radius, to then come to be defined in terms of theta: $\theta =\dfrac {s}{r}$ (which gives the ratio of the length of an arc to the radius). I think what im asking how is the radian measure defined and what is the reasoning behind it? Edit: clarification","['geometry', 'trigonometry', 'algebra-precalculus', 'circles']"
+623557,Continuous $f$ such that the set of translates of multiples of $f$ is a vector space of dimension two,"How can we derive all of the continuous functions $f \colon \mathbb{R} \to \mathbb{R}$ such that $V=\{af_b : a,b \in \mathbb{R}\}$ is a vector space of dimension two, where $f_b\colon \mathbb{R} \to \mathbb{R}$ is defined as the translate $f_b(x)=f(x+b)$? An example is $f=\sin$. The set $V$ contains the linearly independent functions $\sin$ and $\cos$ (since $\cos(x)=\sin(x+\frac{\pi}{2})$). By elementary trigonometry we have $c\sin(x+\phi) = s\sin x + t\cos x$ for any $c, \phi \in \mathbb{R}$ and some $s,t \in \mathbb{R}$, so it follows that $V$ is a vector space of dimension two spanned by $\sin$ and $\cos$. This question has been answered in the case that $f$ is differentiable – $f$ is any solution of the ODE $f''+Bf'+Cf=0$ besides $ce^{rx}$ – but are there other non-differentiable continuous solutions to the problem, or are all the solutions differentiable?","['functional-analysis', 'functions']"
+623571,Connection between even/odd and symmetric/skew symmetric,"I read awhile back that the set of continuous real valued functions from $\mathbb{R} \to \mathbb{R} $ has a direct sum decomposition into subspaces of strictly even and odd functions. Any such function $f$ could then be uniquely written in terms of even and odd parts by the formulas $\text{even}(x)=\dfrac{f(x)+f(-x)}{2}$ and $\text{odd}(x)=\dfrac{f(x)-f(-x)}{2}$ where $\text{even}(x)+\text{odd}(x)=f(x)$. Recently I stumbled into a similar claim for $n\times n$ matrices, but instead of even and odd, the set of square matrices has a direct sum representation in terms of symmetric and skew symmetric parts. So given any square matrix $A$ we can write $B=\dfrac{A+A^T}{2}$ and $C=\dfrac{A-A^T}{2}$ as the symmetric and skew symmetric representations where $A=B+C$. Does this mean that the notion of symmetric and skew symmetric have a connection to the notion of even and odd? Do they represent a generalization of even/odd, or is there another idea that generalizes these two ideas?","['matrices', 'linear-algebra', 'intuition']"
+623575,Give an example of a local homeomorphism $R^2 → S^2$ which is surjective.,So this is a qual problem and I can't think of an easy obvious map that will do this.  Any help will give you good karma I'm sure. Give an example of a local homeomorphism $R^2 → S^2$ which is surjective.,['general-topology']
+623594,derivative calculation involving floor function $\left\lfloor {{x^2}} \right\rfloor {\sin ^2}(\pi x)$ [duplicate],"This question already has answers here : Limits involving trigonometric functions $f(x)=\lfloor{x^2 \rfloor} \sin^2(\pi x)$ (2 answers) Closed 10 years ago . I was asked to find when the function is differentiable and what is the derivative of: $$\left\lfloor {{x^2}} \right\rfloor {\sin ^2}(\pi x)$$ Now, I am not sure how to treat the floor function. I'll be glad for help.","['functions', 'derivatives', 'real-analysis']"
+623595,"What is the total number of distinct sums possible from tossing six, six-sided dice?","I was reading The Ascent of Money by Niall Ferguson, and he writes ""... he [John Law] wagered 10,000 to 1 that a friend could not throw a designated number with six dice at one throw. (He probably lost that one [gamble] too, since here are only 31 possible outcomes: the chance of throwing 21 is about one in ten ."" (the italics are mine) How does one figure out that there are only 31 distinct outcomes (i.e. sums)? Not sure what tags would be fruitful. So if you guys have suggestions for tags, rather than answers please inform me.","['arithmetic', 'combinatorics']"
+623626,"Does strong law of large numbers hold for an average of this triangular array containing ""almost i.i.d."" sequences?","If a sequence of $n$ i.i.d. positive random variables $X_1,\ldots,X_n$ has the expectation $\mathbb{E}[X_1]=\mu<\infty$, then it is known that the strong law of large numbers (SLLN) holds: $\frac{1}{n}\sum_{i=1}^n X_i\xrightarrow{a.s.}\mu$, even when the second moment is not finite. I am wondering if it holds when the sequence contains one element with mean that increasing in $n$ (but not too fast).  In fact, I am asking a question about a triangular array. In my particular case, I have a triangular array $\{\{X_{1n},\ldots,X_{(n-1)n}, X_{nn}$ where $X_{in}>0$ and independent across all rows and columns; $X_{1n},\ldots,X_{(n-1)n}$ are identical with $\mathbb{E}[X_{1n}]=1$ and $\mathbb{E}[X_{1n}^2]=e^{2(\log n)^{a}}$ where $0<a<1$; and $\mathbb{E}[X_{nn}]=e^{(\log n)^{a}}$ and $\mathbb{E}[X_{nn}^2]=e^{4(\log n)^{a}}$.  Since $\lim_{n\rightarrow\infty}\frac{e^{(\log n)^{a}}}{n}=0$, the contribution of $X_{nn}$ to the average $\frac{1}{n}\sum_{i=1}^n X_{in}$ is small, and, thus, maybe the SLLN holds ""row-wise"".  I can use the Chebyshev's inequality to prove the weak law of large numbers for this case.  However, my tool for proving almost sure convergence, the Borel-Cantelli lemma, seems to not work here at all (though I might not be using correctly).  Can someone help? Minor edits to above : 
+Per responses and comments, I corrected some typos as well as notation for the random variables, and clarified that what I am dealing is, in fact, a triangular array. Main edit I was asked in the comments/answers about where this question came from and more information about $X_i$'s.  Here I describe the setting from which this problem arose. I am given a machine which takes $n$ as input.  As an output it gives me a sequence of $n$ random variables $X_{1n},\ldots,X_{nn}$, where: $$X_{in}=\exp\left[\frac{f(n)\Gamma_{in}}{1+f(n)}-k\left(\frac{f(n)}{1+f(n)}+\left[\frac{f(n)}{1+f(n)}\right]^2\right)\right], \text{  when }i\neq S\\
+X_{in}=\exp\left[f(n)\Gamma_i-k\left(\frac{f(n)}{1+f(n)}+\left[\frac{f(n)}{1+f(n)}\right]^2\right)\right], \text{  when }i=S\\$$
+where $k=n^c$, $0<c<1$, the sequence $\Gamma_{1n},\ldots,\Gamma_{nn}$ contains $n$ i.i.d. chi-squared random variables, each with $k$ degrees of freedom (note, the number of degrees of freedom for each $\Gamma_{in}$ depends on $n$, however, the independence holds across rows), $f(n)=\sqrt{\frac{(\log n)^{a}}{k}}$, and $1\leq S \leq n$ is unknown.  I am interested in the average $\frac{1}{n}\sum_{i=1}^n X_{in}$ and, specifically would like to show that, even though I don't know what $S$ is, $X_{Sn}$ does not impact the average for large enough input $n$.  The statement I want is this: for any $\epsilon>0$, with probability one there exists $n_0$ such that for all $n\geq n_0$, $\left|\frac{1}{n}\sum_{i=1}^n X_{in}-1\right|<\epsilon$. Using the formula for the moment generating function of chi-squared random variable, and the Taylor series expansion of $\log(1-x)$ around $x=0$, I arrive at the means: $$\begin{array}{rcl}E[X_{in}]&=&\exp\left[\mathcal{O}\left(\sqrt{\frac{(\log n)^{3a}}{k}}\right)\right]\approx1, \text{ when }i\neq S\\
+E[X_{Sn}]&=&\exp\left[-\frac{k}{2}\log\left(1-2f(n)\right)-k\left(\frac{f(n)}{1+f(n)}+\left[\frac{f(n)}{1+f(n)}\right]^2\right)\right]\\
+&=&\exp\left[kf^2(n)+\mathcal{O}\left(\sqrt{\frac{(\log n)^{3a}}{k}}\right)\right]\\
+&\approx&e^{(\log n)^a}
+\end{array}$$
+The second moments are computed similarly:
+$$\begin{array}{rcl}E[X_{in}^2]&=&\exp\left[-\frac{k}{2}\log\left(1-\frac{4f(n)}{1+f(n)}\right)-2k\left(\frac{f(n)}{1+f(n)}+\left[\frac{f(n)}{1+f(n)}\right]^2\right)\right], \text{ when }i\neq S\\
+&=&\exp\left[2kf^2(n)+\mathcal{O}\left(\sqrt{\frac{(\log n)^{3a}}{k}}\right)\right]\\
+&\approx&e^{2(\log n)^a}\\
+E[X_{Sn}^2]&=&\exp\left[-\frac{k}{2}\log\left(1-4f(n)\right)-2k\left(\frac{f(n)}{1+f(n)}+\left[\frac{f(n)}{1+f(n)}\right]^2\right)\right]\\
+&=&\exp\left[4kf^2(n)+\mathcal{O}\left(\sqrt{\frac{(\log n)^{3a}}{k}}\right)\right]\\
+&\approx&e^{4(\log n)^a}
+\end{array}$$
+Using Chebyshev's inequality, it's straightforward to show that for any $\epsilon>0$, $\delta>0$, there exists $n_0$ such that for all $n\geq n_0$,
+$P\left(\left|\frac{1}{n}\sum_{i=1}^nX_i-1\right|>\epsilon\right)<\delta$, but I was hoping for a stronger result.  The discussion in answers and comments is discouraging, however.","['probability-theory', 'convergence-divergence']"
+623631,Permutations of word 'mathematics',"How many arrangements are there of MATHEMATICS with both T's before both A's or both A's before both M's or both M's before the E ? Can someone also point to some online resource that has such practice questions ? Thanks. Edit : I have some initial thought, please tell me if I am in the right direction : For the case both T's before both A's : We can picture the permutation as follows : (7) T (7) T (7) A (7) A (7)  (Remaining letters: M H E M I C S - total 7) Each of the brackets are empty spaces for now. We need to pick 7 out of the total 7 X 5 = 35 spaces; that will ensure both T's being before both A's. So number of ways = C(35,7) X 7!/2! (because two M's are same - we need to divide by 2!)","['permutations', 'discrete-mathematics']"
+623636,Is a field determined by its family of general linear groups?,"Assume that $K,L$ are fields such that there is an isomorphism of groups $\mathrm{GL}_n(K) \cong \mathrm{GL}_n(L)$ for all $n \in \mathbb{N}$. Does it follow that $K \cong L$? I am also interested in related results, for example if it is enough to test small values for $n$ and what happens for $\mathrm{PGL}_n$.","['linear-algebra', 'group-theory', 'abstract-algebra', 'field-theory']"
+623642,The weak$^*$ topology on $X^*$ is not first countable if $X$ has uncountable dimension.,"I learnt without proof that if $X$ is a normed space of uncountable dimension, then the weak* topology on $X^*$ is not first countable. Can anyone point out how I should go about proving it? I tried the following: Suppose that the weak* topology on $X^*$ is first countable. Then we may take a sequence $(x_n)$ such that 
+$$
+V_n=\big\{x^*\in X^*: \lvert x^*(x_i)\rvert<1, \,\,\text{for all}\,\, i=1, 2, \dots, n\big\}
+$$ 
+gives a (descending sequence of) countable base at $0\in X^*$. Because I want to find a contradiction, I guess I should try to show that $(x_n)$ span $X$. Is the above attempt getting anywhere?","['normed-spaces', 'functional-analysis', 'real-analysis']"
+623643,Divergence in spherical coordinates problem,"I have this formula for the divergence of a vector field:
+$$\nabla_m V^m = \frac{1}{\sqrt{|g|}} \frac{\partial (V^m\sqrt{|g|})}{\partial x^m}$$
+The metric tensor in spherical coordinates:
+$$ g=\begin{pmatrix}
+1 & 0 & 0\\ 
+0 & r^2\sin^2(\theta) & 0\\ 
+0 & 0 & r^2
+\end{pmatrix} $$
+$$\sqrt{|g|}=r^2\sin(\theta)$$
+So the divergence in spherical coordinates should be:
+$$\nabla_m V^m =\frac{1}{r^2\sin(\theta)}\frac{\partial}{\partial r}(r^2\sin(\theta)V^r)+\frac{1}{r^2\sin(\theta)}\frac{\partial}{\partial \phi}(r^2\sin(\theta)V^\phi)+\frac{1}{r^2\sin(\theta)}\frac{\partial}{\partial \theta}(r^2\sin(\theta)V^\theta)$$
+Some things simplify:
+$$\nabla_m V^m =\frac{1}{r^2}\frac{\partial}{\partial r}(r^2V^r)+\frac{\partial V^\phi}{\partial \phi}+\frac{1}{\sin(\theta)}\frac{\partial}{\partial \theta}(\sin(\theta)V^\theta)$$ What am I doing wrong??",['differential-geometry']
+623679,Closed form of $\arccos\left(\frac{2 \pi}{2^N}\right)$,"Is there a closed form for $\arccos\left(\dfrac{2 \pi}{2^N}\right)$ in terms of $N \in \mathbb{Z}, N \ge 3$? I'm not super optimistic, but I'm not sure how to really start exploring the problem, either.",['trigonometry']
+623699,The Curve in $R^n$,"Let $r:(a,b)\rightarrow{R^n}$ with $|r^{'}|=1$ is a natural parameter curve in $R^n$. If $e_1(s)=r'(s),e_2(s),...,e_n(s)$ form an orthonormal frame, then we have Frenet formulae:
+$e_{i}^{'}=-k_{i-1}e_{i-1}+k_{i}e_{i+1}$ and $k_{0}=k_{n+1}=0,e_{0}=e_{n+1}=0$ ($k_1$ is its curvature). Above is from the book Geometry 1 written by R.V.Gamkrelidze . Theorem 1 When $n=2$, if $k_1=0$, then $r$ is a straight line. if $k_1=c\not=0$, then $r$ is a sphere. Theorem 2 When $n=3$, if $k_1=0$, then $r$ is a straight line. if $k_1=c\not=0, k_2=0$, then $r$ is a sphere. if $k_1=c\not=0, k_2=d\not=0$, then $r$ is a spiral line. Can these theorems be generalized to higher dimension?",['differential-geometry']
+623703,Find the exact value of $\tan\left ( \sin^{-1} \left ( \sqrt 2/2 \right )\right )$,"Find the exact value of $\tan\left ( \sin^{-1} \left ( \dfrac{\sqrt{2}}{2} \right )\right )$ without using a calculator. I started by finding $\sin^{-1} \left ( \dfrac{\sqrt{2}}{2} \right )=\dfrac{\pi}{4}$ So, $\tan\left ( \sin^{-1} \left ( \dfrac{\sqrt{2}}{2} \right )\right )=\tan\left( \dfrac{\pi}{4}\right)$. The answer is $1$. Can you show how to solve $\tan\left( \dfrac{\pi}{4}\right)$ to get $1$? Thank you.","['trigonometry', 'algebra-precalculus']"
+623708,$L^p$ Dominated Convergence Theorem,"I want to prove the $L^p$ Dominated Convergence Theorem which says : Let $\{ f_n \}$ be a sequence of measurable functions that converges pointwise a.e. on E to $f$. For$ 1 \leq p < \infty$, suppose that there is a function $g$ in $L^p(E)$ such that for all $n$, $|f_n|<g$ a.e. on $E$. Prove that $\{ f_n \} \to f$ in $L^p(E)$. This is my attempt : $$ |f_n-f|<|g|+|f| \ \ since \  |f_n - f|\leq |f_n| + |f| \leq |f|+|g| \leq 2 max\{|f|,|g|\} \Rightarrow |f_n - f|^p<2^p(|g|^p + |f|^p) $$ If I show that $2^p(|g|^p + |f|^p)$ is integrable over $E$ then the result follows by Lebesgue's Dominated Convergence theorem. But this is where I am having a question : If $\{ f_n \}$ is a sequence in $L^p(E)$ and  $\{ f_n \} \to f$ pointwise a.e. on $E$, does this necessarily mean that $f \in L^p(E) $ ? If yes,   the result follows after using $2^p(|g|^p + |f|^p)$ as the dominating function in LDC.. ADDED LATER For the bold-faced question, I tried like this $$|f|=|f-f_n+f_n|\leq |f-f_n|+|f_n| \Rightarrow \int_E |f|^p \leq \int_E|f-f_n|^p+\int_E|f_n|^p$$ Is there a  theorem that says if  $\{f_n\}→f$ pointwise a.e. on E, $\{f_n\}→f$ uniformly on $E\setminus E_0$ where $m(E_0)$ ? If thats true,  for any $\epsilon$ and for some $N$ , we can say $|f-f_N|^p < \epsilon^{p}$ and since $f_n \in L^p(E)$, this ensures that the $\int_E |f|^p < \infty$. I'd appreciate if you tell me what is going wrong in my statement. Thank you","['lp-spaces', 'real-analysis']"
+623713,Linear Equivalence of Divisors on Projective Plane Cubic,"I'm self-studying Miranda's Algebraic Curves and Riemann Surfaces and am uncertain of how I'm supposed to solve problem V.2c on linearly equivalent divisors: Let $X$ be the projective plane cubic defined by the equation $y^2z=x^3-xz^2$.
+Let $p_0=[0:1:0]$, $p_1=[0:0:1]$, $p_2=[1:0:1]$, $p_3=[-1:0:1]$. 
+Show that $2p_0\sim2p_i$ for each $i$. Show that $p_1+p_2+p_3\sim3p_0$. It's clear from Plücker's formula that $g(X)=1$ and hence $X$ is isomorphic to a complex torus $\mathbb{C}/L$, for some $L=\mathbb{Z}+\mathbb{Z}\tau$. By Corollary 2.9 two divisors $D_1,D_2$ on $\mathbb{C}/L$ are linearly equivalent $\iff deg(D_1)=deg(D_2)$ and $A(D_1)=A(D_2)$ for $A:$ the Abel-Jacobi map on $\mathbb{C}/L$. The degrees of the divisors in the problem are obviously equal, but I'm not sure how to show $A(D_1)=A(D_2)$ If you know the group law on $X$ or have an explicit isomorphism between $X$ and $\mathbb{C}/L$ then you can compute $A$, but this is far from a trivial result and is not covered by the text. Is there a different approach to the problem that I'm missing? -Steve","['riemann-surfaces', 'algebraic-geometry', 'elliptic-curves', 'algebraic-curves']"
+623728,The Definition of Convex Surface,"Let $\Sigma$ be a $C^{\infty}$ compact surface in $R^3$ . (1)If the tangent space of every point lies the same side of $\Sigma$ , we call $\Sigma$ convex surface. (2)If the Guass Curvature $K>0$ , we call $\Sigma$ ovaloid. (3)If $\Sigma$ is homeomorphic to $S^2$ , and the union of interior of $\Sigma$ and $\Sigma$ is convex, we call it a (3)-surface. What is the relationship between convex surface and ovaloid? How is the situation in higher dimension? In $R^n$ , if $S$ is a compact convex set, then the boundary of $S$ is homeomorphic to a sphere. So is the definition (3) equal to the definition (1)?",['differential-geometry']
+623745,A problem for the New Year [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 8 years ago . Improve this question What better to start the year than a dazzling integral? $$\int_{0}^{\infty}\left[1+\left(\frac{2013}{x+2013}+\cdots +\frac{2}{x+2}+\frac{1}{x+1}-x\right)^{2014}\,\right]^{-1}\,dx$$ Happy New Year to the mathematical community! (I am not too familiar with the posting policies on this site, hopefully this is not a major breach of rules)","['improper-integrals', 'recreational-mathematics', 'integration']"
+623752,Show $S_4$ is not isomorphic to $D_{24}$ by looking at their centers,Every proof seems to use an argument that looks at the orders and finds an element with a certain order in $S_4$ and no element in $D_{24}$ has that order... Wouldn't it be much much easier to look at the centers? The center of $S_4$ is just $\{e\}$ but the center of $D_{24}$ has two elements in it... thus an isomorphism cannot exist.,"['finite-groups', 'group-theory', 'abstract-algebra']"
+623762,Notation for defining a set of distinct elements.,"Suppose I write the following. Let $X = \{x,y,z\}.$ Then its pretty clear that what I really mean is the following. Let $x,y$ and $z$ be fixed but arbitrary; suppose they're distinct ; and let $X = \{x,y,z\}$. Not that its really necessary or anything, but if there is an established convention for emphasizing that what I really mean is the second of these, then I'd like to start using it. Something like the following. Let $X \equiv \{x,y,z\}.$ Does any such notational convention currently exist?","['notation', 'elementary-set-theory']"
+623775,Proving surjectivity of $\cos(z)$ and $\sin(z)$ and find all $z : \cos(z) \in \mathbb R$ and all $z: \sin(z) \in \mathbb R$,"I am trying to solve the following two problems: 1) Prove that the functions $\cos(z)$, $\sin(z)$ are surjective over the complex numbers. 2) Find all $z \in \mathbb C$: $cos(z) \in \mathbb R$ and find all $z \in \mathbb C$: $\sin(z) \in \mathbb R$. For 1),I've tried to prove it for the function $\cos(z)$ (I suppose the other one is analogue)  so I've used the fact that $\cos(z)=\dfrac{e^{iz}+e^{-iz}}{2}$. Let $w \in \mathbb C$, I want to show there exists $z \in \mathbb C : f(z)=w$, i.e., $\dfrac{e^{iz}+e^{-iz}}{2}=w$, multiplying by $2$ and then by $e^{iz}$ yields $e^{2iz}+1=2we^{iz}$ iff $e^{2iz}-2we^{iz}+1=0$. I don't know if this approach is the correct one but here I've replaced $e^{iz}$ by $x$, so the solutions of the equation would be the roots of the polynomial $p(x)=x^2-2wx+1$, by the quadratic formula, I get that $x \in \{\dfrac{2w+w_0}{2},\dfrac{2w-w_0}{2}\}$, where $w_0^2=4w^2-4$. Then, $e^{iz} \in \{\dfrac{2w+w_0}{2},\dfrac{2w-w_0}{2}\}$. At this point I got lost, I would like to explicitly show that $z$ exists and I can't see existence directly from the fact that $e^{iz}=\dfrac{2w+w_0}{2}$ or $e^{iz}=\dfrac{2w-w_0}{2}$. First I thought of taking logarithm of both sides of the equation ir order to solve for $z$, but this is not a legitimate operation unless $e^{iz} \in \mathbb R$. I couldn't go any farther. For point 2) I have no idea what to do, should I use the identity $\cos(z)=\dfrac{e^{iz}+e^{-iz}}{2}$? I would appreciate some help with the two points (specially with point 2), at least in 1) I could do something). Btw, Happy new year!","['complex-numbers', 'complex-analysis']"
+623780,How to calculate the inverse of a complex matrix?,"How can I calculate the inverse of
+$$H = \pmatrix{
+h_{00} & h_{01} \\
+h_{10} & h_{11}},$$
+where $h_{00}$, $h_{01}$, $h_{10}$, and $h_{11}$ are complex numbers?","['matrices', 'inverse']"
+623781,Is this a solution to the indefinite integral of $e^{-x^2}$?,"$\int e^{-x^2} \, \mathbb{d} x$, the Gaussian integral, is notorious throughout physics and statistics. Its definite integral defined over $\mathbb{R}$ is $\sqrt{\pi}$. However, the current indefinite integral is not an elementary solution. Recently I thought about an integration technique that uses ""error correcting."" If we define a function $f(x)$ such that $f^{(n)}(x)$ still contains terms from $f(x)$ (most likely $f(x)$ will always contain $e^x$), then we can take its derivative, set it up to attempt at the integral, and correct any errors until solution is satisfied. Here's how I went about it:
+$$\int e^{-x^2} \, \mathbb{d} x \\
+\frac{\mathbb{d}}{\mathbb{d}x} [e^{-x^2}] = -2xe^{-x^2}$$
+We can therefore take a naïve guess and state that:
+$$\int e^{-x^2} \, \mathbb{d} x = -\frac 1 {2x} e^{-x^2}$$
+This isn't true, because differentiated, the result is:
+$$e^{-x^2} (1 + \frac 1 {2x^2})$$
+Using this, we could try to subtract $\frac{e^{-x^2}}{2x^2}$ from our first approximation of the integral (again, naïve):
+$$\int e^{-x^2} \, \mathbb{d} x = e^{-x^2} (-\frac 1 {2x} - \frac 1 {2x^2})$$
+Differentiating:
+$$e^{-x^2}(1 + x^{-1} + \frac 1 2 x^{-2} + x^{-3})$$
+The last three terms seem pretty simple to take the integral of, so if we subtract the integral of those three terms from our guess, perhaps we could obtain the correct answer. Let $\phi$ be our approximation.
+$$\phi = e^{-x^2} (-\frac 1 {2x} - \frac 1 {2x^2}) - (\int \frac {e^{-x^2}} x \, \mathbb{d} x + \int \frac{e^{-x^2}} {x^2} \, \mathbb{d} x + \int \frac{e^{-x^2}} {x^3} \, \mathbb{d} x)$$
+$$\int \frac {e^{-x^2}} x \, \mathbb{d} x$$
+Let us substitute $u = x^2$ and $\mathbb{d}u = 2x \mathbb{d}x$.
+$$\frac 1 2 \int \frac {e^{-u}} u \, \mathbb{d} u$$
+Substitute $A = e^{-u}$ and $\mathbb{d}A = -e^{-u}$.
+$$\frac 1 2 \int \frac {\mathbb{d}A} {\ln A}$$
+This is a relatively simple integral.
+$$\frac 1 2 \int \frac {\mathbb{d}A} {\ln A} = \frac 1 2 (\ln |\ln A| + \ln A + \sum_{k=2}^{\infty} \frac{\ln^k A}{k k!})$$
+We can do the exact same substitution for $\int \frac{e^{-x^2}} {x^3} \, \mathbb{d} x$.
+$$\int \frac{e^{-x^2}} {x^3} \, \mathbb{d} x = \frac 1 2 \int \frac {\mathbb{d}A} {\ln^2 A} \\
+ = \frac 1 2 (\ln |\ln A| + \ln A + \sum_{k=2}^{\infty} \frac{\ln^k A}{k k!} - \frac A {\ln A})$$
+ However, $\int \frac{e^{-x^2}} {x^2} \, \mathbb{d} x$ requires a different substitution. Substitute $u = x^4$, $\mathbb{d}u = 4x^3 \mathbb{d}x$, $G = e^{-u^{1/2}}$, and $\mathbb{d}G = -\frac 1 2 u^{-1/2} e^{-u^{1/2}} \mathbb{d}u$.
+ $$\int \frac{e^{-x^2}} {x^2} \, \mathbb{d} x = \frac 1 2 \int \frac{\mathbb{d}G}{\ln^2 G} \\
+ = \frac 1 2 (\ln |\ln G| + \ln G + \sum_{k=2}^{\infty} \frac{\ln^k G}{k k!} - \frac G {\ln G})$$
+ If we substitute, we find that the integral of $e^{-x^2}$ should be:
+$$-e^{-x^2}(\frac 1 {2x} + \frac 1 {2x^2}) +  \frac 3 2 (\ln|x^2| - x^2 + \sum_{k=2}^{\infty}\frac{(-x^2)^k}{k k!}) + \frac {e^{-x^2}}{x^2}$$
+However, I believe this evaluates to (when differentiated):
+$$e^{-x^2} + \frac 2 x (e^{-x^2} + \frac{e^{-x^2}} x) - \frac {e^{-x^2}} {x^3}$$
+I may have made an error in that calculation. Either I am close or I have errored in the final product. Either way, is this a valid method? If so, could someone point out my error? If not, what is the issue?","['calculus', 'integration']"
+623782,Consequences when the commutator is a scalar multiple of the identity matrix,"I just stumbled over the question below. As to the first, I could easily find out the answer (D) by invoking the commutation relation. But I don't figure out how to solve other two. Could anybody give a hint? Here's the question: The commutator $[B,A] \equiv BA-AB = \lambda I$ of two $n\times n$ matrices $A$ and $B$ is proportional to the identity matrix $I$. Choose the only answer for each question. (1) $[B,A^n]=?\;$ (A) $0\;$ (B) $n\;$ (C) $n\lambda A\;$ (D) $n\lambda A^{n-1}\;$ (E) $n\lambda A^n$ (2) $e^{A+B}=?\;$ (A) $e^{A}e^{B}\;$ (B) $e^{B}e^{A}\;$ (C) $e^{A}e^{B}e^{{1\over 2}[B,A]}\;$ (D) $e^{A}e^{B}e^{[B,A]}$ (3) $e^{A}e^{B}=?\;$ (A) $e^{A+B}\;$ (B) $e^{B}e^{A}\;$ (C) $e^{A}e^{B}e^{[B,A]}\;$ (D) $e^{A}e^{B}e^{-[B,A]}$","['matrices', 'linear-algebra']"
+623789,About Algebraic Structure on arbitrary sets.,"Given a non-empty set $X$. How do we plug a binary operation $*$ on the set $X$ so that $(X,*)$ forms a group? There are sets, namely the set of natural numbers, set of prime numbers, set of perfect numbers and many for which finding an * to form them group is an extremely difficult job. Although I know some of the * for which the set of natural number forms a Group with repsect to *. Please correct me if my understanding goes wrong!","['group-theory', 'abstract-algebra']"
+623810,Question about differential form,"$\omega = y dx + dz$ is a differential form in $\mathbb{R}^3$, then what is ${\rm ker}(\omega)$? Is ${\rm ker}(\omega)$ integrable? Can you teach me about this question in details? Many thanks!","['differential-forms', 'differential-geometry']"
+623819,Derivative of a determinant whose entries are functions,"I do not understand a remark in Adams' Calculus (page 628 $7^{th}$ edition). This remark is about the derivative of a determinant whose entries are functions as quoted below. Since every term in the expansion of a determinant of any order is a product involving one element from each row, the general product rule implies that the derivative of an $n\times n$ determinant whose elements are functions will be the sum of $n$ such $n\times n$ determinants, each with the elements of one of the rows differentiated. For the $3\times 3$ case we have $$\frac{d}{dt}\begin{vmatrix}
+  a_{11}(t) & a_{12}(t) & a_{13}(t) \\
+  a_{21}(t) & a_{22}(t) & a_{23}(t) \\
+  a_{31}(t) & a_{32}(t) & a_{33}(t)
+  \end{vmatrix}=\begin{vmatrix}
+  a'_{11}(t) & a'_{12}(t) & a'_{13}(t) \\
+  a_{21}(t) & a_{22}(t) & a_{23}(t) \\
+  a_{31}(t) & a_{32}(t) & a_{33}(t)
+  \end{vmatrix}+\begin{vmatrix}
+  a_{11}(t) & a_{12}(t) & a_{13}(t) \\
+  a'_{21}(t) & a'_{22}(t) & a'_{23}(t) \\
+  a_{31}(t) & a_{32}(t) & a_{33}(t)
+  \end{vmatrix}+\begin{vmatrix}
+  a_{11}(t) & a_{12}(t) & a_{13}(t) \\
+  a_{21}(t) & a_{22}(t) & a_{23}(t) \\
+  a'_{31}(t) & a'_{32}(t) & a'_{33}(t)
+  \end{vmatrix}.$$ It is not difficult to check this equality by simply expanding both sides. However, the remark sounds like using some clever trick to get this result. Can anyone explain it to me, please? Thank you!","['calculus', 'self-learning', 'matrices', 'derivatives', 'determinant']"
+623842,How prove $a*b=b*a$,"let $x,y$ be  any real numbers,define $*$,such
+$$x=(x*y)*y=y*(y*x)$$
+fo any $a,b$,show that
+$$a*b=b*a$$ My try:
+$$x=(x*y)*y=y*(y*x)$$
+then
+$$y=(y*x)*x=x*(x*y)$$
+so
+$$y*x=x*(x*y)*x$$
+and
+$$x*y=y*(y*x)*y$$
+then I can't,Thank you",['algebra-precalculus']
+623854,Exotic Borel Set,"Let $A\subseteq[0,1]$ be a Borel set such that $0<m(A\cap I)<m(I)$ for every interval $I\subseteq [0,1]$. What can we say about measure of such a set $A$?  Can it be any number between $0$ and $1$. It is obvious that measure of $A$ can not be $1$. (taking $I=[0,1]$ contradicts with property of set $A$ above, note that inequalities above are strict) Thank in advance  for any help and comments","['measure-theory', 'lebesgue-measure', 'real-analysis']"
+623892,Book with lots of geometry theorems,"I want to study geometry and was looking for some book that has lots of theorems and covers almost all Euclidean geometry that is needed for High School and Maths Olympiads.
+Thanks.","['geometry', 'contest-math', 'big-list', 'reference-request', 'euclidean-geometry']"
+623915,Hyperplane which can separate two closed convex set,"Define:
+$$E=:\ell^1(R)=\{x=(x_n)_n: \|x\|_1=\sum_{n=1}^{\infty}|x_n|<\infty\}$$
+We have two closed convex sets $X,Y$ as subsets of normed vector space $\ell^1(R)$ with $X\cap Y=\emptyset$ and $Y$ is a subspace of $E$ and $$r=\inf_{x\in X , y\in Y}\|x-y\|_1$$ is positive(nonzero). I wanted to define a hyperplane which can separate these two subsets and I found $a\in X, b\in Y$ such that $\frac{b+a}{2}\notin Y\cup X$ and for some positive $\varepsilon$ $$r\leq\|b-a\|_1<r+\varepsilon$$
+I defined $f:E\rightarrow R$ by 
+$$f(e)=\sum_{n=1}^{\infty}e_n(b_n-a_n)+\frac{1}{2}\sum_{n=1}^{\infty}(a_n^2-b_n^2)$$
+Now I need to prove that
+$\Big[\text{for every  $x\in X$, $f(x)<0$ and every $y\in Y$, $f(y)>0$} \Big]$.","['convex-analysis', 'banach-spaces', 'real-analysis', 'analysis']"
+623967,What is the probability of selecting an item of a list of items that have not been selected before?,"Story behind my question From time to time, I like to play DotA. It is a competitive computer game, where you pick 1 out of more than 100 heroes and play against each other. For simplicity, let's stick to 3 heroes. For to learn how to play with every single hero, I like to pick one randomly at the start of every game. Playing with my friends, I was criticized for playing with heroes that I do not know. The question So I asked myself: What is the probability of getting a hero that I have not played before after $x$ games (and, as a consequence, encounter higher difficulty)? Small example Before the first game ($x=0$), the probability is $100$%. Then it gets difficult. Consider the following list of three heroes: $H = \{A, B, C\}$. Playing two games, these outcomes might occur: $E = \{$$AA$, $AB$, $BA$, $BB$, $AC$, $CA$, $CC$, $BC$, $CB$ $\}$ In the following cases the probability of a new hero in the third game is $1/3$ $AB, BA, CB, BC, AC, CA$ In the following cases the probability of a new hero in the third game is $2/3$ $AA, BB, CC$ For example, after $AA$ the heroes $B$ and $C$ will still be new. In contrast, after seeing $BC$ only $A$ would be new. My approach The probability of getting a new hero depends on the number of rounds played and the number of heroes available. There are 3 heroes in the easy example, in reality more than 100. Every hero has the same chance of being picked each game. So it could be the same for $x$ games in a row. I think of it as a kind of binomial distribution. But it's not about ""Prob. that a coin is head 5 out of 6 times"". It's about the probability that anyone of those who have never been selected in games before is now selected . How could one solve it?","['statistics', 'calculus', 'probability']"
+623981,"Check that two function $f(x,y)$ and $g(x,y)$ are identical","Given that $f(x)$ and $g(x)$ are two polynomials of degree $n$, we know that if we can find $n+1$ distinct numbers $x_i$, $i=1,\cdots,n+1$ such that $f(x_i)=g(x_i)$ then $f(x)$ and $g(x)$ are identical. However I don't know how to do this with two variable functions. How can I check if a function $f(x,y)$ has the form $g(x,y) = Ax^2+Bxy+Cy^2+Dx+Ey+F$ or not? How many pairs $(x_i,y_i)$ do I have to check to make sure that $f(x,y)$ is identical to $g(x,y)$? Regards.","['algebra-precalculus', 'functions', 'polynomials']"
+623983,Simple proof that symmetries of regular polyhedron fix its center?,"Let $P$ be some regular polyhedron in $\mathbb{R}^3$ (i.e. a regular $n$-hedron with $n = 4, 6, 8, 12,$ or $20$), centered at the origin $o = (0, 0, 0)$, and with vertices $v_1, ..., v_n$ all lying on the unit sphere $S^2$. Now, suppose that $\varphi$ is an isometry 1 on $\mathbb{R}^3$ with the property that, for some permutation $\sigma$ of $\{1,\dots,n\}$, we have $\varphi(v_i) = v_{\sigma(i)}, \; \forall \; i \in \{1,\dots,n\}$. The problem is to show that such an isometry $\varphi$ must fix the origin $o$; i.e., that $\varphi(o) = o$. I realize that this assertion is ""intuitively obvious"", but is there a simple proof of it that does not resort to hand-waving and appeals to geometric intuition? I can come up only with rather laborious proofs. Feel free to use the fact that any isometry can be ""factored"" into an isometric linear map followed by a translation.  In particular, feel free to assume the existence of an isometric linear map $\rho:\mathbb{R}^3 \to \mathbb{R}^3$ and a translation $\tau_b: v \mapsto v + b$ (for some vector $b \in \mathbb{R}^3$) such that $\varphi = \tau_b \circ \rho$.  With this assumption, the problem is equivalent to showing that $\tau_b(o) = o$. 1 By isometry I mean a map $f:\mathbb{R}^d \to \mathbb{R}^d$ that preserves the Euclidean metric $m$: i.e. $m(v, w) = m(f(v), f(w))$ for all $v, w \in \mathbb{R}^d$.","['geometry', 'linear-algebra', 'euclidean-geometry']"
+623987,How to prove that $\det(A)$ can be expressed as a $n \times n$ determinant with entries $\operatorname{tr}(A^k)$,"Let $A$ be an $n\times n$ non-singular matrix with real entries. How can I prove the following equation? Any references would be helpful. 
+$$ \det(A) = \frac 1{n!} \left| \begin{array}{cccccc}\operatorname{tr}(A) & 1 & 0 & \cdots &  \cdots & 0 \\ \operatorname{tr}(A^2) & \operatorname{tr}(A) & 2 & 0 & \cdots & 0 \\ \operatorname{tr}(A^3) & \operatorname{tr}(A^2) & \operatorname{tr}(A) & 3 & & \vdots \\ \vdots & & & & & n-1 \\ \operatorname{tr}(A^n) & \operatorname{tr}(A^{n-1}) &  \operatorname{tr}(A^{n-2}) & \cdots & \cdots & \operatorname{tr}(A)            \end{array}\right|$$","['matrices', 'linear-algebra', 'determinant']"
+623991,"Calculating $\iint xy \,\mathrm{d}S$ where $S$ is the surface of the tetrahedron with sides $z=0$, $y = 0$, $x + z = 1$, $x = y$","Calculate $\iint xy \,\mathrm{d}S$ where $S$ is the surface of the tetrahedron with sides $z=0$, $y=0$, $x + z = 1$ and $x=y$. The answer is given as: $(3\sqrt{2}+5)/24$
+\begin{align*}
+   &\, \iint xy \,\mathrm{d}S \\
+  =&\, \iint xy \sqrt{1 + (z_x)^2 + (z_y)^2} \,\mathrm{d}A \\
+  =&\, \int_{x=0}^1 \int_{y=0}^x xy \sqrt{1 + (-1)^2 + 0^2}
+       \,\mathrm{d}y \,\mathrm{d}x \\
+  =&\, \sqrt{2}
+       \int_{x=0}^1
+         \left[ \frac{xy^2}{2} \right]_{y=0}^x
+       \,\mathrm{d}x \\
+  =&\, \sqrt{2}
+         \int_{x=0}^1 \frac{x^3}{2}
+       \,\mathrm{d}x \\
+  =&\, \frac{\sqrt{2}}{8}.
+\end{align*}","['definite-integrals', 'multivariable-calculus', 'calculus', 'integration']"
+624059,Triangular arrays and almost sure convergence of row averages,"Suppose we have the triangular array $\{\{X_{in},i=1,\ldots,n\},n=1,2,\ldots\}$: $$\begin{array}{ccccc}
+X_{11}&&&&\\
+X_{12}&X_{22}&&&\\
+X_{13}&X_{23}&X_{33}&&\\
+X_{14}&X_{24}&X_{34}&X_{44}&\\
+\vdots&\vdots&\vdots&\vdots&\ddots\\
+\end{array}$$ Let the elements of each row be i.i.d., furthermore, let $E[X_{in}]=\mu<\infty$ in this array. Now let $S_n=\frac{1}{n}\sum_{i=1}^n X_{in}$ be the average of each row. I am confused as to why almost sure convergence results don't apply to $S_n$, i.e., why can't one claim that $S_n\xrightarrow{\text{a.s.}}\mu$?  Why doesn't the strong law of large numbers kick in here? (I was going to put this in a comment where this came up in one of my other questions , however, I thought that this warrants a separate question.)","['probability-theory', 'law-of-large-numbers', 'probability-limit-theorems', 'convergence-divergence']"
+624061,What do you call a function with the property $f(-x)=-f(x)$?,"What is this property called? The domain and codomain of the function can be for example $\mathbb Z^n$, $\mathbb Q^n$ or $\mathbb R^n$ ($n>0$), potentially excluding the $0$ point. Examples: $f(x)=ax^k$ ($k$ being an odd integer), rotation in the plane around the origin by a fixed angle, $f(x)=\operatorname{sgn}(x)g(|x|)$ (where $g$ is some other function), etc. I'm thinking of calling it ""symmetric around $0$"", does that sound right?","['terminology', 'functions']"
+624063,Exercise about inequalities,"This exercise is from Apostol's Calculus : $|1 + 3x| \le 1$ implies $x \ge -{\frac 23}$ I answered false , but the right answer is true . My understanding is — of course all $x$ are bigger than $-{\frac 23}$, but if $x$ is $1000$ the first inequality is obviously wrong.","['inequality', 'algebra-precalculus']"
+624092,prove the following trig identity,"For any $x \in [0,1]$ show that $$\arcsin(x)+\arccos(x)=\frac{\pi}{2}$$ Please note that this is not a homework problem, this is something I came across that appears to be true.",['trigonometry']
+624097,Abelian subgroup in the symmetric group,Let $p$ be a prime number. Show that there is an abelian subgroup $P$ of order $p^p$ in $S_{p^2}$ such that every element in $S_{p^2}$ that isn't in $P$ does not commute with every element in $P$. I've tries using sylow theorems first theorem to show that there is a p-sylow subgroup $Q$ in $S_{p^2}$ with order $p^{(p+1)}$ and it has a subgroup of order $p^p$ because it is a p-group. I would like a hint on how to show that $P$ is abelian.,"['permutations', 'finite-groups', 'group-theory', 'abstract-algebra']"
+624102,How to find the range of the function: $f(x) = \sqrt{x-1}+2\sqrt{3-x}$,"Problem : Find the range  of the function: $f(x) = \sqrt{x-1}+2\sqrt{3-x}$ Solution  : Domain of this function can be determined as : $x - 1 >0 ; 3-x >0 \Rightarrow x >0 ; x <3 ;$ $\therefore $ domain of $x \in [1,3]$ Now if I put the values of this domain in my function then it gives the following values : at 1 ;  the value of the function is $2\sqrt{2}$ at 2 : the value of the function is $ 1+2 = 3$ at 3 : the value of the function is $2$ Can we say that the maximum value of the function is  3 and minimum value of the function is 2; Therefore the range of this function is [2,3] but this answer is wrong. please suggest.. Also suggest that how can we use differentiation method to find the range... thanks.","['algebra-precalculus', 'functions']"
+624148,Recurrence $(n+2)\text{Cat}_{n+1}=(4n+2)\text{Cat}_n$ for non-crossing matchings,"The number of non-crossing matchings of sides of $2n$-gon (i.e. the number of ways to connect sides pairwise by non-intersecting paths) is $n$’th Catalan number, $\text{Cat}_n$. How to prove combinatorially that $(n+2)\text{Cat}_{n+1}=(4n+2)\text{Cat}_n$ for this interpretation of Catalan numbers? For example, proof of this recurrence for triangulations of $(n+2)$-gon is described in Wikipedia : after choosing a side of $(n+3)$-gon and contracting corresp. triangle we get an $(n+2)$-gon with one (marked and) oriented edge — I want something like this. In principle, triangulations and non-crossing matchings are connected by a chain of bijections (e.g. matchings $\leftrightarrow$ balanced parentheses $\leftrightarrow$ binary trees $\leftrightarrow$ triangulations) and one can try to transfer the description from the previous paragraph via this chain. But this way quickly becomes too convoluted (for me, at least).","['catalan-numbers', 'combinatorics']"
+624153,Questions about continuity and differentiability,"$\newcommand{\sgn}{\operatorname{sgn}}$
+So i have couple of questions about differentiability and continuity. For example lets consider $f(x)=\sin(\frac1x)$. It is defined and continuous for $x\neq0$ . It's derivative is $\frac{-\cos(\frac1x)}{x^2}$. It looks to me that derivative is also continuous for $x\neq0$. Is that correct? If it is does, this means that $f(x)$ is defferentiable on $(-\infty, 0) \cup (0, + \infty)$? I know that $f(x)$ is not differentiable at $x=0$ because it is not defined there. Let's look now at function
+$$
+f(x) = \begin{cases}
+|x|^p\sin(\frac1x) & \text{for }x\ne0, \\
+0 & \text{for }x=0. 
+\end{cases}
+$$ Here are three questions: For which $p$ is $f(x)$ continuous? For which $p$ is $f(x)$ differentiable?  For which $p$ is $f'(x)$ continuous? Since $|x|^p\sin(\frac1x)$ for $x\neq0$ is product and composition of continous functions that are all defined for $x\neq0$, it follows that $f(x)$ is also continious for $x\neq0$. Let $p=0$. In that case for $x\neq0$ i get $f(x)=\sin(\frac1x)$. In that case $f(x)$ discontinous in 0, because $\lim_{x\to 0}\sin(\frac1x)$ is oscilatinge beetween $[-1, 1]$ and $f(0) = 0$. In other words $\lim_{x\to 0}f(x)$ doesn't exist and it cant be fixed. Let  $p<0$. In that case for $x\neq0$ i get $f(x)=\frac{\sin(\frac1x)}{|x|^p}$. In that case $f(x)$ discontinous in 0, because $f(x)=\frac{\sin(\frac1x)}{|x|^p}$ is oscilatinge beetween $[-\infty,+ \infty]$ and $f(0) = 0$. In other words $\lim_{x\to 0}f(x)$ doesn't exist and it cant be fixed. Let $p>0$. Since $f(x)$ =  $|x|^p\sin(\frac1x)$ for $x\neq0$ and it is product and composition of continious functions for $x\neq0$, this means that $f(x)$ =  $|x|^p\sin(\frac1x)$ is continious. Since $\lim_{x\to 0}|x|^p = 0$ and $\lim_{x\to 0}\sin(\frac1x) $ is oscilating between $[-1, 1]$, this means that  $\lim_{x\to 0}f(x) = 0$. Also $f(0)=0$, this means that f(x) is continious on whole $R$. Thus $f(x)$ is continuous for $p>0$. Next question is: for which $p$ is $f(x)$ differentiable? This is the question i am stuck on. I am assuming that it means differentiable on whole $R$ , if that's the case then answer is for $p>0$. $$f'(x) = \begin{cases} { p|x|^{p-1}\sin(\frac1x)\sgn(x) - \frac{|x|^{p-1}\cos(\frac1x)}{x^2}}& \text{for }x\neq0, \\ 0& \text{for }x=0 \end{cases}$$ Third question is: For which $p$ is $f'(x)$ continuous?. I tried home and it seems to me that for $p\leq1$  $\lim_{x\to 0}{ p|x|^{p-1}\sin(\frac1x)\sgn(x) - \frac{|x|^{p-1}\cos(\frac1x)}{x^2}}$ doesn't exist . For $p>1$ i don't know how to compute the limit. For lets say $p=3/2$ i get $f'(x) =  { p|x|^{\frac12}\sin(\frac1x)\sgn(x) - \frac{|x|^{\frac12}\cos(\frac1x)}{x^2}}$. While $p|x|^{\frac12}\sin(\frac1x)\sgn(x)$ goes to $0$ i dont know how to calculate $\frac{|x|^{\frac12}\cos(\frac1x)}{x^2}$, since it is undefined. Any help would be appreciated.","['calculus', 'derivatives', 'real-analysis', 'limits']"
+624155,Evaluate $\int_A x^{-1}$,"We are asked to evaluate $\displaystyle \int_A x^{-1}dV(A)$, with $A=\{ (x,y):2<x+y<4,y>0,x-y>0\}$. From the solutions we know that$\displaystyle \int_A x^{-1}dV(A)=2Log(2)$. The point is to use the change of coordinates theorem to evaluate the integral. After proving that $\mathbf{g}(s,t)=(s^2+t^2,s^2-t^2)$ is regular (it's univalent only in each quadrant), I've tried computing $\displaystyle \int_B (s^2+t^2)^{-1}\cdot |det(D\mathbf{g}(s,t))|\text{ }dV(A)$, with $B=\{ (s,t):2<s^2<4,\text{ }s^2>t^2,\text{ and } |s|>|t| \}$. Well, when trying to compute $\displaystyle \int_B (s^2+t^2)^{-1}\cdot |det(D\mathbf{g}(s,t))|\text{ }dV(A)$, $\displaystyle \int_B (s^2+t^2)^{-1}\cdot |det(D\mathbf{g}(s,t))|\text{ }dV(A)=
+\int^2_\sqrt{2}\int^s_0\frac{8st}{s^2+t^2}+\int^2_\sqrt{2}\int^0_{-s}\frac{-8st}{s^2+t^2}+\int^{-\sqrt{2}}_{-2}\int^0_s\frac{8st}{s^2+t^2}+\int^{-\sqrt{2}}_{-2}\int^{-s}_0\frac{-8st}{s^2+t^2}=4Log(16)$ Where did I go wrong? Any help will be appreciated.",['multivariable-calculus']
+624160,$GL_n(\mathbb F_q)$ has an element of order $q^n-1$,"For fixed prime power $q$ show that the general linear group $GL_n(\mathbb F_q)$ of invertible matrices with entries in the finite field $\mathbb F_q$ has an element of order $q^n-1$. I tried to show this question with showing diagonal matrix but i can't find element directly 
+competible with order i think i am on wrong way please give me clue ?","['finite-fields', 'linear-algebra', 'abstract-algebra', 'linear-groups']"
+624168,Sums of roots of unity,"If the integral linear combination of some $n$th roots of unity has magnitude 1, does this necessarily imply that this linear combination is some root of unity as well? More precisely, Let $\zeta_1, \ldots \zeta_k$ be $n$th roots of unity. If
+  $$|\sum_{i=1}^k n_i \zeta_i| = 1,$$
+  where $n_i \in \mathbb{Z}$, does this imply that $\sum_{i=1}^k n_i \zeta_i$ is an $n$th root of unity? What about if the $n_i$ are Gaussian integers?",['algebraic-number-theory']

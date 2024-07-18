@@ -1,0 +1,559 @@
+question_id,title,body,tags
+449681,Geometric description of points in the complex plane,"What does the following inequality look like if sketched in the complex plane: $$\operatorname{Re}(az+b)>0$$ The $a$ and $b$ are both complex numbers (function parameters). I understand that $\operatorname{Re}(z)>0$ will yield all of the complex numbers to the right of the imaginary axis (quadrants 1 and 4). I also understand that $\operatorname{Re}(z+b)>0$ will shift the shaded region $\operatorname{Re}(b)$ to the left of the imaginary axis. What does multiplying the $z$ by $a$ do to the inequality ($\operatorname{Re}(az)>0$)? Complex multiplication involves dilation and rotation, so would the shaded (included) region rotate?",['complex-analysis']
+449686,"Why ""integralis"" over ""summatorius""?","It is written that Johann Bernoulli suggested to Leibniz that he (Leibniz) change the name of his calculus from ""calculus summatorius"" to ""calculus integralis"", but I cannot find their correspondence wherein Bernoulli explains why he thinks ""integralis"" is preferable to ""summatorius."" Can someone enlighten me? Thank you.","['calculus', 'terminology', 'math-history']"
+449695,Gaps between primes,"I recently watched a video about the recent breakthrough involving the gaps between primes.  I have an idea that I'm sure is wrong, but I don't know why. If you take the product of all prime numbers up to a certain number and call it x, won't x-1 and x+1 always be primes? And since they always differ by 2, doesn't that make there an infinite number of primes that differ by 2? Once again, I know that I'm wrong, but I would like to know why.","['prime-numbers', 'prime-gaps', 'number-theory']"
+449723,Determining whether a set of vectors forms a basis using Gaussian elimination,"Given the following three vectors: $$
+b_1 = \begin{pmatrix}
+1 \\ 3 \\5
+\end{pmatrix},\space
+b_2 = \begin{pmatrix}
+2 \\ 1 \\ 7
+\end{pmatrix},\space
+b_3 = \begin{pmatrix}
+4 \\ 2 \\3
+\end{pmatrix}, \space\space b_1, b_2, b_3 \in \mathbb{R}^3
+$$ Does $B = \{ b_1, b_2, b_3 \}$ form a basis of $\mathbb{R}^3$? I know I can write the vectors as rows of a matrix and then use Gaussian elimination to check for linear independence: $$
+\left[
+\begin{array}{ccc|c}
+1 &  3 & 5 & 0 \\
+2 & 1 & 7 & 0\\
+4 &  2 & 3 & 0 \\
+\end{array}
+\right]
+$$ The elimination algorithm itself is clear to me, as is the correct solution. However, I just can't wrap my head around why the vectors are written line-wise into the matrix (and thus form rows). Intuitively, I would've written the vectors as columns of the matrix. Can anybody give me a brief explanation why they go in line-wise instead of column-wise?","['matrices', 'linear-algebra']"
+449740,Thurston's 37th way of thinking about the derivative,"In Thurston's superb essay On proof and progress in mathematics , he makes this observation: Of course there is always another subtlety to be gleaned, but I would like to at least think that I have absorbed the main intuition behind each element of the above list. However: Differential geometry is not my strong suit, unfortunately, so I have had trouble trying to unravel this even at a formal level. Manifolds and vector bundles themselves I am comfortable with, but with connections and connection forms I have trouble moving between formalism and intuition, and ""Lagrangian section"" is not a term I've come across (though I can find its definition online ). So, I have some questions about Thurston's 37th conception of the derivative: To use Thurston's words: can someone "" translate into precise, formal, and explicit definitions "" making the "" differences start to evaporate "" between 37 and the differential of a smooth map ? What is the intuition behind it - why should the notion of ""Lagrangian section"" appear here, what does it mean (intuitively) when a connection makes the graph of $f$ parallel, etc.? My hope is also for answers that are as accessible to as many people as possible, though of course, any explanation has to assume some level of background knowledge.","['intuition', 'derivatives']"
+449748,Compute $\lim_{n\to\infty} nx_n$,"Let $(x_n)_{n\ge2}$, $x_2>0$, that satisfies recurrence $x_{n+1}=\sqrt[n]{1+n x_n}-1, n\ge 2$. Compute $\lim_{n\to\infty} nx_n$. It's clear that $x_n\to 0$, and probably Stolz theorem would be helpful. Is it really necessary to use this theorem?",['calculus']
+449755,Prove that $(a-d)^2+(b-c)^2\geq 1.6$ if $a^2+4b^2=4$ and $cd=4$,"Let $a, b, c, d$ be real numbers. I need to prove this innocent inequality $$
+(a-d)^2+(b-c)^2\geq 1.6
+$$ if $a^2+4b^2=4$ and $cd=4$ . I was told that there exist nice and sweet elementary solutions.","['inequality', 'algebra-precalculus', 'problem-solving']"
+449758,"Initial Value, First Order Differential Equation: Weird natural log separation","Solve the initial value first order differential equation problem: $y' = \displaystyle\frac{y^5}{x(1+y^4)},\ y(1) = 1$ \begin{align}
+\frac{1+y^4}{y^5}dy &= \frac 1x dx\\
+\left(\frac 1{y^5} + \frac 1y\right)dy &= \frac 1x dx\\
+-\frac 1 {4y^4} + \text{ln}|y| &= \text{ln}|x| + C_1 
+\end{align} This is where I get stuck. How do I solve for $y$ at this point? Wolfram Alpha gave has this following step, which I do not understand at all: I tried the raising everything as exponents of $e$, but that seems to be a dead end:
+\begin{align}
+-\frac 1 {4y^4} + \text{ln}|y| &= \text{ln}|x| + C_1\\
+e^{\left(\text{ln} y - \frac 1 {4y^4}\right)} &= e^{\text{ln} x + C_1}\\
+y\cdot e^{\left(- \frac 1 {4y^4}\right)} &= x\cdot C_2,\ \text{where $C_2 = e^{C_1}$}
+\end{align} P.S. Natural logarithms don't seem to be working: \ln |y| produces $\ln |y|$. I used \text{ln}|y| for $\text{ln}|y|$ instead. Is this a bug?",['ordinary-differential-equations']
+449762,"Spivak's Calculus exercise, possible error in text. Chapter 10, problem 24(a).","Working through all the problems in Spivak's Calculus (3E) and hit a snag here. Given $c, d \in R$, and distinct $x_1, ..., x_n \in R$, show that for any given $1 \leq i \leq n$ there exists a polynomial function $f$ of degree $2n-1$ such that $f(x_i) = c$, $f'(x_i) = d$, and $f$ has a double root at every other $x_j$. Here's what I have so far: In order for it to have a double root at those points, such a function must take the form $f(x) = (x - x_1)^2...(x-x_{i-1})^2(x-x_{i+1})^2...(x-{x_n})^2H(x)$ Where $H(x)$ is some polynomial. Furthermore, since the double roots already give it an order of $2n-2$, $H(x) = ax+b$. So we have $f(x) = (x - x_1)^2...(x-x_{i-1})^2(x-x_{i+1})^2...(x-{x_n})^2(ax+b)$ Or $f(x) = g(x)(ax+b)$ to shorten it. Now we end up with a system of equations with two unknowns $a$ and $b$: $g(x_i)x_ia+g(x_i)b = c$ $(g'(x_i)x_i + g(x_i))a + g'(x_i)b = d$ The determinant of the coefficient matrix is just $(g(x_i))^2$, which is non-zero since its only roots are the other $x_j$, i.e. the matrix is invertible, so it has a unique solution. There's just one problem: What if $c = g(x_i)$ and $d = g'(x_i)$? Then the solution is $(a,b) = (0, 1)$ and our polynomial $f$ has degree $2n-2$ instead of $2n-1$. Am I missing something or is this an error in Spivak? Also, is there a list of errors somewhere online? Tried looking online but couldn't find one.",['calculus']
+449764,"If $E$ is an infinite subset of a compact set $K$, then $E$ has a limit point in $K$","The below is the proof for the theorem that if $E$ is an infinite subset of a compact set $K$, then $E$ has a limit point in $K$. The only part I can't accept in the proof is the last sentence.
+So, it's shown that no finite subcollection of $\{V_q\}$ can cover $K$.
+However, how does this contradict the compactness of $K$? Thank you! $\mathbf{2.37}\,\,$ * Theorem *$\,\,\,\,$*If $E$ is an infinite subset of a compact set $K$, then $E$ has a limit point in $K$.* * Proof *$\quad$If no point of $K$ where a limit point of $E$, then each $q\in K$ would have a neighborhood $V_q$ which contains at most one point of $E$ (namely, $q$, if $q\in E$). It is clear that no finite subcollection of $\{V_q\}$ can cover $E$; and the same is true of $K$, since $E\subset K$. This contradicts the compactness of $K$.","['general-topology', 'compactness']"
+449772,Does this interesting property characterize a sphere?,"Consider 2-d surfaces in 3-d (at the suggestion of a comment, let's say closed connected 2-dim smooth manifolds, embedded in dimension 3) with finite area.  A sphere has the interesting property that if you take any two parallel planes that both intersect the sphere, and measure the area of the part of the sphere between the two planes, then the answer only depends on how far apart the two planes are, regardless of the positions or orientations of the planes.  Does this property automatically guarantee that a 2-d surface (defined as above) in 3-d is a sphere?  My intuition is that the answer is yes.  If so, is there some easy way to see it?","['geometry', '3d', 'differential-geometry']"
+449777,Vector differentiation,"Here is a step in a differentiation I don't understand. Let $(x^1, ...,x^k), (y^1,...,y^k)$ denote two vectors with $y^i = y^i(x^1,....,x^k)$. Given 
+$$ y^1(0,x^2,...,x^k) = 0$$
+how can I reach the conclusion that
+$$ {\partial (y^1,...,y^k) \over \partial (x^1,...,x^k)}= {\partial y^1 \over \partial x^1}{\partial (y^2 , ...,y^k) \over \partial (x^2,...,x^k) }$$ ? Is it really multiplication on the RHS of the equation? I'm stumped by this.","['multivariable-calculus', 'real-analysis']"
+449811,Planar Graph with Maximum Number of Edges and 3-Colouring in Eulerian,Show that a planar graph with $n$ vertices and $3n-6$ edges with $\chi=3$ is Eulerian. $\chi=3$ means there is a optimal vertex colouring with three colours. Eulerian means that the graph admits an Eulerian cycle (a cycle which contains each edge exactly once). My thoughts on this: I know that a planar graph has at most $3n-6$ edges and that a planar graph is maximal iff each face is a triangle. So in the present case each face is a triangle. Moreover it would suffice to prove that all vertex degrees are even since this is equivalent to being Eulerian. I don't see how the information that $\chi=3$ comes in.,"['graph-theory', 'discrete-mathematics']"
+449830,The tangent space of $\mathrm{Aut}(T_eG)$,"Let $G$ be a Lie group and $e \in G$ be the identity. I want to understand the following sentence. “ $\operatorname{Aut}(T_eG)$ being just an open subset of the vector space of endomorphisms of $T_eG$ , its tangent space at the identity is naturally identified with $\operatorname{End}(T_eG)$ .” I don’t understand why $\operatorname{Aut}(T_eG)$ is an open subset. how to naturally identify $T_e(\operatorname{Aut}(T_eG))$ with $\operatorname{End}(T_e G)$ . I think I am lacking basic knowledge about tangent spaces.
+I appreciate any help.","['lie-algebras', 'representation-theory', 'lie-groups', 'differential-geometry']"
+449833,What distinguishes topological spaces from graphs?,"Topology would not ""work"" if one reverted the ""direction"" in the definition of continuous maps $f$: $$\text{open}(x) \rightarrow \text{open}(f(x))$$ It has to be $$\text{open}(f(x)) \rightarrow \text{open}(x)$$ For graphs – among others – things look different. You can equally define graph homomorphisms as mappings $f$ satisfying $$\text{R}(x,y) \rightarrow \text{R}(f(x),f(y))$$ or satisfying $$\neg\text{R}(x,y) \rightarrow \neg\text{R}(f(x),f(y))$$ which is equivalent with $$\text{R}(f(x),f(y)) \rightarrow \text{R}(x,y) $$ What is the lesson to be learned from this observation? What distinguishes topological spaces from graphs (with their respective ""natural"" morphisms)? Is there another – maybe more categorical – formulation of this observation?","['general-topology', 'graph-theory', 'category-theory']"
+449835,How would you interpret this question focusing on problem solving?,"The first step of problem solving is to understand what the problem is asking, that is where I am stuck. One of the legs of a right triangle has length 4 cm. Express the length of the altitude perpendicular to the hypotenuse as a function of the length of the hypotenuse. This is the picture I first came up with, since a is perpendicular to h. But the answer is $4\sqrt{h^2-16}/h$. This means they do not really want $a$, as that would seem to be half $h$. I need a fourth opinion here, I have asked others and no luck here.","['geometry', 'algebra-precalculus', 'problem-solving']"
+449863,"Showing that if an equation has a unique solution for one variable, then it has unique solutions for all.","I have a problem and a proposed solution. Please tell me if I'm correct. Problem: Let $A$ be a square matrix. Show that if the system $AX=B$ has a unique solution for some particular column vector B, then it has a unique solution for all $B$. Solution: If $AX=B$ has a unique solution for some column vector $B$, then $A$ in reduced row echelon form has a pivot in each column and $A$ can be reduced to $I_n$, for $A$,$\\ n \times n$. Since the number of equations = the number of unknowns, we will have column vector $(n \times 1)$ of $x_i$'s  = column vector $n \times 1$ of $b_i$'s. Hence, varying $B$ is equivalent to varying $X$ and will create a new solution for every change made to $B$. Thanks!",['matrices']
+449875,Expected value of normal CDF,"I am trying to calculate the expected value of a Normal CDF, but I have gotten stuck. I want to find the expected value of $\Phi\left( \frac{a-bX}{c} \right)$ where $X$ is distributed as $\mathcal{N}(0,1)$ and $\Phi$ is the standard normal CDF. I know I can transform $\frac{a-bX}{c}$ to be a normal random variable $\mathcal{N}\left(\frac{a}{c},\frac{b^2}{c^2}\right)$ where $\frac{b^2}{c^2}$ is the variance of the normal random variable. I'm not sure if this helps though. I think that the expected value of a CDF is $0.5$ but since $\Phi$ is the CDF of a standard normal CDF and $\frac{a-bX}{c}$ is not standard normal I do not think the expected value should be $0.5$ . I tried integrating the CDF, but I do not believe I did it correctly. When $a = -2.3338$ , $b = 0.32164$ , $c = 0.94686$ , I believe the correct answer is approximately $0.009803$ . I found this through simulation. I would appreciate any help or suggestions.","['expected-value', 'normal-distribution', 'probability-distributions', 'probability', 'cumulative-distribution-functions']"
+449877,pandigital rational approximations to the golden ratio and the base of the natural logarithm,"Steven Stadnicki suggested in a comment that I post the following as a question. The golden ration $\phi$ is given by
+$$\phi = \frac{1+\sqrt{5}}{2} \approx 1.618033988.$$ A rational approximation is given by
+$$\frac{987}{610} \approx 1.618032787.$$ This yields the following pandigital formulas:
+$$\frac{4 * 3 + 975}{\left(8 + 2\right) * 61}$$
+$$\frac{985 + 2}{1 + 7 * \left(6 + {3}^{4}\right)}$$
+$$\frac{5 + 984 - 2}{\left(7 + 3\right) * 61}$$
+$$\frac{987}{2 + 1 + \left({5}^{4}\right) - \left(6 * 3\right)}$$
+$$\frac{7 * \left(98 + 43\right)}{\left(61 * 5\right) * 2}$$ Is there another pandigital rational representation that yields a higher number of accurate digits? The same question may be asked for the base of the natural logarithm $e$:
+$$e\approx 2.718281828.$$
+A rational approximation is
+$$\frac{1457}{536}\approx 2.718283582.$$
+It produces the following pandigital formulas:
+$$\frac{31 * \left(5 + 42\right)}{\left(76 - 9\right) * 8}$$
+$$\frac{\left(\left({3}^{6}\right) * 2\right) - 1}{\left({5}^{4}\right) - \left(97 - 8\right)}$$
+$$\frac{\left(6 * \left({3}^{5}\right)\right) - 1}{7 + {\left(\left(8 * 4\right) - 9\right)}^{2}}$$
+$$\frac{1 + \left(6 * \left({3}^{5}\right)\right) - 2}{\left(9 * 7 + 4\right) * 8}$$
+$$\frac{31 * \left(8 * 5 + 7\right)}{{2}^{9} + 6 * 4}$$
+$$\frac{5 + \left(\left({9}^{3}\right) * 2\right) - 6}{8 * \left(71 - 4\right)}$$
+$$\frac{31 * \left(\left(8 * 7\right) - 9\right)}{542 - 6}$$
+As before we ask for a better rational approximation that produces a higher precision. Furthermore (see this post ) we ask for a more sophisticated non-trivial algorithm to compute these. I was able to obtain an improvement of the running time by a factor of thirty by re-coding the Maple algorithm from the other post in C, including quite a few ideas that are of use to the combinatorics programmmer, like the representation of sets by bit strings or the enumeration of the permutations of a list using the factorial number system. Happy computing! (Another observation is that with the five operations and concatenation at our disposal there are probably threshold values for numerator and denominator of the rational approximations from the continued fraction where we can perhaps give a proof that they cannot be attained.) #include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
+int blog(int n) {
+  assert(n >= 0);
+
+  int res = -1; 
+
+  while(n>0){
+    n >>= 1;
+    res++;
+  }
+
+  return res;
+}
+
+int fact(int n)
+{
+  assert(n >= 0);
+
+  if(n<2) return 1;
+
+  return n*fact(n-1);
+}
+
+long ipow(int m, int n)
+{
+  assert(n >= 0);
+
+  if(n==0) return 1;
+  if(n==1) return m;
+
+  long r = (n%2 ? ipow(m, (n-1)/2) : ipow(m, n/2));
+  return (n%2 ? m*r*r : r*r);
+}
+
+struct {
+  int min, max;
+} searchints[]  = {
+  {1, 50},
+  {100, 120},
+  {340, 360},
+  {-1, -1}
+};
+
+inline int access(int val){
+  int interval = 0, offs = 0;
+
+  while(searchints[interval].min !=-1){
+    int min = searchints[interval].min;
+    int max = searchints[interval].max;
+
+    if(val >= min && val <= max){
+      return offs + val-min;
+    }
+
+    offs += max-min+1;
+    interval++;
+  }
+
+  return -1;
+}
+
+int entcount = -1;
+
+typedef struct {
+  short leaf;
+  long val;
+  char plain[128];
+  char latex[256];
+} expr;
+
+expr *memo[1<<9];
+
+expr *makememo(void)
+{
+  expr *ents = (expr *)malloc(entcount*sizeof(expr));
+
+  int ind;
+  for(ind=0; ind<entcount; ind++){
+    ents[ind].val = -1;
+  }
+
+  return ents;
+}
+
+expr *repr(int subsind)
+{
+  if(memo[subsind] != NULL){ return memo[subsind]; };
+
+  int elcount = 0; int elements[9+1];
+
+  int pos, bitpat = subsind;
+  for(pos=0; pos<9; pos++){
+    if(bitpat & 1 == 1){
+      elements[elcount++] = pos+1;
+    }
+    bitpat >>= 1;
+  }
+  elements[elcount] = -1;
+
+  expr *res = makememo();
+  int idx;
+
+  if(elcount == 1){
+    idx = access(elements[0]);
+    res[idx].leaf = 1;
+    res[idx].val = elements[0];
+    sprintf(res[idx].plain, ""%d"", elements[0]);
+    sprintf(res[idx].latex, ""%d"", elements[0]);
+
+    memo[subsind] = res; return res;
+  }
+
+  int count = 0;
+
+  if(elcount >= 2 && elcount <= 4){
+    int perm[9+1], el;
+
+    for(pos=0; pos<elcount; pos++){ 
+      perm[pos] = elements[pos];
+    }
+
+    int upper = fact(elcount);
+    for(pos=0; pos<upper; pos++){
+      idx = pos;
+      int el;
+      for(el=elcount; el>0; el--){
+      int targ = idx % el;
+
+      int tmp = perm[targ];
+      perm[targ] = perm[el-1];
+      perm[el-1] = tmp;
+
+      idx /= el;
+      }
+    }
+
+    char buf[9+1], *digits = ""123456789"";
+    for(idx=0; idx<elcount; idx++){
+      buf[idx] = digits[perm[idx]-1];
+    }
+    buf[idx] = 0;
+
+    int numval; sscanf(buf, ""%d"", &numval);
+
+    idx = access(numval);
+    if(idx != -1){
+      res[idx].leaf = 1;
+      res[idx].val = numval;
+      sprintf(res[idx].plain, ""%d"", numval);
+      sprintf(res[idx].latex, ""%d"", numval);
+
+      count++;
+    }
+  }
+
+  int subsubind;
+  for(subsubind=1; subsubind<(1<<elcount)-1; subsubind++){
+    int leftel[9+1], rightel[9+1], leftpos=0, rightpos=0;
+
+    bitpat = subsubind;
+    for(pos=0; pos<elcount; pos++){
+      if(bitpat & 1 == 1){
+      leftel[leftpos++] = elements[pos];
+      }
+      else{
+      rightel[rightpos++] = elements[pos];
+      }
+
+      bitpat >>= 1;
+    }
+
+    int lidx = 0, ridx = 0, innerpos;
+    for(innerpos=0; innerpos<leftpos; innerpos++){
+      lidx += 1<<(leftel[innerpos]-1);
+    }
+    for(innerpos=0; innerpos<rightpos; innerpos++){
+      ridx += 1<<(rightel[innerpos]-1);
+    }
+
+    expr *lres = repr(lidx), *rres = repr(ridx);
+
+    if(count>=entcount){ continue; }
+
+    int lpos, rpos;
+    for(lpos=0; lpos<entcount; lpos++){
+      for(rpos=0; rpos<entcount; rpos++){
+      expr exl = lres[lpos], exr = rres[rpos];
+      int newval, newind;
+
+      if(exl.val != -1 && exr.val != -1){
+        char plainl[256], plainr[256];
+        sprintf(plainl, (exl.leaf ? ""%s"" : ""(%s)""), exl.plain);
+        sprintf(plainr, (exr.leaf ? ""%s"" : ""(%s)""), exr.plain);
+
+        char latexl[256], latexr[256];
+        sprintf(latexl, (exl.leaf ? ""%s"" : ""\\left(%s\\right)""), exl.latex);
+        sprintf(latexr, (exr.leaf ? ""%s"" : ""\\left(%s\\right)""), exr.latex);
+
+        newval = exl.val + exr.val;
+        if((newind = access(newval))!=-1){
+          res[newind].leaf = 0;
+          res[newind].val = newval;
+
+          sprintf(res[newind].plain, ""%s + %s"", exl.plain, exr.plain);
+          sprintf(res[newind].latex, ""%s + %s"", exl.latex, exr.latex);
+
+          count++;
+        }
+
+        newval = exl.val - exr.val;
+        if(newval>0 && (newind = access(newval))!=-1){
+          res[newind].leaf = 0;
+          res[newind].val = newval;
+
+          sprintf(res[newind].plain, ""%s - %s"", plainl, plainr);
+          sprintf(res[newind].latex, ""%s - %s"", latexl, latexr);
+
+          count++;
+        }
+
+        if(exl.val>1 && exr.val>1){
+          newval = exl.val * exr.val;
+          if((newind = access(newval))!=-1){
+            res[newind].leaf = 0;
+            res[newind].val = newval;
+
+            sprintf(res[newind].plain, ""%s * %s"", plainl, plainr);
+            sprintf(res[newind].latex, ""%s * %s"", latexl, latexr);
+
+            count++;
+          }
+        }
+
+        if(exr.val>1 && (exl.val % exr.val) == 0){
+          newval = exl.val / exr.val;
+          if((newind = access(newval))!=-1){
+            res[newind].leaf = 0;
+            res[newind].val = newval;
+
+            sprintf(res[newind].plain, ""%s / %s"", plainl, plainr);
+            sprintf(res[newind].latex, ""\\frac{%s}{%s}"", exl.latex, exr.latex);
+
+            count++;
+          }
+        }
+
+        if(exl.val>1 && exr.val>1 && exr.val*blog(exl.val)<32){
+          newval = ipow(exl.val, exr.val);
+          if((newind = access(newval))!=-1){
+            res[newind].leaf = 0;
+            res[newind].val = newval;
+
+            sprintf(res[newind].plain, ""%s ^ %s"", plainl, plainr);
+            sprintf(res[newind].latex, ""{%s}^{%s}"", latexl, exr.latex);
+
+            count++;
+          }
+        }
+      }
+      }
+    }
+  }
+
+  memo[subsind] = res; return res;
+}
+
+
+int main(int argc, char **argv)
+{
+  long p, q;
+
+  if(argc!=3){
+    fprintf(stderr, ""usage: %s <p> <q>\n"", argv[0]);
+    exit(-1);
+  }
+
+  sscanf(argv[1], ""%ld"", &p);
+  sscanf(argv[2], ""%ld"", &q);
+
+  if(p<1 || q<1){
+    fprintf(stderr, 
+          ""positive integers please, got %ld and %ld\n"",
+          p, q);
+    exit(-2);
+  }
+
+  int ind = 0, ent;
+
+  entcount = 0;
+  while(searchints[ind].min != -1){
+    entcount += searchints[ind].max-searchints[ind].min+1;
+    ind++;
+  }
+
+  for(ind=0; ind<(1<<9); ind++){
+    memo[ind] = NULL;
+  }
+
+  for(ind=1; ind<(1<<9)-1; ind++){
+    expr *leftres = repr(ind), *rightres = repr((1<<9)-1-ind);
+    int idxleft = access(p), idxright = access(q);
+
+    if(idxleft != -1 && idxright != -1){
+      expr left = leftres[idxleft];
+      expr right = rightres[idxright];
+
+      if(left.val != -1 && right.val != -1){
+      printf(""(%s) / (%s); %d / %d; %.15lf\n"", 
+             left.plain, right.plain, p, q,
+             (double)left.val/(double)right.val);
+      printf(""\\frac{%s}{%s}\n"", left.latex, right.latex);
+      }
+    }
+  }
+
+  return 0;
+}","['algebra-precalculus', 'golden-ratio', 'algorithms', 'number-systems', 'recreational-mathematics']"
+449880,Double integrals over general region -how to approach?,"I'm in doubt on how to approach a problem of double integrals over a specific region. I have to calculate $\int\int\limits_R e^x dA$, R being the region between $y=\frac{x}{2}$, $y=x$, $y=\frac{1}{x}$ and $y=\frac{2}{x}$. I am only interested in the first quadrant. That being said, the region is as follows: And the points: Where 1.414 is $\sqrt{2}$ and 0.707 is $\frac{\sqrt{2}}{2}$. My approach, which I'm in doubt if it's a valid one, was the following: Divide the region into 2 regions and consider each new region a ""case 2"" region and sum the integrals over each region to obtain the integral over the original region: The division is made in order to obtain well-defined functions in each region. Is that a valid approach? If not, how should I approach this problem?","['calculus', 'integration']"
+449891,Conditions Imposed on a Ordering of Letters,"Question: How many strings can be formed by ordering the letters $ABCDE$ if the string must contain the letters $ACE$ together in any order? Attempt: There are three positions for the $(ACE)$-cluster:
+$$\overset{\text{Case 1}}{(ACE)\star\star} ~~~~~~ \overset{\text{Case 2}}{\star(ACE)\star} ~~~~~~ \overset{\text{Case 3}}{\star\star(ACE)}$$
+Here, ``$\star$"" can be either $B$ or $D$. For Case 1 we have the following:
+$$(\underset{\_}{3}\underset{\_}{2}\underset{\_}{1})\underset{\_}{2}\underset{\_}{1}=3!\cdot 2!=12$$
+For Case 2 we have the following:
+$$\underset{\_}{2}(\underset{\_}{3}\underset{\_}{2}\underset{\_}{1})\underset{\_}{1}=2\cdot 3!\cdot 1=12$$
+For Case 3 we have the following:
+$$\underset{\_}{2}\underset{\_}{1}(\underset{\_}{3}\underset{\_}{2}\underset{\_}{1})=2!\cdot 3!=12$$
+Thus, there are $36$ possible ways to order these five letters given the constraint.","['discrete-mathematics', 'combinatorics']"
+449896,Is Bruhat cell dense in p-adic topology?,"I've seen in literature a statement like 'there exists an open and dense Bruhat cell'. In $GL(2,F)$ for example, where $F$ is a p-adic field, let $\omega=\begin{pmatrix} & 1 \\ 1 & \end{pmatrix}$, then $A_2N_2\omega N_2$ is the big cell, here $A_2$ is the diagonal matrices, $N_2$ is the upper triangular unipotents. Question: Is $A_2N_2\omega N_2$ an open and dense subset of $GL(2)$ in p-adic topology, or in Zariski topology? I asked this because, if we want to find a sequence of elements in this cell approaching the identity, compute $$\begin{pmatrix} a & \\  & b\end{pmatrix}\begin{pmatrix} 1 & x \\  & 1 \end{pmatrix}\begin{pmatrix} & 1 \\ 1 & \end{pmatrix}\begin{pmatrix} 1 & y \\  & 1 \end{pmatrix}=\begin{pmatrix} ax & a+axy \\ b & by \end{pmatrix}$$ If this product goes to the identity matrix in the p-adic topology, we will get $b\to 0$, $ax\to 1$, $by\to 1$, and $a+axy\to 0$, from which we will have a contradiction. Does this mean the big cell is not dense in the p-adic topology? Or I'm misunderstanding things. Thank you very much for any comment.","['general-topology', 'algebraic-groups', 'lie-groups']"
+449918,"$\frac{\sin x}{x^5} - \frac{1}{x^4} \underset{x\to 0}{\approx} \frac{-1}{6} \cdot \frac{1}{x^2}$, right?","I was reading an set of notes about Taylor series, and I came across a part I think is a typo. I want to make sure, because I want to understand this stuff correctly. Here is the relevant page of the article. You can see where I've indicated the typo in the margin. In the space I've marked, do you think it should say $\frac{1}{x^2}\cdot \frac{-1}{6}$?","['calculus', 'derivatives', 'taylor-expansion']"
+449927,Limit of recursive sequence $a_{n+1} = \frac{a_n}{1- \{a_n\}}$,"Consider the following sequence: let $a_0>0$ be rational. Define $$a_{n+1}= \frac{a_n}{1-\{a_n\}},$$ where $\{a_n\}$ is the fractional part of $a_n$ (i.e. $\{a_n\} = a_n - \lfloor a_n\rfloor$). Show that $a_n$ converges, and find its limit. We can show it converges as follows: suppose $a_n = p_n/q_n = k_n + r_n/q_n$, where $p_n = k_nq_n + r_n$, $0 \leq r_n < q_n$. Then $$a_{n+1} = \frac{p_n/q_n}{1-r_n/q_n} = \frac{p_n}{q_n - r_n},$$so the denominator will keep decreasing until it is a divisor of $p_0$ (maybe 1). Also, note we may take $p_n = p_0$ for all $n$. Further, the limit will be $\leq \frac{p_0}{\operatorname{gcf}{(p_0,q_0)}}$, because if $f \mid p_0$ and $f\mid q_n$, then $f\mid (p_0 - k_nq_n)=r_n$, so $f \mid q_n - r_n = q_{n+1}$. But the limit may be strictly smaller; for instance, $a_0 = 30/7$ converges right away to 6. Can we say anything else about the limit of a sequence starting with $a_0$? This was a problem on a qualifier, so I suspect there is more to the answer, but maybe not.","['elementary-number-theory', 'sequences-and-series', 'recurrence-relations', 'calculus']"
+449969,Matrix + combinatorial or conditional probability: bit patterns,"I'm trying to get my head around a problem, and it's not working. The problem: consider an NxN matrix that represents a binary number. For instance, a 4x4 matrix is a 16 bit number, a 6x6 matrix is a 36 bit number. N will always be even. Now, for any given N, how many matrices / numbers are there where every row and column has exactly half of its values 0 and half 1? Here is what I have learned so far: From brute force, I know that the answer for a 2x2 matrix is 2. For a 4x4 matrix, the answer is 90. I can calculate the number of rows OR columns that half half of their bits on with the formula:
+$$
+f(n) = {n! \over (n/2)!^2} * 2 ^ {n^2}
+$$ But I can't simply take percentage of rows times percentage of columns, presumably because they are not independent. This started out of curiosity and has become an obsession. Please help.","['matrices', 'binary', 'combinatorics']"
+449970,The union of a sequence of countable sets is countable.,"While working on the theorem below, I constructed the following proof: Theorem. If $\left\langle E_{n}\right\rangle_{n\in\mathbb{N}}$ is a sequence of countable sets, then $$
+\bigcup_{n\in\mathbb N}E_{n}
+$$ is countable. Proof. Let $S=\left\langle E_{n}\right\rangle_{n\in\mathbb{N}}$ be a sequence of countable sets. Moreover, let $x_{n,m}$ be the $m$th element of the $n$th set in $S$. Construct a sequence of sequences $$
+\mathcal S=\left\langle\left\langle x_{n-m+1,m}\right\rangle_{m\in\mathcal N_n}\right\rangle_{n\in\mathbb N},
+$$ where $\mathcal N_{n}=\left\{k\in\mathbb N:k\leqslant n\right\}$. Then $\mathcal S$ contains all the elements of $$
+T=\bigcup_{n\in\mathbb N}E_{n}.
+$$ Observe that $\mathcal S$ is a surjection $\mathbb N\to T$, because for every $n\in\mathbb N$, $\mathcal S$ yields a finite, and thus countable, subsequence. Furthermore, because $\mathcal S$ may contain duplicate elements, an $U\subseteq\mathbb N$ can be found such that $\mathcal S$ is an injection $U\to T$. We have then found a bijection $\mathcal S:U\to T$. Hence, $T$ is countable. $\blacksquare$ Does it sound convincing? Edit: I just realized that I cannot pinpoint duplicates because of how $\mathcal S$ is constructed, can I? :-(","['proof-verification', 'elementary-set-theory', 'real-analysis']"
+449999,What is the motivation for differential forms?,"I am that point in my mathematical career where I am learning differential forms. I am reading from M.Spivak's Calculus on Manifolds. So far I have gone over the tensor and wedge products and their properties, defined forms, learned of their pullbacks and the properties of these pullbacks, and defined the differential operator while learning some of its properties. I am currently reading about exact/closed forms in the build up to a certain ""Poincare Lemma"". While the theory all seems to be fitting together (albeit with a bit of effort), there has been a nagging question. What is the motivation here? It has been my experience that many mathematical constructions (that I have encountered at least) are done with the goal of better understanding something. I feel like this thing is missing from my understanding of differential forms. Any insight will be appreciated.","['differential-forms', 'multivariable-calculus', 'soft-question', 'differential-geometry']"
+450009,Existence of $j$ with strange sequence.,"I define a sequence $(a_n)$
+$$a_n=
+\begin{cases}
+0 &\text{if $\cos{\left ( \dfrac{2^n\pi}{q}\right )}<-\dfrac12$} \\\\
+1 &\text{if $\cos{\left ( \dfrac{2^n\pi}{q}\right )}>-\dfrac12$}
+\end{cases}$$
+where any two prime number $p$, $q$ such that $p\geq 5$, $q=2p+1$. Show that there exist $j$ such that $$a_1a_{p-j+1}+a_2a_{p-j+2}+\cdots+a_ja_p+a_{j+1}a_1+a_{j+2}a_2+\cdots+a_pa_{p-j}
+$$ is an even number with $0\leq j \leq p-1$. This problem is from POSTECH(POHANG UNIVERSITY OF SCIENCE AND TECHNOLOGY) mathematical contest for high school students in 2010. I tried long time but can't solve it. Please solve this problem. Thanks in advance.","['sequences-and-series', 'contest-math']"
+450012,"Largest square written as $p^2+pq+q^2$ where $p, q$ are primes?","I got this problem from the website Brilliant, but I have doubts about the solution presented there:
+$(p+q)^2-k^2=pq$ $(p+q+k)(p+q-k)=pq$ Now either $(p+q+k)=p$ and $(p+q-k)=q$ (which doesn't work), or $(p+q+k)=pq$ and $(p+q-k)=1$ . Solving the second system of equations, we get the only solution of $(3, 5)$ I really don't think this statement is true. What if for example $(p+q-k)=(pq)^{1/4}$ and $(p+q+k)=(pk)^{3/4}$ ? If my doubts are correct, what is the real way to solve this question? Thanks.","['elementary-number-theory', 'algebra-precalculus']"
+450020,"Integral extensions of rings, when one of the rings is a field","The following is from page 61 of Introduction to Commutative Algebra by Atiyah & Macdonald: Proposition 5.7. Let $A\subseteq B$ be integral domains, $B$ is integral
+  over $A$. Then $B$ is a field if and only if $A$ is a field. I am curious what happens if we drop the hypothesis of ""integral domains"". It will probably be false (since the hypothesis plays a role in the proof). Thus my question is: What would be example of $A\subseteq B$ commutative rings such that
+  $B$ is integral over $A$ and a) $A$ is a field, but $B$ is not a field. b) $B$ is a field, but $A$ is not a field. Let me say a word about a). I think the situation a) is actually impossible. Because it seems to me that in the proof of this  direction, only $A$ being integral domain is used. Thus, if $A$ is a field (in particular integral domain), then $B$ must also be a field. Edit: As Ted shows, I was wrong. The situation (a) is possible. Thanks for your time. :)","['commutative-algebra', 'ring-theory', 'examples-counterexamples', 'abstract-algebra']"
+450026,"$p\nmid 2n-1,$ then $\sum_{k=1}^{p-1}\frac{1}{k^{2n-1}}\equiv 0 \pmod{p^3} \Leftrightarrow \sum_{k=1}^{p-1}\frac{1}{k^{2n}}\equiv 0 \pmod{p^2} $","Is it true that if $p$ is a prime and $p\nmid 2n-1,$ then
+$$\sum_{k=1}^{p-1}\frac{1}{k^{2n-1}}\equiv 0 \pmod{p^3} 
+ \hspace{12pt}\Leftrightarrow  \hspace{12pt}
+ \sum_{k=1}^{p-1}\frac{1}{k^{2n}}\equiv 0 \pmod{p^2} $$ I find some examples: $(2n-1,p)=(3,37)(7,67)(7,877)(9,5)(13,7)(13,59)(13,607)$","['modular-arithmetic', 'elementary-number-theory', 'number-theory']"
+450028,Is there a reference for compact imbedding of Hölder space?,"Suppose $0<\alpha <\beta$. Then, the Hölder space $C^\beta$ is compactly imbedded to $C^\alpha$. See the Wikipedia article Hölder condition . However, I could not find precise reference from some books on functional analysis. Can anybody  indicate a precise reference for this theorem? If possible, I would like to know a reference on the similar result on parabolic Hölder space.","['holder-spaces', 'compactness', 'functional-analysis', 'real-analysis']"
+450031,Factoring $a^2+b^2+c^2$?,"Is it possible to factor  $a^2+b^2+c^2$ ? If we make this into only two factors, I know it has to look like this: $(a+b+c+\cdot \cdot \cdot )(a+b+c+\cdot  \cdot \cdot )$ . But I don't know how to get rid of the $2(ab+bc+ac)$ but I have no idea what else should go in the parenthesis. How can you figure out how to factor this? Thanks.","['elementary-number-theory', 'algebra-precalculus']"
+450047,On Decompositions of Finite Group,"Any finite non-cyclic abelian group $G$ can be written as product $HK$ of two proper subgroups. Here $HK=\{ hk\colon h\in H, k\in K\}$. A step further, if $G$ is a finite group such that the commutator subgroup $[G,G]$ is proper subgroup of $G$, then $G$ has a decomposition $HK$ for some proper subgroups $H,K$, since if $G/[G,G]$ is non-cyclic then  we can pull back the decomposition for $G/[G,G]$; if $G/[G,G]$ is cyclic, then we have the decomposition $G=HK$ where $H=[G,G]$, and $K=\langle x\rangle$ is a subgroup such that $G/[G,G]=\langle x[G,G]\rangle$. The question I would like to ask is the natural one: Q. Does every finite group admits a decompositon $G=HK$ where $H,K$ are proper subgroups? By initial observations, it is sufficient to visit the question for groups $G$ such that $[G,G]=G$ (such groups are called perfect groups","['finite-groups', 'group-theory']"
+450050,correct understanding mathematical question,"suppose that  we have following question,this question is not related to  itself mathematics confusion,but language problem and please help me to clarify  English language terms  in mathematics. question is this : Simon arrived at work at $8:15$ A.M. and left work at $10:30$ P.M. If Simon gets paid by the hour at a rate of $10$ dollar  and time and ½ for any hours worked over $8$ in a day. How much did Simon get paid? from the beginning i could not understand  what was  main trick in this question,but i have only one :what does mean time and $½$  clearly as i understand  during the  $8$ hour,he is paid  $10$ dollar  per hour,but after  $8$ ?clearly from $4:15$ till $10:30$,we have $6$ hour and $15$ minute,so what is meaning of time and $1/2$?please help me,because i am preparing for GRE exam,and i would like to clarify every English tricks",['algebra-precalculus']
+450071,Continuous extension of a function,"Can anybody help me with this problem? Justify whether the following statement is true or false: Every continuous function on $\Bbb Q\cap [0,1]$ can be extended to a continuous function on $[0,1]$ . Any help will be appreciated.",['real-analysis']
+450097,How to be good at angles and trigonometry,"I am Computer Science Engineer and loved algebra side of Mathematics. But when it comes to trigonometry and angles and triangles, I do not understand anything since college time. And till now also whenever I get chance to avoid sin/cos/tan I consciously (because of fear) avoid that. Can you please suggest easiest way to learn trigonometry. Kindly do not suggest lengthy books. They will only discourage me at their best. Thanks in advance","['trigonometry', 'triangles', 'reference-request', 'soft-question']"
+450106,Uncountable basis and separability,"We know that a Hilbert space is separable if and only if it has a countable orthonormal basis. What I want to ask is If a Hilbert space has an uncountable orthonormal basis, does it mean that it is not separable? Or equivalently, does it imply that the Hilbert space does not have a countable basis? I know that if a vector space has infinite number of linearly independent vectors then it cannot have a finite (Hamel) basis. But here we do not deal with Hamel basis but with a complete orthonormal set, do I cannot apply the usual techniques. Any ideas?","['hilbert-spaces', 'functional-analysis', 'banach-spaces']"
+450118,"Theory set problem, determining the min and max number of elements from $(B \cup A) \bigtriangleup (C \cap A)$","Given that $$ |A| = 5 \\ |B| = 6 \\ |C| = 7 \\ |\Omega| = 10 \\ A \subseteq (B \cup C) $$ Determine the min and max numbers of elements from $$(B \cup A) \bigtriangleup (C \cap A)$$ I tried to solve this by first simplifying the above statement doing
+$$[(B \cup A) \cap (C \cap A)^{c}] \cup [(B \cup A)^{c} \cap (C \cap A)] \\ [(B \cup A) \cap (C \cap A)^{c}] \cup [(B^{c} \cap A^{c}) \cap (C \cap A)] \\ [(B \cup A) \cap (C \cap A)^{c}] \cup \emptyset \\ (B \cup A) \cap (C \cap A)^{c} $$ Then i drew the venn diagrams that would represent the max and min case for $(B \cup A) \cap (C \cap A)^{c}$: And according to this: the minimum number of elements is 1 the maximum number of elements is 4 Question: Would this be correct? If so, is there any other faster way that can let me solve the exercise without drawing venn diagrams and trying to configure the elements for both cases? Thanks so much in advance.","['discrete-mathematics', 'elementary-set-theory']"
+450120,Confused by Kolmogorov's Strong law and Borel-Cantelli lemma,"Notation: Let $X_n$ be i.i.d. random variables with mean $\mathrm{E}[X_n]=\mu$ and variance $\mathrm{E}[(X_n-\mu)^2]=\sigma^2$. Denote the sample average as $\bar{x}_m = \frac{1}{m}\sum_{n=1}^m X_n$. Accoring to (my interpretation of) Kolmogorov's SLLN since the series $\sum_{n=1}^\infty\sigma^2/n^2$ converges then $\mathrm{P}\{\bar{x}_n-\mu>\epsilon, \mathrm{i.o}\} = 0, \forall \epsilon>0$. Question: Does this mean that (due to Borel-Cantelli lemma) the series $\sum_{n=1}^\infty \mathrm{P}\{\bar{x}_n-\mu>\epsilon\}, \forall \epsilon>0$ converges?","['statistics', 'probability']"
+450123,relationship between circumference and revolution,"i would like to  clarify  two things by this problem:first what is relationship between circumference and revolution and also revolution and distant traveled by round object.let us consider following problem: A tire on a car rotates at $500$ RPM (revolutions per minute) when the car is traveling at $50 $km/hr (kilometers per hour). What is the circumference of the tire, in meters?
+there is also picture as i know circumference represents as a total distance around outside,so for   our case  first of all let us convert from hour to minute,$50$ km is  $50000 meter$,so per minute it is equal to $50000/60$ meter,but now in which revolution fact will help us?from this link http://www.algebra.com/algebra/homework/Trigonometry-basics/Trigonometry-basics.faq.question.110618.html it seems that distance in this case is equal circumference multiplied number of revolution,so in our case it would be  $50000/60$ divided by number of revlution,but how could i clarify that distance in this case  is exactly $50000/60$ and not other  term?do you see i am confused  in terms of  relationship between revolution,circumference and distance","['geometry', 'circles']"
+450124,Tarski Monster group with prime $3$ or $5$,"Is there any Tarski Monster Groups for the prime $3$ or $5$? I know that there is no 
+Tarski Monster Groups with prime $2$, but I don't know for the prime $3$ and $5$.","['group-theory', 'abstract-algebra']"
+450132,reference for operator algebra,"I am taking a course on operator algebra this semester. My instructor has suggested a reference ""Kadinson and Ringrose."" Are there any other good/standard references for this subject that I can look up?","['operator-algebras', 'reference-request', 'functional-analysis']"
+450139,Asymptotics of maxima of i.i.d. chi-square random variables,"How to find the following: Let $X_1$, $X_2$, $X_3$,..., $X_n$, be i.i.d with chi-square distribution with one-degree of freedom. Find $a_n$ and $b_n$ such that $ a_n(\max_i X_i - b_n)$ converges in distribution to a nondegenerate random variable. I thought about Central limit theorem but i dont think here is the case?? Thanks a lot!","['probability-theory', 'probability-distributions', 'probability']"
+450147,"Convolution intuition: clarifying Terence Tao's ""blurring""/""fuzz"" interpretation","On this math.MO post, ""What is convolution intuitively?"" ,
+Terence Tao's answer (in the case where one function is a bump function) involves ""blurring"" and ""fuzz."" Could someone clarify his interpretation more explicitly? The intuition still escapes me. Thanks!","['convolution', 'intuition', 'analysis']"
+450158,Simplifying compound fraction: $\frac{3}{\sqrt{5}/5}$,"I'm trying to simplify the following: $$\frac{3}{\ \frac{\sqrt{5}}{5} \ }.$$ I know it is a very simple question but I am stuck. I followed through some instructions on Wolfram which suggests that I multiply the numerator by the reciprocal of the denominator. The problem is I interpreted that as: $$\frac{3}{\ \frac{\sqrt{5}}{5} \ } \times \frac{5}{\sqrt{5}},$$ Which I believe is: $$\frac{15}{\ \frac{5}{5} \ } = \frac{15}{1}.$$ What am I doing wrong?","['fractions', 'arithmetic', 'algebra-precalculus']"
+450173,When are the following multiple improper integrals convergent?,"This is a question from a past exam. For which $p, q\in \mathbb R$ do the following improper integrals converge? $$\begin{align*}I_1=\int_{D_1}\dfrac{dx}{(1-\cos(\|x\|_2))^p}\\I_2=\int_{D_2}\dfrac{dx}{\|x\|_2^q\ln(\|x\|_2)}\end{align*}$$, where $D_1=\{x\in \mathbb R^n|\|x\|_2\le1\}$, $D_2=\{x\in \mathbb R^n\mid\|x\|_2\ge\sqrt2\}$, and $\|x\|_2=\sqrt{\sum_1^nx_i^2}$. I have tried comparison test, but found no suitable comparison functions, and looked into my textbooks about improper integrals. But I found no useful information. Further, noting that $\cos x$ is approximately $1-x^2/2+x^4/4!-+...$, I conjecture that $I_1$ is convergent exactly when $p\lt n/2$. But I have no idea how to prove this rigorously. Finally, I tried using similar ideas for $\ln$, at least to give an approximate estimate for $I_2$, but in vain, for I found no expansion for $\ln$ that comes in handy. So any help or hint will be well appreciated.","['multivariable-calculus', 'improper-integrals']"
+450183,Simplify this expression that came from integration,"I was doing a calculation and arrived at a term $\left[P_{l-1}(\cos(\theta)) -P_{l+1}(\cos(\theta))\right]_{0}^{\pi}$(So this is the result of an integration). Does anybody of you know how to simplify this expression? (Testing suggested to me that this one is either $0$ or $2$, but I did not get there). $P_n$ is the $n$-th Legendre polynomial.","['functions', 'calculus', 'special-functions', 'real-analysis']"
+450193,Is there a suitable definition in categories for a closed continuous function in topology?,"Working in the category of topological spaces is it possible to give a 'categorical' definition for 'a closed continuous function'? I mean something like: 'a closed continuous function' is an arrow in Top such that ... My intuition tells me that it is not so, but on the other hand this intuition has often turned out to be arrogant and wrong.","['general-topology', 'category-theory']"
+450195,Double Integration.,"I have an integral $$\int_0 ^a\int_0 ^b\int_0 ^a\int_0 ^b \sin(x)\sin(\bar{x})\sin(y)\sin(\bar{y})f(x,\bar{x},y,\bar{y})~dx~dy~d\bar{x}~d\bar{y}$$ 
+where $f= \dfrac{\sin\left(\sqrt{(x-\bar{x})^2+(y-\bar{y})^2}\right)}{(x-\bar{x})^2+(y-\bar{y})^2}$. Under the transformation $$\bar{x}=x+u,~~~\text{and}~~~\bar{y}=y+v$$ the function $f$ becomes $f(u,v)$. This integral results in $$\int_0 ^a\int_0 ^b[(a-u)\cos(u)+\sin(u)][(b-v)\cos(v)+\sin(v)]f(u,v) \, du \, dv$$ Can someone help me in proving this?","['multivariable-calculus', 'integration']"
+450201,Pre-images of closed sets are open,"Let $X$ and $Y$ be two topological spaces and let $f$ be such a map that $f^{-1}(A)$ is open in $X$ for any closed $A$. Note that if $X\stackrel{f}{\longrightarrow}Y\stackrel{g}\longrightarrow  Z$ are two such maps, then $g\circ f$ is continuous. Perhaps, it is a trivial task - but is there an example of such surjective map from $\Bbb R$ to $\Bbb R$?",['general-topology']
+450230,Question on monotonicity and differentiability,"Let $f:[0,1]\rightarrow \Re$ be continuous. Assume $f$ is differentiable almost everywhere and $f(0)>f(1)$. Does this imply that there exists an $x\in(0,1)$ such that $f$ is differentiable at $x$ and $f'(x)<0$? My gut feeling is yes but I do not see a way to prove it. Any thoughts (proof/counterexample)? Thanks!",['real-analysis']
+450245,Pointwise convergence domain of function series,"I'm stuck at finding pointwise convergence domain of the following function series
+$$\sum_{n=1}^\infty \frac{\sqrt[3]{(n+1)}-\sqrt[3]{n}}{n^x+1}$$ I tried to use d'Alembert and Weierstrass tests, but it seems to me they don't work here.","['convergence-divergence', 'sequences-and-series', 'zeta-functions']"
+450252,How big is a class of groups with a certain strong amenability condition?,"Let $G$ be a countably infinite discrete group. Let us call $G$ sequentially amenable, if there is a bijection $\mathbb{N}\to G,\; j\mapsto g_j$ such that the sets $F_k = \{g_1,\dots,g_k\}$ form a Folner sequence for $G$. How big is the class of sequentially amenable groups? The only obvious examples I can think of are the groups $\mathbb{Z}^m$ for $m\in\mathbb{N}$ or (a little bit more general) finitely generated abelian groups. (For $\mathbb{Z}^m$, you can see this by counting all $v\in\mathbb{Z}^m$ with $\|v\|_\infty=n$ in increasing order $n=0,1,2,\dots$. Can you think of interesting non-abelian examples? Any answer would be very helpful. Edit: One fairly big class of examples are finitely generated groups with subexponential growth. Let's give a quick proof: Let $G$ be such a group. Pick some finite generating set $S=S^{-1}\subset G$ and define the corresponding length metric
+$$\ell: G\to\mathbb{N},\quad \ell(g)=\min\{k \;|\; g=s_1\cdot\dots\cdot s_k\;\text{for some}\; s_i\in S \}.$$
+Then it is well-known that the unit balls
+$$B_n = \ell^{-1}(\{0,\dots,n \})$$
+form a Folner sequence for $G$. This is because of subexponential growth, which means that $\lim_{n\to\infty} |B_n|/|B_{n+1}|=1$. Then define the bijection $j\mapsto g_j$ of $G$ by counting all group elements $g$ with $\ell(g)=n$ in increasing order of $n$. Define $F_k=\{g_1,\dots,g_k \}$ for all $k$. Then it is clear that
+$$\forall\; k: \exists n: B_n\subset F_k\subset B_{n+1}.$$
+It follows for all $g\in G$ that
+$$\lim_{k\to\infty} \frac{|F_k\cap gF_k|}{|F_k|} \geq \lim_{n\to\infty} \frac{|B_n\cap gB_n|}{|B_{n+1}|} = \lim_{n\to\infty} \frac{|B_n|}{|B_{n+1}|}\cdot \frac{|B_n\cap gB_n|}{|B_n|} = 1,$$
+which confirms that the $F_k$ form a Folner sequence.","['amenability', 'group-theory']"
+450260,Showing that $a^{\phi(n)}\equiv 1\pmod n$ when $a$ and $n$ are relatively prime,"I am trying to show that if $a$ is any integer relatively prime to $n$, then $a^{\phi(n)}\equiv 1\pmod n$, where $\phi(n)$ is Euler's totient function whose value is equal to the number of numbers less than $n$ that are relatively prime to $n$. This seems number-theoretic, but given the context, is meant to be solved with group theory.  I know that the order of $U(n)$ (the group of all numbers less than and relatively prime to $n$ under multiplication) is $\phi(n)$.  Therefore, for any $g \in U(n)$ we know that $g^{\phi(n)}=1$.  I have been trying to use this fact in my proof.  Clearly $a$ need not be in $U(n)$, but I thought perhaps if it is congruent to a member of $U(n)$ I can get the desired result.  For this reason, I applied the division algorithm to write $a=nm+r$ where $m$ is some integer and $1 \le r \le n-1$, and tried to show that $r$ is relatively prime to $n$, so that $a \equiv r \mod n$.  I do not know that this is the best approach, but no others have borne fruit either. I'd really appreciate a HINT, as always, on how to prove this.  Thanks.","['group-theory', 'abstract-algebra']"
+450264,"When is $F(x,t)=\int_0^tf(x,\eta)\,d\eta$ a continuous function of $x,t$?","I have read some results about integrals of the form $$\int_D f(x,t)\,dt$$ for instance, the dominated convergence theorem and MCT. Also I see results for $F(x) = \int_0^\infty f(x,t)\,dt$  being continuous at $x_0$, provided $\int_0^t f(x,\eta)\,d\eta$ has a limit as $t \to \infty$ which is uniform in some open set around $x_0$. Also, under somewhat more stringent conditions, $\lim_{x\to\infty}\int_0^\infty  f(x, \eta) \,d\eta = \int_0^\infty  \lim_{x\to\infty} f(x, \eta) \,d\eta$. And of course if we fix $x_0$, of course $\int_0^t f(x_0,\eta)\,d\eta$ is continuous in $t$ by the continuity of the integral. Suppose on the other hand we fix $t_0$. When is $F(x)=\int_0^{t_0} f(x,\eta)\,d\eta$ continuous at $x_0$? Since this should be easier than the improper integral mentioned above, it certainly seems strong enough that $f(x,\eta)$ converges uniformly as $t \to t_0$ in a neighborhood around $x_0$. But can we get by with less? Is it then an easy extension to show when
+$$F(x,t)=\int_0^tf(x,\eta)\,d\eta,$$ is a continuous multivariable function of $(x,t)$? What restrictions do we need on $f(x, \eta)$? I apologize if these are easy consequences of the other theorems, and I'm just not seeing it. Also I apologize if these are canonical results that I don't know. A google search didn't help me to answer these questions.","['calculus', 'integration', 'uniform-convergence']"
+450269,Differentiate $\sin \sqrt{x^2+1} $with respect to $x$?,"Differentiate $$ \sin \sqrt{x^2+1} $$ with respect to $x$? Can someone please help me with question, im very lost.","['trigonometry', 'calculus', 'derivatives', 'functions']"
+450272,Loss of direction in Gauß' theorem?,"I was wondering about the following: If I have a function $\phi:\mathbb{R}^3\rightarrow \mathbb{R}$ and I want to calculate the mean value of $E=-\nabla \phi$ over a sphere, then $E$ of course if a vector, but the mean value: $ E=-\frac{1}{V_\mathrm{sphere}}\int_V \nabla \phi=-\frac{1}{V_\mathrm{sphere}} \int_{S(\text{sphere})} \phi$ is no longer a vector. so how do I manage it to get also directional information about the mean value of $E$? What I calculated was: $\frac{1}{V_\mathrm{sphere}} \int_{S(\text{sphere})} \phi=\frac{1}{V_\mathrm{sphere}} \int_0^{2\pi} \int_0^{\pi} \phi r^2 \sin(\theta) d\theta d\phi$ This is the way it was done here: Article on electrodynamics on page 3 Please note that all definitions I gave to you, also apply to the notation in this article","['multivariable-calculus', 'calculus', 'integration', 'real-analysis']"
+450276,Need an example of inverse of a bijective function of 2 parameters,"It seems that i've forgotten my highschool math. Think the case that I have a bijective function, so the inverse is a function and i'm trying to find this inverse function as an Expression. The problem is, this function has two parameters.
+i.e: $z = f(x,y)$, $ f:\mathbb{R} \times \mathbb{R} \to \mathbb{R}$. How can i have inverse of this function which will give me $$x = g(z)$$ $$y = h(z)$$ Thanks",['functions']
+450280,Erdős-Straus conjecture,"The Erdős-Straus Conjecture (ESC), states that for every natural number $n \geq 2$, there exists a set of natural numbers $a, b, c$ , such that the following equation is satisfied: $$\frac{4}{n}=\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\tag{1}$$ The basic approach to solving this problem outlined by Mordell [Ref1] is described below By defining $t$ and $m$ as positive integers greater than zero and $q$ a positive integer greater than one we can observe that a) There is always a solution for even $n$, since if $n=2^qt$ we have the trivial solution
+$$\frac{4}{4t}=\frac{1}{t}$$ In the remaining case $n=2(2t+1)$, a solution in the form of two Egyptian fractions can always be found  e.g.
+$$\frac{4}{2(2t+1)}=\frac{2}{2t+1}=\frac{1}{t+1}+\frac{1}{(t+1)(2t+1)}$$ b) If $(1)$ is a solution for some particular prime $n$ then all composite numbers $mn$ divisible by $n$ are also solutions, thus $$\frac{4}{mn}=\frac{1}{ma}+\frac{1}{mb}+\frac{1}{mc}$$ will also be a solution. This means that we can simplify the analysis to the cases where $n$ is a prime greater than 2. Using Mordell's approach we have just shown that we only need to consider the cases where $n$ is prime and where $n \equiv 1 \pmod{2} \;\;[meaning \;\;n=2t+1]$ The argument continues... Mordell goes on to show in turn that the search can be reduced further to the cases when
+$$n \equiv 1 \pmod{4} \;\;[meaning \;numbers \;\;n=4t+1]$$
+$$n \equiv 1 \pmod{8} \;\;[meaning \;numbers \;\;n=8t+1]$$
+$$n \equiv 1 \pmod{3} \;\;[meaning \;numbers \;\;n=3t+1]$$
+$$n \equiv 1,2,4 \pmod{7} \;\;[meaning \;numbers \;\;n=7t+1,n=7t+2 \;or\;n=7t+4 ]$$
+$$n \equiv 1,4 \pmod{5}  \;\;[meaning \;numbers \;\; n=5t+1 \;or\;n=5t+4]$$ Assembling these results together, Mordell showed that the conjecture can be proved in this context except for the cases when
+$$n \equiv 1,11^2,13^2,17^2,19^2,23^2 \pmod{840}$$ Mordell stated that since the first prime meeting this condition is 1009, this is proof that the conjecture holds for $n<1009$. This basic approach can be pursued further. Other workers have shown that the conjecture holds for much higher values of $n$ using similar methods as can be seen on the above Wikipedia page. Note that other intermediate results can be constructed from the above congruence's, e.g. $n \equiv 1 \pmod{24}$. The question is: Are there any other elementary approaches to solving this problem than the one outlined by Mordell (and described above)? [Ref1] Louis J. Mordell (1969) Diophantine Equations, Academic Press, London, pp. 287-290.","['conjectures', 'diophantine-equations', 'reference-request', 'number-theory']"
+450290,"Well defined, continuous and singular","Can you explain what they mean when a function is well defined, continuous and singular? I know a function is continuous when you look at the right and left hand limits and both conclude to the same number. Am I right when I say option 5 is false? See attached picture.",['functions']
+450305,This set of matrices is open,"I'm trying to prove that the set of the matrices whose eigenvalues have non-zero real part is an open subset of $M^n$, the set of square matrices with order $n$ which is identify with $\mathbb R^{n^2}$. I don't know even how to begin, this question is really different to me, I don't how to use these topological concepts in relation with the eigenvalues of matrices. I really need help. Thanks in advance","['general-topology', 'linear-algebra']"
+450327,Probability and sets,You are given two events $A$ and $B$ with $P(A \text { or } B) = 0.4$ and $P(A \text{ or } B’) = 0.8$. Determine $P(A)$. Note: $B’ = \text{ not }B = $ the complement of $B$. Answer: $0.2$ Not sure how to go about solving this problem. I tried $P(A \cup B) = P(A) + P(B) - P(A \text{ and } B) = 0.8$ and $P(A\cup B’) = P(A) + P(B’) - P(A \text{ and } B’) = 0.8$. But I am stuck here.,"['statistics', 'probability']"
+450334,Matrix determinant using Laplace method,"I have the following matrix of order four for which I have calculated the determinant using Laplace's method. $$
+\begin{bmatrix}
+ 2 & 1 &  3 &  1 \\
+ 4 & 3 &  1 &  4 \\
+-1 & 5 & -2 &  1 \\
+ 1 & 3 & -2 & -1 \\
+\end{bmatrix}
+$$ Finding the determinant gives me $-726$. Now if I check the result at Wolfram Alpha, it says the result is $-180$ (Because there are no zeros in the matrix, expand with respect to row one) so it uses only the first row to calculate the determinant of the matrix. My question is: Why it uses only the first row to find the determinant?","['matrices', 'determinant']"
+450365,$5^m = 2 + 3^n$ help what to do,"how to solve this for natural numbers $5^m = 2 + 3^n$ i did this $5^m = 2 + 3^n \Rightarrow 5^m \equiv 2 \pmod 3 \Rightarrow m \equiv 1 \pmod 2$
+now  if   i put it like  this
+$   5^{2k+1} = 2 + 3^n $ what to do ?? now is this right another try : $ m = n \Rightarrow 5^n - 3^n = 2 = 5 - 3 \Rightarrow (m_1,n_1)= (1,1) $ we can prove by induction : $5^n - 3^n > 2 \quad \forall n > 1  \Rightarrow m = n = 1 $ another case : $m > n \Rightarrow 5^m > 5^n \geq 3^n+2 \quad \forall n \geq 1 \Rightarrow 5^m - 3^n > 2 \Rightarrow \emptyset$ $m < n \Rightarrow no \ sol. $ by putting some values",['number-theory']
+450374,Two Definitions of Minkowski Dimension,"I'm currently reading a paper. Let $F\subset\mathbb R^n$ and $\epsilon\gt0$, the paper defined $m^s(F):=\liminf_{\epsilon \to 0}\epsilon^{s-n}\lambda(F_\epsilon)$ and $M^s(F):=\limsup_{\epsilon \to 0}\epsilon^{s-n}\lambda(F_\epsilon)$, where $\lambda$ is Lebesgue measure on $\mathbb R^n$ and $F_\epsilon$ is $\epsilon$-parallel set of $F$, i.e. $F_\epsilon:=\{x:d(x,F)\le\epsilon\}$. The author called $$\underline{D}(F):=\inf\{t\ge0:m^t(F)=0\}=\sup\{t\ge0:m^t(F)=\infty\},$$
+$$\overline{D}(F):=\inf\{t\ge0:M^t(F)=0\}=\sup\{t\ge0:M^t(F)=\infty\}$$ as lower and upper Minkowski dimension of $F$ respectively. If $\underline{D}(F)=\overline{D}(F)$ then the common value $D=D(F)$ is called the Minkowski dimension of $F$. In the other hand, all textbooks i know defined lower and upper Minkowski dimension (or box-counting dimension) respectively as $$\underline{B}(F):=\liminf_{\delta \to 0}\frac{\ln N_\delta(F)}{-\ln\delta}$$ and
+$$\overline{B}(F):=\limsup_{\delta \to 0}\frac{\ln N_\delta(F)}{-\ln\delta}$$ where $N_\delta(F)$ is the smallest number of sets of diameter at most $\delta$ which can cover $F$. Likewise, if $\underline{B}(F)=\overline{B}(F)$ then the common value $B=B(F)$ is called the Minkowski dimension (or box-counting dimension) of $F$. My questions: Are these definitions equal or their names just coincide? If $D=B$, where can i find the proof? Thank you.","['dimension-theory-analysis', 'measure-theory', 'geometric-measure-theory', 'analysis']"
+450386,Taylor's Theorem for Multivariate Functions,"Please look at this theorem in Wiki regarding Taylor's theorem generalized to multivariate functions: Multivariate version of Taylor's Theorem The version stated there is one that I'm not familiar with - most versions require that the $k+1$-th partials exist (and/or continuous) and the remainder term is different (due to the additional conditions). For the 1-dimensional case, the $h_\alpha$ is easy to obtain. But for the multivariate case, how does $h_{\alpha}$ look like? The wiki article does not have any citations for that theorem so I'm wondering if anyone can point me to a source.","['multivariable-calculus', 'taylor-expansion']"
+450390,Integral of $\frac{2x}{\sqrt{1+x^2}}$,"I'm trying to find the following indefinite integral:
+$$
+\int \frac{2x dx}{\sqrt{1+x^2}}
+$$ I have already done it via u-substitution, however, I've been asked to solve it with two methods. I think I can do it by trig substitution as well, however I'm not sure how to finish. I know I can substitute $x$ in the square root for $\tan\theta$ by the trig substitution rules, but I'm still a bit confused by the $2x$ in the numerator. Does that go to $2\tan\theta$? And how would I finish this?","['calculus', 'integration']"
+450402,Convolution doubt,"Can someone explain why the general formula of the convolution is this one: $$(f*g)(t)=\int_{-\infty}^\infty f(t-\tau)g(\tau) \, d\tau$$ But when both $f(\tau)$ and $g(\tau)$ are equal to zero for negative values of $\tau$ , the convolution turns into: $$(f*g)(t)=\int_0^t f(t-\tau)g(\tau) \, d\tau$$ I always thought that it would be more logical that it would become: $$(f*g)(t)=\int_0^\infty f(t-\tau)g(\tau) \, d\tau$$","['convolution', 'calculus']"
+450403,If the $m$th term of an Arithmetic Progression is $\frac{1}{n}$ and the $n$th term is............,"Problem : If the $m$th term of an A.P is $\frac{1}{n}$ and the $n$th term is $\frac{1}{m}$ then prove that the sum to $mn$ terms is $\frac{mn+1}{2}$ My working : Let $a$ be the first term of the progression and $d$ the common difference then: 
+$$\tag1T_m = \frac{1}{n}= a+(m-1)d$$ 
+$$\tag2 T_n = \frac{1}{m} = a+(n-1)d$$ Subtracting (1) from (2) and solving for $d$ we get : $d = \frac{1}{mn}$ Please suggest what to do further.  Thanks","['sequences-and-series', 'algebra-precalculus']"
+450410,$\epsilon$-$\delta$ proof that $\lim_{x \to 1} \sqrt{x} = 1$,"I'm trying to teach myself how to do $\epsilon$-$\delta$ proofs and would like to know if I solved this proof correctly. The answer given (Spivak, but in the solutions book) was very different. Exercise: Prove $\lim_{x \to 1} \sqrt{x} = 1$ using $\epsilon$-$\delta$. My Proof: We have that $0 < |x-1| < \delta $. Also, $|x - 1| = \bigl|(\sqrt{x}-1)(\sqrt{x}+1)\bigr| = |\sqrt{x}-1||\sqrt{x}+1| < \delta$. $\therefore |\sqrt{x}-1|< \frac{\delta}{|\sqrt{x}+1|}$ Now we let $\delta = 1$. Then
+\begin{array}{l}
+-1<x-1<1 \\
+\therefore  0 < x < 2 \\
+\therefore  1 < \sqrt{x} + 1<\sqrt{2} + 1 \\
+\therefore  \frac{1}{\sqrt{x} + 1}<1.
+\end{array} We had that $$|\sqrt{x}-1|< \frac{\delta}{|\sqrt{x}+1|} \therefore |\sqrt{x}-1|<\delta$$ By letting $\delta=\min(1, \epsilon)$, we get that $|\sqrt{x}-1|<\epsilon$ if $0 < |x-1| < \delta $. Thus, $\lim_{x \to 1} \sqrt{x} = 1$. Is my proof correct? Is there a better way to do it (still using $\epsilon-\delta$)?","['epsilon-delta', 'calculus', 'radicals', 'real-analysis', 'limits']"
+450414,Proving Borel Cantelli Lemma using Martingales,"I need a hint for exercise 5.2.1 in the book: Ergodic Theory: with a view towards Number Theory
+ By Manfred Leopold Einsiedler, Thomas Ward. In the chapter 5 the authors gives the martingale theorems and the exercise tells you to derive the (less trivial) part of Borel Cantelli out of it. I would appreciate a mild hint (i.e., what sigma algebras to consider...) Thanks!","['probability-theory', 'martingales', 'ergodic-theory', 'borel-cantelli-lemmas']"
+450441,On which measure space is $S_n = X_1 + \dots + X_n$ considered?,"A common setting in law of large number theories is letting $X_1, X_2, \dots$ be independent indentical random variables on probability space $(\Omega, \mathcal{B}, P)$. Let $S_n = X_1 + \dots + X_n$. My question is are we considering $S_n$ as a random variable on the product space of $n$ copies of $(\Omega, \mathcal{B})$, so that $S_n(\omega) = X_1(\omega_1) + \dots + X_n(\omega_n)$, where $\omega = (\omega_1, \dots, \omega_n)$, and $\omega_i \in \Omega$ for all $1 \le i \le n$, or on $(\Omega, \mathcal{B}, P)$, so that so that $S_n(\omega) = X_1(\omega) + \dots + X_n(\omega)$? Another related question is that what role does the product measure space of a countably infinite copies of $(\Omega, \mathcal{B})$ play in the theory? Thanks so much for answering my first question on mathexchange!","['probability-theory', 'stochastic-processes', 'measure-theory']"
+450444,Finding a certain basis-like subset of $\mathbb{Z}^\mathbb{Z}$,"Consider the abelian group $\mathbb{Z}^\mathbb{Z}$ under component-wise addition, i.e. the group of formal power series under addition.
+I am interested in finding a subgroup $H$ of this group that satisfies Any two elements of $H$ differ in infinitely many places; that is, the difference between them is never a polynomial; Any element of $\mathbb{Z}^\mathbb{Z}$ can be written as an element of $H$ plus a polynomial. (1) implies that the representation in (2) is unique. I had attempted to find $H$ using the fact that every vector space has a basis on the vector space of power series over $\mathbb{Q}$, but under closer inspection this doesn't work.  (I can achieve (2) as long as the basis includes $1, x, x^2,$ etc., by throwing them out; however, there's no way to satisfy (1).) My other attempt was to show there is no such $H$ by pigeonhole.  We know $|H| = |\mathbb{R}|$.  Thus by pigeonhole, find $|\mathbb{R}|$ elements of $H$ which have the same last digit.  Among those elements, find $|\mathbb{R}|$ which have the same last two digits.  This can continue on for any finite number of digits.  I think we may assume that these finite number of shared digits are all nonzero, but I don't know what to do next. I am fairly certain the idea of such a subset $H$ is a common group theory notion but I only know basic group theory myself.  This also seems like it would be a well-known problem.  Can someone help me here?",['group-theory']
+450451,"Questions on powers of a bijection $f\colon\{1,2,\dots,n\}\to\{1,2,\dots,n\}$ [closed]","Closed. This question is off-topic . It is not currently accepting answers. Homework questions must seek to understand the concepts being taught, not just demand a solution. For help writing a good homework question, see: How to ask a homework question? . Closed 10 years ago . Improve this question Let $f$ be a one-to-one function from $X=\{1,2,\dots,n\}$ onto $X$. Let $f^k=f\circ f\circ \cdots \circ f$ denote the $k$-fold composition of $f$ with itself. Show that there are distinct positive integers $i$ and $j$ such that $f^i(x)=f^j(x)$ for all $x\in X$. Show that for some positive integer $k,~~~f^k(x)=x$ for all $x\in X$.","['algebra-precalculus', 'functions']"
+450453,Existence of Solutions of Two Cubic Equations in a Particular Region,"If I have two cubic equations in two variables, $ax^3 + bx^2 y + cxy^2+\dots=0$ and another one with different coefficients, and I know that $(x,y)=(0,0)$ or $(1,1)$ are solutions, are there any nice, explicitly computable conditions on the parameters that would guarantee the existence of another solution $(x,y) \in (0,1)^2$? And is there any way to factor out roots like in the single-variable case?","['algebraic-geometry', 'algebra-precalculus', 'polynomials']"
+450460,Binomial Sum: An In-Depth Analysis into the Relatedness of Two Equivalences,"How is it that
+$$n(1+x)^{n-1}=\sum_{k=1}^n C(n,k)kx^{k-1}?$$ How can this be used to show that
+$$n2^{n-1}=\sum_{k=1}^nkC(n,k)?$$","['summation', 'combinatorics']"
+450471,"$f$ analytic but not one-to-one in unit disk, then $\exists |z|=|w|,f(z)=f(w)$.","I need to prove that if $f$ is analytic but not one-to-one in the unit disk, then $\exists z,w\in D_1(0)$ such that $|z|=|w|$ and $f(z)=f(w)$. There is a hint that says to use Argument Principle but I don't know how to use that. Any help is appreciated.",['complex-analysis']
+450499,How do Slinkies become tangled?,"The following image describes the problem better than I can: As you know, sometimes Slinkies can twist such that the direction of the coil can be reversed. However, though reversed, the coil still maintains its radius, number of turns, and shape. How is this possible? Intuitively, untwisting a slinky should increase the radius of curvature and decrease the number of turns. I have read about inverting spheres and topological spheres with holes , and this problem seems as though it could be analyzed with similar methods. I am new to topology but if someone could point me in the right direction, either with a resource (textbook, paper) or an explanation that would be helpful.",['general-topology']
+450513,"You roll a die until the sum of all your rolls is greater than 13. What number are you most likely to land on, on the last roll?","So I was thinking of doing this recursively: $f(x,i)$ is equal to the probability of rolling greater than $x$ and landing on $i$ on the last roll. $f(0,i) = 1/6$ for $i = \{1,2,..,6\}$. $f(1,i) = 1/6 + 1/6f(0,i)$ for $i = \{2,...,6\}$ and $f(1,1) = 1/6f(0,1)$. Finally, we list out this recursion until we get $f(13,i)$ and see for what value of $i$ is $f$ the largest. Is there a better way to approach this or an easy way to simplify this method?","['dice', 'probability', 'combinatorics']"
+450521,Is $G$ a semidirect product of $Z(G)$ and $\operatorname{Inn}(G)$?,"The title pretty much sums it up. $\operatorname{Inn}(G)$ is the group of inner automorphisms, $Z(G)$ is the center. I know that $\operatorname{Inn}(G)$ is isomorphic to $G/Z(G)$. This means that we have a central extension (exact sequence): $$1\to Z(G) \hookrightarrow G \to \operatorname{Inn}(G) \to 1. $$ The map between $Z(G)$ and $G$ is inclusion. The map between $G$ and $\operatorname{Inn}(G)$ is conjugation. Is $\operatorname{Inn}(G) \cong G/Z(G)$ enough for the sequence above to be split? And most important, why/why not? Thank you! (Oh, also: does anybody know a book on this? Wikipedia is quite unclear. Thanks again.)","['homological-algebra', 'group-extensions', 'group-theory']"
+450525,Is there a better upper bound for the primorial $x\#$ than $4^x$,"In the classic proof of Bertrand's postulate by Paul Erdős, he shows that $x\# < 4^x$ where $x\#$ is the primorial for $x$. Is there any tighter upper bound for a given primorial $x\#$?  Ideally, does anyone know if there are any relatively recent papers on estimating the upper bound of a primorial?","['prime-numbers', 'primorial', 'number-theory']"
+450560,Integrating a matrix,Is it possible to integrate a matrix? I've been working through a problem and come up with $$\int_{t_0}^t  \begin{pmatrix}\sin(s)\cdot\cos(\beta s)\\ \cos(s)\cdot\cos(\beta s)\end{pmatrix}ds$$ I'm integrating from $t_0$ to $t$ Can this be done or do we think I went wrong somewhere?,"['definite-integrals', 'matrices', 'ordinary-differential-equations', 'integration']"
+450562,"""Probability"" of Divisibility by Primes Proof",".. where ""probability"" is used loosely. Let $k$ by a non-negative integer and $p_a$ and $p_b$ be distinct primes. Select a positive integer $x$. What is the probability that $p_a | x$ and $p_b|(x + k)$, or $p_a|(x + k)$ and $p_b|x$ ? Through experimentation it looks like the probability is $\frac{2}{p_ap_b}$ if $(k, p_ap_b) = 1$, and $\frac{1}{p_a p_b}$ if $(k, p_ap_b) \gt 1$, but I am not sure how to prove it, so I am looking for tips and hints and how the proof might go.",['number-theory']
+450567,How to prove $f'(a)=0$?,"Let $f:I\to\mathbb{R}^n$ be a differentiable function, where $I\subset\mathbb{R}$ is a interval. For each $c\in \mathbb{R}^n$, define $X_c=\{x\in I;\;\;f(x)=c\}$. The problem asks to show that if there exists $c\in \mathbb{R}^n$ such that $a\in I\cap \left (X_c\right)'$, then $f'(a)=0$. I don't know how to start, so I would like hints. Can someone help me? Thanks.","['multivariable-calculus', 'analysis']"
+450594,Centre of mass moves with constant velocity,"The centre of mass of the Newton $n$-body problem is given by $$S=\frac{1}{M} \sum m_ix_i$$ with $M=\sum m_i$.
+Show that it moves with contant speed and hence has no acceleration. I don't understand as if I differentiate, I'll surely just get $$S'=\frac{1}{M} \sum m_ix'_i$$ which is not constant...is it?","['classical-mechanics', 'ordinary-differential-equations', 'summation']"
+450608,Show that $f(x) = x^p -x -1 \in \Bbb{F}_p[x]$ is irreducible over $\Bbb{F}_p$ for every $p$.,"Let $p$ be a prime. a) Show that $f$ has no roots in $\Bbb{F}_p$ . Let $F^*$ be the multiplicative group of $\Bbb{F}_p$ . Then, by lagrange's thoerem for all nonzero $\alpha \in \Bbb{F}_p$ , $\alpha^{p-1} = 1 \implies \alpha^p=\alpha \implies \alpha^p-\alpha=0$ . Of course $0^p=0$ , so this is true for all elements of $F$ and not just the nonzero ones. But then $\alpha^p - \alpha - 1 = -1$ for all $\alpha \in \Bbb{F}_p$ and so it must have no roots in $\Bbb{F}_p$ . I could have also done this using the Frobenius automorphism, right? b) Let $\alpha$ be a root of $f$ (in some algebraic closure of $\Bbb{F}_p$ ). Show that $\alpha + s$ is also a root for all $s \in \Bbb{F}_p$ . Let $\alpha^p - \alpha -1 =0$ . Let $E$ be an algebraic closure of $\Bbb{F}_p$ . Since $E$ has characteristic $p$ , $(\alpha + s)^p = \alpha^p + s^p$ . So we have, $$(\alpha + s)^p - (\alpha + s) -1 = \alpha^p + s^p - \alpha -s -1 = s^p - s = 0.$$ c) Conclude that $f$ is irreducible over $\Bbb{F}_p$ , for every $p$ . By b) and the fact that $\Bbb{F}_p$ has $p$ distinct elements, we know that the roots of $f$ are $\alpha, \alpha+1, ... , \alpha + p-1$ . So if $K$ is a splitting field, we have $$x^p - x -1 = (x-\alpha)(x-(\alpha+1))...(x-(\alpha+p-1)).$$ Now let's assume that $f$ is reducible over $\Bbb{F}_p$ . Then $f=gh$ for some $g$ and $h$ with degrees less than that of $f$ . So $g$ and $h$ must be of the form $(x-(\alpha+s_1))...(x-(\alpha+s_k))$ where k is less than n. Let's say that g has degree 2, because the other cases are similar. So $g =(x-(\alpha + s_i))(x-(\alpha + s_j))$ and the constant term for $g$ is, $$(\alpha + s_i)(\alpha + s_j) = \alpha^2 + s_is_j\alpha + s_is_j.$$ Since $\Bbb{F}_p$ is a field, if $\alpha s_is_j$ is an element of $\Bbb{F}_p$ , then so is $((\frac{1}{s_is_j})(\alpha s_is_j) = \alpha$ , a contradiction. We can show by induction that if we multiply $(x-(\alpha+s_1))...(x-(\alpha+s_k)$ , we get a term that looks like $s_1s_2...s_k\alpha$ . So this is also true for $k>2$ . Do you think that my answer is correct? Thank you in advance","['finite-fields', 'positive-characteristic', 'abstract-algebra', 'field-theory']"
+450610,Clarification regarding a group theory proof,"In a group we have $abc = cba$. If $c \neq 1$, is the group abelian? See the following link . (I am new to this site but it is my understanding that you cannot PM authors, correct? Which is too bad because it means I have to open this thread) In regards to Math Gem's answer, from the comments I take it he has omitted some of the obvious statements; but I wonder, if one was to give every required statement, what would have to be included? In the proof he requires $c = ba$ which surely is only a small (equal to the order of the group times the number of $c \neq 1$) section of a group. It must hold for all $a,b, c \neq 1$ so the total amount of combinations you would have to verify (say A is the group) would be $\mathrm{T} = \#A \cdot \#A \cdot (\#A-1)$. Say $\#A = x$. Since $c = ba$ is only valid for $x$ distinct couples $(a,b)$ (because of the ""latin square property"", $c = ba$ ""misses"" $\mathrm{T}-(x-1)\cdot\#A$ combinations, right? Taking $Z_4,+$ and $2$ for example, only $2 = 2 + 0$, $2 = 0 + 2$, $2 = 1 + 3$ and $2 = 3 + 1$ so e.g. (4,4,4) and (1,2,4) are invalid for the proof given, yet we do have to take them into account. From the comments, if $ab = 1$ then clearly $ab = ba$ (because $ab = 1 \implies a = b^{-1} \implies 1 = ba$) but then there's still e.g. (4,4,4) and (1,2,4). So the trivial (4,4,4) would have to be mentioned, as well when either $a$ or $b$ is equal to $1$. From inspection of $Z_4,+$ I see that we now have all possible combinations, but should it not be proven? I.e. how do you know there do not exist $a,b, c$ such that $ba \neq c$ and $a,b \neq 1$ and yet $ab \neq ba$? For $Z_4,+$ you can sort of say: the order is 4, so you have to check $4\cdot4\cdot3$ combinations. The proof holds for $c = ba$ and since there 3 elements in $Z_4,+$ that are not equal to $0$, you substract $4\cdot3$. Then you remove (1,b,c) and (a,1,c) so you substract $4\cdot3$ twice. Then for $ab = 1$ you substract $4\cdot3$ again and you are left with $0$. So yeah, it's true for $Z_4$, but it's not exactly a real proof. Maybe there is some peculiar group out there for which there are more elements left? I guess you would just generalize it to some order $x$ but then I don't get $0$ like I did above. So my  question is how do you know you have all possible combinations $a,b, c, \neq 1$ when basically your proof consists of checking different cases. (I am a 1st year undergraduate math student, should it matter)","['group-theory', 'abelian-groups']"
+450624,Conditional Expectation for Geometric Series - Dice problem,"A fair die is rolled repeatedly.  Let $X$ be the number of rolls needed to obtain a 5 and $Y$ the number of rolls needed to obtain a 6.  Calculate $E[X \mid Y=2]$. I found a similar post of this same question here: A question on conditional expectation But I still do not understand the solution after reading it.  If someone could hold my hand a little and provide a more thorough explanation I would really appreciate it. This is what's going through my head: Since $Y=2$, we roll a 6 on the second roll, meaning that we do not get a 6 on the first roll.  Therefore, the first roll has a uniform distribution of the set $\{1,2,3,4,5\}$.  We also know that $\Pr(X=2 \mid Y=2)=0$ because these events are mutually exclusive.  We can apply the definition of expected value now and I let $Z=X \mid (Y=2)$. $E[Z]=\sum\limits_{z=1,z \ge 3}^{\infty} z \cdot \Pr[Z] \tag{1}$ Now: $\Pr[Z=1]=\Pr[X=1 \mid Y=2] = \Pr[5 \text{ on first roll} \mid 6 \text{ on second roll}]=1/5$ $\Pr[Z=2]=0$ as mentioned above. Now I get confused when I calculate probabilities for $Z \ge 3$, and would appreciate some guidance: $\Pr[Z=3]=\Pr[X=3 \mid Y=2] =\Pr[5 \text{ on third roll} \mid 6 \text{ on second roll}]$ So to calculate this probability, I thought I'd break this case down: Question 1: I thought the first roll only can be from the set:  $\{1,2,3,4\}$.  Second roll = 6, and Third roll = 5.  But I think the solution to this probability is: $(4/5)(1)(1/6)$.  I don't see why the probability of the first roll is (4/5) because for this case, we can only get a 6 on the second roll.  Can someone please explain and perhaps illustrate another example like $Pr[Z=4]$? Question 2: My approach then was to find the equation for $\Pr[Z \ge 3]$ and then apply equation (1) to get the solution.  Is this the best approach?  I was reading another solution but did not understand it: Thanks in advance.","['statistics', 'probability']"
+450648,Visualize a projective curve $X^3+Y^3=Z^3$ in $P_2(C)$ as a torus,"Let $P_2(C)$ be the 2 dimensional complex projective space, I want to prove that the projective curve defined by $M=\{[X,Y,Z]\in P_2(C)|X^3+Y^3=Z^3\}$ is a torus. I know that there is a theorem saying that its genus is C(3-1,2)=1 but I'd like to visualize that by constructing the Riemann surface of the multi-function $y^3=1-x^3$. I can prove that on the Riemann sphere $S$, except 3 points $\{[1,1], [\omega, 1], [\omega^2,1]\}$ where $\omega^3=1$, all other points has 3 pre-images under the map $f: M \rightarrow S$ defined by $f([X,Y,Z])=[X,Z]$. Then I'm stuck: how to cut and glue the 3 spheres to become a torus, based on the 3 points?","['riemann-surfaces', 'algebraic-geometry', 'algebraic-topology', 'complex-analysis']"
+450651,Reference Request for The Study of Abelian Groups,"So I finished Lang's Algebra and after reading this partial Structure Theorem for abelian torsion groups that are not finitely generated , I've gotten interested in abelian groups, in particular infinite abelian groups and structure theorems. Can anyone recommend a book that highlights these topics? Thanks!","['reference-request', 'group-theory', 'abstract-algebra', 'abelian-groups']"
+450682,Attach term to solution of PDE(perturbation theory),"Currently I am struggeling with the following problem: Actually I have a found a solution to the PDE $\Delta \Phi(r,\theta)=f(r,\theta)$ and now I want to include a small extra term given by $kg(r)\Phi(r,\theta)$ a priori to the differential equation where $g(r)=1$, if $|r|>R\in \mathbb{R}$ so ""outside a sphere"" and g(r)=0 inside the sphere. Is there any way to approximatively attach this behavior to the solution to the differential equation a posteriori or do you see any other chance to do this approximatively? It might be worth saying that the solution of the differential equation is rather a complicated function. Since I do not want to busy you with the full calculation I was just wondering whether you know some equations(maybe perturbation theory) in order to do this right.","['multivariable-calculus', 'calculus', 'partial-differential-equations', 'real-analysis', 'functional-analysis']"
+450684,Cauchy Derivative Estimates for entire functions with a bound.,"The problem statement: Assume $f$ is an entire function and that there is an $n \in \mathbb{N}$ and a $C < \infty$ such that for $z \in C$ $$|f(z)| \le C ( 1+|z|^n)$$
+Also assume that $f$ is never zero and $f(0) = 1$. What is the function? I believe that the problem can be solved in part by using what we refer to as the Cauchy derivative estimates (inequalities in the book). Which tells us: $$|f^{(n)}(z_0)| \le \frac{n!}{R^n} \, \sup_{|z-z_0| = R} |(f(z)|$$
+(where the $|z-z_0| = R$ is allowsing $z$ to be on the boundary of the circle of radius $R$. So by letting $z_0$ be arbitrary, we can use the n-th derivative here and the bound for $f(z)$ to show that for large $R$, this limits to 0. My question really revolves around whether or not we can say more. This argument tells us that $f$ is a polynomial of at most degree $n$, and as $f(0) = 1$, we know that the constant term is 1, but can we say anything else to answer ""What is the function""?","['derivatives', 'estimation', 'functional-analysis', 'complex-analysis']"
+450699,How to use Mayer-Vietoris to show $\chi(X)=2\chi(M)-\chi(\partial M)$ where $X$ is the double of $M$?,"I'm in trouble with the following problem: Let $M$ be a manifold with compact boundary $N$ and let $X$ be the double of $M$, that is, the manifold without boundary one gets by glueing $M$ with itself along its boundary. How can I use Mayer-Vietoris sequence to show the relation $$\chi(X)=2\chi(M)-\chi(\partial M),$$
+where $\chi$ stands for the Euler characteristic.. Any help will be useful...Thanks","['geometry', 'manifolds', 'algebraic-topology']"
+450700,Find force required for a launch between two points,"Let me start by saying this is within a game environment, so gravity isn't 9.81m/s^2, and the unit of measure for distance will be ""blocks"". I'm attempting to find the amount of force needed in order to launch a player into the air, from point A to point B. For my example, I assumed that it was in a straight line of 60 blocks away, and attempted to work from there. Knowing that velocity is the derivative of distance, and acceleration the derivative of velocity, I mustered together those variables, along with others. In the game: Gravity pulls at 13 blocks/second Acceleration to the ground is at 22.48 blocks/second^2 A block is a distance of 1 meter. I have a general mockup of attempting to start the problem, but to be honest I'm completely stumped on where to take it. I need to find the initial velocity to launch at, as well as what angle to do it at. General mockup: https://i.sstatic.net/Vl6x4.jpg","['physics', 'derivatives']"
+450701,What is this Weierstrass' proof of uniqueness of $\mathbb{R}$ and $\mathbb{C}$ algebras?,"I'm reading Derbyshire's Unknown Quantity . It's an interesting exercise to enumerate and classify all possible algebras. Your results will depend on what you are willing to allow. The narrowest case is that of commutative, associative, finite-dimensional algebras over (that is, having their scalars taken from) the field of real numbers $\mathbb{R}$ and with no divisors of zero. There are just two such algebras: $\mathbb{R}$ and $\mathbb{C}$, a thing proved by Weierstrass in 1864. What is this proof? I've googled Weierstrass algebra proof but found mainly the Stone-Weierstrass Theorem , which I'm not sure if this is the proof.",['abstract-algebra']
+450703,injection $\mathbb{N}\times\mathbb{N}\to\mathbb{N}$,"Today a friend of mine told me a nice fact, but we couldn't prove it. The fact is that there is an injection $\mathbb{N}\times\mathbb{N}\to\mathbb{N}$ defined by the fomula $(m,n)\mapsto (m+n)^{\max\{m,n\}}$, where $\mathbb{N}$ denotes the natural numbers. How to prove that this map is injective? It should be elementary. We might be overlooking something trivial. Thanks! Edit As it was pointed out, it is not an injection by easy reasons. Thanks a lot! I was just overcomplicating things. But what if we restrict the map to the set of pairs $(m,n)$ such that $m>n$?","['elementary-set-theory', 'functions']"
+450704,If $x_{n+1}/x_n\to x$ and $x_n\nearrow+\infty$ then $\frac{x_1+\cdots+x_{n+1}}{x_1+\cdots+x_n} \to x $,"So, here we go again, the sequence $x_n$ is increasing and $x_n\to\infty$ as $n\to\infty$,
+and also, $\lim\limits_{n\to\infty}\dfrac{x_{n+1}}{x_n}= x$ which is a real non zero number, Prove that : $$\lim\limits_{n\to\infty}\frac{x_1+\cdots+x_{n+1}}{x_1+\cdots+x_n} = x $$ I'm stuck again, I know why it says that [eventually] $x_n>A$ for every $A$, from that I got : $$\frac{x_1+\cdots+x_{n+1}}{x_1+\cdots+x_n} -x\leq (n+1)\frac{x_{n+1}}{x_n} -x$$ for every $n>N$ $N$ is special though but I don't get anywhere from there so it doesn't matter. can anybody help?","['sequences-and-series', 'analysis']"
+450705,When does an analytic function grow faster than a polynomial?,"Suppose $f$ is an analytic function with power series expansion $f(z)=\sum_{n=0}^{\infty} a_nz^n$, and $p = \sum_{n=0}^{d}b_nz^n$ is a polynomial. If $f$ is a polynomial of degree larger than $d$, then $|f|$ grows faster than $|p|$, but the situation is not so clear when the expansion of $f$ has infinitely many nonzero coefficients. I would expect the growth of the function $f$ then to be faster than that of $p$, as with the function $e^z = \sum_{n=0}^{\infty}\frac{z^n}{n!}$. However the function $\frac{1}{1-z} = \sum_{n=0}^{\infty}z^n$ also has infinitely many nonzero coefficients and grows slower than any polynomial (as $|z|\to\infty$). I realize this is related to the failure of the power series to converge outside a disk of radius $1$. Also, $log(z)$ grows slower than any polynomial, but any power series representation cannot converge on an infinite radius (The function itself cannot be well-defined everywhere in the complex plane simultaneously). Under what conditions can we say that a power series with infinitely many nonzero coefficients represents a function that grows faster than any polynomial? Is this true for any power series with infinite radius of convergence? Are there such power series which grow at the rate $z^\alpha$, for any $\alpha\in(0,\infty)$? I have in mind the case where $f$ is complex-analytic, but I would also be interested to hear about the case where $f$ is real-analytic, if the cases differ.","['power-series', 'polynomials', 'analysis']"
+450717,Finding the derivative of $\sin \sqrt {x^2+1}$ from the definition?,"This means finding $\lim_{h \to 0} \large \large \frac{\sin \sqrt {(x+h)^2+1}-\sin \sqrt {x^2+1}}{h}$ . The only way I could think of to do this is to replace $h$ by some function $f(h)$ such that   $[x+f(h)]^2+1=[x+g(h)]^2$ and this would get rid of one of the square roots, but I was not able to find $f(h)$ . Inspired by: Differentiate $\sin \sqrt {x^2+1}$ with respect to x?","['calculus', 'algebra-precalculus', 'trigonometry', 'derivatives', 'limits']"

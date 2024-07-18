@@ -1,0 +1,555 @@
+question_id,title,body,tags
+2604538,Infinite surds on a number,"Is 
+$$ \sqrt{\sqrt{\sqrt{\sqrt{.....\sqrt x}}}} =1$$
+where $x$ is a real number and $x > 0$? Since $x$ after every under root , decreases exponentially I think it has to be $1$. But then $1^{2^{2^{2....^{2}}}} =1$ so I am confused. I think the problem lies in the definition of the problem in the way, the expression is defined since the question can be reworded to 
+$ \lim_{a \rightarrow \infty} x^{0.5^{a}}  =1$.",['limits']
+2604566,KL divergence between two multivariate Bernoulli distribution,"The KL divergence between two Bernoulli distributions is: $$
+KL(p||q)_{Ber} = p\log\ \frac{p}{q}\ +\ (1-p)\log\ \frac{1-p}{1-q}  
+$$ According to my understanding, the KL divergence between two multivariate Bernoulli distributions $p$ and $q$ should be $$
+KL(p||q)_{Ber} = \sum_{i=1}^{k} p_i\log\ \frac{p_i}{q_i}\ +\ (1-p_i)\log\ \frac{1-p_i}{1-q_i}  
+$$
+where k is the number of possible outcome. Is this correct?","['information-theory', 'machine-learning', 'statistics', 'probability-distributions']"
+2604577,Global section of line bundle of degree 0,"Let $\mathscr{L}$ be a line bundle on a curve $C$ such that $h^0(C, \mathscr{L}) = 1$ and deg $\mathscr{L} = 0$. Why does it imply that $\mathscr{L}$ is the trivial line bundle? I found some explanation in Vakil's notes here , which I don't quite understand. We know that degree of $\mathscr{L}$ can be computed by counting zeros and poles of any rational section. Say $s$ is a section of $\mathscr{L}$, then $s$ must have no pole, and since $\mathscr{L}$ has degree 0, $s$ must also have no zero. That means $s$ is invertible. But why does this then imply that $\mathscr{L}$ is the trivial line bundle?","['line-bundles', 'algebraic-geometry']"
+2604591,CLT for Martingales,"In wikipedia, there is a version of a CLT for Martingales, which I cannot find any reference to. ( https://en.wikipedia.org/wiki/Martingale_central_limit_theorem ) The theorem claims the following: Let $X_1,X_2,...$ be a martingale with bounded increments, i.e. $[\mathbb{E} [ X_{t+1}-X_t | X_1,...,X_t]=0$ and $|X_{t+1}-X_t|\le k$ almost surely for some $k$ and all $t$. Define $\sigma_{t}^2=\mathbb{E}[(X_{t+1}-X_t)^2|X_1,...,X_t]$, and let $\tau_\nu=min\{t\ :\ \Sigma_{i=1}^{t} \sigma_i^2 \ge \nu$ }. Then $\frac{X_{\tau_{\nu}}}{\sqrt{\nu}}$ converges to $N(0,1)$ in distribution as $\nu \longrightarrow \infty$. I would like to know how to prove this or if there is any reference on the web. Thanks!","['reference-request', 'probability-theory', 'martingales']"
+2604612,If $a_{1}>2$and $a_{n+1}=a_{n}^{2}-2$ then Find $\sum_{n=1}^{\infty}$ $\frac{1}{a_{1}a_{2}......a_{n}}$,"Question If $a_{1}>2$and $\left\{ a_{n}\right\} be$ a recurrsive
+sequence defined by setting $a_{n+1}=a_{n}^{2}-2$ then Find
+$\sum_{n=1}^{\infty}$$\frac{1}{a_{1}a_{2}......a_{n}}$ Book's Answer I have mentioned my problem in the image.Any and all help will be appreciated","['real-analysis', 'sequences-and-series', 'convergence-divergence', 'limits']"
+2604620,"Why does there exists a random variable $x^n(t,\omega')$ such that $x_{k_r}^n$ converges to it","Given a  sequence of stochastic process $\xi_n(t)$ defined for $t \in [t_0,T]$ on ($\Omega,\mathcal{F},\mathbb{P}$) such that its stochastically continuous. Now consider a dense set $t_1,t_2, \cdots,$ in $[t_0,T]$ and assume the existence of a sequence of random variables(they exist due to a deep result due to Skorokhod which I skip for reasons of brevity)on a new probability space ($\Omega',\mathcal{F}',\mathbb{P}'$) $x_n=\{x_1^{(n)},x_2^{(n)},\dots,\} n=0,1,\dots$ such that $\left(x_1^{(n)},x_2^{(n)},\dots,\right)$ has the same joint distribution as $\left(\xi_n(t_1),\xi_n(t_2), \dots,\right)$ for all finite combinations of $t_i$ in the dense set  $t_1,t_2, \cdots,$ of $[t_0,T]$ Clearly the stochastic continuity of $\xi_n(t)$ implies that as $t_{k_r} \to t$ we have that $\xi_n(t_{k_r}) \to \xi_n(t)$ in probability $\textbf{""Note that in the following $x^{(n)}_I(\omega')$ is a random variable on the space $(\Omega',\mathcal{F}',\mathbb{P}')$ AND NOT THE VALUE taken by the random variable at $\omega'$""}$ Now This is equivalent to 
+$$\lim_{r \to \infty} E\left[\ \frac{\vert\xi_n(t_{k_r})-\xi_n(t)\vert}{1+\vert\xi_n(t_{k_r})-\xi_n(t)\vert}\right]=0$$. If $t=t_k$ for some $k$ in the sequence $t_1,t_2,\cdots,$ then since $\left(\xi_n(t_{k_r}),\xi_n(t)\right)$ has the same joint distribution as $\left(x_{k_r}^n(\omega'),x_k^n(\omega')\right)$, we have that 
+$$\lim_{r \to \infty} E\left[\ \frac{\vert x_{k_r}^n(\omega')-x_k^n(\omega')\vert}{1+\vert x_{k_r}^n(\omega')-x_k^n(\omega')\vert}\right]=0$$ which is equivalent to saying that 
+$x_{k_r}^n \to x_k^n(\omega')$ in probability. What I CANT SHOW is that of for $t \neq t_k$ why does there exists some  random variable say $x^n(t,\omega')$ such that $x_{k_r}^n$ converges to it whenever $t_{k_r} \to  t$? Any help would be highly appreciated. Thanks","['stochastic-processes', 'real-analysis', 'probability-theory', 'measure-theory', 'stochastic-calculus']"
+2604666,Proof that a pair is injective and surjective,"Sorry in advance for my poor maths skills. I've picked up maths in a computing course after over a decade of being away from the subject. I have a question where I need to show if the below function is injective and / or surjective. $f: \mathbb{Z}{\times}\mathbb{Z} \to \mathbb{Z}$ $f(a,b)=a + b + 3$ If I use a non-pair I know how to solve this, I would say $f(a) = f(b)$ and solve this and see if it works for integer numbers. But with a pair as the input I'm a bit confused as to how to show whether this is injective / surjective or not. for example: $f(a_0, b_0) = f(a_1,b_1) \\ 
+a_0 + b_0 + 3 = a_1 + b_1 + 3 \\
+a_0 + b_0 = a_1 + b_1$ If I then say 
+$ a_0 = 0, b_0 = 1, a_1 = 1, b_1 = 0$ $ 0 + 1 = 1 + 0 $ So the equation works even though the inputs were different. Is this proof that this function is not injective?",['elementary-set-theory']
+2604703,Derive the conditions $xy<1$ for $\tan^{-1}x+\tan^{-1}y=\tan^{-1}\frac{x+y}{1-xy}$ and $xy>-1$ for $\tan^{-1}x-\tan^{-1}y=\tan^{-1}\frac{x-y}{1+xy}$,"$$
+\tan^{-1}x+\tan^{-1}y=\tan^{-1}\frac{x+y}{1-xy} \text{, }xy<1\\
+\tan^{-1}x-\tan^{-1}y=\tan^{-1}\frac{x-y}{1+xy} \text{, }xy>-1
+$$ But, How do I reach the conditions $xy<1$ for the first expression and $xy>-1$ for the second from the domain and range of the functions, provided we are only considering the principal value branch ? My Attempt $$
+\tan^{-1}:\mathbb{R}\to \Big(\frac{-\pi}{2},\frac{\pi}{2}\Big)
+$$
+$$
+\text{Taking, }\alpha=\tan^{-1}x, \quad\beta=\tan^{-1}y\implies x=\tan\alpha,\quad y=\tan\beta\\
+\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}=\frac{x+y}{1-xy}\\
+\text{We have, }-\pi<\tan^{-1}x+\tan^{-1}y=\alpha+\beta<\pi
+$$
+If $\tfrac{-\pi}{2}<\alpha+\beta<\tfrac{\pi}{2}$ we have, 
+$$
+\alpha+\beta=\tan^{-1}\bigg(\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\bigg)\implies \tan^{-1}x+\tan^{-1}y=\tan^{-1}\frac{x+y}{1-xy}
+$$ For the first expression, $xy\neq{1}$ as the denominator can not be equal to zero. $$
+\frac{-\pi}{2}<\tan^{-1}\frac{x+y}{1-xy}<\frac{\pi}{2}\text{ and }-\pi<\tan^{-1}x+\tan^{-1}y<\pi\\\implies\frac{-\pi}{2}<\tan^{-1}x+\tan^{-1}y=\tan^{-1}\frac{x+y}{1-xy}<\frac{\pi}{2}
+$$
+I really dont see any clue which leads to the condition $xy<1$. I checked a similar question asked Inverse trigonometric function identity doubt , but it does not seem to clear how to get to the given conditions from the above proof. Note: I am not looking for proving the statement is correct. I'd like to see how to reach the given conditions from the domain and range of the functions involved.","['trigonometry', 'inverse-function']"
+2604773,Is there a variant of the implicit function theorem covering a branch of a curve around a singular point?,"I am looking for a variant of the Implicit function theorem such that it guarantees the analyticity of the implicitly defined function, and works for a single branch of a curve around a singular point? What kind of such variants of the IFT are out there? Hopefully clarifying background. I was teaching a short course on series and their applications to sophomores last fall. In their last set of homework problems I had a question about the Folium of Descartes $$x^3+y^3=3xy.$$
+I asked the students to find two first non-zero terms of the Taylor series of the branch $y=y(x)$ that obviously has a local minimum at $x=0$ (shown in thick red in the image below). My goals with this exercise were modest. Basically I wanted the students to do a minimum amount of work with the arithmetic of formal power series. I didn't ask them anything about convergence this time. We had not covered any tools for that (they were scheduled to take a first course in complex analysis only later). My crude thinking. The folium is a genus zero algebraic curve, and has the rational parametrization (coming from blowing up the singularity with $y=tx$)
+$$x=\frac{3t}{1+t^3},\qquad y=\frac{3t^2}{1+t^3}.$$
+The branch of interest is gotten by restricting $t$ to a suitable neigborhood of $t=0$ (when producing that image I used $t\in[-1/2,1/2]$). When viewed as complex variables, we can invert the $x=x(t)$ to a function $t=t(x)$ that is holomorphic in a neighborhood of $x=0$. Therefore it is represented by a convergent Taylor series. Consequently so is $y=tx$. But. This depends heavily on our ability to blow up the singularity allowing us to isolate the chosen branch. I am too ignorant to know for sure, but I suspect that we may need some structures from algebraic geometry to be able to even define a branch around the singular point in such a way that the IFT can be applied. My solution (if you can call it that) also depended on the genus. Having a rational parametrization made it easier. I'm aware of the existence of analytic parametrizations of some curves (like the formal group law parameter of an elliptic curve), but I'm ignorant about the more general results. So the main question may have evolved to. (feel free to discuss your favorite variants) Do we need the singularity to come from an algebraic equation to be able to discuss the branches, and study the analyticity of an individual branch? Is there a variant of the IFT that guarantees the analyticity of a single branch? Extra credit for students. (in case some students read my question up to this point, and want to work on something related) Show that in a solution $y=\sum_{n=0}^\infty a_n x^n$ to the equation
+$x^3+y^3=3xy$ only every third term can be non-zero. More precisely, show that if $a_n\neq0$ then $n\equiv2\pmod3$. Edit: Thinking about this topic more (particularly in light of Cactus314's answer) it dawned on me that type of algebraic singularity makes a huge difference. When we work around a multiple point, with distinct tangents for each
+branch, we can, like in the case of the Folium, work with any branch
+as long as the corresponding tangent isn't vertical. But, when we have a cusp things can go wrong. Consider the textbook cusp that the curve $y^2=x^3$ has at the origin. No amount of resolving of the singularity is going to make either $y=x^{3/2}$ or $y=-x^{3/2}$ analytic! So my updated guess is that for this to work we need to able to isolate branch such that $x-x_0$ becomes a local parameter along that branch. Can we formulate this in a non-algebraic way?","['real-analysis', 'implicit-function-theorem', 'algebraic-geometry', 'complex-analysis', 'sequences-and-series']"
+2604775,An inequality involving $\int_0^{\frac{\pi}{2}}\sqrt{\sin x}\:dx $,Prove that $$\int_0^{\large\frac{\pi}{2}}\sqrt{\sin x}\:dx >\frac{\pi}{3}$$ My work: $$\int_0^{\large\frac{\pi}{2}}\sqrt{\sin x}\:dx > \int_0^{\large\frac{\pi}{2}}\sin x \:dx = 1.$$,"['inequality', 'integration', 'definite-integrals', 'approximation']"
+2604802,Singular points of a curve,"I want to solve the following exercise: Let $F=Y^{2}-G(X)$ , with $G\in\mathbb{C}[X]$ with degree $d\geq3$ , and let $\mathcal{C}=\mathrm{V}(F)$ . Prove that the singular points of $\mathcal{C}$ are in the line $Y=0$ . Prove that a point $(a,0)$ is singular for $\mathcal{C}$ if and only if $a$ is a multiple root of $G$ . If $G=(5-X^{2})(4X^{4}-20X^{2}+25)$ , compute the singular points of $\mathcal{C}$ . Prove that $\mathcal{C}$ has a unique point at infinity and that this point is simple if and only if $d=3$ . Does the curve $\mathcal{C}$ have asymptotes? And I thought this, but I need some help: I know that the tangent lines are given by the form of lowest degree, which is $Y^2$ . Then $Y=0$ is a double tangent line. Must all singular points be in the same tangent line? We have that $(a,0)$ is singular if and only if it is a zero of $F$ , $\frac{\partial F}{\partial X}$ and $\frac{\partial F}{\partial Y}$ . As $Y=0$ , then $F(a,0)=G(a)$ , $\frac{\partial F}{\partial X}(a,0)=G'(a)$ and $\frac{\partial F}{\partial Y}(a,0)=0$ so it must be a multiple root of $G$ . Is this correct? I haven't do this yet, but I know the algorithm to do it. Let $G(X)=a_0 X^d + a_1 X^{d-1}+\cdots +a_d$ . We know that $P_\infty (\mathcal C)= \mathrm V (F^*, Z)$ , so we compute $$F^* = Y^2 Z^{d-2}-(a_0 X^d + a_1 X^{d-1}Z+\cdots +a_d Z^d)$$ If $Z=0$ , then $X=0$ , so $P_\infty (\mathcal C)=\mathrm V(F^*, Z)=\{P=(0:1:0)\}$ . Let's check the multiplicity: $$\frac{\partial F^*}{\partial X}(P)=0,\quad \frac{\partial F}{\partial Y}(P)=0,$$ $$\frac{\partial F}{\partial Z}(P)=((d-2)Y^2Z^{d-3})(P)=(d-2)Z^{d-3}(P)\neq0 \Leftrightarrow d=3$$ How can I know if it has aymptotes? (Sorry for my English)","['algebraic-curves', 'algebraic-geometry']"
+2604837,Find a Transitive closure on the relation R,"Find the transitive closure of $R=\{(a,b),(b,a),(b,c),(c,d),(c,e)\}$ I got the $R \circ R =\{(a,a),(a,c),(b,b),(b,d),(b,e)\}=R^2$",['discrete-mathematics']
+2604915,Fubini's theorem for complex measures?,"Recall that Fubini's theorem in a very basic form says that if $(X,\mu)$ and $(Y,\lambda)$ are $\sigma$-finite positive measure spaces and $f$ is a positive function on $X \times Y$ that is measurable with respect to the product measure, then 
+$$\int_X (\int_Y f(x,y) d \lambda(y)) d\mu(x) = \int_Y (\int_X f(x,y) d \mu(x)) d \lambda(y).$$ I am curious, what happens in Fubini's theorem if we remove the requirement that the measures are positive, and instead assume that they are complex Borel measures? Does some version of Fubini's theorem still hold? If not, can we put more requirements on either $f$ or the measures to make it work for complex Borel measures? My guess would be that it would be good to look at the Radon-Nikodym theorem to show that something similar holds, but I am not sure.","['real-analysis', 'measure-theory']"
+2604921,prove that $\int_{-\infty}^{\infty} \frac{x^4}{1+x^8} dx= \frac{\pi}{\sqrt 2} \sin \frac{\pi}{8}$ [duplicate],"This question already has answers here : Closed form for $ \int_0^\infty {\frac{{{x^n}}}{{1 + {x^m}}}dx }$ (11 answers) Closed 6 years ago . prove that $$\int_{-\infty}^{\infty} \frac{x^4}{1+x^8} dx= \frac{\pi}{\sqrt 2} \sin \frac{\pi}{8}$$ My attempt:
+C is semicircle in upper half complex plane Simple poles = $e^{i\frac{\pi}{8}}, e^{i\frac{3\pi}{8}},e^{i\frac{5\pi}{8}},e^{i\frac{7\pi}{8}}$ lie in upper semi-circle C and real axis Given integral value $= 2\pi i \cdot (\text{sum of residues}) = 2 \pi i \left(\frac{-1}{8}\right) \left[e^{i\frac{5\pi}{8}}+e^{i\frac{15\pi}{8}}+e^{i\frac{25\pi}{8}}+e^{i\frac{35\pi}{8}}\right] = 0.27059 \pi$ This is numerically equal to $\frac{\pi}{\sqrt 2} \sin \frac{\pi}{8}$. But without using calculator, how to get this expression.","['complex-analysis', 'improper-integrals', 'integration', 'contour-integration']"
+2604994,Levi-Civita-connection of an embedded submanifold is induced by the orthogonal projection of the Levi-Civita-connection of the original manifold,"Let $(M, g)$ be a Riemannian manifold with Levi-Civita-connection $\nabla$, and let $N \subseteq M$ be an embedded submanifold with a $g$-induced Riemannian metric $h$. I now want to show that the Levi-Civita-connection $\tilde \nabla$ of $(N, h)$ is given by $$(\tilde \nabla_X Y)_p = \mathrm{pr}_{T_p M} (\nabla_{X_p} Z)_p\tag{$*$}$$ where $\mathrm{pr}_{T_p M} : T_p M \to T_p N \subseteq T_p M$ is the $g$-orthogonal projection, and $Z \in \mathfrak X(M)$ is a vector field on $M$, which is identical to $Y \in \mathfrak X(N)$ locally around $p \in N$. Now I think this is mostly a matter of disentangling all the definitions and substituting them correctly wherever necessary, but I keep getting lost. Now my first problem is understanding why such a vector field $Z$ as desired even exists, and why the right-hand side of $(*)$ is independent of which $Z$ with this property I choose. But even assuming that this is the case, where would I go from there? I thought about maybe using the Koszul formula or one of the basic properties of the Levi-Civita connection (because there's not much else that I know about it that might be helpful) but I'm not sure what exactly to do with them.","['manifolds', 'connections', 'riemannian-geometry', 'differential-geometry']"
+2605058,Picard group of a fibration,Assume that $X$ is a projective variety. Let $Pic(X)$ be its Picard group. Let $E$ be a vector bundle over $X$ say of rank $r$ (for example TX). What is the picard group of the total space of $E$? can we say something about it?,"['picard-scheme', 'line-bundles', 'algebraic-geometry']"
+2605158,Eigenvalues of $A=vv^T$,"Let $v\in\mathbb{R}^n$ a column vector and consider the matrix $A=v\cdot v^T$. I need find all of auto-values of $A$. For the case $n=2$ and $n=3$, I was obtain that the only auto-values are $\lambda=x_1^2+x_2^2$ and $\lambda=x_1^2+x_2^2+x_3^2$ respectively (Where $v:=(x_1,x_2,\dots,x_n)$). I think that this holds for any case, i.e., $\lambda=\sum_{i=1}^nx_i^2$  foe $n=1,2,...$ but I can't prove it. My conjecture is right? And if this is the case, can someone give me a hint to solution the problem? Thanks for advance","['matrices', 'eigenvalues-eigenvectors', 'linear-algebra']"
+2605197,Total degree of a product of polynomials,"Note: This is not a duplicate of this question . The accepted answer there gives some answer to my question here, but the question is not a duplicate... I'm currently brushing up on some algebra with ""Abstract Algebra"" by Grillet, Second Edition. We consider, for a unital Ring $R$ and a family of sets $(X_i)_{i\in I}$ the polynomial ring 
+$$
+R[(X_i)_{i\in I}]
+$$ I don't think the details of this construction are too important here; suffice it to say that we are dealing with the free $R$-algebra over the free commutative monoid of all monomials
+$$
+X^k=\Pi_{i\in I}\, X^{k_i}\,,\; k \in \mathbb{N}^I\,, k_i = 0\, \text{ for almost all } i
+$$ with multiplication $X^k X^l = X^{k+l}$. The degree of a polynomial $0 \neq A \in R[(X_i)_{i\in I}]$ with coefficients $a_k$ is defined as
+$$
+\max\left\{\sum_{i \in I} k_i;\, k\in I^\mathbb{N}\,,\, k_i = 0\, \text{ for almost all } i\, \land \, a_k \neq 0\right\}
+$$ I generally put quite a lot of trust into textbooks as carefully written as this one, but the following statement on page 127 seems wrong to me and I am stuck trying to prove it: Proposition 6.4 . For all $A, B \neq 0$ in $R[(X_i)_{i\in I}]$: ... (4) if $R$ has no zero divisors, then $\deg(\,AB\,) = \deg A + \deg B$ What I have proven is $\deg(\,AB\,) \leq \deg A + \deg B$, which was part (3) of the proposition. However, part (4) baffles me. I started out expecting this to be easy but got stuck; and now I'm really a little too exhausted because I couldn't let go and kept on thinking about how to prove this. I'm actually wondering if this is actually wrong and was just a copy-paste error from the corresponding page 121 for the univariate case, where we have the exact same statement, safe for there only being one variable. A counterexample is probably not that hard, but I'm really too tired right now, and then I actually already got sidetracked just brushing up on basics required for my bachelor's thesis with this already, in the first place. Why I feel like this isn't right: For $k \in I^\mathbb{N}$ with finite support, the $k$-th coefficient of $AB$ is $$
+(AB)_k = \sum_{(m,\,n) \in (I^\mathbb{N})^2;\,m + n = k} a_m b_n
+$$ where the $a_i, b_i$ are the coefficients of $A$, respectively $B$. In the univariate case, the degree formula holds if $R$ has no zero divisors, because the leading coefficient of the product is the product of the leading coefficients. However, in the multivariate case, each coefficient can be a sum of products: Picking indices $\nu\,,\, \mu$ with $\sum_i \nu_i = \deg A$ and $\sum_i \mu_i = \deg B$, I don't see how $R$ having no zero divisors would lead to the coefficient
+$$
+(AB)_{\nu + \mu} = \sum_{(m,\,n) \in (I^\mathbb{N})^2;\,m + n = \nu + \mu} a_m b_n
+$$
+being nonzero,
+although it seems obvious that $AB \neq 0$ if we look at the $i$-degree
+$$
+\max\left\{k_i;\, k\in I^\mathbb{N}\,,\, k_j = 0\, \text{ for almost all } j\, \land \, a_k \neq 0\right\}
+$$
+for some $i \in I$ (should I be wrong with this reasoning, please tell me) , so that $R[(X_i)_{i\in I}]$ is a domain, if $R$ is. I also failed to find anything about this on good old Google or here. So, am I right in assuming this part of the proposition quoted above is wrong? I'm all out of creative mojo, so if someone could just plug me an easy counterexample, I'd be very, very happy... if the statement is actually true, I'd appreciate some help in proving it.","['abstract-algebra', 'polynomials']"
+2605210,"Measure of a subset of $[0,1]$","$A\subset[0,1]$ is set of all numbers with binary representation $0.c_1c_2c_3...$ where $c_i=0,1$ for all $i$ and $c_{i-1}c_{i+1}=0$ for all even $i$. How do I show that $A$ is zero measure set?","['real-analysis', 'measure-theory']"
+2605269,Inhomogeneous biharmonic equation on $\mathbb{R}^d$,"I have been tasked with solving $\Delta(\Delta(u)) = f$ in $\mathbb{R}^d$ for $f \in C_c^4(\mathbb{R}^d)$. Frankly, I don't know where to begin. The ""naive"" thing to do would be to say we can solve $\Delta v=f$ and then $\Delta u =v$, but the solution to $\Delta v=f$ is
+$$\int_{\mathbb{R}^d} \Phi(x-y)f(y) \ dy$$
+(where $\Phi$ is the fundamental solution to Laplace's equation) which isn't $C_c^2$, which is all we know how to solve for Poisson's equation for (in Evans; I know that there are more general sufficient conditions). So then a hands-on approach seems like the only way to go. Indeed, my professor said to find a $\Phi$ whose convolution with $f$ gives the solution. Yet, even in the case of 
+$$\Delta(\Delta(u)) = 0$$ 
+in $\mathbb{R}^2$, the problem seems unapproachable. I do not know how to solve $u_{xxxx} + 2u_{xxyy} +u_{yyyy} =0$. I have tried looking up results about this equation, but nothing seems helpful at all for the inhomogeneous $\mathbb{R}^d$ case. Can anyone point me in the right direction? Thanks","['real-analysis', 'ordinary-differential-equations', 'analysis', 'partial-differential-equations']"
+2605303,Geodesically convex neighborhoods,"Let $(M,g)$ be a Riemannian manifold. As part of an exercise, I have proved the following two facts: For every $m\in M$ there exists $\varepsilon >0$  and an open neighborhood $U$ of $m$ such that: for every $x$ and $y$ in $U$  there is $v\in T_x M$ with $||v||<\varepsilon$ and such that $\textrm{exp }(x,v)=y.$ I have proved this by using the inverse function theorem. If $\gamma$ is a non-radial geodesic contained in some geodesic ball $\textrm{exp}_m (B(\varepsilon))$ then $r\circ \gamma$ attains its maximum  values at the endpoints (cannot have strict maximums). To prove this I have used the geodesic equation locally. Now I have to show as a consequence of the previous facts that every point has a geodesically convex neighborhood, i.e. that for every pair of points there is a lengh minimizing geodesic joining them, and such that it is contained in the neighborhood for every time. It seems it should be easy to solve regarding the previous facts, but I am not able to prove it...","['riemannian-geometry', 'differential-geometry']"
+2605330,There is no ring map $\mathbb C[x] \to \mathbb C[x]$ swapping the prime ideals $(x-1)$ and $(x)$,"I want to prove the following proposition: There is no ring map $\mathbb C[x] \to \mathbb C[x]$ such that the induced map between the spectra $\mathbb A^1_{\mathbb C}$ swaps the prime ideals $(x-1)$ and $(x)$ (sending one to the other) while keeping other prime ideals (i.e. $(x-a) \mapsto (x-a)$). If not necessary, I don't want to assume this ring homomorphism $\mathbb C[x] \to \mathbb C[x]$ sends $1$ to $1$ and I also don't want to assume it is a vector space homomorphism over $\mathbb C$. I believe there must be a general theorem or proposition setting restriction on the ring homomorphisms. So both slick proofs and general proofs are welcome in here!","['abstract-algebra', 'algebraic-geometry', 'commutative-algebra']"
+2605396,Proving that no two teams in a tournament win same number of games,"Assume we've a tournament with $93$ teams. And between every $19$ teams, there is one team that has lost all of its $18$ games to other teams, and there is one team that has won all of its $18$ games against the other teams.
+Between all teams, there is one match and only possible results for a match is win and lose. My own idea is to try to give a proof by contradiction, by assuming two teams share same number of games won.","['combinations', 'combinatorics', 'graph-theory']"
+2605412,"Prove $f(x,y)$ is continuous or not continuous.","Let
+$$f(x,y)= \begin{cases}\dfrac{xy^3}{x^3+y^6}& \text{if } x^3+y^6\not =0\\ \\ 0&\text{if } x^3+y^6=0
+\end{cases}
+$$ Is $f$ continuous? If $x=y^2$ then we have: $$\lim_{y\rightarrow 0}\frac{y^2y^3}{y^6+y^6}=\lim_{y\rightarrow 0}\frac{y^5}{2y^6}=\frac{1}{2}\lim_{y\rightarrow0} \frac{1}{y}$$
+And that limit doesn't exist. Then $f$ is not continuous. I'm not sure of the process, can someone review my proof?","['continuity', 'real-analysis', 'calculus', 'analysis']"
+2605423,Find the cardinality of this set,"Find the cardinality of $$ S = \{X \in \mathcal P(\mathbb N)\mid 2\in X \land 4 \notin X \}$$ I am not entirely sure how to solve this. I tried to use the Cantor - Bernstein theorem. To do this effectively, I need to have an upper and a lower bound of my set. I thought it might be easier to think about the power set in terms of the characteristic function of the set of natural numbers. Therefore, $S$ will be bounded from above by $\{0,1 \}^{\mathbb N}$ and from below by $\{0,1 \} \times \{0,1 \} \times \{ 1\} \times \{0,1\} \times \{ 0\} \times \{ 0,1\}^\mathbb N$ Therefore - the cardinality of this set is continuum. I am pretty sure that my way of solving this problem is not natural - well, I don't even know if it's correct. Could you suggest an easier - elementary - method to solve this?",['elementary-set-theory']
+2605457,Help resolving this contradiction in descriptions of the fundamental groups of the figure eight and n-torus,"I'm faced with a few contradictory statements: 1) This article on Wolfram MathWorld says that ""$\mathbb{Z}*\mathbb{Z}=\lbrace(n,m)\rbrace$ is a free abelian group of rank 2."" (I thought that this is the definition of $\mathbb{Z}\times\mathbb{Z}$.) 2) This article also on Wolfram MathWorld says that the fundamental group $\pi_1$ of the figure eight is ""$\mathbb{Z}*\mathbb{Z}$"" and that the first homology group $H_1$ of the figure eight is ""$\mathbb{Z}\times\mathbb{Z}$"", implying that these two groups are different, i.e., not isomorphic. This article also states the fundamental and first homology groups of a n-torus $\mathbb{T}^n$ are both ""$\mathbb{Z}^n$"" (which I thought usually refers to $\mathbb{Z}\times . . . \times\mathbb{Z}$   n times?). 3) This article also on Wolfram MathWorld states that the fundamental group of the figure 8 is the ""free group with two generators"" (i.e., is NOT the free abelian group of rank 2). 4) My textbook, Munkres , states in Section 60 that the fundamental group of the figure eight is not abelian and that the fundamental group of the two-holed torus (2-torus or $\mathbb{T}^2$) is not abelian. 5) This answer on math.stackexchange.com says that the fundamental group of the n-torus is $\langle{a_1}, b_1, ..., a_n, b_n \mid [a_1, b_1]...[a_n, b_n]=0 \rangle$, where $[a, b]=aba^{-1}b^{-1}$. 6) Section 60 of Munkres also states that the fundamental group of a 1-torus is $\mathbb{Z}\times\mathbb{Z}$, which is what I consider the free abelian group of rank 2 (correct me if I'm wrong). As a sanity check, I tested whether this is isomorphic to the group that results from statement (5) when $n=1$, and found that it is. The best way to resolve this contradiction seems to be to say that statement (1) was a typo and should have said the free abelian group of rank 2 is $\mathbb{Z}\times\mathbb{Z}$, NOT $\mathbb{Z}*\mathbb{Z}$. To fully resolve the contradiction I would then guess that $\mathbb{Z}^n$ in statement (2) is also a typo (since thisusually refers to $\mathbb{Z}\times . . . \times\mathbb{Z}$   n times), and should instead be $\langle{a_1}, b_1, ..., a_n, b_n \mid [a_1, b_1]...[a_n, b_n]=0 \rangle$, as in statement 5. Interpreting things this way, I would also guess that the notation $\mathbb{Z}* . . . *\mathbb{Z}$ refers to the free group with n generators (can someone at least verify whether this is true or not?). Does this resolution of the contradiction (which implies there are two flagrant typos in Wolfram MathWorld articles) seem correct? Would really appreciate any help interpreting these statements and correcting my understanding, as well as any corrections to things I've said that are wrong!","['free-groups', 'fundamental-groups', 'free-abelian-group', 'algebraic-topology', 'general-topology']"
+2605516,Complex Derivatives in Polar Form,"How do i write 
+$\frac{\partial f}{\partial z}$ and $\frac{\partial f}{\partial \bar z}$ in polar form. From my textbook I know, $$\frac{\partial f}{\partial z} = \frac{e^{-i\theta}}{2} \left(\frac{\partial }{\partial r} - \frac {i}{r} \frac{\partial }{\partial \theta} \right)$$ $$\frac{\partial f}{\partial \bar z} = \frac{e^{i\theta}}{2} \left(\frac{\partial }{\partial r} + \frac {i}{r} \frac{\partial }{\partial \theta} \right)$$ how do i derive these answers? i know $$ z = re^{i\theta}$$ and, $$ z = u(r,\theta) + iv(r,\theta)$$","['derivatives', 'complex-analysis', 'proof-explanation']"
+2605535,"Find the equation of tangent line to the intersection of the two surfaces in $P(4,-2,20)$ $z=x^2+y^2 \,\,,\,z=2x+4y+20$","Find the equation of tangent line to the intersection of the two surfaces in $P(4,-2,20)$
+$$z=x^2+y^2 \,\,,\,z=2x+4y+20$$ Let $f,g:\mathbb{R}^3\rightarrow\mathbb{R}$ such that $f(x,y,z)=x^2+y^2-z\,\,\,$ and $g(x,y,z)=2x+4y-z+20$. Then, $$\nabla f(x,y,z)=(2x,2x,-1)\implies\nabla f(4,-2,20)=(8,-4,-1)$$ $$\nabla g(x,y,z)=(2,4,-1)\implies\nabla g(4,-2,20)=(2,4,-1)$$ The equation of tangent plane for $f$ is: $$8x-4y-z-20=0$$ The equation of tangent plane for $g$ is: $$2x+4y-z+20=0$$ In this step, i'm a little stuck, can someone help me?","['multivariable-calculus', 'real-analysis']"
+2605546,Partial derivative of a summation,"Simple question but not sure why for, $ f = \frac{\lambda}{2}\sum_{j=1}^{D} w_j^2$
+$$\frac{\partial f}{\partial wj}= \lambda w_j$$ I would have thought the answer would be $\frac{\partial f}{\partial wj}= \lambda \sum_{j=1}^{D} w_j^2$ Since we get the derivative of $w_j^2$ which is $2w_j$, pull out the 2, getting rid of $\frac{\lambda}{2}$, and multiply by $w_j$.","['derivatives', 'partial-derivative']"
+2605557,Proving a differentiable function exists.,"Let $A=\{(x,y)\in\mathbb{R^2}:x>0\}$. Let $f:A\longrightarrow{\mathbb{R}}$ differentiable satisfying: $$x\frac{\partial f}{\partial x}+y\frac{\partial f}{\partial y}=0$$ How can I prove the function $h:\mathbb{R}\rightarrow\mathbb{R}$ differentiable so that $f(x,y)=h(\frac{y}{x})$ exists?","['multivariable-calculus', 'ordinary-differential-equations']"
+2605565,Calculation on gradient of the dot product on $\mathbb R^n$,"Let $f(x,y)$ denote the standard dot product of vectors on $\mathbb{R^n}$. I'd like to confirm the formula that I have for the gradient of the dot product is correct. First, I consider this to be a map from $\mathbb{R}^{2n}$ to $\mathbb{R}$ rather than one from $\mathbb{R^n} \times \mathbb{R}^n$ to $\mathbb{R}$. By this I mean:
+$$
+f(x,y) = f(x_1,...,x_n,y_1,...,y_n) = \sum_{i = 1}^{n}x_iy_i
+$$
+Taking partial derivatives with respect to the $2n$ variables, we have that:
+$$
+\nabla f(x,y) = (y_1,...,y_n,x_1,...,x_n) = (y,x)
+$$
+Is this solution correct? I have not seen anything like this online.","['multivariable-calculus', 'real-analysis', 'linear-algebra', 'calculus']"
+2605619,Why boundary conditions in Sturm-Liouville problem are homogeneous?,"Boundary conditions in Sturm-Liouville problem looks like this:
+$$
+\alpha_1 y(a)+\alpha_2 y'(a)=0
+$$
+$$
+\beta_1y(b)+\beta_2 y'(b)=0
+$$
+The ordinary boundary conditions for boundary-value problem looks:
+$$
+\alpha_1 y(a)+\alpha_2 y'(a)=\gamma_1
+$$
+$$
+\beta_1y(b)+\beta_2 y'(b)=\gamma_2
+$$
+Why in Sturm-Liouville conditions $\gamma_1$ and $\gamma_2$ both zeros? Does it have some hidden (or physical) sense?","['boundary-value-problem', 'sturm-liouville', 'ordinary-differential-equations', 'mathematical-physics']"
+2605624,Is my method correct for to prove $a^{\log_b c} = c^{\log_b a}$?,"My problem is to prove this equality: $$a^{\log_b c} = c^{\log_b a}$$ My method: $$\begin{cases}
+\log_b a=m\\
+\log_b c=n\\
+\end{cases} \Rightarrow \begin{cases}
+a=b^m\\
+c=b^n\\
+\end{cases} 
+ \Rightarrow 
+\begin{cases}
+a^n=(b^m)^n\\
+c^m=(b^n)^m\\
+\end{cases} \Rightarrow a^n=c^m \Rightarrow a^{\log_b c} = c^{\log_b a} $$ Is this method correct or is there a more elegant solution? Thank you!","['algebra-precalculus', 'proof-writing', 'proof-verification', 'logarithms']"
+2605641,Product of sums of all subsets mod $k$?,"Input: set of $N$ integers and $k$ value (modulo) Output: product of sum of all subsets of input set (modulo $k$) e.g. for input {1,2,3} and $k = 20$, we have 1 * 2 * 3 * (1+2) * (1+3) * (2+3) * (1+2+3) = 2160. and: $2160 \equiv 0 \pmod{20}$ Output is 0. Could anyone suggest if you can implement such an algorithm optimally? (in polynomial time - if this is possible).","['products', 'algorithms', 'computational-complexity', 'combinatorics', 'modular-arithmetic']"
+2605665,On the rate of convergence of the central limit theorem,"As I have seen, there are many questions on this site concerning the rate of convergence of the central limit theorem: for example this , this , this , and this . In particular, the third question of this list concerns quantitative bounds on the convergence in distribution $$
+\frac{\overline{X}_n - \mu}{\sigma/\sqrt{n}} \to_D Z \sim \mathcal{N}(0,1).
+$$ One commenter points out the Berry-Essen theorem which gives a bound on the CDF of $(\overline{X}_n - \mu)/(\sigma/\sqrt{n})$ and the standard normal random variable based on the third absolute moment $\rho := \Bbb E[|X-\mu|^3]$. Specifically, if $F_n$ is the CDF of $(\overline{X}_n - \mu)/(\sigma/\sqrt{n})$ and $\Phi$ of the standard normal random variable, then the theorem states that the difference between these is bounded as $$
+|F_n(x) - \Phi(x)| \le \frac{C\rho}{\sigma^3\sqrt{n}}, \text{ for all } x \in \Bbb R, \text{ $C$ constant}.
+$$ However, despite the existence of a concrete quantitative error bound on the approximation of $(\overline{X}_n - \mu)/(\sigma/\sqrt{n})$, introductory statistics classes often treat $(\overline{X}_n - \mu)/(\sigma/\sqrt{n})$ as either unapproximable at all by a normal random variable or perfectly normal, with $n = 30$ as a seemingly arbitrary cutoff between the two. Presumably, whether a given sample should be approximated as normal depends highly on $\rho$ and $\sigma$, not just $n$. My questions: Why isn't the error in the normal approximation taken into account when performing statistical inference or making confidence intervals using the CLT? Does computing $$
+\bar{x} = \frac{1}{n} \sum_{i=1}^n x_i, \: s := \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})^2},
+$$ and some unbiased consistent estimate $\hat{\rho}$ of $\rho$ and computing $C\hat{\rho}/s^3\sqrt{n}$ give a ""better"" heuristic for whether one should use a large sample CLT approximation than simply looking at $n\ge 30$? If so, why is $n\ge 30$ approximation so ubiquitous in introductory statistics classes?","['statistics', 'central-limit-theorem', 'approximation']"
+2605674,nonlinear fourth-order differential equation type,"Does anybody know how to reduce such nonlinear fourth-order differential equation to well-known type (like Ricatti, Painlevé, sine-Gordon etc)? $\frac{{{d^4}\phi }}{{d{x^4}}} + q\frac{{{d^2}\phi }}{{d{x^2}}} - {\omega ^2}\sin\phi  = 0$",['ordinary-differential-equations']
+2605677,"If a set is open, does it mean that every point is an interior point? [duplicate]","This question already has answers here : Are ""if"" and ""iff"" interchangeable in definitions? (15 answers) Closed 6 years ago . In Walter Rudin's Principles of Mathematical Analysis he defines open set as:
+""E is open if every point of E is an interior point of E.""
+So this can be translated in logic as "" If every point of E is an interior point of E, then E is open."" But does this mean that "" If E is open, then every point of E is an interior point of E?""
+How is one sure when encountering these definitions that the converse also applies?","['general-topology', 'real-analysis', 'definition']"
+2605686,Find A from $e^{At}$,"I have been given a fundemanetal matrix $e^{At}$ and am asked to find $A$. It's kind of an odd question as we've mainly been calculating $e^{At}$ when given a certain matrix $A$. My question is how do I find $A$ and if you can always find $A$ for any fundamental matrix. Anyways this was given: \begin{align}
+e^{At}&=
+\begin{bmatrix}
+2e^{2t}-e^t & e^{2t}-e^t&e^t-e^{2t} \\
+e^{2t}-e^t & 2e^{2t}-e^t&e^t-e^{2t} \\
+3e^{2t}-3e^t & 3e^{2t}-3e^t&3e^t-2^{2t} \\
+\end{bmatrix}
+\end{align}","['ordinary-differential-equations', 'linear-algebra']"
+2605691,Why does a saddle remain a saddle when you change coordinates?,"I saw the answer to this question on the nature of saddles, and it contains the reasoning: Perhaps it suffices to note that saddles should remain saddles even when we change coordinates. For example, note that $f(x,y)=x^2+6xy+y^2$ can be rewritten in the form $f(x,y)=2(x+y)^2−(x−y)^2$. From this, we should expect that f has a saddle at zero if and only if g(x,y)=$2x^2−y^2$ has one as well. But why should the saddle (or any critical point) remain the same exact type of critical point even after the change of coordinates? It is not entirely evident to me that it should be so.","['multivariable-calculus', 'calculus']"
+2605700,Solution of $X^5=5 Y (Y+1)+1$ in integers.,"Is it true that the $$X^5=5 Y (Y+1)+1$$ has no non trivial solution (except the $X=1,Y=-1$ and $X=1,Y=0$) in integers. I tried to solve it as a quadratic equation on $Y$. I got that the 
+$$\sqrt{5} \sqrt{4 X^5+1}$$
+should be integer. But no idea how to continue from here. Then I tried with Fermat Theorem $X^5\equiv X \pmod 5$ with hope to get some contradiction but again nothing useful. EDITED:
+Just an observation from the @stuart stevenson answer: $X=10k+1$ So we have the following solutions: $$Y\to \frac{1}{2} \left(\pm\sqrt{80000 k^5+40000 k^4+8000 k^3+800 k^2+40 k+1}-1\right)$$ Or the 
+$$80000 k^5+40000 k^4+8000 k^3+800 k^2+40 k+1 = L^2 = \\ 1 + 40 k (1 + 20 k (1 + 10 k (1 + 5 k (1 + 2 k))))$$ This can be generalized as a recurrent product: $$P_0(k)=2k+1 \\ P_n(k)=1+2^{n-1} 5kP_{n-1}(k)$$ And we assume that the $$P_4(k)\ne L^2$$
+for any $k$. EDITED: I would assume that the
+$$X^p=p Y (Y+1)+1$$ has no non-trivial solution for any prime $p>2$. EDITED: Just some observation. It seems there are few $k$ for which the 
+$$X^p=k Y (Y+1)+1$$ has solutions. For example for the $p=5$ and $p=7$ the $k$-s for which solution exists  are $-1$ and $4$. And seems it has no solution for other $k$-s in the range $|k|<100$. For the $p=3$ the $k$-s for which there is solutions are $\{-27, -21, -14, -7, -3, -1, 0, 1, 4, 6, 13, 27, 31\}$ for the range $|k|<50$ and seems for other $k$-s in this range there is no solution","['number-theory', 'elliptic-curves', 'diophantine-equations']"
+2605705,Recognizing recursion relation of series that is solutions of $y'' + y' + x^2 y = 0$ around $x_0 = 0$.,"I have been tried to find the general solution for the ODE above, but its recursion relation became so complex that I doesn't can construct its power series solution. Below is my attempt, assuming $y = \sum_{n = 0}^{\infty} a_n x^n$ is the solution. \begin{equation*}
+y = \sum_{n = 0}^{\infty} a_n x^n; \quad y' = \sum_{n = 1}^{\infty} n a_n x^{n-1}; \quad y'' = \sum_{n = 2}^{\infty} n (n - 1) a_n x^{n - 2}.
+\end{equation*}
+\begin{equation*}
+	\Rightarrow \sum_{n = 2}^{\infty} n (n - 1) a_n x^{n - 2} + \sum_{n = 1}^{\infty} n a_n x^{n-1} + x^2 \sum_{n = 0}^{\infty} a_n x^n = 0
+\end{equation*}
+\begin{equation*}
+	\sum_{n = 0}^{\infty} (n + 2) (n + 1) a_{n + 2} x^{n} + \sum_{n = 0}^{\infty} (n + 1) a_{n + 1} x^{n} + \sum_{n = 2}^{\infty} a_{n - 2} x^{n} = 0
+\end{equation*}
+\begin{equation*}
+	2 \cdot 1 \cdot a_2 + 3 \cdot 2 a_3 \cdot x + \sum_{n = 2}^{\infty} (n + 2) (n + 1) a_{n + 2} x^{n} + 1 \cdot a_1 + 2 a_2 x + \sum_{n = 2}^{\infty} (n + 1) a_{n + 1} x^{n} + \sum_{n = 2}^{\infty} a_{n - 2} x^{n} = 0
+\end{equation*}
+\begin{equation*}
+	a_1 + 2 a_2 + x(2 a_2 + 3 \cdot 2 a_3) + \sum_{n = 2}^{\infty} [(n + 2) (n + 1) a_{n + 2} + (n + 1) a_{n + 1} + a_{n - 2}] x^n = 0
+\end{equation*}
+And the recursion relation:
+\begin{equation*}
+	\begin{split}
+		& a_1 + 2 a_2  = 0 \Rightarrow a_1 = -2 a_2 \\
+		& 2 a_2 + 3 \cdot 2 a_3  = 0 \Rightarrow a_3 = - \frac{a_2}{3}\\
+		& a_{n + 2}  = \frac{- (n + 1) a_{n + 1} - a_{n - 2}}{(n + 2) (n + 1)} =  - \frac{(n + 1) a_{n + 1} + a_{n - 2}}{(n + 2) (n + 1)}
+	\end{split}
+\end{equation*}
+Starting from here, I calculate the coefficients until $n = 7$( $a_9$ ) but its recognition is being difficult for me. The following coefficients are $n = 2$:
+\begin{equation*}
+	a_4 = \frac{- 3 a_3 - a_0}{4 \cdot 3} = \frac{a_2 - a_0}{4 \cdot 3}
+\end{equation*}
+$n = 3$:
+\begin{equation*}
+	\begin{split}
+		a_5 & = - \frac{4 a_4 + a_1}{5 \cdot 4} = - \frac{1}{5 \cdot 4} \bigg[4 \bigg( \frac{a_2 - a_0}{4 \cdot 3}\bigg) - 2 a_2\bigg] = - \frac{1}{5 \cdot 4 \cdot 3} \bigg[  a_2 - a_0 - 3 \cdot 2 a_2\bigg] \\
+		& = \frac{a_2 (3 \cdot 2 - 1) + a_0}{5 \cdot 4 \cdot 3}  
+	\end{split}
+\end{equation*}
+$n = 4$:
+\begin{equation*}
+	\begin{split}
+		a_6 & = - \frac{5 a_5 + a_2}{6 \cdot 5} = - \frac{1}{6 \cdot 5} \bigg[5 \bigg( \frac{a_2 (3 \cdot 2 - 1) + a_0}{5 \cdot 4 \cdot 3} \bigg) + a_2\bigg] = - \frac{a_2 (4 \cdot 3 + 3 \cdot 2 - 1) + a_0 }{6 \cdot 5 \cdot 4 \cdot 3} 
+	\end{split}
+\end{equation*}
+\begin{equation*}
+    \vdots
+\end{equation*}
+$n = 7$:
+\begin{equation*}
+	\begin{split}
+		a_9 & = - \frac{8 a_8 + a_5}{9 \cdot 8} \\
+		& = - \frac{a_2 (7 \cdot 6 \cdot 3 \cdot 2 - 7 \cdot 6 + 6 \cdot 5 + 5 \cdot 4 + 4 \cdot 3 + 3 \cdot 2 - 1) + a_0 (1 - 6 \cdot 5 + 6 \cdot 7)}{9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3} 
+	\end{split}
+\end{equation*}
+Note that in $n = 7$, the coefficient is similar, but it's getting different of the $n = 2, 3, 4$ because the factor of $a_0$ is growing since $n = 6$. Thanks for your attention.","['power-series', 'recursion', 'ordinary-differential-equations', 'sequences-and-series']"
+2605707,L'Hospital's Rule Indeterminate Form Question,"I'm trying to solve this limit, but I don't know if I can use L'Hopital's Rule on it in the current form. $$\lim_{n \to \infty} {\ln ({3n+1}) - \ln ({3n-1}) \over \frac 1n} $$ I tried to look what $\infty - \infty$ is equal to, but it seems that it varies based on what type of infinity these are, so that didn't help. If this doesn't work I don't see any other way to get it into a form that works, but if I am wrong pointers in the right direction would be useful. Please don't solve the problem for me, this the middle of a homework problem so I am trying to figure this out at least partially on my own. Thanks","['calculus', 'limits']"
+2605739,How do we come up with the idea in the proof of $x^4+1$ is irreducible over $\Bbb Z$ by tranfer into $(x+1)^4+1$?,"$x^4+1$ is irreducible over $\Bbb Z$ (hence $\Bbb Q$). The proof I saw is to try transforming it into $(x+1)^4+1=x^4+4x^3+6x^2+4x+2$ and use the Eisenstein criterion with prime $2$. I can understand the proof. However, how do we come up with this idea? How do we know we should try to transfer $x$ into $x+1$, rather than, say $3x-5$? And by the way, I also wonder is there other way to proof the irreducibility?",['abstract-algebra']
+2605773,How to prove mutually independence?,"The original problem is somewhat trivial, and I have one last step to prove the mutually independence. $P(Y=k)=1/n, k=0,1,...,n-1$ $n=p_1p_2…p_k$ and $p_1,p_2,...,p_k$ are co-prime integers. Prove that $X_{p_i}=(Y\ mod\ p_i), i=1,...,k$ are mutually independent. Any help would be appreciated. (By the way, I have caculated the probability 
+$P(X_{p_i}=k)=1/p_i, k=1,...,p_i-1$ But no idea of what to do next.)","['independence', 'statistics', 'probability', 'probability-distributions']"
+2605775,Simple ODE Analytical Solution Question: $\frac{dx}{dt} = ax + bu$,"my question is in regards to the following formula: \begin{align}
+\frac{dx}{dt}=ax+bu
+\end{align} where x(0)=0 & u=constant and a & b are scalar The answer to this or at least what I was given as the answer is the following: \begin{align}
+x=-\frac{bu}{a}(1-e^{at)}
+\end{align} Now I understand that I need to manipulate the formula and integrate both sides. Utilizing the integration table I perform the following: Since u=constant we can then say bu=b therefore: \begin{align}
+\frac {dx}{ax+b}= {dt}
+\end{align} \begin{align}
+\int \frac {dx}{ax+b}= \int{dt}
+\end{align} \begin{align}
+\frac{1}{a}ln|ax+b| = t + C
+\end{align} \begin{align}
+e^{ln|ax+b|} = e^{(t + C)a}
+\end{align} \begin{align}
+ax+b = e^{at+Ct}
+\end{align} \begin{align}
+x = -\frac{b}{a} \frac{e^{at}e^{Ct}}{a}
+\end{align} I do not see where I am going wrong in the calcs above. I would appreciate any help in identifying where I went wrong. Thank you",['ordinary-differential-equations']
+2605806,Solution by differential equation by Clairaut Form,Solve the differential equation: $$y+x \frac{dy}{dx}=x^4 \bigg(\frac{dy}{dx}\bigg)^2$$ This is given under 'Clairaut form' but I am not able to convert it to Clairaut form of type $y=px+f(p)$ where $p=dy/dx$. The general solution is given as $xy+c=c^2x$ and singular solution is $4x^2y+1=0$. Could someone give me some hint with this?,"['singular-solution', 'ordinary-differential-equations', 'calculus']"
+2605810,polar coordinate subtitution,"$$\int\int_{(x^2+y^2) \le1} \left(\frac{x^4}{a^4}+ \frac{y^4}{b^4} \right)dxdy$$ I try to solve this multivariable integration, by substitute $x=ar \sin \theta$ and $y=br \sin \theta$
+to  $(\frac{x^4}{a^4}+ \frac{y^4}{b^4} )$ so it will produce $r^4 $ with Jacobin $abr$ but when I substitute to $x^2+y^2 \le1$
+it won't produce $r^2$ 
+$a^2r^2\sin^2 \theta+b^2r^2 \cos^2 \theta \le1$, so I cannot change it to polar coordinate.
+Is my approach wrong? Can someone give me hint too!","['derivatives', 'substitution', 'integration', 'polar-coordinates']"
+2605816,Why does a filtration represent information over time?,"The book I am reading says that Ft contains all events whose occurrence or not is fixed by time t. Why is this the case? Let say A is an event that has not been fixed yet, B is an event that has been fixed. Then A union B has to be in Ft, but A union B is not fixed, is it? How should I think about this statement? Another example of this:
+if E is an event that contains all elements of $\Omega$ that have been fixed. Then E is in Ft and E complement contains no event that has been fixed. E complement is still in Ft. But E U $E^c$ is an event that is neither fixed, nor unfixed, but it is still in Ft? Sth is off.",['probability']
+2605833,$\alpha$ is an irrational number. Is $\liminf_{n\rightarrow\infty}n\{ n\alpha\}$ always positive?,"We know that $$\liminf_{n\rightarrow\infty}\ n\{ n\alpha\}=L\left(\alpha\right)$$ exists and $L\left(\alpha\right)\geq 0$. Then, is the limit always greater than  $0,\ \forall\alpha\in\mathbb{R}\setminus\mathbb{Q}$? $\{n\alpha\}$ is the fractional part of $n\alpha$, i.e. $n\alpha-\left[n\alpha\right]$. I know that there are infinitely many rational numbers $\frac{p}{q}$ satisfies $\left|\alpha-\frac{p}{q}\right|<\frac{1}{q^2}$, but if $\frac{1}{q^2}$ is modified as $\frac{C}{q^k}$($C$ is a given constant), does there still exist infinitely many such rational numbers? Moreover, what about the special cases $\alpha=\sqrt{2}$ or $\alpha=2^\frac{1}{4}$?","['limsup-and-liminf', 'irrational-numbers', 'analysis']"
+2605881,Did Grothendieck acknowledge his collaborators' intellectual contributions?,"Pierre Cartier's account of Alexander Grothendieck's life and work includes an interesting reflection from Grothendieck on his time in the IHES seminar: In a moment of true lucidity, he (Grothendieck) said something like, “I was the only person to have the breath of inspiration, and what I transmitted to those around me wasn’t inspiration, but a job. I had workmen around me, but none of them really had inspiration!” Many of Grothendieck's collaborators, especially Serre, are considered among the greatest mathematicians of the 20th century.  Serre was known for his own significant contributions to algebraic geometry in the 1950s.  Did Grothendieck's collaborators really bring so little to the development of modern algebraic geometry?  And did Grothendieck ever acknowledge any of his collaborators as his equal?","['math-history', 'soft-question', 'algebraic-geometry']"
+2605895,Asymptotics for partial sum of product of binomial coefficients,"For some fixed $0<p<1$, let $np\leq c<n$ and $2np\leq x< 2n$. Are there references or previous results for determining the asymptotics (as $n\to\infty$) of the partial sum
+$$
+\sum_{k=x-c}^c\binom{n}{k}\binom{n}{x-k}
+$$
+or equivalently if $c=n\lambda_1$ and $x=2n\lambda_2$, for constants $p\leq\lambda_2\leq\lambda_1<1$
+$$
+\sum_{k=2n\lambda_2-n\lambda_1}^{n\lambda_1}\binom{n}{k}\binom{n}{2n\lambda_2-k}
+$$ I don't think I can just apply Stirling's approximations to the binomial coefficients individual and take the sum and product. EDIT Could someone comment if this is a valid attempt? Using @robjohn's solution in this post , let 
+$$
+a_k=\binom{n}{k}\binom{n}{2n\lambda_2-k}
+$$
+Then letting $k=n\lambda_2+j$,
+$$
+\log\left(\frac{a_{k+1}}{a_k}\right)=-\frac{2j}{n\lambda_2(1-\lambda_2)}+O(n^{-1})
+$$
+Thus,
+$$
+a_k=a_{n\lambda_2}\exp\left(-\frac{2j^2}{n\lambda_2(1-\lambda_2)}+O(j/n)\right)
+$$
+Estimating 
+$$
+a_{n\lambda_2}\sim C(\lambda_2)=\frac{1}{2\pi n\lambda_2(1-\lambda_2)}(1-\lambda_2)^{-2n}\left(\frac{1-\lambda_2}{\lambda_2}\right)^{2n\lambda_2}
+$$
+by Stirling's formula and using Riemann integral for the exponential,
+$$
+\sum_{j=-n(\lambda_1-\lambda_2)}^{n(\lambda_1-\lambda_2)}\exp\left(-\frac{2j^2}{n\lambda_2(1-\lambda_2)}+O(j/n)\right)=\sqrt{n\lambda_2(1-\lambda_2)}\int_{-\infty}^{\infty}\exp\left(-2t^2\right)dt(1+O(1/n))
+$$
+we have
+\begin{eqnarray}
+\sum_{k=2n\lambda_2-n\lambda_1}^{n\lambda_1}\binom{n}{k}\binom{n}{2n\lambda_2-k}&\sim& C(\lambda_2)\sqrt{n\lambda_2(1-\lambda_2)}\sqrt{\pi/2}\\
+&=&\frac{1}{2\sqrt{2\pi n\lambda_2(1-\lambda_2)}}(1-\lambda_2)^{-2n}\left(\frac{1-\lambda_2}{\lambda_2}\right)^{2n\lambda_2}
+\end{eqnarray}
+Substituting back $c=n\lambda_1$ and $x=2n\lambda_2$, and noticing Stirling's formula for $\binom{2n}{x}$, we get
+$$
+\sum_{k=x-c}^c\binom{n}{k}\binom{n}{x-k}\sim\frac{1}{\sqrt{2}}\sqrt{\frac{2n}{2\pi x(2n-x)}}\left(\frac{2n}{2n-x}\right)^{2n}\left(\frac{2n-x}{x}\right)^x\sim \frac{1}{\sqrt{2}}\binom{2n}{x}
+$$
+To me this is very interesting that it doesn't involve $c$, which disappeared when estimating with the Riemann integral above. However, after plugging in a couple of values in Mathematica, the approximation on the right hand side doesn't always give an accurate approximation to the partial sum. QUESTION 2 Is there a way to figure out how far this partial sum is from the upper bound of $\binom{2n}{x}$? EDIT 2 It turns out that 
+$$
+\sum_{k=x-c}^c\binom{n}{k}\binom{n}{x-k}=\binom{2n}{x}-2\sum_{k=0}^{x-c-1}\binom{n}{k}\binom{n}{x-k}
+$$ I guess, then I'm interested in showing if 
+$$
+2\sum_{k=0}^{x-c-1}\binom{n}{k}\binom{n}{x-k}=o\left(\binom{2n}{x}\right)
+$$
+How would I go about showing this?","['reference-request', 'binomial-coefficients', 'asymptotics', 'discrete-mathematics']"
+2606054,What is the Clifford/geometric product in terms of the inner and exterior product,"The geometric product is defined generally as the algebra on the space of multivectors $\bigwedge \Lambda(V)$ $$ab = a \cdot b + a \wedge b$$ with $\cdot$ a product on the vector space $V$ and $\wedge$ the exterior product. But how do those definitions extend to general multivectors? That is, for the multivectors \begin{eqnarray}
+A_i \in \Lambda^i V,\ A &=& \sum_{i=0}^n a_i A_i\\
+B_i \in \Lambda^i V,\ B &=& \sum_{i=0}^n b_i B_i
+\end{eqnarray} What are the products $A \cdot B$ and $A \wedge B$? For the exterior product I'm guessing it will simply be $$A \wedge B = (\sum_{i=0}^n a_i A_i) \wedge (\sum_{j=0}^n b_j B_j)$$ since that is a well defined quantity, but in the case of the inner product, it seems a bit harder. From some books it seems to be something of the form of the sum over every combination of the basis contracting with each other, for instance, $$e_1 \cdot (e_2 \wedge e_3) = \frac 12 \left[(e_1 \cdot e_2) e_3 + (e_1 \cdot e_3) e_2 \right]$$ which maps $n$-blades to $(n-1)$-blades, with the appropriate generalization for inhomogeneous multivectors and arbitrary $n$-blades, although I'm not sure how the inner product of two $2$-blades work, either, or what happens in the case of $0$-forms, is it simply the product in this case? Is this the correct product, and in particular, is there a definition of it that is independant of the choice of basis?","['clifford-algebras', 'abstract-algebra', 'vector-spaces']"
+2606058,Why does birational equivalence preserve group law in elliptic curves?,"In the first chapter of ""Rational points on Elliptic curves"", Silverman, page 24 writes The transformations we used to put the curve in normalized form do not map straight lines to straight lines. Since we defined the group law on our curve using lines connecting points, it is not at all clear that our transformation preserves the structure of the group. (That is, is our trans- transformation a homomorphism?) It is, but that is not at all obvious. The point is that our description of addition of points on the curve is not a good one, because it seems to depend on the way the curve is embedded in the plane. But in fact the addition law is an intrinsic operation which can be described on the curve and is invariant under birational  transformation. This follows from basic facts about algebraic curves, but is not so easy (virtually impossible?) to prove simply by manipulating the explicit equations. This seems really important and really surprising (at least to me)! Is this addressed later on in the book? What would be a good resource to get a  at sketch of that proof, or at least to get a sense of why it works.","['elliptic-curves', 'algebraic-geometry']"
+2606095,Effect of adding a zero row and column on the eigenvalues of a matrix,"Suppose I have a matrix, and for some $n\in \mathbb{N}$, I insert a row of zeros between the $n$th and $n+1$th rows, and a column of zeroes between the $n$th and $n+1$the columns. For example, for $n=1$ and the matrix:
+$$A=\begin{bmatrix}
+5&7&9 \\
+7&1&1 \\
+9&1&3 \\
+\end{bmatrix}$$
+I would obtain:
+$$B=\begin{bmatrix}
+5&0&7&9 \\
+0&0&0&0 \\
+7&0&1&1 \\
+9&0&1&3 \\
+\end{bmatrix}$$
+In general, what effect does this have on the eigenvalues? If we subtract $\lambda I$ and cofactor expand along the zero row or zero column of a matrix transformed in this way, clearly zero must be an eigenvalue. From this, and playing around with some matrices, I believe the following: If $A$ is a singular matrix, then the eigenvalues of $B$ are the same as the eigenvalues of $A$. If $A$ is an invertible matrix, then the eigenvalues of $B$ are the eigenvalues of $A$ as well as 0. Is this claim true, and how would I prove it if so?","['matrices', 'eigenvalues-eigenvectors', 'linear-algebra', 'determinant']"
+2606111,Interesting property about finite products of $111..1$'s,"Denote by $[n]!$ the following finite product $1\cdot 11\cdot 111\cdot\dots \cdot \underbrace{111\dots1}_{n}$. Prove that $[n]![m]!$ divides $[n+m]!$ My efforts: I wrote the $[n]!$ in the following form: $$[n]!=1\cdot 11\cdot 111\cdot\dots \cdot \underbrace{111\dots1}_{n}=\dfrac{9\cdot 99\cdot 999\cdot\dots \cdot \underbrace{999\dots9}_{n}}{9^n}=\dfrac{(10-1)(10^2-1)\dots(10^n-1)}{9^n}$$ Let's consider $\dfrac{[n+m]!}{[n]![m]!}=\dfrac{\prod \limits_{i=1}^{n+m}(10^i-1)}{\prod \limits_{i=1}^{n}(10^i-1)\prod \limits_{i=1}^{m}(10^i-1)}=\dfrac{(10^{n+1}-1)(10^{n+2}-1)\dots (10^{n+m}-1)}{(10^1-1)(10^2-1)\dots (10^m-1)}$; I was trying to use the following lemma: $10^a-1\mid 10^b-1$ if and only if $a\mid b$. The only thing I need to prove is the following fact: If we have set $\{1,2,\dots, m\}$ then for any $n\in \mathbb{N}$ the translation set $\{n+1,n+2,\dots, n+m\}$ has the following interesting property: $\sigma(1)\mid n+1, \sigma(2)\mid n+2, \dots, \sigma(m)\mid n+m$ for some permutation $\sigma$ of the set $\{1,2,\dots, m\}$. I guess that this fact is correct but I am not able to prove that. Would be very grateful if somebody can show how to prove that.","['number-theory', 'divisibility', 'elementary-number-theory']"
+2606116,Injectivity of a function $\frac{x}{1+|x|}$,"Let $f: \mathbb R \to  (-1,1)$ $x \in $ $\mathbb R$ , $f(x) = \frac{x}{1+|x|} $ Show that f is (1-1) What I did : $x,y \in $ $\mathbb R$ $f(x)=f(y)$ iff $$\frac{x}{1+|x|} =\frac{y}{1+|y|}\Rightarrow\left| \frac{x}{1+|x|} \right| =\left| \frac{y}{1+|y|} \right| \\\Rightarrow \frac{|x|}{1+|x|} =\frac{|y|}{1+|y|}\Rightarrow |x|=|y|$$ $\Rightarrow$ $x=y$ or $x=-y$ If $x=-y,\frac{y}{1+|y|} =\frac{-y}{1+|y|}\Rightarrow y=-y$ It is only valid for unique real value of $y$ that is $0$ namely $f(x) \neq f(y)$ for other values of $y$ . Thus $x=y$ I think it is not sufficient for injectivity, can someone correct me please?","['algebra-precalculus', 'real-analysis', 'analysis', 'functions']"
+2606153,When a lattice is a lattice of open sets of some topological space?,"When a lattice $(L,\leqslant)$ is a lattice of open (or closed) sets of some topological space $(X,\tau)$? Which conditions have to be satisfied? We may assume that $X$ is $T_1$.","['boolean-algebra', 'general-topology', 'lattice-orders']"
+2606158,Is the cartesian product of two Hilbert spaces a Hilbert space?,"Let $(H_1,\langle , \rangle_1)$ and $H_2,\langle , \rangle_2)$ be two complex Hilbert spaces. Is $H_1\times H_2$ a Hilbert space? I think that we can define the following inner-product on $H_1\times H_2$:
+$$\langle X, Y\rangle=\langle x_1, y_1\rangle_1+\langle x_2, y_2\rangle_2,$$
+for all $X=(x_1,x_2)\in H_1\times H_2$ and $Y=(y_1,y_2)\in H_1\times H_2$. Question: why $(H_1\times H_2,\langle \cdot, \cdot\rangle)$ is complete?","['functional-analysis', 'general-topology', 'banach-spaces', 'hilbert-spaces']"
+2606174,Number of possible equivalence relations,"Consider the set $A = \{1, 2, 3, 4, 5\}$. How many are the equivalence relations $R$ on $A$ such that $1 \,R\, 5$, $3 \,R\, 4$ and $5 \,\not R\, 4$? Motivate the answer. I know that $1$ is in relation with $5$, $3$ is in relation with $4$ and $5$ is not in relation with $4$. How can I find the exact number of possible equivalence relations with these features? Should I try writing down all the cases? Even if I do how do I know when to stop? I think the number of possible equivalence relations is three: $\{\{1,5\},\{3,4\},\{2\}\}$, $\{\{1,5,2\},\{3,4\}\}$, $\{\{1,5\},\{3,4,2\}\}$.","['equivalence-relations', 'elementary-set-theory', 'discrete-mathematics']"
+2606193,What is $x=5$ called??,"I have CS background, and I'm trying to teach fundamentals of programming to students. They seem to have difficulties in understanding the difference between x=5 and x==5 . However, trying to explain, made me wonder what the meaning of $x = 5$ is in mathematics. Is there a concept of assignment in mathematics? Or is this an equation/binding/statement/something else? What is its proper name? And does the use of the $=$ operator differ from its use in the function below? $$f(x) = \begin{cases}
+  \displaystyle 1 \quad \text{if } x \bmod 2 = 0\\
+  \displaystyle 0 \quad \text{if } x \bmod 2 = 1\\
+\end{cases}$$ Is there a classification of the uses of equality operator in math? Or is it the same in every case, and I just fail to see it?","['algebra-precalculus', 'terminology', 'calculus']"
+2606215,Markov property vs. transition function,"Let $(X_t)$, $t \in [0, \infty)$ be a stochastic process on a measurable space $(E, \mathcal{E})$. Then $X_t$ is said to have the Markov property (or be a Markov process) if $P(X_t \in B \mid \mathcal{F}_s) = P(X_t \in B \mid X_s)$ a.s. for all $B \in \mathcal{E}$ and $0 \leq s \leq t$ where $\mathcal{F_s}$ is the filtration generated by $X_s$ have a transition function if for each $0 \leq s \leq t$ there exists a stochastic kernel $p_{st}(x,B)$ on $(E, \mathcal{E})$ satisfying $p_{su} = p_{st} p_{tu}$ for $0 \leq s \leq t \leq u$ (composition of kernels) and such that $P(X_t \in B \mid X_s) = p_{st}(X_s,B)$ a.s. I am interested in examples for stochastic processes $X_t$ such that $X_t$ has the Markov property but no transition function $X_t$ has a transition function but not the Markov property Remark: It is known that on a standard Borel space $(E, \mathcal{E})$ any stochastic process with the Markov property has a transition function. Hence, for the example in 1. the space $(E, \mathcal{E})$ must be necessarily not Borel. If possible, I would like to see in both cases also examples where $\mathcal{E}$ is still ""nice enough"" and not too pathological (e.g. contains all singleton sets and is countably generated). Note that if one is given a Markov process $X_t$ (in the sense that it satisfies only the Markov property) then I often see in the literature expressions like $p_{s,t}(x,B) := P(X_t \in B \mid X_s = x)$. But the right-hand side may not be defined since $\{ X_s = x \}$ need not be measurable (independent of whether $\{ x \}$ is contained in $\mathcal{E}$ or not) and if it is measurable then $P(X_s = x) = 0$ is possible.","['stochastic-processes', 'probability-theory']"
+2606257,Proving that $b-a\ge \pi $,"Let $f : C^1(a; b)$, such that $ \lim\limits_{x\to a^+}
+f(x) = +\infty$,  $\lim\limits_{x\to b^-}f(x) = -\infty$ and 
+$f'(x)+f^2(x) \ge -1 $ for $x \in  (a; b)$. Prove that $b-a\ge \pi $ and provide an example
+  where $b-a= \pi $ For the second question the obvious example could be $f(x) = \cot(x)$ with $a=0$, and $b=\pi.$ Any hint for the first part?
+This queston is similar to this: How prove this inequality $b-a\ge \pi$","['real-analysis', 'functions', 'calculus', 'contest-math', 'analysis']"
+2606275,"Is there a name for this operation? $f(a, b) = a + (1 - a)b$","Is there a name for this simple operation/function? $$(a, b) \mapsto a + (1 - a)b$$ The operator takes two real numbers that are between $0$ and $1$, and returns a real number per the formula. Intuitively, it moves the $a$ value towards $1$ by using $b$ as the fraction of the remaining distance to travel. Note that the order of the operands doesn't matter, since $a + (1 - a)b$ rearranges to $b + (1 - b)a$. Another perspective is that it's the sum, minus the product: $$(a, b) \mapsto a + b - ab$$ So, for example: $(0.5, 0.5) \mapsto 0.75$ $(0.3, 1) \mapsto 1$ $(0.47, 0.61) \mapsto 0.7933$ Thanks!","['terminology', 'functions']"
+2606306,Geometric solution to find a Set of totally ordered Subsets of $ \mathbb{N} $ is uncountable,"My question is, does there exist a set of subsets of the naturals, $S$, such that $S$ is uncountable, where for any two subsets $A,B \in S$ we have either $A \subset B $ or $B \subset A $? Initially my thoughts were that we could construct a chain $A_{1} \subset A_{2} \subset \cdots $ and find a bijection by picking out one element which is 'new' to each set by axiom of choice and so we have bijected to a subset of naturals, however I'm not convinced this fully works. Furthermore, I was thinking there may be a nice elegant solution by looking for such a set in either $ \mathbb{Q}^2 $ or $ \mathbb{Z}^2 $ for example, but any attempt seems to fail due to the 'ordering' part of the question.","['elementary-set-theory', 'elementary-number-theory']"
+2606315,Intuition with graphs of parametarizations,"I have trouble intuitively understanding why a certain graph belongs to a parametarization in a certain number of parameters. When I ask myself why the graph of the function $f(x) = y$ is a curve, it's because if it were a surface it would fail the vertical line test (for any one input there would need to be multiple outputs). Also, the graph of $f(x, y) = z$ is a surface and not a volume because for any 2 inputs there would need to be multiple outputs. I can't seem to develop that kind of intuition for parametarizations though. Why is the graph of $\vec{r}(t) = (x(t), y(t), z(t))$ a curve, and the graph of   $\vec{r}(u, v) = (x(u, v), y(u, v), z(u, v))$ a surface? Is there more advanced math involved behind the curtain that prevents the intuition?",['multivariable-calculus']
+2606319,Is the natural norm on the exterior algebra submultiplicative?,"For an inner product space $(V,\langle \cdot,\cdot\rangle)$ the exterior algebra $\Lambda V$ inherits an inner product, which satisfies $\langle a_1\wedge \dots \wedge a_n,b_1\wedge\dots\wedge b_n\rangle = \det(a_i,b_j)$ on simple tensors of the same rank and is zero for tensors of different rank. Question: Is the associated norm on $\Lambda V$ submultiplicative, i.e. is $\Vert a \wedge b\Vert\le\Vert a\Vert \cdot \Vert b\Vert$ for all $a,b\in \Lambda V$? If $a$ and $b$ both have rank $1$, then this is true, because $\Vert a \wedge b \Vert^2 = \Vert a \Vert^2 \cdot \Vert b \Vert^2 - \langle a, b\rangle^2$. If $a=a_1\wedge \dots \wedge a_n$ and $b=b_1\wedge\dots\wedge b_n$ are simple rank $n$ tensors ($\neq 0$), then $$\Vert a \wedge b\Vert^2 = \det\left (\begin{matrix}
+  A & C \\
+C & B
+    \end{matrix}\right) = \det A \cdot \det B \cdot \det(I - B^{-1}C A^{-1}C),$$
+where $A,B,C$ are $n\times n-$block matrices containing $\langle a_i,a_j\rangle$ and so on and the second inequaltiy is taken from this Wikipedia article on the determinant of block matrices. If the last determinant was $\le 1$, we'd be done, but I don't see how this would work.","['multilinear-algebra', 'linear-algebra', 'inner-products']"
+2606347,Solution of the trigonometric equation $\sin5x =\cos2x$,"The question is to find the general solution of $\sin5x = \cos2x$
+I did the following: $\sin5x-\cos2x=0$ $\implies\sin5x-\sin(\frac{\pi}2-2x)=0$ $\implies\cos(\frac{3x}2 +\frac{\pi}4)\sin(\frac{7x}2 - \frac{\pi}4)=0$ And I got the answers as: $(4n + 1)\frac{\pi}{14} = x$ (Which is correct) And $(4n+1)\frac{\pi}6 =x$ (Which apparently is wrong and the correct answer is given to be $x=-(4n-1)\frac{\pi}6$
+Could somebody please tell me where I went wrong?","['algebra-precalculus', 'trigonometry', 'trigonometric-integrals', 'functions']"
+2606383,Double-exponential sum (maybe it telescopes?),"Does anyone know how to calculate the value of the sum $$\sum_{n=0}^\infty \frac{1}{x^{2^n}+1}=\text{?}$$ for any values of $x$ for which it converges? I know how to evaluate some similar sums, such as
+$$\sum_{n=0}^\infty \frac{2^n}{x^{2^n}+1}=\frac{1}{x-1}$$
+and
+$$\sum_{n=0}^\infty \frac{2^{-n}}{x^{2^{-n}}+1}=\frac{2}{1-x^2}+\frac{1}{\ln(x)}$$
+Both of which telescope. Is there any way to make the first sum telescope (or calculate it by other methods)? Interestingly, the reason I want to calculate it is because it is related to the generating function of the base 2 ""digit sum"" sequence:
+$$\sum_{n=0}^\infty \frac{s_2(n)}{x^n}=\frac{x}{x-1}\sum_{n=0}^\infty \frac{1}{x^{2^n}+1}$$","['generating-functions', 'telescopic-series', 'summation', 'sequences-and-series']"
+2606384,"If $|ax^2+bx+c|\le \frac12$ for all $|x|\le1$, then $|ax^2+bx+c|\le x^2-\frac12$ for all $|x|\ge1$",Prove that if $|ax^2+bx+c|\le \frac12$ for all $|x|\le1$ then $|ax^2+bx+c|\le x^2-\frac12$ for all $|x|\ge1$. My attempts: Let $f(x)=ax^2+bx+c$ I know that 1) if $f(a)<0$ and $f(b)>0$ then exist $x_0\in[a;b]$ then $f(x_0)=0$ 2) $|ax^2+bx+c|\le \frac12 \Leftrightarrow -\frac12<ax^2+bx+c\le \frac12$,"['algebra-precalculus', 'inequality', 'absolute-value']"
+2606399,Evaluate $\lim\limits_{n\to\infty} \frac{3+\sqrt{3}+\sqrt[3]{3}+\dots+\sqrt[n]{3}-n}{\ln n}$,"Evaluate $$\lim\limits_{n\to\infty} \frac{3+\sqrt{3}+\sqrt[3]{3}+\dots+\sqrt[n]{3}-n}{\ln n}.$$ We haven't been taught how to do asymptotes, I think this problem should be solved using Cesaro-Stolz; $$\lim\limits_{n\to\infty} \frac{a_n}{b_n}=\lim\limits_{n\to\infty} \frac{a_{n+1}-a_n}{b_{n+1}-b_n}$$
+Note that this is my second question on this site.It's the first year i learned about limits so don't expect that this problem solves in a hard way.","['limits-without-lhopital', 'calculus', 'limits']"
+2606420,Number of total possibilities for an equation,"I need to find the number of possibilities for which the following equation exists: $$x_1 + x_2 + x_3 + \cdots + x_{10} \leq 70$$ Each variable is a non-negative integer. I tried simplifying the question to the point of finding the number of possible solutions to each equation seperatly: $$x_1 + x_2 + x_3 + \cdots + x_{10} = 70,$$ which is ${79}\choose{10}$. $$x_1 + x_2 + x_3 \cdots + x_{10} = 69,$$ which is ${78}\choose{10}$. $$x_1 + x_2 + x_3 + \cdots + x_{10} = 68,$$ which is ${77}\choose{10}$, and so forth. Then I thought about adding all of these together. This seems a bit too much work considering that the textbook solution is: ${80}\choose{10}$, and I can't seem to figure out the idiomatic way of approaching these kind of questions. Any help is greatly appreciated.","['combinatorics', 'discrete-mathematics']"
+2606508,Intrinsic vs. Extrinsic notions of Harmonic maps.,"I have just began studying the theory of harmonic maps between manifolds recently. So far, I've come across 2 ways to define harmonic maps between (Riemannian) manifolds. Let $u:(M,\gamma)\to(N,g)$ be a map, says $C^1$ for simplicity, between 2 Riemannian manifolds of dimension $m$ and $n$ respectively. The metrics on them are given by $\gamma=(\gamma_{\alpha\beta})$ and $g=(g_{ij})$. Intrinsic definition : $u$ is said to be harmonic if, in coordinate chart,
+  $$
+\Delta u^k=\gamma^{\alpha\beta}\Gamma^k_{ij} \frac{\partial u^{i}}{\partial x^{\alpha}}\frac{\partial u^{j}}{\partial x^{\beta}}
+$$
+  where $(\gamma^{\alpha\beta})=(\gamma_{\alpha\beta})^{-1}$. On the other hand, by Nash embedding theorem, we can view $N$ as an isometrically embedded submanifold of $\Bbb R^K$ some large $K$. In this case, we may define harmonicity as follow. Extrinsic definition : $u$ is said to be harmonic if
+  $$\begin{align}
+\Delta u =& A(u)(\nabla u,\nabla u)  \\
+:=& \sum_{\alpha=1}^m A(u)(\frac{\partial u}{\partial x^{\alpha}},\frac{\partial u}{\partial x^{\alpha}})
+\end{align}$$
+  where $A$ is the second fundamental form of $N$ in $\Bbb R^k$. Here are some of my questions: -In both cases, $\Delta$ is the Laplace-Beltrami operator right? -For the extrinsic definition, is $\frac{\partial u}{\partial x^{\alpha}}$ just the usual $(\frac{\partial u^1}{\partial x^{\alpha}},\dots,\frac{\partial u^K}{\partial x^{\alpha}})\in \Bbb R^K$? -How do we show that both expressions are equivalent? PS. My background is mostly in analysis (in Euclidean spaces) with some basic knowledge of Riemannian geometry and differential geometry. Note that I'm not quite good with differential geometry yet, as you can see, so I wouldn't be able to understand if the answer is too advanced, e.g. something involving Hodge isomorphism.","['riemannian-geometry', 'differential-geometry', 'partial-differential-equations']"
+2606566,Using averages to measure the dispersion of data,"INTRODUCTION: I recently had a new idea on how to measure the dispersion of data. Since I have done my quick research and have not been able to find this method anywhere I was curious to see what somebody with greater expertise in the field of statistics would think about it and so I am sharing it here as a first step. During my engineering education I have been taught several ways to analyze the dispersion of data, the most popular being the standard deviation, where a lot of the probability and statistics theory is based on. In some other applications however, I have been exposed to methods such as the range, both of the MAD's or even the IQR. I even did my own literature study regarding the suitability of each of these methods, and it is clear to me that while the standard deviation is the most widely used method, it is not the only method nor always the most suitable one. IDEA: To my idea: The result of this method actually looks a lot like the box and whiskers plot you would get from using the IQR (Inter quartile range) method. Instead of relying though on percentiles, it relies on averages. Here the method outline: Calculate the mean: This is a very common step, since most methods out there require this value in order to be able to calculate the dispersion of the data from the expected value. Calculate the mean for left and right sides: We just calculated the mean, which for a function represents the centroid of a distribution. This center line is used usually as a reference for how far away a data point is in terms of dispersion. So why do we not split the data here, and take again the averages, but this time only for each half, left and right? That is actually what I then do. Results: We now have a mid-average (mq), a lower quarter average (lq) and a upper quarter average (uq). Obviously from this we can then also calculate the IQR as:
+\begin{equation}
+\text{IQR} = \text{uq} - \text{lq}
+\end{equation} 
+Obviously this gives a good idea on how the data is distributed. Not only can we say something about its distribution through the IQR, but we can analyze the symmetry by checking the difference between the $(\text{uq} - \text{mq})$ and $(\text{mq} - \text{lq})$. I hope I am also right in saying that the IQR (for a normal distribution) represents 50% of the data, and if we would want to use more data, we would simply have to repeat the 'split and calculate new average' method (in which the next iteration would include 75% of the data). So, what do you guys think about this method? Maybe you could also tell how one would go about testing the method? OWN THOUGHTS: As far as I can see, the method relies on averages, which is quite nice. Unlike the percentiles used for the typical IQR method, averages rely on the whole data. This might not make them very robust, but are always adjusted  fully to the data. In addition, I find this quite an intuitive method; it's simple and the dispersion measured by 50% of the data seems easy to grasp. Finally, compared to the standard deviation, the values do not need to be squared, which means that this method does not get skewed as much by outliers and may be more fitting when analyzing data with errors. (The reason the mean absolute deviation (MAD or MD) is sometimes used.) EXAMPLE: In order to give an idea how this would look like, two examples, one in which the numerical process is shown, another of a comparison between the box and whiskers (without the whiskers) results from the typical IQR method and the method I propose here. Example 1: Say we start off with the following data: 2,4,4,4,5,6,6,7,8,10 From this we can calculate the mid-average: 
+\begin{equation}
+\text{mq} = \frac{2+4+\cdots+10}{10} = 5.6 
+\end{equation} 
+All the values lower than or equal to 5.6 are taken and the lq is calculated with the same average formula:
+\begin{equation}
+\text{lq} = \frac{2+4+\cdots+5}{5} = 3.8 
+\end{equation} 
+We can repeat this method to calculate the uq, this time for all the values bigger or equal to 5.6:
+\begin{equation}
+\text{lq} = \frac{6+6+\cdots+10}{5} = 7.4 
+\end{equation} 
+We therefore can calculate the IQR using these average values:
+\begin{equation}
+\text{IQR} = \text{uq} - \text{lq} = 3.6
+\end{equation}
+In addition, we can observe that when taking the ratio between $(\text{uq} - \text{mq})$ and $(\text{mq} - \text{lq})$, we get a value of 1.0, suggesting that the data is symmetric. Example 2: Here the figure I have obtained using a Python code (posted below) which compares the typical IQR method with the method outlined here. You can see in green the mq, lq and uq for the typical IQR method, in red the result of the method I have been proposing. The sample size is 1000, and the values for the lines are: My method: mid_avg:  -0.0905134149804 lq_avg:  -1.63815314319 uq_avg: 1.50107551444 IQRwAVG:  3.13922865764 Typical IQR method: median:  -0.116056069599 25 percentile:  -1.39684011872 50 percentile:  1.21390120378 IQR:  2.6107413225 Here the code: # -*- coding: utf-8 -*-
+""""""
+Created on Sat Jan 13 20:47:36 2018
+
+@author: Marco DS
+
+This script shall give an idea how well the IQR 
+method works if the quartiles are calculated using
+averages instead.
+
+In this version we will focus on comparing the IQR
+with quarter averages to the typical IQR method 
+using percentiles.
+""""""
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+#==============================================================================
+# Create random sample
+#==============================================================================
+mu, sigma = 0.0, 2.0
+np.random.seed(0)
+sample = np.random.normal(mu, sigma, 1000)
+
+#==============================================================================
+# Calculations
+#==============================================================================
+
+#------------------------------------------------------------------------------
+# IQR with averages
+#------------------------------------------------------------------------------
+mid_avg = np.average(sample)
+
+lq_avg = np.average(sample[sample<=mid_avg])
+uq_avg = np.average(sample[sample>=mid_avg])
+
+IQRwAVG = uq_avg - lq_avg
+
+print '=========='
+print 'mid_avg: ', mid_avg
+print 'lq_avg: ', lq_avg
+print 'uq_avg: ', uq_avg
+print 'IQRwAVG: ', IQRwAVG
+
+#------------------------------------------------------------------------------
+# IQR with averages
+#------------------------------------------------------------------------------
+p75, p50, p25 = np.percentile(sample, [75 , 50, 25])
+IQR = p75 - p25
+
+print '=========='
+print 'median: ', p50
+print '25 percentile: ', p25
+print '50 percentile: ', p75
+print 'IQR: ', IQR
+
+#==============================================================================
+# Show plot
+#==============================================================================
+plt.hist(sample, 10)
+
+#plt.xlabel('Smarts')
+#plt.ylabel('Probability')
+#plt.title('Histogram of IQ')
+#plt.text(60, .025, r'$\mu=100,\ \sigma=15$')
+#plt.axis([40, 160, 0, 0.03])
+#plt.grid(True)
+
+for i in [lq_avg, mid_avg, uq_avg]:
+    plt.axvline(x = i, color = 'r')
+
+for i in [p75, p50, p25]:
+    plt.axvline(x = i, color = 'g')
+
+plt.show()","['statistics', 'statistical-inference']"
+2606575,Contractible balls implies contractible space?,"Suppose you have a metric space $(X,d)$ and a point $x\in X$ such that every ball of finite radius $B(x;r)$ is contractible. Then is $X$ itself contractible? Edit : I've been asked to provide context for this question, to save it from being closed. Well, the question just occurred to me out of the blue with no particular application in mind (although generally speaking I'm not interested in anything more exotic than a CW-complex). It seems to me a naturally interesting question whether contractibility of finite balls implies anything about the contractibility of a potentially infinite space $X$. Certainly when $X$ is a finite metric space the answer is yes. And a little thought shows that the converse statement is false in general. So what remained was to understand the case of infinite metric spaces, and Qiaochu's answer below provides the answer for (spaces with homotopy type of) CW-complexes, which is good enough for me. (As for the ""level"" of the question being asked, the fact that I accepted the answer should indicate something about that.)","['general-topology', 'metric-spaces']"
+2606580,Conformal map from R3 to R2 x S1,"There exists a global conformal map between $\mathbb{R}^3$ and $S_3$:
+$$
+g = dr^2+r^2\left(d\theta^2 + \sin^2\theta\ d\phi^2\right)
+$$
+$$
+r = R \tan \frac{\alpha}{2}
+$$ $$
+g = \frac{R^2}{4\cos^4\frac{\alpha}{2}}\left[d\alpha^2+\sin^2\alpha\left(d\theta^2 + \sin^2\theta\ d\phi^2\right)\right]
+$$ There also exists a global conformal map between $\mathbb{R}^3$ and the cylinder $\mathbb{R}\times S_2$: $$
+r = R\ e^{x/R}
+$$ $$
+g=e^{2x/R}\left[dx^2+R^2\left(d\theta^2 + \sin^2\theta\ d\phi^2\right)\right]
+$$ There does not appear to be a global conformal map between $\mathbb{R}^3$ and the cylinder $\mathbb{R^2}\times S_1$. At least, my attempts to find one starting from $\mathbb{R^3}$ in cylindrical coordinates:
+$$
+g = dz^2+ d\rho^2 +\rho^2 d\phi^2
+$$
+and remapping $(z, \rho)$ have failed. So my questions are: 1) Is it true that there is no such map? 2) If so, how do you show that? I think that local invariants like the Cotton tensor have nothing to say, because both $\mathbb{R}^3$ and $\mathbb{R^2}\times S_1$ are flat, and instead there is some kind of global obstruction.","['conformal-geometry', 'differential-geometry']"
+2606584,"When people say ""an algebra"" do they always mean ""an algebra over a field""?","I don't have much experience with abstract algebra. I'm only versed in linear algebra and vector spaces, and have had a tiny introduction to algebras over fields. However, this question is a purely terminological one: When people say ""an algebra"" do they always mean ""an algebra over a field""? If not, what other things can it refer to?","['terminology', 'abstract-algebra']"
+2606628,"The system $x' = h(y), \space y' = ay + g(x)$ has no periodic solutions","Exercise : Show that the system of differential equations :
+  $$x' = h(y)$$
+  $$y'=ay+g(x)$$
+  where $a>0$ is a constant and $h,g : \mathbb R \to \mathbb R$ smooth functions, does not have any periodic solutions. Hint : Apply Bendixson's criteria. Discussion/Question : First of all, the exercise refers to Bendixson's Criteria but on our notes and previous lessons, we have explored two different theorems/criteria involving Bendixson : Poincare-Bendixson Theorem : Given a differentiable real dynamical system defined on an open subset of the plane, then every non-empty compact ω-limit set of an orbit, which contains only finitely many fixed points, is either : a fixed point, a periodic orbit, or a connected set composed of a finite number of fixed points together with homoclinic and heteroclinic orbits connecting these. Moreover, there is at most one orbit connecting different fixed points in the same direction. However, there could be countably many homoclinic orbits connecting one fixed point. Bendixson-Dulac Theorem : Ιf there exists a $C^{1}$ function ${\displaystyle \varphi (x,y)}$ (called the Dulac function) such that the expression :
+  $$\frac{\partial φf}{\partial x} + \frac{\partial φg}{\partial y}$$
+  has the same sign $( \neq 0)$ almost everywhere in a simply connected region of the plane, then the plane autonomous system :
+  $$\frac{dx}{dt} = f(x,y)$$
+  $$\frac{dy}{dt} = g(x,y)$$
+  has no nonconstant periodic solutions lying entirely within the region.""Almost everywhere"" means everywhere except possibly in a set of measure 0, such as a point or line. I wanted to clarify which of the $2$ criteria/theorems is implied to be used by the phrased used as a hint given by the exercise, as it is not clear enough. In my opinion, I think it refers to the Bendixson - Dulac one, since it's the one regarding the non-existence (point of the exercise as well). Would the first one though lead to something that won't hold with the hypothesis that a periodic orbit exists ? Now, applying the Bendixson-Dulac Theorem : First of all, we're given that $h,g : \mathbb R \to \mathbb R$ are smooth functions, which means that they indeed $h,g \in C^1(\mathbb R)$. Then, for  $φ(x,y) = 1 \in C^1(\mathbb R^2)$, we have : $$\frac{\partial φf}{\partial x} + \frac{\partial φg}{\partial y} = \frac{\partial h(y) }{\partial x} + \frac{\partial (ay + g(x))}{\partial y} = a> 0$$ since $h(y)$ is a function of $y$ and $g(x)$ a function of $x$. Then, since the expression required sustains the same sign everywhere, from the Bendixson-Dulac Theorem there exists none periodic solutions to the given system of differential equations. So, is my approach correct ? Would be letting $φ(x,y) = 1$ be correct ? It seems trivial in such case, still not sure about what exactly the hint wants us to use.","['stability-in-odes', 'periodic-functions', 'ordinary-differential-equations', 'dynamical-systems']"
+2606668,Find probability density function for $\varepsilon \cdot X$.,"Let $ X $ be exponentially distributed with parameter $\lambda > 0$ . $a)$ Find the probability density function for $ Y := exp(X) $. $b)$ Consider $X$ again. Now let $\varepsilon$ be  an independent random variable with $P(\varepsilon = 1 ) = \frac{1}{2}  $ and $P(\varepsilon = -1 ) = \frac{1}{2}  $. Find the probability density function for $\varepsilon \cdot X$. So a) was no big deal. but I'm stucked in $b)$. Remark(Update) : I read that $ \varepsilon  \cdot X $ has to be $Laplace(0,\frac{1}{\lambda})$ distributed. We want to compute CDF of $YX$. [ $Y := \varepsilon$ ].
+Let us say that $ a \ge 0 $ We start with $ F(a) = P(YX \le a) = P(X > -a | Y = -1)P( Y=-1) + P(X \le a |Y =1)P(Y=1) = P(X > -a)P( Y=-1) + P(X \le a)P(Y=1)  = \frac{1}{2} + (1-e^{-\lambda \cdot a}) \cdot \frac{1}{2}.   $ Then we take $F'(a)$ and get that $f(a)$ is $\frac{1}{2} \cdot \lambda \cdot e^{-\lambda \cdot a} $. So $YX$ is  $Lap(0,\frac{1}{\lambda})$. Thank you for your help.","['exponential-distribution', 'probability', 'density-function']"
+2606816,Square roots of integral matrices,"Define $n\times n$ matrices $L , M$  as follows: $\,$ L$_{ij}$= $1$ if $\,$i + j $\geq$n + 1
+and is zero otherwise; $\,$ $\qquad$ $\qquad$ $\quad$M$_{ij}$= $\min(i,j)$ for $1 \leq i , j \leq n$ .  It is straightforward to check that $M = L^2$ .  For example, when $n=3$ we have $\qquad$ $\qquad$ $\qquad$$\begin{bmatrix}1 & 1 & 1\\1 & 2 & 2\\1 & 2 & 3\\ \end{bmatrix}$ = 
+$\begin{bmatrix}0 & 0 & 1\\0 & 1 & 1\\1 & 1 & 1\\ \end{bmatrix}^2$ . [Remarks: $\det(M) = 1$ ; $M$ is positive definite but $L$ is not  ; the eigenvalues of $M$ are distinct ( to see this, it's easier to work with $M^{-1}$ which is tridiagonal ). ] General theory then predicts that $L$ can be written as a polynomial in $M$. A priori , this polynomial might be expected to have algebraic numbers as coefficients, but the examples below suggest that the situation may be nicer than that. First, when $n=2$ we find by inspection that  $L = M - I.$ Next, for $n=3$, a calculation shows that $L = M^2 - 5M + 2I$. And yet again for $n=4$, we 
+find $L = 2M^3 - 19M^2 + 21M - 5I.$ In each case (so far) the polynomial turned out to have integral coefficients. Questions: (1) Is it always true, for arbitrary $n$ , that $L$ can be expressed as a polynomial in $M$ with integral coefficients? (2) Presumably, matrices like $M$ above which have an integral square root are
+the exception rather than the rule.  Is it easy to show that almost all ( in any suitable sense) matrices in $\text{SL}(n,Z)$ do not possess a square root in $\text{GL}(n,Z)$ whenever $n \geq 2$ ?","['matrices', 'number-theory']"
+2606832,is projective space a spectral topological space?,"A topological space $X$ is said to be spectral if it satisfies all of the following conditions: 1) $X$ is quasicompact and quasiseparated 2) $X$ is sober (over irreducible component has a unique generic point) . 3) $X$ has a basis of quasicompact open subsets Hochster proved that a spectral space is homeomorphic to the spectrum of a ring, i.e. is affine. So projective space $\mathbb{P}^n_k$ over a field (with the Zariski topology) is not a spectral space. Which one(s) of the above three conditions fails? It seems to me that all three hold... so I am confused about something.","['general-topology', 'algebraic-geometry']"
+2606846,Prove there exists $A \in M_n{(\mathbb R)}$ s.t. $A^2 = \begin{pmatrix} M & 0 \\ 0 & M \\ \end{pmatrix}$,"Prove that for all $M \in M_n{(\mathbb R)}$, there exists $A \in M_{2n}{(\mathbb R)}$ s.t. $A^2$ = $$\begin{pmatrix}     M & 0 \\     0 & M \\     \end{pmatrix} $$ I have tried by induction on $n$ but I don't see how to pass from $n$ to $n+1$.","['matrices', 'linear-algebra']"
+2606916,"Existence of unique limit cycle for $r'=r(μ-r^2), \space θ' = ρ(r^2)$","Exercise : Translate the dynamical system given in polar coordinates to cartesian coordinates :
+  $$r' = r(μ-r^2)$$
+  $$θ' = ρ(r^2)$$
+  where $μ>0$ is a constant and $p: \mathbb R_+ \to \mathbb R$ smooth function with $ρ(μ) > 0$. Show that there exists a unique limit cycle. Would we have the same result if it was $ρ(μ) = 0$ ? Attempt : Using the relations : $$x = r\cos(θ) \Rightarrow x' = r'\cos(θ) - r\sin(θ)θ'$$
+$$y = r\sin(θ) \Rightarrow y' = r'\sin(θ) + r\cos(θ)θ'$$ I derived the equations for the given system in cartesian coordinates, as : $$x' =  μx - yρ(x^2 + y^2) - x(x^2+y^2)$$
+$$y' =  μy - xρ(x^2 + y^2) - y(x^2+y^2)$$ Now, regarding the limit cycle, if : $$f(x,y) = \begin{bmatrix} μx - yρ(x^2 + y^2) - x(x^2+y^2) \\ μy - xρ(x^2+y^2) - y(x^2+y^2)\end{bmatrix}$$ How would I proceed about the limit cycle part of the problem though ? I know that one approach could be showing that $\text{div}(f) \neq 0$ for a simply connected set, but I'm not sure if this is correct and it seems that it wouldn't be leading anywhere since there is an unknown $ρ$ function there. This is the first problem I'm trying to solve regarding that part of dynamical systems so I'd appreciate any help. What would I need to do to show the existence of a unique limit cycle ?","['stability-in-odes', 'ordinary-differential-equations', 'dynamical-systems', 'systems-of-equations']"
+2606950,Finding statistical data for repeated surveys in a population,"I came across this statistical problem: in a population of 223 people, repeated surveys are carried out by different groups. The first group will randomly choose 40 people to survey, and the second group will randomly choose 40 people to survey, and so on. Each group will choose independently of each other. There are 16 total groups, with 14 of them choosing 40 people, 1 of them choosing 50 people, and 1 of them choosing 60 people. Questions: Can this situation be related to an existing and well-studied type of problem? What is the average amount of surveys each individual will get? What is the standard deviation? What is the expected (average) amount of people that receives 0, 1, 2, 3...16 surveys? If we suspect some groups did not carry out the amount of surveys they are supposed to (e.g. all groups only did a-half of the surveys they claimed to) and so we collected a sample in the population, what should we find in order to conclude that some groups did not survey the amount they claimed. I found some of these questions quite simple, while some are quite complicated. The mean is easily solvable: $\frac{40*14+50+60}{223}$ When it comes to the standard deviation, the first thing I thought of is to calculate each possible scenario. Using a simple example: 3 groups chose 3, 4, and 7 people from a population of 8. The pictures showed calculations by hand. It became quite apparent that the number of cases grow at a fast rate (perhaps an exponential growth), so I wrote a program that did the calculations. Unfortunately, though I tried to perform multiple optimizations, including ignoring cases that has a low probability of occurring and tracking only people that received 0 and 1 surveys, the calculation still took half an hour. The result is: Expected values: People with 0 surveys: 7.94284 People with 1 survey: 29.52534 People with 2 surveys and above: 185.53182 When I try to increase the amount of surveys counted, it seems to take forever when calculating group 8 or so. The brute-force method of finding every case (or, with optimizations, probable cases), therefore, failed to get an answer due to the amount of calculations needed. But, I found out that the expected values displayed a pattern. Though I have no ironclad proof, for smaller testing samples, the pattern matches the brute-force method perfectly. Here is an example. Selecting from a population of 8. The expected (average) amount of people getting n surveys after selecting m people = (amount of people getting n surveys before this selection) * [(n-m) / n)] + (amount of people getting n - 1 surveys before this selection) * (m / n). In other words, expected survey count = amount of people remaining in this count due to not getting selected + amount of people promoted from (count - 1) due to getting selected. The computation is still quite tedious, so I wrote a program and an Excel spreadsheet that calculates it. The formula is shown on the top of the picture. The program is more flexible and have more options in accuracy, so here is the rounded result of the program. Mean: 3.0044843049 Standard Deviation: 2.4423302226 Expected surveys received: 0 surveys: 7.9428 people 1 survey: 29.525 people 2 surveys: 51.350 people 3 surveys: 55.471 people 4 surveys: 41.663 5 surveys: 23.072 6 surveys: 9.7455 7 surveys: 3.2032 8 surveys: 0.82802 9 surveys: 0.16891 10 surveys: 0.027101 11 surveys: 0.0033846 12 surveys: 0.00032254 13 surveys: 0.000022674 14 surveys: 0.0000011090 15 surveys: 3.3720E-8 16 surveys: 4.8016E-10 Now answering the fifth question (suspecting groups making less surveys than claimed), according to the Central Limit Theorem, the mean of the sample distribution is equal to the mean of the population, and the standard deviation is $\sigma_\bar{x} = \frac{\sigma}{\sqrt{n}}$. So after the sample is taken (not violating the 10% rule), we can plug the value of n in an see if the sample mean is 2$\sigma$ away from the expected mean. If it is more than 2$\sigma$ away, we have sufficient reason to doubt the integrity of the sampling groups. We can probably also look at whether the sample survey counts match the population expected survey counts, but I don't know how this comparison can lead to any conclusion. So, my final questions now became: Can this situation be related to any existing problems that are well-studied? Are all my calculations and methodologies correct? Especially, is the formula for making inferences about expected count correct? If so, what is the proof? Are there any formula that can calculate the expected survey counts faster? Can I infer anything from the comparison between expected survey counts and sample survey counts? I apologize for the long description, but that's what I've got so far and I am quite curious about this problem.","['expectation', 'probability-distributions', 'statistics', 'probability', 'combinatorics']"
+2606983,Evaluating the quotient without the calculator,"Without using the calculator find the value of 
+$$\frac{3^{750}}{5^{510}}$$
+I tried to consider 
+$$\frac{3^{750}}{5^{510}}=x $$
+Then i took log to both sides to be
+$$750\log{3}-510\log{5}=\log{x}$$
+But i could not do any thing more ?",['algebra-precalculus']
+2606991,Weak formulation of Robin boundary condition problem,"I have some issues with the following problem. Let ${\Omega \subset \Bbb{R}^n}$ be a bounded open set with smooth boundary $\Gamma$, and consider  the following problem $$(\text{R})\displaystyle \begin{cases} -\Delta u(x)+c(x)u(x) =f(x), &\text{  }x\in\Omega \\ \dfrac{\partial u}{\partial \nu}(x)+\alpha u(x) =g(x), & x\in\Gamma \end{cases}, $$ where ${\alpha>0}$ is a constant. This is a problem with Robin boundary conditions . If $f\in L^2(\Omega), g\in L^2(\Gamma)$ and $c\in L^\infty(\Omega)$ satisfy $c(x)\geq c_0>0$, 
+ I must prove that (R) is a well posed problem which has a unique weak solution. As usual, one wants to use the Lax-Milgram theorem, so I must seek for a bilinear form $B\colon V\times V\to \mathbb R$ which is continuous and coercive. I don't have issues with proving that such $B$ is continous and coercive, but I get confused at the moment of proposing it (as well as chosing the appropiate space, I think that $V$ must be $H^1(\Omega )$). Is there some compatibility condition ? I'm thinking in proposing $B$ as
+$$B(u, v):=\int_\Omega  \nabla u\cdot \nabla v+\int_\Omega cuv+\alpha\int_{\Gamma }uv,$$ 
+and so we want an unique $u\in V$ such that for all $v\in V$
+$$B(u, v)=\int_\Omega  fv+\int_{\Gamma }gv.$$ Is this right? Can you help me in reasoning the formulation of this problem?
+  What is the appropiate choice of $V$? Thanks in advance, this is my first time solving these kind of problems","['partial-differential-equations', 'elliptic-equations', 'functional-analysis', 'calculus-of-variations', 'sobolev-spaces']"
+2607011,"Value of $\lim\limits_{n\rightarrow \infty}\frac{1}{n}\int^\pi_0 \lfloor n \sin x \rfloor \, dx$","Finding value of $\displaystyle \lim_{n\rightarrow \infty}\frac{1}{n}\int^{\pi}_{0}\lfloor n \sin (x) \rfloor \,dx$ Try: In $0 \leq x<\pi$.  Then $0 \leq\sin (x) \leq 1$. So $0 \leq n\sin (x) \leq n$ So  $$\lim_{n\rightarrow \infty}\frac{1}{n}\bigg(0+1+2+3+\cdots +n-1\bigg)=\lim_{n\rightarrow \infty}\frac{n(n+1)}{2n}$$ What is wrong in my solution?  Help me to solve it.  Thanks.",['limits']
+2607030,Show joint cdf is continuous,"Let $X$ have a standard normal distribution and let $Y=2X$. Show the cdf $F(x, y)$ of $(X, Y)$ is continuous. I have attempted this below, but I think I am pretty far off track. $$F_{XY}(x, y) = P(X \le x, 2X \le y) = P(X \le (x \wedge \frac{y}{2}))$$ $$
+\Phi(x) = F_{XY}(x, y) = \begin{cases} \frac{1}{\sqrt{2\pi}}\int_{-\infty}^xe^\frac{-z^2}{2}\text{d}z, \quad\text{ if } x \le \frac{y}{2}\\ \frac{1}{\sqrt{2\pi}}\int_{-\infty}^x e^\frac{-z^2}{8}\text{d}z, \quad\text{ if } x > \frac{y}{2} \end{cases}
+$$ $$
+\frac{1}{\sqrt{2\pi}}\int_{-\infty}^xe^\frac{-z^2}{2}\text{d}z = \frac{\operatorname{erf}(\frac{x}{\sqrt{2}})}{2}+1
+$$ $$
+\frac{1}{\sqrt{2\pi}}\int_{-\infty}^xe^\frac{-z^2}{8}\,\text{d}z = \operatorname{erf} \left(\frac{x}{2^\frac{3}{2}}\right)
+$$ $$
+\operatorname{erf}(x) \text{ continuous } \implies F_{XY}(x,y) \text{ continuous }
+$$","['continuity', 'statistics', 'normal-distribution']"
+2607043,Proving that $\int_{0}^{+\infty}e^{ix^n}\text{d}x=\Gamma\left(1+\frac{1}{n}\right)e^{i\pi/2n}$,"I've shown that for all $p \in \mathbb{R}^{*+}$
+$$\int_{0}^{+\infty}e^{-x^p}\text{d}x=\Gamma\left(1+\frac{1}{p}\right)$$
+And I want to show that 
+$$
+\int_{0}^{+\infty}e^{ix^n}\text{d}x=\Gamma\left(1+\frac{1}{n}\right)e^{i\pi/2n}
+$$
+Is that possible with a simple change of variable ?","['fresnel-integrals', 'integration', 'gamma-function']"
+2607060,"Proof check - If two sequences A and B are equivalent, then the first one is a Cauchy sequence if and only if the second one is a Cauchy sequence too","Could someone check this proof? Definitions : Equivalence : Two sequences are equivalent iff, for any $\varepsilon > 0$,there exists an $N$ such that for $n \geq N$, $|a_n - b_n| < \varepsilon$. Cauchy Sequence : $(b_n)_{n=1}^\infty$  is a Cauchy sequence iff, for any $\varepsilon > 0$, there exists an $N$ such that $j,k \geq N$ implies $|a_j - a_k| < \varepsilon$. Proposition : Show that, if two sequences $(a_n)_{n=1}^\infty$  and $(b_n)_{n=1}^\infty$ are equivalent, then $(a_n)_{n=1}^\infty$ is a Cauchy sequence if and only if $(b_n)_{n=1}^\infty$ is a Cauchy sequence too. Proof : Let $(a_n)_{n=1}^\infty$  and $(b_n)_{n=1}^\infty$  be equivalent and assume $(a_n)_{n=1}^\infty$ is a Cauchy sequence. As both sequences are equivalent, for some n and for any $\varepsilon$ , we have $$|a_n - b_n| + | b_{n+1} - a_{n+1}| + |a_{n+1} - a_n | < \varepsilon$$ By the triangle inequality theorem, $$|a_n - b_n + b_{n+1} - a_{n+1} + a_{n+1} - a_n|  =  |b_{n+1} - b_n| <\varepsilon $$ We could show that, if  $(b_n)_{n=1}^\infty$ is a Cauchy sequence, then $(a_n)_{n=1}^\infty$ is a Cauchy sequence too, by a reciprocal argument. $\blacksquare$","['real-analysis', 'cauchy-sequences', 'proof-verification']"
+2607077,Willmore energy of revolution torus,"I would like to know if it is possible to prove the Willmore Conjecture over the particular case of a revolution torus having the knowledge of a first course in differential geometry. Suppose $0 < r < a$ and let $T(a,r)$ be a revolution torus made by rotating over the Z axis the circumference $\mathbb{S}^1(a,r)$ in the plane $\{y = 0\}$. There is an almost everywhere parameterization $X\colon ]0,2\pi[\times ]0,2\pi[ \to \mathbb{R}^3$, given by $$ X(u,v) = ((a+r\cos u)\cos v, (a + r \cos u) \sin v, r \sin u). $$ So, the Willmore energy over $T(a,r)$ will be given by the expression $$ \int_{T(a,r)}H^2 = \int_{]0,2\pi[\times ]0,2\pi[}(H^2 \circ X) |X_u \wedge X_v|, $$ where $H$ is the mean curvature function. We can calculate the coefficientes of the first fundamental form.
+$$ E(u,v) = |X_u|^2 = r^2 $$
+$$ F(u,v) = \langle X_u, X_v \rangle = 0 $$
+$$ G(u,v) = |X_v|^2 = (a + r\cos u)^2 $$ We call $\alpha(u,v) = \sqrt{EG-F^2}(u,v) = r(a+r\cos u)$. We can then calculate the coefficients of second fundamental form. $$e(u,v) = \frac{1}{\alpha}\det(X_u,X_v,X_{uu})(u,v) = r$$
+$$f(u,v) = \frac{1}{\alpha}\det(X_u,X_v,X_{uv})(u,v) = 0$$
+$$g(u,v) = \frac{1}{\alpha}\det(X_u,X_v,X_{vv})(u,v) = \cos u(a + r\cos u).$$ We have then,
+$$ (H \circ X)(u,v) = \frac{1}{2}\frac{eG+gE-2fF}{EG-F^2}(u,v) = \frac{1}{2}\frac{r(a+r\cos u)^2+r^2\cos u (a + r \cos u)}{r^2 (a + r \cos u)^2} = \frac{a+2r\cos u}{r(a+r\cos u)}. $$ Since $(H^2 \circ X) = (H \circ X)^2$ and $|X_u \wedge X_v|^2 = |X_u|^2 |X_v|^2 - \langle X_u,X_v \rangle^2 = EG - F^2$, and then $|X_u \wedge X_v| = \alpha$, we finally obtain $$ \int_{T(a,r)} H^2 = \int_{]0,2\pi[\times]0,2\pi[} \frac{(a + 2r\cos u)^2}{r(a+r\cos u)} d(u,v) = \frac{2\pi}{r}\int_{0}^{2\pi}\frac{(a + 2r\cos u)^2}{a+r\cos u} du  .$$ I'm stuck at this point. I have tried the change $u = 2 \arctan t$, but I haven't been able to compute that integral. Is this way right to calculate Willmore energy for this kind of torus? If so, how can I continue? Thanks in advance.","['surface-integrals', 'solid-of-revolution', 'integration', 'differential-geometry']"
+2607121,Linearity of pushforward of tangent vectors and differentiability,"Let $f:U\to V$ be a continuous map of open subsets of Euclidean spaces $U\subset\mathbb R^m,V\subset\mathbb R^n$. Suppose: For every differentiable curve $\gamma$ in $U$ based at $p\in U$ the composite $f\circ \gamma$ is a differentiable curve in $V$ based at $fp$. There's a well-defined assignment $\gamma^\prime(0)\mapsto (f\circ \gamma)^\prime(0)$ which is moreover a linear map $\mathbb R^m=\mathrm T_pU\to \mathrm T_{fp}V=\mathbb R^n$. Does it follow that $f$ is differentiable at $p$? Example 3.3 of Kriegl and Michor's The Convenient Setting of Global Analysis provides a non-differentiable function $\mathbb R^2\to \mathbb R^2$ satisfying the first condition, but it does not seem to satisfy the second.","['derivatives', 'differential-geometry', 'calculus']"
+2607147,"Is there a Pythagorean triple whose angles are 90, 45, and 45 degrees?","Is there a Pythagorean triple (a.k.a. an integer triangle) whose angles are 90, 45 and 45 degrees? I am trying to connect LEGO roads at angles other than the standard 90 degrees.","['pythagorean-triples', 'geometry']"
+2607163,How to determine if a point lies on the same side of the plane that origin does?,"I'm puzzled by this problem - determine whether the point $A = (2, -1, 1)$ lies on the same side of the plane $5x-3y+z-18=0$  that the origin point $O$ = (0, 0, 0) does. How to approach this?","['linear-algebra', 'analytic-geometry']"
+2607203,Sufficiently large integers can be partitioned into squares of distinct integers whose reciprocals sum to 1.,"OEIS sequence A297895 describes Numbers that can be partitioned into squares of distinct integers whose reciprocals sum to 1. 1, 49, 200, 338, 418, 445, 486, 489, 530, 569, 609, 610, 653, 770, 775, 804, 845, 855, 898, 899, 939, 978, 1005, 1019, 1049, 1065, 1085, 1090, 1134, 1194, 1207, 1213, 1214, 1254, 1281, 1308, 1356, 1374, 1379, 1382, 1415, 1434, 1442, 1457, 1458, 1459, 1475, 1499, 1502, 1522, 1543, 1566, 1570, 1582 For example, $$
+  49 = 2^2 + 3^2 + 6^2 \text{ and } \frac{1}{2} + \frac{1}{3} + \frac{1}{6} = 1;\\
+  200 = 2^2 + 4^2 + 6^2 + 12^2 \text{ and } \frac{1}{2} + \frac{1}{4} + \frac{1}{6} + \frac{1}{12} = 1.
+$$ The author claims that All integers $\geq 8543$ belong to this sequence. What is a proof (or even a heuristic) that explains why this is the case?","['oeis', 'egyptian-fractions', 'discrete-mathematics']"
+2607230,Why is there no product/quotient rule for integration?,"So it's known that there's no product rule and quotient rule for integration. But is there a reason why they don't exist, and the rules exist for differentiation?","['derivatives', 'integration', 'calculus']"
+2607320,Is there an easy way to decide the sign of $\sqrt x \ln (x + 1) - \sqrt {x + 1} \ln x$?,"Is there an easy way to decide the sign of $\sqrt x \ln (x + 1) - \sqrt {x + 1} \ln x$? The original problem is to decide when ${(n + 1)^{\sqrt n }}$ is greater than ${n^{\sqrt {n + 1} }}$. It seems that the function is monotonic and has a unique root near $x=6.9$, but I wonder how to decide its sign explicitly since the derivative is a little bit complex. Any help will be appreciated:)","['real-analysis', 'inequality', 'functions', 'calculus', 'analysis']"
+2607332,Prove that there is no subgroup of index $6$ in a simple group of order $240$,"Let $G$ be a group of order $240=2^4\cdot 3\cdot 5$ . Assume $G$ is simple, then show that there is no subgroup of index 2, 3, 4 or 5 show that there is no subgroup of index 6 For the first item, the usual method seems to work: Let $H\leq G$ where $[G:H] = 5$ then let $G$ act on the set of right cosets of $H$ by right multiplication. Assume $\phi: G\to S_5$ to be its permutation representation. Since $G$ is simple this $\phi$ must be one-to-one which implies $G\cong \mathrm{im}(\phi) \leq G$ . But this is impossible since $|S_5| = 5!=120$ while $|G|=240$ . For the second item. Let once again $H\leq G$ such that $[G:H] = 6$ . Repeating the same argument does not work here, since $240 = |G| \leq |S_6| = 720$ . Any ideas on how to proceed? I prefer hints to complete solutions. Perhaps I could use the theorem $[G:H] = [G:K]\cdot [K:H]$ if I would find a $K$ such that $H\leq K\leq G$ . (I doubt it though)","['abstract-algebra', 'simple-groups']"
+2607403,A Combination of Graph Theory and Number Theory,"Let $d_n$ be the number of distinct simple connected graphs on the same set of $n$ vertices, where two simple connected graphs $G_1$ and $G_2$, on the same set of $n$ vertices, are said to be distinct if there exists at least one pair of vertices $(x,y)$ such that $x$ and $y$ is connected by an edge in $G_1$ but not in $G_2$. Now suppose that $p$ is an $odd$ $prime$ and $n=p+1$ Hence prove that $d_n^2\equiv 1$ (mod $p$).","['graph-theory', 'elementary-number-theory', 'combinatorics', 'contest-math', 'discrete-mathematics']"
+2607417,Prove $a^2+b^2+c^2\gt \frac {1}{2018}$ given $\left({3a + 28b + 35c}\right)\left({20a + 23b +33c}\right) = 1$ [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 6 years ago . Improve this question Let $a, b, c$ be real numbers such that $\left({3a + 28b + 35c}\right)\left({20a + 23b +33c}\right) = 1$. Prove that $a^2+b^2+c^2\gt \frac {1}{2018}$. It looks like an easy question, but I thought for a while and could not figure it out. Can anyone give me some hints? Thank you.","['inequality', 'cauchy-schwarz-inequality', 'discrete-mathematics']"
+2607449,Directional derivative: what is the relation between definition by limit and definition as dot product?,"I'm trying to get intuition about why gradient is pointing to the direction of the steepest ascent. I got confused because I found that directional derivative is explained with help of gradient and gradient is explained with help of directional derivative. Please explain what are the exact steps that lead from 
+directional derivative defined by the limit $\nabla_{v} f(x_0) = \lim_{h\to 0} \frac{f(x_0+hv)-f(x_0)}h$ to directional derivative defined as dot product of gradient and vector $\nabla_{v} f(x_0) = \nabla f(x_0)\cdot{v}$ ? In other words how to prove the following? $$\lim_{h\to 0} \frac{f(x_0+hv)-f(x_0)}h = \nabla f(x_0)\cdot{v}$$","['derivatives', 'linear-algebra', 'vector-analysis']"

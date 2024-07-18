@@ -1,0 +1,447 @@
+question_id,title,body,tags
+155265,How to solve $y=\frac{(x-\sin x)}{ (1-\cos x)}$,"I only see numerical approaches to solve this equation. Is there an analytical solution to solve $x$ as a function of $y$ for the range $(0,2 \pi)$? If there is no solution, is it possible to proof it?",['analysis']
+155266,Reducing a fraction?,How would I reduce this fraction? $$\frac{km+kn}{n^2+nm}$$ I think it would be $\frac{2k}{n^2}$ but I am not sure.,['algebra-precalculus']
+155272,Zeros in the complex plane and convergence,"I'm doing some number theory which requires some work in $\mathbb{C}$, but unfortunately my complex analysis is a little rusty. A text I am reading states the following: ...and given that $\sum_{\rho}|\rho|^{-2}$ converges, it follows that the product $\prod \limits_\rho (1-\frac{z}{\rho})e^{z/\rho}$ converges to an entire function with zeros at $z=\rho$ and nowhere else. Could anyone explain, preferably without going into too much detail (just refreshing my memory!) why this is? Here, $\rho$ ranges over the set of zeros of an integral function $f: \mathbb{C} \to \mathbb{C}$ of order 1, which is not identically zero. It's obvious that the product is zero at each $\rho$; what do we need to know it converges to an entire function with zeros nowhere else? For convergence, do we simply need to bound the modulus above by some finite value at each $z$? And since it's an infinite product, how do we confirm that it's zero nowhere else; a lower bound of the same manner? Finally, what tells us it is entire? Again, given that it's an infinite product I don't know how trivial that claim is; not very hard I'm sure but perhaps requiring some small justification. As I said, I have probably learned all this at some point in my life so no need for extraordinary detail, just a brief explanation would be very helpful. It all seems vaguely reminiscent of a course I took on Riemann surfaces a few years back. Thanks!","['convergence-divergence', 'products', 'complex-analysis']"
+155274,Poisson summation formula and Schwartz functions,"I am reading a proof of the Poisson summation formula which states that (with my version of the Fourier transform - I think they sometimes vary by a constant factor) for $f$ a Schwartz function on $\mathbb{R}$ (that is, a smooth function with all derivatives of $f(x)$ of all orders decay faster than any polynomial function as $|x| \to \infty$), the following relationship holds: $$\sum \limits_{n \in \mathbb{Z}}f(n) = \sum \limits_{n \in \mathbb{Z}}\hat{f}(2\pi n)$$ where $\hat{f}$ denotes the Fourier transform. The proof goes as follows: define 2 functions on $\mathbb{T} = \{z: |z| = 1\}$ by $F, G: \mathbb{T} \to \mathbb{C}$ by $F(\theta) = \sum \limits_{n \in \mathbb{Z}}\hat{f}(2\pi n) e^{2 \pi i n \theta}$, and $G(\theta) = \sum \limits_{k \in \mathbb{Z}}f(\theta + k)$. Then take Fourier transforms and show they are equal. After showing also that $F$ and $G$ are both Schwartz functions on $\mathbb{T}$, we apply uniqueness of Fourier series to show that $F=G$. Now uniqueness here relies very much on the fact that both $F$ and $G$ are Schwartz functions on $\mathbb{T}$: but a Schwartz function on $\mathbb{T}$ is simply an element of $C^\infty (\mathbb{T})$, i.e. a smooth function on $\mathbb{T}$. So, my question is this: how do we know (or show) that $F$ and $G$ are smooth? It is clear both are periodic, so it will suffice to show smoothness within their respective periods I suppose. $f$ is Schwartz on $\mathbb{R}$ which means it is smooth, but we are taking an infinite sum of translations of $f$, so it is not manifestly clear that either $F$ or $G$ will remain smooth. How do we show this? I guess we need to make use of the fact that at large values $f$ is very fast-decaying to show that most terms are ""insignificant"" in the sums, but whenever I tried to prove the smoothness formally it became messy. Is there a nice trick to showing $F$ and $G$ are smooth on $\mathbb{T}$? I would be very grateful for a proof of the fact. Many thanks in advance.","['fourier-series', 'fourier-analysis', 'derivatives', 'analysis']"
+155282,"What are the $n$-th degree minimal polynomials for $L^p([-1,1])$?","It is known (even by me) that the Chebyshev polynomial of degree $n$ (of the first kind) is the minimal polynomial in the space $L^{\infty}([-1,1])$ for a fixed $n$ and leading coefficient $2^{n-1}$ . However, what are the minimal polynomials for the $p$ -norm in general for a fixed $n$ ? Does there exist a general answer? This is my first question here and I apologize if it is not up to par. Feel free to edit, migrate or close it if necessary.","['normed-spaces', 'measure-theory', 'polynomials']"
+155289,Need help in determining where this pascal's triangle-like sequence comes from.,"I have a very interesting problem in that a program that I am running has generated a sequence of numbers that act like the pascal's triangle but have somehow built more structure into it. I have been puzzling over this for a while now and cant figure out how the sequence works. I have put it half the triangle up to n = 14 so the whole thing should look like: 1 1 2 1 1 3 3 1 ... etc... so notice that the numbers contained within the brackets add up to the right number for the triangle, for n = 4, (2 4) add to 6 and so on. I'm hoping that someone might know where this sequence comes from or how to generalize this solution so that I can calculate the numbers in the triangle for every n. Thanks! (1) (2) (1) (3) (1) (2 4) (4) (1) (5 5) (5) (1) (2 6 12) (6 9) (6) (1) (7 7 21) (7 14) (7) (1) (2 8 24 36) (8 16 32) (8 20) (8) (1) (9 9 54 54) (9 30 45) (9 27) (9) (1) (2 10 40 80 120) (10 25 75 100) (10 50 60) (10 35) (10) (1) (11 11 110 110 220) (11 55 99 165) (11 77 77) (11 44) (11) (1) (2 12 60 150 300 400) (12 36 144 240 360) (12 105 126 252) (12 96 112) (12 54) (12) (1) (13 13 195 195 650 650) (13 91 182 455 546) (13 156 364 182) (13 117 156) (13 65) (13) (1) (2 14 84 252 630 1050 1400) (14 49 245 490 980 1225) (14 196 224 784 784) (14 189 294 504) (14 140 210) (14 77) (14) (1) As per requested, the code written is clojure is: (defn binary? [number]
+  (if (or (= number 0) 
+          (= number 1))
+    true false))
+
+(defn all-binary? [array]
+  (cond (empty? array)          true
+        (binary? (first array)) (all-binary? (rest array))
+        :else                   false ))
+
+(defn select-bit [value position]
+  (bit-and 1 (bit-shift-right value position)))
+
+(defn make-bits [length value]
+  (let [positions (reverse (range length) )]
+    (map select-bit (repeat value) positions)))
+
+(defn make-random-bits [length]
+  (cond (< length 32)
+          (let [random-value (rand-int (bit-shift-left 1 length))]
+            (make-bits length random-value)) 
+    :else
+      (->> #(rand-int 2) repeatedly (take length))))
+
+(defn x! [n j] (make-bits n j))
+
+(defn x->j [x]
+  (let [to-dec (fn [position value] 
+                  (* value (bit-shift-left 1 position)))
+        positions (reverse (range (count x)))]
+    (reduce + (map to-dec positions x))))
+
+(defn f! [n m]
+  (let   [table (-> (bit-shift-left 1 n) (make-bits m) vec)]
+     (fn [x] (nth table (x->j x)))))
+
+((f! 2 4) (x! 2 1))
+
+(defn T! [n m]
+  (let [cyc (fn [X position] 
+              (nth X (mod position (count X))))
+        idx (fn [position n]
+              (range (- (inc position) n) 
+                     (inc position)))
+        sub (fn [X position n]
+              (map #(cyc X %) (idx position n)))
+        f   (f! n m)]
+    (fn [X]
+      (let [sub-arrs (map #(sub X % n) 
+                          (range (count X)))]
+        (vec (map f sub-arrs))))))
+
+ ((T! 2 10) [0 1 0 1 0 1 1 1]) ;;Works
+
+(def q-keys #{:0->0 :0->1 :1->0 :1->1})
+
+(defn- qode-bit [in out]
+  (let [pair [in out]]
+    (cond (= pair [0 0]) :0->0 
+          (= pair [0 1]) :0->1
+          (= pair [1 0]) :1->0
+          (= pair [1 1]) :1->1)))
+
+(defn- patch-q [q]
+  (let [missing?    #(not (contains? q %))
+        all-missing (filter missing? q-keys)
+        filler (zipmap all-missing (repeat 0))]
+    (merge q filler)))
+
+(defn q!
+  ([T X-in]
+    (let [X-out (T X-in)
+          q-arr (map qode-bit X-in X-out)]
+          (-> q-arr frequencies patch-q)))
+  ([T N j] (q! T (x! N j))))
+
+(q! (T! 2 9) [0 1 1 0 0 1 0])
+
+(defn Q!
+  [T N & {track? :track?}]
+    (let [q-fn    #(q! T N %)]
+      (loop [key-set #{} 
+             count-map {} 
+             inputs-map {} 
+             js (range (bit-shift-left 1 N))]
+        (cond
+          (nil? (seq js))
+            (zipmap key-set (map #(hash-map :counts (count-map %)
+                                           :inputs (if track? (inputs-map %) [])) key-set))
+          :else
+            (let [j (first js)
+                  q (q-fn j)
+                  entry? (not (nil? (key-set q)))]
+              (cond entry?
+                  (recur key-set 
+                         (assoc count-map q (inc (count-map q)))
+                         (if track? (assoc inputs-map q (conj (inputs-map q) j)))
+                         (rest js))
+                :else
+                  (recur (conj key-set q)  
+                       (assoc count-map q 1)
+                       (assoc inputs-map q (if track? [j] [ ]))
+                       (rest js)))))))) So: The system is a variant of the cellular automaton... just to explain the code little better: (x! n v) => creates a binary sequence of length N, having a decimal value of v
+(x! 9 7) => (0 0 0 0 0 0 1 1 1)
+
+(f! n m) => constructs a function that takes a sequence 
+         => of length n and looks up the bit value of m
+         => which specifies the type of values that are
+         => given to the output. (more clearly shown in 
+         => the example below)
+(map (f! 2 0) [[0 0] [0 1] [1 0] [1 1]]) => (0 0 0 0)
+(map (f! 2 1) [[0 0] [0 1] [1 0] [1 1]]) => (0 0 0 1)
+(map (f! 2 15)[[0 0] [0 1] [1 0] [1 1]]) => (1 1 1 1)
+
+(T! n m) => generates a cellular automata type transform 
+         => that takes an input sequence X and maps (f! n m)
+         => across every element of X
+((T! 2 7) [1 0 1 0 1 0 1]) => [1 1 1 1 1 1 1]
+((T! 2 10) [1 0 1 0 1 0 1]) => [0 1 0 1 0 1 0]
+
+
+(q! T X-in) => Takes a transform and a sequence and looks at
+            => changes between the input and the output bits
+(q! (T! 2 7) [0 1 1 0 0 1 0]) => {:1->0 0, :0->0 2, :1->1 3, :0->1 2}
+(q! (T! 2 10) [1 0 1 0 1 0 1]) => {:0->0 0, :1->1 0, :0->1 4, :1->0 3} Now: (Q! T N) => does a summary of mapping T to possible values of an N length
+         => sequence (from 0 to 2^N-1)
+
+(Q! (T! 2 3) 5) => {{:0->0 0, :0->1 1, :1->0 1, :1->1 3} {:counts 5, :inputs [15 23 27 29 30]},
+     {:0->1 1, :0->0 1, :1->0 1, :1->1 2} {:counts 5, :inputs [7 14 19 25 28]},
+     {:0->1 1, :0->0 2, :1->0 1, :1->1 1} {:counts 5, :inputs [3 6 12 17 24]},
+     {:1->1 0, :0->1 1, :0->0 3, :1->0 1} {:counts 5, :inputs [1 2 4 8 16]},
+     {:0->0 0, :1->0 0, :0->1 0, :1->1 5} {:counts 1, :inputs [31]},
+     {:0->0 0, :0->1 2, :1->0 2, :1->1 1} {:counts 5, :inputs [11 13 21 22 26]},
+     {:1->1 0, :0->1 2, :0->0 1, :1->0 2} {:counts 5, :inputs [5 9 10 18 20]},
+     {:1->0 0, :1->1 0, :0->1 0, :0->0 5} {:counts 1, :inputs [0]}} (Q! (T! 2 3) 6) => {{:0->0 0, :0->1 1, :1->0 1, :1->1 4} {:counts 6, :inputs [31 47 55 59 61 62]},
+    {:0->0 0, :1->1 0, :0->1 3, :1->0 3} {:counts 2, :inputs [21 42]},
+    {:1->1 0, :0->1 1, :0->0 4, :1->0 1} {:counts 6, :inputs [1 2 4 8 16 32]},
+    {:0->0 0, :1->0 0, :0->1 0, :1->1 6} {:counts 1, :inputs [63]}, 
+    {:0->0 0, :0->1 2, :1->0 2, :1->1 2} {:counts 9, :inputs [23 27 29 43 45 46 53 54 58]},
+    {:0->1 2, :0->0 1, :1->0 2, :1->1 1} {:counts 12, :inputs [11 13 19 22 25 26 37 38 41 44 50 52]},
+    {:1->1 0, :0->1 2, :0->0 2, :1->0 2} {:counts 9, :inputs [5 9 10 17 18 20 34 36 40]},
+    {:1->0 0, :1->1 0, :0->1 0, :0->0 6} {:counts 1, :inputs [0]},
+    {:0->1 1, :0->0 3, :1->0 1, :1->1 1} {:counts 6, :inputs [3 6 12 24 33 48]},
+    {:0->1 1, :0->0 2, :1->0 1, :1->1 2} {:counts 6, :inputs [7 14 28 35 49 56]},
+    {:0->1 1, :0->0 1, :1->0 1, :1->1 3} {:counts 6, :inputs [15 30 39 51 57 60]}} And so on. I have grouped the inputs together into different counts using a pattern I discovered about the inputs and came up with a triangle. I'm hoping someone can cast a bit of light on what is happening! When I turn the inputs into a binary string, I get these groupings that correspond to elements in the triangle. It seems that these groups grow a certain way, but I'm not a mathematician and so are not good and generalising patterns. For N=5
+ id  count      indices 
+ 0      1       [ 00000 ]
+ 1      5       [ 00001 00010 00100 01000 10000 ]
+ 2      5       [ 00011 00110 01100 10001 11000 ]
+ 3      5       [ 00101 01001 01010 10010 10100 ]
+ 4      5       [ 00111 01110 10011 11001 11100 ]
+ 5      5       [ 01011 01101 10101 10110 11010 ]
+ 6      5       [ 01111 10111 11011 11101 11110 ]
+ 7      1       [ 11111 ]
+
+For N=6
+ id  count      input 
+ 0      1       [ 000000 ]
+ 1      6       [ 000001 000010 000100 001000 010000 100000 ]
+ 2      6       [ 000011 000110 001100 011000 100001 110000 ]
+ 3      9       [ 000101 001001 001010 010001 010010 010100 100010 100100 101000 ]
+ 4      6       [ 000111 001110 011100 100011 110001 111000 ]
+ 5      12      [ 001011 001101 010011 010110 011001 011010 100101 100110 101001 101100 110010 110100 ]
+ 6      6       [ 001111 011110 100111 110011 111001 111100 ]
+ 7      2       [ 010101 101010 ]
+ 8      9       [ 010111 011011 011101 101011 101101 101110 110101 110110 111010 ]
+ 9      6       [ 011111 101111 110111 111011 111101 111110 ]
+ 10     1       [ 111111 ]
+
+For N=7
+ id  count      input
+ 0      1       [ 0000000 ]
+ 1      7       [ 0000001 0000010 0000100 0001000 0010000 0100000 1000000 ]
+ 2      7       [ 0000011 0000110 0001100 0011000 0110000 1000001 1100000 ]
+ 3      14      [ 0000101 0001001 0001010 0010001 0010010 0010100 0100001 0100010 0100100 0101000 1000010 1000100 1001000 1010000 ]
+ 4      7       [ 0000111 0001110 0011100 0111000 1000011 1100001 1110000 ]
+ 5      21      [ 0001011 0001101 0010011 0010110 0011001 0011010 0100011 0100110 0101100 0110001 0110010 0110100 1000101 1000110 1001001 1001100 1010001 1011000 1100010 1100100 1101000 ]
+ 6      7       [ 0001111 0011110 0111100 1000111 1100011 1110001 1111000 ]
+ 7      7       [ 0010101 0100101 0101001 0101010 1001010 1010010 1010100 ]
+ 8      21      [ 0010111 0011011 0011101 0100111 0101110 0110011 0110110 0111001 0111010 1001011 1001101 1001110 1010011 1011001 1011100 1100101 1100110 1101001 1101100 1110010 1110100 ]
+ 9      7       [ 0011111 0111110 1001111 1100111 1110011 1111001 1111100 ]
+ 10     7       [ 0101011 0101101 0110101 1010101 1010110 1011010 1101010 ]
+ 11     14      [ 0101111 0110111 0111011 0111101 1010111 1011011 1011101 1011110 1101011 1101101 1101110 1110101 1110110 1111010 ]
+ 12     7       [ 0111111 1011111 1101111 1110111 1111011 1111101 1111110 ]
+ 13     1       [ 1111111 ]","['permutations', 'number-theory', 'combinatorics']"
+155290,response of unit step input in harmonically oscillating system,"As far as I've understood or misunderstood in constant coefficient second order differential equation 
+$$\frac{d^2y}{dt^2} + b \frac{dy}{dt} +cy = ef(t)$$
+$b$, $c$ being constants,
+$f(t)$ the input to the system,
+$y$ being response of the system. Let, $$\frac{d^2y}{dt^2}  +\omega_0^2y = u(t)k$$
+such that $k$ is non zero be a system and $u(t)$ a unit step function. How to physically visualize this system(or input to the system), isn't the $u(t)$ like applying constant force to the system? Will it not bring the system to halt after certain time? 
+Like if we keep poking a mass-spring system with constant force only in one direction?? But the solution seems different . Please Help me to clear this simple misconception. Thanks you!!",['ordinary-differential-equations']
+155296,Distribution of the sample mean of a exponential,"I please ask someone to check if my calculations are right. I have $X_1, ..., X_n$ from a $\mathcal{E}(\lambda): f(x, \lambda) = \lambda e^{-\lambda x}$. I have to find the $k$ such that $P(\bar{X} \le k) = \alpha$, where $\bar{X}$ is the sample mean; i did:
+$$Y=\sum_{i = 1}^{n} X_i$$
+$$Y \sim \Gamma (n, \lambda)$$ 
+$$\bar{X} = \frac{1}{n} Y \sim \Gamma(n, \frac{\lambda}{n})$$
+$$T = 2\frac{n}{\lambda} \bar{X} \sim \Gamma(\frac{2n}{2}, 2) \stackrel{d}{=}\chi^2 (2n) $$
+$$P(\bar{X} \le k) = P(T \le k' = 2\frac{n}{\lambda} k) = \alpha $$ Then i can find the value of $k'$ from the table, and finally find $k$. I'm i missing something? (I can't reach the result stated by the book). Thank you very much.",['statistics']
+155297,"Can one construct a ""Cayley diagram"" that lacks only an inverse?","My group theory text asks for an example of a Cayley-like diagram that exhibits all the properties of a group except ( only ) that at least some elements lack an inverse. Is it possible to construct such a diagram? Nathan Carter p. 24 Question 2.15. in Visual Group Theory (in the context of this question) defines a group as a ""collection of actions"" that satisfies four rules: There is a predefined list of actions [generators] that never changes. Every action is reversible. Every action is deterministic. Any sequence of consecutive actions is also an action. Clearly (2) will be violated in any diagram that is constructed by adding new node, $n$, to the diagram for a group $G$ by one-way arrows for each of the generators in $G$, since it provides no way to reach $n$ from any other nodes, so that paths starting at $n$ (only) cannot be reversed. This will be the case regardless of what nodes in $G$ each of the arrows from $n$ lead to. For example, starting with $G=D_4$: But, while this diagram satisfies rules (1) and (4), doesn't it also violate (3) because, for example, $r^4=e$ and (starting from $n$) $r^4=r^{-1}$ even though $r^{-1}\neq e$? EDIT: As discussed below, this figure does not, in fact, violate (3): the $r^{-1}$ mentioned above (the one starting at $n$) does not exist. Also, it does matter where the arrows from $n$ are connected: they must be connected to $G$ in a way that follows $G$'s rules. In the diagram above, for example, if the dotted path had been chosen for $f$ instead of the one indicated, the diagram would violate (3). Rule (3) will always be satisfied in a diagram where the connections from the added node replicate outgoing connections from a node in $G$ (here $m$). The answer provided in the book's key focuses on the fact that (2) requires that any diagram ...cannot have two arrows of the same type pointing to the same destination from two different sources. However, while this is certainly a property of (all?) diagrams (including the one above) that violate (2), it is not sufficient to violate (2), and can result in the violation of other rules instead. For example simply ""rewiring"" one of the cyclic actions in $D_4$ so that it points ""to the same destination from two different sources"" can produce a diagram that satisfies, (2) but violates (3): The example offered in the key, violates not only (2), but (3) and (4) as well: Is it possible to construct a diagram that satisfies rules (1), (3), and (4) while violating (2)?","['group-theory', 'visualization']"
+155308,"How to Prove ($\mathbb{C}\langle x, y \rangle$, $\|\cdot\|$) is a Banach Space","Let $\mathbb{C}\langle x,y\rangle$ be the group ring of the complex numbers over the free group in $x,y$. Let $len : \langle x,y \rangle \rightarrow \mathbb{N}$ denote the standard word norm and let $\varphi=exp \circ len: \langle x, y \rangle \rightarrow [1,\infty)$. Define the following norm for $\displaystyle \alpha=\sum_{g \in \langle x,y\rangle} a_{g}g \in \mathbb{C}\langle x,y \rangle$: $$\|\alpha\|=\sum_{g \in \langle x, y \rangle} |a_{g}|\varphi(g)$$ It's not hard to show that $\|\cdot\|$ is indeed a norm and in fact for all $\alpha, \beta \in \mathbb{C}\langle x, y \rangle$ we have $\|\alpha\beta\| \le \|\alpha\|\cdot\|\beta\|$. The natural involution $\displaystyle ^{*}:\sum_{g \in \langle x, y \rangle}a_{g}g \mapsto \sum_{g \in \langle x, y \rangle} \overline{a_{g}}g^{-1}$ has the properties that would make $(\mathbb{C}\langle x, y \rangle,\|\cdot\|,^{*})$ into a Banach *-algebra , including $\|\alpha\|=\|\alpha^{*}\|$. My question is this: Is $\mathbb{C}\langle x, y \rangle$ complete with respect to $\|\cdot\|$? I stumbled upon this while working on an undergrad research project but haven't had any functional analysis, so I'm not sure how to go about proving/disproving this. Any help/references would be greatly appreciated.","['banach-algebras', 'functional-analysis', 'banach-spaces']"
+155310,A trigonometric series,"Let $\alpha$ be a real number. I'm asked to discuss the convergence of the series 
+$$
+\sum_{k=1}^{\infty} \frac{\sin{(kx)}}{k^\alpha}
+$$
+where $x \in [0,2\pi]$. Well, I show you what I've done: if $\alpha \le 0$ the series cannot converge (its general term does not converge to $0$ when $k \to +\infty$) unless $x=k\pi$ for $k=0,1,2$. In other words, if $\alpha \le 0$ there is pointwise convergence only in $x=0,\pi,2\pi$. if $\alpha \gt 1$, I can use the Weierstrass M-test to conclude that the series is uniformly convergent hence pointwise convergent for every $x \in [0,2\pi]$. Moreover the sum is a continuous function in $[0,2\pi]$. Would you please help me in studying what happens for $\alpha \in (0,1]$? Are there any useful criteria that I can use? Does the series converge? And what kind of convergence is there? In case of non uniform but pointwise convergence, is the limit function continuous? Thanks.",['sequences-and-series']
+155319,An irreducible polynomial of degree coprime to the degree of an extension is irreducible over this extension,"I'm having a hard time showing this: If $K$ is an extension of $\mathbb{Q}$ with degree $m$ and $f(x)$ an irreducible polynomial over the rationals with degree $n$, such that $\gcd(m, n)=1$, then $f(x)$ is irreducible over $K$. I have tried it by writing $f(x)=a(x)b(x)$ and then looking at the coefficients of those polynomials (some of them must belong to $K-\mathbb{Q}$ which could possibly result in a contradiction) to no success. I have no idea where to use the hypothesis of m and n being relatively prime. Any help would be appreciated.","['irreducible-polynomials', 'abstract-algebra']"
+155320,Evaluating $ \lim_{n\rightarrow\infty} n \int_{0}^{1} \frac{{x}^{n-2}}{{x}^{2n}+x^n+1} \mbox {d}x$,Evaluating $$L = \lim_{n\rightarrow\infty} n \int_{0}^{1} \frac{{x}^{n-2}}{{x}^{2n}+x^n+1} \mbox {d}x$$,"['calculus', 'integration', 'real-analysis', 'limits']"
+155323,Why does $\cos (\pi\cos (\pi \cos (\log (20+\pi)))) \approx -1$,I read on Wikipedia that $$\cos (\pi\cos (\pi \cos (\log (20+\pi)))) \approx -1$$ to a high degree of accuracy.  Why is this true?  Is this pure coincidence or is there some mathematical background?,"['pi', 'trigonometry', 'approximation', 'logarithms']"
+155324,How to find the function $f$ using this equation?,Assume that we have a function $f:\mathbb{R}^+\rightarrow\mathbb{R}^+$ and $D$ a constant. How can we solve the following equation for $f$: $$ \int^{b}_{x_2=a} \int^{b}_{x_1=a} \frac{1}{(f(x_1)+f(x_2))^2}d x_1 d x_2 = D  \log(\tfrac{b}{a})$$ where $0<a<b$. Thanks.,"['integration', 'analysis']"
+155348,Theorem of liouville,"Consider two entire functions with no zeroes and having a ratio equal to unity at infinity. Use Liouville’s Theorem to show that they are in fact the same function. My attempt
+Consider $h(z) = f(z)/g(z)$.
+First of all, $h$ is entire, since $f$ and $g$ are entire, and $g(z)$ is nonzero for all $z$ in $\mathbb{C}$. The fact that $\lim_{z→\infty} h(z) = \lim_{z→\infty} f(z)/g(z) = 1$ suggests that $h(z)$ is bounded as well. Why: Since $\lim_{z→\infty} f(z)/g(z) = 1$, there exists $N > 0$ such that $|f(z)/g(z) - 1| < 1$ for all $|z| > N$.
+(Note that I am taking $\epsilon = 1$ for concreteness.) Then, $|f(z)/g(z) - 1| \geq ||f(z)/g(z)| - 1|$
+$\implies ||f(z)/g(z)| - 1| < 1$
+$\implies |f(z)/g(z)| - 1 < 1$ or $1 - |f(z)/g(z)| < 1$
+$\implies 0 < |f(z)/g(z)| < 2$. That is, $|f(z)/g(z)|$ is bounded above by $2$ for $|z| > N$.
+Moreover, we know that $|f(z)/g(z)|$ has a maximum $M$ on $|z| \leq N$ by maximum modulus principle (or simply from $|z| \leq N$ being compact). Hence, $|f(z)/g(z)|$ is bounded above by $\max \{2, M\}$ for all z in $\mathbb{C}$. Hence, $h(z)$ is constant by Liouville's Theorem, i.e. $h(z) = f(z)/g(z) = c$ for some constant $c$. Since this is true for all $z$ in $\mathbb{C}$, taking the limit as $z\to \infty$ yields $c = 1$.
+Hence $f(z) = g(z)$ for all $z$ in $\mathbb{C}$. Is correct my work?",['complex-analysis']
+155366,Theorem about two real numbers,"My question is:
+$a,b$ are two positive real numbers such that their product is constant,equal to $k$ say. Prove: the sum $a+b$ is minimum if and only if $a = b= \sqrt k$. Can this be solved using $A.M.-\;G.M.$ inequality? If yes,then I would like to know it that way too.","['a.m.-g.m.-inequality', 'algebra-precalculus', 'proof-writing']"
+155383,Is $r=2\cos(\theta)$ a one-petal polar function?,"I'm currently learning about polar functions and their graphs in precalculus, and one of the questions on my homework is to identify the shape of the function $r=2\cos(\theta)$. We were taught that functions in the form $r=a\cos(n\theta)$ where $a>0$ are roses. So, were $a=2$ and $n=1$, wouldn't it form this function and be rose? I ask because the graph is a perfect circle centered at polar coordinates (1,0).","['plane-curves', 'polar-coordinates', 'algebra-precalculus']"
+155385,Coin Toss Probability Question (Feller),"I'm working out of Feller's ""Introduction to Probability and its Application (Vol I.)"" textbook and I'm stuck on a coin toss problem. I'll list the full problem and show where I'm having trouble. A coin is tossed until for the first time the same result appears twice in succession. To every possible outcome requiring n tosses attribute probability 1/$2^{n-1}$. Describe the sample space. Find the probability of the following events: a.) the experiment ends before the sixth toss, b.) an even number of tosses is required. Alright so I'm not having any trouble describing the sample space and completing part a. This first part was solved by creating a possibility tree and adding up the probabilities (answer: 15/16). However, I'm stuck on part b and I don't understand how the 1/$2^{n-1}$ given in the problem is to be interpreted because if you toss the coin twice it makes it seem like HH, and TT each have a probability of 1/2 which is not the case. The sample space of two tosses would be {HH, HT, TH, TT} and each would have a probability of 1/4 and following this logic I arrived at 15/16 so I believe this is the correct thinking which makes the problem even more confusing. The answer to part b is 2/3 so I'm not sure if that will help. Thanks for any help.","['probability-theory', 'probability']"
+155392,Existence of valuation rings in an algebraic function field of one variable,"The following theorem is a slightly modified version of Theorem 1, p.6 of Chevalley's Introduction to the theory of algebraic functions of one variable.
+He proved it using Zorn's lemma.
+However, Weil wrote, in his review of the book, that this can be proved without it.
+I wonder how. Theorem Let $k$ be a field.
+Let $K$ be a finitely generated extension field of $k$ of transcendence degree one.
+Let $A$ be a subring of $K$ containing $k$.
+Let $P$ be a prime ideal of $A$.
+Then there exists a valuation ring $R$ of $K$ dominating $A_P$. EDIT Weil wrote: One might observe here that, in a function-field of dimension 1, every valuation-ring is finitely generated over the field of constants, and therefore , if a slightly different arrangement had been adopted, the use of Zorn's lemma (or of Zermelo's axiom) could have been avoided altogether; since Theorem 1 is formulated only for such fields, this treatment would have been more consistent, and the distinct features of dimension 1 would have appeared more clearly. EDIT We can assume that $A$ contains a transcendental element $x$ over $k$(otherwise the theorem would be trivial).
+If $A$ is finitely generated over $k$, we can prove the theorem without using Zorn's lemma;
+It is well known that the integral closure $B$ of $A$ in $K$ is finitely generated as an $A$-module. Hence $B$ is Noetherian and integrally closed.
+We can assume $P ≠ 0$.
+Since $B$ is integral over $A$, there exists a prime ideal ideal $M$ of $B$ which lies over $P$.
+Since $B$ is Noetherian, this can be proved without Zorn's lemma.
+Since dim $B$ = 1, $B_M$ is a discrete valuation ring dominating $A_P$.
+I wonder if Weil was talking about this case. EDIT [July 10, 2012]
+As the answers to this question show, the following line in the above is wrong: ""Since $B$ is Noetherian, this can be proved without Zorn's lemma.""
+Surely this can be proved without Zorn's lemma, but it's not because $B$ is Noetherian, but because $B$ is finitely generated as an $A$-module. EDIT [July 13, 2012]
+I think I solved the problem.
+However, I don't think this is how Weil did.
+I guess his proof was simpler.","['commutative-algebra', 'algebraic-geometry']"
+155393,Relation between zeta value and genus of modular curve,"This question is sort of vague, so I don't mind a vague answer. We have the special value formula $\zeta(-1)=-B_2/2 = -1/12$, where $\zeta$ is the Riemann zeta function. Also, the ""genus"" of the level 1 modular curve $X(1)$ is $1/12$, where genus is meant in the sense of orbifolds. Is this just a numerical coincidence, or is there a deeper underlying phenomenon?","['algebraic-geometry', 'riemann-zeta', 'number-theory']"
+155399,Partial derivative of trace of an inverse matrix,"I have the following vector function $f(\mathbf{x})=\operatorname{Tr}[(\mathbf{A}+\operatorname{diag}(\mathbf{x}))^{-1}]$ where $\operatorname{diag}(\mathbf{x})$ is the diagonal matrix with values from $n\times 1$ vector $\mathbf{x}$ on the diagonal, and $\mathbf{A}$ is an $n\times n$ matrix (assume that $\mathbf{A}+\operatorname{diag}(\mathbf{x})$ is invertible).  I know that one can express the trace as the sum of quadratic forms involving orthonormal basis vectors $\mathbf{e}_i$, thus we can also write $f(\mathbf{x})=\sum_{i=1}^n\mathbf{e}_i^T(\mathbf{A}+\operatorname{diag}(\mathbf{x}))^{-1}\mathbf{e}_i$. I am interested in $\frac{\partial f}{\partial x_i}$.  Is there a way to express it in terms of $\mathbf{A}$, $\mathbf{x}$ and $\mathbf{e}_i$?","['matrices', 'linear-algebra', 'calculus', 'multivariable-calculus']"
+155403,Increasing orthogonal functions,"What is the maximal $n$ such that there exist functions $f_1, \dots, f_n:[0,1] \to \mathbb{R}$ that are all bounded, non-decreasing, and mutually orthogonal in $L^2([0,1])$?","['functional-analysis', 'functions']"
+155409,How do I solve a certain characteristic system?,"I am studying PDEs and have the following (seemingly simple) problem: Find a surface that passes through the curve $$x^2+y^2=z=1$$ and is orthogonal to the family of surfaces $$z(x+y)=c(3z+1)\qquad(c\in\Bbb R)$$ After writing down the orthogonality condition (assuming my calculations are correct $(*)$), this yields the following equation: $$u(3u+1)(u_x+u_y)-x-y=0$$ We usually solve such equations by using the method of characteristics, which tells us (using assumption $(*)$ again) to solve the following characteristic system: $$\begin{align}\dot x=&u(3u+1)\\\dot y=&u(3u+1)\\\dot u =&x+y\end{align}$$ Differentiating the last equation of this system with respect to $t$ gives us $\ddot u=\dot x+\dot y$, which using the first two equations gives us $$\ddot u = 2u(3u+1)$$ After staring at this equation for some time, I decided to ask Wolfram|Alpha . The result seems pretty ugly, so the following questions arise: Did I make a mistake/am I missing something? Is my approach correct? How do I proceed? Thanks.","['ordinary-differential-equations', 'partial-differential-equations']"
+155410,Help Understanding Proof of Replacement Theorem?,"Sorry if this is a trivial question. The book is Linear Algebra Done Right by Axler, page 25-26. Theorem: In a finite-dimensional vector space, the length of every linearly independent list of vectors is less than or equal to the length of every spanning list of vectors. Proof: Suppose that $(u_1 ,\ldots, u_m)$ is linearly independent in $V$ and 
+  that $(w_1,\ldots ,w_n)$ spans V. We need to prove that $m \leq n$. We do so 
+  through the multistep process described below; note that in each step 
+  we add one of the $u$'s and remove one of the $w$'s. Step 1: The list $(w_1,\ldots, w_n)$ spans $V$, and thus adjoining any vector to it 
+  produces a linearly dependent list. In particular, the list $(u_1,w_1, \ldots,w_n)$ is linearly dependent. Question:
+Why is $(u_1,w_1, \ldots,w_n)$ is linearly dependent?",['linear-algebra']
+155429,Existence of the Pfaffian?,"Consider a square skew-symmetric $n\times n$ matrix $A$. We know that $\det(A)=\det(A^T)=(-1)^n\det(A)$, so if $n$ is odd, the determinant vanishes. If $n$ is even, my book claims that the determinant is the square of a polynomial function of the entries, and Wikipedia confirms this. The polynomial in question is called the Pfaffian . I was wondering if there was an easy (clean, conceptual) way to show that this is the case, without mucking around with the symmetric group.","['matrices', 'pfaffian', 'linear-algebra', 'skew-symmetric-matrices']"
+155430,Evaluating  $ \int_1^{\infty} \frac{\{t\} (\{t\} - 1)}{t^2} dt$,"I am interested in a proof of the following. $$ \int_1^{\infty} \dfrac{\{t\} (\{t\} - 1)}{t^2} dt = \log \left(\dfrac{2 \pi}{e^2}\right)$$
+where $\{t\}$ is the fractional part of $t$. I obtained a circuitous proof for the above integral. I'm curious about other ways to prove the above identity. So I thought I will post here and look at others suggestion and answers. I am particularly interested in different ways to go about proving the above. I'll hold off from posting my proof for sometime to see what all different proofs I get for this.","['definite-integrals', 'improper-integrals', 'integration']"
+155434,Form of $\sigma(X_n)$ and $\sigma(X_n)$-measurability,"Problem : Suppose $\tilde{X}=(X_1,X_2,...)$ is a sequence of RVs on $(\Omega,\mathcal{B})$. Prove that $\sigma(\tilde{X})$ is generated by events of the form: $\bigcap_{i=1}^m \{X_i\leq x_i\}$ for $x_1,...,x_n \in\mathbb{R}, n\geq 1$. Then, prove $\inf_{n\geq 1}X_n, \sup_{n\geq 1}X_n$ are $\sigma(\tilde{X})$-measurable. Finally, show that $\{\lim_{n\rightarrow\infty}X_n$ exists} $\in \sigma(\tilde{X})$ and if $\lim_{n\rightarrow\infty}X_n(\omega)$ exists $\forall\omega$, then it is $\sigma(\tilde{X})$-measurable. Thoughts/work As I move deeper and deeper into this self-study, some of these ideas get jumbled together. I do know that if $X:(\Omega,\mathcal{B})\rightarrow(\Omega^',\mathcal{B}^')$ then $\sigma(X) = \{\{X\in B\}:B\in\mathcal{B}^'\}$. I also worked in the past to prove that if I take a $\pi$-class $\mathcal{P}=\{(-\infty,a]:a\in\mathbb{R}\}$ and the class of cylinder events in $\mathbb{R}^{\infty}$ determined by $\mathcal{P}$. That is: $\mathcal{C}=\{\omega=(x_1,x_2,...):x_i\leq b_i,i\leq n\}$ for some $b_i\in\mathbb{R},i\leq n, n\geq 1$ is a $\pi$-class and $\sigma(\mathcal{C})=\mathcal{B}(\mathbb{R}^{\infty})$. Lastly, I tend to struggle with liminf and limsup, but I do know that if I have a measurable space $(\Omega,\mathcal{B})$ and a measurable sequence $f_n:\Omega\rightarrow\bar{\mathbb{R}}$, then I can say that: $\inf_{n\geq 1}X_n, \sup_{n\geq 1}X_n$ are measurable. I feel like the pieces are dumped out on the table, but I'm just getting a bit lost. Any help would be greatly appreciated. Though not necessary, answers that don't make any assumptions about my familiarity with some of these concepts are especially helpful. This is all very new to me.","['probability-theory', 'measure-theory', 'sequences-and-series', 'limsup-and-liminf']"
+155436,help me define the connectives for 3 value logic,"so basically i have a project about 3 valued logic ie truth=1 false = 0, unknown = 1/2 in a previous project I had to come up with formulae for 2 valued logic as follows: negation
+t(~p) = 1-t(p)
+
+Conjunction
+T(p^q) = min[t(p), t(q)]
+
+Disjunction
+T(p V q) = max[t(p), t(q)]
+
+Conditional
+~p -> q  === ~p V q => t(p->q) = t[~pVq]
+=> max[t(~p), t(q)]
+=> max[1-t(p), t(q)]
+
+biconditional
+p<->q === (p->q)^(q->p) => t(p->q) = t[(p->q)^(q->p)]
+=> min[t(p->q), t(q->p)
+=> min[max[1-t(p), t(q)], max[1-t(q), t(p)]] using this information I have to define the connectives for 3 valued logic. and I dont really know how to do that. this is due tomorrow, please help!!! :(","['logic', 'discrete-mathematics']"
+155439,Cute Determinant Question,"I stumbled across the following problem and found it cute. Problem: We are given that $19$ divides $23028$, $31882$, $86469$, $6327$, and $61902$. Show that $19$ divides the following determinant: $$\left|
+ \begin{matrix}
+  2 & 3&0&2&8 \\
+  3 & 1&8&8&2\\
+8&6&4&6&9\\
+0&6&3&2&7\\
+6&1&9&0&2
+ \end{matrix}\right|$$","['linear-algebra', 'determinant']"
+155442,More open sets or more closed sets in a topology?,Let $X$ be a topological space. Are there more open sets or more closed sets? I think that there are as many open sets as closed ones.,['general-topology']
+155446,Measure-theoretic view of expectation of a Bernoulli sequence,"Problem: I have a good understanding of basic Bernoulli and Binomial RVs, but this was foundational work in statistics. I am attempting to try and apply my (minimal but increasing) knowledge of measure theory to a tangible concept. I have been working with simple functions, etc. and am trying to utilize only these tools to find expectation: if $f=\sum_{i=1}^m c_i1_{A_i}$ has distinct, finite c's and disjoint A's, then $\int f du=\sum_{i=1}^m c_i\mu(A_i)$ and if $f$ is measurable and $f_n \uparrow f$ then $\int f du=\lim_{n\rightarrow\infty}\int f_n d\mu$ I want to try and practice (read: learn how to) utilize these ideas on a measure space of an infinite number of Bernoulli trials. I define my space below: Work Take $(\Omega,\mathcal{B})=(\{0,1\}^{\infty},\mathcal{B}(\{0,1\}^{\infty}))$ and define an event $\omega\in\Omega$ as $\omega=(x_1,x_2,...)$ Then I defined a probability measure: $P(\{x_1\}$x{0,1}x...$)=\prod_{i=1}^n p^{x_i}(1-p)^{1-x_i}$. From here I want to  find the expectation of RVs such as: 1- $Z(\omega)=\sum_{i=1}^nx_i$ 2- $Y=e^{sZ}$ (moment-generating function), and 3- $V(\omega)=\sum_{i=1}^{\infty}r^nx_n$ for positive r. Using comments below: $Z(\omega)=\sum_{i=1}^n 1_{A_i}, A_i\subset\Omega, A_i=\{(x_k)_{k\ge 1}\in\Omega|x_i=1\}$ $Y_n(x_1,...,x_n)=exp \left(s\sum_{i=1}^n x_i \right )$ $E_n(Y_n)=\sum_{(x_k)\in\Omega_n}exp \left(s\sum_{i=1}^n x_i \right )\prod_{i=1}^n p^{x_i}(1-p)^{1-x_i}$ $E(Y)=(1-p+pe^s)^n$ $E(V)=\sum_{i=1}^n r^i p, \forall n$ $V(\omega)_n \uparrow V(\omega)\rightarrow E(V(\omega)_n)\uparrow E(V(\omega))$ I showed these to a friend and he had the following comments: 1-Each RV needs to be represented as a simple function, a limit of a nondecreasing sequence of non-negative functions, or a difference of two such limits (whose product is zero). For example, on $Z$, you need to compute $E(Z)=\sum_{i=1}^n P(A_i)$ and show how each $P(A_i)$ is derived from $P$ as being a unique probability measure satisfying the equality. Also, if the RV is a limit of simple functions, you have to find the expectation of the simple function in the sequence and take the limit. Given that I am learning this on my own from scratch, any explicit help would be greatly appreciated. No detail is too much!","['statistics', 'measure-theory', 'probability-theory']"
+155447,Block Determinants,"This is a nice question I recently found in Golan's book. Problem: Let $A,B,C,D$ be $n\times n$ matrices over $\mathbb{R}$ with $n\ge 2$, and let $M$ be the $2n\times 2n$ matrix \begin{bmatrix}
+  A & B \\
+  C & D\\
+ \end{bmatrix} If all of the ""formal determinants"" $AD-BC$, $AD-CB$, $DA-CB$, and $DA-BC$ are nonsingular, is $M$ necessarily nonsingular? If $M$ is nonsingular, must all of the formal determinants also be nonsingular?","['matrices', 'linear-algebra', 'block-matrices', 'determinant']"
+155449,Identification of $T_v(T_pM)$ with $T_pM$,"In some passages of Do Carmo's Riemannian geometry book he identify $T_v(T_pM)$ with $T_pM$, my question: How one see $T_pM$ as a manifold? who is the atlas? What is the expression of a vector $x \in T_v(T_pM)$ in local coordinates?",['differential-geometry']
+155462,"Every path has a simple ""subpath""","I've been thinking about this for a while, and can't seem to find any way to do it despite the statement itself seeming obvious.  The problem is: Let $f:[0,1] \to \mathbb{R}^n$ be a continuous map, not necessarily injective, such that $f(0) \not = f(1)$.  Let $Y$ denote the image of $f$ as a compact subset of $\mathbb{R}^n$.  Then there exists an injective map $g:[0,1] \to Y$ such that $g(0) = f(0)$ and $g(1) = f(1)$. Obviously, the problem is trivial in many cases, but gets tough when you consider ""wild"" curves.  Below I'll discuss how I've tried to solve it, but feel free to ignore it if you know the answer. My first idea was to start Zorn's lemma argument using a sequence of maps $f_0,f_1,f_2,f_3,\dots$ with $f_0 = f$ and $f_0([0,1]) \supseteq f_1([0,1]) \supseteq f_2([0,1]) \supseteq \cdots$ and trying to find a bound for the chain, but it seems this fails because given compact path-connected subsets $X_0,X_1,\dots$ where $X_0 \supseteq X_1 \supseteq \cdots$, the intersection $\bigcap_{k=1}^\infty X_k$ is not necessarily path connected.  For example, if $S \subset \mathbb{R}^2$ is a segment of the (closed) topologist's sine curve, then the family $S \cup \bar{B}_{1/n}(0)$ provide a counterexample. The other approach seemed to be trying to define a sequence of functions $f_0,f_1,\dots$ where each $f_n$ is ""closer"" to being injective than the one before it, and such that the sequence converges in some meaningful way to an injective function, or at least to a function that allows us to use a simpler method to finish the problem.  However, I don't really know enough analysis to follow through with this approach, so I'm asking for help here.  Any solution would be great, and solutions a method similar to what I've mentioned above would be doubly appreciated.","['general-topology', 'real-analysis', 'analysis']"
+155464,Tropical Machinery,Recently I heard of a recent field in mathematics called tropical geometry. Having read the wiki page on it it seems like it is combinatorial algebraic geometry. My question is what are the benefits of applying tropical geometry to problems in algebraic geometry? Are there examples of theorems in algebraic geometry where a proof was made much simpler using tropical geometry? Or are there any conjectures in algebraic geometry that was proved using tropical geometry? Also does anyone know the motivation behind why it was developed?,"['algebraic-geometry', 'tropical-geometry']"
+155474,A formula with only one $0$ that evaluates to a given integer,"Just found this math puzzle online: Original puzzle: Using one zero (and no other numbers) and
+  mathematical (including trigonometric and advanced) operations, how
+  can you achieve a final result of 6? Advanced one: Using only trigonometric functions and a single instance
+  of the number zero, derive a forumula to calculate any positive
+  integer n. I am sure there is an answer somewhere online but I can't find one - very interesting. And the answer I can think of for the original one is $$\lim_{x\to0}\;(a^x+ a^x+ a^x+ a^x+ a^x+ a^x)$$","['puzzle', 'algebra-precalculus', 'recreational-mathematics']"
+155475,"$\{1,1\}=\{1\}$, origin of this convention","Is there any book that explicitly contain the convention that a representation of the set that contain repeated element is the same as the one without repeated elements? Like $\{1,1,2,3\} = \{1,2,3\}$. I have looked over a few books and it didn't mention such thing. (Wikipedia has it, but it does not cite source). In my years learning mathematics in both US and Hungary, this convention is known and applied. However recently I noticed some Chinese students claim they have never seen this before, and I don't remember I saw it in any book either. I never found a book explicitly says what are the rules in how $\{a_1,a_2,a_3,\ldots,a_n\}$ specify a set. Some people believe it can only specify a set if $a_i\neq a_j \Leftrightarrow i\neq j$. The convention shows that doesn't have to be satisfied.","['reference-request', 'elementary-set-theory', 'convention']"
+155495,Solve the general cubic by factoring,"After learning Cardano's solution of the cubic, I decided to look at Ferrari's solution of the quartic (both articles on Wikipedia). At the end of the article on the quartic function was an an alternate method to solve the cubic by factoring into two quadratic terms - something like factoring the monic quartic $$x^4+ax^3+bx^2+cx+d=0$$ into $$(x^2+px+q)(x^2+rx+s).$$ They used Vieta's formula (correct me if I am wrong) in order to acquire the ""resolvent"" cubic (I assume that is a cubic required to be solved for algebraic solutions of the quartic)  - what they essentially did was expanded the two quadratic factors, and set them equal to their corresponding coefficients. I tried to do this with the monic cubic, first attempting to use three linear factors, then attempting to use one linear and one quadratic factor. Below I have divided by a for the first equation and expanded the second equation, setting coefficients equal. $$ax^3+bx^2+cx+d=0$$
+$$(x+p)(x^2+qx+r)\;\longrightarrow \; p+q=0, \; r+pq=\frac{c}{a}, \; pr=\frac{d}{a}$$
+Note that $p+q=0$ when $b=0$, which can be the case of all cubics after application of the Tschirnhaus transformation. However, I found that I could not solve this system - only piece it back together into a cubic. If there is a solution, how does one apply it?",['algebra-precalculus']
+155514,How to get Point between two points at any specific distance?,"I have two points, 
+approximately we take values for that: Point $A = (50, 150)$;
+Point $B = (150, 50)$; So the distance should be calculated here,
+$\text{distance} = \sqrt{(B_x - A_x)(B_x - A_x) + (B_y - A_y)(B_y - A_y)}$; Now I want any one poins which is far from Second point B at specific distance (Example, 10). B(x,y)
+           /
+          /
+         C(x,y)
+        /
+       /
+      /
+     /
+    /  
+   /
+  A(x,y) Point c on Line Segment and its specific distance from point B(Ex, 10).. Which formula would be better to calculate C point here ? Please help me about that.","['geometry', 'linear-algebra']"
+155521,Examples of infinite groups such that all their respective elements are of finite order.,I am in need of examples of infinite groups such that all their respective elements are of finite order.,"['examples-counterexamples', 'group-theory', 'abstract-algebra']"
+155540,Graph of everywhere continuous non-differentiable function,"W. Rudin gives the following example $f(x)$. Let $\varphi(x) = |x|$ on $[-1,1]$ and extend periodically to the whole real line with period $2$. Now define $$ f(x) = \sum_{n=0}^\infty \left(\frac{3}{4}\right)^n\varphi(4^nx).$$ How does the graph of this function, or its successive approximations, look like? Just to get an idea of how continuity happens, but not differentiability.","['sequences-and-series', 'real-analysis']"
+155545,What is a fast way to evaluate:$\int P(x)e^{ax}dx$,"Undoubtedly, this question is so easy but I'd like to ask it. We know that the way in which the indefinite integrals like $\int P(x)e^{ax}dx$ and $\int P(x)\sin(bx)dx$ wherein $P(x)$ is an arbitrary polynomial of $x$ and $a, b\in \mathbb R$ are evaluated is Integrating by Parts $\int udv=uv-\int vdu$. So we should take $u$ and $dv$ frequently until the whole integral becomes an easy integral. Is there any fast method in which we can do above integrals without using the classic formula? Thank you for the help.","['calculus', 'integration', 'exponential-function', 'indefinite-integrals', 'polynomials']"
+155547,Compute the probability that $ | \bar{X} - \mu | > S$,"Given $X_1, \ldots, X_n$ from $\mathcal{N} (\mu, \sigma^2)$. I have to compute the probability:
+$$P\left(|\bar{X} - \mu| > S\right)$$
+where $\bar{X}$ is the sample mean and $S^2$ is the sample variance. I tried to expand:
+$$P\left(\bar{X}^2 + \mu^2 - \bar{X}\mu > \frac{1}{n}\sum {X_i}^2 + \frac{1}{n}\sum\bar{X} - 2\left(\frac{1}{n}\sum X_i\right) \bar{X} \right) $$
+$$P\left( \mu^2 - \bar{X}\mu > \frac{1}{n}\sum {X_i}^2  - 2\bar{X}^2 \right) $$ but it does not seems to be helpful. Can someone help me?",['statistics']
+155555,Continuous root map of the coefficients of a polynomial,"I have a set of polynomials $P_t(z)= z^n+ a_{n-1}(t)z^{n-1}+\cdots+ a_0(t)$ which depends on a real parameter $t \in [a,b]$ and where $a_{n-1}(t),\ldots, a_0(t)$ are real continuous functions. May I say that there exists a continuous map $\theta(t)$ such that $\theta(t)$ is a root of $P_t$ (for all $t$)? I mean, I know that there exists a continuous dependence of the roots of a polynomial with respect to the coefficients and that the Viète map descends to a homeomorphism $w:C^n/S_n\to C^n$, but, can I 'choose' a root? Or I need the axiom of choice to affirm that there exists a map $C^n/S_n\to C^n$? In that case, may I get a such map to be continuous ? Any bibliography reference for all this?","['polynomials', 'roots', 'axiom-of-choice', 'analysis']"
+155560,What does the following statement mean?,"If $\mu(A) <\infty $, then from almost everywhere convergence follows the convergence in the measure . 
+I don't understand what the ""convergence in the measure"" means. Waiting for your explanation. I am trying to understand proposition 2 from the following link : http://medvegyev.uni-corvinus.hu/CeuAdv2.pdf . Thanks.","['measure-theory', 'convergence-divergence']"
+155574,$p$ an prime number of the form $p=2^m+1$. Prove: if $(\frac{a}{p})=-1$ so $a$ is a primitive root modulo $p$,"Let $p$ be an odd prime number of the form $p=2^m+1$. I'd like your help proving that if $a$ is an integer such that $(\frac{a}{p})=-1$, then $a$ is a primitive root modulo $p$. If $a$ is not primitive root modulo $p$ so $Ord_{p}(a)=t$, where $t<p-1=2^m$ and $t|2^m$ since $Ord_{p}(a)|p-1$ . I also know that there are no solutions to the congruence $x^2=a(p)$, How can I use it in order to reach a contradiction? Thanks a lot.",['number-theory']
+155623,"Proving that the function $f(x,y)=\frac{x^2y}{x^2 + y^2}$ with $f(0,0)=0$ is continuous at $(0,0)$.","How would you prove or disprove that the function given by
+$$f(x,y) = \begin{cases} \dfrac{x^2y}{x^2 + y^2} & (x,y) \neq (0,0) \\ 0 & (x,y) = (0,0) \end{cases}$$
+is continuous at $(0,0$)?","['multivariable-calculus', 'real-analysis']"
+155625,Does there exist a 3-dimensional subspace of real functions consisting only of monotone functions?,"This is Exercise 1.O from the book 
+Van Rooij, Schikhof: A Second Course on Real Functions . The set of the monotone functions on $[0,1]$ contains all polynomial
+  functions of degree $\le 1$. These form a two-dimensional vector space. Does the set of
+  all monotone functions contain a three-dimensional vector space?","['linear-algebra', 'real-analysis']"
+155628,Probability distributions as limits of continuous ones and of discrete ones,"While skipping through the class notes I noticed one exercice that I couldn't solve: Suppose we have $\mu$ - probability distribution in $\mathbb{R}$. Recalling that  $\mu_k \rightarrow \mu$ iff $\int_{\mathbb{R}} f(x)\mu_k(dx) \rightarrow \int_{\mathbb{R}} f(x) \mu(dx)$, $\forall f \in C(\mathbb{R})$, $f$ bounded $k\rightarrow \infty$. We have to show: $\exists \mu_k$ - series of continuous distributions that $\mu_k \rightarrow \mu$. $\exists \mu_k$ - series of discrete distributions that $\mu_k \rightarrow \mu$.","['probability-distributions', 'probability']"
+155652,Evaluating $\int_{0}^{1} \frac{x^{2} + 1}{x^{4} + 1 } \ dx$,"How do I evaluate  $$\int_{0}^{1} \frac{x^{2} + 1}{x^{4} + 1 } \ dx$$ I tried using substitution but I am getting stuck. If there was $x^3$ term in the numerator, then this would have been easy, but this one doesn't.","['definite-integrals', 'calculus', 'integration']"
+155654,Wedge product of 1-Forms,"I'm trying to write down the wedge product of 2 1-forms on an n-dimensional Manifold. $\alpha = \alpha_1 dx^1 + \alpha_2 dx^2 + \cdots + \alpha_n dx^n$ and $\beta = \beta_1 dx^1 + \beta_2 dx^2 + \cdots + \beta_n dx^n$ I know how to do this for the 2 and 3 dimensional case. But I'm having a problem with the n-dimensional case. More specifically, what sign the individual 2-forms get? What I mean by this is, let's concider a few terms of $\alpha \wedge \beta$: $\cdots \alpha_1 \beta_2 dx^1\wedge dx^2 + \alpha_2 \beta_1 dx^2 \wedge dx^1 \cdots$ Now the problem I'm having is, I think $dx^2\wedge dx^1 = -dx^1\wedge dx^2$. Which allows me to combine the above two terms. For 2 and 3 dimensions, this seems easy, as I can just look at the permutations, but in n-dimensions, (1) how does this permutation look like? Or is it always minus if I switch the $dx$? (2) Does this mean that $\alpha\wedge\alpha = 0$ always for 1 forms?",['differential-geometry']
+155658,Convergence or divergence of $\sum_{k=1}^{\infty} \left(1-\cos\frac{1}{k}\right)$ [duplicate],This question already has answers here : Does the series $ \sum_{n=1}^{\infty}\left( 1-\cos\big(\frac{1}{n} \big) \right)$ converge? (5 answers) Closed 9 years ago . Does $$\sum_{k=1}^{\infty} \left(1-\cos\frac{1}{k}\right)$$ converge or diverge?,"['convergence-divergence', 'sequences-and-series']"
+155673,Good in-depth books for precalc?,"I'm trying to brush up on algebra and precalc to remember stuff I used to know and learn stuff I didn't get to. Trying to pass the accuplacer placement test and test into calculus, so im trying to learn college algebra. Right now I have the Everything Guide to Algebra by Christopher Monahan but it's not very in-depth. Recommendations?","['algebra-precalculus', 'reference-request', 'soft-question']"
+155676,$p$-Sylow subgroups of a group of order $5^3\cdot 29^2$,"I need to calculate the $p$-Sylow subgroups of a Galois group with order $5^3 \cdot 29^2$, i.e. $|\mathrm{Gal}(K/F)|=5^3 \cdot 29^2$. I've already established that there is only one 29-Sylow-subgroup (with $|G_{29}|=29^2$) by the following conditions: $n_p \equiv 1 \pmod p$ and $n_p \mid  m$ where $|G|=m\cdot p^r$ and $p\nmid m$. (Indeed $5,25,125 \not{\!\equiv}\; 1 \pmod {29}$ and they are the only $\ne1$ divisors of $5^3$, so $n_{29} = 1$.) I want to apply it to find 5-Sylow subgroups. $n_5 \equiv 1\pmod 5$ and $n_5\mid 29^2$. We have that $29 \not{\!\equiv}\; 1 \pmod 5$ but $481 = 29^2 \equiv 1 \pmod 5$ so $n_5 = 1$ and $n_5 = 29^2$ are both valid options. I want to show that $n_5 = 1$. Edit: I will explain the rational behind my question: we have $F \subset K$ a Galois extension of degree $5^3 \cdot 29^2 = | \mathrm{Gal}(K/F)|$ and I want to find two subfields $F \subset K_1 , K_2 \subset K$ which are Galois extensions and $K = K_1 K_2$. My idea was to find the corresponding p-Sylow groups of $\mathrm{Gal}(K/F)$ and use the fundamental theorem of Galois theory and deduce the extensions. That's why I looked for a normal subgroup of order $5^3 = 125$.","['galois-theory', 'finite-groups', 'group-theory']"
+155681,Determinant called Grammian,"Famously, if functions $f_1,f_2,…,f_n$, each of which possesses a derivative of order $n-1$, are linearly independent on the interval $I$, if 
+$$ \det\left( \begin{array}{ccccc} f_1 & f_2 & f_3 &… &f_n \\ f'_1 & f'_2 & f'_3 &... &f'_n \\ ⋮ & ⋮ & ⋮ &⋮ &⋮ \\ f_1^{(n-1)} & f_2^{(n-1)} & f_3^{(n-1)} &... &f_n^{(n-1)} \end{array} \right) $$
+called Wronskian of $f_1,f_2,…,f_n$ ,is not zero for at least one point in the interval $I$. Equivalently, if functions $f_1,f_2,…,f_n$ possess at least $n-1$ derivatives and are linearly dependent on $I$ then $W(f_1,f_2,…,f_n)(x)=0$ for every $x\in I$. So this equivalent statement gives just a necessary condition for dependency of above functions on the interval. Fortunately, there is necessary and sufficient condition for dependency of a set of functions $f_1(x),f_2(x),…,f_n(x), x\in I$: A set of functions  $f_1(x),f_2(x),…,f_n(x), x\in I$ is linearly dependent on $I$ iff the determinant below is identically zero on $I$:
+  $$ \det\left( \begin{array}{ccccc} \int_{a}^{b} f_1^2 dx& \int_{a}^{b} f_1f_2 dx&… &\int_{a}^{b}f_1f_ndx \\ \int_{a}^{b}f_2f_1dx & \int_{a}^{b}f_2^2 dx &... &\int_{a}^{b}f_2f_ndx \\ ⋮ & ⋮ & ⋮ &⋮ \\ \int_{a}^{b}f_nf_1dx & \int_{a}^{b}f_nf_2dx&... &\int_{a}^{b}f_n^2dx \end{array} \right) $$ It seems to be a great practical Theorem, but I couldn't find its proof. I really appreciate your help.","['linear-algebra', 'inner-products', 'ordinary-differential-equations', 'determinant']"
+155691,Value of the integral : $ I_r$ =$\int_{C_r}$ $\frac{dz}{z(z-1)(z-2)}$,"It is given that $$ I_r =\int_{C_r}\frac{dz}{z(z-1)(z-2)}$$ where $ C_r = \{z\in \Bbb{C}: |z|=r\}$ , $ r >0 $, $r\neq 1,2$ . Then which of the following holds: $ I_r = 2 \pi\ i $ if $r\in(2,3)$ $ I_r = -2 \pi\ i $ if $r\in(1,2)$ $ I_r = 0 $ if $r >3$ Please suggest which option is correct.",['complex-analysis']
+155693,Most Probable Sum [duplicate],This question already has answers here : Closed 12 years ago . Possible Duplicate: Probability of dice sum just greater than 100 A fair dice is rolled and the outcome of the face is summed up each time. We stop rolling when the sum becomes greater than 100.  Which of the following is most probable sum? 103 102 100 101 All have equal probability How best do I approach these types of problems?,"['dice', 'probability']"
+155701,Multiple choice question about an entire function $f:\Bbb{C}\to\Bbb{C}$ and the function $g :\Bbb{C}\to\Bbb{C} $ defined by $ g(z)= f(z) - f(z+1)$,"Let $ f: \mathbb{C} \rightarrow  \mathbb{C} $ be an entire function and let $g : \mathbb{C} \rightarrow \mathbb{C} $ be defined by 
+$$g(z)= f(z) - f(z+1)$$ for all $ z\in \mathbb{C}$. Which of the options are correct : if $ f(\frac{1}{n}) = 0 $ for all positive integers n, then $f$ is a constant function. if $ f(n) = 0 $ for all positive integers n, then $f$ is a constant function. if $ f(\frac{1}{n}) = f(\frac{1}{n}+1)$ for all positive integers n, then $g$ is a constant function. $ f(n) = f(n+1) $  for all positive integers $n$, then $g$ is a constant function Please suggest which of the options are correct. Using the Identity theorem, the options 1 and 3 seem to be correct as in both cases, the sequence of zeros for $\,f\,$ and $\,g\,$  is $ < \frac{1}{n} >$ that converges to zero which belongs to $\Bbb C$. Therefore, in both cases $\,f\,$ and $\,g\,$ are identically equal to zero.  But in (2) and (4), we arrive for both $\,f\,$ and $\,g\,$, at the zeros sequence $ <{n}>$ diverges to infinity which does not ensure the required conclusion.",['complex-analysis']
+155715,How to prove $641|2^{32}+1$ [duplicate],This question already has answers here : Closed 12 years ago . Possible Duplicate: To show that Fermat number $F_{5}$ is divisible by $641$. How to prove that $641$ divides $2^{32}+1$? What the technical way will be for this question? I want to teach it to my students. Any help. :-),['number-theory']
+155723,Maximum product $ab$ for $a+b=k$ - proof based on AM-GM inequality,"My question is:
+Prove- If $a,b$ are two positive real numbers such that their sum  is $a+b=k$.  Then the product $ab$ is maximum if and only if
+  $a=b=\displaystyle\frac{k}{2}$. I proved the above theorem above using $(a+b)^2$ but I want to know how can it be proved using A.M.  G.M. inequality.","['inequality', 'a.m.-g.m.-inequality', 'algebra-precalculus']"
+155759,What are the applications of finite calculus,"I'm reading through Concrete Mathematics [Graham, Knuth, Patashnik; 2nd edition], and in the section regarding Summation, they have a sub-section entitled ""Finite and Infinite Calculus"". In this section they introduce to the reader the concept of finite calculus, the discrete analog of the traditional infinite calculus. Throughout the text, they use the following notations for use in finite calculus (I'm not sure if this is standard notation, so I'd be grateful for any clarification): $$\Delta f(x)\equiv f(x+1)-f(x)$$ Which is described as the ""finite analog of the derivative in which we restrict ourselves to positive integer values of h"" . Along with the following notation as the analog for the anti-derivative, and definite integral: $$g(x)=\Delta f(x) \iff \sum{g(x) \:\delta x}=f(x)+C\\\sum_{a}^{b}{\Delta f(x)\:\delta x}=\left.f(x)\right|_{a}^{b}=f(b)-f(a)$$ It then goes on to introduce various identities relating to these interesting operators, but never describes any application for them, aside from satisfying one's mathematical curiosity, and for shortening a few proofs later in the book (although even these seem to be somewhat contrived applications). So my question is as follows: What applications are there for finite calculus, in fields such as mathematics, computer science, physics, etc.? Thanks in advance!","['applications', 'summation', 'discrete-mathematics', 'soft-question']"
+155765,Evaluating a sum to infinity,I'm looking for a way that allows me to work out the following sum: $$\sum\limits_{k=1}^{\infty} \sin^2\left(\frac{1}{k}\right)$$ Any hint/suggestion is welcome. Thanks.,"['sequences-and-series', 'limits']"
+155774,Evaluating $\int_{0}^{1} x^m \ln^\alpha(x) dx$,"Honestly, I am asked to think about $$\int_{0}^{1} x^m \ln^\alpha(x) dx$$ And I applied all methods I know. I doubt if this integral makes sense either. If it is replicate, plz inform me to omit the question soon. Thanks.","['definite-integrals', 'calculus', 'integration']"
+155776,"To define a measure, is it sufficient to define how to integrate continuous function?","Let me make my question clear. I want to define a measure $\mu$ on a space $X$. But instead of telling you what value I assign for some subset of $X$ (measurable sets that form a $\sigma$-algebra), I tell you that for each $f$ continuous, what $\int_X f(x)d\mu (x)$ is. Then, is this measure uniquely determined? I know if I tell you how to integrate all measurable functions, then this measure is of course uniquely determined. Because integrate characteristic functions will give you measure of that respective set. But is it also true if I only define integration with continuous functions?","['measure-theory', 'analysis']"
+155777,Guaranteed Checkmate with Rooks in High-Dimensional Chess,"Given an infinite (in all directions), $n$-dimensional chess board $\mathbb Z^n$, and a black king. What is the minimum number of white rooks necessary that can guarantee a checkmate in a finite number of moves? To avoid trivial exceptions, assume the king starts a very large distance away from the nearest rook. Rooks can change one coordinate to anything. King can change any set of coordinates by one. And same problem with i) Bishops and ii) Queens, in place of rooks.","['geometry', 'puzzle', 'combinatorial-game-theory', 'recreational-mathematics', 'combinatorics']"
+155785,Determining all Sylow $p$-subgroups of $S_n$ up to isomorphism?,"I'm trying to understand a classification of all Sylow $p$ subgroups of $S_n$. Let $Z_p$ be the subgroup of $S_p$ generated by $(12\cdots p)$. Then $Z_p\wr Z_p$ has order $p^p\cdot p=p^{p+1}$, and is isomorphic to a subgroup of $S_{p^2}$. Define inductively $Z_p^{\wr r}$ by $Z_p^{\wr 1}=Z_p$ and $Z_p^{\wr k+1}=Z_p^{\wr k}\wr Z_p$. It is easy to show by induction that $Z_p^{\wr r}$ has order $p^{(p^{r-1}+p^{r-2}+\cdots+1)}$, and since by inductively assuming $Z_p^{\wr r-1}$ is isomorphic to a subgroup of $S_{p^{r-1}}$ and $Z_p$ isomorphic to a subgroup of $S_p$, then $Z_p^{\wr r}$ is isomorphic to a subgroup of $S_{p^r}$. However, I can't make the jump that if $n=a_0+a_1p+\cdots+a_kp^k$ is the base $p$ expansion, then any Sylow $p$-subgroup is isomorphic to 
+$$
+\underbrace{Z_p^{\wr 1}\times\cdots\times Z_p^{\wr 1}}_{a_1}\times
+\underbrace{Z_p^{\wr 2}\times\cdots\times Z_p^{\wr 2}}_{a_2}\times\cdots\times
+\underbrace{Z_p^{\wr k}\times\cdots\times Z_p^{\wr k}}_{a_k}.
+$$ I know this group has order
+$$
+(p)^{a_1}(p^{p+1})^{a_2}\cdots(p^{(p^{k-1}+p^{k-2}+\cdots+1)})^{a_k}=p^{\sum_{i=1}^k a_i(1+\cdots+p^{i-1})}=p^{\nu_p(n!)}
+$$
+which is the order of any Sylow $p$-subgroup of $S_n$, based on the formula here . However, I couldn't find an epimorphism from any Sylow $p$-subgroup onto this product, or vice versa. Is it clear how this is isomorphic to a subgroup of $S_n$? Then I understand that the isomorphism would just follow from the Sylow theorems. Thanks.","['finite-groups', 'group-theory', 'abstract-algebra']"
+155786,"Finding what $\langle(135)(246),(12)(34)(56)\rangle\subset S_{6}$ is isomorphic to","I am doing an exercise that asks me to find what $\langle(135)(246),(12)(34)(56)\rangle\subset S_{6}$ is isomorphic to. I am allowed to only use the groups $D_n,S_n,\mathbb{Z}_n$ and the direct sums ) where $S_n$ is the permutatin group of $n$ elements, $D_n$ is the dihedral group of order $2n$. I have noted that the first element is of order $3$ and that the second one is of order $2$.
+I also noted that these elements commutes hence generate an abelian group. I can also say that this group is of order at least $6$ since $gcd(2,3)=1$. How can I find what is Finding $\langle(135)(246),(12)(34)(56)\rangle\subset S_{6}$ ?
+If there was a good argument that say that this group is at most of order $6$ then I can clain that since the only groups of order $6$ are $S_3$ and $\mathbb{Z}_6$ and $S_3$ is non abelian then this group is isomorphic to $\mathbb{Z}_6$. Can someone please help with this problem ?","['permutations', 'group-theory', 'abstract-algebra']"
+155795,Prove that the intersection of all subfields of the reals is the rationals,"I'm reading through Abstract Algebra by Hungerford and he makes the remark that the intersection of all subfields of the real numbers is the rational numbers. Despite considerable deliberation, I'm unsure of the steps to take to show that the subfield is $\mathbb Q$. Any insight?","['galois-theory', 'abstract-algebra']"
+155802,A Hölder-like inequality,"Consider a probability measure $\mu$ on a set $X$. Let $p,q \in (1, \infty)$, $f \in L^{pq} \cap L^1$ (so also $f\in L^p \cap L^q$) by non-negative. Can we say anything about the relationship between $$\int f^{qp} d\mu + \left(\int f d\mu\right)^{qp}$$ and $$\left(\int f^p d\mu \right)^q + \left(\int f^q d\mu \right)^p ?$$ In other words, is there an inequality saying that one of these two quantities is greater than or equal to the other under certain circumstances? It seems as if there should be a way to deduce something like this from Hölders/Jensens inequalities, but I have been unable to do so.","['inequality', 'functional-analysis']"
+155814,Does $abab=baba$ imply commutativity in a Group of uneven order?,"Suppose $(G,\cdot)$ is a finite group of uneven order such that $abab=baba$ for any $a,b\in G$. Does this mean that $G$ is commutative?","['finite-groups', 'group-theory']"
+155822,Constructing arithmetic progressions,"It is known that in the sequence of primes there exists arithmetic progressions of primes of arbitrary length. This was proved by Ben Green and Terence Tao in 2006 . However the proof given is a nonconstructive one. I know the following theorem from Burton gives some criteria on how large the common difference must be. Let $n > 2$. If all the terms of the arithmetic progression
+  $$
+p, p+d, \ldots, p+(n-1)d
+$$
+  are prime numbers then the common difference $d$ is divisible by every prime $q <n$. So for instance if you want a sequence of primes in arithmetic progression of length $5$ ie
+$$
+p, p+d, \ldots, p+4d
+$$
+you need that $d \geq 6$. Using this we can get that the prime $p=5$ and $d = 6$ will result in a sequence primes in arithmetic progression of length $5$. So my question is what are the known techniques for constructing a sequence of primes of length $k$? How would one find the ""first"" prime in the sequence or even the ""largest prime"" that would satisfy the sequence (assuming there is one)? Also, while the theorem gives a lower bound for $d$, is it known if it is the sharpest lowest bound there is? NOTE: This is not my area of research so this question is mostly out of curiosity.","['analytic-number-theory', 'additive-combinatorics', 'number-theory']"
+155829,What is wrong with my solution? $\int \cos^2 x \tan^3x dx$,"I am trying to do this problem completely on my own but I can not get a proper answer for some reason $$\begin{align}
+\int \cos^2 x \tan^3x dx
+&=\int \cos^2 x \frac{ \sin^3 x}{ \cos^3 x}dx\\
+&=\int  \frac{ \cos^2 x\sin^3 x}{ \cos^3 x}dx\\
+&=\int  \frac{ \sin^3 x}{ \cos x}dx\\
+&=\int  \frac{ \sin^2 x \sin x}{ \cos x}dx\\
+&=\int  \frac{ (1 -\cos^2 x) \sin x}{ \cos x}dx\\
+&=\int  \frac{ (\sin x -\cos^2 x \sin x) }{ \cos x}dx\\
+&=\int  \frac{ \sin x -\cos^2 x \sin x }{ \cos x}dx\\
+&=\int  \frac{ \sin x }{ \cos x}dx - \int   \cos x \sin x dx\\
+&=\int  \tan x dx - \frac{1}{2}\int  2 \cos x \sin x dx\\
+&=\ln|\sec x| - \frac{1}{2}\int \sin 2x dx\\
+&=\ln|\sec x| + \frac{\cos 2x}{4} + C
+\end{align}$$ This is the wrong answer, I have went through and back and it all seems correct to me.","['calculus', 'integration', 'indefinite-integrals']"
+155839,On Cesàro convergence: If $x_n \to x$ then $z_n = \frac{x_1 + \dots +x_n}{n} \to x$,"I have this problem I'm working on.
+Hints are much appreciated (I don't want complete proof): In a normed vector space, if $ x_n \longrightarrow x $ then  $ z_n = \frac{x_1 + \dots +x_n}{n} \longrightarrow x $ I've been trying adding and subtracting inside the norm... but I don't seem to get anywhere. Thanks!","['normed-spaces', 'analysis', 'sequences-and-series', 'limits']"
+155844,Definition of a contractible simplicial complex without appealing to topological realization,"Let $\Delta$ be a simplicial complex.  I believe the standard definition of $\Delta$  being contarctible is if the topological realization $|\Delta|$ is contractible.  However, I am seeking a definition of a contractible simplicial complex that is in terms of the simplicial complex qua simplicial complex, possibly having something to do with its simplicial homology.  In other words, something in terms of the faces or its simplicial homology or something that can be checked while staying in the category of simplicial complexes.  Call such a definition $S$-contractible.  I would then hope that a simplicial complex is $S$-contractible if and only if $|\Delta|$ is contractible.  Is anyone aware of such a definition and if so, has it been shown to agree with the standard definition of contractible?  Many thanks in advance.","['homology-cohomology', 'algebraic-topology', 'combinatorics']"
+155851,"Is ""algebraic-variety"" a relative concept?","Let A, B be two NON-isomorphic finitely generated k-algebras, is it possible they isomorphic as abstract commutative unitary rings? (any concrete examples?) If the answer to the above is possibly yes, then what assumptions should one add to preserve the NON-isomorphicity?","['commutative-algebra', 'algebraic-geometry']"
+155858,Every $2k$-regular contains a 2-factor,"I need to prove that given a graph which is $2k$-regular, I can find a 2-factor. Meaning, There is a sub-graph of the above graph, which contains all vertices, and is 2-regular. I must say I have no idea where to start with this. so help would be greatly appreciated :) Thanks.","['graph-theory', 'combinatorics']"
+155867,Penguin Brainteaser : 321-avoiding permutations,"There are $k$ penguins, $k\ge 3$. They are all different heights. How many ways are there to order the penguins in a line, left to right, so that we cannot find any three that are arranged tallest to shortest (in left to right order)? The penguin triples do not have have to be adjacent. This problem is courtesy of someone I know only as ""DaMancha.""","['problem-solving', 'combinatorics']"
+155868,$\bar{\partial}$-Poincaré lemma,"This is $\bar{\partial}$-Poincaré lemma: Given a holomorphic funtion $f:U\subset \mathbb{C} \to \mathbb{C}$ ,locally on $U$ there is a holomorphic function $g$ such that : $$\frac{\partial g}{\partial \bar z}=f$$ The author says that this is a local statement so we may assume $f$ with compact support and defined on the whole plane $\mathbb{C}$, my question is why she says that... thanks. * Added * $f,g$ are suppose to be $C^k$ not holomorphic, by definition $$\frac{\partial g}{\partial \bar z}=0$$ if $g$ were holomorphic...",['complex-analysis']
+155895,Special orthogonal matrix uniquely determined by $n-1 \times n-1$ entries?,"For example, consider the specific question: Given $a_{11},a_{12},a_{21},a_{22}$ does that uniquely determine $A=\begin{bmatrix} a_{11}&a_{12}&a_{13} \\ a_{21}&a_{22}&a_{23} \\ a_{31}&a_{32}&a_{33} \end{bmatrix}$ where $A\in SO(3)$.","['matrices', 'linear-algebra']"
+155896,Fast multiplication of orthogonal matrices,"Given $A,B\in SO(3)$, direct matrix multiplication computes $C=AB$ with 27 multiplies. The group $SO(3)$ is a $3$-dimensional manifold. This suggests that direct matrix multiplication, which thinks of elements of $SO(3)$ as 9-dimensional, is not optimal. What is the minimal number of multiplies necessary to compute $C$?",['matrices']
+155899,Norm of integral operator in $L_2$,"What is the norm of integral operators $A$ in $L_2(0,1)$? $Ax(t)=\int_0^tx(s)ds$","['operator-theory', 'functional-analysis']"
+155938,"What are the zero divisors of $C[0,1]$?","Suppose you have a ring $(C[0,1],+,\cdot,0,1)$ of continuous real valued functions on $[0,1]$, with addition defined as $(f+g)(x)=f(x)+g(x)$ and multiplication defined as $(fg)(x)=f(x)g(x)$. I'm curious what the zero divisors are. My hunch is that the zero divisors are precisely the functions whose zero set contains an open interval. My thinking is that if $f$ is a function which is at least zero on an open interval $(a,b)$, then there exists some function which is nonzero on $(a,b)$, but zero everywhere else on $[0,1]\setminus(a,b)$. Conversely, if $f$ is not zero on any open interval, then every zero is isolated in a sense. But if $fg=0$ for some $g$, then $g$ is zero everywhere except these isolated points, but continuity would imply that it is also zero at the zeros of $f$, but then $g=0$, so $f$ is not a zero divisor. I have a hard time stating this formally though, since I'm only studying algebra, and not analysis. Is this intuition correct, and if so, how could it be rigorously expressed?","['abstract-algebra', 'ring-theory', 'real-analysis']"
+155941,Evaluate the integral: $\int_{0}^{1} \frac{\ln(x+1)}{x^2+1} \mathrm dx$,Compute $$\int_{0}^{1} \frac{\ln(x+1)}{x^2+1} \mathrm dx$$,"['definite-integrals', 'calculus', 'integration', 'real-analysis']"
+155952,Arcwise connected part of $\mathbb R^2$,"Here's a question that I share:
+ Show that if $D$ is a countable subset of $\mathbb R^2$ (provided with its usual topology) then $X=\mathbb R^2 \backslash D $ is arcwise connected.","['general-topology', 'connectedness', 'path-connected']"
+155963,Constructing a holomorphic function with some specific points zero/nonzero,"Given $n \in \mathbb{Z}$, is it possible to construct a holomorphic function
+$f : \mathbb{C} \rightarrow \mathbb{C}$ such that $f(n) \neq 0$, but
+for any integer $m \neq n$ we have $f(m)=0$? This is actually a homework problem in algebra which I reduced to this statement (in case it is correct).",['complex-analysis']
+155966,"If an element has a unique right inverse, is it invertible?","Suppose $u$ is an element of a ring with a right inverse. I'm trying to understand why the following are equivalent. $u$ has at least two right inverses $u$ is a left zero divisor $u$ is not a unit If $v$ and $w$ are distinct right inverse of $u$, then $u(v-w)=0$, but $v-w\neq 0$, so $u$ is a left zero divisor. It's also clear that if $u$ is a left zero divisor, it cannot be a unit (else I could cancel $u$ from $ub=0$ to see $b=0$). I'm having a heck of a time seeing why $u$ is not a unit implies $u$ has at least two right inverses. I tried the contrapositive, but saw no good approach. What am I missing?","['ring-theory', 'abstract-algebra']"
+155975,"Line Integral, Work in physics","Hi there all:  I have a problem! I need to find the work done on a particle that moves from $(0,0)$ to a point $(1,1)$ by a strait line $y=x$.  The force acting upon the particle is $F = (y , 2x$). Now how i have attempted the problem is I paramaterized the line $x = y$ to be $r = < t, t >$ by letting $x = t$ which means that $y = t$ too. (I'm hoping that this is how you do it, it's been a while since ive done that maths course) I know the formula for work is:  The integral of $F\cdot dr$ - thus meaning I have to differentiate $r$ to get $dr = < 1, 1>$ then finding the force acting on the particle using $F$ and the particles position of $(x,y)$ to be $(1,1)$ (i.e. i substituted this point into $F$) so $F= (1,2)$. Then taking the dot product between the two i get $3$.  Then taking the integral between $1$ and $0$ I get the answer to be $3$.  Now the answer in the textbook says the answer is $1.5$ :( bummer. Where have I gone wrong?  Do i need to paramiterise F differently? or.. i dno ??? :S","['multivariable-calculus', 'calculus', 'integration', 'physics']"
+155999,Angles of triangle inside a cricle,In the figure shown if area of circle with center o is 100pi and CA has length of 6 what is length of AB ? I looked around on the web and cant seem to get an idea of what the angles AOC and OCA inside the triangle would be. Any suggestions on how I would go about determining  them ?,"['geometry', 'triangles', 'circles']"
+156005,abel summable implies convergence,"Prove that: If $\sum c_n$ is Abel summable to $s$ and $c_n=O(\frac{1}{n})$ , then $\sum c_n $ converges to $s$. ""A series of complex number $\sum_{n=0}^{\infty} c_n $ is said to be Abel summable to $s$ if for every $0 \le r <1$ ,the series $A(r)=\sum_{k=0}^{\infty} c_kr^k$ converges ,and  $\lim_{r\rightarrow 1^-} A(r)=s$.""","['divergent-series', 'sequences-and-series', 'real-analysis']"
+156031,"In mean value theorem, does the mean value vary continuously?","Let $f\colon\mathbb R\to\mathbb R$ be continuously differentiable and let's say, for simplicity, that $f(0)=0$. Then by mean value theorem it's
+$$f(x)=f'(\xi)\cdot x \,\text{ for some } \xi \in (0, x)$$ What I wondered is: What can we tell about the $\xi$ as we change $x$? My intuition says we should at least be able to find some $\xi\equiv \xi(x)$ that varies continuously with respect to $x$. Or isn't this necessarily the case? 
+Thanks for any ideas.",['real-analysis']
+156032,Every $k$ vertices in an $k$ - connected graph are contained in a cycle.,"Let $G$ be a $k$ -connected graph. Meaning, $G$ has no fewer than $k$ vertices, and for every set of $k-1$ or fewer vertices, if we remove them from $G$ , the graph stays connected (Of course, $G$ itself is also connected). I want to prove that for any $k>1$ , if $G$ is $k$ -connected, then every set of $k$ vertices is contained in a cycle. I have tried some ways - mainly using induction by removing one of the vertices of the set from the graph, and/or using Menger's theorem to construct the cycle. But I always encounter problems with making sure that the cycle I'm building deosn't have repeating edges etc. Help would be greatly appreciated :)
+Thanks!","['graph-theory', 'combinatorics']"
+156036,Why are bump functions compactly supported?,"Smooth and compactly supported functions are called bump functions. They play an important role in mathematics and physics. In $\mathbb{R}^n$ and $\mathbb{C}^n$, a set is compact if and only if it is closed and bounded. It is clear why we like to work with functions that have a bounded support. But what is the advantage of working with functions that have a support that is also closed? Why do we often work with compactly supported functions, and not just functions with bounded support?","['compactness', 'real-analysis']"
+156056,Series about Euler-Maclaurin formula,"The Euler-Maclaurin formula says (from Concrete Mathematics section 9.5) \[
+  \sum_{a\le{}k< b}f(k)=\int_a^bf(x)dx+\left.\sum_{k=1}^m\frac{B_k}{k!}f^{(k-1)}(x)\right|_a^b+R_m
+  \]
+  where $\displaystyle{}R_m=(-1)^{m+1}\int_a^b\frac{B_m(\{x\})}{m!}f^{(m)}(x)dx$, integers $a\le{}b$ and $m\ge1$. However, let $a=0$, $b=n$, and consider the series
+\[
+\int_0^nf(x)dx+\sum_{k=1}^\infty\frac{B_k}{k!}\left(f^{(k-1)}(n)-f^{(k-1)}(0)\right)
+\]
+Unfortuntely, the series usually diverges. So, I wonder whether there is some sufficient condition (easy to verify) that the series converges? Especially when the series $\sum_{k=0}^\infty{}f(k)$ converges, or more stronger, converges absolutely, what about those conditions?","['asymptotics', 'divergent-series', 'sequences-and-series', 'euler-maclaurin']"
+156067,What's the name of this operator?,"Let $f,g$ be functions in $C^A$ and $C^B$ respectively. Let $\boxtimes:C^A \times C^B \to (C\times C)^{A \times B}$ s.t. $f\boxtimes g(a,b)=(f(a),g(b))$ It seems not the tensor product, nor Cartesian product. Then can we call it direct product? But it seems the term 'direct product' often used on operator between structures.","['set-theory', 'category-theory', 'model-theory', 'abstract-algebra']"
+156071,"Is $C[0,1]$ normal with the topology of pointwise convergence?","I was asked a question by someone the other day regarding the topology of pointwise convergence, and I can't seem to get anywhere with it. I was wondering if anyone could be of any assistance... The question was: is $C[0,1]$, the set of continuous real-valued functions from $[0,1]$ to $\mathbb{R}$, with the topology of pointwise convergence (defined by the sub-basis $A_{a,x,b} :=\{f\in C[0,1] : a< f(x) < b\}$ for $x \in [0,1]$ and $a<b \in \mathbb{R}$) a normal topological space? Wikipedia suggests that $C(\mathbb{R})$ is not normal, so I've tried to show this as a starting point, and then work out whether the same argument holds or fails when we restrict to $[0,1]$: but I can't really get anywhere with this either. My gut instinct seems to tell me that $C[0,1]$ is not normal, and I have some rather vague hand-wavey intuition for why but I can't really pin anything down at all and have given myself a bit of a headache. Could anyone point me in the right direction with a good hint or reference please? The question is quite interesting so I'd prefer to try and finish it myself than be given a full solution. Thanks!",['general-topology']
+156098,Tangent sheaf of a (specific) nodal curve,"Given a nodal (= reduced, connected, projective, having only ordinary double points as singularities) curve $C$ consisting of 5 $\mathbb P^1$ labeled $C_0, D_1, D_2, D_3, D_4$ such that $D_i$ intersects only $C_0$ in exactly one point $P_i$ and $P_i \neq P_j$ for $i \neq j$ transversally. The dual graph of $C$ is a cross with $C_0$ in the middle and $D_1, \ldots, D_4$ as leafs. I want to compute the dimension dim $H^0(C, T_C)$ of the global sections of the tangent sheaf $T_C$ to $C$?","['algebraic-geometry', 'algebraic-curves']"
+156117,How do I show that this function is always $> 0$,"Show that $$f(x) = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} +
+ \frac{x^4}{4!} > 0 ~~~ \forall_x \in \mathbb{R}$$ I can show that the first 3 terms are $> 0$ for all $x$: $(x+1)^2 + 1 > 0$ But, I'm having trouble with the last two terms. I tried to show that the following was true: $\frac{x^3}{3!} \leq \frac{x^4}{4!}$ $4x^3 \leq x^4$ $4 \leq x$ which is not true for all $x$. I tried taking the derivative and all that I could ascertain was that the the function became more and more increasing as $x \rightarrow \infty$ and became more and more decreasing as $x \rightarrow -\infty$, but I couldn't seem to prove that there were no roots to go with this property.",['calculus']
+156122,Probability; can't understand the maths,"For a random variable $x$, define a probability distribution $p[x=n]=c (3^n/n!)$ when $x=0, 1, 2, \dots$ and $p(x)=0$ otherwise. Find the value of $c$. My professor provided the solution
+$$
+\sum_{x=0}^\infty \ c\frac{3^n}{n!}=1
+$$ 
+so $c\;e^3 = 1$. I can't understand why the summation has value $1$.",['probability']
+156140,Solution to $x=1+\frac{1}{1+\frac{1}{1+\frac{1}{1+\ldots}}}$ [duplicate],"This question already has answers here : Closed 12 years ago . Possible Duplicate: Why does this process, when iterated, tend towards a certain number? (the golden ratio?) Please post your favorit solution to the following Compute $x=1+\cfrac{1}{1+\cfrac{1}{1+\cfrac{1}{1+\ldots}}}$ Thank you","['continued-fractions', 'number-theory']"

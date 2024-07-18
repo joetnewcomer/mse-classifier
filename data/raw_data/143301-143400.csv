@@ -1,0 +1,653 @@
+question_id,title,body,tags
+2329248,To compute $\frac{1}{2\pi i}\int_\mathcal{C} |1+z+z^2|^2 dz$ where $\mathcal{C}$ is the unit circle in $\mathbb{C}$ [duplicate],This question already has answers here : Complex integral (3 answers) Closed 7 years ago . Let $\mathcal{C}$ denote the unit circle in $\mathbb{C}$ centred at the origin taken anticlockwise. Compute the value of the integrtal $$\frac{1}{2\pi i}\int_\mathcal{C} |1+z+z^2|^2 dz$$ I don't recon we can use the residue theorem to compute this integral because the integrand is not analytic anywhere. I then tried substituting $z=e^{i\theta}$ and integrating it the traditional way but cant make much of the integrated $|1+e^{i\theta}+e^{2i\theta}|^2$. Any help would be much appreciated. Thanks.,"['complex-analysis', 'complex-numbers']"
+2329255,Are most matrices diagonalizable?,"More precisely, does the set of non-diagonalizable (over $\mathbb C$) matrices have Lebesgue measure zero in $\mathbb R^{n\times n}$ or $\mathbb C^{n\times n}$? Intuitively, I would think yes, since in order for a matrix to be non-diagonalizable its characteristic polynomial would have to have a multiple root. But most monic polynomials of degree $n$ have distinct roots. Can this argument be formalized?","['matrices', 'lebesgue-measure', 'diagonalization', 'measure-theory', 'linear-algebra']"
+2329257,the sum of elements of all possible subset $B$ is,"Let $A = \{1,2,3,4,\cdots \cdots ,22\}$ and $B$ is a subset of $A$ having exactly $11$ elements. Then the sum of elements of all possible subset $B$ is $\bf{Attempt}$ Number of subset of $A$ having excatly $11$ elements is $\displaystyle \binom{22}{11}$ Now how can i find sum of elements of all subset of $B$ , could some help me , thanks",['combinatorics']
+2329270,Expanding Nebula: Problem in Cellular Automata or Coding Theory,"First post to Math Stackexchange. Recently I was posed with a mathematically intensive computer programming challenge that I am completely at a loss for solving. To give you some info on my math background, I'm a senior physics major and computer science minor at university and have recently completed a course in linear algebra in addition to having taken calc 1, 2, multivariate calc, and diff eq. I have some small experience with discrete mathematics and number theory from an intro computer science course. I have applied linear algebra, discrete mathematics, and algebraic coding courses scheduled in the next 6 months but am not sure if I will cover the material to answer my problem. I would wait until after taking the courses to see if I can apply anything new to it but this problem has been driving me nuts. I'm not necessarily looking for a solution but rather some areas to look into that may help me to solve it. If more info or explanation is needed, please let me know. The problem is as follows: From the scans of the nebula, you have found that it is very flat and distributed in distinct patches, so you can model it as a 2D grid. You find that the current existence of gas in a cell of the grid is determined exactly by its 4 nearby cells, specifically, (1) that cell, (2) the cell below it, (3) the cell to the right of it, and (4) the cell below and to the right of it. If, in the current state, exactly 1 of those 4 cells in the 2x2 block has gas, then it will also have gas in the next state. Otherwise, the cell will be empty in the next state. For example, let's say the previous state of the grid (p) was: .O..
+..O.
+...O
+O... To see how this grid will change to become the current grid (c) over the next time step, consider the 2x2 blocks of cells around each cell.  Of the 2x2 block of [p[0][0], p[0][1], p[1][0], p[1][1]], only p[0][1] has gas in it, which means this 2x2 block would become cell c[0][0] with gas in the next time step: .O -> O
+.. Likewise, in the next 2x2 block to the right consisting of [p[0][1], p[0][2], p[1][1], p[1][2]], two of the containing cells have gas, so in the next state of the grid, c[0][1] will NOT have gas: O. -> .
+.O Following this pattern to its conclusion, from the previous state p, the current state of the grid c will be: O.O
+.O.
+O.O Note that the resulting output will have 1 fewer row and column, since the bottom and rightmost cells do not have a cell below and to the right of them, respectively. Write a function answer(g) where g is an array of array of bools saying whether there is gas in each cell (the current scan of the nebula), and return an int with the number of possible previous states that could have resulted in that grid after 1 time step.  For instance, if the function were given the current state c above, it would deduce that the possible previous states were p (given above) as well as its horizontal and vertical reflections, and would return 4. The width of the grid will be between 3 and 50 inclusive, and the height of the grid will be between 3 and 9 inclusive.  The answer will always be less than one billion (10^9). Inputs:
+(boolean) g = [
+                [true, false, true],
+                [false, true, false],
+                [true, false, true]
+              ]
+Output:
+(int) 4
+
+Inputs:
+(boolean) g = [
+                [true, false, true, false, false, true, true, true],
+                [true, false, true, false, false, false, true, false],
+                [true, true, true, false, false, false, true, false],
+                [true, false, true, false, false, false, true, false],
+                [true, false, true, false, false, true, true, true]
+              ]
+Output:
+(int) 254
+
+Inputs:
+(boolean) g = [
+                [true, true, false, true, false, true, false, true, true, false],
+                [true, true, false, false, false, false, true, true, true, false],
+                [true, true, false, false, false, false, false, false, false, true],
+                [false, true, false, false, false, false, true, true, false, false]
+              ]
+Output:
+(int) 11567 I have looked into coding theory but don't think this falls into any of those categories. I have explored options in bit masking image processing, and cellular automata. The closest I have come to a solution is in researching Margolus neighborhood 2D cellular automata. As this isn't reversible by definition, I haven't found a solution or even general method to find a solution. I'm just curious where I should look. I know this has to have an answer stemming from a field in mathematics but it doesn't resemble anything I currently know.","['combinatorics', 'cellular-automata', 'probability', 'discrete-mathematics']"
+2329271,How to calculate derivative under area integral,"I have a function which is defined as
+\begin{equation}
+P(x_i,y_i)=\iint_{(x-x_i)^2+(y-y_i)^2\leq\delta}f(x,y,x_i,y_i) \, dx \, dy.
+\end{equation}
+How to calculate the derivative with respective $x_i$? Is it enough to write
+\begin{equation}
+\frac{\partial P(x_i,y_i)}{\partial x_i}=\iint_{(x-x_i)^2+(y-y_i)^2 \leq \delta} \frac{\partial f(x,y,x_i,y_i)}{\partial x_i} \, dx\,dy.
+\end{equation} Since the boundary is also a function of $x_{i}$, do we have to add another term like the Leibniz rule for differentiating an integral?","['partial-derivative', 'mathematical-physics', 'multivariable-calculus', 'analysis', 'vector-analysis']"
+2329280,"Derivative of $\|A - S\,S^\mathsf{T}\|_\mathsf{F}^2$ wrt. $S$","Fix $A\in M_n(\mathbb{C})$ and let $f : M_{nm}(\mathbb{C}) \to \mathbb{R}$ be defined as $f(S) = \tfrac{1}{2}\|A - S\,S^\mathsf{T}\|_\mathsf{F}^2$ (yes I do mean the transpose and not the adjoint). I want to compute $\frac{\partial f}{\partial S}$. From the Matrix Cookbook 2.8.1 ( link ) we could use the chain rule
+$$\frac{\partial f}{\partial S_{ij}} = -\mathsf{tr}\,\left[(A^\mathsf{T} - SS^\mathsf{T})\frac{\partial S S^\mathsf{T}}{\partial S_{ij}}\right].$$ Working with this we can see
+$$\frac{\partial S S^\mathsf{T}_{kl}}{\partial S_{ij}} = \begin{cases}2 s_{ij} & \text{if } k=l=i\\s_{lj} & \text{if }k=i\neq j\\s_{kj} & \text{if }j=i\neq k\\ 0 & \text{otherwise}\end{cases}$$ so $$\frac{\partial S S^\mathsf{T}}{\partial S_{ij}} = S_je_i^\mathsf{T} + e_iS_j^\mathsf{T}$$ where $S_j$ is the $j$-th column of $S$. It follows that
+$$\frac{\partial f}{\partial S_{ij}} = -\mathsf{tr}\,\left[(A^\mathsf{T} - SS^\mathsf{T})(S_je_i^\mathsf{T} + e_iS_j^\mathsf{T})\right].$$ How can I simplify this further ? Ideally I would have a closed form expression for $f'(S)$ without having to index with coordinates.","['optimization', 'operator-theory', 'functional-analysis', 'convex-optimization', 'linear-algebra']"
+2329294,The validity of the proofs of the Pythagorean Theorem and the concept of area,"this might be a very elemental question but it has been bothering me for a while. Must of the proofs I've seen of the Pythagorean Theorem involve showing that the areas of the squares with side length $a$ and $b$ add up to the area of the square with side length $c$. This is generally done by rearranging triangles. 
+My problem with this type of proofs is that they only show that the areas must be the same but don't show that $a^2+b^2=c^2$. Why must the area of a square with side $a$ be defined as $a^2$. Say for example that you had another way of measuring the surface of a square with a given side length (and it behaves as we would intuitively want area to behave). If this function is called $A$ then the visual proofs of the theorem would only show that $A(a)+A(b)=A(c)$. So, does this type of proof works because we just happen to define area as we do, or does $A(a)+A(b)=A(c)$ must imply $a^2+b^2=c^2$? Now, if $A(a)+A(b)=A(c)$ does imply $a^2+b^2=c^2$ that would mean that our function $A$ (which behaves as area does) must include the square of the side in its formula. For example $A(x)=kx^2, k>0$ (which does imply the pythagorean theorem). Are there other ways to define the surface of a square such that it behaves as it physically does? Would the visual proofs still be valid? Thank you!","['euclidean-geometry', 'measure-theory', 'geometry']"
+2329298,Graph of $(-1)^x$,"What would the graph of $(-1)^{x}$ look like? I know that the value of the function alternates between $1$ and $-1$ when it is defined so I think it would just be points spread over the lines $x=1$ and $x=-1$. Is this correct? Also, will there be any definite pattern of the points.","['exponential-function', 'functions', 'graphing-functions']"
+2329355,Average and Percent,"In an Math Exam there are 80 more men than women. The result showed that the women's average is 20% higher than men's, and that the total average is 75%. what is the women's average?
+So far I did ... 
+$$H=W+80$$ $$\overline{W}=1,2\overline{H}\Rightarrow \overline{H}=\frac{\overline{W}}{1,2}$$ but $$\overline{H}=\frac{S_H}{H}\Rightarrow S_H=H\overline{H}$$ and $$\overline{W}=\frac{S_W}{W}\Rightarrow S_W=W\overline{W}$$ as $$75\%=\frac{S_W+S_H}{H+W}\Rightarrow 75\%=\frac{W\overline{W}+(W+80)\frac{\overline{W}}{1,2}}{2W+80}$$
+I've tried but I couldn't handle the math till the end.","['algebra-precalculus', 'average']"
+2329356,Let G be group of order $125$. Will it have a subgroup of order $25$?,"Let $G$ be a group of order $125$. Does it have a subgroup of order $25$ ? For any abelian group, the answer is yes. But what about non-abelian groups? I cannot understand. Can anyone help me?","['finite-groups', 'abstract-algebra', 'group-theory']"
+2329365,$\sum_{i=1}^{\infty}\sum_{j=1}^{\infty} |a_{ij}|$ converges if and only if $\sum_{j=1}^{\infty}\sum_{i=1}^{\infty} |a_{ij}|$ converges?,"Let $\{a_{ij}: i, j \in \mathbf{N}\}$ be a doubly indexed array of real numbers. Is it true that $\sum_{i=1}^{\infty}\sum_{j=1}^{\infty} |a_{ij}|$ converges if and only if $\sum_{j=1}^{\infty}\sum_{i=1}^{\infty} |a_{ij}|$ converges? If so, how can I prove it?","['real-analysis', 'sequences-and-series']"
+2329366,$f(x) = \arctan x | x\in R$.,$f(x) = \arctan x | x\in R$. Then 1) $f^{(n)}(0) = 0$ for all positive even integers n. 2)the sequence ${f^{(n)} (0)}$ is unbounded. Are they correct? How can derivative of more than three degree be computed?,"['derivatives', 'calculus']"
+2329371,If $x^3 - 5x^2+ x=0$ then find the value of $\sqrt {x} + \dfrac {1}{\sqrt {x}}$,"If $x^3 - 5x^2+ x=0$ then find the value of $\sqrt {x} + \dfrac {1}{\sqrt {x}}$ My Attempt:
+$$x^3 - 5x^2 + x=0$$
+$$x(x^2 - 5x + 1)=0$$
+Either,
+$x=0$ And,
+$$x^2-5x+1=0$$
+??","['algebra-precalculus', 'radicals', 'polynomials', 'quadratics']"
+2329376,Is there a close form solution for parallel transport on 2 sphere along the great circles.,"I need to transport a tangent vector on 2-sphere from point $p$ to $q$ along the geodesic, which is defined using great circles in this case.
+I believe there are iterative solutions to achieve that like explained here . Is there a close form solution to achieve that?","['riemannian-geometry', 'manifolds', 'ordinary-differential-equations', 'differential-geometry', 'lie-groups']"
+2329381,"Identity for all uniformly bdd functions follows ""by basic Fourier (transform) analysis""?","I found an interesting identity in a paper in a paper I am reading (page $9$). The statement is as follows:
+$\mathcal F$ is the Fourier transform, $P$ the law of a random variable $X$ and $\varphi$ is the characteristic function of $X$
+$$
+\int_{\mathbb R}f\ast\mathcal F^{-1}[\frac 1{\varphi}(-\bullet)](x)P(dx)=f(0)
+$$ 
+for any uniformly bounded function $f$. The statement should follow by basic Fourier analysis, I suspect maybe some kind of Plancherel . Somehow I feel we should utilize (the transform is this way defined to be identical to the characteristic function) $$
+\mathcal F[P]=\varphi
+$$ 
+so that the characteristic functions can cancel out. however so far I couldn't make it work. Since it is supposed to hold for all 
+uniformly bounded functions there could also a dirac point measure be involved, not sure. Has anyone got an idea? An attempt (more of an heuristic), I can't justify each step: Since we have $\mathcal F[P]=\varphi$ we have $P=\mathcal F^{-1}\varphi$ so we write
+$$
+\int_{\mathbb R}f\ast\mathcal F^{-1}[\frac 1{\varphi}(-\bullet)](x)P(dx)=\int_{\mathbb R}f\ast\mathcal F^{-1}[\frac 1{\varphi}(-\bullet)](x)\mathcal F^{-1}[\varphi](dx)
+$$
+we now apply Plancherel (the sign vanishes due to complex conjugation)
+$$
+\int_{\mathbb R}f\ast\mathcal F^{-1}[\frac 1{\varphi}(-\bullet)](x)\mathcal F^{-1}[\varphi](dx)=\frac 1{2\pi}\int_{\mathbb R}\mathcal F[f](u)\frac1{\varphi}(u)\varphi(u)du=\frac 1{2\pi}\int_{\mathbb R}\mathcal F[f](u)du
+$$
+Now this transfers into 
+$$
+\frac 1{2\pi}\int_{\mathbb R}\mathcal F[f](u)du=\frac 1{2\pi}\int_{\mathbb R}\Big(\int_{\mathbb R}e^{iux}f(x)dx\Big)du
+$$
+which becomes using Fubini (or anything which allows us to exchange the order of integration) and $\frac 1{2\pi}\int_{\mathbb R}e^{iux}du=\delta(x)$
+$$
+\int_{\mathbb R}\Big(\frac 1{2\pi}\int_{\mathbb R}e^{iux}du\Big )f(x))dx=\int_{\mathbb R}\delta(x)f(x)dx=f(0)
+$$","['probability-theory', 'fourier-analysis', 'measure-theory', 'fourier-transform']"
+2329388,one problem from limit [duplicate],This question already has an answer here : Find the Set With Given Condition (1 answer) Closed 7 years ago . How will I proceed for the question 63? Can anyone help me out?,"['multivariable-calculus', 'real-analysis', 'calculus']"
+2329396,Why are finite representations of finite groups always diagonalisable?,"Theorem : If $G$ is a finite group and if $\rho: G \rightarrow GL_n(\mathbb{C})$ is a group representation, then for each $g \in G$, the matrix $\rho(g)$ is diagonalizable. In my notes from class we have the following results: 1) If we have an $n \times n$ Jordan block $J_n$ of finite order (that is, if there exists an natural number $k$ such that J^k = I), then $n=1$. 2) If a matrix $M$ is of finite order (there is some $k$ such that $M^k = I$) then $M$ is diagonalizable. Which can be used to prove the above stated theorem, however I am a bit confused as to how.  If all we are given to work with is some finite group $G$, what allows us to say that $\rho(g)$ for any $g$ is of finite order?  And hence diagonalizable?  I see that if the group is finite, the elements of the group should have finite order, but I'm not sure how to convincingly tie this in with the very abstract $\rho(g)$ that I am working with.","['finite-groups', 'representation-theory', 'group-theory']"
+2329402,"$G$ infinite where every non trivial proper subgroup is maximal, show $G$ is simple","I need to prove that if $G$ is an infinite group in which every non trivial proper subgroup is maximal, $G$ is simple. I've found this: Let $G$ be a non-trivial group with no non-trivial proper subgroup. Prove that $G$ cannot be infinite group. but it says nothing about maximals. I must show that there can't be normal proper subgroups, right?  Well, if every proper non trivial subgroup is maximal, it means that there can't be another proper one that contains this and it's different. In other words: $H$ is maximal if there is no other proper subgroup $K$ such that $H\subset K$ strictly. I cannot see a connection to normality of such subgroups. Which should be the way to tackle this problem?","['abstract-algebra', 'group-theory']"
+2329412,Ideal of an affine n-space over an infinite field k.,"Is the ideal of an affine n-space over an infinite field equal to the null set of polynomials? If so, why? I am not able to fully comprehend the reason why it is so.","['roots', 'polynomials', 'algebraic-geometry']"
+2329442,Iterated limits and normal limits (over $\mathbb R^2 \to \mathbb R$ (and $\mathbb R^n$)),"When one studies multi-variable functions, usually starting with functions from $\mathbb R^2$ to $\mathbb R$, at the very beginning we are taught that iterating limits and ""normal limits"" (i.e by definition) does not behave equally, and that the existance of one does not promise the existence of the other, for example: $$f(x,y) = \begin{cases} \frac{xy}{x^2+y^2} & (x,y)\ne(0,0) \\ 0 & (x,y) = (0,0)\end{cases}$$ for this function we get that: $$\lim_{x\to 0}\lim_{y\to 0}= \lim_{y\to 0}\lim_{x\to 0} = 0$$ but this limit does not exist: $$\lim_{(x,y)\to (0,0)}f(x,y)$$
+$$$$
+Or the other way, with this function serving as an example: $$f(x,y) = \begin{cases} x+y\sin(\frac{1}{x}) & x\ne0\\0&x=0 \end{cases}$$ here we get that:
+$$\lim_{(x,y)\to (0,0)}f(x,y)=0$$ but this limit does not exist:
+$$\lim_{y\to0}\lim_{x\to0} f(x,y)$$ $$$$ My question is this: Is there, under any presumtions or conditions, any connection between the ""normal limit"" and the iterated limits, which makes them ""iff"" statements, or that if one exists, the other also exists (and the other way as well). If so, what are they, and how do we prove them? (I will note that this is not the same question that can be found here: Limits of 2 variable functions , or here: Iterated Limits , since my question does not include any assumption that the all the limits exist and (some of them) are equal, and in fact, I ask if any conditions or presumptions hold (maybe for a group of functions?) we can get the connection). Thanks! Edit: Is the ""Moore-Osgood theorem"" relevant for this? Wikipedia states that ""If ${\displaystyle \lim _{x\to p}f(x,y)}$ exists pointwise for each $y$ different of $q$ and if ${\displaystyle \lim _{y\to q}f(x,y)}$  converges uniformly for $x≠p$ then the double limit and the iterated limits exist and are equal."", also found in this link: http://www.math.unm.edu/~loring/links/analysis_f10/exchange.pdf .
+If so, I didn't understand it, and would love your explanation on it.","['multivariable-calculus', 'general-topology', 'calculus', 'limits']"
+2329473,"I don't get how the word ""jet"" is used","I don't quite get how to use the word ""jet"" in differential topology. Question. Are jets more like tangent vectors, or are they more like vector fields? In other words, are $k$-jets elements of the order-$k$ jet bundle, or are they sections of the order-$k$ jet bundle? Also, what do we call the other thing? For example, if ""$k$-jet"" means a section of the order-$k$ jet bundle, then what do we call the elements of the order-$k$ jet bundle? And vice versa.","['differential-geometry', 'differential-topology']"
+2329488,In a unital $C^*$-algebra: Why is $a^*a\le \|a\|^21_A$?,"Let $A$ be a unital $C^*$-algebra, $a\in A$. Why is $a^*a\le \|a\|^21_A$? I think this is a functional calculus argument.
+The functional calculus to $a^*a$ is an isomorphism of $C^*$-algebras $$C(\sigma(a^*a))\to C^*(a^*a,1_A),\; f\mapsto f(a^*a).$$
+We have that $\|a\|^2=\|a^*a\|$ and $\sigma(a^*a)\subseteq [0,\|a\|^2]$. My first guess was to consider the function $f(x)=|x|-x$, but $f$ is zero on $\sigma(a^*a)$, so it doesn't work. So, how to prove $a^*a\le \|a\|^21_A$? Thank you.","['functional-analysis', 'c-star-algebras']"
+2329489,Poincare duality gives the forms with integer integral along loops,"Let $X$ be a surface. We know for any loop $\gamma$ we can find a form $\alpha$ such that integral along $\gamma$ equals integral wedge $\alpha$ on the surface. My question is, are these forms ($\alpha$, get from duality) exactly those which integral along every loop is an integer? I checked this is true for torus, so I want to know if is true in general.","['algebraic-topology', 'differential-forms', 'differential-geometry', 'algebraic-geometry']"
+2329525,Sampling from a truncated PDF,"I have a PDF $f$ that I know how to sample from, and I want to sample from the PDF
+$$ g(x) = \frac{f(x)}{\bar{F}(s)} \mathbb{1}_{(x>s)}$$
+where $s > 0$, $\bar{F}(s) = \mathbb{P}(X>s)$, and $\mathbb{1}_{(\cdot)}$ is the indicator function. Can I sample from $f$ and accept only samples that are greater than $s$ to be samples form $g$?","['probability-theory', 'sampling', 'probability-distributions', 'statistics', 'probability']"
+2329528,Can a binary operation have an identity element when it is not associative and commutative? [duplicate],"This question already has answers here : Non-associative, non-commutative binary operation with a identity (8 answers) Closed 2 years ago . I tried getting the answers in similar questions, everyone says that it's not necessary, but if $e$ is the identity element for any binary operation $*$, which is not associative and commutative, how can $$a*e=a=e*a$$ when it is not commutative, i.e. $a*b \ne b*a$? Even if we get a value by solving $a*e=a$. Will we get the same value by solving
+$e*a=a$ ?
+Please provide an example.","['abstract-algebra', 'binary-operations']"
+2329534,Solve $x^2 + (y-1)^2 + (x-y)^2 - \frac{1}{3} = 0.$ [closed],"Closed. This question does not meet Mathematics Stack Exchange guidelines . It is not currently accepting answers. Please provide additional context , which ideally explains why the question is relevant to you and our  community. Some forms of context include: background and motivation, relevant definitions, source, possible strategies, your current progress, why the question is interesting or important, etc. Closed 2 years ago . Improve this question I came across an interesting equation with two variables $x,y\in\mathbb{R}$ , $x^2 + (y-1)^2 + (x-y)^2 - \frac{1}{3} = 0.$ This, once expanded, can be simplified to $3x^2 - 3xy + 3y^2 - 3y + 1=0.$ How can one proceed to solve it algebraically? The solution according to Wolfram is $(x,y)=(\frac{1}{3},\frac{2}{3}).$","['algebra-precalculus', 'conic-sections', 'polynomials']"
+2329608,Find expected value of X,"I have a problem with following task. We have a square with sided equal to 1. We now slice it with two lines horizontal and vertical. Now let $Z$ be the minimal area of the $4$ rectangles. I need to calculate $E Z$. So my idea was $Z=\min{(xy,(1-x)y,(1-y)x,(1-x)(1-y)})$ and calculate distribution:
+$$P(Z<t)$$
+Is my approach right?","['probability-theory', 'probability']"
+2329660,Binomial distribution: gamification for online casino,"This'll be my first post here and I haven't done any statistics in 10 years, so I need some help getting back into it. So I'm working on a gamification system for an online casino and I'm trying to figure out the likelyhood of certain events, and a fair prize for completing the event. Slot $X$ has a hit frequency of $44.9$%.
+The odds for winning $3$ times in a row (binomial distribution) is $9.05188$% How many times, on average, do I need to spin to win 3 times in a row? Any help would be greatly appreciated!","['statistics', 'binomial-distribution']"
+2329685,Area under the graph - integration,"The region $P$ is bounded by the curve $y= 3x-x^2$ , the $x$ -axis and the line $x=a$ . The region $Q$ is bounded by the curve $y= 3x-x^2$ , the $x$ -axis and the lines $x=2a$ and $x=a$ . Given that the area of $Q$ is twice the area of $P$ , find the value of $a$ . Firstly , on the first step , in already stuck ... I used definite integral to find the area of $P$ - $$\int^a_0\ (3x-x^2)dx=\frac{9a^2-2a^3}{6}$$ However when I calculate area of $Q$ , it's the same as Area of $P$ - $$\frac{9a^2-2a^3}{6}$$ Then since $Q= 2P$ $9a^2 - 2a^3 = 18a^2 - 4a^3 $ From here, I definitely can't find the value of $a$ ... where have I gone wrong or misunderstood ?","['integration', 'calculus']"
+2329702,Inverse of multivariate normal under restrictions on marginal CDFs,"Is it possible to uniquely define an inverse of a multivariate normal distribution by applying some further restrictions on the values of the CDFs of the marginals? For example, if we insist that the marginal CDFs have to be the same, i.e. $\Phi_1(x_1;\mu_1,\sigma_1) = \Phi_2(x_2;\mu_2,\sigma_2) = ... = \Phi_n(x_n;\mu_n,\sigma_n)$. Is this conditions enough to uniquely define $\Phi^{-1}_{x_1,x_2,...x_n}(p)$? What about a restriction on the combination of marginal CDFs, e.g. minimize $\sum\Phi_i(x_i)$ or $\sum(\Phi_i(x_i))^2$? Are there some general conditions on the restrictions that have to be imposed to guarantee a unique inverse? If a CDF is defined not using rectangular regions, but using ellipsoids, then - 
+if my understanding is correct - for a 2d case of bivariate normal, the inverse of the CDF at $p$ defines an ellipse given by $$ -2\ln(1-p) = (\mathbf x -\mathbf \mu)^T \mathbf \Sigma^{-1}(\mathbf x-\mathbf \mu)$$ and the condition $\Phi_1(x_1;\mu_1,\sigma_1) = \Phi_2(x_2;\mu_2,\sigma_2)$ defines a straight line by $$\mathbf x = \mathbf\mu + \Phi^{-1}_{0,1}(\alpha) \mathbf \sigma  : \alpha \in (0,1)$$ where $\mathbf x = (x_1,x_2)^T$, $\mathbf\mu = (\mu_1,\mu_2)^T$, and $\mathbf \sigma = (\sigma_1,\sigma_2)^T$. Substituting and solving for $\Phi^{-1}_{0,1}(\alpha)$ gives $$ \Phi^{-1}_{0,1}(\alpha) = \pm \sqrt \frac{-2\ln(1-p)}{\mathbf\sigma^T \mathbf\Sigma^{-1} \mathbf\sigma} $$ Thus, the intersection of the ellipse and the straight line  would give two pairs of points, and one would then take the point falling into the lower left quadrant (relative to the mean $\mathbf \mu$) by taking the negative of the square root above.","['probability', 'normal-distribution', 'probability-distributions']"
+2329717,Is a stopped local martingale a local martingale?,"Let $(\Omega,\mathcal A,\operatorname P)$ be a probability space $(\mathcal F_t)_{t\ge0}$ be a filtration of $\mathcal A$ $M$ be a local $\mathcal F$-martingale on $(\Omega,\mathcal A,\operatorname P)$ $\tau$ be an $\mathcal F$-stopping time Is $M^\tau$ a local $\mathcal F$-martingale? With the given assumptions, this claim can be found in the proof of Lemma 15.1 in Foundations of Modern Probability by Olav Kallenberg. I know how we're able to prove the claim using the Optional Sampling Theorem, if $\tau$ takes only countable many values or $M$ is almost surely right-continuous, but I have no idea how I can prove the claim without one of these additional assumptions. More concretely, he states that if $(\sigma_n)_{n\in\mathbb N}$ is an $\mathcal F$-localizing sequence for $M$, then $(M^\tau)^{\sigma_n}=(M^{\sigma_n})^\tau$ is an $\mathcal F$-martingale. So, maybe the question reduces to the question if a stopped martingale is a martingale, but, again, I'm only able to proof this with the Optional Sampling Theorem and one of its additional assumptions.","['stochastic-processes', 'local-martingales', 'probability-theory', 'stopping-times', 'martingales']"
+2329751,Definition of differential of multivariable function,"I have this definition: $f:R^n → R^m$ is differentiable at $a∈R^n$, if there exists a linear transformation $μ:R^n→R^m$ such that $\lim_{h \to 0} \frac{|f(a+h)-f(a)-\mu(h)|}{|h|} = 0$. My questions are what's the linear transformation $μ(h)$ for? What does it mean and where does it come from? Why is it necessary? Can anyone explain the definition to me a bit better? Thanks","['multivariable-calculus', 'differential']"
+2329774,A weakly closed set in $X$ that remains weakly-star closed in $X^{**}$,"I have $X$ a (non-reflexive) Banach space and $B\subset X$ a weakly closed convex subset. I wonder under what additional conditions (other than weak compactness) $B$ remains weakly-star closed in $X^{**}$. My take on this:- the canonical embedding $J:(X,w)\to (X^{**},w^*)$ is linear continuous and my question refers to finding on what sets $B$ is  $J$ a closed map. Another remark: - because $B$  is strongly closed in $X$ it is so in $X^{**}$. Combined with $B$ convex that yields that $B$ is weakly closed in $X^{**}$. It remains to get to the weak-star topology on $X^{**}$.","['functional-analysis', 'banach-spaces', 'locally-convex-spaces']"
+2329803,unitization is complete,"Let $A$ be a nonunital $C^*$-algebra, $A^1=A\oplus \mathbb{C}$ as $\mathbb{C}$-vector space. Let $A^1$ be endowed with $(a+\lambda1)^*=a^*+\overline{\lambda}1$ as the involution and $(a+\lambda1)(b+\mu1)=ab+\mu a+\lambda b+\lambda\mu$ as the multiplication. We obtain a unital *-Algebra with unit $(0,1)$. A $C^*$-norm in $A^1$ is defined as follows: consider following *-homomorphism: $$L:A^1\to B(A),\; L_{(a+\lambda 1)}(b)=ab+\lambda b\in A$$for $a+\lambda 1\in A^1$ and $b\in A$. We define
+$$\|a+\lambda 1\|_{A^1}:=\|L_{(a+\lambda 1)}\|_{op}.$$ How to prove that $A^1$ is complete w.r.t. this norm? My guess is to start as follows: Let $(x_n)_n\subseteq A^1$ be a cauchy sequence, write $x_n=a_n+\lambda_n1$ for $n\in\mathbb{N}$. Can I conclude that $(a_n)_n$ is a cauchy sequence in $A$ and $(\lambda_n)_n$ a Cauchy sequence in $\mathbb{C}$? If yes, then the completeness for $A^1$ follows, since: Is $a$ the limit of $(a_n)_n$ in $A$ and $\lambda$ the limit of $(\lambda_n)_n$ in $\mathbb{C}$, write $x:=a+\lambda1$. For every $b\in B$, it follows: $\|(a_n-a)b+(\lambda_n -\lambda)b\|_{A}\le \|(a_n-a)\|\|b\|+|\lambda_n -\lambda|\|b\|\to 0$ for $n\to\infty$. If not, how to prove the completeness?","['functional-analysis', 'c-star-algebras', 'banach-spaces']"
+2329858,"Theorem 6.15 in Baby Rudin: If $a<s<b$, $f$ is bounded on $[a,b]$, $f$ is continuous at $s$, and $\alpha(x)=I(x-s)$, then . . .","Here is Theorem 6.15 in the book Principles of Mathematical Analysis by Walter Rudin, 3rd edition: If $a<s<b$, $f$ is bounded on $[a,b]$, $f$ is continuous at $s$, and $\alpha(x)=I(x-s)$, then 
+  $$ \int_a^b f d \alpha = f(s). $$ Here is Definition 6.14: The unit step function $I$ is defined by 
+  $$ I(x) = \begin{cases} 0 \qquad & (x \leq 0), \\ 1 \qquad & (x > 0). \end{cases} $$ And, here is Rudin's proof: Consider partitions $P = \left\{ \ x_0, x_1, x_2, x_3 \  \right\}$, where $x_0 = a$, and $ x_1 = s < x_2 < x_3 = b$. Then 
+  $$ U(P, f, \alpha) = M_2, \qquad L(P, f, \alpha) = m_2. $$ 
+  Since $f$ is continuous at $s$, we see that $M_2$ and $m_2$ converge to $f(s)$ as $x_2 \to s$. Now here is my reading of Rudin's proof: First of all, here are Definitions 6.1 and 6.2 in Baby Rudin, 3rd edition: Definition 6.1: Let $[a, b]$ be a given interval. By a partition $P$ of $[a, b]$ we mean a finite set of points $x_0, x_1, \ldots, x_n$, where 
+  $$ a = x_0 \leq x_1 \leq \cdots \leq x_{n-1} \leq x_n = b.$$
+  We write 
+  $$ \Delta x_i = x_i - x_{i-1} \qquad (i = 1, \ldots, n). $$ 
+  Now suppose $f$ is a bounded real function defined on $[a, b]$. Corresponding to each partition $P$ of $[a, b]$ we put
+  $$
+\begin{align}
+ M_i &= \sup f(x) \qquad (x_{i-1} \leq x \leq x_i), \\
+m_i &= \inf f(x) \qquad (x_{i-1} \leq x \leq x_i), \\
+U(P, f) &= \sum_{i=1}^n M_i \Delta x_i, \\
+L(P, f) &= \sum_{i=1}^n m_i \Delta x_i,
+\end{align}
+ $$
+  and finally 
+  $$ 
+\begin{align}
+\tag{1} \overline{\int}_a^b f dx &= \inf U(P, f), \\
+\tag{2} \underline{\int}_a^b f dx &= \sup L(P, f),
+\end{align}
+$$
+  where the $\inf$ and the $\sup$ are taken over all partitions $P$ of $[a, b]$. The left members of (1) and (2) are called the upper and lower Riemann integrals of $f$ over $[a, b]$, respectively. If the upper and lower integrals are equal, we say that $f$ is Riemann-integrable on $[a, b]$, we write $f \in \mathscr{R}$ (that is, $\mathscr{R}$ denotes the set of Riemann-integrable functions), and we denote the common value of (1) and (2) by 
+  $$ \tag{3} \int_a^b f dx, $$
+  or by 
+  $$ \tag{4} \int_a^b f(x) dx. $$
+  This is the Riemann integral of $f$ over $[a, b]$. Since $f$ is bounded, there exist two numbers, $m$ and $M$, such that 
+  $$ m \leq f(x) \leq M \qquad (a \leq x \leq b). $$
+  Hence, for every $P$, 
+  $$ m(b-a) \leq L(P, f) \leq U(P, f) \leq M (b-a), $$
+  so that the numbers $L(P, f)$ and $U(P, f)$ form a bounded set. This shows that the upper and lower integrals are defined for every bounded function $f$. . . . Definition 6.2: Let $\alpha$ be a monotonically increasing function on $[a, b]$ (since $\alpha(a)$ and $\alpha(b)$ are finite, it follows that $\alpha$ is bounded on $[a, b]$). Corresponding to each partition $P$ of $[a, b]$, we write 
+  $$ \Delta \alpha_i = \alpha \left( x_i \right) -  \alpha \left( x_{i-1} \right). $$
+  It is clear that $\Delta \alpha_i \geq 0$. For any real function $f$ which is bounded on $[a, b]$ we put 
+  $$ 
+\begin{align}
+U(P, f, \alpha) &= \sum_{i=1}^n M_i \Delta \alpha_i, \\
+L(P, f, \alpha) &= \sum_{i=1}^n m_i \Delta \alpha_i, 
+\end{align}
+$$
+  where $M_i$, $m_i$ have the same meaning as in Definition 6.1, and we define 
+  $$
+\begin{align}
+\tag{5} \overline{\int}_a^b f d \alpha = \inf U(P, f, \alpha), \\
+\tag{6} \underline{\int}_a^b f d \alpha = \sup L(P, f, \alpha), 
+\end{align}
+$$
+  the $\inf$ and $\sup$ again being taken over all partitions. If the left members of (5) and (6) are equal, we denote their common value by 
+  $$ \tag{7} \int_a^b f d \alpha $$
+  or sometimes by 
+  $$ \tag{8} \int_a^b f(x) d \alpha(x). $$
+  This is the Riemann-Stieltjes integral (or simply the Stieltjes integral ) of $f$ with respect to $\alpha$, over $[a, b]$. If (7) exists, i.e., if (5) and (6) are equal, we say that $f$ is integrable with respect to $\alpha$, in the Riemann sense, and write $f \in \mathscr{R}(\alpha)$. Now for the proof of Theorem 6.15: For any partition $P = \left\{ \ x_0, x_1, x_2 , x_3  \ \right\}$ of the closed interval $[a, b]$, where 
+  $$a = x_0  < x_1 = s < x_2 < x_3 = b,$$ 
+  we note that 
+  $$
+\begin{align} 
+ U(P, f, \alpha) 
+&= M_1 \left[ \alpha \left( x_1 \right) - \alpha \left( x_0 \right) \right] + M_2 \left[ \alpha \left( x_2 \right) - \alpha \left( x_1 \right) \right] + M_3 \left[ \alpha \left( x_3 \right) - \alpha \left( x_2 \right) \right] \\
+&= M_1 ( 0 - 0) + M_2 ( 1 - 0) + M_3 ( 1 - 1 )  \\
+&= M_2, 
+\end{align}
+$$
+  and similarly, $L(P, f, \alpha) = m_2$; thus 
+  $$ U(P, f, \alpha) = M_2, \qquad L(P, f, \alpha) = m_2, \tag{A} $$
+  and so $$U(P, f, \alpha) - L(P, f, \alpha) = M_2 - m_2, \tag{B} $$ Let $\varepsilon > 0$ be given. As $f$ is continuous at the point $s \in (a, b)$, so  we can find a real number $\delta > 0$ such that $$ a < s-\delta < s < s + \delta < b,$$
+  and 
+  $$ \lvert f(x) - f(s) \rvert < { \varepsilon \over 4 } $$
+  for all $x$ which satisfy $\lvert x-s \rvert < \delta$. Thus, if $s < x_2 < s+\delta$, then we must have 
+  $$ \lvert f(x) - f(s) \rvert <  { \varepsilon \over 4 } $$
+  for all $x \in \left[ s, x_2 \right] =  \left[ x_1 , x_2 \right]$. 
+  That is, 
+  $$ f(s) - { \varepsilon \over 4 } < f(x) < f(s) + { \varepsilon \over 4 }$$
+  for all $x \in \left[ x_1, x_2 \right]$. Therefore, we must have 
+  $$ f(s) - { \varepsilon \over 4 } \leq m_2 \leq M_2 \leq f(s) + { \varepsilon \over 4 }, \tag{C} $$ 
+  and so, by (B) above, 
+  $$  U(P, f, \alpha) - L(P, f, \alpha) = M_2 - m_2 \leq   { \varepsilon \over 2 } < \varepsilon,$$
+  from which it follows (by Theorem 6.6 in Baby Rudin, 3rd edition) that $f \in \mathscr{R}(\alpha)$ on $[a, b]$. Now as 
+  $$ m_2 =  L(P, f, \alpha) \leq \int_a^b f d \alpha \leq U(P, f, \alpha) = M_2, \qquad \mbox{ [ using (A) ]
+ } $$ 
+  so (C) implies that 
+  $$ f(s) - { \varepsilon \over 4 } \leq m_2  \leq \int_a^b f d \alpha  \leq M_2 \leq f(s) + { \varepsilon \over 4 },  $$ 
+   and so 
+  $$ f(s) - { \varepsilon \over 4 }  \leq \int_a^b f d \alpha   \leq f(s) + { \varepsilon \over 4 },  $$ 
+  which in turn implies that 
+  $$ \left\lvert \int_a^b f d \alpha - f(s) \right\rvert \leq  { \varepsilon \over 4 } < \varepsilon$$
+  for every real number $\varepsilon > 0$, showing that 
+  $$ \int_a^b f d \alpha = f(s), $$
+  as required. Is my rendering of Rudin's proof correct and to the point? If not, then at which point have I gone astray?","['real-analysis', 'proof-verification', 'integration', 'definite-integrals', 'analysis']"
+2329859,"Is there $(X,\mathcal{T})$ contractible, $\mathcal{T}'\subseteq\mathcal{T}$ such that $(X,\mathcal{T}')$ isn't contractible?","Let $(X,\mathcal{T})$ be a contractible space and let $\mathcal{T}'\subseteq\mathcal{T}$ be a coarser topology on $X$ than $\mathcal{T}$. Is it always true that $(X,\mathcal{T}')$ is also contractible? I highly doubt that this is the case, because intuitively, if it were true, then it should work with the same homotopies for $\mathcal{T}'$ as for $\mathcal{T}$ because of the generality of the statement (I mean, given the generality, we cannot adapt the homotopy equivalences for $(X,\mathcal{T})$ in a way that makes sense), but there is absolutely no reason for $F:X\times I\to X$ to still be continuous if we equip $X$ with $\mathcal{T}'$ instead of $\mathcal{T}$. However, I fail to come up with a counterexample; the eight topologies I know over $\mathbb{R}$ don't provide one. Can you give an elementary example where this fails?","['general-topology', 'homotopy-theory']"
+2329879,Range in an Interval,"I want to find the range of the function, $$f(x) = {{x + 1} \over {{x^2} + 1}}\,\,\;{\rm{when }}\;x \in \left[ { - 1,1} \right].\;\;\;$$
+I have isolated $x$ as - $$x = {{1 \pm \sqrt {1 - 4y(y - 1)} } \over {2y}}$$
+But I am unable to solve this inequality, $$ - 1 \le {{1 \pm \sqrt {1 - 4y(y - 1)} } \over {2y}} \le 1$$
+as it involved $\, \pm \sqrt {} \,$ part. Please tell me how to proceed from here!","['a.m.-g.m.-inequality', 'quadratic-forms', 'calculus', 'functions']"
+2329882,Integrate outward unit vector over the surface of a sphere,"I'm trying to understand an integration over the surface of a sphere that is used in one of the articles I'm reading. I don't know why I can't understand it as it seems to be a pretty straightforward integration and I have been used to more complex math but anyway. Let $\textbf{r} = \textbf{x - x'}$, $r = |\textbf{r}|$ and $\textbf{n} = \frac{\textbf{r}}{r}$ where $|.|$ is the euclidian norm. The goal is to calculate the following integral for $i, j \in \{1,2,3\}$ : $$I = \int_{A(r)} n_{i}n_{j}\text{d}A$$ Where $A(r)$ denotes a spherical surface of radius $r$. The way I've gone about it is to say that for a spherical surface of radius $r$ we have $$\text{d}A = r\sin(\phi)\text{d}\phi\text{d}\theta$$ with $(\phi, \theta) \in [0,\pi]\times[0,2\pi]$ and since $r_{i}$ or $r_{j}$ are not dependent of the angles we should have $$I = 4\pi r_{i}r_{j}$$ However the article I'm reading has the result $$I = \frac{4\pi r^{2}}{3} \delta_{ij}$$ I've been thinking about it but can't seem to find my mistake. Thanks for your help kind stranger :)","['multivariable-calculus', 'integration', 'definite-integrals', 'calculus']"
+2329897,"On the implication $KJ=K\cap J\,\Rightarrow\,K+J=R$","Let $K=\langle x,y\rangle\subset R=\mathbb C\langle x,y,z\rangle$ be the ideal generated by two out of the three free variables generating the polynomial ring $R$, and let $J\subset R$ be a left ideal such that $R/J\cong \mathbb C^n$ has finite dimension $n$ as a $\mathbb C$-vector space, and satisfies $KJ=K\cap J$. Is it true that $K+J=R$ as left $R$-modules? I think this is true if the following holds. Let $\pi:R\to A=R/[R,R]=\mathbb C[x,y,z]$ be the quotient map, and let $\overline J=\pi(J)$ and $\overline K=(x,y)\subset A$ be the image ideals. Then $\overline K+\overline J=A$. I do not know if this holds. (Geometrically, it means that the finite subscheme $V(J)\subset \mathbb A^3$ does not meet the line $x=y=0$). But if it holds, I think I can write $$R=\pi^{-1}(A)=\pi^{-1}(\overline K)+\pi^{-1}(\overline J)=K+[R,R]+J=K+J,$$ using that $[R,R]\subset K$. Does this sound true?","['modules', 'algebraic-geometry', 'abstract-algebra', 'proof-verification', 'ring-theory']"
+2329923,An alternative algorithm to find the Jordan form/basis for a complex matrix.,"I am currently studying System Theory, and the exam involves a lot of finding Jordan forms/bases for state transition matrices. I know there is an algorithm for doing so which involves generalized eigenvectors and all, but that involves computing many powers of the matrix, which is tedious and prone to errors. I seem to have found an alternative method, but I can't find it stated anywhere else and I am wondering why it should be unsound, so I'll drop it here along with an example, and I hope someone will clarify what's wrong with it. Algorithm Let's say we have a matrix called $A$, and through the characteristic polynomial we find its eigenvalues $\{\lambda_i\}$ whose algebraic multiplicities are $\{m_i\}$. For each eigenvalue let $T_i$ be $A-\lambda_i I$: through it we can easily find $g_i = \dim \ker T_i$, the geometric multiplicity of the eigenvalue, and the eigenvectors of $A$,  $v_{i,1,1} \cdots v_{i,m_i,1}$, constituting a basis for $\ker T_i$. I'm calling these vectors like this because $v_{i,j,1}$ is the first vector in the partial basis that corresponds to the $j$-th Jordan block with eigenvalue $\lambda_i$. Then from the shape of the Jordan block we know that $A v_{i,j,k+1} = \lambda_i v_{i,j,k+1} + v_{i,j,k}$ or alternatively $T_i v_{i,j,k+1} = v_{i,j,k}$, so we can recursively find $v_{i,j,k+1}$ through a linear equation, or if we find no solution we know that the Jordan block with partial basis starting with $v_{i,j,1}$ is done. Then we can put together all the $v_{i,j,k}$'s to find the Jordan form and the desired basis. Example We wish to find the Jordan form of
+$A=\left(
+\begin{array}{cccc}
+ 2 & 0 & 0 & 0 \\
+ 0 & 2 & 1 & 0 \\
+ 0 & 0 & 2 & 0 \\
+ 1 & 0 & 0 & 2 \\
+\end{array}
+\right)$. The characteristic polynomial is $\det(A-\lambda I) = (\lambda - 2)^4$, so we have $\lambda_1 = 2, m_1 = 4$. We take $\lambda_1 = 2$: by inspecting the kernel of $T_1 = A - 2I$ we find $v_{1,1,1} = \left(
+\begin{array}{c}
+ 0 \\
+ 1 \\
+ 0 \\
+ 0 \\
+\end{array}
+\right)$ and $v_{1,2,1}=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+ 0 \\
+ 1 \\
+\end{array}
+\right)$. We start from $v_{1,1,1}$, and we try to find $v_{1,1,2}$ by solving $T_1 v_{1,1,2} = v_{1,1,1} \implies \left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 1 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 1 & 0 & 0 & 0 \\
+\end{array}
+\right) \left(
+\begin{array}{c}
+ x \\
+ y \\
+ z \\
+ w \\
+\end{array}
+\right) = \left(
+\begin{array}{c}
+ 0 \\
+ 1 \\
+ 0 \\
+ 0 \\
+\end{array}
+\right) \implies x=0, z=1$, so I choose $v_{1,1,2}=\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+ 1 \\
+ 0 \\
+\end{array}
+\right)$. Now we try to find $v_{1,1,3}$ by solving $T_1 v_{1,1,3} = v_{1,1,2} \implies \left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 1 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 1 & 0 & 0 & 0 \\
+\end{array}
+\right) \left(
+\begin{array}{c}
+ x \\
+ y \\
+ z \\
+ w \\
+\end{array}
+\right) = \left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+ 1 \\
+ 0 \\
+\end{array}
+\right)$ which is impossible. So the basis for the first Jordan block is complete, and there must be $v_{1,2,2}$ that is the last vector we seek. We find it as usual by $T_1 v_{1,2,2} = v_{1,2,1} \implies \left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 1 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 1 & 0 & 0 & 0 \\
+\end{array}
+\right) \left(
+\begin{array}{c}
+ x \\
+ y \\
+ z \\
+ w \\
+\end{array}
+\right) = \left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+ 0 \\
+ 1 \\
+\end{array}
+\right) \implies x=1, z=0$ so we choose $v_{1,2,2}=\left(
+\begin{array}{c}
+ 1 \\
+ 0 \\
+ 0 \\
+ 0 \\
+\end{array}
+\right)$. So we have found $J=\left(
+\begin{array}{cccc}
+ 2 & 1 & 0 & 0 \\
+ 0 & 2 & 0 & 0 \\
+ 0 & 0 & 2 & 1 \\
+ 0 & 0 & 0 & 2 \\
+\end{array}
+\right)$ by looking at the lengths of the chains we computed, and also we found $S=\left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 1 \\
+ 1 & 0 & 0 & 0 \\
+ 0 & 1 & 0 & 0 \\
+ 0 & 0 & 1 & 0 \\
+\end{array}
+\right)$ such that $J=S^{-1}AS$. This looks long because I wrote it all down, but most times many vectors can be computed mentally, and most importantly it doesn't involve computing $T_1^2$ and $T_1^3$.","['jordan-normal-form', 'linear-algebra']"
+2329937,In which step of the expression am I simplifying it wrong?,"Consider this expression $$\sqrt{1-x^2}$$
+We could factor the negative one out like this
+$$\sqrt{-1(x^2-1)}$$
+Now we could use take the two factors and separate them
+$$\sqrt{-1}\sqrt{(x^2-1)}$$ But the root of negative one is not real, I feel really dumb asking this and I don't know anyone who can help me with this at the current moment. Thank you.","['algebra-precalculus', 'radicals']"
+2329954,Any generalization for Wishart distribution?,"Let $x_1$, $x_2$,.. $x_n$ be independent and identically distributed draws
+from a p-dimensional multivariate normal distribution, i.e.,  $x_i \sim N_p(0, A)$ (A is the co-variance matrix) and they form a $p\times n$ data matrix $X=[x_1 \;\; x_2 \;\; .. x_n]$. In that case, the distribution of a p × p random matrix $M=XX^T$ is said to have the
+Wishart distribution. Can you kindly tell me, if there is any distribution function available for $XX^T$ when $X=[x_1 \;\; x_2 \;\; .. x_n]$, where each $x_i \sim N_p(0, A_i)$, i.e., they are independent but not identically distributed.  Thank you very much.","['statistics', 'normal-distribution', 'random-variables']"
+2329969,Equicontinuity in Peano existence theorem,"I'm having some trouble understanding why the sequence of successive approximations in the proof of the Peano existence theorem is equicontinuous (which is needed to use Arzela-Ascoli theorem): Here's the theorem and proof as it goes in my textbook (and afterwards I'll lay out the part that I have the problem with): Peano's existence theorem: Let $f:[x_{0},x_{0}+a] \times\mathbb{R}\to\mathbb{R}$ be a continuous function. Then the equation $$y' = f(x,y)$$ has a solution which satisfies the initial condition $y(x_{0})=y_{0}.$ Proof: Let $n \in \mathbb{N}$ and $x_{j}=x_{0}+\frac{aj}{n}$ for $j \in \{0, ..., n\}$ . Let $y_{n}:[x_{0}, x_{0}+a] \to \mathbb{R}$ be a function defined by $y_{n}(x_{0})=y_{0}$ and $$y_{n}'(x) = f(x, y_{n}(x_{j})) \quad \text{for} \quad x_{j}<x\leq x_{j+1},$$ where $y_{n}(x_{j})$ is taken so that $y_{n}$ is continuous. $y_{n}$ satisfies the equation $$y_{n}(x) = y_{0}+ \int_{x_{0}}^{x} y_{n}'(t)dt = y_{0}+\int_{x_{0}}^{x} (f(t, y_{n}(t))+h_{n}(t))dt,$$ where $h_{n}(t)=f(t, y_{n}(x_{j}))-f(t, y_{n}(t))$ , where $x_{j}<t\leq x_{j+1}$ . Trivially, for large enough $n$ , we can approximate $t\in [x_{0}, x_{0}+a]$ as well as we want, and since $y_{n}$ is continuous, we have $||h_{n}||_{\infty} \to 0$ as $n \to \infty$ . Since $y_{n}$ is continuous on a compact interval, it's also bounded, so $||y_{n}||_{\infty}<b_{n}$ for some $b_{n} \in \mathbb{R}$ . Now, from $|y_{n}(u)-y_{n}(v)| \leq \int_{u}^{v} (|f(t, y_{n}(t))|+|h_{n}(t)|)dt<M|u-v|$ for some $M$ (since $f$ is continuous on the compact interval $[x_{0}, x_{0}+a] \times [-b_{n}, b_{n}]$ , it reaches its maximum and minimum value, and since $||h_{n}||_{\infty} \to 0$ as $n \to \infty$ , it's also bounded), I'm supposed to deduce a ""common Lipschitz constant $M$ "" for all $y_{n}$ , and deduce equicontinuity from there, but $b_{n}$ can go to infinity as $n \to \infty$ , and so $M$ depends on $n$ . Is the proof wrong? If so, how can I rectify this error? Or is there something I'm missing? I can't find a more detailed proof of the theorem in any other textbook I've found.","['ordinary-differential-equations', 'proof-explanation']"
+2329978,Roots of $p(x)+xp'(x)$,"Let $p(x)$ be a polynomial of degree $n$ such that it has no real root (that is, $n$ is an even positive number). Can we say anything about the roots of the polynomial $p(x)+xp'(x)$? Here $p'(x)$ denotes the derivative of $p(x)$ with respect to $x$.","['derivatives', 'roots', 'polynomials']"
+2329996,Exercise 9.1.14 in Dummit and Foote's Abstract Algebra [duplicate],"This question already has answers here : Necessary and sufficient condition for $x^n - y^m$ to be irreducible in $\Bbb C[x,y]$ [duplicate] (3 answers) Closed 8 months ago . Exercise 9.1.14 in Dummit and Foote's Abstract Algebra Let $R$ be an integral domain and let $i, j$ be relatively prime integers.
+  Prove that the ideal $\langle x^i-y^j\rangle$ is a prime ideal in $R[x, y]$. [ Hint. Consider the ring homomorphism $\varphi$ from $R[x, y]$ to $R[t]$ defined by mapping $x$ to $t^j$ and mapping $y$ to $t^i$.
+Show that an element of $R[x, y]$ differs from an element in $\langle x^i-y^j\rangle$ by a polynomial $f(x)$ of degree at most $j-1$ in $y$ and observe that the exponents of $\varphi(x^r y^s)$ are distinct for $0\leq s<j$.] Question. Is there another elegant proof? My Proof. Since $\varphi(x^i-y^j)=0$,
+we have $\langle x^i-y^j\rangle\subseteq \ker{\varphi}$.
+We show that $\langle x^i-y^j\rangle\supseteq \ker{\varphi}$. Consider $\varphi(f(x, y))=\sum_{k, l}c_{kl}t^{jk+il}$.
+\begin{eqnarray}
+&\text{If}& jk_1+il_1=jk_2+il_2=\cdots=jk_n+il_n\nonumber\\
+&\Rightarrow& \text{for }1\leq m\leq n, ~j(k_1-k_m)=i(l_m-l_1)...(1)\\
+&\stackrel{\gcd{(i, j)}=1}{\Rightarrow}& i\mid k_1-k_m, ~j\mid l_m-l_1\nonumber\\
+&\Rightarrow& k_1-k_m=is_m, ~l_m-l_1=jt_m...(2)\\
+&\stackrel{\text{substitute (2) to (1)}}{\Rightarrow}& s_m=t_m...(3)\\
+&\stackrel{\text{substitute (3) to (2)}}{\Rightarrow}& k_m=k_1-is_m, ~l_m=js_m+l_1...(4)\\
+&\Rightarrow& c_{k_1 l_1}x^{k_1}y^{l_1}+c_{k_2 l_2}x^{k_2}y^{l_2}+\cdots+c_{k_n l_n}x^{k_n}y^{l_n}\nonumber\\
+&\stackrel{(4)}{=}& c_{k_1 l_1}x^{k_1}y^{l_1}+c_{k_2 l_2}x^{k_1-is_2}y^{js_2+l_1}+\cdots+c_{k_n l_n}x^{k_1-is_n}y^{js_n+l_1}....(5)
+\end{eqnarray} \begin{eqnarray}
+&\text{If}& f(x, y)\in \ker{\varphi}\nonumber\\
+&\Rightarrow& \varphi(f(x, y))=\sum_{k, l}c_{kl}t^{jk+il}=0\nonumber\\
+&\Rightarrow& c_{k_1 l_1}t^{jk_1+il_1}+c_{k_2 l_2}t^{jk_2+il_2}+\cdots+c_{k_n l_n}t^{jk_n+il_n}=0\nonumber\\
+&\stackrel{(4)}{\Rightarrow}& c_{k_1 l_1}t^{jk_1+il_1}+c_{k_2 l_2}t^{jk_1-{ijs_2}+{ijs_2}+il_1}+\cdots+c_{k_n l_n}t^{jk_1-{ijs_n}+{ijs_n}+il_1}=0\nonumber\\
+&\Rightarrow& (c_{k_1 l_1}+c_{k_2 l_2}+\cdots+c_{k_n l_n})t^{jk_1+il_1}=0\nonumber\\
+&\Rightarrow& c_{k_1 l_1}+c_{k_2 l_2}+\cdots+c_{k_n l_n}=0...(6)
+\end{eqnarray} \begin{eqnarray*}
+&\text{consider}&(c_{k_1 l_1}x^{k_1}y^{l_1}+c_{k_2 l_2}x^{k_2}y^{l_2}+\cdots+c_{k_n l_n}x^{k_n}y^{l_n}){+\langle x^i-y^j\rangle}\\
+&\stackrel{(5)}{=}& (c_{k_1 l_1}x^{k_1}y^{l_1}+c_{k_2 l_2}x^{k_1-is_2}y^{js_2+l_1}+\cdots+c_{k_n l_n}x^{k_1-is_n}y^{js_n+l_1})+\langle x^i-y^j\rangle\\
+&\stackrel{x^i+\langle x^i-y^j\rangle=y^j+\langle x^i-y^j\rangle}{=}& (c_{k_1 l_1}x^{k_1}y^{l_1}+c_{k_2 l_2}x^{k_1-{is_2}}x^{{is_2}} y^{l_1}+\cdots+c_{k_n l_n}x^{k_1-{is_n}}x^{{is_n}}y^{l_1})+\langle x^i-y^j\rangle\\
+&=& (c_{k_1 l_1}+c_{k_2 l_2}+\cdots+c_{k_n l_n})x^{k_1}y^{l_1}+\langle x^i-y^j\rangle\\
+&\stackrel{(6)}{=}& 0+\langle x^i-y^j\rangle\\
+&\Rightarrow& x^i-y^j\mid c_{k_1 l_1}x^{k_1}y^{l_1}+c_{k_2 l_2}x^{k_2}y^{l_2}+\cdots+c_{k_n l_n}x^{k_n}y^{l_n}\\
+&\Rightarrow& x^i-y^j\mid f(x, y)\\
+&\Rightarrow& f(x, y)\in \langle x^i-y^j\rangle\\
+&\Rightarrow& \ker{\varphi}\subseteq \langle x^i-y^j\rangle.
+\end{eqnarray*} Therefore,
+$$R[x, y]/\langle x^i-y^j\rangle
+=R[x, y]/\ker{\varphi}
+\cong \text{Im }{\varphi}\leq R[t].$$
+Since $R$ is an integral domain,
+so is $R[t]$.
+The subring $R[x, y]/\langle x^i-y^j\rangle\cong \text{Im }{\varphi}$ of $R[t]$ contains the unity of $R[t]$,
+hence, $R[x, y]/\langle x^i-y^j\rangle$ is also an integral domain
+and $\langle x^i-y^j\rangle$ is a prime ideal in $R[x, y]$
+by Proposition 7.4.13.","['abstract-algebra', 'ring-theory', 'maximal-and-prime-ideals', 'polynomials']"
+2330013,Prove that combinatoric sum approaches $-\infty$,"This question arose from a small part of a larger problem that I've been working on recently. How can I show that:
+$$\lim_{n \to \infty} \sum_{k=1}^n \frac{(-1)^k}{k} {n \choose k} = -\infty$$ Computationally, this appears to be the case: successive partial sums decrease without bound (albeit rather slowly) with increasing $n$.
+However, I've had trouble finding a closed form for the sum or showing the result analytically.
+Any help would be much appreciated!","['combinations', 'combinatorics', 'summation', 'sequences-and-series']"
+2330020,Jacobian of a Matrix Product,"I have a vector $x$ and I'm trying to find $\frac{dy}{dx}$, where $y=x^{T}x$. I believe the answer should be $2x^{T}$ but I'm trying to understand why. Does the product rule apply to matrices/vectors being multiplied? The issue I run into is the following: If I use the product rule blindly (which I don't know if I'm allowed to do), I get: $\frac{dy}{dx} = \frac{dx^{T}}{dx}x+x^{T}\frac{dx}{dx}$ $\frac{dx^{T}}{dx} = \frac{dx}{dx} = I$ So I get: $\frac{dy}{dx} = x+x^{T}$ But this makes no sense since the dimensions of the vectors don't match. If one of them were transposed then I get 2x and everything would be fine. Any help would be greatly appreciated. Thanks!","['matrix-calculus', 'multivariable-calculus', 'multivalued-functions', 'linear-algebra', 'vector-analysis']"
+2330022,Give me some hints in calculation this limit.,"$$\lim_{x\to2\  \\ y\to2}\frac{x^{6}+ \tan (x^{2}-y^{2}) - y^{6}}{\sin(x^{6}-y^{6}) - x^{5}y +xy^{5} + \arctan(x^{2}y -xy^{2})}$$
+I used a fact that $$\tan \alpha \sim \alpha \\ \arctan \alpha \sim \alpha \\  \sin\alpha \sim \alpha$$
+Since now we have $$\lim_{x\to2\ \\ y\to2}\frac{x^{6}+ x^{2}-y^{2} - y^{6}}{x^{6}-y^{6} - x^{5}y +xy^{5} + x^{2}y -xy^{2}}$$
+Then $$\lim_{x\to2\ y\to2}\frac{x^{6}+ x^{2}-y^{2} - y^{6}}{x^{6}-y^{6} - x^{5}y +xy^{5} + x^{2}y -xy^{2}}=\\ \\ 
+=\lim_{x\to2\ \\ y\to2}\frac{(x+ y)(x-y)(x^{2}-xy +y^{2})(x^{2}+xy +y^{2})+(x+y)(x-y)}   {(x+ y)(x-y)(x^{2}-xy +y^{2})(x^{2}+xy +y^{2})-xy(x^{2}-y^{2})(x^{2}+y^{2}) - xy(x-y)}=\\=\lim_{x\to2\ \\y\to2}\frac{(x+ y)(x^{2}-xy +y^{2})(x^{2}+xy +y^{2})+(x+y)}   {(x+ y)(x^{2}-xy +y^{2})(x^{2}+xy +y^{2})-xy(x+y)(x^{2}+y^{2}) - xy} $$ 
+And what to do next what multipliers to group? Help please.","['limits-without-lhopital', 'limits']"
+2330059,Inverse image of submanifold is not a submanifold,"Someone asked me the following question yesterday: Let $X$ and $Y$ be to manifolds, $S$ be a submanifold of $Y$ and $f \colon X \to Y$ be differentiable. Prove or disprove that $f^{-1}(S)$ a submanifold. I came up with the following counterexample: Let $X=Y=\mathbb{R}^2$ and $S$ be the unit circle. Define $f \colon X \to Y$ as $$f(x,y)=\begin{cases}(1,0)&\text{ if }x>1,y=0\\(x,y), &\text{ otherwise }\end{cases}$$ Then $f^{-1}(S)=S \cup \{(x,0)\colon x>1\}$ which is not a submanifold. The point where I'm unsure is whether $f$ is differentiable. We only need to check it at $(1,0)$ and I think it should be differentiable but I'm not $100\%$ sure. 
+Am I correct? If yes, how do I show differentiability at $(1,0)$? Thanks in advance for any hints.","['derivatives', 'manifolds']"
+2330072,Prove that $\sum_{p\leq x}\log(1+\frac{1}{p})=\sum_{p\leq x}\frac{1}{p}+A+\mathcal O\left(\frac{1}{\log(x)}\right)$,"How can I prove that $$\sum_{p\leq x}\log\left(1+\frac{1}{p}\right)=\sum_{p\leq x}\frac{1}{p}+A+\mathcal O\left(\frac{1}{\log(x)}\right).$$ The thing know is that $$\sum_{p\leq x}\left(\log\left(1+\frac{1}{p}\right)-\frac{1}{p}\right)=A+\mathcal o\left(1\right).$$ Can I conclude directly that the $o(1)$ is also a $\mathcal O\left(\frac{1}{\log(x)}\right) $ ? If no, how can I conclude ?","['number-theory', 'logarithms', 'prime-numbers', 'sequences-and-series']"
+2330086,Eigenvalues and Eigenvectors of block tridiagonal Toeplitz matrix.,"I have an infinite matrix where all the elements of the diagonal are given by the same $2 \times 2 $ real and symmetric matrix , and the elements of the supradiagonal and superdiagonal are the same and given by another $2\times 2$ real and symmetric matrix. I.e.:
+$$\begin{bmatrix}A&B\\B&A&B\\&B&A&\ddots\\&&\ddots&\ddots\end{bmatrix},$$
+where $A$ and $B$ are $2\times 2$ and real symmetric. Is it possible to obtain an expression for the eigenvalues and eigenvectors of this matrix?","['matrices', 'eigenvalues-eigenvectors', 'linear-algebra']"
+2330096,Are autocovariance operators trace class?,"Suppose that $\{X_k\}_{k\in\mathbb Z}$ is a weakly stationary sequence of random elements with values in a complex separable Hilbert space $\mathbb H$ and let us define the sequence of autocovariance operators by setting
+  $$
+C_t(h)=\operatorname E[\langle h,X_0\rangle X_t]
+$$
+  for each $t\in\mathbb Z$ and $h\in\mathbb H$. Are the autocovariance operators $C_t$ trace class for each $t\in\mathbb Z$? If they are, how can we prove that? The autocovariance operators $C_t$ are not necessarily self-adjoint for $t\ne0$, nor are they necessarily non-negative definite for $t\ne0$. So it seems that we cannot determine if they are trace class by checking the convergence of the series $\sum_{n\ge1}\langle C_te_n,e_n\rangle$ for some orthonormal basis $\{e_n\}_{n\ge1}$ (see this question ). However, we have that $\sum_{n\ge1}\langle C_te_n,e_n\rangle=\operatorname E\langle X_t,X_0\rangle$ and the right side of the equality is finite so the series on the left side converges. Any help is much appreciated!","['functional-analysis', 'probability-theory', 'covariance', 'hilbert-spaces']"
+2330126,Which one of the following is correct?,"In an examination $30 \%$ of the students failed in Mathematics, $15 \%$ of the students failed in English and
+  $10 \%$ of the students failed in both Mathematics and English. A student is chosen at random. If he failed in
+  English then the probability that he passed in Mathematics is $(a)$ $\frac {1} {2}.$ $(b)$ $\frac {1} {10}.$ $(c)$ $\frac {1} {3}.$ $(d)$ $\frac {7} {10}.$ My attempt $:$ Suppose if we take $100$ students as the total number of students in the class. Then out of these $100$ the number of students qualify in Mathematics is $70$ and the number of students qualify in English is $85$. Since $10$ were failed in both the subjects. So the total number of students who qualify in both the subjects is $70+85-90=65.$ So the number of students who have qualified in Mathematics but not in English is $70-65=5.$ Now the total number of students who have not qualified in English is given as $15$ and hence the required probability is $\frac {5} {15}$ which simplifies to $\frac {1} {3}.$ So according to me $(c)$ is the correct option. Is the above reasoning correct at all? Please verify it. Thank you in advance.",['probability']
+2330133,Derived category of homotopy category of R-module,"I was wondering if we construct the homotopy category of R-module is it the same as homotopy category of projective R-mod ? In the homotopy category of projective R-mod we know that quasi-isomorphism are the same as isomorphism, and the derived category of the homotopy category is obtained by formally inverting all the quasi-isomorphism, such that they become isomorphism. I was wondering what condition is necessarily such that the derived category of R-mod the same as the derived category of projective R-mod ?","['triangulated-categories', 'algebraic-geometry', 'derived-categories', 'commutative-algebra', 'category-theory']"
+2330134,Is this $C^\infty-$function analytic?,"Consider a $C^\infty-$function $\,f$ on $[a, b]$. All of its derivatives are non-negative. I am trying to prove it is an analytic function. I have tried to calculate its Taylor remainder 
+$$R_n = \int_a^x \frac{f^{(n+1)}(t)}{(n+1)!} (x-t)^{n+1} d t.
+$$ 
+But I have difficulty estimating the bound. Thanks for any help in advance.","['real-analysis', 'taylor-expansion', 'sequences-and-series', 'analyticity', 'power-series']"
+2330135,The Maximal Diameter Theorem,"I am doing some theory concerning one of my courses which is, Selected Topic in Differential Geometry and I have two questions regarding The Maximal Diameter Theorem, from the Xia book. My first question is, why can we pick such an $a$ and $b$, as written in the proof? The second would be, how to compute that the first eigenvalue of an $n$-dimensional hemisphere is equal to $n$. Thanks in advance for any help.","['smooth-manifolds', 'riemannian-geometry', 'differential-geometry']"
+2330143,How to solve $\arccos (\sin \frac{\pi}{8})$?,"I can't solve it, despite applying the method of solving using a right triangle as in $\cos (\arctan \frac {3}{ 5})$. The question asks for calculation.",['trigonometry']
+2330162,1-Forms on $SO(3)$ and $S^2$,"The is a mistake somewhere in the following reasoning and I can't seem to detect which argument is wrong. Consider the lie group $SO(3)$ with $e_{1},e_{2},e_{3}$ as left invariant vector fields. Each of which generates an $S^1$ action. Quotienting by any one of these $S^1$ actions (say $e_1$), I should get a 2-sphere, $S^2$. Now the dual 1-forms, $e^2$ and $e^3$ are left invariant 1-forms and horizontal with respect to this quotient. So they should pass to the quotient space i.e. $S^2$. Now my problem is that these 1-forms are globally well-defined and nowhere vanishing on $S^2$ which contradicts the Hairy ball theorem.","['homogeneous-spaces', 'cartan-geometry', 'differential-geometry', 'lie-groups']"
+2330164,"how to compute $E(X^4)$ when $X$ follow the normal law $N(0,1)$","Suppose $X$ follow the normal law $N(0,1)$ 
+We have the density $f= \frac{1}{\sqrt{\sigma^2 2\pi}} e^{- \frac{(x-m)^2}{2\sigma^2}}$
+We want to compute $E(X^4)$ We have by definition that $\displaystyle E(X^4) = \frac{1}{\sqrt{2\pi}} \int_\infty^\infty{e^{-x^2/2}} x^4\,dx $ But i dont know how to continue Thank you for helping me","['probability-theory', 'improper-integrals']"
+2330168,Nicer Output in GAP,"I was wondering if there is a way to get a nicer output in GAP I would like this: Elements(GF(2));
+[ 0*Z(2), Z(2)^0 ]
+Elements(CyclicGroup(4));
+[ <identity> of ..., f1, f2, f1*f2 ] to look something like this: Elements(GF(2));
+[ 0, 1 ]
+Elements(CyclicGroup(4));
+[ 1, x, x^2, x^3 ] I'm fairly new to GAP, but I doubt I'll miss whatever benefits come with this awkward notation.","['group-theory', 'gap']"
+2330180,How does one find bifurcating solutions to the differential equation $\theta '' + \lambda \sin ( \theta ) = 0 $?,"Consider the differential equation $$\theta '' + \lambda \sin ( \theta ) = 0, \quad \text{ for } 0 < x < 1 ,$$ in which $ \theta ' (0) = \theta ' (1) = 0$. For a homework question, I am asked to find the solutions to this equations that bifurcate from the equilibrium solution $\theta_{s} = 0$. This problem is related to a physical situation in which an initially straight rod is subjected to an axial load $\lambda$. The variable $\theta(x)$ is the angle the tangent to the rod makes with the horizontal at the spatial position $x$. I find it hard to get started with this exercise. I tried reasoning that, if $\theta_{s} = 0$, then surely $\theta_{ss} = 0$. So we are left with the equation $\lambda \sin( \theta ) = 0$. I could also expand the sine into a Taylor series, but that doesn't seem to be of much help. According to the solution manual, there should be a supercritical pitchfork when $\lambda_{n} = (n \pi )^{2} $ and $ \theta_{n} = 2 (2 \epsilon)^{1/2} \cos(n \pi x) / n \pi $. I don't have the faintest idea how they arrived at this solution. Do you know how I should approach this problem?","['bifurcation', 'ordinary-differential-equations']"
+2330190,How to check the differentiability of the following function?,"For an odd integer $k \geq 1$, let $F$ be the set of all entire functions $f$ such that $$f(x)= |x^k|$$ for all $x \in (-1,1)$. Then the cardinality of $F$ is $0$ $1$ $> 1$ but finite Infinite. I think for all integers $k \geq 3$, $f$ is entire. But the answer given is $0$.","['derivatives', 'entire-functions']"
+2330199,multiple loans multiple payers - how to snowball fairly,"My brother and I both have a large sum of student loan debt.  I have more than he does and my interest rates are slightly larger as well.  We are both attempting to snowball our debt separately.  It occurred to me that we may be able to accelerate paying off our student loan debt if we snowballed together.  We could both tackle one loan together and then focus on the next and as a result, both end up with less interest to pay in the long run. However, I'm stuck on how to implement this idea in a fair way.  We both pay different amounts each month. Is there any way we can take into account our total balances, interest rates, and the amount paid to keep track of what percentage of payments are going towards each other's loans? As an example let's say I have 4 loans at \$10,000 at 10% APR (A, B, C, D) and he has 4 loans at \$5,000 at 5% APR (E, F, G, H). So we have a total of 60,000 due, $40,000 of which is mine. Does anyone have an equation for this or can anyone better explain why this will or will not work? Do we have to pay proportionally to our debt at all times in order to make this work? If we pay equal amounts, at a certain point he should stop paying because he's done with his portion and I should continue; how will we know when that point is? This should help cut the amount of interest we pay.  Will it actually do that or will it only benefit the person with the higher interest rates?",['calculus']
+2330256,Killing field defines a jacobi field,"I have a Killing vector field $X$ on $(M,g)$. Why, if $\gamma$ is a geodesic, is $X_{\gamma(t)}$ a Jacobi field? Any hints to get started would be welcome","['riemannian-geometry', 'differential-geometry', 'geodesic']"
+2330271,Show that a holomorphic function is polynomial,"Let $f:\mathbb C\to\mathbb C$ be a holomorphic function for which there exists an $n\in\mathbb N$ and a $C>0$ so that $|f(z)|\leq C(1+|z|^n)$ Show that $f$ is a polynomial of degree $\leq n$ . I've tried to proof this statement with Liouville's theorem but I don't know which function to take. $g(z)=\frac{f(z)}{1+z^n}$ isn't necessarily bounded, $g(z)=\frac{f(z)}{1+|z|^n}$ is bounded by C but not holomorphic. Any hints?","['complex-analysis', 'functions']"
+2330277,Dimension of a product of projective varieties,"Maybe this is a dumb question, but better safe than sorry. In Hartshorne, Exercise I.3.15 and I.3.16 we are asked to examine products of affine and projective varieties. I.3.15 has been smooth sailing. The reader is asked to prove: a) $X \times Y$ is irreducible b) $A(X \times Y) = A(X) \otimes_k A(Y)$ c) $X \times Y$ is a categorical product d) $\dim (X \times Y) = \dim X + \dim Y$ None of these have been particularly difficult. In the next exercise, we are asked to prove some similar claims about projective varieties, but (d) does not have an analogous statement above. It would seem plausible to me that something like this is true. We have many analogous theorems about the dimension of a projective variety from I.2 , so I'd be surprised if there was no such relationship. Can we find a proof of this claim, or a counter-example?","['krull-dimension', 'algebraic-geometry']"
+2330279,Prove that $2\cdot \cos \frac{72}{2}\cdot \cos \frac{24}{2}+2\cdot \sin \frac{96}{2}\cdot \sin \frac{72}{2}=0.5$. Additional data added,"To solve it I have tried some options, where in one of them I  applied product to sum formulas, which seemed to be very helpful, but didn't get the answer.
+ Used these formulae: 
+$$\cos(a+b)+ \cos(a-b)=2\cdot \cos(a)\cdot \cos(b)$$
+$$−\cos(a+b)+\cos(a−b)=2\sin(a)\sin(b)$$
+And now, I am stuck at this:
+$$\cos(48)+\cos(24)-\cos(84)+\cos(12)=0.5$$
+Then tried to make the arguments similar using a double angle and a half angle formulae $$2\cos^2(24)-1+\cos(24)+\sqrt{\frac{1+\cos(24)}{2}}+\cos(84)=0.5$$ Anyway, I can't show that expression above really is 0.5.",['trigonometry']
+2330283,What do the parameters of a multinomial logistic regression correspond to?,"I've recently started learning about data science/statistics and learned how to derive such models as linear regressors and logistic regressors. What I don't understand, however, is what the parameters that are calculated in a logistic regression correspond to. For instance, it's simple in linear regressors in which $X \in \mathbb{R}^{2\times n}$ with $n$ training examples and $y\in\mathbb{R}^{1\times n}$. So long as the $X_0$ (the first column of X) is all ones and the second column correspond to the X coordinates and y contains the y coordinates of the examples, the calculated parameters in linear regression are in the shape of $\theta\in\mathbb{R}^{1\times 2}$. Clearly, $\theta_0 = b, \theta_1 = m$ as the regression on a linear equation $y=mx+b$. Furthermore, the parameterization of linear regression makes clear sense to me because the calculated parameters in $\theta$ directly correspond to coefficients in the line function. However, I have a lot of trouble understanding what the parameters calculated by multinomial logistic regression correspond to. I understand that logistic regression is used for classification and that the parameters calculated must in some way distinguish between the classes based on the input data, but I don't quite understand how. A graphical explanation would be preferred if possible :) Thanks in advance!","['data-analysis', 'logistic-regression', 'matrices', 'statistics', 'linear-algebra']"
+2330302,Is the product of a Borel set and a closed set in a topological group Borel?,"Let $G$ be a topological group, $B \subseteq G$ Borel and $C \subseteq G$ closed. Is it true that $BC$ is Borel? Because left and right multiplication are homeomorphisms, it should suffice to prove this separately for $B$ open or closed. Suppose $B$ is open, then \begin{equation}
+BC = \bigcup \limits_{c \in C} Bc = \bigcup \limits_{c \in C} \rho_c(B)
+\end{equation} where $\rho$ denotes right multiplication.
+So if $B$ is open $BC$ is also open and hence obviously Borel. Now, what happens when $B$ is closed?
+I know that the product of two closed sets is not necessarily closed (for that one factor has to be compact), but how about Borel? I suspect it will not work in general (I would be happy to be proven wrong!), so that one has to resort to compact $B$'s instead of closed ones. These should however be sufficient in Hausdorff $\sigma$-compact topological groups.","['general-topology', 'topological-groups', 'borel-sets']"
+2330309,Is the real part of a positive semi-definite matrix positive semi-definite over $\mathbb C^n$,"Let $P$ be a positive semi-definite Hermitian matrix (i.e. $P^\dagger=P$, $x^\dagger Px \geq 0$ for all $x \in \mathbb C^n$). Then the matrix can be decomposed as $P= R+iM$ where $R$ and $M$ are strictly real matrices. Clearly $R$ is symmetric and $M$ is skew-symmetric. I call $R$ the real part of $P$. I am almost certain that the real part $R$ must be positive semi-definite as well as I cannot find a counter-example even through numerical simulation. Is this assumption correct? Is there a way to prove the positivity of $R$ over $\mathbb C^n$ or does somebody have a counter-example?","['matrices', 'positive-semidefinite', 'linear-algebra']"
+2330320,How do I prove this series diverges?,"Consider a decreasing sequence $(x_n)$ in $\Bbb{R}_0$. There are an infinite amount of $n \in \Bbb{N}_0$ for which $1/n < x_n$. Prove the series $\sum x_n$ diverges. On one hand, I considered proving the sequence $(x_n)$ does not converge to $0$. However, unless I'm mistaken, this is not necessarily true. My next attempt was trying to show the series is not Cauchy. In other words: Find an $\epsilon > 0$ such that for every $n_0 \in \Bbb{N}_0$ an $m,n > n_0$ exists for which $\epsilon \le |\sum_{m}^{n} x_k|$. I figured I'd try to pick one of those $x_n > 1/n$, and a certain $N$ amount of preceding elements to reach the conclusion that $\epsilon \le \frac{N}{n} \le |\sum_{m}^{n} x_k|$. However at this point, I'm completely lost on how to prove these numbers $N$ and $n$ exist. Am I headed in the right direction? And if so, how do I finish the proof? Thanks in advance!","['cauchy-sequences', 'divergent-series', 'sequences-and-series']"
+2330335,Show uniqueness to wave equation with finite speed $c(x).$,"Suppose that $|c(x)| < C$ for all $x \in \mathbb{R},$ and that $\phi$ and $\psi$ are smooth functions.  Show that there exists at most one solution to
+  $$ u_{tt} - (c(x))^2 u_{xx} = -u_t$$
+  where $u(x,0) = \phi$ and $u_t(x,0) = \psi.$ The only way that comes to mind is energy methods, letting $w$ be the difference of two solutions to the PDE, and then letting 
+$$ E(t) := \frac{1}{2} \int w_t^2 + c(x)^2 w_x^2 \; dx.$$
+Noting that we have $E(0) = 0,$ due to everything being linear, we can differentiate with respect to time and integrating by parts.  After doing so and using the PDE, one gets,
+$$ E'(t) = \int -w_t^2 - 2w_tw_xc(x)c'(x) \; dx \leq 2||c'(x)||_\infty E(t),$$
+where it has been assumed that either $w_x$ and/or $w_t$ vanish as $|x| \to \infty,$ so no surface term appears when integrating by parts.  The last inequality comes from the fact that $ab \leq \frac{1}{2} (a^2 + b^2)$ and $\int -w_t^2$ is nonpositive. From here, its easy to see that $E(t) \leq 0$ for all time. The problem with this solution is, we aren't given any information about $c'(x)$ or the behavior of $w_x$ and $w_t$ as $|x| \to \infty.$  Also, no where did I use the fact that $|c|$ is bounded.  Does anyone see how to get around this, perhaps by using an entirely different method to show uniqueness?  Thanks in advance for any suggestions/proofs!","['wave-equation', 'analysis', 'partial-differential-equations']"
+2330362,Show that two random variables are independent,"I'm learning probability and need help with the following problem : Let $X_1, X_2$ be independent and identically distributed random variables with probability density function $$f(x_i) = \begin{cases} \lambda_i e^{\lambda_i x_i}, & x_i > 0 \;\; (i = 1, 2) \\ 0 & \text{elsewhere}.\end{cases}$$ $(1)$ Find the distribution of the random variable $V = \min(X_1, X_2)$. $(2)$ Show that the random variables $Z = X_1/(X_1+X_2)$ and $X_1+X_2$ are independent. Since I'm having difficulties for $(2)$, I'm going to share my work for $(1)$. $(1)$ If two variables are iid, then they must have the same distribution. Which means they have the same parameters. So I assumed $\lambda_1 = \lambda_2$, i.e. $$X_1, X_2 \overset{idd}\sim exp(rate = \lambda).$$ To find the distribution of the minimum, we look at cdfs. The cdf for the individual $X_i$’s is $$F(x)  = \int_{-\infty}^{x} f(u) \, du = \int_{0}^{x} f(u) \, du =  \int_{0}^{x} \lambda e^{-\lambda u} \, du = 1 - e^{-\lambda x}.$$ The cdf for $V$, the minimum, is : \begin{align*} F_V(v) = P(V \leq v) 
+&= P(\min(X_1, X_2) \leq v) \\ \\
+&= 1 - P(\min(X_1, X_2) > v) \\ \\
+&\overset{indep}= 1 - P(X_1 > v) \cdot P(X_2 > v) \\ \\
+&\overset{ident}= 1 - [P(X_1 > v)]^n. \end{align*} From are computed cdf, we have that $$P(X_1 > v) = 1 - P(X_1 \leq v) = 1 - (1 - e^{-\lambda v}) = e^{-\lambda v}.$$ So, the cdf for the minimum $V$ is $$F_V(v) = 1 - [e^{-\lambda v}]^2 = 1 - e^{-\lambda 2 v}.$$ The pdf for the minimum is $$f_V(v) = F'_V(v) = 2\lambda e^{-2\lambda v}.$$ So we proved that $$V \sim exp(rate  = 2\lambda).$$ Is my work correct for $(1)$? Unfortunately I have no idea how to solve $(2)$. Any help would be appreciated.",['probability']
+2330363,can we define a tensor structure on $K(\operatorname{Proj}\text{-}R)$ to make it tensor triangulated category,Let $K(\operatorname{Proj} R \bmod)$ be the homotopy category of projective R-mod. I was wondering is it possible to equip $K(\operatorname{Proj} R \bmod)$ in order to make a tensor triangulated category?,"['category-theory', 'triangulated-categories', 'algebraic-geometry', 'commutative-algebra']"
+2330374,Arranging 4 Piles into 5 Piles - Pigeonhole Principle [Continued],"I read the following exercise in my combinatorics book in the section on the Pigeonhole Principle. There are four heaps of stones in our backyard. We rearrange them
+  into five heaps. Prove that at least two stones are placed into a smaller
+  heap. and this is the proof that I read: I'm having a hard time understanding the intuition and reasonining/logic in this proof, mainly after the $a_k > b_k$ step. I'm having difficulty seeing why we need the following inequality and how the conclusion follows from it. I would appreciate any explanation or elaboration on this proof in helping to understand.","['combinatorics', 'pigeonhole-principle', 'discrete-mathematics']"
+2330395,"Does $\sum _{ n=1 }^\infty \frac {(-1) ^n} n \sin (nx) $ converge uniformly on $[0, \pi )$?","i tried Werierstrass M test, but >$$\left| \frac{(-1)^n}n \sin(nx)\right| \leq \frac 1 n.$$
+is there any other way to do it?","['real-analysis', 'calculus', 'analysis']"
+2330401,What happens if I throw an Oblate Die?,"Suppose I have a die in the shape of a rectangular prism that has eight edges with a length of $1$ unit and four edges with a length of $2$ units so that there are two faces that are $1$ by $1$ and four faces that are $2$ by $1$. If I place this die on the table at a random angle, what is the probability that it will land on a small face? This problem is very hard to start on; however, I have managed to formulate a strategy. I am going to need to use integrals to calculate this probability. I can represent all possible landing angles of the die by letting $\theta$ represent its ""horizontal tilt"" and $\phi$ represent its ""vertical tilt"": I'm going to need to integrate over $\phi$ and $\theta$ to account for all possible angles for each from $0$ to $2\pi$, but I have no idea how to find a ""probability function"" that will do this. My best guess was to find a function $f(\theta,\phi)$ whose output is a value from $0$ to $1$ that expresses the probability of the event $S$ that the die lands on a small face given the vertical angle $\phi$, which is written $P(S|\phi)$. Of course, $P(S|\phi)$ will be in terms of $\theta$ and $\phi$. Then my answer will be
+$$P(S)=\frac{1}{4\pi^2}\int_0^{2\pi}\int_0^{2\pi}P(S|\phi)d\theta d\phi$$ But I have no idea how to find $P(S|\phi)$. This problem is a little bit of physics and a little bit of probability, and I'm not quite sure how to go at it from here. Any help or hints are appreciated!","['physics', 'probability', 'dice']"
+2330438,Non exact differential equation problem,"$$x\frac{dy}{dx}=x^2 +y$$ given that $\\ y\left( 1 \right) =0$ When i got partial derivatives of both sides, found it's not an exact equation..please can anybody can give a clue to solve this..",['ordinary-differential-equations']
+2330468,Probability that Area is Greater than 1/2 [closed],"Closed . This question needs details or clarity . It is not currently accepting answers. Want to improve this question? Add details and clarify the problem by editing this post . Closed 7 years ago . Improve this question Take the area $[0,1]^2$ which is intersected by $n$ random lines. The way we can choose these $n$ random lines is by choosing two points on the border of the square and connecting them. If we do this, what is the probability that a region formed by these lines has area greater than $1/2$. I can see that for $n=1$, the probability is equal to one. I could probably approximate the value through a computer simulation of some sort but I'm just wondering if anyone can find a pure math answer.",['discrete-mathematics']
+2330469,Is this proof about the Riemann integration correct?,"Can someone tell me if is this proof correct? I don't know if it is correct because I did it myself, so.. 😏 If $f\in R$ on $[a,b]$ and $g$ is a monotonous function on $[a,b],$ then there exist $\epsilon \in [a,b]$ such that $$\int_a^bfg=g(a)\int_a^{\epsilon}f+g(b)\int_{\epsilon}^bf.$$ Proof: As $f\in R$ on $[a,b]$ then f is bounded and continuous almost everywhere. Let $\alpha(x)=\int_a^xf(t)dt$. By the fundamental theorem of calculus, $\alpha'(x)=f(x).$ So we have $d\alpha(x)=fd(x)$. Now, by the second mean value theorem for riemann-stieltjes integrals*, we have $$\int_a^bfg=\int_a^bgd(\alpha)=g(a)\int_a^{\epsilon}f+g(b)\int_{\epsilon}^bf$$ This is the $*2nd$ MVT for riemann-stieltjes integrals: Let $f$ be increasing on $[a,b]$, $g$ continuous on $[a,b]$. Then there exist $c\in [a,b]:\int_a^bfdg(x)=f(a)\int_a^cdg(x)+f(b)\int_c^bdg(x)$.","['real-analysis', 'riemann-integration', 'proof-verification', 'integration', 'analysis']"
+2330494,Cauchy sequence and convergence - $ \frac {1}{n}$,"I have read that every convergent sequence is also a cauchy sequence and every cauchy sequence is convergent. I have found that the sequence given by $ \frac {1}{n}$ is Cauchy but $\sum_{i=1}^\infty \frac {1}{n}$ isn't obviously convergent because it has an infinite sum. I am confused. Is my misunderstanding caused by the fact we are just talking about the sequences, not the series ?","['convergence-divergence', 'cauchy-sequences', 'sequences-and-series', 'calculus']"
+2330500,Is there any sufficient condition under which the hadamard product of two square matrices is invertible?,Is there any sufficient condition under which the hadamard product of two square matrices is invertible ?,"['matrices', 'inverse']"
+2330507,Theorem 6.16 in Baby Rudin: $\int_a^b f d \alpha = \sum_{n=1}^\infty c_n f\left(s_n\right)$,"Here is Theorem 6.16 in the book Principles of Mathematical Analysis by Walter Rudin, 3rd edition: Suppose $c_n \geq 0$ for $n = 1, 2, 3, \ldots$, $\sum c_n$ converges, $\left\{ s_n \right\}$ is a sequence of distinct points in $(a, b)$, and 
+  $$\tag{22} \alpha(x) = \sum_{n=1}^\infty c_n I \left(x-s_n \right). $$
+  Let $f$ be continuous on $[a, b]$. Then 
+  $$\tag{23}  \int_a^b f d \alpha = \sum_{n=1}^\infty c_n f \left( s_n \right). $$ And, here is Rudin's proof: The comparison test shows that the series (22) converges for every $x$. Its sum $\alpha(x)$ is evidently monotonic, and $\alpha(a) = 0$, $\alpha(b) = \sum c_n$. Let $\varepsilon > 0$ be given, and choose $N$ so that 
+  $$ \sum_{N+1}^\infty c_n < \varepsilon. $$
+  Put 
+  $$ \alpha_1(x) = \sum_{n=1}^N c_n I \left( x-s_n \right), \qquad \alpha_2(x) = \sum_{N+1}^\infty c_n I \left( x - s_n \right). $$
+  By Theorems 6.12 and 6.15, 
+  $$\tag{24} \int_a^b f d \alpha_1 = \sum_{n=1}^N c_n f \left( s_n \right). $$
+  Since $\alpha_2(b) - \alpha_2(a) < \varepsilon$, 
+  $$ \tag{25} \left\lvert \int_a^b f d \alpha_2 \right\rvert \leq M \varepsilon, $$
+  where $M = \sup \lvert f(x) \rvert$. Since $\alpha = \alpha_1 + \alpha_2$, it follows from (24) and (25) that 
+  $$\tag{26} \left\lvert \int_a^b f d\alpha - \sum_{n=1}^N c_n f \left( s_n \right) \right\rvert \leq M \varepsilon.$$ 
+  If we let $N \to \infty$, we obtain (23). Here are the links to my earlier posts here on Math SE on Theorems 6.12 and 6.15: Theorem 6.12: Theorem 6.12 (a) in Baby Rudin: $\int_a^b \left( f_1 + f_2 \right) d \alpha=\int_a^b f_1 d \alpha + \int_a^b f_2 d \alpha$ Theorem 6.12 (a) in Baby Rudin: If $f\in\mathscr{R}(\alpha)$ on $[a,b]$, then $cf\in\mathscr{R}(\alpha)$ for every constant $c$ Theorem 6.12 (b) in Baby Rudin: If $f_1 \leq f_2$ on $[a, b]$, then $\int_a^b f_1 d\alpha \leq \int_a^b f_2 d\alpha$ Theorem 6.12 (c) in Baby Rudin: If $f\in\mathscr{R}(\alpha)$ on $[a, b]$ and $a<c<b$, then $f\in\mathscr{R}(\alpha)$ on $[a, c]$ and $[c, b]$ Theorem 6.12 (d) in Baby Rudin: If $\lvert f(x) \rvert \leq M$ on $[a, b]$, then $\lvert \int_a^b f d\alpha \rvert \leq \ldots$ Theorem 6.12 (e) in Baby Rudin: If $f \in \mathscr{R}\left(\alpha_1\right)$ and $f \in \mathscr{R}\left(\alpha_2\right)$, then $\ldots$ Theorem 6.12 (e) in Baby Rudin: If $f \in \mathscr{R}(\alpha)$ and $c > 0$, then $\ldots$ Theorem 6.15: Theorem 6.15 in Baby Rudin: If $a<s<b$, $f$ is bounded on $[a,b]$, $f$ is continuous at $s$, and $\alpha(x)=I(x-s)$, then . . . Finally, here  is Theorem 6.8 in Baby Rudin, 3rd edition: If $f$ is continuous on $[a, b]$, then $f \in \mathscr{R}(\alpha)$ on $[a, b]$. Now here is my account of Rudin's proof: As $c_n \geq 0$, $\sum c_n$ converges, and $0 \leq I \left( x-s_n \right) \leq 1$ for each $n= 1, 2, 3, \ldots$, so the series $\sum c_n I \left( x- s_n \right)$ converges as well. As $a < s_n < b$, so $I \left( a - s_n \right) = 0$ and $I \left( b-s_n \right) =1$ for every $n$ and therefore $\alpha(a) = \sum_{n=1}^\infty c_n I \left( a - s_n \right) = 0$ and $\alpha(b) = \sum_{n=1}^\infty c_n I \left( b-s_n \right) = \sum_{n=1}^\infty c_n$. Moreover, if $a \leq x < y \leq b$, then, for every $n \in \mathbb{N}$, if $s_n < x$, then $s_n < y$ and so if $I \left( x-s_n \right) = 1$, then  $I \left( y-s_n \right) = 1$ also; that is, 
+  $$ I \left( x - s_n \right) \leq I \left( y - s_n \right) \tag{0} $$
+  for every natural number $n$. And, for every $n \in \mathbb{N}$, since $c_n \geq 0$, therefore 
+  $$ \sum_{k=1}^n c_k I \left( x-s_k \right) \leq  \sum_{k=1}^n c_k I \left( y-s_k \right) $$
+  for every $n \in \mathbb{N}$, which implies that $$
+\begin{align}
+\alpha(x) &= \sum_{n=1}^\infty c_n I \left( x-s_n \right) \\
+&= \lim_{n \to \infty} \sum_{k=1}^n c_k I \left( x-s_k \right) \\
+&\leq \lim_{n \to \infty}  \sum_{k=1}^n c_k I \left( y-s_k \right)  \\
+&= \sum_{n=1}^\infty c_n I \left( y - s_n \right) \\
+&= \alpha(y).
+\end{align}
+$$
+  Thus we have shown that $\alpha$ is a monotonically increasing function defined on $[a, b]$, with $\alpha(a) = 0$ and $\alpha(b) = \sum_{n=1}^\infty c_n$. As $f$ is continuous on $[a, b]$, so $f$ is integrable with respect to $\alpha$ over $[a, b]$, that is, 
+  $ \int_a^b f d \alpha$ exists (in the set $\mathbb{R}$ of real numbers). Now we determine the value of  $\int_a^b f d \alpha$ as follows: Now as $f$ is continuous on the compact set $[a, b]$, $f$ is bounded on $[a, b]$ and so there exists a positive real number $M$ such that 
+  $\lvert f(x) \rvert \leq M$ for all $x \in [a, b]$. Let $\varepsilon > 0$ be given. Let's put $$c \colon= \sum_{n=1}^\infty c_n = \lim_{n \to \infty} \sum_{k=1}^n c_k. $$
+  Then there is a natural number $N$ such that 
+  $$\tag{1} \left\lvert \sum_{k=1}^n c_k - c \right\rvert < { \varepsilon \over M } $$
+  for every natural number $n \geq N$. But $c_k \geq 0$ for all $k \in \mathbb{N}$, so the sequence $\left\{ \sum_{k=1}^n c_k \right\}_{n \in \mathbb{N}}$ of the partial sums of the series  $\sum c_n$ is monotonically increasing and therefore 
+  $$ c = \sup \left\{ \ \sum_{k=1}^n c_k \ \colon \ n \in \mathbb{N} \ \right\},$$
+  which implies that $ \sum_{k=1}^n c_k \leq c$ for every natural number $n$. So (1) takes the form 
+  $$ c - \sum_{k=1}^n c_k < {\varepsilon \over M }$$
+  for every natural number $n \geq  N$, 
+  which we can write  as 
+  $$ \sum_{k = n+1 }^\infty c_k < { \varepsilon \over M }.  \tag{2} $$ 
+  for every natural number $n \geq  N$. Let us fix a natural number $n \geq N$. Now we put 
+  $$ \alpha_1(x) = \sum_{k=1}^n c_k I \left( x - s_k \right), \qquad \alpha_2(x) = \sum_{k= n+1}^\infty c_k I \left( x - s_k \right) $$
+  for all $x \in [a, b]$. Then 
+  $$ \alpha = \alpha_1 + \alpha_2, \tag{3} $$
+  and from (0) we can conclude both $\alpha_1$ and $\alpha_2$ are monotonically increasing; furthermore , as $a < s_n < b$ for every natural number $n$, so $I \left( a-s_n \right) = 0$ and $I \left( b - s_n \right) = 1$ and therefore 
+  $$
+\begin{align}
+\alpha_2 (b) - \alpha_2 (a) &= \sum_{k = n+1}^\infty c_k I \left( b - s_k \right) - \sum_{k = n+1 }^\infty c_k I \left( a - s_k \right) \\ 
+&= \sum_{k= n+1 }^\infty c_k I \left( b - s_k \right) - 0 \\
+&\leq \sum_{k= n+1}^\infty c_k \\
+&< { \varepsilon \over M }. \qquad \mbox{ [ using (2) ] }. \tag{4}
+\end{align}  
+$$ Now 
+  $$
+\begin{align}
+\int_a^b f(x) d\alpha_1(x) &= \int_a^b f(x) d\left( \sum_{k=1}^n c_k I \left( x-s_k \right) \right) \\
+&= \sum_{k=1}^n \int_a^b f(x) d \left( c_k I \left( x- s_k \right) \right) \qquad \mbox{ [ using Theorem 6.12 (e) ] } \\
+&= \sum_{k=1}^n c_k \int_a^b f(x) d \left( I \left( x-s_k \right) \right) \qquad \mbox{ [ using Theorem 6.12 (e) again; $c_n \geq 0$ ] } \\
+&= \sum_{k=1}^n c_k f \left( s_k \right). \qquad \mbox{ [ using Theorem 6.15 ] }
+\end{align}
+$$
+  Thus $$ \int_a^b f d \alpha_1 = \sum_{k=1}^n c_k f \left( s_k \right).  \tag{5} $$ Now as $M > 0$ by our assumption and as $\lvert f(x) \rvert \leq M$ for all $x \in [a, b]$, so by Theorem 6.12 (d) in Baby Rudin and by (4) above, we see that 
+  $$ \left\lvert  \int_a^b f d \alpha_2 \right\rvert \leq M \left[ \alpha_2 (b) - \alpha_2(a) \right] < M { \varepsilon \over M } = \varepsilon. \tag{6} $$ Now using (3) and Theorem 6.12 (a) in Baby Rudin, we have 
+  $$
+\begin{align}
+\int_a^b f d \alpha &= \int_a^b f d \left( \alpha_1 + \alpha_2 \right) \\
+&=  \int_a^b f d \alpha_1 + \int_a^b f d \alpha_2 \\
+&= \sum_{k=1}^n c_k f \left( s_k \right) +  \int_a^b f d \alpha_2, \qquad \mbox{ [ using (5) above ] }   
+\end{align}
+$$
+  Therefore 
+  $$ \int_a^b f d \alpha - \sum_{k=1}^n c_k f \left( s_k \right) = \int_a^b f d \alpha_2,$$
+  amd hence from (6) we conclude that 
+  $$  \left\lvert  \sum_{k = 1 }^n c_k f \left( s_k \right) \ - \ \int_a^b f d \alpha  \right\rvert = \left\lvert \int_a^b f d \alpha - \sum_{k = 1 }^n c_k f \left( s_k \right) \right\rvert = \left\lvert \int_a^b f d \alpha_2 \right\rvert < \varepsilon. \tag{7}$$ Thus, we have shown that, corresponding to every real number $\varepsilon > 0$, we can find a natural number $N$ such that (7) holds for every natural number $n \geq N$. So the sequence $\left\{ \sum_{k=1}^n c_k f \left( s_k \right) \right\}_{n \in \mathbb{N} }$ of the partial sums of the series $\sum c_n f \left( s_n \right)$ 
+  converges. Hence the series $\sum c_n f \left( s_n \right)$ converges, with the sum 
+  $$ \sum_{n=1}^\infty c_n f \left( s_n \right) = \int_a^b f d \alpha,$$
+  that is, 
+  $$  \int_a^b f d \alpha = \sum_{n=1}^\infty c_n f \left( s_n \right),$$ 
+  as required. Is my understanding of Rudin's proof correct and clear enough? If not, then where have I still left the ambiguities? Is it essential that $\left\{ s_n \right\}$ be a sequence of distinct points for the conclusion of this theorem to hold? Apparently, this assumption has not been used, has it?","['real-analysis', 'proof-verification', 'integration', 'definite-integrals', 'analysis']"
+2330511,Prove that $\sum_{cyc}(1-x)^2\ge \sum_{cyc}\frac{z^2(1-x^2)(1-y^2)}{(xy+z)^2}$,"Let $x,y,z>0$ . Show that $$\sum_{cyc}(1-x)^2\ge \sum_{cyc}\dfrac{z^2(1-x^2)(1-y^2)}{(xy+z)^2}.$$ Source : In a blog entry posted in 2013, it was said that this problem was proposed by Dongyi Wei (full marks both at 50th IMO 2009 and 49th IMO 2008) and was solved by Zipei Nie (full marks at 51st IMO 2010). Here's what I have done. The expression $$\sum_{cyc}(1-x)\left((1-x)-\dfrac{z^2(1+x)(1-y^2)}{(xy+z)^2}\right)\ge 0$$ or $$\sum_{cyc}(1-x)\cdot\dfrac{x^2y^2+y^2z^2+xy^2z^2+2xyz-2xz^2-2x^2yz-x^3y^2}{(xy+z)^2}\ge 0.$$ But this way does not help for the starting inequality.","['algebra-precalculus', 'contest-math', 'inequality']"
+2330515,Prove the limit exists,"I was toying around with Abel summability when I stumbled upon a limit I could not prove existed. $$\lim_{x\to-1^+}\sum_{n=2}^\infty x^n\ln(n)\tag{$*$}$$ While it may not be clear that such a limit could converge , it may be helpful to note a similar example: $$\lim_{x\to-1^+}\sum_{n=1}^\infty nx^{n-1}=\lim_{x\to-1^+}\frac1{(1-x)^2}=\frac14$$ However, a lack of closed form of $(*)$ makes it difficult for me to show it converges.  WolframAlpha returns the series as a derivative of the Lerchphi function, though it doesn't seem quite helpful. By considering $$f_k(x)=\sum_{n=2}^k x^n\ln(n)$$ I find that $$f_{35}(-0.75)-0.25f'_{35}(-0.75)=0.225803586648$$ Which is a quick linear approximation of $f_{35}(x)$ centered at $x=-\frac34$.  This agrees with what I think to be the limit: $$\lim_{x\to-1^+}\sum_{n=2}^\infty x^n\ln(n)\stackrel?=\eta'(0)=\frac12\ln\left(\frac\pi2\right)=0.225791352645\tag{$**$}$$ Where $\eta(s)$ is the Dirichlet eta function . I also tried considering more elementary approaches to showing the limit exists, such as using $\ln(n+1)=\ln(n)+\mathcal O(n^{-1})$, however, I could not make use of it. Bonus points if you can prove $(**)$.","['real-analysis', 'sequences-and-series', 'limits']"
+2330565,Tensor characterization,"I want to show that $T^{1}_{1}(V)$ is isomorphic to $End(V)$. I know how to produce a linear map from $h:End(V)$ to $T^{1}_{1}(V)$, i.e. send $f \in End(V)$ to $hf(w,v) = w(f(v))$, but how to write down its inverse explicitly since I want to calculate the trace of its inverse?","['differential-geometry', 'tensors', 'linear-algebra', 'differential-topology']"
+2330591,Show that the limit $\frac{1}{n}\sum_{i=1}^n \left(\frac{\ln(i)}{\ln(n)}\right)^2 \to 1$,"I saw this in a lecture note, but having trouble proving it. Show $ \lim_{n\to \infty} \frac{1}{n}\sum_{i=1}^n \left(\frac{\ln(i)}{\ln(n)}\right)^2 \to 1$. For each $n\geq 1$, it is easy to show that $\frac{1}{n}\sum_{i=1}^n \left(\frac{\ln(i)}{\ln(n)}\right)^2 \leq 1$ so that the limit is bounded above by $1$. It follows from  the fact that for all $i\in \{1,...,n\}$, $\ln(i)\leq \ln(n)$. I tried to find a lower bound that converges to $1$ as $n\to \infty$, but I haven't been very successful. One idea I had was to use convexity of the quadratic function and show that 
+$$
+\left(\frac{\ln(i)}{\ln(n)}\right)^2\geq \left(\frac{\ln(n)}{\ln(n)}\right)^2 + 2\left(\frac{\ln(n)}{\ln(n)}\right)\left(\frac{\ln(i)-\ln(n)}{\ln(n)}\right).
+$$
+Then, 
+$$ 
+\frac{1}{n}\sum_{i=1}^n \left(\frac{\ln(i)}{\ln(n)}\right)^2 \geq \frac{1}{n}\sum_{i=1}^n \left\{1+2\frac{\ln(i)-\ln(n)}{\ln(n)}\right\}
+$$
+$$
+=1+\underbrace{\frac{2}{n}\sum_{i=1}^n \left\{\frac{\ln(i)-\ln(n)}{\ln(n)}\right\}}_{\in(-2,0)}.
+$$
+I was hoping to show the second term converges to $0$ as $n\to \infty$, but it didn't quite pan out. Any ideas? Also, do you think it can be generalized to $ \lim_{n\to \infty} \frac{1}{n}\sum_{i=1}^n \left(\frac{\ln(i)}{\ln(n)}\right)^p \to 1$ for any $p\geq 1$?
+..........Edit............. Using @sharding4 suggestion
+$\sum_{i=1}^n \ln(i) \approx n\ln(n)-n+1$, we get $$
+\frac{1}{n}\sum_{i=1}^n \left\{\frac{\ln(i)-\ln(n)}{\ln(n)}\right\}\approx \frac{n\ln(n)-n+1-\ln(n)n}{n\ln(n)}\to 0 
+$$
+as $ n\to \infty$. So second term does indeed converge to $0$. Thank you for the help!","['logarithms', 'sequences-and-series', 'convergence-divergence', 'limits']"
+2330620,Is this ratio of normal PDFs and CDFs decreasing?,"I am trying to show that the following function is decreasing in x: $$ \frac{\phi(x+a)-\phi(a)}{\Phi(x+a)-\Phi(a)}, $$ where $\Phi(x)$ and $\phi(x)$ are CDF and PDF of the standard normal distribution and $a \in \mathbb{R}$. Taking derivatives leads to an expression that I have problem signing: $$ \frac{-(x+a)\phi(x+a)[\Phi(x+a)-\Phi(a)] - \phi(x+a) [\phi(x+a)-\phi(a)] }{[\Phi(x+a)-\Phi(a)]^{2}}$$ This suggests that it is enough to show that $$-(x+a)[\Phi(x+a)-\Phi(a)] -  [\phi(x+a)-\phi(a)]<0$$ but was not able to establish this inequality. I have tried using simple results about Mill's ratio to sign the derivative (or to prove the above inequality) but was not able to. However, numerically, it seems that this function is decreasing. Any help would be much appreciated!","['derivatives', 'statistics', 'calculus', 'normal-distribution']"
+2330621,Interesting question about Euler's Phi function,"We have that $\phi(n)$ is the number of positive integers less than $n$ and relatively prime to $n$. I tried to extend this definition by working with $\phi_x(n)$, which is the number of positive integer less than $x$ and relatively prime to $n$. 
+I wonder if there was a research about this extension before, because I found a very interesting inequality. (haven't proved yet, but I checked for some value of $m,n$) Let $m,n$ be positive integers. Then we have: $\phi(1)+\phi(2)+\cdots+\phi(m)+\phi_n(1)+\phi_n(2)+\cdots+\phi_n(m) \geq \phi(n+1)+\phi(n+2)+\cdots+\phi(n+m)$ Does anyone have any hint for this or any resources related to $\phi_x(n)$? Thank you in advance.","['number-theory', 'totient-function']"
+2330626,Proof of Caratheodory's Theorem (for Convex Sets) using Radon's Lemma,"I am self-studying some discrete geometry / convex analysis.  Many descriptions of Caratheodory's Theorem for convex sets mention that Radon's Lemma can be used to simplify the proof, but I haven't seen it done.  For reference, here is Radon's Lemma: Lemma (Radon).  Let $A \subset \mathbb{R}^d$ contain $d+2$ points.  Then there exist two disjoint subsets $A_1, A_2 \subset A$ whose convex hulls have nonempty intersection. I will attempt to prove: Theorem (Caratheodory).  Let $X \subset \mathbb{R}^d$.  Then each point of $\mathrm{conv}(X)$ can be written as a convex combination of at most $d+1$ points in $X$. Proof Attempt. Each $y \in \mathrm{conv}(X)$ is a convex combination $y = \sum_{k=1}^m \alpha_k x_k$ of finitely many points $x_1, \dots, x_m \in X$, where $\alpha_k > 0$ and $\sum_{k=1}^m \alpha_k = 1$.  Assume $m \geq d+2$, otherwise we are done.  Further assume towards contradiction that $m$ is minimal, that is, $y$ cannot be written as the convex combination of fewer than $m$ points from $X$. Then, the points $x_1, \dots, x_m$ are affinely dependent, being $m \geq d+2$ points in $\mathbb{R}^d$; hence one point, say $x_m$, is an affine combination of the rest.  Apply Radon's Lemma to the set $A = \{ y, x_1, \dots, x_{m-1} \}$, giving two sets $A_1, A_2 \subset A$ whose convex hulls have nonempty intersection....? Is this the right idea?  How might I continue?","['discrete-geometry', 'convex-hulls', 'convex-analysis', 'geometry', 'discrete-mathematics']"
+2330646,Geometric Intuition for Caratheodory's Theorem (for Convex Sets),"Consider the Wikipedia proof for Caratheodory's Theorem, the statement of which I have reproduced below.  In short, I am looking for some geometric intuition about the modified coefficients in the proof , something that I may have been able to ""see"" for myself if I were asked to prove the theorem without looking it up. Theorem (Caratheodory).  Let $X \subset \mathbb{R}^d$.  Then each point of $\mathrm{conv}(X)$ can be written as a convex combination of at most $d+1$ points in $X$. From the proof, each $y \in \mathrm{conv}(X)$ can be written as the following convex combination, where we assume $k \geq d+2$: $$
+y = \sum_{j=1}^k \lambda_j x_j
+\text{ with } \sum_{j=1}^k \lambda_j = 1
+\text{ and } \lambda_j > 0 \quad \forall\, j=1,\dots,k
+$$ The resulting $k \geq d+2$ points $x_j \in \mathbb{R}^d$ are affinely dependent, so $$
+\sum_{j=1}^k \mu_j x_j = 0 \text{ with } \sum_{j=1}^k \mu_j = 0
+$$ The remainder of the proof uses some funky manipulations of the coefficients for $y$ to show that one of the points in the convex combination for $y$ is really unnecessary.  The new coefficients are: $$
+y = \sum_{j=1}^k \left(\lambda_j - \frac{\lambda_i}{\mu_i} \mu_j \right) x_j
+$$ where $i = \arg\min_{j \;:\; \mu_j > 0} \frac{\lambda_j}{\mu_k}$.  The $i$th coefficient turns out to be zero, completing the proof.  I understand why this choice of coefficients is desirable, but I do not understand why it's the ""right"" or ""obvious"" choice.  My own drawings do not make the situation any clearer to me. What do the new coefficients mean geometrically, and in particular, how can I interpret the ratio $\lambda_i/\mu_i$ geometrically?  What does the $\max$ correspond to?","['discrete-geometry', 'convex-hulls', 'convex-analysis', 'geometry', 'discrete-mathematics']"
+2330655,Dependence of Riemann curvature on the connection,"The connection depends on the way we define the parallel transport the basis vector $\{e_\mu\}$: 
+\begin{eqnarray}
+\triangledown_\nu e_\mu=\Gamma_{\nu\mu}^\lambda e_\lambda. 
+\end{eqnarray}
+It is known that we have the degree of freedom to get another connection by a different parallel transport rule
+\begin{eqnarray}
+\tilde{\Gamma}_{\nu\mu}^\lambda={\Gamma}_{\nu\mu}^\lambda+t_{\nu\mu}^\lambda
+\end{eqnarray}
+where $t_{\nu\mu}^\lambda$ is a tensor. However, the Riemann curvature
+\begin{eqnarray}
+R^\kappa_{\lambda\mu\nu}(\Gamma)=\partial_\mu\Gamma^\kappa_{\nu\lambda}-\partial_\nu\Gamma^\kappa_{\mu\lambda}+\Gamma^\eta_{\nu\lambda}\Gamma^\kappa_{\mu\eta}-\Gamma^\eta_{\mu\lambda}\Gamma^\kappa_{\nu\eta}
+\end{eqnarray}
+is not invariant under the above redefinition of parallel transport, or
+\begin{eqnarray}
+R^\kappa_{\lambda\mu\nu}(\tilde{\Gamma})\neq R^\kappa_{\lambda\mu\nu}(\Gamma). 
+\end{eqnarray}
+My question is how to understand such non-invariance. If Riemann curvature indeed depends on the underlying parallel transport rule, does it mean that Riemann curvature is not so intrinsic a quantity? The same question can be asked on the torsion tensor as well. Thanks very much in advance!","['riemannian-geometry', 'differential-geometry']"
+2330663,"number of divisors of $2^23^35^57^411^3$ which are is in the form of $6k+1, k\geq 0$ and $k\in \mathbb{Z}$","Total number of divisors of $2^23^35^57^411^3$ which are is in the form of $6k+1, k\geq 0$ and $k\in \mathbb{Z}$ $\bf{Attempt}$ writting $1,3,3^2,3^3$ as $6k+1$ or $6k+3$ same way $1,5,5^2,5^3,5^4,5^5$  as $6k+1$ or $6k+4$ same way $1,7,7^2,7^3,7^4$  as $6k+1$ same way $1,11,11^2,11^3$ as $6k+1$ or $6k+5$ could some help me how can i solve my question, thanks",['combinatorics']
+2330701,Why is this directional derivative equal to $0$?,"Let $A \subset \mathbb{R}^n$, with $A$ open, and let
+$\emptyset\ne S \subset A$.  Let $f\in C^1 (A, \mathbb{R} )$ be a function. Let $\vec{a}$ be a point in $S$, and suppose that
+$\vec{a}$ is a local extremum point for $f \mid S$. Prove that
+the gradient vector $( \nabla f ) ( \vec{a} )$ is
+orthogonal to every vector $\vec{v}$ which is tangent to $S$
+at $\vec{a}$. Aside (definition of a vector tangent to a set): Let $\emptyset\ne S\subset\mathbb{R}^n$ and let $\vec{a}\in S$.  A vector $\vec{v} \in \mathbb{R}^n$ is said to be tangent to $S$ at $\vec{a}$ when there exists a differentiable path 
+  $\gamma : I \to \mathbb{R}^n$, where $I \subseteq \mathbb{R}$ is an open interval containing $0$, such that the following conditions are fulfilled: (i) $\gamma (t) \in S$ for every $t \in I$; (ii) $\gamma (0) = \vec{a}$; (iii) $\gamma ' (0) = \vec{v}$. The approach I used is as follows: Let $u:I\to\mathbb{R}$ be a function, such that $u(t) = f(\gamma(t)), t\in I$. Then $u$ is differentiable, with $$u'(t)=\langle (\nabla f(\gamma(t)),\gamma'(t) \rangle$$
+$$D_{\vec{v}}(\vec{a})=u'(0)=\langle (\nabla f(\gamma(0)),\gamma'(0) \rangle=\langle \nabla f(\vec{a}), \vec{v} \rangle$$ Now I'm wondering why $D_{\vec{v}}(f(\vec{a}))$ should be equal to $0$. This must somehow be related to the fact that $\vec{a}$ is a local extremum of $f$. But how exactly does this make $D_{\vec{v}}(\vec{a})=0$?","['multivariable-calculus', 'real-analysis', 'proof-verification', 'vector-analysis']"
+2330718,Embedding of projective bundles induced by surjection of sheaves,"If $X$ is a variety, and if $\mathcal{F}$, $\mathcal{G}$ are locally free sheaves of finite rank on $X$, does a surjection $\mathcal{F}\rightarrow \mathcal{G}$ induce a closed embedding $\mathbb{P}(\mathcal{G})\hookrightarrow \mathbb{P}(\mathcal{F})$ of the associated projective bundles? Here I define $\mathbb{P}(\mathcal{G}) = \textbf{Proj}(\text{Sym}(\mathcal{G}))$ as in Hartshorne for instance. I understand that a surjection of graded rings $A\rightarrow B$ preserving degrees induces a closed embedding of the corresponding schemes $\text{Proj}(B)\hookrightarrow \text{Proj}(A)$. If the surjection $\mathcal{F}\rightarrow \mathcal{G}$ gives rise to a surjection $\text{Sym}(\mathcal{F})\rightarrow\text{Sym}(\mathcal{G})$ which is surjective on sections, then for each open subset $U\subseteq X$ we would have a closed embedding $$\text{Proj}(\text{Sym}(\mathcal{G})(U))\hookrightarrow \text{Proj}(\text{Sym}(\mathcal{F})(U)).$$ In this case I was thinking that these embeddings could be glued together to form an embedding $\mathbb{P}(\mathcal{G})\hookrightarrow \mathbb{P}(\mathcal{F})$. However the functor from sheaves to sections does not preserve surjective morphisms in general, and I cannot seem to find a way around this, even for locally free sheaves.",['algebraic-geometry']
+2330728,Find the upper and the lower bounds for a definite integral,"I have a question like Find a lower bound and an upper bound for the area under the curve by
+  finding the minimum and maximum values of the integrand on the given
+  integral: $$
+\int_1^6t^2-6t+11 \ dt
+$$ It asks for two answers; a minimum area and a maximum
+  area. So, I integrate this; $$
+\left(\frac{t^3}{3}-3t^2+11t\right)\Bigg|_1^6
+$$ I know I have a minimum at $x = 3$ because; $$
+f(t) = t^2-6t+11 \\
+f'(t) = 2t-6 = 0 \\
+2(t-3) = 0 \\
+t = 3 \\
+f(5) = 4 \\
+f(1) = -4 \\
+$$ Very confused by what is going on when it asks for a maximum area and a minimum area.","['derivatives', 'definite-integrals', 'maxima-minima', 'calculus']"
+2330743,"Jacobian of (f,g) is identically zero if and only if f = h ∘ g?","Suppose you have smooth functions $f,g : \mathbb{R}^2 \rightarrow \mathbb{R}$. I am wondering whether the following conjecture is true: Conjecture : The Jacobian determinant $\left|\frac{\partial(f,g)}{\partial(u,v)}\right|$ is zero everywhere if and only if there exists a function $h:\mathbb{R}\rightarrow \mathbb{R}$ such that $f \equiv h\circ g$. This direction $(\Leftarrow)$ is easy using the chain rule. I'm wondering whether the converse direction $(\Rightarrow)$ holds as well. I'm not sure how to proceed, but I note that one immediate consequence of the Jacobian being zero everywhere is that the gradients of $f$ and $g$ are parallel everywhere: $$\nabla f = \alpha(u,v) \nabla g.$$ It seems to follow that the level curves of $f$ and $g$ are parallel as well. So, intuitively, to make f and g coincide, maybe it is possible to simply scale $f$ by an amount that depends on the value of $g$ at the point (i.e. the value of the level curve passing through the point). This would mean that there exists a function $h$ such that f = h ∘ g? Update:  I would like to update the conjecture to exclude trivial reasons for the determinant vanishing, e.g. because exactly one of $f$ or $g$ is constant. Later, it may also be advantageous to exclude cases such as $f_v = g_v = 0$. Conjecture (Revised) : Let $f,g:\mathbb{R}^2\rightarrow \mathbb{R}$ be smooth functions, and furthermore suppose that the gradients of $f$ and $g$ exist everywhere. The Jacobian determinant $\left|\frac{\partial(f,g)}{\partial(u,v)}\right|$ is zero everywhere if and only if there exists a function $h:\mathbb{R}\rightarrow \mathbb{R}$ such that $f \equiv h\circ g$. Here is what I've tried so far. Because the partial derivatives of $f$ and $g$ are nonzero everywhere, their gradient is well-defined everywhere and hence at each point the space of vectors $\vec{n}$ such that the partial derivative of $f$ and $g$ in the direction $\vec{n}$ vanishes is one-dimensional. Because the Jacobian determinant vanishes everywhere, the gradients of $f$ and $g$ are parallel, and hence $f$ and $g$ are locally constant in the same direction at each point. This suggests that the level  curves of $f$ and $g$ coincide everywhere; that is, for each point $\vec{p}\in \mathbb{R}^2$, $$f^{-1}(f(\{\vec{p}\})) = g^{-1}(g(\{\vec{p}\}))$$ Hence if you give me the value of $q = g(\vec{p})$, I should be able to find the value $r = f(\vec{p})$ without knowing $\vec{p}$ itself---the level sets coincide. The existence of a function $h: q \mapsto r$ would establish the proof. More formally, let $L_f$ be the collection of level sets of $f$, i.e. $L_f \equiv \{ f^{-1}(f(p)) : p \in \mathbb{R}^2\}$, and let $L_g$ be the level sets of $g$. Evidently, there are maps $C_f : L_f \rightarrow \mathbb{R}$ and $C_g : L_g \rightarrow \mathbb{R}$ sending each level set to its corresponding value in $\mathbb{R}$. What's special is that if we claim the level sets are equal, then there is an isomorphism $s : L_f \leftrightarrow L_g$. In that case, our desired function is $$h \equiv C_f \circ s^{-1}\circ C_g^{-1}$$ This is a correct definition because we have: \begin{align*}
+p\in \mathbb{R}^2 &\quad \text{a point in }\mathbb{R}^2\\
+g(p) &\quad \text{its image under $g$}\\
+C_g^{-1}(g(p)) &\quad \text{the level set in $\mathbb{R}^2$ corresponding to $g(p)$}\\
+s^{-1}C_g^{-1}(g(p)) &\quad \text{that same level set viewed as a level set of $f$}\\
+C_f s^{-1}C_g^{-1}(g(p)) &\quad \text{the value corresponding to that $f$ level set}\\
+= f(p) & \quad\text{as demonstrated here}\\
+= (h)(g(p)) &\quad\text{definition of $h$}\\
+\end{align*} My only remaining question is whether we can confirm that the level sets are all in fact equal with our given assumptions?","['derivatives', 'jacobian', 'vector-analysis']"
+2330764,Clopen sets of an infinite set with cofinite topology,"Let $X$ be an infinite set with its cofinite topology. I was asked to mention the clopen sets. I think the only clopen sets are X and the empty set, because otherwise, if A is a clopen set, it would mean that both A and its complentary set are finite, so their union, which is X, is finite - a contradiction. Am I right? Thank you!",['general-topology']
+2330768,Solving a recurrence to a problem,"I was given a problem by a friend where I had to place blocks in a specific pattern such that each block was of area 1 but had length/width such that it fit exactly on the side of the block made until then. What I had to find out is height to width ratio after a long time. Im skipping the problem details because it's irrelevant. I've translated the problem into math, and Ive landed with the following recurrence relation. If $h_k, w_k$ are the height and width of the $k$-th block I place, then the following recurrence emerges: \begin{align}
+w_{2k} &= w_{2k-1} + w_{2k-2}\\
+h_{2k} &= \frac1{w_{2k}} \\
+\text{and}\\
+h_{2k+1} &= h_{2k} + h_{2k-1} \\
+w_{2k+1} &= \frac1{h_{2k+1}}\\
+\end{align} with $h_0, h_1, w_0, w_1 = 1$ And I want to explore the convergence and hence the limit of $h_k/w_k$. I've managed to remove $w_k$ from the equations and arrived at $$h_{2k+1} = h_{2k} + h_{2k-1}$$
+and 
+$$h_{2k} = \frac1{\frac1{h_{2k-1}} + \frac1{h_{2k-2}}}$$ where I have to find $$\lim_{k\to\infty} h_{2k}^2$$ Any help or suggestion is appreciated. Links or references as to how such recurrences are solved is also welcome.","['combinatorics', 'recurrence-relations', 'convergence-divergence', 'limits']"
+2330786,Singular value decomposition of a specific integral operator,"I want to determine the singular value decomposition of the integral operator $$L^2(0,1) \to L^2(0,1) ; f \mapsto Af(\cdot) = \int_0^\cdot f(y)dy.$$ Its adjungate is given by $$A^*f(\cdot) = \int_\cdot^1 f(y) dy. $$ Hence $A^*Af(x) = \int_x^1 \int_0^y f(z)dzdy.$ Assuming that $f$ is smooth yields $$\lambda f''(x) = A^*Af''(x) = \int_x^1\int_0^y f''(z)dzdy = -f(x) +f(1) - (1-x)f'(0).$$ Clearly, $\lambda_j = ((j-1/2)\pi)^{-2}$ and $v_j(x)= \sqrt{2}\cos((j-1/2)\pi x)$ are solutions of the above differential equation. Do more solutions exist? Since $A$ is injective the Eigenfunctions should span all of $L^2(0,1)$ . We have $v_j(1)=0$ for all $j$ , but this is merely a point and should not matter in $L^2(0,1)$ . Moreover, the $v_j$ are even for some $j$ and odd for the other.","['functional-analysis', 'schauder-basis', 'integral-operators', 'ordinary-differential-equations']"

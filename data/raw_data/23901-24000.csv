@@ -1,0 +1,419 @@
+question_id,title,body,tags
+209279,Localization Notation in Hartshorne,"This is a question about notation in Hartshorne's Algebraic Geometry. According to my understanding $k[x_0,\cdots,x_n]_{(x_i)}$, (see e.g. page 18), consists of the elements of degree zero in the localization of $k[x_0,\cdots,x_n]$ by the prime ideal $(x_i)$. That is, denominators must belong to the complement of $(x_i)$. So why is $g/x_i^N$ an element of $k[x_0,\cdots,x_n]_{(x_i)}$, for $g \in k[x_0,\cdots,x_n]$ (see e.g. bottom of page 18)?","['commutative-algebra', 'algebraic-geometry']"
+209308,Can we characterize the Möbius transformations that maps the unit disk into itself?,"The Möbius transformations are the maps of the form $$ f(z)= \frac{az+b}{cz+d}.$$
+Can we characterize the Möbius transformations that map the unit disk $$\{z\in \mathbb C: |z| <1\}$$ into itself?",['complex-analysis']
+209320,Where do the factorials come from in the Taylor series?,"Unfortunately, I don't have much detail to give here. But is the general idea to cancel out the constant obtained from taking the derivative. For instance, say my function was $f(x)=f_0+f_1x+f_2x^2+\dotsb$ Then $f'(x)=f_1+2f_2x+\dotsb$ . And if the expansion is centered around $x=0$ , then \begin{align}f'(0)&=0 \\
+f''(0)&=2f_2\\
+f'''(0)&=3\cdot 2f_3.\\
+\end{align} Therefore \begin{align}
+f_0&=f(0) \\
+f_1&=\frac{f'(0)}{1} \\
+f_2&=\frac{f''(0)}{2}
+\end{align} And so forth. Is that where the factorial comes from? It is quite clear for a polynomial, but what about a trig function such as $\sin(x)$ other than using Taylor's formula?","['calculus', 'taylor-expansion']"
+209330,When is $\{ x | f(x) \le 0\}$ path-connected?,"I'm trying to determine the conditions on $f : \mathbb{R}^n_{\ge 0} \to \mathbb{R^n}$ under which $\{ x | f(x) \le 0\}$ is path-connected.  We can assume that $f$ is continuous and concave (i.e. for any $\lambda \in [0, 1]$, $f(\lambda x + (1 - \lambda) y) \ge \lambda f(x) + (1 - \lambda) f(y)$). Inequalities on $\mathbb{R}^n$ are pointwise: $a \ge b$ iff $a_i \ge b_i$ for each $i$. Thanks!","['general-topology', 'connectedness']"
+209332,"Interpretation of $E[X \mid Y, Z]$","I'm struggling to understand the correct interpretation of conditional expectation of the form
+$$
+E[X \mid Y, Z ].
+$$
+I know that $E[X \mid Y]$ is itself a random variable $f(y) = E[X \mid Y=y]$. Does this mean that the above is a random variable $g(Y,Z)$ where $$g(y,z) = E[X \mid Y = y, Z = z]\ ?$$ On the other hand, $E[X \mid Y,Z ]$ is nothing but $E[X \mid \sigma(Y,Z)]$. Clearly $\sigma(Y) \subseteq \sigma(Y,Z)$, so $E[X\mid Y,Z]$ is a constant when conditioning on some event $\{Y=y\} \in \sigma(Y)$, which seems to contradict the above interpretation as a r.v. depending on $Y$ and $Z$. What am I missing here?",['probability-theory']
+209342,Construction of a right triangle,"It's a high school level question which we can't seem to solve. Here it is: Given $2$ lines, one of the length of the hypotenuse and the other with the length of the sum of the $2$ legs, construct with straightedge and compass the corresponding right triangle I didn't make much progress. It seems that there's a theorem or a few basic facts about right triangles that I'm missing. What path do you suggest I take? Thanks for your help.","['geometry', 'geometric-construction']"
+209350,Prove that the sum of the infima is smaller than the infimum of the sum,"I'm trying to prove the following inequality: Let $f$ and $g$ be bounded real-valued functions with the same domain. Prove the following: $$\inf(f) + \inf(g) \leqslant \inf(f+g).$$ I thought I had proved it, but I made the erroneous assumption that $\inf(f+g)$ can always be expressed in the form $(f+g)(x_1)$ for some $x_1$ , which is not necessarily true.","['inequality', 'real-analysis', 'supremum-and-infimum']"
+209360,Constructing a choice function in a complete & separable metric space,"Let $X$ be a complete & separable metric space.
+Let $\{E_i\}_{i\in I}$ be a collection of closed and nonempty sets in $X$. If $X$ is just a complete metric space, it seems not possible to construct a choice function $f$ such that $f(E_i)\in E_i$, without AC. However, since $X$ is separable, it seems possible to construct a choice function. How do I construct a choice function $f$ such that $f(E_i)\in E_i$ without AC$_\omega$? EDIT; Since Hagen's argument doesn't require the condition 'boundedness of $E_i$, I removed it. Also $\{E_i\}$ doesn't need to be countable, so i changed it to $\{E_i\}_{i\in I}$ where $I$ is an arbitrary set.","['general-topology', 'descriptive-set-theory', 'axiom-of-choice']"
+209361,Number of distinct functions between two finite sets,"Let $m,n$ be positive integers. Let $X$ be a set with $m$ distinct elements and $Y$ with a set with $n$ distinct elements. How many distinct functions are there from $X$ to $Y$? I was thinking the following: If $n=m$, then there are $n!$ distinct functions. If $n>m$, then we have $nPm$ distinct functions ($P$ stands for permutation) and I am not sure about the case where $ n<m$. If $n<m$ the function $f$ should be a many-to-one function by the Pigeonhole principle, but I cannot enumerate the number of distinct functions for this case. Any input, help and correction is much appreciated.","['discrete-mathematics', 'elementary-set-theory', 'functions']"
+209382,Resultant of two polynomials,"Let $Res(f,g)$ be a resultant of two polynomials $f(x)$ and $g(x)$.
+Is it true that resultant does not change under a linear change of coordinates
+$x\mapsto x+\alpha$? Thanks a lot!",['linear-algebra']
+209396,Is $2^{|\mathbb{N}|} = |\mathbb{R}|$? [duplicate],"This question already has answers here : The set of real numbers and power set of the natural numbers (5 answers) Closed 4 years ago . Is $2^{|\mathbb{N}|} = |\mathbb{R}|$? If so, how? I was reading the Wiki page on the , and it says ""Moreover, $\mathbb{R}$ has the same number of elements as the power set of $\mathbb{N}$"", but I don't see how this is true? I feel like it has something to do with binary, but I'm not too sure how it works? Do I have to show a map of all reals can be done in binary? I'm just very confused, and any advice would be appreciated!","['cardinals', 'elementary-set-theory']"
+209402,Behaviour at infinity of a function in terms of first and second derivatives,"In a paper (dealing with spectra of certain Schrodinger operators) I found the following assumption for a function $f\in C^\infty(\mathbb R^n;\mathbb R)$: there exists a constant $C>0$ and a compact set $K\subset\mathbb R^n$
+such that  for $x\in\mathbb R^n\setminus K$ (i) $|\nabla f(x)|\geq \frac 1C$ (ii) $|\text{Hess}f(x)|\leq C|\nabla f(x)|^2$ I'm bit confused about this and don't find it intuitive. I understand that $f(x)= |x|^\alpha$ is ok for $\alpha\geq 1$ and it is not ok for $\alpha<1$ because (i) doesn't hold. I  would like to understand it better by finding (preferably simple,onedimensional) examples of functions that a) satisfy (i) but not (ii)     (or viceversa) b) satisfy  (i)' $|\nabla f(x)|\rightarrow  \infty$ for $|x|\rightarrow\infty$ instead of (i)  but not (ii) c)show the relation (if any) of (i) and (ii) with convexity/concavity properties. d) show the relation (if any) to $e^{-f} \in L^2$ e)  (i) and (ii) hold but not the following (ii)': there exists $\rho>0$ such that $\sup_{y\in B_{\rho}(x)}|\text{Hess}f(y)|\leq C|\nabla f(x)|^2$ with $B_\rho(x)$ the ball of radius $\rho$ centered in $x$. In general any kind of intuition and comments are appreciated, and of course also partial answers are more than welcome. Many thanks","['multivariable-calculus', 'convex-analysis', 'inequality', 'real-analysis', 'intuition']"
+209412,How can I solve this limit?,$\lim_{x\to 1} \frac{\sin (x-1)}{x-1}$ I know the answer equals $1$ because $\lim_{x\to 0} \frac{\sin (x)}{x} = 1$ and in the following question $x-1$ gets arbitrary close to 0 so the same thing is happening. What I need is some steps to basically show that the question was not solved by a calculator. I tried to use $\sin(A-B) = \sin A \mathrm{cos}B  - \sin B \cos A $ but I had a $\frac {0}0$ which is obviously wrong. Any help/tip would be great.,"['trigonometry', 'limits']"
+209416,A generalized (MacLaurin's) average for functions,"The average value of a function $y=f(x)$,  on an interval $[a,b]$, is ${1\over {b-a}}\int_a^b f(t)dt$. This of course relates to the arithmetic average. It is easy to see that a corresponding formula for the geometric average is $\exp\left({1\over {b-a}}\int_a^b \ln(f(t))dt\right)$. There are many other types of averages. In particular the ones motivated by the elementary symmetric polynomials are interesting as they ""mix"" the function values. My question is: How can we evaluate those averages? To be specific, consider a real positive continuous function $y=f(x)$ on $[a,b]$. Create a partition of $n$ sub-intervals of width $\Delta x$. Let $Y=(y_1,y_2,\cdots, y_n)$ be the values of the function $f$ at some point in  those intervals. Define the elementary symmetric polynomials $e_k=e_k(Y)$, for $1\le k \le n$, through $$
+\prod_{i=1}^n (t+y_i)= t^n+e_1t^{n-1}+\cdots+e_n.
+$$ 
+Define the average 
+$$
+a_k(Y)={\root k \of {{e_k} \over {\left (n \atop k \right )}}}.
+$$
+Define $A_\alpha(f)$, the $\alpha$-average of $f$ over $[a,b]$, as the limit of $a_k(Y)$ as $n \to \infty$, $\Delta x \to 0$, and $k/n \to \alpha$. Note $\alpha=0$ corresponds to the arithmetic average and $\alpha=1$ is the geometric average. What do we know about $A_\alpha$ for $0<\alpha <1$? How can we compute it? For example if $f(x)=x$, $[a,b]=[1,2]$, and $\alpha=1/2$ what is $A_\alpha$? Edit 1: Some related inequalities are Maclaurin's and Newton's . Edit 2: I guess the requirement of continuity can be relaxed to piecewise continuity and still have a unique limit.  Finding $A_\alpha$ for the following function, for a given $m>0$, will also be of interest:
+$$f(x)= \cases { 1  & if  $ \quad 0 \le x \le 1/2$  \cr
+m & if $ \quad 1/2 < x \le 1$ }.$$","['symmetric-polynomials', 'calculus', 'integration']"
+209422,Is the variance concave?,"Let $X$ be a discrete random variables with values in the set $\{x_1,\ldots, x_n\}\subset\mathbb{R}$ . Denote by $p_i$ the probability that $X=x_i$ . We can then regard the variance $\mbox{Var}(X)$ as a function of the vector $p\in \Delta^{n-1}\subseteq\mathbb{R}^n$ . Will it be a concave function of $p$ ? With $n=2$ , we get $$\mbox{Var} (X)=p_1p_2(x_1-x_2)^2=p_1(1-p_1)(x_1-x_2)^2$$ which is concave. I'm not sure how to generalize this beyond two dimensions though.","['variance', 'convex-analysis', 'probability']"
+209423,geodesics and unit speed curves,"Say we have 2 surfaces $M$ and $\hat M$ that intersect perpendicularly --> $\left<n,\hat n\right> = 0$ along the curve of the intersection intersection, where $n$ is the unit normal
+to $M$ and $\hat n$ is the unit normal to $\hat M$. Assume the intersection of $M$ and $\hat M$ is the image of a unit speed curve $\gamma$ that is a geodesic in both $M$ and $\hat M$. How can we show that $\gamma$ is a straight line? Thanks",['differential-geometry']
+209440,How to show that $f(x)=x^2$ is continuous at $x=1$? [closed],"Closed. This question is off-topic . It is not currently accepting answers. This question is missing context or other details : Please improve the question by providing additional context, which ideally includes your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. Closed 8 years ago . Improve this question How to show that $f(x)=x^2$ is continuous at $x=1$?","['calculus', 'continuity']"
+209454,"How to show that if $f$ or $g$ is continuous, then the convolution $f \star g$ of those functions is continuous?","How to show that $f \star g$ is continuous if $f$ or $g$ is continuous? Do you use $\epsilon - \delta $ - approach in the proof? some hint. I define $$(f \star g)(x)=\frac{1}{2\pi} \int_{- \pi}^{\pi} f(y)g(x-y)dy,$$ if $f,g \in L^1[-\pi,\pi].$","['convolution', 'continuity', 'analysis']"
+209461,Evaluating $\int_{0}^{1}\int_{0}^{1}\frac{r^{i+j}(1-r)^{k+l}s^{2m-i-j}(1-s)^{2m-k-l}}{(r+s)^{m}(2-r-s)^{m}}drds$,"I'm trying to compute a closed form expression for the integral
+$$ \int_{0}^{1}\int_{0}^{1}\frac{r^{i+j}(1-r)^{k+l}s^{2m-i-j}(1-s)^{2m-k-l}}{(r+s)^{m}(2-r-s)^{m}}drds \quad i,j,k,l \in\{0,1,\ldots,m\},$$
+which occurs in calculating
+$$\mathrm{Ex}\left[\frac{R^{i}(1-R)^{k}S^{m-i}(1-S)^{m-k}}{(R+S)^{m}(2-R-S)^{m}}\right]$$
+where $R$ and $S$ are independent random variables with $R\sim Beta(j+1,l+1)$, $S\sim Beta(m-j+1,m-l+1)$ and $i,j,k,l \in\{0,1,\ldots,m\}$. Right now the only idea I have is to try to find a partial fraction decomposition that will allow me to compute the integral of the resulting terms using integration by parts. However, this would be a lengthy and tedious calculation. I would really appreciate any ideas or suggestions for computing this integral in a more elegant way.","['calculus', 'probability', 'integration']"
+209469,Sum of variances of experiments does not equal variance of joint experiment,"Say I make 3 independent experiments and these are the outputs: O/P of $1$st exp : $1,2,3$ O/P of $2$nd exp : $4,5,6$ O/P of $3$rd exp : $7,8,9$ In general ${\rm Var}(A+B+C) = {\rm Var}( A ) + {\rm Var}( B ) + {\rm Var}( C )$ In this case ${\rm Var}(\text{1st}) + {\rm Var}(\text{2nd}) + {\rm Var}(\text{3rd}) \ne {\rm Var}(1,2,3,4,5,6,7,8,9)$ Why ?","['statistics', 'probability']"
+209470,Asymptotic FLT $\implies$FLT using ABC Conjecture,"Edit: I'm beginning to suspect I either misread the sources or perhaps something wasn't stated, but it's my guess now that there is no nontrivial way of showing the ABC conjecture implies Fermat's Last Theorem in full. Original: If we assume the ABC conjecture, then one can prove with relative ease that $x^n+y^n=z^n$ possibly has solutions in positive integers only for $n< n_0$, where $n_0$ is some finite number. This is the ""Asymptotic Fermat's Last Theorem."" My question is, does this somehow imply with further calculations that the full Fermat's Last Theorem follows? Indeed I've read that ABC conjecture implies the full FLT and I thought it would follow from the asymptotic case, again bootstrapping the ABC conjecture. The proof for the asymptotic case goes as follows: Recall that the ABC conjecture states that for any $\epsilon>0$, there exists an $N(\epsilon)>0$ such that for all nonnegative $a,b,c$ relatively prime with $a+b=c$, one has $c\leq N(\epsilon)\mbox{rad}(abc)^{1+\epsilon}$. Let $x^n+y^n=z^n$, where $x,y,z$ are relatively prime, so that $\mbox{rad}(x^ny^nz^n)=\mbox{rad}(xyz)\leq xyz\leq z^3$. Supposing $n\geq 3$, we get that $z\geq 3$, so invoking the ABC conjecture with $\epsilon=1$ and $K:=\max(1,N(1))$, we get $$z^n\leq N(\epsilon)\mbox{rad}(x^ny^nz^n)<Kz^6$$ so $$n<6+\frac{\log K}{\log z}\leq 6+\frac{\log K}{\log 3}=:n_0$$ and we are done. Is there a way to push this toward the full proof of FLT? I feel like we would need to consider the reformulation of the ABC conjecture, that for any $\epsilon>0$, the set of exceptions $c>\mbox{rad}(abc)$ is finite, so that there is some $m$ such that $c\leq (abc)^{m}$ (for every $a+b=c$) and therefore FLT holds for every integer that is at least $3m$. Is seems impossible to suggest that $m=1$ since there are plenty of counterexamples of triples $(a,b,c)$ for which this is false. Perhaps one would need to show no counterexamples exist when $a,b,c$ satisfy $a^3+b^3=c^3$?","['conjectures', 'number-theory']"
+209479,big O notation with asymptotically nonnegative increasing functions,"Let $f(n)$ and $g(n)$ be asymptotically nonnegative increasing functions. Show:
+  $f(n) · g(n) = O((\max\{f(n), g(n)\})^2)$, using the deﬁnition of big-oh. I can't quite figure this out, can someone help explain why this is true?","['notation', 'algorithms', 'asymptotics', 'functions']"
+209499,Variation of Cauchy integral formula,"I am trying to show that if $D$ is the open unit disk, $f$ is holomorphic in a neighborhood of the closure of $D$, and $w$ is an arbitrary point in $D$, then $f(w)=\frac{1}{\pi}\iint_{D}\frac{f(z)}{(1-\bar{z}w)^{2}}dxdy$. Previously I already had $f(w)=\frac{1}{2\pi}\int_{\partial D}\frac{f(z)}{1-\bar{z}w}|dz|$ so I tried applying Green's theorem but I wasn't successful.",['complex-analysis']
+209505,Lie Algebra of U(N) and SO(N),U(N) and SO(N) are quite important groups in physics. I thought I would find this with an easy google search. Apparently NOT! What is the Lie algebra and Lie bracket of the two groups?,['group-theory']
+209512,Binary quadratic forms over Z and class numbers of quadratic ﬁelds.,"What is the relation between the classiﬁcation of binary quadratic forms over $\mathbb Z$,  and the problem of ﬁnding the class numbers of quadratic ﬁelds? What would be a nice reference for this?",['number-theory']
+209532,Extension of the Lebesgue measurable sets,"My question is the following : is there a $\sigma$-algebra $\mathcal{T}$ (of subsets of $\mathbb{R^n}$) that contains strictly the $\sigma$-algebra $\mathcal{L}$ of 
+Lebesgue measurable sets (in $\mathbb{R}^n$), and such that there is a measure on $\mathcal{T}$ that extends the usual Lebesgue measure on $\mathcal{L}$ ? I guess not, but I did not find a reference.","['measure-theory', 'real-analysis']"
+209571,How many ways to divide a n-element set?,"For a n-element set, how many ways to divide the set to a combination of subsets? For example, for the set {1, 2, 3}, there would be 5 ways to divide: {1, 2, 3}
+{1}, {2, 3}
+{2}, {1, 3}
+{3}, {1, 2}
+{1}, {2}, {3} For the n-element set, I thought it would be (n^n)/n! , because imagine dividing as drop n balls to n indistinguishable boxes. But apparently, it is incorrect in the case n=3 .",['combinatorics']
+209577,Evaluating $\lim_{n\rightarrow\infty}\left(1-\frac{x}{n^{1+a}}\right)^{n}$,"We know that one of the characterizations of the exponential function is: $$e^x=\lim_{n\rightarrow\infty}\left(1+\frac{x}{n}\right)^{n}$$ Trivially, it follows that $\lim_{n\rightarrow\infty}\left(1-\frac{x}{n}\right)^{n}=e^{-x}$ I am wondering about $$\lim_{n\rightarrow\infty}\left(1-\frac{x}{n^{1+a}}\right)^{n}$$ where $a$ is a real number.  Is the following evaluation of the expression correct? $$\begin{array}{rcl}\lim_{n\rightarrow\infty}\left(1-\frac{x}{n^{1+a}}\right)^{n}&=&\lim_{n\rightarrow\infty}\left(1-\frac{xn^{-a}}{n}\right)^{n}\\
+&=&\lim_{n\rightarrow\infty}e^{-xn^{-a}}\\
+&=&\left\{\begin{array}{rl}1,&a>0\\e^{-x},&a=0\\0,&a<0\end{array}\right.
+\end{array}$$ I am uncomfortable taking the second equality, not sure what the justification is...",['limits']
+209579,Find the equation of the plane that contains,"Find the equation of the plane that contains, the lines: $$
+\frac{x-2}{2} = \frac{y+4}{3} = \frac{2 - z}{5}
+$$
+and
+$$\begin{align}
+x &= 3 + 4t \\
+y &= -4 +6t \\
+z &= 5 -10t.
+\end{align}
+$$ I'm not exactly sure on how to tackle this problem.","['linear-algebra', 'calculus', 'algebra-precalculus']"
+209580,Set intersection the same as logical conjunction?,I have been exploring more about set theory beyond my textbook and I have ran into something I couldn't explain. Can you use logical conjunction/disjunction on sets and are they the same as union/intersection? A $\bigcap$ B A $\wedge$ B where A and B are sets. Are these equivalent? What does the disjunction or two sets mean?,['elementary-set-theory']
+209589,How can I prove that $3$ is the only solution to the equation $2^n - 2n - 2 =0$ for $n\geq2$?,"I'm working on a probability question: Given the equiprobability of ""having a boy"" and ""having a girl"" as $1/2$ each, for what value of $n$ births, $n\geq2$ are the following two events independent? event A: The family have two different sexes
+event B: Tha family have at most one girl I was able to narrow the equation down to  $2^n - 2n - 2 =0$ for $n\geq2$ and knowing that $n=3$ is the solution, I still have to prove it.","['sequences-and-series', 'probability', 'functions', 'analysis']"
+209645,Prove the $3^n < n!$ for all $n > 6$,"I'm trying to use induction to prove this.  I'm sure it's a simple proof, but I can't seem to get over the first few steps.  Any help? Allow $P(n)=3^n<n!$ Base Case: $P(7) = 3^7<7! \rightarrow$ True. Induction: Assume $P(k) = 3^k<k!$ Now we must prove $P(k+1)$.  Here's where I'm lost.  If I'm adding a +1 to the exponent on the LHS, where would I add it to the factorial on the RHS?","['logic', 'induction', 'discrete-mathematics']"
+209648,Are all finite groups cyclic?,"I've been reading about Number Theory and I came across this proof that the finite subgroups of the multiplicative group of a field is cyclic. However, it seems the proof applies to all finite groups so please tell me where I go wrong. Let $G$ be a generic group of order $n$. By Lagrange the order of the elements of the group must divide $n$. Let $\psi(d)$ count the number of elements in the group of order $d$. Since $\sum_{d|n} \psi(d)=n$ the Möbius Inversion theorem tells us that this function is just Euler's totient function. Since this function is always one or greater, we always have that there exists an element of order exactly $n$, so the group is cyclic. Obviously I know the answer is no, but I thought using this title would make things more interesting.","['mobius-inversion', 'group-theory', 'fake-proofs']"
+209654,Proof of continuity for a real function!,"Let $f:\mathbb{R} \rightarrow \mathbb{R}$ be a real function, and satisfy that: for all $x\in\mathbb{R}$ 
+$$\lim_{r\to x,r\in\mathbb{Q}}f(r)=f(x).$$
+Show that $f$ is continuous on $\mathbb{R}.$",['real-analysis']
+209665,Series in incomplete normed space,"We have known that ""A normed space $X$ is a Banach space if and only if each absolutely convergent series in X converges"". We would like to find an explicitly incomplete normed space and an explicitly series in that space such that the given series is absolutely convergent but not convergent.","['normed-spaces', 'functional-analysis']"
+209669,Vector Calculus - Curl of Vector,"I'm asked to prove the following identity, using index notation: $(\nabla\times A)\times A=A \cdot\nabla A - \nabla(A \cdot A)$ However, when I work it out, I find that the actual solution should be: $(\nabla\times A)\times A=A \cdot\nabla A - \frac{1}{2}\nabla(A \cdot A)$ Am I missing something, or is the book wrong?","['multivariable-calculus', 'tensors', 'vector-analysis']"
+209672,Show that $n$ lines separate the plane into $\frac{n^2+n+2}{2}$ regions,"Show that $n$ lines separate the plane into $\frac{n^2+n+2}{2}$ regions if no two of these lines are parallel and no three pass through a common point. I know we start with the base case, where, if we call the above equation P(n), P(0), for 0 lines would be 0.  But I really have no idea how to begin the inductive step.  How do we know what k+1 we're supposed to arrive at? Thanks!","['logic', 'induction', 'discrete-mathematics']"
+209682,Pushforward of inverse map at the identity?,"Let $G$ be a Lie group and $i:G \rightarrow G$ denote the inversion map $i(x) = x^{-1}$ . (Notation: $f_*$ is the pushforward map $F_*:T_pG \rightarrow T_{i(p)}G$ which takes $(F_{*}X)(f)=X(f\circ F)$ and $X$ is a tangent vector, $X\in T_pG$ .) I wish to show that $i_{*}:T_{e}G\rightarrow T_{e}G$ is given by $i_{*}(X)=-X$ As a first step, it is trivial to prove that $i_*$ is an involution as $\mbox{Id}_{*}=(i\circ i)_{*}=i_{*}\circ i_{*}$ but I can't seem to make any further progress. Any help would be appreciated.","['pushforward', 'lie-groups', 'differential-geometry']"
+209697,Christoffel symbols and fundamental forms,"How can we prove that the christoffel symbol is
+\[ \Gamma^k_{ij} = \frac 12 \sum_{l=1}^2 g^{kl} \left(\frac{\partial g_{il}}{\partial u^j} + \frac{\partial g_{jl}}{\partial u^i} - \frac{\partial g_{ij}}{\partial u^l}\right)
+\]
+I can think of some substitution using the first and second fundamental forms, but can't see how to really fit it in. Thanks",['differential-geometry']
+209699,Generalization of Hoeffding Inequality,"According to Hoeffding Inequality, if $X_1,\ldots,X_n$ are independent random variables with $\mathbb{P}(X_i \in [a_i,b_i]) = 1 \; \forall i = 1,\ldots,n$ then 
+$$\mathbb{P}(\bar{X_n} - \mathbb{E}[\bar{X_n}] \geq t) \leqslant \exp\left(-\frac{2t^2n^2}{\sum_{i=1}^{n}(b_i - a_i)^2}\right) \quad \forall t > 0.$$ Does there exist any such bound for the probability of the event $\{\bar{X_n} - c\mathbb{E}[\bar{X_n}] \geqslant t\}$ for any constant $c$. Hoeffding Inequality is just a special case of this event when $c = 1$.","['probability-theory', 'inequality', 'probability']"
+209733,"Average, standard deviation and min/max values","I'm analzying a computer science paper and just found in the experimental setup the following statement: Average (standard deviation) of number of files per peer: 464 (554) Min - max number of files per peer: 100 - 4,774 Are these numbers possible at all? It does not say anything of a normal distribution, but how is it possible that the standard deviation is 554, but the min number of files per peer is 100?","['statistics', 'standard-deviation', 'average']"
+209736,Is this set finite?,"Let's say you are  given a function $\mu:S\rightarrow(0,1]$ and you can additionally assume $$\sum_{s\in S}\mu(s)=1$$ Does this imply that $S$ is finite?","['infinity', 'elementary-set-theory']"
+209754,Proofing an inequality with a slowly varying function,"I am working right now with ""Independent and Stationary Sequences of Random Variables"" from Ibragimov 1971. I am trying to understand the proof of the following Lemma (18.2.4): $h: \mathbb N \rightarrow \mathbb R$ is a slowly varying function, i.e. for all $a > 0$
+$$
+\lim_{n\to\infty}\frac{h(an)}{h(n)}=1.
+$$ For all sufficiently small $c$ and all sufficiently large $n$,
+$$
+\frac{h(cn)}{h(n)} < c^{-\frac 1 2}.
+$$ We remark that this inequality holds for all $c<c_0$ where $c_0$ does not depend on $n$. Proof:
+From what has been proved about $h(n)$, [I come to this later]
+\begin{align*}
+\log \frac{h(cn)}{h(n)} & = \sum_{k=0}^{\lfloor-\frac{\log c}{\log 2}\rfloor} \log h(\lfloor2^{-k-1}n\rfloor) - \log h(\lfloor2^{-k}n\rfloor) + \log h(cn) - \log h(\lfloor2^{-\lfloor \frac{\log c}{\log 2}\rfloor} n\rfloor) \\ & < \frac 1 2 \log c^{-1}.
+\end{align*} Thats what is in the book. The first ""="" is a telescoping sum, but the last term of the equation should be 
+$\log h(\lfloor2^{\lfloor \frac{\log c}{\log 2}\rfloor} n\rfloor)$ because for all $x < 0, x \notin \mathbb Z$
+$$
+-\lfloor -x \rfloor - 1 = \lfloor x \rfloor.
+$$
+Note that $2^{\frac{\log c}{\log 2}} = c$ and every term of the series goes to zero, since
+$\lim_{n\to\infty}\frac{h(2n)}{h(n)}=1$. But I dont understand the ""<"". Do you have an idea? Here is what has been proved about $h$ before this lemma:(I couldn't use these information)
+$$
+\text{for all } \varepsilon > 0: \\ 
+\lim n^\varepsilon h(n) = \infty \\
+\lim n^{-\varepsilon} h(n) = 0.
+$$
+$$
+\text{If $n$ is sufficiently large, then } \\
+\sup_{n\le r\le 2n} \frac{h(n)}{h(r)} \le 4.
+$$","['functional-analysis', 'real-analysis']"
+209766,Vector derivative,"What's the derivative of $f(w)$ with respect to the vector $w$? $$f(w)=\mathrm{tr}(ww'A) + x^{\prime}ww'x$$ Note: $x,w$ are vectors and $A$ is a square matrix. ${}'$ indicates transpose Thanks.","['matrices', 'calculus', 'derivatives']"
+209768,Transformation matrix to go from one vector to another,"I've two vectors $a = (a_1, a_2, a_3)$ and $b = (b_1, b_2, b_3)$. How to find  transformation matrix for transform from a to b?","['matrices', '3d', 'transformation']"
+209773,How to prove that symmetric difference of intersections is a subset of unions of symmetric differences,"I need to prove that:
+$$
+(A_1\cap A_2\cap ...\cap A_n) \Delta (B_1\cap B_2\cap ...\cap B_n) \subset (A_1\Delta B_1) \cup (A_2\Delta B_2)\cup...\cup(A_n\Delta B_n)
+$$
+and show that inverse statement is not correct. But, appling the symmetric difference formulas doesn't really helps. For left side for the case of $(A_1\cap A_2) \Delta (B_1\cap B_2)$ I get $(A_1\cap A_2)\setminus(B_1\cap B_2)\cup(B_1\cap B_2)\setminus(A_1\cap A_2)$, and for the right side I get $(A_1\setminus B_1)\cup (B_1\setminus A_1)\cup (A_2\setminus B_2)\cup (B_2\setminus A_2)$, but it doesn't help much. Anyway, I gets worse in case if I add $A_3$ and $B_3$ to the statement, as the formula becomes more complicated. Addition: Thanks Martin Sleziak for the formula! I didn't know it before.
+It seems like using De Morgan's law can help.
+The left side:
+$$
+(A_1\cap A_2 \cap A_3)\Delta(B_1\cap B_2 \cap B_3) =
+( A_1\cap A_2 \cap A_3)\cap (B_1\cap B_2 \cap B_3)' \cup ( A_1\cap A_2 \cap A_3)'\cap (B_1\cap B_2 \cap B_3) = 
+( A_1\cap A_2 \cap A_3)\cap (B_1'\cup B_2' \cup B_3') \cup ( A_1'\cup A_2'\cup A_3')\cap (B_1\cap B_2 \cap B_3) = (B_1'\cap A_1\cap A_2 \cap A_3) \cup (B_2'\cap A_1\cap A_2 \cap A_3) \cup (B_3'\cap A_1\cap A_2 \cap A_3) \cup (A_1'\cap B_1\cap B_2 \cap B_3) \cup (A_2'\cap B_1\cap B_2 \cap B_3)\cup (A_3'\cap B_1\cap B_2 \cap B_3)
+$$
+while the right side is:
+$$
+(A_1\Delta B_1) \cup (A_2\Delta B_2) \cup (A_3\Delta B_3) = (B_1'\cap A_1) \cup (A_1'\cap B_1) \cup (B_2'\cap A_2) \cup (A_2'\cap B_2) \cup (B_3'\cap A_3) \cup (A_3'\cap B_3)
+$$
+As you can see, there are 6 terms on both sides. Moreover, each term from the left side has a pair on the right side: $(A_3'\cap B_1\cap B_2 \cap B_3)$ and $(A_3'\cap B_3)$, and so on. I think, that the following is correct $(A_3'\cap B_3\cap B_2 \cap B_1) \subseteq (A_3'\cap B_3)$, because the additional intersection with $B_2\cap B_3$ can only reduce (or left unchanged) the size of $(A_3'\cap B_3)$. So, the left side of the equation is a subset of the right. Here I show that both left and right sides can be equal in some cases, but the original equation is strict. Why did that happen?",['elementary-set-theory']
+209774,A question on a integral in radial direction.,"How can one compute the following integral? 
+$$
+\frac{\partial}{\partial r}\int_{\partial B(0,r)}f(r,x)dx. 
+$$
+I know a similar integral
+$$
+\frac{\partial}{\partial r}\int_{B(0,r)}f(r)dx
+=\int_{\partial B(0,r)}f(r)dx+\int_{B(0,r)}\frac{\partial}{\partial r}f(r)dx. 
+$$
+Maybe I don't fully understand the latter integral either. I would appreciate it if someone could kindly explain what is going on. More specifically I want to compute something like $$
+\frac{\partial}{\partial r}\int_{\partial B(0,r)}\frac{f(x)}{r}dx.
+$$","['multivariable-calculus', 'calculus']"
+209775,Can infinitesimal generator be defined by the time-inhomogeneous stochastic process?,"The following is the definition of infinitesimal generator from Oksendal. Let $\{X_t,t\in[0,T]\}$ be a time-homogeneous It\^o diffusion in $\mathbb{R}^d$. The $\textit{infinitesimal generator}$ $\mathscr{A}$ of $X_t$ is defined by
+$\mathscr{A}f(x)=\lim_{t\downarrow 0}\frac{\mathbb{E}_x[f(X_t)]-f(x)}{t},\,\,\,\,x\in\mathbb{R}^d$
+The set of functions $f:\mathbb{R}^n\rightarrow\mathbb{R}$ such that the limit exists at $x$ is denoted by $\mathscr{D}_A(x)$, while $\mathscr{D}_A$ denotes the set of functions for which the limit exists for all $x\in\mathbb{R}^d$. But there is another definition of infinitesimal generator defined by semi-group, which works on the both time-inhomogeneous and time-homogeneous process. So are those two really equivalent to each other?","['stochastic-processes', 'stochastic-analysis', 'partial-differential-equations', 'stochastic-calculus', 'functional-analysis']"
+209790,How to find a total order with constrained comparisons,"There are $25$ horses with different speeds. My goal is to rank all of them, by using only runs with $5$ horses, and taking partial rankings. How many runs do I need, at minimum, to complete my task? As a partial answer, I know that is possible to determine the first $3$ horses with $7$ runs, and, by a slight generalization of the optimal algorithm used to find the first three, have the complete ranking in $20$ runs. Is it possible to do better? What if we have $n$ horses and want to rank them with runs with $k$ horses?","['order-theory', 'combinatorics']"
+209791,"Proving $\text{Cov}((X,Y))^2 \leq \text{Var}(X) \text{Var}(Y)$ with Cauchy-Schwarz","I've been trying to use the Cauchy-Schwarz inequality to prove that \begin{equation*}
+\text{Cov}(X,Y)^2 \leqslant \text{Var}(x) \cdot \text{Var}(Y).
+\end{equation*} The Cauchy-Schwarz inequality can be expressed as follows: If $u$ and $v$ are vectors in an inner product space, then $\langle u,v \rangle^2 \leqslant \|u\|^2 \|v\|^2$ . How do you define the vectors and the inner product so to prove the result in the first sentence. I've seen something like \begin{equation*}
+\text{Cov}(X,Y)^2
+\leqslant \langle x - E(X), y - E(Y) \rangle
+\leqslant \|x - E(X)\|^2 \|y - E(Y)\|^2
+= \text{Var}(X) \cdot \text{Var}(Y),
+\end{equation*} but how is $\langle x - E(X), y - E(Y) \rangle$ expressed as a sum? Also how can you let $x - E(X)$ and $y - E(Y)$ be vectors? Any insight would be great.","['statistics', 'linear-algebra']"
+209794,Sum of two absolute values in complex plane,"I'm trying to find out all $z \in C$ that satisfy the following condition: $|z+1|+|z-i|=3$ I understand that $|z|=r$ represents a circle with a radius of $r$.
+I also understand that $|z+1|=r$ can be written as $|(x+1)+yi|=\sqrt{(x+1)^2+y^2}=r$ which can then be squared to get $(x+1)^2+y^2=r^2$ which represents the circle with a radius of r, with center in $(-1,0)$. So, back to my problem: Unlike the example with $|z+1|=r$, where it is easy to square the equation, squaring 
+$|z+1|+|z-i|=3$ written as $\sqrt{(x+1)^2+y^2}+\sqrt{x^2+(y-1)^2}=3$ equals: $(x+1)^2+(y-1)^2+x^2+y^2+2\sqrt{(x+1)^2+y^2}\sqrt{x^2+(y-1)^2}=9$ which is a nightmare to solve, if at all possible. I am sure there must be some elegant way to solve this kind of problem. The way I'm thinking is this: $|z+1|$ by itself seems to represent a circle centered at $(-1,0)$, with an undefined radius, and $|z-i|$ seems to represent a circle centered at $(0,1)$, also with an undefined radius. However, the sum of those two radii must be 3. But I can't seem to wrap my mind around what this would represent (when drawn on Cartesian plane), or how to solve it analytically. So, how would one approach this problem? Even a hint would (probably) suffice.","['absolute-value', 'complex-analysis']"
+209810,Conditions for the sequence being weakly convergent,"Let $H=\ell_2$ be the Hilbert space of the square-summable sequences where
+$$
+\langle x,y\rangle=\sum_{i=1}^{\infty}x_iy_i, \quad \|x\|=\sqrt{\langle x,x\rangle}.
+$$
+Let $F: H\rightarrow H$ be an affine mapping , i.e.
+$$
+F[\lambda u+(1-\lambda)v]=\lambda F(u)+(1-\lambda)F(v), \quad \forall u,v\in H, \lambda\in \mathbb{R}.
+$$
+ Let $\{u^k\}$ be a sequence given by
+$$
+u^{k+1}=F(u^k) \quad k\in\mathbb{N},
+$$
+where $u^0$ is an any point in $H$. Find the conditions on $F$ and $u^0$ such that $\{u^k\}$ is weakly convergent but not strongly convergent. Example. If $u^0=(1,0,0,\ldots,0,\ldots)$ and $F(u)$ is given by
+$$
+F(u)=(0,u_1, u_2, \ldots, u_n, \ldots) \quad \forall u=(u_1,u_2,\ldots, u_n, \ldots)\in H.
+$$
+The sequence $\{u^k\}$ generated by the formula $u^{k+1}=F(u^k)$ is given by
+$$
+u^0=(1,0,\ldots, 0,\ldots), \quad u^1=(0,1,0,\ldots, 0, \ldots), \ldots, u^n=(0,0,\ldots, 1, 0, \ldots),\ldots
+$$
+is weakly convergent but not strongly convergent to $0\in H$.","['hilbert-spaces', 'functional-analysis']"
+209824,Does interior of closure of open set equal the set?,"Would you help me to solve this question. Is it true that if A is open set then $A=\operatorname{int}(Cl(A))$ where Cl(A) denote the closure of A. I already prove that $A\subseteq\operatorname{int}(Cl(A)) $ only using definition of closure and interior, but have no idea about proving $\operatorname{int}(Cl(A))\subseteq A$ or give a counter example.","['general-topology', 'real-analysis']"
+209834,Characterizing a real symmetric matrix $A$ as $A = XX^T - YY^T$,"In my personal research and quest to better understand the subject, I have noticed something concerning the Cholesky factorization of symmetric matrices. Everything I have read states that a symmetric real matrix has such a factorization only if it is positive definite. Assuming first that the matrix may be factored in LU form (lower triangular times an upper triangular) which is possible for ""most"" matrices (since it requires all principal minors to have non-zero determinant). Writing $A=LU$ gives the possibility for the Cholesky factorization with use of a diagonal matrix with the purpose of setting the diagonals of both the L and U matrices to be equal: $$A=L \underbrace{DD^{-1}}_I U$$
+And from the original symmetry the two factors are magically transposes of each other. Now I do notice that if the mattrix $A$ is not positive definite (and I do not mind forcing it to be full rank as well) then $U$ has negative elements along the diagonal, and as such $D$ then needs complex values to work. I am fully aware that if such $D$ is chosen that the $A=W^TW \ne W^*W$, in other words it is not factored as a matrix and its conjugate -transpose, but for the formula $A = XX^T - YY^T$ it is not needed to be as such. Since the columns of $LD$ are either a pure real or a pure imaginary value (if this isn't too obvious, try some simple examples first maybe), the columns can further be ordered to the form of
+$$LD = \pmatrix{X & iY}$$
+Which then gives (with the same and symmetric row ordering or the other factor):
+$$A=(LD)(LD)^T=\pmatrix{ X & iY} \pmatrix{X^T \\ iY^T}=XX^T - YY^T$$
+which is the title formula of my question. This seems like a natural separation of the ""positive part"" and the ""negative part"" since all values in the final form are strictly real. It separates the symmetric matrix into positive definite symmetric and negative definite symmetric. I have not seen this before, and as I stated in the first paragraph, I always hear that the Cholesky factorization just does not exist unless the matrix is positive definite. Without considering the cases that do not have LU factorization for now, is this formula even at all known? Is there an error in my argument that it exists? I will be interested in any specific and good examples or references (please if ""search for such and such term"" is your answer, keep it short as I have done much searching already, and if your suggestion is new, then I would like a good explanation or just a short ""search for such and such"".) I will post this question and not look at answers for 6 hours from posting (work time), so feel free to take your time with your response, and thank you for reading this far. --
+EDIT What interests me about the equation is the possibility of separating the negative eigenvalues from the positive ones. The answers so far are pointing out the obvious separation, but I like that the formula is one that does not calculate eigenvalues first. It looks to me like it separates the eigenvalue problem into two smaller sets, a sort of binary search on all eigenvalues at once, with just the computational cost of LU factoring. It also looks like a good possibility for a norm. This actually may reduce to another norm, or need adjustment (like adding a power 2 or something similar) but consider:
+$$\sqrt{|XX^T|+|YY^T|}$$ I submit that this is a norm (without proof at the moment) since it is the natural extension of the ""complex square root"" of the matrix $A$ as $\pmatrix{ X & iY}$ This all seems like logical directions to me, and would like to know if anything is looking familiar to anyone as if it has been done before? --- EDIT #2 I see now that $XY^T=\mathbf 0$ is necessary for the Cholesky form to be the same as the eigenvalue form of this equation. This is patently untrue in the Cholesky factoring. I was hoping the separation of two positive semi-definite symmetric matrices was unique, since then I would be guaranteed that it was the eigen-decomposition. The Cholesky finds a unique one within its range of solutions, but I now see it is not the same. I will be crediting user dineshdileep within a few days if no better answer comes along.","['matrices', 'linear-algebra', 'eigenvalues-eigenvectors', 'algorithms']"
+209846,Viewing a quasi-projective variety as an affine variety,"Let $Y$ be a projective variety of $\mathbb{P}^n$. Let $U_i$ be the open set of 
+$\mathbb{P}^n$ corresponding to $x_i \neq 0$. Define $Y_i = Y \cap U_i$. Why can we view $Y_i$ as an affine variety? We know that $U_i$ is isomorphic to $\mathbb{A}^n$, so we can view $Y_i$ as a subset of an affine variety. (i assume that variety implies irreducible, following Hartshorne). Also, $Y_i$ is open in $Y$, so it is irreducible and dense in $Y$. That makes it a quasi-projective variety. But why is it an algebraic set of $\mathbb{A}^n$?",['algebraic-geometry']
+209856,Which function grows faster: $(n!)!$ or $((n-1)!)!(n-1)!^{n!}$?,"Of course, I can use Stirling's approximation, but for me it is quite interesting, that, if we define $k = (n-1)!$, then the left function will be $(nk)!$, and the right one will be $k! k^{n!}$. I don't think that it is a coincidence. It seems, that there should be smarter solution for this, other than Stirling's approximation.",['limits']
+209868,Explanation of a cross product result,"In my book the result $$(u\times v)\cdot(x\times y)=\begin{vmatrix} u\cdot x & v\cdot x \\u \cdot y & v \cdot y\end{vmatrix},$$ where u, v, x and y are arbitrary vectors, is stated (here '$\cdot$' means the dot product and '$\times$' is the cross product). The book very briefly says that this can be easily done by observing that both sides are linear in u, v, x and y. I know that if I expand and simply the LHS using the components of a vector the result will be true. However, I don't really understand what it means when the book says ' both sides are linear in u, v, x and y ' and how by noticing this fact, makes this relation easier to prove. Any help will be greatly appreciated.","['cross-product', 'linear-algebra', 'determinant']"
+209888,Some trouble with a proof on $n!/(\sqrt{n})^n \geq 1$,Originally the problem is to prove that $n! \geq n^{n/2}$. I reduced this to: $n! \geq (\sqrt{n})^n$ so that: Prove that $\frac{n!}{(\sqrt{n})^n} \geq 1$. Each term in $n!$ is divided by the $\sqrt{n}$ and the multiplication should leave it $\geq 1$. Some advice.,"['inequality', 'sequences-and-series', 'factorial']"
+209890,Limit problem from my lecture,"I have problem with my limit set from my lecture, I don't know how to get off from this problem. Please help me. $$\lim_{t\to0}\frac{\sqrt[3]{t+1} - 1}{t}$$ Please help me, i need your help, thanks.","['derivatives', 'limits']"
+209896,Nowhere vanishing magnetic helicity,"Suppose you are given a nowhere-vanishing exact 2-form $B=dA$ on an open, connected domain $D\subset\mathbb{R}^3$. I'd like to think of $B$ as a magnetic field. Consider the product $H(A)=A\wedge dA$. At least in the plasma physics literature, $H(A)$ is known as the magnetic helicity density. How can one determine if there is a closed one-form $\mathbf{s}$ such that $H(A+\mathbf{s})$ is non-zero at all points in $D$? The reason I am interested in this question is that if you can find such an $\mathbf{s}$, then  $A+\mathbf{s}$ will define a contact structure on $D$ whose Reeb vector field gives the magnetic field lines. Thus, the question is closely related to the Hamiltonian structure of magnetic field line dynamics. I'll elaborate on this last point a bit. If there is a vector potential $A$ such that $A\wedge dA$ is non-zero everywhere, then the distribution $\xi=\text{ker}(A)$ is nowhere integrable, meaning $\xi$ defines a contact structure on $D$ with a global contact 1-form $A$. The Reeb vector field of this contact structure relative to the contact form $A$ is the unique vector field $X$ that satisfies $A(X)=1$ and $\text{i}_XdA=0$. Using the standard volume form $\mu_o$, $dA$ can be expressed as $\text{i}_{\mathbf{B}}\mu_o$ for a unique divergence-free vector field $\mathbf{B}$. Thus, the second condition on the Reeb vector field can be expressed as $\mathbf{B}\times X=0$, which implies the integral curves of $X$ coincide with the magnetic field lines. An example where $D=$3-ball and no $\mathbf{s}$ can exist: Let $D$ consist of those points in $\mathbb{R}^3$ with $x^2+y^2 < a^2$ for a real number $a>1$. Note that all closed 1-forms are exact in this case. Let $f:[0,\infty)\rightarrow\mathbb{R}$ be a smooth, non-decreasing function such that $f(r)=0$ for $r<1/10$ and $f(r)=1$ for $r\ge1/2$. Let $g:\mathbb{R}\rightarrow \mathbb{R}$ be the polynomial $g(r)=1-3r+2r^2$. Define the 2-form $B$ using the divergence free vector field $\mathbf{B}(x,y,z)=f(\sqrt{x^2+y^2})e_\phi(x,y,z)+g(\sqrt{x^2+y^2})e_z$. Here $e_\phi$ is the azimuthal unit vector and $e_z$ is the $z$-directed unit vector. It is easy to verify that $B$, thus defined, is an exact 2-form that is nowhere vanishing. Because $g(1)=0$ and $f(1)=1$, the circle, $C$, in the $z=0$-plane, $x^2+y^2=1$, is an integral curve for the vector field $\mathbf{B}$. I will use this fact to prove that the helicity density must have a zero for any choice of gauge. Let $A$ satisfy $dA=B$ and suppose $A\wedge B$ is non-zero at all points in $D$. Note that $A\wedge B=A(\mathbf{B})\mu_o$, meaning $h=A(\mathbf{B})$ is a nowhere vanishing function. Without loss of generality, I will assume $h>0$. Thus, the line integral $I=\oint_C h\frac{dl}{|\mathbf{B}|}$ satisfies $I>0$. But, by Stoke's theorem, $I=2\pi\int_0^1g(r)rdr=0$, as is readily verified by directly evaluating the integral. Thus, there can be no such $A$.",['differential-geometry']
+209897,Homomorphism between $A_5$ and $A_6$,"The problem is to find an injective homomorphism between the alternating groups $A_5$ and $A_6$ such that the image of the homomorphism contains only elements that leave no element of $\{1,2,3,4,5,6\}$ fixed. I.e., the image must be a subset of $A_6$ that consists of permutations with no fixed points.
+The hint given is that $A_5$ is isomorphic to the rotational symmetry group of the dodecahedron. I figured out that the permutations in $A_6$ that leave no point fixed are of the forms: Double 3-cycle, e.g. (123)(456), in total 40 of them transposition + 4-cycle, e.g. (12)(3456), in total 90 of them Considering that $A_5$ has 60 elements and $A_6$ has 360 elements, how should I proceed in finding a homomorphism whose image is a subset of the 130 elements described above?","['group-theory', 'abstract-algebra']"
+209910,Find the distance between the line and plane,"Find the distance between the line $x-z=3, x+2y+4z=6$ and the plane $3x+2y+2z=5$. What I have done so far, Found the vector by crossing $1,0-1$ and $1,2,4$ from the first line The line is parallel to plane $\langle 2,-5,2\rangle \cdot \langle 3,2,2 \rangle = 0$ I think my next step is to find a point on Line 1 which satisfies both equations and then insert those values into the plane $3(x)+2(y)+2(z)=5$ and use the formula, $$
+\frac{(3(x)+2(y)+2(z)-5)}{(3^2+2^2+2^2)}$$ to find the distance. The values that I calculuate do not match the posted answer of $7/\sqrt{17}$","['linear-algebra', 'calculus']"
+209918,Brownian motion: Show $\lim \sum W_{i} (W_{i+1}-W_{i})=\frac12 W^2_t-\frac12 t$ in probability.,"Let $\{t_i\}_{i=1}^n$ be a partition of $[0,t]$ and $W$ a standard Brownian motion. Write $W_i$ for $W_{t_i}$. Show
+$$
+\lim \sum W_{i} (W_{i+1}-W_i)=\frac12 W^2_t-\frac12 t
+$$
+where the limit is in probability. The proof is in our textbook (Kurtz, Stochastic Analysis). It goes as follow
+\begin{align}
+\lim \sum_{i=1}^n W_{i} (W_{i+1}-W_i) &= \lim \sum_{i=1}^n \left( W_i W_{i+1} - \frac12 W^2_{i+1}-\frac12 W^2_i \right)+\sum_{i=1}^n \left( \frac12 W^2_{i+1} - \frac12 W^2_i \right) \\
+&=\frac12 W_t^2 - \lim \frac12 \sum_{i=1}^n \left( W_{i+1}-W_{i} \right)^2 \\
+&=\frac12 W_t^2 - \frac12 t^2
+\end{align} How does the second equality follows?","['probability-theory', 'stochastic-processes', 'brownian-motion']"
+209947,A Differential Equation with Trigonometric Coefficients,"Suppose we have the following second-order differential equation: $\cos^2(x)y'' -\sin(x)y' + y = 0$ How do we determine its general solution? I couldn't even guess a particular solution; all my efforts led nowhere. I started off with something like $y = Ae^{B\cos(x)}$ but needless to say, that also looked like a dead-end.",['ordinary-differential-equations']
+209950,An inequality on trace of product of two matrices,"Suppose we have two $n \times n$ positive semidefinite matrices, $A$ and $B$, such that $\mbox{tr}(A), \mbox{tr}(B) \le 1$. Can we say anything about $\mbox{tr}(AB)$? Is $\mbox{tr}(AB) \le 1 $ too?","['trace', 'inequality', 'operator-theory', 'matrices', 'linear-algebra']"
+209987,True Randomness and repetition,"I do not have a degree in any field of mathematics; however I would like to get an input perhaps from those who do. I argued a point with one of my children the other day that if all of the arguments against a system that could generate true random numbers were moot (algorithms, entropy salt, etc), that a given system could in theory produce the same output every time as logically as any other number, because the odds of it ever arriving at that one are both exactly the same as every other number it could produce, and therefore just as likely. So on said system I could request a purely random number between 1 and 10 and it would consistently produce 5, not in error, so if asked to repeat this ten times  5,5,5,5,5,5,5,5,5,5 or 1,2,3,4,5,6,7,8,9,10 is just as likely as any other outcome. If this is not correct please correct me.
+If so, does this theory or law have a name?",['probability']
+209989,How can gender and class classification be dependent? [closed],"Closed. This question is off-topic . It is not currently accepting answers. Want to improve this question? Update the question so it's on-topic for Mathematics Stack Exchange. Closed 11 years ago . Improve this question I got this question in my hw practice set In a class, there are 4 freshman boys, 6 freshman
+girls, and 6 sophomore boys. How many sophomore
+girls must be present if sex and class are to
+be independent when a student is selected at random? I solved the number (i believe is 9) that make class and gender independent . But it got me thinking: under what scenario, can class and gender be dependent ? (i mean, class and gender are totally unrelated things right? therefore, they should be independent correct?) I tried cook up some numbers to show that they're dependent(see table below). Mathematically, I've shown, through the following table, that gender and classification are indeed dependent. But how can gender and class classification be dependent? Male Female Total
+Freshman     18    20    38
+Sophomore    12    16    28          
+Total        30    36    66",['probability']
+209999,Matrix with a prime $A'$,"I can't find this over the Internet: what does a matrix with a prime $A'$ mean? I found this in an exercise, this is in basic linear algebra.","['notation', 'matrices', 'linear-algebra']"
+210005,"How can I compute the sum of $ {m\over\gcd(m,n)}$?","$$ \sum_{m =1}^n {m\over\gcd(m,n)}$$ For example,
+for 1 it is $${1\over\gcd(1,1)} =1;$$ for 5 it is
+$${1\over \gcd(1,5)}+{2\over \gcd(2,5)}+{3\over \gcd(3,5)}+{4\over \gcd(4,5)}+{5\over \gcd(5,5)}=\\
+\frac11+\frac21+\frac31+\frac41+1 = \\
+1+2+3+4+1= \\ 11$$","['summation', 'elementary-number-theory', 'number-theory']"
+210018,Derivative of the Selberg $\zeta$-function,"I want to compute the derivative of the Selberg $\zeta$-function: $$ \mathcal{Z}(s)=\prod_{\gamma \; \text{primitive}} \prod_{n=0}^\infty (1-e^{-l(\gamma)(n+s)}); \qquad \Re(s)>1.$$ Where $\gamma$ are primitive closed geodesics on a given manifold and $l(\gamma)$ is their lenght. We can assume $s\in \mathbb{R}$. Observe that the given expression is justified by: $l(\gamma^n)= n l(\gamma)$. A couple of reliable articles ( Lou's ""On the zeros of the derivative of the Selberg Zeta function"" page 1143 for the statement and page 1141 for its definition of $\mathcal{Z}(s)$, and D'Hoker&Phong's ""The geometry of String Perturbation theory , implicitly in the last passage of page 1005), and  give, more or less explicitly, the following formula for the logarithmic derivative: $$ \frac{\frac{d}{ds}\mathcal{Z}(s)}{\mathcal{Z}(s)} = \sum_{\gamma \; \text{primitive}} \sum_{n=1}^\infty\frac{l(\gamma) e^{-l(\gamma)ns}}{1-e^{-l(\gamma)n}}.$$ But my computation seems to give a slightly different result. Indeed, first we observe: $$ \frac{d}{dx} \left(\prod_{n=0}^\infty f_n(x)\right)= \left(\prod_{n=0}^\infty f_n(x)\right)\left(\sum_{n=0}^\infty \frac{\frac{d}{dx}f_n(x)}{f_n(x)}\right).$$ Is it true? Wikipedia confirms it only in the finite case. Then, applying it to $ \mathcal{Z}(s)$, I deduce: $$ \frac{\frac{d}{ds}\mathcal{Z}(s)}{\mathcal{Z}(s)} = \sum_{\gamma \; \text{primitive}} \sum_{n=0}^\infty\frac{l(\gamma) e^{-l(\gamma)(n+s)}}{1-e^{-l(\gamma)(n+s)}}.$$ This expression seems to be close to the claimed one but I couldn't
+  prove they are the same. So I guess I'm doing something wrong in the
+  computation. Do you know how to do it? Thank you very much!","['complex-analysis', 'zeta-functions', 'derivatives', 'real-analysis']"
+210021,What Precalculus knowledge is required before learning Discrete Math Computer Science topics?,"Below I've listed the chapters from a Precalculus book as well as the author recommended Computer Science chapters from a Discrete Mathematics book. Although these chapters are from two specific books on these subjects I believe the topics are generally the same between any Precalc or Discrete Math book. What Precalculus topics should one know before starting these Discrete Math Computer Science topics?: Discrete Mathematics CS Chapters 1.1 Propositional Logic
+1.2 Propositional Equivalences
+1.3 Predicates and Quantifiers
+1.4 Nested Quantifiers
+1.5 Rules of Inference
+1.6 Introduction to Proofs
+1.7 Proof Methods and Strategy
+
+2.1 Sets
+2.2 Set Operations
+2.3 Functions
+2.4 Sequences and Summations
+
+3.1 Algorithms
+3.2 The Growths of Functions
+3.3 Complexity of Algorithms
+3.4 The Integers and Division
+3.5 Primes and Greatest Common Divisors
+3.6 Integers and Algorithms
+3.8 Matrices
+
+4.1 Mathematical Induction
+4.2 Strong Induction and Well-Ordering
+4.3 Recursive Definitions and Structural Induction
+4.4 Recursive Algorithms
+4.5 Program Correctness
+
+5.1 The Basics of Counting
+5.2 The Pigeonhole Principle
+5.3 Permutations and Combinations
+5.6 Generating Permutations and Combinations
+
+6.1 An Introduction to Discrete Probability
+6.4 Expected Value and Variance
+
+7.1 Recurrence Relations
+7.3 Divide-and-Conquer Algorithms and Recurrence Relations
+7.5 Inclusion-Exclusion
+
+8.1 Relations and Their Properties
+8.2 n-ary Relations and Their Applications
+8.3 Representing Relations
+8.5 Equivalence Relations
+
+9.1 Graphs and Graph Models
+9.2 Graph Terminology and Special Types of Graphs
+9.3 Representing Graphs and Graph Isomorphism
+9.4 Connectivity
+9.5 Euler and Hamilton Ptahs
+
+10.1 Introduction to Trees
+10.2 Application of Trees
+10.3 Tree Traversal
+
+11.1 Boolean Functions
+11.2 Representing Boolean Functions
+11.3 Logic Gates
+11.4 Minimization of Circuits
+
+12.1 Language and Grammars
+12.2 Finite-State Machines with Output
+12.3 Finite-State Machines with No Output
+12.4 Language Recognition
+12.5 Turing Machines Precalculus R.1 The Real-Number System
+R.2 Integer Exponents, Scientific Notation, and Order of Operations
+R.3 Addition, Subtraction, and Multiplication of Polynomials
+R.4 Factoring
+R.5 Rational Expressions
+R.6 Radical Notation and Rational Exponents
+R.7 The Basics of Equation Solving
+
+1.1 Functions, Graphs, Graphers
+1.2 Linear Functions, Slope, and Applications
+1.3 Modeling: Data Analysis, Curve Fitting, and Linear Regression
+1.4 More on Functions
+1.5 Symmetry and Transformations
+1.6 Variation and Applications
+1.7 Distance, Midpoints, and Circles
+
+2.1 Zeros of Linear Functions and Models
+2.2 The Complex Numbers
+2.3 Zeros of Quadratic Functions and Models
+2.4 Analyzing Graphs of Quadratic Functions
+2.5 Modeling: Data Analysis, Curve Fitting, and Quadratic Regression
+2.6 Zeros and More Equation Solving
+2.7 Solving Inequalities
+
+3.1 Polynomial Functions and Modeling
+3.2 Polynomial Division; The Remainder and Factor Theorems
+3.3 Theorems about Zeros of Polynomial Funtions
+3.4 Rational Functions
+3.5 Polynomial and Rational Inequalities
+
+4.1 Composite and Inverse Functions
+4.2 Exponential Functions and Graphs
+4.3 Logarithmic Functions and Graphs
+4.4 Properties of Logarithmic Functions
+4.5 Solving Exponential and Logarithmic Equations
+4.6 Applications and Models: Growth and Decay
+
+5.1 Systems of Equations in Two Variables
+5.2 System of Equations in Three Variables
+5.3 Matrices and Systems of Equations
+5.4 Matrix Operations
+5.5 Inverses of Matrices
+5.6 System of Inequalities and Linear Programming
+5.7 Partial Fractions
+
+6.1 The Parabola
+6.2 The Circle and Ellipse
+6.3 The Hyperbola
+6.4 Nonlinear Systems of Equations
+
+7.1 Sequences and Series
+7.2 Arithmetic Sequences and Series
+7.3 Geometric Sequences and Series
+7.4 Mathematical Induction
+7.5 Combinatorics: Permutations
+7.6 Combinatorics: Combinations
+7.7 The Binomial Theorem
+7.8 Probability","['computer-science', 'algebra-precalculus', 'discrete-mathematics']"
+210022,Affine space over non algebraically closed field,"Re-edited: Let $k$ be a field, not necessarily algebraically closed. Then what is the relation of the affine space $\mathbb{A}^n(k)$ with $k^n$ or $\bar{k}^n$? Note: I am quite confused about what an affine space is, so i am asking this question, hoping to gain more insight about what an affine space is.",['algebraic-geometry']
+210024,Smallest eigenvalues of Sum of Two Positive Matrices,"Let $C = A + B$, where $A$, $B$, and $C$ are positive definite matrices. In addition, $C$ is fixed. Let $\lambda (A)$, $\lambda (B)$, and $\lambda (C)$ be smallest eigenvalues of $A$, $B$, and $C$, respectively. Is there any result about the smallest eigenvalues of $C$ in comparison with the sum of smallest eigenvalues of $A$ and $B$? Is it true that : $\lambda (A)$ + $\lambda (B)$ < $\lambda (C)$ ?
+Moreover, what is the smallest possible value of $\lambda (A)$ + $\lambda (B)$ given a fixed $C$, and under what condition does this happen? 
+Many thanks! Xuan ------------------------------ Post Edit --------------------------- Question about $\lambda_{min} (A+B) > \lambda_{min} (A) + \lambda_{min} (B) $ can be seen from Weyl's inequality. The remaining question is about the smallest attainable value of $\lambda_{min} (A) + \lambda_{min} (B) $ given a fixed $C$?","['eigenvalues-eigenvectors', 'inequality', 'matrices', 'linear-algebra', 'summation']"
+210043,$C_0(X)$ is not the dual of a complete normed space,"Let $X$ be any locally compact Hausdorff space and assume that it is not compact.
+I've heard that the Banach space $(C_0(X),\|\!\cdot\!\|_\infty)$ is not isometrically isomorphic to the (norm) dual of a Banach space. Is there a good book where I can find a proof this result?","['dual-spaces', 'reference-request', 'functional-analysis', 'banach-spaces']"
+210050,lebesgue density theorem for smooth manifold (revised),"My question is about lebesgue density theorem: Let $\mathcal{H}^s$ be $s-$dimensional Hausdorff measure. If $A\subset \mathbb{R}^{n}$ with $0<\mathcal{H}^s(A)<\infty,$ then for $\mathcal{H}^{s}$ almost all $x\in A,$ $$\limsup_{r \rightarrow 0}\frac{\mathcal{H}^{s}(A\cap B(x,r))}{\beta_s r^s}\leq 1,$$
+where $\beta_s$ is the $s-$dimensional Hausdorff measure of $s-$dimensional unit ball. Do we have the above inequality for all $x\in A$, if we assume that $A$ is a subset of a $C^{1}-$manifold? Thank you so much",['analysis']
+210056,Tangent space to a manifold - First Order Approximation to the Manifold,"I've a doubt about the tangent space to a manifold. Let $M$ be a $n$-manifold and let $p\in M$, I've heard that the tangent space $T_pM$ at $p$ is the first order approximation of $M$ near $p$ in the same way that the tangent hyperplane to the graph of a function $f : \mathbb{R}^n \to \mathbb{R}$ is the first order approximation to the graph of $f$. This is really intuitive, but how do I show that ? I mean, I'm using the definition of tangent space with derivations, how do I show that that abstract set associated with each point of the manifold gives the first order approximation to the manifold ? Is this fact already built in into the definition somehow or we should prove it ? If we should prove it, can someone give a hint ? I don't want the full proof, just a hint to begin the proof. Thanks in advance for your aid, and sorry if this question is too trivial.","['manifolds', 'differential-geometry']"
+210061,Hidden geometrical gems in Euclid's Elements?,"I am teaching a course in Euclidean geometry at the University of South Carolina, and it seemed highly appropriate and interesting to read Euclid himself. (See here for a wonderful, and completely free, translation and guide.) We are up through Proposition 17 now, and although this is very instructional for both the students and myself, I sense that before too long the novelty will wear off and it will be good to return to a modern treatment. (I will, though, want to say a little bit about his treatment of parallel lines and elliptic and hyperbolic geometry.) That said, there are some gems. In Book 2, Euclid constructs square roots, and in Book 4 he describes how to draw a regular pentagon (which is surely not obvious). And, the constructions in the first few books are all very interesting. (Of course there is lots of fascinating number theory too, but my course is on geometry.) What other particularly fascinating tidbits do the Elements contain, which it may be easy to overlook?","['geometry', 'euclidean-geometry']"
+210066,Every proper subspace of a normed linear space is not open [duplicate],"This question already has answers here : Closed 11 years ago . Possible Duplicate: Interior of a Subspace How do we show that any proper subspace of a normed linear space is not open. I know that for nay finite dimensional normed linear space $(X,||.||)$ any proper subspace is closed but I am not sure how to show this? Thanks for any help",['functional-analysis']
+210070,Deciding whether a given set is a regular surface,"I'm trying to decide whether the following set is a regular surface: $$\{(x^3 - 3xy^2, 3x^2y - y^3, 0) : (x, y) \in \mathbb{R}^2\}$$ I know that the map ${\bf x} : \mathbb{R^2} \to \mathbb{R^3}$ defined by ${\bf x}(x, y) =  (x^3 - 3xy^2, 3x^2y - y^3, 0)$ doesn't work as a coordinate map, because the Jacobian determinant $\frac{\partial (x, y)}{\partial (x, y)}$ vanishes at $x = y = 0$. However I guess this doesn't rule out the possibility of other coordinate maps. Obviously the surface isn't the graph of a function and I can't use the fact that it's a preimage of regular value of a function. So I'm thinking I have to find some coordinate maps which satisfy the appropriate properties, but I can't think what they would be. Can anyone help here? Is this set in fact not a regular surface, and if so how do I prove that?",['differential-geometry']
+210101,Inequality of Pearson correlation coefficient,"Let $x_1,\ldots x_n,y_1,\ldots y_n$ be reals and $\bar{x},\bar{y}$ the aritmetic mean of numbers $x_1,\ldots x_n$ and $y_1,\ldots y_n$ respectively. How can I show that $$-1\leq \dfrac{\sum_{i=1}^n (x_i-\bar{x})(y_1-\bar{y})}{\sqrt{\sum_{i=1}^n(x_i-\bar{x})^2\sum_{i=1}^n(y_i-\bar{y})^2}}$$ Looks a bit like Cauchy (it gives me that the expression is at most one) but I was unable to find the proof.","['statistics', 'inequality']"
+210115,The Number of Sylow Subgroups,"We've been studying Sylow $p$-subgroups, and I've come across this problem. Let $H$ be a subgroup of $G$, and suppose $G$ is finite. Then, $n_p (H) \leq n_p (G)$, where $n_p$ denotes the number of Sylow $p$-subgroups of a group. I am having trouble figuring this one out, and I was wondering if anyone could help? Thank you.","['sylow-theory', 'finite-groups', 'group-theory', 'abstract-algebra']"
+210131,How should I understand the $\sigma$-algebra in Kolmogorov's zero-one law?,"I'm learning Kolmogorov's zero-one law in probability theory: Let $(Ω,{\mathcal F},P)$ be a probability space and let $F_n$ be a sequence of mutually independent $\sigma$-algebras contained in $\mathcal{F}$. Let
+      $$G_n=\sigma\bigg(\bigcup_{k=n}^\infty F_k\bigg)$$
+  be the smallest $\sigma$-algebra containing $F_n, F_{n+1}, \dots$. Then Kolmogorov's zero-one law asserts that for any event
+  $$ F\in \bigcap_{n=1}^\infty G_n$$
+  one has either $P(F) = 0$ or $1$. I've no idea how $G_n$ and $\bigcap_{n=1}^{\infty} G_n$ would look like. What's the point of such construction? Could any one come up with some concrete examples of how this theorem works?","['probability-theory', 'measure-theory']"
+210148,What is this question on random variables asking?,"The question states: A random variable $X$ is called symmetric about 0 if for all $x \in \mathbb R$, $\mathbb P(X \geq x) = \mathbb P(X \leq -x)$. Prove that if $X$ is symmetric about 0, then for all $t > 0$, its
+  distribution function $F$ satisfies the following relations: (I'm only
+  going to give one example so I can do the rest myself) a) $\mathbb P(|X|\leq t) = 2F(t)-1$. How do I prove this? And also what does it mean that the random variable $X$ is symmetric about 0?","['probability-theory', 'probability-distributions', 'probability', 'random-variables']"
+210165,Looking for a function such that...,"There was this question on one of the whiteboards at my company, and I found it intriguing. Maybe it's a dumb thing to ask. Maybe there is a simple answer that I couldn't see. Anyway, here it is: Does there exist a non-trivial, monotonically increasing function such that $f'(x) = f(f(x))$ (in $\mathbb{R}$)? I checked a bunch of functions, from elementary to special (gamma, digamma, zeta, Riemann, Lambert ...) and none seems to work (not surprisingly). I managed to convince myself that a function expressible as a power series would not work, regardless of convergence issues, because the derivative lowers the degree of polynomials, when the composition raises it. The Dirac delta or some sort of generalized function looked promising for a while, but the Dirac delta is not monotonically increasing anyway, and I'm not very familiar with generalized functions. I tried to use the Fourier transform on both sides, but it seems the Fourier transform is difficult for f(f(x)) (at least for me). I thought about somehow seeing ""taking the derivative"" as a differential operator, finding its (infinite) matrix in some basis (which one?), do the same thing to the RHS and show that the 2 matrices could not be identified (reducing the problem to a linear algebra problem) - that didn't work. Nothing on the geometric front either. I thought about trying to prove that there is no such function by deducing a contradiction, but didn't manage that. My hunch is that no such function exists, based on the completely invalid and semi-meaningless idea that differentiation pulls f in one direction, and composition in the other. Any idea?","['functional-analysis', 'functions', 'functional-equations']"
+210187,Relation between positive definite matrix and strictly convex quadratic form,"According to Wikipedia , any quadratic function can be written as $z^TMz$ , where $z$ is a column vector and $M$ is a symmetric real matrix. However, this quadratic function is strictly convex only when $M$ is symmetric positive definite. Why? I thought any quadratic function should be convex? Doesn't $z^TMz>0$ shows only that the range of this function is greater than zero? Why isn't any symmetric matrix $M$ (which represents a quadratic  function) convex? Why is it only the case that when $z^TMz > 0$ the function is strictly convex?","['positive-definite', 'convex-analysis', 'quadratic-forms', 'matrices', 'quadratics']"
+210194,Quotient of ring of integers,"Let $R=\mathcal{O}(K)$ be the ring of the integers of $K=\mathbb{Q}[\zeta_8]$, where $\zeta_8=e^{2\pi i/8}=\sqrt{2}/2(1+i)$ is a primitive eighth root of unity in $\mathbb{C}$. It can be shown that $R$ is a P.I.D. Let $\mathscr{P}$ be the ideal $\langle \zeta_8-1\rangle$ and let
+$$
+\mathscr{P}^{-2}=\{x\in K\mid (\zeta_8-1)^2x\in R\}.
+$$ Claim : $\mathscr{P}^{-2}/R\cong R/\mathscr{P}^2\cong \mathbb{Z}/4\mathbb{Z}$. I have absolutely no idea how to prove this!","['principal-ideal-domains', 'ideals', 'number-theory']"
+210227,$\sup(S)$ does not belong to $S$?,"Problem: can anyone come up with an ordering of $\mathbb{N}$ different than the standard one we know, where we can find a subset $S\subset \mathbb{N}$ in a way such that $\sup(S)$ exists in $\mathbb{N}$, but $\sup(S)$ does not belong to the set $S$? $\mathbb{N}$: the set of natural numbers.","['order-theory', 'calculus', 'real-analysis', 'analysis']"
+210237,Limit without using l'Hopital,"How can I find  $$\lim_{n \to \infty}{n \cos(\pi/2 + 1/n)}$$ without using L'Hôpital's rule? Using L'Hopital's rule I can find the answer to be -1, but without it I don't know where to start.","['limits-without-lhopital', 'limits']"
+210238,horizontal vector in tangent bundle,"I have a question about Do Carmo notion of horizontal vector (page 79). So he defines natural metric on $TM$ of manifold $M$. Now he chooses vector $V\in T_{(p,v)}(TM)$ and calls $V$ horizontal vector if it is orthogonal to fiber $\pi^{-1}(p)$ under metric of $TM$ (where $\pi :TM\to M$ is natural projection. What I am confused is that $V$ and $\pi^{-1}(p)$ do not live in a same space, so metric on $TM$ can not receive as input an element of $\pi^{-1}(p)$. Can someone clarify me how should this be understood?","['riemannian-geometry', 'differential-geometry']"
+210264,"Second derivative ""formula derivation""","I've been trying to understand how the second order derivative ""formula"" works: $$\lim_{h\to0} \frac{f(x+h) - 2f(x) + f(x-h)}{h^2}$$ So, the rate of change of the rate of change for an arbitrary continuous function. It basically feels right, since it samples ""the after $x+h$ and the before $x-h$"" and the $h^2$ is there (due to the expected /h/h -> /h*h), but I'm having trouble finding the equation on my own. It's is basically a derivative of a derivative, right? Newtonian notation declares as $f''$ and Leibniz's as $\frac{\partial^2{y}}{\partial{x}^2}$ which dissolves into: $$(f')'$$ and
+$$\frac{\partial{}}{\partial{x}}\frac{\partial{f}}{\partial{x}}$$ So, first derivation shows the rate of change of a function's value relative to input. The second derivative shows the rate of change of the actual rate of change, suggesting information relating to how frequenly it changes. The original one is rather straightforward: $$\frac{\Delta y}{\Delta x} = \lim_{h\to0} \frac{f(x+h) - f(x)}{x + h - x} = \lim_{h\to0} \frac{f(x+h) - f(x)}{h}$$ And can easily be shown that $f'(x) = nx^{n-1} + \dots$ is correct for the more forthcoming of polynomial functions. So, my logic suggests that to get the derivative of a derivative, one only needs to send the derivative function as input to finding the new derivative. I'll drop the $\lim_{h\to0}$ for simplicity: $$f'(x) = \frac{f(x+h) - f(x)}{h}$$ So, the derivative of the derivative should be: $$f''(x) = \lim_{h\to0} \frac{f'(x+h) - f'(x)}{h}$$ $$f''(x) = \lim_{h\to0} \frac{  \frac{ f(x+2h) - f(x+h)}{h} - \frac{ f(x+h) - f(x)}{h}  }{h}$$ $$f''(x) = \lim_{h\to0} \frac{  \frac{ f(x+2h) - f(x+h) - f(x+h) + f(x)}{h}  }{h}$$ $$f''(x) = \lim_{h\to0} \frac{  f(x+2h) - f(x+h) - f(x+h) + f(x)  }{h^2}$$ $$f''(x) = \lim_{h\to0} \frac{  f(x+2h) - 2f(x+h) + f(x)  }{h^2}$$ What am I doing wrong? Perhaps it is the mess of it all, but I just can't see it. Please help.","['derivatives', 'limits']"
+210265,How do I prove that $\mathbb CP^n$ is a 2n-manifold?,"I'm struggling to prove that $\mathbb CP^n$ is 2n-manifold. We can defined the $\mathbb CP^n$ as the equivalence relation $(z_1,z_1,...,z_{n+1})\sim(w_1,w_1,...,w_{n+1})$ iff $z_i=\lambda w_i$, $i=1,2,...,n+1$. In order to prove that $\mathbb CP^n$ is a $2n$-manifold, we need to define a function $f_i:U_i\to \mathbb C^n$ defined by $f_i([z_1,...,z_{n+1}])=\left(\frac{z_1}{z_i},...,\frac{z_{i-1}}{z_i},\frac{z_{i+1}}{z_i},..., \frac{z_{n+1}}{z_i}\right)$, where each $U_i$ is defined as $U_i = \{[z_0,z_1,...,z_n];z_i\neq 0\}$. If we prove that this function is an homeomorphism, we're done. It's easy to prove that each $f_i$ is well-defined, continuous
+and have this inverse $g_i:\mathbb C^n\to U_i$, defined by $g_i(z_1,...,z_n)=[z_1,...,z_{i-1},1,z_i,...,z_n]$ In order to prove that $\mathbb CP^n$ is a $2n$-manifold, it miss just the continuity of $g$, I need help in this part. Thanks","['general-topology', 'algebraic-topology', 'analysis']"
+210279,Evaluating $\int \frac {\sqrt{\tan \theta}} {\sin 2\theta} \ d \theta$,"I am trying to evaluate $$\int \frac {\sqrt{\tan \theta}} {\sin 2\theta} \ d \theta$$ I tried rewriting it as $$\int {\sqrt{\tan \theta}} \cdot \csc(2\theta) \  d\theta$$ Supposedly letting $u = \sqrt{\tan \theta}$ cleans up the integral to just $1$, but I don't see how. $$du = \frac{\sec^2 \theta}{2\sqrt{\tan(\theta)}} d\theta \implies 2u \ du = \sec^2 \theta \ d\theta$$ Here's where I'm not sure how expressing $\csc(2\theta)$ as a double angle and in terms of $u$ cleans it up so nicely. Note: a subtle hint or nudge in the right direction is preferred rather than a full solution.","['calculus', 'integration', 'indefinite-integrals']"
+210291,Prove Borel sigma-algebra translation invariant,Can anyone explain: Let $B$ be a Borel set and $B + a = \{ x + a : x \in B\}$. Why is $B + a$ a Borel set? I think I have to use some good set principle but not sure how to complete the proof.,['measure-theory']
+210346,Differential Equations without Analytical Solutions,"In many talks, I have heard people say that the differential equation they are interested in has no analytical solution. Do they really mean that? That is: Can you prove a differential equation has no analytical solution? I suspect what they mean is that no one has been able to derive one, but I could be wrong. I also have a question related to the former case. What are some simple examples of differential equations with no known analytical solution? The differential equations courses at my university are method based (identify the DE and use the method provided) which is completely fine. However, I'd like to have some examples which look easy (or look similar to ones for which the given methods will work) in order to show students that not all differential equations are so easily solved. Added later: Taking the comments into account, I suppose the type of differential equations I am looking for in the second question are ones which, at this point in time, can only be solved using numerical methods (which, as Emmad Kareem points out, would be good motivation for learning such methods). The kind of thing I'm looking for: I was talking to my friend who does Fluid Mechanics and he suggested the Blasius equation $$f''' + \frac{1}{2}ff'' = 0.$$ Apart from $f(x) = ax + b$, there are no known (as far as he knows) analytical solutions.","['ordinary-differential-equations', 'examples-counterexamples']"
+210364,Interpreting Coin Toss Data. Biased or Not?,"We have run an experiment in which some good chap has sat down and flipped a coin 100 times. At the end of the 100 flips he has tallied 40 Heads and 60 Tails. Now this seems like something is up with the coin. The question is whether or not this coin is biased. I have already determined that the mean p=1/2 and the standard deviation is 5. If we take the mean as a random variable of a normal distribution about the mean, then the experimental results we obtained are 2sigma from the mean. My first question is what does it mean if the results are outside one sigma? Next I proceeded to find the probability that the p-value of the getting a heads was instead 4/10. I used the function 100C40 *p^40 *(1-p)^60 and integrated this (dp) from 0.35 to 0.45. My result was 0.006. Now does this mean that the probability of getting a p is between 0.35 and 0.45 is 0.006 ? But I feel in this method I should be comparing this p against something. I suppose my problem really lies in interpreting the results and their meaning.","['statistics', 'probability']"
+210390,Sketch all points in the complex plane such that $\mathrm{Re}(1/z)<1$,"I am given the task to sketch all the points in the complex plane satisfying 
+$$ \mathrm{Re}(1/z)<1 $$
+I am not very good at sketching, nor seeing how to draw this in the complex plane. 
+I was thinking that since $$ \frac{1}{z} = \frac{|z|}{z|z|} = \frac{x - iy}{x^2 + y^2} $$ then $\mathrm{Re}(1/z)=x/(x^2+y^2)$. Our inequality is therefore equivalent to $$\mathrm{Re}(1/z)<1  \Leftrightarrow x < x^2 + y^2 \Leftrightarrow \left(\frac{1}{2}\right)^2 < \left( x - \frac{1}{2}\right)^2 + y^2$$ So the equality represents all points in $\mathbb{R}$ that lie outside a disk of radius $1/2$ and centre $(1/2,0)$. But I have not plotted anything in the complex plane?? Any help sketching and understanding this would be greatly appreciated.",['complex-analysis']
+210393,"If the spectral radius of a matrix is less than 1, then the matrix has a norm which is less than 1.","Let $A$ be an arbitrary square matrix and define $ \rho(A)$ to be the maximal eigenvalue of $A$ in absolute value. If $ \rho(A)<1,$  then there exists a norm of $A$ such that $ \| A \|<1.$ How to do this? Thanks.","['matrices', 'linear-algebra']"
+210396,"A holomorphic function $f$, injective on $\partial D$, must be injective in $\bar{D}$?","Prove: If $f$ is holomorphic on a neighborhood of the closed unit disc $\bar{D}$, and if $f$ is one-to-one on $\partial D$, then $f$ is
+  one-to-one on $\bar{D}$. (Greene and Krantz's Function Theory of One Complex Variable (3rd), Ch. 5, Problem 17.) Can anyone provide a clue as to how to attack this problem ?",['complex-analysis']
+210398,Gram-Schmidt and zero vector,"I have a problem concerning the orthogonalization of a coordinate system; this is necessary in the context of a normal mode analysis of molecular vibrations. I am working on H2O, giving me a 9-dimensional vector space, with six (orthogonal) basis vectors predetermined by describing rotational and translational motion of the entire molecule. I want to determine the three remaining vectors by a modified Gram-Schmidt process, but in my case, this somehow fails due to G-S constructing a zero vector. As far as I understand, zero vectors from Gram-Schmidt may occur if there is linear dependency somewhere in my set of vectors, but given that my six vectors are mutually orthogonal I don't know how this might be the case (let alone how I could avoid it). The six predetermined vectors are: trans-x   trans-y   trans-z   rot-xx    rot-yy    rot-zz
+3.9994         0         0         0    0.2552         0
+     0    3.9994         0   -0.2552         0         0
+     0         0    3.9994         0         0         0
+1.0039         0         0         0   -0.5084   -0.7839
+     0    1.0039         0    0.5084         0         0
+     0         0    1.0039    0.7839         0         0
+1.0039         0         0         0   -0.5084    0.7839
+     0    1.0039         0    0.5084         0         0
+     0         0    1.0039   -0.7839         0         0 Can you see where the problem lies? I've been looking over this for a few days now, including trying alternative approaches at the orthogonalization problem, and I am starting to get frustrated. Given that my Gram-Schmidt algorithm produces a valid 9-dimensional orthogonal set if I use only the first three vectors (the translational coordinates), I assume my implementation to be correct and the problem to be somewhere in the rotational coordinate vectors. But I am at loss about what exactly is going wrong here. (In the end, it's probably just an example of not seeing the forest for the trees ...) Regards -M.","['linear-algebra', 'physics']"
+210402,Limit of Integral with a Limit,"Here's a little question I saw in a book recently, which I can see but can't set out my own formal proof and it's annoying me. Say $\lim_{x\to\infty} g(x) = a$ and $g$ is continuous, so now prove that $\lim_{x\to\infty} \frac{1}{x} \int_0^x g(y) \mathrm{d}y = a$ . I can see that if we define $\int_0^x g(y)\mathrm{d}y  = G(x) - G(0)$ then $\frac{1}{x} \int_0^x g(y) \mathrm{d}y = \frac{G(x) - G(0)}{x}$ which clearly looks a lot like the limit of a differential, but I'm not sure how to handle the limit?!","['integration', 'limits']"
