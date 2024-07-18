@@ -1,7 +1,6 @@
 .ipynb_checkpoints
 .cache
-data/vectorized_data/sparse_matrices/
 data/parsed_data.csv
-models/deep_nn/
+models/deep_nn/vectorized_data/sparse_matrices
 models/recurrent_nn/embeddings/
 models/recurrent_nn/weights/
